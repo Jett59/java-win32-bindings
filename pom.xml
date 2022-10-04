@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>app.cleancode</groupId>
   <artifactId>win32-bindings</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <properties>
   <java.version>19</java.version>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,4 +22,11 @@
   </plugin>
   </plugins>
   </build>
+  <distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>Jett59 Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/Jett59/java-win32-bindings</url>
+   </repository>
+</distributionManagement>
 </project>
