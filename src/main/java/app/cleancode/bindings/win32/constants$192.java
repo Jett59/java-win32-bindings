@@ -9,70 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$192 {
 
-    static final FunctionDescriptor SetDCPenColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetCommTimeouts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetCommTimeouts$MH = RuntimeHelper.downcallHandle(
+        "SetCommTimeouts",
+        constants$192.SetCommTimeouts$FUNC
+    );
+    static final FunctionDescriptor TransmitCommChar$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
+    );
+    static final MethodHandle TransmitCommChar$MH = RuntimeHelper.downcallHandle(
+        "TransmitCommChar",
+        constants$192.TransmitCommChar$FUNC
+    );
+    static final FunctionDescriptor WaitCommEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WaitCommEvent$MH = RuntimeHelper.downcallHandle(
+        "WaitCommEvent",
+        constants$192.WaitCommEvent$FUNC
+    );
+    static final FunctionDescriptor OpenCommPort$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetDCPenColor$MH = RuntimeHelper.downcallHandle(
-        "SetDCPenColor",
-        constants$192.SetDCPenColor$FUNC
+    static final MethodHandle OpenCommPort$MH = RuntimeHelper.downcallHandle(
+        "OpenCommPort",
+        constants$192.OpenCommPort$FUNC
     );
-    static final FunctionDescriptor SetBkMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetBkMode$MH = RuntimeHelper.downcallHandle(
-        "SetBkMode",
-        constants$192.SetBkMode$FUNC
-    );
-    static final FunctionDescriptor SetBitmapBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCommPorts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetBitmapBits$MH = RuntimeHelper.downcallHandle(
-        "SetBitmapBits",
-        constants$192.SetBitmapBits$FUNC
+    static final MethodHandle GetCommPorts$MH = RuntimeHelper.downcallHandle(
+        "GetCommPorts",
+        constants$192.GetCommPorts$FUNC
     );
-    static final FunctionDescriptor SetBoundsRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetTapePosition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetBoundsRect$MH = RuntimeHelper.downcallHandle(
-        "SetBoundsRect",
-        constants$192.SetBoundsRect$FUNC
-    );
-    static final FunctionDescriptor SetDIBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetDIBits$MH = RuntimeHelper.downcallHandle(
-        "SetDIBits",
-        constants$192.SetDIBits$FUNC
-    );
-    static final FunctionDescriptor SetDIBitsToDevice$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetDIBitsToDevice$MH = RuntimeHelper.downcallHandle(
-        "SetDIBitsToDevice",
-        constants$192.SetDIBitsToDevice$FUNC
+    static final MethodHandle SetTapePosition$MH = RuntimeHelper.downcallHandle(
+        "SetTapePosition",
+        constants$192.SetTapePosition$FUNC
     );
 }
 

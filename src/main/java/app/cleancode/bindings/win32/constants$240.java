@@ -9,54 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$240 {
 
-    static final FunctionDescriptor GetMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DnsHostnameToComputerNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetMessageW$MH = RuntimeHelper.downcallHandle(
-        "GetMessageW",
-        constants$240.GetMessageW$FUNC
-    );
-    static final FunctionDescriptor TranslateMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle TranslateMessage$MH = RuntimeHelper.downcallHandle(
-        "TranslateMessage",
-        constants$240.TranslateMessage$FUNC
+    static final MethodHandle DnsHostnameToComputerNameA$MH = RuntimeHelper.downcallHandle(
+        "DnsHostnameToComputerNameA",
+        constants$240.DnsHostnameToComputerNameA$FUNC
     );
-    static final FunctionDescriptor DispatchMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor DnsHostnameToComputerNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DispatchMessageA$MH = RuntimeHelper.downcallHandle(
-        "DispatchMessageA",
-        constants$240.DispatchMessageA$FUNC
+    static final MethodHandle DnsHostnameToComputerNameW$MH = RuntimeHelper.downcallHandle(
+        "DnsHostnameToComputerNameW",
+        constants$240.DnsHostnameToComputerNameW$FUNC
     );
-    static final FunctionDescriptor DispatchMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetUserNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DispatchMessageW$MH = RuntimeHelper.downcallHandle(
-        "DispatchMessageW",
-        constants$240.DispatchMessageW$FUNC
+    static final MethodHandle GetUserNameA$MH = RuntimeHelper.downcallHandle(
+        "GetUserNameA",
+        constants$240.GetUserNameA$FUNC
     );
-    static final FunctionDescriptor SetMessageQueue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetUserNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetMessageQueue$MH = RuntimeHelper.downcallHandle(
-        "SetMessageQueue",
-        constants$240.SetMessageQueue$FUNC
+    static final MethodHandle GetUserNameW$MH = RuntimeHelper.downcallHandle(
+        "GetUserNameW",
+        constants$240.GetUserNameW$FUNC
     );
-    static final FunctionDescriptor PeekMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LogonUserA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PeekMessageA$MH = RuntimeHelper.downcallHandle(
-        "PeekMessageA",
-        constants$240.PeekMessageA$FUNC
+    static final MethodHandle LogonUserA$MH = RuntimeHelper.downcallHandle(
+        "LogonUserA",
+        constants$240.LogonUserA$FUNC
+    );
+    static final FunctionDescriptor LogonUserW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LogonUserW$MH = RuntimeHelper.downcallHandle(
+        "LogonUserW",
+        constants$240.LogonUserW$FUNC
     );
 }
 

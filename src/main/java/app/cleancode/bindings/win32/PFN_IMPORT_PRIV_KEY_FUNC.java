@@ -11,13 +11,13 @@ public interface PFN_IMPORT_PRIV_KEY_FUNC {
 
     int apply(long hCryptProv, java.lang.foreign.MemoryAddress pPrivateKeyInfo, int dwFlags, java.lang.foreign.MemoryAddress pvAuxInfo);
     static MemorySegment allocate(PFN_IMPORT_PRIV_KEY_FUNC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_IMPORT_PRIV_KEY_FUNC.class, fi, constants$463.PFN_IMPORT_PRIV_KEY_FUNC$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_IMPORT_PRIV_KEY_FUNC.class, fi, constants$615.PFN_IMPORT_PRIV_KEY_FUNC$FUNC, session);
     }
     static PFN_IMPORT_PRIV_KEY_FUNC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (long _hCryptProv, java.lang.foreign.MemoryAddress _pPrivateKeyInfo, int _dwFlags, java.lang.foreign.MemoryAddress _pvAuxInfo) -> {
             try {
-                return (int)constants$463.PFN_IMPORT_PRIV_KEY_FUNC$MH.invokeExact((Addressable)symbol, _hCryptProv, (java.lang.foreign.Addressable)_pPrivateKeyInfo, _dwFlags, (java.lang.foreign.Addressable)_pvAuxInfo);
+                return (int)constants$616.PFN_IMPORT_PRIV_KEY_FUNC$MH.invokeExact((Addressable)symbol, _hCryptProv, (java.lang.foreign.Addressable)_pPrivateKeyInfo, _dwFlags, (java.lang.foreign.Addressable)_pvAuxInfo);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

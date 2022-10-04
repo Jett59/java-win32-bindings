@@ -9,12 +9,74 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$672 {
 
-    static final MemorySegment szOID_PKIX_CA_REPOSITORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.5");
-    static final MemorySegment szOID_QC_EU_COMPLIANCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.4.0.1862.1.1");
-    static final MemorySegment szOID_QC_SSCD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.4.0.1862.1.4");
-    static final MemorySegment szOID_VERISIGN_PRIVATE_6_9$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.9");
-    static final MemorySegment szOID_VERISIGN_ONSITE_JURISDICTION_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.11");
-    static final MemorySegment szOID_VERISIGN_BITSTRING_6_13$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.13");
+    static final FunctionDescriptor EnumPrinterDataExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrinterDataExW$MH = RuntimeHelper.downcallHandle(
+        "EnumPrinterDataExW",
+        constants$672.EnumPrinterDataExW$FUNC
+    );
+    static final FunctionDescriptor EnumPrinterKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrinterKeyA$MH = RuntimeHelper.downcallHandle(
+        "EnumPrinterKeyA",
+        constants$672.EnumPrinterKeyA$FUNC
+    );
+    static final FunctionDescriptor EnumPrinterKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrinterKeyW$MH = RuntimeHelper.downcallHandle(
+        "EnumPrinterKeyW",
+        constants$672.EnumPrinterKeyW$FUNC
+    );
+    static final FunctionDescriptor SetPrinterDataA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetPrinterDataA$MH = RuntimeHelper.downcallHandle(
+        "SetPrinterDataA",
+        constants$672.SetPrinterDataA$FUNC
+    );
+    static final FunctionDescriptor SetPrinterDataW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetPrinterDataW$MH = RuntimeHelper.downcallHandle(
+        "SetPrinterDataW",
+        constants$672.SetPrinterDataW$FUNC
+    );
+    static final FunctionDescriptor SetPrinterDataExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetPrinterDataExA$MH = RuntimeHelper.downcallHandle(
+        "SetPrinterDataExA",
+        constants$672.SetPrinterDataExA$FUNC
+    );
 }
 
 

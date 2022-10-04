@@ -9,63 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$259 {
 
-    static final FunctionDescriptor CheckDlgButton$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddSecureMemoryCacheCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddSecureMemoryCacheCallback$MH = RuntimeHelper.downcallHandle(
+        "AddSecureMemoryCacheCallback",
+        constants$259.AddSecureMemoryCacheCallback$FUNC
+    );
+    static final FunctionDescriptor RemoveSecureMemoryCacheCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RemoveSecureMemoryCacheCallback$MH = RuntimeHelper.downcallHandle(
+        "RemoveSecureMemoryCacheCallback",
+        constants$259.RemoveSecureMemoryCacheCallback$FUNC
+    );
+    static final FunctionDescriptor CopyContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CheckDlgButton$MH = RuntimeHelper.downcallHandle(
-        "CheckDlgButton",
-        constants$259.CheckDlgButton$FUNC
+    static final MethodHandle CopyContext$MH = RuntimeHelper.downcallHandle(
+        "CopyContext",
+        constants$259.CopyContext$FUNC
     );
-    static final FunctionDescriptor CheckRadioButton$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InitializeContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CheckRadioButton$MH = RuntimeHelper.downcallHandle(
-        "CheckRadioButton",
-        constants$259.CheckRadioButton$FUNC
-    );
-    static final FunctionDescriptor IsDlgButtonChecked$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsDlgButtonChecked$MH = RuntimeHelper.downcallHandle(
-        "IsDlgButtonChecked",
-        constants$259.IsDlgButtonChecked$FUNC
+    static final MethodHandle InitializeContext$MH = RuntimeHelper.downcallHandle(
+        "InitializeContext",
+        constants$259.InitializeContext$FUNC
     );
-    static final FunctionDescriptor SendDlgItemMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor InitializeContext2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle SendDlgItemMessageA$MH = RuntimeHelper.downcallHandle(
-        "SendDlgItemMessageA",
-        constants$259.SendDlgItemMessageA$FUNC
+    static final MethodHandle InitializeContext2$MH = RuntimeHelper.downcallHandle(
+        "InitializeContext2",
+        constants$259.InitializeContext2$FUNC
     );
-    static final FunctionDescriptor SendDlgItemMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SendDlgItemMessageW$MH = RuntimeHelper.downcallHandle(
-        "SendDlgItemMessageW",
-        constants$259.SendDlgItemMessageW$FUNC
-    );
-    static final FunctionDescriptor GetNextDlgGroupItem$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetNextDlgGroupItem$MH = RuntimeHelper.downcallHandle(
-        "GetNextDlgGroupItem",
-        constants$259.GetNextDlgGroupItem$FUNC
+    static final FunctionDescriptor GetEnabledXStateFeatures$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT);
+    static final MethodHandle GetEnabledXStateFeatures$MH = RuntimeHelper.downcallHandle(
+        "GetEnabledXStateFeatures",
+        constants$259.GetEnabledXStateFeatures$FUNC
     );
 }
 

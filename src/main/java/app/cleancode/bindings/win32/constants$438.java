@@ -9,40 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$438 {
 
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_DELETE_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumDisplayDevicesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_DELETE_CTL$MH = RuntimeHelper.downcallHandle(
-        constants$438.PFN_CERT_STORE_PROV_DELETE_CTL$FUNC
+    static final MethodHandle EnumDisplayDevicesW$MH = RuntimeHelper.downcallHandle(
+        "EnumDisplayDevicesW",
+        constants$438.EnumDisplayDevicesW$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_SET_CTL_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_SET_CTL_PROPERTY$MH = RuntimeHelper.downcallHandle(
-        constants$438.PFN_CERT_STORE_PROV_SET_CTL_PROPERTY$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_CONTROL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_CONTROL$MH = RuntimeHelper.downcallHandle(
-        constants$438.PFN_CERT_STORE_PROV_CONTROL$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FIND_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDisplayConfigBufferSizes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDisplayConfigBufferSizes$MH = RuntimeHelper.downcallHandle(
+        "GetDisplayConfigBufferSizes",
+        constants$438.GetDisplayConfigBufferSizes$FUNC
+    );
+    static final FunctionDescriptor SetDisplayConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDisplayConfig$MH = RuntimeHelper.downcallHandle(
+        "SetDisplayConfig",
+        constants$438.SetDisplayConfig$FUNC
+    );
+    static final FunctionDescriptor QueryDisplayConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryDisplayConfig$MH = RuntimeHelper.downcallHandle(
+        "QueryDisplayConfig",
+        constants$438.QueryDisplayConfig$FUNC
+    );
+    static final FunctionDescriptor DisplayConfigGetDeviceInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DisplayConfigGetDeviceInfo$MH = RuntimeHelper.downcallHandle(
+        "DisplayConfigGetDeviceInfo",
+        constants$438.DisplayConfigGetDeviceInfo$FUNC
+    );
+    static final FunctionDescriptor DisplayConfigSetDeviceInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DisplayConfigSetDeviceInfo$MH = RuntimeHelper.downcallHandle(
+        "DisplayConfigSetDeviceInfo",
+        constants$438.DisplayConfigSetDeviceInfo$FUNC
     );
 }
 

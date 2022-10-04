@@ -9,57 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$133 {
 
-    static final FunctionDescriptor MapViewOfFileExNuma$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetSystemTimeAdjustmentPrecise$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle MapViewOfFileExNuma$MH = RuntimeHelper.downcallHandle(
-        "MapViewOfFileExNuma",
-        constants$133.MapViewOfFileExNuma$FUNC
+    static final MethodHandle SetSystemTimeAdjustmentPrecise$MH = RuntimeHelper.downcallHandle(
+        "SetSystemTimeAdjustmentPrecise",
+        constants$133.SetSystemTimeAdjustmentPrecise$FUNC
     );
-    static final FunctionDescriptor IsBadReadPtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle IsBadReadPtr$MH = RuntimeHelper.downcallHandle(
-        "IsBadReadPtr",
-        constants$133.IsBadReadPtr$FUNC
-    );
-    static final FunctionDescriptor IsBadWritePtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle IsBadWritePtr$MH = RuntimeHelper.downcallHandle(
-        "IsBadWritePtr",
-        constants$133.IsBadWritePtr$FUNC
-    );
-    static final FunctionDescriptor IsBadHugeReadPtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle IsBadHugeReadPtr$MH = RuntimeHelper.downcallHandle(
-        "IsBadHugeReadPtr",
-        constants$133.IsBadHugeReadPtr$FUNC
-    );
-    static final FunctionDescriptor IsBadHugeWritePtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle IsBadHugeWritePtr$MH = RuntimeHelper.downcallHandle(
-        "IsBadHugeWritePtr",
-        constants$133.IsBadHugeWritePtr$FUNC
-    );
-    static final FunctionDescriptor IsBadCodePtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InstallELAMCertificateInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsBadCodePtr$MH = RuntimeHelper.downcallHandle(
-        "IsBadCodePtr",
-        constants$133.IsBadCodePtr$FUNC
+    static final MethodHandle InstallELAMCertificateInfo$MH = RuntimeHelper.downcallHandle(
+        "InstallELAMCertificateInfo",
+        constants$133.InstallELAMCertificateInfo$FUNC
+    );
+    static final FunctionDescriptor GetProcessorSystemCycleTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessorSystemCycleTime$MH = RuntimeHelper.downcallHandle(
+        "GetProcessorSystemCycleTime",
+        constants$133.GetProcessorSystemCycleTime$FUNC
+    );
+    static final FunctionDescriptor GetOsManufacturingMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetOsManufacturingMode$MH = RuntimeHelper.downcallHandle(
+        "GetOsManufacturingMode",
+        constants$133.GetOsManufacturingMode$FUNC
+    );
+    static final FunctionDescriptor GetIntegratedDisplaySize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetIntegratedDisplaySize$MH = RuntimeHelper.downcallHandle(
+        "GetIntegratedDisplaySize",
+        constants$133.GetIntegratedDisplaySize$FUNC
+    );
+    static final FunctionDescriptor SetComputerNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetComputerNameA$MH = RuntimeHelper.downcallHandle(
+        "SetComputerNameA",
+        constants$133.SetComputerNameA$FUNC
     );
 }
 

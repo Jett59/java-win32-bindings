@@ -9,85 +9,38 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$197 {
 
-    static final FunctionDescriptor GradientFill$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FileEncryptionStatusW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GradientFill$MH = RuntimeHelper.downcallHandle(
-        "GradientFill",
-        constants$197.GradientFill$FUNC
+    static final MethodHandle FileEncryptionStatusW$MH = RuntimeHelper.downcallHandle(
+        "FileEncryptionStatusW",
+        constants$197.FileEncryptionStatusW$FUNC
     );
-    static final FunctionDescriptor GdiAlphaBlend$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_CHAR$LAYOUT.withName("BlendOp"),
-            Constants$root.C_CHAR$LAYOUT.withName("BlendFlags"),
-            Constants$root.C_CHAR$LAYOUT.withName("SourceConstantAlpha"),
-            Constants$root.C_CHAR$LAYOUT.withName("AlphaFormat")
-        ).withName("_BLENDFUNCTION")
-    );
-    static final MethodHandle GdiAlphaBlend$MH = RuntimeHelper.downcallHandle(
-        "GdiAlphaBlend",
-        constants$197.GdiAlphaBlend$FUNC
-    );
-    static final FunctionDescriptor GdiTransparentBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GdiTransparentBlt$MH = RuntimeHelper.downcallHandle(
-        "GdiTransparentBlt",
-        constants$197.GdiTransparentBlt$FUNC
-    );
-    static final FunctionDescriptor GdiGradientFill$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GdiGradientFill$MH = RuntimeHelper.downcallHandle(
-        "GdiGradientFill",
-        constants$197.GdiGradientFill$FUNC
-    );
-    static final FunctionDescriptor PlayMetaFileRecord$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor PFE_EXPORT_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PlayMetaFileRecord$MH = RuntimeHelper.downcallHandle(
-        "PlayMetaFileRecord",
-        constants$197.PlayMetaFileRecord$FUNC
+    static final MethodHandle PFE_EXPORT_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$197.PFE_EXPORT_FUNC$FUNC
     );
-    static final FunctionDescriptor MFENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PFE_IMPORT_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFE_IMPORT_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$197.PFE_IMPORT_FUNC$FUNC
+    );
+    static final FunctionDescriptor OpenEncryptedFileRawA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenEncryptedFileRawA$MH = RuntimeHelper.downcallHandle(
+        "OpenEncryptedFileRawA",
+        constants$197.OpenEncryptedFileRawA$FUNC
     );
 }
 

@@ -9,73 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$243 {
 
-    static final FunctionDescriptor SendMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadpoolCallbackPool$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SendMessageW$MH = RuntimeHelper.downcallHandle(
-        "SendMessageW",
-        constants$243.SendMessageW$FUNC
-    );
-    static final FunctionDescriptor SendMessageTimeoutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SendMessageTimeoutA$MH = RuntimeHelper.downcallHandle(
-        "SendMessageTimeoutA",
-        constants$243.SendMessageTimeoutA$FUNC
+    static final MethodHandle SetThreadpoolCallbackPool$MH = RuntimeHelper.downcallHandle(
+        "SetThreadpoolCallbackPool",
+        constants$243.SetThreadpoolCallbackPool$FUNC
     );
-    static final FunctionDescriptor SendMessageTimeoutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadpoolCallbackCleanupGroup$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SendMessageTimeoutW$MH = RuntimeHelper.downcallHandle(
-        "SendMessageTimeoutW",
-        constants$243.SendMessageTimeoutW$FUNC
+    static final MethodHandle SetThreadpoolCallbackCleanupGroup$MH = RuntimeHelper.downcallHandle(
+        "SetThreadpoolCallbackCleanupGroup",
+        constants$243.SetThreadpoolCallbackCleanupGroup$FUNC
     );
-    static final FunctionDescriptor SendNotifyMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadpoolCallbackRunsLong$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetThreadpoolCallbackRunsLong$MH = RuntimeHelper.downcallHandle(
+        "SetThreadpoolCallbackRunsLong",
+        constants$243.SetThreadpoolCallbackRunsLong$FUNC
+    );
+    static final FunctionDescriptor SetThreadpoolCallbackLibrary$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SendNotifyMessageA$MH = RuntimeHelper.downcallHandle(
-        "SendNotifyMessageA",
-        constants$243.SendNotifyMessageA$FUNC
+    static final MethodHandle SetThreadpoolCallbackLibrary$MH = RuntimeHelper.downcallHandle(
+        "SetThreadpoolCallbackLibrary",
+        constants$243.SetThreadpoolCallbackLibrary$FUNC
     );
-    static final FunctionDescriptor SendNotifyMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadpoolCallbackPriority$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SendNotifyMessageW$MH = RuntimeHelper.downcallHandle(
-        "SendNotifyMessageW",
-        constants$243.SendNotifyMessageW$FUNC
+    static final MethodHandle SetThreadpoolCallbackPriority$MH = RuntimeHelper.downcallHandle(
+        "SetThreadpoolCallbackPriority",
+        constants$243.SetThreadpoolCallbackPriority$FUNC
     );
-    static final FunctionDescriptor SendMessageCallbackA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor DestroyThreadpoolEnvironment$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SendMessageCallbackA$MH = RuntimeHelper.downcallHandle(
-        "SendMessageCallbackA",
-        constants$243.SendMessageCallbackA$FUNC
+    static final MethodHandle DestroyThreadpoolEnvironment$MH = RuntimeHelper.downcallHandle(
+        "DestroyThreadpoolEnvironment",
+        constants$243.DestroyThreadpoolEnvironment$FUNC
     );
 }
 

@@ -9,55 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$278 {
 
-    static final FunctionDescriptor UnregisterPointerInputTarget$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle UnregisterPointerInputTarget$MH = RuntimeHelper.downcallHandle(
-        "UnregisterPointerInputTarget",
-        constants$278.UnregisterPointerInputTarget$FUNC
-    );
-    static final FunctionDescriptor RegisterPointerInputTargetEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCharWidth32W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegisterPointerInputTargetEx$MH = RuntimeHelper.downcallHandle(
-        "RegisterPointerInputTargetEx",
-        constants$278.RegisterPointerInputTargetEx$FUNC
-    );
-    static final FunctionDescriptor UnregisterPointerInputTargetEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle UnregisterPointerInputTargetEx$MH = RuntimeHelper.downcallHandle(
-        "UnregisterPointerInputTargetEx",
-        constants$278.UnregisterPointerInputTargetEx$FUNC
-    );
-    static final FunctionDescriptor CreateSyntheticPointerDevice$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateSyntheticPointerDevice$MH = RuntimeHelper.downcallHandle(
-        "CreateSyntheticPointerDevice",
-        constants$278.CreateSyntheticPointerDevice$FUNC
-    );
-    static final FunctionDescriptor InjectSyntheticPointerInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle InjectSyntheticPointerInput$MH = RuntimeHelper.downcallHandle(
-        "InjectSyntheticPointerInput",
-        constants$278.InjectSyntheticPointerInput$FUNC
-    );
-    static final FunctionDescriptor DestroySyntheticPointerDevice$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DestroySyntheticPointerDevice$MH = RuntimeHelper.downcallHandle(
-        "DestroySyntheticPointerDevice",
-        constants$278.DestroySyntheticPointerDevice$FUNC
+    static final MethodHandle GetCharWidth32W$MH = RuntimeHelper.downcallHandle(
+        "GetCharWidth32W",
+        constants$278.GetCharWidth32W$FUNC
+    );
+    static final FunctionDescriptor GetCharWidthFloatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharWidthFloatA$MH = RuntimeHelper.downcallHandle(
+        "GetCharWidthFloatA",
+        constants$278.GetCharWidthFloatA$FUNC
+    );
+    static final FunctionDescriptor GetCharWidthFloatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharWidthFloatW$MH = RuntimeHelper.downcallHandle(
+        "GetCharWidthFloatW",
+        constants$278.GetCharWidthFloatW$FUNC
+    );
+    static final FunctionDescriptor GetCharABCWidthsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharABCWidthsA$MH = RuntimeHelper.downcallHandle(
+        "GetCharABCWidthsA",
+        constants$278.GetCharABCWidthsA$FUNC
+    );
+    static final FunctionDescriptor GetCharABCWidthsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharABCWidthsW$MH = RuntimeHelper.downcallHandle(
+        "GetCharABCWidthsW",
+        constants$278.GetCharABCWidthsW$FUNC
+    );
+    static final FunctionDescriptor GetCharABCWidthsFloatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharABCWidthsFloatA$MH = RuntimeHelper.downcallHandle(
+        "GetCharABCWidthsFloatA",
+        constants$278.GetCharABCWidthsFloatA$FUNC
     );
 }
 

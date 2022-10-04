@@ -9,65 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$524 {
 
-    static final FunctionDescriptor EnumMonitorsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveOutGetDevCapsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveOutGetDevCapsW$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetDevCapsW",
+        constants$524.waveOutGetDevCapsW$FUNC
+    );
+    static final FunctionDescriptor waveOutGetVolume$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumMonitorsW$MH = RuntimeHelper.downcallHandle(
-        "EnumMonitorsW",
-        constants$524.EnumMonitorsW$FUNC
+    static final MethodHandle waveOutGetVolume$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetVolume",
+        constants$524.waveOutGetVolume$FUNC
     );
-    static final FunctionDescriptor AddMonitorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveOutSetVolume$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveOutSetVolume$MH = RuntimeHelper.downcallHandle(
+        "waveOutSetVolume",
+        constants$524.waveOutSetVolume$FUNC
+    );
+    static final FunctionDescriptor waveOutGetErrorTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddMonitorA$MH = RuntimeHelper.downcallHandle(
-        "AddMonitorA",
-        constants$524.AddMonitorA$FUNC
-    );
-    static final FunctionDescriptor AddMonitorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveOutGetErrorTextA$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetErrorTextA",
+        constants$524.waveOutGetErrorTextA$FUNC
+    );
+    static final FunctionDescriptor waveOutGetErrorTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddMonitorW$MH = RuntimeHelper.downcallHandle(
-        "AddMonitorW",
-        constants$524.AddMonitorW$FUNC
-    );
-    static final FunctionDescriptor DeleteMonitorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeleteMonitorA$MH = RuntimeHelper.downcallHandle(
-        "DeleteMonitorA",
-        constants$524.DeleteMonitorA$FUNC
+    static final MethodHandle waveOutGetErrorTextW$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetErrorTextW",
+        constants$524.waveOutGetErrorTextW$FUNC
     );
-    static final FunctionDescriptor DeleteMonitorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteMonitorW$MH = RuntimeHelper.downcallHandle(
-        "DeleteMonitorW",
-        constants$524.DeleteMonitorW$FUNC
-    );
-    static final FunctionDescriptor EnumPortsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveOutOpen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumPortsA$MH = RuntimeHelper.downcallHandle(
-        "EnumPortsA",
-        constants$524.EnumPortsA$FUNC
+    static final MethodHandle waveOutOpen$MH = RuntimeHelper.downcallHandle(
+        "waveOutOpen",
+        constants$524.waveOutOpen$FUNC
     );
 }
 

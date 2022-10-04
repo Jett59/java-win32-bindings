@@ -9,56 +9,40 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$141 {
 
-    static final FunctionDescriptor SetTimerQueueTimer$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor PBAD_MEMORY_CALLBACK_ROUTINE$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle PBAD_MEMORY_CALLBACK_ROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$141.PBAD_MEMORY_CALLBACK_ROUTINE$FUNC
+    );
+    static final FunctionDescriptor RegisterBadMemoryNotification$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterBadMemoryNotification$MH = RuntimeHelper.downcallHandle(
+        "RegisterBadMemoryNotification",
+        constants$141.RegisterBadMemoryNotification$FUNC
+    );
+    static final FunctionDescriptor UnregisterBadMemoryNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnregisterBadMemoryNotification$MH = RuntimeHelper.downcallHandle(
+        "UnregisterBadMemoryNotification",
+        constants$141.UnregisterBadMemoryNotification$FUNC
+    );
+    static final FunctionDescriptor OfferVirtualMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetTimerQueueTimer$MH = RuntimeHelper.downcallHandle(
-        "SetTimerQueueTimer",
-        constants$141.SetTimerQueueTimer$FUNC
+    static final MethodHandle OfferVirtualMemory$MH = RuntimeHelper.downcallHandle(
+        "OfferVirtualMemory",
+        constants$141.OfferVirtualMemory$FUNC
     );
-    static final FunctionDescriptor CancelTimerQueueTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReclaimVirtualMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CancelTimerQueueTimer$MH = RuntimeHelper.downcallHandle(
-        "CancelTimerQueueTimer",
-        constants$141.CancelTimerQueueTimer$FUNC
-    );
-    static final FunctionDescriptor DeleteTimerQueue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteTimerQueue$MH = RuntimeHelper.downcallHandle(
-        "DeleteTimerQueue",
-        constants$141.DeleteTimerQueue$FUNC
-    );
-    static final FunctionDescriptor InitializeThreadpoolEnvironment$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle InitializeThreadpoolEnvironment$MH = RuntimeHelper.downcallHandle(
-        "InitializeThreadpoolEnvironment",
-        constants$141.InitializeThreadpoolEnvironment$FUNC
-    );
-    static final FunctionDescriptor SetThreadpoolCallbackPool$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetThreadpoolCallbackPool$MH = RuntimeHelper.downcallHandle(
-        "SetThreadpoolCallbackPool",
-        constants$141.SetThreadpoolCallbackPool$FUNC
-    );
-    static final FunctionDescriptor SetThreadpoolCallbackCleanupGroup$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetThreadpoolCallbackCleanupGroup$MH = RuntimeHelper.downcallHandle(
-        "SetThreadpoolCallbackCleanupGroup",
-        constants$141.SetThreadpoolCallbackCleanupGroup$FUNC
+    static final MethodHandle ReclaimVirtualMemory$MH = RuntimeHelper.downcallHandle(
+        "ReclaimVirtualMemory",
+        constants$141.ReclaimVirtualMemory$FUNC
     );
 }
 

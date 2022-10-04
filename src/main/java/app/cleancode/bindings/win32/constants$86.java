@@ -9,47 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$86 {
 
-    static final FunctionDescriptor PulseEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PulseEvent$MH = RuntimeHelper.downcallHandle(
-        "PulseEvent",
-        constants$86.PulseEvent$FUNC
-    );
-    static final FunctionDescriptor GlobalDeleteAtom$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle GlobalDeleteAtom$MH = RuntimeHelper.downcallHandle(
-        "GlobalDeleteAtom",
-        constants$86.GlobalDeleteAtom$FUNC
-    );
-    static final FunctionDescriptor InitAtomTable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFileIoOverlappedRange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle InitAtomTable$MH = RuntimeHelper.downcallHandle(
-        "InitAtomTable",
-        constants$86.InitAtomTable$FUNC
+    static final MethodHandle SetFileIoOverlappedRange$MH = RuntimeHelper.downcallHandle(
+        "SetFileIoOverlappedRange",
+        constants$86.SetFileIoOverlappedRange$FUNC
     );
-    static final FunctionDescriptor DeleteAtom$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle DeleteAtom$MH = RuntimeHelper.downcallHandle(
-        "DeleteAtom",
-        constants$86.DeleteAtom$FUNC
-    );
-    static final FunctionDescriptor SetHandleCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetHandleCount$MH = RuntimeHelper.downcallHandle(
-        "SetHandleCount",
-        constants$86.SetHandleCount$FUNC
-    );
-    static final FunctionDescriptor RequestDeviceWakeup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCompressedFileSizeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RequestDeviceWakeup$MH = RuntimeHelper.downcallHandle(
-        "RequestDeviceWakeup",
-        constants$86.RequestDeviceWakeup$FUNC
+    static final MethodHandle GetCompressedFileSizeA$MH = RuntimeHelper.downcallHandle(
+        "GetCompressedFileSizeA",
+        constants$86.GetCompressedFileSizeA$FUNC
+    );
+    static final FunctionDescriptor GetCompressedFileSizeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCompressedFileSizeW$MH = RuntimeHelper.downcallHandle(
+        "GetCompressedFileSizeW",
+        constants$86.GetCompressedFileSizeW$FUNC
+    );
+    static final FunctionDescriptor FindFirstStreamW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FindFirstStreamW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstStreamW",
+        constants$86.FindFirstStreamW$FUNC
+    );
+    static final FunctionDescriptor FindNextStreamW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindNextStreamW$MH = RuntimeHelper.downcallHandle(
+        "FindNextStreamW",
+        constants$86.FindNextStreamW$FUNC
+    );
+    static final FunctionDescriptor AreFileApisANSI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle AreFileApisANSI$MH = RuntimeHelper.downcallHandle(
+        "AreFileApisANSI",
+        constants$86.AreFileApisANSI$FUNC
     );
 }
 

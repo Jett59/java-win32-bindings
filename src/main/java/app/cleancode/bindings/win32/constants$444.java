@@ -9,65 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$444 {
 
-    static final FunctionDescriptor CertEnumCertificateContextProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetDpiFromDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertEnumCertificateContextProperties$MH = RuntimeHelper.downcallHandle(
-        "CertEnumCertificateContextProperties",
-        constants$444.CertEnumCertificateContextProperties$FUNC
+    static final MethodHandle GetDpiFromDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
+        "GetDpiFromDpiAwarenessContext",
+        constants$444.GetDpiFromDpiAwarenessContext$FUNC
     );
-    static final FunctionDescriptor CertCreateCTLEntryFromCertificateContextProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AreDpiAwarenessContextsEqual$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertCreateCTLEntryFromCertificateContextProperties$MH = RuntimeHelper.downcallHandle(
-        "CertCreateCTLEntryFromCertificateContextProperties",
-        constants$444.CertCreateCTLEntryFromCertificateContextProperties$FUNC
+    static final MethodHandle AreDpiAwarenessContextsEqual$MH = RuntimeHelper.downcallHandle(
+        "AreDpiAwarenessContextsEqual",
+        constants$444.AreDpiAwarenessContextsEqual$FUNC
     );
-    static final FunctionDescriptor CertSetCertificateContextPropertiesFromCTLEntry$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertSetCertificateContextPropertiesFromCTLEntry$MH = RuntimeHelper.downcallHandle(
-        "CertSetCertificateContextPropertiesFromCTLEntry",
-        constants$444.CertSetCertificateContextPropertiesFromCTLEntry$FUNC
-    );
-    static final FunctionDescriptor CertGetCRLFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor IsValidDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertGetCRLFromStore$MH = RuntimeHelper.downcallHandle(
-        "CertGetCRLFromStore",
-        constants$444.CertGetCRLFromStore$FUNC
+    static final MethodHandle IsValidDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
+        "IsValidDpiAwarenessContext",
+        constants$444.IsValidDpiAwarenessContext$FUNC
     );
-    static final FunctionDescriptor CertEnumCRLsInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDpiForWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertEnumCRLsInStore$MH = RuntimeHelper.downcallHandle(
-        "CertEnumCRLsInStore",
-        constants$444.CertEnumCRLsInStore$FUNC
+    static final MethodHandle GetDpiForWindow$MH = RuntimeHelper.downcallHandle(
+        "GetDpiForWindow",
+        constants$444.GetDpiForWindow$FUNC
     );
-    static final FunctionDescriptor CertFindCRLInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDpiForSystem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetDpiForSystem$MH = RuntimeHelper.downcallHandle(
+        "GetDpiForSystem",
+        constants$444.GetDpiForSystem$FUNC
+    );
+    static final FunctionDescriptor GetSystemDpiForProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertFindCRLInStore$MH = RuntimeHelper.downcallHandle(
-        "CertFindCRLInStore",
-        constants$444.CertFindCRLInStore$FUNC
+    static final MethodHandle GetSystemDpiForProcess$MH = RuntimeHelper.downcallHandle(
+        "GetSystemDpiForProcess",
+        constants$444.GetSystemDpiForProcess$FUNC
     );
 }
 

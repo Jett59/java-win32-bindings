@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$746 {
 
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_GROUPS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationGroups");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_TIME_BEFORE_RECYCLE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationTimeBeforeRecycle");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_MAX_OBJECTS_BEFORE_RECYCLE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationMaxobjsBeforeRecycle");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_IDLE_TIMEOUT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationIdleTimeout");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_EXECUTION_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationExecutionPolicy");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_OVERRIDE_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationOverrideCompat");
+    static final MemorySegment LOCALE_NAME_SYSTEM_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("!");
+    static final MemoryAddress HKEY_CLASSES_ROOT$ADDR = MemoryAddress.ofLong(-2147483648L);
+    static final MemoryAddress HKEY_CURRENT_USER$ADDR = MemoryAddress.ofLong(-2147483647L);
+    static final MemoryAddress HKEY_LOCAL_MACHINE$ADDR = MemoryAddress.ofLong(-2147483646L);
+    static final MemoryAddress HKEY_USERS$ADDR = MemoryAddress.ofLong(-2147483645L);
+    static final MemoryAddress HKEY_PERFORMANCE_DATA$ADDR = MemoryAddress.ofLong(-2147483644L);
 }
 
 

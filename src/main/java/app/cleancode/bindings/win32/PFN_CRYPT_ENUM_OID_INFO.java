@@ -11,13 +11,13 @@ public interface PFN_CRYPT_ENUM_OID_INFO {
 
     int apply(java.lang.foreign.MemoryAddress pInfo, java.lang.foreign.MemoryAddress pvArg);
     static MemorySegment allocate(PFN_CRYPT_ENUM_OID_INFO fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_ENUM_OID_INFO.class, fi, constants$425.PFN_CRYPT_ENUM_OID_INFO$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_ENUM_OID_INFO.class, fi, constants$577.PFN_CRYPT_ENUM_OID_INFO$FUNC, session);
     }
     static PFN_CRYPT_ENUM_OID_INFO ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pInfo, java.lang.foreign.MemoryAddress _pvArg) -> {
             try {
-                return (int)constants$425.PFN_CRYPT_ENUM_OID_INFO$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pInfo, (java.lang.foreign.Addressable)_pvArg);
+                return (int)constants$578.PFN_CRYPT_ENUM_OID_INFO$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pInfo, (java.lang.foreign.Addressable)_pvArg);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

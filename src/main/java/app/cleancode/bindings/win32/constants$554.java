@@ -9,12 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$554 {
 
-    static final MemorySegment SE_CREATE_GLOBAL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateGlobalPrivilege");
-    static final MemorySegment SE_TRUSTED_CREDMAN_ACCESS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTrustedCredManAccessPrivilege");
-    static final MemorySegment SE_RELABEL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRelabelPrivilege");
-    static final MemorySegment SE_INC_WORKING_SET_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseWorkingSetPrivilege");
-    static final MemorySegment SE_TIME_ZONE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTimeZonePrivilege");
-    static final MemorySegment SE_CREATE_SYMBOLIC_LINK_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateSymbolicLinkPrivilege");
+    static final FunctionDescriptor SHGetUnreadMailCountA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHGetUnreadMailCountA$MH = RuntimeHelper.downcallHandle(
+        "SHGetUnreadMailCountA",
+        constants$554.SHGetUnreadMailCountA$FUNC
+    );
+    static final FunctionDescriptor SHGetUnreadMailCountW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHGetUnreadMailCountW$MH = RuntimeHelper.downcallHandle(
+        "SHGetUnreadMailCountW",
+        constants$554.SHGetUnreadMailCountW$FUNC
+    );
+    static final FunctionDescriptor SHSetUnreadMailCountA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHSetUnreadMailCountA$MH = RuntimeHelper.downcallHandle(
+        "SHSetUnreadMailCountA",
+        constants$554.SHSetUnreadMailCountA$FUNC
+    );
+    static final FunctionDescriptor SHSetUnreadMailCountW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHSetUnreadMailCountW$MH = RuntimeHelper.downcallHandle(
+        "SHSetUnreadMailCountW",
+        constants$554.SHSetUnreadMailCountW$FUNC
+    );
+    static final FunctionDescriptor SHTestTokenMembership$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHTestTokenMembership$MH = RuntimeHelper.downcallHandle(
+        "SHTestTokenMembership",
+        constants$554.SHTestTokenMembership$FUNC
+    );
+    static final FunctionDescriptor SHGetImageList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHGetImageList$MH = RuntimeHelper.downcallHandle(
+        "SHGetImageList",
+        constants$554.SHGetImageList$FUNC
+    );
 }
 
 

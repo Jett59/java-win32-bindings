@@ -9,71 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$221 {
 
-    static final FunctionDescriptor wglUseFontBitmapsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CheckNameLegalDOS8Dot3A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CheckNameLegalDOS8Dot3A$MH = RuntimeHelper.downcallHandle(
+        "CheckNameLegalDOS8Dot3A",
+        constants$221.CheckNameLegalDOS8Dot3A$FUNC
+    );
+    static final FunctionDescriptor CheckNameLegalDOS8Dot3W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CheckNameLegalDOS8Dot3W$MH = RuntimeHelper.downcallHandle(
+        "CheckNameLegalDOS8Dot3W",
+        constants$221.CheckNameLegalDOS8Dot3W$FUNC
+    );
+    static final FunctionDescriptor FindFirstFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindFirstFileTransactedA$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFileTransactedA",
+        constants$221.FindFirstFileTransactedA$FUNC
+    );
+    static final FunctionDescriptor FindFirstFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindFirstFileTransactedW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFileTransactedW",
+        constants$221.FindFirstFileTransactedW$FUNC
+    );
+    static final FunctionDescriptor CopyFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle wglUseFontBitmapsA$MH = RuntimeHelper.downcallHandle(
-        "wglUseFontBitmapsA",
-        constants$221.wglUseFontBitmapsA$FUNC
+    static final MethodHandle CopyFileA$MH = RuntimeHelper.downcallHandle(
+        "CopyFileA",
+        constants$221.CopyFileA$FUNC
     );
-    static final FunctionDescriptor wglUseFontBitmapsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CopyFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle wglUseFontBitmapsW$MH = RuntimeHelper.downcallHandle(
-        "wglUseFontBitmapsW",
-        constants$221.wglUseFontBitmapsW$FUNC
-    );
-    static final FunctionDescriptor SwapBuffers$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SwapBuffers$MH = RuntimeHelper.downcallHandle(
-        "SwapBuffers",
-        constants$221.SwapBuffers$FUNC
-    );
-    static final FunctionDescriptor wglUseFontOutlinesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_FLOAT$LAYOUT,
-        Constants$root.C_FLOAT$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle wglUseFontOutlinesA$MH = RuntimeHelper.downcallHandle(
-        "wglUseFontOutlinesA",
-        constants$221.wglUseFontOutlinesA$FUNC
-    );
-    static final FunctionDescriptor wglUseFontOutlinesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_FLOAT$LAYOUT,
-        Constants$root.C_FLOAT$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle wglUseFontOutlinesW$MH = RuntimeHelper.downcallHandle(
-        "wglUseFontOutlinesW",
-        constants$221.wglUseFontOutlinesW$FUNC
-    );
-    static final FunctionDescriptor wglDescribeLayerPlane$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle wglDescribeLayerPlane$MH = RuntimeHelper.downcallHandle(
-        "wglDescribeLayerPlane",
-        constants$221.wglDescribeLayerPlane$FUNC
+    static final MethodHandle CopyFileW$MH = RuntimeHelper.downcallHandle(
+        "CopyFileW",
+        constants$221.CopyFileW$FUNC
     );
 }
 

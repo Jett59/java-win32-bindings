@@ -9,60 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$348 {
 
-    static final FunctionDescriptor GetGestureInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetGestureInfo$MH = RuntimeHelper.downcallHandle(
-        "GetGestureInfo",
-        constants$348.GetGestureInfo$FUNC
-    );
-    static final FunctionDescriptor GetGestureExtraArgs$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor BroadcastSystemMessageExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetGestureExtraArgs$MH = RuntimeHelper.downcallHandle(
-        "GetGestureExtraArgs",
-        constants$348.GetGestureExtraArgs$FUNC
+    static final MethodHandle BroadcastSystemMessageExA$MH = RuntimeHelper.downcallHandle(
+        "BroadcastSystemMessageExA",
+        constants$348.BroadcastSystemMessageExA$FUNC
     );
-    static final FunctionDescriptor CloseGestureInfoHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CloseGestureInfoHandle$MH = RuntimeHelper.downcallHandle(
-        "CloseGestureInfoHandle",
-        constants$348.CloseGestureInfoHandle$FUNC
-    );
-    static final FunctionDescriptor SetGestureConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor BroadcastSystemMessageExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle BroadcastSystemMessageExW$MH = RuntimeHelper.downcallHandle(
+        "BroadcastSystemMessageExW",
+        constants$348.BroadcastSystemMessageExW$FUNC
+    );
+    static final FunctionDescriptor BroadcastSystemMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle BroadcastSystemMessageA$MH = RuntimeHelper.downcallHandle(
+        "BroadcastSystemMessageA",
+        constants$348.BroadcastSystemMessageA$FUNC
+    );
+    static final FunctionDescriptor BroadcastSystemMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle BroadcastSystemMessageW$MH = RuntimeHelper.downcallHandle(
+        "BroadcastSystemMessageW",
+        constants$348.BroadcastSystemMessageW$FUNC
+    );
+    static final FunctionDescriptor RegisterDeviceNotificationA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetGestureConfig$MH = RuntimeHelper.downcallHandle(
-        "SetGestureConfig",
-        constants$348.SetGestureConfig$FUNC
+    static final MethodHandle RegisterDeviceNotificationA$MH = RuntimeHelper.downcallHandle(
+        "RegisterDeviceNotificationA",
+        constants$348.RegisterDeviceNotificationA$FUNC
     );
-    static final FunctionDescriptor GetGestureConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RegisterDeviceNotificationW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetGestureConfig$MH = RuntimeHelper.downcallHandle(
-        "GetGestureConfig",
-        constants$348.GetGestureConfig$FUNC
-    );
-    static final FunctionDescriptor ShutdownBlockReasonCreate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ShutdownBlockReasonCreate$MH = RuntimeHelper.downcallHandle(
-        "ShutdownBlockReasonCreate",
-        constants$348.ShutdownBlockReasonCreate$FUNC
+    static final MethodHandle RegisterDeviceNotificationW$MH = RuntimeHelper.downcallHandle(
+        "RegisterDeviceNotificationW",
+        constants$348.RegisterDeviceNotificationW$FUNC
     );
 }
 

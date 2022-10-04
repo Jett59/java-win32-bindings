@@ -9,12 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$594 {
 
-    static final MemorySegment szOID_ECC_CURVE_P256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.7");
-    static final MemorySegment szOID_ECC_CURVE_P384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.34");
-    static final MemorySegment szOID_ECC_CURVE_P521$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.35");
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP160R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.1");
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP160T1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.2");
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP192R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.3");
+    static final FunctionDescriptor CertDuplicateStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertDuplicateStore$MH = RuntimeHelper.downcallHandle(
+        "CertDuplicateStore",
+        constants$594.CertDuplicateStore$FUNC
+    );
+    static final FunctionDescriptor CertSaveStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertSaveStore$MH = RuntimeHelper.downcallHandle(
+        "CertSaveStore",
+        constants$594.CertSaveStore$FUNC
+    );
+    static final FunctionDescriptor CertCloseStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertCloseStore$MH = RuntimeHelper.downcallHandle(
+        "CertCloseStore",
+        constants$594.CertCloseStore$FUNC
+    );
+    static final FunctionDescriptor CertGetSubjectCertificateFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetSubjectCertificateFromStore$MH = RuntimeHelper.downcallHandle(
+        "CertGetSubjectCertificateFromStore",
+        constants$594.CertGetSubjectCertificateFromStore$FUNC
+    );
+    static final FunctionDescriptor CertEnumCertificatesInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertEnumCertificatesInStore$MH = RuntimeHelper.downcallHandle(
+        "CertEnumCertificatesInStore",
+        constants$594.CertEnumCertificatesInStore$FUNC
+    );
+    static final FunctionDescriptor CertFindCertificateInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindCertificateInStore$MH = RuntimeHelper.downcallHandle(
+        "CertFindCertificateInStore",
+        constants$594.CertFindCertificateInStore$FUNC
+    );
 }
 
 

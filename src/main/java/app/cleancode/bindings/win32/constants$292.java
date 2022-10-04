@@ -9,64 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$292 {
 
-    static final FunctionDescriptor InsertMenuItemW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PaintRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InsertMenuItemW$MH = RuntimeHelper.downcallHandle(
-        "InsertMenuItemW",
-        constants$292.InsertMenuItemW$FUNC
+    static final MethodHandle PaintRgn$MH = RuntimeHelper.downcallHandle(
+        "PaintRgn",
+        constants$292.PaintRgn$FUNC
     );
-    static final FunctionDescriptor GetMenuItemInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PolyPolygon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetMenuItemInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetMenuItemInfoA",
-        constants$292.GetMenuItemInfoA$FUNC
-    );
-    static final FunctionDescriptor GetMenuItemInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetMenuItemInfoW$MH = RuntimeHelper.downcallHandle(
-        "GetMenuItemInfoW",
-        constants$292.GetMenuItemInfoW$FUNC
-    );
-    static final FunctionDescriptor SetMenuItemInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetMenuItemInfoA$MH = RuntimeHelper.downcallHandle(
-        "SetMenuItemInfoA",
-        constants$292.SetMenuItemInfoA$FUNC
+    static final MethodHandle PolyPolygon$MH = RuntimeHelper.downcallHandle(
+        "PolyPolygon",
+        constants$292.PolyPolygon$FUNC
     );
-    static final FunctionDescriptor SetMenuItemInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetMenuItemInfoW$MH = RuntimeHelper.downcallHandle(
-        "SetMenuItemInfoW",
-        constants$292.SetMenuItemInfoW$FUNC
-    );
-    static final FunctionDescriptor GetMenuDefaultItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PtInRegion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetMenuDefaultItem$MH = RuntimeHelper.downcallHandle(
-        "GetMenuDefaultItem",
-        constants$292.GetMenuDefaultItem$FUNC
+    static final MethodHandle PtInRegion$MH = RuntimeHelper.downcallHandle(
+        "PtInRegion",
+        constants$292.PtInRegion$FUNC
+    );
+    static final FunctionDescriptor PtVisible$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PtVisible$MH = RuntimeHelper.downcallHandle(
+        "PtVisible",
+        constants$292.PtVisible$FUNC
+    );
+    static final FunctionDescriptor RectInRegion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RectInRegion$MH = RuntimeHelper.downcallHandle(
+        "RectInRegion",
+        constants$292.RectInRegion$FUNC
+    );
+    static final FunctionDescriptor RectVisible$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RectVisible$MH = RuntimeHelper.downcallHandle(
+        "RectVisible",
+        constants$292.RectVisible$FUNC
     );
 }
 

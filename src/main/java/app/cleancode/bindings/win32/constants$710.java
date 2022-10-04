@@ -9,12 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$710 {
 
-    static final MemorySegment CRYPT_OID_ENUM_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllEnumSystemStore");
-    static final MemorySegment CRYPT_OID_REGISTER_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllRegisterPhysicalStore");
-    static final MemorySegment CRYPT_OID_UNREGISTER_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllUnregisterPhysicalStore");
-    static final MemorySegment CRYPT_OID_ENUM_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllEnumPhysicalStore");
-    static final MemorySegment CRYPT_OID_SYSTEM_STORE_LOCATION_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CRYPT_OID_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExtractEncodedSignatureParameters");
+    static final FunctionDescriptor LPHANDLER_FUNCTION_EX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LPHANDLER_FUNCTION_EX$MH = RuntimeHelper.downcallHandle(
+        constants$710.LPHANDLER_FUNCTION_EX$FUNC
+    );
+    static final FunctionDescriptor PFN_SC_NOTIFY_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_SC_NOTIFY_CALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$710.PFN_SC_NOTIFY_CALLBACK$FUNC
+    );
+    static final FunctionDescriptor ChangeServiceConfigA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ChangeServiceConfigA$MH = RuntimeHelper.downcallHandle(
+        "ChangeServiceConfigA",
+        constants$710.ChangeServiceConfigA$FUNC
+    );
+    static final FunctionDescriptor ChangeServiceConfigW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ChangeServiceConfigW$MH = RuntimeHelper.downcallHandle(
+        "ChangeServiceConfigW",
+        constants$710.ChangeServiceConfigW$FUNC
+    );
 }
 
 

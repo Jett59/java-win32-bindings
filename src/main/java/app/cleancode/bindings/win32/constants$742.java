@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$742 {
 
-    static final MemorySegment BIDI_ACTION_GET_WITH_ARGUMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment SPLREG_DEFAULT_SPOOL_DIRECTORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DefaultSpoolDirectory");
-    static final MemorySegment SPLREG_PORT_THREAD_PRIORITY_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PortThreadPriorityDefault");
-    static final MemorySegment SPLREG_PORT_THREAD_PRIORITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PortThreadPriority");
-    static final MemorySegment SPLREG_SCHEDULER_THREAD_PRIORITY_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchedulerThreadPriorityDefault");
-    static final MemorySegment SPLREG_SCHEDULER_THREAD_PRIORITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchedulerThreadPriority");
+    static final MemoryAddress IDC_SIZEWE$ADDR = MemoryAddress.ofLong(32644L);
+    static final MemoryAddress IDC_SIZENS$ADDR = MemoryAddress.ofLong(32645L);
+    static final MemoryAddress IDC_SIZEALL$ADDR = MemoryAddress.ofLong(32646L);
+    static final MemoryAddress IDC_NO$ADDR = MemoryAddress.ofLong(32648L);
+    static final MemoryAddress IDC_HAND$ADDR = MemoryAddress.ofLong(32649L);
+    static final MemoryAddress IDC_APPSTARTING$ADDR = MemoryAddress.ofLong(32650L);
 }
 
 

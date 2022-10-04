@@ -9,70 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$419 {
 
-    static final FunctionDescriptor CryptEnumProviderTypesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PtInRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("x"),
+            Constants$root.C_LONG$LAYOUT.withName("y")
+        ).withName("tagPOINT")
     );
-    static final MethodHandle CryptEnumProviderTypesW$MH = RuntimeHelper.downcallHandle(
-        "CryptEnumProviderTypesW",
-        constants$419.CryptEnumProviderTypesW$FUNC
+    static final MethodHandle PtInRect$MH = RuntimeHelper.downcallHandle(
+        "PtInRect",
+        constants$419.PtInRect$FUNC
     );
-    static final FunctionDescriptor CryptEnumProvidersA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptEnumProvidersA$MH = RuntimeHelper.downcallHandle(
-        "CryptEnumProvidersA",
-        constants$419.CryptEnumProvidersA$FUNC
-    );
-    static final FunctionDescriptor CryptEnumProvidersW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptEnumProvidersW$MH = RuntimeHelper.downcallHandle(
-        "CryptEnumProvidersW",
-        constants$419.CryptEnumProvidersW$FUNC
-    );
-    static final FunctionDescriptor CryptContextAddRef$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowWord$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptContextAddRef$MH = RuntimeHelper.downcallHandle(
-        "CryptContextAddRef",
-        constants$419.CryptContextAddRef$FUNC
+    static final MethodHandle GetWindowWord$MH = RuntimeHelper.downcallHandle(
+        "GetWindowWord",
+        constants$419.GetWindowWord$FUNC
     );
-    static final FunctionDescriptor CryptDuplicateKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetWindowWord$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle CryptDuplicateKey$MH = RuntimeHelper.downcallHandle(
-        "CryptDuplicateKey",
-        constants$419.CryptDuplicateKey$FUNC
+    static final MethodHandle SetWindowWord$MH = RuntimeHelper.downcallHandle(
+        "SetWindowWord",
+        constants$419.SetWindowWord$FUNC
     );
-    static final FunctionDescriptor CryptDuplicateHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowLongA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetWindowLongA$MH = RuntimeHelper.downcallHandle(
+        "GetWindowLongA",
+        constants$419.GetWindowLongA$FUNC
+    );
+    static final FunctionDescriptor GetWindowLongW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetWindowLongW$MH = RuntimeHelper.downcallHandle(
+        "GetWindowLongW",
+        constants$419.GetWindowLongW$FUNC
+    );
+    static final FunctionDescriptor SetWindowLongA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptDuplicateHash$MH = RuntimeHelper.downcallHandle(
-        "CryptDuplicateHash",
-        constants$419.CryptDuplicateHash$FUNC
+    static final MethodHandle SetWindowLongA$MH = RuntimeHelper.downcallHandle(
+        "SetWindowLongA",
+        constants$419.SetWindowLongA$FUNC
     );
 }
 

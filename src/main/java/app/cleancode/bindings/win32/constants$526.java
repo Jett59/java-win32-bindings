@@ -9,58 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$526 {
 
-    static final FunctionDescriptor DeletePortW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveOutReset$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle waveOutReset$MH = RuntimeHelper.downcallHandle(
+        "waveOutReset",
+        constants$526.waveOutReset$FUNC
+    );
+    static final FunctionDescriptor waveOutBreakLoop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle waveOutBreakLoop$MH = RuntimeHelper.downcallHandle(
+        "waveOutBreakLoop",
+        constants$526.waveOutBreakLoop$FUNC
+    );
+    static final FunctionDescriptor waveOutGetPosition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveOutGetPosition$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetPosition",
+        constants$526.waveOutGetPosition$FUNC
+    );
+    static final FunctionDescriptor waveOutGetPitch$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeletePortW$MH = RuntimeHelper.downcallHandle(
-        "DeletePortW",
-        constants$526.DeletePortW$FUNC
+    static final MethodHandle waveOutGetPitch$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetPitch",
+        constants$526.waveOutGetPitch$FUNC
     );
-    static final FunctionDescriptor XcvDataW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveOutSetPitch$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle XcvDataW$MH = RuntimeHelper.downcallHandle(
-        "XcvDataW",
-        constants$526.XcvDataW$FUNC
+    static final MethodHandle waveOutSetPitch$MH = RuntimeHelper.downcallHandle(
+        "waveOutSetPitch",
+        constants$526.waveOutSetPitch$FUNC
     );
-    static final FunctionDescriptor GetDefaultPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveOutGetPlaybackRate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDefaultPrinterA$MH = RuntimeHelper.downcallHandle(
-        "GetDefaultPrinterA",
-        constants$526.GetDefaultPrinterA$FUNC
-    );
-    static final FunctionDescriptor GetDefaultPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDefaultPrinterW$MH = RuntimeHelper.downcallHandle(
-        "GetDefaultPrinterW",
-        constants$526.GetDefaultPrinterW$FUNC
-    );
-    static final FunctionDescriptor SetDefaultPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetDefaultPrinterA$MH = RuntimeHelper.downcallHandle(
-        "SetDefaultPrinterA",
-        constants$526.SetDefaultPrinterA$FUNC
-    );
-    static final FunctionDescriptor SetDefaultPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetDefaultPrinterW$MH = RuntimeHelper.downcallHandle(
-        "SetDefaultPrinterW",
-        constants$526.SetDefaultPrinterW$FUNC
+    static final MethodHandle waveOutGetPlaybackRate$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetPlaybackRate",
+        constants$526.waveOutGetPlaybackRate$FUNC
     );
 }
 

@@ -9,69 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$118 {
 
-    static final FunctionDescriptor CreateFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OpenProcessToken$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateFileTransactedW$MH = RuntimeHelper.downcallHandle(
-        "CreateFileTransactedW",
-        constants$118.CreateFileTransactedW$FUNC
+    static final MethodHandle OpenProcessToken$MH = RuntimeHelper.downcallHandle(
+        "OpenProcessToken",
+        constants$118.OpenProcessToken$FUNC
     );
-    static final FunctionDescriptor ReOpenFile$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OpenThreadToken$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenThreadToken$MH = RuntimeHelper.downcallHandle(
+        "OpenThreadToken",
+        constants$118.OpenThreadToken$FUNC
+    );
+    static final FunctionDescriptor SetPriorityClass$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReOpenFile$MH = RuntimeHelper.downcallHandle(
-        "ReOpenFile",
-        constants$118.ReOpenFile$FUNC
+    static final MethodHandle SetPriorityClass$MH = RuntimeHelper.downcallHandle(
+        "SetPriorityClass",
+        constants$118.SetPriorityClass$FUNC
     );
-    static final FunctionDescriptor SetFileAttributesTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetPriorityClass$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPriorityClass$MH = RuntimeHelper.downcallHandle(
+        "GetPriorityClass",
+        constants$118.GetPriorityClass$FUNC
+    );
+    static final FunctionDescriptor SetThreadStackGuarantee$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetThreadStackGuarantee$MH = RuntimeHelper.downcallHandle(
+        "SetThreadStackGuarantee",
+        constants$118.SetThreadStackGuarantee$FUNC
+    );
+    static final FunctionDescriptor ProcessIdToSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetFileAttributesTransactedA$MH = RuntimeHelper.downcallHandle(
-        "SetFileAttributesTransactedA",
-        constants$118.SetFileAttributesTransactedA$FUNC
-    );
-    static final FunctionDescriptor SetFileAttributesTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetFileAttributesTransactedW$MH = RuntimeHelper.downcallHandle(
-        "SetFileAttributesTransactedW",
-        constants$118.SetFileAttributesTransactedW$FUNC
-    );
-    static final FunctionDescriptor GetFileAttributesTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileAttributesTransactedA$MH = RuntimeHelper.downcallHandle(
-        "GetFileAttributesTransactedA",
-        constants$118.GetFileAttributesTransactedA$FUNC
-    );
-    static final FunctionDescriptor GetFileAttributesTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileAttributesTransactedW$MH = RuntimeHelper.downcallHandle(
-        "GetFileAttributesTransactedW",
-        constants$118.GetFileAttributesTransactedW$FUNC
+    static final MethodHandle ProcessIdToSessionId$MH = RuntimeHelper.downcallHandle(
+        "ProcessIdToSessionId",
+        constants$118.ProcessIdToSessionId$FUNC
     );
 }
 

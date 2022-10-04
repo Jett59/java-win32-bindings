@@ -11,13 +11,13 @@ public interface PFN_CERT_STORE_PROV_DELETE_CRL {
 
     int apply(java.lang.foreign.MemoryAddress hStoreProv, java.lang.foreign.MemoryAddress pCrlContext, int dwFlags);
     static MemorySegment allocate(PFN_CERT_STORE_PROV_DELETE_CRL fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_DELETE_CRL.class, fi, constants$436.PFN_CERT_STORE_PROV_DELETE_CRL$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_DELETE_CRL.class, fi, constants$588.PFN_CERT_STORE_PROV_DELETE_CRL$FUNC, session);
     }
     static PFN_CERT_STORE_PROV_DELETE_CRL ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hStoreProv, java.lang.foreign.MemoryAddress _pCrlContext, int _dwFlags) -> {
             try {
-                return (int)constants$436.PFN_CERT_STORE_PROV_DELETE_CRL$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pCrlContext, _dwFlags);
+                return (int)constants$588.PFN_CERT_STORE_PROV_DELETE_CRL$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pCrlContext, _dwFlags);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

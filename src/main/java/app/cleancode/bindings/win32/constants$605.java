@@ -9,12 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$605 {
 
-    static final MemorySegment szOID_OIWSEC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2");
-    static final MemorySegment szOID_OIWSEC_md4RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.2");
-    static final MemorySegment szOID_OIWSEC_md5RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.3");
-    static final MemorySegment szOID_OIWSEC_md4RSA2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.4");
-    static final MemorySegment szOID_OIWSEC_desECB$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.6");
-    static final MemorySegment szOID_OIWSEC_desCBC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.7");
+    static final FunctionDescriptor PFN_CERT_ENUM_SYSTEM_STORE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_ENUM_SYSTEM_STORE$MH = RuntimeHelper.downcallHandle(
+        constants$605.PFN_CERT_ENUM_SYSTEM_STORE$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_ENUM_PHYSICAL_STORE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_ENUM_PHYSICAL_STORE$MH = RuntimeHelper.downcallHandle(
+        constants$605.PFN_CERT_ENUM_PHYSICAL_STORE$FUNC
+    );
+    static final FunctionDescriptor CertEnumSystemStoreLocation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertEnumSystemStoreLocation$MH = RuntimeHelper.downcallHandle(
+        "CertEnumSystemStoreLocation",
+        constants$605.CertEnumSystemStoreLocation$FUNC
+    );
+    static final FunctionDescriptor CertEnumSystemStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertEnumSystemStore$MH = RuntimeHelper.downcallHandle(
+        "CertEnumSystemStore",
+        constants$605.CertEnumSystemStore$FUNC
+    );
 }
 
 

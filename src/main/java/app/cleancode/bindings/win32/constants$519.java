@@ -9,70 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$519 {
 
-    static final FunctionDescriptor EnumPrinterKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mmioStringToFOURCCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumPrinterKeyW$MH = RuntimeHelper.downcallHandle(
-        "EnumPrinterKeyW",
-        constants$519.EnumPrinterKeyW$FUNC
+    static final MethodHandle mmioStringToFOURCCW$MH = RuntimeHelper.downcallHandle(
+        "mmioStringToFOURCCW",
+        constants$519.mmioStringToFOURCCW$FUNC
     );
-    static final FunctionDescriptor SetPrinterDataA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor mmioInstallIOProcA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetPrinterDataA$MH = RuntimeHelper.downcallHandle(
-        "SetPrinterDataA",
-        constants$519.SetPrinterDataA$FUNC
+    static final MethodHandle mmioInstallIOProcA$MH = RuntimeHelper.downcallHandle(
+        "mmioInstallIOProcA",
+        constants$519.mmioInstallIOProcA$FUNC
     );
-    static final FunctionDescriptor SetPrinterDataW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor mmioInstallIOProcW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetPrinterDataW$MH = RuntimeHelper.downcallHandle(
-        "SetPrinterDataW",
-        constants$519.SetPrinterDataW$FUNC
+    static final MethodHandle mmioInstallIOProcW$MH = RuntimeHelper.downcallHandle(
+        "mmioInstallIOProcW",
+        constants$519.mmioInstallIOProcW$FUNC
     );
-    static final FunctionDescriptor SetPrinterDataExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mmioOpenA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetPrinterDataExA$MH = RuntimeHelper.downcallHandle(
-        "SetPrinterDataExA",
-        constants$519.SetPrinterDataExA$FUNC
+    static final MethodHandle mmioOpenA$MH = RuntimeHelper.downcallHandle(
+        "mmioOpenA",
+        constants$519.mmioOpenA$FUNC
     );
-    static final FunctionDescriptor SetPrinterDataExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mmioOpenW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetPrinterDataExW$MH = RuntimeHelper.downcallHandle(
-        "SetPrinterDataExW",
-        constants$519.SetPrinterDataExW$FUNC
+    static final MethodHandle mmioOpenW$MH = RuntimeHelper.downcallHandle(
+        "mmioOpenW",
+        constants$519.mmioOpenW$FUNC
     );
-    static final FunctionDescriptor DeletePrinterDataA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mmioRenameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeletePrinterDataA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDataA",
-        constants$519.DeletePrinterDataA$FUNC
+    static final MethodHandle mmioRenameA$MH = RuntimeHelper.downcallHandle(
+        "mmioRenameA",
+        constants$519.mmioRenameA$FUNC
     );
 }
 

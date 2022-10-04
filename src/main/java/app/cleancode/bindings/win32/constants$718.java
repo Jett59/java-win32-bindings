@@ -9,12 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$718 {
 
-    static final MemoryAddress TIME_VALID_OID_GET_FRESHEST_CRL_FROM_CRL$ADDR = MemoryAddress.ofLong(5L);
-    static final MemorySegment TIME_VALID_OID_FLUSH_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("TimeValidDllFlushObject");
-    static final MemoryAddress TIME_VALID_OID_FLUSH_CTL$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress TIME_VALID_OID_FLUSH_CRL$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress TIME_VALID_OID_FLUSH_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress TIME_VALID_OID_FLUSH_FRESHEST_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(4L);
+    static final FunctionDescriptor UnlockServiceDatabase$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnlockServiceDatabase$MH = RuntimeHelper.downcallHandle(
+        "UnlockServiceDatabase",
+        constants$718.UnlockServiceDatabase$FUNC
+    );
+    static final FunctionDescriptor NotifyServiceStatusChangeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle NotifyServiceStatusChangeA$MH = RuntimeHelper.downcallHandle(
+        "NotifyServiceStatusChangeA",
+        constants$718.NotifyServiceStatusChangeA$FUNC
+    );
+    static final FunctionDescriptor NotifyServiceStatusChangeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle NotifyServiceStatusChangeW$MH = RuntimeHelper.downcallHandle(
+        "NotifyServiceStatusChangeW",
+        constants$718.NotifyServiceStatusChangeW$FUNC
+    );
+    static final FunctionDescriptor ControlServiceExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ControlServiceExA$MH = RuntimeHelper.downcallHandle(
+        "ControlServiceExA",
+        constants$718.ControlServiceExA$FUNC
+    );
+    static final FunctionDescriptor ControlServiceExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ControlServiceExW$MH = RuntimeHelper.downcallHandle(
+        "ControlServiceExW",
+        constants$718.ControlServiceExW$FUNC
+    );
+    static final FunctionDescriptor QueryServiceDynamicInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceDynamicInformation$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceDynamicInformation",
+        constants$718.QueryServiceDynamicInformation$FUNC
+    );
 }
 
 

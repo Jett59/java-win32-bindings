@@ -9,61 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$126 {
 
-    static final FunctionDescriptor GetNamedPipeServerProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadSelectedCpuSets$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetNamedPipeServerProcessId$MH = RuntimeHelper.downcallHandle(
-        "GetNamedPipeServerProcessId",
-        constants$126.GetNamedPipeServerProcessId$FUNC
-    );
-    static final FunctionDescriptor GetNamedPipeServerSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetNamedPipeServerSessionId$MH = RuntimeHelper.downcallHandle(
-        "GetNamedPipeServerSessionId",
-        constants$126.GetNamedPipeServerSessionId$FUNC
+    static final MethodHandle SetThreadSelectedCpuSets$MH = RuntimeHelper.downcallHandle(
+        "SetThreadSelectedCpuSets",
+        constants$126.SetThreadSelectedCpuSets$FUNC
     );
-    static final FunctionDescriptor SetVolumeLabelA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateProcessAsUserA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetVolumeLabelA$MH = RuntimeHelper.downcallHandle(
-        "SetVolumeLabelA",
-        constants$126.SetVolumeLabelA$FUNC
-    );
-    static final FunctionDescriptor SetVolumeLabelW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetVolumeLabelW$MH = RuntimeHelper.downcallHandle(
-        "SetVolumeLabelW",
-        constants$126.SetVolumeLabelW$FUNC
-    );
-    static final FunctionDescriptor SetFileBandwidthReservation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetFileBandwidthReservation$MH = RuntimeHelper.downcallHandle(
-        "SetFileBandwidthReservation",
-        constants$126.SetFileBandwidthReservation$FUNC
-    );
-    static final FunctionDescriptor GetFileBandwidthReservation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetFileBandwidthReservation$MH = RuntimeHelper.downcallHandle(
-        "GetFileBandwidthReservation",
-        constants$126.GetFileBandwidthReservation$FUNC
+    static final MethodHandle CreateProcessAsUserA$MH = RuntimeHelper.downcallHandle(
+        "CreateProcessAsUserA",
+        constants$126.CreateProcessAsUserA$FUNC
+    );
+    static final FunctionDescriptor GetProcessShutdownParameters$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessShutdownParameters$MH = RuntimeHelper.downcallHandle(
+        "GetProcessShutdownParameters",
+        constants$126.GetProcessShutdownParameters$FUNC
+    );
+    static final FunctionDescriptor SetThreadDescription$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetThreadDescription$MH = RuntimeHelper.downcallHandle(
+        "SetThreadDescription",
+        constants$126.SetThreadDescription$FUNC
+    );
+    static final FunctionDescriptor GetThreadDescription$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetThreadDescription$MH = RuntimeHelper.downcallHandle(
+        "GetThreadDescription",
+        constants$126.GetThreadDescription$FUNC
+    );
+    static final FunctionDescriptor GlobalMemoryStatusEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalMemoryStatusEx$MH = RuntimeHelper.downcallHandle(
+        "GlobalMemoryStatusEx",
+        constants$126.GlobalMemoryStatusEx$FUNC
     );
 }
 

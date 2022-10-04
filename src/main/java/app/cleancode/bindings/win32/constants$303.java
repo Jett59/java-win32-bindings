@@ -9,55 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$303 {
 
-    static final FunctionDescriptor EnumPropsExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateEnhMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumPropsExA$MH = RuntimeHelper.downcallHandle(
-        "EnumPropsExA",
-        constants$303.EnumPropsExA$FUNC
-    );
-    static final FunctionDescriptor EnumPropsExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumPropsExW$MH = RuntimeHelper.downcallHandle(
-        "EnumPropsExW",
-        constants$303.EnumPropsExW$FUNC
-    );
-    static final FunctionDescriptor EnumPropsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumPropsA$MH = RuntimeHelper.downcallHandle(
-        "EnumPropsA",
-        constants$303.EnumPropsA$FUNC
+    static final MethodHandle CreateEnhMetaFileA$MH = RuntimeHelper.downcallHandle(
+        "CreateEnhMetaFileA",
+        constants$303.CreateEnhMetaFileA$FUNC
     );
-    static final FunctionDescriptor EnumPropsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateEnhMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumPropsW$MH = RuntimeHelper.downcallHandle(
-        "EnumPropsW",
-        constants$303.EnumPropsW$FUNC
+    static final MethodHandle CreateEnhMetaFileW$MH = RuntimeHelper.downcallHandle(
+        "CreateEnhMetaFileW",
+        constants$303.CreateEnhMetaFileW$FUNC
     );
-    static final FunctionDescriptor SetWindowTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeleteEnhMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteEnhMetaFile$MH = RuntimeHelper.downcallHandle(
+        "DeleteEnhMetaFile",
+        constants$303.DeleteEnhMetaFile$FUNC
+    );
+    static final FunctionDescriptor EnumEnhMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowTextA$MH = RuntimeHelper.downcallHandle(
-        "SetWindowTextA",
-        constants$303.SetWindowTextA$FUNC
+    static final MethodHandle EnumEnhMetaFile$MH = RuntimeHelper.downcallHandle(
+        "EnumEnhMetaFile",
+        constants$303.EnumEnhMetaFile$FUNC
     );
-    static final FunctionDescriptor SetWindowTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetEnhMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowTextW$MH = RuntimeHelper.downcallHandle(
-        "SetWindowTextW",
-        constants$303.SetWindowTextW$FUNC
+    static final MethodHandle GetEnhMetaFileA$MH = RuntimeHelper.downcallHandle(
+        "GetEnhMetaFileA",
+        constants$303.GetEnhMetaFileA$FUNC
+    );
+    static final FunctionDescriptor GetEnhMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetEnhMetaFileW$MH = RuntimeHelper.downcallHandle(
+        "GetEnhMetaFileW",
+        constants$303.GetEnhMetaFileW$FUNC
     );
 }
 

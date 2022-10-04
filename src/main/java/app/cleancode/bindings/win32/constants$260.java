@@ -9,55 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$260 {
 
-    static final FunctionDescriptor GetNextDlgTabItem$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetXStateFeaturesMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetNextDlgTabItem$MH = RuntimeHelper.downcallHandle(
-        "GetNextDlgTabItem",
-        constants$260.GetNextDlgTabItem$FUNC
-    );
-    static final FunctionDescriptor GetDlgCtrlID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDlgCtrlID$MH = RuntimeHelper.downcallHandle(
-        "GetDlgCtrlID",
-        constants$260.GetDlgCtrlID$FUNC
+    static final MethodHandle GetXStateFeaturesMask$MH = RuntimeHelper.downcallHandle(
+        "GetXStateFeaturesMask",
+        constants$260.GetXStateFeaturesMask$FUNC
     );
-    static final FunctionDescriptor GetDialogBaseUnits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetDialogBaseUnits$MH = RuntimeHelper.downcallHandle(
-        "GetDialogBaseUnits",
-        constants$260.GetDialogBaseUnits$FUNC
+    static final FunctionDescriptor LocateXStateFeature$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor DefDlgProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final MethodHandle LocateXStateFeature$MH = RuntimeHelper.downcallHandle(
+        "LocateXStateFeature",
+        constants$260.LocateXStateFeature$FUNC
+    );
+    static final FunctionDescriptor SetXStateFeaturesMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetXStateFeaturesMask$MH = RuntimeHelper.downcallHandle(
+        "SetXStateFeaturesMask",
+        constants$260.SetXStateFeaturesMask$FUNC
+    );
+    static final FunctionDescriptor EnableThreadProfiling$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DefDlgProcA$MH = RuntimeHelper.downcallHandle(
-        "DefDlgProcA",
-        constants$260.DefDlgProcA$FUNC
+    static final MethodHandle EnableThreadProfiling$MH = RuntimeHelper.downcallHandle(
+        "EnableThreadProfiling",
+        constants$260.EnableThreadProfiling$FUNC
     );
-    static final FunctionDescriptor DefDlgProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor DisableThreadProfiling$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DisableThreadProfiling$MH = RuntimeHelper.downcallHandle(
+        "DisableThreadProfiling",
+        constants$260.DisableThreadProfiling$FUNC
+    );
+    static final FunctionDescriptor QueryThreadProfiling$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DefDlgProcW$MH = RuntimeHelper.downcallHandle(
-        "DefDlgProcW",
-        constants$260.DefDlgProcW$FUNC
-    );
-    static final FunctionDescriptor SetDialogControlDpiChangeBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetDialogControlDpiChangeBehavior$MH = RuntimeHelper.downcallHandle(
-        "SetDialogControlDpiChangeBehavior",
-        constants$260.SetDialogControlDpiChangeBehavior$FUNC
+    static final MethodHandle QueryThreadProfiling$MH = RuntimeHelper.downcallHandle(
+        "QueryThreadProfiling",
+        constants$260.QueryThreadProfiling$FUNC
     );
 }
 

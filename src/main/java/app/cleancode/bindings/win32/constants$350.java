@@ -9,41 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$350 {
 
-    static final FunctionDescriptor GetDisplayAutoRotationPreferencesByProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PostMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetDisplayAutoRotationPreferencesByProcessId$MH = RuntimeHelper.downcallHandle(
-        "GetDisplayAutoRotationPreferencesByProcessId",
-        constants$350.GetDisplayAutoRotationPreferencesByProcessId$FUNC
+    static final MethodHandle PostMessageW$MH = RuntimeHelper.downcallHandle(
+        "PostMessageW",
+        constants$350.PostMessageW$FUNC
     );
-    static final FunctionDescriptor SetDisplayAutoRotationPreferences$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PostThreadMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle PostThreadMessageA$MH = RuntimeHelper.downcallHandle(
+        "PostThreadMessageA",
+        constants$350.PostThreadMessageA$FUNC
+    );
+    static final FunctionDescriptor PostThreadMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle PostThreadMessageW$MH = RuntimeHelper.downcallHandle(
+        "PostThreadMessageW",
+        constants$350.PostThreadMessageW$FUNC
+    );
+    static final FunctionDescriptor AttachThreadInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetDisplayAutoRotationPreferences$MH = RuntimeHelper.downcallHandle(
-        "SetDisplayAutoRotationPreferences",
-        constants$350.SetDisplayAutoRotationPreferences$FUNC
+    static final MethodHandle AttachThreadInput$MH = RuntimeHelper.downcallHandle(
+        "AttachThreadInput",
+        constants$350.AttachThreadInput$FUNC
     );
-    static final FunctionDescriptor IsImmersiveProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor ReplyMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle IsImmersiveProcess$MH = RuntimeHelper.downcallHandle(
-        "IsImmersiveProcess",
-        constants$350.IsImmersiveProcess$FUNC
+    static final MethodHandle ReplyMessage$MH = RuntimeHelper.downcallHandle(
+        "ReplyMessage",
+        constants$350.ReplyMessage$FUNC
     );
-    static final FunctionDescriptor SetProcessRestrictionExemption$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetProcessRestrictionExemption$MH = RuntimeHelper.downcallHandle(
-        "SetProcessRestrictionExemption",
-        constants$350.SetProcessRestrictionExemption$FUNC
-    );
-    static final FunctionDescriptor LOCALE_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LOCALE_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$350.LOCALE_ENUMPROCA$FUNC
+    static final FunctionDescriptor WaitMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle WaitMessage$MH = RuntimeHelper.downcallHandle(
+        "WaitMessage",
+        constants$350.WaitMessage$FUNC
     );
 }
 

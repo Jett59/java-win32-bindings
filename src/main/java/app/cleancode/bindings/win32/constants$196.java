@@ -9,76 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$196 {
 
-    static final FunctionDescriptor SetTextColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetMailslotInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetTextColor$MH = RuntimeHelper.downcallHandle(
-        "SetTextColor",
-        constants$196.SetTextColor$FUNC
+    static final MethodHandle SetMailslotInfo$MH = RuntimeHelper.downcallHandle(
+        "SetMailslotInfo",
+        constants$196.SetMailslotInfo$FUNC
     );
-    static final FunctionDescriptor SetTextAlign$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetTextAlign$MH = RuntimeHelper.downcallHandle(
-        "SetTextAlign",
-        constants$196.SetTextAlign$FUNC
-    );
-    static final FunctionDescriptor SetTextJustification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetTextJustification$MH = RuntimeHelper.downcallHandle(
-        "SetTextJustification",
-        constants$196.SetTextJustification$FUNC
-    );
-    static final FunctionDescriptor UpdateColors$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EncryptFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle UpdateColors$MH = RuntimeHelper.downcallHandle(
-        "UpdateColors",
-        constants$196.UpdateColors$FUNC
+    static final MethodHandle EncryptFileA$MH = RuntimeHelper.downcallHandle(
+        "EncryptFileA",
+        constants$196.EncryptFileA$FUNC
     );
-    static final FunctionDescriptor AlphaBlend$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_CHAR$LAYOUT.withName("BlendOp"),
-            Constants$root.C_CHAR$LAYOUT.withName("BlendFlags"),
-            Constants$root.C_CHAR$LAYOUT.withName("SourceConstantAlpha"),
-            Constants$root.C_CHAR$LAYOUT.withName("AlphaFormat")
-        ).withName("_BLENDFUNCTION")
+    static final FunctionDescriptor EncryptFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AlphaBlend$MH = RuntimeHelper.downcallHandle(
-        "AlphaBlend",
-        constants$196.AlphaBlend$FUNC
+    static final MethodHandle EncryptFileW$MH = RuntimeHelper.downcallHandle(
+        "EncryptFileW",
+        constants$196.EncryptFileW$FUNC
     );
-    static final FunctionDescriptor TransparentBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DecryptFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle TransparentBlt$MH = RuntimeHelper.downcallHandle(
-        "TransparentBlt",
-        constants$196.TransparentBlt$FUNC
+    static final MethodHandle DecryptFileA$MH = RuntimeHelper.downcallHandle(
+        "DecryptFileA",
+        constants$196.DecryptFileA$FUNC
+    );
+    static final FunctionDescriptor DecryptFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DecryptFileW$MH = RuntimeHelper.downcallHandle(
+        "DecryptFileW",
+        constants$196.DecryptFileW$FUNC
+    );
+    static final FunctionDescriptor FileEncryptionStatusA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FileEncryptionStatusA$MH = RuntimeHelper.downcallHandle(
+        "FileEncryptionStatusA",
+        constants$196.FileEncryptionStatusA$FUNC
     );
 }
 

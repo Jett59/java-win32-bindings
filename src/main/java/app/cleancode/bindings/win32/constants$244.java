@@ -9,72 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$244 {
 
-    static final FunctionDescriptor SendMessageCallbackW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SendMessageCallbackW$MH = RuntimeHelper.downcallHandle(
-        "SendMessageCallbackW",
-        constants$244.SendMessageCallbackW$FUNC
-    );
-    static final FunctionDescriptor BroadcastSystemMessageExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadpoolCallbackPersistent$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BroadcastSystemMessageExA$MH = RuntimeHelper.downcallHandle(
-        "BroadcastSystemMessageExA",
-        constants$244.BroadcastSystemMessageExA$FUNC
+    static final MethodHandle SetThreadpoolCallbackPersistent$MH = RuntimeHelper.downcallHandle(
+        "SetThreadpoolCallbackPersistent",
+        constants$244.SetThreadpoolCallbackPersistent$FUNC
     );
-    static final FunctionDescriptor BroadcastSystemMessageExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreatePrivateNamespaceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BroadcastSystemMessageExW$MH = RuntimeHelper.downcallHandle(
-        "BroadcastSystemMessageExW",
-        constants$244.BroadcastSystemMessageExW$FUNC
+    static final MethodHandle CreatePrivateNamespaceA$MH = RuntimeHelper.downcallHandle(
+        "CreatePrivateNamespaceA",
+        constants$244.CreatePrivateNamespaceA$FUNC
     );
-    static final FunctionDescriptor BroadcastSystemMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenPrivateNamespaceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BroadcastSystemMessageA$MH = RuntimeHelper.downcallHandle(
-        "BroadcastSystemMessageA",
-        constants$244.BroadcastSystemMessageA$FUNC
+    static final MethodHandle OpenPrivateNamespaceA$MH = RuntimeHelper.downcallHandle(
+        "OpenPrivateNamespaceA",
+        constants$244.OpenPrivateNamespaceA$FUNC
     );
-    static final FunctionDescriptor BroadcastSystemMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle BroadcastSystemMessageW$MH = RuntimeHelper.downcallHandle(
-        "BroadcastSystemMessageW",
-        constants$244.BroadcastSystemMessageW$FUNC
-    );
-    static final FunctionDescriptor RegisterDeviceNotificationA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateBoundaryDescriptorA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegisterDeviceNotificationA$MH = RuntimeHelper.downcallHandle(
-        "RegisterDeviceNotificationA",
-        constants$244.RegisterDeviceNotificationA$FUNC
+    static final MethodHandle CreateBoundaryDescriptorA$MH = RuntimeHelper.downcallHandle(
+        "CreateBoundaryDescriptorA",
+        constants$244.CreateBoundaryDescriptorA$FUNC
+    );
+    static final FunctionDescriptor AddIntegrityLabelToBoundaryDescriptor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddIntegrityLabelToBoundaryDescriptor$MH = RuntimeHelper.downcallHandle(
+        "AddIntegrityLabelToBoundaryDescriptor",
+        constants$244.AddIntegrityLabelToBoundaryDescriptor$FUNC
+    );
+    static final FunctionDescriptor GetCurrentHwProfileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCurrentHwProfileA$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentHwProfileA",
+        constants$244.GetCurrentHwProfileA$FUNC
     );
 }
 

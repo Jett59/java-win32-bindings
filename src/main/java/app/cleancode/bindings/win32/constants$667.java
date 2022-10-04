@@ -9,12 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$667 {
 
-    static final MemorySegment szOID_ENROLL_AIK_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.39");
-    static final MemorySegment szOID_ENROLL_ATTESTATION_STATEMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.24");
-    static final MemorySegment szOID_ENROLL_KSP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.25");
-    static final MemorySegment szOID_ENROLL_EKPUB_CHALLENGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.26");
-    static final MemorySegment szOID_ENROLL_CAXCHGCERT_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.27");
-    static final MemorySegment szOID_ENROLL_ATTESTATION_CHALLENGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.28");
+    static final FunctionDescriptor GetPrintProcessorDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrintProcessorDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "GetPrintProcessorDirectoryW",
+        constants$667.GetPrintProcessorDirectoryW$FUNC
+    );
+    static final FunctionDescriptor EnumPrintProcessorDatatypesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrintProcessorDatatypesA$MH = RuntimeHelper.downcallHandle(
+        "EnumPrintProcessorDatatypesA",
+        constants$667.EnumPrintProcessorDatatypesA$FUNC
+    );
+    static final FunctionDescriptor EnumPrintProcessorDatatypesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrintProcessorDatatypesW$MH = RuntimeHelper.downcallHandle(
+        "EnumPrintProcessorDatatypesW",
+        constants$667.EnumPrintProcessorDatatypesW$FUNC
+    );
+    static final FunctionDescriptor DeletePrintProcessorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrintProcessorA$MH = RuntimeHelper.downcallHandle(
+        "DeletePrintProcessorA",
+        constants$667.DeletePrintProcessorA$FUNC
+    );
+    static final FunctionDescriptor DeletePrintProcessorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrintProcessorW$MH = RuntimeHelper.downcallHandle(
+        "DeletePrintProcessorW",
+        constants$667.DeletePrintProcessorW$FUNC
+    );
+    static final FunctionDescriptor StartDocPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StartDocPrinterA$MH = RuntimeHelper.downcallHandle(
+        "StartDocPrinterA",
+        constants$667.StartDocPrinterA$FUNC
+    );
 }
 
 

@@ -9,12 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$647 {
 
-    static final MemorySegment szOID_CERT_EXTENSIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.2.1.14");
-    static final MemorySegment szOID_NEXT_UPDATE_LOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.2");
-    static final MemorySegment szOID_REMOVE_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.8.1");
-    static final MemorySegment szOID_CROSS_CERT_DIST_POINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.9.1");
-    static final MemorySegment szOID_CTL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.1");
-    static final MemorySegment szOID_SORTED_CTL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.1.1");
+    static final FunctionDescriptor SCardListReadersA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListReadersA$MH = RuntimeHelper.downcallHandle(
+        "SCardListReadersA",
+        constants$647.SCardListReadersA$FUNC
+    );
+    static final FunctionDescriptor SCardListReadersW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListReadersW$MH = RuntimeHelper.downcallHandle(
+        "SCardListReadersW",
+        constants$647.SCardListReadersW$FUNC
+    );
+    static final FunctionDescriptor SCardListCardsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListCardsA$MH = RuntimeHelper.downcallHandle(
+        "SCardListCardsA",
+        constants$647.SCardListCardsA$FUNC
+    );
+    static final FunctionDescriptor SCardListCardsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListCardsW$MH = RuntimeHelper.downcallHandle(
+        "SCardListCardsW",
+        constants$647.SCardListCardsW$FUNC
+    );
+    static final FunctionDescriptor SCardListInterfacesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListInterfacesA$MH = RuntimeHelper.downcallHandle(
+        "SCardListInterfacesA",
+        constants$647.SCardListInterfacesA$FUNC
+    );
+    static final FunctionDescriptor SCardListInterfacesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListInterfacesW$MH = RuntimeHelper.downcallHandle(
+        "SCardListInterfacesW",
+        constants$647.SCardListInterfacesW$FUNC
+    );
 }
 
 

@@ -9,63 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$450 {
 
-    static final FunctionDescriptor CertAddCertificateLinkToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetRawInputDeviceList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertAddCertificateLinkToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddCertificateLinkToStore",
-        constants$450.CertAddCertificateLinkToStore$FUNC
+    static final MethodHandle GetRawInputDeviceList$MH = RuntimeHelper.downcallHandle(
+        "GetRawInputDeviceList",
+        constants$450.GetRawInputDeviceList$FUNC
     );
-    static final FunctionDescriptor CertAddCRLLinkToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddCRLLinkToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddCRLLinkToStore",
-        constants$450.CertAddCRLLinkToStore$FUNC
-    );
-    static final FunctionDescriptor CertAddCTLLinkToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddCTLLinkToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddCTLLinkToStore",
-        constants$450.CertAddCTLLinkToStore$FUNC
-    );
-    static final FunctionDescriptor CertAddStoreToCollection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DefRawInputProc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertAddStoreToCollection$MH = RuntimeHelper.downcallHandle(
-        "CertAddStoreToCollection",
-        constants$450.CertAddStoreToCollection$FUNC
+    static final MethodHandle DefRawInputProc$MH = RuntimeHelper.downcallHandle(
+        "DefRawInputProc",
+        constants$450.DefRawInputProc$FUNC
     );
-    static final FunctionDescriptor CertRemoveStoreFromCollection$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor GetPointerDevices$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertRemoveStoreFromCollection$MH = RuntimeHelper.downcallHandle(
-        "CertRemoveStoreFromCollection",
-        constants$450.CertRemoveStoreFromCollection$FUNC
+    static final MethodHandle GetPointerDevices$MH = RuntimeHelper.downcallHandle(
+        "GetPointerDevices",
+        constants$450.GetPointerDevices$FUNC
     );
-    static final FunctionDescriptor CertControlStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPointerDevice$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertControlStore$MH = RuntimeHelper.downcallHandle(
-        "CertControlStore",
-        constants$450.CertControlStore$FUNC
+    static final MethodHandle GetPointerDevice$MH = RuntimeHelper.downcallHandle(
+        "GetPointerDevice",
+        constants$450.GetPointerDevice$FUNC
+    );
+    static final FunctionDescriptor GetPointerDeviceProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerDeviceProperties$MH = RuntimeHelper.downcallHandle(
+        "GetPointerDeviceProperties",
+        constants$450.GetPointerDeviceProperties$FUNC
+    );
+    static final FunctionDescriptor RegisterPointerDeviceNotifications$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegisterPointerDeviceNotifications$MH = RuntimeHelper.downcallHandle(
+        "RegisterPointerDeviceNotifications",
+        constants$450.RegisterPointerDeviceNotifications$FUNC
     );
 }
 

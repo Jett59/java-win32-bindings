@@ -9,65 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$387 {
 
-    static final FunctionDescriptor RegLoadKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor IsWindowUnicode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegLoadKeyW$MH = RuntimeHelper.downcallHandle(
-        "RegLoadKeyW",
-        constants$387.RegLoadKeyW$FUNC
+    static final MethodHandle IsWindowUnicode$MH = RuntimeHelper.downcallHandle(
+        "IsWindowUnicode",
+        constants$387.IsWindowUnicode$FUNC
     );
-    static final FunctionDescriptor RegNotifyChangeKeyValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnableWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegNotifyChangeKeyValue$MH = RuntimeHelper.downcallHandle(
-        "RegNotifyChangeKeyValue",
-        constants$387.RegNotifyChangeKeyValue$FUNC
+    static final MethodHandle EnableWindow$MH = RuntimeHelper.downcallHandle(
+        "EnableWindow",
+        constants$387.EnableWindow$FUNC
     );
-    static final FunctionDescriptor RegOpenKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor IsWindowEnabled$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsWindowEnabled$MH = RuntimeHelper.downcallHandle(
+        "IsWindowEnabled",
+        constants$387.IsWindowEnabled$FUNC
+    );
+    static final FunctionDescriptor LoadAcceleratorsA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegOpenKeyA$MH = RuntimeHelper.downcallHandle(
-        "RegOpenKeyA",
-        constants$387.RegOpenKeyA$FUNC
+    static final MethodHandle LoadAcceleratorsA$MH = RuntimeHelper.downcallHandle(
+        "LoadAcceleratorsA",
+        constants$387.LoadAcceleratorsA$FUNC
     );
-    static final FunctionDescriptor RegOpenKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LoadAcceleratorsW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegOpenKeyW$MH = RuntimeHelper.downcallHandle(
-        "RegOpenKeyW",
-        constants$387.RegOpenKeyW$FUNC
+    static final MethodHandle LoadAcceleratorsW$MH = RuntimeHelper.downcallHandle(
+        "LoadAcceleratorsW",
+        constants$387.LoadAcceleratorsW$FUNC
     );
-    static final FunctionDescriptor RegOpenKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateAcceleratorTableA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegOpenKeyExA$MH = RuntimeHelper.downcallHandle(
-        "RegOpenKeyExA",
-        constants$387.RegOpenKeyExA$FUNC
-    );
-    static final FunctionDescriptor RegOpenKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegOpenKeyExW$MH = RuntimeHelper.downcallHandle(
-        "RegOpenKeyExW",
-        constants$387.RegOpenKeyExW$FUNC
+    static final MethodHandle CreateAcceleratorTableA$MH = RuntimeHelper.downcallHandle(
+        "CreateAcceleratorTableA",
+        constants$387.CreateAcceleratorTableA$FUNC
     );
 }
 

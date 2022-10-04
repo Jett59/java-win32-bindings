@@ -9,12 +9,76 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$568 {
 
-    static final MemoryAddress HBMMENU_POPUP_MINIMIZE$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress IDC_ARROW$ADDR = MemoryAddress.ofLong(32512L);
-    static final MemoryAddress IDC_IBEAM$ADDR = MemoryAddress.ofLong(32513L);
-    static final MemoryAddress IDC_WAIT$ADDR = MemoryAddress.ofLong(32514L);
-    static final MemoryAddress IDC_CROSS$ADDR = MemoryAddress.ofLong(32515L);
-    static final MemoryAddress IDC_UPARROW$ADDR = MemoryAddress.ofLong(32516L);
+    static final FunctionDescriptor CryptExportKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptExportKey$MH = RuntimeHelper.downcallHandle(
+        "CryptExportKey",
+        constants$568.CryptExportKey$FUNC
+    );
+    static final FunctionDescriptor CryptImportKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptImportKey$MH = RuntimeHelper.downcallHandle(
+        "CryptImportKey",
+        constants$568.CryptImportKey$FUNC
+    );
+    static final FunctionDescriptor CryptEncrypt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptEncrypt$MH = RuntimeHelper.downcallHandle(
+        "CryptEncrypt",
+        constants$568.CryptEncrypt$FUNC
+    );
+    static final FunctionDescriptor CryptDecrypt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptDecrypt$MH = RuntimeHelper.downcallHandle(
+        "CryptDecrypt",
+        constants$568.CryptDecrypt$FUNC
+    );
+    static final FunctionDescriptor CryptCreateHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptCreateHash$MH = RuntimeHelper.downcallHandle(
+        "CryptCreateHash",
+        constants$568.CryptCreateHash$FUNC
+    );
+    static final FunctionDescriptor CryptHashData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptHashData$MH = RuntimeHelper.downcallHandle(
+        "CryptHashData",
+        constants$568.CryptHashData$FUNC
+    );
 }
 
 

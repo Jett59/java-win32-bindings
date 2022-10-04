@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$733 {
 
-    static final MemoryAddress HCCE_SERIAL_LOCAL_MACHINE$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress REVOCATION_OID_CRL_REVOCATION$ADDR = MemoryAddress.ofLong(1L);
-    static final MemorySegment CRYPT_OID_VERIFY_CERTIFICATE_CHAIN_POLICY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllVerifyCertificateChainPolicy");
-    static final MemoryAddress CERT_CHAIN_POLICY_BASE$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress CERT_CHAIN_POLICY_AUTHENTICODE$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CERT_CHAIN_POLICY_AUTHENTICODE_TS$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress RT_ICON$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress RT_MENU$ADDR = MemoryAddress.ofLong(4L);
+    static final MemoryAddress RT_DIALOG$ADDR = MemoryAddress.ofLong(5L);
+    static final MemoryAddress RT_STRING$ADDR = MemoryAddress.ofLong(6L);
+    static final MemoryAddress RT_FONTDIR$ADDR = MemoryAddress.ofLong(7L);
+    static final MemoryAddress RT_FONT$ADDR = MemoryAddress.ofLong(8L);
 }
 
 

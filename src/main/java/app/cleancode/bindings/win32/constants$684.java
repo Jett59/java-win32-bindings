@@ -9,12 +9,92 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$684 {
 
-    static final MemorySegment CRYPT_OID_INFO_MGF1_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_OID_INFO_NO_SIGN_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_OID_INFO_OAEP_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_OID_INFO_ECC_WRAP_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_OID_INFO_NO_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_LOCALIZED_NAME_OID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("LocalizedNames");
+    static final FunctionDescriptor GetCorePrinterDriversW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCorePrinterDriversW$MH = RuntimeHelper.downcallHandle(
+        "GetCorePrinterDriversW",
+        constants$684.GetCorePrinterDriversW$FUNC
+    );
+    static final FunctionDescriptor CorePrinterDriverInstalledA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("Data1"),
+            Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+            Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+            MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+        ).withName("_GUID"),
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("dwLowDateTime"),
+            Constants$root.C_LONG$LAYOUT.withName("dwHighDateTime")
+        ).withName("_FILETIME"),
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CorePrinterDriverInstalledA$MH = RuntimeHelper.downcallHandle(
+        "CorePrinterDriverInstalledA",
+        constants$684.CorePrinterDriverInstalledA$FUNC
+    );
+    static final FunctionDescriptor CorePrinterDriverInstalledW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("Data1"),
+            Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+            Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+            MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+        ).withName("_GUID"),
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("dwLowDateTime"),
+            Constants$root.C_LONG$LAYOUT.withName("dwHighDateTime")
+        ).withName("_FILETIME"),
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CorePrinterDriverInstalledW$MH = RuntimeHelper.downcallHandle(
+        "CorePrinterDriverInstalledW",
+        constants$684.CorePrinterDriverInstalledW$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDriverPackagePathA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDriverPackagePathA$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDriverPackagePathA",
+        constants$684.GetPrinterDriverPackagePathA$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDriverPackagePathW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDriverPackagePathW$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDriverPackagePathW",
+        constants$684.GetPrinterDriverPackagePathW$FUNC
+    );
+    static final FunctionDescriptor DeletePrinterDriverPackageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrinterDriverPackageA$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterDriverPackageA",
+        constants$684.DeletePrinterDriverPackageA$FUNC
+    );
 }
 
 

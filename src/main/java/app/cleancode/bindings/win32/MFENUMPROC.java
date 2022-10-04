@@ -11,13 +11,13 @@ public interface MFENUMPROC {
 
     int apply(java.lang.foreign.MemoryAddress hdc, java.lang.foreign.MemoryAddress lpht, java.lang.foreign.MemoryAddress lpMR, int nObj, long param);
     static MemorySegment allocate(MFENUMPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(MFENUMPROC.class, fi, constants$197.MFENUMPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(MFENUMPROC.class, fi, constants$301.MFENUMPROC$FUNC, session);
     }
     static MFENUMPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hdc, java.lang.foreign.MemoryAddress _lpht, java.lang.foreign.MemoryAddress _lpMR, int _nObj, long _param) -> {
             try {
-                return (int)constants$198.MFENUMPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hdc, (java.lang.foreign.Addressable)_lpht, (java.lang.foreign.Addressable)_lpMR, _nObj, _param);
+                return (int)constants$301.MFENUMPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hdc, (java.lang.foreign.Addressable)_lpht, (java.lang.foreign.Addressable)_lpMR, _nObj, _param);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

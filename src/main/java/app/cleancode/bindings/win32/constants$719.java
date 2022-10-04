@@ -9,12 +9,38 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$719 {
 
-    static final MemoryAddress TIME_VALID_OID_FLUSH_FRESHEST_CRL_FROM_CRL$ADDR = MemoryAddress.ofLong(5L);
-    static final MemorySegment CERT_CHAIN_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_MAX_URL_RETRIEVAL_BYTE_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_CACHE_RESYNC_FILETIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CERT_CHAIN_DISABLE_MANDATORY_BASIC_CONSTRAINTS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_CHAIN_DISABLE_CA_NAME_CONSTRAINTS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final FunctionDescriptor SC_NOTIFICATION_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SC_NOTIFICATION_CALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$719.SC_NOTIFICATION_CALLBACK$FUNC
+    );
+    static final FunctionDescriptor PSC_NOTIFICATION_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PSC_NOTIFICATION_CALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$719.PSC_NOTIFICATION_CALLBACK$FUNC
+    );
+    static final FunctionDescriptor SubscribeServiceChangeNotifications$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SubscribeServiceChangeNotifications$MH = RuntimeHelper.downcallHandle(
+        "SubscribeServiceChangeNotifications",
+        constants$719.SubscribeServiceChangeNotifications$FUNC
+    );
+    static final FunctionDescriptor UnsubscribeServiceChangeNotifications$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnsubscribeServiceChangeNotifications$MH = RuntimeHelper.downcallHandle(
+        "UnsubscribeServiceChangeNotifications",
+        constants$719.UnsubscribeServiceChangeNotifications$FUNC
+    );
 }
 
 

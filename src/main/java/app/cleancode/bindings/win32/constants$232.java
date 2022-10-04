@@ -9,55 +9,119 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$232 {
 
-    static final FunctionDescriptor LoadKeyboardLayoutW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AccessCheckAndAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AccessCheckAndAuditAlarmA$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckAndAuditAlarmA",
+        constants$232.AccessCheckAndAuditAlarmA$FUNC
+    );
+    static final FunctionDescriptor AccessCheckByTypeAndAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AccessCheckByTypeAndAuditAlarmA$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckByTypeAndAuditAlarmA",
+        constants$232.AccessCheckByTypeAndAuditAlarmA$FUNC
+    );
+    static final FunctionDescriptor AccessCheckByTypeResultListAndAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AccessCheckByTypeResultListAndAuditAlarmA$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckByTypeResultListAndAuditAlarmA",
+        constants$232.AccessCheckByTypeResultListAndAuditAlarmA$FUNC
+    );
+    static final FunctionDescriptor AccessCheckByTypeResultListAndAuditAlarmByHandleA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AccessCheckByTypeResultListAndAuditAlarmByHandleA$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckByTypeResultListAndAuditAlarmByHandleA",
+        constants$232.AccessCheckByTypeResultListAndAuditAlarmByHandleA$FUNC
+    );
+    static final FunctionDescriptor ObjectOpenAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ObjectOpenAuditAlarmA$MH = RuntimeHelper.downcallHandle(
+        "ObjectOpenAuditAlarmA",
+        constants$232.ObjectOpenAuditAlarmA$FUNC
+    );
+    static final FunctionDescriptor ObjectPrivilegeAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LoadKeyboardLayoutW$MH = RuntimeHelper.downcallHandle(
-        "LoadKeyboardLayoutW",
-        constants$232.LoadKeyboardLayoutW$FUNC
-    );
-    static final FunctionDescriptor ActivateKeyboardLayout$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ActivateKeyboardLayout$MH = RuntimeHelper.downcallHandle(
-        "ActivateKeyboardLayout",
-        constants$232.ActivateKeyboardLayout$FUNC
-    );
-    static final FunctionDescriptor ToUnicodeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ToUnicodeEx$MH = RuntimeHelper.downcallHandle(
-        "ToUnicodeEx",
-        constants$232.ToUnicodeEx$FUNC
-    );
-    static final FunctionDescriptor UnloadKeyboardLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnloadKeyboardLayout$MH = RuntimeHelper.downcallHandle(
-        "UnloadKeyboardLayout",
-        constants$232.UnloadKeyboardLayout$FUNC
-    );
-    static final FunctionDescriptor GetKeyboardLayoutNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetKeyboardLayoutNameA$MH = RuntimeHelper.downcallHandle(
-        "GetKeyboardLayoutNameA",
-        constants$232.GetKeyboardLayoutNameA$FUNC
-    );
-    static final FunctionDescriptor GetKeyboardLayoutNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetKeyboardLayoutNameW$MH = RuntimeHelper.downcallHandle(
-        "GetKeyboardLayoutNameW",
-        constants$232.GetKeyboardLayoutNameW$FUNC
+    static final MethodHandle ObjectPrivilegeAuditAlarmA$MH = RuntimeHelper.downcallHandle(
+        "ObjectPrivilegeAuditAlarmA",
+        constants$232.ObjectPrivilegeAuditAlarmA$FUNC
     );
 }
 

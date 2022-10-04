@@ -9,68 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$293 {
 
-    static final FunctionDescriptor SetMenuDefaultItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor Rectangle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetMenuDefaultItem$MH = RuntimeHelper.downcallHandle(
-        "SetMenuDefaultItem",
-        constants$293.SetMenuDefaultItem$FUNC
+    static final MethodHandle Rectangle$MH = RuntimeHelper.downcallHandle(
+        "Rectangle",
+        constants$293.Rectangle$FUNC
     );
-    static final FunctionDescriptor GetMenuItemRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RestoreDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RestoreDC$MH = RuntimeHelper.downcallHandle(
+        "RestoreDC",
+        constants$293.RestoreDC$FUNC
+    );
+    static final FunctionDescriptor ResetDCA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetMenuItemRect$MH = RuntimeHelper.downcallHandle(
-        "GetMenuItemRect",
-        constants$293.GetMenuItemRect$FUNC
+    static final MethodHandle ResetDCA$MH = RuntimeHelper.downcallHandle(
+        "ResetDCA",
+        constants$293.ResetDCA$FUNC
     );
-    static final FunctionDescriptor MenuItemFromPoint$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ResetDCW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT")
-    );
-    static final MethodHandle MenuItemFromPoint$MH = RuntimeHelper.downcallHandle(
-        "MenuItemFromPoint",
-        constants$293.MenuItemFromPoint$FUNC
-    );
-    static final FunctionDescriptor DragObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DragObject$MH = RuntimeHelper.downcallHandle(
-        "DragObject",
-        constants$293.DragObject$FUNC
+    static final MethodHandle ResetDCW$MH = RuntimeHelper.downcallHandle(
+        "ResetDCW",
+        constants$293.ResetDCW$FUNC
     );
-    static final FunctionDescriptor DragDetect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT")
-    );
-    static final MethodHandle DragDetect$MH = RuntimeHelper.downcallHandle(
-        "DragDetect",
-        constants$293.DragDetect$FUNC
-    );
-    static final FunctionDescriptor DrawIcon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RealizePalette$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DrawIcon$MH = RuntimeHelper.downcallHandle(
-        "DrawIcon",
-        constants$293.DrawIcon$FUNC
+    static final MethodHandle RealizePalette$MH = RuntimeHelper.downcallHandle(
+        "RealizePalette",
+        constants$293.RealizePalette$FUNC
+    );
+    static final FunctionDescriptor RemoveFontResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RemoveFontResourceA$MH = RuntimeHelper.downcallHandle(
+        "RemoveFontResourceA",
+        constants$293.RemoveFontResourceA$FUNC
     );
 }
 

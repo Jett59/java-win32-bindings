@@ -9,52 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$338 {
 
-    static final FunctionDescriptor WINEVENTPROC$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WINEVENTPROC$MH = RuntimeHelper.downcallHandle(
-        constants$338.WINEVENTPROC$FUNC
-    );
-    static final FunctionDescriptor SetWinEventHook$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OpenDesktopA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetWinEventHook$MH = RuntimeHelper.downcallHandle(
-        "SetWinEventHook",
-        constants$338.SetWinEventHook$FUNC
+    static final MethodHandle OpenDesktopA$MH = RuntimeHelper.downcallHandle(
+        "OpenDesktopA",
+        constants$338.OpenDesktopA$FUNC
     );
-    static final FunctionDescriptor IsWinEventHookInstalled$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenDesktopW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle IsWinEventHookInstalled$MH = RuntimeHelper.downcallHandle(
-        "IsWinEventHookInstalled",
-        constants$338.IsWinEventHookInstalled$FUNC
+    static final MethodHandle OpenDesktopW$MH = RuntimeHelper.downcallHandle(
+        "OpenDesktopW",
+        constants$338.OpenDesktopW$FUNC
     );
-    static final FunctionDescriptor UnhookWinEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnhookWinEvent$MH = RuntimeHelper.downcallHandle(
-        "UnhookWinEvent",
-        constants$338.UnhookWinEvent$FUNC
-    );
-    static final FunctionDescriptor GetGUIThreadInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenInputDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetGUIThreadInfo$MH = RuntimeHelper.downcallHandle(
-        "GetGUIThreadInfo",
-        constants$338.GetGUIThreadInfo$FUNC
+    static final MethodHandle OpenInputDesktop$MH = RuntimeHelper.downcallHandle(
+        "OpenInputDesktop",
+        constants$338.OpenInputDesktop$FUNC
+    );
+    static final FunctionDescriptor EnumDesktopsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumDesktopsA$MH = RuntimeHelper.downcallHandle(
+        "EnumDesktopsA",
+        constants$338.EnumDesktopsA$FUNC
+    );
+    static final FunctionDescriptor EnumDesktopsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumDesktopsW$MH = RuntimeHelper.downcallHandle(
+        "EnumDesktopsW",
+        constants$338.EnumDesktopsW$FUNC
+    );
+    static final FunctionDescriptor EnumDesktopWindows$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumDesktopWindows$MH = RuntimeHelper.downcallHandle(
+        "EnumDesktopWindows",
+        constants$338.EnumDesktopWindows$FUNC
     );
 }
 

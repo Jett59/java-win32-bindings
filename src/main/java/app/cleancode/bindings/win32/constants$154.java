@@ -9,68 +9,77 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$154 {
 
-    static final FunctionDescriptor OpenFileById$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OpenFileById$MH = RuntimeHelper.downcallHandle(
-        "OpenFileById",
-        constants$154.OpenFileById$FUNC
-    );
-    static final FunctionDescriptor CreateSymbolicLinkA$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateSymbolicLinkA$MH = RuntimeHelper.downcallHandle(
-        "CreateSymbolicLinkA",
-        constants$154.CreateSymbolicLinkA$FUNC
-    );
-    static final FunctionDescriptor CreateSymbolicLinkW$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateSymbolicLinkW$MH = RuntimeHelper.downcallHandle(
-        "CreateSymbolicLinkW",
-        constants$154.CreateSymbolicLinkW$FUNC
-    );
-    static final FunctionDescriptor QueryActCtxSettingsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor LoadLibraryA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle QueryActCtxSettingsW$MH = RuntimeHelper.downcallHandle(
-        "QueryActCtxSettingsW",
-        constants$154.QueryActCtxSettingsW$FUNC
+    static final MethodHandle LoadLibraryA$MH = RuntimeHelper.downcallHandle(
+        "LoadLibraryA",
+        constants$154.LoadLibraryA$FUNC
     );
-    static final FunctionDescriptor CreateSymbolicLinkTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+    static final FunctionDescriptor LoadLibraryW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LoadLibraryW$MH = RuntimeHelper.downcallHandle(
+        "LoadLibraryW",
+        constants$154.LoadLibraryW$FUNC
+    );
+    static final FunctionDescriptor EnumResourceNamesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumResourceNamesW$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceNamesW",
+        constants$154.EnumResourceNamesW$FUNC
+    );
+    static final FunctionDescriptor AccessCheck$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateSymbolicLinkTransactedA$MH = RuntimeHelper.downcallHandle(
-        "CreateSymbolicLinkTransactedA",
-        constants$154.CreateSymbolicLinkTransactedA$FUNC
+    static final MethodHandle AccessCheck$MH = RuntimeHelper.downcallHandle(
+        "AccessCheck",
+        constants$154.AccessCheck$FUNC
     );
-    static final FunctionDescriptor CreateSymbolicLinkTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+    static final FunctionDescriptor AccessCheckAndAuditAlarmW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateSymbolicLinkTransactedW$MH = RuntimeHelper.downcallHandle(
-        "CreateSymbolicLinkTransactedW",
-        constants$154.CreateSymbolicLinkTransactedW$FUNC
+    static final MethodHandle AccessCheckAndAuditAlarmW$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckAndAuditAlarmW",
+        constants$154.AccessCheckAndAuditAlarmW$FUNC
+    );
+    static final FunctionDescriptor AccessCheckByType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AccessCheckByType$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckByType",
+        constants$154.AccessCheckByType$FUNC
     );
 }
 

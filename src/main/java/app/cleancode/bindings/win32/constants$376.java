@@ -9,40 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$376 {
 
-    static final FunctionDescriptor DATEFMT_ENUMPROCEXEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetKeyboardType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetKeyboardType$MH = RuntimeHelper.downcallHandle(
+        "GetKeyboardType",
+        constants$376.GetKeyboardType$FUNC
+    );
+    static final FunctionDescriptor ToAscii$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle DATEFMT_ENUMPROCEXEX$MH = RuntimeHelper.downcallHandle(
-        constants$376.DATEFMT_ENUMPROCEXEX$FUNC
-    );
-    static final FunctionDescriptor EnumDateFormatsExEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumDateFormatsExEx$MH = RuntimeHelper.downcallHandle(
-        "EnumDateFormatsExEx",
-        constants$376.EnumDateFormatsExEx$FUNC
-    );
-    static final FunctionDescriptor TIMEFMT_ENUMPROCEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle TIMEFMT_ENUMPROCEX$MH = RuntimeHelper.downcallHandle(
-        constants$376.TIMEFMT_ENUMPROCEX$FUNC
+    static final MethodHandle ToAscii$MH = RuntimeHelper.downcallHandle(
+        "ToAscii",
+        constants$376.ToAscii$FUNC
     );
-    static final FunctionDescriptor EnumTimeFormatsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ToAsciiEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumTimeFormatsEx$MH = RuntimeHelper.downcallHandle(
-        "EnumTimeFormatsEx",
-        constants$376.EnumTimeFormatsEx$FUNC
+    static final MethodHandle ToAsciiEx$MH = RuntimeHelper.downcallHandle(
+        "ToAsciiEx",
+        constants$376.ToAsciiEx$FUNC
+    );
+    static final FunctionDescriptor ToUnicode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ToUnicode$MH = RuntimeHelper.downcallHandle(
+        "ToUnicode",
+        constants$376.ToUnicode$FUNC
+    );
+    static final FunctionDescriptor OemKeyScan$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle OemKeyScan$MH = RuntimeHelper.downcallHandle(
+        "OemKeyScan",
+        constants$376.OemKeyScan$FUNC
+    );
+    static final FunctionDescriptor VkKeyScanA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
+    );
+    static final MethodHandle VkKeyScanA$MH = RuntimeHelper.downcallHandle(
+        "VkKeyScanA",
+        constants$376.VkKeyScanA$FUNC
     );
 }
 

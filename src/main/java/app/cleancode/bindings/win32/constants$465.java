@@ -9,73 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$465 {
 
-    static final FunctionDescriptor CertRDNValueToStrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetLocaleInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertRDNValueToStrA$MH = RuntimeHelper.downcallHandle(
-        "CertRDNValueToStrA",
-        constants$465.CertRDNValueToStrA$FUNC
-    );
-    static final FunctionDescriptor CertRDNValueToStrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertRDNValueToStrW$MH = RuntimeHelper.downcallHandle(
-        "CertRDNValueToStrW",
-        constants$465.CertRDNValueToStrW$FUNC
-    );
-    static final FunctionDescriptor CertNameToStrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertNameToStrA$MH = RuntimeHelper.downcallHandle(
-        "CertNameToStrA",
-        constants$465.CertNameToStrA$FUNC
-    );
-    static final FunctionDescriptor CertNameToStrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertNameToStrW$MH = RuntimeHelper.downcallHandle(
-        "CertNameToStrW",
-        constants$465.CertNameToStrW$FUNC
-    );
-    static final FunctionDescriptor CertStrToNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertStrToNameA$MH = RuntimeHelper.downcallHandle(
-        "CertStrToNameA",
-        constants$465.CertStrToNameA$FUNC
+    static final MethodHandle SetLocaleInfoA$MH = RuntimeHelper.downcallHandle(
+        "SetLocaleInfoA",
+        constants$465.SetLocaleInfoA$FUNC
     );
-    static final FunctionDescriptor CertStrToNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetLocaleInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertStrToNameW$MH = RuntimeHelper.downcallHandle(
-        "CertStrToNameW",
-        constants$465.CertStrToNameW$FUNC
+    static final MethodHandle SetLocaleInfoW$MH = RuntimeHelper.downcallHandle(
+        "SetLocaleInfoW",
+        constants$465.SetLocaleInfoW$FUNC
+    );
+    static final FunctionDescriptor GetCalendarInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCalendarInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetCalendarInfoA",
+        constants$465.GetCalendarInfoA$FUNC
+    );
+    static final FunctionDescriptor GetCalendarInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCalendarInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetCalendarInfoW",
+        constants$465.GetCalendarInfoW$FUNC
+    );
+    static final FunctionDescriptor SetCalendarInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetCalendarInfoA$MH = RuntimeHelper.downcallHandle(
+        "SetCalendarInfoA",
+        constants$465.SetCalendarInfoA$FUNC
+    );
+    static final FunctionDescriptor SetCalendarInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetCalendarInfoW$MH = RuntimeHelper.downcallHandle(
+        "SetCalendarInfoW",
+        constants$465.SetCalendarInfoW$FUNC
     );
 }
 

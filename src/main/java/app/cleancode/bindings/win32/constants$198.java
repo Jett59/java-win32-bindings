@@ -9,50 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$198 {
 
-    static final FunctionDescriptor MFENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OpenEncryptedFileRawW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle MFENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$198.MFENUMPROC$FUNC
-    );
-    static final FunctionDescriptor EnumMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumMetaFile$MH = RuntimeHelper.downcallHandle(
-        "EnumMetaFile",
-        constants$198.EnumMetaFile$FUNC
-    );
-    static final FunctionDescriptor ENHMFENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle ENHMFENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$198.ENHMFENUMPROC$FUNC
-    );
-    static final FunctionDescriptor CloseEnhMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CloseEnhMetaFile$MH = RuntimeHelper.downcallHandle(
-        "CloseEnhMetaFile",
-        constants$198.CloseEnhMetaFile$FUNC
+    static final MethodHandle OpenEncryptedFileRawW$MH = RuntimeHelper.downcallHandle(
+        "OpenEncryptedFileRawW",
+        constants$198.OpenEncryptedFileRawW$FUNC
     );
-    static final FunctionDescriptor CopyEnhMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ReadEncryptedFileRaw$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CopyEnhMetaFileA$MH = RuntimeHelper.downcallHandle(
-        "CopyEnhMetaFileA",
-        constants$198.CopyEnhMetaFileA$FUNC
+    static final MethodHandle ReadEncryptedFileRaw$MH = RuntimeHelper.downcallHandle(
+        "ReadEncryptedFileRaw",
+        constants$198.ReadEncryptedFileRaw$FUNC
+    );
+    static final FunctionDescriptor WriteEncryptedFileRaw$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WriteEncryptedFileRaw$MH = RuntimeHelper.downcallHandle(
+        "WriteEncryptedFileRaw",
+        constants$198.WriteEncryptedFileRaw$FUNC
+    );
+    static final FunctionDescriptor CloseEncryptedFileRaw$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CloseEncryptedFileRaw$MH = RuntimeHelper.downcallHandle(
+        "CloseEncryptedFileRaw",
+        constants$198.CloseEncryptedFileRaw$FUNC
+    );
+    static final FunctionDescriptor lstrcmpA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle lstrcmpA$MH = RuntimeHelper.downcallHandle(
+        "lstrcmpA",
+        constants$198.lstrcmpA$FUNC
+    );
+    static final FunctionDescriptor lstrcmpW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle lstrcmpW$MH = RuntimeHelper.downcallHandle(
+        "lstrcmpW",
+        constants$198.lstrcmpW$FUNC
     );
 }
 

@@ -9,57 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$448 {
 
-    static final FunctionDescriptor CertCreateCTLContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RealGetWindowClassW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertCreateCTLContext$MH = RuntimeHelper.downcallHandle(
-        "CertCreateCTLContext",
-        constants$448.CertCreateCTLContext$FUNC
+    static final MethodHandle RealGetWindowClassW$MH = RuntimeHelper.downcallHandle(
+        "RealGetWindowClassW",
+        constants$448.RealGetWindowClassW$FUNC
     );
-    static final FunctionDescriptor CertFreeCTLContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFreeCTLContext$MH = RuntimeHelper.downcallHandle(
-        "CertFreeCTLContext",
-        constants$448.CertFreeCTLContext$FUNC
-    );
-    static final FunctionDescriptor CertSetCTLContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertSetCTLContextProperty$MH = RuntimeHelper.downcallHandle(
-        "CertSetCTLContextProperty",
-        constants$448.CertSetCTLContextProperty$FUNC
-    );
-    static final FunctionDescriptor CertGetCTLContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetAltTabInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertGetCTLContextProperty$MH = RuntimeHelper.downcallHandle(
-        "CertGetCTLContextProperty",
-        constants$448.CertGetCTLContextProperty$FUNC
-    );
-    static final FunctionDescriptor CertEnumCTLContextProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertEnumCTLContextProperties$MH = RuntimeHelper.downcallHandle(
-        "CertEnumCTLContextProperties",
-        constants$448.CertEnumCTLContextProperties$FUNC
+    static final MethodHandle GetAltTabInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetAltTabInfoA",
+        constants$448.GetAltTabInfoA$FUNC
     );
-    static final FunctionDescriptor CertEnumCTLsInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetAltTabInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetAltTabInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetAltTabInfoW",
+        constants$448.GetAltTabInfoW$FUNC
+    );
+    static final FunctionDescriptor GetListBoxInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertEnumCTLsInStore$MH = RuntimeHelper.downcallHandle(
-        "CertEnumCTLsInStore",
-        constants$448.CertEnumCTLsInStore$FUNC
+    static final MethodHandle GetListBoxInfo$MH = RuntimeHelper.downcallHandle(
+        "GetListBoxInfo",
+        constants$448.GetListBoxInfo$FUNC
+    );
+    static final FunctionDescriptor LockWorkStation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle LockWorkStation$MH = RuntimeHelper.downcallHandle(
+        "LockWorkStation",
+        constants$448.LockWorkStation$FUNC
+    );
+    static final FunctionDescriptor UserHandleGrantAccess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle UserHandleGrantAccess$MH = RuntimeHelper.downcallHandle(
+        "UserHandleGrantAccess",
+        constants$448.UserHandleGrantAccess$FUNC
     );
 }
 

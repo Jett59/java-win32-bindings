@@ -9,53 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$89 {
 
-    static final FunctionDescriptor GetCommMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCommMask$MH = RuntimeHelper.downcallHandle(
-        "GetCommMask",
-        constants$89.GetCommMask$FUNC
-    );
-    static final FunctionDescriptor GetCommProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCommProperties$MH = RuntimeHelper.downcallHandle(
-        "GetCommProperties",
-        constants$89.GetCommProperties$FUNC
-    );
-    static final FunctionDescriptor GetCommModemStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCommModemStatus$MH = RuntimeHelper.downcallHandle(
-        "GetCommModemStatus",
-        constants$89.GetCommModemStatus$FUNC
-    );
-    static final FunctionDescriptor GetCommState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCommState$MH = RuntimeHelper.downcallHandle(
-        "GetCommState",
-        constants$89.GetCommState$FUNC
-    );
-    static final FunctionDescriptor GetCommTimeouts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCommTimeouts$MH = RuntimeHelper.downcallHandle(
-        "GetCommTimeouts",
-        constants$89.GetCommTimeouts$FUNC
-    );
-    static final FunctionDescriptor PurgeComm$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WaitForDebugEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PurgeComm$MH = RuntimeHelper.downcallHandle(
-        "PurgeComm",
-        constants$89.PurgeComm$FUNC
+    static final MethodHandle WaitForDebugEvent$MH = RuntimeHelper.downcallHandle(
+        "WaitForDebugEvent",
+        constants$89.WaitForDebugEvent$FUNC
+    );
+    static final FunctionDescriptor DebugActiveProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DebugActiveProcess$MH = RuntimeHelper.downcallHandle(
+        "DebugActiveProcess",
+        constants$89.DebugActiveProcess$FUNC
+    );
+    static final FunctionDescriptor DebugActiveProcessStop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DebugActiveProcessStop$MH = RuntimeHelper.downcallHandle(
+        "DebugActiveProcessStop",
+        constants$89.DebugActiveProcessStop$FUNC
+    );
+    static final FunctionDescriptor CheckRemoteDebuggerPresent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CheckRemoteDebuggerPresent$MH = RuntimeHelper.downcallHandle(
+        "CheckRemoteDebuggerPresent",
+        constants$89.CheckRemoteDebuggerPresent$FUNC
+    );
+    static final FunctionDescriptor WaitForDebugEventEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WaitForDebugEventEx$MH = RuntimeHelper.downcallHandle(
+        "WaitForDebugEventEx",
+        constants$89.WaitForDebugEventEx$FUNC
+    );
+    static final FunctionDescriptor CloseHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CloseHandle$MH = RuntimeHelper.downcallHandle(
+        "CloseHandle",
+        constants$89.CloseHandle$FUNC
     );
 }
 

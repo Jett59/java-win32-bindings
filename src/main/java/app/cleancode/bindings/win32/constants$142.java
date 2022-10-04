@@ -9,51 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$142 {
 
-    static final FunctionDescriptor SetThreadpoolCallbackRunsLong$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor DiscardVirtualMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DiscardVirtualMemory$MH = RuntimeHelper.downcallHandle(
+        "DiscardVirtualMemory",
+        constants$142.DiscardVirtualMemory$FUNC
+    );
+    static final FunctionDescriptor SetProcessValidCallTargets$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetThreadpoolCallbackRunsLong$MH = RuntimeHelper.downcallHandle(
-        "SetThreadpoolCallbackRunsLong",
-        constants$142.SetThreadpoolCallbackRunsLong$FUNC
+    static final MethodHandle SetProcessValidCallTargets$MH = RuntimeHelper.downcallHandle(
+        "SetProcessValidCallTargets",
+        constants$142.SetProcessValidCallTargets$FUNC
     );
-    static final FunctionDescriptor SetThreadpoolCallbackLibrary$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor SetProcessValidCallTargetsForMappedView$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetThreadpoolCallbackLibrary$MH = RuntimeHelper.downcallHandle(
-        "SetThreadpoolCallbackLibrary",
-        constants$142.SetThreadpoolCallbackLibrary$FUNC
-    );
-    static final FunctionDescriptor SetThreadpoolCallbackPriority$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetProcessValidCallTargetsForMappedView$MH = RuntimeHelper.downcallHandle(
+        "SetProcessValidCallTargetsForMappedView",
+        constants$142.SetProcessValidCallTargetsForMappedView$FUNC
+    );
+    static final FunctionDescriptor VirtualAllocFromApp$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetThreadpoolCallbackPriority$MH = RuntimeHelper.downcallHandle(
-        "SetThreadpoolCallbackPriority",
-        constants$142.SetThreadpoolCallbackPriority$FUNC
+    static final MethodHandle VirtualAllocFromApp$MH = RuntimeHelper.downcallHandle(
+        "VirtualAllocFromApp",
+        constants$142.VirtualAllocFromApp$FUNC
     );
-    static final FunctionDescriptor DestroyThreadpoolEnvironment$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DestroyThreadpoolEnvironment$MH = RuntimeHelper.downcallHandle(
-        "DestroyThreadpoolEnvironment",
-        constants$142.DestroyThreadpoolEnvironment$FUNC
-    );
-    static final FunctionDescriptor SetThreadpoolCallbackPersistent$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetThreadpoolCallbackPersistent$MH = RuntimeHelper.downcallHandle(
-        "SetThreadpoolCallbackPersistent",
-        constants$142.SetThreadpoolCallbackPersistent$FUNC
-    );
-    static final FunctionDescriptor CreatePrivateNamespaceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor VirtualProtectFromApp$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreatePrivateNamespaceA$MH = RuntimeHelper.downcallHandle(
-        "CreatePrivateNamespaceA",
-        constants$142.CreatePrivateNamespaceA$FUNC
+    static final MethodHandle VirtualProtectFromApp$MH = RuntimeHelper.downcallHandle(
+        "VirtualProtectFromApp",
+        constants$142.VirtualProtectFromApp$FUNC
+    );
+    static final FunctionDescriptor OpenFileMappingFromApp$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenFileMappingFromApp$MH = RuntimeHelper.downcallHandle(
+        "OpenFileMappingFromApp",
+        constants$142.OpenFileMappingFromApp$FUNC
     );
 }
 

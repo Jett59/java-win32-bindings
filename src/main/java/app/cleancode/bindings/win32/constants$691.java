@@ -9,12 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$691 {
 
-    static final MemorySegment CMSG_OID_CNG_IMPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGImportKeyTrans");
-    static final MemorySegment CMSG_OID_CNG_IMPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGImportKeyAgree");
-    static final MemorySegment CMSG_OID_CNG_IMPORT_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGImportContentEncryptKey");
-    static final MemorySegment szOID_CERT_PROP_ID_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.");
-    static final MemorySegment szOID_CERT_KEY_IDENTIFIER_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.20");
-    static final MemorySegment szOID_CERT_ISSUER_SERIAL_NUMBER_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.28");
+    static final FunctionDescriptor CoRegisterPSClsid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoRegisterPSClsid$MH = RuntimeHelper.downcallHandle(
+        "CoRegisterPSClsid",
+        constants$691.CoRegisterPSClsid$FUNC
+    );
+    static final FunctionDescriptor CoRegisterSurrogate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoRegisterSurrogate$MH = RuntimeHelper.downcallHandle(
+        "CoRegisterSurrogate",
+        constants$691.CoRegisterSurrogate$FUNC
+    );
+    static final FunctionDescriptor CoGetMarshalSizeMax$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoGetMarshalSizeMax$MH = RuntimeHelper.downcallHandle(
+        "CoGetMarshalSizeMax",
+        constants$691.CoGetMarshalSizeMax$FUNC
+    );
+    static final FunctionDescriptor CoMarshalInterface$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoMarshalInterface$MH = RuntimeHelper.downcallHandle(
+        "CoMarshalInterface",
+        constants$691.CoMarshalInterface$FUNC
+    );
+    static final FunctionDescriptor CoUnmarshalInterface$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoUnmarshalInterface$MH = RuntimeHelper.downcallHandle(
+        "CoUnmarshalInterface",
+        constants$691.CoUnmarshalInterface$FUNC
+    );
+    static final FunctionDescriptor CoMarshalHresult$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoMarshalHresult$MH = RuntimeHelper.downcallHandle(
+        "CoMarshalHresult",
+        constants$691.CoMarshalHresult$FUNC
+    );
 }
 
 

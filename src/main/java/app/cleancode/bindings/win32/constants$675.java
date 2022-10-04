@@ -9,12 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$675 {
 
-    static final MemorySegment szOID_NETSCAPE_CA_REVOCATION_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.4");
-    static final MemorySegment szOID_NETSCAPE_CERT_RENEWAL_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.7");
-    static final MemorySegment szOID_NETSCAPE_CA_POLICY_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.8");
-    static final MemorySegment szOID_NETSCAPE_SSL_SERVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.12");
-    static final MemorySegment szOID_NETSCAPE_COMMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.13");
-    static final MemorySegment szOID_NETSCAPE_DATA_TYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.2");
+    static final FunctionDescriptor PrinterMessageBoxA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PrinterMessageBoxA$MH = RuntimeHelper.downcallHandle(
+        "PrinterMessageBoxA",
+        constants$675.PrinterMessageBoxA$FUNC
+    );
+    static final FunctionDescriptor PrinterMessageBoxW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PrinterMessageBoxW$MH = RuntimeHelper.downcallHandle(
+        "PrinterMessageBoxW",
+        constants$675.PrinterMessageBoxW$FUNC
+    );
+    static final FunctionDescriptor ClosePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ClosePrinter$MH = RuntimeHelper.downcallHandle(
+        "ClosePrinter",
+        constants$675.ClosePrinter$FUNC
+    );
+    static final FunctionDescriptor AddFormA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddFormA$MH = RuntimeHelper.downcallHandle(
+        "AddFormA",
+        constants$675.AddFormA$FUNC
+    );
+    static final FunctionDescriptor AddFormW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddFormW$MH = RuntimeHelper.downcallHandle(
+        "AddFormW",
+        constants$675.AddFormW$FUNC
+    );
+    static final FunctionDescriptor DeleteFormA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteFormA$MH = RuntimeHelper.downcallHandle(
+        "DeleteFormA",
+        constants$675.DeleteFormA$FUNC
+    );
 }
 
 

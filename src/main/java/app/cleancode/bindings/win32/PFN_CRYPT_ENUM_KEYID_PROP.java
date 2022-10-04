@@ -11,13 +11,13 @@ public interface PFN_CRYPT_ENUM_KEYID_PROP {
 
     int apply(java.lang.foreign.MemoryAddress pKeyIdentifier, int dwFlags, java.lang.foreign.MemoryAddress pvReserved, java.lang.foreign.MemoryAddress pvArg, int cProp, java.lang.foreign.MemoryAddress rgdwPropId, java.lang.foreign.MemoryAddress rgpvData, java.lang.foreign.MemoryAddress rgcbData);
     static MemorySegment allocate(PFN_CRYPT_ENUM_KEYID_PROP fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_ENUM_KEYID_PROP.class, fi, constants$474.PFN_CRYPT_ENUM_KEYID_PROP$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_ENUM_KEYID_PROP.class, fi, constants$627.PFN_CRYPT_ENUM_KEYID_PROP$FUNC, session);
     }
     static PFN_CRYPT_ENUM_KEYID_PROP ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pKeyIdentifier, int _dwFlags, java.lang.foreign.MemoryAddress _pvReserved, java.lang.foreign.MemoryAddress _pvArg, int _cProp, java.lang.foreign.MemoryAddress _rgdwPropId, java.lang.foreign.MemoryAddress _rgpvData, java.lang.foreign.MemoryAddress _rgcbData) -> {
             try {
-                return (int)constants$475.PFN_CRYPT_ENUM_KEYID_PROP$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pKeyIdentifier, _dwFlags, (java.lang.foreign.Addressable)_pvReserved, (java.lang.foreign.Addressable)_pvArg, _cProp, (java.lang.foreign.Addressable)_rgdwPropId, (java.lang.foreign.Addressable)_rgpvData, (java.lang.foreign.Addressable)_rgcbData);
+                return (int)constants$627.PFN_CRYPT_ENUM_KEYID_PROP$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pKeyIdentifier, _dwFlags, (java.lang.foreign.Addressable)_pvReserved, (java.lang.foreign.Addressable)_pvArg, _cProp, (java.lang.foreign.Addressable)_rgdwPropId, (java.lang.foreign.Addressable)_rgpvData, (java.lang.foreign.Addressable)_rgcbData);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

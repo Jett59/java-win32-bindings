@@ -9,12 +9,43 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$583 {
 
-    static final MemorySegment szOID_PKCS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1");
-    static final MemorySegment szOID_RSA_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2");
-    static final MemorySegment szOID_RSA_ENCRYPT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3");
-    static final MemorySegment szOID_PKCS_1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1");
-    static final MemorySegment szOID_PKCS_2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.2");
-    static final MemorySegment szOID_PKCS_3$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.3");
+    static final FunctionDescriptor PFN_CMSG_EXPORT_KEY_TRANS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_EXPORT_KEY_TRANS$MH = RuntimeHelper.downcallHandle(
+        constants$583.PFN_CMSG_EXPORT_KEY_TRANS$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_EXPORT_KEY_AGREE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_EXPORT_KEY_AGREE$MH = RuntimeHelper.downcallHandle(
+        constants$583.PFN_CMSG_EXPORT_KEY_AGREE$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_EXPORT_MAIL_LIST$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_EXPORT_MAIL_LIST$MH = RuntimeHelper.downcallHandle(
+        constants$583.PFN_CMSG_EXPORT_MAIL_LIST$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_IMPORT_KEY_TRANS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

@@ -9,12 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$574 {
 
-    static final MemoryAddress HKEY_CURRENT_USER$ADDR = MemoryAddress.ofLong(-2147483647L);
-    static final MemoryAddress HKEY_LOCAL_MACHINE$ADDR = MemoryAddress.ofLong(-2147483646L);
-    static final MemoryAddress HKEY_USERS$ADDR = MemoryAddress.ofLong(-2147483645L);
-    static final MemoryAddress HKEY_PERFORMANCE_DATA$ADDR = MemoryAddress.ofLong(-2147483644L);
-    static final MemoryAddress HKEY_PERFORMANCE_TEXT$ADDR = MemoryAddress.ofLong(-2147483568L);
-    static final MemoryAddress HKEY_PERFORMANCE_NLSTEXT$ADDR = MemoryAddress.ofLong(-2147483552L);
+    static final FunctionDescriptor PFN_CRYPT_FREE$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_FREE$MH = RuntimeHelper.downcallHandle(
+        constants$574.PFN_CRYPT_FREE$FUNC
+    );
+    static final FunctionDescriptor CryptEncodeObjectEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptEncodeObjectEx$MH = RuntimeHelper.downcallHandle(
+        "CryptEncodeObjectEx",
+        constants$574.CryptEncodeObjectEx$FUNC
+    );
+    static final FunctionDescriptor CryptEncodeObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptEncodeObject$MH = RuntimeHelper.downcallHandle(
+        "CryptEncodeObject",
+        constants$574.CryptEncodeObject$FUNC
+    );
+    static final FunctionDescriptor CryptDecodeObjectEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptDecodeObjectEx$MH = RuntimeHelper.downcallHandle(
+        "CryptDecodeObjectEx",
+        constants$574.CryptDecodeObjectEx$FUNC
+    );
+    static final FunctionDescriptor CryptDecodeObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptDecodeObject$MH = RuntimeHelper.downcallHandle(
+        "CryptDecodeObject",
+        constants$574.CryptDecodeObject$FUNC
+    );
+    static final FunctionDescriptor CryptInstallOIDFunctionAddress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptInstallOIDFunctionAddress$MH = RuntimeHelper.downcallHandle(
+        "CryptInstallOIDFunctionAddress",
+        constants$574.CryptInstallOIDFunctionAddress$FUNC
+    );
 }
 
 

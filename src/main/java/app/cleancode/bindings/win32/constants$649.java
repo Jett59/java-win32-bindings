@@ -9,12 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$649 {
 
-    static final MemorySegment szOID_ENROLL_CERTTYPE_EXTENSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2");
-    static final MemorySegment szOID_CERT_MANIFOLD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.3");
-    static final MemorySegment szOID_CERTSRV_CA_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.1");
-    static final MemorySegment szOID_CERTSRV_PREVIOUS_CERT_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.2");
-    static final MemorySegment szOID_CRL_VIRTUAL_BASE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.3");
-    static final MemorySegment szOID_CRL_NEXT_PUBLISH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.4");
+    static final FunctionDescriptor SCardForgetReaderGroupA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardForgetReaderGroupA$MH = RuntimeHelper.downcallHandle(
+        "SCardForgetReaderGroupA",
+        constants$649.SCardForgetReaderGroupA$FUNC
+    );
+    static final FunctionDescriptor SCardForgetReaderGroupW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardForgetReaderGroupW$MH = RuntimeHelper.downcallHandle(
+        "SCardForgetReaderGroupW",
+        constants$649.SCardForgetReaderGroupW$FUNC
+    );
+    static final FunctionDescriptor SCardIntroduceReaderA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardIntroduceReaderA$MH = RuntimeHelper.downcallHandle(
+        "SCardIntroduceReaderA",
+        constants$649.SCardIntroduceReaderA$FUNC
+    );
+    static final FunctionDescriptor SCardIntroduceReaderW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardIntroduceReaderW$MH = RuntimeHelper.downcallHandle(
+        "SCardIntroduceReaderW",
+        constants$649.SCardIntroduceReaderW$FUNC
+    );
+    static final FunctionDescriptor SCardForgetReaderA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardForgetReaderA$MH = RuntimeHelper.downcallHandle(
+        "SCardForgetReaderA",
+        constants$649.SCardForgetReaderA$FUNC
+    );
+    static final FunctionDescriptor SCardForgetReaderW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardForgetReaderW$MH = RuntimeHelper.downcallHandle(
+        "SCardForgetReaderW",
+        constants$649.SCardForgetReaderW$FUNC
+    );
 }
 
 

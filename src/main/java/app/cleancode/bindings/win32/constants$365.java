@@ -9,59 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$365 {
 
-    static final FunctionDescriptor GetGeoInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetDialogDpiChangeBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle GetGeoInfoW$MH = RuntimeHelper.downcallHandle(
-        "GetGeoInfoW",
-        constants$365.GetGeoInfoW$FUNC
-    );
-    static final FunctionDescriptor GetGeoInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetGeoInfoEx$MH = RuntimeHelper.downcallHandle(
-        "GetGeoInfoEx",
-        constants$365.GetGeoInfoEx$FUNC
+    static final MethodHandle SetDialogDpiChangeBehavior$MH = RuntimeHelper.downcallHandle(
+        "SetDialogDpiChangeBehavior",
+        constants$365.SetDialogDpiChangeBehavior$FUNC
     );
-    static final FunctionDescriptor EnumSystemGeoID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDialogDpiChangeBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumSystemGeoID$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemGeoID",
-        constants$365.EnumSystemGeoID$FUNC
+    static final MethodHandle GetDialogDpiChangeBehavior$MH = RuntimeHelper.downcallHandle(
+        "GetDialogDpiChangeBehavior",
+        constants$365.GetDialogDpiChangeBehavior$FUNC
     );
-    static final FunctionDescriptor EnumSystemGeoNames$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumSystemGeoNames$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemGeoNames",
-        constants$365.EnumSystemGeoNames$FUNC
-    );
-    static final FunctionDescriptor GetUserGeoID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetUserGeoID$MH = RuntimeHelper.downcallHandle(
-        "GetUserGeoID",
-        constants$365.GetUserGeoID$FUNC
-    );
-    static final FunctionDescriptor GetUserDefaultGeoName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CallMsgFilterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetUserDefaultGeoName$MH = RuntimeHelper.downcallHandle(
-        "GetUserDefaultGeoName",
-        constants$365.GetUserDefaultGeoName$FUNC
+    static final MethodHandle CallMsgFilterA$MH = RuntimeHelper.downcallHandle(
+        "CallMsgFilterA",
+        constants$365.CallMsgFilterA$FUNC
+    );
+    static final FunctionDescriptor CallMsgFilterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CallMsgFilterW$MH = RuntimeHelper.downcallHandle(
+        "CallMsgFilterW",
+        constants$365.CallMsgFilterW$FUNC
+    );
+    static final FunctionDescriptor OpenClipboard$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenClipboard$MH = RuntimeHelper.downcallHandle(
+        "OpenClipboard",
+        constants$365.OpenClipboard$FUNC
+    );
+    static final FunctionDescriptor CloseClipboard$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle CloseClipboard$MH = RuntimeHelper.downcallHandle(
+        "CloseClipboard",
+        constants$365.CloseClipboard$FUNC
     );
 }
 

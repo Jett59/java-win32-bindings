@@ -9,49 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$349 {
 
-    static final FunctionDescriptor ShutdownBlockReasonQuery$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor UnregisterDeviceNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnregisterDeviceNotification$MH = RuntimeHelper.downcallHandle(
+        "UnregisterDeviceNotification",
+        constants$349.UnregisterDeviceNotification$FUNC
+    );
+    static final FunctionDescriptor RegisterPowerSettingNotification$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegisterPowerSettingNotification$MH = RuntimeHelper.downcallHandle(
+        "RegisterPowerSettingNotification",
+        constants$349.RegisterPowerSettingNotification$FUNC
+    );
+    static final FunctionDescriptor UnregisterPowerSettingNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ShutdownBlockReasonQuery$MH = RuntimeHelper.downcallHandle(
-        "ShutdownBlockReasonQuery",
-        constants$349.ShutdownBlockReasonQuery$FUNC
+    static final MethodHandle UnregisterPowerSettingNotification$MH = RuntimeHelper.downcallHandle(
+        "UnregisterPowerSettingNotification",
+        constants$349.UnregisterPowerSettingNotification$FUNC
     );
-    static final FunctionDescriptor ShutdownBlockReasonDestroy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RegisterSuspendResumeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegisterSuspendResumeNotification$MH = RuntimeHelper.downcallHandle(
+        "RegisterSuspendResumeNotification",
+        constants$349.RegisterSuspendResumeNotification$FUNC
+    );
+    static final FunctionDescriptor UnregisterSuspendResumeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ShutdownBlockReasonDestroy$MH = RuntimeHelper.downcallHandle(
-        "ShutdownBlockReasonDestroy",
-        constants$349.ShutdownBlockReasonDestroy$FUNC
+    static final MethodHandle UnregisterSuspendResumeNotification$MH = RuntimeHelper.downcallHandle(
+        "UnregisterSuspendResumeNotification",
+        constants$349.UnregisterSuspendResumeNotification$FUNC
     );
-    static final FunctionDescriptor GetCurrentInputMessageSource$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor PostMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetCurrentInputMessageSource$MH = RuntimeHelper.downcallHandle(
-        "GetCurrentInputMessageSource",
-        constants$349.GetCurrentInputMessageSource$FUNC
-    );
-    static final FunctionDescriptor GetCIMSSM$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCIMSSM$MH = RuntimeHelper.downcallHandle(
-        "GetCIMSSM",
-        constants$349.GetCIMSSM$FUNC
-    );
-    static final FunctionDescriptor GetAutoRotationState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetAutoRotationState$MH = RuntimeHelper.downcallHandle(
-        "GetAutoRotationState",
-        constants$349.GetAutoRotationState$FUNC
-    );
-    static final FunctionDescriptor GetDisplayAutoRotationPreferences$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDisplayAutoRotationPreferences$MH = RuntimeHelper.downcallHandle(
-        "GetDisplayAutoRotationPreferences",
-        constants$349.GetDisplayAutoRotationPreferences$FUNC
+    static final MethodHandle PostMessageA$MH = RuntimeHelper.downcallHandle(
+        "PostMessageA",
+        constants$349.PostMessageA$FUNC
     );
 }
 

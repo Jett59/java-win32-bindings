@@ -9,38 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$158 {
 
-    static final FunctionDescriptor OLDFONTENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle OLDFONTENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$158.OLDFONTENUMPROCW$FUNC
-    );
-    static final FunctionDescriptor FONTENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AdjustTokenPrivileges$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle FONTENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$158.FONTENUMPROCA$FUNC
-    );
-    static final FunctionDescriptor FONTENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle FONTENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$158.FONTENUMPROCW$FUNC
-    );
-    static final FunctionDescriptor FONTENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AdjustTokenPrivileges$MH = RuntimeHelper.downcallHandle(
+        "AdjustTokenPrivileges",
+        constants$158.AdjustTokenPrivileges$FUNC
+    );
+    static final FunctionDescriptor AllocateAndInitializeSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AllocateAndInitializeSid$MH = RuntimeHelper.downcallHandle(
+        "AllocateAndInitializeSid",
+        constants$158.AllocateAndInitializeSid$FUNC
+    );
+    static final FunctionDescriptor AllocateLocallyUniqueId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AllocateLocallyUniqueId$MH = RuntimeHelper.downcallHandle(
+        "AllocateLocallyUniqueId",
+        constants$158.AllocateLocallyUniqueId$FUNC
+    );
+    static final FunctionDescriptor AreAllAccessesGranted$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle AreAllAccessesGranted$MH = RuntimeHelper.downcallHandle(
+        "AreAllAccessesGranted",
+        constants$158.AreAllAccessesGranted$FUNC
+    );
+    static final FunctionDescriptor AreAnyAccessesGranted$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle AreAnyAccessesGranted$MH = RuntimeHelper.downcallHandle(
+        "AreAnyAccessesGranted",
+        constants$158.AreAnyAccessesGranted$FUNC
+    );
+    static final FunctionDescriptor CheckTokenMembership$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CheckTokenMembership$MH = RuntimeHelper.downcallHandle(
+        "CheckTokenMembership",
+        constants$158.CheckTokenMembership$FUNC
     );
 }
 

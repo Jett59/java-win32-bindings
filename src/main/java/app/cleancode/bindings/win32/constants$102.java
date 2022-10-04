@@ -9,70 +9,44 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$102 {
 
-    static final FunctionDescriptor CreateWaitableTimerA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateWaitableTimerA$MH = RuntimeHelper.downcallHandle(
-        "CreateWaitableTimerA",
-        constants$102.CreateWaitableTimerA$FUNC
-    );
-    static final FunctionDescriptor OpenWaitableTimerA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OpenWaitableTimerA$MH = RuntimeHelper.downcallHandle(
-        "OpenWaitableTimerA",
-        constants$102.OpenWaitableTimerA$FUNC
-    );
-    static final FunctionDescriptor CreateSemaphoreExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InitializeCriticalSectionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateSemaphoreExA$MH = RuntimeHelper.downcallHandle(
-        "CreateSemaphoreExA",
-        constants$102.CreateSemaphoreExA$FUNC
+    static final MethodHandle InitializeCriticalSectionEx$MH = RuntimeHelper.downcallHandle(
+        "InitializeCriticalSectionEx",
+        constants$102.InitializeCriticalSectionEx$FUNC
     );
-    static final FunctionDescriptor CreateWaitableTimerExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetCriticalSectionSpinCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateWaitableTimerExA$MH = RuntimeHelper.downcallHandle(
-        "CreateWaitableTimerExA",
-        constants$102.CreateWaitableTimerExA$FUNC
+    static final MethodHandle SetCriticalSectionSpinCount$MH = RuntimeHelper.downcallHandle(
+        "SetCriticalSectionSpinCount",
+        constants$102.SetCriticalSectionSpinCount$FUNC
     );
-    static final FunctionDescriptor CreateFileMappingA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TryEnterCriticalSection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateFileMappingA$MH = RuntimeHelper.downcallHandle(
-        "CreateFileMappingA",
-        constants$102.CreateFileMappingA$FUNC
+    static final MethodHandle TryEnterCriticalSection$MH = RuntimeHelper.downcallHandle(
+        "TryEnterCriticalSection",
+        constants$102.TryEnterCriticalSection$FUNC
     );
-    static final FunctionDescriptor CreateFileMappingNumaA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor DeleteCriticalSection$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateFileMappingNumaA$MH = RuntimeHelper.downcallHandle(
-        "CreateFileMappingNumaA",
-        constants$102.CreateFileMappingNumaA$FUNC
+    static final MethodHandle DeleteCriticalSection$MH = RuntimeHelper.downcallHandle(
+        "DeleteCriticalSection",
+        constants$102.DeleteCriticalSection$FUNC
+    );
+    static final FunctionDescriptor PINIT_ONCE_FN$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PINIT_ONCE_FN$MH = RuntimeHelper.downcallHandle(
+        constants$102.PINIT_ONCE_FN$FUNC
     );
 }
 

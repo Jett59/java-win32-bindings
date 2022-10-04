@@ -9,64 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$442 {
 
-    static final FunctionDescriptor CertSaveStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WINEVENTPROC$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertSaveStore$MH = RuntimeHelper.downcallHandle(
-        "CertSaveStore",
-        constants$442.CertSaveStore$FUNC
+    static final MethodHandle WINEVENTPROC$MH = RuntimeHelper.downcallHandle(
+        constants$442.WINEVENTPROC$FUNC
     );
-    static final FunctionDescriptor CertCloseStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetWinEventHook$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertCloseStore$MH = RuntimeHelper.downcallHandle(
-        "CertCloseStore",
-        constants$442.CertCloseStore$FUNC
+    static final MethodHandle SetWinEventHook$MH = RuntimeHelper.downcallHandle(
+        "SetWinEventHook",
+        constants$442.SetWinEventHook$FUNC
     );
-    static final FunctionDescriptor CertGetSubjectCertificateFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor IsWinEventHookInstalled$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IsWinEventHookInstalled$MH = RuntimeHelper.downcallHandle(
+        "IsWinEventHookInstalled",
+        constants$442.IsWinEventHookInstalled$FUNC
+    );
+    static final FunctionDescriptor UnhookWinEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnhookWinEvent$MH = RuntimeHelper.downcallHandle(
+        "UnhookWinEvent",
+        constants$442.UnhookWinEvent$FUNC
+    );
+    static final FunctionDescriptor GetGUIThreadInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertGetSubjectCertificateFromStore$MH = RuntimeHelper.downcallHandle(
-        "CertGetSubjectCertificateFromStore",
-        constants$442.CertGetSubjectCertificateFromStore$FUNC
+    static final MethodHandle GetGUIThreadInfo$MH = RuntimeHelper.downcallHandle(
+        "GetGUIThreadInfo",
+        constants$442.GetGUIThreadInfo$FUNC
     );
-    static final FunctionDescriptor CertEnumCertificatesInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor BlockInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertEnumCertificatesInStore$MH = RuntimeHelper.downcallHandle(
-        "CertEnumCertificatesInStore",
-        constants$442.CertEnumCertificatesInStore$FUNC
-    );
-    static final FunctionDescriptor CertFindCertificateInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFindCertificateInStore$MH = RuntimeHelper.downcallHandle(
-        "CertFindCertificateInStore",
-        constants$442.CertFindCertificateInStore$FUNC
-    );
-    static final FunctionDescriptor CertGetIssuerCertificateFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertGetIssuerCertificateFromStore$MH = RuntimeHelper.downcallHandle(
-        "CertGetIssuerCertificateFromStore",
-        constants$442.CertGetIssuerCertificateFromStore$FUNC
+    static final MethodHandle BlockInput$MH = RuntimeHelper.downcallHandle(
+        "BlockInput",
+        constants$442.BlockInput$FUNC
     );
 }
 

@@ -9,49 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$297 {
 
-    static final FunctionDescriptor AllowSetForegroundWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle AllowSetForegroundWindow$MH = RuntimeHelper.downcallHandle(
-        "AllowSetForegroundWindow",
-        constants$297.AllowSetForegroundWindow$FUNC
-    );
-    static final FunctionDescriptor LockSetForegroundWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle LockSetForegroundWindow$MH = RuntimeHelper.downcallHandle(
-        "LockSetForegroundWindow",
-        constants$297.LockSetForegroundWindow$FUNC
-    );
-    static final FunctionDescriptor WindowFromDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WindowFromDC$MH = RuntimeHelper.downcallHandle(
-        "WindowFromDC",
-        constants$297.WindowFromDC$FUNC
-    );
-    static final FunctionDescriptor GetDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDC$MH = RuntimeHelper.downcallHandle(
-        "GetDC",
-        constants$297.GetDC$FUNC
-    );
-    static final FunctionDescriptor GetDCEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetGraphicsMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetDCEx$MH = RuntimeHelper.downcallHandle(
-        "GetDCEx",
-        constants$297.GetDCEx$FUNC
+    static final MethodHandle SetGraphicsMode$MH = RuntimeHelper.downcallHandle(
+        "SetGraphicsMode",
+        constants$297.SetGraphicsMode$FUNC
     );
-    static final FunctionDescriptor GetWindowDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetMapMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetMapMode$MH = RuntimeHelper.downcallHandle(
+        "SetMapMode",
+        constants$297.SetMapMode$FUNC
+    );
+    static final FunctionDescriptor SetLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetLayout$MH = RuntimeHelper.downcallHandle(
+        "SetLayout",
+        constants$297.SetLayout$FUNC
+    );
+    static final FunctionDescriptor GetLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWindowDC$MH = RuntimeHelper.downcallHandle(
-        "GetWindowDC",
-        constants$297.GetWindowDC$FUNC
+    static final MethodHandle GetLayout$MH = RuntimeHelper.downcallHandle(
+        "GetLayout",
+        constants$297.GetLayout$FUNC
+    );
+    static final FunctionDescriptor SetMetaFileBitsEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetMetaFileBitsEx$MH = RuntimeHelper.downcallHandle(
+        "SetMetaFileBitsEx",
+        constants$297.SetMetaFileBitsEx$FUNC
+    );
+    static final FunctionDescriptor SetPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetPaletteEntries$MH = RuntimeHelper.downcallHandle(
+        "SetPaletteEntries",
+        constants$297.SetPaletteEntries$FUNC
     );
 }
 

@@ -9,65 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$257 {
 
-    static final FunctionDescriptor DialogBoxParamA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetApplicationRecoveryCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DialogBoxParamA$MH = RuntimeHelper.downcallHandle(
-        "DialogBoxParamA",
-        constants$257.DialogBoxParamA$FUNC
+    static final MethodHandle GetApplicationRecoveryCallback$MH = RuntimeHelper.downcallHandle(
+        "GetApplicationRecoveryCallback",
+        constants$257.GetApplicationRecoveryCallback$FUNC
     );
-    static final FunctionDescriptor DialogBoxParamW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetApplicationRestartSettings$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DialogBoxParamW$MH = RuntimeHelper.downcallHandle(
-        "DialogBoxParamW",
-        constants$257.DialogBoxParamW$FUNC
+    static final MethodHandle GetApplicationRestartSettings$MH = RuntimeHelper.downcallHandle(
+        "GetApplicationRestartSettings",
+        constants$257.GetApplicationRestartSettings$FUNC
     );
-    static final FunctionDescriptor DialogBoxIndirectParamA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor ApplicationRecoveryInProgress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DialogBoxIndirectParamA$MH = RuntimeHelper.downcallHandle(
-        "DialogBoxIndirectParamA",
-        constants$257.DialogBoxIndirectParamA$FUNC
+    static final MethodHandle ApplicationRecoveryInProgress$MH = RuntimeHelper.downcallHandle(
+        "ApplicationRecoveryInProgress",
+        constants$257.ApplicationRecoveryInProgress$FUNC
     );
-    static final FunctionDescriptor DialogBoxIndirectParamW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor ApplicationRecoveryFinished$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DialogBoxIndirectParamW$MH = RuntimeHelper.downcallHandle(
-        "DialogBoxIndirectParamW",
-        constants$257.DialogBoxIndirectParamW$FUNC
+    static final MethodHandle ApplicationRecoveryFinished$MH = RuntimeHelper.downcallHandle(
+        "ApplicationRecoveryFinished",
+        constants$257.ApplicationRecoveryFinished$FUNC
     );
-    static final FunctionDescriptor EndDialog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFileInformationByHandleEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EndDialog$MH = RuntimeHelper.downcallHandle(
-        "EndDialog",
-        constants$257.EndDialog$FUNC
-    );
-    static final FunctionDescriptor GetDlgItem$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetDlgItem$MH = RuntimeHelper.downcallHandle(
-        "GetDlgItem",
-        constants$257.GetDlgItem$FUNC
+    static final MethodHandle GetFileInformationByHandleEx$MH = RuntimeHelper.downcallHandle(
+        "GetFileInformationByHandleEx",
+        constants$257.GetFileInformationByHandleEx$FUNC
+    );
+    static final FunctionDescriptor OpenFileById$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle OpenFileById$MH = RuntimeHelper.downcallHandle(
+        "OpenFileById",
+        constants$257.OpenFileById$FUNC
     );
 }
 

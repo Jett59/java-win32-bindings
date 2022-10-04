@@ -9,54 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$275 {
 
-    static final FunctionDescriptor InitializeTouchInjection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExtCreateRegion$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ExtCreateRegion$MH = RuntimeHelper.downcallHandle(
+        "ExtCreateRegion",
+        constants$275.ExtCreateRegion$FUNC
+    );
+    static final FunctionDescriptor ExtFloodFill$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle InitializeTouchInjection$MH = RuntimeHelper.downcallHandle(
-        "InitializeTouchInjection",
-        constants$275.InitializeTouchInjection$FUNC
+    static final MethodHandle ExtFloodFill$MH = RuntimeHelper.downcallHandle(
+        "ExtFloodFill",
+        constants$275.ExtFloodFill$FUNC
     );
-    static final FunctionDescriptor InjectTouchInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle InjectTouchInput$MH = RuntimeHelper.downcallHandle(
-        "InjectTouchInput",
-        constants$275.InjectTouchInput$FUNC
-    );
-    static final FunctionDescriptor GetPointerType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerType$MH = RuntimeHelper.downcallHandle(
-        "GetPointerType",
-        constants$275.GetPointerType$FUNC
-    );
-    static final FunctionDescriptor GetPointerCursorId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerCursorId$MH = RuntimeHelper.downcallHandle(
-        "GetPointerCursorId",
-        constants$275.GetPointerCursorId$FUNC
-    );
-    static final FunctionDescriptor GetPointerInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerInfo$MH = RuntimeHelper.downcallHandle(
-        "GetPointerInfo",
-        constants$275.GetPointerInfo$FUNC
-    );
-    static final FunctionDescriptor GetPointerInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FillRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPointerInfoHistory$MH = RuntimeHelper.downcallHandle(
-        "GetPointerInfoHistory",
-        constants$275.GetPointerInfoHistory$FUNC
+    static final MethodHandle FillRgn$MH = RuntimeHelper.downcallHandle(
+        "FillRgn",
+        constants$275.FillRgn$FUNC
+    );
+    static final FunctionDescriptor FloodFill$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FloodFill$MH = RuntimeHelper.downcallHandle(
+        "FloodFill",
+        constants$275.FloodFill$FUNC
+    );
+    static final FunctionDescriptor FrameRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FrameRgn$MH = RuntimeHelper.downcallHandle(
+        "FrameRgn",
+        constants$275.FrameRgn$FUNC
+    );
+    static final FunctionDescriptor GetROP2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetROP2$MH = RuntimeHelper.downcallHandle(
+        "GetROP2",
+        constants$275.GetROP2$FUNC
     );
 }
 

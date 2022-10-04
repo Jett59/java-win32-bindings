@@ -9,67 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$397 {
 
-    static final FunctionDescriptor WNetAddConnection3W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WNetAddConnection3W$MH = RuntimeHelper.downcallHandle(
-        "WNetAddConnection3W",
-        constants$397.WNetAddConnection3W$FUNC
-    );
-    static final FunctionDescriptor WNetAddConnection4A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetMenuItemRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetMenuItemRect$MH = RuntimeHelper.downcallHandle(
+        "GetMenuItemRect",
+        constants$397.GetMenuItemRect$FUNC
+    );
+    static final FunctionDescriptor MenuItemFromPoint$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("x"),
+            Constants$root.C_LONG$LAYOUT.withName("y")
+        ).withName("tagPOINT")
+    );
+    static final MethodHandle MenuItemFromPoint$MH = RuntimeHelper.downcallHandle(
+        "MenuItemFromPoint",
+        constants$397.MenuItemFromPoint$FUNC
+    );
+    static final FunctionDescriptor DragObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DragObject$MH = RuntimeHelper.downcallHandle(
+        "DragObject",
+        constants$397.DragObject$FUNC
+    );
+    static final FunctionDescriptor DragDetect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("x"),
+            Constants$root.C_LONG$LAYOUT.withName("y")
+        ).withName("tagPOINT")
+    );
+    static final MethodHandle DragDetect$MH = RuntimeHelper.downcallHandle(
+        "DragDetect",
+        constants$397.DragDetect$FUNC
+    );
+    static final FunctionDescriptor DrawIcon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DrawIcon$MH = RuntimeHelper.downcallHandle(
+        "DrawIcon",
+        constants$397.DrawIcon$FUNC
+    );
+    static final FunctionDescriptor DrawTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetAddConnection4A$MH = RuntimeHelper.downcallHandle(
-        "WNetAddConnection4A",
-        constants$397.WNetAddConnection4A$FUNC
-    );
-    static final FunctionDescriptor WNetAddConnection4W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WNetAddConnection4W$MH = RuntimeHelper.downcallHandle(
-        "WNetAddConnection4W",
-        constants$397.WNetAddConnection4W$FUNC
-    );
-    static final FunctionDescriptor WNetCancelConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WNetCancelConnectionA$MH = RuntimeHelper.downcallHandle(
-        "WNetCancelConnectionA",
-        constants$397.WNetCancelConnectionA$FUNC
-    );
-    static final FunctionDescriptor WNetCancelConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WNetCancelConnectionW$MH = RuntimeHelper.downcallHandle(
-        "WNetCancelConnectionW",
-        constants$397.WNetCancelConnectionW$FUNC
-    );
-    static final FunctionDescriptor WNetCancelConnection2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WNetCancelConnection2A$MH = RuntimeHelper.downcallHandle(
-        "WNetCancelConnection2A",
-        constants$397.WNetCancelConnection2A$FUNC
+    static final MethodHandle DrawTextA$MH = RuntimeHelper.downcallHandle(
+        "DrawTextA",
+        constants$397.DrawTextA$FUNC
     );
 }
 

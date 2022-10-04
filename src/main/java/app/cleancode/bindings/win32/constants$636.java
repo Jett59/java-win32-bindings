@@ -9,12 +9,78 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$636 {
 
-    static final MemoryAddress OCSP_SIGNED_REQUEST$ADDR = MemoryAddress.ofLong(65L);
-    static final MemoryAddress OCSP_REQUEST$ADDR = MemoryAddress.ofLong(66L);
-    static final MemoryAddress OCSP_RESPONSE$ADDR = MemoryAddress.ofLong(67L);
-    static final MemoryAddress OCSP_BASIC_SIGNED_RESPONSE$ADDR = MemoryAddress.ofLong(68L);
-    static final MemoryAddress OCSP_BASIC_RESPONSE$ADDR = MemoryAddress.ofLong(69L);
-    static final MemoryAddress X509_LOGOTYPE_EXT$ADDR = MemoryAddress.ofLong(70L);
+    static final FunctionDescriptor CryptUnprotectData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptUnprotectData$MH = RuntimeHelper.downcallHandle(
+        "CryptUnprotectData",
+        constants$636.CryptUnprotectData$FUNC
+    );
+    static final FunctionDescriptor CryptProtectDataNoUI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptProtectDataNoUI$MH = RuntimeHelper.downcallHandle(
+        "CryptProtectDataNoUI",
+        constants$636.CryptProtectDataNoUI$FUNC
+    );
+    static final FunctionDescriptor CryptUnprotectDataNoUI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptUnprotectDataNoUI$MH = RuntimeHelper.downcallHandle(
+        "CryptUnprotectDataNoUI",
+        constants$636.CryptUnprotectDataNoUI$FUNC
+    );
+    static final FunctionDescriptor CryptUpdateProtectedState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptUpdateProtectedState$MH = RuntimeHelper.downcallHandle(
+        "CryptUpdateProtectedState",
+        constants$636.CryptUpdateProtectedState$FUNC
+    );
+    static final FunctionDescriptor CryptProtectMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptProtectMemory$MH = RuntimeHelper.downcallHandle(
+        "CryptProtectMemory",
+        constants$636.CryptProtectMemory$FUNC
+    );
+    static final FunctionDescriptor CryptUnprotectMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptUnprotectMemory$MH = RuntimeHelper.downcallHandle(
+        "CryptUnprotectMemory",
+        constants$636.CryptUnprotectMemory$FUNC
+    );
 }
 
 

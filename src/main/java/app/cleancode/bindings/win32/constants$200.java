@@ -9,57 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$200 {
 
-    static final FunctionDescriptor GetEnhMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetEnhMetaFileW$MH = RuntimeHelper.downcallHandle(
-        "GetEnhMetaFileW",
-        constants$200.GetEnhMetaFileW$FUNC
-    );
-    static final FunctionDescriptor GetEnhMetaFileBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor lstrcatA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetEnhMetaFileBits$MH = RuntimeHelper.downcallHandle(
-        "GetEnhMetaFileBits",
-        constants$200.GetEnhMetaFileBits$FUNC
+    static final MethodHandle lstrcatA$MH = RuntimeHelper.downcallHandle(
+        "lstrcatA",
+        constants$200.lstrcatA$FUNC
     );
-    static final FunctionDescriptor GetEnhMetaFileDescriptionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor lstrcatW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetEnhMetaFileDescriptionA$MH = RuntimeHelper.downcallHandle(
-        "GetEnhMetaFileDescriptionA",
-        constants$200.GetEnhMetaFileDescriptionA$FUNC
+    static final MethodHandle lstrcatW$MH = RuntimeHelper.downcallHandle(
+        "lstrcatW",
+        constants$200.lstrcatW$FUNC
     );
-    static final FunctionDescriptor GetEnhMetaFileDescriptionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor lstrlenA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle lstrlenA$MH = RuntimeHelper.downcallHandle(
+        "lstrlenA",
+        constants$200.lstrlenA$FUNC
+    );
+    static final FunctionDescriptor lstrlenW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle lstrlenW$MH = RuntimeHelper.downcallHandle(
+        "lstrlenW",
+        constants$200.lstrlenW$FUNC
+    );
+    static final FunctionDescriptor OpenFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetEnhMetaFileDescriptionW$MH = RuntimeHelper.downcallHandle(
-        "GetEnhMetaFileDescriptionW",
-        constants$200.GetEnhMetaFileDescriptionW$FUNC
-    );
-    static final FunctionDescriptor GetEnhMetaFileHeader$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetEnhMetaFileHeader$MH = RuntimeHelper.downcallHandle(
-        "GetEnhMetaFileHeader",
-        constants$200.GetEnhMetaFileHeader$FUNC
+    static final MethodHandle OpenFile$MH = RuntimeHelper.downcallHandle(
+        "OpenFile",
+        constants$200.OpenFile$FUNC
     );
-    static final FunctionDescriptor GetEnhMetaFilePaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor _lopen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetEnhMetaFilePaletteEntries$MH = RuntimeHelper.downcallHandle(
-        "GetEnhMetaFilePaletteEntries",
-        constants$200.GetEnhMetaFilePaletteEntries$FUNC
+    static final MethodHandle _lopen$MH = RuntimeHelper.downcallHandle(
+        "_lopen",
+        constants$200._lopen$FUNC
     );
 }
 

@@ -9,66 +9,32 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$330 {
 
-    static final FunctionDescriptor DlgDirSelectComboBoxExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PROPENUMPROCEXW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle PROPENUMPROCEXW$MH = RuntimeHelper.downcallHandle(
+        constants$330.PROPENUMPROCEXW$FUNC
+    );
+    static final FunctionDescriptor EDITWORDBREAKPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DlgDirSelectComboBoxExW$MH = RuntimeHelper.downcallHandle(
-        "DlgDirSelectComboBoxExW",
-        constants$330.DlgDirSelectComboBoxExW$FUNC
+    static final MethodHandle EDITWORDBREAKPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$330.EDITWORDBREAKPROCA$FUNC
     );
-    static final FunctionDescriptor SetScrollInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EDITWORDBREAKPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetScrollInfo$MH = RuntimeHelper.downcallHandle(
-        "SetScrollInfo",
-        constants$330.SetScrollInfo$FUNC
-    );
-    static final FunctionDescriptor GetScrollInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetScrollInfo$MH = RuntimeHelper.downcallHandle(
-        "GetScrollInfo",
-        constants$330.GetScrollInfo$FUNC
-    );
-    static final FunctionDescriptor DefFrameProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle DefFrameProcA$MH = RuntimeHelper.downcallHandle(
-        "DefFrameProcA",
-        constants$330.DefFrameProcA$FUNC
-    );
-    static final FunctionDescriptor DefFrameProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle DefFrameProcW$MH = RuntimeHelper.downcallHandle(
-        "DefFrameProcW",
-        constants$330.DefFrameProcW$FUNC
-    );
-    static final FunctionDescriptor DefMDIChildProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle DefMDIChildProcA$MH = RuntimeHelper.downcallHandle(
-        "DefMDIChildProcA",
-        constants$330.DefMDIChildProcA$FUNC
+    static final MethodHandle EDITWORDBREAKPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$330.EDITWORDBREAKPROCW$FUNC
     );
 }
 

@@ -9,64 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$469 {
 
-    static final FunctionDescriptor CryptVerifyMessageSignatureWithKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnumDateFormatsExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptVerifyMessageSignatureWithKey$MH = RuntimeHelper.downcallHandle(
-        "CryptVerifyMessageSignatureWithKey",
-        constants$469.CryptVerifyMessageSignatureWithKey$FUNC
-    );
-    static final FunctionDescriptor CertOpenSystemStoreA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertOpenSystemStoreA$MH = RuntimeHelper.downcallHandle(
-        "CertOpenSystemStoreA",
-        constants$469.CertOpenSystemStoreA$FUNC
-    );
-    static final FunctionDescriptor CertOpenSystemStoreW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertOpenSystemStoreW$MH = RuntimeHelper.downcallHandle(
-        "CertOpenSystemStoreW",
-        constants$469.CertOpenSystemStoreW$FUNC
-    );
-    static final FunctionDescriptor CertAddEncodedCertificateToSystemStoreA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertAddEncodedCertificateToSystemStoreA$MH = RuntimeHelper.downcallHandle(
-        "CertAddEncodedCertificateToSystemStoreA",
-        constants$469.CertAddEncodedCertificateToSystemStoreA$FUNC
+    static final MethodHandle EnumDateFormatsExA$MH = RuntimeHelper.downcallHandle(
+        "EnumDateFormatsExA",
+        constants$469.EnumDateFormatsExA$FUNC
     );
-    static final FunctionDescriptor CertAddEncodedCertificateToSystemStoreW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertAddEncodedCertificateToSystemStoreW$MH = RuntimeHelper.downcallHandle(
-        "CertAddEncodedCertificateToSystemStoreW",
-        constants$469.CertAddEncodedCertificateToSystemStoreW$FUNC
-    );
-    static final FunctionDescriptor FindCertsByIssuer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnumDateFormatsExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle FindCertsByIssuer$MH = RuntimeHelper.downcallHandle(
-        "FindCertsByIssuer",
-        constants$469.FindCertsByIssuer$FUNC
+    static final MethodHandle EnumDateFormatsExW$MH = RuntimeHelper.downcallHandle(
+        "EnumDateFormatsExW",
+        constants$469.EnumDateFormatsExW$FUNC
+    );
+    static final FunctionDescriptor IsValidLanguageGroup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IsValidLanguageGroup$MH = RuntimeHelper.downcallHandle(
+        "IsValidLanguageGroup",
+        constants$469.IsValidLanguageGroup$FUNC
+    );
+    static final FunctionDescriptor GetNLSVersion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetNLSVersion$MH = RuntimeHelper.downcallHandle(
+        "GetNLSVersion",
+        constants$469.GetNLSVersion$FUNC
+    );
+    static final FunctionDescriptor IsValidLocale$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IsValidLocale$MH = RuntimeHelper.downcallHandle(
+        "IsValidLocale",
+        constants$469.IsValidLocale$FUNC
+    );
+    static final FunctionDescriptor GetGeoInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle GetGeoInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetGeoInfoA",
+        constants$469.GetGeoInfoA$FUNC
     );
 }
 

@@ -9,60 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$92 {
 
-    static final FunctionDescriptor EraseTape$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetLastError$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EraseTape$MH = RuntimeHelper.downcallHandle(
-        "EraseTape",
-        constants$92.EraseTape$FUNC
+    static final MethodHandle SetLastError$MH = RuntimeHelper.downcallHandle(
+        "SetLastError",
+        constants$92.SetLastError$FUNC
     );
-    static final FunctionDescriptor CreateTapePartition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetErrorMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetErrorMode$MH = RuntimeHelper.downcallHandle(
+        "GetErrorMode",
+        constants$92.GetErrorMode$FUNC
+    );
+    static final FunctionDescriptor SetErrorMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateTapePartition$MH = RuntimeHelper.downcallHandle(
-        "CreateTapePartition",
-        constants$92.CreateTapePartition$FUNC
+    static final MethodHandle SetErrorMode$MH = RuntimeHelper.downcallHandle(
+        "SetErrorMode",
+        constants$92.SetErrorMode$FUNC
     );
-    static final FunctionDescriptor WriteTapemark$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WriteTapemark$MH = RuntimeHelper.downcallHandle(
-        "WriteTapemark",
-        constants$92.WriteTapemark$FUNC
-    );
-    static final FunctionDescriptor GetTapeStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTapeStatus$MH = RuntimeHelper.downcallHandle(
-        "GetTapeStatus",
-        constants$92.GetTapeStatus$FUNC
-    );
-    static final FunctionDescriptor GetTapeParameters$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTapeParameters$MH = RuntimeHelper.downcallHandle(
-        "GetTapeParameters",
-        constants$92.GetTapeParameters$FUNC
-    );
-    static final FunctionDescriptor SetTapeParameters$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AddVectoredExceptionHandler$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetTapeParameters$MH = RuntimeHelper.downcallHandle(
-        "SetTapeParameters",
-        constants$92.SetTapeParameters$FUNC
+    static final MethodHandle AddVectoredExceptionHandler$MH = RuntimeHelper.downcallHandle(
+        "AddVectoredExceptionHandler",
+        constants$92.AddVectoredExceptionHandler$FUNC
+    );
+    static final FunctionDescriptor RemoveVectoredExceptionHandler$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RemoveVectoredExceptionHandler$MH = RuntimeHelper.downcallHandle(
+        "RemoveVectoredExceptionHandler",
+        constants$92.RemoveVectoredExceptionHandler$FUNC
+    );
+    static final FunctionDescriptor AddVectoredContinueHandler$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddVectoredContinueHandler$MH = RuntimeHelper.downcallHandle(
+        "AddVectoredContinueHandler",
+        constants$92.AddVectoredContinueHandler$FUNC
     );
 }
 

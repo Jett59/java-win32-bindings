@@ -9,48 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$341 {
 
-    static final FunctionDescriptor GetSystemDpiForProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetProcessWindowStation$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetProcessWindowStation$MH = RuntimeHelper.downcallHandle(
+        "GetProcessWindowStation",
+        constants$341.GetProcessWindowStation$FUNC
     );
-    static final MethodHandle GetSystemDpiForProcess$MH = RuntimeHelper.downcallHandle(
-        "GetSystemDpiForProcess",
-        constants$341.GetSystemDpiForProcess$FUNC
-    );
-    static final FunctionDescriptor EnableNonClientDpiScaling$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnableNonClientDpiScaling$MH = RuntimeHelper.downcallHandle(
-        "EnableNonClientDpiScaling",
-        constants$341.EnableNonClientDpiScaling$FUNC
-    );
-    static final FunctionDescriptor InheritWindowMonitor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetUserObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InheritWindowMonitor$MH = RuntimeHelper.downcallHandle(
-        "InheritWindowMonitor",
-        constants$341.InheritWindowMonitor$FUNC
+    static final MethodHandle SetUserObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "SetUserObjectSecurity",
+        constants$341.SetUserObjectSecurity$FUNC
     );
-    static final FunctionDescriptor SetProcessDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetUserObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetProcessDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
-        "SetProcessDpiAwarenessContext",
-        constants$341.SetProcessDpiAwarenessContext$FUNC
+    static final MethodHandle GetUserObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "GetUserObjectSecurity",
+        constants$341.GetUserObjectSecurity$FUNC
     );
-    static final FunctionDescriptor GetDpiAwarenessContextForProcess$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetUserObjectInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDpiAwarenessContextForProcess$MH = RuntimeHelper.downcallHandle(
-        "GetDpiAwarenessContextForProcess",
-        constants$341.GetDpiAwarenessContextForProcess$FUNC
+    static final MethodHandle GetUserObjectInformationA$MH = RuntimeHelper.downcallHandle(
+        "GetUserObjectInformationA",
+        constants$341.GetUserObjectInformationA$FUNC
     );
-    static final FunctionDescriptor SetThreadDpiHostingBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetUserObjectInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetUserObjectInformationW$MH = RuntimeHelper.downcallHandle(
+        "GetUserObjectInformationW",
+        constants$341.GetUserObjectInformationW$FUNC
+    );
+    static final FunctionDescriptor SetUserObjectInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetThreadDpiHostingBehavior$MH = RuntimeHelper.downcallHandle(
-        "SetThreadDpiHostingBehavior",
-        constants$341.SetThreadDpiHostingBehavior$FUNC
+    static final MethodHandle SetUserObjectInformationA$MH = RuntimeHelper.downcallHandle(
+        "SetUserObjectInformationA",
+        constants$341.SetUserObjectInformationA$FUNC
     );
 }
 

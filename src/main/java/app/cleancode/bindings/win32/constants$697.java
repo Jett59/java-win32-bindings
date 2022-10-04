@@ -9,12 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$697 {
 
-    static final MemoryAddress CERT_STORE_PROV_PKCS12$ADDR = MemoryAddress.ofLong(17L);
-    static final MemorySegment sz_CERT_STORE_PROV_MEMORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Memory");
-    static final MemorySegment sz_CERT_STORE_PROV_FILENAME_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("File");
-    static final MemorySegment sz_CERT_STORE_PROV_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("File");
-    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("System");
-    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("System");
+    static final FunctionDescriptor CoTestCancel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle CoTestCancel$MH = RuntimeHelper.downcallHandle(
+        "CoTestCancel",
+        constants$697.CoTestCancel$FUNC
+    );
+    static final FunctionDescriptor CoEnableCallCancellation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoEnableCallCancellation$MH = RuntimeHelper.downcallHandle(
+        "CoEnableCallCancellation",
+        constants$697.CoEnableCallCancellation$FUNC
+    );
+    static final FunctionDescriptor CoDisableCallCancellation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoDisableCallCancellation$MH = RuntimeHelper.downcallHandle(
+        "CoDisableCallCancellation",
+        constants$697.CoDisableCallCancellation$FUNC
+    );
+    static final FunctionDescriptor StringFromCLSID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StringFromCLSID$MH = RuntimeHelper.downcallHandle(
+        "StringFromCLSID",
+        constants$697.StringFromCLSID$FUNC
+    );
+    static final FunctionDescriptor CLSIDFromString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CLSIDFromString$MH = RuntimeHelper.downcallHandle(
+        "CLSIDFromString",
+        constants$697.CLSIDFromString$FUNC
+    );
+    static final FunctionDescriptor StringFromIID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StringFromIID$MH = RuntimeHelper.downcallHandle(
+        "StringFromIID",
+        constants$697.StringFromIID$FUNC
+    );
 }
 
 

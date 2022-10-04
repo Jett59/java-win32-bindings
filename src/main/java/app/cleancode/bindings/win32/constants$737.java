@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$737 {
 
-    static final MemorySegment PKCS12_ONLY_CERTIFICATES_PROVIDER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment PKCS12_ONLY_CERTIFICATES_CONTAINER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.7");
-    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.9");
-    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.10");
-    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA512$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.11");
+    static final MemoryAddress MINIMUM_RESERVED_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(16L);
+    static final MemoryAddress SETWALLPAPER_DEFAULT$ADDR = MemoryAddress.ofLong(-1L);
+    static final MemoryAddress HWND_BROADCAST$ADDR = MemoryAddress.ofLong(65535L);
+    static final MemoryAddress HWND_MESSAGE$ADDR = MemoryAddress.ofLong(-3L);
+    static final MemoryAddress HWND_DESKTOP$ADDR = MemoryAddress.ofLong(0L);
 }
 
 

@@ -9,52 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$310 {
 
-    static final FunctionDescriptor SetCaretPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ArcTo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetCaretPos$MH = RuntimeHelper.downcallHandle(
-        "SetCaretPos",
-        constants$310.SetCaretPos$FUNC
+    static final MethodHandle ArcTo$MH = RuntimeHelper.downcallHandle(
+        "ArcTo",
+        constants$310.ArcTo$FUNC
     );
-    static final FunctionDescriptor GetCaretPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor BeginPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCaretPos$MH = RuntimeHelper.downcallHandle(
-        "GetCaretPos",
-        constants$310.GetCaretPos$FUNC
+    static final MethodHandle BeginPath$MH = RuntimeHelper.downcallHandle(
+        "BeginPath",
+        constants$310.BeginPath$FUNC
     );
-    static final FunctionDescriptor ClientToScreen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CloseFigure$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ClientToScreen$MH = RuntimeHelper.downcallHandle(
-        "ClientToScreen",
-        constants$310.ClientToScreen$FUNC
+    static final MethodHandle CloseFigure$MH = RuntimeHelper.downcallHandle(
+        "CloseFigure",
+        constants$310.CloseFigure$FUNC
     );
-    static final FunctionDescriptor ScreenToClient$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EndPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ScreenToClient$MH = RuntimeHelper.downcallHandle(
-        "ScreenToClient",
-        constants$310.ScreenToClient$FUNC
+    static final MethodHandle EndPath$MH = RuntimeHelper.downcallHandle(
+        "EndPath",
+        constants$310.EndPath$FUNC
     );
-    static final FunctionDescriptor LogicalToPhysicalPoint$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FillPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LogicalToPhysicalPoint$MH = RuntimeHelper.downcallHandle(
-        "LogicalToPhysicalPoint",
-        constants$310.LogicalToPhysicalPoint$FUNC
+    static final MethodHandle FillPath$MH = RuntimeHelper.downcallHandle(
+        "FillPath",
+        constants$310.FillPath$FUNC
     );
-    static final FunctionDescriptor PhysicalToLogicalPoint$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FlattenPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PhysicalToLogicalPoint$MH = RuntimeHelper.downcallHandle(
-        "PhysicalToLogicalPoint",
-        constants$310.PhysicalToLogicalPoint$FUNC
+    static final MethodHandle FlattenPath$MH = RuntimeHelper.downcallHandle(
+        "FlattenPath",
+        constants$310.FlattenPath$FUNC
     );
 }
 

@@ -9,12 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$622 {
 
-    static final MemorySegment szOID_PKCS_12_LOCAL_KEY_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.21");
-    static final MemorySegment szOID_PKCS_12_KEY_PROVIDER_NAME_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.17.1");
-    static final MemorySegment szOID_LOCAL_MACHINE_KEYSET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.17.2");
-    static final MemorySegment szOID_PKCS_12_EXTENDED_ATTRIBUTES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.17.3");
-    static final MemorySegment szOID_PKCS_12_PROTECTED_PASSWORD_SECRET_BAG_TYPE_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.17.4");
-    static final MemorySegment szOID_KEYID_RDN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.7.1");
+    static final FunctionDescriptor FindCertsByIssuer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FindCertsByIssuer$MH = RuntimeHelper.downcallHandle(
+        "FindCertsByIssuer",
+        constants$622.FindCertsByIssuer$FUNC
+    );
+    static final FunctionDescriptor CryptQueryObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptQueryObject$MH = RuntimeHelper.downcallHandle(
+        "CryptQueryObject",
+        constants$622.CryptQueryObject$FUNC
+    );
+    static final FunctionDescriptor CryptMemAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptMemAlloc$MH = RuntimeHelper.downcallHandle(
+        "CryptMemAlloc",
+        constants$622.CryptMemAlloc$FUNC
+    );
+    static final FunctionDescriptor CryptMemRealloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptMemRealloc$MH = RuntimeHelper.downcallHandle(
+        "CryptMemRealloc",
+        constants$622.CryptMemRealloc$FUNC
+    );
+    static final FunctionDescriptor CryptMemFree$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMemFree$MH = RuntimeHelper.downcallHandle(
+        "CryptMemFree",
+        constants$622.CryptMemFree$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

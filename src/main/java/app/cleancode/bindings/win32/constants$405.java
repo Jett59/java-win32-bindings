@@ -9,57 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$405 {
 
-    static final FunctionDescriptor PM_QUERY_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PM_QUERY_PROC$MH = RuntimeHelper.downcallHandle(
-        constants$405.PM_QUERY_PROC$FUNC
-    );
-    static final FunctionDescriptor accept$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle accept$MH = RuntimeHelper.downcallHandle(
-        "accept",
-        constants$405.accept$FUNC
-    );
-    static final FunctionDescriptor bind$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetScrollPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle bind$MH = RuntimeHelper.downcallHandle(
-        "bind",
-        constants$405.bind$FUNC
+    static final MethodHandle GetScrollPos$MH = RuntimeHelper.downcallHandle(
+        "GetScrollPos",
+        constants$405.GetScrollPos$FUNC
     );
-    static final FunctionDescriptor closesocket$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle closesocket$MH = RuntimeHelper.downcallHandle(
-        "closesocket",
-        constants$405.closesocket$FUNC
-    );
-    static final FunctionDescriptor connect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetScrollRange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle connect$MH = RuntimeHelper.downcallHandle(
-        "connect",
-        constants$405.connect$FUNC
-    );
-    static final FunctionDescriptor ioctlsocket$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetScrollRange$MH = RuntimeHelper.downcallHandle(
+        "SetScrollRange",
+        constants$405.SetScrollRange$FUNC
+    );
+    static final FunctionDescriptor GetScrollRange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ioctlsocket$MH = RuntimeHelper.downcallHandle(
-        "ioctlsocket",
-        constants$405.ioctlsocket$FUNC
+    static final MethodHandle GetScrollRange$MH = RuntimeHelper.downcallHandle(
+        "GetScrollRange",
+        constants$405.GetScrollRange$FUNC
+    );
+    static final FunctionDescriptor ShowScrollBar$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ShowScrollBar$MH = RuntimeHelper.downcallHandle(
+        "ShowScrollBar",
+        constants$405.ShowScrollBar$FUNC
+    );
+    static final FunctionDescriptor EnableScrollBar$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EnableScrollBar$MH = RuntimeHelper.downcallHandle(
+        "EnableScrollBar",
+        constants$405.EnableScrollBar$FUNC
+    );
+    static final FunctionDescriptor SetPropA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetPropA$MH = RuntimeHelper.downcallHandle(
+        "SetPropA",
+        constants$405.SetPropA$FUNC
     );
 }
 

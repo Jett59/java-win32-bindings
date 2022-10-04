@@ -9,53 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$527 {
 
-    static final FunctionDescriptor SetPortA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveOutSetPlaybackRate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveOutSetPlaybackRate$MH = RuntimeHelper.downcallHandle(
+        "waveOutSetPlaybackRate",
+        constants$527.waveOutSetPlaybackRate$FUNC
+    );
+    static final FunctionDescriptor waveOutGetID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle waveOutGetID$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetID",
+        constants$527.waveOutGetID$FUNC
+    );
+    static final FunctionDescriptor waveOutMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle SetPortA$MH = RuntimeHelper.downcallHandle(
-        "SetPortA",
-        constants$527.SetPortA$FUNC
+    static final MethodHandle waveOutMessage$MH = RuntimeHelper.downcallHandle(
+        "waveOutMessage",
+        constants$527.waveOutMessage$FUNC
     );
-    static final FunctionDescriptor SetPortW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveInGetNumDevs$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle waveInGetNumDevs$MH = RuntimeHelper.downcallHandle(
+        "waveInGetNumDevs",
+        constants$527.waveInGetNumDevs$FUNC
+    );
+    static final FunctionDescriptor waveInGetDevCapsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveInGetDevCapsA$MH = RuntimeHelper.downcallHandle(
+        "waveInGetDevCapsA",
+        constants$527.waveInGetDevCapsA$FUNC
+    );
+    static final FunctionDescriptor waveInGetDevCapsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetPortW$MH = RuntimeHelper.downcallHandle(
-        "SetPortW",
-        constants$527.SetPortW$FUNC
-    );
-    static final FunctionDescriptor AddPrinterConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddPrinterConnectionA$MH = RuntimeHelper.downcallHandle(
-        "AddPrinterConnectionA",
-        constants$527.AddPrinterConnectionA$FUNC
-    );
-    static final FunctionDescriptor AddPrinterConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddPrinterConnectionW$MH = RuntimeHelper.downcallHandle(
-        "AddPrinterConnectionW",
-        constants$527.AddPrinterConnectionW$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterConnectionA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterConnectionA",
-        constants$527.DeletePrinterConnectionA$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterConnectionW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterConnectionW",
-        constants$527.DeletePrinterConnectionW$FUNC
+    static final MethodHandle waveInGetDevCapsW$MH = RuntimeHelper.downcallHandle(
+        "waveInGetDevCapsW",
+        constants$527.waveInGetDevCapsW$FUNC
     );
 }
 

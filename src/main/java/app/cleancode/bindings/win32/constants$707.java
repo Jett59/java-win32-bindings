@@ -9,12 +9,41 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$707 {
 
-    static final MemorySegment CERT_PIN_RULES_CTL_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("p");
-    static final MemorySegment CERT_PIN_RULES_CTL_FILENAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("pinrules.stl");
-    static final MemorySegment CERT_PIN_RULES_CAB_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("p");
-    static final MemorySegment CERT_PIN_RULES_AUTO_UPDATE_LIST_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CERT_IE_DIRTY_FLAGS_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CRYPT_OID_OPEN_STORE_PROV_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllOpenStoreProv");
+    static final  GroupLayout USER_POLICY_PRESENT_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment USER_POLICY_PRESENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("USER_POLICY_PRESENT_GUID", constants$707.USER_POLICY_PRESENT_GUID$LAYOUT);
+    static final  GroupLayout RPC_INTERFACE_EVENT_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment RPC_INTERFACE_EVENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("RPC_INTERFACE_EVENT_GUID", constants$707.RPC_INTERFACE_EVENT_GUID$LAYOUT);
+    static final  GroupLayout NAMED_PIPE_EVENT_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment NAMED_PIPE_EVENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("NAMED_PIPE_EVENT_GUID", constants$707.NAMED_PIPE_EVENT_GUID$LAYOUT);
+    static final  GroupLayout CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID", constants$707.CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID$LAYOUT);
+    static final FunctionDescriptor SERVICE_MAIN_FUNCTIONW$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SERVICE_MAIN_FUNCTIONW$MH = RuntimeHelper.downcallHandle(
+        constants$707.SERVICE_MAIN_FUNCTIONW$FUNC
+    );
 }
 
 

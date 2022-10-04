@@ -9,30 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$404 {
 
-    static final FunctionDescriptor PM_OPEN_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RedrawWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RedrawWindow$MH = RuntimeHelper.downcallHandle(
+        "RedrawWindow",
+        constants$404.RedrawWindow$FUNC
+    );
+    static final FunctionDescriptor LockWindowUpdate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PM_OPEN_PROC$MH = RuntimeHelper.downcallHandle(
-        constants$404.PM_OPEN_PROC$FUNC
+    static final MethodHandle LockWindowUpdate$MH = RuntimeHelper.downcallHandle(
+        "LockWindowUpdate",
+        constants$404.LockWindowUpdate$FUNC
     );
-    static final FunctionDescriptor PM_COLLECT_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ScrollWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ScrollWindow$MH = RuntimeHelper.downcallHandle(
+        "ScrollWindow",
+        constants$404.ScrollWindow$FUNC
+    );
+    static final FunctionDescriptor ScrollDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PM_COLLECT_PROC$MH = RuntimeHelper.downcallHandle(
-        constants$404.PM_COLLECT_PROC$FUNC
+    static final MethodHandle ScrollDC$MH = RuntimeHelper.downcallHandle(
+        "ScrollDC",
+        constants$404.ScrollDC$FUNC
     );
-    static final FunctionDescriptor PM_CLOSE_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle PM_CLOSE_PROC$MH = RuntimeHelper.downcallHandle(
-        constants$404.PM_CLOSE_PROC$FUNC
+    static final FunctionDescriptor ScrollWindowEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final FunctionDescriptor PM_QUERY_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final MethodHandle ScrollWindowEx$MH = RuntimeHelper.downcallHandle(
+        "ScrollWindowEx",
+        constants$404.ScrollWindowEx$FUNC
+    );
+    static final FunctionDescriptor SetScrollPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetScrollPos$MH = RuntimeHelper.downcallHandle(
+        "SetScrollPos",
+        constants$404.SetScrollPos$FUNC
     );
 }
 

@@ -9,55 +9,24 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$460 {
 
-    static final FunctionDescriptor CertAlgIdToOID$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor UILANGUAGE_ENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CertAlgIdToOID$MH = RuntimeHelper.downcallHandle(
-        "CertAlgIdToOID",
-        constants$460.CertAlgIdToOID$FUNC
+    static final MethodHandle UILANGUAGE_ENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$460.UILANGUAGE_ENUMPROCW$FUNC
     );
-    static final FunctionDescriptor CertOIDToAlgId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CODEPAGE_ENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertOIDToAlgId$MH = RuntimeHelper.downcallHandle(
-        "CertOIDToAlgId",
-        constants$460.CertOIDToAlgId$FUNC
+    static final MethodHandle CODEPAGE_ENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$460.CODEPAGE_ENUMPROCW$FUNC
     );
-    static final FunctionDescriptor CertFindExtension$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DATEFMT_ENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertFindExtension$MH = RuntimeHelper.downcallHandle(
-        "CertFindExtension",
-        constants$460.CertFindExtension$FUNC
-    );
-    static final FunctionDescriptor CertFindAttribute$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFindAttribute$MH = RuntimeHelper.downcallHandle(
-        "CertFindAttribute",
-        constants$460.CertFindAttribute$FUNC
-    );
-    static final FunctionDescriptor CertFindRDNAttr$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFindRDNAttr$MH = RuntimeHelper.downcallHandle(
-        "CertFindRDNAttr",
-        constants$460.CertFindRDNAttr$FUNC
-    );
-    static final FunctionDescriptor CertGetIntendedKeyUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertGetIntendedKeyUsage$MH = RuntimeHelper.downcallHandle(
-        "CertGetIntendedKeyUsage",
-        constants$460.CertGetIntendedKeyUsage$FUNC
+    static final MethodHandle DATEFMT_ENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$460.DATEFMT_ENUMPROCW$FUNC
     );
 }
 

@@ -9,64 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$424 {
 
-    static final FunctionDescriptor CryptRegisterDefaultOIDFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptRegisterDefaultOIDFunction$MH = RuntimeHelper.downcallHandle(
-        "CryptRegisterDefaultOIDFunction",
-        constants$424.CryptRegisterDefaultOIDFunction$FUNC
-    );
-    static final FunctionDescriptor CryptUnregisterDefaultOIDFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptUnregisterDefaultOIDFunction$MH = RuntimeHelper.downcallHandle(
-        "CryptUnregisterDefaultOIDFunction",
-        constants$424.CryptUnregisterDefaultOIDFunction$FUNC
-    );
-    static final FunctionDescriptor CryptSetOIDFunctionValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CryptSetOIDFunctionValue$MH = RuntimeHelper.downcallHandle(
-        "CryptSetOIDFunctionValue",
-        constants$424.CryptSetOIDFunctionValue$FUNC
-    );
-    static final FunctionDescriptor CryptGetOIDFunctionValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FindWindowExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptGetOIDFunctionValue$MH = RuntimeHelper.downcallHandle(
-        "CryptGetOIDFunctionValue",
-        constants$424.CryptGetOIDFunctionValue$FUNC
+    static final MethodHandle FindWindowExW$MH = RuntimeHelper.downcallHandle(
+        "FindWindowExW",
+        constants$424.FindWindowExW$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_ENUM_OID_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetShellWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetShellWindow$MH = RuntimeHelper.downcallHandle(
+        "GetShellWindow",
+        constants$424.GetShellWindow$FUNC
+    );
+    static final FunctionDescriptor RegisterShellHookWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_ENUM_OID_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$424.PFN_CRYPT_ENUM_OID_FUNC$FUNC
+    static final MethodHandle RegisterShellHookWindow$MH = RuntimeHelper.downcallHandle(
+        "RegisterShellHookWindow",
+        constants$424.RegisterShellHookWindow$FUNC
+    );
+    static final FunctionDescriptor DeregisterShellHookWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeregisterShellHookWindow$MH = RuntimeHelper.downcallHandle(
+        "DeregisterShellHookWindow",
+        constants$424.DeregisterShellHookWindow$FUNC
+    );
+    static final FunctionDescriptor EnumWindows$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumWindows$MH = RuntimeHelper.downcallHandle(
+        "EnumWindows",
+        constants$424.EnumWindows$FUNC
+    );
+    static final FunctionDescriptor EnumThreadWindows$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumThreadWindows$MH = RuntimeHelper.downcallHandle(
+        "EnumThreadWindows",
+        constants$424.EnumThreadWindows$FUNC
     );
 }
 

@@ -9,49 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$420 {
 
-    static final FunctionDescriptor GetEncSChannel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetWindowLongW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetEncSChannel$MH = RuntimeHelper.downcallHandle(
-        "GetEncSChannel",
-        constants$420.GetEncSChannel$FUNC
+    static final MethodHandle SetWindowLongW$MH = RuntimeHelper.downcallHandle(
+        "SetWindowLongW",
+        constants$420.SetWindowLongW$FUNC
     );
-    static final FunctionDescriptor PCRYPT_DECRYPT_PRIVATE_KEY_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_POINTER$LAYOUT.withName("pszObjId"),
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("cbData"),
-                MemoryLayout.paddingLayout(32),
-                Constants$root.C_POINTER$LAYOUT.withName("pbData")
-            ).withName("Parameters")
-        ).withName("_CRYPT_ALGORITHM_IDENTIFIER"),
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("cbData"),
-            MemoryLayout.paddingLayout(32),
-            Constants$root.C_POINTER$LAYOUT.withName("pbData")
-        ).withName("_CRYPTOAPI_BLOB"),
+    static final FunctionDescriptor GetWindowLongPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PCRYPT_DECRYPT_PRIVATE_KEY_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$420.PCRYPT_DECRYPT_PRIVATE_KEY_FUNC$FUNC
+    static final MethodHandle GetWindowLongPtrA$MH = RuntimeHelper.downcallHandle(
+        "GetWindowLongPtrA",
+        constants$420.GetWindowLongPtrA$FUNC
     );
-    static final FunctionDescriptor PCRYPT_ENCRYPT_PRIVATE_KEY_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowLongPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PCRYPT_ENCRYPT_PRIVATE_KEY_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$420.PCRYPT_ENCRYPT_PRIVATE_KEY_FUNC$FUNC
+    static final MethodHandle GetWindowLongPtrW$MH = RuntimeHelper.downcallHandle(
+        "GetWindowLongPtrW",
+        constants$420.GetWindowLongPtrW$FUNC
     );
-    static final FunctionDescriptor PCRYPT_RESOLVE_HCRYPTPROV_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetWindowLongPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetWindowLongPtrA$MH = RuntimeHelper.downcallHandle(
+        "SetWindowLongPtrA",
+        constants$420.SetWindowLongPtrA$FUNC
+    );
+    static final FunctionDescriptor SetWindowLongPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetWindowLongPtrW$MH = RuntimeHelper.downcallHandle(
+        "SetWindowLongPtrW",
+        constants$420.SetWindowLongPtrW$FUNC
+    );
+    static final FunctionDescriptor GetClassWord$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetClassWord$MH = RuntimeHelper.downcallHandle(
+        "GetClassWord",
+        constants$420.GetClassWord$FUNC
     );
 }
 

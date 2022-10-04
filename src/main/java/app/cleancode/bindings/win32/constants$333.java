@@ -9,65 +9,26 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$333 {
 
-    static final FunctionDescriptor ChangeDisplaySettingsExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WINSTAENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle ChangeDisplaySettingsExA$MH = RuntimeHelper.downcallHandle(
-        "ChangeDisplaySettingsExA",
-        constants$333.ChangeDisplaySettingsExA$FUNC
+    static final MethodHandle WINSTAENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$333.WINSTAENUMPROCA$FUNC
     );
-    static final FunctionDescriptor ChangeDisplaySettingsExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DESKTOPENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DESKTOPENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$333.DESKTOPENUMPROCA$FUNC
+    );
+    static final FunctionDescriptor WINSTAENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle ChangeDisplaySettingsExW$MH = RuntimeHelper.downcallHandle(
-        "ChangeDisplaySettingsExW",
-        constants$333.ChangeDisplaySettingsExW$FUNC
-    );
-    static final FunctionDescriptor EnumDisplaySettingsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnumDisplaySettingsA$MH = RuntimeHelper.downcallHandle(
-        "EnumDisplaySettingsA",
-        constants$333.EnumDisplaySettingsA$FUNC
-    );
-    static final FunctionDescriptor EnumDisplaySettingsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnumDisplaySettingsW$MH = RuntimeHelper.downcallHandle(
-        "EnumDisplaySettingsW",
-        constants$333.EnumDisplaySettingsW$FUNC
-    );
-    static final FunctionDescriptor EnumDisplaySettingsExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumDisplaySettingsExA$MH = RuntimeHelper.downcallHandle(
-        "EnumDisplaySettingsExA",
-        constants$333.EnumDisplaySettingsExA$FUNC
-    );
-    static final FunctionDescriptor EnumDisplaySettingsExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumDisplaySettingsExW$MH = RuntimeHelper.downcallHandle(
-        "EnumDisplaySettingsExW",
-        constants$333.EnumDisplaySettingsExW$FUNC
+    static final MethodHandle WINSTAENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$333.WINSTAENUMPROCW$FUNC
     );
 }
 

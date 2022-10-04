@@ -9,12 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$553 {
 
-    static final MemorySegment SE_REMOTE_SHUTDOWN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRemoteShutdownPrivilege");
-    static final MemorySegment SE_UNDOCK_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeUndockPrivilege");
-    static final MemorySegment SE_SYNC_AGENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSyncAgentPrivilege");
-    static final MemorySegment SE_ENABLE_DELEGATION_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeEnableDelegationPrivilege");
-    static final MemorySegment SE_MANAGE_VOLUME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeManageVolumePrivilege");
-    static final MemorySegment SE_IMPERSONATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeImpersonatePrivilege");
+    static final FunctionDescriptor ShellMessageBoxA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ShellMessageBoxA$MH = RuntimeHelper.downcallHandleVariadic(
+        "ShellMessageBoxA",
+        constants$553.ShellMessageBoxA$FUNC
+    );
+    static final FunctionDescriptor ShellMessageBoxW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ShellMessageBoxW$MH = RuntimeHelper.downcallHandleVariadic(
+        "ShellMessageBoxW",
+        constants$553.ShellMessageBoxW$FUNC
+    );
+    static final FunctionDescriptor IsLFNDriveA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsLFNDriveA$MH = RuntimeHelper.downcallHandle(
+        "IsLFNDriveA",
+        constants$553.IsLFNDriveA$FUNC
+    );
+    static final FunctionDescriptor IsLFNDriveW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsLFNDriveW$MH = RuntimeHelper.downcallHandle(
+        "IsLFNDriveW",
+        constants$553.IsLFNDriveW$FUNC
+    );
+    static final FunctionDescriptor SHEnumerateUnreadMailAccountsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHEnumerateUnreadMailAccountsA$MH = RuntimeHelper.downcallHandle(
+        "SHEnumerateUnreadMailAccountsA",
+        constants$553.SHEnumerateUnreadMailAccountsA$FUNC
+    );
+    static final FunctionDescriptor SHEnumerateUnreadMailAccountsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHEnumerateUnreadMailAccountsW$MH = RuntimeHelper.downcallHandle(
+        "SHEnumerateUnreadMailAccountsW",
+        constants$553.SHEnumerateUnreadMailAccountsW$FUNC
+    );
 }
 
 

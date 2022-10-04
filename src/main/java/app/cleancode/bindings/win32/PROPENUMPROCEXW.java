@@ -11,13 +11,13 @@ public interface PROPENUMPROCEXW {
 
     int apply(java.lang.foreign.MemoryAddress _x0, java.lang.foreign.MemoryAddress _x1, java.lang.foreign.MemoryAddress _x2, long _x3);
     static MemorySegment allocate(PROPENUMPROCEXW fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PROPENUMPROCEXW.class, fi, constants$226.PROPENUMPROCEXW$FUNC, session);
+        return RuntimeHelper.upcallStub(PROPENUMPROCEXW.class, fi, constants$330.PROPENUMPROCEXW$FUNC, session);
     }
     static PROPENUMPROCEXW ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, java.lang.foreign.MemoryAddress __x1, java.lang.foreign.MemoryAddress __x2, long __x3) -> {
             try {
-                return (int)constants$226.PROPENUMPROCEXW$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, __x3);
+                return (int)constants$330.PROPENUMPROCEXW$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, __x3);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

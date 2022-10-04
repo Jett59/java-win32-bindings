@@ -9,12 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$637 {
 
-    static final MemoryAddress X509_BIOMETRIC_EXT$ADDR = MemoryAddress.ofLong(71L);
-    static final MemoryAddress CNG_RSA_PUBLIC_KEY_BLOB$ADDR = MemoryAddress.ofLong(72L);
-    static final MemoryAddress X509_OBJECT_IDENTIFIER$ADDR = MemoryAddress.ofLong(73L);
-    static final MemoryAddress X509_ALGORITHM_IDENTIFIER$ADDR = MemoryAddress.ofLong(74L);
-    static final MemoryAddress PKCS_RSA_SSA_PSS_PARAMETERS$ADDR = MemoryAddress.ofLong(75L);
-    static final MemoryAddress PKCS_RSAES_OAEP_PARAMETERS$ADDR = MemoryAddress.ofLong(76L);
+    static final FunctionDescriptor QueryUsersOnEncryptedFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryUsersOnEncryptedFile$MH = RuntimeHelper.downcallHandle(
+        "QueryUsersOnEncryptedFile",
+        constants$637.QueryUsersOnEncryptedFile$FUNC
+    );
+    static final FunctionDescriptor QueryRecoveryAgentsOnEncryptedFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryRecoveryAgentsOnEncryptedFile$MH = RuntimeHelper.downcallHandle(
+        "QueryRecoveryAgentsOnEncryptedFile",
+        constants$637.QueryRecoveryAgentsOnEncryptedFile$FUNC
+    );
+    static final FunctionDescriptor RemoveUsersFromEncryptedFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RemoveUsersFromEncryptedFile$MH = RuntimeHelper.downcallHandle(
+        "RemoveUsersFromEncryptedFile",
+        constants$637.RemoveUsersFromEncryptedFile$FUNC
+    );
+    static final FunctionDescriptor AddUsersToEncryptedFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddUsersToEncryptedFile$MH = RuntimeHelper.downcallHandle(
+        "AddUsersToEncryptedFile",
+        constants$637.AddUsersToEncryptedFile$FUNC
+    );
+    static final FunctionDescriptor SetUserFileEncryptionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetUserFileEncryptionKey$MH = RuntimeHelper.downcallHandle(
+        "SetUserFileEncryptionKey",
+        constants$637.SetUserFileEncryptionKey$FUNC
+    );
+    static final FunctionDescriptor SetUserFileEncryptionKeyEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetUserFileEncryptionKeyEx$MH = RuntimeHelper.downcallHandle(
+        "SetUserFileEncryptionKeyEx",
+        constants$637.SetUserFileEncryptionKeyEx$FUNC
+    );
 }
 
 

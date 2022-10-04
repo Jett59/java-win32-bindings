@@ -9,12 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$615 {
 
-    static final MemorySegment szOID_SUR_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.4");
-    static final MemorySegment szOID_DEVICE_SERIAL_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.5");
-    static final MemorySegment szOID_COUNTRY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.6");
-    static final MemorySegment szOID_LOCALITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.7");
-    static final MemorySegment szOID_STATE_OR_PROVINCE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.8");
-    static final MemorySegment szOID_STREET_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.9");
+    static final FunctionDescriptor CryptImportPublicKeyInfoEx2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptImportPublicKeyInfoEx2$MH = RuntimeHelper.downcallHandle(
+        "CryptImportPublicKeyInfoEx2",
+        constants$615.CryptImportPublicKeyInfoEx2$FUNC
+    );
+    static final FunctionDescriptor PFN_IMPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_IMPORT_PUBLIC_KEY_INFO_EX2_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$615.PFN_IMPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC
+    );
+    static final FunctionDescriptor CryptAcquireCertificatePrivateKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptAcquireCertificatePrivateKey$MH = RuntimeHelper.downcallHandle(
+        "CryptAcquireCertificatePrivateKey",
+        constants$615.CryptAcquireCertificatePrivateKey$FUNC
+    );
+    static final FunctionDescriptor CryptFindCertificateKeyProvInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptFindCertificateKeyProvInfo$MH = RuntimeHelper.downcallHandle(
+        "CryptFindCertificateKeyProvInfo",
+        constants$615.CryptFindCertificateKeyProvInfo$FUNC
+    );
+    static final FunctionDescriptor PFN_IMPORT_PRIV_KEY_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

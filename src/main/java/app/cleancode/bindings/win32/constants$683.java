@@ -9,12 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$683 {
 
-    static final MemorySegment CRYPT_OID_REG_FUNC_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
-    static final MemorySegment CRYPT_OID_REG_FUNC_NAME_VALUE_NAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("FuncName");
-    static final MemorySegment CRYPT_OID_REG_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_DEFAULT_OID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DEFAULT");
-    static final MemorySegment CRYPT_OID_INFO_HASH_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_OID_INFO_ECC_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final FunctionDescriptor AddPrinterConnection2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPrinterConnection2W$MH = RuntimeHelper.downcallHandle(
+        "AddPrinterConnection2W",
+        constants$683.AddPrinterConnection2W$FUNC
+    );
+    static final FunctionDescriptor InstallPrinterDriverFromPackageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle InstallPrinterDriverFromPackageA$MH = RuntimeHelper.downcallHandle(
+        "InstallPrinterDriverFromPackageA",
+        constants$683.InstallPrinterDriverFromPackageA$FUNC
+    );
+    static final FunctionDescriptor InstallPrinterDriverFromPackageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle InstallPrinterDriverFromPackageW$MH = RuntimeHelper.downcallHandle(
+        "InstallPrinterDriverFromPackageW",
+        constants$683.InstallPrinterDriverFromPackageW$FUNC
+    );
+    static final FunctionDescriptor UploadPrinterDriverPackageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UploadPrinterDriverPackageA$MH = RuntimeHelper.downcallHandle(
+        "UploadPrinterDriverPackageA",
+        constants$683.UploadPrinterDriverPackageA$FUNC
+    );
+    static final FunctionDescriptor UploadPrinterDriverPackageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UploadPrinterDriverPackageW$MH = RuntimeHelper.downcallHandle(
+        "UploadPrinterDriverPackageW",
+        constants$683.UploadPrinterDriverPackageW$FUNC
+    );
+    static final FunctionDescriptor GetCorePrinterDriversA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCorePrinterDriversA$MH = RuntimeHelper.downcallHandle(
+        "GetCorePrinterDriversA",
+        constants$683.GetCorePrinterDriversA$FUNC
+    );
 }
 
 

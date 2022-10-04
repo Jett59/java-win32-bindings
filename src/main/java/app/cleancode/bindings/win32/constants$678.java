@@ -9,12 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$678 {
 
-    static final MemorySegment szOID_CMC_ADD_EXTENSIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.8");
-    static final MemorySegment szOID_CMC_ENCRYPTED_POP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.9");
-    static final MemorySegment szOID_CMC_DECRYPTED_POP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.10");
-    static final MemorySegment szOID_CMC_LRA_POP_WITNESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.11");
-    static final MemorySegment szOID_CMC_GET_CERT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.15");
-    static final MemorySegment szOID_CMC_GET_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.16");
+    static final FunctionDescriptor DeleteMonitorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteMonitorW$MH = RuntimeHelper.downcallHandle(
+        "DeleteMonitorW",
+        constants$678.DeleteMonitorW$FUNC
+    );
+    static final FunctionDescriptor EnumPortsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPortsA$MH = RuntimeHelper.downcallHandle(
+        "EnumPortsA",
+        constants$678.EnumPortsA$FUNC
+    );
+    static final FunctionDescriptor EnumPortsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPortsW$MH = RuntimeHelper.downcallHandle(
+        "EnumPortsW",
+        constants$678.EnumPortsW$FUNC
+    );
+    static final FunctionDescriptor AddPortA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPortA$MH = RuntimeHelper.downcallHandle(
+        "AddPortA",
+        constants$678.AddPortA$FUNC
+    );
+    static final FunctionDescriptor AddPortW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPortW$MH = RuntimeHelper.downcallHandle(
+        "AddPortW",
+        constants$678.AddPortW$FUNC
+    );
+    static final FunctionDescriptor ConfigurePortA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ConfigurePortA$MH = RuntimeHelper.downcallHandle(
+        "ConfigurePortA",
+        constants$678.ConfigurePortA$FUNC
+    );
 }
 
 

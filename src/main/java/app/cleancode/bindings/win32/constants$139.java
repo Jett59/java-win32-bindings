@@ -9,77 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$139 {
 
-    static final FunctionDescriptor GetUserNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PrefetchVirtualMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PrefetchVirtualMemory$MH = RuntimeHelper.downcallHandle(
+        "PrefetchVirtualMemory",
+        constants$139.PrefetchVirtualMemory$FUNC
+    );
+    static final FunctionDescriptor CreateFileMappingFromApp$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetUserNameA$MH = RuntimeHelper.downcallHandle(
-        "GetUserNameA",
-        constants$139.GetUserNameA$FUNC
+    static final MethodHandle CreateFileMappingFromApp$MH = RuntimeHelper.downcallHandle(
+        "CreateFileMappingFromApp",
+        constants$139.CreateFileMappingFromApp$FUNC
     );
-    static final FunctionDescriptor GetUserNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetUserNameW$MH = RuntimeHelper.downcallHandle(
-        "GetUserNameW",
-        constants$139.GetUserNameW$FUNC
-    );
-    static final FunctionDescriptor LogonUserA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor MapViewOfFileFromApp$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle LogonUserA$MH = RuntimeHelper.downcallHandle(
-        "LogonUserA",
-        constants$139.LogonUserA$FUNC
+    static final MethodHandle MapViewOfFileFromApp$MH = RuntimeHelper.downcallHandle(
+        "MapViewOfFileFromApp",
+        constants$139.MapViewOfFileFromApp$FUNC
     );
-    static final FunctionDescriptor LogonUserW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor UnmapViewOfFileEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LogonUserW$MH = RuntimeHelper.downcallHandle(
-        "LogonUserW",
-        constants$139.LogonUserW$FUNC
+    static final MethodHandle UnmapViewOfFileEx$MH = RuntimeHelper.downcallHandle(
+        "UnmapViewOfFileEx",
+        constants$139.UnmapViewOfFileEx$FUNC
     );
-    static final FunctionDescriptor LogonUserExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AllocateUserPhysicalPages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LogonUserExA$MH = RuntimeHelper.downcallHandle(
-        "LogonUserExA",
-        constants$139.LogonUserExA$FUNC
+    static final MethodHandle AllocateUserPhysicalPages$MH = RuntimeHelper.downcallHandle(
+        "AllocateUserPhysicalPages",
+        constants$139.AllocateUserPhysicalPages$FUNC
     );
-    static final FunctionDescriptor LogonUserExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FreeUserPhysicalPages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LogonUserExW$MH = RuntimeHelper.downcallHandle(
-        "LogonUserExW",
-        constants$139.LogonUserExW$FUNC
+    static final MethodHandle FreeUserPhysicalPages$MH = RuntimeHelper.downcallHandle(
+        "FreeUserPhysicalPages",
+        constants$139.FreeUserPhysicalPages$FUNC
     );
 }
 

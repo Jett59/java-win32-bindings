@@ -9,55 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$504 {
 
-    static final FunctionDescriptor SCardUIDlgSelectCardW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SCardUIDlgSelectCardW$MH = RuntimeHelper.downcallHandle(
-        "SCardUIDlgSelectCardW",
-        constants$504.SCardUIDlgSelectCardW$FUNC
-    );
-    static final FunctionDescriptor GetOpenCardNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetOpenCardNameA$MH = RuntimeHelper.downcallHandle(
-        "GetOpenCardNameA",
-        constants$504.GetOpenCardNameA$FUNC
-    );
-    static final FunctionDescriptor GetOpenCardNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetOpenCardNameW$MH = RuntimeHelper.downcallHandle(
-        "GetOpenCardNameW",
-        constants$504.GetOpenCardNameW$FUNC
-    );
-    static final FunctionDescriptor SCardDlgExtendedError$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle SCardDlgExtendedError$MH = RuntimeHelper.downcallHandle(
-        "SCardDlgExtendedError",
-        constants$504.SCardDlgExtendedError$FUNC
-    );
-    static final FunctionDescriptor SCardReadCacheA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor InitiateShutdownA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardReadCacheA$MH = RuntimeHelper.downcallHandle(
-        "SCardReadCacheA",
-        constants$504.SCardReadCacheA$FUNC
+    static final MethodHandle InitiateShutdownA$MH = RuntimeHelper.downcallHandle(
+        "InitiateShutdownA",
+        constants$504.InitiateShutdownA$FUNC
     );
-    static final FunctionDescriptor SCardReadCacheW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor InitiateShutdownW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle InitiateShutdownW$MH = RuntimeHelper.downcallHandle(
+        "InitiateShutdownW",
+        constants$504.InitiateShutdownW$FUNC
+    );
+    static final FunctionDescriptor CheckForHiberboot$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
+    );
+    static final MethodHandle CheckForHiberboot$MH = RuntimeHelper.downcallHandle(
+        "CheckForHiberboot",
+        constants$504.CheckForHiberboot$FUNC
+    );
+    static final FunctionDescriptor RegSaveKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegSaveKeyExA$MH = RuntimeHelper.downcallHandle(
+        "RegSaveKeyExA",
+        constants$504.RegSaveKeyExA$FUNC
+    );
+    static final FunctionDescriptor RegSaveKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegSaveKeyExW$MH = RuntimeHelper.downcallHandle(
+        "RegSaveKeyExW",
+        constants$504.RegSaveKeyExW$FUNC
+    );
+    static final FunctionDescriptor WNetAddConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardReadCacheW$MH = RuntimeHelper.downcallHandle(
-        "SCardReadCacheW",
-        constants$504.SCardReadCacheW$FUNC
+    static final MethodHandle WNetAddConnectionA$MH = RuntimeHelper.downcallHandle(
+        "WNetAddConnectionA",
+        constants$504.WNetAddConnectionA$FUNC
     );
 }
 

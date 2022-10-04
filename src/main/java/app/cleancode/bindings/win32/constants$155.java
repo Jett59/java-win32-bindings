@@ -9,58 +9,110 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$155 {
 
-    static final FunctionDescriptor ReplacePartitionUnit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AccessCheckByTypeResultList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ReplacePartitionUnit$MH = RuntimeHelper.downcallHandle(
-        "ReplacePartitionUnit",
-        constants$155.ReplacePartitionUnit$FUNC
-    );
-    static final FunctionDescriptor AddSecureMemoryCacheCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddSecureMemoryCacheCallback$MH = RuntimeHelper.downcallHandle(
-        "AddSecureMemoryCacheCallback",
-        constants$155.AddSecureMemoryCacheCallback$FUNC
-    );
-    static final FunctionDescriptor RemoveSecureMemoryCacheCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RemoveSecureMemoryCacheCallback$MH = RuntimeHelper.downcallHandle(
-        "RemoveSecureMemoryCacheCallback",
-        constants$155.RemoveSecureMemoryCacheCallback$FUNC
-    );
-    static final FunctionDescriptor CopyContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CopyContext$MH = RuntimeHelper.downcallHandle(
-        "CopyContext",
-        constants$155.CopyContext$FUNC
-    );
-    static final FunctionDescriptor InitializeContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle InitializeContext$MH = RuntimeHelper.downcallHandle(
-        "InitializeContext",
-        constants$155.InitializeContext$FUNC
-    );
-    static final FunctionDescriptor InitializeContext2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InitializeContext2$MH = RuntimeHelper.downcallHandle(
-        "InitializeContext2",
-        constants$155.InitializeContext2$FUNC
+    static final MethodHandle AccessCheckByTypeResultList$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckByTypeResultList",
+        constants$155.AccessCheckByTypeResultList$FUNC
+    );
+    static final FunctionDescriptor AccessCheckByTypeAndAuditAlarmW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AccessCheckByTypeAndAuditAlarmW$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckByTypeAndAuditAlarmW",
+        constants$155.AccessCheckByTypeAndAuditAlarmW$FUNC
+    );
+    static final FunctionDescriptor AccessCheckByTypeResultListAndAuditAlarmW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AccessCheckByTypeResultListAndAuditAlarmW$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckByTypeResultListAndAuditAlarmW",
+        constants$155.AccessCheckByTypeResultListAndAuditAlarmW$FUNC
+    );
+    static final FunctionDescriptor AccessCheckByTypeResultListAndAuditAlarmByHandleW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AccessCheckByTypeResultListAndAuditAlarmByHandleW$MH = RuntimeHelper.downcallHandle(
+        "AccessCheckByTypeResultListAndAuditAlarmByHandleW",
+        constants$155.AccessCheckByTypeResultListAndAuditAlarmByHandleW$FUNC
+    );
+    static final FunctionDescriptor AddAccessAllowedAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddAccessAllowedAce$MH = RuntimeHelper.downcallHandle(
+        "AddAccessAllowedAce",
+        constants$155.AddAccessAllowedAce$FUNC
+    );
+    static final FunctionDescriptor AddAccessAllowedAceEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddAccessAllowedAceEx$MH = RuntimeHelper.downcallHandle(
+        "AddAccessAllowedAceEx",
+        constants$155.AddAccessAllowedAceEx$FUNC
     );
 }
 

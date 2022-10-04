@@ -9,12 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$688 {
 
-    static final MemoryAddress CMSG_DEFAULT_INSTALLABLE_FUNC_OID$ADDR = MemoryAddress.ofLong(1L);
-    static final MemorySegment CMSG_OID_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenContentEncryptKey");
-    static final MemorySegment CMSG_OID_CAPI1_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenContentEncryptKey");
-    static final MemorySegment CMSG_OID_CNG_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGGenContentEncryptKey");
-    static final MemorySegment CMSG_OID_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyTrans");
-    static final MemorySegment CMSG_OID_CAPI1_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyTrans");
+    static final FunctionDescriptor CoGetCallerTID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetCallerTID$MH = RuntimeHelper.downcallHandle(
+        "CoGetCallerTID",
+        constants$688.CoGetCallerTID$FUNC
+    );
+    static final FunctionDescriptor CoGetCurrentLogicalThreadId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetCurrentLogicalThreadId$MH = RuntimeHelper.downcallHandle(
+        "CoGetCurrentLogicalThreadId",
+        constants$688.CoGetCurrentLogicalThreadId$FUNC
+    );
+    static final FunctionDescriptor CoGetContextToken$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetContextToken$MH = RuntimeHelper.downcallHandle(
+        "CoGetContextToken",
+        constants$688.CoGetContextToken$FUNC
+    );
+    static final FunctionDescriptor CoGetDefaultContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetDefaultContext$MH = RuntimeHelper.downcallHandle(
+        "CoGetDefaultContext",
+        constants$688.CoGetDefaultContext$FUNC
+    );
+    static final FunctionDescriptor CoGetApartmentType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetApartmentType$MH = RuntimeHelper.downcallHandle(
+        "CoGetApartmentType",
+        constants$688.CoGetApartmentType$FUNC
+    );
+    static final FunctionDescriptor CoDecodeProxy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoDecodeProxy$MH = RuntimeHelper.downcallHandle(
+        "CoDecodeProxy",
+        constants$688.CoDecodeProxy$FUNC
+    );
 }
 
 

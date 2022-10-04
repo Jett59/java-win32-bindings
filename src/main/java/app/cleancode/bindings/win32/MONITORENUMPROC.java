@@ -11,13 +11,13 @@ public interface MONITORENUMPROC {
 
     int apply(java.lang.foreign.MemoryAddress _x0, java.lang.foreign.MemoryAddress _x1, java.lang.foreign.MemoryAddress _x2, long _x3);
     static MemorySegment allocate(MONITORENUMPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(MONITORENUMPROC.class, fi, constants$337.MONITORENUMPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(MONITORENUMPROC.class, fi, constants$441.MONITORENUMPROC$FUNC, session);
     }
     static MONITORENUMPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, java.lang.foreign.MemoryAddress __x1, java.lang.foreign.MemoryAddress __x2, long __x3) -> {
             try {
-                return (int)constants$337.MONITORENUMPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, __x3);
+                return (int)constants$441.MONITORENUMPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, __x3);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

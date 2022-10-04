@@ -9,12 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$713 {
 
-    static final MemorySegment SCHEME_OID_RETRIEVE_ENCODED_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchemeDllRetrieveEncodedObject");
-    static final MemorySegment SCHEME_OID_RETRIEVE_ENCODED_OBJECTW_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchemeDllRetrieveEncodedObjectW");
-    static final MemorySegment CONTEXT_OID_CREATE_OBJECT_CONTEXT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ContextDllCreateObjectContext");
-    static final MemoryAddress CONTEXT_OID_CERTIFICATE$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress CONTEXT_OID_CRL$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CONTEXT_OID_CTL$ADDR = MemoryAddress.ofLong(3L);
+    static final FunctionDescriptor EnumServicesStatusExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumServicesStatusExW$MH = RuntimeHelper.downcallHandle(
+        "EnumServicesStatusExW",
+        constants$713.EnumServicesStatusExW$FUNC
+    );
+    static final FunctionDescriptor GetServiceKeyNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetServiceKeyNameA$MH = RuntimeHelper.downcallHandle(
+        "GetServiceKeyNameA",
+        constants$713.GetServiceKeyNameA$FUNC
+    );
+    static final FunctionDescriptor GetServiceKeyNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetServiceKeyNameW$MH = RuntimeHelper.downcallHandle(
+        "GetServiceKeyNameW",
+        constants$713.GetServiceKeyNameW$FUNC
+    );
+    static final FunctionDescriptor GetServiceDisplayNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetServiceDisplayNameA$MH = RuntimeHelper.downcallHandle(
+        "GetServiceDisplayNameA",
+        constants$713.GetServiceDisplayNameA$FUNC
+    );
+    static final FunctionDescriptor GetServiceDisplayNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetServiceDisplayNameW$MH = RuntimeHelper.downcallHandle(
+        "GetServiceDisplayNameW",
+        constants$713.GetServiceDisplayNameW$FUNC
+    );
+    static final FunctionDescriptor LockServiceDatabase$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LockServiceDatabase$MH = RuntimeHelper.downcallHandle(
+        "LockServiceDatabase",
+        constants$713.LockServiceDatabase$FUNC
+    );
 }
 
 

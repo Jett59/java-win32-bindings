@@ -9,64 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$94 {
 
-    static final FunctionDescriptor FormatMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TerminateProcessOnMemoryExhaustion$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle TerminateProcessOnMemoryExhaustion$MH = RuntimeHelper.downcallHandle(
+        "TerminateProcessOnMemoryExhaustion",
+        constants$94.TerminateProcessOnMemoryExhaustion$FUNC
+    );
+    static final FunctionDescriptor FlsAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FormatMessageW$MH = RuntimeHelper.downcallHandle(
-        "FormatMessageW",
-        constants$94.FormatMessageW$FUNC
+    static final MethodHandle FlsAlloc$MH = RuntimeHelper.downcallHandle(
+        "FlsAlloc",
+        constants$94.FlsAlloc$FUNC
     );
-    static final FunctionDescriptor CreateMailslotA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateMailslotA$MH = RuntimeHelper.downcallHandle(
-        "CreateMailslotA",
-        constants$94.CreateMailslotA$FUNC
-    );
-    static final FunctionDescriptor CreateMailslotW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateMailslotW$MH = RuntimeHelper.downcallHandle(
-        "CreateMailslotW",
-        constants$94.CreateMailslotW$FUNC
-    );
-    static final FunctionDescriptor GetMailslotInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetMailslotInfo$MH = RuntimeHelper.downcallHandle(
-        "GetMailslotInfo",
-        constants$94.GetMailslotInfo$FUNC
-    );
-    static final FunctionDescriptor SetMailslotInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FlsGetValue$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetMailslotInfo$MH = RuntimeHelper.downcallHandle(
-        "SetMailslotInfo",
-        constants$94.SetMailslotInfo$FUNC
+    static final MethodHandle FlsGetValue$MH = RuntimeHelper.downcallHandle(
+        "FlsGetValue",
+        constants$94.FlsGetValue$FUNC
     );
-    static final FunctionDescriptor EncryptFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FlsSetValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EncryptFileA$MH = RuntimeHelper.downcallHandle(
-        "EncryptFileA",
-        constants$94.EncryptFileA$FUNC
+    static final MethodHandle FlsSetValue$MH = RuntimeHelper.downcallHandle(
+        "FlsSetValue",
+        constants$94.FlsSetValue$FUNC
+    );
+    static final FunctionDescriptor FlsFree$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FlsFree$MH = RuntimeHelper.downcallHandle(
+        "FlsFree",
+        constants$94.FlsFree$FUNC
+    );
+    static final FunctionDescriptor IsThreadAFiber$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle IsThreadAFiber$MH = RuntimeHelper.downcallHandle(
+        "IsThreadAFiber",
+        constants$94.IsThreadAFiber$FUNC
     );
 }
 

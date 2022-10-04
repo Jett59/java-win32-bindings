@@ -9,12 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$577 {
 
-    static final MemorySegment MS_STRONG_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Strong Cryptographic Provider");
-    static final MemorySegment MS_DEF_RSA_SIG_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA Signature Cryptographic Provider");
-    static final MemorySegment MS_DEF_RSA_SIG_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_DEF_RSA_SIG_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA Signature Cryptographic Provider");
-    static final MemorySegment MS_DEF_RSA_SCHANNEL_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA SChannel Cryptographic Provider");
-    static final MemorySegment MS_DEF_RSA_SCHANNEL_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final FunctionDescriptor PFN_CRYPT_ENUM_OID_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_ENUM_OID_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$577.PFN_CRYPT_ENUM_OID_FUNC$FUNC
+    );
+    static final FunctionDescriptor CryptEnumOIDFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptEnumOIDFunction$MH = RuntimeHelper.downcallHandle(
+        "CryptEnumOIDFunction",
+        constants$577.CryptEnumOIDFunction$FUNC
+    );
+    static final FunctionDescriptor CryptFindOIDInfo$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptFindOIDInfo$MH = RuntimeHelper.downcallHandle(
+        "CryptFindOIDInfo",
+        constants$577.CryptFindOIDInfo$FUNC
+    );
+    static final FunctionDescriptor CryptRegisterOIDInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptRegisterOIDInfo$MH = RuntimeHelper.downcallHandle(
+        "CryptRegisterOIDInfo",
+        constants$577.CryptRegisterOIDInfo$FUNC
+    );
+    static final FunctionDescriptor CryptUnregisterOIDInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptUnregisterOIDInfo$MH = RuntimeHelper.downcallHandle(
+        "CryptUnregisterOIDInfo",
+        constants$577.CryptUnregisterOIDInfo$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_ENUM_OID_INFO$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

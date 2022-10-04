@@ -9,53 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$484 {
 
-    static final FunctionDescriptor RemoveUsersFromEncryptedFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReadConsoleInputA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RemoveUsersFromEncryptedFile$MH = RuntimeHelper.downcallHandle(
-        "RemoveUsersFromEncryptedFile",
-        constants$484.RemoveUsersFromEncryptedFile$FUNC
-    );
-    static final FunctionDescriptor AddUsersToEncryptedFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddUsersToEncryptedFile$MH = RuntimeHelper.downcallHandle(
-        "AddUsersToEncryptedFile",
-        constants$484.AddUsersToEncryptedFile$FUNC
-    );
-    static final FunctionDescriptor SetUserFileEncryptionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetUserFileEncryptionKey$MH = RuntimeHelper.downcallHandle(
-        "SetUserFileEncryptionKey",
-        constants$484.SetUserFileEncryptionKey$FUNC
-    );
-    static final FunctionDescriptor SetUserFileEncryptionKeyEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReadConsoleInputA$MH = RuntimeHelper.downcallHandle(
+        "ReadConsoleInputA",
+        constants$484.ReadConsoleInputA$FUNC
+    );
+    static final FunctionDescriptor ReadConsoleInputW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetUserFileEncryptionKeyEx$MH = RuntimeHelper.downcallHandle(
-        "SetUserFileEncryptionKeyEx",
-        constants$484.SetUserFileEncryptionKeyEx$FUNC
+    static final MethodHandle ReadConsoleInputW$MH = RuntimeHelper.downcallHandle(
+        "ReadConsoleInputW",
+        constants$484.ReadConsoleInputW$FUNC
     );
-    static final FunctionDescriptor FreeEncryptionCertificateHashList$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor PeekConsoleInputA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FreeEncryptionCertificateHashList$MH = RuntimeHelper.downcallHandle(
-        "FreeEncryptionCertificateHashList",
-        constants$484.FreeEncryptionCertificateHashList$FUNC
+    static final MethodHandle PeekConsoleInputA$MH = RuntimeHelper.downcallHandle(
+        "PeekConsoleInputA",
+        constants$484.PeekConsoleInputA$FUNC
     );
-    static final FunctionDescriptor EncryptionDisable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PeekConsoleInputW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EncryptionDisable$MH = RuntimeHelper.downcallHandle(
-        "EncryptionDisable",
-        constants$484.EncryptionDisable$FUNC
+    static final MethodHandle PeekConsoleInputW$MH = RuntimeHelper.downcallHandle(
+        "PeekConsoleInputW",
+        constants$484.PeekConsoleInputW$FUNC
+    );
+    static final FunctionDescriptor ReadConsoleA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReadConsoleA$MH = RuntimeHelper.downcallHandle(
+        "ReadConsoleA",
+        constants$484.ReadConsoleA$FUNC
+    );
+    static final FunctionDescriptor ReadConsoleW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReadConsoleW$MH = RuntimeHelper.downcallHandle(
+        "ReadConsoleW",
+        constants$484.ReadConsoleW$FUNC
     );
 }
 

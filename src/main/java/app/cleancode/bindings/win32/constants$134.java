@@ -9,73 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$134 {
 
-    static final FunctionDescriptor IsBadStringPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetComputerNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetComputerNameW$MH = RuntimeHelper.downcallHandle(
+        "SetComputerNameW",
+        constants$134.SetComputerNameW$FUNC
+    );
+    static final FunctionDescriptor SetComputerNameExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetComputerNameExA$MH = RuntimeHelper.downcallHandle(
+        "SetComputerNameExA",
+        constants$134.SetComputerNameExA$FUNC
+    );
+    static final FunctionDescriptor VirtualAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualAlloc$MH = RuntimeHelper.downcallHandle(
+        "VirtualAlloc",
+        constants$134.VirtualAlloc$FUNC
+    );
+    static final FunctionDescriptor VirtualProtect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VirtualProtect$MH = RuntimeHelper.downcallHandle(
+        "VirtualProtect",
+        constants$134.VirtualProtect$FUNC
+    );
+    static final FunctionDescriptor VirtualFree$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualFree$MH = RuntimeHelper.downcallHandle(
+        "VirtualFree",
+        constants$134.VirtualFree$FUNC
+    );
+    static final FunctionDescriptor VirtualQuery$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle IsBadStringPtrA$MH = RuntimeHelper.downcallHandle(
-        "IsBadStringPtrA",
-        constants$134.IsBadStringPtrA$FUNC
-    );
-    static final FunctionDescriptor IsBadStringPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle IsBadStringPtrW$MH = RuntimeHelper.downcallHandle(
-        "IsBadStringPtrW",
-        constants$134.IsBadStringPtrW$FUNC
-    );
-    static final FunctionDescriptor LookupAccountSidA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LookupAccountSidA$MH = RuntimeHelper.downcallHandle(
-        "LookupAccountSidA",
-        constants$134.LookupAccountSidA$FUNC
-    );
-    static final FunctionDescriptor LookupAccountSidW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LookupAccountSidW$MH = RuntimeHelper.downcallHandle(
-        "LookupAccountSidW",
-        constants$134.LookupAccountSidW$FUNC
-    );
-    static final FunctionDescriptor LookupAccountNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LookupAccountNameA$MH = RuntimeHelper.downcallHandle(
-        "LookupAccountNameA",
-        constants$134.LookupAccountNameA$FUNC
-    );
-    static final FunctionDescriptor LookupAccountNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LookupAccountNameW$MH = RuntimeHelper.downcallHandle(
-        "LookupAccountNameW",
-        constants$134.LookupAccountNameW$FUNC
+    static final MethodHandle VirtualQuery$MH = RuntimeHelper.downcallHandle(
+        "VirtualQuery",
+        constants$134.VirtualQuery$FUNC
     );
 }
 

@@ -9,54 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$322 {
 
-    static final FunctionDescriptor GetLastActivePopup$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetLastActivePopup$MH = RuntimeHelper.downcallHandle(
-        "GetLastActivePopup",
-        constants$322.GetLastActivePopup$FUNC
-    );
-    static final FunctionDescriptor GetWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDeviceGammaRamp$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetWindow$MH = RuntimeHelper.downcallHandle(
-        "GetWindow",
-        constants$322.GetWindow$FUNC
-    );
-    static final FunctionDescriptor SetWindowsHookA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowsHookA$MH = RuntimeHelper.downcallHandle(
-        "SetWindowsHookA",
-        constants$322.SetWindowsHookA$FUNC
+    static final MethodHandle GetDeviceGammaRamp$MH = RuntimeHelper.downcallHandle(
+        "GetDeviceGammaRamp",
+        constants$322.GetDeviceGammaRamp$FUNC
     );
-    static final FunctionDescriptor SetWindowsHookW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetDeviceGammaRamp$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowsHookW$MH = RuntimeHelper.downcallHandle(
-        "SetWindowsHookW",
-        constants$322.SetWindowsHookW$FUNC
+    static final MethodHandle SetDeviceGammaRamp$MH = RuntimeHelper.downcallHandle(
+        "SetDeviceGammaRamp",
+        constants$322.SetDeviceGammaRamp$FUNC
     );
-    static final FunctionDescriptor UnhookWindowsHook$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnhookWindowsHook$MH = RuntimeHelper.downcallHandle(
-        "UnhookWindowsHook",
-        constants$322.UnhookWindowsHook$FUNC
-    );
-    static final FunctionDescriptor SetWindowsHookExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ColorMatchToTarget$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetWindowsHookExA$MH = RuntimeHelper.downcallHandle(
-        "SetWindowsHookExA",
-        constants$322.SetWindowsHookExA$FUNC
+    static final MethodHandle ColorMatchToTarget$MH = RuntimeHelper.downcallHandle(
+        "ColorMatchToTarget",
+        constants$322.ColorMatchToTarget$FUNC
+    );
+    static final FunctionDescriptor EnumICMProfilesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumICMProfilesA$MH = RuntimeHelper.downcallHandle(
+        "EnumICMProfilesA",
+        constants$322.EnumICMProfilesA$FUNC
+    );
+    static final FunctionDescriptor EnumICMProfilesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumICMProfilesW$MH = RuntimeHelper.downcallHandle(
+        "EnumICMProfilesW",
+        constants$322.EnumICMProfilesW$FUNC
+    );
+    static final FunctionDescriptor UpdateICMRegKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle UpdateICMRegKeyA$MH = RuntimeHelper.downcallHandle(
+        "UpdateICMRegKeyA",
+        constants$322.UpdateICMRegKeyA$FUNC
     );
 }
 

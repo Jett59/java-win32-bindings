@@ -9,49 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$77 {
 
-    static final FunctionDescriptor LocalSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LocalSize$MH = RuntimeHelper.downcallHandle(
-        "LocalSize",
-        constants$77.LocalSize$FUNC
-    );
-    static final FunctionDescriptor LocalFlags$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LocalFlags$MH = RuntimeHelper.downcallHandle(
-        "LocalFlags",
-        constants$77.LocalFlags$FUNC
-    );
-    static final FunctionDescriptor LocalFree$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LocalFree$MH = RuntimeHelper.downcallHandle(
-        "LocalFree",
-        constants$77.LocalFree$FUNC
-    );
-    static final FunctionDescriptor LocalShrink$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetDiskFreeSpaceExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle LocalShrink$MH = RuntimeHelper.downcallHandle(
-        "LocalShrink",
-        constants$77.LocalShrink$FUNC
-    );
-    static final FunctionDescriptor LocalCompact$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle LocalCompact$MH = RuntimeHelper.downcallHandle(
-        "LocalCompact",
-        constants$77.LocalCompact$FUNC
-    );
-    static final FunctionDescriptor GetBinaryTypeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetBinaryTypeA$MH = RuntimeHelper.downcallHandle(
-        "GetBinaryTypeA",
-        constants$77.GetBinaryTypeA$FUNC
+    static final MethodHandle GetDiskFreeSpaceExA$MH = RuntimeHelper.downcallHandle(
+        "GetDiskFreeSpaceExA",
+        constants$77.GetDiskFreeSpaceExA$FUNC
+    );
+    static final FunctionDescriptor GetDiskFreeSpaceExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDiskFreeSpaceExW$MH = RuntimeHelper.downcallHandle(
+        "GetDiskFreeSpaceExW",
+        constants$77.GetDiskFreeSpaceExW$FUNC
+    );
+    static final FunctionDescriptor GetDiskSpaceInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDiskSpaceInformationA$MH = RuntimeHelper.downcallHandle(
+        "GetDiskSpaceInformationA",
+        constants$77.GetDiskSpaceInformationA$FUNC
+    );
+    static final FunctionDescriptor GetDiskSpaceInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDiskSpaceInformationW$MH = RuntimeHelper.downcallHandle(
+        "GetDiskSpaceInformationW",
+        constants$77.GetDiskSpaceInformationW$FUNC
+    );
+    static final FunctionDescriptor GetDriveTypeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDriveTypeA$MH = RuntimeHelper.downcallHandle(
+        "GetDriveTypeA",
+        constants$77.GetDriveTypeA$FUNC
+    );
+    static final FunctionDescriptor GetDriveTypeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDriveTypeW$MH = RuntimeHelper.downcallHandle(
+        "GetDriveTypeW",
+        constants$77.GetDriveTypeW$FUNC
     );
 }
 

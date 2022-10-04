@@ -9,12 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$699 {
 
-    static final MemorySegment sz_CERT_STORE_PROV_PHYSICAL_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Physical");
-    static final MemorySegment sz_CERT_STORE_PROV_PHYSICAL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Physical");
-    static final MemorySegment sz_CERT_STORE_PROV_SMART_CARD_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SmartCard");
-    static final MemorySegment sz_CERT_STORE_PROV_SMART_CARD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SmartCard");
-    static final MemorySegment sz_CERT_STORE_PROV_LDAP_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Ldap");
-    static final MemorySegment sz_CERT_STORE_PROV_LDAP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Ldap");
+    static final FunctionDescriptor PropVariantClear$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PropVariantClear$MH = RuntimeHelper.downcallHandle(
+        "PropVariantClear",
+        constants$699.PropVariantClear$FUNC
+    );
+    static final FunctionDescriptor FreePropVariantArray$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FreePropVariantArray$MH = RuntimeHelper.downcallHandle(
+        "FreePropVariantArray",
+        constants$699.FreePropVariantArray$FUNC
+    );
+    static final FunctionDescriptor CoWaitForMultipleHandles$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoWaitForMultipleHandles$MH = RuntimeHelper.downcallHandle(
+        "CoWaitForMultipleHandles",
+        constants$699.CoWaitForMultipleHandles$FUNC
+    );
+    static final FunctionDescriptor CoWaitForMultipleObjects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoWaitForMultipleObjects$MH = RuntimeHelper.downcallHandle(
+        "CoWaitForMultipleObjects",
+        constants$699.CoWaitForMultipleObjects$FUNC
+    );
+    static final FunctionDescriptor CoGetTreatAsClass$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetTreatAsClass$MH = RuntimeHelper.downcallHandle(
+        "CoGetTreatAsClass",
+        constants$699.CoGetTreatAsClass$FUNC
+    );
+    static final FunctionDescriptor CoInvalidateRemoteMachineBindings$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoInvalidateRemoteMachineBindings$MH = RuntimeHelper.downcallHandle(
+        "CoInvalidateRemoteMachineBindings",
+        constants$699.CoInvalidateRemoteMachineBindings$FUNC
+    );
 }
 
 

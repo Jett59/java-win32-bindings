@@ -9,50 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$76 {
 
-    static final FunctionDescriptor GlobalMemoryStatus$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor FindNextFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GlobalMemoryStatus$MH = RuntimeHelper.downcallHandle(
-        "GlobalMemoryStatus",
-        constants$76.GlobalMemoryStatus$FUNC
+    static final MethodHandle FindNextFileW$MH = RuntimeHelper.downcallHandle(
+        "FindNextFileW",
+        constants$76.FindNextFileW$FUNC
     );
-    static final FunctionDescriptor LocalAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle LocalAlloc$MH = RuntimeHelper.downcallHandle(
-        "LocalAlloc",
-        constants$76.LocalAlloc$FUNC
-    );
-    static final FunctionDescriptor LocalReAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FindNextVolumeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LocalReAlloc$MH = RuntimeHelper.downcallHandle(
-        "LocalReAlloc",
-        constants$76.LocalReAlloc$FUNC
+    static final MethodHandle FindNextVolumeW$MH = RuntimeHelper.downcallHandle(
+        "FindNextVolumeW",
+        constants$76.FindNextVolumeW$FUNC
     );
-    static final FunctionDescriptor LocalLock$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FindVolumeClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LocalLock$MH = RuntimeHelper.downcallHandle(
-        "LocalLock",
-        constants$76.LocalLock$FUNC
+    static final MethodHandle FindVolumeClose$MH = RuntimeHelper.downcallHandle(
+        "FindVolumeClose",
+        constants$76.FindVolumeClose$FUNC
     );
-    static final FunctionDescriptor LocalHandle$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FlushFileBuffers$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LocalHandle$MH = RuntimeHelper.downcallHandle(
-        "LocalHandle",
-        constants$76.LocalHandle$FUNC
+    static final MethodHandle FlushFileBuffers$MH = RuntimeHelper.downcallHandle(
+        "FlushFileBuffers",
+        constants$76.FlushFileBuffers$FUNC
     );
-    static final FunctionDescriptor LocalUnlock$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDiskFreeSpaceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LocalUnlock$MH = RuntimeHelper.downcallHandle(
-        "LocalUnlock",
-        constants$76.LocalUnlock$FUNC
+    static final MethodHandle GetDiskFreeSpaceA$MH = RuntimeHelper.downcallHandle(
+        "GetDiskFreeSpaceA",
+        constants$76.GetDiskFreeSpaceA$FUNC
+    );
+    static final FunctionDescriptor GetDiskFreeSpaceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDiskFreeSpaceW$MH = RuntimeHelper.downcallHandle(
+        "GetDiskFreeSpaceW",
+        constants$76.GetDiskFreeSpaceW$FUNC
     );
 }
 

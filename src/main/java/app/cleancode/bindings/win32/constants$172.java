@@ -9,48 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$172 {
 
-    static final FunctionDescriptor GetROP2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetROP2$MH = RuntimeHelper.downcallHandle(
-        "GetROP2",
-        constants$172.GetROP2$FUNC
-    );
-    static final FunctionDescriptor GetAspectRatioFilterEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenPrivateNamespaceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetAspectRatioFilterEx$MH = RuntimeHelper.downcallHandle(
-        "GetAspectRatioFilterEx",
-        constants$172.GetAspectRatioFilterEx$FUNC
+    static final MethodHandle OpenPrivateNamespaceW$MH = RuntimeHelper.downcallHandle(
+        "OpenPrivateNamespaceW",
+        constants$172.OpenPrivateNamespaceW$FUNC
     );
-    static final FunctionDescriptor GetBkColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ClosePrivateNamespace$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ClosePrivateNamespace$MH = RuntimeHelper.downcallHandle(
+        "ClosePrivateNamespace",
+        constants$172.ClosePrivateNamespace$FUNC
+    );
+    static final FunctionDescriptor CreateBoundaryDescriptorW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateBoundaryDescriptorW$MH = RuntimeHelper.downcallHandle(
+        "CreateBoundaryDescriptorW",
+        constants$172.CreateBoundaryDescriptorW$FUNC
+    );
+    static final FunctionDescriptor AddSIDToBoundaryDescriptor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetBkColor$MH = RuntimeHelper.downcallHandle(
-        "GetBkColor",
-        constants$172.GetBkColor$FUNC
+    static final MethodHandle AddSIDToBoundaryDescriptor$MH = RuntimeHelper.downcallHandle(
+        "AddSIDToBoundaryDescriptor",
+        constants$172.AddSIDToBoundaryDescriptor$FUNC
     );
-    static final FunctionDescriptor GetDCBrushColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeleteBoundaryDescriptor$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDCBrushColor$MH = RuntimeHelper.downcallHandle(
-        "GetDCBrushColor",
-        constants$172.GetDCBrushColor$FUNC
+    static final MethodHandle DeleteBoundaryDescriptor$MH = RuntimeHelper.downcallHandle(
+        "DeleteBoundaryDescriptor",
+        constants$172.DeleteBoundaryDescriptor$FUNC
     );
-    static final FunctionDescriptor GetDCPenColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetNumaHighestNodeNumber$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDCPenColor$MH = RuntimeHelper.downcallHandle(
-        "GetDCPenColor",
-        constants$172.GetDCPenColor$FUNC
-    );
-    static final FunctionDescriptor GetBkMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetBkMode$MH = RuntimeHelper.downcallHandle(
-        "GetBkMode",
-        constants$172.GetBkMode$FUNC
+    static final MethodHandle GetNumaHighestNodeNumber$MH = RuntimeHelper.downcallHandle(
+        "GetNumaHighestNodeNumber",
+        constants$172.GetNumaHighestNodeNumber$FUNC
     );
 }
 

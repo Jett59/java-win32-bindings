@@ -9,54 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$274 {
 
-    static final FunctionDescriptor SendInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumFontsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumFontsW$MH = RuntimeHelper.downcallHandle(
+        "EnumFontsW",
+        constants$274.EnumFontsW$FUNC
+    );
+    static final FunctionDescriptor EnumObjects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle SendInput$MH = RuntimeHelper.downcallHandle(
-        "SendInput",
-        constants$274.SendInput$FUNC
+    static final MethodHandle EnumObjects$MH = RuntimeHelper.downcallHandle(
+        "EnumObjects",
+        constants$274.EnumObjects$FUNC
     );
-    static final FunctionDescriptor GetTouchInputInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EqualRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EqualRgn$MH = RuntimeHelper.downcallHandle(
+        "EqualRgn",
+        constants$274.EqualRgn$FUNC
+    );
+    static final FunctionDescriptor Escape$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle Escape$MH = RuntimeHelper.downcallHandle(
+        "Escape",
+        constants$274.Escape$FUNC
+    );
+    static final FunctionDescriptor ExtEscape$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ExtEscape$MH = RuntimeHelper.downcallHandle(
+        "ExtEscape",
+        constants$274.ExtEscape$FUNC
+    );
+    static final FunctionDescriptor ExcludeClipRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetTouchInputInfo$MH = RuntimeHelper.downcallHandle(
-        "GetTouchInputInfo",
-        constants$274.GetTouchInputInfo$FUNC
-    );
-    static final FunctionDescriptor CloseTouchInputHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CloseTouchInputHandle$MH = RuntimeHelper.downcallHandle(
-        "CloseTouchInputHandle",
-        constants$274.CloseTouchInputHandle$FUNC
-    );
-    static final FunctionDescriptor RegisterTouchWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegisterTouchWindow$MH = RuntimeHelper.downcallHandle(
-        "RegisterTouchWindow",
-        constants$274.RegisterTouchWindow$FUNC
-    );
-    static final FunctionDescriptor UnregisterTouchWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnregisterTouchWindow$MH = RuntimeHelper.downcallHandle(
-        "UnregisterTouchWindow",
-        constants$274.UnregisterTouchWindow$FUNC
-    );
-    static final FunctionDescriptor IsTouchWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IsTouchWindow$MH = RuntimeHelper.downcallHandle(
-        "IsTouchWindow",
-        constants$274.IsTouchWindow$FUNC
+    static final MethodHandle ExcludeClipRect$MH = RuntimeHelper.downcallHandle(
+        "ExcludeClipRect",
+        constants$274.ExcludeClipRect$FUNC
     );
 }
 

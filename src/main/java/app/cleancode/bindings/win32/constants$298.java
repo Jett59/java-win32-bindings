@@ -9,56 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$298 {
 
-    static final FunctionDescriptor ReleaseDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetPixel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetPixel$MH = RuntimeHelper.downcallHandle(
+        "SetPixel",
+        constants$298.SetPixel$FUNC
+    );
+    static final FunctionDescriptor SetPixelV$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetPixelV$MH = RuntimeHelper.downcallHandle(
+        "SetPixelV",
+        constants$298.SetPixelV$FUNC
+    );
+    static final FunctionDescriptor SetPixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ReleaseDC$MH = RuntimeHelper.downcallHandle(
-        "ReleaseDC",
-        constants$298.ReleaseDC$FUNC
+    static final MethodHandle SetPixelFormat$MH = RuntimeHelper.downcallHandle(
+        "SetPixelFormat",
+        constants$298.SetPixelFormat$FUNC
     );
-    static final FunctionDescriptor BeginPaint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle BeginPaint$MH = RuntimeHelper.downcallHandle(
-        "BeginPaint",
-        constants$298.BeginPaint$FUNC
-    );
-    static final FunctionDescriptor EndPaint$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EndPaint$MH = RuntimeHelper.downcallHandle(
-        "EndPaint",
-        constants$298.EndPaint$FUNC
-    );
-    static final FunctionDescriptor GetUpdateRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetPolyFillMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetUpdateRect$MH = RuntimeHelper.downcallHandle(
-        "GetUpdateRect",
-        constants$298.GetUpdateRect$FUNC
+    static final MethodHandle SetPolyFillMode$MH = RuntimeHelper.downcallHandle(
+        "SetPolyFillMode",
+        constants$298.SetPolyFillMode$FUNC
     );
-    static final FunctionDescriptor GetUpdateRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor StretchBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetUpdateRgn$MH = RuntimeHelper.downcallHandle(
-        "GetUpdateRgn",
-        constants$298.GetUpdateRgn$FUNC
+    static final MethodHandle StretchBlt$MH = RuntimeHelper.downcallHandle(
+        "StretchBlt",
+        constants$298.StretchBlt$FUNC
     );
-    static final FunctionDescriptor SetWindowRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetRectRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetWindowRgn$MH = RuntimeHelper.downcallHandle(
-        "SetWindowRgn",
-        constants$298.SetWindowRgn$FUNC
+    static final MethodHandle SetRectRgn$MH = RuntimeHelper.downcallHandle(
+        "SetRectRgn",
+        constants$298.SetRectRgn$FUNC
     );
 }
 

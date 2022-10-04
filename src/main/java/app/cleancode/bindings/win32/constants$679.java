@@ -9,12 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$679 {
 
-    static final MemorySegment szOID_CMC_REVOKE_REQUEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.17");
-    static final MemorySegment szOID_CMC_REG_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.18");
-    static final MemorySegment szOID_CMC_RESPONSE_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.19");
-    static final MemorySegment szOID_CMC_QUERY_PENDING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.21");
-    static final MemorySegment szOID_CMC_ID_POP_LINK_RANDOM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.22");
-    static final MemorySegment szOID_CMC_ID_POP_LINK_WITNESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.23");
+    static final FunctionDescriptor ConfigurePortW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ConfigurePortW$MH = RuntimeHelper.downcallHandle(
+        "ConfigurePortW",
+        constants$679.ConfigurePortW$FUNC
+    );
+    static final FunctionDescriptor DeletePortA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePortA$MH = RuntimeHelper.downcallHandle(
+        "DeletePortA",
+        constants$679.DeletePortA$FUNC
+    );
+    static final FunctionDescriptor DeletePortW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePortW$MH = RuntimeHelper.downcallHandle(
+        "DeletePortW",
+        constants$679.DeletePortW$FUNC
+    );
+    static final FunctionDescriptor XcvDataW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle XcvDataW$MH = RuntimeHelper.downcallHandle(
+        "XcvDataW",
+        constants$679.XcvDataW$FUNC
+    );
+    static final FunctionDescriptor GetDefaultPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDefaultPrinterA$MH = RuntimeHelper.downcallHandle(
+        "GetDefaultPrinterA",
+        constants$679.GetDefaultPrinterA$FUNC
+    );
+    static final FunctionDescriptor GetDefaultPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDefaultPrinterW$MH = RuntimeHelper.downcallHandle(
+        "GetDefaultPrinterW",
+        constants$679.GetDefaultPrinterW$FUNC
+    );
 }
 
 

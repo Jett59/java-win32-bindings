@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$643 {
 
-    static final MemorySegment szOID_CRL_DIST_POINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.31");
-    static final MemorySegment szOID_ENHANCED_KEY_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.37");
-    static final MemorySegment szOID_ANY_ENHANCED_KEY_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.37.0");
-    static final MemorySegment szOID_CRL_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.20");
-    static final MemorySegment szOID_DELTA_CRL_INDICATOR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.27");
-    static final MemorySegment szOID_ISSUING_DIST_POINT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.28");
+    static final FunctionDescriptor DeviceDsmGetNumberOfDataSetRanges$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmGetNumberOfDataSetRanges$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmGetNumberOfDataSetRanges",
+        constants$643.DeviceDsmGetNumberOfDataSetRanges$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmInitializeInput$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmInitializeInput$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmInitializeInput",
+        constants$643.DeviceDsmInitializeInput$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmAddDataSetRange$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmAddDataSetRange$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmAddDataSetRange",
+        constants$643.DeviceDsmAddDataSetRange$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmValidateInput$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmValidateInput$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmValidateInput",
+        constants$643.DeviceDsmValidateInput$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmOutputBlock$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeviceDsmOutputBlock$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmOutputBlock",
+        constants$643.DeviceDsmOutputBlock$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmGetOutputLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmGetOutputLength$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmGetOutputLength",
+        constants$643.DeviceDsmGetOutputLength$FUNC
+    );
 }
 
 

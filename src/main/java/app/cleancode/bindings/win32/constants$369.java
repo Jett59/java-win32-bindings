@@ -9,65 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$369 {
 
-    static final FunctionDescriptor SetThreadPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveClipboardFormatListener$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RemoveClipboardFormatListener$MH = RuntimeHelper.downcallHandle(
+        "RemoveClipboardFormatListener",
+        constants$369.RemoveClipboardFormatListener$FUNC
+    );
+    static final FunctionDescriptor GetUpdatedClipboardFormats$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetUpdatedClipboardFormats$MH = RuntimeHelper.downcallHandle(
+        "GetUpdatedClipboardFormats",
+        constants$369.GetUpdatedClipboardFormats$FUNC
+    );
+    static final FunctionDescriptor CharToOemA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetThreadPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
-        "SetThreadPreferredUILanguages",
-        constants$369.SetThreadPreferredUILanguages$FUNC
+    static final MethodHandle CharToOemA$MH = RuntimeHelper.downcallHandle(
+        "CharToOemA",
+        constants$369.CharToOemA$FUNC
     );
-    static final FunctionDescriptor GetFileMUIInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CharToOemW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetFileMUIInfo$MH = RuntimeHelper.downcallHandle(
-        "GetFileMUIInfo",
-        constants$369.GetFileMUIInfo$FUNC
+    static final MethodHandle CharToOemW$MH = RuntimeHelper.downcallHandle(
+        "CharToOemW",
+        constants$369.CharToOemW$FUNC
     );
-    static final FunctionDescriptor GetFileMUIPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OemToCharA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetFileMUIPath$MH = RuntimeHelper.downcallHandle(
-        "GetFileMUIPath",
-        constants$369.GetFileMUIPath$FUNC
+    static final MethodHandle OemToCharA$MH = RuntimeHelper.downcallHandle(
+        "OemToCharA",
+        constants$369.OemToCharA$FUNC
     );
-    static final FunctionDescriptor GetUILanguageInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OemToCharW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetUILanguageInfo$MH = RuntimeHelper.downcallHandle(
-        "GetUILanguageInfo",
-        constants$369.GetUILanguageInfo$FUNC
-    );
-    static final FunctionDescriptor SetThreadPreferredUILanguages2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetThreadPreferredUILanguages2$MH = RuntimeHelper.downcallHandle(
-        "SetThreadPreferredUILanguages2",
-        constants$369.SetThreadPreferredUILanguages2$FUNC
-    );
-    static final FunctionDescriptor RestoreThreadPreferredUILanguages$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RestoreThreadPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
-        "RestoreThreadPreferredUILanguages",
-        constants$369.RestoreThreadPreferredUILanguages$FUNC
+    static final MethodHandle OemToCharW$MH = RuntimeHelper.downcallHandle(
+        "OemToCharW",
+        constants$369.OemToCharW$FUNC
     );
 }
 

@@ -9,41 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$339 {
 
-    static final FunctionDescriptor BlockInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SwitchDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SwitchDesktop$MH = RuntimeHelper.downcallHandle(
+        "SwitchDesktop",
+        constants$339.SwitchDesktop$FUNC
+    );
+    static final FunctionDescriptor SetThreadDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetThreadDesktop$MH = RuntimeHelper.downcallHandle(
+        "SetThreadDesktop",
+        constants$339.SetThreadDesktop$FUNC
+    );
+    static final FunctionDescriptor CloseDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CloseDesktop$MH = RuntimeHelper.downcallHandle(
+        "CloseDesktop",
+        constants$339.CloseDesktop$FUNC
+    );
+    static final FunctionDescriptor GetThreadDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle BlockInput$MH = RuntimeHelper.downcallHandle(
-        "BlockInput",
-        constants$339.BlockInput$FUNC
+    static final MethodHandle GetThreadDesktop$MH = RuntimeHelper.downcallHandle(
+        "GetThreadDesktop",
+        constants$339.GetThreadDesktop$FUNC
     );
-    static final FunctionDescriptor SetProcessDPIAware$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle SetProcessDPIAware$MH = RuntimeHelper.downcallHandle(
-        "SetProcessDPIAware",
-        constants$339.SetProcessDPIAware$FUNC
-    );
-    static final FunctionDescriptor IsProcessDPIAware$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle IsProcessDPIAware$MH = RuntimeHelper.downcallHandle(
-        "IsProcessDPIAware",
-        constants$339.IsProcessDPIAware$FUNC
-    );
-    static final FunctionDescriptor SetThreadDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateWindowStationA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetThreadDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
-        "SetThreadDpiAwarenessContext",
-        constants$339.SetThreadDpiAwarenessContext$FUNC
+    static final MethodHandle CreateWindowStationA$MH = RuntimeHelper.downcallHandle(
+        "CreateWindowStationA",
+        constants$339.CreateWindowStationA$FUNC
     );
-    static final FunctionDescriptor GetThreadDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetThreadDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
-        "GetThreadDpiAwarenessContext",
-        constants$339.GetThreadDpiAwarenessContext$FUNC
-    );
-    static final FunctionDescriptor GetWindowDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateWindowStationW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWindowDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
-        "GetWindowDpiAwarenessContext",
-        constants$339.GetWindowDpiAwarenessContext$FUNC
+    static final MethodHandle CreateWindowStationW$MH = RuntimeHelper.downcallHandle(
+        "CreateWindowStationW",
+        constants$339.CreateWindowStationW$FUNC
     );
 }
 

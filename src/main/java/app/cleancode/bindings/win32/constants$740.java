@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$740 {
 
-    static final MemorySegment STORAGE_CRASH_TELEMETRY_REGKEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
-    static final MemorySegment STORAGE_DEVICE_TELEMETRY_REGKEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
-    static final MemorySegment TC_PUBLIC_DATA_TYPE_ATAGP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ATAGPLogPages");
-    static final MemorySegment TC_PUBLIC_DATA_TYPE_ATASMART$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ATASMARTPages");
-    static final MemorySegment SCARD_ALL_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$AllReaders");
-    static final MemorySegment SCARD_DEFAULT_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$DefaultReaders");
+    static final MemoryAddress HBMMENU_POPUP_RESTORE$ADDR = MemoryAddress.ofLong(9L);
+    static final MemoryAddress HBMMENU_POPUP_MAXIMIZE$ADDR = MemoryAddress.ofLong(10L);
+    static final MemoryAddress HBMMENU_POPUP_MINIMIZE$ADDR = MemoryAddress.ofLong(11L);
+    static final MemoryAddress IDC_ARROW$ADDR = MemoryAddress.ofLong(32512L);
+    static final MemoryAddress IDC_IBEAM$ADDR = MemoryAddress.ofLong(32513L);
+    static final MemoryAddress IDC_WAIT$ADDR = MemoryAddress.ofLong(32514L);
 }
 
 

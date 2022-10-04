@@ -9,57 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$411 {
 
-    static final FunctionDescriptor WSAUnhookBlockingHook$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle WSAUnhookBlockingHook$MH = RuntimeHelper.downcallHandle(
-        "WSAUnhookBlockingHook",
-        constants$411.WSAUnhookBlockingHook$FUNC
-    );
-    static final FunctionDescriptor WSASetBlockingHook$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor MessageBoxIndirectA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WSASetBlockingHook$MH = RuntimeHelper.downcallHandle(
-        "WSASetBlockingHook",
-        constants$411.WSASetBlockingHook$FUNC
+    static final MethodHandle MessageBoxIndirectA$MH = RuntimeHelper.downcallHandle(
+        "MessageBoxIndirectA",
+        constants$411.MessageBoxIndirectA$FUNC
     );
-    static final FunctionDescriptor WSACancelBlockingCall$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle WSACancelBlockingCall$MH = RuntimeHelper.downcallHandle(
-        "WSACancelBlockingCall",
-        constants$411.WSACancelBlockingCall$FUNC
+    static final FunctionDescriptor MessageBoxIndirectW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor WSAAsyncGetServByName$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final MethodHandle MessageBoxIndirectW$MH = RuntimeHelper.downcallHandle(
+        "MessageBoxIndirectW",
+        constants$411.MessageBoxIndirectW$FUNC
+    );
+    static final FunctionDescriptor MessageBeep$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WSAAsyncGetServByName$MH = RuntimeHelper.downcallHandle(
-        "WSAAsyncGetServByName",
-        constants$411.WSAAsyncGetServByName$FUNC
+    static final MethodHandle MessageBeep$MH = RuntimeHelper.downcallHandle(
+        "MessageBeep",
+        constants$411.MessageBeep$FUNC
     );
-    static final FunctionDescriptor WSAAsyncGetServByPort$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ShowCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WSAAsyncGetServByPort$MH = RuntimeHelper.downcallHandle(
-        "WSAAsyncGetServByPort",
-        constants$411.WSAAsyncGetServByPort$FUNC
+    static final MethodHandle ShowCursor$MH = RuntimeHelper.downcallHandle(
+        "ShowCursor",
+        constants$411.ShowCursor$FUNC
     );
-    static final FunctionDescriptor WSAAsyncGetProtoByName$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetCursorPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WSAAsyncGetProtoByName$MH = RuntimeHelper.downcallHandle(
-        "WSAAsyncGetProtoByName",
-        constants$411.WSAAsyncGetProtoByName$FUNC
+    static final MethodHandle SetCursorPos$MH = RuntimeHelper.downcallHandle(
+        "SetCursorPos",
+        constants$411.SetCursorPos$FUNC
+    );
+    static final FunctionDescriptor SetPhysicalCursorPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetPhysicalCursorPos$MH = RuntimeHelper.downcallHandle(
+        "SetPhysicalCursorPos",
+        constants$411.SetPhysicalCursorPos$FUNC
     );
 }
 

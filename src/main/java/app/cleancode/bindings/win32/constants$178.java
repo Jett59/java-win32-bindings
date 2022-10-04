@@ -9,57 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$178 {
 
-    static final FunctionDescriptor GetNearestPaletteIndex$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LocalHandle$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LocalHandle$MH = RuntimeHelper.downcallHandle(
+        "LocalHandle",
+        constants$178.LocalHandle$FUNC
+    );
+    static final FunctionDescriptor LocalUnlock$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LocalUnlock$MH = RuntimeHelper.downcallHandle(
+        "LocalUnlock",
+        constants$178.LocalUnlock$FUNC
+    );
+    static final FunctionDescriptor LocalSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LocalSize$MH = RuntimeHelper.downcallHandle(
+        "LocalSize",
+        constants$178.LocalSize$FUNC
+    );
+    static final FunctionDescriptor LocalFlags$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LocalFlags$MH = RuntimeHelper.downcallHandle(
+        "LocalFlags",
+        constants$178.LocalFlags$FUNC
+    );
+    static final FunctionDescriptor LocalFree$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LocalFree$MH = RuntimeHelper.downcallHandle(
+        "LocalFree",
+        constants$178.LocalFree$FUNC
+    );
+    static final FunctionDescriptor LocalShrink$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetNearestPaletteIndex$MH = RuntimeHelper.downcallHandle(
-        "GetNearestPaletteIndex",
-        constants$178.GetNearestPaletteIndex$FUNC
-    );
-    static final FunctionDescriptor GetObjectType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetObjectType$MH = RuntimeHelper.downcallHandle(
-        "GetObjectType",
-        constants$178.GetObjectType$FUNC
-    );
-    static final FunctionDescriptor GetOutlineTextMetricsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetOutlineTextMetricsA$MH = RuntimeHelper.downcallHandle(
-        "GetOutlineTextMetricsA",
-        constants$178.GetOutlineTextMetricsA$FUNC
-    );
-    static final FunctionDescriptor GetOutlineTextMetricsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetOutlineTextMetricsW$MH = RuntimeHelper.downcallHandle(
-        "GetOutlineTextMetricsW",
-        constants$178.GetOutlineTextMetricsW$FUNC
-    );
-    static final FunctionDescriptor GetPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPaletteEntries$MH = RuntimeHelper.downcallHandle(
-        "GetPaletteEntries",
-        constants$178.GetPaletteEntries$FUNC
-    );
-    static final FunctionDescriptor GetPixel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetPixel$MH = RuntimeHelper.downcallHandle(
-        "GetPixel",
-        constants$178.GetPixel$FUNC
+    static final MethodHandle LocalShrink$MH = RuntimeHelper.downcallHandle(
+        "LocalShrink",
+        constants$178.LocalShrink$FUNC
     );
 }
 

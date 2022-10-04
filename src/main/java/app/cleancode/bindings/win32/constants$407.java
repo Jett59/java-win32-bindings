@@ -9,70 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$407 {
 
-    static final FunctionDescriptor inet_ntoa$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            MemoryLayout.unionLayout(
-                MemoryLayout.structLayout(
-                    Constants$root.C_CHAR$LAYOUT.withName("s_b1"),
-                    Constants$root.C_CHAR$LAYOUT.withName("s_b2"),
-                    Constants$root.C_CHAR$LAYOUT.withName("s_b3"),
-                    Constants$root.C_CHAR$LAYOUT.withName("s_b4")
-                ).withName("S_un_b"),
-                MemoryLayout.structLayout(
-                    Constants$root.C_SHORT$LAYOUT.withName("s_w1"),
-                    Constants$root.C_SHORT$LAYOUT.withName("s_w2")
-                ).withName("S_un_w"),
-                Constants$root.C_LONG$LAYOUT.withName("S_addr")
-            ).withName("S_un")
-        ).withName("in_addr")
-    );
-    static final MethodHandle inet_ntoa$MH = RuntimeHelper.downcallHandle(
-        "inet_ntoa",
-        constants$407.inet_ntoa$FUNC
-    );
-    static final FunctionDescriptor listen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle listen$MH = RuntimeHelper.downcallHandle(
-        "listen",
-        constants$407.listen$FUNC
-    );
-    static final FunctionDescriptor ntohl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ntohl$MH = RuntimeHelper.downcallHandle(
-        "ntohl",
-        constants$407.ntohl$FUNC
-    );
-    static final FunctionDescriptor ntohs$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle ntohs$MH = RuntimeHelper.downcallHandle(
-        "ntohs",
-        constants$407.ntohs$FUNC
-    );
-    static final FunctionDescriptor recv$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor EnumPropsExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle recv$MH = RuntimeHelper.downcallHandle(
-        "recv",
-        constants$407.recv$FUNC
-    );
-    static final FunctionDescriptor recvfrom$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumPropsExW$MH = RuntimeHelper.downcallHandle(
+        "EnumPropsExW",
+        constants$407.EnumPropsExW$FUNC
+    );
+    static final FunctionDescriptor EnumPropsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle recvfrom$MH = RuntimeHelper.downcallHandle(
-        "recvfrom",
-        constants$407.recvfrom$FUNC
+    static final MethodHandle EnumPropsA$MH = RuntimeHelper.downcallHandle(
+        "EnumPropsA",
+        constants$407.EnumPropsA$FUNC
+    );
+    static final FunctionDescriptor EnumPropsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPropsW$MH = RuntimeHelper.downcallHandle(
+        "EnumPropsW",
+        constants$407.EnumPropsW$FUNC
+    );
+    static final FunctionDescriptor SetWindowTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetWindowTextA$MH = RuntimeHelper.downcallHandle(
+        "SetWindowTextA",
+        constants$407.SetWindowTextA$FUNC
+    );
+    static final FunctionDescriptor SetWindowTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetWindowTextW$MH = RuntimeHelper.downcallHandle(
+        "SetWindowTextW",
+        constants$407.SetWindowTextW$FUNC
+    );
+    static final FunctionDescriptor GetWindowTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetWindowTextA$MH = RuntimeHelper.downcallHandle(
+        "GetWindowTextA",
+        constants$407.GetWindowTextA$FUNC
     );
 }
 

@@ -9,12 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$599 {
 
-    static final MemorySegment szOID_ECC_CURVE_SECP224R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.33");
-    static final MemorySegment szOID_ECC_CURVE_SECP256K1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.10");
-    static final MemorySegment szOID_ECC_CURVE_SECP256R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.7");
-    static final MemorySegment szOID_ECC_CURVE_SECP384R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.34");
-    static final MemorySegment szOID_ECC_CURVE_SECP521R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.35");
-    static final MemorySegment szOID_ECC_CURVE_WTLS7$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.30");
+    static final FunctionDescriptor CertDeleteCertificateFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertDeleteCertificateFromStore$MH = RuntimeHelper.downcallHandle(
+        "CertDeleteCertificateFromStore",
+        constants$599.CertDeleteCertificateFromStore$FUNC
+    );
+    static final FunctionDescriptor CertAddEncodedCRLToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddEncodedCRLToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddEncodedCRLToStore",
+        constants$599.CertAddEncodedCRLToStore$FUNC
+    );
+    static final FunctionDescriptor CertAddCRLContextToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddCRLContextToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddCRLContextToStore",
+        constants$599.CertAddCRLContextToStore$FUNC
+    );
+    static final FunctionDescriptor CertDeleteCRLFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertDeleteCRLFromStore$MH = RuntimeHelper.downcallHandle(
+        "CertDeleteCRLFromStore",
+        constants$599.CertDeleteCRLFromStore$FUNC
+    );
+    static final FunctionDescriptor CertSerializeCertificateStoreElement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertSerializeCertificateStoreElement$MH = RuntimeHelper.downcallHandle(
+        "CertSerializeCertificateStoreElement",
+        constants$599.CertSerializeCertificateStoreElement$FUNC
+    );
+    static final FunctionDescriptor CertSerializeCRLStoreElement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertSerializeCRLStoreElement$MH = RuntimeHelper.downcallHandle(
+        "CertSerializeCRLStoreElement",
+        constants$599.CertSerializeCRLStoreElement$FUNC
+    );
 }
 
 

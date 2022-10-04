@@ -9,12 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$693 {
 
-    static final MemorySegment szOID_ROOT_PROGRAM_AUTO_UPDATE_END_REVOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.2");
-    static final MemorySegment szOID_ROOT_PROGRAM_NO_OCSP_FAILOVER_TO_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.3");
-    static final MemoryAddress CERT_STORE_PROV_MSG$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress CERT_STORE_PROV_MEMORY$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CERT_STORE_PROV_FILE$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress CERT_STORE_PROV_REG$ADDR = MemoryAddress.ofLong(4L);
+    static final FunctionDescriptor CoIsHandlerConnected$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoIsHandlerConnected$MH = RuntimeHelper.downcallHandle(
+        "CoIsHandlerConnected",
+        constants$693.CoIsHandlerConnected$FUNC
+    );
+    static final FunctionDescriptor CoMarshalInterThreadInterfaceInStream$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoMarshalInterThreadInterfaceInStream$MH = RuntimeHelper.downcallHandle(
+        "CoMarshalInterThreadInterfaceInStream",
+        constants$693.CoMarshalInterThreadInterfaceInStream$FUNC
+    );
+    static final FunctionDescriptor CoGetInterfaceAndReleaseStream$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetInterfaceAndReleaseStream$MH = RuntimeHelper.downcallHandle(
+        "CoGetInterfaceAndReleaseStream",
+        constants$693.CoGetInterfaceAndReleaseStream$FUNC
+    );
+    static final FunctionDescriptor CoCreateFreeThreadedMarshaler$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoCreateFreeThreadedMarshaler$MH = RuntimeHelper.downcallHandle(
+        "CoCreateFreeThreadedMarshaler",
+        constants$693.CoCreateFreeThreadedMarshaler$FUNC
+    );
+    static final FunctionDescriptor CoFreeUnusedLibraries$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle CoFreeUnusedLibraries$MH = RuntimeHelper.downcallHandle(
+        "CoFreeUnusedLibraries",
+        constants$693.CoFreeUnusedLibraries$FUNC
+    );
+    static final FunctionDescriptor CoFreeUnusedLibrariesEx$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoFreeUnusedLibrariesEx$MH = RuntimeHelper.downcallHandle(
+        "CoFreeUnusedLibrariesEx",
+        constants$693.CoFreeUnusedLibrariesEx$FUNC
+    );
 }
 
 

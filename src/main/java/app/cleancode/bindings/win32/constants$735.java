@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$735 {
 
-    static final MemoryAddress CERT_CHAIN_POLICY_SSL_HPKP_HEADER$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress CERT_CHAIN_POLICY_THIRD_PARTY_ROOT$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress CERT_CHAIN_POLICY_SSL_KEY_PIN$ADDR = MemoryAddress.ofLong(12L);
-    static final MemorySegment szOID_PKCS_12_PbeIds$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1");
-    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And128BitRC4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.1");
-    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And40BitRC4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.2");
+    static final MemoryAddress RT_DLGINCLUDE$ADDR = MemoryAddress.ofLong(17L);
+    static final MemoryAddress RT_PLUGPLAY$ADDR = MemoryAddress.ofLong(19L);
+    static final MemoryAddress RT_VXD$ADDR = MemoryAddress.ofLong(20L);
+    static final MemoryAddress RT_ANICURSOR$ADDR = MemoryAddress.ofLong(21L);
+    static final MemoryAddress RT_ANIICON$ADDR = MemoryAddress.ofLong(22L);
+    static final MemoryAddress RT_HTML$ADDR = MemoryAddress.ofLong(23L);
 }
 
 

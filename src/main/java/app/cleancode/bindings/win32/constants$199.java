@@ -9,58 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$199 {
 
-    static final FunctionDescriptor CopyEnhMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor lstrcmpiA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CopyEnhMetaFileW$MH = RuntimeHelper.downcallHandle(
-        "CopyEnhMetaFileW",
-        constants$199.CopyEnhMetaFileW$FUNC
+    static final MethodHandle lstrcmpiA$MH = RuntimeHelper.downcallHandle(
+        "lstrcmpiA",
+        constants$199.lstrcmpiA$FUNC
     );
-    static final FunctionDescriptor CreateEnhMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor lstrcmpiW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateEnhMetaFileA$MH = RuntimeHelper.downcallHandle(
-        "CreateEnhMetaFileA",
-        constants$199.CreateEnhMetaFileA$FUNC
+    static final MethodHandle lstrcmpiW$MH = RuntimeHelper.downcallHandle(
+        "lstrcmpiW",
+        constants$199.lstrcmpiW$FUNC
     );
-    static final FunctionDescriptor CreateEnhMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor lstrcpynA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateEnhMetaFileW$MH = RuntimeHelper.downcallHandle(
-        "CreateEnhMetaFileW",
-        constants$199.CreateEnhMetaFileW$FUNC
+    static final MethodHandle lstrcpynA$MH = RuntimeHelper.downcallHandle(
+        "lstrcpynA",
+        constants$199.lstrcpynA$FUNC
     );
-    static final FunctionDescriptor DeleteEnhMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteEnhMetaFile$MH = RuntimeHelper.downcallHandle(
-        "DeleteEnhMetaFile",
-        constants$199.DeleteEnhMetaFile$FUNC
-    );
-    static final FunctionDescriptor EnumEnhMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor lstrcpynW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle lstrcpynW$MH = RuntimeHelper.downcallHandle(
+        "lstrcpynW",
+        constants$199.lstrcpynW$FUNC
+    );
+    static final FunctionDescriptor lstrcpyA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumEnhMetaFile$MH = RuntimeHelper.downcallHandle(
-        "EnumEnhMetaFile",
-        constants$199.EnumEnhMetaFile$FUNC
+    static final MethodHandle lstrcpyA$MH = RuntimeHelper.downcallHandle(
+        "lstrcpyA",
+        constants$199.lstrcpyA$FUNC
     );
-    static final FunctionDescriptor GetEnhMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor lstrcpyW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetEnhMetaFileA$MH = RuntimeHelper.downcallHandle(
-        "GetEnhMetaFileA",
-        constants$199.GetEnhMetaFileA$FUNC
+    static final MethodHandle lstrcpyW$MH = RuntimeHelper.downcallHandle(
+        "lstrcpyW",
+        constants$199.lstrcpyW$FUNC
     );
 }
 

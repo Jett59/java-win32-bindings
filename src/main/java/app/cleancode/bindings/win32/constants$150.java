@@ -9,39 +9,39 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$150 {
 
-    static final FunctionDescriptor WTSGetServiceSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle WTSGetServiceSessionId$MH = RuntimeHelper.downcallHandle(
-        "WTSGetServiceSessionId",
-        constants$150.WTSGetServiceSessionId$FUNC
+    static final FunctionDescriptor PGET_MODULE_HANDLE_EXA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor WTSIsServerContainer$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT);
-    static final MethodHandle WTSIsServerContainer$MH = RuntimeHelper.downcallHandle(
-        "WTSIsServerContainer",
-        constants$150.WTSIsServerContainer$FUNC
+    static final MethodHandle PGET_MODULE_HANDLE_EXA$MH = RuntimeHelper.downcallHandle(
+        constants$150.PGET_MODULE_HANDLE_EXA$FUNC
     );
-    static final FunctionDescriptor GetActiveProcessorGroupCount$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
-    static final MethodHandle GetActiveProcessorGroupCount$MH = RuntimeHelper.downcallHandle(
-        "GetActiveProcessorGroupCount",
-        constants$150.GetActiveProcessorGroupCount$FUNC
+    static final FunctionDescriptor PGET_MODULE_HANDLE_EXW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor GetMaximumProcessorGroupCount$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
-    static final MethodHandle GetMaximumProcessorGroupCount$MH = RuntimeHelper.downcallHandle(
-        "GetMaximumProcessorGroupCount",
-        constants$150.GetMaximumProcessorGroupCount$FUNC
+    static final MethodHandle PGET_MODULE_HANDLE_EXW$MH = RuntimeHelper.downcallHandle(
+        constants$150.PGET_MODULE_HANDLE_EXW$FUNC
     );
-    static final FunctionDescriptor GetActiveProcessorCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
+    static final FunctionDescriptor GetModuleHandleExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetActiveProcessorCount$MH = RuntimeHelper.downcallHandle(
-        "GetActiveProcessorCount",
-        constants$150.GetActiveProcessorCount$FUNC
+    static final MethodHandle GetModuleHandleExA$MH = RuntimeHelper.downcallHandle(
+        "GetModuleHandleExA",
+        constants$150.GetModuleHandleExA$FUNC
     );
-    static final FunctionDescriptor GetMaximumProcessorCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
+    static final FunctionDescriptor GetModuleHandleExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetMaximumProcessorCount$MH = RuntimeHelper.downcallHandle(
-        "GetMaximumProcessorCount",
-        constants$150.GetMaximumProcessorCount$FUNC
+    static final MethodHandle GetModuleHandleExW$MH = RuntimeHelper.downcallHandle(
+        "GetModuleHandleExW",
+        constants$150.GetModuleHandleExW$FUNC
     );
 }
 

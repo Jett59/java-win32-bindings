@@ -9,46 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$340 {
 
-    static final FunctionDescriptor GetAwarenessFromDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetAwarenessFromDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
-        "GetAwarenessFromDpiAwarenessContext",
-        constants$340.GetAwarenessFromDpiAwarenessContext$FUNC
-    );
-    static final FunctionDescriptor GetDpiFromDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDpiFromDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
-        "GetDpiFromDpiAwarenessContext",
-        constants$340.GetDpiFromDpiAwarenessContext$FUNC
-    );
-    static final FunctionDescriptor AreDpiAwarenessContextsEqual$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenWindowStationA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle OpenWindowStationA$MH = RuntimeHelper.downcallHandle(
+        "OpenWindowStationA",
+        constants$340.OpenWindowStationA$FUNC
+    );
+    static final FunctionDescriptor OpenWindowStationW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle OpenWindowStationW$MH = RuntimeHelper.downcallHandle(
+        "OpenWindowStationW",
+        constants$340.OpenWindowStationW$FUNC
+    );
+    static final FunctionDescriptor EnumWindowStationsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumWindowStationsA$MH = RuntimeHelper.downcallHandle(
+        "EnumWindowStationsA",
+        constants$340.EnumWindowStationsA$FUNC
+    );
+    static final FunctionDescriptor EnumWindowStationsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumWindowStationsW$MH = RuntimeHelper.downcallHandle(
+        "EnumWindowStationsW",
+        constants$340.EnumWindowStationsW$FUNC
+    );
+    static final FunctionDescriptor CloseWindowStation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AreDpiAwarenessContextsEqual$MH = RuntimeHelper.downcallHandle(
-        "AreDpiAwarenessContextsEqual",
-        constants$340.AreDpiAwarenessContextsEqual$FUNC
+    static final MethodHandle CloseWindowStation$MH = RuntimeHelper.downcallHandle(
+        "CloseWindowStation",
+        constants$340.CloseWindowStation$FUNC
     );
-    static final FunctionDescriptor IsValidDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetProcessWindowStation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsValidDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
-        "IsValidDpiAwarenessContext",
-        constants$340.IsValidDpiAwarenessContext$FUNC
-    );
-    static final FunctionDescriptor GetDpiForWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDpiForWindow$MH = RuntimeHelper.downcallHandle(
-        "GetDpiForWindow",
-        constants$340.GetDpiForWindow$FUNC
-    );
-    static final FunctionDescriptor GetDpiForSystem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetDpiForSystem$MH = RuntimeHelper.downcallHandle(
-        "GetDpiForSystem",
-        constants$340.GetDpiForSystem$FUNC
+    static final MethodHandle SetProcessWindowStation$MH = RuntimeHelper.downcallHandle(
+        "SetProcessWindowStation",
+        constants$340.SetProcessWindowStation$FUNC
     );
 }
 

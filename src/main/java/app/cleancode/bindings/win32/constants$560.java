@@ -9,12 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$560 {
 
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
-    static final MemoryAddress RT_CURSOR$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress RT_BITMAP$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress RT_ICON$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress RT_MENU$ADDR = MemoryAddress.ofLong(4L);
+    static final FunctionDescriptor recvfrom$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle recvfrom$MH = RuntimeHelper.downcallHandle(
+        "recvfrom",
+        constants$560.recvfrom$FUNC
+    );
+    static final FunctionDescriptor select$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle select$MH = RuntimeHelper.downcallHandle(
+        "select",
+        constants$560.select$FUNC
+    );
+    static final FunctionDescriptor send$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle send$MH = RuntimeHelper.downcallHandle(
+        "send",
+        constants$560.send$FUNC
+    );
+    static final FunctionDescriptor sendto$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle sendto$MH = RuntimeHelper.downcallHandle(
+        "sendto",
+        constants$560.sendto$FUNC
+    );
+    static final FunctionDescriptor setsockopt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle setsockopt$MH = RuntimeHelper.downcallHandle(
+        "setsockopt",
+        constants$560.setsockopt$FUNC
+    );
+    static final FunctionDescriptor shutdown$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle shutdown$MH = RuntimeHelper.downcallHandle(
+        "shutdown",
+        constants$560.shutdown$FUNC
+    );
 }
 
 

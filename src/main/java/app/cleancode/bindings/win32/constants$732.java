@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$732 {
 
-    static final MemorySegment CERT_CHAIN_DISABLE_AIA_URL_RETRIEVAL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_CHAIN_OPTIONS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("O");
-    static final MemorySegment CERT_CHAIN_CROSS_CERT_DOWNLOAD_INTERVAL_HOURS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CERT_CHAIN_CRL_VALIDITY_EXT_PERIOD_HOURS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemoryAddress HCCE_CURRENT_USER$ADDR = MemoryAddress.ofLong(0L);
-    static final MemoryAddress HCCE_LOCAL_MACHINE$ADDR = MemoryAddress.ofLong(1L);
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryW");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
+    static final MemoryAddress RT_CURSOR$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress RT_BITMAP$ADDR = MemoryAddress.ofLong(2L);
 }
 
 

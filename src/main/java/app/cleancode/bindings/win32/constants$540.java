@@ -9,89 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$540 {
 
-    static final FunctionDescriptor EnumDependentServicesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerGetLineInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumDependentServicesA$MH = RuntimeHelper.downcallHandle(
-        "EnumDependentServicesA",
-        constants$540.EnumDependentServicesA$FUNC
+    static final MethodHandle mixerGetLineInfoA$MH = RuntimeHelper.downcallHandle(
+        "mixerGetLineInfoA",
+        constants$540.mixerGetLineInfoA$FUNC
     );
-    static final FunctionDescriptor EnumDependentServicesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerGetLineInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumDependentServicesW$MH = RuntimeHelper.downcallHandle(
-        "EnumDependentServicesW",
-        constants$540.EnumDependentServicesW$FUNC
+    static final MethodHandle mixerGetLineInfoW$MH = RuntimeHelper.downcallHandle(
+        "mixerGetLineInfoW",
+        constants$540.mixerGetLineInfoW$FUNC
     );
-    static final FunctionDescriptor EnumServicesStatusA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerGetID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumServicesStatusA$MH = RuntimeHelper.downcallHandle(
-        "EnumServicesStatusA",
-        constants$540.EnumServicesStatusA$FUNC
+    static final MethodHandle mixerGetID$MH = RuntimeHelper.downcallHandle(
+        "mixerGetID",
+        constants$540.mixerGetID$FUNC
     );
-    static final FunctionDescriptor EnumServicesStatusW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerGetLineControlsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumServicesStatusW$MH = RuntimeHelper.downcallHandle(
-        "EnumServicesStatusW",
-        constants$540.EnumServicesStatusW$FUNC
+    static final MethodHandle mixerGetLineControlsA$MH = RuntimeHelper.downcallHandle(
+        "mixerGetLineControlsA",
+        constants$540.mixerGetLineControlsA$FUNC
     );
-    static final FunctionDescriptor EnumServicesStatusExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerGetLineControlsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumServicesStatusExA$MH = RuntimeHelper.downcallHandle(
-        "EnumServicesStatusExA",
-        constants$540.EnumServicesStatusExA$FUNC
+    static final MethodHandle mixerGetLineControlsW$MH = RuntimeHelper.downcallHandle(
+        "mixerGetLineControlsW",
+        constants$540.mixerGetLineControlsW$FUNC
     );
-    static final FunctionDescriptor EnumServicesStatusExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerGetControlDetailsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumServicesStatusExW$MH = RuntimeHelper.downcallHandle(
-        "EnumServicesStatusExW",
-        constants$540.EnumServicesStatusExW$FUNC
+    static final MethodHandle mixerGetControlDetailsA$MH = RuntimeHelper.downcallHandle(
+        "mixerGetControlDetailsA",
+        constants$540.mixerGetControlDetailsA$FUNC
     );
 }
 

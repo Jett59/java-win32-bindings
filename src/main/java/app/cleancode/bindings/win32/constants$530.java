@@ -9,84 +9,40 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$530 {
 
-    static final FunctionDescriptor InstallPrinterDriverFromPackageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle InstallPrinterDriverFromPackageW$MH = RuntimeHelper.downcallHandle(
-        "InstallPrinterDriverFromPackageW",
-        constants$530.InstallPrinterDriverFromPackageW$FUNC
-    );
-    static final FunctionDescriptor UploadPrinterDriverPackageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor waveInMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UploadPrinterDriverPackageA$MH = RuntimeHelper.downcallHandle(
-        "UploadPrinterDriverPackageA",
-        constants$530.UploadPrinterDriverPackageA$FUNC
-    );
-    static final FunctionDescriptor UploadPrinterDriverPackageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UploadPrinterDriverPackageW$MH = RuntimeHelper.downcallHandle(
-        "UploadPrinterDriverPackageW",
-        constants$530.UploadPrinterDriverPackageW$FUNC
-    );
-    static final FunctionDescriptor GetCorePrinterDriversA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCorePrinterDriversA$MH = RuntimeHelper.downcallHandle(
-        "GetCorePrinterDriversA",
-        constants$530.GetCorePrinterDriversA$FUNC
-    );
-    static final FunctionDescriptor GetCorePrinterDriversW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCorePrinterDriversW$MH = RuntimeHelper.downcallHandle(
-        "GetCorePrinterDriversW",
-        constants$530.GetCorePrinterDriversW$FUNC
-    );
-    static final FunctionDescriptor CorePrinterDriverInstalledA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("Data1"),
-            Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-            Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-            MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-        ).withName("_GUID"),
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("dwLowDateTime"),
-            Constants$root.C_LONG$LAYOUT.withName("dwHighDateTime")
-        ).withName("_FILETIME"),
         Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CorePrinterDriverInstalledA$MH = RuntimeHelper.downcallHandle(
-        "CorePrinterDriverInstalledA",
-        constants$530.CorePrinterDriverInstalledA$FUNC
+    static final MethodHandle waveInMessage$MH = RuntimeHelper.downcallHandle(
+        "waveInMessage",
+        constants$530.waveInMessage$FUNC
+    );
+    static final FunctionDescriptor MIDICALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle MIDICALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$530.MIDICALLBACK$FUNC
+    );
+    static final FunctionDescriptor LPMIDICALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle LPMIDICALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$530.LPMIDICALLBACK$FUNC
+    );
+    static final FunctionDescriptor midiOutGetNumDevs$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle midiOutGetNumDevs$MH = RuntimeHelper.downcallHandle(
+        "midiOutGetNumDevs",
+        constants$530.midiOutGetNumDevs$FUNC
     );
 }
 

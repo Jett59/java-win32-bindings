@@ -9,12 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$596 {
 
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP320T1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.10");
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP384R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.11");
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP384T1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.12");
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP512R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.13");
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP512T1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.14");
-    static final MemorySegment szOID_ECC_CURVE_EC192WAPI$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.156.11235.1.1.2.1");
+    static final FunctionDescriptor CertGetCertificateContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetCertificateContextProperty$MH = RuntimeHelper.downcallHandle(
+        "CertGetCertificateContextProperty",
+        constants$596.CertGetCertificateContextProperty$FUNC
+    );
+    static final FunctionDescriptor CertEnumCertificateContextProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertEnumCertificateContextProperties$MH = RuntimeHelper.downcallHandle(
+        "CertEnumCertificateContextProperties",
+        constants$596.CertEnumCertificateContextProperties$FUNC
+    );
+    static final FunctionDescriptor CertCreateCTLEntryFromCertificateContextProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertCreateCTLEntryFromCertificateContextProperties$MH = RuntimeHelper.downcallHandle(
+        "CertCreateCTLEntryFromCertificateContextProperties",
+        constants$596.CertCreateCTLEntryFromCertificateContextProperties$FUNC
+    );
+    static final FunctionDescriptor CertSetCertificateContextPropertiesFromCTLEntry$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertSetCertificateContextPropertiesFromCTLEntry$MH = RuntimeHelper.downcallHandle(
+        "CertSetCertificateContextPropertiesFromCTLEntry",
+        constants$596.CertSetCertificateContextPropertiesFromCTLEntry$FUNC
+    );
+    static final FunctionDescriptor CertGetCRLFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetCRLFromStore$MH = RuntimeHelper.downcallHandle(
+        "CertGetCRLFromStore",
+        constants$596.CertGetCRLFromStore$FUNC
+    );
+    static final FunctionDescriptor CertEnumCRLsInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertEnumCRLsInStore$MH = RuntimeHelper.downcallHandle(
+        "CertEnumCRLsInStore",
+        constants$596.CertEnumCRLsInStore$FUNC
+    );
 }
 
 

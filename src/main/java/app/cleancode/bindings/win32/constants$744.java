@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$744 {
 
-    static final MemorySegment SPLREG_MINOR_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("MinorVersion");
-    static final MemorySegment SPLREG_ARCHITECTURE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Architecture");
-    static final MemorySegment SPLREG_OS_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OSVersion");
-    static final MemorySegment SPLREG_OS_VERSIONEX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OSVersionEx");
-    static final MemorySegment SPLREG_DS_PRESENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsPresent");
-    static final MemorySegment SPLREG_DS_PRESENT_FOR_USER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsPresentForUser");
+    static final MemoryAddress IDI_EXCLAMATION$ADDR = MemoryAddress.ofLong(32515L);
+    static final MemoryAddress IDI_ASTERISK$ADDR = MemoryAddress.ofLong(32516L);
+    static final MemoryAddress IDI_WINLOGO$ADDR = MemoryAddress.ofLong(32517L);
+    static final MemoryAddress IDI_SHIELD$ADDR = MemoryAddress.ofLong(32518L);
+    static final MemoryAddress IDI_WARNING$ADDR = MemoryAddress.ofLong(32515L);
+    static final MemoryAddress IDI_ERROR$ADDR = MemoryAddress.ofLong(32513L);
 }
 
 

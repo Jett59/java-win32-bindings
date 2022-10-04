@@ -9,12 +9,45 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$562 {
 
-    static final MemoryAddress RT_MESSAGETABLE$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress RT_GROUP_CURSOR$ADDR = MemoryAddress.ofLong(12L);
-    static final MemoryAddress RT_GROUP_ICON$ADDR = MemoryAddress.ofLong(14L);
-    static final MemoryAddress RT_VERSION$ADDR = MemoryAddress.ofLong(16L);
-    static final MemoryAddress RT_DLGINCLUDE$ADDR = MemoryAddress.ofLong(17L);
-    static final MemoryAddress RT_PLUGPLAY$ADDR = MemoryAddress.ofLong(19L);
+    static final FunctionDescriptor getprotobynumber$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle getprotobynumber$MH = RuntimeHelper.downcallHandle(
+        "getprotobynumber",
+        constants$562.getprotobynumber$FUNC
+    );
+    static final FunctionDescriptor getprotobyname$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle getprotobyname$MH = RuntimeHelper.downcallHandle(
+        "getprotobyname",
+        constants$562.getprotobyname$FUNC
+    );
+    static final FunctionDescriptor WSAStartup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WSAStartup$MH = RuntimeHelper.downcallHandle(
+        "WSAStartup",
+        constants$562.WSAStartup$FUNC
+    );
+    static final FunctionDescriptor WSACleanup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle WSACleanup$MH = RuntimeHelper.downcallHandle(
+        "WSACleanup",
+        constants$562.WSACleanup$FUNC
+    );
+    static final FunctionDescriptor WSASetLastError$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WSASetLastError$MH = RuntimeHelper.downcallHandle(
+        "WSASetLastError",
+        constants$562.WSASetLastError$FUNC
+    );
+    static final FunctionDescriptor WSAGetLastError$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle WSAGetLastError$MH = RuntimeHelper.downcallHandle(
+        "WSAGetLastError",
+        constants$562.WSAGetLastError$FUNC
+    );
 }
 
 

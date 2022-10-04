@@ -9,54 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$336 {
 
-    static final FunctionDescriptor SetLastErrorEx$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor ActivateKeyboardLayout$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ActivateKeyboardLayout$MH = RuntimeHelper.downcallHandle(
+        "ActivateKeyboardLayout",
+        constants$336.ActivateKeyboardLayout$FUNC
+    );
+    static final FunctionDescriptor ToUnicodeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetLastErrorEx$MH = RuntimeHelper.downcallHandle(
-        "SetLastErrorEx",
-        constants$336.SetLastErrorEx$FUNC
-    );
-    static final FunctionDescriptor InternalGetWindowText$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InternalGetWindowText$MH = RuntimeHelper.downcallHandle(
-        "InternalGetWindowText",
-        constants$336.InternalGetWindowText$FUNC
+    static final MethodHandle ToUnicodeEx$MH = RuntimeHelper.downcallHandle(
+        "ToUnicodeEx",
+        constants$336.ToUnicodeEx$FUNC
     );
-    static final FunctionDescriptor CancelShutdown$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle CancelShutdown$MH = RuntimeHelper.downcallHandle(
-        "CancelShutdown",
-        constants$336.CancelShutdown$FUNC
+    static final FunctionDescriptor UnloadKeyboardLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor MonitorFromPoint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT"),
-        Constants$root.C_LONG$LAYOUT
+    static final MethodHandle UnloadKeyboardLayout$MH = RuntimeHelper.downcallHandle(
+        "UnloadKeyboardLayout",
+        constants$336.UnloadKeyboardLayout$FUNC
     );
-    static final MethodHandle MonitorFromPoint$MH = RuntimeHelper.downcallHandle(
-        "MonitorFromPoint",
-        constants$336.MonitorFromPoint$FUNC
+    static final FunctionDescriptor GetKeyboardLayoutNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor MonitorFromRect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final MethodHandle GetKeyboardLayoutNameA$MH = RuntimeHelper.downcallHandle(
+        "GetKeyboardLayoutNameA",
+        constants$336.GetKeyboardLayoutNameA$FUNC
     );
-    static final MethodHandle MonitorFromRect$MH = RuntimeHelper.downcallHandle(
-        "MonitorFromRect",
-        constants$336.MonitorFromRect$FUNC
+    static final FunctionDescriptor GetKeyboardLayoutNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor MonitorFromWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final MethodHandle GetKeyboardLayoutNameW$MH = RuntimeHelper.downcallHandle(
+        "GetKeyboardLayoutNameW",
+        constants$336.GetKeyboardLayoutNameW$FUNC
     );
-    static final MethodHandle MonitorFromWindow$MH = RuntimeHelper.downcallHandle(
-        "MonitorFromWindow",
-        constants$336.MonitorFromWindow$FUNC
+    static final FunctionDescriptor GetKeyboardLayoutList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetKeyboardLayoutList$MH = RuntimeHelper.downcallHandle(
+        "GetKeyboardLayoutList",
+        constants$336.GetKeyboardLayoutList$FUNC
     );
 }
 

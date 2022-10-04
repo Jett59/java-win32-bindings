@@ -9,69 +9,68 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$233 {
 
-    static final FunctionDescriptor GetKeyboardLayoutList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetKeyboardLayoutList$MH = RuntimeHelper.downcallHandle(
-        "GetKeyboardLayoutList",
-        constants$233.GetKeyboardLayoutList$FUNC
-    );
-    static final FunctionDescriptor GetKeyboardLayout$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ObjectCloseAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetKeyboardLayout$MH = RuntimeHelper.downcallHandle(
-        "GetKeyboardLayout",
-        constants$233.GetKeyboardLayout$FUNC
+    static final MethodHandle ObjectCloseAuditAlarmA$MH = RuntimeHelper.downcallHandle(
+        "ObjectCloseAuditAlarmA",
+        constants$233.ObjectCloseAuditAlarmA$FUNC
     );
-    static final FunctionDescriptor GetMouseMovePointsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ObjectDeleteAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetMouseMovePointsEx$MH = RuntimeHelper.downcallHandle(
-        "GetMouseMovePointsEx",
-        constants$233.GetMouseMovePointsEx$FUNC
+    static final MethodHandle ObjectDeleteAuditAlarmA$MH = RuntimeHelper.downcallHandle(
+        "ObjectDeleteAuditAlarmA",
+        constants$233.ObjectDeleteAuditAlarmA$FUNC
     );
-    static final FunctionDescriptor CreateDesktopA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor PrivilegedServiceAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PrivilegedServiceAuditAlarmA$MH = RuntimeHelper.downcallHandle(
+        "PrivilegedServiceAuditAlarmA",
+        constants$233.PrivilegedServiceAuditAlarmA$FUNC
+    );
+    static final FunctionDescriptor AddConditionalAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateDesktopA$MH = RuntimeHelper.downcallHandle(
-        "CreateDesktopA",
-        constants$233.CreateDesktopA$FUNC
+    static final MethodHandle AddConditionalAce$MH = RuntimeHelper.downcallHandle(
+        "AddConditionalAce",
+        constants$233.AddConditionalAce$FUNC
     );
-    static final FunctionDescriptor CreateDesktopW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateDesktopW$MH = RuntimeHelper.downcallHandle(
-        "CreateDesktopW",
-        constants$233.CreateDesktopW$FUNC
-    );
-    static final FunctionDescriptor CreateDesktopExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFileSecurityA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateDesktopExA$MH = RuntimeHelper.downcallHandle(
-        "CreateDesktopExA",
-        constants$233.CreateDesktopExA$FUNC
+    static final MethodHandle SetFileSecurityA$MH = RuntimeHelper.downcallHandle(
+        "SetFileSecurityA",
+        constants$233.SetFileSecurityA$FUNC
+    );
+    static final FunctionDescriptor GetFileSecurityA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileSecurityA$MH = RuntimeHelper.downcallHandle(
+        "GetFileSecurityA",
+        constants$233.GetFileSecurityA$FUNC
     );
 }
 

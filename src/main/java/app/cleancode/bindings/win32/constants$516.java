@@ -9,67 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$516 {
 
-    static final FunctionDescriptor AddJobA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DRIVERPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DRIVERPROC$MH = RuntimeHelper.downcallHandle(
+        constants$516.DRIVERPROC$FUNC
+    );
+    static final FunctionDescriptor CloseDriver$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CloseDriver$MH = RuntimeHelper.downcallHandle(
+        "CloseDriver",
+        constants$516.CloseDriver$FUNC
+    );
+    static final FunctionDescriptor OpenDriver$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle OpenDriver$MH = RuntimeHelper.downcallHandle(
+        "OpenDriver",
+        constants$516.OpenDriver$FUNC
+    );
+    static final FunctionDescriptor SendDriverMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SendDriverMessage$MH = RuntimeHelper.downcallHandle(
+        "SendDriverMessage",
+        constants$516.SendDriverMessage$FUNC
+    );
+    static final FunctionDescriptor DrvGetModuleHandle$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddJobA$MH = RuntimeHelper.downcallHandle(
-        "AddJobA",
-        constants$516.AddJobA$FUNC
-    );
-    static final FunctionDescriptor AddJobW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddJobW$MH = RuntimeHelper.downcallHandle(
-        "AddJobW",
-        constants$516.AddJobW$FUNC
-    );
-    static final FunctionDescriptor ScheduleJob$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ScheduleJob$MH = RuntimeHelper.downcallHandle(
-        "ScheduleJob",
-        constants$516.ScheduleJob$FUNC
-    );
-    static final FunctionDescriptor PrinterProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PrinterProperties$MH = RuntimeHelper.downcallHandle(
-        "PrinterProperties",
-        constants$516.PrinterProperties$FUNC
-    );
-    static final FunctionDescriptor DocumentPropertiesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DocumentPropertiesA$MH = RuntimeHelper.downcallHandle(
-        "DocumentPropertiesA",
-        constants$516.DocumentPropertiesA$FUNC
-    );
-    static final FunctionDescriptor DocumentPropertiesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DocumentPropertiesW$MH = RuntimeHelper.downcallHandle(
-        "DocumentPropertiesW",
-        constants$516.DocumentPropertiesW$FUNC
+    static final MethodHandle DrvGetModuleHandle$MH = RuntimeHelper.downcallHandle(
+        "DrvGetModuleHandle",
+        constants$516.DrvGetModuleHandle$FUNC
     );
 }
 

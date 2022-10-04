@@ -11,13 +11,13 @@ public interface LANGUAGEGROUP_ENUMPROCA {
 
     int apply(int _x0, java.lang.foreign.MemoryAddress _x1, java.lang.foreign.MemoryAddress _x2, int _x3, long _x4);
     static MemorySegment allocate(LANGUAGEGROUP_ENUMPROCA fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(LANGUAGEGROUP_ENUMPROCA.class, fi, constants$351.LANGUAGEGROUP_ENUMPROCA$FUNC, session);
+        return RuntimeHelper.upcallStub(LANGUAGEGROUP_ENUMPROCA.class, fi, constants$456.LANGUAGEGROUP_ENUMPROCA$FUNC, session);
     }
     static LANGUAGEGROUP_ENUMPROCA ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int __x0, java.lang.foreign.MemoryAddress __x1, java.lang.foreign.MemoryAddress __x2, int __x3, long __x4) -> {
             try {
-                return (int)constants$351.LANGUAGEGROUP_ENUMPROCA$MH.invokeExact((Addressable)symbol, __x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, __x3, __x4);
+                return (int)constants$456.LANGUAGEGROUP_ENUMPROCA$MH.invokeExact((Addressable)symbol, __x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, __x3, __x4);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

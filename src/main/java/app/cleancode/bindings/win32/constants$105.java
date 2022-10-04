@@ -9,60 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$105 {
 
-    static final FunctionDescriptor SetFirmwareEnvironmentVariableExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReleaseMutex$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReleaseMutex$MH = RuntimeHelper.downcallHandle(
+        "ReleaseMutex",
+        constants$105.ReleaseMutex$FUNC
+    );
+    static final FunctionDescriptor WaitForSingleObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WaitForSingleObject$MH = RuntimeHelper.downcallHandle(
+        "WaitForSingleObject",
+        constants$105.WaitForSingleObject$FUNC
+    );
+    static final FunctionDescriptor SleepEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SleepEx$MH = RuntimeHelper.downcallHandle(
+        "SleepEx",
+        constants$105.SleepEx$FUNC
+    );
+    static final FunctionDescriptor WaitForSingleObjectEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetFirmwareEnvironmentVariableExA$MH = RuntimeHelper.downcallHandle(
-        "SetFirmwareEnvironmentVariableExA",
-        constants$105.SetFirmwareEnvironmentVariableExA$FUNC
+    static final MethodHandle WaitForSingleObjectEx$MH = RuntimeHelper.downcallHandle(
+        "WaitForSingleObjectEx",
+        constants$105.WaitForSingleObjectEx$FUNC
     );
-    static final FunctionDescriptor SetFirmwareEnvironmentVariableExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WaitForMultipleObjectsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetFirmwareEnvironmentVariableExW$MH = RuntimeHelper.downcallHandle(
-        "SetFirmwareEnvironmentVariableExW",
-        constants$105.SetFirmwareEnvironmentVariableExW$FUNC
+    static final MethodHandle WaitForMultipleObjectsEx$MH = RuntimeHelper.downcallHandle(
+        "WaitForMultipleObjectsEx",
+        constants$105.WaitForMultipleObjectsEx$FUNC
     );
-    static final FunctionDescriptor GetFirmwareType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateMutexA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetFirmwareType$MH = RuntimeHelper.downcallHandle(
-        "GetFirmwareType",
-        constants$105.GetFirmwareType$FUNC
-    );
-    static final FunctionDescriptor IsNativeVhdBoot$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IsNativeVhdBoot$MH = RuntimeHelper.downcallHandle(
-        "IsNativeVhdBoot",
-        constants$105.IsNativeVhdBoot$FUNC
-    );
-    static final FunctionDescriptor FindResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FindResourceA$MH = RuntimeHelper.downcallHandle(
-        "FindResourceA",
-        constants$105.FindResourceA$FUNC
-    );
-    static final FunctionDescriptor FindResourceExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle FindResourceExA$MH = RuntimeHelper.downcallHandle(
-        "FindResourceExA",
-        constants$105.FindResourceExA$FUNC
+    static final MethodHandle CreateMutexA$MH = RuntimeHelper.downcallHandle(
+        "CreateMutexA",
+        constants$105.CreateMutexA$FUNC
     );
 }
 

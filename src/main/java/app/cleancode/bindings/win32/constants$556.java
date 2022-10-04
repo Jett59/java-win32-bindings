@@ -9,12 +9,25 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$556 {
 
-    static final MemorySegment SMB_CCF_APP_INSTANCE_EA_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ClusteredApplicationInstance");
-    static final MemorySegment IMAGE_ARCHIVE_START$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("!<arch>\n");
-    static final MemorySegment IMAGE_ARCHIVE_END$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("`\n");
-    static final MemorySegment IMAGE_ARCHIVE_PAD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\n");
-    static final MemorySegment IMAGE_ARCHIVE_LINKER_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("/               ");
-    static final MemorySegment IMAGE_ARCHIVE_LONGNAMES_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("//              ");
+    static final FunctionDescriptor PM_OPEN_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PM_OPEN_PROC$MH = RuntimeHelper.downcallHandle(
+        constants$556.PM_OPEN_PROC$FUNC
+    );
+    static final FunctionDescriptor PM_COLLECT_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PM_COLLECT_PROC$MH = RuntimeHelper.downcallHandle(
+        constants$556.PM_COLLECT_PROC$FUNC
+    );
+    static final FunctionDescriptor PM_CLOSE_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle PM_CLOSE_PROC$MH = RuntimeHelper.downcallHandle(
+        constants$556.PM_CLOSE_PROC$FUNC
+    );
 }
 
 

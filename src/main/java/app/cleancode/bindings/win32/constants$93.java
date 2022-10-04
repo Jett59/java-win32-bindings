@@ -9,58 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$93 {
 
-    static final FunctionDescriptor MulDiv$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveVectoredContinueHandler$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RemoveVectoredContinueHandler$MH = RuntimeHelper.downcallHandle(
+        "RemoveVectoredContinueHandler",
+        constants$93.RemoveVectoredContinueHandler$FUNC
+    );
+    static final FunctionDescriptor RaiseFailFastException$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle MulDiv$MH = RuntimeHelper.downcallHandle(
-        "MulDiv",
-        constants$93.MulDiv$FUNC
+    static final MethodHandle RaiseFailFastException$MH = RuntimeHelper.downcallHandle(
+        "RaiseFailFastException",
+        constants$93.RaiseFailFastException$FUNC
     );
-    static final FunctionDescriptor GetSystemDEPPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetSystemDEPPolicy$MH = RuntimeHelper.downcallHandle(
-        "GetSystemDEPPolicy",
-        constants$93.GetSystemDEPPolicy$FUNC
-    );
-    static final FunctionDescriptor GetSystemRegistryQuota$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetSystemRegistryQuota$MH = RuntimeHelper.downcallHandle(
-        "GetSystemRegistryQuota",
-        constants$93.GetSystemRegistryQuota$FUNC
-    );
-    static final FunctionDescriptor FileTimeToDosDateTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FileTimeToDosDateTime$MH = RuntimeHelper.downcallHandle(
-        "FileTimeToDosDateTime",
-        constants$93.FileTimeToDosDateTime$FUNC
-    );
-    static final FunctionDescriptor DosDateTimeToFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DosDateTimeToFileTime$MH = RuntimeHelper.downcallHandle(
-        "DosDateTimeToFileTime",
-        constants$93.DosDateTimeToFileTime$FUNC
-    );
-    static final FunctionDescriptor FormatMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FatalAppExitA$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FormatMessageA$MH = RuntimeHelper.downcallHandle(
-        "FormatMessageA",
-        constants$93.FormatMessageA$FUNC
+    static final MethodHandle FatalAppExitA$MH = RuntimeHelper.downcallHandle(
+        "FatalAppExitA",
+        constants$93.FatalAppExitA$FUNC
+    );
+    static final FunctionDescriptor FatalAppExitW$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FatalAppExitW$MH = RuntimeHelper.downcallHandle(
+        "FatalAppExitW",
+        constants$93.FatalAppExitW$FUNC
+    );
+    static final FunctionDescriptor GetThreadErrorMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetThreadErrorMode$MH = RuntimeHelper.downcallHandle(
+        "GetThreadErrorMode",
+        constants$93.GetThreadErrorMode$FUNC
+    );
+    static final FunctionDescriptor SetThreadErrorMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetThreadErrorMode$MH = RuntimeHelper.downcallHandle(
+        "SetThreadErrorMode",
+        constants$93.SetThreadErrorMode$FUNC
     );
 }
 

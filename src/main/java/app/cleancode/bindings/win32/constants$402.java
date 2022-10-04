@@ -9,59 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$402 {
 
-    static final FunctionDescriptor WNetGetUniversalNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor BeginPaint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetGetUniversalNameW$MH = RuntimeHelper.downcallHandle(
-        "WNetGetUniversalNameW",
-        constants$402.WNetGetUniversalNameW$FUNC
+    static final MethodHandle BeginPaint$MH = RuntimeHelper.downcallHandle(
+        "BeginPaint",
+        constants$402.BeginPaint$FUNC
     );
-    static final FunctionDescriptor WNetGetUserA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetGetUserA$MH = RuntimeHelper.downcallHandle(
-        "WNetGetUserA",
-        constants$402.WNetGetUserA$FUNC
-    );
-    static final FunctionDescriptor WNetGetUserW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EndPaint$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetGetUserW$MH = RuntimeHelper.downcallHandle(
-        "WNetGetUserW",
-        constants$402.WNetGetUserW$FUNC
+    static final MethodHandle EndPaint$MH = RuntimeHelper.downcallHandle(
+        "EndPaint",
+        constants$402.EndPaint$FUNC
     );
-    static final FunctionDescriptor WNetGetProviderNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetUpdateRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetUpdateRect$MH = RuntimeHelper.downcallHandle(
+        "GetUpdateRect",
+        constants$402.GetUpdateRect$FUNC
+    );
+    static final FunctionDescriptor GetUpdateRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetUpdateRgn$MH = RuntimeHelper.downcallHandle(
+        "GetUpdateRgn",
+        constants$402.GetUpdateRgn$FUNC
+    );
+    static final FunctionDescriptor SetWindowRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetWindowRgn$MH = RuntimeHelper.downcallHandle(
+        "SetWindowRgn",
+        constants$402.SetWindowRgn$FUNC
+    );
+    static final FunctionDescriptor GetWindowRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetGetProviderNameA$MH = RuntimeHelper.downcallHandle(
-        "WNetGetProviderNameA",
-        constants$402.WNetGetProviderNameA$FUNC
-    );
-    static final FunctionDescriptor WNetGetProviderNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetGetProviderNameW$MH = RuntimeHelper.downcallHandle(
-        "WNetGetProviderNameW",
-        constants$402.WNetGetProviderNameW$FUNC
-    );
-    static final FunctionDescriptor WNetGetNetworkInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetGetNetworkInformationA$MH = RuntimeHelper.downcallHandle(
-        "WNetGetNetworkInformationA",
-        constants$402.WNetGetNetworkInformationA$FUNC
+    static final MethodHandle GetWindowRgn$MH = RuntimeHelper.downcallHandle(
+        "GetWindowRgn",
+        constants$402.GetWindowRgn$FUNC
     );
 }
 

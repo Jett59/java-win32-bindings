@@ -9,52 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$156 {
 
-    static final FunctionDescriptor GetEnabledXStateFeatures$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT);
-    static final MethodHandle GetEnabledXStateFeatures$MH = RuntimeHelper.downcallHandle(
-        "GetEnabledXStateFeatures",
-        constants$156.GetEnabledXStateFeatures$FUNC
-    );
-    static final FunctionDescriptor GetXStateFeaturesMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddAccessAllowedObjectAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetXStateFeaturesMask$MH = RuntimeHelper.downcallHandle(
-        "GetXStateFeaturesMask",
-        constants$156.GetXStateFeaturesMask$FUNC
+    static final MethodHandle AddAccessAllowedObjectAce$MH = RuntimeHelper.downcallHandle(
+        "AddAccessAllowedObjectAce",
+        constants$156.AddAccessAllowedObjectAce$FUNC
     );
-    static final FunctionDescriptor LocateXStateFeature$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AddAccessDeniedAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LocateXStateFeature$MH = RuntimeHelper.downcallHandle(
-        "LocateXStateFeature",
-        constants$156.LocateXStateFeature$FUNC
+    static final MethodHandle AddAccessDeniedAce$MH = RuntimeHelper.downcallHandle(
+        "AddAccessDeniedAce",
+        constants$156.AddAccessDeniedAce$FUNC
     );
-    static final FunctionDescriptor SetXStateFeaturesMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SetXStateFeaturesMask$MH = RuntimeHelper.downcallHandle(
-        "SetXStateFeaturesMask",
-        constants$156.SetXStateFeaturesMask$FUNC
-    );
-    static final FunctionDescriptor EnableThreadProfiling$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddAccessDeniedAceEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnableThreadProfiling$MH = RuntimeHelper.downcallHandle(
-        "EnableThreadProfiling",
-        constants$156.EnableThreadProfiling$FUNC
+    static final MethodHandle AddAccessDeniedAceEx$MH = RuntimeHelper.downcallHandle(
+        "AddAccessDeniedAceEx",
+        constants$156.AddAccessDeniedAceEx$FUNC
     );
-    static final FunctionDescriptor DisableThreadProfiling$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddAccessDeniedObjectAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DisableThreadProfiling$MH = RuntimeHelper.downcallHandle(
-        "DisableThreadProfiling",
-        constants$156.DisableThreadProfiling$FUNC
+    static final MethodHandle AddAccessDeniedObjectAce$MH = RuntimeHelper.downcallHandle(
+        "AddAccessDeniedObjectAce",
+        constants$156.AddAccessDeniedObjectAce$FUNC
+    );
+    static final FunctionDescriptor AddAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle AddAce$MH = RuntimeHelper.downcallHandle(
+        "AddAce",
+        constants$156.AddAce$FUNC
+    );
+    static final FunctionDescriptor AddAuditAccessAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle AddAuditAccessAce$MH = RuntimeHelper.downcallHandle(
+        "AddAuditAccessAce",
+        constants$156.AddAuditAccessAce$FUNC
     );
 }
 

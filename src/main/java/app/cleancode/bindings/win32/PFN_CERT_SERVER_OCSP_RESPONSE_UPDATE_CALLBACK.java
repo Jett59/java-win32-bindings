@@ -11,13 +11,13 @@ public interface PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK {
 
     void apply(java.lang.foreign.MemoryAddress pChainContext, java.lang.foreign.MemoryAddress pServerOcspResponseContext, java.lang.foreign.MemoryAddress pNewCrlContext, java.lang.foreign.MemoryAddress pPrevCrlContext, java.lang.foreign.MemoryAddress pvArg, int dwWriteOcspFileError);
     static MemorySegment allocate(PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK.class, fi, constants$478.PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK.class, fi, constants$630.PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$FUNC, session);
     }
     static PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pChainContext, java.lang.foreign.MemoryAddress _pServerOcspResponseContext, java.lang.foreign.MemoryAddress _pNewCrlContext, java.lang.foreign.MemoryAddress _pPrevCrlContext, java.lang.foreign.MemoryAddress _pvArg, int _dwWriteOcspFileError) -> {
             try {
-                constants$478.PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pChainContext, (java.lang.foreign.Addressable)_pServerOcspResponseContext, (java.lang.foreign.Addressable)_pNewCrlContext, (java.lang.foreign.Addressable)_pPrevCrlContext, (java.lang.foreign.Addressable)_pvArg, _dwWriteOcspFileError);
+                constants$631.PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pChainContext, (java.lang.foreign.Addressable)_pServerOcspResponseContext, (java.lang.foreign.Addressable)_pNewCrlContext, (java.lang.foreign.Addressable)_pPrevCrlContext, (java.lang.foreign.Addressable)_pvArg, _dwWriteOcspFileError);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

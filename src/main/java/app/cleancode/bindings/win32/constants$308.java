@@ -9,46 +9,43 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$308 {
 
-    static final FunctionDescriptor SetPhysicalCursorPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetColorAdjustment$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetColorAdjustment$MH = RuntimeHelper.downcallHandle(
+        "GetColorAdjustment",
+        constants$308.GetColorAdjustment$FUNC
+    );
+    static final FunctionDescriptor CreateHalftonePalette$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateHalftonePalette$MH = RuntimeHelper.downcallHandle(
+        "CreateHalftonePalette",
+        constants$308.CreateHalftonePalette$FUNC
+    );
+    static final FunctionDescriptor ABORTPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetPhysicalCursorPos$MH = RuntimeHelper.downcallHandle(
-        "SetPhysicalCursorPos",
-        constants$308.SetPhysicalCursorPos$FUNC
+    static final MethodHandle ABORTPROC$MH = RuntimeHelper.downcallHandle(
+        constants$308.ABORTPROC$FUNC
     );
-    static final FunctionDescriptor SetCursor$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor StartDocA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetCursor$MH = RuntimeHelper.downcallHandle(
-        "SetCursor",
-        constants$308.SetCursor$FUNC
+    static final MethodHandle StartDocA$MH = RuntimeHelper.downcallHandle(
+        "StartDocA",
+        constants$308.StartDocA$FUNC
     );
-    static final FunctionDescriptor GetCursorPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor StartDocW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCursorPos$MH = RuntimeHelper.downcallHandle(
-        "GetCursorPos",
-        constants$308.GetCursorPos$FUNC
-    );
-    static final FunctionDescriptor GetPhysicalCursorPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPhysicalCursorPos$MH = RuntimeHelper.downcallHandle(
-        "GetPhysicalCursorPos",
-        constants$308.GetPhysicalCursorPos$FUNC
-    );
-    static final FunctionDescriptor GetClipCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetClipCursor$MH = RuntimeHelper.downcallHandle(
-        "GetClipCursor",
-        constants$308.GetClipCursor$FUNC
-    );
-    static final FunctionDescriptor GetCursor$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetCursor$MH = RuntimeHelper.downcallHandle(
-        "GetCursor",
-        constants$308.GetCursor$FUNC
+    static final MethodHandle StartDocW$MH = RuntimeHelper.downcallHandle(
+        "StartDocW",
+        constants$308.StartDocW$FUNC
     );
 }
 

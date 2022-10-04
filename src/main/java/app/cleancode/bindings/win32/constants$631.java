@@ -9,12 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$631 {
 
-    static final MemoryAddress X509_DSS_PUBLICKEY$ADDR = MemoryAddress.ofLong(38L);
-    static final MemoryAddress X509_DSS_PARAMETERS$ADDR = MemoryAddress.ofLong(39L);
-    static final MemoryAddress X509_DSS_SIGNATURE$ADDR = MemoryAddress.ofLong(40L);
-    static final MemoryAddress PKCS_RC2_CBC_PARAMETERS$ADDR = MemoryAddress.ofLong(41L);
-    static final MemoryAddress PKCS_SMIME_CAPABILITIES$ADDR = MemoryAddress.ofLong(42L);
-    static final MemoryAddress X509_QC_STATEMENTS_EXT$ADDR = MemoryAddress.ofLong(42L);
+    static final FunctionDescriptor PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$631.PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$FUNC
+    );
+    static final FunctionDescriptor CertOpenServerOcspResponse$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertOpenServerOcspResponse$MH = RuntimeHelper.downcallHandle(
+        "CertOpenServerOcspResponse",
+        constants$631.CertOpenServerOcspResponse$FUNC
+    );
+    static final FunctionDescriptor CertAddRefServerOcspResponse$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddRefServerOcspResponse$MH = RuntimeHelper.downcallHandle(
+        "CertAddRefServerOcspResponse",
+        constants$631.CertAddRefServerOcspResponse$FUNC
+    );
+    static final FunctionDescriptor CertCloseServerOcspResponse$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertCloseServerOcspResponse$MH = RuntimeHelper.downcallHandle(
+        "CertCloseServerOcspResponse",
+        constants$631.CertCloseServerOcspResponse$FUNC
+    );
+    static final FunctionDescriptor CertGetServerOcspResponseContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetServerOcspResponseContext$MH = RuntimeHelper.downcallHandle(
+        "CertGetServerOcspResponseContext",
+        constants$631.CertGetServerOcspResponseContext$FUNC
+    );
+    static final FunctionDescriptor CertAddRefServerOcspResponseContext$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddRefServerOcspResponseContext$MH = RuntimeHelper.downcallHandle(
+        "CertAddRefServerOcspResponseContext",
+        constants$631.CertAddRefServerOcspResponseContext$FUNC
+    );
 }
 
 

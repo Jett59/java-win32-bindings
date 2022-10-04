@@ -11,13 +11,13 @@ public interface LANGGROUPLOCALE_ENUMPROCW {
 
     int apply(int _x0, int _x1, java.lang.foreign.MemoryAddress _x2, long _x3);
     static MemorySegment allocate(LANGGROUPLOCALE_ENUMPROCW fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(LANGGROUPLOCALE_ENUMPROCW.class, fi, constants$354.LANGGROUPLOCALE_ENUMPROCW$FUNC, session);
+        return RuntimeHelper.upcallStub(LANGGROUPLOCALE_ENUMPROCW.class, fi, constants$459.LANGGROUPLOCALE_ENUMPROCW$FUNC, session);
     }
     static LANGGROUPLOCALE_ENUMPROCW ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int __x0, int __x1, java.lang.foreign.MemoryAddress __x2, long __x3) -> {
             try {
-                return (int)constants$354.LANGGROUPLOCALE_ENUMPROCW$MH.invokeExact((Addressable)symbol, __x0, __x1, (java.lang.foreign.Addressable)__x2, __x3);
+                return (int)constants$459.LANGGROUPLOCALE_ENUMPROCW$MH.invokeExact((Addressable)symbol, __x0, __x1, (java.lang.foreign.Addressable)__x2, __x3);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,12 +9,96 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$620 {
 
-    static final MemorySegment szOID_SEE_ALSO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.34");
-    static final MemorySegment szOID_USER_PASSWORD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.35");
-    static final MemorySegment szOID_USER_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.36");
-    static final MemorySegment szOID_CA_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.37");
-    static final MemorySegment szOID_AUTHORITY_REVOCATION_LIST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.38");
-    static final MemorySegment szOID_CERTIFICATE_REVOCATION_LIST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.39");
+    static final FunctionDescriptor CryptSignAndEncryptMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptSignAndEncryptMessage$MH = RuntimeHelper.downcallHandle(
+        "CryptSignAndEncryptMessage",
+        constants$620.CryptSignAndEncryptMessage$FUNC
+    );
+    static final FunctionDescriptor CryptDecryptAndVerifyMessageSignature$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptDecryptAndVerifyMessageSignature$MH = RuntimeHelper.downcallHandle(
+        "CryptDecryptAndVerifyMessageSignature",
+        constants$620.CryptDecryptAndVerifyMessageSignature$FUNC
+    );
+    static final FunctionDescriptor CryptDecodeMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptDecodeMessage$MH = RuntimeHelper.downcallHandle(
+        "CryptDecodeMessage",
+        constants$620.CryptDecodeMessage$FUNC
+    );
+    static final FunctionDescriptor CryptHashMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptHashMessage$MH = RuntimeHelper.downcallHandle(
+        "CryptHashMessage",
+        constants$620.CryptHashMessage$FUNC
+    );
+    static final FunctionDescriptor CryptVerifyMessageHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptVerifyMessageHash$MH = RuntimeHelper.downcallHandle(
+        "CryptVerifyMessageHash",
+        constants$620.CryptVerifyMessageHash$FUNC
+    );
+    static final FunctionDescriptor CryptVerifyDetachedMessageHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptVerifyDetachedMessageHash$MH = RuntimeHelper.downcallHandle(
+        "CryptVerifyDetachedMessageHash",
+        constants$620.CryptVerifyDetachedMessageHash$FUNC
+    );
 }
 
 

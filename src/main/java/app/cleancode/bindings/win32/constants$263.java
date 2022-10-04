@@ -9,46 +9,34 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$263 {
 
-    static final FunctionDescriptor SetClipboardData$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GOBJENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle GOBJENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$263.GOBJENUMPROC$FUNC
+    );
+    static final FunctionDescriptor LINEDDAPROC$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle LINEDDAPROC$MH = RuntimeHelper.downcallHandle(
+        constants$263.LINEDDAPROC$FUNC
+    );
+    static final FunctionDescriptor AddFontResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetClipboardData$MH = RuntimeHelper.downcallHandle(
-        "SetClipboardData",
-        constants$263.SetClipboardData$FUNC
+    static final MethodHandle AddFontResourceA$MH = RuntimeHelper.downcallHandle(
+        "AddFontResourceA",
+        constants$263.AddFontResourceA$FUNC
     );
-    static final FunctionDescriptor GetClipboardData$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetClipboardData$MH = RuntimeHelper.downcallHandle(
-        "GetClipboardData",
-        constants$263.GetClipboardData$FUNC
-    );
-    static final FunctionDescriptor RegisterClipboardFormatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddFontResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegisterClipboardFormatA$MH = RuntimeHelper.downcallHandle(
-        "RegisterClipboardFormatA",
-        constants$263.RegisterClipboardFormatA$FUNC
-    );
-    static final FunctionDescriptor RegisterClipboardFormatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegisterClipboardFormatW$MH = RuntimeHelper.downcallHandle(
-        "RegisterClipboardFormatW",
-        constants$263.RegisterClipboardFormatW$FUNC
-    );
-    static final FunctionDescriptor CountClipboardFormats$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle CountClipboardFormats$MH = RuntimeHelper.downcallHandle(
-        "CountClipboardFormats",
-        constants$263.CountClipboardFormats$FUNC
-    );
-    static final FunctionDescriptor EnumClipboardFormats$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumClipboardFormats$MH = RuntimeHelper.downcallHandle(
-        "EnumClipboardFormats",
-        constants$263.EnumClipboardFormats$FUNC
+    static final MethodHandle AddFontResourceW$MH = RuntimeHelper.downcallHandle(
+        "AddFontResourceW",
+        constants$263.AddFontResourceW$FUNC
     );
 }
 

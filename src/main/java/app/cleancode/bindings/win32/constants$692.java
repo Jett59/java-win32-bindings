@@ -9,12 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$692 {
 
-    static final MemorySegment szOID_CERT_SUBJECT_NAME_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.29");
-    static final MemorySegment szOID_CERT_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.4");
-    static final MemorySegment szOID_CERT_SIGNATURE_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.15");
-    static final MemorySegment szOID_DISALLOWED_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.15");
-    static final MemorySegment szOID_CERT_DISALLOWED_FILETIME_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.104");
-    static final MemorySegment szOID_ROOT_PROGRAM_AUTO_UPDATE_CA_REVOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.1");
+    static final FunctionDescriptor CoUnmarshalHresult$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoUnmarshalHresult$MH = RuntimeHelper.downcallHandle(
+        "CoUnmarshalHresult",
+        constants$692.CoUnmarshalHresult$FUNC
+    );
+    static final FunctionDescriptor CoReleaseMarshalData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoReleaseMarshalData$MH = RuntimeHelper.downcallHandle(
+        "CoReleaseMarshalData",
+        constants$692.CoReleaseMarshalData$FUNC
+    );
+    static final FunctionDescriptor CoDisconnectObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoDisconnectObject$MH = RuntimeHelper.downcallHandle(
+        "CoDisconnectObject",
+        constants$692.CoDisconnectObject$FUNC
+    );
+    static final FunctionDescriptor CoLockObjectExternal$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoLockObjectExternal$MH = RuntimeHelper.downcallHandle(
+        "CoLockObjectExternal",
+        constants$692.CoLockObjectExternal$FUNC
+    );
+    static final FunctionDescriptor CoGetStandardMarshal$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetStandardMarshal$MH = RuntimeHelper.downcallHandle(
+        "CoGetStandardMarshal",
+        constants$692.CoGetStandardMarshal$FUNC
+    );
+    static final FunctionDescriptor CoGetStdMarshalEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetStdMarshalEx$MH = RuntimeHelper.downcallHandle(
+        "CoGetStdMarshalEx",
+        constants$692.CoGetStdMarshalEx$FUNC
+    );
 }
 
 

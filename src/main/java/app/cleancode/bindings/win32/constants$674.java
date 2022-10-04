@@ -9,12 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$674 {
 
-    static final MemorySegment szOIDVerisign_TransactionID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.7");
-    static final MemorySegment szOID_NETSCAPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730");
-    static final MemorySegment szOID_NETSCAPE_CERT_EXTENSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1");
-    static final MemorySegment szOID_NETSCAPE_CERT_TYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.1");
-    static final MemorySegment szOID_NETSCAPE_BASE_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.2");
-    static final MemorySegment szOID_NETSCAPE_REVOCATION_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.3");
+    static final FunctionDescriptor DeletePrinterKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrinterKeyW$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterKeyW",
+        constants$674.DeletePrinterKeyW$FUNC
+    );
+    static final FunctionDescriptor WaitForPrinterChange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WaitForPrinterChange$MH = RuntimeHelper.downcallHandle(
+        "WaitForPrinterChange",
+        constants$674.WaitForPrinterChange$FUNC
+    );
+    static final FunctionDescriptor FindFirstPrinterChangeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindFirstPrinterChangeNotification$MH = RuntimeHelper.downcallHandle(
+        "FindFirstPrinterChangeNotification",
+        constants$674.FindFirstPrinterChangeNotification$FUNC
+    );
+    static final FunctionDescriptor FindNextPrinterChangeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindNextPrinterChangeNotification$MH = RuntimeHelper.downcallHandle(
+        "FindNextPrinterChangeNotification",
+        constants$674.FindNextPrinterChangeNotification$FUNC
+    );
+    static final FunctionDescriptor FreePrinterNotifyInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FreePrinterNotifyInfo$MH = RuntimeHelper.downcallHandle(
+        "FreePrinterNotifyInfo",
+        constants$674.FreePrinterNotifyInfo$FUNC
+    );
+    static final FunctionDescriptor FindClosePrinterChangeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindClosePrinterChangeNotification$MH = RuntimeHelper.downcallHandle(
+        "FindClosePrinterChangeNotification",
+        constants$674.FindClosePrinterChangeNotification$FUNC
+    );
 }
 
 

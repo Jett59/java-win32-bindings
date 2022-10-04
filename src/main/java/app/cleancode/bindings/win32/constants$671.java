@@ -9,12 +9,86 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$671 {
 
-    static final MemorySegment szOID_ATTR_PLATFORM_SPECIFICATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.17");
-    static final MemorySegment szOID_ATTR_TPM_SECURITY_ASSERTIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.18");
-    static final MemorySegment szOID_PKIX_ACC_DESCR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48");
-    static final MemorySegment szOID_PKIX_OCSP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1");
-    static final MemorySegment szOID_PKIX_CA_ISSUERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.2");
-    static final MemorySegment szOID_PKIX_TIME_STAMPING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.3");
+    static final FunctionDescriptor GetPrinterDataW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDataW$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDataW",
+        constants$671.GetPrinterDataW$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDataExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDataExA$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDataExA",
+        constants$671.GetPrinterDataExA$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDataExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDataExW$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDataExW",
+        constants$671.GetPrinterDataExW$FUNC
+    );
+    static final FunctionDescriptor EnumPrinterDataA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrinterDataA$MH = RuntimeHelper.downcallHandle(
+        "EnumPrinterDataA",
+        constants$671.EnumPrinterDataA$FUNC
+    );
+    static final FunctionDescriptor EnumPrinterDataW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrinterDataW$MH = RuntimeHelper.downcallHandle(
+        "EnumPrinterDataW",
+        constants$671.EnumPrinterDataW$FUNC
+    );
+    static final FunctionDescriptor EnumPrinterDataExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrinterDataExA$MH = RuntimeHelper.downcallHandle(
+        "EnumPrinterDataExA",
+        constants$671.EnumPrinterDataExA$FUNC
+    );
 }
 
 

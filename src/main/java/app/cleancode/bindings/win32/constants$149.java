@@ -9,57 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$149 {
 
-    static final FunctionDescriptor FindActCtxSectionStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FreeLibraryAndExitThread$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FreeLibraryAndExitThread$MH = RuntimeHelper.downcallHandle(
+        "FreeLibraryAndExitThread",
+        constants$149.FreeLibraryAndExitThread$FUNC
+    );
+    static final FunctionDescriptor FreeResource$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindActCtxSectionStringW$MH = RuntimeHelper.downcallHandle(
-        "FindActCtxSectionStringW",
-        constants$149.FindActCtxSectionStringW$FUNC
+    static final MethodHandle FreeResource$MH = RuntimeHelper.downcallHandle(
+        "FreeResource",
+        constants$149.FreeResource$FUNC
     );
-    static final FunctionDescriptor FindActCtxSectionGuid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetModuleFileNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetModuleFileNameA$MH = RuntimeHelper.downcallHandle(
+        "GetModuleFileNameA",
+        constants$149.GetModuleFileNameA$FUNC
+    );
+    static final FunctionDescriptor GetModuleFileNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetModuleFileNameW$MH = RuntimeHelper.downcallHandle(
+        "GetModuleFileNameW",
+        constants$149.GetModuleFileNameW$FUNC
+    );
+    static final FunctionDescriptor GetModuleHandleA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindActCtxSectionGuid$MH = RuntimeHelper.downcallHandle(
-        "FindActCtxSectionGuid",
-        constants$149.FindActCtxSectionGuid$FUNC
+    static final MethodHandle GetModuleHandleA$MH = RuntimeHelper.downcallHandle(
+        "GetModuleHandleA",
+        constants$149.GetModuleHandleA$FUNC
     );
-    static final FunctionDescriptor QueryActCtxW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetModuleHandleW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle QueryActCtxW$MH = RuntimeHelper.downcallHandle(
-        "QueryActCtxW",
-        constants$149.QueryActCtxW$FUNC
-    );
-    static final FunctionDescriptor PQUERYACTCTXW_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PQUERYACTCTXW_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$149.PQUERYACTCTXW_FUNC$FUNC
-    );
-    static final FunctionDescriptor WTSGetActiveConsoleSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle WTSGetActiveConsoleSessionId$MH = RuntimeHelper.downcallHandle(
-        "WTSGetActiveConsoleSessionId",
-        constants$149.WTSGetActiveConsoleSessionId$FUNC
+    static final MethodHandle GetModuleHandleW$MH = RuntimeHelper.downcallHandle(
+        "GetModuleHandleW",
+        constants$149.GetModuleHandleW$FUNC
     );
 }
 

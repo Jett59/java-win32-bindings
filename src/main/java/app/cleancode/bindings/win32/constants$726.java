@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$726 {
 
-    static final MemorySegment CERT_SRV_OCSP_RESP_MIN_SYNC_CERT_FILE_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_SRV_OCSP_RESP_MAX_SYNC_CERT_FILE_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CRYPTNET_MAX_CACHED_OCSP_PER_CRL_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_URL_CACHE_DEFAULT_FLUSH_EXEMPT_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_MIN_MAX_AGE_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_MAX_MAX_AGE_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment SE_IMPERSONATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeImpersonatePrivilege");
+    static final MemorySegment SE_CREATE_GLOBAL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateGlobalPrivilege");
+    static final MemorySegment SE_TRUSTED_CREDMAN_ACCESS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTrustedCredManAccessPrivilege");
+    static final MemorySegment SE_RELABEL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRelabelPrivilege");
+    static final MemorySegment SE_INC_WORKING_SET_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseWorkingSetPrivilege");
+    static final MemorySegment SE_TIME_ZONE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTimeZonePrivilege");
 }
 
 

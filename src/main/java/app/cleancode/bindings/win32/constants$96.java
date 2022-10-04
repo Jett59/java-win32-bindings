@@ -9,48 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$96 {
 
-    static final FunctionDescriptor PFE_EXPORT_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateNamedPipeW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateNamedPipeW$MH = RuntimeHelper.downcallHandle(
+        "CreateNamedPipeW",
+        constants$96.CreateNamedPipeW$FUNC
+    );
+    static final FunctionDescriptor WaitNamedPipeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WaitNamedPipeW$MH = RuntimeHelper.downcallHandle(
+        "WaitNamedPipeW",
+        constants$96.WaitNamedPipeW$FUNC
+    );
+    static final FunctionDescriptor GetNamedPipeClientComputerNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFE_EXPORT_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$96.PFE_EXPORT_FUNC$FUNC
+    static final MethodHandle GetNamedPipeClientComputerNameW$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeClientComputerNameW",
+        constants$96.GetNamedPipeClientComputerNameW$FUNC
     );
-    static final FunctionDescriptor PFE_IMPORT_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ImpersonateNamedPipeClient$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ImpersonateNamedPipeClient$MH = RuntimeHelper.downcallHandle(
+        "ImpersonateNamedPipeClient",
+        constants$96.ImpersonateNamedPipeClient$FUNC
+    );
+    static final FunctionDescriptor GetNamedPipeInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFE_IMPORT_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$96.PFE_IMPORT_FUNC$FUNC
+    static final MethodHandle GetNamedPipeInfo$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeInfo",
+        constants$96.GetNamedPipeInfo$FUNC
     );
-    static final FunctionDescriptor OpenEncryptedFileRawA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OpenEncryptedFileRawA$MH = RuntimeHelper.downcallHandle(
-        "OpenEncryptedFileRawA",
-        constants$96.OpenEncryptedFileRawA$FUNC
-    );
-    static final FunctionDescriptor OpenEncryptedFileRawW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OpenEncryptedFileRawW$MH = RuntimeHelper.downcallHandle(
-        "OpenEncryptedFileRawW",
-        constants$96.OpenEncryptedFileRawW$FUNC
-    );
-    static final FunctionDescriptor ReadEncryptedFileRaw$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetNamedPipeHandleStateW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReadEncryptedFileRaw$MH = RuntimeHelper.downcallHandle(
-        "ReadEncryptedFileRaw",
-        constants$96.ReadEncryptedFileRaw$FUNC
+    static final MethodHandle GetNamedPipeHandleStateW$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeHandleStateW",
+        constants$96.GetNamedPipeHandleStateW$FUNC
     );
 }
 

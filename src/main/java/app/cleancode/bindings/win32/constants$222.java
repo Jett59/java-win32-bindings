@@ -9,58 +9,109 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$222 {
 
-    static final FunctionDescriptor wglSetLayerPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LPPROGRESS_ROUTINE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        MemoryLayout.unionLayout(
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("$anon$0"),
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("u"),
+            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
+        ).withName("_LARGE_INTEGER"),
+        MemoryLayout.unionLayout(
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("$anon$0"),
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("u"),
+            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
+        ).withName("_LARGE_INTEGER"),
+        MemoryLayout.unionLayout(
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("$anon$0"),
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("u"),
+            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
+        ).withName("_LARGE_INTEGER"),
+        MemoryLayout.unionLayout(
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("$anon$0"),
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("u"),
+            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
+        ).withName("_LARGE_INTEGER"),
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle wglSetLayerPaletteEntries$MH = RuntimeHelper.downcallHandle(
-        "wglSetLayerPaletteEntries",
-        constants$222.wglSetLayerPaletteEntries$FUNC
+    static final MethodHandle LPPROGRESS_ROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$222.LPPROGRESS_ROUTINE$FUNC
     );
-    static final FunctionDescriptor wglGetLayerPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CopyFileExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle wglGetLayerPaletteEntries$MH = RuntimeHelper.downcallHandle(
-        "wglGetLayerPaletteEntries",
-        constants$222.wglGetLayerPaletteEntries$FUNC
-    );
-    static final FunctionDescriptor wglRealizeLayerPalette$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle wglRealizeLayerPalette$MH = RuntimeHelper.downcallHandle(
-        "wglRealizeLayerPalette",
-        constants$222.wglRealizeLayerPalette$FUNC
+    static final MethodHandle CopyFileExA$MH = RuntimeHelper.downcallHandle(
+        "CopyFileExA",
+        constants$222.CopyFileExA$FUNC
     );
-    static final FunctionDescriptor wglSwapLayerBuffers$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CopyFileExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle wglSwapLayerBuffers$MH = RuntimeHelper.downcallHandle(
-        "wglSwapLayerBuffers",
-        constants$222.wglSwapLayerBuffers$FUNC
+    static final MethodHandle CopyFileExW$MH = RuntimeHelper.downcallHandle(
+        "CopyFileExW",
+        constants$222.CopyFileExW$FUNC
     );
-    static final FunctionDescriptor wglSwapMultipleBuffers$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CopyFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle wglSwapMultipleBuffers$MH = RuntimeHelper.downcallHandle(
-        "wglSwapMultipleBuffers",
-        constants$222.wglSwapMultipleBuffers$FUNC
+    static final MethodHandle CopyFileTransactedA$MH = RuntimeHelper.downcallHandle(
+        "CopyFileTransactedA",
+        constants$222.CopyFileTransactedA$FUNC
     );
-    static final FunctionDescriptor WNDPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor CopyFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CopyFileTransactedW$MH = RuntimeHelper.downcallHandle(
+        "CopyFileTransactedW",
+        constants$222.CopyFileTransactedW$FUNC
     );
 }
 

@@ -9,71 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$135 {
 
-    static final FunctionDescriptor LookupAccountNameLocalA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor VirtualAllocEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualAllocEx$MH = RuntimeHelper.downcallHandle(
+        "VirtualAllocEx",
+        constants$135.VirtualAllocEx$FUNC
+    );
+    static final FunctionDescriptor VirtualProtectEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LookupAccountNameLocalA$MH = RuntimeHelper.downcallHandle(
-        "LookupAccountNameLocalA",
-        constants$135.LookupAccountNameLocalA$FUNC
+    static final MethodHandle VirtualProtectEx$MH = RuntimeHelper.downcallHandle(
+        "VirtualProtectEx",
+        constants$135.VirtualProtectEx$FUNC
     );
-    static final FunctionDescriptor LookupAccountNameLocalW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor VirtualQueryEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualQueryEx$MH = RuntimeHelper.downcallHandle(
+        "VirtualQueryEx",
+        constants$135.VirtualQueryEx$FUNC
+    );
+    static final FunctionDescriptor ReadProcessMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LookupAccountNameLocalW$MH = RuntimeHelper.downcallHandle(
-        "LookupAccountNameLocalW",
-        constants$135.LookupAccountNameLocalW$FUNC
+    static final MethodHandle ReadProcessMemory$MH = RuntimeHelper.downcallHandle(
+        "ReadProcessMemory",
+        constants$135.ReadProcessMemory$FUNC
     );
-    static final FunctionDescriptor LookupAccountSidLocalA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WriteProcessMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LookupAccountSidLocalA$MH = RuntimeHelper.downcallHandle(
-        "LookupAccountSidLocalA",
-        constants$135.LookupAccountSidLocalA$FUNC
+    static final MethodHandle WriteProcessMemory$MH = RuntimeHelper.downcallHandle(
+        "WriteProcessMemory",
+        constants$135.WriteProcessMemory$FUNC
     );
-    static final FunctionDescriptor LookupAccountSidLocalW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateFileMappingW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LookupAccountSidLocalW$MH = RuntimeHelper.downcallHandle(
-        "LookupAccountSidLocalW",
-        constants$135.LookupAccountSidLocalW$FUNC
-    );
-    static final FunctionDescriptor LookupPrivilegeValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LookupPrivilegeValueA$MH = RuntimeHelper.downcallHandle(
-        "LookupPrivilegeValueA",
-        constants$135.LookupPrivilegeValueA$FUNC
-    );
-    static final FunctionDescriptor LookupPrivilegeValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LookupPrivilegeValueW$MH = RuntimeHelper.downcallHandle(
-        "LookupPrivilegeValueW",
-        constants$135.LookupPrivilegeValueW$FUNC
+    static final MethodHandle CreateFileMappingW$MH = RuntimeHelper.downcallHandle(
+        "CreateFileMappingW",
+        constants$135.CreateFileMappingW$FUNC
     );
 }
 

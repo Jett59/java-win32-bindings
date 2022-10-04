@@ -9,53 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$214 {
 
-    static final FunctionDescriptor GetKerningPairsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WritePrivateProfileStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WritePrivateProfileStringW$MH = RuntimeHelper.downcallHandle(
+        "WritePrivateProfileStringW",
+        constants$214.WritePrivateProfileStringW$FUNC
+    );
+    static final FunctionDescriptor GetPrivateProfileSectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetKerningPairsA$MH = RuntimeHelper.downcallHandle(
-        "GetKerningPairsA",
-        constants$214.GetKerningPairsA$FUNC
+    static final MethodHandle GetPrivateProfileSectionA$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileSectionA",
+        constants$214.GetPrivateProfileSectionA$FUNC
     );
-    static final FunctionDescriptor GetKerningPairsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPrivateProfileSectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetKerningPairsW$MH = RuntimeHelper.downcallHandle(
-        "GetKerningPairsW",
-        constants$214.GetKerningPairsW$FUNC
+    static final MethodHandle GetPrivateProfileSectionW$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileSectionW",
+        constants$214.GetPrivateProfileSectionW$FUNC
     );
-    static final FunctionDescriptor GetDCOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WritePrivateProfileSectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDCOrgEx$MH = RuntimeHelper.downcallHandle(
-        "GetDCOrgEx",
-        constants$214.GetDCOrgEx$FUNC
+    static final MethodHandle WritePrivateProfileSectionA$MH = RuntimeHelper.downcallHandle(
+        "WritePrivateProfileSectionA",
+        constants$214.WritePrivateProfileSectionA$FUNC
     );
-    static final FunctionDescriptor FixBrushOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WritePrivateProfileSectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WritePrivateProfileSectionW$MH = RuntimeHelper.downcallHandle(
+        "WritePrivateProfileSectionW",
+        constants$214.WritePrivateProfileSectionW$FUNC
+    );
+    static final FunctionDescriptor GetPrivateProfileSectionNamesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FixBrushOrgEx$MH = RuntimeHelper.downcallHandle(
-        "FixBrushOrgEx",
-        constants$214.FixBrushOrgEx$FUNC
-    );
-    static final FunctionDescriptor UnrealizeObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnrealizeObject$MH = RuntimeHelper.downcallHandle(
-        "UnrealizeObject",
-        constants$214.UnrealizeObject$FUNC
-    );
-    static final FunctionDescriptor GdiFlush$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GdiFlush$MH = RuntimeHelper.downcallHandle(
-        "GdiFlush",
-        constants$214.GdiFlush$FUNC
+    static final MethodHandle GetPrivateProfileSectionNamesA$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileSectionNamesA",
+        constants$214.GetPrivateProfileSectionNamesA$FUNC
     );
 }
 

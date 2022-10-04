@@ -9,57 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$161 {
 
-    static final FunctionDescriptor ChoosePixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DestroyPrivateObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ChoosePixelFormat$MH = RuntimeHelper.downcallHandle(
-        "ChoosePixelFormat",
-        constants$161.ChoosePixelFormat$FUNC
+    static final MethodHandle DestroyPrivateObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "DestroyPrivateObjectSecurity",
+        constants$161.DestroyPrivateObjectSecurity$FUNC
     );
-    static final FunctionDescriptor CloseMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CloseMetaFile$MH = RuntimeHelper.downcallHandle(
-        "CloseMetaFile",
-        constants$161.CloseMetaFile$FUNC
-    );
-    static final FunctionDescriptor CombineRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DuplicateToken$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CombineRgn$MH = RuntimeHelper.downcallHandle(
-        "CombineRgn",
-        constants$161.CombineRgn$FUNC
-    );
-    static final FunctionDescriptor CopyMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CopyMetaFileA$MH = RuntimeHelper.downcallHandle(
-        "CopyMetaFileA",
-        constants$161.CopyMetaFileA$FUNC
-    );
-    static final FunctionDescriptor CopyMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CopyMetaFileW$MH = RuntimeHelper.downcallHandle(
-        "CopyMetaFileW",
-        constants$161.CopyMetaFileW$FUNC
-    );
-    static final FunctionDescriptor CreateBitmap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DuplicateToken$MH = RuntimeHelper.downcallHandle(
+        "DuplicateToken",
+        constants$161.DuplicateToken$FUNC
+    );
+    static final FunctionDescriptor DuplicateTokenEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateBitmap$MH = RuntimeHelper.downcallHandle(
-        "CreateBitmap",
-        constants$161.CreateBitmap$FUNC
+    static final MethodHandle DuplicateTokenEx$MH = RuntimeHelper.downcallHandle(
+        "DuplicateTokenEx",
+        constants$161.DuplicateTokenEx$FUNC
+    );
+    static final FunctionDescriptor EqualPrefixSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EqualPrefixSid$MH = RuntimeHelper.downcallHandle(
+        "EqualPrefixSid",
+        constants$161.EqualPrefixSid$FUNC
+    );
+    static final FunctionDescriptor EqualSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EqualSid$MH = RuntimeHelper.downcallHandle(
+        "EqualSid",
+        constants$161.EqualSid$FUNC
+    );
+    static final FunctionDescriptor FindFirstFreeAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindFirstFreeAce$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFreeAce",
+        constants$161.FindFirstFreeAce$FUNC
     );
 }
 

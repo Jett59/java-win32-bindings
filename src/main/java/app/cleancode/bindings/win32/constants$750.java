@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$750 {
 
-    static final MemorySegment SPLDS_PRINTER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerName");
-    static final MemorySegment SPLDS_PRINT_KEEP_PRINTED_JOBS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printKeepPrintedJobs");
-    static final MemorySegment SPLDS_PRINT_LANGUAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printLanguage");
-    static final MemorySegment SPLDS_PRINT_MAC_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMACAddress");
-    static final MemorySegment SPLDS_PRINT_MAX_X_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxXExtent");
-    static final MemorySegment SPLDS_PRINT_MAX_Y_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxYExtent");
+    static final MemorySegment MS_DEF_RSA_SIG_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA Signature Cryptographic Provider");
+    static final MemorySegment MS_DEF_RSA_SCHANNEL_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA SChannel Cryptographic Provider");
+    static final MemorySegment MS_DEF_RSA_SCHANNEL_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_DEF_RSA_SCHANNEL_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA SChannel Cryptographic Provider");
+    static final MemorySegment MS_DEF_DSS_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS Cryptographic Provider");
+    static final MemorySegment MS_DEF_DSS_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
 }
 
 

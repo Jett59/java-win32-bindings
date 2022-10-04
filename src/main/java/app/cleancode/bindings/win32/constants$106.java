@@ -9,63 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$106 {
 
-    static final FunctionDescriptor EnumResourceTypesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateMutexW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumResourceTypesA$MH = RuntimeHelper.downcallHandle(
-        "EnumResourceTypesA",
-        constants$106.EnumResourceTypesA$FUNC
+    static final MethodHandle CreateMutexW$MH = RuntimeHelper.downcallHandle(
+        "CreateMutexW",
+        constants$106.CreateMutexW$FUNC
     );
-    static final FunctionDescriptor EnumResourceTypesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor OpenMutexW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumResourceTypesW$MH = RuntimeHelper.downcallHandle(
-        "EnumResourceTypesW",
-        constants$106.EnumResourceTypesW$FUNC
+    static final MethodHandle OpenMutexW$MH = RuntimeHelper.downcallHandle(
+        "OpenMutexW",
+        constants$106.OpenMutexW$FUNC
     );
-    static final FunctionDescriptor EnumResourceNamesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateEventA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumResourceNamesA$MH = RuntimeHelper.downcallHandle(
-        "EnumResourceNamesA",
-        constants$106.EnumResourceNamesA$FUNC
+    static final MethodHandle CreateEventA$MH = RuntimeHelper.downcallHandle(
+        "CreateEventA",
+        constants$106.CreateEventA$FUNC
     );
-    static final FunctionDescriptor EnumResourceLanguagesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateEventW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumResourceLanguagesA$MH = RuntimeHelper.downcallHandle(
-        "EnumResourceLanguagesA",
-        constants$106.EnumResourceLanguagesA$FUNC
+    static final MethodHandle CreateEventW$MH = RuntimeHelper.downcallHandle(
+        "CreateEventW",
+        constants$106.CreateEventW$FUNC
     );
-    static final FunctionDescriptor EnumResourceLanguagesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor OpenEventA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumResourceLanguagesW$MH = RuntimeHelper.downcallHandle(
-        "EnumResourceLanguagesW",
-        constants$106.EnumResourceLanguagesW$FUNC
+    static final MethodHandle OpenEventA$MH = RuntimeHelper.downcallHandle(
+        "OpenEventA",
+        constants$106.OpenEventA$FUNC
     );
-    static final FunctionDescriptor BeginUpdateResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor OpenEventW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BeginUpdateResourceA$MH = RuntimeHelper.downcallHandle(
-        "BeginUpdateResourceA",
-        constants$106.BeginUpdateResourceA$FUNC
+    static final MethodHandle OpenEventW$MH = RuntimeHelper.downcallHandle(
+        "OpenEventW",
+        constants$106.OpenEventW$FUNC
     );
 }
 

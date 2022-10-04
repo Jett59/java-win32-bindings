@@ -9,12 +9,78 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$711 {
 
-    static final MemorySegment CRYPT_OID_SIGN_AND_ENCODE_HASH_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllSignAndEncodeHash");
-    static final MemorySegment CRYPT_OID_VERIFY_ENCODED_SIGNATURE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllVerifyEncodedSignature");
-    static final MemorySegment CRYPT_OID_EXPORT_PUBLIC_KEY_INFO_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExportPublicKeyInfoEx");
-    static final MemorySegment CRYPT_OID_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExportPublicKeyInfoEx2");
-    static final MemorySegment CRYPT_OID_EXPORT_PUBLIC_KEY_INFO_FROM_BCRYPT_HANDLE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExportPublicKeyInfoFromBCryptKeyHandle");
-    static final MemorySegment CRYPT_OID_IMPORT_PUBLIC_KEY_INFO_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllImportPublicKeyInfoEx");
+    static final FunctionDescriptor ChangeServiceConfig2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ChangeServiceConfig2A$MH = RuntimeHelper.downcallHandle(
+        "ChangeServiceConfig2A",
+        constants$711.ChangeServiceConfig2A$FUNC
+    );
+    static final FunctionDescriptor ChangeServiceConfig2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ChangeServiceConfig2W$MH = RuntimeHelper.downcallHandle(
+        "ChangeServiceConfig2W",
+        constants$711.ChangeServiceConfig2W$FUNC
+    );
+    static final FunctionDescriptor CloseServiceHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CloseServiceHandle$MH = RuntimeHelper.downcallHandle(
+        "CloseServiceHandle",
+        constants$711.CloseServiceHandle$FUNC
+    );
+    static final FunctionDescriptor ControlService$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ControlService$MH = RuntimeHelper.downcallHandle(
+        "ControlService",
+        constants$711.ControlService$FUNC
+    );
+    static final FunctionDescriptor CreateServiceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateServiceA$MH = RuntimeHelper.downcallHandle(
+        "CreateServiceA",
+        constants$711.CreateServiceA$FUNC
+    );
+    static final FunctionDescriptor CreateServiceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateServiceW$MH = RuntimeHelper.downcallHandle(
+        "CreateServiceW",
+        constants$711.CreateServiceW$FUNC
+    );
 }
 
 

@@ -9,52 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$193 {
 
-    static final FunctionDescriptor SetMapperFlags$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTapePosition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetMapperFlags$MH = RuntimeHelper.downcallHandle(
-        "SetMapperFlags",
-        constants$193.SetMapperFlags$FUNC
-    );
-    static final FunctionDescriptor SetGraphicsMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetGraphicsMode$MH = RuntimeHelper.downcallHandle(
-        "SetGraphicsMode",
-        constants$193.SetGraphicsMode$FUNC
-    );
-    static final FunctionDescriptor SetMapMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetMapMode$MH = RuntimeHelper.downcallHandle(
-        "SetMapMode",
-        constants$193.SetMapMode$FUNC
-    );
-    static final FunctionDescriptor SetLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetLayout$MH = RuntimeHelper.downcallHandle(
-        "SetLayout",
-        constants$193.SetLayout$FUNC
-    );
-    static final FunctionDescriptor GetLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetLayout$MH = RuntimeHelper.downcallHandle(
-        "GetLayout",
-        constants$193.GetLayout$FUNC
-    );
-    static final FunctionDescriptor SetMetaFileBitsEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetMetaFileBitsEx$MH = RuntimeHelper.downcallHandle(
-        "SetMetaFileBitsEx",
-        constants$193.SetMetaFileBitsEx$FUNC
+    static final MethodHandle GetTapePosition$MH = RuntimeHelper.downcallHandle(
+        "GetTapePosition",
+        constants$193.GetTapePosition$FUNC
+    );
+    static final FunctionDescriptor PrepareTape$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PrepareTape$MH = RuntimeHelper.downcallHandle(
+        "PrepareTape",
+        constants$193.PrepareTape$FUNC
+    );
+    static final FunctionDescriptor EraseTape$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EraseTape$MH = RuntimeHelper.downcallHandle(
+        "EraseTape",
+        constants$193.EraseTape$FUNC
+    );
+    static final FunctionDescriptor CreateTapePartition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateTapePartition$MH = RuntimeHelper.downcallHandle(
+        "CreateTapePartition",
+        constants$193.CreateTapePartition$FUNC
+    );
+    static final FunctionDescriptor WriteTapemark$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WriteTapemark$MH = RuntimeHelper.downcallHandle(
+        "WriteTapemark",
+        constants$193.WriteTapemark$FUNC
+    );
+    static final FunctionDescriptor GetTapeStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTapeStatus$MH = RuntimeHelper.downcallHandle(
+        "GetTapeStatus",
+        constants$193.GetTapeStatus$FUNC
     );
 }
 

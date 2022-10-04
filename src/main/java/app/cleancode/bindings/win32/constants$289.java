@@ -9,65 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$289 {
 
-    static final FunctionDescriptor GetMenuItemCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveFontMemResourceEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetMenuItemCount$MH = RuntimeHelper.downcallHandle(
-        "GetMenuItemCount",
-        constants$289.GetMenuItemCount$FUNC
+    static final MethodHandle RemoveFontMemResourceEx$MH = RuntimeHelper.downcallHandle(
+        "RemoveFontMemResourceEx",
+        constants$289.RemoveFontMemResourceEx$FUNC
     );
-    static final FunctionDescriptor InsertMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateFontIndirectExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateFontIndirectExA$MH = RuntimeHelper.downcallHandle(
+        "CreateFontIndirectExA",
+        constants$289.CreateFontIndirectExA$FUNC
+    );
+    static final FunctionDescriptor CreateFontIndirectExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateFontIndirectExW$MH = RuntimeHelper.downcallHandle(
+        "CreateFontIndirectExW",
+        constants$289.CreateFontIndirectExW$FUNC
+    );
+    static final FunctionDescriptor GetViewportExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InsertMenuA$MH = RuntimeHelper.downcallHandle(
-        "InsertMenuA",
-        constants$289.InsertMenuA$FUNC
+    static final MethodHandle GetViewportExtEx$MH = RuntimeHelper.downcallHandle(
+        "GetViewportExtEx",
+        constants$289.GetViewportExtEx$FUNC
     );
-    static final FunctionDescriptor InsertMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetViewportOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InsertMenuW$MH = RuntimeHelper.downcallHandle(
-        "InsertMenuW",
-        constants$289.InsertMenuW$FUNC
+    static final MethodHandle GetViewportOrgEx$MH = RuntimeHelper.downcallHandle(
+        "GetViewportOrgEx",
+        constants$289.GetViewportOrgEx$FUNC
     );
-    static final FunctionDescriptor AppendMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AppendMenuA$MH = RuntimeHelper.downcallHandle(
-        "AppendMenuA",
-        constants$289.AppendMenuA$FUNC
-    );
-    static final FunctionDescriptor AppendMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AppendMenuW$MH = RuntimeHelper.downcallHandle(
-        "AppendMenuW",
-        constants$289.AppendMenuW$FUNC
-    );
-    static final FunctionDescriptor ModifyMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ModifyMenuA$MH = RuntimeHelper.downcallHandle(
-        "ModifyMenuA",
-        constants$289.ModifyMenuA$FUNC
+    static final MethodHandle GetWindowExtEx$MH = RuntimeHelper.downcallHandle(
+        "GetWindowExtEx",
+        constants$289.GetWindowExtEx$FUNC
     );
 }
 

@@ -9,42 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$410 {
 
-    static final FunctionDescriptor getprotobyname$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle getprotobyname$MH = RuntimeHelper.downcallHandle(
-        "getprotobyname",
-        constants$410.getprotobyname$FUNC
-    );
-    static final FunctionDescriptor WSAStartup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WSAStartup$MH = RuntimeHelper.downcallHandle(
-        "WSAStartup",
-        constants$410.WSAStartup$FUNC
-    );
-    static final FunctionDescriptor WSACleanup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle WSACleanup$MH = RuntimeHelper.downcallHandle(
-        "WSACleanup",
-        constants$410.WSACleanup$FUNC
-    );
-    static final FunctionDescriptor WSASetLastError$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor MessageBoxA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WSASetLastError$MH = RuntimeHelper.downcallHandle(
-        "WSASetLastError",
-        constants$410.WSASetLastError$FUNC
+    static final MethodHandle MessageBoxA$MH = RuntimeHelper.downcallHandle(
+        "MessageBoxA",
+        constants$410.MessageBoxA$FUNC
     );
-    static final FunctionDescriptor WSAGetLastError$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle WSAGetLastError$MH = RuntimeHelper.downcallHandle(
-        "WSAGetLastError",
-        constants$410.WSAGetLastError$FUNC
+    static final FunctionDescriptor MessageBoxW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final FunctionDescriptor WSAIsBlocking$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle WSAIsBlocking$MH = RuntimeHelper.downcallHandle(
-        "WSAIsBlocking",
-        constants$410.WSAIsBlocking$FUNC
+    static final MethodHandle MessageBoxW$MH = RuntimeHelper.downcallHandle(
+        "MessageBoxW",
+        constants$410.MessageBoxW$FUNC
+    );
+    static final FunctionDescriptor MessageBoxExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle MessageBoxExA$MH = RuntimeHelper.downcallHandle(
+        "MessageBoxExA",
+        constants$410.MessageBoxExA$FUNC
+    );
+    static final FunctionDescriptor MessageBoxExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle MessageBoxExW$MH = RuntimeHelper.downcallHandle(
+        "MessageBoxExW",
+        constants$410.MessageBoxExW$FUNC
+    );
+    static final FunctionDescriptor MSGBOXCALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MSGBOXCALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$410.MSGBOXCALLBACK$FUNC
     );
 }
 

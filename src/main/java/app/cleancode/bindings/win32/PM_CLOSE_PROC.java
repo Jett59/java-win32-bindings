@@ -11,13 +11,13 @@ public interface PM_CLOSE_PROC {
 
     int apply();
     static MemorySegment allocate(PM_CLOSE_PROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PM_CLOSE_PROC.class, fi, constants$404.PM_CLOSE_PROC$FUNC, session);
+        return RuntimeHelper.upcallStub(PM_CLOSE_PROC.class, fi, constants$556.PM_CLOSE_PROC$FUNC, session);
     }
     static PM_CLOSE_PROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return () -> {
             try {
-                return (int)constants$404.PM_CLOSE_PROC$MH.invokeExact((Addressable)symbol);
+                return (int)constants$556.PM_CLOSE_PROC$MH.invokeExact((Addressable)symbol);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,25 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$357 {
 
-    static final FunctionDescriptor CALINFO_ENUMPROCEXW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FlashWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CALINFO_ENUMPROCEXW$MH = RuntimeHelper.downcallHandle(
-        constants$357.CALINFO_ENUMPROCEXW$FUNC
+    static final MethodHandle FlashWindow$MH = RuntimeHelper.downcallHandle(
+        "FlashWindow",
+        constants$357.FlashWindow$FUNC
     );
-    static final FunctionDescriptor GEO_ENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FlashWindowEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FlashWindowEx$MH = RuntimeHelper.downcallHandle(
+        "FlashWindowEx",
+        constants$357.FlashWindowEx$FUNC
+    );
+    static final FunctionDescriptor ShowOwnedPopups$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GEO_ENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$357.GEO_ENUMPROC$FUNC
+    static final MethodHandle ShowOwnedPopups$MH = RuntimeHelper.downcallHandle(
+        "ShowOwnedPopups",
+        constants$357.ShowOwnedPopups$FUNC
     );
-    static final FunctionDescriptor GEO_ENUMNAMEPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenIcon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenIcon$MH = RuntimeHelper.downcallHandle(
+        "OpenIcon",
+        constants$357.OpenIcon$FUNC
+    );
+    static final FunctionDescriptor CloseWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CloseWindow$MH = RuntimeHelper.downcallHandle(
+        "CloseWindow",
+        constants$357.CloseWindow$FUNC
+    );
+    static final FunctionDescriptor MoveWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GEO_ENUMNAMEPROC$MH = RuntimeHelper.downcallHandle(
-        constants$357.GEO_ENUMNAMEPROC$FUNC
+    static final MethodHandle MoveWindow$MH = RuntimeHelper.downcallHandle(
+        "MoveWindow",
+        constants$357.MoveWindow$FUNC
     );
 }
 

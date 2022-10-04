@@ -9,45 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$463 {
 
-    static final FunctionDescriptor PFN_IMPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor IsValidCodePage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_IMPORT_PUBLIC_KEY_INFO_EX2_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$463.PFN_IMPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC
+    static final MethodHandle IsValidCodePage$MH = RuntimeHelper.downcallHandle(
+        "IsValidCodePage",
+        constants$463.IsValidCodePage$FUNC
     );
-    static final FunctionDescriptor CryptAcquireCertificatePrivateKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetACP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetACP$MH = RuntimeHelper.downcallHandle(
+        "GetACP",
+        constants$463.GetACP$FUNC
     );
-    static final MethodHandle CryptAcquireCertificatePrivateKey$MH = RuntimeHelper.downcallHandle(
-        "CryptAcquireCertificatePrivateKey",
-        constants$463.CryptAcquireCertificatePrivateKey$FUNC
+    static final FunctionDescriptor GetOEMCP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetOEMCP$MH = RuntimeHelper.downcallHandle(
+        "GetOEMCP",
+        constants$463.GetOEMCP$FUNC
     );
-    static final FunctionDescriptor CryptFindCertificateKeyProvInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetCPInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptFindCertificateKeyProvInfo$MH = RuntimeHelper.downcallHandle(
-        "CryptFindCertificateKeyProvInfo",
-        constants$463.CryptFindCertificateKeyProvInfo$FUNC
+    static final MethodHandle GetCPInfo$MH = RuntimeHelper.downcallHandle(
+        "GetCPInfo",
+        constants$463.GetCPInfo$FUNC
     );
-    static final FunctionDescriptor PFN_IMPORT_PRIV_KEY_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetCPInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_IMPORT_PRIV_KEY_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$463.PFN_IMPORT_PRIV_KEY_FUNC$FUNC
+    static final MethodHandle GetCPInfoExA$MH = RuntimeHelper.downcallHandle(
+        "GetCPInfoExA",
+        constants$463.GetCPInfoExA$FUNC
+    );
+    static final FunctionDescriptor GetCPInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCPInfoExW$MH = RuntimeHelper.downcallHandle(
+        "GetCPInfoExW",
+        constants$463.GetCPInfoExW$FUNC
     );
 }
 

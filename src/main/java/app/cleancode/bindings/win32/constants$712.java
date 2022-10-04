@@ -9,12 +9,81 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$712 {
 
-    static final MemorySegment CRYPT_OID_IMPORT_PUBLIC_KEY_INFO_EX2_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllImportPublicKeyInfoEx2");
-    static final MemorySegment CRYPT_OID_IMPORT_PRIVATE_KEY_INFO_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllImportPrivateKeyInfoEx");
-    static final MemorySegment CRYPT_OID_EXPORT_PRIVATE_KEY_INFO_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExportPrivateKeyInfoEx");
-    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS_A$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS_W$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS$ADDR = MemoryAddress.ofLong(1L);
+    static final FunctionDescriptor DeleteService$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteService$MH = RuntimeHelper.downcallHandle(
+        "DeleteService",
+        constants$712.DeleteService$FUNC
+    );
+    static final FunctionDescriptor EnumDependentServicesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumDependentServicesA$MH = RuntimeHelper.downcallHandle(
+        "EnumDependentServicesA",
+        constants$712.EnumDependentServicesA$FUNC
+    );
+    static final FunctionDescriptor EnumDependentServicesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumDependentServicesW$MH = RuntimeHelper.downcallHandle(
+        "EnumDependentServicesW",
+        constants$712.EnumDependentServicesW$FUNC
+    );
+    static final FunctionDescriptor EnumServicesStatusA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumServicesStatusA$MH = RuntimeHelper.downcallHandle(
+        "EnumServicesStatusA",
+        constants$712.EnumServicesStatusA$FUNC
+    );
+    static final FunctionDescriptor EnumServicesStatusW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumServicesStatusW$MH = RuntimeHelper.downcallHandle(
+        "EnumServicesStatusW",
+        constants$712.EnumServicesStatusW$FUNC
+    );
+    static final FunctionDescriptor EnumServicesStatusExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumServicesStatusExA$MH = RuntimeHelper.downcallHandle(
+        "EnumServicesStatusExA",
+        constants$712.EnumServicesStatusExA$FUNC
+    );
 }
 
 

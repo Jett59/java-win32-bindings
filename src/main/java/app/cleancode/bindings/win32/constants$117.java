@@ -9,58 +9,18 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$117 {
 
-    static final FunctionDescriptor RemoveDirectoryTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetStartupInfoW$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RemoveDirectoryTransactedW$MH = RuntimeHelper.downcallHandle(
-        "RemoveDirectoryTransactedW",
-        constants$117.RemoveDirectoryTransactedW$FUNC
+    static final MethodHandle GetStartupInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetStartupInfoW",
+        constants$117.GetStartupInfoW$FUNC
     );
-    static final FunctionDescriptor GetFullPathNameTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateProcessAsUserW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFullPathNameTransactedA$MH = RuntimeHelper.downcallHandle(
-        "GetFullPathNameTransactedA",
-        constants$117.GetFullPathNameTransactedA$FUNC
-    );
-    static final FunctionDescriptor GetFullPathNameTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFullPathNameTransactedW$MH = RuntimeHelper.downcallHandle(
-        "GetFullPathNameTransactedW",
-        constants$117.GetFullPathNameTransactedW$FUNC
-    );
-    static final FunctionDescriptor DefineDosDeviceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DefineDosDeviceA$MH = RuntimeHelper.downcallHandle(
-        "DefineDosDeviceA",
-        constants$117.DefineDosDeviceA$FUNC
-    );
-    static final FunctionDescriptor QueryDosDeviceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle QueryDosDeviceA$MH = RuntimeHelper.downcallHandle(
-        "QueryDosDeviceA",
-        constants$117.QueryDosDeviceA$FUNC
-    );
-    static final FunctionDescriptor CreateFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
@@ -69,9 +29,32 @@ class constants$117 {
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateFileTransactedA$MH = RuntimeHelper.downcallHandle(
-        "CreateFileTransactedA",
-        constants$117.CreateFileTransactedA$FUNC
+    static final MethodHandle CreateProcessAsUserW$MH = RuntimeHelper.downcallHandle(
+        "CreateProcessAsUserW",
+        constants$117.CreateProcessAsUserW$FUNC
+    );
+    static final FunctionDescriptor GetCurrentProcessToken$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetCurrentProcessToken$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentProcessToken",
+        constants$117.GetCurrentProcessToken$FUNC
+    );
+    static final FunctionDescriptor GetCurrentThreadToken$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetCurrentThreadToken$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentThreadToken",
+        constants$117.GetCurrentThreadToken$FUNC
+    );
+    static final FunctionDescriptor GetCurrentThreadEffectiveToken$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetCurrentThreadEffectiveToken$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentThreadEffectiveToken",
+        constants$117.GetCurrentThreadEffectiveToken$FUNC
+    );
+    static final FunctionDescriptor SetThreadToken$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetThreadToken$MH = RuntimeHelper.downcallHandle(
+        "SetThreadToken",
+        constants$117.SetThreadToken$FUNC
     );
 }
 

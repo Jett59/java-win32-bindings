@@ -9,12 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$623 {
 
-    static final MemorySegment szOID_EV_RDN_LOCALE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.2.1.1");
-    static final MemorySegment szOID_EV_RDN_STATE_OR_PROVINCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.2.1.2");
-    static final MemorySegment szOID_EV_RDN_COUNTRY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.2.1.3");
-    static final MemorySegment CERT_RSA_PUBLIC_KEY_OBJID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
-    static final MemorySegment CERT_DEFAULT_OID_PUBLIC_KEY_SIGN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
-    static final MemorySegment CERT_DEFAULT_OID_PUBLIC_KEY_XCHG$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
+    static final FunctionDescriptor PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$623.PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$FUNC
+    );
+    static final FunctionDescriptor CryptCreateAsyncHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptCreateAsyncHandle$MH = RuntimeHelper.downcallHandle(
+        "CryptCreateAsyncHandle",
+        constants$623.CryptCreateAsyncHandle$FUNC
+    );
+    static final FunctionDescriptor CryptSetAsyncParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptSetAsyncParam$MH = RuntimeHelper.downcallHandle(
+        "CryptSetAsyncParam",
+        constants$623.CryptSetAsyncParam$FUNC
+    );
+    static final FunctionDescriptor CryptGetAsyncParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGetAsyncParam$MH = RuntimeHelper.downcallHandle(
+        "CryptGetAsyncParam",
+        constants$623.CryptGetAsyncParam$FUNC
+    );
+    static final FunctionDescriptor CryptCloseAsyncHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptCloseAsyncHandle$MH = RuntimeHelper.downcallHandle(
+        "CryptCloseAsyncHandle",
+        constants$623.CryptCloseAsyncHandle$FUNC
+    );
+    static final FunctionDescriptor PFN_FREE_ENCODED_OBJECT_FUNC$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

@@ -9,24 +9,43 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$352 {
 
-    static final FunctionDescriptor UILANGUAGE_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor InSendMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle InSendMessage$MH = RuntimeHelper.downcallHandle(
+        "InSendMessage",
+        constants$352.InSendMessage$FUNC
     );
-    static final MethodHandle UILANGUAGE_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$352.UILANGUAGE_ENUMPROCA$FUNC
-    );
-    static final FunctionDescriptor CODEPAGE_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InSendMessageEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CODEPAGE_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$352.CODEPAGE_ENUMPROCA$FUNC
+    static final MethodHandle InSendMessageEx$MH = RuntimeHelper.downcallHandle(
+        "InSendMessageEx",
+        constants$352.InSendMessageEx$FUNC
     );
-    static final FunctionDescriptor DATEFMT_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDoubleClickTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetDoubleClickTime$MH = RuntimeHelper.downcallHandle(
+        "GetDoubleClickTime",
+        constants$352.GetDoubleClickTime$FUNC
+    );
+    static final FunctionDescriptor SetDoubleClickTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDoubleClickTime$MH = RuntimeHelper.downcallHandle(
+        "SetDoubleClickTime",
+        constants$352.SetDoubleClickTime$FUNC
+    );
+    static final FunctionDescriptor RegisterClassA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DATEFMT_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$352.DATEFMT_ENUMPROCA$FUNC
+    static final MethodHandle RegisterClassA$MH = RuntimeHelper.downcallHandle(
+        "RegisterClassA",
+        constants$352.RegisterClassA$FUNC
+    );
+    static final FunctionDescriptor RegisterClassW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterClassW$MH = RuntimeHelper.downcallHandle(
+        "RegisterClassW",
+        constants$352.RegisterClassW$FUNC
     );
 }
 

@@ -9,52 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$114 {
 
-    static final FunctionDescriptor GetPrivateProfileStructW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OpenThread$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrivateProfileStructW$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileStructW",
-        constants$114.GetPrivateProfileStructW$FUNC
-    );
-    static final FunctionDescriptor WritePrivateProfileStructA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WritePrivateProfileStructA$MH = RuntimeHelper.downcallHandle(
-        "WritePrivateProfileStructA",
-        constants$114.WritePrivateProfileStructA$FUNC
+    static final MethodHandle OpenThread$MH = RuntimeHelper.downcallHandle(
+        "OpenThread",
+        constants$114.OpenThread$FUNC
     );
-    static final FunctionDescriptor WritePrivateProfileStructW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WritePrivateProfileStructW$MH = RuntimeHelper.downcallHandle(
-        "WritePrivateProfileStructW",
-        constants$114.WritePrivateProfileStructW$FUNC
-    );
-    static final FunctionDescriptor Wow64EnableWow64FsRedirection$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
-    );
-    static final MethodHandle Wow64EnableWow64FsRedirection$MH = RuntimeHelper.downcallHandle(
-        "Wow64EnableWow64FsRedirection",
-        constants$114.Wow64EnableWow64FsRedirection$FUNC
-    );
-    static final FunctionDescriptor PGET_SYSTEM_WOW64_DIRECTORY_A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadPriority$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PGET_SYSTEM_WOW64_DIRECTORY_A$MH = RuntimeHelper.downcallHandle(
-        constants$114.PGET_SYSTEM_WOW64_DIRECTORY_A$FUNC
+    static final MethodHandle SetThreadPriority$MH = RuntimeHelper.downcallHandle(
+        "SetThreadPriority",
+        constants$114.SetThreadPriority$FUNC
+    );
+    static final FunctionDescriptor SetThreadPriorityBoost$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetThreadPriorityBoost$MH = RuntimeHelper.downcallHandle(
+        "SetThreadPriorityBoost",
+        constants$114.SetThreadPriorityBoost$FUNC
+    );
+    static final FunctionDescriptor GetThreadPriorityBoost$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetThreadPriorityBoost$MH = RuntimeHelper.downcallHandle(
+        "GetThreadPriorityBoost",
+        constants$114.GetThreadPriorityBoost$FUNC
+    );
+    static final FunctionDescriptor GetThreadPriority$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetThreadPriority$MH = RuntimeHelper.downcallHandle(
+        "GetThreadPriority",
+        constants$114.GetThreadPriority$FUNC
+    );
+    static final FunctionDescriptor ExitThread$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ExitThread$MH = RuntimeHelper.downcallHandle(
+        "ExitThread",
+        constants$114.ExitThread$FUNC
     );
 }
 

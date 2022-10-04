@@ -9,12 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$687 {
 
-    static final MemorySegment szOID_PKCS_7_ENCRYPTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.6");
-    static final MemorySegment szOID_PKCS_9_CONTENT_TYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.3");
-    static final MemorySegment szOID_PKCS_9_MESSAGE_DIGEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.4");
-    static final MemorySegment CMSG_OID_GEN_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenEncryptKey");
-    static final MemorySegment CMSG_OID_EXPORT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportEncryptKey");
-    static final MemorySegment CMSG_OID_IMPORT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportEncryptKey");
+    static final FunctionDescriptor CoGetMalloc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetMalloc$MH = RuntimeHelper.downcallHandle(
+        "CoGetMalloc",
+        constants$687.CoGetMalloc$FUNC
+    );
+    static final FunctionDescriptor CreateStreamOnHGlobal$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateStreamOnHGlobal$MH = RuntimeHelper.downcallHandle(
+        "CreateStreamOnHGlobal",
+        constants$687.CreateStreamOnHGlobal$FUNC
+    );
+    static final FunctionDescriptor GetHGlobalFromStream$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetHGlobalFromStream$MH = RuntimeHelper.downcallHandle(
+        "GetHGlobalFromStream",
+        constants$687.GetHGlobalFromStream$FUNC
+    );
+    static final FunctionDescriptor CoUninitialize$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle CoUninitialize$MH = RuntimeHelper.downcallHandle(
+        "CoUninitialize",
+        constants$687.CoUninitialize$FUNC
+    );
+    static final FunctionDescriptor CoGetCurrentProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle CoGetCurrentProcess$MH = RuntimeHelper.downcallHandle(
+        "CoGetCurrentProcess",
+        constants$687.CoGetCurrentProcess$FUNC
+    );
+    static final FunctionDescriptor CoInitializeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoInitializeEx$MH = RuntimeHelper.downcallHandle(
+        "CoInitializeEx",
+        constants$687.CoInitializeEx$FUNC
+    );
 }
 
 

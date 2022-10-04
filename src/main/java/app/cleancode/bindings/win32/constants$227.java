@@ -9,38 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$227 {
 
-    static final FunctionDescriptor EDITWORDBREAKPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EDITWORDBREAKPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$227.EDITWORDBREAKPROCW$FUNC
-    );
-    static final FunctionDescriptor DRAWSTATEPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DRAWSTATEPROC$MH = RuntimeHelper.downcallHandle(
-        constants$227.DRAWSTATEPROC$FUNC
-    );
-    static final FunctionDescriptor PROPENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetNamedPipeClientProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PROPENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$227.PROPENUMPROC$FUNC
+    static final MethodHandle GetNamedPipeClientProcessId$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeClientProcessId",
+        constants$227.GetNamedPipeClientProcessId$FUNC
     );
-    static final FunctionDescriptor PROPENUMPROCEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetNamedPipeClientSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetNamedPipeClientSessionId$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeClientSessionId",
+        constants$227.GetNamedPipeClientSessionId$FUNC
+    );
+    static final FunctionDescriptor GetNamedPipeServerProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetNamedPipeServerProcessId$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeServerProcessId",
+        constants$227.GetNamedPipeServerProcessId$FUNC
+    );
+    static final FunctionDescriptor GetNamedPipeServerSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetNamedPipeServerSessionId$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeServerSessionId",
+        constants$227.GetNamedPipeServerSessionId$FUNC
+    );
+    static final FunctionDescriptor SetVolumeLabelA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetVolumeLabelA$MH = RuntimeHelper.downcallHandle(
+        "SetVolumeLabelA",
+        constants$227.SetVolumeLabelA$FUNC
+    );
+    static final FunctionDescriptor SetVolumeLabelW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetVolumeLabelW$MH = RuntimeHelper.downcallHandle(
+        "SetVolumeLabelW",
+        constants$227.SetVolumeLabelW$FUNC
     );
 }
 

@@ -11,13 +11,13 @@ public interface PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK {
 
     int apply(java.lang.foreign.MemoryAddress pCert, java.lang.foreign.MemoryAddress pvFindArg);
     static MemorySegment allocate(PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK.class, fi, constants$476.PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK.class, fi, constants$628.PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$FUNC, session);
     }
     static PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pCert, java.lang.foreign.MemoryAddress _pvFindArg) -> {
             try {
-                return (int)constants$476.PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pCert, (java.lang.foreign.Addressable)_pvFindArg);
+                return (int)constants$629.PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pCert, (java.lang.foreign.Addressable)_pvFindArg);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

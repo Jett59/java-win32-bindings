@@ -9,51 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$288 {
 
-    static final FunctionDescriptor CreatePopupMenu$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle CreatePopupMenu$MH = RuntimeHelper.downcallHandle(
-        "CreatePopupMenu",
-        constants$288.CreatePopupMenu$FUNC
-    );
-    static final FunctionDescriptor DestroyMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCharABCWidthsI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DestroyMenu$MH = RuntimeHelper.downcallHandle(
-        "DestroyMenu",
-        constants$288.DestroyMenu$FUNC
+    static final MethodHandle GetCharABCWidthsI$MH = RuntimeHelper.downcallHandle(
+        "GetCharABCWidthsI",
+        constants$288.GetCharABCWidthsI$FUNC
     );
-    static final FunctionDescriptor CheckMenuItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddFontResourceExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CheckMenuItem$MH = RuntimeHelper.downcallHandle(
-        "CheckMenuItem",
-        constants$288.CheckMenuItem$FUNC
+    static final MethodHandle AddFontResourceExA$MH = RuntimeHelper.downcallHandle(
+        "AddFontResourceExA",
+        constants$288.AddFontResourceExA$FUNC
     );
-    static final FunctionDescriptor EnableMenuItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddFontResourceExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnableMenuItem$MH = RuntimeHelper.downcallHandle(
-        "EnableMenuItem",
-        constants$288.EnableMenuItem$FUNC
+    static final MethodHandle AddFontResourceExW$MH = RuntimeHelper.downcallHandle(
+        "AddFontResourceExW",
+        constants$288.AddFontResourceExW$FUNC
     );
-    static final FunctionDescriptor GetSubMenu$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor RemoveFontResourceExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetSubMenu$MH = RuntimeHelper.downcallHandle(
-        "GetSubMenu",
-        constants$288.GetSubMenu$FUNC
+    static final MethodHandle RemoveFontResourceExA$MH = RuntimeHelper.downcallHandle(
+        "RemoveFontResourceExA",
+        constants$288.RemoveFontResourceExA$FUNC
     );
-    static final FunctionDescriptor GetMenuItemID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveFontResourceExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetMenuItemID$MH = RuntimeHelper.downcallHandle(
-        "GetMenuItemID",
-        constants$288.GetMenuItemID$FUNC
+    static final MethodHandle RemoveFontResourceExW$MH = RuntimeHelper.downcallHandle(
+        "RemoveFontResourceExW",
+        constants$288.RemoveFontResourceExW$FUNC
+    );
+    static final FunctionDescriptor AddFontMemResourceEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddFontMemResourceEx$MH = RuntimeHelper.downcallHandle(
+        "AddFontMemResourceEx",
+        constants$288.AddFontMemResourceEx$FUNC
     );
 }
 

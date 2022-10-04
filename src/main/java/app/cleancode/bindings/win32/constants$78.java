@@ -9,59 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$78 {
 
-    static final FunctionDescriptor GetBinaryTypeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetFileAttributesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetBinaryTypeW$MH = RuntimeHelper.downcallHandle(
-        "GetBinaryTypeW",
-        constants$78.GetBinaryTypeW$FUNC
+    static final MethodHandle GetFileAttributesA$MH = RuntimeHelper.downcallHandle(
+        "GetFileAttributesA",
+        constants$78.GetFileAttributesA$FUNC
     );
-    static final FunctionDescriptor GetShortPathNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetFileAttributesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetShortPathNameA$MH = RuntimeHelper.downcallHandle(
-        "GetShortPathNameA",
-        constants$78.GetShortPathNameA$FUNC
+    static final MethodHandle GetFileAttributesW$MH = RuntimeHelper.downcallHandle(
+        "GetFileAttributesW",
+        constants$78.GetFileAttributesW$FUNC
     );
-    static final FunctionDescriptor GetLongPathNameTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetFileAttributesExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetLongPathNameTransactedA$MH = RuntimeHelper.downcallHandle(
-        "GetLongPathNameTransactedA",
-        constants$78.GetLongPathNameTransactedA$FUNC
+    static final MethodHandle GetFileAttributesExA$MH = RuntimeHelper.downcallHandle(
+        "GetFileAttributesExA",
+        constants$78.GetFileAttributesExA$FUNC
     );
-    static final FunctionDescriptor GetLongPathNameTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetFileAttributesExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetLongPathNameTransactedW$MH = RuntimeHelper.downcallHandle(
-        "GetLongPathNameTransactedW",
-        constants$78.GetLongPathNameTransactedW$FUNC
+    static final MethodHandle GetFileAttributesExW$MH = RuntimeHelper.downcallHandle(
+        "GetFileAttributesExW",
+        constants$78.GetFileAttributesExW$FUNC
     );
-    static final FunctionDescriptor GetProcessAffinityMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetFileInformationByHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetProcessAffinityMask$MH = RuntimeHelper.downcallHandle(
-        "GetProcessAffinityMask",
-        constants$78.GetProcessAffinityMask$FUNC
+    static final MethodHandle GetFileInformationByHandle$MH = RuntimeHelper.downcallHandle(
+        "GetFileInformationByHandle",
+        constants$78.GetFileInformationByHandle$FUNC
     );
-    static final FunctionDescriptor SetProcessAffinityMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFileSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetProcessAffinityMask$MH = RuntimeHelper.downcallHandle(
-        "SetProcessAffinityMask",
-        constants$78.SetProcessAffinityMask$FUNC
+    static final MethodHandle GetFileSize$MH = RuntimeHelper.downcallHandle(
+        "GetFileSize",
+        constants$78.GetFileSize$FUNC
     );
 }
 

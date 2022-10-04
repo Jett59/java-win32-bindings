@@ -9,55 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$453 {
 
-    static final FunctionDescriptor PFN_CERT_ENUM_SYSTEM_STORE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ShutdownBlockReasonDestroy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_ENUM_SYSTEM_STORE$MH = RuntimeHelper.downcallHandle(
-        constants$453.PFN_CERT_ENUM_SYSTEM_STORE$FUNC
+    static final MethodHandle ShutdownBlockReasonDestroy$MH = RuntimeHelper.downcallHandle(
+        "ShutdownBlockReasonDestroy",
+        constants$453.ShutdownBlockReasonDestroy$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_ENUM_PHYSICAL_STORE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetCurrentInputMessageSource$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_ENUM_PHYSICAL_STORE$MH = RuntimeHelper.downcallHandle(
-        constants$453.PFN_CERT_ENUM_PHYSICAL_STORE$FUNC
+    static final MethodHandle GetCurrentInputMessageSource$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentInputMessageSource",
+        constants$453.GetCurrentInputMessageSource$FUNC
     );
-    static final FunctionDescriptor CertEnumSystemStoreLocation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetCIMSSM$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertEnumSystemStoreLocation$MH = RuntimeHelper.downcallHandle(
-        "CertEnumSystemStoreLocation",
-        constants$453.CertEnumSystemStoreLocation$FUNC
+    static final MethodHandle GetCIMSSM$MH = RuntimeHelper.downcallHandle(
+        "GetCIMSSM",
+        constants$453.GetCIMSSM$FUNC
     );
-    static final FunctionDescriptor CertEnumSystemStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetAutoRotationState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertEnumSystemStore$MH = RuntimeHelper.downcallHandle(
-        "CertEnumSystemStore",
-        constants$453.CertEnumSystemStore$FUNC
+    static final MethodHandle GetAutoRotationState$MH = RuntimeHelper.downcallHandle(
+        "GetAutoRotationState",
+        constants$453.GetAutoRotationState$FUNC
     );
-    static final FunctionDescriptor CertEnumPhysicalStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDisplayAutoRotationPreferences$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDisplayAutoRotationPreferences$MH = RuntimeHelper.downcallHandle(
+        "GetDisplayAutoRotationPreferences",
+        constants$453.GetDisplayAutoRotationPreferences$FUNC
+    );
+    static final FunctionDescriptor GetDisplayAutoRotationPreferencesByProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertEnumPhysicalStore$MH = RuntimeHelper.downcallHandle(
-        "CertEnumPhysicalStore",
-        constants$453.CertEnumPhysicalStore$FUNC
+    static final MethodHandle GetDisplayAutoRotationPreferencesByProcessId$MH = RuntimeHelper.downcallHandle(
+        "GetDisplayAutoRotationPreferencesByProcessId",
+        constants$453.GetDisplayAutoRotationPreferencesByProcessId$FUNC
     );
 }
 

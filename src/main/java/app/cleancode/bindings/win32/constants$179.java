@@ -9,53 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$179 {
 
-    static final FunctionDescriptor GetPixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LocalCompact$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LocalCompact$MH = RuntimeHelper.downcallHandle(
+        "LocalCompact",
+        constants$179.LocalCompact$FUNC
+    );
+    static final FunctionDescriptor GetBinaryTypeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPixelFormat$MH = RuntimeHelper.downcallHandle(
-        "GetPixelFormat",
-        constants$179.GetPixelFormat$FUNC
+    static final MethodHandle GetBinaryTypeA$MH = RuntimeHelper.downcallHandle(
+        "GetBinaryTypeA",
+        constants$179.GetBinaryTypeA$FUNC
     );
-    static final FunctionDescriptor GetPolyFillMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetBinaryTypeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPolyFillMode$MH = RuntimeHelper.downcallHandle(
-        "GetPolyFillMode",
-        constants$179.GetPolyFillMode$FUNC
+    static final MethodHandle GetBinaryTypeW$MH = RuntimeHelper.downcallHandle(
+        "GetBinaryTypeW",
+        constants$179.GetBinaryTypeW$FUNC
     );
-    static final FunctionDescriptor GetRasterizerCaps$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetShortPathNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetRasterizerCaps$MH = RuntimeHelper.downcallHandle(
-        "GetRasterizerCaps",
-        constants$179.GetRasterizerCaps$FUNC
+    static final MethodHandle GetShortPathNameA$MH = RuntimeHelper.downcallHandle(
+        "GetShortPathNameA",
+        constants$179.GetShortPathNameA$FUNC
     );
-    static final FunctionDescriptor GetRandomRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetLongPathNameTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetRandomRgn$MH = RuntimeHelper.downcallHandle(
-        "GetRandomRgn",
-        constants$179.GetRandomRgn$FUNC
-    );
-    static final FunctionDescriptor GetRegionData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetRegionData$MH = RuntimeHelper.downcallHandle(
-        "GetRegionData",
-        constants$179.GetRegionData$FUNC
+    static final MethodHandle GetLongPathNameTransactedA$MH = RuntimeHelper.downcallHandle(
+        "GetLongPathNameTransactedA",
+        constants$179.GetLongPathNameTransactedA$FUNC
     );
-    static final FunctionDescriptor GetRgnBox$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetLongPathNameTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetRgnBox$MH = RuntimeHelper.downcallHandle(
-        "GetRgnBox",
-        constants$179.GetRgnBox$FUNC
+    static final MethodHandle GetLongPathNameTransactedW$MH = RuntimeHelper.downcallHandle(
+        "GetLongPathNameTransactedW",
+        constants$179.GetLongPathNameTransactedW$FUNC
     );
 }
 

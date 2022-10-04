@@ -9,48 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$381 {
 
-    static final FunctionDescriptor RegCloseKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegCloseKey$MH = RuntimeHelper.downcallHandle(
-        "RegCloseKey",
-        constants$381.RegCloseKey$FUNC
-    );
-    static final FunctionDescriptor RegOverridePredefKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPointerPenInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegOverridePredefKey$MH = RuntimeHelper.downcallHandle(
-        "RegOverridePredefKey",
-        constants$381.RegOverridePredefKey$FUNC
+    static final MethodHandle GetPointerPenInfoHistory$MH = RuntimeHelper.downcallHandle(
+        "GetPointerPenInfoHistory",
+        constants$381.GetPointerPenInfoHistory$FUNC
     );
-    static final FunctionDescriptor RegOpenUserClassesRoot$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPointerFramePenInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegOpenUserClassesRoot$MH = RuntimeHelper.downcallHandle(
-        "RegOpenUserClassesRoot",
-        constants$381.RegOpenUserClassesRoot$FUNC
+    static final MethodHandle GetPointerFramePenInfo$MH = RuntimeHelper.downcallHandle(
+        "GetPointerFramePenInfo",
+        constants$381.GetPointerFramePenInfo$FUNC
     );
-    static final FunctionDescriptor RegOpenCurrentUser$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPointerFramePenInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegOpenCurrentUser$MH = RuntimeHelper.downcallHandle(
-        "RegOpenCurrentUser",
-        constants$381.RegOpenCurrentUser$FUNC
+    static final MethodHandle GetPointerFramePenInfoHistory$MH = RuntimeHelper.downcallHandle(
+        "GetPointerFramePenInfoHistory",
+        constants$381.GetPointerFramePenInfoHistory$FUNC
     );
-    static final FunctionDescriptor RegDisablePredefinedCache$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle RegDisablePredefinedCache$MH = RuntimeHelper.downcallHandle(
-        "RegDisablePredefinedCache",
-        constants$381.RegDisablePredefinedCache$FUNC
+    static final FunctionDescriptor SkipPointerFrameMessages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final FunctionDescriptor RegDisablePredefinedCacheEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle RegDisablePredefinedCacheEx$MH = RuntimeHelper.downcallHandle(
-        "RegDisablePredefinedCacheEx",
-        constants$381.RegDisablePredefinedCacheEx$FUNC
+    static final MethodHandle SkipPointerFrameMessages$MH = RuntimeHelper.downcallHandle(
+        "SkipPointerFrameMessages",
+        constants$381.SkipPointerFrameMessages$FUNC
+    );
+    static final FunctionDescriptor RegisterPointerInputTarget$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegisterPointerInputTarget$MH = RuntimeHelper.downcallHandle(
+        "RegisterPointerInputTarget",
+        constants$381.RegisterPointerInputTarget$FUNC
+    );
+    static final FunctionDescriptor UnregisterPointerInputTarget$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle UnregisterPointerInputTarget$MH = RuntimeHelper.downcallHandle(
+        "UnregisterPointerInputTarget",
+        constants$381.UnregisterPointerInputTarget$FUNC
     );
 }
 

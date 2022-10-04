@@ -9,52 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$545 {
 
-    static final FunctionDescriptor SetServiceStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ShellExecuteW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ShellExecuteW$MH = RuntimeHelper.downcallHandle(
+        "ShellExecuteW",
+        constants$545.ShellExecuteW$FUNC
+    );
+    static final FunctionDescriptor FindExecutableA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetServiceStatus$MH = RuntimeHelper.downcallHandle(
-        "SetServiceStatus",
-        constants$545.SetServiceStatus$FUNC
+    static final MethodHandle FindExecutableA$MH = RuntimeHelper.downcallHandle(
+        "FindExecutableA",
+        constants$545.FindExecutableA$FUNC
     );
-    static final FunctionDescriptor StartServiceCtrlDispatcherA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle StartServiceCtrlDispatcherA$MH = RuntimeHelper.downcallHandle(
-        "StartServiceCtrlDispatcherA",
-        constants$545.StartServiceCtrlDispatcherA$FUNC
-    );
-    static final FunctionDescriptor StartServiceCtrlDispatcherW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle StartServiceCtrlDispatcherW$MH = RuntimeHelper.downcallHandle(
-        "StartServiceCtrlDispatcherW",
-        constants$545.StartServiceCtrlDispatcherW$FUNC
-    );
-    static final FunctionDescriptor StartServiceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindExecutableW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle StartServiceA$MH = RuntimeHelper.downcallHandle(
-        "StartServiceA",
-        constants$545.StartServiceA$FUNC
-    );
-    static final FunctionDescriptor StartServiceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle StartServiceW$MH = RuntimeHelper.downcallHandle(
-        "StartServiceW",
-        constants$545.StartServiceW$FUNC
+    static final MethodHandle FindExecutableW$MH = RuntimeHelper.downcallHandle(
+        "FindExecutableW",
+        constants$545.FindExecutableW$FUNC
     );
-    static final FunctionDescriptor UnlockServiceDatabase$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ShellAboutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle UnlockServiceDatabase$MH = RuntimeHelper.downcallHandle(
-        "UnlockServiceDatabase",
-        constants$545.UnlockServiceDatabase$FUNC
+    static final MethodHandle ShellAboutA$MH = RuntimeHelper.downcallHandle(
+        "ShellAboutA",
+        constants$545.ShellAboutA$FUNC
+    );
+    static final FunctionDescriptor ShellAboutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ShellAboutW$MH = RuntimeHelper.downcallHandle(
+        "ShellAboutW",
+        constants$545.ShellAboutW$FUNC
+    );
+    static final FunctionDescriptor DuplicateIcon$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DuplicateIcon$MH = RuntimeHelper.downcallHandle(
+        "DuplicateIcon",
+        constants$545.DuplicateIcon$FUNC
     );
 }
 

@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$606 {
 
-    static final MemorySegment szOID_OIWSEC_desOFB$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.8");
-    static final MemorySegment szOID_OIWSEC_desCFB$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.9");
-    static final MemorySegment szOID_OIWSEC_desMAC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.10");
-    static final MemorySegment szOID_OIWSEC_rsaSign$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.11");
-    static final MemorySegment szOID_OIWSEC_dsa$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.12");
-    static final MemorySegment szOID_OIWSEC_shaDSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.13");
+    static final FunctionDescriptor CertEnumPhysicalStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertEnumPhysicalStore$MH = RuntimeHelper.downcallHandle(
+        "CertEnumPhysicalStore",
+        constants$606.CertEnumPhysicalStore$FUNC
+    );
+    static final FunctionDescriptor CertGetEnhancedKeyUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetEnhancedKeyUsage$MH = RuntimeHelper.downcallHandle(
+        "CertGetEnhancedKeyUsage",
+        constants$606.CertGetEnhancedKeyUsage$FUNC
+    );
+    static final FunctionDescriptor CertSetEnhancedKeyUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertSetEnhancedKeyUsage$MH = RuntimeHelper.downcallHandle(
+        "CertSetEnhancedKeyUsage",
+        constants$606.CertSetEnhancedKeyUsage$FUNC
+    );
+    static final FunctionDescriptor CertAddEnhancedKeyUsageIdentifier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddEnhancedKeyUsageIdentifier$MH = RuntimeHelper.downcallHandle(
+        "CertAddEnhancedKeyUsageIdentifier",
+        constants$606.CertAddEnhancedKeyUsageIdentifier$FUNC
+    );
+    static final FunctionDescriptor CertRemoveEnhancedKeyUsageIdentifier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertRemoveEnhancedKeyUsageIdentifier$MH = RuntimeHelper.downcallHandle(
+        "CertRemoveEnhancedKeyUsageIdentifier",
+        constants$606.CertRemoveEnhancedKeyUsageIdentifier$FUNC
+    );
+    static final FunctionDescriptor CertGetValidUsages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetValidUsages$MH = RuntimeHelper.downcallHandle(
+        "CertGetValidUsages",
+        constants$606.CertGetValidUsages$FUNC
+    );
 }
 
 

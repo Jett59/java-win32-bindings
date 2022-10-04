@@ -9,67 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$449 {
 
-    static final FunctionDescriptor CertFindSubjectInCTL$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetRawInputData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertFindSubjectInCTL$MH = RuntimeHelper.downcallHandle(
-        "CertFindSubjectInCTL",
-        constants$449.CertFindSubjectInCTL$FUNC
+    static final MethodHandle GetRawInputData$MH = RuntimeHelper.downcallHandle(
+        "GetRawInputData",
+        constants$449.GetRawInputData$FUNC
     );
-    static final FunctionDescriptor CertFindCTLInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFindCTLInStore$MH = RuntimeHelper.downcallHandle(
-        "CertFindCTLInStore",
-        constants$449.CertFindCTLInStore$FUNC
-    );
-    static final FunctionDescriptor CertAddEncodedCTLToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddEncodedCTLToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddEncodedCTLToStore",
-        constants$449.CertAddEncodedCTLToStore$FUNC
-    );
-    static final FunctionDescriptor CertAddCTLContextToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddCTLContextToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddCTLContextToStore",
-        constants$449.CertAddCTLContextToStore$FUNC
-    );
-    static final FunctionDescriptor CertSerializeCTLStoreElement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetRawInputDeviceInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertSerializeCTLStoreElement$MH = RuntimeHelper.downcallHandle(
-        "CertSerializeCTLStoreElement",
-        constants$449.CertSerializeCTLStoreElement$FUNC
+    static final MethodHandle GetRawInputDeviceInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetRawInputDeviceInfoA",
+        constants$449.GetRawInputDeviceInfoA$FUNC
     );
-    static final FunctionDescriptor CertDeleteCTLFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetRawInputDeviceInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertDeleteCTLFromStore$MH = RuntimeHelper.downcallHandle(
-        "CertDeleteCTLFromStore",
-        constants$449.CertDeleteCTLFromStore$FUNC
+    static final MethodHandle GetRawInputDeviceInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetRawInputDeviceInfoW",
+        constants$449.GetRawInputDeviceInfoW$FUNC
+    );
+    static final FunctionDescriptor GetRawInputBuffer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetRawInputBuffer$MH = RuntimeHelper.downcallHandle(
+        "GetRawInputBuffer",
+        constants$449.GetRawInputBuffer$FUNC
+    );
+    static final FunctionDescriptor RegisterRawInputDevices$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegisterRawInputDevices$MH = RuntimeHelper.downcallHandle(
+        "RegisterRawInputDevices",
+        constants$449.RegisterRawInputDevices$FUNC
+    );
+    static final FunctionDescriptor GetRegisteredRawInputDevices$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetRegisteredRawInputDevices$MH = RuntimeHelper.downcallHandle(
+        "GetRegisteredRawInputDevices",
+        constants$449.GetRegisteredRawInputDevices$FUNC
     );
 }
 

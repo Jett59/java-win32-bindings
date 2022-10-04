@@ -11,13 +11,13 @@ public interface PFN_CRYPT_ASYNC_PARAM_FREE_FUNC {
 
     void apply(java.lang.foreign.MemoryAddress pszParamOid, java.lang.foreign.MemoryAddress pvParam);
     static MemorySegment allocate(PFN_CRYPT_ASYNC_PARAM_FREE_FUNC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_ASYNC_PARAM_FREE_FUNC.class, fi, constants$470.PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_ASYNC_PARAM_FREE_FUNC.class, fi, constants$622.PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$FUNC, session);
     }
     static PFN_CRYPT_ASYNC_PARAM_FREE_FUNC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pszParamOid, java.lang.foreign.MemoryAddress _pvParam) -> {
             try {
-                constants$470.PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pszParamOid, (java.lang.foreign.Addressable)_pvParam);
+                constants$623.PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pszParamOid, (java.lang.foreign.Addressable)_pvParam);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,71 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$101 {
 
-    static final FunctionDescriptor BackupRead$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TryAcquireSRWLockExclusive$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BackupRead$MH = RuntimeHelper.downcallHandle(
-        "BackupRead",
-        constants$101.BackupRead$FUNC
+    static final MethodHandle TryAcquireSRWLockExclusive$MH = RuntimeHelper.downcallHandle(
+        "TryAcquireSRWLockExclusive",
+        constants$101.TryAcquireSRWLockExclusive$FUNC
     );
-    static final FunctionDescriptor BackupSeek$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor TryAcquireSRWLockShared$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BackupSeek$MH = RuntimeHelper.downcallHandle(
-        "BackupSeek",
-        constants$101.BackupSeek$FUNC
+    static final MethodHandle TryAcquireSRWLockShared$MH = RuntimeHelper.downcallHandle(
+        "TryAcquireSRWLockShared",
+        constants$101.TryAcquireSRWLockShared$FUNC
     );
-    static final FunctionDescriptor BackupWrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InitializeCriticalSection$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BackupWrite$MH = RuntimeHelper.downcallHandle(
-        "BackupWrite",
-        constants$101.BackupWrite$FUNC
+    static final MethodHandle InitializeCriticalSection$MH = RuntimeHelper.downcallHandle(
+        "InitializeCriticalSection",
+        constants$101.InitializeCriticalSection$FUNC
     );
-    static final FunctionDescriptor OpenMutexA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnterCriticalSection$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle OpenMutexA$MH = RuntimeHelper.downcallHandle(
-        "OpenMutexA",
-        constants$101.OpenMutexA$FUNC
+    static final MethodHandle EnterCriticalSection$MH = RuntimeHelper.downcallHandle(
+        "EnterCriticalSection",
+        constants$101.EnterCriticalSection$FUNC
     );
-    static final FunctionDescriptor CreateSemaphoreA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LeaveCriticalSection$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LeaveCriticalSection$MH = RuntimeHelper.downcallHandle(
+        "LeaveCriticalSection",
+        constants$101.LeaveCriticalSection$FUNC
+    );
+    static final FunctionDescriptor InitializeCriticalSectionAndSpinCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateSemaphoreA$MH = RuntimeHelper.downcallHandle(
-        "CreateSemaphoreA",
-        constants$101.CreateSemaphoreA$FUNC
-    );
-    static final FunctionDescriptor OpenSemaphoreA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OpenSemaphoreA$MH = RuntimeHelper.downcallHandle(
-        "OpenSemaphoreA",
-        constants$101.OpenSemaphoreA$FUNC
+    static final MethodHandle InitializeCriticalSectionAndSpinCount$MH = RuntimeHelper.downcallHandle(
+        "InitializeCriticalSectionAndSpinCount",
+        constants$101.InitializeCriticalSectionAndSpinCount$FUNC
     );
 }
 

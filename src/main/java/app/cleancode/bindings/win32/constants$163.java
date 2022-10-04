@@ -9,60 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$163 {
 
-    static final FunctionDescriptor CreateDCW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetPrivateObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrivateObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateObjectSecurity",
+        constants$163.GetPrivateObjectSecurity$FUNC
+    );
+    static final FunctionDescriptor GetSecurityDescriptorControl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetSecurityDescriptorControl$MH = RuntimeHelper.downcallHandle(
+        "GetSecurityDescriptorControl",
+        constants$163.GetSecurityDescriptorControl$FUNC
+    );
+    static final FunctionDescriptor GetSecurityDescriptorDacl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateDCW$MH = RuntimeHelper.downcallHandle(
-        "CreateDCW",
-        constants$163.CreateDCW$FUNC
+    static final MethodHandle GetSecurityDescriptorDacl$MH = RuntimeHelper.downcallHandle(
+        "GetSecurityDescriptorDacl",
+        constants$163.GetSecurityDescriptorDacl$FUNC
     );
-    static final FunctionDescriptor CreateDIBitmap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetSecurityDescriptorGroup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateDIBitmap$MH = RuntimeHelper.downcallHandle(
-        "CreateDIBitmap",
-        constants$163.CreateDIBitmap$FUNC
-    );
-    static final FunctionDescriptor CreateDIBPatternBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateDIBPatternBrush$MH = RuntimeHelper.downcallHandle(
-        "CreateDIBPatternBrush",
-        constants$163.CreateDIBPatternBrush$FUNC
-    );
-    static final FunctionDescriptor CreateDIBPatternBrushPt$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateDIBPatternBrushPt$MH = RuntimeHelper.downcallHandle(
-        "CreateDIBPatternBrushPt",
-        constants$163.CreateDIBPatternBrushPt$FUNC
-    );
-    static final FunctionDescriptor CreateEllipticRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateEllipticRgn$MH = RuntimeHelper.downcallHandle(
-        "CreateEllipticRgn",
-        constants$163.CreateEllipticRgn$FUNC
-    );
-    static final FunctionDescriptor CreateEllipticRgnIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateEllipticRgnIndirect$MH = RuntimeHelper.downcallHandle(
-        "CreateEllipticRgnIndirect",
-        constants$163.CreateEllipticRgnIndirect$FUNC
+    static final MethodHandle GetSecurityDescriptorGroup$MH = RuntimeHelper.downcallHandle(
+        "GetSecurityDescriptorGroup",
+        constants$163.GetSecurityDescriptorGroup$FUNC
+    );
+    static final FunctionDescriptor GetSecurityDescriptorLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetSecurityDescriptorLength$MH = RuntimeHelper.downcallHandle(
+        "GetSecurityDescriptorLength",
+        constants$163.GetSecurityDescriptorLength$FUNC
+    );
+    static final FunctionDescriptor GetSecurityDescriptorOwner$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetSecurityDescriptorOwner$MH = RuntimeHelper.downcallHandle(
+        "GetSecurityDescriptorOwner",
+        constants$163.GetSecurityDescriptorOwner$FUNC
     );
 }
 

@@ -9,61 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$447 {
 
-    static final FunctionDescriptor CertAddEncodedCRLToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMenuBarInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertAddEncodedCRLToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddEncodedCRLToStore",
-        constants$447.CertAddEncodedCRLToStore$FUNC
+    static final MethodHandle GetMenuBarInfo$MH = RuntimeHelper.downcallHandle(
+        "GetMenuBarInfo",
+        constants$447.GetMenuBarInfo$FUNC
     );
-    static final FunctionDescriptor CertAddCRLContextToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddCRLContextToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddCRLContextToStore",
-        constants$447.CertAddCRLContextToStore$FUNC
-    );
-    static final FunctionDescriptor CertDeleteCRLFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertDeleteCRLFromStore$MH = RuntimeHelper.downcallHandle(
-        "CertDeleteCRLFromStore",
-        constants$447.CertDeleteCRLFromStore$FUNC
-    );
-    static final FunctionDescriptor CertSerializeCertificateStoreElement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetScrollBarInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetScrollBarInfo$MH = RuntimeHelper.downcallHandle(
+        "GetScrollBarInfo",
+        constants$447.GetScrollBarInfo$FUNC
+    );
+    static final FunctionDescriptor GetComboBoxInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertSerializeCertificateStoreElement$MH = RuntimeHelper.downcallHandle(
-        "CertSerializeCertificateStoreElement",
-        constants$447.CertSerializeCertificateStoreElement$FUNC
+    static final MethodHandle GetComboBoxInfo$MH = RuntimeHelper.downcallHandle(
+        "GetComboBoxInfo",
+        constants$447.GetComboBoxInfo$FUNC
     );
-    static final FunctionDescriptor CertSerializeCRLStoreElement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetAncestor$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetAncestor$MH = RuntimeHelper.downcallHandle(
+        "GetAncestor",
+        constants$447.GetAncestor$FUNC
+    );
+    static final FunctionDescriptor RealChildWindowFromPoint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("x"),
+            Constants$root.C_LONG$LAYOUT.withName("y")
+        ).withName("tagPOINT")
     );
-    static final MethodHandle CertSerializeCRLStoreElement$MH = RuntimeHelper.downcallHandle(
-        "CertSerializeCRLStoreElement",
-        constants$447.CertSerializeCRLStoreElement$FUNC
+    static final MethodHandle RealChildWindowFromPoint$MH = RuntimeHelper.downcallHandle(
+        "RealChildWindowFromPoint",
+        constants$447.RealChildWindowFromPoint$FUNC
     );
-    static final FunctionDescriptor CertDuplicateCTLContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor RealGetWindowClassA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertDuplicateCTLContext$MH = RuntimeHelper.downcallHandle(
-        "CertDuplicateCTLContext",
-        constants$447.CertDuplicateCTLContext$FUNC
+    static final MethodHandle RealGetWindowClassA$MH = RuntimeHelper.downcallHandle(
+        "RealGetWindowClassA",
+        constants$447.RealGetWindowClassA$FUNC
     );
 }
 

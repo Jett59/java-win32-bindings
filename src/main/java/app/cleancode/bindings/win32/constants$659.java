@@ -9,12 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$659 {
 
-    static final MemorySegment szOID_PLATFORM_MANIFEST_BINARY_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.28");
-    static final MemorySegment szOID_DRM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.5.1");
-    static final MemorySegment szOID_DRM_INDIVIDUALIZATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.5.2");
-    static final MemorySegment szOID_LICENSES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.6.1");
-    static final MemorySegment szOID_LICENSE_SERVER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.6.2");
-    static final MemorySegment szOID_KP_SMARTCARD_LOGON$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2.2");
+    static final FunctionDescriptor SCardGetDeviceTypeIdA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetDeviceTypeIdA$MH = RuntimeHelper.downcallHandle(
+        "SCardGetDeviceTypeIdA",
+        constants$659.SCardGetDeviceTypeIdA$FUNC
+    );
+    static final FunctionDescriptor SCardGetDeviceTypeIdW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetDeviceTypeIdW$MH = RuntimeHelper.downcallHandle(
+        "SCardGetDeviceTypeIdW",
+        constants$659.SCardGetDeviceTypeIdW$FUNC
+    );
+    static final FunctionDescriptor SCardGetReaderDeviceInstanceIdA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetReaderDeviceInstanceIdA$MH = RuntimeHelper.downcallHandle(
+        "SCardGetReaderDeviceInstanceIdA",
+        constants$659.SCardGetReaderDeviceInstanceIdA$FUNC
+    );
+    static final FunctionDescriptor SCardGetReaderDeviceInstanceIdW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetReaderDeviceInstanceIdW$MH = RuntimeHelper.downcallHandle(
+        "SCardGetReaderDeviceInstanceIdW",
+        constants$659.SCardGetReaderDeviceInstanceIdW$FUNC
+    );
+    static final FunctionDescriptor SCardListReadersWithDeviceInstanceIdA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListReadersWithDeviceInstanceIdA$MH = RuntimeHelper.downcallHandle(
+        "SCardListReadersWithDeviceInstanceIdA",
+        constants$659.SCardListReadersWithDeviceInstanceIdA$FUNC
+    );
+    static final FunctionDescriptor SCardListReadersWithDeviceInstanceIdW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListReadersWithDeviceInstanceIdW$MH = RuntimeHelper.downcallHandle(
+        "SCardListReadersWithDeviceInstanceIdW",
+        constants$659.SCardListReadersWithDeviceInstanceIdW$FUNC
+    );
 }
 
 

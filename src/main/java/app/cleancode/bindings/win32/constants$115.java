@@ -9,42 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$115 {
 
-    static final FunctionDescriptor PGET_SYSTEM_WOW64_DIRECTORY_W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TerminateThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PGET_SYSTEM_WOW64_DIRECTORY_W$MH = RuntimeHelper.downcallHandle(
-        constants$115.PGET_SYSTEM_WOW64_DIRECTORY_W$FUNC
+    static final MethodHandle TerminateThread$MH = RuntimeHelper.downcallHandle(
+        "TerminateThread",
+        constants$115.TerminateThread$FUNC
     );
-    static final FunctionDescriptor SetDllDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetExitCodeThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetDllDirectoryA$MH = RuntimeHelper.downcallHandle(
-        "SetDllDirectoryA",
-        constants$115.SetDllDirectoryA$FUNC
+    static final MethodHandle GetExitCodeThread$MH = RuntimeHelper.downcallHandle(
+        "GetExitCodeThread",
+        constants$115.GetExitCodeThread$FUNC
     );
-    static final FunctionDescriptor SetDllDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SuspendThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetDllDirectoryW$MH = RuntimeHelper.downcallHandle(
-        "SetDllDirectoryW",
-        constants$115.SetDllDirectoryW$FUNC
+    static final MethodHandle SuspendThread$MH = RuntimeHelper.downcallHandle(
+        "SuspendThread",
+        constants$115.SuspendThread$FUNC
     );
-    static final FunctionDescriptor GetDllDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ResumeThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDllDirectoryA$MH = RuntimeHelper.downcallHandle(
-        "GetDllDirectoryA",
-        constants$115.GetDllDirectoryA$FUNC
+    static final MethodHandle ResumeThread$MH = RuntimeHelper.downcallHandle(
+        "ResumeThread",
+        constants$115.ResumeThread$FUNC
     );
-    static final FunctionDescriptor GetDllDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor TlsAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle TlsAlloc$MH = RuntimeHelper.downcallHandle(
+        "TlsAlloc",
+        constants$115.TlsAlloc$FUNC
     );
-    static final MethodHandle GetDllDirectoryW$MH = RuntimeHelper.downcallHandle(
-        "GetDllDirectoryW",
-        constants$115.GetDllDirectoryW$FUNC
+    static final FunctionDescriptor TlsGetValue$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle TlsGetValue$MH = RuntimeHelper.downcallHandle(
+        "TlsGetValue",
+        constants$115.TlsGetValue$FUNC
     );
 }
 

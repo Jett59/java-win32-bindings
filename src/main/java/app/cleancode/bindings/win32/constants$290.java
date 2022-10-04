@@ -9,63 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$290 {
 
-    static final FunctionDescriptor ModifyMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetWindowOrgEx$MH = RuntimeHelper.downcallHandle(
+        "GetWindowOrgEx",
+        constants$290.GetWindowOrgEx$FUNC
+    );
+    static final FunctionDescriptor IntersectClipRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IntersectClipRect$MH = RuntimeHelper.downcallHandle(
+        "IntersectClipRect",
+        constants$290.IntersectClipRect$FUNC
+    );
+    static final FunctionDescriptor InvertRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ModifyMenuW$MH = RuntimeHelper.downcallHandle(
-        "ModifyMenuW",
-        constants$290.ModifyMenuW$FUNC
+    static final MethodHandle InvertRgn$MH = RuntimeHelper.downcallHandle(
+        "InvertRgn",
+        constants$290.InvertRgn$FUNC
     );
-    static final FunctionDescriptor RemoveMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LineDDA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle LineDDA$MH = RuntimeHelper.downcallHandle(
+        "LineDDA",
+        constants$290.LineDDA$FUNC
+    );
+    static final FunctionDescriptor LineTo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RemoveMenu$MH = RuntimeHelper.downcallHandle(
-        "RemoveMenu",
-        constants$290.RemoveMenu$FUNC
+    static final MethodHandle LineTo$MH = RuntimeHelper.downcallHandle(
+        "LineTo",
+        constants$290.LineTo$FUNC
     );
-    static final FunctionDescriptor DeleteMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MaskBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeleteMenu$MH = RuntimeHelper.downcallHandle(
-        "DeleteMenu",
-        constants$290.DeleteMenu$FUNC
-    );
-    static final FunctionDescriptor SetMenuItemBitmaps$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetMenuItemBitmaps$MH = RuntimeHelper.downcallHandle(
-        "SetMenuItemBitmaps",
-        constants$290.SetMenuItemBitmaps$FUNC
-    );
-    static final FunctionDescriptor GetMenuCheckMarkDimensions$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetMenuCheckMarkDimensions$MH = RuntimeHelper.downcallHandle(
-        "GetMenuCheckMarkDimensions",
-        constants$290.GetMenuCheckMarkDimensions$FUNC
-    );
-    static final FunctionDescriptor TrackPopupMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle TrackPopupMenu$MH = RuntimeHelper.downcallHandle(
-        "TrackPopupMenu",
-        constants$290.TrackPopupMenu$FUNC
+    static final MethodHandle MaskBlt$MH = RuntimeHelper.downcallHandle(
+        "MaskBlt",
+        constants$290.MaskBlt$FUNC
     );
 }
 

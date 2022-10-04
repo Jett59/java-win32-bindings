@@ -9,62 +9,42 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$254 {
 
-    static final FunctionDescriptor MoveWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor WTSIsServerContainer$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT);
+    static final MethodHandle WTSIsServerContainer$MH = RuntimeHelper.downcallHandle(
+        "WTSIsServerContainer",
+        constants$254.WTSIsServerContainer$FUNC
     );
-    static final MethodHandle MoveWindow$MH = RuntimeHelper.downcallHandle(
-        "MoveWindow",
-        constants$254.MoveWindow$FUNC
+    static final FunctionDescriptor GetActiveProcessorGroupCount$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
+    static final MethodHandle GetActiveProcessorGroupCount$MH = RuntimeHelper.downcallHandle(
+        "GetActiveProcessorGroupCount",
+        constants$254.GetActiveProcessorGroupCount$FUNC
     );
-    static final FunctionDescriptor SetWindowPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetMaximumProcessorGroupCount$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
+    static final MethodHandle GetMaximumProcessorGroupCount$MH = RuntimeHelper.downcallHandle(
+        "GetMaximumProcessorGroupCount",
+        constants$254.GetMaximumProcessorGroupCount$FUNC
     );
-    static final MethodHandle SetWindowPos$MH = RuntimeHelper.downcallHandle(
-        "SetWindowPos",
-        constants$254.SetWindowPos$FUNC
+    static final FunctionDescriptor GetActiveProcessorCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final FunctionDescriptor GetWindowPlacement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final MethodHandle GetActiveProcessorCount$MH = RuntimeHelper.downcallHandle(
+        "GetActiveProcessorCount",
+        constants$254.GetActiveProcessorCount$FUNC
+    );
+    static final FunctionDescriptor GetMaximumProcessorCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle GetMaximumProcessorCount$MH = RuntimeHelper.downcallHandle(
+        "GetMaximumProcessorCount",
+        constants$254.GetMaximumProcessorCount$FUNC
+    );
+    static final FunctionDescriptor GetNumaProcessorNode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWindowPlacement$MH = RuntimeHelper.downcallHandle(
-        "GetWindowPlacement",
-        constants$254.GetWindowPlacement$FUNC
-    );
-    static final FunctionDescriptor SetWindowPlacement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetWindowPlacement$MH = RuntimeHelper.downcallHandle(
-        "SetWindowPlacement",
-        constants$254.SetWindowPlacement$FUNC
-    );
-    static final FunctionDescriptor GetWindowDisplayAffinity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetWindowDisplayAffinity$MH = RuntimeHelper.downcallHandle(
-        "GetWindowDisplayAffinity",
-        constants$254.GetWindowDisplayAffinity$FUNC
-    );
-    static final FunctionDescriptor SetWindowDisplayAffinity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetWindowDisplayAffinity$MH = RuntimeHelper.downcallHandle(
-        "SetWindowDisplayAffinity",
-        constants$254.SetWindowDisplayAffinity$FUNC
+    static final MethodHandle GetNumaProcessorNode$MH = RuntimeHelper.downcallHandle(
+        "GetNumaProcessorNode",
+        constants$254.GetNumaProcessorNode$FUNC
     );
 }
 

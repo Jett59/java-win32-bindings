@@ -9,59 +9,24 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$458 {
 
-    static final FunctionDescriptor CryptSignCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DATEFMT_ENUMPROCEXA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DATEFMT_ENUMPROCEXA$MH = RuntimeHelper.downcallHandle(
+        constants$458.DATEFMT_ENUMPROCEXA$FUNC
+    );
+    static final FunctionDescriptor TIMEFMT_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptSignCertificate$MH = RuntimeHelper.downcallHandle(
-        "CryptSignCertificate",
-        constants$458.CryptSignCertificate$FUNC
+    static final MethodHandle TIMEFMT_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$458.TIMEFMT_ENUMPROCA$FUNC
     );
-    static final FunctionDescriptor CryptSignAndEncodeCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CALINFO_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptSignAndEncodeCertificate$MH = RuntimeHelper.downcallHandle(
-        "CryptSignAndEncodeCertificate",
-        constants$458.CryptSignAndEncodeCertificate$FUNC
-    );
-    static final FunctionDescriptor PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$458.PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$FUNC
-    );
-    static final FunctionDescriptor PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$458.PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$FUNC
+    static final MethodHandle CALINFO_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$458.CALINFO_ENUMPROCA$FUNC
     );
 }
 

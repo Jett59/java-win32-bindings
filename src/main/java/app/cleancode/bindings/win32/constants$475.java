@@ -9,67 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$475 {
 
-    static final FunctionDescriptor PFN_CRYPT_ENUM_KEYID_PROP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor NotifyUILanguageChange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_ENUM_KEYID_PROP$MH = RuntimeHelper.downcallHandle(
-        constants$475.PFN_CRYPT_ENUM_KEYID_PROP$FUNC
+    static final MethodHandle NotifyUILanguageChange$MH = RuntimeHelper.downcallHandle(
+        "NotifyUILanguageChange",
+        constants$475.NotifyUILanguageChange$FUNC
     );
-    static final FunctionDescriptor CryptEnumKeyIdentifierProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetStringTypeExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptEnumKeyIdentifierProperties$MH = RuntimeHelper.downcallHandle(
-        "CryptEnumKeyIdentifierProperties",
-        constants$475.CryptEnumKeyIdentifierProperties$FUNC
+    static final MethodHandle GetStringTypeExA$MH = RuntimeHelper.downcallHandle(
+        "GetStringTypeExA",
+        constants$475.GetStringTypeExA$FUNC
     );
-    static final FunctionDescriptor CryptCreateKeyIdentifierFromCSP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetStringTypeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetStringTypeA$MH = RuntimeHelper.downcallHandle(
+        "GetStringTypeA",
+        constants$475.GetStringTypeA$FUNC
+    );
+    static final FunctionDescriptor FoldStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptCreateKeyIdentifierFromCSP$MH = RuntimeHelper.downcallHandle(
-        "CryptCreateKeyIdentifierFromCSP",
-        constants$475.CryptCreateKeyIdentifierFromCSP$FUNC
-    );
-    static final FunctionDescriptor CertCreateCertificateChainEngine$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertCreateCertificateChainEngine$MH = RuntimeHelper.downcallHandle(
-        "CertCreateCertificateChainEngine",
-        constants$475.CertCreateCertificateChainEngine$FUNC
+    static final MethodHandle FoldStringA$MH = RuntimeHelper.downcallHandle(
+        "FoldStringA",
+        constants$475.FoldStringA$FUNC
     );
-    static final FunctionDescriptor CertFreeCertificateChainEngine$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor EnumSystemLocalesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertFreeCertificateChainEngine$MH = RuntimeHelper.downcallHandle(
-        "CertFreeCertificateChainEngine",
-        constants$475.CertFreeCertificateChainEngine$FUNC
+    static final MethodHandle EnumSystemLocalesA$MH = RuntimeHelper.downcallHandle(
+        "EnumSystemLocalesA",
+        constants$475.EnumSystemLocalesA$FUNC
     );
-    static final FunctionDescriptor CertResyncCertificateChainEngine$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor EnumSystemLocalesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertResyncCertificateChainEngine$MH = RuntimeHelper.downcallHandle(
-        "CertResyncCertificateChainEngine",
-        constants$475.CertResyncCertificateChainEngine$FUNC
+    static final MethodHandle EnumSystemLocalesW$MH = RuntimeHelper.downcallHandle(
+        "EnumSystemLocalesW",
+        constants$475.EnumSystemLocalesW$FUNC
     );
 }
 

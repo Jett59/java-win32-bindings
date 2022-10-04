@@ -11,13 +11,13 @@ public interface UILANGUAGE_ENUMPROCA {
 
     int apply(java.lang.foreign.MemoryAddress _x0, long _x1);
     static MemorySegment allocate(UILANGUAGE_ENUMPROCA fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(UILANGUAGE_ENUMPROCA.class, fi, constants$352.UILANGUAGE_ENUMPROCA$FUNC, session);
+        return RuntimeHelper.upcallStub(UILANGUAGE_ENUMPROCA.class, fi, constants$457.UILANGUAGE_ENUMPROCA$FUNC, session);
     }
     static UILANGUAGE_ENUMPROCA ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, long __x1) -> {
             try {
-                return (int)constants$352.UILANGUAGE_ENUMPROCA$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1);
+                return (int)constants$457.UILANGUAGE_ENUMPROCA$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

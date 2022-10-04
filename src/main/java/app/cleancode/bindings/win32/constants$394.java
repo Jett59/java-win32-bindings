@@ -9,63 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$394 {
 
-    static final FunctionDescriptor RegLoadAppKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegLoadAppKeyA$MH = RuntimeHelper.downcallHandle(
-        "RegLoadAppKeyA",
-        constants$394.RegLoadAppKeyA$FUNC
+    static final MethodHandle RemoveMenu$MH = RuntimeHelper.downcallHandle(
+        "RemoveMenu",
+        constants$394.RemoveMenu$FUNC
     );
-    static final FunctionDescriptor RegLoadAppKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeleteMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegLoadAppKeyW$MH = RuntimeHelper.downcallHandle(
-        "RegLoadAppKeyW",
-        constants$394.RegLoadAppKeyW$FUNC
+    static final MethodHandle DeleteMenu$MH = RuntimeHelper.downcallHandle(
+        "DeleteMenu",
+        constants$394.DeleteMenu$FUNC
     );
-    static final FunctionDescriptor InitiateSystemShutdownA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle InitiateSystemShutdownA$MH = RuntimeHelper.downcallHandle(
-        "InitiateSystemShutdownA",
-        constants$394.InitiateSystemShutdownA$FUNC
-    );
-    static final FunctionDescriptor InitiateSystemShutdownW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetMenuItemBitmaps$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle InitiateSystemShutdownW$MH = RuntimeHelper.downcallHandle(
-        "InitiateSystemShutdownW",
-        constants$394.InitiateSystemShutdownW$FUNC
-    );
-    static final FunctionDescriptor AbortSystemShutdownA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AbortSystemShutdownA$MH = RuntimeHelper.downcallHandle(
-        "AbortSystemShutdownA",
-        constants$394.AbortSystemShutdownA$FUNC
+    static final MethodHandle SetMenuItemBitmaps$MH = RuntimeHelper.downcallHandle(
+        "SetMenuItemBitmaps",
+        constants$394.SetMenuItemBitmaps$FUNC
     );
-    static final FunctionDescriptor AbortSystemShutdownW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMenuCheckMarkDimensions$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetMenuCheckMarkDimensions$MH = RuntimeHelper.downcallHandle(
+        "GetMenuCheckMarkDimensions",
+        constants$394.GetMenuCheckMarkDimensions$FUNC
+    );
+    static final FunctionDescriptor TrackPopupMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AbortSystemShutdownW$MH = RuntimeHelper.downcallHandle(
-        "AbortSystemShutdownW",
-        constants$394.AbortSystemShutdownW$FUNC
+    static final MethodHandle TrackPopupMenu$MH = RuntimeHelper.downcallHandle(
+        "TrackPopupMenu",
+        constants$394.TrackPopupMenu$FUNC
+    );
+    static final FunctionDescriptor TrackPopupMenuEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle TrackPopupMenuEx$MH = RuntimeHelper.downcallHandle(
+        "TrackPopupMenuEx",
+        constants$394.TrackPopupMenuEx$FUNC
     );
 }
 

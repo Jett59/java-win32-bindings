@@ -9,62 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$239 {
 
-    static final FunctionDescriptor TrackMouseEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle TrackMouseEvent$MH = RuntimeHelper.downcallHandle(
-        "TrackMouseEvent",
-        constants$239.TrackMouseEvent$FUNC
-    );
-    static final FunctionDescriptor DrawEdge$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDefaultCommConfigA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DrawEdge$MH = RuntimeHelper.downcallHandle(
-        "DrawEdge",
-        constants$239.DrawEdge$FUNC
-    );
-    static final FunctionDescriptor DrawFrameControl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DrawFrameControl$MH = RuntimeHelper.downcallHandle(
-        "DrawFrameControl",
-        constants$239.DrawFrameControl$FUNC
-    );
-    static final FunctionDescriptor DrawCaption$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DrawCaption$MH = RuntimeHelper.downcallHandle(
-        "DrawCaption",
-        constants$239.DrawCaption$FUNC
-    );
-    static final FunctionDescriptor DrawAnimatedRects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DrawAnimatedRects$MH = RuntimeHelper.downcallHandle(
-        "DrawAnimatedRects",
-        constants$239.DrawAnimatedRects$FUNC
+    static final MethodHandle GetDefaultCommConfigA$MH = RuntimeHelper.downcallHandle(
+        "GetDefaultCommConfigA",
+        constants$239.GetDefaultCommConfigA$FUNC
     );
-    static final FunctionDescriptor GetMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDefaultCommConfigW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDefaultCommConfigW$MH = RuntimeHelper.downcallHandle(
+        "GetDefaultCommConfigW",
+        constants$239.GetDefaultCommConfigW$FUNC
+    );
+    static final FunctionDescriptor SetDefaultCommConfigA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetMessageA$MH = RuntimeHelper.downcallHandle(
-        "GetMessageA",
-        constants$239.GetMessageA$FUNC
+    static final MethodHandle SetDefaultCommConfigA$MH = RuntimeHelper.downcallHandle(
+        "SetDefaultCommConfigA",
+        constants$239.SetDefaultCommConfigA$FUNC
+    );
+    static final FunctionDescriptor SetDefaultCommConfigW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDefaultCommConfigW$MH = RuntimeHelper.downcallHandle(
+        "SetDefaultCommConfigW",
+        constants$239.SetDefaultCommConfigW$FUNC
+    );
+    static final FunctionDescriptor GetComputerNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetComputerNameA$MH = RuntimeHelper.downcallHandle(
+        "GetComputerNameA",
+        constants$239.GetComputerNameA$FUNC
+    );
+    static final FunctionDescriptor GetComputerNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetComputerNameW$MH = RuntimeHelper.downcallHandle(
+        "GetComputerNameW",
+        constants$239.GetComputerNameW$FUNC
     );
 }
 

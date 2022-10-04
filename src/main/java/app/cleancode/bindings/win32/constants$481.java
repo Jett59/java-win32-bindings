@@ -9,37 +9,40 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$481 {
 
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DATEFMT_ENUMPROCEXEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH$MH = RuntimeHelper.downcallHandle(
-        constants$481.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH$FUNC
+    static final MethodHandle DATEFMT_ENUMPROCEXEX$MH = RuntimeHelper.downcallHandle(
+        constants$481.DATEFMT_ENUMPROCEXEX$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_GET$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumDateFormatsExEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_GET$MH = RuntimeHelper.downcallHandle(
-        constants$481.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_GET$FUNC
+    static final MethodHandle EnumDateFormatsExEx$MH = RuntimeHelper.downcallHandle(
+        "EnumDateFormatsExEx",
+        constants$481.EnumDateFormatsExEx$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_RELEASE$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor TIMEFMT_ENUMPROCEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle TIMEFMT_ENUMPROCEX$MH = RuntimeHelper.downcallHandle(
+        constants$481.TIMEFMT_ENUMPROCEX$FUNC
+    );
+    static final FunctionDescriptor EnumTimeFormatsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_RELEASE$MH = RuntimeHelper.downcallHandle(
-        constants$481.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_RELEASE$FUNC
-    );
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final MethodHandle EnumTimeFormatsEx$MH = RuntimeHelper.downcallHandle(
+        "EnumTimeFormatsEx",
+        constants$481.EnumTimeFormatsEx$FUNC
     );
 }
 

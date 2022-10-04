@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$738 {
 
-    static final MemorySegment PKCS12_PBES2_ALG_AES256_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment PKCS12_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment PKCS12_ENCRYPT_CERTIFICATES_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
-    static final MemoryAddress CERT_RETRIEVE_ISSUER_LOGO$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress CERT_RETRIEVE_SUBJECT_LOGO$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CERT_RETRIEVE_COMMUNITY_LOGO$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress HWND_TOP$ADDR = MemoryAddress.ofLong(0L);
+    static final MemoryAddress HWND_BOTTOM$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress HWND_TOPMOST$ADDR = MemoryAddress.ofLong(-1L);
+    static final MemoryAddress HWND_NOTOPMOST$ADDR = MemoryAddress.ofLong(-2L);
+    static final MemoryAddress HBMMENU_CALLBACK$ADDR = MemoryAddress.ofLong(-1L);
+    static final MemoryAddress HBMMENU_SYSTEM$ADDR = MemoryAddress.ofLong(1L);
 }
 
 

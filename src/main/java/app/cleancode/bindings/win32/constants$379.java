@@ -9,63 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$379 {
 
-    static final FunctionDescriptor GetFileVersionInfoSizeExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InjectTouchInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle InjectTouchInput$MH = RuntimeHelper.downcallHandle(
+        "InjectTouchInput",
+        constants$379.InjectTouchInput$FUNC
+    );
+    static final FunctionDescriptor GetPointerType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerType$MH = RuntimeHelper.downcallHandle(
+        "GetPointerType",
+        constants$379.GetPointerType$FUNC
+    );
+    static final FunctionDescriptor GetPointerCursorId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerCursorId$MH = RuntimeHelper.downcallHandle(
+        "GetPointerCursorId",
+        constants$379.GetPointerCursorId$FUNC
+    );
+    static final FunctionDescriptor GetPointerInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerInfo$MH = RuntimeHelper.downcallHandle(
+        "GetPointerInfo",
+        constants$379.GetPointerInfo$FUNC
+    );
+    static final FunctionDescriptor GetPointerInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetFileVersionInfoSizeExA$MH = RuntimeHelper.downcallHandle(
-        "GetFileVersionInfoSizeExA",
-        constants$379.GetFileVersionInfoSizeExA$FUNC
+    static final MethodHandle GetPointerInfoHistory$MH = RuntimeHelper.downcallHandle(
+        "GetPointerInfoHistory",
+        constants$379.GetPointerInfoHistory$FUNC
     );
-    static final FunctionDescriptor GetFileVersionInfoSizeExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPointerFrameInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetFileVersionInfoSizeExW$MH = RuntimeHelper.downcallHandle(
-        "GetFileVersionInfoSizeExW",
-        constants$379.GetFileVersionInfoSizeExW$FUNC
-    );
-    static final FunctionDescriptor GetFileVersionInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileVersionInfoExA$MH = RuntimeHelper.downcallHandle(
-        "GetFileVersionInfoExA",
-        constants$379.GetFileVersionInfoExA$FUNC
-    );
-    static final FunctionDescriptor GetFileVersionInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileVersionInfoExW$MH = RuntimeHelper.downcallHandle(
-        "GetFileVersionInfoExW",
-        constants$379.GetFileVersionInfoExW$FUNC
-    );
-    static final FunctionDescriptor VerLanguageNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle VerLanguageNameA$MH = RuntimeHelper.downcallHandle(
-        "VerLanguageNameA",
-        constants$379.VerLanguageNameA$FUNC
-    );
-    static final FunctionDescriptor VerLanguageNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle VerLanguageNameW$MH = RuntimeHelper.downcallHandle(
-        "VerLanguageNameW",
-        constants$379.VerLanguageNameW$FUNC
+    static final MethodHandle GetPointerFrameInfo$MH = RuntimeHelper.downcallHandle(
+        "GetPointerFrameInfo",
+        constants$379.GetPointerFrameInfo$FUNC
     );
 }
 

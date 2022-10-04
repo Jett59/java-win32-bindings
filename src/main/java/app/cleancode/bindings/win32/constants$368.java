@@ -9,59 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$368 {
 
-    static final FunctionDescriptor GetThreadUILanguage$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
-    static final MethodHandle GetThreadUILanguage$MH = RuntimeHelper.downcallHandle(
-        "GetThreadUILanguage",
-        constants$368.GetThreadUILanguage$FUNC
-    );
-    static final FunctionDescriptor GetProcessPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetClipboardFormatNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetClipboardFormatNameW$MH = RuntimeHelper.downcallHandle(
+        "GetClipboardFormatNameW",
+        constants$368.GetClipboardFormatNameW$FUNC
+    );
+    static final FunctionDescriptor EmptyClipboard$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle EmptyClipboard$MH = RuntimeHelper.downcallHandle(
+        "EmptyClipboard",
+        constants$368.EmptyClipboard$FUNC
+    );
+    static final FunctionDescriptor IsClipboardFormatAvailable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IsClipboardFormatAvailable$MH = RuntimeHelper.downcallHandle(
+        "IsClipboardFormatAvailable",
+        constants$368.IsClipboardFormatAvailable$FUNC
+    );
+    static final FunctionDescriptor GetPriorityClipboardFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetPriorityClipboardFormat$MH = RuntimeHelper.downcallHandle(
+        "GetPriorityClipboardFormat",
+        constants$368.GetPriorityClipboardFormat$FUNC
+    );
+    static final FunctionDescriptor GetOpenClipboardWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetOpenClipboardWindow$MH = RuntimeHelper.downcallHandle(
+        "GetOpenClipboardWindow",
+        constants$368.GetOpenClipboardWindow$FUNC
+    );
+    static final FunctionDescriptor AddClipboardFormatListener$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetProcessPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
-        "GetProcessPreferredUILanguages",
-        constants$368.GetProcessPreferredUILanguages$FUNC
-    );
-    static final FunctionDescriptor SetProcessPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetProcessPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
-        "SetProcessPreferredUILanguages",
-        constants$368.SetProcessPreferredUILanguages$FUNC
-    );
-    static final FunctionDescriptor GetUserPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetUserPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
-        "GetUserPreferredUILanguages",
-        constants$368.GetUserPreferredUILanguages$FUNC
-    );
-    static final FunctionDescriptor GetSystemPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetSystemPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
-        "GetSystemPreferredUILanguages",
-        constants$368.GetSystemPreferredUILanguages$FUNC
-    );
-    static final FunctionDescriptor GetThreadPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetThreadPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
-        "GetThreadPreferredUILanguages",
-        constants$368.GetThreadPreferredUILanguages$FUNC
+    static final MethodHandle AddClipboardFormatListener$MH = RuntimeHelper.downcallHandle(
+        "AddClipboardFormatListener",
+        constants$368.AddClipboardFormatListener$FUNC
     );
 }
 

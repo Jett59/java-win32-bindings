@@ -9,57 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$493 {
 
-    static final FunctionDescriptor SCardReleaseContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SCardReleaseContext$MH = RuntimeHelper.downcallHandle(
-        "SCardReleaseContext",
-        constants$493.SCardReleaseContext$FUNC
-    );
-    static final FunctionDescriptor SCardIsValidContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SCardIsValidContext$MH = RuntimeHelper.downcallHandle(
-        "SCardIsValidContext",
-        constants$493.SCardIsValidContext$FUNC
-    );
-    static final FunctionDescriptor SCardListReaderGroupsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegDeleteKeyTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardListReaderGroupsA$MH = RuntimeHelper.downcallHandle(
-        "SCardListReaderGroupsA",
-        constants$493.SCardListReaderGroupsA$FUNC
+    static final MethodHandle RegDeleteKeyTransactedA$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteKeyTransactedA",
+        constants$493.RegDeleteKeyTransactedA$FUNC
     );
-    static final FunctionDescriptor SCardListReaderGroupsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegDeleteKeyTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardListReaderGroupsW$MH = RuntimeHelper.downcallHandle(
-        "SCardListReaderGroupsW",
-        constants$493.SCardListReaderGroupsW$FUNC
+    static final MethodHandle RegDeleteKeyTransactedW$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteKeyTransactedW",
+        constants$493.RegDeleteKeyTransactedW$FUNC
     );
-    static final FunctionDescriptor SCardListReadersA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor RegDisableReflectionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegDisableReflectionKey$MH = RuntimeHelper.downcallHandle(
+        "RegDisableReflectionKey",
+        constants$493.RegDisableReflectionKey$FUNC
+    );
+    static final FunctionDescriptor RegEnableReflectionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegEnableReflectionKey$MH = RuntimeHelper.downcallHandle(
+        "RegEnableReflectionKey",
+        constants$493.RegEnableReflectionKey$FUNC
+    );
+    static final FunctionDescriptor RegQueryReflectionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardListReadersA$MH = RuntimeHelper.downcallHandle(
-        "SCardListReadersA",
-        constants$493.SCardListReadersA$FUNC
+    static final MethodHandle RegQueryReflectionKey$MH = RuntimeHelper.downcallHandle(
+        "RegQueryReflectionKey",
+        constants$493.RegQueryReflectionKey$FUNC
     );
-    static final FunctionDescriptor SCardListReadersW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor RegDeleteValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardListReadersW$MH = RuntimeHelper.downcallHandle(
-        "SCardListReadersW",
-        constants$493.SCardListReadersW$FUNC
+    static final MethodHandle RegDeleteValueA$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteValueA",
+        constants$493.RegDeleteValueA$FUNC
     );
 }
 

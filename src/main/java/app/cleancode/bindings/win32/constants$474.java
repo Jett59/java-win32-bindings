@@ -9,80 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$474 {
 
-    static final FunctionDescriptor CryptGetTimeValidObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetThreadPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetThreadPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
+        "SetThreadPreferredUILanguages",
+        constants$474.SetThreadPreferredUILanguages$FUNC
+    );
+    static final FunctionDescriptor GetFileMUIInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptGetTimeValidObject$MH = RuntimeHelper.downcallHandle(
-        "CryptGetTimeValidObject",
-        constants$474.CryptGetTimeValidObject$FUNC
+    static final MethodHandle GetFileMUIInfo$MH = RuntimeHelper.downcallHandle(
+        "GetFileMUIInfo",
+        constants$474.GetFileMUIInfo$FUNC
     );
-    static final FunctionDescriptor CryptFlushTimeValidObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetFileMUIPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptFlushTimeValidObject$MH = RuntimeHelper.downcallHandle(
-        "CryptFlushTimeValidObject",
-        constants$474.CryptFlushTimeValidObject$FUNC
-    );
-    static final FunctionDescriptor CertCreateSelfSignCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertCreateSelfSignCertificate$MH = RuntimeHelper.downcallHandle(
-        "CertCreateSelfSignCertificate",
-        constants$474.CertCreateSelfSignCertificate$FUNC
+    static final MethodHandle GetFileMUIPath$MH = RuntimeHelper.downcallHandle(
+        "GetFileMUIPath",
+        constants$474.GetFileMUIPath$FUNC
     );
-    static final FunctionDescriptor CryptGetKeyIdentifierProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetUILanguageInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptGetKeyIdentifierProperty$MH = RuntimeHelper.downcallHandle(
-        "CryptGetKeyIdentifierProperty",
-        constants$474.CryptGetKeyIdentifierProperty$FUNC
+    static final MethodHandle GetUILanguageInfo$MH = RuntimeHelper.downcallHandle(
+        "GetUILanguageInfo",
+        constants$474.GetUILanguageInfo$FUNC
     );
-    static final FunctionDescriptor CryptSetKeyIdentifierProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadPreferredUILanguages2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptSetKeyIdentifierProperty$MH = RuntimeHelper.downcallHandle(
-        "CryptSetKeyIdentifierProperty",
-        constants$474.CryptSetKeyIdentifierProperty$FUNC
+    static final MethodHandle SetThreadPreferredUILanguages2$MH = RuntimeHelper.downcallHandle(
+        "SetThreadPreferredUILanguages2",
+        constants$474.SetThreadPreferredUILanguages2$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_ENUM_KEYID_PROP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor RestoreThreadPreferredUILanguages$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RestoreThreadPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
+        "RestoreThreadPreferredUILanguages",
+        constants$474.RestoreThreadPreferredUILanguages$FUNC
     );
 }
 

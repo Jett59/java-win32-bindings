@@ -9,47 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$380 {
 
-    static final FunctionDescriptor VerQueryValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetPointerFrameInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle VerQueryValueA$MH = RuntimeHelper.downcallHandle(
-        "VerQueryValueA",
-        constants$380.VerQueryValueA$FUNC
+    static final MethodHandle GetPointerFrameInfoHistory$MH = RuntimeHelper.downcallHandle(
+        "GetPointerFrameInfoHistory",
+        constants$380.GetPointerFrameInfoHistory$FUNC
     );
-    static final FunctionDescriptor VerQueryValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPointerTouchInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerTouchInfo$MH = RuntimeHelper.downcallHandle(
+        "GetPointerTouchInfo",
+        constants$380.GetPointerTouchInfo$FUNC
+    );
+    static final FunctionDescriptor GetPointerTouchInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerTouchInfoHistory$MH = RuntimeHelper.downcallHandle(
+        "GetPointerTouchInfoHistory",
+        constants$380.GetPointerTouchInfoHistory$FUNC
+    );
+    static final FunctionDescriptor GetPointerFrameTouchInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerFrameTouchInfo$MH = RuntimeHelper.downcallHandle(
+        "GetPointerFrameTouchInfo",
+        constants$380.GetPointerFrameTouchInfo$FUNC
+    );
+    static final FunctionDescriptor GetPointerFrameTouchInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle VerQueryValueW$MH = RuntimeHelper.downcallHandle(
-        "VerQueryValueW",
-        constants$380.VerQueryValueW$FUNC
+    static final MethodHandle GetPointerFrameTouchInfoHistory$MH = RuntimeHelper.downcallHandle(
+        "GetPointerFrameTouchInfoHistory",
+        constants$380.GetPointerFrameTouchInfoHistory$FUNC
     );
-    static final FunctionDescriptor QUERYHANDLER$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetPointerPenInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle QUERYHANDLER$MH = RuntimeHelper.downcallHandle(
-        constants$380.QUERYHANDLER$FUNC
-    );
-    static final FunctionDescriptor PQUERYHANDLER$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PQUERYHANDLER$MH = RuntimeHelper.downcallHandle(
-        constants$380.PQUERYHANDLER$FUNC
+    static final MethodHandle GetPointerPenInfo$MH = RuntimeHelper.downcallHandle(
+        "GetPointerPenInfo",
+        constants$380.GetPointerPenInfo$FUNC
     );
 }
 

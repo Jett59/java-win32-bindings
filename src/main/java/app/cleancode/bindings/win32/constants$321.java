@@ -9,54 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$321 {
 
-    static final FunctionDescriptor EnumThreadWindows$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumThreadWindows$MH = RuntimeHelper.downcallHandle(
-        "EnumThreadWindows",
-        constants$321.EnumThreadWindows$FUNC
-    );
-    static final FunctionDescriptor GetClassNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetClassNameA$MH = RuntimeHelper.downcallHandle(
-        "GetClassNameA",
-        constants$321.GetClassNameA$FUNC
-    );
-    static final FunctionDescriptor GetClassNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetClassNameW$MH = RuntimeHelper.downcallHandle(
-        "GetClassNameW",
-        constants$321.GetClassNameW$FUNC
-    );
-    static final FunctionDescriptor GetTopWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTopWindow$MH = RuntimeHelper.downcallHandle(
-        "GetTopWindow",
-        constants$321.GetTopWindow$FUNC
-    );
-    static final FunctionDescriptor GetWindowThreadProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetColorSpace$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWindowThreadProcessId$MH = RuntimeHelper.downcallHandle(
-        "GetWindowThreadProcessId",
-        constants$321.GetWindowThreadProcessId$FUNC
+    static final MethodHandle SetColorSpace$MH = RuntimeHelper.downcallHandle(
+        "SetColorSpace",
+        constants$321.SetColorSpace$FUNC
     );
-    static final FunctionDescriptor IsGUIThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor DeleteColorSpace$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsGUIThread$MH = RuntimeHelper.downcallHandle(
-        "IsGUIThread",
-        constants$321.IsGUIThread$FUNC
+    static final MethodHandle DeleteColorSpace$MH = RuntimeHelper.downcallHandle(
+        "DeleteColorSpace",
+        constants$321.DeleteColorSpace$FUNC
+    );
+    static final FunctionDescriptor GetICMProfileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetICMProfileA$MH = RuntimeHelper.downcallHandle(
+        "GetICMProfileA",
+        constants$321.GetICMProfileA$FUNC
+    );
+    static final FunctionDescriptor GetICMProfileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetICMProfileW$MH = RuntimeHelper.downcallHandle(
+        "GetICMProfileW",
+        constants$321.GetICMProfileW$FUNC
+    );
+    static final FunctionDescriptor SetICMProfileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetICMProfileA$MH = RuntimeHelper.downcallHandle(
+        "SetICMProfileA",
+        constants$321.SetICMProfileA$FUNC
+    );
+    static final FunctionDescriptor SetICMProfileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetICMProfileW$MH = RuntimeHelper.downcallHandle(
+        "SetICMProfileW",
+        constants$321.SetICMProfileW$FUNC
     );
 }
 

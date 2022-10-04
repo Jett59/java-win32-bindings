@@ -9,12 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$706 {
 
-    static final MemorySegment CERT_DISALLOWED_CERT_CTL_FILENAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("disallowedcert.stl");
-    static final MemorySegment CERT_DISALLOWED_CERT_CAB_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("d");
-    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_LIST_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_PIN_RULES_AUTO_UPDATE_SYNC_DELTA_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CERT_PIN_RULES_AUTO_UPDATE_LAST_SYNC_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CERT_PIN_RULES_AUTO_UPDATE_ENCODED_CTL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
+    static final  GroupLayout NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID", constants$706.NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID$LAYOUT);
+    static final  GroupLayout DOMAIN_JOIN_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment DOMAIN_JOIN_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("DOMAIN_JOIN_GUID", constants$706.DOMAIN_JOIN_GUID$LAYOUT);
+    static final  GroupLayout DOMAIN_LEAVE_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment DOMAIN_LEAVE_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("DOMAIN_LEAVE_GUID", constants$706.DOMAIN_LEAVE_GUID$LAYOUT);
+    static final  GroupLayout FIREWALL_PORT_OPEN_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment FIREWALL_PORT_OPEN_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("FIREWALL_PORT_OPEN_GUID", constants$706.FIREWALL_PORT_OPEN_GUID$LAYOUT);
+    static final  GroupLayout FIREWALL_PORT_CLOSE_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment FIREWALL_PORT_CLOSE_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("FIREWALL_PORT_CLOSE_GUID", constants$706.FIREWALL_PORT_CLOSE_GUID$LAYOUT);
+    static final  GroupLayout MACHINE_POLICY_PRESENT_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment MACHINE_POLICY_PRESENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("MACHINE_POLICY_PRESENT_GUID", constants$706.MACHINE_POLICY_PRESENT_GUID$LAYOUT);
 }
 
 

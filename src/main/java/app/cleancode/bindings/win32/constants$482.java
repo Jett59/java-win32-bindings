@@ -9,33 +9,42 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$482 {
 
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor LOCALE_ENUMPROCEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle LOCALE_ENUMPROCEX$MH = RuntimeHelper.downcallHandle(
+        constants$482.LOCALE_ENUMPROCEX$FUNC
+    );
+    static final FunctionDescriptor EnumSystemLocalesEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$MH = RuntimeHelper.downcallHandle(
-        constants$482.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$FUNC
+    static final MethodHandle EnumSystemLocalesEx$MH = RuntimeHelper.downcallHandle(
+        "EnumSystemLocalesEx",
+        constants$482.EnumSystemLocalesEx$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor ResolveLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE$MH = RuntimeHelper.downcallHandle(
-        constants$482.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE$FUNC
+    static final MethodHandle ResolveLocaleName$MH = RuntimeHelper.downcallHandle(
+        "ResolveLocaleName",
+        constants$482.ResolveLocaleName$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor AllocConsole$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle AllocConsole$MH = RuntimeHelper.downcallHandle(
+        "AllocConsole",
+        constants$482.AllocConsole$FUNC
     );
-    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$MH = RuntimeHelper.downcallHandle(
-        constants$482.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$FUNC
-    );
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_INITIALIZE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor FreeConsole$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle FreeConsole$MH = RuntimeHelper.downcallHandle(
+        "FreeConsole",
+        constants$482.FreeConsole$FUNC
     );
 }
 

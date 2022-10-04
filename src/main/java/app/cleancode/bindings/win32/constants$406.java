@@ -9,55 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$406 {
 
-    static final FunctionDescriptor getpeername$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetPropW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle getpeername$MH = RuntimeHelper.downcallHandle(
-        "getpeername",
-        constants$406.getpeername$FUNC
+    static final MethodHandle SetPropW$MH = RuntimeHelper.downcallHandle(
+        "SetPropW",
+        constants$406.SetPropW$FUNC
     );
-    static final FunctionDescriptor getsockname$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetPropA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle getsockname$MH = RuntimeHelper.downcallHandle(
-        "getsockname",
-        constants$406.getsockname$FUNC
+    static final MethodHandle GetPropA$MH = RuntimeHelper.downcallHandle(
+        "GetPropA",
+        constants$406.GetPropA$FUNC
     );
-    static final FunctionDescriptor getsockopt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPropW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle getsockopt$MH = RuntimeHelper.downcallHandle(
-        "getsockopt",
-        constants$406.getsockopt$FUNC
+    static final MethodHandle GetPropW$MH = RuntimeHelper.downcallHandle(
+        "GetPropW",
+        constants$406.GetPropW$FUNC
     );
-    static final FunctionDescriptor htonl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle htonl$MH = RuntimeHelper.downcallHandle(
-        "htonl",
-        constants$406.htonl$FUNC
-    );
-    static final FunctionDescriptor htons$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle htons$MH = RuntimeHelper.downcallHandle(
-        "htons",
-        constants$406.htons$FUNC
-    );
-    static final FunctionDescriptor inet_addr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemovePropA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle inet_addr$MH = RuntimeHelper.downcallHandle(
-        "inet_addr",
-        constants$406.inet_addr$FUNC
+    static final MethodHandle RemovePropA$MH = RuntimeHelper.downcallHandle(
+        "RemovePropA",
+        constants$406.RemovePropA$FUNC
+    );
+    static final FunctionDescriptor RemovePropW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RemovePropW$MH = RuntimeHelper.downcallHandle(
+        "RemovePropW",
+        constants$406.RemovePropW$FUNC
+    );
+    static final FunctionDescriptor EnumPropsExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumPropsExA$MH = RuntimeHelper.downcallHandle(
+        "EnumPropsExA",
+        constants$406.EnumPropsExA$FUNC
     );
 }
 

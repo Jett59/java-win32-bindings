@@ -11,13 +11,13 @@ public interface PFN_CERT_STORE_PROV_FREE_FIND_CRL {
 
     int apply(java.lang.foreign.MemoryAddress hStoreProv, java.lang.foreign.MemoryAddress pCrlContext, java.lang.foreign.MemoryAddress pvStoreProvFindInfo, int dwFlags);
     static MemorySegment allocate(PFN_CERT_STORE_PROV_FREE_FIND_CRL fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_FREE_FIND_CRL.class, fi, constants$440.PFN_CERT_STORE_PROV_FREE_FIND_CRL$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_FREE_FIND_CRL.class, fi, constants$592.PFN_CERT_STORE_PROV_FREE_FIND_CRL$FUNC, session);
     }
     static PFN_CERT_STORE_PROV_FREE_FIND_CRL ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hStoreProv, java.lang.foreign.MemoryAddress _pCrlContext, java.lang.foreign.MemoryAddress _pvStoreProvFindInfo, int _dwFlags) -> {
             try {
-                return (int)constants$440.PFN_CERT_STORE_PROV_FREE_FIND_CRL$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pCrlContext, (java.lang.foreign.Addressable)_pvStoreProvFindInfo, _dwFlags);
+                return (int)constants$592.PFN_CERT_STORE_PROV_FREE_FIND_CRL$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pCrlContext, (java.lang.foreign.Addressable)_pvStoreProvFindInfo, _dwFlags);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

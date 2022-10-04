@@ -9,12 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$569 {
 
-    static final MemoryAddress IDC_SIZE$ADDR = MemoryAddress.ofLong(32640L);
-    static final MemoryAddress IDC_ICON$ADDR = MemoryAddress.ofLong(32641L);
-    static final MemoryAddress IDC_SIZENWSE$ADDR = MemoryAddress.ofLong(32642L);
-    static final MemoryAddress IDC_SIZENESW$ADDR = MemoryAddress.ofLong(32643L);
-    static final MemoryAddress IDC_SIZEWE$ADDR = MemoryAddress.ofLong(32644L);
-    static final MemoryAddress IDC_SIZENS$ADDR = MemoryAddress.ofLong(32645L);
+    static final FunctionDescriptor CryptHashSessionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptHashSessionKey$MH = RuntimeHelper.downcallHandle(
+        "CryptHashSessionKey",
+        constants$569.CryptHashSessionKey$FUNC
+    );
+    static final FunctionDescriptor CryptDestroyHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CryptDestroyHash$MH = RuntimeHelper.downcallHandle(
+        "CryptDestroyHash",
+        constants$569.CryptDestroyHash$FUNC
+    );
+    static final FunctionDescriptor CryptSignHashA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptSignHashA$MH = RuntimeHelper.downcallHandle(
+        "CryptSignHashA",
+        constants$569.CryptSignHashA$FUNC
+    );
+    static final FunctionDescriptor CryptSignHashW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptSignHashW$MH = RuntimeHelper.downcallHandle(
+        "CryptSignHashW",
+        constants$569.CryptSignHashW$FUNC
+    );
+    static final FunctionDescriptor CryptVerifySignatureA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptVerifySignatureA$MH = RuntimeHelper.downcallHandle(
+        "CryptVerifySignatureA",
+        constants$569.CryptVerifySignatureA$FUNC
+    );
+    static final FunctionDescriptor CryptVerifySignatureW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptVerifySignatureW$MH = RuntimeHelper.downcallHandle(
+        "CryptVerifySignatureW",
+        constants$569.CryptVerifySignatureW$FUNC
+    );
 }
 
 

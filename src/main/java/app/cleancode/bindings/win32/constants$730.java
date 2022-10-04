@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$730 {
 
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_PUBLISH_BEFORE_NEXT_UPDATE_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_PUBLISH_RANDOM_INTERVAL_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_MIN_BEFORE_NEXT_UPDATE_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_MIN_AFTER_NEXT_UPDATE_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_GROUP_POLICY_CHAIN_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_URL_RETRIEVAL_TIMEOUT_MILLISECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment DEVICEFAMILYDEVICEFORM_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE$ADDR = MemoryAddress.ofLong(-1L);
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_SYSTEM_AWARE$ADDR = MemoryAddress.ofLong(-2L);
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE$ADDR = MemoryAddress.ofLong(-3L);
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2$ADDR = MemoryAddress.ofLong(-4L);
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED$ADDR = MemoryAddress.ofLong(-5L);
 }
 
 

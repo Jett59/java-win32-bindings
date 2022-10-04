@@ -9,12 +9,74 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$617 {
 
-    static final MemorySegment szOID_POSTAL_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.16");
-    static final MemorySegment szOID_POSTAL_CODE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.17");
-    static final MemorySegment szOID_POST_OFFICE_BOX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.18");
-    static final MemorySegment szOID_PHYSICAL_DELIVERY_OFFICE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.19");
-    static final MemorySegment szOID_TELEPHONE_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.20");
-    static final MemorySegment szOID_TELEX_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.21");
+    static final FunctionDescriptor CryptHashPublicKeyInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptHashPublicKeyInfo$MH = RuntimeHelper.downcallHandle(
+        "CryptHashPublicKeyInfo",
+        constants$617.CryptHashPublicKeyInfo$FUNC
+    );
+    static final FunctionDescriptor CertRDNValueToStrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertRDNValueToStrA$MH = RuntimeHelper.downcallHandle(
+        "CertRDNValueToStrA",
+        constants$617.CertRDNValueToStrA$FUNC
+    );
+    static final FunctionDescriptor CertRDNValueToStrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertRDNValueToStrW$MH = RuntimeHelper.downcallHandle(
+        "CertRDNValueToStrW",
+        constants$617.CertRDNValueToStrW$FUNC
+    );
+    static final FunctionDescriptor CertNameToStrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertNameToStrA$MH = RuntimeHelper.downcallHandle(
+        "CertNameToStrA",
+        constants$617.CertNameToStrA$FUNC
+    );
+    static final FunctionDescriptor CertNameToStrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertNameToStrW$MH = RuntimeHelper.downcallHandle(
+        "CertNameToStrW",
+        constants$617.CertNameToStrW$FUNC
+    );
+    static final FunctionDescriptor CertStrToNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertStrToNameA$MH = RuntimeHelper.downcallHandle(
+        "CertStrToNameA",
+        constants$617.CertStrToNameA$FUNC
+    );
 }
 
 

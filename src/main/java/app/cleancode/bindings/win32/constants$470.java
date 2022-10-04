@@ -9,51 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$470 {
 
-    static final FunctionDescriptor CryptQueryObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetGeoInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle CryptQueryObject$MH = RuntimeHelper.downcallHandle(
-        "CryptQueryObject",
-        constants$470.CryptQueryObject$FUNC
+    static final MethodHandle GetGeoInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetGeoInfoW",
+        constants$470.GetGeoInfoW$FUNC
     );
-    static final FunctionDescriptor CryptMemAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CryptMemAlloc$MH = RuntimeHelper.downcallHandle(
-        "CryptMemAlloc",
-        constants$470.CryptMemAlloc$FUNC
-    );
-    static final FunctionDescriptor CryptMemRealloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetGeoInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptMemRealloc$MH = RuntimeHelper.downcallHandle(
-        "CryptMemRealloc",
-        constants$470.CryptMemRealloc$FUNC
+    static final MethodHandle GetGeoInfoEx$MH = RuntimeHelper.downcallHandle(
+        "GetGeoInfoEx",
+        constants$470.GetGeoInfoEx$FUNC
     );
-    static final FunctionDescriptor CryptMemFree$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor EnumSystemGeoID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptMemFree$MH = RuntimeHelper.downcallHandle(
-        "CryptMemFree",
-        constants$470.CryptMemFree$FUNC
+    static final MethodHandle EnumSystemGeoID$MH = RuntimeHelper.downcallHandle(
+        "EnumSystemGeoID",
+        constants$470.EnumSystemGeoID$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor EnumSystemGeoNames$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$470.PFN_CRYPT_ASYNC_PARAM_FREE_FUNC$FUNC
+    static final MethodHandle EnumSystemGeoNames$MH = RuntimeHelper.downcallHandle(
+        "EnumSystemGeoNames",
+        constants$470.EnumSystemGeoNames$FUNC
+    );
+    static final FunctionDescriptor GetUserGeoID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetUserGeoID$MH = RuntimeHelper.downcallHandle(
+        "GetUserGeoID",
+        constants$470.GetUserGeoID$FUNC
+    );
+    static final FunctionDescriptor GetUserDefaultGeoName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetUserDefaultGeoName$MH = RuntimeHelper.downcallHandle(
+        "GetUserDefaultGeoName",
+        constants$470.GetUserDefaultGeoName$FUNC
     );
 }
 

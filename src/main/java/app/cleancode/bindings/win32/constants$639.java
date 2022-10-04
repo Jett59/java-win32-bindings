@@ -9,12 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$639 {
 
-    static final MemoryAddress CNG_RSA_PRIVATE_KEY_BLOB$ADDR = MemoryAddress.ofLong(83L);
-    static final MemoryAddress X509_SUBJECT_DIR_ATTRS$ADDR = MemoryAddress.ofLong(84L);
-    static final MemoryAddress X509_ECC_PARAMETERS$ADDR = MemoryAddress.ofLong(85L);
-    static final MemoryAddress PKCS7_SIGNER_INFO$ADDR = MemoryAddress.ofLong(500L);
-    static final MemoryAddress CMS_SIGNER_INFO$ADDR = MemoryAddress.ofLong(501L);
-    static final MemorySegment szOID_AUTHORITY_KEY_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.1");
+    static final  GroupLayout GUID_DEVINTERFACE_DISK$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_DISK$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_DISK", constants$639.GUID_DEVINTERFACE_DISK$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_CDROM$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_CDROM$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_CDROM", constants$639.GUID_DEVINTERFACE_CDROM$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_PARTITION$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_PARTITION$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_PARTITION", constants$639.GUID_DEVINTERFACE_PARTITION$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_TAPE$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_TAPE$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_TAPE", constants$639.GUID_DEVINTERFACE_TAPE$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_WRITEONCEDISK$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_WRITEONCEDISK$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_WRITEONCEDISK", constants$639.GUID_DEVINTERFACE_WRITEONCEDISK$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_VOLUME$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_VOLUME$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_VOLUME", constants$639.GUID_DEVINTERFACE_VOLUME$LAYOUT);
 }
 
 

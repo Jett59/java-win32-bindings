@@ -9,68 +9,30 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$329 {
 
-    static final FunctionDescriptor DlgDirListW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PROPENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DlgDirListW$MH = RuntimeHelper.downcallHandle(
-        "DlgDirListW",
-        constants$329.DlgDirListW$FUNC
+    static final MethodHandle PROPENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$329.PROPENUMPROCA$FUNC
     );
-    static final FunctionDescriptor DlgDirSelectExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PROPENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DlgDirSelectExA$MH = RuntimeHelper.downcallHandle(
-        "DlgDirSelectExA",
-        constants$329.DlgDirSelectExA$FUNC
+    static final MethodHandle PROPENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$329.PROPENUMPROCW$FUNC
     );
-    static final FunctionDescriptor DlgDirSelectExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PROPENUMPROCEXA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DlgDirSelectExW$MH = RuntimeHelper.downcallHandle(
-        "DlgDirSelectExW",
-        constants$329.DlgDirSelectExW$FUNC
-    );
-    static final FunctionDescriptor DlgDirListComboBoxA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle DlgDirListComboBoxA$MH = RuntimeHelper.downcallHandle(
-        "DlgDirListComboBoxA",
-        constants$329.DlgDirListComboBoxA$FUNC
-    );
-    static final FunctionDescriptor DlgDirListComboBoxW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DlgDirListComboBoxW$MH = RuntimeHelper.downcallHandle(
-        "DlgDirListComboBoxW",
-        constants$329.DlgDirListComboBoxW$FUNC
-    );
-    static final FunctionDescriptor DlgDirSelectComboBoxExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DlgDirSelectComboBoxExA$MH = RuntimeHelper.downcallHandle(
-        "DlgDirSelectComboBoxExA",
-        constants$329.DlgDirSelectComboBoxExA$FUNC
+    static final MethodHandle PROPENUMPROCEXA$MH = RuntimeHelper.downcallHandle(
+        constants$329.PROPENUMPROCEXA$FUNC
     );
 }
 

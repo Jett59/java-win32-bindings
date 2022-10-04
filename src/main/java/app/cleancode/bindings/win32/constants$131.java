@@ -9,98 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$131 {
 
-    static final FunctionDescriptor AccessCheckByTypeResultListAndAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetLogicalProcessorInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AccessCheckByTypeResultListAndAuditAlarmA$MH = RuntimeHelper.downcallHandle(
-        "AccessCheckByTypeResultListAndAuditAlarmA",
-        constants$131.AccessCheckByTypeResultListAndAuditAlarmA$FUNC
+    static final MethodHandle GetLogicalProcessorInformation$MH = RuntimeHelper.downcallHandle(
+        "GetLogicalProcessorInformation",
+        constants$131.GetLogicalProcessorInformation$FUNC
     );
-    static final FunctionDescriptor AccessCheckByTypeResultListAndAuditAlarmByHandleA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetLogicalProcessorInformationEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AccessCheckByTypeResultListAndAuditAlarmByHandleA$MH = RuntimeHelper.downcallHandle(
-        "AccessCheckByTypeResultListAndAuditAlarmByHandleA",
-        constants$131.AccessCheckByTypeResultListAndAuditAlarmByHandleA$FUNC
+    static final MethodHandle GetLogicalProcessorInformationEx$MH = RuntimeHelper.downcallHandle(
+        "GetLogicalProcessorInformationEx",
+        constants$131.GetLogicalProcessorInformationEx$FUNC
     );
-    static final FunctionDescriptor ObjectOpenAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetNativeSystemInfo$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetNativeSystemInfo$MH = RuntimeHelper.downcallHandle(
+        "GetNativeSystemInfo",
+        constants$131.GetNativeSystemInfo$FUNC
+    );
+    static final FunctionDescriptor GetSystemTimePreciseAsFileTime$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetSystemTimePreciseAsFileTime$MH = RuntimeHelper.downcallHandle(
+        "GetSystemTimePreciseAsFileTime",
+        constants$131.GetSystemTimePreciseAsFileTime$FUNC
+    );
+    static final FunctionDescriptor GetProductInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ObjectOpenAuditAlarmA$MH = RuntimeHelper.downcallHandle(
-        "ObjectOpenAuditAlarmA",
-        constants$131.ObjectOpenAuditAlarmA$FUNC
+    static final MethodHandle GetProductInfo$MH = RuntimeHelper.downcallHandle(
+        "GetProductInfo",
+        constants$131.GetProductInfo$FUNC
     );
-    static final FunctionDescriptor ObjectPrivilegeAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetOsSafeBootMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ObjectPrivilegeAuditAlarmA$MH = RuntimeHelper.downcallHandle(
-        "ObjectPrivilegeAuditAlarmA",
-        constants$131.ObjectPrivilegeAuditAlarmA$FUNC
-    );
-    static final FunctionDescriptor ObjectCloseAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ObjectCloseAuditAlarmA$MH = RuntimeHelper.downcallHandle(
-        "ObjectCloseAuditAlarmA",
-        constants$131.ObjectCloseAuditAlarmA$FUNC
-    );
-    static final FunctionDescriptor ObjectDeleteAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ObjectDeleteAuditAlarmA$MH = RuntimeHelper.downcallHandle(
-        "ObjectDeleteAuditAlarmA",
-        constants$131.ObjectDeleteAuditAlarmA$FUNC
+    static final MethodHandle GetOsSafeBootMode$MH = RuntimeHelper.downcallHandle(
+        "GetOsSafeBootMode",
+        constants$131.GetOsSafeBootMode$FUNC
     );
 }
 

@@ -9,47 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$547 {
 
-    static final FunctionDescriptor SC_NOTIFICATION_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor SHAppBarMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SC_NOTIFICATION_CALLBACK$MH = RuntimeHelper.downcallHandle(
-        constants$547.SC_NOTIFICATION_CALLBACK$FUNC
+    static final MethodHandle SHAppBarMessage$MH = RuntimeHelper.downcallHandle(
+        "SHAppBarMessage",
+        constants$547.SHAppBarMessage$FUNC
     );
-    static final FunctionDescriptor PSC_NOTIFICATION_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor DoEnvironmentSubstA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PSC_NOTIFICATION_CALLBACK$MH = RuntimeHelper.downcallHandle(
-        constants$547.PSC_NOTIFICATION_CALLBACK$FUNC
+    static final MethodHandle DoEnvironmentSubstA$MH = RuntimeHelper.downcallHandle(
+        "DoEnvironmentSubstA",
+        constants$547.DoEnvironmentSubstA$FUNC
     );
-    static final FunctionDescriptor SubscribeServiceChangeNotifications$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DoEnvironmentSubstW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DoEnvironmentSubstW$MH = RuntimeHelper.downcallHandle(
+        "DoEnvironmentSubstW",
+        constants$547.DoEnvironmentSubstW$FUNC
+    );
+    static final FunctionDescriptor ExtractIconExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SubscribeServiceChangeNotifications$MH = RuntimeHelper.downcallHandle(
-        "SubscribeServiceChangeNotifications",
-        constants$547.SubscribeServiceChangeNotifications$FUNC
+    static final MethodHandle ExtractIconExA$MH = RuntimeHelper.downcallHandle(
+        "ExtractIconExA",
+        constants$547.ExtractIconExA$FUNC
     );
-    static final FunctionDescriptor UnsubscribeServiceChangeNotifications$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnsubscribeServiceChangeNotifications$MH = RuntimeHelper.downcallHandle(
-        "UnsubscribeServiceChangeNotifications",
-        constants$547.UnsubscribeServiceChangeNotifications$FUNC
-    );
-    static final FunctionDescriptor WaitServiceState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExtractIconExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ExtractIconExW$MH = RuntimeHelper.downcallHandle(
+        "ExtractIconExW",
+        constants$547.ExtractIconExW$FUNC
+    );
+    static final FunctionDescriptor SHFileOperationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WaitServiceState$MH = RuntimeHelper.downcallHandle(
-        "WaitServiceState",
-        constants$547.WaitServiceState$FUNC
+    static final MethodHandle SHFileOperationA$MH = RuntimeHelper.downcallHandle(
+        "SHFileOperationA",
+        constants$547.SHFileOperationA$FUNC
     );
 }
 

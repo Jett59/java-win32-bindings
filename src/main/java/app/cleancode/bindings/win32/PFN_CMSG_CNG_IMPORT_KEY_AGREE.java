@@ -11,13 +11,13 @@ public interface PFN_CMSG_CNG_IMPORT_KEY_AGREE {
 
     int apply(java.lang.foreign.MemoryAddress pCNGContentDecryptInfo, java.lang.foreign.MemoryAddress pKeyAgreeDecryptPara, int dwFlags, java.lang.foreign.MemoryAddress pvReserved);
     static MemorySegment allocate(PFN_CMSG_CNG_IMPORT_KEY_AGREE fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CMSG_CNG_IMPORT_KEY_AGREE.class, fi, constants$433.PFN_CMSG_CNG_IMPORT_KEY_AGREE$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CMSG_CNG_IMPORT_KEY_AGREE.class, fi, constants$585.PFN_CMSG_CNG_IMPORT_KEY_AGREE$FUNC, session);
     }
     static PFN_CMSG_CNG_IMPORT_KEY_AGREE ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pCNGContentDecryptInfo, java.lang.foreign.MemoryAddress _pKeyAgreeDecryptPara, int _dwFlags, java.lang.foreign.MemoryAddress _pvReserved) -> {
             try {
-                return (int)constants$433.PFN_CMSG_CNG_IMPORT_KEY_AGREE$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pCNGContentDecryptInfo, (java.lang.foreign.Addressable)_pKeyAgreeDecryptPara, _dwFlags, (java.lang.foreign.Addressable)_pvReserved);
+                return (int)constants$585.PFN_CMSG_CNG_IMPORT_KEY_AGREE$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pCNGContentDecryptInfo, (java.lang.foreign.Addressable)_pKeyAgreeDecryptPara, _dwFlags, (java.lang.foreign.Addressable)_pvReserved);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

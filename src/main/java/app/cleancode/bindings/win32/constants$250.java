@@ -9,54 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$250 {
 
-    static final FunctionDescriptor RegisterClassExW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor FindNextVolumeMountPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FindNextVolumeMountPointW$MH = RuntimeHelper.downcallHandle(
+        "FindNextVolumeMountPointW",
+        constants$250.FindNextVolumeMountPointW$FUNC
+    );
+    static final FunctionDescriptor FindVolumeMountPointClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegisterClassExW$MH = RuntimeHelper.downcallHandle(
-        "RegisterClassExW",
-        constants$250.RegisterClassExW$FUNC
+    static final MethodHandle FindVolumeMountPointClose$MH = RuntimeHelper.downcallHandle(
+        "FindVolumeMountPointClose",
+        constants$250.FindVolumeMountPointClose$FUNC
     );
-    static final FunctionDescriptor GetClassInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetClassInfoExA$MH = RuntimeHelper.downcallHandle(
-        "GetClassInfoExA",
-        constants$250.GetClassInfoExA$FUNC
-    );
-    static final FunctionDescriptor GetClassInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetClassInfoExW$MH = RuntimeHelper.downcallHandle(
-        "GetClassInfoExW",
-        constants$250.GetClassInfoExW$FUNC
-    );
-    static final FunctionDescriptor PREGISTERCLASSNAMEW$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PREGISTERCLASSNAMEW$MH = RuntimeHelper.downcallHandle(
-        constants$250.PREGISTERCLASSNAMEW$FUNC
-    );
-    static final FunctionDescriptor CreateWindowExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetVolumeMountPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateWindowExA$MH = RuntimeHelper.downcallHandle(
-        "CreateWindowExA",
-        constants$250.CreateWindowExA$FUNC
+    static final MethodHandle SetVolumeMountPointA$MH = RuntimeHelper.downcallHandle(
+        "SetVolumeMountPointA",
+        constants$250.SetVolumeMountPointA$FUNC
+    );
+    static final FunctionDescriptor SetVolumeMountPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetVolumeMountPointW$MH = RuntimeHelper.downcallHandle(
+        "SetVolumeMountPointW",
+        constants$250.SetVolumeMountPointW$FUNC
+    );
+    static final FunctionDescriptor DeleteVolumeMountPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteVolumeMountPointA$MH = RuntimeHelper.downcallHandle(
+        "DeleteVolumeMountPointA",
+        constants$250.DeleteVolumeMountPointA$FUNC
+    );
+    static final FunctionDescriptor GetVolumeNameForVolumeMountPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetVolumeNameForVolumeMountPointA$MH = RuntimeHelper.downcallHandle(
+        "GetVolumeNameForVolumeMountPointA",
+        constants$250.GetVolumeNameForVolumeMountPointA$FUNC
     );
 }
 

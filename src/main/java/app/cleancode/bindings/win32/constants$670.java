@@ -9,12 +9,78 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$670 {
 
-    static final MemorySegment szOID_ENROLL_SCEP_SERVER_SECRET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.40");
-    static final MemorySegment szOID_ENROLL_KEY_AFFINITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.41");
-    static final MemorySegment szOID_ENROLL_SCEP_SIGNER_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.42");
-    static final MemorySegment szOID_ENROLL_EK_CA_KEYID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.43");
-    static final MemorySegment szOID_ATTR_SUPPORTED_ALGORITHMS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.52");
-    static final MemorySegment szOID_ATTR_TPM_SPECIFICATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.16");
+    static final FunctionDescriptor DocumentPropertiesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DocumentPropertiesA$MH = RuntimeHelper.downcallHandle(
+        "DocumentPropertiesA",
+        constants$670.DocumentPropertiesA$FUNC
+    );
+    static final FunctionDescriptor DocumentPropertiesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DocumentPropertiesW$MH = RuntimeHelper.downcallHandle(
+        "DocumentPropertiesW",
+        constants$670.DocumentPropertiesW$FUNC
+    );
+    static final FunctionDescriptor AdvancedDocumentPropertiesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AdvancedDocumentPropertiesA$MH = RuntimeHelper.downcallHandle(
+        "AdvancedDocumentPropertiesA",
+        constants$670.AdvancedDocumentPropertiesA$FUNC
+    );
+    static final FunctionDescriptor AdvancedDocumentPropertiesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AdvancedDocumentPropertiesW$MH = RuntimeHelper.downcallHandle(
+        "AdvancedDocumentPropertiesW",
+        constants$670.AdvancedDocumentPropertiesW$FUNC
+    );
+    static final FunctionDescriptor ExtDeviceMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ExtDeviceMode$MH = RuntimeHelper.downcallHandle(
+        "ExtDeviceMode",
+        constants$670.ExtDeviceMode$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDataA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDataA$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDataA",
+        constants$670.GetPrinterDataA$FUNC
+    );
 }
 
 

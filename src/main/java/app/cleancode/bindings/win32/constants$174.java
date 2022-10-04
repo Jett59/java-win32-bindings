@@ -9,65 +9,33 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$174 {
 
-    static final FunctionDescriptor GetCharWidth32A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PFIBER_START_ROUTINE$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCharWidth32A$MH = RuntimeHelper.downcallHandle(
-        "GetCharWidth32A",
-        constants$174.GetCharWidth32A$FUNC
+    static final MethodHandle PFIBER_START_ROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$174.PFIBER_START_ROUTINE$FUNC
     );
-    static final FunctionDescriptor GetCharWidth32W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LPFIBER_START_ROUTINE$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCharWidth32W$MH = RuntimeHelper.downcallHandle(
-        "GetCharWidth32W",
-        constants$174.GetCharWidth32W$FUNC
+    static final MethodHandle LPFIBER_START_ROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$174.LPFIBER_START_ROUTINE$FUNC
     );
-    static final FunctionDescriptor GetCharWidthFloatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PFIBER_CALLOUT_ROUTINE$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCharWidthFloatA$MH = RuntimeHelper.downcallHandle(
-        "GetCharWidthFloatA",
-        constants$174.GetCharWidthFloatA$FUNC
+    static final MethodHandle PFIBER_CALLOUT_ROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$174.PFIBER_CALLOUT_ROUTINE$FUNC
     );
-    static final FunctionDescriptor GetCharWidthFloatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WinMain$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCharWidthFloatW$MH = RuntimeHelper.downcallHandle(
-        "GetCharWidthFloatW",
-        constants$174.GetCharWidthFloatW$FUNC
-    );
-    static final FunctionDescriptor GetCharABCWidthsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCharABCWidthsA$MH = RuntimeHelper.downcallHandle(
-        "GetCharABCWidthsA",
-        constants$174.GetCharABCWidthsA$FUNC
-    );
-    static final FunctionDescriptor GetCharABCWidthsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetCharABCWidthsW$MH = RuntimeHelper.downcallHandle(
-        "GetCharABCWidthsW",
-        constants$174.GetCharABCWidthsW$FUNC
+    static final MethodHandle WinMain$MH = RuntimeHelper.downcallHandle(
+        "WinMain",
+        constants$174.WinMain$FUNC
     );
 }
 

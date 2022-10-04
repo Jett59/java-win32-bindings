@@ -9,69 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$378 {
 
-    static final FunctionDescriptor VerInstallFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTouchInputInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetTouchInputInfo$MH = RuntimeHelper.downcallHandle(
+        "GetTouchInputInfo",
+        constants$378.GetTouchInputInfo$FUNC
+    );
+    static final FunctionDescriptor CloseTouchInputHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CloseTouchInputHandle$MH = RuntimeHelper.downcallHandle(
+        "CloseTouchInputHandle",
+        constants$378.CloseTouchInputHandle$FUNC
+    );
+    static final FunctionDescriptor RegisterTouchWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegisterTouchWindow$MH = RuntimeHelper.downcallHandle(
+        "RegisterTouchWindow",
+        constants$378.RegisterTouchWindow$FUNC
+    );
+    static final FunctionDescriptor UnregisterTouchWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnregisterTouchWindow$MH = RuntimeHelper.downcallHandle(
+        "UnregisterTouchWindow",
+        constants$378.UnregisterTouchWindow$FUNC
+    );
+    static final FunctionDescriptor IsTouchWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle VerInstallFileA$MH = RuntimeHelper.downcallHandle(
-        "VerInstallFileA",
-        constants$378.VerInstallFileA$FUNC
+    static final MethodHandle IsTouchWindow$MH = RuntimeHelper.downcallHandle(
+        "IsTouchWindow",
+        constants$378.IsTouchWindow$FUNC
     );
-    static final FunctionDescriptor VerInstallFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InitializeTouchInjection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle VerInstallFileW$MH = RuntimeHelper.downcallHandle(
-        "VerInstallFileW",
-        constants$378.VerInstallFileW$FUNC
-    );
-    static final FunctionDescriptor GetFileVersionInfoSizeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileVersionInfoSizeA$MH = RuntimeHelper.downcallHandle(
-        "GetFileVersionInfoSizeA",
-        constants$378.GetFileVersionInfoSizeA$FUNC
-    );
-    static final FunctionDescriptor GetFileVersionInfoSizeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileVersionInfoSizeW$MH = RuntimeHelper.downcallHandle(
-        "GetFileVersionInfoSizeW",
-        constants$378.GetFileVersionInfoSizeW$FUNC
-    );
-    static final FunctionDescriptor GetFileVersionInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileVersionInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetFileVersionInfoA",
-        constants$378.GetFileVersionInfoA$FUNC
-    );
-    static final FunctionDescriptor GetFileVersionInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileVersionInfoW$MH = RuntimeHelper.downcallHandle(
-        "GetFileVersionInfoW",
-        constants$378.GetFileVersionInfoW$FUNC
+    static final MethodHandle InitializeTouchInjection$MH = RuntimeHelper.downcallHandle(
+        "InitializeTouchInjection",
+        constants$378.InitializeTouchInjection$FUNC
     );
 }
 

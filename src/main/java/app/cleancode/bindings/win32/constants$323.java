@@ -9,59 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$323 {
 
-    static final FunctionDescriptor SetWindowsHookExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor UpdateICMRegKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetWindowsHookExW$MH = RuntimeHelper.downcallHandle(
-        "SetWindowsHookExW",
-        constants$323.SetWindowsHookExW$FUNC
+    static final MethodHandle UpdateICMRegKeyW$MH = RuntimeHelper.downcallHandle(
+        "UpdateICMRegKeyW",
+        constants$323.UpdateICMRegKeyW$FUNC
     );
-    static final FunctionDescriptor UnhookWindowsHookEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnhookWindowsHookEx$MH = RuntimeHelper.downcallHandle(
-        "UnhookWindowsHookEx",
-        constants$323.UnhookWindowsHookEx$FUNC
-    );
-    static final FunctionDescriptor CallNextHookEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor ColorCorrectPalette$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle CallNextHookEx$MH = RuntimeHelper.downcallHandle(
-        "CallNextHookEx",
-        constants$323.CallNextHookEx$FUNC
-    );
-    static final FunctionDescriptor CheckMenuRadioItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CheckMenuRadioItem$MH = RuntimeHelper.downcallHandle(
-        "CheckMenuRadioItem",
-        constants$323.CheckMenuRadioItem$FUNC
+    static final MethodHandle ColorCorrectPalette$MH = RuntimeHelper.downcallHandle(
+        "ColorCorrectPalette",
+        constants$323.ColorCorrectPalette$FUNC
     );
-    static final FunctionDescriptor LoadBitmapA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor wglCopyContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle wglCopyContext$MH = RuntimeHelper.downcallHandle(
+        "wglCopyContext",
+        constants$323.wglCopyContext$FUNC
+    );
+    static final FunctionDescriptor wglCreateContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadBitmapA$MH = RuntimeHelper.downcallHandle(
-        "LoadBitmapA",
-        constants$323.LoadBitmapA$FUNC
+    static final MethodHandle wglCreateContext$MH = RuntimeHelper.downcallHandle(
+        "wglCreateContext",
+        constants$323.wglCreateContext$FUNC
     );
-    static final FunctionDescriptor LoadBitmapW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor wglCreateLayerContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle wglCreateLayerContext$MH = RuntimeHelper.downcallHandle(
+        "wglCreateLayerContext",
+        constants$323.wglCreateLayerContext$FUNC
+    );
+    static final FunctionDescriptor wglDeleteContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadBitmapW$MH = RuntimeHelper.downcallHandle(
-        "LoadBitmapW",
-        constants$323.LoadBitmapW$FUNC
+    static final MethodHandle wglDeleteContext$MH = RuntimeHelper.downcallHandle(
+        "wglDeleteContext",
+        constants$323.wglDeleteContext$FUNC
     );
 }
 

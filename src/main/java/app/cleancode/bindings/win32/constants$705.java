@@ -9,12 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$705 {
 
-    static final MemorySegment CERT_AUTH_ROOT_SEQ_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
-    static final MemorySegment CERT_AUTH_ROOT_CERT_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_SYNC_DELTA_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_LAST_SYNC_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_ENCODED_CTL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_DISALLOWED_CERT_CTL_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("d");
+    static final FunctionDescriptor ReadClassStm$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReadClassStm$MH = RuntimeHelper.downcallHandle(
+        "ReadClassStm",
+        constants$705.ReadClassStm$FUNC
+    );
+    static final FunctionDescriptor WriteClassStm$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WriteClassStm$MH = RuntimeHelper.downcallHandle(
+        "WriteClassStm",
+        constants$705.WriteClassStm$FUNC
+    );
+    static final FunctionDescriptor GetHGlobalFromILockBytes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetHGlobalFromILockBytes$MH = RuntimeHelper.downcallHandle(
+        "GetHGlobalFromILockBytes",
+        constants$705.GetHGlobalFromILockBytes$FUNC
+    );
+    static final FunctionDescriptor CreateILockBytesOnHGlobal$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateILockBytesOnHGlobal$MH = RuntimeHelper.downcallHandle(
+        "CreateILockBytesOnHGlobal",
+        constants$705.CreateILockBytesOnHGlobal$FUNC
+    );
+    static final FunctionDescriptor GetConvertStg$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetConvertStg$MH = RuntimeHelper.downcallHandle(
+        "GetConvertStg",
+        constants$705.GetConvertStg$FUNC
+    );
+    static final  GroupLayout NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID", constants$705.NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID$LAYOUT);
 }
 
 

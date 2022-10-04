@@ -9,12 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$572 {
 
-    static final MemoryAddress IDI_WINLOGO$ADDR = MemoryAddress.ofLong(32517L);
-    static final MemoryAddress IDI_SHIELD$ADDR = MemoryAddress.ofLong(32518L);
-    static final MemoryAddress IDI_WARNING$ADDR = MemoryAddress.ofLong(32515L);
-    static final MemoryAddress IDI_ERROR$ADDR = MemoryAddress.ofLong(32513L);
-    static final MemoryAddress IDI_INFORMATION$ADDR = MemoryAddress.ofLong(32516L);
-    static final MemoryAddress WC_DIALOG$ADDR = MemoryAddress.ofLong(32770L);
+    static final FunctionDescriptor CryptDuplicateHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptDuplicateHash$MH = RuntimeHelper.downcallHandle(
+        "CryptDuplicateHash",
+        constants$572.CryptDuplicateHash$FUNC
+    );
+    static final FunctionDescriptor GetEncSChannel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetEncSChannel$MH = RuntimeHelper.downcallHandle(
+        "GetEncSChannel",
+        constants$572.GetEncSChannel$FUNC
+    );
+    static final FunctionDescriptor PCRYPT_DECRYPT_PRIVATE_KEY_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_POINTER$LAYOUT.withName("pszObjId"),
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("cbData"),
+                MemoryLayout.paddingLayout(32),
+                Constants$root.C_POINTER$LAYOUT.withName("pbData")
+            ).withName("Parameters")
+        ).withName("_CRYPT_ALGORITHM_IDENTIFIER"),
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("cbData"),
+            MemoryLayout.paddingLayout(32),
+            Constants$root.C_POINTER$LAYOUT.withName("pbData")
+        ).withName("_CRYPTOAPI_BLOB"),
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PCRYPT_DECRYPT_PRIVATE_KEY_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$572.PCRYPT_DECRYPT_PRIVATE_KEY_FUNC$FUNC
+    );
+    static final FunctionDescriptor PCRYPT_ENCRYPT_PRIVATE_KEY_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PCRYPT_ENCRYPT_PRIVATE_KEY_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$572.PCRYPT_ENCRYPT_PRIVATE_KEY_FUNC$FUNC
+    );
 }
 
 

@@ -11,13 +11,13 @@ public interface FONTENUMPROC {
 
     int apply(java.lang.foreign.MemoryAddress _x0, java.lang.foreign.MemoryAddress _x1, int _x2, long _x3);
     static MemorySegment allocate(FONTENUMPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(FONTENUMPROC.class, fi, constants$158.FONTENUMPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(FONTENUMPROC.class, fi, constants$262.FONTENUMPROC$FUNC, session);
     }
     static FONTENUMPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, java.lang.foreign.MemoryAddress __x1, int __x2, long __x3) -> {
             try {
-                return (int)constants$159.FONTENUMPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, __x2, __x3);
+                return (int)constants$262.FONTENUMPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, __x2, __x3);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

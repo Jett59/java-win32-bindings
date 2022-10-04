@@ -9,74 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$359 {
 
-    static final FunctionDescriptor CompareStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeferWindowPos$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CompareStringA$MH = RuntimeHelper.downcallHandle(
-        "CompareStringA",
-        constants$359.CompareStringA$FUNC
+    static final MethodHandle DeferWindowPos$MH = RuntimeHelper.downcallHandle(
+        "DeferWindowPos",
+        constants$359.DeferWindowPos$FUNC
     );
-    static final FunctionDescriptor FindNLSString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EndDeferWindowPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindNLSString$MH = RuntimeHelper.downcallHandle(
-        "FindNLSString",
-        constants$359.FindNLSString$FUNC
+    static final MethodHandle EndDeferWindowPos$MH = RuntimeHelper.downcallHandle(
+        "EndDeferWindowPos",
+        constants$359.EndDeferWindowPos$FUNC
     );
-    static final FunctionDescriptor LCMapStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsWindowVisible$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LCMapStringW$MH = RuntimeHelper.downcallHandle(
-        "LCMapStringW",
-        constants$359.LCMapStringW$FUNC
+    static final MethodHandle IsWindowVisible$MH = RuntimeHelper.downcallHandle(
+        "IsWindowVisible",
+        constants$359.IsWindowVisible$FUNC
     );
-    static final FunctionDescriptor LCMapStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsIconic$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LCMapStringA$MH = RuntimeHelper.downcallHandle(
-        "LCMapStringA",
-        constants$359.LCMapStringA$FUNC
+    static final MethodHandle IsIconic$MH = RuntimeHelper.downcallHandle(
+        "IsIconic",
+        constants$359.IsIconic$FUNC
     );
-    static final FunctionDescriptor GetLocaleInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor AnyPopup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle AnyPopup$MH = RuntimeHelper.downcallHandle(
+        "AnyPopup",
+        constants$359.AnyPopup$FUNC
     );
-    static final MethodHandle GetLocaleInfoW$MH = RuntimeHelper.downcallHandle(
-        "GetLocaleInfoW",
-        constants$359.GetLocaleInfoW$FUNC
+    static final FunctionDescriptor BringWindowToTop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor GetLocaleInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetLocaleInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetLocaleInfoA",
-        constants$359.GetLocaleInfoA$FUNC
+    static final MethodHandle BringWindowToTop$MH = RuntimeHelper.downcallHandle(
+        "BringWindowToTop",
+        constants$359.BringWindowToTop$FUNC
     );
 }
 

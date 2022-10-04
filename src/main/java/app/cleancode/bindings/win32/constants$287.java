@@ -9,56 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$287 {
 
-    static final FunctionDescriptor GetMenuStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFontUnicodeRanges$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetMenuStringA$MH = RuntimeHelper.downcallHandle(
-        "GetMenuStringA",
-        constants$287.GetMenuStringA$FUNC
-    );
-    static final FunctionDescriptor GetMenuStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetMenuStringW$MH = RuntimeHelper.downcallHandle(
-        "GetMenuStringW",
-        constants$287.GetMenuStringW$FUNC
-    );
-    static final FunctionDescriptor GetMenuState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetMenuState$MH = RuntimeHelper.downcallHandle(
-        "GetMenuState",
-        constants$287.GetMenuState$FUNC
-    );
-    static final FunctionDescriptor DrawMenuBar$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DrawMenuBar$MH = RuntimeHelper.downcallHandle(
-        "DrawMenuBar",
-        constants$287.DrawMenuBar$FUNC
+    static final MethodHandle GetFontUnicodeRanges$MH = RuntimeHelper.downcallHandle(
+        "GetFontUnicodeRanges",
+        constants$287.GetFontUnicodeRanges$FUNC
     );
-    static final FunctionDescriptor GetSystemMenu$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetGlyphIndicesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetSystemMenu$MH = RuntimeHelper.downcallHandle(
-        "GetSystemMenu",
-        constants$287.GetSystemMenu$FUNC
+    static final MethodHandle GetGlyphIndicesA$MH = RuntimeHelper.downcallHandle(
+        "GetGlyphIndicesA",
+        constants$287.GetGlyphIndicesA$FUNC
     );
-    static final FunctionDescriptor CreateMenu$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle CreateMenu$MH = RuntimeHelper.downcallHandle(
-        "CreateMenu",
-        constants$287.CreateMenu$FUNC
+    static final FunctionDescriptor GetGlyphIndicesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetGlyphIndicesW$MH = RuntimeHelper.downcallHandle(
+        "GetGlyphIndicesW",
+        constants$287.GetGlyphIndicesW$FUNC
+    );
+    static final FunctionDescriptor GetTextExtentPointI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextExtentPointI$MH = RuntimeHelper.downcallHandle(
+        "GetTextExtentPointI",
+        constants$287.GetTextExtentPointI$FUNC
+    );
+    static final FunctionDescriptor GetTextExtentExPointI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextExtentExPointI$MH = RuntimeHelper.downcallHandle(
+        "GetTextExtentExPointI",
+        constants$287.GetTextExtentExPointI$FUNC
+    );
+    static final FunctionDescriptor GetCharWidthI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharWidthI$MH = RuntimeHelper.downcallHandle(
+        "GetCharWidthI",
+        constants$287.GetCharWidthI$FUNC
     );
 }
 

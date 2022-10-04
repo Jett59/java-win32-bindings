@@ -9,50 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$177 {
 
-    static final FunctionDescriptor GetGraphicsMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GlobalWire$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetGraphicsMode$MH = RuntimeHelper.downcallHandle(
-        "GetGraphicsMode",
-        constants$177.GetGraphicsMode$FUNC
+    static final MethodHandle GlobalWire$MH = RuntimeHelper.downcallHandle(
+        "GlobalWire",
+        constants$177.GlobalWire$FUNC
     );
-    static final FunctionDescriptor GetMapMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GlobalUnWire$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetMapMode$MH = RuntimeHelper.downcallHandle(
-        "GetMapMode",
-        constants$177.GetMapMode$FUNC
+    static final MethodHandle GlobalUnWire$MH = RuntimeHelper.downcallHandle(
+        "GlobalUnWire",
+        constants$177.GlobalUnWire$FUNC
     );
-    static final FunctionDescriptor GetMetaFileBitsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GlobalMemoryStatus$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalMemoryStatus$MH = RuntimeHelper.downcallHandle(
+        "GlobalMemoryStatus",
+        constants$177.GlobalMemoryStatus$FUNC
+    );
+    static final FunctionDescriptor LocalAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetMetaFileBitsEx$MH = RuntimeHelper.downcallHandle(
-        "GetMetaFileBitsEx",
-        constants$177.GetMetaFileBitsEx$FUNC
+    static final MethodHandle LocalAlloc$MH = RuntimeHelper.downcallHandle(
+        "LocalAlloc",
+        constants$177.LocalAlloc$FUNC
     );
-    static final FunctionDescriptor GetMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetMetaFileA$MH = RuntimeHelper.downcallHandle(
-        "GetMetaFileA",
-        constants$177.GetMetaFileA$FUNC
-    );
-    static final FunctionDescriptor GetMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetMetaFileW$MH = RuntimeHelper.downcallHandle(
-        "GetMetaFileW",
-        constants$177.GetMetaFileW$FUNC
-    );
-    static final FunctionDescriptor GetNearestColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LocalReAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetNearestColor$MH = RuntimeHelper.downcallHandle(
-        "GetNearestColor",
-        constants$177.GetNearestColor$FUNC
+    static final MethodHandle LocalReAlloc$MH = RuntimeHelper.downcallHandle(
+        "LocalReAlloc",
+        constants$177.LocalReAlloc$FUNC
+    );
+    static final FunctionDescriptor LocalLock$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LocalLock$MH = RuntimeHelper.downcallHandle(
+        "LocalLock",
+        constants$177.LocalLock$FUNC
     );
 }
 

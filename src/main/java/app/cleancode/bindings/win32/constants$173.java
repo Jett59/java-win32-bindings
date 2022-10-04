@@ -9,59 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$173 {
 
-    static final FunctionDescriptor GetBitmapBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetNumaNodeProcessorMaskEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetNumaNodeProcessorMaskEx$MH = RuntimeHelper.downcallHandle(
+        "GetNumaNodeProcessorMaskEx",
+        constants$173.GetNumaNodeProcessorMaskEx$FUNC
+    );
+    static final FunctionDescriptor GetNumaProximityNodeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetBitmapBits$MH = RuntimeHelper.downcallHandle(
-        "GetBitmapBits",
-        constants$173.GetBitmapBits$FUNC
+    static final MethodHandle GetNumaProximityNodeEx$MH = RuntimeHelper.downcallHandle(
+        "GetNumaProximityNodeEx",
+        constants$173.GetNumaProximityNodeEx$FUNC
     );
-    static final FunctionDescriptor GetBitmapDimensionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetProcessGroupAffinity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetBitmapDimensionEx$MH = RuntimeHelper.downcallHandle(
-        "GetBitmapDimensionEx",
-        constants$173.GetBitmapDimensionEx$FUNC
+    static final MethodHandle GetProcessGroupAffinity$MH = RuntimeHelper.downcallHandle(
+        "GetProcessGroupAffinity",
+        constants$173.GetProcessGroupAffinity$FUNC
     );
-    static final FunctionDescriptor GetBoundsRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetBoundsRect$MH = RuntimeHelper.downcallHandle(
-        "GetBoundsRect",
-        constants$173.GetBoundsRect$FUNC
-    );
-    static final FunctionDescriptor GetBrushOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetThreadGroupAffinity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetBrushOrgEx$MH = RuntimeHelper.downcallHandle(
-        "GetBrushOrgEx",
-        constants$173.GetBrushOrgEx$FUNC
+    static final MethodHandle GetThreadGroupAffinity$MH = RuntimeHelper.downcallHandle(
+        "GetThreadGroupAffinity",
+        constants$173.GetThreadGroupAffinity$FUNC
     );
-    static final FunctionDescriptor GetCharWidthA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadGroupAffinity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCharWidthA$MH = RuntimeHelper.downcallHandle(
-        "GetCharWidthA",
-        constants$173.GetCharWidthA$FUNC
+    static final MethodHandle SetThreadGroupAffinity$MH = RuntimeHelper.downcallHandle(
+        "SetThreadGroupAffinity",
+        constants$173.SetThreadGroupAffinity$FUNC
     );
-    static final FunctionDescriptor GetCharWidthW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PFIBER_START_ROUTINE$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCharWidthW$MH = RuntimeHelper.downcallHandle(
-        "GetCharWidthW",
-        constants$173.GetCharWidthW$FUNC
     );
 }
 

@@ -9,12 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$600 {
 
-    static final MemorySegment szOID_ECC_CURVE_WTLS9$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.43.1.4.9");
-    static final MemorySegment szOID_ECC_CURVE_WTLS12$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.33");
-    static final MemorySegment szOID_ECC_CURVE_X962P192V1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.1");
-    static final MemorySegment szOID_ECC_CURVE_X962P192V2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.2");
-    static final MemorySegment szOID_ECC_CURVE_X962P192V3$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.3");
-    static final MemorySegment szOID_ECC_CURVE_X962P239V1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.4");
+    static final FunctionDescriptor CertDuplicateCTLContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertDuplicateCTLContext$MH = RuntimeHelper.downcallHandle(
+        "CertDuplicateCTLContext",
+        constants$600.CertDuplicateCTLContext$FUNC
+    );
+    static final FunctionDescriptor CertCreateCTLContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertCreateCTLContext$MH = RuntimeHelper.downcallHandle(
+        "CertCreateCTLContext",
+        constants$600.CertCreateCTLContext$FUNC
+    );
+    static final FunctionDescriptor CertFreeCTLContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFreeCTLContext$MH = RuntimeHelper.downcallHandle(
+        "CertFreeCTLContext",
+        constants$600.CertFreeCTLContext$FUNC
+    );
+    static final FunctionDescriptor CertSetCTLContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertSetCTLContextProperty$MH = RuntimeHelper.downcallHandle(
+        "CertSetCTLContextProperty",
+        constants$600.CertSetCTLContextProperty$FUNC
+    );
+    static final FunctionDescriptor CertGetCTLContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetCTLContextProperty$MH = RuntimeHelper.downcallHandle(
+        "CertGetCTLContextProperty",
+        constants$600.CertGetCTLContextProperty$FUNC
+    );
+    static final FunctionDescriptor CertEnumCTLContextProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertEnumCTLContextProperties$MH = RuntimeHelper.downcallHandle(
+        "CertEnumCTLContextProperties",
+        constants$600.CertEnumCTLContextProperties$FUNC
+    );
 }
 
 

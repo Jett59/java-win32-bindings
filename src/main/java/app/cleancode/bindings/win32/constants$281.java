@@ -9,48 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$281 {
 
-    static final FunctionDescriptor MapVirtualKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetMapMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle MapVirtualKeyW$MH = RuntimeHelper.downcallHandle(
-        "MapVirtualKeyW",
-        constants$281.MapVirtualKeyW$FUNC
+    static final MethodHandle GetMapMode$MH = RuntimeHelper.downcallHandle(
+        "GetMapMode",
+        constants$281.GetMapMode$FUNC
     );
-    static final FunctionDescriptor MapVirtualKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMetaFileBitsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle MapVirtualKeyExA$MH = RuntimeHelper.downcallHandle(
-        "MapVirtualKeyExA",
-        constants$281.MapVirtualKeyExA$FUNC
+    static final MethodHandle GetMetaFileBitsEx$MH = RuntimeHelper.downcallHandle(
+        "GetMetaFileBitsEx",
+        constants$281.GetMetaFileBitsEx$FUNC
     );
-    static final FunctionDescriptor MapVirtualKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle MapVirtualKeyExW$MH = RuntimeHelper.downcallHandle(
-        "MapVirtualKeyExW",
-        constants$281.MapVirtualKeyExW$FUNC
+    static final MethodHandle GetMetaFileA$MH = RuntimeHelper.downcallHandle(
+        "GetMetaFileA",
+        constants$281.GetMetaFileA$FUNC
     );
-    static final FunctionDescriptor GetInputState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetInputState$MH = RuntimeHelper.downcallHandle(
-        "GetInputState",
-        constants$281.GetInputState$FUNC
+    static final FunctionDescriptor GetMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor GetQueueStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final MethodHandle GetMetaFileW$MH = RuntimeHelper.downcallHandle(
+        "GetMetaFileW",
+        constants$281.GetMetaFileW$FUNC
+    );
+    static final FunctionDescriptor GetNearestColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetQueueStatus$MH = RuntimeHelper.downcallHandle(
-        "GetQueueStatus",
-        constants$281.GetQueueStatus$FUNC
+    static final MethodHandle GetNearestColor$MH = RuntimeHelper.downcallHandle(
+        "GetNearestColor",
+        constants$281.GetNearestColor$FUNC
     );
-    static final FunctionDescriptor GetCapture$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetCapture$MH = RuntimeHelper.downcallHandle(
-        "GetCapture",
-        constants$281.GetCapture$FUNC
+    static final FunctionDescriptor GetNearestPaletteIndex$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetNearestPaletteIndex$MH = RuntimeHelper.downcallHandle(
+        "GetNearestPaletteIndex",
+        constants$281.GetNearestPaletteIndex$FUNC
     );
 }
 

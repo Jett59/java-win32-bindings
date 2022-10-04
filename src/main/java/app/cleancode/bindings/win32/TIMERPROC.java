@@ -11,13 +11,13 @@ public interface TIMERPROC {
 
     void apply(java.lang.foreign.MemoryAddress _x0, int _x1, long _x2, int _x3);
     static MemorySegment allocate(TIMERPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(TIMERPROC.class, fi, constants$223.TIMERPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(TIMERPROC.class, fi, constants$327.TIMERPROC$FUNC, session);
     }
     static TIMERPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, int __x1, long __x2, int __x3) -> {
             try {
-                constants$223.TIMERPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, __x2, __x3);
+                constants$327.TIMERPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, __x2, __x3);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

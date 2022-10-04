@@ -9,12 +9,32 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$555 {
 
-    static final MemorySegment SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeDelegateSessionUserImpersonatePrivilege");
-    static final MemorySegment SE_ACTIVATE_AS_USER_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
-    static final MemorySegment SE_CONSTRAINED_IMPERSONATION_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("c");
-    static final MemorySegment SE_SESSION_IMPERSONATION_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("s");
-    static final MemorySegment SE_MUMA_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("m");
-    static final MemorySegment SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("d");
+    static final FunctionDescriptor PFNCANSHAREFOLDERW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFNCANSHAREFOLDERW$MH = RuntimeHelper.downcallHandle(
+        constants$555.PFNCANSHAREFOLDERW$FUNC
+    );
+    static final FunctionDescriptor PFNSHOWSHAREFOLDERUIW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFNSHOWSHAREFOLDERUIW$MH = RuntimeHelper.downcallHandle(
+        constants$555.PFNSHOWSHAREFOLDERUIW$FUNC
+    );
+    static final FunctionDescriptor InitNetworkAddressControl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle InitNetworkAddressControl$MH = RuntimeHelper.downcallHandle(
+        "InitNetworkAddressControl",
+        constants$555.InitNetworkAddressControl$FUNC
+    );
+    static final FunctionDescriptor SHGetDriveMedia$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHGetDriveMedia$MH = RuntimeHelper.downcallHandle(
+        "SHGetDriveMedia",
+        constants$555.SHGetDriveMedia$FUNC
+    );
 }
 
 

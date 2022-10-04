@@ -9,34 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$432 {
 
-    static final FunctionDescriptor PFN_CMSG_IMPORT_KEY_AGREE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetIconInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_IMPORT_KEY_AGREE$MH = RuntimeHelper.downcallHandle(
-        constants$432.PFN_CMSG_IMPORT_KEY_AGREE$FUNC
+    static final MethodHandle GetIconInfoExW$MH = RuntimeHelper.downcallHandle(
+        "GetIconInfoExW",
+        constants$432.GetIconInfoExW$FUNC
     );
-    static final FunctionDescriptor PFN_CMSG_IMPORT_MAIL_LIST$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsDialogMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_IMPORT_MAIL_LIST$MH = RuntimeHelper.downcallHandle(
-        constants$432.PFN_CMSG_IMPORT_MAIL_LIST$FUNC
+    static final MethodHandle IsDialogMessageA$MH = RuntimeHelper.downcallHandle(
+        "IsDialogMessageA",
+        constants$432.IsDialogMessageA$FUNC
     );
-    static final FunctionDescriptor PFN_CMSG_CNG_IMPORT_KEY_TRANS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsDialogMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsDialogMessageW$MH = RuntimeHelper.downcallHandle(
+        "IsDialogMessageW",
+        constants$432.IsDialogMessageW$FUNC
+    );
+    static final FunctionDescriptor MapDialogRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MapDialogRect$MH = RuntimeHelper.downcallHandle(
+        "MapDialogRect",
+        constants$432.MapDialogRect$FUNC
+    );
+    static final FunctionDescriptor DlgDirListA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_CNG_IMPORT_KEY_TRANS$MH = RuntimeHelper.downcallHandle(
-        constants$432.PFN_CMSG_CNG_IMPORT_KEY_TRANS$FUNC
+    static final MethodHandle DlgDirListA$MH = RuntimeHelper.downcallHandle(
+        "DlgDirListA",
+        constants$432.DlgDirListA$FUNC
+    );
+    static final FunctionDescriptor DlgDirListW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DlgDirListW$MH = RuntimeHelper.downcallHandle(
+        "DlgDirListW",
+        constants$432.DlgDirListW$FUNC
     );
 }
 

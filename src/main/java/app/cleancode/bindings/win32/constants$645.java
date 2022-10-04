@@ -9,12 +9,38 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$645 {
 
-    static final MemorySegment szOID_ENROLLMENT_NAME_VALUE_PAIR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.13.2.1");
-    static final MemorySegment szOID_ENROLLMENT_CSP_PROVIDER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.13.2.2");
-    static final MemorySegment szOID_OS_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.13.2.3");
-    static final MemorySegment szOID_ENROLLMENT_AGENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2.1");
-    static final MemorySegment szOID_PKIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7");
-    static final MemorySegment szOID_PKIX_PE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1");
+    static final  GroupLayout FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE$SEGMENT = RuntimeHelper.lookupGlobalVariable("FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE", constants$645.FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE$LAYOUT);
+    static final FunctionDescriptor PIO_IRP_EXT_PROCESS_TRACKED_OFFSET_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle PIO_IRP_EXT_PROCESS_TRACKED_OFFSET_CALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$645.PIO_IRP_EXT_PROCESS_TRACKED_OFFSET_CALLBACK$FUNC
+    );
+    static final  GroupLayout GUID_DEVINTERFACE_SMARTCARD_READER$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_SMARTCARD_READER$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SMARTCARD_READER", constants$645.GUID_DEVINTERFACE_SMARTCARD_READER$LAYOUT);
+    static final  GroupLayout g_rgSCardT0Pci$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("dwProtocol"),
+        Constants$root.C_LONG$LAYOUT.withName("cbPciLength")
+    ).withName("_SCARD_IO_REQUEST");
+    static final MemorySegment g_rgSCardT0Pci$SEGMENT = RuntimeHelper.lookupGlobalVariable("g_rgSCardT0Pci", constants$645.g_rgSCardT0Pci$LAYOUT);
+    static final  GroupLayout g_rgSCardT1Pci$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("dwProtocol"),
+        Constants$root.C_LONG$LAYOUT.withName("cbPciLength")
+    ).withName("_SCARD_IO_REQUEST");
+    static final MemorySegment g_rgSCardT1Pci$SEGMENT = RuntimeHelper.lookupGlobalVariable("g_rgSCardT1Pci", constants$645.g_rgSCardT1Pci$LAYOUT);
 }
 
 

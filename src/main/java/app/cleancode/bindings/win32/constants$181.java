@@ -9,65 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$181 {
 
-    static final FunctionDescriptor GetTextColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetEnvironmentStringsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextColor$MH = RuntimeHelper.downcallHandle(
-        "GetTextColor",
-        constants$181.GetTextColor$FUNC
+    static final MethodHandle SetEnvironmentStringsA$MH = RuntimeHelper.downcallHandle(
+        "SetEnvironmentStringsA",
+        constants$181.SetEnvironmentStringsA$FUNC
     );
-    static final FunctionDescriptor GetTextExtentPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SwitchToFiber$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextExtentPointA$MH = RuntimeHelper.downcallHandle(
-        "GetTextExtentPointA",
-        constants$181.GetTextExtentPointA$FUNC
+    static final MethodHandle SwitchToFiber$MH = RuntimeHelper.downcallHandle(
+        "SwitchToFiber",
+        constants$181.SwitchToFiber$FUNC
     );
-    static final FunctionDescriptor GetTextExtentPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeleteFiber$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextExtentPointW$MH = RuntimeHelper.downcallHandle(
-        "GetTextExtentPointW",
-        constants$181.GetTextExtentPointW$FUNC
+    static final MethodHandle DeleteFiber$MH = RuntimeHelper.downcallHandle(
+        "DeleteFiber",
+        constants$181.DeleteFiber$FUNC
     );
-    static final FunctionDescriptor GetTextExtentPoint32A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ConvertFiberToThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle ConvertFiberToThread$MH = RuntimeHelper.downcallHandle(
+        "ConvertFiberToThread",
+        constants$181.ConvertFiberToThread$FUNC
+    );
+    static final FunctionDescriptor CreateFiberEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTextExtentPoint32A$MH = RuntimeHelper.downcallHandle(
-        "GetTextExtentPoint32A",
-        constants$181.GetTextExtentPoint32A$FUNC
-    );
-    static final FunctionDescriptor GetTextExtentPoint32W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTextExtentPoint32W$MH = RuntimeHelper.downcallHandle(
-        "GetTextExtentPoint32W",
-        constants$181.GetTextExtentPoint32W$FUNC
-    );
-    static final FunctionDescriptor GetTextExtentExPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextExtentExPointA$MH = RuntimeHelper.downcallHandle(
-        "GetTextExtentExPointA",
-        constants$181.GetTextExtentExPointA$FUNC
+    static final MethodHandle CreateFiberEx$MH = RuntimeHelper.downcallHandle(
+        "CreateFiberEx",
+        constants$181.CreateFiberEx$FUNC
+    );
+    static final FunctionDescriptor ConvertThreadToFiberEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ConvertThreadToFiberEx$MH = RuntimeHelper.downcallHandle(
+        "ConvertThreadToFiberEx",
+        constants$181.ConvertThreadToFiberEx$FUNC
     );
 }
 

@@ -9,12 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$703 {
 
-    static final MemorySegment CERT_AUTO_UPDATE_LOCAL_MACHINE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_AUTO_UPDATE_ROOT_DIR_URL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("R");
-    static final MemorySegment CERT_AUTO_UPDATE_SYNC_FROM_DIR_URL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_LOCAL_MACHINE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_ROOT_DIR_URL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("R");
-    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_SYNC_DELTA_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final FunctionDescriptor StgIsStorageFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StgIsStorageFile$MH = RuntimeHelper.downcallHandle(
+        "StgIsStorageFile",
+        constants$703.StgIsStorageFile$FUNC
+    );
+    static final FunctionDescriptor StgIsStorageILockBytes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StgIsStorageILockBytes$MH = RuntimeHelper.downcallHandle(
+        "StgIsStorageILockBytes",
+        constants$703.StgIsStorageILockBytes$FUNC
+    );
+    static final FunctionDescriptor StgSetTimes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StgSetTimes$MH = RuntimeHelper.downcallHandle(
+        "StgSetTimes",
+        constants$703.StgSetTimes$FUNC
+    );
+    static final FunctionDescriptor StgCreateStorageEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StgCreateStorageEx$MH = RuntimeHelper.downcallHandle(
+        "StgCreateStorageEx",
+        constants$703.StgCreateStorageEx$FUNC
+    );
+    static final FunctionDescriptor StgOpenStorageEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StgOpenStorageEx$MH = RuntimeHelper.downcallHandle(
+        "StgOpenStorageEx",
+        constants$703.StgOpenStorageEx$FUNC
+    );
+    static final FunctionDescriptor StgCreatePropStg$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StgCreatePropStg$MH = RuntimeHelper.downcallHandle(
+        "StgCreatePropStg",
+        constants$703.StgCreatePropStg$FUNC
+    );
 }
 
 

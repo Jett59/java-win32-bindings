@@ -9,57 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$103 {
 
-    static final FunctionDescriptor OpenFileMappingA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InitOnceInitialize$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle OpenFileMappingA$MH = RuntimeHelper.downcallHandle(
-        "OpenFileMappingA",
-        constants$103.OpenFileMappingA$FUNC
+    static final MethodHandle InitOnceInitialize$MH = RuntimeHelper.downcallHandle(
+        "InitOnceInitialize",
+        constants$103.InitOnceInitialize$FUNC
     );
-    static final FunctionDescriptor GetLogicalDriveStringsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetLogicalDriveStringsA$MH = RuntimeHelper.downcallHandle(
-        "GetLogicalDriveStringsA",
-        constants$103.GetLogicalDriveStringsA$FUNC
-    );
-    static final FunctionDescriptor LoadPackagedLibrary$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor InitOnceExecuteOnce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadPackagedLibrary$MH = RuntimeHelper.downcallHandle(
-        "LoadPackagedLibrary",
-        constants$103.LoadPackagedLibrary$FUNC
+    static final MethodHandle InitOnceExecuteOnce$MH = RuntimeHelper.downcallHandle(
+        "InitOnceExecuteOnce",
+        constants$103.InitOnceExecuteOnce$FUNC
     );
-    static final FunctionDescriptor QueryFullProcessImageNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InitOnceBeginInitialize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle QueryFullProcessImageNameA$MH = RuntimeHelper.downcallHandle(
-        "QueryFullProcessImageNameA",
-        constants$103.QueryFullProcessImageNameA$FUNC
+    static final MethodHandle InitOnceBeginInitialize$MH = RuntimeHelper.downcallHandle(
+        "InitOnceBeginInitialize",
+        constants$103.InitOnceBeginInitialize$FUNC
     );
-    static final FunctionDescriptor QueryFullProcessImageNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InitOnceComplete$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle QueryFullProcessImageNameW$MH = RuntimeHelper.downcallHandle(
-        "QueryFullProcessImageNameW",
-        constants$103.QueryFullProcessImageNameW$FUNC
+    static final MethodHandle InitOnceComplete$MH = RuntimeHelper.downcallHandle(
+        "InitOnceComplete",
+        constants$103.InitOnceComplete$FUNC
     );
-    static final FunctionDescriptor GetStartupInfoA$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor InitializeConditionVariable$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetStartupInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetStartupInfoA",
-        constants$103.GetStartupInfoA$FUNC
+    static final MethodHandle InitializeConditionVariable$MH = RuntimeHelper.downcallHandle(
+        "InitializeConditionVariable",
+        constants$103.InitializeConditionVariable$FUNC
+    );
+    static final FunctionDescriptor WakeConditionVariable$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WakeConditionVariable$MH = RuntimeHelper.downcallHandle(
+        "WakeConditionVariable",
+        constants$103.WakeConditionVariable$FUNC
     );
 }
 

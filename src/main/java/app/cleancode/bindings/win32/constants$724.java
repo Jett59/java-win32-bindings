@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$724 {
 
-    static final MemorySegment CERT_CHAIN_WEAK_MIN_BIT_LENGTH_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_WEAK_SHA256_ALLOW_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_AUTO_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_AUTO_FLUSH_FIRST_DELTA_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_AUTO_FLUSH_NEXT_DELTA_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_AUTO_LOG_FILE_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
+    static final MemorySegment SE_BACKUP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeBackupPrivilege");
+    static final MemorySegment SE_RESTORE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRestorePrivilege");
+    static final MemorySegment SE_SHUTDOWN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeShutdownPrivilege");
+    static final MemorySegment SE_DEBUG_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeDebugPrivilege");
+    static final MemorySegment SE_AUDIT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeAuditPrivilege");
+    static final MemorySegment SE_SYSTEM_ENVIRONMENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemEnvironmentPrivilege");
 }
 
 

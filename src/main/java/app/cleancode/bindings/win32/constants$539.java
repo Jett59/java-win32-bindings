@@ -9,75 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$539 {
 
-    static final FunctionDescriptor ChangeServiceConfig2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerGetNumDevs$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle mixerGetNumDevs$MH = RuntimeHelper.downcallHandle(
+        "mixerGetNumDevs",
+        constants$539.mixerGetNumDevs$FUNC
+    );
+    static final FunctionDescriptor mixerGetDevCapsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mixerGetDevCapsA$MH = RuntimeHelper.downcallHandle(
+        "mixerGetDevCapsA",
+        constants$539.mixerGetDevCapsA$FUNC
+    );
+    static final FunctionDescriptor mixerGetDevCapsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mixerGetDevCapsW$MH = RuntimeHelper.downcallHandle(
+        "mixerGetDevCapsW",
+        constants$539.mixerGetDevCapsW$FUNC
+    );
+    static final FunctionDescriptor mixerOpen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mixerOpen$MH = RuntimeHelper.downcallHandle(
+        "mixerOpen",
+        constants$539.mixerOpen$FUNC
+    );
+    static final FunctionDescriptor mixerClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ChangeServiceConfig2W$MH = RuntimeHelper.downcallHandle(
-        "ChangeServiceConfig2W",
-        constants$539.ChangeServiceConfig2W$FUNC
+    static final MethodHandle mixerClose$MH = RuntimeHelper.downcallHandle(
+        "mixerClose",
+        constants$539.mixerClose$FUNC
     );
-    static final FunctionDescriptor CloseServiceHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CloseServiceHandle$MH = RuntimeHelper.downcallHandle(
-        "CloseServiceHandle",
-        constants$539.CloseServiceHandle$FUNC
-    );
-    static final FunctionDescriptor ControlService$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle ControlService$MH = RuntimeHelper.downcallHandle(
-        "ControlService",
-        constants$539.ControlService$FUNC
-    );
-    static final FunctionDescriptor CreateServiceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateServiceA$MH = RuntimeHelper.downcallHandle(
-        "CreateServiceA",
-        constants$539.CreateServiceA$FUNC
-    );
-    static final FunctionDescriptor CreateServiceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateServiceW$MH = RuntimeHelper.downcallHandle(
-        "CreateServiceW",
-        constants$539.CreateServiceW$FUNC
-    );
-    static final FunctionDescriptor DeleteService$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteService$MH = RuntimeHelper.downcallHandle(
-        "DeleteService",
-        constants$539.DeleteService$FUNC
+    static final MethodHandle mixerMessage$MH = RuntimeHelper.downcallHandle(
+        "mixerMessage",
+        constants$539.mixerMessage$FUNC
     );
 }
 

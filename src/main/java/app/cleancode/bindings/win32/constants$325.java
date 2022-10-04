@@ -9,70 +9,72 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$325 {
 
-    static final FunctionDescriptor SetSystemCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetSystemCursor$MH = RuntimeHelper.downcallHandle(
-        "SetSystemCursor",
-        constants$325.SetSystemCursor$FUNC
-    );
-    static final FunctionDescriptor LoadIconA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LoadIconA$MH = RuntimeHelper.downcallHandle(
-        "LoadIconA",
-        constants$325.LoadIconA$FUNC
-    );
-    static final FunctionDescriptor LoadIconW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LoadIconW$MH = RuntimeHelper.downcallHandle(
-        "LoadIconW",
-        constants$325.LoadIconW$FUNC
-    );
-    static final FunctionDescriptor PrivateExtractIconsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor wglUseFontBitmapsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PrivateExtractIconsA$MH = RuntimeHelper.downcallHandle(
-        "PrivateExtractIconsA",
-        constants$325.PrivateExtractIconsA$FUNC
+    static final MethodHandle wglUseFontBitmapsW$MH = RuntimeHelper.downcallHandle(
+        "wglUseFontBitmapsW",
+        constants$325.wglUseFontBitmapsW$FUNC
     );
-    static final FunctionDescriptor PrivateExtractIconsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PrivateExtractIconsW$MH = RuntimeHelper.downcallHandle(
-        "PrivateExtractIconsW",
-        constants$325.PrivateExtractIconsW$FUNC
-    );
-    static final FunctionDescriptor CreateIcon$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SwapBuffers$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateIcon$MH = RuntimeHelper.downcallHandle(
-        "CreateIcon",
-        constants$325.CreateIcon$FUNC
+    static final MethodHandle SwapBuffers$MH = RuntimeHelper.downcallHandle(
+        "SwapBuffers",
+        constants$325.SwapBuffers$FUNC
+    );
+    static final FunctionDescriptor wglUseFontOutlinesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_FLOAT$LAYOUT,
+        Constants$root.C_FLOAT$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wglUseFontOutlinesA$MH = RuntimeHelper.downcallHandle(
+        "wglUseFontOutlinesA",
+        constants$325.wglUseFontOutlinesA$FUNC
+    );
+    static final FunctionDescriptor wglUseFontOutlinesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_FLOAT$LAYOUT,
+        Constants$root.C_FLOAT$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wglUseFontOutlinesW$MH = RuntimeHelper.downcallHandle(
+        "wglUseFontOutlinesW",
+        constants$325.wglUseFontOutlinesW$FUNC
+    );
+    static final FunctionDescriptor wglDescribeLayerPlane$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wglDescribeLayerPlane$MH = RuntimeHelper.downcallHandle(
+        "wglDescribeLayerPlane",
+        constants$325.wglDescribeLayerPlane$FUNC
+    );
+    static final FunctionDescriptor wglSetLayerPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wglSetLayerPaletteEntries$MH = RuntimeHelper.downcallHandle(
+        "wglSetLayerPaletteEntries",
+        constants$325.wglSetLayerPaletteEntries$FUNC
     );
 }
 

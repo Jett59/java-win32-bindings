@@ -11,13 +11,13 @@ public interface PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC {
 
     int apply(long hKey, int dwCertEncodingType, java.lang.foreign.MemoryAddress pSignatureAlgorithm, java.lang.foreign.MemoryAddress pvDecodedSignPara, java.lang.foreign.MemoryAddress pwszCNGPubKeyAlgid, java.lang.foreign.MemoryAddress pwszCNGHashAlgid, java.lang.foreign.MemoryAddress pbComputedHash, int cbComputedHash, java.lang.foreign.MemoryAddress pbSignature, java.lang.foreign.MemoryAddress pcbSignature);
     static MemorySegment allocate(PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC.class, fi, constants$458.PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC.class, fi, constants$610.PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$FUNC, session);
     }
     static PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (long _hKey, int _dwCertEncodingType, java.lang.foreign.MemoryAddress _pSignatureAlgorithm, java.lang.foreign.MemoryAddress _pvDecodedSignPara, java.lang.foreign.MemoryAddress _pwszCNGPubKeyAlgid, java.lang.foreign.MemoryAddress _pwszCNGHashAlgid, java.lang.foreign.MemoryAddress _pbComputedHash, int _cbComputedHash, java.lang.foreign.MemoryAddress _pbSignature, java.lang.foreign.MemoryAddress _pcbSignature) -> {
             try {
-                return (int)constants$458.PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$MH.invokeExact((Addressable)symbol, _hKey, _dwCertEncodingType, (java.lang.foreign.Addressable)_pSignatureAlgorithm, (java.lang.foreign.Addressable)_pvDecodedSignPara, (java.lang.foreign.Addressable)_pwszCNGPubKeyAlgid, (java.lang.foreign.Addressable)_pwszCNGHashAlgid, (java.lang.foreign.Addressable)_pbComputedHash, _cbComputedHash, (java.lang.foreign.Addressable)_pbSignature, (java.lang.foreign.Addressable)_pcbSignature);
+                return (int)constants$611.PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$MH.invokeExact((Addressable)symbol, _hKey, _dwCertEncodingType, (java.lang.foreign.Addressable)_pSignatureAlgorithm, (java.lang.foreign.Addressable)_pvDecodedSignPara, (java.lang.foreign.Addressable)_pwszCNGPubKeyAlgid, (java.lang.foreign.Addressable)_pwszCNGHashAlgid, (java.lang.foreign.Addressable)_pbComputedHash, _cbComputedHash, (java.lang.foreign.Addressable)_pbSignature, (java.lang.foreign.Addressable)_pcbSignature);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

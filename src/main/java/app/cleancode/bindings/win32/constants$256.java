@@ -9,63 +9,39 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$256 {
 
-    static final FunctionDescriptor BringWindowToTop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor APPLICATION_RECOVERY_CALLBACK$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BringWindowToTop$MH = RuntimeHelper.downcallHandle(
-        "BringWindowToTop",
-        constants$256.BringWindowToTop$FUNC
+    static final MethodHandle APPLICATION_RECOVERY_CALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$256.APPLICATION_RECOVERY_CALLBACK$FUNC
     );
-    static final FunctionDescriptor IsZoomed$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor RegisterApplicationRecoveryCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle IsZoomed$MH = RuntimeHelper.downcallHandle(
-        "IsZoomed",
-        constants$256.IsZoomed$FUNC
+    static final MethodHandle RegisterApplicationRecoveryCallback$MH = RuntimeHelper.downcallHandle(
+        "RegisterApplicationRecoveryCallback",
+        constants$256.RegisterApplicationRecoveryCallback$FUNC
     );
-    static final FunctionDescriptor CreateDialogParamA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor UnregisterApplicationRecoveryCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle UnregisterApplicationRecoveryCallback$MH = RuntimeHelper.downcallHandle(
+        "UnregisterApplicationRecoveryCallback",
+        constants$256.UnregisterApplicationRecoveryCallback$FUNC
     );
-    static final MethodHandle CreateDialogParamA$MH = RuntimeHelper.downcallHandle(
-        "CreateDialogParamA",
-        constants$256.CreateDialogParamA$FUNC
+    static final FunctionDescriptor RegisterApplicationRestart$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final FunctionDescriptor CreateDialogParamW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final MethodHandle RegisterApplicationRestart$MH = RuntimeHelper.downcallHandle(
+        "RegisterApplicationRestart",
+        constants$256.RegisterApplicationRestart$FUNC
     );
-    static final MethodHandle CreateDialogParamW$MH = RuntimeHelper.downcallHandle(
-        "CreateDialogParamW",
-        constants$256.CreateDialogParamW$FUNC
-    );
-    static final FunctionDescriptor CreateDialogIndirectParamA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle CreateDialogIndirectParamA$MH = RuntimeHelper.downcallHandle(
-        "CreateDialogIndirectParamA",
-        constants$256.CreateDialogIndirectParamA$FUNC
-    );
-    static final FunctionDescriptor CreateDialogIndirectParamW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle CreateDialogIndirectParamW$MH = RuntimeHelper.downcallHandle(
-        "CreateDialogIndirectParamW",
-        constants$256.CreateDialogIndirectParamW$FUNC
+    static final FunctionDescriptor UnregisterApplicationRestart$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle UnregisterApplicationRestart$MH = RuntimeHelper.downcallHandle(
+        "UnregisterApplicationRestart",
+        constants$256.UnregisterApplicationRestart$FUNC
     );
 }
 

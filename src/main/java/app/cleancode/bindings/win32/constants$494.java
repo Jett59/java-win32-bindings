@@ -9,67 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$494 {
 
-    static final FunctionDescriptor SCardListCardsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegDeleteValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegDeleteValueW$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteValueW",
+        constants$494.RegDeleteValueW$FUNC
+    );
+    static final FunctionDescriptor RegEnumKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardListCardsA$MH = RuntimeHelper.downcallHandle(
-        "SCardListCardsA",
-        constants$494.SCardListCardsA$FUNC
+    static final MethodHandle RegEnumKeyA$MH = RuntimeHelper.downcallHandle(
+        "RegEnumKeyA",
+        constants$494.RegEnumKeyA$FUNC
     );
-    static final FunctionDescriptor SCardListCardsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor RegEnumKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardListCardsW$MH = RuntimeHelper.downcallHandle(
-        "SCardListCardsW",
-        constants$494.SCardListCardsW$FUNC
+    static final MethodHandle RegEnumKeyW$MH = RuntimeHelper.downcallHandle(
+        "RegEnumKeyW",
+        constants$494.RegEnumKeyW$FUNC
     );
-    static final FunctionDescriptor SCardListInterfacesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegEnumKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SCardListInterfacesA$MH = RuntimeHelper.downcallHandle(
-        "SCardListInterfacesA",
-        constants$494.SCardListInterfacesA$FUNC
-    );
-    static final FunctionDescriptor SCardListInterfacesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardListInterfacesW$MH = RuntimeHelper.downcallHandle(
-        "SCardListInterfacesW",
-        constants$494.SCardListInterfacesW$FUNC
+    static final MethodHandle RegEnumKeyExA$MH = RuntimeHelper.downcallHandle(
+        "RegEnumKeyExA",
+        constants$494.RegEnumKeyExA$FUNC
     );
-    static final FunctionDescriptor SCardGetProviderIdA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegEnumKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardGetProviderIdA$MH = RuntimeHelper.downcallHandle(
-        "SCardGetProviderIdA",
-        constants$494.SCardGetProviderIdA$FUNC
+    static final MethodHandle RegEnumKeyExW$MH = RuntimeHelper.downcallHandle(
+        "RegEnumKeyExW",
+        constants$494.RegEnumKeyExW$FUNC
     );
-    static final FunctionDescriptor SCardGetProviderIdW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegEnumValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardGetProviderIdW$MH = RuntimeHelper.downcallHandle(
-        "SCardGetProviderIdW",
-        constants$494.SCardGetProviderIdW$FUNC
+    static final MethodHandle RegEnumValueA$MH = RuntimeHelper.downcallHandle(
+        "RegEnumValueA",
+        constants$494.RegEnumValueA$FUNC
     );
 }
 

@@ -9,66 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$326 {
 
-    static final FunctionDescriptor DestroyIcon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor wglGetLayerPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DestroyIcon$MH = RuntimeHelper.downcallHandle(
-        "DestroyIcon",
-        constants$326.DestroyIcon$FUNC
+    static final MethodHandle wglGetLayerPaletteEntries$MH = RuntimeHelper.downcallHandle(
+        "wglGetLayerPaletteEntries",
+        constants$326.wglGetLayerPaletteEntries$FUNC
     );
-    static final FunctionDescriptor LookupIconIdFromDirectory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor wglRealizeLayerPalette$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle LookupIconIdFromDirectory$MH = RuntimeHelper.downcallHandle(
-        "LookupIconIdFromDirectory",
-        constants$326.LookupIconIdFromDirectory$FUNC
-    );
-    static final FunctionDescriptor LookupIconIdFromDirectoryEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LookupIconIdFromDirectoryEx$MH = RuntimeHelper.downcallHandle(
-        "LookupIconIdFromDirectoryEx",
-        constants$326.LookupIconIdFromDirectoryEx$FUNC
+    static final MethodHandle wglRealizeLayerPalette$MH = RuntimeHelper.downcallHandle(
+        "wglRealizeLayerPalette",
+        constants$326.wglRealizeLayerPalette$FUNC
     );
-    static final FunctionDescriptor CreateIconFromResource$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor wglSwapLayerBuffers$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateIconFromResource$MH = RuntimeHelper.downcallHandle(
-        "CreateIconFromResource",
-        constants$326.CreateIconFromResource$FUNC
+    static final MethodHandle wglSwapLayerBuffers$MH = RuntimeHelper.downcallHandle(
+        "wglSwapLayerBuffers",
+        constants$326.wglSwapLayerBuffers$FUNC
     );
-    static final FunctionDescriptor CreateIconFromResourceEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor wglSwapMultipleBuffers$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wglSwapMultipleBuffers$MH = RuntimeHelper.downcallHandle(
+        "wglSwapMultipleBuffers",
+        constants$326.wglSwapMultipleBuffers$FUNC
+    );
+    static final FunctionDescriptor WNDPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CreateIconFromResourceEx$MH = RuntimeHelper.downcallHandle(
-        "CreateIconFromResourceEx",
-        constants$326.CreateIconFromResourceEx$FUNC
-    );
-    static final FunctionDescriptor LoadImageA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle LoadImageA$MH = RuntimeHelper.downcallHandle(
-        "LoadImageA",
-        constants$326.LoadImageA$FUNC
+    static final MethodHandle WNDPROC$MH = RuntimeHelper.downcallHandle(
+        constants$326.WNDPROC$FUNC
     );
 }
 

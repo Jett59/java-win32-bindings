@@ -9,12 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$698 {
 
-    static final MemorySegment sz_CERT_STORE_PROV_PKCS7$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PKCS7");
-    static final MemorySegment sz_CERT_STORE_PROV_PKCS12$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PKCS12");
-    static final MemorySegment sz_CERT_STORE_PROV_SERIALIZED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Serialized");
-    static final MemorySegment sz_CERT_STORE_PROV_COLLECTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Collection");
-    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM_REGISTRY_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SystemRegistry");
-    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM_REGISTRY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SystemRegistry");
+    static final FunctionDescriptor IIDFromString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IIDFromString$MH = RuntimeHelper.downcallHandle(
+        "IIDFromString",
+        constants$698.IIDFromString$FUNC
+    );
+    static final FunctionDescriptor ProgIDFromCLSID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ProgIDFromCLSID$MH = RuntimeHelper.downcallHandle(
+        "ProgIDFromCLSID",
+        constants$698.ProgIDFromCLSID$FUNC
+    );
+    static final FunctionDescriptor CLSIDFromProgID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CLSIDFromProgID$MH = RuntimeHelper.downcallHandle(
+        "CLSIDFromProgID",
+        constants$698.CLSIDFromProgID$FUNC
+    );
+    static final FunctionDescriptor StringFromGUID2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle StringFromGUID2$MH = RuntimeHelper.downcallHandle(
+        "StringFromGUID2",
+        constants$698.StringFromGUID2$FUNC
+    );
+    static final FunctionDescriptor CoCreateGuid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoCreateGuid$MH = RuntimeHelper.downcallHandle(
+        "CoCreateGuid",
+        constants$698.CoCreateGuid$FUNC
+    );
+    static final FunctionDescriptor PropVariantCopy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PropVariantCopy$MH = RuntimeHelper.downcallHandle(
+        "PropVariantCopy",
+        constants$698.PropVariantCopy$FUNC
+    );
 }
 
 

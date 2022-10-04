@@ -9,31 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$354 {
 
-    static final FunctionDescriptor CALINFO_ENUMPROCEXA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetClassInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CALINFO_ENUMPROCEXA$MH = RuntimeHelper.downcallHandle(
-        constants$354.CALINFO_ENUMPROCEXA$FUNC
+    static final MethodHandle GetClassInfoExA$MH = RuntimeHelper.downcallHandle(
+        "GetClassInfoExA",
+        constants$354.GetClassInfoExA$FUNC
     );
-    static final FunctionDescriptor LANGUAGEGROUP_ENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetClassInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetClassInfoExW$MH = RuntimeHelper.downcallHandle(
+        "GetClassInfoExW",
+        constants$354.GetClassInfoExW$FUNC
+    );
+    static final FunctionDescriptor PREGISTERCLASSNAMEW$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PREGISTERCLASSNAMEW$MH = RuntimeHelper.downcallHandle(
+        constants$354.PREGISTERCLASSNAMEW$FUNC
+    );
+    static final FunctionDescriptor CreateWindowExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle LANGUAGEGROUP_ENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$354.LANGUAGEGROUP_ENUMPROCW$FUNC
-    );
-    static final FunctionDescriptor LANGGROUPLOCALE_ENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LANGGROUPLOCALE_ENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$354.LANGGROUPLOCALE_ENUMPROCW$FUNC
+    static final MethodHandle CreateWindowExA$MH = RuntimeHelper.downcallHandle(
+        "CreateWindowExA",
+        constants$354.CreateWindowExA$FUNC
+    );
+    static final FunctionDescriptor CreateWindowExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateWindowExW$MH = RuntimeHelper.downcallHandle(
+        "CreateWindowExW",
+        constants$354.CreateWindowExW$FUNC
     );
 }
 

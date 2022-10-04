@@ -9,12 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$610 {
 
-    static final MemorySegment szOID_OIWDIR_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.2");
-    static final MemorySegment szOID_OIWDIR_SIGN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.3");
-    static final MemorySegment szOID_OIWDIR_md2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.2.1");
-    static final MemorySegment szOID_OIWDIR_md2RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.3.1");
-    static final MemorySegment szOID_INFOSEC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1");
-    static final MemorySegment szOID_INFOSEC_sdnsSignature$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.1");
+    static final FunctionDescriptor CryptHashCertificate2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptHashCertificate2$MH = RuntimeHelper.downcallHandle(
+        "CryptHashCertificate2",
+        constants$610.CryptHashCertificate2$FUNC
+    );
+    static final FunctionDescriptor CryptSignCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptSignCertificate$MH = RuntimeHelper.downcallHandle(
+        "CryptSignCertificate",
+        constants$610.CryptSignCertificate$FUNC
+    );
+    static final FunctionDescriptor CryptSignAndEncodeCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptSignAndEncodeCertificate$MH = RuntimeHelper.downcallHandle(
+        "CryptSignAndEncodeCertificate",
+        constants$610.CryptSignAndEncodeCertificate$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$610.PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

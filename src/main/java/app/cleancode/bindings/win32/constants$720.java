@@ -9,12 +9,40 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$720 {
 
-    static final MemorySegment CERT_CHAIN_DISABLE_UNSUPPORTED_CRITICAL_EXTENSIONS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_CHAIN_MAX_AIA_URL_COUNT_IN_CERT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_MAX_AIA_URL_RETRIEVAL_COUNT_PER_CHAIN_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_MAX_AIA_URL_RETRIEVAL_BYTE_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_MAX_AIA_URL_RETRIEVAL_CERT_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_OCSP_VALIDITY_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("O");
+    static final FunctionDescriptor WaitServiceState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WaitServiceState$MH = RuntimeHelper.downcallHandle(
+        "WaitServiceState",
+        constants$720.WaitServiceState$FUNC
+    );
+    static final FunctionDescriptor GetServiceRegistryStateKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetServiceRegistryStateKey$MH = RuntimeHelper.downcallHandle(
+        "GetServiceRegistryStateKey",
+        constants$720.GetServiceRegistryStateKey$FUNC
+    );
+    static final FunctionDescriptor GetServiceDirectory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetServiceDirectory$MH = RuntimeHelper.downcallHandle(
+        "GetServiceDirectory",
+        constants$720.GetServiceDirectory$FUNC
+    );
+    static final MemorySegment OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OutOfProcessFunctionTableCallback");
+    static final MemorySegment ACCESS_DS_SOURCE_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DS");
+    static final MemorySegment ACCESS_DS_SOURCE_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
 }
 
 

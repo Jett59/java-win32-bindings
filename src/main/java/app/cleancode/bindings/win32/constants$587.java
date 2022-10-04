@@ -9,12 +9,32 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$587 {
 
-    static final MemorySegment szOID_RSA_SHA256RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.11");
-    static final MemorySegment szOID_RSA_SHA384RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.12");
-    static final MemorySegment szOID_RSA_SHA512RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.13");
-    static final MemorySegment szOID_RSA_DH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.3.1");
-    static final MemorySegment szOID_RSA_data$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.1");
-    static final MemorySegment szOID_RSA_signedData$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.2");
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_WRITE_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_WRITE_CERT$MH = RuntimeHelper.downcallHandle(
+        constants$587.PFN_CERT_STORE_PROV_WRITE_CERT$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_DELETE_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_DELETE_CERT$MH = RuntimeHelper.downcallHandle(
+        constants$587.PFN_CERT_STORE_PROV_DELETE_CERT$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_SET_CERT_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_SET_CERT_PROPERTY$MH = RuntimeHelper.downcallHandle(
+        constants$587.PFN_CERT_STORE_PROV_SET_CERT_PROPERTY$FUNC
+    );
 }
 
 

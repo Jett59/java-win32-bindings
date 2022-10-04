@@ -9,52 +9,80 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$268 {
 
-    static final FunctionDescriptor CharLowerBuffW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateFontIndirectW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateFontIndirectW$MH = RuntimeHelper.downcallHandle(
+        "CreateFontIndirectW",
+        constants$268.CreateFontIndirectW$FUNC
+    );
+    static final FunctionDescriptor CreateFontA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateFontA$MH = RuntimeHelper.downcallHandle(
+        "CreateFontA",
+        constants$268.CreateFontA$FUNC
+    );
+    static final FunctionDescriptor CreateFontW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateFontW$MH = RuntimeHelper.downcallHandle(
+        "CreateFontW",
+        constants$268.CreateFontW$FUNC
+    );
+    static final FunctionDescriptor CreateHatchBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CharLowerBuffW$MH = RuntimeHelper.downcallHandle(
-        "CharLowerBuffW",
-        constants$268.CharLowerBuffW$FUNC
+    static final MethodHandle CreateHatchBrush$MH = RuntimeHelper.downcallHandle(
+        "CreateHatchBrush",
+        constants$268.CreateHatchBrush$FUNC
     );
-    static final FunctionDescriptor CharNextA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CharNextA$MH = RuntimeHelper.downcallHandle(
-        "CharNextA",
-        constants$268.CharNextA$FUNC
-    );
-    static final FunctionDescriptor CharNextW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CharNextW$MH = RuntimeHelper.downcallHandle(
-        "CharNextW",
-        constants$268.CharNextW$FUNC
-    );
-    static final FunctionDescriptor CharPrevA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateICA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CharPrevA$MH = RuntimeHelper.downcallHandle(
-        "CharPrevA",
-        constants$268.CharPrevA$FUNC
+    static final MethodHandle CreateICA$MH = RuntimeHelper.downcallHandle(
+        "CreateICA",
+        constants$268.CreateICA$FUNC
     );
-    static final FunctionDescriptor CharPrevW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateICW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CharPrevW$MH = RuntimeHelper.downcallHandle(
-        "CharPrevW",
-        constants$268.CharPrevW$FUNC
-    );
-    static final FunctionDescriptor CharNextExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CharNextExA$MH = RuntimeHelper.downcallHandle(
-        "CharNextExA",
-        constants$268.CharNextExA$FUNC
+    static final MethodHandle CreateICW$MH = RuntimeHelper.downcallHandle(
+        "CreateICW",
+        constants$268.CreateICW$FUNC
     );
 }
 

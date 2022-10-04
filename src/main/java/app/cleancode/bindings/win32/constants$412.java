@@ -9,67 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$412 {
 
-    static final FunctionDescriptor WSAAsyncGetProtoByNumber$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WSAAsyncGetProtoByNumber$MH = RuntimeHelper.downcallHandle(
-        "WSAAsyncGetProtoByNumber",
-        constants$412.WSAAsyncGetProtoByNumber$FUNC
-    );
-    static final FunctionDescriptor WSAAsyncGetHostByName$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WSAAsyncGetHostByName$MH = RuntimeHelper.downcallHandle(
-        "WSAAsyncGetHostByName",
-        constants$412.WSAAsyncGetHostByName$FUNC
-    );
-    static final FunctionDescriptor WSAAsyncGetHostByAddr$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WSAAsyncGetHostByAddr$MH = RuntimeHelper.downcallHandle(
-        "WSAAsyncGetHostByAddr",
-        constants$412.WSAAsyncGetHostByAddr$FUNC
-    );
-    static final FunctionDescriptor WSACancelAsyncRequest$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetCursor$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WSACancelAsyncRequest$MH = RuntimeHelper.downcallHandle(
-        "WSACancelAsyncRequest",
-        constants$412.WSACancelAsyncRequest$FUNC
+    static final MethodHandle SetCursor$MH = RuntimeHelper.downcallHandle(
+        "SetCursor",
+        constants$412.SetCursor$FUNC
     );
-    static final FunctionDescriptor WSAAsyncSelect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetCursorPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCursorPos$MH = RuntimeHelper.downcallHandle(
+        "GetCursorPos",
+        constants$412.GetCursorPos$FUNC
+    );
+    static final FunctionDescriptor GetPhysicalCursorPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPhysicalCursorPos$MH = RuntimeHelper.downcallHandle(
+        "GetPhysicalCursorPos",
+        constants$412.GetPhysicalCursorPos$FUNC
+    );
+    static final FunctionDescriptor GetClipCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetClipCursor$MH = RuntimeHelper.downcallHandle(
+        "GetClipCursor",
+        constants$412.GetClipCursor$FUNC
+    );
+    static final FunctionDescriptor GetCursor$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetCursor$MH = RuntimeHelper.downcallHandle(
+        "GetCursor",
+        constants$412.GetCursor$FUNC
+    );
+    static final FunctionDescriptor CreateCaret$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WSAAsyncSelect$MH = RuntimeHelper.downcallHandle(
-        "WSAAsyncSelect",
-        constants$412.WSAAsyncSelect$FUNC
-    );
-    static final FunctionDescriptor WSARecvEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WSARecvEx$MH = RuntimeHelper.downcallHandle(
-        "WSARecvEx",
-        constants$412.WSARecvEx$FUNC
+    static final MethodHandle CreateCaret$MH = RuntimeHelper.downcallHandle(
+        "CreateCaret",
+        constants$412.CreateCaret$FUNC
     );
 }
 

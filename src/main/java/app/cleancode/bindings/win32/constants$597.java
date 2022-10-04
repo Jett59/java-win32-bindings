@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$597 {
 
-    static final MemorySegment szOID_CN_ECDSA_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.156.11235.1.1.1");
-    static final MemorySegment szOID_ECC_CURVE_NISTP192$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.1");
-    static final MemorySegment szOID_ECC_CURVE_NISTP224$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.33");
-    static final MemorySegment szOID_ECC_CURVE_NISTP256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.7");
-    static final MemorySegment szOID_ECC_CURVE_NISTP384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.34");
-    static final MemorySegment szOID_ECC_CURVE_NISTP521$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.35");
+    static final FunctionDescriptor CertFindCRLInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindCRLInStore$MH = RuntimeHelper.downcallHandle(
+        "CertFindCRLInStore",
+        constants$597.CertFindCRLInStore$FUNC
+    );
+    static final FunctionDescriptor CertDuplicateCRLContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertDuplicateCRLContext$MH = RuntimeHelper.downcallHandle(
+        "CertDuplicateCRLContext",
+        constants$597.CertDuplicateCRLContext$FUNC
+    );
+    static final FunctionDescriptor CertCreateCRLContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertCreateCRLContext$MH = RuntimeHelper.downcallHandle(
+        "CertCreateCRLContext",
+        constants$597.CertCreateCRLContext$FUNC
+    );
+    static final FunctionDescriptor CertFreeCRLContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFreeCRLContext$MH = RuntimeHelper.downcallHandle(
+        "CertFreeCRLContext",
+        constants$597.CertFreeCRLContext$FUNC
+    );
+    static final FunctionDescriptor CertSetCRLContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertSetCRLContextProperty$MH = RuntimeHelper.downcallHandle(
+        "CertSetCRLContextProperty",
+        constants$597.CertSetCRLContextProperty$FUNC
+    );
+    static final FunctionDescriptor CertGetCRLContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetCRLContextProperty$MH = RuntimeHelper.downcallHandle(
+        "CertGetCRLContextProperty",
+        constants$597.CertGetCRLContextProperty$FUNC
+    );
 }
 
 

@@ -9,52 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$235 {
 
-    static final FunctionDescriptor EnumDesktopWindows$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor IsBadHugeWritePtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EnumDesktopWindows$MH = RuntimeHelper.downcallHandle(
-        "EnumDesktopWindows",
-        constants$235.EnumDesktopWindows$FUNC
+    static final MethodHandle IsBadHugeWritePtr$MH = RuntimeHelper.downcallHandle(
+        "IsBadHugeWritePtr",
+        constants$235.IsBadHugeWritePtr$FUNC
     );
-    static final FunctionDescriptor SwitchDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsBadCodePtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SwitchDesktop$MH = RuntimeHelper.downcallHandle(
-        "SwitchDesktop",
-        constants$235.SwitchDesktop$FUNC
+    static final MethodHandle IsBadCodePtr$MH = RuntimeHelper.downcallHandle(
+        "IsBadCodePtr",
+        constants$235.IsBadCodePtr$FUNC
     );
-    static final FunctionDescriptor SetThreadDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetThreadDesktop$MH = RuntimeHelper.downcallHandle(
-        "SetThreadDesktop",
-        constants$235.SetThreadDesktop$FUNC
-    );
-    static final FunctionDescriptor CloseDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CloseDesktop$MH = RuntimeHelper.downcallHandle(
-        "CloseDesktop",
-        constants$235.CloseDesktop$FUNC
-    );
-    static final FunctionDescriptor GetThreadDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetThreadDesktop$MH = RuntimeHelper.downcallHandle(
-        "GetThreadDesktop",
-        constants$235.GetThreadDesktop$FUNC
-    );
-    static final FunctionDescriptor CreateWindowStationA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor IsBadStringPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle IsBadStringPtrA$MH = RuntimeHelper.downcallHandle(
+        "IsBadStringPtrA",
+        constants$235.IsBadStringPtrA$FUNC
+    );
+    static final FunctionDescriptor IsBadStringPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle IsBadStringPtrW$MH = RuntimeHelper.downcallHandle(
+        "IsBadStringPtrW",
+        constants$235.IsBadStringPtrW$FUNC
+    );
+    static final FunctionDescriptor LookupAccountSidA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateWindowStationA$MH = RuntimeHelper.downcallHandle(
-        "CreateWindowStationA",
-        constants$235.CreateWindowStationA$FUNC
+    static final MethodHandle LookupAccountSidA$MH = RuntimeHelper.downcallHandle(
+        "LookupAccountSidA",
+        constants$235.LookupAccountSidA$FUNC
+    );
+    static final FunctionDescriptor LookupAccountSidW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LookupAccountSidW$MH = RuntimeHelper.downcallHandle(
+        "LookupAccountSidW",
+        constants$235.LookupAccountSidW$FUNC
     );
 }
 

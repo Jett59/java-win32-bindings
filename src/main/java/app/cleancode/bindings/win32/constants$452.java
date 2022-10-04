@@ -9,49 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$452 {
 
-    static final FunctionDescriptor CertRegisterPhysicalStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetGestureExtraArgs$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertRegisterPhysicalStore$MH = RuntimeHelper.downcallHandle(
-        "CertRegisterPhysicalStore",
-        constants$452.CertRegisterPhysicalStore$FUNC
+    static final MethodHandle GetGestureExtraArgs$MH = RuntimeHelper.downcallHandle(
+        "GetGestureExtraArgs",
+        constants$452.GetGestureExtraArgs$FUNC
     );
-    static final FunctionDescriptor CertUnregisterSystemStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CloseGestureInfoHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CloseGestureInfoHandle$MH = RuntimeHelper.downcallHandle(
+        "CloseGestureInfoHandle",
+        constants$452.CloseGestureInfoHandle$FUNC
+    );
+    static final FunctionDescriptor SetGestureConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertUnregisterSystemStore$MH = RuntimeHelper.downcallHandle(
-        "CertUnregisterSystemStore",
-        constants$452.CertUnregisterSystemStore$FUNC
+    static final MethodHandle SetGestureConfig$MH = RuntimeHelper.downcallHandle(
+        "SetGestureConfig",
+        constants$452.SetGestureConfig$FUNC
     );
-    static final FunctionDescriptor CertUnregisterPhysicalStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetGestureConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertUnregisterPhysicalStore$MH = RuntimeHelper.downcallHandle(
-        "CertUnregisterPhysicalStore",
-        constants$452.CertUnregisterPhysicalStore$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_ENUM_SYSTEM_STORE_LOCATION$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_ENUM_SYSTEM_STORE_LOCATION$MH = RuntimeHelper.downcallHandle(
-        constants$452.PFN_CERT_ENUM_SYSTEM_STORE_LOCATION$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_ENUM_SYSTEM_STORE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetGestureConfig$MH = RuntimeHelper.downcallHandle(
+        "GetGestureConfig",
+        constants$452.GetGestureConfig$FUNC
+    );
+    static final FunctionDescriptor ShutdownBlockReasonCreate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ShutdownBlockReasonCreate$MH = RuntimeHelper.downcallHandle(
+        "ShutdownBlockReasonCreate",
+        constants$452.ShutdownBlockReasonCreate$FUNC
+    );
+    static final FunctionDescriptor ShutdownBlockReasonQuery$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ShutdownBlockReasonQuery$MH = RuntimeHelper.downcallHandle(
+        "ShutdownBlockReasonQuery",
+        constants$452.ShutdownBlockReasonQuery$FUNC
     );
 }
 

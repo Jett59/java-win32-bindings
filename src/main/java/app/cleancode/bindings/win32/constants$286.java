@@ -9,59 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$286 {
 
-    static final FunctionDescriptor LoadMenuIndirectW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetTextCharset$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadMenuIndirectW$MH = RuntimeHelper.downcallHandle(
-        "LoadMenuIndirectW",
-        constants$286.LoadMenuIndirectW$FUNC
+    static final MethodHandle GetTextCharset$MH = RuntimeHelper.downcallHandle(
+        "GetTextCharset",
+        constants$286.GetTextCharset$FUNC
     );
-    static final FunctionDescriptor GetMenu$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetTextCharsetInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetTextCharsetInfo$MH = RuntimeHelper.downcallHandle(
+        "GetTextCharsetInfo",
+        constants$286.GetTextCharsetInfo$FUNC
+    );
+    static final FunctionDescriptor TranslateCharsetInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle TranslateCharsetInfo$MH = RuntimeHelper.downcallHandle(
+        "TranslateCharsetInfo",
+        constants$286.TranslateCharsetInfo$FUNC
+    );
+    static final FunctionDescriptor GetFontLanguageInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetMenu$MH = RuntimeHelper.downcallHandle(
-        "GetMenu",
-        constants$286.GetMenu$FUNC
+    static final MethodHandle GetFontLanguageInfo$MH = RuntimeHelper.downcallHandle(
+        "GetFontLanguageInfo",
+        constants$286.GetFontLanguageInfo$FUNC
     );
-    static final FunctionDescriptor SetMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCharacterPlacementA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetMenu$MH = RuntimeHelper.downcallHandle(
-        "SetMenu",
-        constants$286.SetMenu$FUNC
-    );
-    static final FunctionDescriptor ChangeMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ChangeMenuA$MH = RuntimeHelper.downcallHandle(
-        "ChangeMenuA",
-        constants$286.ChangeMenuA$FUNC
+    static final MethodHandle GetCharacterPlacementA$MH = RuntimeHelper.downcallHandle(
+        "GetCharacterPlacementA",
+        constants$286.GetCharacterPlacementA$FUNC
     );
-    static final FunctionDescriptor ChangeMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCharacterPlacementW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ChangeMenuW$MH = RuntimeHelper.downcallHandle(
-        "ChangeMenuW",
-        constants$286.ChangeMenuW$FUNC
-    );
-    static final FunctionDescriptor HiliteMenuItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle HiliteMenuItem$MH = RuntimeHelper.downcallHandle(
-        "HiliteMenuItem",
-        constants$286.HiliteMenuItem$FUNC
+    static final MethodHandle GetCharacterPlacementW$MH = RuntimeHelper.downcallHandle(
+        "GetCharacterPlacementW",
+        constants$286.GetCharacterPlacementW$FUNC
     );
 }
 

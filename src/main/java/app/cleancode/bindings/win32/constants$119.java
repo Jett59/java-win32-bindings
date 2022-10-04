@@ -9,61 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$119 {
 
-    static final FunctionDescriptor GetCompressedFileSizeTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCompressedFileSizeTransactedA$MH = RuntimeHelper.downcallHandle(
-        "GetCompressedFileSizeTransactedA",
-        constants$119.GetCompressedFileSizeTransactedA$FUNC
+    static final MethodHandle GetProcessId$MH = RuntimeHelper.downcallHandle(
+        "GetProcessId",
+        constants$119.GetProcessId$FUNC
     );
-    static final FunctionDescriptor GetCompressedFileSizeTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetThreadId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCompressedFileSizeTransactedW$MH = RuntimeHelper.downcallHandle(
-        "GetCompressedFileSizeTransactedW",
-        constants$119.GetCompressedFileSizeTransactedW$FUNC
+    static final MethodHandle GetThreadId$MH = RuntimeHelper.downcallHandle(
+        "GetThreadId",
+        constants$119.GetThreadId$FUNC
     );
-    static final FunctionDescriptor DeleteFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FlushProcessWriteBuffers$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle FlushProcessWriteBuffers$MH = RuntimeHelper.downcallHandle(
+        "FlushProcessWriteBuffers",
+        constants$119.FlushProcessWriteBuffers$FUNC
+    );
+    static final FunctionDescriptor GetProcessIdOfThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeleteFileTransactedA$MH = RuntimeHelper.downcallHandle(
-        "DeleteFileTransactedA",
-        constants$119.DeleteFileTransactedA$FUNC
+    static final MethodHandle GetProcessIdOfThread$MH = RuntimeHelper.downcallHandle(
+        "GetProcessIdOfThread",
+        constants$119.GetProcessIdOfThread$FUNC
     );
-    static final FunctionDescriptor DeleteFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteFileTransactedW$MH = RuntimeHelper.downcallHandle(
-        "DeleteFileTransactedW",
-        constants$119.DeleteFileTransactedW$FUNC
-    );
-    static final FunctionDescriptor CheckNameLegalDOS8Dot3A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor InitializeProcThreadAttributeList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CheckNameLegalDOS8Dot3A$MH = RuntimeHelper.downcallHandle(
-        "CheckNameLegalDOS8Dot3A",
-        constants$119.CheckNameLegalDOS8Dot3A$FUNC
-    );
-    static final FunctionDescriptor CheckNameLegalDOS8Dot3W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CheckNameLegalDOS8Dot3W$MH = RuntimeHelper.downcallHandle(
-        "CheckNameLegalDOS8Dot3W",
-        constants$119.CheckNameLegalDOS8Dot3W$FUNC
+    static final MethodHandle InitializeProcThreadAttributeList$MH = RuntimeHelper.downcallHandle(
+        "InitializeProcThreadAttributeList",
+        constants$119.InitializeProcThreadAttributeList$FUNC
+    );
+    static final FunctionDescriptor DeleteProcThreadAttributeList$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteProcThreadAttributeList$MH = RuntimeHelper.downcallHandle(
+        "DeleteProcThreadAttributeList",
+        constants$119.DeleteProcThreadAttributeList$FUNC
     );
 }
 

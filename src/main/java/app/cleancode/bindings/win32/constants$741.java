@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$741 {
 
-    static final MemorySegment SCARD_LOCAL_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$LocalReaders");
-    static final MemorySegment SCARD_SYSTEM_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$SystemReaders");
-    static final MemorySegment BIDI_ACTION_ENUM_SCHEMA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
-    static final MemorySegment BIDI_ACTION_GET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment BIDI_ACTION_SET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment BIDI_ACTION_GET_ALL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
+    static final MemoryAddress IDC_CROSS$ADDR = MemoryAddress.ofLong(32515L);
+    static final MemoryAddress IDC_UPARROW$ADDR = MemoryAddress.ofLong(32516L);
+    static final MemoryAddress IDC_SIZE$ADDR = MemoryAddress.ofLong(32640L);
+    static final MemoryAddress IDC_ICON$ADDR = MemoryAddress.ofLong(32641L);
+    static final MemoryAddress IDC_SIZENWSE$ADDR = MemoryAddress.ofLong(32642L);
+    static final MemoryAddress IDC_SIZENESW$ADDR = MemoryAddress.ofLong(32643L);
 }
 
 

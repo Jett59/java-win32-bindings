@@ -9,34 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$429 {
 
-    static final FunctionDescriptor PFN_CMSG_FREE$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CMSG_FREE$MH = RuntimeHelper.downcallHandle(
-        constants$429.PFN_CMSG_FREE$FUNC
-    );
-    static final FunctionDescriptor PFN_CMSG_GEN_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LoadIconA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_GEN_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
-        constants$429.PFN_CMSG_GEN_ENCRYPT_KEY$FUNC
+    static final MethodHandle LoadIconA$MH = RuntimeHelper.downcallHandle(
+        "LoadIconA",
+        constants$429.LoadIconA$FUNC
     );
-    static final FunctionDescriptor PFN_CMSG_EXPORT_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LoadIconW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_EXPORT_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
-        constants$429.PFN_CMSG_EXPORT_ENCRYPT_KEY$FUNC
+    static final MethodHandle LoadIconW$MH = RuntimeHelper.downcallHandle(
+        "LoadIconW",
+        constants$429.LoadIconW$FUNC
+    );
+    static final FunctionDescriptor PrivateExtractIconsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PrivateExtractIconsA$MH = RuntimeHelper.downcallHandle(
+        "PrivateExtractIconsA",
+        constants$429.PrivateExtractIconsA$FUNC
+    );
+    static final FunctionDescriptor PrivateExtractIconsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PrivateExtractIconsW$MH = RuntimeHelper.downcallHandle(
+        "PrivateExtractIconsW",
+        constants$429.PrivateExtractIconsW$FUNC
+    );
+    static final FunctionDescriptor CreateIcon$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateIcon$MH = RuntimeHelper.downcallHandle(
+        "CreateIcon",
+        constants$429.CreateIcon$FUNC
+    );
+    static final FunctionDescriptor DestroyIcon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DestroyIcon$MH = RuntimeHelper.downcallHandle(
+        "DestroyIcon",
+        constants$429.DestroyIcon$FUNC
     );
 }
 

@@ -9,62 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$311 {
 
-    static final FunctionDescriptor LogicalToPhysicalPointForPerMonitorDPI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LogicalToPhysicalPointForPerMonitorDPI$MH = RuntimeHelper.downcallHandle(
-        "LogicalToPhysicalPointForPerMonitorDPI",
-        constants$311.LogicalToPhysicalPointForPerMonitorDPI$FUNC
-    );
-    static final FunctionDescriptor PhysicalToLogicalPointForPerMonitorDPI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PhysicalToLogicalPointForPerMonitorDPI$MH = RuntimeHelper.downcallHandle(
-        "PhysicalToLogicalPointForPerMonitorDPI",
-        constants$311.PhysicalToLogicalPointForPerMonitorDPI$FUNC
-    );
-    static final FunctionDescriptor MapWindowPoints$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle MapWindowPoints$MH = RuntimeHelper.downcallHandle(
-        "MapWindowPoints",
-        constants$311.MapWindowPoints$FUNC
+    static final MethodHandle GetPath$MH = RuntimeHelper.downcallHandle(
+        "GetPath",
+        constants$311.GetPath$FUNC
     );
-    static final FunctionDescriptor WindowFromPoint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT")
+    static final FunctionDescriptor PathToRegion$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WindowFromPoint$MH = RuntimeHelper.downcallHandle(
-        "WindowFromPoint",
-        constants$311.WindowFromPoint$FUNC
+    static final MethodHandle PathToRegion$MH = RuntimeHelper.downcallHandle(
+        "PathToRegion",
+        constants$311.PathToRegion$FUNC
     );
-    static final FunctionDescriptor WindowFromPhysicalPoint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT")
-    );
-    static final MethodHandle WindowFromPhysicalPoint$MH = RuntimeHelper.downcallHandle(
-        "WindowFromPhysicalPoint",
-        constants$311.WindowFromPhysicalPoint$FUNC
-    );
-    static final FunctionDescriptor ChildWindowFromPoint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor PolyDraw$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT")
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ChildWindowFromPoint$MH = RuntimeHelper.downcallHandle(
-        "ChildWindowFromPoint",
-        constants$311.ChildWindowFromPoint$FUNC
+    static final MethodHandle PolyDraw$MH = RuntimeHelper.downcallHandle(
+        "PolyDraw",
+        constants$311.PolyDraw$FUNC
+    );
+    static final FunctionDescriptor SelectClipPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SelectClipPath$MH = RuntimeHelper.downcallHandle(
+        "SelectClipPath",
+        constants$311.SelectClipPath$FUNC
+    );
+    static final FunctionDescriptor SetArcDirection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetArcDirection$MH = RuntimeHelper.downcallHandle(
+        "SetArcDirection",
+        constants$311.SetArcDirection$FUNC
+    );
+    static final FunctionDescriptor SetMiterLimit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_FLOAT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetMiterLimit$MH = RuntimeHelper.downcallHandle(
+        "SetMiterLimit",
+        constants$311.SetMiterLimit$FUNC
     );
 }
 

@@ -9,62 +9,41 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$374 {
 
-    static final FunctionDescriptor GetCurrencyFormatEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsCharLowerA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
     );
-    static final MethodHandle GetCurrencyFormatEx$MH = RuntimeHelper.downcallHandle(
-        "GetCurrencyFormatEx",
-        constants$374.GetCurrencyFormatEx$FUNC
+    static final MethodHandle IsCharLowerA$MH = RuntimeHelper.downcallHandle(
+        "IsCharLowerA",
+        constants$374.IsCharLowerA$FUNC
     );
-    static final FunctionDescriptor GetUserDefaultLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsCharLowerW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle GetUserDefaultLocaleName$MH = RuntimeHelper.downcallHandle(
-        "GetUserDefaultLocaleName",
-        constants$374.GetUserDefaultLocaleName$FUNC
+    static final MethodHandle IsCharLowerW$MH = RuntimeHelper.downcallHandle(
+        "IsCharLowerW",
+        constants$374.IsCharLowerW$FUNC
     );
-    static final FunctionDescriptor GetSystemDefaultLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetSystemDefaultLocaleName$MH = RuntimeHelper.downcallHandle(
-        "GetSystemDefaultLocaleName",
-        constants$374.GetSystemDefaultLocaleName$FUNC
-    );
-    static final FunctionDescriptor IsNLSDefinedString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle IsNLSDefinedString$MH = RuntimeHelper.downcallHandle(
-        "IsNLSDefinedString",
-        constants$374.IsNLSDefinedString$FUNC
-    );
-    static final FunctionDescriptor GetNLSVersionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetFocus$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetNLSVersionEx$MH = RuntimeHelper.downcallHandle(
-        "GetNLSVersionEx",
-        constants$374.GetNLSVersionEx$FUNC
+    static final MethodHandle SetFocus$MH = RuntimeHelper.downcallHandle(
+        "SetFocus",
+        constants$374.SetFocus$FUNC
     );
-    static final FunctionDescriptor IsValidNLSVersion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetActiveWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetActiveWindow$MH = RuntimeHelper.downcallHandle(
+        "GetActiveWindow",
+        constants$374.GetActiveWindow$FUNC
     );
-    static final MethodHandle IsValidNLSVersion$MH = RuntimeHelper.downcallHandle(
-        "IsValidNLSVersion",
-        constants$374.IsValidNLSVersion$FUNC
+    static final FunctionDescriptor GetFocus$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetFocus$MH = RuntimeHelper.downcallHandle(
+        "GetFocus",
+        constants$374.GetFocus$FUNC
+    );
+    static final FunctionDescriptor GetKBCodePage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetKBCodePage$MH = RuntimeHelper.downcallHandle(
+        "GetKBCodePage",
+        constants$374.GetKBCodePage$FUNC
     );
 }
 

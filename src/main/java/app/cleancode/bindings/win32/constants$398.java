@@ -9,69 +9,86 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$398 {
 
-    static final FunctionDescriptor WNetCancelConnection2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DrawTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WNetCancelConnection2W$MH = RuntimeHelper.downcallHandle(
-        "WNetCancelConnection2W",
-        constants$398.WNetCancelConnection2W$FUNC
-    );
-    static final FunctionDescriptor WNetGetConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetGetConnectionA$MH = RuntimeHelper.downcallHandle(
-        "WNetGetConnectionA",
-        constants$398.WNetGetConnectionA$FUNC
-    );
-    static final FunctionDescriptor WNetGetConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetGetConnectionW$MH = RuntimeHelper.downcallHandle(
-        "WNetGetConnectionW",
-        constants$398.WNetGetConnectionW$FUNC
-    );
-    static final FunctionDescriptor WNetRestoreSingleConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetRestoreSingleConnectionW$MH = RuntimeHelper.downcallHandle(
-        "WNetRestoreSingleConnectionW",
-        constants$398.WNetRestoreSingleConnectionW$FUNC
+    static final MethodHandle DrawTextW$MH = RuntimeHelper.downcallHandle(
+        "DrawTextW",
+        constants$398.DrawTextW$FUNC
     );
-    static final FunctionDescriptor WNetUseConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DrawTextExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetUseConnectionA$MH = RuntimeHelper.downcallHandle(
-        "WNetUseConnectionA",
-        constants$398.WNetUseConnectionA$FUNC
+    static final MethodHandle DrawTextExA$MH = RuntimeHelper.downcallHandle(
+        "DrawTextExA",
+        constants$398.DrawTextExA$FUNC
     );
-    static final FunctionDescriptor WNetUseConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DrawTextExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetUseConnectionW$MH = RuntimeHelper.downcallHandle(
-        "WNetUseConnectionW",
-        constants$398.WNetUseConnectionW$FUNC
+    static final MethodHandle DrawTextExW$MH = RuntimeHelper.downcallHandle(
+        "DrawTextExW",
+        constants$398.DrawTextExW$FUNC
+    );
+    static final FunctionDescriptor GrayStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GrayStringA$MH = RuntimeHelper.downcallHandle(
+        "GrayStringA",
+        constants$398.GrayStringA$FUNC
+    );
+    static final FunctionDescriptor GrayStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GrayStringW$MH = RuntimeHelper.downcallHandle(
+        "GrayStringW",
+        constants$398.GrayStringW$FUNC
+    );
+    static final FunctionDescriptor DrawStateA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DrawStateA$MH = RuntimeHelper.downcallHandle(
+        "DrawStateA",
+        constants$398.DrawStateA$FUNC
     );
 }
 

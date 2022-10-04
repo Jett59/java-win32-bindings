@@ -11,13 +11,13 @@ public interface ENHMFENUMPROC {
 
     int apply(java.lang.foreign.MemoryAddress hdc, java.lang.foreign.MemoryAddress lpht, java.lang.foreign.MemoryAddress lpmr, int nHandles, long data);
     static MemorySegment allocate(ENHMFENUMPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(ENHMFENUMPROC.class, fi, constants$198.ENHMFENUMPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(ENHMFENUMPROC.class, fi, constants$302.ENHMFENUMPROC$FUNC, session);
     }
     static ENHMFENUMPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hdc, java.lang.foreign.MemoryAddress _lpht, java.lang.foreign.MemoryAddress _lpmr, int _nHandles, long _data) -> {
             try {
-                return (int)constants$198.ENHMFENUMPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hdc, (java.lang.foreign.Addressable)_lpht, (java.lang.foreign.Addressable)_lpmr, _nHandles, _data);
+                return (int)constants$302.ENHMFENUMPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hdc, (java.lang.foreign.Addressable)_lpht, (java.lang.foreign.Addressable)_lpmr, _nHandles, _data);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

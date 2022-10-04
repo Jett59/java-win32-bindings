@@ -9,47 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$75 {
 
-    static final FunctionDescriptor GlobalFree$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FindFirstFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GlobalFree$MH = RuntimeHelper.downcallHandle(
-        "GlobalFree",
-        constants$75.GlobalFree$FUNC
+    static final MethodHandle FindFirstFileW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFileW",
+        constants$75.FindFirstFileW$FUNC
     );
-    static final FunctionDescriptor GlobalCompact$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor FindFirstFileExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GlobalCompact$MH = RuntimeHelper.downcallHandle(
-        "GlobalCompact",
-        constants$75.GlobalCompact$FUNC
+    static final MethodHandle FindFirstFileExA$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFileExA",
+        constants$75.FindFirstFileExA$FUNC
     );
-    static final FunctionDescriptor GlobalFix$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor FindFirstFileExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FindFirstFileExW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFileExW",
+        constants$75.FindFirstFileExW$FUNC
+    );
+    static final FunctionDescriptor FindFirstVolumeW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FindFirstVolumeW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstVolumeW",
+        constants$75.FindFirstVolumeW$FUNC
+    );
+    static final FunctionDescriptor FindNextChangeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GlobalFix$MH = RuntimeHelper.downcallHandle(
-        "GlobalFix",
-        constants$75.GlobalFix$FUNC
+    static final MethodHandle FindNextChangeNotification$MH = RuntimeHelper.downcallHandle(
+        "FindNextChangeNotification",
+        constants$75.FindNextChangeNotification$FUNC
     );
-    static final FunctionDescriptor GlobalUnfix$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor FindNextFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GlobalUnfix$MH = RuntimeHelper.downcallHandle(
-        "GlobalUnfix",
-        constants$75.GlobalUnfix$FUNC
-    );
-    static final FunctionDescriptor GlobalWire$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GlobalWire$MH = RuntimeHelper.downcallHandle(
-        "GlobalWire",
-        constants$75.GlobalWire$FUNC
-    );
-    static final FunctionDescriptor GlobalUnWire$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GlobalUnWire$MH = RuntimeHelper.downcallHandle(
-        "GlobalUnWire",
-        constants$75.GlobalUnWire$FUNC
+    static final MethodHandle FindNextFileA$MH = RuntimeHelper.downcallHandle(
+        "FindNextFileA",
+        constants$75.FindNextFileA$FUNC
     );
 }
 

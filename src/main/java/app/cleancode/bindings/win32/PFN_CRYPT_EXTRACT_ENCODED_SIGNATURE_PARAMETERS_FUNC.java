@@ -11,13 +11,13 @@ public interface PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC {
 
     int apply(int dwCertEncodingType, java.lang.foreign.MemoryAddress pSignatureAlgorithm, java.lang.foreign.MemoryAddress ppvDecodedSignPara, java.lang.foreign.MemoryAddress ppwszCNGHashAlgid);
     static MemorySegment allocate(PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC.class, fi, constants$458.PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC.class, fi, constants$610.PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$FUNC, session);
     }
     static PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int _dwCertEncodingType, java.lang.foreign.MemoryAddress _pSignatureAlgorithm, java.lang.foreign.MemoryAddress _ppvDecodedSignPara, java.lang.foreign.MemoryAddress _ppwszCNGHashAlgid) -> {
             try {
-                return (int)constants$458.PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$MH.invokeExact((Addressable)symbol, _dwCertEncodingType, (java.lang.foreign.Addressable)_pSignatureAlgorithm, (java.lang.foreign.Addressable)_ppvDecodedSignPara, (java.lang.foreign.Addressable)_ppwszCNGHashAlgid);
+                return (int)constants$610.PFN_CRYPT_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$MH.invokeExact((Addressable)symbol, _dwCertEncodingType, (java.lang.foreign.Addressable)_pSignatureAlgorithm, (java.lang.foreign.Addressable)_ppvDecodedSignPara, (java.lang.foreign.Addressable)_ppwszCNGHashAlgid);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

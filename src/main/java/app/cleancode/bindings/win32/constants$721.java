@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$721 {
 
-    static final MemorySegment CERT_CHAIN_DISABLE_SERIAL_CHAIN_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_CHAIN_SERIAL_CHAIN_LOG_FILE_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_DISABLE_SYNC_WITH_SSL_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_CHAIN_MAX_SSL_TIME_UPDATED_EVENT_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_SSL_HANDSHAKE_LOG_FILE_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_ENABLE_WEAK_SIGNATURE_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
+    static final MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Directory Service Object");
+    static final MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment SE_CREATE_TOKEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateTokenPrivilege");
+    static final MemorySegment SE_ASSIGNPRIMARYTOKEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeAssignPrimaryTokenPrivilege");
+    static final MemorySegment SE_LOCK_MEMORY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeLockMemoryPrivilege");
+    static final MemorySegment SE_INCREASE_QUOTA_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseQuotaPrivilege");
 }
 
 

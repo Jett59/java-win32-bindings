@@ -429,6 +429,165 @@ import static java.lang.foreign.ValueLayout.*;
     public static int LMEM_LOCKCOUNT() {
         return (int)255L;
     }
+    public static int CREATE_NEW() {
+        return (int)1L;
+    }
+    public static int CREATE_ALWAYS() {
+        return (int)2L;
+    }
+    public static int OPEN_EXISTING() {
+        return (int)3L;
+    }
+    public static int OPEN_ALWAYS() {
+        return (int)4L;
+    }
+    public static int TRUNCATE_EXISTING() {
+        return (int)5L;
+    }
+    public static int CREATE_MUTEX_INITIAL_OWNER() {
+        return (int)1L;
+    }
+    public static int CREATE_EVENT_MANUAL_RESET() {
+        return (int)1L;
+    }
+    public static int CREATE_EVENT_INITIAL_SET() {
+        return (int)2L;
+    }
+    public static int CREATE_WAITABLE_TIMER_MANUAL_RESET() {
+        return (int)1L;
+    }
+    public static int CREATE_WAITABLE_TIMER_HIGH_RESOLUTION() {
+        return (int)2L;
+    }
+    public static int SYNCHRONIZATION_BARRIER_FLAGS_SPIN_ONLY() {
+        return (int)1L;
+    }
+    public static int SYNCHRONIZATION_BARRIER_FLAGS_BLOCK_ONLY() {
+        return (int)2L;
+    }
+    public static int SYNCHRONIZATION_BARRIER_FLAGS_NO_DELETE() {
+        return (int)4L;
+    }
+    public static int PROC_THREAD_ATTRIBUTE_REPLACE_VALUE() {
+        return (int)1L;
+    }
+    public static int THREAD_POWER_THROTTLING_CURRENT_VERSION() {
+        return (int)1L;
+    }
+    public static int THREAD_POWER_THROTTLING_EXECUTION_SPEED() {
+        return (int)1L;
+    }
+    public static int PME_CURRENT_VERSION() {
+        return (int)1L;
+    }
+    public static int PME_FAILFAST_ON_COMMIT_FAIL_DISABLE() {
+        return (int)0L;
+    }
+    public static int PME_FAILFAST_ON_COMMIT_FAIL_ENABLE() {
+        return (int)1L;
+    }
+    public static int PROCESS_POWER_THROTTLING_CURRENT_VERSION() {
+        return (int)1L;
+    }
+    public static int PROCESS_POWER_THROTTLING_EXECUTION_SPEED() {
+        return (int)1L;
+    }
+    public static int PROCESS_LEAP_SECOND_INFO_FLAG_ENABLE_SIXTY_SECOND() {
+        return (int)1L;
+    }
+    public static int USER_CET_ENVIRONMENT_WIN32_PROCESS() {
+        return (int)0L;
+    }
+    public static int USER_CET_ENVIRONMENT_SGX2_ENCLAVE() {
+        return (int)2L;
+    }
+    public static int USER_CET_ENVIRONMENT_VBS_ENCLAVE() {
+        return (int)16L;
+    }
+    public static int USER_CET_ENVIRONMENT_VBS_BASIC_ENCLAVE() {
+        return (int)17L;
+    }
+    public static int SCEX2_ALT_NETBIOS_NAME() {
+        return (int)1L;
+    }
+    public static int FILE_MAP_COPY() {
+        return (int)1L;
+    }
+    public static int FILE_MAP_TARGETS_INVALID() {
+        return (int)1073741824L;
+    }
+    public static int FILE_MAP_LARGE_PAGES() {
+        return (int)536870912L;
+    }
+    public static int FILE_CACHE_MAX_HARD_ENABLE() {
+        return (int)1L;
+    }
+    public static int FILE_CACHE_MAX_HARD_DISABLE() {
+        return (int)2L;
+    }
+    public static int FILE_CACHE_MIN_HARD_ENABLE() {
+        return (int)4L;
+    }
+    public static int FILE_CACHE_MIN_HARD_DISABLE() {
+        return (int)8L;
+    }
+    public static int MEHC_PATROL_SCRUBBER_PRESENT() {
+        return (int)1L;
+    }
+    public static int SUPPORT_LANG_NUMBER() {
+        return (int)32L;
+    }
+    public static int CURRENT_IMPORT_REDIRECTION_VERSION() {
+        return (int)1L;
+    }
+    public static int DONT_RESOLVE_DLL_REFERENCES() {
+        return (int)1L;
+    }
+    public static int LOAD_LIBRARY_AS_DATAFILE() {
+        return (int)2L;
+    }
+    public static int LOAD_WITH_ALTERED_SEARCH_PATH() {
+        return (int)8L;
+    }
+    public static int LOAD_IGNORE_CODE_AUTHZ_LEVEL() {
+        return (int)16L;
+    }
+    public static int LOAD_LIBRARY_AS_IMAGE_RESOURCE() {
+        return (int)32L;
+    }
+    public static int LOAD_LIBRARY_AS_DATAFILE_EXCLUSIVE() {
+        return (int)64L;
+    }
+    public static int LOAD_LIBRARY_REQUIRE_SIGNED_TARGET() {
+        return (int)128L;
+    }
+    public static int LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR() {
+        return (int)256L;
+    }
+    public static int LOAD_LIBRARY_SEARCH_APPLICATION_DIR() {
+        return (int)512L;
+    }
+    public static int LOAD_LIBRARY_SEARCH_USER_DIRS() {
+        return (int)1024L;
+    }
+    public static int LOAD_LIBRARY_SEARCH_SYSTEM32() {
+        return (int)2048L;
+    }
+    public static int LOAD_LIBRARY_SEARCH_DEFAULT_DIRS() {
+        return (int)4096L;
+    }
+    public static int LOAD_LIBRARY_SAFE_CURRENT_DIRS() {
+        return (int)8192L;
+    }
+    public static int LOAD_LIBRARY_SEARCH_SYSTEM32_NO_FORWARDER() {
+        return (int)16384L;
+    }
+    public static int LOAD_LIBRARY_OS_INTEGRITY_CONTINUITY() {
+        return (int)32768L;
+    }
+    public static int PRIVATE_NAMESPACE_FLAG_DESTROY() {
+        return (int)1L;
+    }
     public static int FILE_BEGIN() {
         return (int)0L;
     }
@@ -2849,165 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int PSINJECT_ORIENTATION() {
         return (int)8L;
-    }
-    public static int PSINJECT_BOUNDINGBOX() {
-        return (int)9L;
-    }
-    public static int PSINJECT_DOCUMENTPROCESSCOLORS() {
-        return (int)10L;
-    }
-    public static int PSINJECT_COMMENTS() {
-        return (int)11L;
-    }
-    public static int PSINJECT_BEGINDEFAULTS() {
-        return (int)12L;
-    }
-    public static int PSINJECT_ENDDEFAULTS() {
-        return (int)13L;
-    }
-    public static int PSINJECT_BEGINPROLOG() {
-        return (int)14L;
-    }
-    public static int PSINJECT_ENDPROLOG() {
-        return (int)15L;
-    }
-    public static int PSINJECT_BEGINSETUP() {
-        return (int)16L;
-    }
-    public static int PSINJECT_ENDSETUP() {
-        return (int)17L;
-    }
-    public static int PSINJECT_TRAILER() {
-        return (int)18L;
-    }
-    public static int PSINJECT_EOF() {
-        return (int)19L;
-    }
-    public static int PSINJECT_ENDSTREAM() {
-        return (int)20L;
-    }
-    public static int PSINJECT_DOCUMENTPROCESSCOLORSATEND() {
-        return (int)21L;
-    }
-    public static int PSINJECT_PAGENUMBER() {
-        return (int)100L;
-    }
-    public static int PSINJECT_BEGINPAGESETUP() {
-        return (int)101L;
-    }
-    public static int PSINJECT_ENDPAGESETUP() {
-        return (int)102L;
-    }
-    public static int PSINJECT_PAGETRAILER() {
-        return (int)103L;
-    }
-    public static int PSINJECT_PLATECOLOR() {
-        return (int)104L;
-    }
-    public static int PSINJECT_SHOWPAGE() {
-        return (int)105L;
-    }
-    public static int PSINJECT_PAGEBBOX() {
-        return (int)106L;
-    }
-    public static int PSINJECT_ENDPAGECOMMENTS() {
-        return (int)107L;
-    }
-    public static int PSINJECT_VMSAVE() {
-        return (int)200L;
-    }
-    public static int PSINJECT_VMRESTORE() {
-        return (int)201L;
-    }
-    public static int FEATURESETTING_NUP() {
-        return (int)0L;
-    }
-    public static int FEATURESETTING_OUTPUT() {
-        return (int)1L;
-    }
-    public static int FEATURESETTING_PSLEVEL() {
-        return (int)2L;
-    }
-    public static int FEATURESETTING_CUSTPAPER() {
-        return (int)3L;
-    }
-    public static int FEATURESETTING_MIRROR() {
-        return (int)4L;
-    }
-    public static int FEATURESETTING_NEGATIVE() {
-        return (int)5L;
-    }
-    public static int FEATURESETTING_PROTOCOL() {
-        return (int)6L;
-    }
-    public static int FEATURESETTING_PRIVATE_BEGIN() {
-        return (int)4096L;
-    }
-    public static int FEATURESETTING_PRIVATE_END() {
-        return (int)8191L;
-    }
-    public static int PSPROTOCOL_ASCII() {
-        return (int)0L;
-    }
-    public static int PSPROTOCOL_BCP() {
-        return (int)1L;
-    }
-    public static int PSPROTOCOL_TBCP() {
-        return (int)2L;
-    }
-    public static int PSPROTOCOL_BINARY() {
-        return (int)3L;
-    }
-    public static int QDI_SETDIBITS() {
-        return (int)1L;
-    }
-    public static int QDI_GETDIBITS() {
-        return (int)2L;
-    }
-    public static int QDI_DIBTOSCREEN() {
-        return (int)4L;
-    }
-    public static int QDI_STRETCHDIB() {
-        return (int)8L;
-    }
-    public static int SP_NOTREPORTED() {
-        return (int)16384L;
-    }
-    public static int PR_JOBSTATUS() {
-        return (int)0L;
-    }
-    public static int OBJ_PEN() {
-        return (int)1L;
-    }
-    public static int OBJ_BRUSH() {
-        return (int)2L;
-    }
-    public static int OBJ_DC() {
-        return (int)3L;
-    }
-    public static int OBJ_METADC() {
-        return (int)4L;
-    }
-    public static int OBJ_PAL() {
-        return (int)5L;
-    }
-    public static int OBJ_FONT() {
-        return (int)6L;
-    }
-    public static int OBJ_BITMAP() {
-        return (int)7L;
-    }
-    public static int OBJ_REGION() {
-        return (int)8L;
-    }
-    public static int OBJ_METAFILE() {
-        return (int)9L;
-    }
-    public static int OBJ_MEMDC() {
-        return (int)10L;
-    }
-    public static int OBJ_EXTPEN() {
-        return (int)11L;
     }
 }
 

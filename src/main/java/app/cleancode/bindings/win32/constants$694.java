@@ -9,12 +9,72 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$694 {
 
-    static final MemoryAddress CERT_STORE_PROV_PKCS7$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress CERT_STORE_PROV_SERIALIZED$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress CERT_STORE_PROV_FILENAME_A$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress CERT_STORE_PROV_FILENAME_W$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress CERT_STORE_PROV_FILENAME$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_A$ADDR = MemoryAddress.ofLong(9L);
+    static final FunctionDescriptor CoDisconnectContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoDisconnectContext$MH = RuntimeHelper.downcallHandle(
+        "CoDisconnectContext",
+        constants$694.CoDisconnectContext$FUNC
+    );
+    static final FunctionDescriptor CoInitializeSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoInitializeSecurity$MH = RuntimeHelper.downcallHandle(
+        "CoInitializeSecurity",
+        constants$694.CoInitializeSecurity$FUNC
+    );
+    static final FunctionDescriptor CoGetCallContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetCallContext$MH = RuntimeHelper.downcallHandle(
+        "CoGetCallContext",
+        constants$694.CoGetCallContext$FUNC
+    );
+    static final FunctionDescriptor CoQueryProxyBlanket$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoQueryProxyBlanket$MH = RuntimeHelper.downcallHandle(
+        "CoQueryProxyBlanket",
+        constants$694.CoQueryProxyBlanket$FUNC
+    );
+    static final FunctionDescriptor CoSetProxyBlanket$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoSetProxyBlanket$MH = RuntimeHelper.downcallHandle(
+        "CoSetProxyBlanket",
+        constants$694.CoSetProxyBlanket$FUNC
+    );
+    static final FunctionDescriptor CoCopyProxy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoCopyProxy$MH = RuntimeHelper.downcallHandle(
+        "CoCopyProxy",
+        constants$694.CoCopyProxy$FUNC
+    );
 }
 
 

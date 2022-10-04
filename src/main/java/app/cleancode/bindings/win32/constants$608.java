@@ -9,12 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$608 {
 
-    static final MemorySegment szOID_OIWSEC_dsaComm$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.20");
-    static final MemorySegment szOID_OIWSEC_dsaCommSHA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.21");
-    static final MemorySegment szOID_OIWSEC_rsaXchg$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.22");
-    static final MemorySegment szOID_OIWSEC_keyHashSeal$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.23");
-    static final MemorySegment szOID_OIWSEC_md2RSASign$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.24");
-    static final MemorySegment szOID_OIWSEC_md5RSASign$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.25");
+    static final FunctionDescriptor CertVerifyRevocation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertVerifyRevocation$MH = RuntimeHelper.downcallHandle(
+        "CertVerifyRevocation",
+        constants$608.CertVerifyRevocation$FUNC
+    );
+    static final FunctionDescriptor CertCompareIntegerBlob$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertCompareIntegerBlob$MH = RuntimeHelper.downcallHandle(
+        "CertCompareIntegerBlob",
+        constants$608.CertCompareIntegerBlob$FUNC
+    );
+    static final FunctionDescriptor CertCompareCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertCompareCertificate$MH = RuntimeHelper.downcallHandle(
+        "CertCompareCertificate",
+        constants$608.CertCompareCertificate$FUNC
+    );
+    static final FunctionDescriptor CertCompareCertificateName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertCompareCertificateName$MH = RuntimeHelper.downcallHandle(
+        "CertCompareCertificateName",
+        constants$608.CertCompareCertificateName$FUNC
+    );
+    static final FunctionDescriptor CertIsRDNAttrsInCertificateName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertIsRDNAttrsInCertificateName$MH = RuntimeHelper.downcallHandle(
+        "CertIsRDNAttrsInCertificateName",
+        constants$608.CertIsRDNAttrsInCertificateName$FUNC
+    );
+    static final FunctionDescriptor CertComparePublicKeyInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertComparePublicKeyInfo$MH = RuntimeHelper.downcallHandle(
+        "CertComparePublicKeyInfo",
+        constants$608.CertComparePublicKeyInfo$FUNC
+    );
 }
 
 

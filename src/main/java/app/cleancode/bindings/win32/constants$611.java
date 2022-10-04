@@ -9,12 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$611 {
 
-    static final MemorySegment szOID_INFOSEC_mosaicSignature$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.2");
-    static final MemorySegment szOID_INFOSEC_sdnsConfidentiality$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.3");
-    static final MemorySegment szOID_INFOSEC_mosaicConfidentiality$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.4");
-    static final MemorySegment szOID_INFOSEC_sdnsIntegrity$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.5");
-    static final MemorySegment szOID_INFOSEC_mosaicIntegrity$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.6");
-    static final MemorySegment szOID_INFOSEC_sdnsTokenProtection$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.7");
+    static final FunctionDescriptor PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$611.PFN_CRYPT_SIGN_AND_ENCODE_HASH_FUNC$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_VERIFY_ENCODED_SIGNATURE_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_VERIFY_ENCODED_SIGNATURE_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$611.PFN_CRYPT_VERIFY_ENCODED_SIGNATURE_FUNC$FUNC
+    );
+    static final FunctionDescriptor CertVerifyTimeValidity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertVerifyTimeValidity$MH = RuntimeHelper.downcallHandle(
+        "CertVerifyTimeValidity",
+        constants$611.CertVerifyTimeValidity$FUNC
+    );
+    static final FunctionDescriptor CertVerifyCRLTimeValidity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertVerifyCRLTimeValidity$MH = RuntimeHelper.downcallHandle(
+        "CertVerifyCRLTimeValidity",
+        constants$611.CertVerifyCRLTimeValidity$FUNC
+    );
+    static final FunctionDescriptor CertVerifyValidityNesting$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertVerifyValidityNesting$MH = RuntimeHelper.downcallHandle(
+        "CertVerifyValidityNesting",
+        constants$611.CertVerifyValidityNesting$FUNC
+    );
 }
 
 

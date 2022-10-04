@@ -9,12 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$570 {
 
-    static final MemoryAddress IDC_SIZEALL$ADDR = MemoryAddress.ofLong(32646L);
-    static final MemoryAddress IDC_NO$ADDR = MemoryAddress.ofLong(32648L);
-    static final MemoryAddress IDC_HAND$ADDR = MemoryAddress.ofLong(32649L);
-    static final MemoryAddress IDC_APPSTARTING$ADDR = MemoryAddress.ofLong(32650L);
-    static final MemoryAddress IDC_HELP$ADDR = MemoryAddress.ofLong(32651L);
-    static final MemoryAddress IDC_PIN$ADDR = MemoryAddress.ofLong(32671L);
+    static final FunctionDescriptor CryptSetProviderA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptSetProviderA$MH = RuntimeHelper.downcallHandle(
+        "CryptSetProviderA",
+        constants$570.CryptSetProviderA$FUNC
+    );
+    static final FunctionDescriptor CryptSetProviderW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptSetProviderW$MH = RuntimeHelper.downcallHandle(
+        "CryptSetProviderW",
+        constants$570.CryptSetProviderW$FUNC
+    );
+    static final FunctionDescriptor CryptSetProviderExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptSetProviderExA$MH = RuntimeHelper.downcallHandle(
+        "CryptSetProviderExA",
+        constants$570.CryptSetProviderExA$FUNC
+    );
+    static final FunctionDescriptor CryptSetProviderExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptSetProviderExW$MH = RuntimeHelper.downcallHandle(
+        "CryptSetProviderExW",
+        constants$570.CryptSetProviderExW$FUNC
+    );
+    static final FunctionDescriptor CryptGetDefaultProviderA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGetDefaultProviderA$MH = RuntimeHelper.downcallHandle(
+        "CryptGetDefaultProviderA",
+        constants$570.CryptGetDefaultProviderA$FUNC
+    );
+    static final FunctionDescriptor CryptGetDefaultProviderW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGetDefaultProviderW$MH = RuntimeHelper.downcallHandle(
+        "CryptGetDefaultProviderW",
+        constants$570.CryptGetDefaultProviderW$FUNC
+    );
 }
 
 

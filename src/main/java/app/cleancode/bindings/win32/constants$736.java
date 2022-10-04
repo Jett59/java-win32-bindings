@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$736 {
 
-    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And3KeyTripleDES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.3");
-    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And2KeyTripleDES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.4");
-    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And128BitRC2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.5");
-    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And40BitRC2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.6");
-    static final MemorySegment szOID_PKCS_5_PBKDF2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.5.12");
-    static final MemorySegment szOID_PKCS_5_PBES2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.5.13");
+    static final MemoryAddress RT_MANIFEST$ADDR = MemoryAddress.ofLong(24L);
+    static final MemoryAddress CREATEPROCESS_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress ISOLATIONAWARE_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress ISOLATIONPOLICY_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(4L);
+    static final MemoryAddress ISOLATIONPOLICY_BROWSER_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(5L);
 }
 
 

@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$682 {
 
-    static final MemorySegment CRYPT_OID_FORMAT_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllFormatObject");
-    static final MemorySegment CRYPT_OID_FIND_OID_INFO_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllFindOIDInfo");
-    static final MemorySegment CRYPT_OID_FIND_LOCALIZED_NAME_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllFindLocalizedName");
-    static final MemorySegment CRYPT_OID_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Software\\Microsoft\\Cryptography\\OID");
-    static final MemorySegment CRYPT_OID_REG_ENCODING_TYPE_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("EncodingType ");
-    static final MemorySegment CRYPT_OID_REG_DLL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final FunctionDescriptor DeletePrintProvidorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrintProvidorW$MH = RuntimeHelper.downcallHandle(
+        "DeletePrintProvidorW",
+        constants$682.DeletePrintProvidorW$FUNC
+    );
+    static final FunctionDescriptor IsValidDevmodeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle IsValidDevmodeA$MH = RuntimeHelper.downcallHandle(
+        "IsValidDevmodeA",
+        constants$682.IsValidDevmodeA$FUNC
+    );
+    static final FunctionDescriptor IsValidDevmodeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle IsValidDevmodeW$MH = RuntimeHelper.downcallHandle(
+        "IsValidDevmodeW",
+        constants$682.IsValidDevmodeW$FUNC
+    );
+    static final FunctionDescriptor OpenPrinter2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenPrinter2A$MH = RuntimeHelper.downcallHandle(
+        "OpenPrinter2A",
+        constants$682.OpenPrinter2A$FUNC
+    );
+    static final FunctionDescriptor OpenPrinter2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenPrinter2W$MH = RuntimeHelper.downcallHandle(
+        "OpenPrinter2W",
+        constants$682.OpenPrinter2W$FUNC
+    );
+    static final FunctionDescriptor AddPrinterConnection2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPrinterConnection2A$MH = RuntimeHelper.downcallHandle(
+        "AddPrinterConnection2A",
+        constants$682.AddPrinterConnection2A$FUNC
+    );
 }
 
 

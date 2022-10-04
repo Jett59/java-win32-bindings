@@ -9,67 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$508 {
 
-    static final FunctionDescriptor ResetPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ResetPrinterA$MH = RuntimeHelper.downcallHandle(
-        "ResetPrinterA",
-        constants$508.ResetPrinterA$FUNC
-    );
-    static final FunctionDescriptor ResetPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ResetPrinterW$MH = RuntimeHelper.downcallHandle(
-        "ResetPrinterW",
-        constants$508.ResetPrinterW$FUNC
-    );
-    static final FunctionDescriptor SetJobA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetConnectionDialog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetJobA$MH = RuntimeHelper.downcallHandle(
-        "SetJobA",
-        constants$508.SetJobA$FUNC
+    static final MethodHandle WNetConnectionDialog$MH = RuntimeHelper.downcallHandle(
+        "WNetConnectionDialog",
+        constants$508.WNetConnectionDialog$FUNC
     );
-    static final FunctionDescriptor SetJobW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetDisconnectDialog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetJobW$MH = RuntimeHelper.downcallHandle(
-        "SetJobW",
-        constants$508.SetJobW$FUNC
+    static final MethodHandle WNetDisconnectDialog$MH = RuntimeHelper.downcallHandle(
+        "WNetDisconnectDialog",
+        constants$508.WNetDisconnectDialog$FUNC
     );
-    static final FunctionDescriptor GetJobA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetConnectionDialog1A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetJobA$MH = RuntimeHelper.downcallHandle(
-        "GetJobA",
-        constants$508.GetJobA$FUNC
+    static final MethodHandle WNetConnectionDialog1A$MH = RuntimeHelper.downcallHandle(
+        "WNetConnectionDialog1A",
+        constants$508.WNetConnectionDialog1A$FUNC
     );
-    static final FunctionDescriptor GetJobW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetConnectionDialog1W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetJobW$MH = RuntimeHelper.downcallHandle(
-        "GetJobW",
-        constants$508.GetJobW$FUNC
+    static final MethodHandle WNetConnectionDialog1W$MH = RuntimeHelper.downcallHandle(
+        "WNetConnectionDialog1W",
+        constants$508.WNetConnectionDialog1W$FUNC
+    );
+    static final FunctionDescriptor WNetDisconnectDialog1A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetDisconnectDialog1A$MH = RuntimeHelper.downcallHandle(
+        "WNetDisconnectDialog1A",
+        constants$508.WNetDisconnectDialog1A$FUNC
+    );
+    static final FunctionDescriptor WNetDisconnectDialog1W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetDisconnectDialog1W$MH = RuntimeHelper.downcallHandle(
+        "WNetDisconnectDialog1W",
+        constants$508.WNetDisconnectDialog1W$FUNC
     );
 }
 

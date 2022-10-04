@@ -9,52 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$320 {
 
-    static final FunctionDescriptor FindWindowExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CheckColorsInGamut$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CheckColorsInGamut$MH = RuntimeHelper.downcallHandle(
+        "CheckColorsInGamut",
+        constants$320.CheckColorsInGamut$FUNC
+    );
+    static final FunctionDescriptor GetColorSpace$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindWindowExA$MH = RuntimeHelper.downcallHandle(
-        "FindWindowExA",
-        constants$320.FindWindowExA$FUNC
+    static final MethodHandle GetColorSpace$MH = RuntimeHelper.downcallHandle(
+        "GetColorSpace",
+        constants$320.GetColorSpace$FUNC
     );
-    static final FunctionDescriptor FindWindowExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetLogColorSpaceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetLogColorSpaceA$MH = RuntimeHelper.downcallHandle(
+        "GetLogColorSpaceA",
+        constants$320.GetLogColorSpaceA$FUNC
+    );
+    static final FunctionDescriptor GetLogColorSpaceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetLogColorSpaceW$MH = RuntimeHelper.downcallHandle(
+        "GetLogColorSpaceW",
+        constants$320.GetLogColorSpaceW$FUNC
+    );
+    static final FunctionDescriptor CreateColorSpaceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindWindowExW$MH = RuntimeHelper.downcallHandle(
-        "FindWindowExW",
-        constants$320.FindWindowExW$FUNC
+    static final MethodHandle CreateColorSpaceA$MH = RuntimeHelper.downcallHandle(
+        "CreateColorSpaceA",
+        constants$320.CreateColorSpaceA$FUNC
     );
-    static final FunctionDescriptor GetShellWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetShellWindow$MH = RuntimeHelper.downcallHandle(
-        "GetShellWindow",
-        constants$320.GetShellWindow$FUNC
-    );
-    static final FunctionDescriptor RegisterShellHookWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateColorSpaceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegisterShellHookWindow$MH = RuntimeHelper.downcallHandle(
-        "RegisterShellHookWindow",
-        constants$320.RegisterShellHookWindow$FUNC
-    );
-    static final FunctionDescriptor DeregisterShellHookWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeregisterShellHookWindow$MH = RuntimeHelper.downcallHandle(
-        "DeregisterShellHookWindow",
-        constants$320.DeregisterShellHookWindow$FUNC
-    );
-    static final FunctionDescriptor EnumWindows$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumWindows$MH = RuntimeHelper.downcallHandle(
-        "EnumWindows",
-        constants$320.EnumWindows$FUNC
+    static final MethodHandle CreateColorSpaceW$MH = RuntimeHelper.downcallHandle(
+        "CreateColorSpaceW",
+        constants$320.CreateColorSpaceW$FUNC
     );
 }
 

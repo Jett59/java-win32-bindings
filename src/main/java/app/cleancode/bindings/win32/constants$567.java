@@ -9,12 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$567 {
 
-    static final MemoryAddress HBMMENU_MBAR_CLOSE$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress HBMMENU_MBAR_CLOSE_D$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress HBMMENU_MBAR_MINIMIZE_D$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress HBMMENU_POPUP_CLOSE$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress HBMMENU_POPUP_RESTORE$ADDR = MemoryAddress.ofLong(9L);
-    static final MemoryAddress HBMMENU_POPUP_MAXIMIZE$ADDR = MemoryAddress.ofLong(10L);
+    static final FunctionDescriptor CryptSetHashParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptSetHashParam$MH = RuntimeHelper.downcallHandle(
+        "CryptSetHashParam",
+        constants$567.CryptSetHashParam$FUNC
+    );
+    static final FunctionDescriptor CryptGetHashParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptGetHashParam$MH = RuntimeHelper.downcallHandle(
+        "CryptGetHashParam",
+        constants$567.CryptGetHashParam$FUNC
+    );
+    static final FunctionDescriptor CryptSetProvParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptSetProvParam$MH = RuntimeHelper.downcallHandle(
+        "CryptSetProvParam",
+        constants$567.CryptSetProvParam$FUNC
+    );
+    static final FunctionDescriptor CryptGetProvParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptGetProvParam$MH = RuntimeHelper.downcallHandle(
+        "CryptGetProvParam",
+        constants$567.CryptGetProvParam$FUNC
+    );
+    static final FunctionDescriptor CryptGenRandom$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGenRandom$MH = RuntimeHelper.downcallHandle(
+        "CryptGenRandom",
+        constants$567.CryptGenRandom$FUNC
+    );
+    static final FunctionDescriptor CryptGetUserKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGetUserKey$MH = RuntimeHelper.downcallHandle(
+        "CryptGetUserKey",
+        constants$567.CryptGetUserKey$FUNC
+    );
 }
 
 

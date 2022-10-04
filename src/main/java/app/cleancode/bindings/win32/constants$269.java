@@ -9,50 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$269 {
 
-    static final FunctionDescriptor CharPrevExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateMetaFileA$MH = RuntimeHelper.downcallHandle(
+        "CreateMetaFileA",
+        constants$269.CreateMetaFileA$FUNC
+    );
+    static final FunctionDescriptor CreateMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateMetaFileW$MH = RuntimeHelper.downcallHandle(
+        "CreateMetaFileW",
+        constants$269.CreateMetaFileW$FUNC
+    );
+    static final FunctionDescriptor CreatePalette$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreatePalette$MH = RuntimeHelper.downcallHandle(
+        "CreatePalette",
+        constants$269.CreatePalette$FUNC
+    );
+    static final FunctionDescriptor CreatePen$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CharPrevExA$MH = RuntimeHelper.downcallHandle(
-        "CharPrevExA",
-        constants$269.CharPrevExA$FUNC
+    static final MethodHandle CreatePen$MH = RuntimeHelper.downcallHandle(
+        "CreatePen",
+        constants$269.CreatePen$FUNC
     );
-    static final FunctionDescriptor IsCharAlphaA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
+    static final FunctionDescriptor CreatePenIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsCharAlphaA$MH = RuntimeHelper.downcallHandle(
-        "IsCharAlphaA",
-        constants$269.IsCharAlphaA$FUNC
+    static final MethodHandle CreatePenIndirect$MH = RuntimeHelper.downcallHandle(
+        "CreatePenIndirect",
+        constants$269.CreatePenIndirect$FUNC
     );
-    static final FunctionDescriptor IsCharAlphaW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
+    static final FunctionDescriptor CreatePolyPolygonRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle IsCharAlphaW$MH = RuntimeHelper.downcallHandle(
-        "IsCharAlphaW",
-        constants$269.IsCharAlphaW$FUNC
-    );
-    static final FunctionDescriptor IsCharAlphaNumericA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
-    );
-    static final MethodHandle IsCharAlphaNumericA$MH = RuntimeHelper.downcallHandle(
-        "IsCharAlphaNumericA",
-        constants$269.IsCharAlphaNumericA$FUNC
-    );
-    static final FunctionDescriptor IsCharAlphaNumericW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle IsCharAlphaNumericW$MH = RuntimeHelper.downcallHandle(
-        "IsCharAlphaNumericW",
-        constants$269.IsCharAlphaNumericW$FUNC
-    );
-    static final FunctionDescriptor IsCharUpperA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
-    );
-    static final MethodHandle IsCharUpperA$MH = RuntimeHelper.downcallHandle(
-        "IsCharUpperA",
-        constants$269.IsCharUpperA$FUNC
+    static final MethodHandle CreatePolyPolygonRgn$MH = RuntimeHelper.downcallHandle(
+        "CreatePolyPolygonRgn",
+        constants$269.CreatePolyPolygonRgn$FUNC
     );
 }
 

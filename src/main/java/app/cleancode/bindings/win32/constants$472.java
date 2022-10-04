@@ -9,60 +9,37 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$472 {
 
-    static final FunctionDescriptor CryptRetrieveObjectByUrlA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetUserDefaultUILanguage$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
+    static final MethodHandle GetUserDefaultUILanguage$MH = RuntimeHelper.downcallHandle(
+        "GetUserDefaultUILanguage",
+        constants$472.GetUserDefaultUILanguage$FUNC
     );
-    static final MethodHandle CryptRetrieveObjectByUrlA$MH = RuntimeHelper.downcallHandle(
-        "CryptRetrieveObjectByUrlA",
-        constants$472.CryptRetrieveObjectByUrlA$FUNC
+    static final FunctionDescriptor GetUserDefaultLangID$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
+    static final MethodHandle GetUserDefaultLangID$MH = RuntimeHelper.downcallHandle(
+        "GetUserDefaultLangID",
+        constants$472.GetUserDefaultLangID$FUNC
     );
-    static final FunctionDescriptor CryptRetrieveObjectByUrlW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetSystemDefaultLangID$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
+    static final MethodHandle GetSystemDefaultLangID$MH = RuntimeHelper.downcallHandle(
+        "GetSystemDefaultLangID",
+        constants$472.GetSystemDefaultLangID$FUNC
     );
-    static final MethodHandle CryptRetrieveObjectByUrlW$MH = RuntimeHelper.downcallHandle(
-        "CryptRetrieveObjectByUrlW",
-        constants$472.CryptRetrieveObjectByUrlW$FUNC
+    static final FunctionDescriptor GetSystemDefaultLCID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetSystemDefaultLCID$MH = RuntimeHelper.downcallHandle(
+        "GetSystemDefaultLCID",
+        constants$472.GetSystemDefaultLCID$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_CANCEL_RETRIEVAL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetUserDefaultLCID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetUserDefaultLCID$MH = RuntimeHelper.downcallHandle(
+        "GetUserDefaultLCID",
+        constants$472.GetUserDefaultLCID$FUNC
     );
-    static final MethodHandle PFN_CRYPT_CANCEL_RETRIEVAL$MH = RuntimeHelper.downcallHandle(
-        constants$472.PFN_CRYPT_CANCEL_RETRIEVAL$FUNC
+    static final FunctionDescriptor SetThreadUILanguage$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final FunctionDescriptor CryptInstallCancelRetrieval$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptInstallCancelRetrieval$MH = RuntimeHelper.downcallHandle(
-        "CryptInstallCancelRetrieval",
-        constants$472.CryptInstallCancelRetrieval$FUNC
-    );
-    static final FunctionDescriptor CryptUninstallCancelRetrieval$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptUninstallCancelRetrieval$MH = RuntimeHelper.downcallHandle(
-        "CryptUninstallCancelRetrieval",
-        constants$472.CryptUninstallCancelRetrieval$FUNC
+    static final MethodHandle SetThreadUILanguage$MH = RuntimeHelper.downcallHandle(
+        "SetThreadUILanguage",
+        constants$472.SetThreadUILanguage$FUNC
     );
 }
 

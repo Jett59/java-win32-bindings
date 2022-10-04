@@ -9,67 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$505 {
 
-    static final FunctionDescriptor SCardWriteCacheA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor WNetAddConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetAddConnectionW$MH = RuntimeHelper.downcallHandle(
+        "WNetAddConnectionW",
+        constants$505.WNetAddConnectionW$FUNC
+    );
+    static final FunctionDescriptor WNetAddConnection2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardWriteCacheA$MH = RuntimeHelper.downcallHandle(
-        "SCardWriteCacheA",
-        constants$505.SCardWriteCacheA$FUNC
+    static final MethodHandle WNetAddConnection2A$MH = RuntimeHelper.downcallHandle(
+        "WNetAddConnection2A",
+        constants$505.WNetAddConnection2A$FUNC
     );
-    static final FunctionDescriptor SCardWriteCacheW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor WNetAddConnection2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardWriteCacheW$MH = RuntimeHelper.downcallHandle(
-        "SCardWriteCacheW",
-        constants$505.SCardWriteCacheW$FUNC
+    static final MethodHandle WNetAddConnection2W$MH = RuntimeHelper.downcallHandle(
+        "WNetAddConnection2W",
+        constants$505.WNetAddConnection2W$FUNC
     );
-    static final FunctionDescriptor SCardGetReaderIconA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor WNetAddConnection3A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SCardGetReaderIconA$MH = RuntimeHelper.downcallHandle(
-        "SCardGetReaderIconA",
-        constants$505.SCardGetReaderIconA$FUNC
-    );
-    static final FunctionDescriptor SCardGetReaderIconW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardGetReaderIconW$MH = RuntimeHelper.downcallHandle(
-        "SCardGetReaderIconW",
-        constants$505.SCardGetReaderIconW$FUNC
+    static final MethodHandle WNetAddConnection3A$MH = RuntimeHelper.downcallHandle(
+        "WNetAddConnection3A",
+        constants$505.WNetAddConnection3A$FUNC
     );
-    static final FunctionDescriptor SCardGetDeviceTypeIdA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor WNetAddConnection3W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SCardGetDeviceTypeIdA$MH = RuntimeHelper.downcallHandle(
-        "SCardGetDeviceTypeIdA",
-        constants$505.SCardGetDeviceTypeIdA$FUNC
-    );
-    static final FunctionDescriptor SCardGetDeviceTypeIdW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardGetDeviceTypeIdW$MH = RuntimeHelper.downcallHandle(
-        "SCardGetDeviceTypeIdW",
-        constants$505.SCardGetDeviceTypeIdW$FUNC
+    static final MethodHandle WNetAddConnection3W$MH = RuntimeHelper.downcallHandle(
+        "WNetAddConnection3W",
+        constants$505.WNetAddConnection3W$FUNC
+    );
+    static final FunctionDescriptor WNetAddConnection4A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WNetAddConnection4A$MH = RuntimeHelper.downcallHandle(
+        "WNetAddConnection4A",
+        constants$505.WNetAddConnection4A$FUNC
     );
 }
 

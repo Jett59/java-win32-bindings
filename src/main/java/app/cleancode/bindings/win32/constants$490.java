@@ -9,55 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$490 {
 
-    static final FunctionDescriptor DeviceDsmAddDataSetRange$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+    static final FunctionDescriptor RegOpenUserClassesRoot$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle DeviceDsmAddDataSetRange$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmAddDataSetRange",
-        constants$490.DeviceDsmAddDataSetRange$FUNC
-    );
-    static final FunctionDescriptor DeviceDsmValidateInput$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DeviceDsmValidateInput$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmValidateInput",
-        constants$490.DeviceDsmValidateInput$FUNC
-    );
-    static final FunctionDescriptor DeviceDsmOutputBlock$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeviceDsmOutputBlock$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmOutputBlock",
-        constants$490.DeviceDsmOutputBlock$FUNC
+    static final MethodHandle RegOpenUserClassesRoot$MH = RuntimeHelper.downcallHandle(
+        "RegOpenUserClassesRoot",
+        constants$490.RegOpenUserClassesRoot$FUNC
     );
-    static final FunctionDescriptor DeviceDsmGetOutputLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RegOpenCurrentUser$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegOpenCurrentUser$MH = RuntimeHelper.downcallHandle(
+        "RegOpenCurrentUser",
+        constants$490.RegOpenCurrentUser$FUNC
+    );
+    static final FunctionDescriptor RegDisablePredefinedCache$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle RegDisablePredefinedCache$MH = RuntimeHelper.downcallHandle(
+        "RegDisablePredefinedCache",
+        constants$490.RegDisablePredefinedCache$FUNC
+    );
+    static final FunctionDescriptor RegDisablePredefinedCacheEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle RegDisablePredefinedCacheEx$MH = RuntimeHelper.downcallHandle(
+        "RegDisablePredefinedCacheEx",
+        constants$490.RegDisablePredefinedCacheEx$FUNC
+    );
+    static final FunctionDescriptor RegConnectRegistryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DeviceDsmGetOutputLength$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmGetOutputLength",
-        constants$490.DeviceDsmGetOutputLength$FUNC
-    );
-    static final FunctionDescriptor DeviceDsmValidateOutputLength$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeviceDsmValidateOutputLength$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmValidateOutputLength",
-        constants$490.DeviceDsmValidateOutputLength$FUNC
+    static final MethodHandle RegConnectRegistryA$MH = RuntimeHelper.downcallHandle(
+        "RegConnectRegistryA",
+        constants$490.RegConnectRegistryA$FUNC
     );
-    static final FunctionDescriptor DeviceDsmGetOutputBlockLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RegConnectRegistryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeviceDsmGetOutputBlockLength$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmGetOutputBlockLength",
-        constants$490.DeviceDsmGetOutputBlockLength$FUNC
+    static final MethodHandle RegConnectRegistryW$MH = RuntimeHelper.downcallHandle(
+        "RegConnectRegistryW",
+        constants$490.RegConnectRegistryW$FUNC
     );
 }
 

@@ -9,56 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$247 {
 
-    static final FunctionDescriptor WaitMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle WaitMessage$MH = RuntimeHelper.downcallHandle(
-        "WaitMessage",
-        constants$247.WaitMessage$FUNC
-    );
-    static final FunctionDescriptor WaitForInputIdle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTimeZoneInformationForYear$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WaitForInputIdle$MH = RuntimeHelper.downcallHandle(
-        "WaitForInputIdle",
-        constants$247.WaitForInputIdle$FUNC
+    static final MethodHandle GetTimeZoneInformationForYear$MH = RuntimeHelper.downcallHandle(
+        "GetTimeZoneInformationForYear",
+        constants$247.GetTimeZoneInformationForYear$FUNC
     );
-    static final FunctionDescriptor DefWindowProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnumDynamicTimeZoneInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DefWindowProcA$MH = RuntimeHelper.downcallHandle(
-        "DefWindowProcA",
-        constants$247.DefWindowProcA$FUNC
+    static final MethodHandle EnumDynamicTimeZoneInformation$MH = RuntimeHelper.downcallHandle(
+        "EnumDynamicTimeZoneInformation",
+        constants$247.EnumDynamicTimeZoneInformation$FUNC
     );
-    static final FunctionDescriptor DefWindowProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle DefWindowProcW$MH = RuntimeHelper.downcallHandle(
-        "DefWindowProcW",
-        constants$247.DefWindowProcW$FUNC
-    );
-    static final FunctionDescriptor PostQuitMessage$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PostQuitMessage$MH = RuntimeHelper.downcallHandle(
-        "PostQuitMessage",
-        constants$247.PostQuitMessage$FUNC
-    );
-    static final FunctionDescriptor CallWindowProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetDynamicTimeZoneInformationEffectiveYears$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CallWindowProcA$MH = RuntimeHelper.downcallHandle(
-        "CallWindowProcA",
-        constants$247.CallWindowProcA$FUNC
+    static final MethodHandle GetDynamicTimeZoneInformationEffectiveYears$MH = RuntimeHelper.downcallHandle(
+        "GetDynamicTimeZoneInformationEffectiveYears",
+        constants$247.GetDynamicTimeZoneInformationEffectiveYears$FUNC
+    );
+    static final FunctionDescriptor SystemTimeToTzSpecificLocalTimeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SystemTimeToTzSpecificLocalTimeEx$MH = RuntimeHelper.downcallHandle(
+        "SystemTimeToTzSpecificLocalTimeEx",
+        constants$247.SystemTimeToTzSpecificLocalTimeEx$FUNC
+    );
+    static final FunctionDescriptor TzSpecificLocalTimeToSystemTimeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle TzSpecificLocalTimeToSystemTimeEx$MH = RuntimeHelper.downcallHandle(
+        "TzSpecificLocalTimeToSystemTimeEx",
+        constants$247.TzSpecificLocalTimeToSystemTimeEx$FUNC
+    );
+    static final FunctionDescriptor LocalFileTimeToLocalSystemTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LocalFileTimeToLocalSystemTime$MH = RuntimeHelper.downcallHandle(
+        "LocalFileTimeToLocalSystemTime",
+        constants$247.LocalFileTimeToLocalSystemTime$FUNC
     );
 }
 

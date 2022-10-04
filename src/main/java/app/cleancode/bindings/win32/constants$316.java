@@ -9,57 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$316 {
 
-    static final FunctionDescriptor SetWindowLongA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetViewportOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowLongA$MH = RuntimeHelper.downcallHandle(
-        "SetWindowLongA",
-        constants$316.SetWindowLongA$FUNC
+    static final MethodHandle SetViewportOrgEx$MH = RuntimeHelper.downcallHandle(
+        "SetViewportOrgEx",
+        constants$316.SetViewportOrgEx$FUNC
     );
-    static final FunctionDescriptor SetWindowLongW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetWindowExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowLongW$MH = RuntimeHelper.downcallHandle(
-        "SetWindowLongW",
-        constants$316.SetWindowLongW$FUNC
+    static final MethodHandle SetWindowExtEx$MH = RuntimeHelper.downcallHandle(
+        "SetWindowExtEx",
+        constants$316.SetWindowExtEx$FUNC
     );
-    static final FunctionDescriptor GetWindowLongPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetWindowLongPtrA$MH = RuntimeHelper.downcallHandle(
-        "GetWindowLongPtrA",
-        constants$316.GetWindowLongPtrA$FUNC
-    );
-    static final FunctionDescriptor GetWindowLongPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetWindowLongPtrW$MH = RuntimeHelper.downcallHandle(
-        "GetWindowLongPtrW",
-        constants$316.GetWindowLongPtrW$FUNC
-    );
-    static final FunctionDescriptor SetWindowLongPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetWindowOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowLongPtrA$MH = RuntimeHelper.downcallHandle(
-        "SetWindowLongPtrA",
-        constants$316.SetWindowLongPtrA$FUNC
+    static final MethodHandle SetWindowOrgEx$MH = RuntimeHelper.downcallHandle(
+        "SetWindowOrgEx",
+        constants$316.SetWindowOrgEx$FUNC
     );
-    static final FunctionDescriptor SetWindowLongPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor OffsetViewportOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowLongPtrW$MH = RuntimeHelper.downcallHandle(
-        "SetWindowLongPtrW",
-        constants$316.SetWindowLongPtrW$FUNC
+    static final MethodHandle OffsetViewportOrgEx$MH = RuntimeHelper.downcallHandle(
+        "OffsetViewportOrgEx",
+        constants$316.OffsetViewportOrgEx$FUNC
+    );
+    static final FunctionDescriptor OffsetWindowOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OffsetWindowOrgEx$MH = RuntimeHelper.downcallHandle(
+        "OffsetWindowOrgEx",
+        constants$316.OffsetWindowOrgEx$FUNC
+    );
+    static final FunctionDescriptor ScaleViewportExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ScaleViewportExtEx$MH = RuntimeHelper.downcallHandle(
+        "ScaleViewportExtEx",
+        constants$316.ScaleViewportExtEx$FUNC
     );
 }
 

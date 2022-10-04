@@ -9,60 +9,28 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$332 {
 
-    static final FunctionDescriptor CascadeWindows$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor EDITWORDBREAKPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CascadeWindows$MH = RuntimeHelper.downcallHandle(
-        "CascadeWindows",
-        constants$332.CascadeWindows$FUNC
+    static final MethodHandle EDITWORDBREAKPROC$MH = RuntimeHelper.downcallHandle(
+        constants$332.EDITWORDBREAKPROC$FUNC
     );
-    static final FunctionDescriptor WinHelpA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor NAMEENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle WinHelpA$MH = RuntimeHelper.downcallHandle(
-        "WinHelpA",
-        constants$332.WinHelpA$FUNC
+    static final MethodHandle NAMEENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$332.NAMEENUMPROCA$FUNC
     );
-    static final FunctionDescriptor WinHelpW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor NAMEENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle WinHelpW$MH = RuntimeHelper.downcallHandle(
-        "WinHelpW",
-        constants$332.WinHelpW$FUNC
-    );
-    static final FunctionDescriptor GetGuiResources$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetGuiResources$MH = RuntimeHelper.downcallHandle(
-        "GetGuiResources",
-        constants$332.GetGuiResources$FUNC
-    );
-    static final FunctionDescriptor ChangeDisplaySettingsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ChangeDisplaySettingsA$MH = RuntimeHelper.downcallHandle(
-        "ChangeDisplaySettingsA",
-        constants$332.ChangeDisplaySettingsA$FUNC
-    );
-    static final FunctionDescriptor ChangeDisplaySettingsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ChangeDisplaySettingsW$MH = RuntimeHelper.downcallHandle(
-        "ChangeDisplaySettingsW",
-        constants$332.ChangeDisplaySettingsW$FUNC
+    static final MethodHandle NAMEENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$332.NAMEENUMPROCW$FUNC
     );
 }
 

@@ -9,77 +9,24 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$457 {
 
-    static final FunctionDescriptor CryptVerifyCertificateSignature$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor UILANGUAGE_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle UILANGUAGE_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$457.UILANGUAGE_ENUMPROCA$FUNC
+    );
+    static final FunctionDescriptor CODEPAGE_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptVerifyCertificateSignature$MH = RuntimeHelper.downcallHandle(
-        "CryptVerifyCertificateSignature",
-        constants$457.CryptVerifyCertificateSignature$FUNC
+    static final MethodHandle CODEPAGE_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$457.CODEPAGE_ENUMPROCA$FUNC
     );
-    static final FunctionDescriptor CryptVerifyCertificateSignatureEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DATEFMT_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptVerifyCertificateSignatureEx$MH = RuntimeHelper.downcallHandle(
-        "CryptVerifyCertificateSignatureEx",
-        constants$457.CryptVerifyCertificateSignatureEx$FUNC
-    );
-    static final FunctionDescriptor CertIsStrongHashToSign$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertIsStrongHashToSign$MH = RuntimeHelper.downcallHandle(
-        "CertIsStrongHashToSign",
-        constants$457.CertIsStrongHashToSign$FUNC
-    );
-    static final FunctionDescriptor CryptHashToBeSigned$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptHashToBeSigned$MH = RuntimeHelper.downcallHandle(
-        "CryptHashToBeSigned",
-        constants$457.CryptHashToBeSigned$FUNC
-    );
-    static final FunctionDescriptor CryptHashCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptHashCertificate$MH = RuntimeHelper.downcallHandle(
-        "CryptHashCertificate",
-        constants$457.CryptHashCertificate$FUNC
-    );
-    static final FunctionDescriptor CryptHashCertificate2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptHashCertificate2$MH = RuntimeHelper.downcallHandle(
-        "CryptHashCertificate2",
-        constants$457.CryptHashCertificate2$FUNC
+    static final MethodHandle DATEFMT_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$457.DATEFMT_ENUMPROCA$FUNC
     );
 }
 

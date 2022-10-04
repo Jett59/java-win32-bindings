@@ -11,13 +11,13 @@ public interface GRAYSTRINGPROC {
 
     int apply(java.lang.foreign.MemoryAddress _x0, long _x1, int _x2);
     static MemorySegment allocate(GRAYSTRINGPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(GRAYSTRINGPROC.class, fi, constants$223.GRAYSTRINGPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(GRAYSTRINGPROC.class, fi, constants$327.GRAYSTRINGPROC$FUNC, session);
     }
     static GRAYSTRINGPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, long __x1, int __x2) -> {
             try {
-                return (int)constants$224.GRAYSTRINGPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, __x2);
+                return (int)constants$327.GRAYSTRINGPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, __x2);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

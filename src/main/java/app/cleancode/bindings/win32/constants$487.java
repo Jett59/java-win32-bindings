@@ -9,48 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$487 {
 
-    static final  GroupLayout GUID_DEVINTERFACE_CDCHANGER$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_CDCHANGER$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_CDCHANGER", constants$487.GUID_DEVINTERFACE_CDCHANGER$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_STORAGEPORT$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_STORAGEPORT$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_STORAGEPORT", constants$487.GUID_DEVINTERFACE_STORAGEPORT$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_VMLUN$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_VMLUN$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_VMLUN", constants$487.GUID_DEVINTERFACE_VMLUN$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_SES$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_SES$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SES", constants$487.GUID_DEVINTERFACE_SES$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_SERVICE_VOLUME$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_SERVICE_VOLUME$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SERVICE_VOLUME", constants$487.GUID_DEVINTERFACE_SERVICE_VOLUME$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_HIDDEN_VOLUME$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_HIDDEN_VOLUME$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_HIDDEN_VOLUME", constants$487.GUID_DEVINTERFACE_HIDDEN_VOLUME$LAYOUT);
+    static final FunctionDescriptor GetFileVersionInfoSizeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileVersionInfoSizeA$MH = RuntimeHelper.downcallHandle(
+        "GetFileVersionInfoSizeA",
+        constants$487.GetFileVersionInfoSizeA$FUNC
+    );
+    static final FunctionDescriptor GetFileVersionInfoSizeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileVersionInfoSizeW$MH = RuntimeHelper.downcallHandle(
+        "GetFileVersionInfoSizeW",
+        constants$487.GetFileVersionInfoSizeW$FUNC
+    );
+    static final FunctionDescriptor GetFileVersionInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileVersionInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetFileVersionInfoA",
+        constants$487.GetFileVersionInfoA$FUNC
+    );
+    static final FunctionDescriptor GetFileVersionInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileVersionInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetFileVersionInfoW",
+        constants$487.GetFileVersionInfoW$FUNC
+    );
+    static final FunctionDescriptor GetFileVersionInfoSizeExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileVersionInfoSizeExA$MH = RuntimeHelper.downcallHandle(
+        "GetFileVersionInfoSizeExA",
+        constants$487.GetFileVersionInfoSizeExA$FUNC
+    );
+    static final FunctionDescriptor GetFileVersionInfoSizeExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileVersionInfoSizeExW$MH = RuntimeHelper.downcallHandle(
+        "GetFileVersionInfoSizeExW",
+        constants$487.GetFileVersionInfoSizeExW$FUNC
+    );
 }
 
 

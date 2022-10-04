@@ -9,12 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$686 {
 
-    static final MemorySegment szOID_CERT_STRONG_KEY_OS_CURRENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.1");
-    static final MemorySegment szOID_PKCS_7_DATA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.1");
-    static final MemorySegment szOID_PKCS_7_SIGNED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.2");
-    static final MemorySegment szOID_PKCS_7_ENVELOPED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.3");
-    static final MemorySegment szOID_PKCS_7_SIGNEDANDENVELOPED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.4");
-    static final MemorySegment szOID_PKCS_7_DIGESTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.5");
+    static final FunctionDescriptor FreePrintPropertyValue$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FreePrintPropertyValue$MH = RuntimeHelper.downcallHandle(
+        "FreePrintPropertyValue",
+        constants$686.FreePrintPropertyValue$FUNC
+    );
+    static final FunctionDescriptor FreePrintNamedPropertyArray$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FreePrintNamedPropertyArray$MH = RuntimeHelper.downcallHandle(
+        "FreePrintNamedPropertyArray",
+        constants$686.FreePrintNamedPropertyArray$FUNC
+    );
+    static final FunctionDescriptor SetJobNamedProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetJobNamedProperty$MH = RuntimeHelper.downcallHandle(
+        "SetJobNamedProperty",
+        constants$686.SetJobNamedProperty$FUNC
+    );
+    static final FunctionDescriptor DeleteJobNamedProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteJobNamedProperty$MH = RuntimeHelper.downcallHandle(
+        "DeleteJobNamedProperty",
+        constants$686.DeleteJobNamedProperty$FUNC
+    );
+    static final FunctionDescriptor EnumJobNamedProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumJobNamedProperties$MH = RuntimeHelper.downcallHandle(
+        "EnumJobNamedProperties",
+        constants$686.EnumJobNamedProperties$FUNC
+    );
+    static final FunctionDescriptor GetPrintOutputInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrintOutputInfo$MH = RuntimeHelper.downcallHandle(
+        "GetPrintOutputInfo",
+        constants$686.GetPrintOutputInfo$FUNC
+    );
 }
 
 

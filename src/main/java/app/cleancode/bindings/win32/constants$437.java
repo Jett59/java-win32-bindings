@@ -9,37 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$437 {
 
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_SET_CRL_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ChangeDisplaySettingsExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_SET_CRL_PROPERTY$MH = RuntimeHelper.downcallHandle(
-        constants$437.PFN_CERT_STORE_PROV_SET_CRL_PROPERTY$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_READ_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_READ_CTL$MH = RuntimeHelper.downcallHandle(
-        constants$437.PFN_CERT_STORE_PROV_READ_CTL$FUNC
+    static final MethodHandle ChangeDisplaySettingsExW$MH = RuntimeHelper.downcallHandle(
+        "ChangeDisplaySettingsExW",
+        constants$437.ChangeDisplaySettingsExW$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_WRITE_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumDisplaySettingsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumDisplaySettingsA$MH = RuntimeHelper.downcallHandle(
+        "EnumDisplaySettingsA",
+        constants$437.EnumDisplaySettingsA$FUNC
+    );
+    static final FunctionDescriptor EnumDisplaySettingsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumDisplaySettingsW$MH = RuntimeHelper.downcallHandle(
+        "EnumDisplaySettingsW",
+        constants$437.EnumDisplaySettingsW$FUNC
+    );
+    static final FunctionDescriptor EnumDisplaySettingsExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_WRITE_CTL$MH = RuntimeHelper.downcallHandle(
-        constants$437.PFN_CERT_STORE_PROV_WRITE_CTL$FUNC
+    static final MethodHandle EnumDisplaySettingsExA$MH = RuntimeHelper.downcallHandle(
+        "EnumDisplaySettingsExA",
+        constants$437.EnumDisplaySettingsExA$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_DELETE_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumDisplaySettingsExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EnumDisplaySettingsExW$MH = RuntimeHelper.downcallHandle(
+        "EnumDisplaySettingsExW",
+        constants$437.EnumDisplaySettingsExW$FUNC
+    );
+    static final FunctionDescriptor EnumDisplayDevicesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EnumDisplayDevicesA$MH = RuntimeHelper.downcallHandle(
+        "EnumDisplayDevicesA",
+        constants$437.EnumDisplayDevicesA$FUNC
     );
 }
 

@@ -9,3005 +9,3005 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_21 extends WINDOWS_20 {
 
-    public static int CLIPBRD_E_BAD_DATA() {
-        return (int)-2147221037L;
+    public static int RPC_S_INVALID_OBJECT() {
+        return (int)1900L;
     }
-    public static int CLIPBRD_E_CANT_CLOSE() {
-        return (int)-2147221036L;
+    public static int ERROR_INVALID_TIME() {
+        return (int)1901L;
     }
-    public static int MK_E_FIRST() {
-        return (int)2147746272L;
+    public static int ERROR_INVALID_FORM_NAME() {
+        return (int)1902L;
     }
-    public static int MK_E_LAST() {
-        return (int)2147746287L;
+    public static int ERROR_INVALID_FORM_SIZE() {
+        return (int)1903L;
     }
-    public static int MK_S_FIRST() {
-        return (int)262624L;
+    public static int ERROR_ALREADY_WAITING() {
+        return (int)1904L;
     }
-    public static int MK_S_LAST() {
-        return (int)262639L;
+    public static int ERROR_PRINTER_DELETED() {
+        return (int)1905L;
     }
-    public static int MK_E_CONNECTMANUALLY() {
-        return (int)-2147221024L;
+    public static int ERROR_INVALID_PRINTER_STATE() {
+        return (int)1906L;
     }
-    public static int MK_E_EXCEEDEDDEADLINE() {
-        return (int)-2147221023L;
+    public static int ERROR_PASSWORD_MUST_CHANGE() {
+        return (int)1907L;
     }
-    public static int MK_E_NEEDGENERIC() {
-        return (int)-2147221022L;
+    public static int ERROR_DOMAIN_CONTROLLER_NOT_FOUND() {
+        return (int)1908L;
     }
-    public static int MK_E_UNAVAILABLE() {
-        return (int)-2147221021L;
+    public static int ERROR_ACCOUNT_LOCKED_OUT() {
+        return (int)1909L;
     }
-    public static int MK_E_SYNTAX() {
-        return (int)-2147221020L;
+    public static int OR_INVALID_OXID() {
+        return (int)1910L;
     }
-    public static int MK_E_NOOBJECT() {
-        return (int)-2147221019L;
+    public static int OR_INVALID_OID() {
+        return (int)1911L;
     }
-    public static int MK_E_INVALIDEXTENSION() {
-        return (int)-2147221018L;
+    public static int OR_INVALID_SET() {
+        return (int)1912L;
     }
-    public static int MK_E_INTERMEDIATEINTERFACENOTSUPPORTED() {
-        return (int)-2147221017L;
+    public static int RPC_S_SEND_INCOMPLETE() {
+        return (int)1913L;
     }
-    public static int MK_E_NOTBINDABLE() {
-        return (int)-2147221016L;
+    public static int RPC_S_INVALID_ASYNC_HANDLE() {
+        return (int)1914L;
     }
-    public static int MK_E_NOTBOUND() {
-        return (int)-2147221015L;
+    public static int RPC_S_INVALID_ASYNC_CALL() {
+        return (int)1915L;
     }
-    public static int MK_E_CANTOPENFILE() {
-        return (int)-2147221014L;
+    public static int RPC_X_PIPE_CLOSED() {
+        return (int)1916L;
     }
-    public static int MK_E_MUSTBOTHERUSER() {
-        return (int)-2147221013L;
+    public static int RPC_X_PIPE_DISCIPLINE_ERROR() {
+        return (int)1917L;
     }
-    public static int MK_E_NOINVERSE() {
-        return (int)-2147221012L;
+    public static int RPC_X_PIPE_EMPTY() {
+        return (int)1918L;
     }
-    public static int MK_E_NOSTORAGE() {
-        return (int)-2147221011L;
+    public static int ERROR_NO_SITENAME() {
+        return (int)1919L;
     }
-    public static int MK_E_NOPREFIX() {
-        return (int)-2147221010L;
+    public static int ERROR_CANT_ACCESS_FILE() {
+        return (int)1920L;
     }
-    public static int MK_E_ENUMERATION_FAILED() {
-        return (int)-2147221009L;
+    public static int ERROR_CANT_RESOLVE_FILENAME() {
+        return (int)1921L;
     }
-    public static int CO_E_FIRST() {
-        return (int)2147746288L;
+    public static int RPC_S_ENTRY_TYPE_MISMATCH() {
+        return (int)1922L;
     }
-    public static int CO_E_LAST() {
-        return (int)2147746303L;
+    public static int RPC_S_NOT_ALL_OBJS_EXPORTED() {
+        return (int)1923L;
     }
-    public static int CO_S_FIRST() {
-        return (int)262640L;
+    public static int RPC_S_INTERFACE_NOT_EXPORTED() {
+        return (int)1924L;
     }
-    public static int CO_S_LAST() {
-        return (int)262655L;
+    public static int RPC_S_PROFILE_NOT_ADDED() {
+        return (int)1925L;
     }
-    public static int CO_E_NOTINITIALIZED() {
-        return (int)-2147221008L;
+    public static int RPC_S_PRF_ELT_NOT_ADDED() {
+        return (int)1926L;
     }
-    public static int CO_E_ALREADYINITIALIZED() {
-        return (int)-2147221007L;
+    public static int RPC_S_PRF_ELT_NOT_REMOVED() {
+        return (int)1927L;
     }
-    public static int CO_E_CANTDETERMINECLASS() {
-        return (int)-2147221006L;
+    public static int RPC_S_GRP_ELT_NOT_ADDED() {
+        return (int)1928L;
     }
-    public static int CO_E_CLASSSTRING() {
-        return (int)-2147221005L;
+    public static int RPC_S_GRP_ELT_NOT_REMOVED() {
+        return (int)1929L;
     }
-    public static int CO_E_IIDSTRING() {
-        return (int)-2147221004L;
+    public static int ERROR_KM_DRIVER_BLOCKED() {
+        return (int)1930L;
     }
-    public static int CO_E_APPNOTFOUND() {
-        return (int)-2147221003L;
+    public static int ERROR_CONTEXT_EXPIRED() {
+        return (int)1931L;
     }
-    public static int CO_E_APPSINGLEUSE() {
-        return (int)-2147221002L;
+    public static int ERROR_PER_USER_TRUST_QUOTA_EXCEEDED() {
+        return (int)1932L;
     }
-    public static int CO_E_ERRORINAPP() {
-        return (int)-2147221001L;
+    public static int ERROR_ALL_USER_TRUST_QUOTA_EXCEEDED() {
+        return (int)1933L;
     }
-    public static int CO_E_DLLNOTFOUND() {
-        return (int)-2147221000L;
+    public static int ERROR_USER_DELETE_TRUST_QUOTA_EXCEEDED() {
+        return (int)1934L;
     }
-    public static int CO_E_ERRORINDLL() {
-        return (int)-2147220999L;
+    public static int ERROR_AUTHENTICATION_FIREWALL_FAILED() {
+        return (int)1935L;
     }
-    public static int CO_E_WRONGOSFORAPP() {
-        return (int)-2147220998L;
+    public static int ERROR_REMOTE_PRINT_CONNECTIONS_BLOCKED() {
+        return (int)1936L;
     }
-    public static int CO_E_OBJNOTREG() {
-        return (int)-2147220997L;
+    public static int ERROR_NTLM_BLOCKED() {
+        return (int)1937L;
     }
-    public static int CO_E_OBJISREG() {
-        return (int)-2147220996L;
+    public static int ERROR_PASSWORD_CHANGE_REQUIRED() {
+        return (int)1938L;
     }
-    public static int CO_E_OBJNOTCONNECTED() {
-        return (int)-2147220995L;
+    public static int ERROR_LOST_MODE_LOGON_RESTRICTION() {
+        return (int)1939L;
     }
-    public static int CO_E_APPDIDNTREG() {
-        return (int)-2147220994L;
+    public static int ERROR_INVALID_PIXEL_FORMAT() {
+        return (int)2000L;
     }
-    public static int CO_E_RELEASED() {
-        return (int)-2147220993L;
+    public static int ERROR_BAD_DRIVER() {
+        return (int)2001L;
     }
-    public static int EVENT_E_FIRST() {
-        return (int)2147746304L;
+    public static int ERROR_INVALID_WINDOW_STYLE() {
+        return (int)2002L;
     }
-    public static int EVENT_E_LAST() {
-        return (int)2147746335L;
+    public static int ERROR_METAFILE_NOT_SUPPORTED() {
+        return (int)2003L;
     }
-    public static int EVENT_S_FIRST() {
-        return (int)262656L;
+    public static int ERROR_TRANSFORM_NOT_SUPPORTED() {
+        return (int)2004L;
     }
-    public static int EVENT_S_LAST() {
-        return (int)262687L;
+    public static int ERROR_CLIPPING_NOT_SUPPORTED() {
+        return (int)2005L;
     }
-    public static int EVENT_S_SOME_SUBSCRIBERS_FAILED() {
-        return (int)262656L;
+    public static int ERROR_INVALID_CMM() {
+        return (int)2010L;
     }
-    public static int EVENT_E_ALL_SUBSCRIBERS_FAILED() {
-        return (int)-2147220991L;
+    public static int ERROR_INVALID_PROFILE() {
+        return (int)2011L;
     }
-    public static int EVENT_S_NOSUBSCRIBERS() {
-        return (int)262658L;
+    public static int ERROR_TAG_NOT_FOUND() {
+        return (int)2012L;
     }
-    public static int EVENT_E_QUERYSYNTAX() {
-        return (int)-2147220989L;
+    public static int ERROR_TAG_NOT_PRESENT() {
+        return (int)2013L;
     }
-    public static int EVENT_E_QUERYFIELD() {
-        return (int)-2147220988L;
+    public static int ERROR_DUPLICATE_TAG() {
+        return (int)2014L;
     }
-    public static int EVENT_E_INTERNALEXCEPTION() {
-        return (int)-2147220987L;
+    public static int ERROR_PROFILE_NOT_ASSOCIATED_WITH_DEVICE() {
+        return (int)2015L;
     }
-    public static int EVENT_E_INTERNALERROR() {
-        return (int)-2147220986L;
+    public static int ERROR_PROFILE_NOT_FOUND() {
+        return (int)2016L;
     }
-    public static int EVENT_E_INVALID_PER_USER_SID() {
-        return (int)-2147220985L;
+    public static int ERROR_INVALID_COLORSPACE() {
+        return (int)2017L;
     }
-    public static int EVENT_E_USER_EXCEPTION() {
-        return (int)-2147220984L;
+    public static int ERROR_ICM_NOT_ENABLED() {
+        return (int)2018L;
     }
-    public static int EVENT_E_TOO_MANY_METHODS() {
-        return (int)-2147220983L;
+    public static int ERROR_DELETING_ICM_XFORM() {
+        return (int)2019L;
     }
-    public static int EVENT_E_MISSING_EVENTCLASS() {
-        return (int)-2147220982L;
+    public static int ERROR_INVALID_TRANSFORM() {
+        return (int)2020L;
     }
-    public static int EVENT_E_NOT_ALL_REMOVED() {
-        return (int)-2147220981L;
+    public static int ERROR_COLORSPACE_MISMATCH() {
+        return (int)2021L;
     }
-    public static int EVENT_E_COMPLUS_NOT_INSTALLED() {
-        return (int)-2147220980L;
+    public static int ERROR_INVALID_COLORINDEX() {
+        return (int)2022L;
     }
-    public static int EVENT_E_CANT_MODIFY_OR_DELETE_UNCONFIGURED_OBJECT() {
-        return (int)-2147220979L;
+    public static int ERROR_PROFILE_DOES_NOT_MATCH_DEVICE() {
+        return (int)2023L;
     }
-    public static int EVENT_E_CANT_MODIFY_OR_DELETE_CONFIGURED_OBJECT() {
-        return (int)-2147220978L;
+    public static int ERROR_CONNECTED_OTHER_PASSWORD() {
+        return (int)2108L;
     }
-    public static int EVENT_E_INVALID_EVENT_CLASS_PARTITION() {
-        return (int)-2147220977L;
+    public static int ERROR_CONNECTED_OTHER_PASSWORD_DEFAULT() {
+        return (int)2109L;
     }
-    public static int EVENT_E_PER_USER_SID_NOT_LOGGED_ON() {
-        return (int)-2147220976L;
+    public static int ERROR_BAD_USERNAME() {
+        return (int)2202L;
     }
-    public static int TPC_E_INVALID_PROPERTY() {
-        return (int)-2147220927L;
+    public static int ERROR_NOT_CONNECTED() {
+        return (int)2250L;
     }
-    public static int TPC_E_NO_DEFAULT_TABLET() {
-        return (int)-2147220974L;
+    public static int ERROR_OPEN_FILES() {
+        return (int)2401L;
     }
-    public static int TPC_E_UNKNOWN_PROPERTY() {
-        return (int)-2147220965L;
+    public static int ERROR_ACTIVE_CONNECTIONS() {
+        return (int)2402L;
     }
-    public static int TPC_E_INVALID_INPUT_RECT() {
-        return (int)-2147220967L;
+    public static int ERROR_DEVICE_IN_USE() {
+        return (int)2404L;
     }
-    public static int TPC_E_INVALID_STROKE() {
-        return (int)-2147220958L;
+    public static int ERROR_UNKNOWN_PRINT_MONITOR() {
+        return (int)3000L;
     }
-    public static int TPC_E_INITIALIZE_FAIL() {
-        return (int)-2147220957L;
+    public static int ERROR_PRINTER_DRIVER_IN_USE() {
+        return (int)3001L;
     }
-    public static int TPC_E_NOT_RELEVANT() {
-        return (int)-2147220942L;
+    public static int ERROR_SPOOL_FILE_NOT_FOUND() {
+        return (int)3002L;
     }
-    public static int TPC_E_INVALID_PACKET_DESCRIPTION() {
-        return (int)-2147220941L;
+    public static int ERROR_SPL_NO_STARTDOC() {
+        return (int)3003L;
     }
-    public static int TPC_E_RECOGNIZER_NOT_REGISTERED() {
-        return (int)-2147220939L;
+    public static int ERROR_SPL_NO_ADDJOB() {
+        return (int)3004L;
     }
-    public static int TPC_E_INVALID_RIGHTS() {
-        return (int)-2147220938L;
+    public static int ERROR_PRINT_PROCESSOR_ALREADY_INSTALLED() {
+        return (int)3005L;
     }
-    public static int TPC_E_OUT_OF_ORDER_CALL() {
-        return (int)-2147220937L;
+    public static int ERROR_PRINT_MONITOR_ALREADY_INSTALLED() {
+        return (int)3006L;
     }
-    public static int TPC_E_QUEUE_FULL() {
-        return (int)-2147220936L;
+    public static int ERROR_INVALID_PRINT_MONITOR() {
+        return (int)3007L;
     }
-    public static int TPC_E_INVALID_CONFIGURATION() {
-        return (int)-2147220935L;
+    public static int ERROR_PRINT_MONITOR_IN_USE() {
+        return (int)3008L;
     }
-    public static int TPC_E_INVALID_DATA_FROM_RECOGNIZER() {
-        return (int)-2147220934L;
+    public static int ERROR_PRINTER_HAS_JOBS_QUEUED() {
+        return (int)3009L;
     }
-    public static int TPC_S_TRUNCATED() {
-        return (int)262738L;
+    public static int ERROR_SUCCESS_REBOOT_REQUIRED() {
+        return (int)3010L;
     }
-    public static int TPC_S_INTERRUPTED() {
-        return (int)262739L;
+    public static int ERROR_SUCCESS_RESTART_REQUIRED() {
+        return (int)3011L;
     }
-    public static int TPC_S_NO_DATA_TO_PROCESS() {
-        return (int)262740L;
+    public static int ERROR_PRINTER_NOT_FOUND() {
+        return (int)3012L;
     }
-    public static int XACT_E_FIRST() {
-        return (int)2147799040L;
+    public static int ERROR_PRINTER_DRIVER_WARNED() {
+        return (int)3013L;
     }
-    public static int XACT_E_LAST() {
-        return (int)2147799083L;
+    public static int ERROR_PRINTER_DRIVER_BLOCKED() {
+        return (int)3014L;
     }
-    public static int XACT_E_ALREADYOTHERSINGLEPHASE() {
-        return (int)-2147168256L;
+    public static int ERROR_PRINTER_DRIVER_PACKAGE_IN_USE() {
+        return (int)3015L;
     }
-    public static int XACT_E_CANTRETAIN() {
-        return (int)-2147168255L;
+    public static int ERROR_CORE_DRIVER_PACKAGE_NOT_FOUND() {
+        return (int)3016L;
     }
-    public static int XACT_E_COMMITFAILED() {
-        return (int)-2147168254L;
+    public static int ERROR_FAIL_REBOOT_REQUIRED() {
+        return (int)3017L;
     }
-    public static int XACT_E_COMMITPREVENTED() {
-        return (int)-2147168253L;
+    public static int ERROR_FAIL_REBOOT_INITIATED() {
+        return (int)3018L;
     }
-    public static int XACT_E_HEURISTICABORT() {
-        return (int)-2147168252L;
+    public static int ERROR_PRINTER_DRIVER_DOWNLOAD_NEEDED() {
+        return (int)3019L;
     }
-    public static int XACT_E_HEURISTICCOMMIT() {
-        return (int)-2147168251L;
+    public static int ERROR_PRINT_JOB_RESTART_REQUIRED() {
+        return (int)3020L;
     }
-    public static int XACT_E_HEURISTICDAMAGE() {
-        return (int)-2147168250L;
+    public static int ERROR_INVALID_PRINTER_DRIVER_MANIFEST() {
+        return (int)3021L;
     }
-    public static int XACT_E_HEURISTICDANGER() {
-        return (int)-2147168249L;
+    public static int ERROR_PRINTER_NOT_SHAREABLE() {
+        return (int)3022L;
     }
-    public static int XACT_E_ISOLATIONLEVEL() {
-        return (int)-2147168248L;
+    public static int ERROR_REQUEST_PAUSED() {
+        return (int)3050L;
     }
-    public static int XACT_E_NOASYNC() {
-        return (int)-2147168247L;
+    public static int ERROR_APPEXEC_CONDITION_NOT_SATISFIED() {
+        return (int)3060L;
     }
-    public static int XACT_E_NOENLIST() {
-        return (int)-2147168246L;
+    public static int ERROR_APPEXEC_HANDLE_INVALIDATED() {
+        return (int)3061L;
     }
-    public static int XACT_E_NOISORETAIN() {
-        return (int)-2147168245L;
+    public static int ERROR_APPEXEC_INVALID_HOST_GENERATION() {
+        return (int)3062L;
     }
-    public static int XACT_E_NORESOURCE() {
-        return (int)-2147168244L;
+    public static int ERROR_APPEXEC_UNEXPECTED_PROCESS_REGISTRATION() {
+        return (int)3063L;
     }
-    public static int XACT_E_NOTCURRENT() {
-        return (int)-2147168243L;
+    public static int ERROR_APPEXEC_INVALID_HOST_STATE() {
+        return (int)3064L;
     }
-    public static int XACT_E_NOTRANSACTION() {
-        return (int)-2147168242L;
+    public static int ERROR_APPEXEC_NO_DONOR() {
+        return (int)3065L;
     }
-    public static int XACT_E_NOTSUPPORTED() {
-        return (int)-2147168241L;
+    public static int ERROR_APPEXEC_HOST_ID_MISMATCH() {
+        return (int)3066L;
     }
-    public static int XACT_E_UNKNOWNRMGRID() {
-        return (int)-2147168240L;
+    public static int ERROR_APPEXEC_UNKNOWN_USER() {
+        return (int)3067L;
     }
-    public static int XACT_E_WRONGSTATE() {
-        return (int)-2147168239L;
+    public static int ERROR_IO_REISSUE_AS_CACHED() {
+        return (int)3950L;
     }
-    public static int XACT_E_WRONGUOW() {
-        return (int)-2147168238L;
+    public static int ERROR_WINS_INTERNAL() {
+        return (int)4000L;
     }
-    public static int XACT_E_XTIONEXISTS() {
-        return (int)-2147168237L;
+    public static int ERROR_CAN_NOT_DEL_LOCAL_WINS() {
+        return (int)4001L;
     }
-    public static int XACT_E_NOIMPORTOBJECT() {
-        return (int)-2147168236L;
+    public static int ERROR_STATIC_INIT() {
+        return (int)4002L;
     }
-    public static int XACT_E_INVALIDCOOKIE() {
-        return (int)-2147168235L;
+    public static int ERROR_INC_BACKUP() {
+        return (int)4003L;
     }
-    public static int XACT_E_INDOUBT() {
-        return (int)-2147168234L;
+    public static int ERROR_FULL_BACKUP() {
+        return (int)4004L;
     }
-    public static int XACT_E_NOTIMEOUT() {
-        return (int)-2147168233L;
+    public static int ERROR_REC_NON_EXISTENT() {
+        return (int)4005L;
     }
-    public static int XACT_E_ALREADYINPROGRESS() {
-        return (int)-2147168232L;
+    public static int ERROR_RPL_NOT_ALLOWED() {
+        return (int)4006L;
     }
-    public static int XACT_E_ABORTED() {
-        return (int)-2147168231L;
+    public static int PEERDIST_ERROR_CONTENTINFO_VERSION_UNSUPPORTED() {
+        return (int)4050L;
     }
-    public static int XACT_E_LOGFULL() {
-        return (int)-2147168230L;
+    public static int PEERDIST_ERROR_CANNOT_PARSE_CONTENTINFO() {
+        return (int)4051L;
     }
-    public static int XACT_E_TMNOTAVAILABLE() {
-        return (int)-2147168229L;
+    public static int PEERDIST_ERROR_MISSING_DATA() {
+        return (int)4052L;
     }
-    public static int XACT_E_CONNECTION_DOWN() {
-        return (int)-2147168228L;
+    public static int PEERDIST_ERROR_NO_MORE() {
+        return (int)4053L;
     }
-    public static int XACT_E_CONNECTION_DENIED() {
-        return (int)-2147168227L;
+    public static int PEERDIST_ERROR_NOT_INITIALIZED() {
+        return (int)4054L;
     }
-    public static int XACT_E_REENLISTTIMEOUT() {
-        return (int)-2147168226L;
+    public static int PEERDIST_ERROR_ALREADY_INITIALIZED() {
+        return (int)4055L;
     }
-    public static int XACT_E_TIP_CONNECT_FAILED() {
-        return (int)-2147168225L;
+    public static int PEERDIST_ERROR_SHUTDOWN_IN_PROGRESS() {
+        return (int)4056L;
     }
-    public static int XACT_E_TIP_PROTOCOL_ERROR() {
-        return (int)-2147168224L;
+    public static int PEERDIST_ERROR_INVALIDATED() {
+        return (int)4057L;
     }
-    public static int XACT_E_TIP_PULL_FAILED() {
-        return (int)-2147168223L;
+    public static int PEERDIST_ERROR_ALREADY_EXISTS() {
+        return (int)4058L;
     }
-    public static int XACT_E_DEST_TMNOTAVAILABLE() {
-        return (int)-2147168222L;
+    public static int PEERDIST_ERROR_OPERATION_NOTFOUND() {
+        return (int)4059L;
     }
-    public static int XACT_E_TIP_DISABLED() {
-        return (int)-2147168221L;
+    public static int PEERDIST_ERROR_ALREADY_COMPLETED() {
+        return (int)4060L;
     }
-    public static int XACT_E_NETWORK_TX_DISABLED() {
-        return (int)-2147168220L;
+    public static int PEERDIST_ERROR_OUT_OF_BOUNDS() {
+        return (int)4061L;
     }
-    public static int XACT_E_PARTNER_NETWORK_TX_DISABLED() {
-        return (int)-2147168219L;
+    public static int PEERDIST_ERROR_VERSION_UNSUPPORTED() {
+        return (int)4062L;
     }
-    public static int XACT_E_XA_TX_DISABLED() {
-        return (int)-2147168218L;
+    public static int PEERDIST_ERROR_INVALID_CONFIGURATION() {
+        return (int)4063L;
     }
-    public static int XACT_E_UNABLE_TO_READ_DTC_CONFIG() {
-        return (int)-2147168217L;
+    public static int PEERDIST_ERROR_NOT_LICENSED() {
+        return (int)4064L;
     }
-    public static int XACT_E_UNABLE_TO_LOAD_DTC_PROXY() {
-        return (int)-2147168216L;
+    public static int PEERDIST_ERROR_SERVICE_UNAVAILABLE() {
+        return (int)4065L;
     }
-    public static int XACT_E_ABORTING() {
-        return (int)-2147168215L;
+    public static int PEERDIST_ERROR_TRUST_FAILURE() {
+        return (int)4066L;
     }
-    public static int XACT_E_PUSH_COMM_FAILURE() {
-        return (int)-2147168214L;
+    public static int ERROR_DHCP_ADDRESS_CONFLICT() {
+        return (int)4100L;
     }
-    public static int XACT_E_PULL_COMM_FAILURE() {
-        return (int)-2147168213L;
+    public static int ERROR_WMI_GUID_NOT_FOUND() {
+        return (int)4200L;
     }
-    public static int XACT_E_LU_TX_DISABLED() {
-        return (int)-2147168212L;
+    public static int ERROR_WMI_INSTANCE_NOT_FOUND() {
+        return (int)4201L;
     }
-    public static int XACT_E_CLERKNOTFOUND() {
-        return (int)-2147168128L;
+    public static int ERROR_WMI_ITEMID_NOT_FOUND() {
+        return (int)4202L;
     }
-    public static int XACT_E_CLERKEXISTS() {
-        return (int)-2147168127L;
+    public static int ERROR_WMI_TRY_AGAIN() {
+        return (int)4203L;
     }
-    public static int XACT_E_RECOVERYINPROGRESS() {
-        return (int)-2147168126L;
+    public static int ERROR_WMI_DP_NOT_FOUND() {
+        return (int)4204L;
     }
-    public static int XACT_E_TRANSACTIONCLOSED() {
-        return (int)-2147168125L;
+    public static int ERROR_WMI_UNRESOLVED_INSTANCE_REF() {
+        return (int)4205L;
     }
-    public static int XACT_E_INVALIDLSN() {
-        return (int)-2147168124L;
+    public static int ERROR_WMI_ALREADY_ENABLED() {
+        return (int)4206L;
     }
-    public static int XACT_E_REPLAYREQUEST() {
-        return (int)-2147168123L;
+    public static int ERROR_WMI_GUID_DISCONNECTED() {
+        return (int)4207L;
     }
-    public static int XACT_S_ASYNC() {
-        return (int)315392L;
+    public static int ERROR_WMI_SERVER_UNAVAILABLE() {
+        return (int)4208L;
     }
-    public static int XACT_S_DEFECT() {
-        return (int)315393L;
+    public static int ERROR_WMI_DP_FAILED() {
+        return (int)4209L;
     }
-    public static int XACT_S_READONLY() {
-        return (int)315394L;
+    public static int ERROR_WMI_INVALID_MOF() {
+        return (int)4210L;
     }
-    public static int XACT_S_SOMENORETAIN() {
-        return (int)315395L;
+    public static int ERROR_WMI_INVALID_REGINFO() {
+        return (int)4211L;
     }
-    public static int XACT_S_OKINFORM() {
-        return (int)315396L;
+    public static int ERROR_WMI_ALREADY_DISABLED() {
+        return (int)4212L;
     }
-    public static int XACT_S_MADECHANGESCONTENT() {
-        return (int)315397L;
+    public static int ERROR_WMI_READ_ONLY() {
+        return (int)4213L;
     }
-    public static int XACT_S_MADECHANGESINFORM() {
-        return (int)315398L;
+    public static int ERROR_WMI_SET_FAILURE() {
+        return (int)4214L;
     }
-    public static int XACT_S_ALLNORETAIN() {
-        return (int)315399L;
+    public static int ERROR_NOT_APPCONTAINER() {
+        return (int)4250L;
     }
-    public static int XACT_S_ABORTING() {
-        return (int)315400L;
+    public static int ERROR_APPCONTAINER_REQUIRED() {
+        return (int)4251L;
     }
-    public static int XACT_S_SINGLEPHASE() {
-        return (int)315401L;
+    public static int ERROR_NOT_SUPPORTED_IN_APPCONTAINER() {
+        return (int)4252L;
     }
-    public static int XACT_S_LOCALLY_OK() {
-        return (int)315402L;
+    public static int ERROR_INVALID_PACKAGE_SID_LENGTH() {
+        return (int)4253L;
     }
-    public static int XACT_S_LASTRESOURCEMANAGER() {
-        return (int)315408L;
+    public static int ERROR_INVALID_MEDIA() {
+        return (int)4300L;
     }
-    public static int CONTEXT_E_FIRST() {
-        return (int)2147803136L;
+    public static int ERROR_INVALID_LIBRARY() {
+        return (int)4301L;
     }
-    public static int CONTEXT_E_LAST() {
-        return (int)2147803183L;
+    public static int ERROR_INVALID_MEDIA_POOL() {
+        return (int)4302L;
     }
-    public static int CONTEXT_S_FIRST() {
-        return (int)319488L;
+    public static int ERROR_DRIVE_MEDIA_MISMATCH() {
+        return (int)4303L;
     }
-    public static int CONTEXT_S_LAST() {
-        return (int)319535L;
+    public static int ERROR_MEDIA_OFFLINE() {
+        return (int)4304L;
     }
-    public static int CONTEXT_E_ABORTED() {
-        return (int)-2147164158L;
+    public static int ERROR_LIBRARY_OFFLINE() {
+        return (int)4305L;
     }
-    public static int CONTEXT_E_ABORTING() {
-        return (int)-2147164157L;
+    public static int ERROR_EMPTY() {
+        return (int)4306L;
     }
-    public static int CONTEXT_E_NOCONTEXT() {
-        return (int)-2147164156L;
+    public static int ERROR_NOT_EMPTY() {
+        return (int)4307L;
     }
-    public static int CONTEXT_E_WOULD_DEADLOCK() {
-        return (int)-2147164155L;
+    public static int ERROR_MEDIA_UNAVAILABLE() {
+        return (int)4308L;
     }
-    public static int CONTEXT_E_SYNCH_TIMEOUT() {
-        return (int)-2147164154L;
+    public static int ERROR_RESOURCE_DISABLED() {
+        return (int)4309L;
     }
-    public static int CONTEXT_E_OLDREF() {
-        return (int)-2147164153L;
+    public static int ERROR_INVALID_CLEANER() {
+        return (int)4310L;
     }
-    public static int CONTEXT_E_ROLENOTFOUND() {
-        return (int)-2147164148L;
+    public static int ERROR_UNABLE_TO_CLEAN() {
+        return (int)4311L;
     }
-    public static int CONTEXT_E_TMNOTAVAILABLE() {
-        return (int)-2147164145L;
+    public static int ERROR_OBJECT_NOT_FOUND() {
+        return (int)4312L;
     }
-    public static int CO_E_ACTIVATIONFAILED() {
-        return (int)-2147164127L;
+    public static int ERROR_DATABASE_FAILURE() {
+        return (int)4313L;
     }
-    public static int CO_E_ACTIVATIONFAILED_EVENTLOGGED() {
-        return (int)-2147164126L;
+    public static int ERROR_DATABASE_FULL() {
+        return (int)4314L;
     }
-    public static int CO_E_ACTIVATIONFAILED_CATALOGERROR() {
-        return (int)-2147164125L;
+    public static int ERROR_MEDIA_INCOMPATIBLE() {
+        return (int)4315L;
     }
-    public static int CO_E_ACTIVATIONFAILED_TIMEOUT() {
-        return (int)-2147164124L;
+    public static int ERROR_RESOURCE_NOT_PRESENT() {
+        return (int)4316L;
     }
-    public static int CO_E_INITIALIZATIONFAILED() {
-        return (int)-2147164123L;
+    public static int ERROR_INVALID_OPERATION() {
+        return (int)4317L;
     }
-    public static int CONTEXT_E_NOJIT() {
-        return (int)-2147164122L;
+    public static int ERROR_MEDIA_NOT_AVAILABLE() {
+        return (int)4318L;
     }
-    public static int CONTEXT_E_NOTRANSACTION() {
-        return (int)-2147164121L;
+    public static int ERROR_DEVICE_NOT_AVAILABLE() {
+        return (int)4319L;
     }
-    public static int CO_E_THREADINGMODEL_CHANGED() {
-        return (int)-2147164120L;
+    public static int ERROR_REQUEST_REFUSED() {
+        return (int)4320L;
     }
-    public static int CO_E_NOIISINTRINSICS() {
-        return (int)-2147164119L;
+    public static int ERROR_INVALID_DRIVE_OBJECT() {
+        return (int)4321L;
     }
-    public static int CO_E_NOCOOKIES() {
-        return (int)-2147164118L;
+    public static int ERROR_LIBRARY_FULL() {
+        return (int)4322L;
     }
-    public static int CO_E_DBERROR() {
-        return (int)-2147164117L;
+    public static int ERROR_MEDIUM_NOT_ACCESSIBLE() {
+        return (int)4323L;
     }
-    public static int CO_E_NOTPOOLED() {
-        return (int)-2147164116L;
+    public static int ERROR_UNABLE_TO_LOAD_MEDIUM() {
+        return (int)4324L;
     }
-    public static int CO_E_NOTCONSTRUCTED() {
-        return (int)-2147164115L;
+    public static int ERROR_UNABLE_TO_INVENTORY_DRIVE() {
+        return (int)4325L;
     }
-    public static int CO_E_NOSYNCHRONIZATION() {
-        return (int)-2147164114L;
+    public static int ERROR_UNABLE_TO_INVENTORY_SLOT() {
+        return (int)4326L;
     }
-    public static int CO_E_ISOLEVELMISMATCH() {
-        return (int)-2147164113L;
+    public static int ERROR_UNABLE_TO_INVENTORY_TRANSPORT() {
+        return (int)4327L;
     }
-    public static int CO_E_CALL_OUT_OF_TX_SCOPE_NOT_ALLOWED() {
-        return (int)-2147164112L;
+    public static int ERROR_TRANSPORT_FULL() {
+        return (int)4328L;
     }
-    public static int CO_E_EXIT_TRANSACTION_SCOPE_NOT_CALLED() {
-        return (int)-2147164111L;
+    public static int ERROR_CONTROLLING_IEPORT() {
+        return (int)4329L;
     }
-    public static int OLE_S_USEREG() {
-        return (int)262144L;
+    public static int ERROR_UNABLE_TO_EJECT_MOUNTED_MEDIA() {
+        return (int)4330L;
     }
-    public static int OLE_S_STATIC() {
-        return (int)262145L;
+    public static int ERROR_CLEANER_SLOT_SET() {
+        return (int)4331L;
     }
-    public static int OLE_S_MAC_CLIPFORMAT() {
-        return (int)262146L;
+    public static int ERROR_CLEANER_SLOT_NOT_SET() {
+        return (int)4332L;
     }
-    public static int DRAGDROP_S_DROP() {
-        return (int)262400L;
+    public static int ERROR_CLEANER_CARTRIDGE_SPENT() {
+        return (int)4333L;
     }
-    public static int DRAGDROP_S_CANCEL() {
-        return (int)262401L;
+    public static int ERROR_UNEXPECTED_OMID() {
+        return (int)4334L;
     }
-    public static int DRAGDROP_S_USEDEFAULTCURSORS() {
-        return (int)262402L;
+    public static int ERROR_CANT_DELETE_LAST_ITEM() {
+        return (int)4335L;
     }
-    public static int DATA_S_SAMEFORMATETC() {
-        return (int)262448L;
+    public static int ERROR_MESSAGE_EXCEEDS_MAX_SIZE() {
+        return (int)4336L;
     }
-    public static int VIEW_S_ALREADY_FROZEN() {
-        return (int)262464L;
+    public static int ERROR_VOLUME_CONTAINS_SYS_FILES() {
+        return (int)4337L;
     }
-    public static int CACHE_S_FORMATETC_NOTSUPPORTED() {
-        return (int)262512L;
+    public static int ERROR_INDIGENOUS_TYPE() {
+        return (int)4338L;
     }
-    public static int CACHE_S_SAMECACHE() {
-        return (int)262513L;
+    public static int ERROR_NO_SUPPORTING_DRIVES() {
+        return (int)4339L;
     }
-    public static int CACHE_S_SOMECACHES_NOTUPDATED() {
-        return (int)262514L;
+    public static int ERROR_CLEANER_CARTRIDGE_INSTALLED() {
+        return (int)4340L;
     }
-    public static int OLEOBJ_S_INVALIDVERB() {
-        return (int)262528L;
+    public static int ERROR_IEPORT_FULL() {
+        return (int)4341L;
     }
-    public static int OLEOBJ_S_CANNOT_DOVERB_NOW() {
-        return (int)262529L;
+    public static int ERROR_FILE_OFFLINE() {
+        return (int)4350L;
     }
-    public static int OLEOBJ_S_INVALIDHWND() {
-        return (int)262530L;
+    public static int ERROR_REMOTE_STORAGE_NOT_ACTIVE() {
+        return (int)4351L;
     }
-    public static int INPLACE_S_TRUNCATED() {
-        return (int)262560L;
+    public static int ERROR_REMOTE_STORAGE_MEDIA_ERROR() {
+        return (int)4352L;
     }
-    public static int CONVERT10_S_NO_PRESENTATION() {
-        return (int)262592L;
+    public static int ERROR_NOT_A_REPARSE_POINT() {
+        return (int)4390L;
     }
-    public static int MK_S_REDUCED_TO_SELF() {
-        return (int)262626L;
+    public static int ERROR_REPARSE_ATTRIBUTE_CONFLICT() {
+        return (int)4391L;
     }
-    public static int MK_S_ME() {
-        return (int)262628L;
+    public static int ERROR_INVALID_REPARSE_DATA() {
+        return (int)4392L;
     }
-    public static int MK_S_HIM() {
-        return (int)262629L;
+    public static int ERROR_REPARSE_TAG_INVALID() {
+        return (int)4393L;
     }
-    public static int MK_S_US() {
-        return (int)262630L;
+    public static int ERROR_REPARSE_TAG_MISMATCH() {
+        return (int)4394L;
     }
-    public static int MK_S_MONIKERALREADYREGISTERED() {
-        return (int)262631L;
+    public static int ERROR_REPARSE_POINT_ENCOUNTERED() {
+        return (int)4395L;
     }
-    public static int SCHED_S_TASK_READY() {
-        return (int)267008L;
+    public static int ERROR_APP_DATA_NOT_FOUND() {
+        return (int)4400L;
     }
-    public static int SCHED_S_TASK_RUNNING() {
-        return (int)267009L;
+    public static int ERROR_APP_DATA_EXPIRED() {
+        return (int)4401L;
     }
-    public static int SCHED_S_TASK_DISABLED() {
-        return (int)267010L;
+    public static int ERROR_APP_DATA_CORRUPT() {
+        return (int)4402L;
     }
-    public static int SCHED_S_TASK_HAS_NOT_RUN() {
-        return (int)267011L;
+    public static int ERROR_APP_DATA_LIMIT_EXCEEDED() {
+        return (int)4403L;
     }
-    public static int SCHED_S_TASK_NO_MORE_RUNS() {
-        return (int)267012L;
+    public static int ERROR_APP_DATA_REBOOT_REQUIRED() {
+        return (int)4404L;
     }
-    public static int SCHED_S_TASK_NOT_SCHEDULED() {
-        return (int)267013L;
+    public static int ERROR_SECUREBOOT_ROLLBACK_DETECTED() {
+        return (int)4420L;
     }
-    public static int SCHED_S_TASK_TERMINATED() {
-        return (int)267014L;
+    public static int ERROR_SECUREBOOT_POLICY_VIOLATION() {
+        return (int)4421L;
     }
-    public static int SCHED_S_TASK_NO_VALID_TRIGGERS() {
-        return (int)267015L;
+    public static int ERROR_SECUREBOOT_INVALID_POLICY() {
+        return (int)4422L;
     }
-    public static int SCHED_S_EVENT_TRIGGER() {
-        return (int)267016L;
+    public static int ERROR_SECUREBOOT_POLICY_PUBLISHER_NOT_FOUND() {
+        return (int)4423L;
     }
-    public static int SCHED_E_TRIGGER_NOT_FOUND() {
-        return (int)-2147216631L;
+    public static int ERROR_SECUREBOOT_POLICY_NOT_SIGNED() {
+        return (int)4424L;
     }
-    public static int SCHED_E_TASK_NOT_READY() {
-        return (int)-2147216630L;
+    public static int ERROR_SECUREBOOT_NOT_ENABLED() {
+        return (int)4425L;
     }
-    public static int SCHED_E_TASK_NOT_RUNNING() {
-        return (int)-2147216629L;
+    public static int ERROR_SECUREBOOT_FILE_REPLACED() {
+        return (int)4426L;
     }
-    public static int SCHED_E_SERVICE_NOT_INSTALLED() {
-        return (int)-2147216628L;
+    public static int ERROR_SECUREBOOT_POLICY_NOT_AUTHORIZED() {
+        return (int)4427L;
     }
-    public static int SCHED_E_CANNOT_OPEN_TASK() {
-        return (int)-2147216627L;
+    public static int ERROR_SECUREBOOT_POLICY_UNKNOWN() {
+        return (int)4428L;
     }
-    public static int SCHED_E_INVALID_TASK() {
-        return (int)-2147216626L;
+    public static int ERROR_SECUREBOOT_POLICY_MISSING_ANTIROLLBACKVERSION() {
+        return (int)4429L;
     }
-    public static int SCHED_E_ACCOUNT_INFORMATION_NOT_SET() {
-        return (int)-2147216625L;
+    public static int ERROR_SECUREBOOT_PLATFORM_ID_MISMATCH() {
+        return (int)4430L;
     }
-    public static int SCHED_E_ACCOUNT_NAME_NOT_FOUND() {
-        return (int)-2147216624L;
+    public static int ERROR_SECUREBOOT_POLICY_ROLLBACK_DETECTED() {
+        return (int)4431L;
     }
-    public static int SCHED_E_ACCOUNT_DBASE_CORRUPT() {
-        return (int)-2147216623L;
+    public static int ERROR_SECUREBOOT_POLICY_UPGRADE_MISMATCH() {
+        return (int)4432L;
     }
-    public static int SCHED_E_NO_SECURITY_SERVICES() {
-        return (int)-2147216622L;
+    public static int ERROR_SECUREBOOT_REQUIRED_POLICY_FILE_MISSING() {
+        return (int)4433L;
     }
-    public static int SCHED_E_UNKNOWN_OBJECT_VERSION() {
-        return (int)-2147216621L;
+    public static int ERROR_SECUREBOOT_NOT_BASE_POLICY() {
+        return (int)4434L;
     }
-    public static int SCHED_E_UNSUPPORTED_ACCOUNT_OPTION() {
-        return (int)-2147216620L;
+    public static int ERROR_SECUREBOOT_NOT_SUPPLEMENTAL_POLICY() {
+        return (int)4435L;
     }
-    public static int SCHED_E_SERVICE_NOT_RUNNING() {
-        return (int)-2147216619L;
+    public static int ERROR_OFFLOAD_READ_FLT_NOT_SUPPORTED() {
+        return (int)4440L;
     }
-    public static int SCHED_E_UNEXPECTEDNODE() {
-        return (int)-2147216618L;
+    public static int ERROR_OFFLOAD_WRITE_FLT_NOT_SUPPORTED() {
+        return (int)4441L;
     }
-    public static int SCHED_E_NAMESPACE() {
-        return (int)-2147216617L;
+    public static int ERROR_OFFLOAD_READ_FILE_NOT_SUPPORTED() {
+        return (int)4442L;
     }
-    public static int SCHED_E_INVALIDVALUE() {
-        return (int)-2147216616L;
+    public static int ERROR_OFFLOAD_WRITE_FILE_NOT_SUPPORTED() {
+        return (int)4443L;
     }
-    public static int SCHED_E_MISSINGNODE() {
-        return (int)-2147216615L;
+    public static int ERROR_ALREADY_HAS_STREAM_ID() {
+        return (int)4444L;
     }
-    public static int SCHED_E_MALFORMEDXML() {
-        return (int)-2147216614L;
+    public static int ERROR_SMR_GARBAGE_COLLECTION_REQUIRED() {
+        return (int)4445L;
     }
-    public static int SCHED_S_SOME_TRIGGERS_FAILED() {
-        return (int)267035L;
+    public static int ERROR_WOF_WIM_HEADER_CORRUPT() {
+        return (int)4446L;
     }
-    public static int SCHED_S_BATCH_LOGON_PROBLEM() {
-        return (int)267036L;
+    public static int ERROR_WOF_WIM_RESOURCE_TABLE_CORRUPT() {
+        return (int)4447L;
     }
-    public static int SCHED_E_TOO_MANY_NODES() {
-        return (int)-2147216611L;
+    public static int ERROR_WOF_FILE_RESOURCE_TABLE_CORRUPT() {
+        return (int)4448L;
     }
-    public static int SCHED_E_PAST_END_BOUNDARY() {
-        return (int)-2147216610L;
+    public static int ERROR_VOLUME_NOT_SIS_ENABLED() {
+        return (int)4500L;
     }
-    public static int SCHED_E_ALREADY_RUNNING() {
-        return (int)-2147216609L;
+    public static int ERROR_SYSTEM_INTEGRITY_ROLLBACK_DETECTED() {
+        return (int)4550L;
     }
-    public static int SCHED_E_USER_NOT_LOGGED_ON() {
-        return (int)-2147216608L;
+    public static int ERROR_SYSTEM_INTEGRITY_POLICY_VIOLATION() {
+        return (int)4551L;
     }
-    public static int SCHED_E_INVALID_TASK_HASH() {
-        return (int)-2147216607L;
+    public static int ERROR_SYSTEM_INTEGRITY_INVALID_POLICY() {
+        return (int)4552L;
     }
-    public static int SCHED_E_SERVICE_NOT_AVAILABLE() {
-        return (int)-2147216606L;
+    public static int ERROR_SYSTEM_INTEGRITY_POLICY_NOT_SIGNED() {
+        return (int)4553L;
     }
-    public static int SCHED_E_SERVICE_TOO_BUSY() {
-        return (int)-2147216605L;
+    public static int ERROR_SYSTEM_INTEGRITY_TOO_MANY_POLICIES() {
+        return (int)4554L;
     }
-    public static int SCHED_E_TASK_ATTEMPTED() {
-        return (int)-2147216604L;
+    public static int ERROR_SYSTEM_INTEGRITY_SUPPLEMENTAL_POLICY_NOT_AUTHORIZED() {
+        return (int)4555L;
     }
-    public static int SCHED_S_TASK_QUEUED() {
-        return (int)267045L;
+    public static int ERROR_VSM_NOT_INITIALIZED() {
+        return (int)4560L;
     }
-    public static int SCHED_E_TASK_DISABLED() {
-        return (int)-2147216602L;
+    public static int ERROR_VSM_DMA_PROTECTION_NOT_IN_USE() {
+        return (int)4561L;
     }
-    public static int SCHED_E_TASK_NOT_V1_COMPAT() {
-        return (int)-2147216601L;
+    public static int ERROR_PLATFORM_MANIFEST_NOT_AUTHORIZED() {
+        return (int)4570L;
     }
-    public static int SCHED_E_START_ON_DEMAND() {
-        return (int)-2147216600L;
+    public static int ERROR_PLATFORM_MANIFEST_INVALID() {
+        return (int)4571L;
     }
-    public static int SCHED_E_TASK_NOT_UBPM_COMPAT() {
-        return (int)-2147216599L;
+    public static int ERROR_PLATFORM_MANIFEST_FILE_NOT_AUTHORIZED() {
+        return (int)4572L;
     }
-    public static int SCHED_E_DEPRECATED_FEATURE_USED() {
-        return (int)-2147216592L;
+    public static int ERROR_PLATFORM_MANIFEST_CATALOG_NOT_AUTHORIZED() {
+        return (int)4573L;
     }
-    public static int CO_E_CLASS_CREATE_FAILED() {
-        return (int)-2146959359L;
+    public static int ERROR_PLATFORM_MANIFEST_BINARY_ID_NOT_FOUND() {
+        return (int)4574L;
     }
-    public static int CO_E_SCM_ERROR() {
-        return (int)-2146959358L;
+    public static int ERROR_PLATFORM_MANIFEST_NOT_ACTIVE() {
+        return (int)4575L;
     }
-    public static int CO_E_SCM_RPC_FAILURE() {
-        return (int)-2146959357L;
+    public static int ERROR_PLATFORM_MANIFEST_NOT_SIGNED() {
+        return (int)4576L;
     }
-    public static int CO_E_BAD_PATH() {
-        return (int)-2146959356L;
+    public static int ERROR_DEPENDENT_RESOURCE_EXISTS() {
+        return (int)5001L;
     }
-    public static int CO_E_SERVER_EXEC_FAILURE() {
-        return (int)-2146959355L;
+    public static int ERROR_DEPENDENCY_NOT_FOUND() {
+        return (int)5002L;
     }
-    public static int CO_E_OBJSRV_RPC_FAILURE() {
-        return (int)-2146959354L;
+    public static int ERROR_DEPENDENCY_ALREADY_EXISTS() {
+        return (int)5003L;
     }
-    public static int MK_E_NO_NORMALIZED() {
-        return (int)-2146959353L;
+    public static int ERROR_RESOURCE_NOT_ONLINE() {
+        return (int)5004L;
     }
-    public static int CO_E_SERVER_STOPPING() {
-        return (int)-2146959352L;
+    public static int ERROR_HOST_NODE_NOT_AVAILABLE() {
+        return (int)5005L;
     }
-    public static int MEM_E_INVALID_ROOT() {
-        return (int)-2146959351L;
+    public static int ERROR_RESOURCE_NOT_AVAILABLE() {
+        return (int)5006L;
     }
-    public static int MEM_E_INVALID_LINK() {
-        return (int)-2146959344L;
+    public static int ERROR_RESOURCE_NOT_FOUND() {
+        return (int)5007L;
     }
-    public static int MEM_E_INVALID_SIZE() {
-        return (int)-2146959343L;
+    public static int ERROR_SHUTDOWN_CLUSTER() {
+        return (int)5008L;
     }
-    public static int CO_S_NOTALLINTERFACES() {
-        return (int)524306L;
+    public static int ERROR_CANT_EVICT_ACTIVE_NODE() {
+        return (int)5009L;
     }
-    public static int CO_S_MACHINENAMENOTFOUND() {
-        return (int)524307L;
+    public static int ERROR_OBJECT_ALREADY_EXISTS() {
+        return (int)5010L;
     }
-    public static int CO_E_MISSING_DISPLAYNAME() {
-        return (int)-2146959339L;
+    public static int ERROR_OBJECT_IN_LIST() {
+        return (int)5011L;
     }
-    public static int CO_E_RUNAS_VALUE_MUST_BE_AAA() {
-        return (int)-2146959338L;
+    public static int ERROR_GROUP_NOT_AVAILABLE() {
+        return (int)5012L;
     }
-    public static int CO_E_ELEVATION_DISABLED() {
-        return (int)-2146959337L;
+    public static int ERROR_GROUP_NOT_FOUND() {
+        return (int)5013L;
     }
-    public static int APPX_E_PACKAGING_INTERNAL() {
-        return (int)-2146958848L;
+    public static int ERROR_GROUP_NOT_ONLINE() {
+        return (int)5014L;
     }
-    public static int APPX_E_INTERLEAVING_NOT_ALLOWED() {
-        return (int)-2146958847L;
+    public static int ERROR_HOST_NODE_NOT_RESOURCE_OWNER() {
+        return (int)5015L;
     }
-    public static int APPX_E_RELATIONSHIPS_NOT_ALLOWED() {
-        return (int)-2146958846L;
+    public static int ERROR_HOST_NODE_NOT_GROUP_OWNER() {
+        return (int)5016L;
     }
-    public static int APPX_E_MISSING_REQUIRED_FILE() {
-        return (int)-2146958845L;
+    public static int ERROR_RESMON_CREATE_FAILED() {
+        return (int)5017L;
     }
-    public static int APPX_E_INVALID_MANIFEST() {
-        return (int)-2146958844L;
+    public static int ERROR_RESMON_ONLINE_FAILED() {
+        return (int)5018L;
     }
-    public static int APPX_E_INVALID_BLOCKMAP() {
-        return (int)-2146958843L;
+    public static int ERROR_RESOURCE_ONLINE() {
+        return (int)5019L;
     }
-    public static int APPX_E_CORRUPT_CONTENT() {
-        return (int)-2146958842L;
+    public static int ERROR_QUORUM_RESOURCE() {
+        return (int)5020L;
     }
-    public static int APPX_E_BLOCK_HASH_INVALID() {
-        return (int)-2146958841L;
+    public static int ERROR_NOT_QUORUM_CAPABLE() {
+        return (int)5021L;
     }
-    public static int APPX_E_REQUESTED_RANGE_TOO_LARGE() {
-        return (int)-2146958840L;
+    public static int ERROR_CLUSTER_SHUTTING_DOWN() {
+        return (int)5022L;
     }
-    public static int APPX_E_INVALID_SIP_CLIENT_DATA() {
-        return (int)-2146958839L;
+    public static int ERROR_INVALID_STATE() {
+        return (int)5023L;
     }
-    public static int APPX_E_INVALID_KEY_INFO() {
-        return (int)-2146958838L;
+    public static int ERROR_RESOURCE_PROPERTIES_STORED() {
+        return (int)5024L;
     }
-    public static int APPX_E_INVALID_CONTENTGROUPMAP() {
-        return (int)-2146958837L;
+    public static int ERROR_NOT_QUORUM_CLASS() {
+        return (int)5025L;
     }
-    public static int APPX_E_INVALID_APPINSTALLER() {
-        return (int)-2146958836L;
+    public static int ERROR_CORE_RESOURCE() {
+        return (int)5026L;
     }
-    public static int APPX_E_DELTA_BASELINE_VERSION_MISMATCH() {
-        return (int)-2146958835L;
+    public static int ERROR_QUORUM_RESOURCE_ONLINE_FAILED() {
+        return (int)5027L;
     }
-    public static int APPX_E_DELTA_PACKAGE_MISSING_FILE() {
-        return (int)-2146958834L;
+    public static int ERROR_QUORUMLOG_OPEN_FAILED() {
+        return (int)5028L;
     }
-    public static int APPX_E_INVALID_DELTA_PACKAGE() {
-        return (int)-2146958833L;
+    public static int ERROR_CLUSTERLOG_CORRUPT() {
+        return (int)5029L;
     }
-    public static int APPX_E_DELTA_APPENDED_PACKAGE_NOT_ALLOWED() {
-        return (int)-2146958832L;
+    public static int ERROR_CLUSTERLOG_RECORD_EXCEEDS_MAXSIZE() {
+        return (int)5030L;
     }
-    public static int APPX_E_INVALID_PACKAGING_LAYOUT() {
-        return (int)-2146958831L;
+    public static int ERROR_CLUSTERLOG_EXCEEDS_MAXSIZE() {
+        return (int)5031L;
     }
-    public static int APPX_E_INVALID_PACKAGESIGNCONFIG() {
-        return (int)-2146958830L;
+    public static int ERROR_CLUSTERLOG_CHKPOINT_NOT_FOUND() {
+        return (int)5032L;
     }
-    public static int APPX_E_RESOURCESPRI_NOT_ALLOWED() {
-        return (int)-2146958829L;
+    public static int ERROR_CLUSTERLOG_NOT_ENOUGH_SPACE() {
+        return (int)5033L;
     }
-    public static int APPX_E_FILE_COMPRESSION_MISMATCH() {
-        return (int)-2146958828L;
+    public static int ERROR_QUORUM_OWNER_ALIVE() {
+        return (int)5034L;
     }
-    public static int APPX_E_INVALID_PAYLOAD_PACKAGE_EXTENSION() {
-        return (int)-2146958827L;
+    public static int ERROR_NETWORK_NOT_AVAILABLE() {
+        return (int)5035L;
     }
-    public static int APPX_E_INVALID_ENCRYPTION_EXCLUSION_FILE_LIST() {
-        return (int)-2146958826L;
+    public static int ERROR_NODE_NOT_AVAILABLE() {
+        return (int)5036L;
     }
-    public static int BT_E_SPURIOUS_ACTIVATION() {
-        return (int)-2146958592L;
+    public static int ERROR_ALL_NODES_NOT_AVAILABLE() {
+        return (int)5037L;
     }
-    public static int DISP_E_UNKNOWNINTERFACE() {
-        return (int)-2147352575L;
+    public static int ERROR_RESOURCE_FAILED() {
+        return (int)5038L;
     }
-    public static int DISP_E_MEMBERNOTFOUND() {
-        return (int)-2147352573L;
+    public static int ERROR_CLUSTER_INVALID_NODE() {
+        return (int)5039L;
     }
-    public static int DISP_E_PARAMNOTFOUND() {
-        return (int)-2147352572L;
+    public static int ERROR_CLUSTER_NODE_EXISTS() {
+        return (int)5040L;
     }
-    public static int DISP_E_TYPEMISMATCH() {
-        return (int)-2147352571L;
+    public static int ERROR_CLUSTER_JOIN_IN_PROGRESS() {
+        return (int)5041L;
     }
-    public static int DISP_E_UNKNOWNNAME() {
-        return (int)-2147352570L;
+    public static int ERROR_CLUSTER_NODE_NOT_FOUND() {
+        return (int)5042L;
     }
-    public static int DISP_E_NONAMEDARGS() {
-        return (int)-2147352569L;
+    public static int ERROR_CLUSTER_LOCAL_NODE_NOT_FOUND() {
+        return (int)5043L;
     }
-    public static int DISP_E_BADVARTYPE() {
-        return (int)-2147352568L;
+    public static int ERROR_CLUSTER_NETWORK_EXISTS() {
+        return (int)5044L;
     }
-    public static int DISP_E_EXCEPTION() {
-        return (int)-2147352567L;
+    public static int ERROR_CLUSTER_NETWORK_NOT_FOUND() {
+        return (int)5045L;
     }
-    public static int DISP_E_OVERFLOW() {
-        return (int)-2147352566L;
+    public static int ERROR_CLUSTER_NETINTERFACE_EXISTS() {
+        return (int)5046L;
     }
-    public static int DISP_E_BADINDEX() {
-        return (int)-2147352565L;
+    public static int ERROR_CLUSTER_NETINTERFACE_NOT_FOUND() {
+        return (int)5047L;
     }
-    public static int DISP_E_UNKNOWNLCID() {
-        return (int)-2147352564L;
+    public static int ERROR_CLUSTER_INVALID_REQUEST() {
+        return (int)5048L;
     }
-    public static int DISP_E_ARRAYISLOCKED() {
-        return (int)-2147352563L;
+    public static int ERROR_CLUSTER_INVALID_NETWORK_PROVIDER() {
+        return (int)5049L;
     }
-    public static int DISP_E_BADPARAMCOUNT() {
-        return (int)-2147352562L;
+    public static int ERROR_CLUSTER_NODE_DOWN() {
+        return (int)5050L;
     }
-    public static int DISP_E_PARAMNOTOPTIONAL() {
-        return (int)-2147352561L;
+    public static int ERROR_CLUSTER_NODE_UNREACHABLE() {
+        return (int)5051L;
     }
-    public static int DISP_E_BADCALLEE() {
-        return (int)-2147352560L;
+    public static int ERROR_CLUSTER_NODE_NOT_MEMBER() {
+        return (int)5052L;
     }
-    public static int DISP_E_NOTACOLLECTION() {
-        return (int)-2147352559L;
+    public static int ERROR_CLUSTER_JOIN_NOT_IN_PROGRESS() {
+        return (int)5053L;
     }
-    public static int DISP_E_DIVBYZERO() {
-        return (int)-2147352558L;
+    public static int ERROR_CLUSTER_INVALID_NETWORK() {
+        return (int)5054L;
     }
-    public static int DISP_E_BUFFERTOOSMALL() {
-        return (int)-2147352557L;
+    public static int ERROR_CLUSTER_NODE_UP() {
+        return (int)5056L;
     }
-    public static int TYPE_E_BUFFERTOOSMALL() {
-        return (int)-2147319786L;
+    public static int ERROR_CLUSTER_IPADDR_IN_USE() {
+        return (int)5057L;
     }
-    public static int TYPE_E_FIELDNOTFOUND() {
-        return (int)-2147319785L;
+    public static int ERROR_CLUSTER_NODE_NOT_PAUSED() {
+        return (int)5058L;
     }
-    public static int TYPE_E_INVDATAREAD() {
-        return (int)-2147319784L;
+    public static int ERROR_CLUSTER_NO_SECURITY_CONTEXT() {
+        return (int)5059L;
     }
-    public static int TYPE_E_UNSUPFORMAT() {
-        return (int)-2147319783L;
+    public static int ERROR_CLUSTER_NETWORK_NOT_INTERNAL() {
+        return (int)5060L;
     }
-    public static int TYPE_E_REGISTRYACCESS() {
-        return (int)-2147319780L;
+    public static int ERROR_CLUSTER_NODE_ALREADY_UP() {
+        return (int)5061L;
     }
-    public static int TYPE_E_LIBNOTREGISTERED() {
-        return (int)-2147319779L;
+    public static int ERROR_CLUSTER_NODE_ALREADY_DOWN() {
+        return (int)5062L;
     }
-    public static int TYPE_E_UNDEFINEDTYPE() {
-        return (int)-2147319769L;
+    public static int ERROR_CLUSTER_NETWORK_ALREADY_ONLINE() {
+        return (int)5063L;
     }
-    public static int TYPE_E_QUALIFIEDNAMEDISALLOWED() {
-        return (int)-2147319768L;
+    public static int ERROR_CLUSTER_NETWORK_ALREADY_OFFLINE() {
+        return (int)5064L;
     }
-    public static int TYPE_E_INVALIDSTATE() {
-        return (int)-2147319767L;
+    public static int ERROR_CLUSTER_NODE_ALREADY_MEMBER() {
+        return (int)5065L;
     }
-    public static int TYPE_E_WRONGTYPEKIND() {
-        return (int)-2147319766L;
+    public static int ERROR_CLUSTER_LAST_INTERNAL_NETWORK() {
+        return (int)5066L;
     }
-    public static int TYPE_E_ELEMENTNOTFOUND() {
-        return (int)-2147319765L;
+    public static int ERROR_CLUSTER_NETWORK_HAS_DEPENDENTS() {
+        return (int)5067L;
     }
-    public static int TYPE_E_AMBIGUOUSNAME() {
-        return (int)-2147319764L;
+    public static int ERROR_INVALID_OPERATION_ON_QUORUM() {
+        return (int)5068L;
     }
-    public static int TYPE_E_NAMECONFLICT() {
-        return (int)-2147319763L;
+    public static int ERROR_DEPENDENCY_NOT_ALLOWED() {
+        return (int)5069L;
     }
-    public static int TYPE_E_UNKNOWNLCID() {
-        return (int)-2147319762L;
+    public static int ERROR_CLUSTER_NODE_PAUSED() {
+        return (int)5070L;
     }
-    public static int TYPE_E_DLLFUNCTIONNOTFOUND() {
-        return (int)-2147319761L;
+    public static int ERROR_NODE_CANT_HOST_RESOURCE() {
+        return (int)5071L;
     }
-    public static int TYPE_E_BADMODULEKIND() {
-        return (int)-2147317571L;
+    public static int ERROR_CLUSTER_NODE_NOT_READY() {
+        return (int)5072L;
     }
-    public static int TYPE_E_SIZETOOBIG() {
-        return (int)-2147317563L;
+    public static int ERROR_CLUSTER_NODE_SHUTTING_DOWN() {
+        return (int)5073L;
     }
-    public static int TYPE_E_DUPLICATEID() {
-        return (int)-2147317562L;
+    public static int ERROR_CLUSTER_JOIN_ABORTED() {
+        return (int)5074L;
     }
-    public static int TYPE_E_INVALIDID() {
-        return (int)-2147317553L;
+    public static int ERROR_CLUSTER_INCOMPATIBLE_VERSIONS() {
+        return (int)5075L;
     }
-    public static int TYPE_E_TYPEMISMATCH() {
-        return (int)-2147316576L;
+    public static int ERROR_CLUSTER_MAXNUM_OF_RESOURCES_EXCEEDED() {
+        return (int)5076L;
     }
-    public static int TYPE_E_OUTOFBOUNDS() {
-        return (int)-2147316575L;
+    public static int ERROR_CLUSTER_SYSTEM_CONFIG_CHANGED() {
+        return (int)5077L;
     }
-    public static int TYPE_E_IOERROR() {
-        return (int)-2147316574L;
+    public static int ERROR_CLUSTER_RESOURCE_TYPE_NOT_FOUND() {
+        return (int)5078L;
     }
-    public static int TYPE_E_CANTCREATETMPFILE() {
-        return (int)-2147316573L;
+    public static int ERROR_CLUSTER_RESTYPE_NOT_SUPPORTED() {
+        return (int)5079L;
     }
-    public static int TYPE_E_CANTLOADLIBRARY() {
-        return (int)-2147312566L;
+    public static int ERROR_CLUSTER_RESNAME_NOT_FOUND() {
+        return (int)5080L;
     }
-    public static int TYPE_E_INCONSISTENTPROPFUNCS() {
-        return (int)-2147312509L;
+    public static int ERROR_CLUSTER_NO_RPC_PACKAGES_REGISTERED() {
+        return (int)5081L;
     }
-    public static int TYPE_E_CIRCULARTYPE() {
-        return (int)-2147312508L;
+    public static int ERROR_CLUSTER_OWNER_NOT_IN_PREFLIST() {
+        return (int)5082L;
     }
-    public static int STG_E_INVALIDFUNCTION() {
-        return (int)-2147287039L;
+    public static int ERROR_CLUSTER_DATABASE_SEQMISMATCH() {
+        return (int)5083L;
     }
-    public static int STG_E_FILENOTFOUND() {
-        return (int)-2147287038L;
+    public static int ERROR_RESMON_INVALID_STATE() {
+        return (int)5084L;
     }
-    public static int STG_E_PATHNOTFOUND() {
-        return (int)-2147287037L;
+    public static int ERROR_CLUSTER_GUM_NOT_LOCKER() {
+        return (int)5085L;
     }
-    public static int STG_E_TOOMANYOPENFILES() {
-        return (int)-2147287036L;
+    public static int ERROR_QUORUM_DISK_NOT_FOUND() {
+        return (int)5086L;
     }
-    public static int STG_E_ACCESSDENIED() {
-        return (int)-2147287035L;
+    public static int ERROR_DATABASE_BACKUP_CORRUPT() {
+        return (int)5087L;
     }
-    public static int STG_E_INVALIDHANDLE() {
-        return (int)-2147287034L;
+    public static int ERROR_CLUSTER_NODE_ALREADY_HAS_DFS_ROOT() {
+        return (int)5088L;
     }
-    public static int STG_E_INSUFFICIENTMEMORY() {
-        return (int)-2147287032L;
+    public static int ERROR_RESOURCE_PROPERTY_UNCHANGEABLE() {
+        return (int)5089L;
     }
-    public static int STG_E_INVALIDPOINTER() {
-        return (int)-2147287031L;
+    public static int ERROR_NO_ADMIN_ACCESS_POINT() {
+        return (int)5090L;
     }
-    public static int STG_E_NOMOREFILES() {
-        return (int)-2147287022L;
+    public static int ERROR_CLUSTER_MEMBERSHIP_INVALID_STATE() {
+        return (int)5890L;
     }
-    public static int STG_E_DISKISWRITEPROTECTED() {
-        return (int)-2147287021L;
+    public static int ERROR_CLUSTER_QUORUMLOG_NOT_FOUND() {
+        return (int)5891L;
     }
-    public static int STG_E_SEEKERROR() {
-        return (int)-2147287015L;
+    public static int ERROR_CLUSTER_MEMBERSHIP_HALT() {
+        return (int)5892L;
     }
-    public static int STG_E_WRITEFAULT() {
-        return (int)-2147287011L;
+    public static int ERROR_CLUSTER_INSTANCE_ID_MISMATCH() {
+        return (int)5893L;
     }
-    public static int STG_E_READFAULT() {
-        return (int)-2147287010L;
+    public static int ERROR_CLUSTER_NETWORK_NOT_FOUND_FOR_IP() {
+        return (int)5894L;
     }
-    public static int STG_E_SHAREVIOLATION() {
-        return (int)-2147287008L;
+    public static int ERROR_CLUSTER_PROPERTY_DATA_TYPE_MISMATCH() {
+        return (int)5895L;
     }
-    public static int STG_E_LOCKVIOLATION() {
-        return (int)-2147287007L;
+    public static int ERROR_CLUSTER_EVICT_WITHOUT_CLEANUP() {
+        return (int)5896L;
     }
-    public static int STG_E_FILEALREADYEXISTS() {
-        return (int)-2147286960L;
+    public static int ERROR_CLUSTER_PARAMETER_MISMATCH() {
+        return (int)5897L;
     }
-    public static int STG_E_INVALIDPARAMETER() {
-        return (int)-2147286953L;
+    public static int ERROR_NODE_CANNOT_BE_CLUSTERED() {
+        return (int)5898L;
     }
-    public static int STG_E_MEDIUMFULL() {
-        return (int)-2147286928L;
+    public static int ERROR_CLUSTER_WRONG_OS_VERSION() {
+        return (int)5899L;
     }
-    public static int STG_E_PROPSETMISMATCHED() {
-        return (int)-2147286800L;
+    public static int ERROR_CLUSTER_CANT_CREATE_DUP_CLUSTER_NAME() {
+        return (int)5900L;
     }
-    public static int STG_E_ABNORMALAPIEXIT() {
-        return (int)-2147286790L;
+    public static int ERROR_CLUSCFG_ALREADY_COMMITTED() {
+        return (int)5901L;
     }
-    public static int STG_E_INVALIDHEADER() {
-        return (int)-2147286789L;
+    public static int ERROR_CLUSCFG_ROLLBACK_FAILED() {
+        return (int)5902L;
     }
-    public static int STG_E_INVALIDNAME() {
-        return (int)-2147286788L;
+    public static int ERROR_CLUSCFG_SYSTEM_DISK_DRIVE_LETTER_CONFLICT() {
+        return (int)5903L;
     }
-    public static int STG_E_UNKNOWN() {
-        return (int)-2147286787L;
+    public static int ERROR_CLUSTER_OLD_VERSION() {
+        return (int)5904L;
     }
-    public static int STG_E_UNIMPLEMENTEDFUNCTION() {
-        return (int)-2147286786L;
+    public static int ERROR_CLUSTER_MISMATCHED_COMPUTER_ACCT_NAME() {
+        return (int)5905L;
     }
-    public static int STG_E_INVALIDFLAG() {
-        return (int)-2147286785L;
+    public static int ERROR_CLUSTER_NO_NET_ADAPTERS() {
+        return (int)5906L;
     }
-    public static int STG_E_INUSE() {
-        return (int)-2147286784L;
+    public static int ERROR_CLUSTER_POISONED() {
+        return (int)5907L;
     }
-    public static int STG_E_NOTCURRENT() {
-        return (int)-2147286783L;
+    public static int ERROR_CLUSTER_GROUP_MOVING() {
+        return (int)5908L;
     }
-    public static int STG_E_REVERTED() {
-        return (int)-2147286782L;
+    public static int ERROR_CLUSTER_RESOURCE_TYPE_BUSY() {
+        return (int)5909L;
     }
-    public static int STG_E_CANTSAVE() {
-        return (int)-2147286781L;
+    public static int ERROR_RESOURCE_CALL_TIMED_OUT() {
+        return (int)5910L;
     }
-    public static int STG_E_OLDFORMAT() {
-        return (int)-2147286780L;
+    public static int ERROR_INVALID_CLUSTER_IPV6_ADDRESS() {
+        return (int)5911L;
     }
-    public static int STG_E_OLDDLL() {
-        return (int)-2147286779L;
+    public static int ERROR_CLUSTER_INTERNAL_INVALID_FUNCTION() {
+        return (int)5912L;
     }
-    public static int STG_E_SHAREREQUIRED() {
-        return (int)-2147286778L;
+    public static int ERROR_CLUSTER_PARAMETER_OUT_OF_BOUNDS() {
+        return (int)5913L;
     }
-    public static int STG_E_NOTFILEBASEDSTORAGE() {
-        return (int)-2147286777L;
+    public static int ERROR_CLUSTER_PARTIAL_SEND() {
+        return (int)5914L;
     }
-    public static int STG_E_EXTANTMARSHALLINGS() {
-        return (int)-2147286776L;
+    public static int ERROR_CLUSTER_REGISTRY_INVALID_FUNCTION() {
+        return (int)5915L;
     }
-    public static int STG_E_DOCFILECORRUPT() {
-        return (int)-2147286775L;
+    public static int ERROR_CLUSTER_INVALID_STRING_TERMINATION() {
+        return (int)5916L;
     }
-    public static int STG_E_BADBASEADDRESS() {
-        return (int)-2147286768L;
+    public static int ERROR_CLUSTER_INVALID_STRING_FORMAT() {
+        return (int)5917L;
     }
-    public static int STG_E_DOCFILETOOLARGE() {
-        return (int)-2147286767L;
+    public static int ERROR_CLUSTER_DATABASE_TRANSACTION_IN_PROGRESS() {
+        return (int)5918L;
     }
-    public static int STG_E_NOTSIMPLEFORMAT() {
-        return (int)-2147286766L;
+    public static int ERROR_CLUSTER_DATABASE_TRANSACTION_NOT_IN_PROGRESS() {
+        return (int)5919L;
     }
-    public static int STG_E_INCOMPLETE() {
-        return (int)-2147286527L;
+    public static int ERROR_CLUSTER_NULL_DATA() {
+        return (int)5920L;
     }
-    public static int STG_E_TERMINATED() {
-        return (int)-2147286526L;
+    public static int ERROR_CLUSTER_PARTIAL_READ() {
+        return (int)5921L;
     }
-    public static int STG_S_CONVERTED() {
-        return (int)197120L;
+    public static int ERROR_CLUSTER_PARTIAL_WRITE() {
+        return (int)5922L;
     }
-    public static int STG_S_BLOCK() {
-        return (int)197121L;
+    public static int ERROR_CLUSTER_CANT_DESERIALIZE_DATA() {
+        return (int)5923L;
     }
-    public static int STG_S_RETRYNOW() {
-        return (int)197122L;
+    public static int ERROR_DEPENDENT_RESOURCE_PROPERTY_CONFLICT() {
+        return (int)5924L;
     }
-    public static int STG_S_MONITORING() {
-        return (int)197123L;
+    public static int ERROR_CLUSTER_NO_QUORUM() {
+        return (int)5925L;
     }
-    public static int STG_S_MULTIPLEOPENS() {
-        return (int)197124L;
+    public static int ERROR_CLUSTER_INVALID_IPV6_NETWORK() {
+        return (int)5926L;
     }
-    public static int STG_S_CONSOLIDATIONFAILED() {
-        return (int)197125L;
+    public static int ERROR_CLUSTER_INVALID_IPV6_TUNNEL_NETWORK() {
+        return (int)5927L;
     }
-    public static int STG_S_CANNOTCONSOLIDATE() {
-        return (int)197126L;
+    public static int ERROR_QUORUM_NOT_ALLOWED_IN_THIS_GROUP() {
+        return (int)5928L;
     }
-    public static int STG_S_POWER_CYCLE_REQUIRED() {
-        return (int)197127L;
+    public static int ERROR_DEPENDENCY_TREE_TOO_COMPLEX() {
+        return (int)5929L;
     }
-    public static int STG_E_FIRMWARE_SLOT_INVALID() {
-        return (int)-2147286520L;
+    public static int ERROR_EXCEPTION_IN_RESOURCE_CALL() {
+        return (int)5930L;
     }
-    public static int STG_E_FIRMWARE_IMAGE_INVALID() {
-        return (int)-2147286519L;
+    public static int ERROR_CLUSTER_RHS_FAILED_INITIALIZATION() {
+        return (int)5931L;
     }
-    public static int STG_E_DEVICE_UNRESPONSIVE() {
-        return (int)-2147286518L;
+    public static int ERROR_CLUSTER_NOT_INSTALLED() {
+        return (int)5932L;
     }
-    public static int STG_E_STATUS_COPY_PROTECTION_FAILURE() {
-        return (int)-2147286267L;
+    public static int ERROR_CLUSTER_RESOURCES_MUST_BE_ONLINE_ON_THE_SAME_NODE() {
+        return (int)5933L;
     }
-    public static int STG_E_CSS_AUTHENTICATION_FAILURE() {
-        return (int)-2147286266L;
+    public static int ERROR_CLUSTER_MAX_NODES_IN_CLUSTER() {
+        return (int)5934L;
     }
-    public static int STG_E_CSS_KEY_NOT_PRESENT() {
-        return (int)-2147286265L;
+    public static int ERROR_CLUSTER_TOO_MANY_NODES() {
+        return (int)5935L;
     }
-    public static int STG_E_CSS_KEY_NOT_ESTABLISHED() {
-        return (int)-2147286264L;
+    public static int ERROR_CLUSTER_OBJECT_ALREADY_USED() {
+        return (int)5936L;
     }
-    public static int STG_E_CSS_SCRAMBLED_SECTOR() {
-        return (int)-2147286263L;
+    public static int ERROR_NONCORE_GROUPS_FOUND() {
+        return (int)5937L;
     }
-    public static int STG_E_CSS_REGION_MISMATCH() {
-        return (int)-2147286262L;
+    public static int ERROR_FILE_SHARE_RESOURCE_CONFLICT() {
+        return (int)5938L;
     }
-    public static int STG_E_RESETS_EXHAUSTED() {
-        return (int)-2147286261L;
+    public static int ERROR_CLUSTER_EVICT_INVALID_REQUEST() {
+        return (int)5939L;
     }
-    public static int RPC_E_CALL_REJECTED() {
-        return (int)-2147418111L;
+    public static int ERROR_CLUSTER_SINGLETON_RESOURCE() {
+        return (int)5940L;
     }
-    public static int RPC_E_CALL_CANCELED() {
-        return (int)-2147418110L;
+    public static int ERROR_CLUSTER_GROUP_SINGLETON_RESOURCE() {
+        return (int)5941L;
     }
-    public static int RPC_E_CANTPOST_INSENDCALL() {
-        return (int)-2147418109L;
+    public static int ERROR_CLUSTER_RESOURCE_PROVIDER_FAILED() {
+        return (int)5942L;
     }
-    public static int RPC_E_CANTCALLOUT_INASYNCCALL() {
-        return (int)-2147418108L;
+    public static int ERROR_CLUSTER_RESOURCE_CONFIGURATION_ERROR() {
+        return (int)5943L;
     }
-    public static int RPC_E_CANTCALLOUT_INEXTERNALCALL() {
-        return (int)-2147418107L;
+    public static int ERROR_CLUSTER_GROUP_BUSY() {
+        return (int)5944L;
     }
-    public static int RPC_E_CONNECTION_TERMINATED() {
-        return (int)-2147418106L;
+    public static int ERROR_CLUSTER_NOT_SHARED_VOLUME() {
+        return (int)5945L;
     }
-    public static int RPC_E_SERVER_DIED() {
-        return (int)-2147418105L;
+    public static int ERROR_CLUSTER_INVALID_SECURITY_DESCRIPTOR() {
+        return (int)5946L;
     }
-    public static int RPC_E_CLIENT_DIED() {
-        return (int)-2147418104L;
+    public static int ERROR_CLUSTER_SHARED_VOLUMES_IN_USE() {
+        return (int)5947L;
     }
-    public static int RPC_E_INVALID_DATAPACKET() {
-        return (int)-2147418103L;
+    public static int ERROR_CLUSTER_USE_SHARED_VOLUMES_API() {
+        return (int)5948L;
     }
-    public static int RPC_E_CANTTRANSMIT_CALL() {
-        return (int)-2147418102L;
+    public static int ERROR_CLUSTER_BACKUP_IN_PROGRESS() {
+        return (int)5949L;
     }
-    public static int RPC_E_CLIENT_CANTMARSHAL_DATA() {
-        return (int)-2147418101L;
+    public static int ERROR_NON_CSV_PATH() {
+        return (int)5950L;
     }
-    public static int RPC_E_CLIENT_CANTUNMARSHAL_DATA() {
-        return (int)-2147418100L;
+    public static int ERROR_CSV_VOLUME_NOT_LOCAL() {
+        return (int)5951L;
     }
-    public static int RPC_E_SERVER_CANTMARSHAL_DATA() {
-        return (int)-2147418099L;
+    public static int ERROR_CLUSTER_WATCHDOG_TERMINATING() {
+        return (int)5952L;
     }
-    public static int RPC_E_SERVER_CANTUNMARSHAL_DATA() {
-        return (int)-2147418098L;
+    public static int ERROR_CLUSTER_RESOURCE_VETOED_MOVE_INCOMPATIBLE_NODES() {
+        return (int)5953L;
     }
-    public static int RPC_E_INVALID_DATA() {
-        return (int)-2147418097L;
+    public static int ERROR_CLUSTER_INVALID_NODE_WEIGHT() {
+        return (int)5954L;
     }
-    public static int RPC_E_INVALID_PARAMETER() {
-        return (int)-2147418096L;
+    public static int ERROR_CLUSTER_RESOURCE_VETOED_CALL() {
+        return (int)5955L;
     }
-    public static int RPC_E_CANTCALLOUT_AGAIN() {
-        return (int)-2147418095L;
+    public static int ERROR_RESMON_SYSTEM_RESOURCES_LACKING() {
+        return (int)5956L;
     }
-    public static int RPC_E_SERVER_DIED_DNE() {
-        return (int)-2147418094L;
+    public static int ERROR_CLUSTER_RESOURCE_VETOED_MOVE_NOT_ENOUGH_RESOURCES_ON_DESTINATION() {
+        return (int)5957L;
     }
-    public static int RPC_E_SYS_CALL_FAILED() {
-        return (int)-2147417856L;
+    public static int ERROR_CLUSTER_RESOURCE_VETOED_MOVE_NOT_ENOUGH_RESOURCES_ON_SOURCE() {
+        return (int)5958L;
     }
-    public static int RPC_E_OUT_OF_RESOURCES() {
-        return (int)-2147417855L;
+    public static int ERROR_CLUSTER_GROUP_QUEUED() {
+        return (int)5959L;
     }
-    public static int RPC_E_ATTEMPTED_MULTITHREAD() {
-        return (int)-2147417854L;
+    public static int ERROR_CLUSTER_RESOURCE_LOCKED_STATUS() {
+        return (int)5960L;
     }
-    public static int RPC_E_NOT_REGISTERED() {
-        return (int)-2147417853L;
+    public static int ERROR_CLUSTER_SHARED_VOLUME_FAILOVER_NOT_ALLOWED() {
+        return (int)5961L;
     }
-    public static int RPC_E_FAULT() {
-        return (int)-2147417852L;
+    public static int ERROR_CLUSTER_NODE_DRAIN_IN_PROGRESS() {
+        return (int)5962L;
     }
-    public static int RPC_E_SERVERFAULT() {
-        return (int)-2147417851L;
+    public static int ERROR_CLUSTER_DISK_NOT_CONNECTED() {
+        return (int)5963L;
     }
-    public static int RPC_E_CHANGED_MODE() {
-        return (int)-2147417850L;
+    public static int ERROR_DISK_NOT_CSV_CAPABLE() {
+        return (int)5964L;
     }
-    public static int RPC_E_INVALIDMETHOD() {
-        return (int)-2147417849L;
+    public static int ERROR_RESOURCE_NOT_IN_AVAILABLE_STORAGE() {
+        return (int)5965L;
     }
-    public static int RPC_E_DISCONNECTED() {
-        return (int)-2147417848L;
+    public static int ERROR_CLUSTER_SHARED_VOLUME_REDIRECTED() {
+        return (int)5966L;
     }
-    public static int RPC_E_RETRY() {
-        return (int)-2147417847L;
+    public static int ERROR_CLUSTER_SHARED_VOLUME_NOT_REDIRECTED() {
+        return (int)5967L;
     }
-    public static int RPC_E_SERVERCALL_RETRYLATER() {
-        return (int)-2147417846L;
+    public static int ERROR_CLUSTER_CANNOT_RETURN_PROPERTIES() {
+        return (int)5968L;
     }
-    public static int RPC_E_SERVERCALL_REJECTED() {
-        return (int)-2147417845L;
+    public static int ERROR_CLUSTER_RESOURCE_CONTAINS_UNSUPPORTED_DIFF_AREA_FOR_SHARED_VOLUMES() {
+        return (int)5969L;
     }
-    public static int RPC_E_INVALID_CALLDATA() {
-        return (int)-2147417844L;
+    public static int ERROR_CLUSTER_RESOURCE_IS_IN_MAINTENANCE_MODE() {
+        return (int)5970L;
     }
-    public static int RPC_E_CANTCALLOUT_ININPUTSYNCCALL() {
-        return (int)-2147417843L;
+    public static int ERROR_CLUSTER_AFFINITY_CONFLICT() {
+        return (int)5971L;
     }
-    public static int RPC_E_WRONG_THREAD() {
-        return (int)-2147417842L;
+    public static int ERROR_CLUSTER_RESOURCE_IS_REPLICA_VIRTUAL_MACHINE() {
+        return (int)5972L;
     }
-    public static int RPC_E_THREAD_NOT_INIT() {
-        return (int)-2147417841L;
+    public static int ERROR_CLUSTER_UPGRADE_INCOMPATIBLE_VERSIONS() {
+        return (int)5973L;
     }
-    public static int RPC_E_VERSION_MISMATCH() {
-        return (int)-2147417840L;
+    public static int ERROR_CLUSTER_UPGRADE_FIX_QUORUM_NOT_SUPPORTED() {
+        return (int)5974L;
     }
-    public static int RPC_E_INVALID_HEADER() {
-        return (int)-2147417839L;
+    public static int ERROR_CLUSTER_UPGRADE_RESTART_REQUIRED() {
+        return (int)5975L;
     }
-    public static int RPC_E_INVALID_EXTENSION() {
-        return (int)-2147417838L;
+    public static int ERROR_CLUSTER_UPGRADE_IN_PROGRESS() {
+        return (int)5976L;
     }
-    public static int RPC_E_INVALID_IPID() {
-        return (int)-2147417837L;
+    public static int ERROR_CLUSTER_UPGRADE_INCOMPLETE() {
+        return (int)5977L;
     }
-    public static int RPC_E_INVALID_OBJECT() {
-        return (int)-2147417836L;
+    public static int ERROR_CLUSTER_NODE_IN_GRACE_PERIOD() {
+        return (int)5978L;
     }
-    public static int RPC_S_CALLPENDING() {
-        return (int)-2147417835L;
+    public static int ERROR_CLUSTER_CSV_IO_PAUSE_TIMEOUT() {
+        return (int)5979L;
     }
-    public static int RPC_S_WAITONTIMER() {
-        return (int)-2147417834L;
+    public static int ERROR_NODE_NOT_ACTIVE_CLUSTER_MEMBER() {
+        return (int)5980L;
     }
-    public static int RPC_E_CALL_COMPLETE() {
-        return (int)-2147417833L;
+    public static int ERROR_CLUSTER_RESOURCE_NOT_MONITORED() {
+        return (int)5981L;
     }
-    public static int RPC_E_UNSECURE_CALL() {
-        return (int)-2147417832L;
+    public static int ERROR_CLUSTER_RESOURCE_DOES_NOT_SUPPORT_UNMONITORED() {
+        return (int)5982L;
     }
-    public static int RPC_E_TOO_LATE() {
-        return (int)-2147417831L;
+    public static int ERROR_CLUSTER_RESOURCE_IS_REPLICATED() {
+        return (int)5983L;
     }
-    public static int RPC_E_NO_GOOD_SECURITY_PACKAGES() {
-        return (int)-2147417830L;
+    public static int ERROR_CLUSTER_NODE_ISOLATED() {
+        return (int)5984L;
     }
-    public static int RPC_E_ACCESS_DENIED() {
-        return (int)-2147417829L;
+    public static int ERROR_CLUSTER_NODE_QUARANTINED() {
+        return (int)5985L;
     }
-    public static int RPC_E_REMOTE_DISABLED() {
-        return (int)-2147417828L;
+    public static int ERROR_CLUSTER_DATABASE_UPDATE_CONDITION_FAILED() {
+        return (int)5986L;
     }
-    public static int RPC_E_INVALID_OBJREF() {
-        return (int)-2147417827L;
+    public static int ERROR_CLUSTER_SPACE_DEGRADED() {
+        return (int)5987L;
     }
-    public static int RPC_E_NO_CONTEXT() {
-        return (int)-2147417826L;
+    public static int ERROR_CLUSTER_TOKEN_DELEGATION_NOT_SUPPORTED() {
+        return (int)5988L;
     }
-    public static int RPC_E_TIMEOUT() {
-        return (int)-2147417825L;
+    public static int ERROR_CLUSTER_CSV_INVALID_HANDLE() {
+        return (int)5989L;
     }
-    public static int RPC_E_NO_SYNC() {
-        return (int)-2147417824L;
+    public static int ERROR_CLUSTER_CSV_SUPPORTED_ONLY_ON_COORDINATOR() {
+        return (int)5990L;
     }
-    public static int RPC_E_FULLSIC_REQUIRED() {
-        return (int)-2147417823L;
+    public static int ERROR_GROUPSET_NOT_AVAILABLE() {
+        return (int)5991L;
     }
-    public static int RPC_E_INVALID_STD_NAME() {
-        return (int)-2147417822L;
+    public static int ERROR_GROUPSET_NOT_FOUND() {
+        return (int)5992L;
     }
-    public static int CO_E_FAILEDTOIMPERSONATE() {
-        return (int)-2147417821L;
+    public static int ERROR_GROUPSET_CANT_PROVIDE() {
+        return (int)5993L;
     }
-    public static int CO_E_FAILEDTOGETSECCTX() {
-        return (int)-2147417820L;
+    public static int ERROR_CLUSTER_FAULT_DOMAIN_PARENT_NOT_FOUND() {
+        return (int)5994L;
     }
-    public static int CO_E_FAILEDTOOPENTHREADTOKEN() {
-        return (int)-2147417819L;
+    public static int ERROR_CLUSTER_FAULT_DOMAIN_INVALID_HIERARCHY() {
+        return (int)5995L;
     }
-    public static int CO_E_FAILEDTOGETTOKENINFO() {
-        return (int)-2147417818L;
+    public static int ERROR_CLUSTER_FAULT_DOMAIN_FAILED_S2D_VALIDATION() {
+        return (int)5996L;
     }
-    public static int CO_E_TRUSTEEDOESNTMATCHCLIENT() {
-        return (int)-2147417817L;
+    public static int ERROR_CLUSTER_FAULT_DOMAIN_S2D_CONNECTIVITY_LOSS() {
+        return (int)5997L;
     }
-    public static int CO_E_FAILEDTOQUERYCLIENTBLANKET() {
-        return (int)-2147417816L;
+    public static int ERROR_CLUSTER_INVALID_INFRASTRUCTURE_FILESERVER_NAME() {
+        return (int)5998L;
     }
-    public static int CO_E_FAILEDTOSETDACL() {
-        return (int)-2147417815L;
+    public static int ERROR_CLUSTERSET_MANAGEMENT_CLUSTER_UNREACHABLE() {
+        return (int)5999L;
     }
-    public static int CO_E_ACCESSCHECKFAILED() {
-        return (int)-2147417814L;
+    public static int ERROR_ENCRYPTION_FAILED() {
+        return (int)6000L;
     }
-    public static int CO_E_NETACCESSAPIFAILED() {
-        return (int)-2147417813L;
+    public static int ERROR_DECRYPTION_FAILED() {
+        return (int)6001L;
     }
-    public static int CO_E_WRONGTRUSTEENAMESYNTAX() {
-        return (int)-2147417812L;
+    public static int ERROR_FILE_ENCRYPTED() {
+        return (int)6002L;
     }
-    public static int CO_E_INVALIDSID() {
-        return (int)-2147417811L;
+    public static int ERROR_NO_RECOVERY_POLICY() {
+        return (int)6003L;
     }
-    public static int CO_E_CONVERSIONFAILED() {
-        return (int)-2147417810L;
+    public static int ERROR_NO_EFS() {
+        return (int)6004L;
     }
-    public static int CO_E_NOMATCHINGSIDFOUND() {
-        return (int)-2147417809L;
+    public static int ERROR_WRONG_EFS() {
+        return (int)6005L;
     }
-    public static int CO_E_LOOKUPACCSIDFAILED() {
-        return (int)-2147417808L;
+    public static int ERROR_NO_USER_KEYS() {
+        return (int)6006L;
     }
-    public static int CO_E_NOMATCHINGNAMEFOUND() {
-        return (int)-2147417807L;
+    public static int ERROR_FILE_NOT_ENCRYPTED() {
+        return (int)6007L;
     }
-    public static int CO_E_LOOKUPACCNAMEFAILED() {
-        return (int)-2147417806L;
+    public static int ERROR_NOT_EXPORT_FORMAT() {
+        return (int)6008L;
     }
-    public static int CO_E_SETSERLHNDLFAILED() {
-        return (int)-2147417805L;
+    public static int ERROR_FILE_READ_ONLY() {
+        return (int)6009L;
     }
-    public static int CO_E_FAILEDTOGETWINDIR() {
-        return (int)-2147417804L;
+    public static int ERROR_DIR_EFS_DISALLOWED() {
+        return (int)6010L;
     }
-    public static int CO_E_PATHTOOLONG() {
-        return (int)-2147417803L;
+    public static int ERROR_EFS_SERVER_NOT_TRUSTED() {
+        return (int)6011L;
     }
-    public static int CO_E_FAILEDTOGENUUID() {
-        return (int)-2147417802L;
+    public static int ERROR_BAD_RECOVERY_POLICY() {
+        return (int)6012L;
     }
-    public static int CO_E_FAILEDTOCREATEFILE() {
-        return (int)-2147417801L;
+    public static int ERROR_EFS_ALG_BLOB_TOO_BIG() {
+        return (int)6013L;
     }
-    public static int CO_E_FAILEDTOCLOSEHANDLE() {
-        return (int)-2147417800L;
+    public static int ERROR_VOLUME_NOT_SUPPORT_EFS() {
+        return (int)6014L;
     }
-    public static int CO_E_EXCEEDSYSACLLIMIT() {
-        return (int)-2147417799L;
+    public static int ERROR_EFS_DISABLED() {
+        return (int)6015L;
     }
-    public static int CO_E_ACESINWRONGORDER() {
-        return (int)-2147417798L;
+    public static int ERROR_EFS_VERSION_NOT_SUPPORT() {
+        return (int)6016L;
     }
-    public static int CO_E_INCOMPATIBLESTREAMVERSION() {
-        return (int)-2147417797L;
+    public static int ERROR_CS_ENCRYPTION_INVALID_SERVER_RESPONSE() {
+        return (int)6017L;
     }
-    public static int CO_E_FAILEDTOOPENPROCESSTOKEN() {
-        return (int)-2147417796L;
+    public static int ERROR_CS_ENCRYPTION_UNSUPPORTED_SERVER() {
+        return (int)6018L;
     }
-    public static int CO_E_DECODEFAILED() {
-        return (int)-2147417795L;
+    public static int ERROR_CS_ENCRYPTION_EXISTING_ENCRYPTED_FILE() {
+        return (int)6019L;
     }
-    public static int CO_E_ACNOTINITIALIZED() {
-        return (int)-2147417793L;
+    public static int ERROR_CS_ENCRYPTION_NEW_ENCRYPTED_FILE() {
+        return (int)6020L;
     }
-    public static int CO_E_CANCEL_DISABLED() {
-        return (int)-2147417792L;
+    public static int ERROR_CS_ENCRYPTION_FILE_NOT_CSE() {
+        return (int)6021L;
     }
-    public static int RPC_E_UNEXPECTED() {
-        return (int)-2147352577L;
+    public static int ERROR_ENCRYPTION_POLICY_DENIES_OPERATION() {
+        return (int)6022L;
     }
-    public static int ERROR_AUDITING_DISABLED() {
-        return (int)-1073151999L;
+    public static int ERROR_WIP_ENCRYPTION_FAILED() {
+        return (int)6023L;
     }
-    public static int ERROR_ALL_SIDS_FILTERED() {
-        return (int)-1073151998L;
+    public static int ERROR_NO_BROWSER_SERVERS_FOUND() {
+        return (int)6118L;
     }
-    public static int ERROR_BIZRULES_NOT_ENABLED() {
-        return (int)-1073151997L;
+    public static int SCHED_E_SERVICE_NOT_LOCALSYSTEM() {
+        return (int)6200L;
     }
-    public static int NTE_BAD_UID() {
-        return (int)-2146893823L;
+    public static int ERROR_CLUSTER_OBJECT_IS_CLUSTER_SET_VM() {
+        return (int)6250L;
     }
-    public static int NTE_BAD_HASH() {
-        return (int)-2146893822L;
+    public static int ERROR_LOG_SECTOR_INVALID() {
+        return (int)6600L;
     }
-    public static int NTE_BAD_KEY() {
-        return (int)-2146893821L;
+    public static int ERROR_LOG_SECTOR_PARITY_INVALID() {
+        return (int)6601L;
     }
-    public static int NTE_BAD_LEN() {
-        return (int)-2146893820L;
+    public static int ERROR_LOG_SECTOR_REMAPPED() {
+        return (int)6602L;
     }
-    public static int NTE_BAD_DATA() {
-        return (int)-2146893819L;
+    public static int ERROR_LOG_BLOCK_INCOMPLETE() {
+        return (int)6603L;
     }
-    public static int NTE_BAD_SIGNATURE() {
-        return (int)-2146893818L;
+    public static int ERROR_LOG_INVALID_RANGE() {
+        return (int)6604L;
     }
-    public static int NTE_BAD_VER() {
-        return (int)-2146893817L;
+    public static int ERROR_LOG_BLOCKS_EXHAUSTED() {
+        return (int)6605L;
     }
-    public static int NTE_BAD_ALGID() {
-        return (int)-2146893816L;
+    public static int ERROR_LOG_READ_CONTEXT_INVALID() {
+        return (int)6606L;
     }
-    public static int NTE_BAD_FLAGS() {
-        return (int)-2146893815L;
+    public static int ERROR_LOG_RESTART_INVALID() {
+        return (int)6607L;
     }
-    public static int NTE_BAD_TYPE() {
-        return (int)-2146893814L;
+    public static int ERROR_LOG_BLOCK_VERSION() {
+        return (int)6608L;
     }
-    public static int NTE_BAD_KEY_STATE() {
-        return (int)-2146893813L;
+    public static int ERROR_LOG_BLOCK_INVALID() {
+        return (int)6609L;
     }
-    public static int NTE_BAD_HASH_STATE() {
-        return (int)-2146893812L;
+    public static int ERROR_LOG_READ_MODE_INVALID() {
+        return (int)6610L;
     }
-    public static int NTE_NO_KEY() {
-        return (int)-2146893811L;
+    public static int ERROR_LOG_NO_RESTART() {
+        return (int)6611L;
     }
-    public static int NTE_NO_MEMORY() {
-        return (int)-2146893810L;
+    public static int ERROR_LOG_METADATA_CORRUPT() {
+        return (int)6612L;
     }
-    public static int NTE_EXISTS() {
-        return (int)-2146893809L;
+    public static int ERROR_LOG_METADATA_INVALID() {
+        return (int)6613L;
     }
-    public static int NTE_PERM() {
-        return (int)-2146893808L;
+    public static int ERROR_LOG_METADATA_INCONSISTENT() {
+        return (int)6614L;
     }
-    public static int NTE_NOT_FOUND() {
-        return (int)-2146893807L;
+    public static int ERROR_LOG_RESERVATION_INVALID() {
+        return (int)6615L;
     }
-    public static int NTE_DOUBLE_ENCRYPT() {
-        return (int)-2146893806L;
+    public static int ERROR_LOG_CANT_DELETE() {
+        return (int)6616L;
     }
-    public static int NTE_BAD_PROVIDER() {
-        return (int)-2146893805L;
+    public static int ERROR_LOG_CONTAINER_LIMIT_EXCEEDED() {
+        return (int)6617L;
     }
-    public static int NTE_BAD_PROV_TYPE() {
-        return (int)-2146893804L;
+    public static int ERROR_LOG_START_OF_LOG() {
+        return (int)6618L;
     }
-    public static int NTE_BAD_PUBLIC_KEY() {
-        return (int)-2146893803L;
+    public static int ERROR_LOG_POLICY_ALREADY_INSTALLED() {
+        return (int)6619L;
     }
-    public static int NTE_BAD_KEYSET() {
-        return (int)-2146893802L;
+    public static int ERROR_LOG_POLICY_NOT_INSTALLED() {
+        return (int)6620L;
     }
-    public static int NTE_PROV_TYPE_NOT_DEF() {
-        return (int)-2146893801L;
+    public static int ERROR_LOG_POLICY_INVALID() {
+        return (int)6621L;
     }
-    public static int NTE_PROV_TYPE_ENTRY_BAD() {
-        return (int)-2146893800L;
+    public static int ERROR_LOG_POLICY_CONFLICT() {
+        return (int)6622L;
     }
-    public static int NTE_KEYSET_NOT_DEF() {
-        return (int)-2146893799L;
+    public static int ERROR_LOG_PINNED_ARCHIVE_TAIL() {
+        return (int)6623L;
     }
-    public static int NTE_KEYSET_ENTRY_BAD() {
-        return (int)-2146893798L;
+    public static int ERROR_LOG_RECORD_NONEXISTENT() {
+        return (int)6624L;
     }
-    public static int NTE_PROV_TYPE_NO_MATCH() {
-        return (int)-2146893797L;
+    public static int ERROR_LOG_RECORDS_RESERVED_INVALID() {
+        return (int)6625L;
     }
-    public static int NTE_SIGNATURE_FILE_BAD() {
-        return (int)-2146893796L;
+    public static int ERROR_LOG_SPACE_RESERVED_INVALID() {
+        return (int)6626L;
     }
-    public static int NTE_PROVIDER_DLL_FAIL() {
-        return (int)-2146893795L;
+    public static int ERROR_LOG_TAIL_INVALID() {
+        return (int)6627L;
     }
-    public static int NTE_PROV_DLL_NOT_FOUND() {
-        return (int)-2146893794L;
+    public static int ERROR_LOG_FULL() {
+        return (int)6628L;
     }
-    public static int NTE_BAD_KEYSET_PARAM() {
-        return (int)-2146893793L;
+    public static int ERROR_COULD_NOT_RESIZE_LOG() {
+        return (int)6629L;
     }
-    public static int NTE_FAIL() {
-        return (int)-2146893792L;
+    public static int ERROR_LOG_MULTIPLEXED() {
+        return (int)6630L;
     }
-    public static int NTE_SYS_ERR() {
-        return (int)-2146893791L;
+    public static int ERROR_LOG_DEDICATED() {
+        return (int)6631L;
     }
-    public static int NTE_SILENT_CONTEXT() {
-        return (int)-2146893790L;
+    public static int ERROR_LOG_ARCHIVE_NOT_IN_PROGRESS() {
+        return (int)6632L;
     }
-    public static int NTE_TOKEN_KEYSET_STORAGE_FULL() {
-        return (int)-2146893789L;
+    public static int ERROR_LOG_ARCHIVE_IN_PROGRESS() {
+        return (int)6633L;
     }
-    public static int NTE_TEMPORARY_PROFILE() {
-        return (int)-2146893788L;
+    public static int ERROR_LOG_EPHEMERAL() {
+        return (int)6634L;
     }
-    public static int NTE_FIXEDPARAMETER() {
-        return (int)-2146893787L;
+    public static int ERROR_LOG_NOT_ENOUGH_CONTAINERS() {
+        return (int)6635L;
     }
-    public static int NTE_INVALID_HANDLE() {
-        return (int)-2146893786L;
+    public static int ERROR_LOG_CLIENT_ALREADY_REGISTERED() {
+        return (int)6636L;
     }
-    public static int NTE_INVALID_PARAMETER() {
-        return (int)-2146893785L;
+    public static int ERROR_LOG_CLIENT_NOT_REGISTERED() {
+        return (int)6637L;
     }
-    public static int NTE_BUFFER_TOO_SMALL() {
-        return (int)-2146893784L;
+    public static int ERROR_LOG_FULL_HANDLER_IN_PROGRESS() {
+        return (int)6638L;
     }
-    public static int NTE_NOT_SUPPORTED() {
-        return (int)-2146893783L;
+    public static int ERROR_LOG_CONTAINER_READ_FAILED() {
+        return (int)6639L;
     }
-    public static int NTE_NO_MORE_ITEMS() {
-        return (int)-2146893782L;
+    public static int ERROR_LOG_CONTAINER_WRITE_FAILED() {
+        return (int)6640L;
     }
-    public static int NTE_BUFFERS_OVERLAP() {
-        return (int)-2146893781L;
+    public static int ERROR_LOG_CONTAINER_OPEN_FAILED() {
+        return (int)6641L;
     }
-    public static int NTE_DECRYPTION_FAILURE() {
-        return (int)-2146893780L;
+    public static int ERROR_LOG_CONTAINER_STATE_INVALID() {
+        return (int)6642L;
     }
-    public static int NTE_INTERNAL_ERROR() {
-        return (int)-2146893779L;
+    public static int ERROR_LOG_STATE_INVALID() {
+        return (int)6643L;
     }
-    public static int NTE_UI_REQUIRED() {
-        return (int)-2146893778L;
+    public static int ERROR_LOG_PINNED() {
+        return (int)6644L;
     }
-    public static int NTE_HMAC_NOT_SUPPORTED() {
-        return (int)-2146893777L;
+    public static int ERROR_LOG_METADATA_FLUSH_FAILED() {
+        return (int)6645L;
     }
-    public static int NTE_DEVICE_NOT_READY() {
-        return (int)-2146893776L;
+    public static int ERROR_LOG_INCONSISTENT_SECURITY() {
+        return (int)6646L;
     }
-    public static int NTE_AUTHENTICATION_IGNORED() {
-        return (int)-2146893775L;
+    public static int ERROR_LOG_APPENDED_FLUSH_FAILED() {
+        return (int)6647L;
     }
-    public static int NTE_VALIDATION_FAILED() {
-        return (int)-2146893774L;
+    public static int ERROR_LOG_PINNED_RESERVATION() {
+        return (int)6648L;
     }
-    public static int NTE_INCORRECT_PASSWORD() {
-        return (int)-2146893773L;
+    public static int ERROR_INVALID_TRANSACTION() {
+        return (int)6700L;
     }
-    public static int NTE_ENCRYPTION_FAILURE() {
-        return (int)-2146893772L;
+    public static int ERROR_TRANSACTION_NOT_ACTIVE() {
+        return (int)6701L;
     }
-    public static int NTE_DEVICE_NOT_FOUND() {
-        return (int)-2146893771L;
+    public static int ERROR_TRANSACTION_REQUEST_NOT_VALID() {
+        return (int)6702L;
     }
-    public static int NTE_USER_CANCELLED() {
-        return (int)-2146893770L;
+    public static int ERROR_TRANSACTION_NOT_REQUESTED() {
+        return (int)6703L;
     }
-    public static int NTE_PASSWORD_CHANGE_REQUIRED() {
-        return (int)-2146893769L;
+    public static int ERROR_TRANSACTION_ALREADY_ABORTED() {
+        return (int)6704L;
     }
-    public static int NTE_NOT_ACTIVE_CONSOLE() {
-        return (int)-2146893768L;
+    public static int ERROR_TRANSACTION_ALREADY_COMMITTED() {
+        return (int)6705L;
     }
-    public static int SEC_E_INSUFFICIENT_MEMORY() {
-        return (int)-2146893056L;
+    public static int ERROR_TM_INITIALIZATION_FAILED() {
+        return (int)6706L;
     }
-    public static int SEC_E_INVALID_HANDLE() {
-        return (int)-2146893055L;
+    public static int ERROR_RESOURCEMANAGER_READ_ONLY() {
+        return (int)6707L;
     }
-    public static int SEC_E_UNSUPPORTED_FUNCTION() {
-        return (int)-2146893054L;
+    public static int ERROR_TRANSACTION_NOT_JOINED() {
+        return (int)6708L;
     }
-    public static int SEC_E_TARGET_UNKNOWN() {
-        return (int)-2146893053L;
+    public static int ERROR_TRANSACTION_SUPERIOR_EXISTS() {
+        return (int)6709L;
     }
-    public static int SEC_E_INTERNAL_ERROR() {
-        return (int)-2146893052L;
+    public static int ERROR_CRM_PROTOCOL_ALREADY_EXISTS() {
+        return (int)6710L;
     }
-    public static int SEC_E_SECPKG_NOT_FOUND() {
-        return (int)-2146893051L;
+    public static int ERROR_TRANSACTION_PROPAGATION_FAILED() {
+        return (int)6711L;
     }
-    public static int SEC_E_NOT_OWNER() {
-        return (int)-2146893050L;
+    public static int ERROR_CRM_PROTOCOL_NOT_FOUND() {
+        return (int)6712L;
     }
-    public static int SEC_E_CANNOT_INSTALL() {
-        return (int)-2146893049L;
+    public static int ERROR_TRANSACTION_INVALID_MARSHALL_BUFFER() {
+        return (int)6713L;
     }
-    public static int SEC_E_INVALID_TOKEN() {
-        return (int)-2146893048L;
+    public static int ERROR_CURRENT_TRANSACTION_NOT_VALID() {
+        return (int)6714L;
     }
-    public static int SEC_E_CANNOT_PACK() {
-        return (int)-2146893047L;
+    public static int ERROR_TRANSACTION_NOT_FOUND() {
+        return (int)6715L;
     }
-    public static int SEC_E_QOP_NOT_SUPPORTED() {
-        return (int)-2146893046L;
+    public static int ERROR_RESOURCEMANAGER_NOT_FOUND() {
+        return (int)6716L;
     }
-    public static int SEC_E_NO_IMPERSONATION() {
-        return (int)-2146893045L;
+    public static int ERROR_ENLISTMENT_NOT_FOUND() {
+        return (int)6717L;
     }
-    public static int SEC_E_LOGON_DENIED() {
-        return (int)-2146893044L;
+    public static int ERROR_TRANSACTIONMANAGER_NOT_FOUND() {
+        return (int)6718L;
     }
-    public static int SEC_E_UNKNOWN_CREDENTIALS() {
-        return (int)-2146893043L;
+    public static int ERROR_TRANSACTIONMANAGER_NOT_ONLINE() {
+        return (int)6719L;
     }
-    public static int SEC_E_NO_CREDENTIALS() {
-        return (int)-2146893042L;
+    public static int ERROR_TRANSACTIONMANAGER_RECOVERY_NAME_COLLISION() {
+        return (int)6720L;
     }
-    public static int SEC_E_MESSAGE_ALTERED() {
-        return (int)-2146893041L;
+    public static int ERROR_TRANSACTION_NOT_ROOT() {
+        return (int)6721L;
     }
-    public static int SEC_E_OUT_OF_SEQUENCE() {
-        return (int)-2146893040L;
+    public static int ERROR_TRANSACTION_OBJECT_EXPIRED() {
+        return (int)6722L;
     }
-    public static int SEC_E_NO_AUTHENTICATING_AUTHORITY() {
-        return (int)-2146893039L;
+    public static int ERROR_TRANSACTION_RESPONSE_NOT_ENLISTED() {
+        return (int)6723L;
     }
-    public static int SEC_I_CONTINUE_NEEDED() {
-        return (int)590610L;
+    public static int ERROR_TRANSACTION_RECORD_TOO_LONG() {
+        return (int)6724L;
     }
-    public static int SEC_I_COMPLETE_NEEDED() {
-        return (int)590611L;
+    public static int ERROR_IMPLICIT_TRANSACTION_NOT_SUPPORTED() {
+        return (int)6725L;
     }
-    public static int SEC_I_COMPLETE_AND_CONTINUE() {
-        return (int)590612L;
+    public static int ERROR_TRANSACTION_INTEGRITY_VIOLATED() {
+        return (int)6726L;
     }
-    public static int SEC_I_LOCAL_LOGON() {
-        return (int)590613L;
+    public static int ERROR_TRANSACTIONMANAGER_IDENTITY_MISMATCH() {
+        return (int)6727L;
     }
-    public static int SEC_I_GENERIC_EXTENSION_RECEIVED() {
-        return (int)590614L;
+    public static int ERROR_RM_CANNOT_BE_FROZEN_FOR_SNAPSHOT() {
+        return (int)6728L;
     }
-    public static int SEC_E_BAD_PKGID() {
-        return (int)-2146893034L;
+    public static int ERROR_TRANSACTION_MUST_WRITETHROUGH() {
+        return (int)6729L;
     }
-    public static int SEC_E_CONTEXT_EXPIRED() {
-        return (int)-2146893033L;
+    public static int ERROR_TRANSACTION_NO_SUPERIOR() {
+        return (int)6730L;
     }
-    public static int SEC_I_CONTEXT_EXPIRED() {
-        return (int)590615L;
+    public static int ERROR_HEURISTIC_DAMAGE_POSSIBLE() {
+        return (int)6731L;
     }
-    public static int SEC_E_INCOMPLETE_MESSAGE() {
-        return (int)-2146893032L;
+    public static int ERROR_TRANSACTIONAL_CONFLICT() {
+        return (int)6800L;
     }
-    public static int SEC_E_INCOMPLETE_CREDENTIALS() {
-        return (int)-2146893024L;
+    public static int ERROR_RM_NOT_ACTIVE() {
+        return (int)6801L;
     }
-    public static int SEC_E_BUFFER_TOO_SMALL() {
-        return (int)-2146893023L;
+    public static int ERROR_RM_METADATA_CORRUPT() {
+        return (int)6802L;
     }
-    public static int SEC_I_INCOMPLETE_CREDENTIALS() {
-        return (int)590624L;
+    public static int ERROR_DIRECTORY_NOT_RM() {
+        return (int)6803L;
     }
-    public static int SEC_I_RENEGOTIATE() {
-        return (int)590625L;
+    public static int ERROR_TRANSACTIONS_UNSUPPORTED_REMOTE() {
+        return (int)6805L;
     }
-    public static int SEC_E_WRONG_PRINCIPAL() {
-        return (int)-2146893022L;
+    public static int ERROR_LOG_RESIZE_INVALID_SIZE() {
+        return (int)6806L;
     }
-    public static int SEC_I_NO_LSA_CONTEXT() {
-        return (int)590627L;
+    public static int ERROR_OBJECT_NO_LONGER_EXISTS() {
+        return (int)6807L;
     }
-    public static int SEC_E_TIME_SKEW() {
-        return (int)-2146893020L;
+    public static int ERROR_STREAM_MINIVERSION_NOT_FOUND() {
+        return (int)6808L;
     }
-    public static int SEC_E_UNTRUSTED_ROOT() {
-        return (int)-2146893019L;
+    public static int ERROR_STREAM_MINIVERSION_NOT_VALID() {
+        return (int)6809L;
     }
-    public static int SEC_E_ILLEGAL_MESSAGE() {
-        return (int)-2146893018L;
+    public static int ERROR_MINIVERSION_INACCESSIBLE_FROM_SPECIFIED_TRANSACTION() {
+        return (int)6810L;
     }
-    public static int SEC_E_CERT_UNKNOWN() {
-        return (int)-2146893017L;
+    public static int ERROR_CANT_OPEN_MINIVERSION_WITH_MODIFY_INTENT() {
+        return (int)6811L;
     }
-    public static int SEC_E_CERT_EXPIRED() {
-        return (int)-2146893016L;
+    public static int ERROR_CANT_CREATE_MORE_STREAM_MINIVERSIONS() {
+        return (int)6812L;
     }
-    public static int SEC_E_ENCRYPT_FAILURE() {
-        return (int)-2146893015L;
+    public static int ERROR_REMOTE_FILE_VERSION_MISMATCH() {
+        return (int)6814L;
     }
-    public static int SEC_E_DECRYPT_FAILURE() {
-        return (int)-2146893008L;
+    public static int ERROR_HANDLE_NO_LONGER_VALID() {
+        return (int)6815L;
     }
-    public static int SEC_E_ALGORITHM_MISMATCH() {
-        return (int)-2146893007L;
+    public static int ERROR_NO_TXF_METADATA() {
+        return (int)6816L;
     }
-    public static int SEC_E_SECURITY_QOS_FAILED() {
-        return (int)-2146893006L;
+    public static int ERROR_LOG_CORRUPTION_DETECTED() {
+        return (int)6817L;
     }
-    public static int SEC_E_UNFINISHED_CONTEXT_DELETED() {
-        return (int)-2146893005L;
+    public static int ERROR_CANT_RECOVER_WITH_HANDLE_OPEN() {
+        return (int)6818L;
     }
-    public static int SEC_E_NO_TGT_REPLY() {
-        return (int)-2146893004L;
+    public static int ERROR_RM_DISCONNECTED() {
+        return (int)6819L;
     }
-    public static int SEC_E_NO_IP_ADDRESSES() {
-        return (int)-2146893003L;
+    public static int ERROR_ENLISTMENT_NOT_SUPERIOR() {
+        return (int)6820L;
     }
-    public static int SEC_E_WRONG_CREDENTIAL_HANDLE() {
-        return (int)-2146893002L;
+    public static int ERROR_RECOVERY_NOT_NEEDED() {
+        return (int)6821L;
     }
-    public static int SEC_E_CRYPTO_SYSTEM_INVALID() {
-        return (int)-2146893001L;
+    public static int ERROR_RM_ALREADY_STARTED() {
+        return (int)6822L;
     }
-    public static int SEC_E_MAX_REFERRALS_EXCEEDED() {
-        return (int)-2146893000L;
+    public static int ERROR_FILE_IDENTITY_NOT_PERSISTENT() {
+        return (int)6823L;
     }
-    public static int SEC_E_MUST_BE_KDC() {
-        return (int)-2146892999L;
+    public static int ERROR_CANT_BREAK_TRANSACTIONAL_DEPENDENCY() {
+        return (int)6824L;
     }
-    public static int SEC_E_STRONG_CRYPTO_NOT_SUPPORTED() {
-        return (int)-2146892998L;
+    public static int ERROR_CANT_CROSS_RM_BOUNDARY() {
+        return (int)6825L;
     }
-    public static int SEC_E_TOO_MANY_PRINCIPALS() {
-        return (int)-2146892997L;
+    public static int ERROR_TXF_DIR_NOT_EMPTY() {
+        return (int)6826L;
     }
-    public static int SEC_E_NO_PA_DATA() {
-        return (int)-2146892996L;
+    public static int ERROR_INDOUBT_TRANSACTIONS_EXIST() {
+        return (int)6827L;
     }
-    public static int SEC_E_PKINIT_NAME_MISMATCH() {
-        return (int)-2146892995L;
+    public static int ERROR_TM_VOLATILE() {
+        return (int)6828L;
     }
-    public static int SEC_E_SMARTCARD_LOGON_REQUIRED() {
-        return (int)-2146892994L;
+    public static int ERROR_ROLLBACK_TIMER_EXPIRED() {
+        return (int)6829L;
     }
-    public static int SEC_E_SHUTDOWN_IN_PROGRESS() {
-        return (int)-2146892993L;
+    public static int ERROR_TXF_ATTRIBUTE_CORRUPT() {
+        return (int)6830L;
     }
-    public static int SEC_E_KDC_INVALID_REQUEST() {
-        return (int)-2146892992L;
+    public static int ERROR_EFS_NOT_ALLOWED_IN_TRANSACTION() {
+        return (int)6831L;
     }
-    public static int SEC_E_KDC_UNABLE_TO_REFER() {
-        return (int)-2146892991L;
+    public static int ERROR_TRANSACTIONAL_OPEN_NOT_ALLOWED() {
+        return (int)6832L;
     }
-    public static int SEC_E_KDC_UNKNOWN_ETYPE() {
-        return (int)-2146892990L;
+    public static int ERROR_LOG_GROWTH_FAILED() {
+        return (int)6833L;
     }
-    public static int SEC_E_UNSUPPORTED_PREAUTH() {
-        return (int)-2146892989L;
+    public static int ERROR_TRANSACTED_MAPPING_UNSUPPORTED_REMOTE() {
+        return (int)6834L;
     }
-    public static int SEC_E_DELEGATION_REQUIRED() {
-        return (int)-2146892987L;
+    public static int ERROR_TXF_METADATA_ALREADY_PRESENT() {
+        return (int)6835L;
     }
-    public static int SEC_E_BAD_BINDINGS() {
-        return (int)-2146892986L;
+    public static int ERROR_TRANSACTION_SCOPE_CALLBACKS_NOT_SET() {
+        return (int)6836L;
     }
-    public static int SEC_E_MULTIPLE_ACCOUNTS() {
-        return (int)-2146892985L;
+    public static int ERROR_TRANSACTION_REQUIRED_PROMOTION() {
+        return (int)6837L;
     }
-    public static int SEC_E_NO_KERB_KEY() {
-        return (int)-2146892984L;
+    public static int ERROR_CANNOT_EXECUTE_FILE_IN_TRANSACTION() {
+        return (int)6838L;
     }
-    public static int SEC_E_CERT_WRONG_USAGE() {
-        return (int)-2146892983L;
+    public static int ERROR_TRANSACTIONS_NOT_FROZEN() {
+        return (int)6839L;
     }
-    public static int SEC_E_DOWNGRADE_DETECTED() {
-        return (int)-2146892976L;
+    public static int ERROR_TRANSACTION_FREEZE_IN_PROGRESS() {
+        return (int)6840L;
     }
-    public static int SEC_E_SMARTCARD_CERT_REVOKED() {
-        return (int)-2146892975L;
+    public static int ERROR_NOT_SNAPSHOT_VOLUME() {
+        return (int)6841L;
     }
-    public static int SEC_E_ISSUING_CA_UNTRUSTED() {
-        return (int)-2146892974L;
+    public static int ERROR_NO_SAVEPOINT_WITH_OPEN_FILES() {
+        return (int)6842L;
     }
-    public static int SEC_E_REVOCATION_OFFLINE_C() {
-        return (int)-2146892973L;
+    public static int ERROR_DATA_LOST_REPAIR() {
+        return (int)6843L;
     }
-    public static int SEC_E_PKINIT_CLIENT_FAILURE() {
-        return (int)-2146892972L;
+    public static int ERROR_SPARSE_NOT_ALLOWED_IN_TRANSACTION() {
+        return (int)6844L;
     }
-    public static int SEC_E_SMARTCARD_CERT_EXPIRED() {
-        return (int)-2146892971L;
+    public static int ERROR_TM_IDENTITY_MISMATCH() {
+        return (int)6845L;
     }
-    public static int SEC_E_NO_S4U_PROT_SUPPORT() {
-        return (int)-2146892970L;
+    public static int ERROR_FLOATED_SECTION() {
+        return (int)6846L;
     }
-    public static int SEC_E_CROSSREALM_DELEGATION_FAILURE() {
-        return (int)-2146892969L;
+    public static int ERROR_CANNOT_ACCEPT_TRANSACTED_WORK() {
+        return (int)6847L;
     }
-    public static int SEC_E_REVOCATION_OFFLINE_KDC() {
-        return (int)-2146892968L;
+    public static int ERROR_CANNOT_ABORT_TRANSACTIONS() {
+        return (int)6848L;
     }
-    public static int SEC_E_ISSUING_CA_UNTRUSTED_KDC() {
-        return (int)-2146892967L;
+    public static int ERROR_BAD_CLUSTERS() {
+        return (int)6849L;
     }
-    public static int SEC_E_KDC_CERT_EXPIRED() {
-        return (int)-2146892966L;
+    public static int ERROR_COMPRESSION_NOT_ALLOWED_IN_TRANSACTION() {
+        return (int)6850L;
     }
-    public static int SEC_E_KDC_CERT_REVOKED() {
-        return (int)-2146892965L;
+    public static int ERROR_VOLUME_DIRTY() {
+        return (int)6851L;
     }
-    public static int SEC_I_SIGNATURE_NEEDED() {
-        return (int)590684L;
+    public static int ERROR_NO_LINK_TRACKING_IN_TRANSACTION() {
+        return (int)6852L;
     }
-    public static int SEC_E_INVALID_PARAMETER() {
-        return (int)-2146892963L;
+    public static int ERROR_OPERATION_NOT_SUPPORTED_IN_TRANSACTION() {
+        return (int)6853L;
     }
-    public static int SEC_E_DELEGATION_POLICY() {
-        return (int)-2146892962L;
+    public static int ERROR_EXPIRED_HANDLE() {
+        return (int)6854L;
     }
-    public static int SEC_E_POLICY_NLTM_ONLY() {
-        return (int)-2146892961L;
+    public static int ERROR_TRANSACTION_NOT_ENLISTED() {
+        return (int)6855L;
     }
-    public static int SEC_I_NO_RENEGOTIATION() {
-        return (int)590688L;
+    public static int ERROR_CTX_WINSTATION_NAME_INVALID() {
+        return (int)7001L;
     }
-    public static int SEC_E_NO_CONTEXT() {
-        return (int)-2146892959L;
+    public static int ERROR_CTX_INVALID_PD() {
+        return (int)7002L;
     }
-    public static int SEC_E_PKU2U_CERT_FAILURE() {
-        return (int)-2146892958L;
+    public static int ERROR_CTX_PD_NOT_FOUND() {
+        return (int)7003L;
     }
-    public static int SEC_E_MUTUAL_AUTH_FAILED() {
-        return (int)-2146892957L;
+    public static int ERROR_CTX_WD_NOT_FOUND() {
+        return (int)7004L;
     }
-    public static int SEC_I_MESSAGE_FRAGMENT() {
-        return (int)590692L;
+    public static int ERROR_CTX_CANNOT_MAKE_EVENTLOG_ENTRY() {
+        return (int)7005L;
     }
-    public static int SEC_E_ONLY_HTTPS_ALLOWED() {
-        return (int)-2146892955L;
+    public static int ERROR_CTX_SERVICE_NAME_COLLISION() {
+        return (int)7006L;
     }
-    public static int SEC_I_CONTINUE_NEEDED_MESSAGE_OK() {
-        return (int)590694L;
+    public static int ERROR_CTX_CLOSE_PENDING() {
+        return (int)7007L;
     }
-    public static int SEC_E_APPLICATION_PROTOCOL_MISMATCH() {
-        return (int)-2146892953L;
+    public static int ERROR_CTX_NO_OUTBUF() {
+        return (int)7008L;
     }
-    public static int SEC_I_ASYNC_CALL_PENDING() {
-        return (int)590696L;
+    public static int ERROR_CTX_MODEM_INF_NOT_FOUND() {
+        return (int)7009L;
     }
-    public static int SEC_E_INVALID_UPN_NAME() {
-        return (int)-2146892951L;
+    public static int ERROR_CTX_INVALID_MODEMNAME() {
+        return (int)7010L;
     }
-    public static int SEC_E_EXT_BUFFER_TOO_SMALL() {
-        return (int)-2146892950L;
+    public static int ERROR_CTX_MODEM_RESPONSE_ERROR() {
+        return (int)7011L;
     }
-    public static int SEC_E_INSUFFICIENT_BUFFERS() {
-        return (int)-2146892949L;
+    public static int ERROR_CTX_MODEM_RESPONSE_TIMEOUT() {
+        return (int)7012L;
     }
-    public static int SEC_E_NO_SPM() {
-        return (int)-2146893052L;
+    public static int ERROR_CTX_MODEM_RESPONSE_NO_CARRIER() {
+        return (int)7013L;
     }
-    public static int SEC_E_NOT_SUPPORTED() {
-        return (int)-2146893054L;
+    public static int ERROR_CTX_MODEM_RESPONSE_NO_DIALTONE() {
+        return (int)7014L;
     }
-    public static int CRYPT_E_MSG_ERROR() {
-        return (int)-2146889727L;
+    public static int ERROR_CTX_MODEM_RESPONSE_BUSY() {
+        return (int)7015L;
     }
-    public static int CRYPT_E_UNKNOWN_ALGO() {
-        return (int)-2146889726L;
+    public static int ERROR_CTX_MODEM_RESPONSE_VOICE() {
+        return (int)7016L;
     }
-    public static int CRYPT_E_OID_FORMAT() {
-        return (int)-2146889725L;
+    public static int ERROR_CTX_TD_ERROR() {
+        return (int)7017L;
     }
-    public static int CRYPT_E_INVALID_MSG_TYPE() {
-        return (int)-2146889724L;
+    public static int ERROR_CTX_WINSTATION_NOT_FOUND() {
+        return (int)7022L;
     }
-    public static int CRYPT_E_UNEXPECTED_ENCODING() {
-        return (int)-2146889723L;
+    public static int ERROR_CTX_WINSTATION_ALREADY_EXISTS() {
+        return (int)7023L;
     }
-    public static int CRYPT_E_AUTH_ATTR_MISSING() {
-        return (int)-2146889722L;
+    public static int ERROR_CTX_WINSTATION_BUSY() {
+        return (int)7024L;
     }
-    public static int CRYPT_E_HASH_VALUE() {
-        return (int)-2146889721L;
+    public static int ERROR_CTX_BAD_VIDEO_MODE() {
+        return (int)7025L;
     }
-    public static int CRYPT_E_INVALID_INDEX() {
-        return (int)-2146889720L;
+    public static int ERROR_CTX_GRAPHICS_INVALID() {
+        return (int)7035L;
     }
-    public static int CRYPT_E_ALREADY_DECRYPTED() {
-        return (int)-2146889719L;
+    public static int ERROR_CTX_LOGON_DISABLED() {
+        return (int)7037L;
     }
-    public static int CRYPT_E_NOT_DECRYPTED() {
-        return (int)-2146889718L;
+    public static int ERROR_CTX_NOT_CONSOLE() {
+        return (int)7038L;
     }
-    public static int CRYPT_E_RECIPIENT_NOT_FOUND() {
-        return (int)-2146889717L;
+    public static int ERROR_CTX_CLIENT_QUERY_TIMEOUT() {
+        return (int)7040L;
     }
-    public static int CRYPT_E_CONTROL_TYPE() {
-        return (int)-2146889716L;
+    public static int ERROR_CTX_CONSOLE_DISCONNECT() {
+        return (int)7041L;
     }
-    public static int CRYPT_E_ISSUER_SERIALNUMBER() {
-        return (int)-2146889715L;
+    public static int ERROR_CTX_CONSOLE_CONNECT() {
+        return (int)7042L;
     }
-    public static int CRYPT_E_SIGNER_NOT_FOUND() {
-        return (int)-2146889714L;
+    public static int ERROR_CTX_SHADOW_DENIED() {
+        return (int)7044L;
     }
-    public static int CRYPT_E_ATTRIBUTES_MISSING() {
-        return (int)-2146889713L;
+    public static int ERROR_CTX_WINSTATION_ACCESS_DENIED() {
+        return (int)7045L;
     }
-    public static int CRYPT_E_STREAM_MSG_NOT_READY() {
-        return (int)-2146889712L;
+    public static int ERROR_CTX_INVALID_WD() {
+        return (int)7049L;
     }
-    public static int CRYPT_E_STREAM_INSUFFICIENT_DATA() {
-        return (int)-2146889711L;
+    public static int ERROR_CTX_SHADOW_INVALID() {
+        return (int)7050L;
     }
-    public static int CRYPT_I_NEW_PROTECTION_REQUIRED() {
-        return (int)593938L;
+    public static int ERROR_CTX_SHADOW_DISABLED() {
+        return (int)7051L;
     }
-    public static int CRYPT_E_BAD_LEN() {
-        return (int)-2146885631L;
+    public static int ERROR_CTX_CLIENT_LICENSE_IN_USE() {
+        return (int)7052L;
     }
-    public static int CRYPT_E_BAD_ENCODE() {
-        return (int)-2146885630L;
+    public static int ERROR_CTX_CLIENT_LICENSE_NOT_SET() {
+        return (int)7053L;
     }
-    public static int CRYPT_E_FILE_ERROR() {
-        return (int)-2146885629L;
+    public static int ERROR_CTX_LICENSE_NOT_AVAILABLE() {
+        return (int)7054L;
     }
-    public static int CRYPT_E_NOT_FOUND() {
-        return (int)-2146885628L;
+    public static int ERROR_CTX_LICENSE_CLIENT_INVALID() {
+        return (int)7055L;
     }
-    public static int CRYPT_E_EXISTS() {
-        return (int)-2146885627L;
+    public static int ERROR_CTX_LICENSE_EXPIRED() {
+        return (int)7056L;
     }
-    public static int CRYPT_E_NO_PROVIDER() {
-        return (int)-2146885626L;
+    public static int ERROR_CTX_SHADOW_NOT_RUNNING() {
+        return (int)7057L;
     }
-    public static int CRYPT_E_SELF_SIGNED() {
-        return (int)-2146885625L;
+    public static int ERROR_CTX_SHADOW_ENDED_BY_MODE_CHANGE() {
+        return (int)7058L;
     }
-    public static int CRYPT_E_DELETED_PREV() {
-        return (int)-2146885624L;
+    public static int ERROR_ACTIVATION_COUNT_EXCEEDED() {
+        return (int)7059L;
     }
-    public static int CRYPT_E_NO_MATCH() {
-        return (int)-2146885623L;
+    public static int ERROR_CTX_WINSTATIONS_DISABLED() {
+        return (int)7060L;
     }
-    public static int CRYPT_E_UNEXPECTED_MSG_TYPE() {
-        return (int)-2146885622L;
+    public static int ERROR_CTX_ENCRYPTION_LEVEL_REQUIRED() {
+        return (int)7061L;
     }
-    public static int CRYPT_E_NO_KEY_PROPERTY() {
-        return (int)-2146885621L;
+    public static int ERROR_CTX_SESSION_IN_USE() {
+        return (int)7062L;
     }
-    public static int CRYPT_E_NO_DECRYPT_CERT() {
-        return (int)-2146885620L;
+    public static int ERROR_CTX_NO_FORCE_LOGOFF() {
+        return (int)7063L;
     }
-    public static int CRYPT_E_BAD_MSG() {
-        return (int)-2146885619L;
+    public static int ERROR_CTX_ACCOUNT_RESTRICTION() {
+        return (int)7064L;
     }
-    public static int CRYPT_E_NO_SIGNER() {
-        return (int)-2146885618L;
+    public static int ERROR_RDP_PROTOCOL_ERROR() {
+        return (int)7065L;
     }
-    public static int CRYPT_E_PENDING_CLOSE() {
-        return (int)-2146885617L;
+    public static int ERROR_CTX_CDM_CONNECT() {
+        return (int)7066L;
     }
-    public static int CRYPT_E_REVOKED() {
-        return (int)-2146885616L;
+    public static int ERROR_CTX_CDM_DISCONNECT() {
+        return (int)7067L;
     }
-    public static int CRYPT_E_NO_REVOCATION_DLL() {
-        return (int)-2146885615L;
+    public static int ERROR_CTX_SECURITY_LAYER_ERROR() {
+        return (int)7068L;
     }
-    public static int CRYPT_E_NO_REVOCATION_CHECK() {
-        return (int)-2146885614L;
+    public static int ERROR_TS_INCOMPATIBLE_SESSIONS() {
+        return (int)7069L;
     }
-    public static int CRYPT_E_REVOCATION_OFFLINE() {
-        return (int)-2146885613L;
+    public static int ERROR_TS_VIDEO_SUBSYSTEM_ERROR() {
+        return (int)7070L;
     }
-    public static int CRYPT_E_NOT_IN_REVOCATION_DATABASE() {
-        return (int)-2146885612L;
+    public static int FRS_ERR_INVALID_API_SEQUENCE() {
+        return (int)8001L;
     }
-    public static int CRYPT_E_INVALID_NUMERIC_STRING() {
-        return (int)-2146885600L;
+    public static int FRS_ERR_STARTING_SERVICE() {
+        return (int)8002L;
     }
-    public static int CRYPT_E_INVALID_PRINTABLE_STRING() {
-        return (int)-2146885599L;
+    public static int FRS_ERR_STOPPING_SERVICE() {
+        return (int)8003L;
     }
-    public static int CRYPT_E_INVALID_IA5_STRING() {
-        return (int)-2146885598L;
+    public static int FRS_ERR_INTERNAL_API() {
+        return (int)8004L;
     }
-    public static int CRYPT_E_INVALID_X500_STRING() {
-        return (int)-2146885597L;
+    public static int FRS_ERR_INTERNAL() {
+        return (int)8005L;
     }
-    public static int CRYPT_E_NOT_CHAR_STRING() {
-        return (int)-2146885596L;
+    public static int FRS_ERR_SERVICE_COMM() {
+        return (int)8006L;
     }
-    public static int CRYPT_E_FILERESIZED() {
-        return (int)-2146885595L;
+    public static int FRS_ERR_INSUFFICIENT_PRIV() {
+        return (int)8007L;
     }
-    public static int CRYPT_E_SECURITY_SETTINGS() {
-        return (int)-2146885594L;
+    public static int FRS_ERR_AUTHENTICATION() {
+        return (int)8008L;
     }
-    public static int CRYPT_E_NO_VERIFY_USAGE_DLL() {
-        return (int)-2146885593L;
+    public static int FRS_ERR_PARENT_INSUFFICIENT_PRIV() {
+        return (int)8009L;
     }
-    public static int CRYPT_E_NO_VERIFY_USAGE_CHECK() {
-        return (int)-2146885592L;
+    public static int FRS_ERR_PARENT_AUTHENTICATION() {
+        return (int)8010L;
     }
-    public static int CRYPT_E_VERIFY_USAGE_OFFLINE() {
-        return (int)-2146885591L;
+    public static int FRS_ERR_CHILD_TO_PARENT_COMM() {
+        return (int)8011L;
     }
-    public static int CRYPT_E_NOT_IN_CTL() {
-        return (int)-2146885590L;
+    public static int FRS_ERR_PARENT_TO_CHILD_COMM() {
+        return (int)8012L;
     }
-    public static int CRYPT_E_NO_TRUSTED_SIGNER() {
-        return (int)-2146885589L;
+    public static int FRS_ERR_SYSVOL_POPULATE() {
+        return (int)8013L;
     }
-    public static int CRYPT_E_MISSING_PUBKEY_PARA() {
-        return (int)-2146885588L;
+    public static int FRS_ERR_SYSVOL_POPULATE_TIMEOUT() {
+        return (int)8014L;
     }
-    public static int CRYPT_E_OBJECT_LOCATOR_OBJECT_NOT_FOUND() {
-        return (int)-2146885587L;
+    public static int FRS_ERR_SYSVOL_IS_BUSY() {
+        return (int)8015L;
     }
-    public static int CRYPT_E_OSS_ERROR() {
-        return (int)-2146881536L;
+    public static int FRS_ERR_SYSVOL_DEMOTE() {
+        return (int)8016L;
     }
-    public static int OSS_MORE_BUF() {
-        return (int)-2146881535L;
+    public static int FRS_ERR_INVALID_SERVICE_PARAMETER() {
+        return (int)8017L;
     }
-    public static int OSS_NEGATIVE_UINTEGER() {
-        return (int)-2146881534L;
-    }
-    public static int OSS_PDU_RANGE() {
-        return (int)-2146881533L;
-    }
-    public static int OSS_MORE_INPUT() {
-        return (int)-2146881532L;
-    }
-    public static int OSS_DATA_ERROR() {
-        return (int)-2146881531L;
-    }
-    public static int OSS_BAD_ARG() {
-        return (int)-2146881530L;
-    }
-    public static int OSS_BAD_VERSION() {
-        return (int)-2146881529L;
-    }
-    public static int OSS_OUT_MEMORY() {
-        return (int)-2146881528L;
-    }
-    public static int OSS_PDU_MISMATCH() {
-        return (int)-2146881527L;
-    }
-    public static int OSS_LIMITED() {
-        return (int)-2146881526L;
-    }
-    public static int OSS_BAD_PTR() {
-        return (int)-2146881525L;
-    }
-    public static int OSS_BAD_TIME() {
-        return (int)-2146881524L;
-    }
-    public static int OSS_INDEFINITE_NOT_SUPPORTED() {
-        return (int)-2146881523L;
-    }
-    public static int OSS_MEM_ERROR() {
-        return (int)-2146881522L;
-    }
-    public static int OSS_BAD_TABLE() {
-        return (int)-2146881521L;
-    }
-    public static int OSS_TOO_LONG() {
-        return (int)-2146881520L;
-    }
-    public static int OSS_CONSTRAINT_VIOLATED() {
-        return (int)-2146881519L;
-    }
-    public static int OSS_FATAL_ERROR() {
-        return (int)-2146881518L;
-    }
-    public static int OSS_ACCESS_SERIALIZATION_ERROR() {
-        return (int)-2146881517L;
-    }
-    public static int OSS_NULL_TBL() {
-        return (int)-2146881516L;
-    }
-    public static int OSS_NULL_FCN() {
-        return (int)-2146881515L;
-    }
-    public static int OSS_BAD_ENCRULES() {
-        return (int)-2146881514L;
-    }
-    public static int OSS_UNAVAIL_ENCRULES() {
-        return (int)-2146881513L;
-    }
-    public static int OSS_CANT_OPEN_TRACE_WINDOW() {
-        return (int)-2146881512L;
-    }
-    public static int OSS_UNIMPLEMENTED() {
-        return (int)-2146881511L;
-    }
-    public static int OSS_OID_DLL_NOT_LINKED() {
-        return (int)-2146881510L;
-    }
-    public static int OSS_CANT_OPEN_TRACE_FILE() {
-        return (int)-2146881509L;
-    }
-    public static int OSS_TRACE_FILE_ALREADY_OPEN() {
-        return (int)-2146881508L;
-    }
-    public static int OSS_TABLE_MISMATCH() {
-        return (int)-2146881507L;
-    }
-    public static int OSS_TYPE_NOT_SUPPORTED() {
-        return (int)-2146881506L;
-    }
-    public static int OSS_REAL_DLL_NOT_LINKED() {
-        return (int)-2146881505L;
-    }
-    public static int OSS_REAL_CODE_NOT_LINKED() {
-        return (int)-2146881504L;
-    }
-    public static int OSS_OUT_OF_RANGE() {
-        return (int)-2146881503L;
-    }
-    public static int OSS_COPIER_DLL_NOT_LINKED() {
-        return (int)-2146881502L;
-    }
-    public static int OSS_CONSTRAINT_DLL_NOT_LINKED() {
-        return (int)-2146881501L;
-    }
-    public static int OSS_COMPARATOR_DLL_NOT_LINKED() {
-        return (int)-2146881500L;
-    }
-    public static int OSS_COMPARATOR_CODE_NOT_LINKED() {
-        return (int)-2146881499L;
-    }
-    public static int OSS_MEM_MGR_DLL_NOT_LINKED() {
-        return (int)-2146881498L;
-    }
-    public static int OSS_PDV_DLL_NOT_LINKED() {
-        return (int)-2146881497L;
-    }
-    public static int OSS_PDV_CODE_NOT_LINKED() {
-        return (int)-2146881496L;
-    }
-    public static int OSS_API_DLL_NOT_LINKED() {
-        return (int)-2146881495L;
-    }
-    public static int OSS_BERDER_DLL_NOT_LINKED() {
-        return (int)-2146881494L;
-    }
-    public static int OSS_PER_DLL_NOT_LINKED() {
-        return (int)-2146881493L;
-    }
-    public static int OSS_OPEN_TYPE_ERROR() {
-        return (int)-2146881492L;
-    }
-    public static int OSS_MUTEX_NOT_CREATED() {
-        return (int)-2146881491L;
-    }
-    public static int OSS_CANT_CLOSE_TRACE_FILE() {
-        return (int)-2146881490L;
-    }
-    public static int CRYPT_E_ASN1_ERROR() {
-        return (int)-2146881280L;
-    }
-    public static int CRYPT_E_ASN1_INTERNAL() {
-        return (int)-2146881279L;
-    }
-    public static int CRYPT_E_ASN1_EOD() {
-        return (int)-2146881278L;
-    }
-    public static int CRYPT_E_ASN1_CORRUPT() {
-        return (int)-2146881277L;
-    }
-    public static int CRYPT_E_ASN1_LARGE() {
-        return (int)-2146881276L;
-    }
-    public static int CRYPT_E_ASN1_CONSTRAINT() {
-        return (int)-2146881275L;
-    }
-    public static int CRYPT_E_ASN1_MEMORY() {
-        return (int)-2146881274L;
-    }
-    public static int CRYPT_E_ASN1_OVERFLOW() {
-        return (int)-2146881273L;
-    }
-    public static int CRYPT_E_ASN1_BADPDU() {
-        return (int)-2146881272L;
-    }
-    public static int CRYPT_E_ASN1_BADARGS() {
-        return (int)-2146881271L;
-    }
-    public static int CRYPT_E_ASN1_BADREAL() {
-        return (int)-2146881270L;
-    }
-    public static int CRYPT_E_ASN1_BADTAG() {
-        return (int)-2146881269L;
-    }
-    public static int CRYPT_E_ASN1_CHOICE() {
-        return (int)-2146881268L;
-    }
-    public static int CRYPT_E_ASN1_RULE() {
-        return (int)-2146881267L;
-    }
-    public static int CRYPT_E_ASN1_UTF8() {
-        return (int)-2146881266L;
-    }
-    public static int CRYPT_E_ASN1_PDU_TYPE() {
-        return (int)-2146881229L;
-    }
-    public static int CRYPT_E_ASN1_NYI() {
-        return (int)-2146881228L;
-    }
-    public static int CRYPT_E_ASN1_EXTENDED() {
-        return (int)-2146881023L;
-    }
-    public static int CRYPT_E_ASN1_NOEOD() {
-        return (int)-2146881022L;
-    }
-    public static int CERTSRV_E_BAD_REQUESTSUBJECT() {
-        return (int)-2146877439L;
-    }
-    public static int CERTSRV_E_NO_REQUEST() {
-        return (int)-2146877438L;
-    }
-    public static int CERTSRV_E_BAD_REQUESTSTATUS() {
-        return (int)-2146877437L;
-    }
-    public static int CERTSRV_E_PROPERTY_EMPTY() {
-        return (int)-2146877436L;
-    }
-    public static int CERTSRV_E_INVALID_CA_CERTIFICATE() {
-        return (int)-2146877435L;
-    }
-    public static int CERTSRV_E_SERVER_SUSPENDED() {
-        return (int)-2146877434L;
-    }
-    public static int CERTSRV_E_ENCODING_LENGTH() {
-        return (int)-2146877433L;
-    }
-    public static int CERTSRV_E_ROLECONFLICT() {
-        return (int)-2146877432L;
-    }
-    public static int CERTSRV_E_RESTRICTEDOFFICER() {
-        return (int)-2146877431L;
-    }
-    public static int CERTSRV_E_KEY_ARCHIVAL_NOT_CONFIGURED() {
-        return (int)-2146877430L;
-    }
-    public static int CERTSRV_E_NO_VALID_KRA() {
-        return (int)-2146877429L;
-    }
-    public static int CERTSRV_E_BAD_REQUEST_KEY_ARCHIVAL() {
-        return (int)-2146877428L;
-    }
-    public static int CERTSRV_E_NO_CAADMIN_DEFINED() {
-        return (int)-2146877427L;
-    }
-    public static int CERTSRV_E_BAD_RENEWAL_CERT_ATTRIBUTE() {
-        return (int)-2146877426L;
-    }
-    public static int CERTSRV_E_NO_DB_SESSIONS() {
-        return (int)-2146877425L;
-    }
-    public static int CERTSRV_E_ALIGNMENT_FAULT() {
-        return (int)-2146877424L;
-    }
-    public static int CERTSRV_E_ENROLL_DENIED() {
-        return (int)-2146877423L;
-    }
-    public static int CERTSRV_E_TEMPLATE_DENIED() {
-        return (int)-2146877422L;
-    }
-    public static int CERTSRV_E_DOWNLEVEL_DC_SSL_OR_UPGRADE() {
-        return (int)-2146877421L;
-    }
-    public static int CERTSRV_E_ADMIN_DENIED_REQUEST() {
-        return (int)-2146877420L;
-    }
-    public static int CERTSRV_E_NO_POLICY_SERVER() {
-        return (int)-2146877419L;
-    }
-    public static int CERTSRV_E_WEAK_SIGNATURE_OR_KEY() {
-        return (int)-2146877418L;
-    }
-    public static int CERTSRV_E_KEY_ATTESTATION_NOT_SUPPORTED() {
-        return (int)-2146877417L;
-    }
-    public static int CERTSRV_E_ENCRYPTION_CERT_REQUIRED() {
-        return (int)-2146877416L;
-    }
-    public static int CERTSRV_E_UNSUPPORTED_CERT_TYPE() {
-        return (int)-2146875392L;
-    }
-    public static int CERTSRV_E_NO_CERT_TYPE() {
-        return (int)-2146875391L;
-    }
-    public static int CERTSRV_E_TEMPLATE_CONFLICT() {
-        return (int)-2146875390L;
-    }
-    public static int CERTSRV_E_SUBJECT_ALT_NAME_REQUIRED() {
-        return (int)-2146875389L;
-    }
-    public static int CERTSRV_E_ARCHIVED_KEY_REQUIRED() {
-        return (int)-2146875388L;
-    }
-    public static int CERTSRV_E_SMIME_REQUIRED() {
-        return (int)-2146875387L;
-    }
-    public static int CERTSRV_E_BAD_RENEWAL_SUBJECT() {
-        return (int)-2146875386L;
-    }
-    public static int CERTSRV_E_BAD_TEMPLATE_VERSION() {
-        return (int)-2146875385L;
-    }
-    public static int CERTSRV_E_TEMPLATE_POLICY_REQUIRED() {
-        return (int)-2146875384L;
-    }
-    public static int CERTSRV_E_SIGNATURE_POLICY_REQUIRED() {
-        return (int)-2146875383L;
-    }
-    public static int CERTSRV_E_SIGNATURE_COUNT() {
-        return (int)-2146875382L;
-    }
-    public static int CERTSRV_E_SIGNATURE_REJECTED() {
-        return (int)-2146875381L;
-    }
-    public static int CERTSRV_E_ISSUANCE_POLICY_REQUIRED() {
-        return (int)-2146875380L;
-    }
-    public static int CERTSRV_E_SUBJECT_UPN_REQUIRED() {
-        return (int)-2146875379L;
-    }
-    public static int CERTSRV_E_SUBJECT_DIRECTORY_GUID_REQUIRED() {
-        return (int)-2146875378L;
-    }
-    public static int CERTSRV_E_SUBJECT_DNS_REQUIRED() {
-        return (int)-2146875377L;
-    }
-    public static int CERTSRV_E_ARCHIVED_KEY_UNEXPECTED() {
-        return (int)-2146875376L;
-    }
-    public static int CERTSRV_E_KEY_LENGTH() {
-        return (int)-2146875375L;
-    }
-    public static int CERTSRV_E_SUBJECT_EMAIL_REQUIRED() {
-        return (int)-2146875374L;
-    }
-    public static int CERTSRV_E_UNKNOWN_CERT_TYPE() {
-        return (int)-2146875373L;
-    }
-    public static int CERTSRV_E_CERT_TYPE_OVERLAP() {
-        return (int)-2146875372L;
-    }
-    public static int CERTSRV_E_TOO_MANY_SIGNATURES() {
-        return (int)-2146875371L;
-    }
-    public static int CERTSRV_E_RENEWAL_BAD_PUBLIC_KEY() {
-        return (int)-2146875370L;
-    }
-    public static int CERTSRV_E_INVALID_EK() {
-        return (int)-2146875369L;
-    }
-    public static int CERTSRV_E_INVALID_IDBINDING() {
-        return (int)-2146875368L;
-    }
-    public static int CERTSRV_E_INVALID_ATTESTATION() {
-        return (int)-2146875367L;
-    }
-    public static int CERTSRV_E_KEY_ATTESTATION() {
-        return (int)-2146875366L;
-    }
-    public static int CERTSRV_E_CORRUPT_KEY_ATTESTATION() {
-        return (int)-2146875365L;
-    }
-    public static int CERTSRV_E_EXPIRED_CHALLENGE() {
-        return (int)-2146875364L;
-    }
-    public static int CERTSRV_E_INVALID_RESPONSE() {
-        return (int)-2146875363L;
-    }
-    public static int CERTSRV_E_INVALID_REQUESTID() {
-        return (int)-2146875362L;
-    }
-    public static int CERTSRV_E_REQUEST_PRECERTIFICATE_MISMATCH() {
-        return (int)-2146875361L;
-    }
-    public static int CERTSRV_E_PENDING_CLIENT_RESPONSE() {
-        return (int)-2146875360L;
-    }
-    public static int XENROLL_E_KEY_NOT_EXPORTABLE() {
-        return (int)-2146873344L;
-    }
-    public static int XENROLL_E_CANNOT_ADD_ROOT_CERT() {
-        return (int)-2146873343L;
-    }
-    public static int XENROLL_E_RESPONSE_KA_HASH_NOT_FOUND() {
-        return (int)-2146873342L;
-    }
-    public static int XENROLL_E_RESPONSE_UNEXPECTED_KA_HASH() {
-        return (int)-2146873341L;
-    }
-    public static int XENROLL_E_RESPONSE_KA_HASH_MISMATCH() {
-        return (int)-2146873340L;
-    }
-    public static int XENROLL_E_KEYSPEC_SMIME_MISMATCH() {
-        return (int)-2146873339L;
-    }
-    public static int TRUST_E_SYSTEM_ERROR() {
-        return (int)-2146869247L;
-    }
-    public static int TRUST_E_NO_SIGNER_CERT() {
-        return (int)-2146869246L;
-    }
-    public static int TRUST_E_COUNTER_SIGNER() {
-        return (int)-2146869245L;
-    }
-    public static int TRUST_E_CERT_SIGNATURE() {
-        return (int)-2146869244L;
-    }
-    public static int TRUST_E_TIME_STAMP() {
-        return (int)-2146869243L;
-    }
-    public static int TRUST_E_BAD_DIGEST() {
-        return (int)-2146869232L;
-    }
-    public static int TRUST_E_MALFORMED_SIGNATURE() {
-        return (int)-2146869231L;
-    }
-    public static int TRUST_E_BASIC_CONSTRAINTS() {
-        return (int)-2146869223L;
-    }
-    public static int TRUST_E_FINANCIAL_CRITERIA() {
-        return (int)-2146869218L;
-    }
-    public static int MSSIPOTF_E_OUTOFMEMRANGE() {
-        return (int)-2146865151L;
-    }
-    public static int MSSIPOTF_E_CANTGETOBJECT() {
-        return (int)-2146865150L;
-    }
-    public static int MSSIPOTF_E_NOHEADTABLE() {
-        return (int)-2146865149L;
-    }
-    public static int MSSIPOTF_E_BAD_MAGICNUMBER() {
-        return (int)-2146865148L;
-    }
-    public static int MSSIPOTF_E_BAD_OFFSET_TABLE() {
-        return (int)-2146865147L;
-    }
-    public static int MSSIPOTF_E_TABLE_TAGORDER() {
-        return (int)-2146865146L;
-    }
-    public static int MSSIPOTF_E_TABLE_LONGWORD() {
-        return (int)-2146865145L;
-    }
-    public static int MSSIPOTF_E_BAD_FIRST_TABLE_PLACEMENT() {
-        return (int)-2146865144L;
-    }
-    public static int MSSIPOTF_E_TABLES_OVERLAP() {
-        return (int)-2146865143L;
-    }
-    public static int MSSIPOTF_E_TABLE_PADBYTES() {
-        return (int)-2146865142L;
-    }
-    public static int MSSIPOTF_E_FILETOOSMALL() {
-        return (int)-2146865141L;
-    }
-    public static int MSSIPOTF_E_TABLE_CHECKSUM() {
-        return (int)-2146865140L;
-    }
-    public static int MSSIPOTF_E_FILE_CHECKSUM() {
-        return (int)-2146865139L;
-    }
-    public static int MSSIPOTF_E_FAILED_POLICY() {
-        return (int)-2146865136L;
-    }
-    public static int MSSIPOTF_E_FAILED_HINTS_CHECK() {
-        return (int)-2146865135L;
-    }
-    public static int MSSIPOTF_E_NOT_OPENTYPE() {
-        return (int)-2146865134L;
-    }
-    public static int MSSIPOTF_E_FILE() {
-        return (int)-2146865133L;
-    }
-    public static int MSSIPOTF_E_CRYPT() {
-        return (int)-2146865132L;
-    }
-    public static int MSSIPOTF_E_BADVERSION() {
-        return (int)-2146865131L;
-    }
-    public static int MSSIPOTF_E_DSIG_STRUCTURE() {
-        return (int)-2146865130L;
-    }
-    public static int MSSIPOTF_E_PCONST_CHECK() {
-        return (int)-2146865129L;
-    }
-    public static int MSSIPOTF_E_STRUCTURE() {
-        return (int)-2146865128L;
-    }
-    public static int ERROR_CRED_REQUIRES_CONFIRMATION() {
-        return (int)-2146865127L;
-    }
-    public static int TRUST_E_PROVIDER_UNKNOWN() {
-        return (int)-2146762751L;
-    }
-    public static int TRUST_E_ACTION_UNKNOWN() {
-        return (int)-2146762750L;
-    }
-    public static int TRUST_E_SUBJECT_FORM_UNKNOWN() {
-        return (int)-2146762749L;
-    }
-    public static int TRUST_E_SUBJECT_NOT_TRUSTED() {
-        return (int)-2146762748L;
-    }
-    public static int DIGSIG_E_ENCODE() {
-        return (int)-2146762747L;
-    }
-    public static int DIGSIG_E_DECODE() {
-        return (int)-2146762746L;
-    }
-    public static int DIGSIG_E_EXTENSIBILITY() {
-        return (int)-2146762745L;
-    }
-    public static int DIGSIG_E_CRYPTO() {
-        return (int)-2146762744L;
-    }
-    public static int PERSIST_E_SIZEDEFINITE() {
-        return (int)-2146762743L;
-    }
-    public static int PERSIST_E_SIZEINDEFINITE() {
-        return (int)-2146762742L;
-    }
-    public static int PERSIST_E_NOTSELFSIZING() {
-        return (int)-2146762741L;
-    }
-    public static int TRUST_E_NOSIGNATURE() {
-        return (int)-2146762496L;
-    }
-    public static int CERT_E_EXPIRED() {
-        return (int)-2146762495L;
-    }
-    public static int CERT_E_VALIDITYPERIODNESTING() {
-        return (int)-2146762494L;
-    }
-    public static int CERT_E_ROLE() {
-        return (int)-2146762493L;
-    }
-    public static int CERT_E_PATHLENCONST() {
-        return (int)-2146762492L;
-    }
-    public static int CERT_E_CRITICAL() {
-        return (int)-2146762491L;
-    }
-    public static int CERT_E_PURPOSE() {
-        return (int)-2146762490L;
-    }
-    public static int CERT_E_ISSUERCHAINING() {
-        return (int)-2146762489L;
-    }
-    public static int CERT_E_MALFORMED() {
-        return (int)-2146762488L;
-    }
-    public static int CERT_E_UNTRUSTEDROOT() {
-        return (int)-2146762487L;
-    }
-    public static int CERT_E_CHAINING() {
-        return (int)-2146762486L;
-    }
-    public static int TRUST_E_FAIL() {
-        return (int)-2146762485L;
-    }
-    public static int CERT_E_REVOKED() {
-        return (int)-2146762484L;
-    }
-    public static int CERT_E_UNTRUSTEDTESTROOT() {
-        return (int)-2146762483L;
-    }
-    public static int CERT_E_REVOCATION_FAILURE() {
-        return (int)-2146762482L;
-    }
-    public static int CERT_E_CN_NO_MATCH() {
-        return (int)-2146762481L;
-    }
-    public static int CERT_E_WRONG_USAGE() {
-        return (int)-2146762480L;
-    }
-    public static int TRUST_E_EXPLICIT_DISTRUST() {
-        return (int)-2146762479L;
-    }
-    public static int CERT_E_UNTRUSTEDCA() {
-        return (int)-2146762478L;
-    }
-    public static int CERT_E_INVALID_POLICY() {
-        return (int)-2146762477L;
-    }
-    public static int CERT_E_INVALID_NAME() {
-        return (int)-2146762476L;
-    }
-    public static int SPAPI_E_EXPECTED_SECTION_NAME() {
-        return (int)-2146500608L;
-    }
-    public static int SPAPI_E_BAD_SECTION_NAME_LINE() {
-        return (int)-2146500607L;
-    }
-    public static int SPAPI_E_SECTION_NAME_TOO_LONG() {
-        return (int)-2146500606L;
-    }
-    public static int SPAPI_E_GENERAL_SYNTAX() {
-        return (int)-2146500605L;
-    }
-    public static int SPAPI_E_WRONG_INF_STYLE() {
-        return (int)-2146500352L;
-    }
-    public static int SPAPI_E_SECTION_NOT_FOUND() {
-        return (int)-2146500351L;
-    }
-    public static int SPAPI_E_LINE_NOT_FOUND() {
-        return (int)-2146500350L;
-    }
-    public static int SPAPI_E_NO_BACKUP() {
-        return (int)-2146500349L;
-    }
-    public static int SPAPI_E_NO_ASSOCIATED_CLASS() {
-        return (int)-2146500096L;
-    }
-    public static int SPAPI_E_CLASS_MISMATCH() {
-        return (int)-2146500095L;
-    }
-    public static int SPAPI_E_DUPLICATE_FOUND() {
-        return (int)-2146500094L;
-    }
-    public static int SPAPI_E_NO_DRIVER_SELECTED() {
-        return (int)-2146500093L;
-    }
-    public static int SPAPI_E_KEY_DOES_NOT_EXIST() {
-        return (int)-2146500092L;
-    }
-    public static int SPAPI_E_INVALID_DEVINST_NAME() {
-        return (int)-2146500091L;
-    }
-    public static int SPAPI_E_INVALID_CLASS() {
-        return (int)-2146500090L;
-    }
-    public static int SPAPI_E_DEVINST_ALREADY_EXISTS() {
-        return (int)-2146500089L;
-    }
-    public static int SPAPI_E_DEVINFO_NOT_REGISTERED() {
-        return (int)-2146500088L;
-    }
-    public static int SPAPI_E_INVALID_REG_PROPERTY() {
-        return (int)-2146500087L;
-    }
-    public static int SPAPI_E_NO_INF() {
-        return (int)-2146500086L;
-    }
-    public static int SPAPI_E_NO_SUCH_DEVINST() {
-        return (int)-2146500085L;
-    }
-    public static int SPAPI_E_CANT_LOAD_CLASS_ICON() {
-        return (int)-2146500084L;
-    }
-    public static int SPAPI_E_INVALID_CLASS_INSTALLER() {
-        return (int)-2146500083L;
-    }
-    public static int SPAPI_E_DI_DO_DEFAULT() {
-        return (int)-2146500082L;
-    }
-    public static int SPAPI_E_DI_NOFILECOPY() {
-        return (int)-2146500081L;
-    }
-    public static int SPAPI_E_INVALID_HWPROFILE() {
-        return (int)-2146500080L;
-    }
-    public static int SPAPI_E_NO_DEVICE_SELECTED() {
-        return (int)-2146500079L;
-    }
-    public static int SPAPI_E_DEVINFO_LIST_LOCKED() {
-        return (int)-2146500078L;
-    }
-    public static int SPAPI_E_DEVINFO_DATA_LOCKED() {
-        return (int)-2146500077L;
-    }
-    public static int SPAPI_E_DI_BAD_PATH() {
-        return (int)-2146500076L;
-    }
-    public static int SPAPI_E_NO_CLASSINSTALL_PARAMS() {
-        return (int)-2146500075L;
-    }
-    public static int SPAPI_E_FILEQUEUE_LOCKED() {
-        return (int)-2146500074L;
-    }
-    public static int SPAPI_E_BAD_SERVICE_INSTALLSECT() {
-        return (int)-2146500073L;
-    }
-    public static int SPAPI_E_NO_CLASS_DRIVER_LIST() {
-        return (int)-2146500072L;
-    }
-    public static int SPAPI_E_NO_ASSOCIATED_SERVICE() {
-        return (int)-2146500071L;
-    }
-    public static int SPAPI_E_NO_DEFAULT_DEVICE_INTERFACE() {
-        return (int)-2146500070L;
-    }
-    public static int SPAPI_E_DEVICE_INTERFACE_ACTIVE() {
-        return (int)-2146500069L;
-    }
-    public static int SPAPI_E_DEVICE_INTERFACE_REMOVED() {
-        return (int)-2146500068L;
-    }
-    public static int SPAPI_E_BAD_INTERFACE_INSTALLSECT() {
-        return (int)-2146500067L;
-    }
-    public static int SPAPI_E_NO_SUCH_INTERFACE_CLASS() {
-        return (int)-2146500066L;
-    }
-    public static int SPAPI_E_INVALID_REFERENCE_STRING() {
-        return (int)-2146500065L;
-    }
-    public static int SPAPI_E_INVALID_MACHINENAME() {
-        return (int)-2146500064L;
-    }
-    public static int SPAPI_E_REMOTE_COMM_FAILURE() {
-        return (int)-2146500063L;
-    }
-    public static int SPAPI_E_MACHINE_UNAVAILABLE() {
-        return (int)-2146500062L;
-    }
-    public static int SPAPI_E_NO_CONFIGMGR_SERVICES() {
-        return (int)-2146500061L;
-    }
-    public static int SPAPI_E_INVALID_PROPPAGE_PROVIDER() {
-        return (int)-2146500060L;
-    }
-    public static int SPAPI_E_NO_SUCH_DEVICE_INTERFACE() {
-        return (int)-2146500059L;
-    }
-    public static int SPAPI_E_DI_POSTPROCESSING_REQUIRED() {
-        return (int)-2146500058L;
-    }
-    public static int SPAPI_E_INVALID_COINSTALLER() {
-        return (int)-2146500057L;
-    }
-    public static int SPAPI_E_NO_COMPAT_DRIVERS() {
-        return (int)-2146500056L;
-    }
-    public static int SPAPI_E_NO_DEVICE_ICON() {
-        return (int)-2146500055L;
-    }
-    public static int SPAPI_E_INVALID_INF_LOGCONFIG() {
-        return (int)-2146500054L;
-    }
-    public static int SPAPI_E_DI_DONT_INSTALL() {
-        return (int)-2146500053L;
-    }
-    public static int SPAPI_E_INVALID_FILTER_DRIVER() {
-        return (int)-2146500052L;
-    }
-    public static int SPAPI_E_NON_WINDOWS_NT_DRIVER() {
-        return (int)-2146500051L;
-    }
-    public static int SPAPI_E_NON_WINDOWS_DRIVER() {
-        return (int)-2146500050L;
-    }
-    public static int SPAPI_E_NO_CATALOG_FOR_OEM_INF() {
-        return (int)-2146500049L;
-    }
-    public static int SPAPI_E_DEVINSTALL_QUEUE_NONNATIVE() {
-        return (int)-2146500048L;
-    }
-    public static int SPAPI_E_NOT_DISABLEABLE() {
-        return (int)-2146500047L;
-    }
-    public static int SPAPI_E_CANT_REMOVE_DEVINST() {
-        return (int)-2146500046L;
-    }
-    public static int SPAPI_E_INVALID_TARGET() {
-        return (int)-2146500045L;
-    }
-    public static int SPAPI_E_DRIVER_NONNATIVE() {
-        return (int)-2146500044L;
-    }
-    public static int SPAPI_E_IN_WOW64() {
-        return (int)-2146500043L;
-    }
-    public static int SPAPI_E_SET_SYSTEM_RESTORE_POINT() {
-        return (int)-2146500042L;
-    }
-    public static int SPAPI_E_INCORRECTLY_COPIED_INF() {
-        return (int)-2146500041L;
-    }
-    public static int SPAPI_E_SCE_DISABLED() {
-        return (int)-2146500040L;
-    }
-    public static int SPAPI_E_UNKNOWN_EXCEPTION() {
-        return (int)-2146500039L;
-    }
-    public static int SPAPI_E_PNP_REGISTRY_ERROR() {
-        return (int)-2146500038L;
-    }
-    public static int SPAPI_E_REMOTE_REQUEST_UNSUPPORTED() {
-        return (int)-2146500037L;
-    }
-    public static int SPAPI_E_NOT_AN_INSTALLED_OEM_INF() {
-        return (int)-2146500036L;
-    }
-    public static int SPAPI_E_INF_IN_USE_BY_DEVICES() {
-        return (int)-2146500035L;
-    }
-    public static int SPAPI_E_DI_FUNCTION_OBSOLETE() {
-        return (int)-2146500034L;
-    }
-    public static int SPAPI_E_NO_AUTHENTICODE_CATALOG() {
-        return (int)-2146500033L;
-    }
-    public static int SPAPI_E_AUTHENTICODE_DISALLOWED() {
-        return (int)-2146500032L;
-    }
-    public static int SPAPI_E_AUTHENTICODE_TRUSTED_PUBLISHER() {
-        return (int)-2146500031L;
-    }
-    public static int SPAPI_E_AUTHENTICODE_TRUST_NOT_ESTABLISHED() {
-        return (int)-2146500030L;
-    }
-    public static int SPAPI_E_AUTHENTICODE_PUBLISHER_NOT_TRUSTED() {
-        return (int)-2146500029L;
-    }
-    public static int SPAPI_E_SIGNATURE_OSATTRIBUTE_MISMATCH() {
-        return (int)-2146500028L;
-    }
-    public static int SPAPI_E_ONLY_VALIDATE_VIA_AUTHENTICODE() {
-        return (int)-2146500027L;
-    }
-    public static int SPAPI_E_DEVICE_INSTALLER_NOT_READY() {
-        return (int)-2146500026L;
-    }
-    public static int SPAPI_E_DRIVER_STORE_ADD_FAILED() {
-        return (int)-2146500025L;
-    }
-    public static int SPAPI_E_DEVICE_INSTALL_BLOCKED() {
-        return (int)-2146500024L;
-    }
-    public static int SPAPI_E_DRIVER_INSTALL_BLOCKED() {
-        return (int)-2146500023L;
-    }
-    public static int SPAPI_E_WRONG_INF_TYPE() {
-        return (int)-2146500022L;
-    }
-    public static int SPAPI_E_FILE_HASH_NOT_IN_CATALOG() {
-        return (int)-2146500021L;
-    }
-    public static int SPAPI_E_DRIVER_STORE_DELETE_FAILED() {
-        return (int)-2146500020L;
-    }
-    public static int SPAPI_E_UNRECOVERABLE_STACK_OVERFLOW() {
-        return (int)-2146499840L;
-    }
-    public static int SPAPI_E_ERROR_NOT_INSTALLED() {
-        return (int)-2146496512L;
-    }
-    public static int SCARD_S_SUCCESS() {
+    public static int DS_S_SUCCESS() {
         return (int)0L;
     }
-    public static int SCARD_F_INTERNAL_ERROR() {
-        return (int)-2146435071L;
+    public static int ERROR_DS_NOT_INSTALLED() {
+        return (int)8200L;
     }
-    public static int SCARD_E_CANCELLED() {
-        return (int)-2146435070L;
+    public static int ERROR_DS_MEMBERSHIP_EVALUATED_LOCALLY() {
+        return (int)8201L;
     }
-    public static int SCARD_E_INVALID_HANDLE() {
-        return (int)-2146435069L;
+    public static int ERROR_DS_NO_ATTRIBUTE_OR_VALUE() {
+        return (int)8202L;
     }
-    public static int SCARD_E_INVALID_PARAMETER() {
-        return (int)-2146435068L;
+    public static int ERROR_DS_INVALID_ATTRIBUTE_SYNTAX() {
+        return (int)8203L;
     }
-    public static int SCARD_E_INVALID_TARGET() {
-        return (int)-2146435067L;
+    public static int ERROR_DS_ATTRIBUTE_TYPE_UNDEFINED() {
+        return (int)8204L;
     }
-    public static int SCARD_E_NO_MEMORY() {
-        return (int)-2146435066L;
+    public static int ERROR_DS_ATTRIBUTE_OR_VALUE_EXISTS() {
+        return (int)8205L;
     }
-    public static int SCARD_F_WAITED_TOO_LONG() {
-        return (int)-2146435065L;
+    public static int ERROR_DS_BUSY() {
+        return (int)8206L;
     }
-    public static int SCARD_E_INSUFFICIENT_BUFFER() {
-        return (int)-2146435064L;
+    public static int ERROR_DS_UNAVAILABLE() {
+        return (int)8207L;
     }
-    public static int SCARD_E_UNKNOWN_READER() {
-        return (int)-2146435063L;
+    public static int ERROR_DS_NO_RIDS_ALLOCATED() {
+        return (int)8208L;
     }
-    public static int SCARD_E_TIMEOUT() {
-        return (int)-2146435062L;
+    public static int ERROR_DS_NO_MORE_RIDS() {
+        return (int)8209L;
     }
-    public static int SCARD_E_SHARING_VIOLATION() {
-        return (int)-2146435061L;
+    public static int ERROR_DS_INCORRECT_ROLE_OWNER() {
+        return (int)8210L;
     }
-    public static int SCARD_E_NO_SMARTCARD() {
-        return (int)-2146435060L;
+    public static int ERROR_DS_RIDMGR_INIT_ERROR() {
+        return (int)8211L;
     }
-    public static int SCARD_E_UNKNOWN_CARD() {
-        return (int)-2146435059L;
+    public static int ERROR_DS_OBJ_CLASS_VIOLATION() {
+        return (int)8212L;
     }
-    public static int SCARD_E_CANT_DISPOSE() {
-        return (int)-2146435058L;
+    public static int ERROR_DS_CANT_ON_NON_LEAF() {
+        return (int)8213L;
     }
-    public static int SCARD_E_PROTO_MISMATCH() {
-        return (int)-2146435057L;
+    public static int ERROR_DS_CANT_ON_RDN() {
+        return (int)8214L;
     }
-    public static int SCARD_E_NOT_READY() {
-        return (int)-2146435056L;
+    public static int ERROR_DS_CANT_MOD_OBJ_CLASS() {
+        return (int)8215L;
     }
-    public static int SCARD_E_INVALID_VALUE() {
-        return (int)-2146435055L;
+    public static int ERROR_DS_CROSS_DOM_MOVE_ERROR() {
+        return (int)8216L;
     }
-    public static int SCARD_E_SYSTEM_CANCELLED() {
-        return (int)-2146435054L;
+    public static int ERROR_DS_GC_NOT_AVAILABLE() {
+        return (int)8217L;
     }
-    public static int SCARD_F_COMM_ERROR() {
-        return (int)-2146435053L;
+    public static int ERROR_SHARED_POLICY() {
+        return (int)8218L;
     }
-    public static int SCARD_F_UNKNOWN_ERROR() {
-        return (int)-2146435052L;
+    public static int ERROR_POLICY_OBJECT_NOT_FOUND() {
+        return (int)8219L;
     }
-    public static int SCARD_E_INVALID_ATR() {
-        return (int)-2146435051L;
+    public static int ERROR_POLICY_ONLY_IN_DS() {
+        return (int)8220L;
     }
-    public static int SCARD_E_NOT_TRANSACTED() {
-        return (int)-2146435050L;
+    public static int ERROR_PROMOTION_ACTIVE() {
+        return (int)8221L;
     }
-    public static int SCARD_E_READER_UNAVAILABLE() {
-        return (int)-2146435049L;
+    public static int ERROR_NO_PROMOTION_ACTIVE() {
+        return (int)8222L;
     }
-    public static int SCARD_P_SHUTDOWN() {
-        return (int)-2146435048L;
+    public static int ERROR_DS_OPERATIONS_ERROR() {
+        return (int)8224L;
     }
-    public static int SCARD_E_PCI_TOO_SMALL() {
-        return (int)-2146435047L;
+    public static int ERROR_DS_PROTOCOL_ERROR() {
+        return (int)8225L;
     }
-    public static int SCARD_E_READER_UNSUPPORTED() {
-        return (int)-2146435046L;
+    public static int ERROR_DS_TIMELIMIT_EXCEEDED() {
+        return (int)8226L;
     }
-    public static int SCARD_E_DUPLICATE_READER() {
-        return (int)-2146435045L;
+    public static int ERROR_DS_SIZELIMIT_EXCEEDED() {
+        return (int)8227L;
     }
-    public static int SCARD_E_CARD_UNSUPPORTED() {
-        return (int)-2146435044L;
+    public static int ERROR_DS_ADMIN_LIMIT_EXCEEDED() {
+        return (int)8228L;
     }
-    public static int SCARD_E_NO_SERVICE() {
-        return (int)-2146435043L;
+    public static int ERROR_DS_COMPARE_FALSE() {
+        return (int)8229L;
     }
-    public static int SCARD_E_SERVICE_STOPPED() {
-        return (int)-2146435042L;
+    public static int ERROR_DS_COMPARE_TRUE() {
+        return (int)8230L;
     }
-    public static int SCARD_E_UNEXPECTED() {
-        return (int)-2146435041L;
+    public static int ERROR_DS_AUTH_METHOD_NOT_SUPPORTED() {
+        return (int)8231L;
     }
-    public static int SCARD_E_ICC_INSTALLATION() {
-        return (int)-2146435040L;
+    public static int ERROR_DS_STRONG_AUTH_REQUIRED() {
+        return (int)8232L;
     }
-    public static int SCARD_E_ICC_CREATEORDER() {
-        return (int)-2146435039L;
+    public static int ERROR_DS_INAPPROPRIATE_AUTH() {
+        return (int)8233L;
     }
-    public static int SCARD_E_UNSUPPORTED_FEATURE() {
-        return (int)-2146435038L;
+    public static int ERROR_DS_AUTH_UNKNOWN() {
+        return (int)8234L;
     }
-    public static int SCARD_E_DIR_NOT_FOUND() {
-        return (int)-2146435037L;
+    public static int ERROR_DS_REFERRAL() {
+        return (int)8235L;
     }
-    public static int SCARD_E_FILE_NOT_FOUND() {
-        return (int)-2146435036L;
+    public static int ERROR_DS_UNAVAILABLE_CRIT_EXTENSION() {
+        return (int)8236L;
     }
-    public static int SCARD_E_NO_DIR() {
-        return (int)-2146435035L;
+    public static int ERROR_DS_CONFIDENTIALITY_REQUIRED() {
+        return (int)8237L;
     }
-    public static int SCARD_E_NO_FILE() {
-        return (int)-2146435034L;
+    public static int ERROR_DS_INAPPROPRIATE_MATCHING() {
+        return (int)8238L;
     }
-    public static int SCARD_E_NO_ACCESS() {
-        return (int)-2146435033L;
+    public static int ERROR_DS_CONSTRAINT_VIOLATION() {
+        return (int)8239L;
     }
-    public static int SCARD_E_WRITE_TOO_MANY() {
-        return (int)-2146435032L;
+    public static int ERROR_DS_NO_SUCH_OBJECT() {
+        return (int)8240L;
     }
-    public static int SCARD_E_BAD_SEEK() {
-        return (int)-2146435031L;
+    public static int ERROR_DS_ALIAS_PROBLEM() {
+        return (int)8241L;
     }
-    public static int SCARD_E_INVALID_CHV() {
-        return (int)-2146435030L;
+    public static int ERROR_DS_INVALID_DN_SYNTAX() {
+        return (int)8242L;
     }
-    public static int SCARD_E_UNKNOWN_RES_MNG() {
-        return (int)-2146435029L;
+    public static int ERROR_DS_IS_LEAF() {
+        return (int)8243L;
     }
-    public static int SCARD_E_NO_SUCH_CERTIFICATE() {
-        return (int)-2146435028L;
+    public static int ERROR_DS_ALIAS_DEREF_PROBLEM() {
+        return (int)8244L;
     }
-    public static int SCARD_E_CERTIFICATE_UNAVAILABLE() {
-        return (int)-2146435027L;
+    public static int ERROR_DS_UNWILLING_TO_PERFORM() {
+        return (int)8245L;
     }
-    public static int SCARD_E_NO_READERS_AVAILABLE() {
-        return (int)-2146435026L;
+    public static int ERROR_DS_LOOP_DETECT() {
+        return (int)8246L;
     }
-    public static int SCARD_E_COMM_DATA_LOST() {
-        return (int)-2146435025L;
+    public static int ERROR_DS_NAMING_VIOLATION() {
+        return (int)8247L;
     }
-    public static int SCARD_E_NO_KEY_CONTAINER() {
-        return (int)-2146435024L;
+    public static int ERROR_DS_OBJECT_RESULTS_TOO_LARGE() {
+        return (int)8248L;
     }
-    public static int SCARD_E_SERVER_TOO_BUSY() {
-        return (int)-2146435023L;
+    public static int ERROR_DS_AFFECTS_MULTIPLE_DSAS() {
+        return (int)8249L;
     }
-    public static int SCARD_E_PIN_CACHE_EXPIRED() {
-        return (int)-2146435022L;
+    public static int ERROR_DS_SERVER_DOWN() {
+        return (int)8250L;
     }
-    public static int SCARD_E_NO_PIN_CACHE() {
-        return (int)-2146435021L;
+    public static int ERROR_DS_LOCAL_ERROR() {
+        return (int)8251L;
+    }
+    public static int ERROR_DS_ENCODING_ERROR() {
+        return (int)8252L;
+    }
+    public static int ERROR_DS_DECODING_ERROR() {
+        return (int)8253L;
+    }
+    public static int ERROR_DS_FILTER_UNKNOWN() {
+        return (int)8254L;
+    }
+    public static int ERROR_DS_PARAM_ERROR() {
+        return (int)8255L;
+    }
+    public static int ERROR_DS_NOT_SUPPORTED() {
+        return (int)8256L;
+    }
+    public static int ERROR_DS_NO_RESULTS_RETURNED() {
+        return (int)8257L;
+    }
+    public static int ERROR_DS_CONTROL_NOT_FOUND() {
+        return (int)8258L;
+    }
+    public static int ERROR_DS_CLIENT_LOOP() {
+        return (int)8259L;
+    }
+    public static int ERROR_DS_REFERRAL_LIMIT_EXCEEDED() {
+        return (int)8260L;
+    }
+    public static int ERROR_DS_SORT_CONTROL_MISSING() {
+        return (int)8261L;
+    }
+    public static int ERROR_DS_OFFSET_RANGE_ERROR() {
+        return (int)8262L;
+    }
+    public static int ERROR_DS_RIDMGR_DISABLED() {
+        return (int)8263L;
+    }
+    public static int ERROR_DS_ROOT_MUST_BE_NC() {
+        return (int)8301L;
+    }
+    public static int ERROR_DS_ADD_REPLICA_INHIBITED() {
+        return (int)8302L;
+    }
+    public static int ERROR_DS_ATT_NOT_DEF_IN_SCHEMA() {
+        return (int)8303L;
+    }
+    public static int ERROR_DS_MAX_OBJ_SIZE_EXCEEDED() {
+        return (int)8304L;
+    }
+    public static int ERROR_DS_OBJ_STRING_NAME_EXISTS() {
+        return (int)8305L;
+    }
+    public static int ERROR_DS_NO_RDN_DEFINED_IN_SCHEMA() {
+        return (int)8306L;
+    }
+    public static int ERROR_DS_RDN_DOESNT_MATCH_SCHEMA() {
+        return (int)8307L;
+    }
+    public static int ERROR_DS_NO_REQUESTED_ATTS_FOUND() {
+        return (int)8308L;
+    }
+    public static int ERROR_DS_USER_BUFFER_TO_SMALL() {
+        return (int)8309L;
+    }
+    public static int ERROR_DS_ATT_IS_NOT_ON_OBJ() {
+        return (int)8310L;
+    }
+    public static int ERROR_DS_ILLEGAL_MOD_OPERATION() {
+        return (int)8311L;
+    }
+    public static int ERROR_DS_OBJ_TOO_LARGE() {
+        return (int)8312L;
+    }
+    public static int ERROR_DS_BAD_INSTANCE_TYPE() {
+        return (int)8313L;
+    }
+    public static int ERROR_DS_MASTERDSA_REQUIRED() {
+        return (int)8314L;
+    }
+    public static int ERROR_DS_OBJECT_CLASS_REQUIRED() {
+        return (int)8315L;
+    }
+    public static int ERROR_DS_MISSING_REQUIRED_ATT() {
+        return (int)8316L;
+    }
+    public static int ERROR_DS_ATT_NOT_DEF_FOR_CLASS() {
+        return (int)8317L;
+    }
+    public static int ERROR_DS_ATT_ALREADY_EXISTS() {
+        return (int)8318L;
+    }
+    public static int ERROR_DS_CANT_ADD_ATT_VALUES() {
+        return (int)8320L;
+    }
+    public static int ERROR_DS_SINGLE_VALUE_CONSTRAINT() {
+        return (int)8321L;
+    }
+    public static int ERROR_DS_RANGE_CONSTRAINT() {
+        return (int)8322L;
+    }
+    public static int ERROR_DS_ATT_VAL_ALREADY_EXISTS() {
+        return (int)8323L;
+    }
+    public static int ERROR_DS_CANT_REM_MISSING_ATT() {
+        return (int)8324L;
+    }
+    public static int ERROR_DS_CANT_REM_MISSING_ATT_VAL() {
+        return (int)8325L;
+    }
+    public static int ERROR_DS_ROOT_CANT_BE_SUBREF() {
+        return (int)8326L;
+    }
+    public static int ERROR_DS_NO_CHAINING() {
+        return (int)8327L;
+    }
+    public static int ERROR_DS_NO_CHAINED_EVAL() {
+        return (int)8328L;
+    }
+    public static int ERROR_DS_NO_PARENT_OBJECT() {
+        return (int)8329L;
+    }
+    public static int ERROR_DS_PARENT_IS_AN_ALIAS() {
+        return (int)8330L;
+    }
+    public static int ERROR_DS_CANT_MIX_MASTER_AND_REPS() {
+        return (int)8331L;
+    }
+    public static int ERROR_DS_CHILDREN_EXIST() {
+        return (int)8332L;
+    }
+    public static int ERROR_DS_OBJ_NOT_FOUND() {
+        return (int)8333L;
+    }
+    public static int ERROR_DS_ALIASED_OBJ_MISSING() {
+        return (int)8334L;
+    }
+    public static int ERROR_DS_BAD_NAME_SYNTAX() {
+        return (int)8335L;
+    }
+    public static int ERROR_DS_ALIAS_POINTS_TO_ALIAS() {
+        return (int)8336L;
+    }
+    public static int ERROR_DS_CANT_DEREF_ALIAS() {
+        return (int)8337L;
+    }
+    public static int ERROR_DS_OUT_OF_SCOPE() {
+        return (int)8338L;
+    }
+    public static int ERROR_DS_OBJECT_BEING_REMOVED() {
+        return (int)8339L;
+    }
+    public static int ERROR_DS_CANT_DELETE_DSA_OBJ() {
+        return (int)8340L;
+    }
+    public static int ERROR_DS_GENERIC_ERROR() {
+        return (int)8341L;
+    }
+    public static int ERROR_DS_DSA_MUST_BE_INT_MASTER() {
+        return (int)8342L;
+    }
+    public static int ERROR_DS_CLASS_NOT_DSA() {
+        return (int)8343L;
+    }
+    public static int ERROR_DS_INSUFF_ACCESS_RIGHTS() {
+        return (int)8344L;
+    }
+    public static int ERROR_DS_ILLEGAL_SUPERIOR() {
+        return (int)8345L;
+    }
+    public static int ERROR_DS_ATTRIBUTE_OWNED_BY_SAM() {
+        return (int)8346L;
+    }
+    public static int ERROR_DS_NAME_TOO_MANY_PARTS() {
+        return (int)8347L;
+    }
+    public static int ERROR_DS_NAME_TOO_LONG() {
+        return (int)8348L;
+    }
+    public static int ERROR_DS_NAME_VALUE_TOO_LONG() {
+        return (int)8349L;
+    }
+    public static int ERROR_DS_NAME_UNPARSEABLE() {
+        return (int)8350L;
+    }
+    public static int ERROR_DS_NAME_TYPE_UNKNOWN() {
+        return (int)8351L;
+    }
+    public static int ERROR_DS_NOT_AN_OBJECT() {
+        return (int)8352L;
+    }
+    public static int ERROR_DS_SEC_DESC_TOO_SHORT() {
+        return (int)8353L;
+    }
+    public static int ERROR_DS_SEC_DESC_INVALID() {
+        return (int)8354L;
+    }
+    public static int ERROR_DS_NO_DELETED_NAME() {
+        return (int)8355L;
+    }
+    public static int ERROR_DS_SUBREF_MUST_HAVE_PARENT() {
+        return (int)8356L;
+    }
+    public static int ERROR_DS_NCNAME_MUST_BE_NC() {
+        return (int)8357L;
+    }
+    public static int ERROR_DS_CANT_ADD_SYSTEM_ONLY() {
+        return (int)8358L;
+    }
+    public static int ERROR_DS_CLASS_MUST_BE_CONCRETE() {
+        return (int)8359L;
+    }
+    public static int ERROR_DS_INVALID_DMD() {
+        return (int)8360L;
+    }
+    public static int ERROR_DS_OBJ_GUID_EXISTS() {
+        return (int)8361L;
+    }
+    public static int ERROR_DS_NOT_ON_BACKLINK() {
+        return (int)8362L;
+    }
+    public static int ERROR_DS_NO_CROSSREF_FOR_NC() {
+        return (int)8363L;
+    }
+    public static int ERROR_DS_SHUTTING_DOWN() {
+        return (int)8364L;
+    }
+    public static int ERROR_DS_UNKNOWN_OPERATION() {
+        return (int)8365L;
+    }
+    public static int ERROR_DS_INVALID_ROLE_OWNER() {
+        return (int)8366L;
+    }
+    public static int ERROR_DS_COULDNT_CONTACT_FSMO() {
+        return (int)8367L;
+    }
+    public static int ERROR_DS_CROSS_NC_DN_RENAME() {
+        return (int)8368L;
+    }
+    public static int ERROR_DS_CANT_MOD_SYSTEM_ONLY() {
+        return (int)8369L;
+    }
+    public static int ERROR_DS_REPLICATOR_ONLY() {
+        return (int)8370L;
+    }
+    public static int ERROR_DS_OBJ_CLASS_NOT_DEFINED() {
+        return (int)8371L;
+    }
+    public static int ERROR_DS_OBJ_CLASS_NOT_SUBCLASS() {
+        return (int)8372L;
+    }
+    public static int ERROR_DS_NAME_REFERENCE_INVALID() {
+        return (int)8373L;
+    }
+    public static int ERROR_DS_CROSS_REF_EXISTS() {
+        return (int)8374L;
+    }
+    public static int ERROR_DS_CANT_DEL_MASTER_CROSSREF() {
+        return (int)8375L;
+    }
+    public static int ERROR_DS_SUBTREE_NOTIFY_NOT_NC_HEAD() {
+        return (int)8376L;
+    }
+    public static int ERROR_DS_NOTIFY_FILTER_TOO_COMPLEX() {
+        return (int)8377L;
+    }
+    public static int ERROR_DS_DUP_RDN() {
+        return (int)8378L;
+    }
+    public static int ERROR_DS_DUP_OID() {
+        return (int)8379L;
+    }
+    public static int ERROR_DS_DUP_MAPI_ID() {
+        return (int)8380L;
+    }
+    public static int ERROR_DS_DUP_SCHEMA_ID_GUID() {
+        return (int)8381L;
+    }
+    public static int ERROR_DS_DUP_LDAP_DISPLAY_NAME() {
+        return (int)8382L;
+    }
+    public static int ERROR_DS_SEMANTIC_ATT_TEST() {
+        return (int)8383L;
+    }
+    public static int ERROR_DS_SYNTAX_MISMATCH() {
+        return (int)8384L;
+    }
+    public static int ERROR_DS_EXISTS_IN_MUST_HAVE() {
+        return (int)8385L;
+    }
+    public static int ERROR_DS_EXISTS_IN_MAY_HAVE() {
+        return (int)8386L;
+    }
+    public static int ERROR_DS_NONEXISTENT_MAY_HAVE() {
+        return (int)8387L;
+    }
+    public static int ERROR_DS_NONEXISTENT_MUST_HAVE() {
+        return (int)8388L;
+    }
+    public static int ERROR_DS_AUX_CLS_TEST_FAIL() {
+        return (int)8389L;
+    }
+    public static int ERROR_DS_NONEXISTENT_POSS_SUP() {
+        return (int)8390L;
+    }
+    public static int ERROR_DS_SUB_CLS_TEST_FAIL() {
+        return (int)8391L;
+    }
+    public static int ERROR_DS_BAD_RDN_ATT_ID_SYNTAX() {
+        return (int)8392L;
+    }
+    public static int ERROR_DS_EXISTS_IN_AUX_CLS() {
+        return (int)8393L;
+    }
+    public static int ERROR_DS_EXISTS_IN_SUB_CLS() {
+        return (int)8394L;
+    }
+    public static int ERROR_DS_EXISTS_IN_POSS_SUP() {
+        return (int)8395L;
+    }
+    public static int ERROR_DS_RECALCSCHEMA_FAILED() {
+        return (int)8396L;
+    }
+    public static int ERROR_DS_TREE_DELETE_NOT_FINISHED() {
+        return (int)8397L;
+    }
+    public static int ERROR_DS_CANT_DELETE() {
+        return (int)8398L;
+    }
+    public static int ERROR_DS_ATT_SCHEMA_REQ_ID() {
+        return (int)8399L;
+    }
+    public static int ERROR_DS_BAD_ATT_SCHEMA_SYNTAX() {
+        return (int)8400L;
+    }
+    public static int ERROR_DS_CANT_CACHE_ATT() {
+        return (int)8401L;
+    }
+    public static int ERROR_DS_CANT_CACHE_CLASS() {
+        return (int)8402L;
+    }
+    public static int ERROR_DS_CANT_REMOVE_ATT_CACHE() {
+        return (int)8403L;
+    }
+    public static int ERROR_DS_CANT_REMOVE_CLASS_CACHE() {
+        return (int)8404L;
+    }
+    public static int ERROR_DS_CANT_RETRIEVE_DN() {
+        return (int)8405L;
+    }
+    public static int ERROR_DS_MISSING_SUPREF() {
+        return (int)8406L;
+    }
+    public static int ERROR_DS_CANT_RETRIEVE_INSTANCE() {
+        return (int)8407L;
+    }
+    public static int ERROR_DS_CODE_INCONSISTENCY() {
+        return (int)8408L;
+    }
+    public static int ERROR_DS_DATABASE_ERROR() {
+        return (int)8409L;
+    }
+    public static int ERROR_DS_GOVERNSID_MISSING() {
+        return (int)8410L;
+    }
+    public static int ERROR_DS_MISSING_EXPECTED_ATT() {
+        return (int)8411L;
+    }
+    public static int ERROR_DS_NCNAME_MISSING_CR_REF() {
+        return (int)8412L;
+    }
+    public static int ERROR_DS_SECURITY_CHECKING_ERROR() {
+        return (int)8413L;
+    }
+    public static int ERROR_DS_SCHEMA_NOT_LOADED() {
+        return (int)8414L;
+    }
+    public static int ERROR_DS_SCHEMA_ALLOC_FAILED() {
+        return (int)8415L;
+    }
+    public static int ERROR_DS_ATT_SCHEMA_REQ_SYNTAX() {
+        return (int)8416L;
+    }
+    public static int ERROR_DS_GCVERIFY_ERROR() {
+        return (int)8417L;
+    }
+    public static int ERROR_DS_DRA_SCHEMA_MISMATCH() {
+        return (int)8418L;
+    }
+    public static int ERROR_DS_CANT_FIND_DSA_OBJ() {
+        return (int)8419L;
+    }
+    public static int ERROR_DS_CANT_FIND_EXPECTED_NC() {
+        return (int)8420L;
+    }
+    public static int ERROR_DS_CANT_FIND_NC_IN_CACHE() {
+        return (int)8421L;
+    }
+    public static int ERROR_DS_CANT_RETRIEVE_CHILD() {
+        return (int)8422L;
+    }
+    public static int ERROR_DS_SECURITY_ILLEGAL_MODIFY() {
+        return (int)8423L;
+    }
+    public static int ERROR_DS_CANT_REPLACE_HIDDEN_REC() {
+        return (int)8424L;
+    }
+    public static int ERROR_DS_BAD_HIERARCHY_FILE() {
+        return (int)8425L;
+    }
+    public static int ERROR_DS_BUILD_HIERARCHY_TABLE_FAILED() {
+        return (int)8426L;
+    }
+    public static int ERROR_DS_CONFIG_PARAM_MISSING() {
+        return (int)8427L;
+    }
+    public static int ERROR_DS_COUNTING_AB_INDICES_FAILED() {
+        return (int)8428L;
+    }
+    public static int ERROR_DS_HIERARCHY_TABLE_MALLOC_FAILED() {
+        return (int)8429L;
+    }
+    public static int ERROR_DS_INTERNAL_FAILURE() {
+        return (int)8430L;
+    }
+    public static int ERROR_DS_UNKNOWN_ERROR() {
+        return (int)8431L;
+    }
+    public static int ERROR_DS_ROOT_REQUIRES_CLASS_TOP() {
+        return (int)8432L;
+    }
+    public static int ERROR_DS_REFUSING_FSMO_ROLES() {
+        return (int)8433L;
+    }
+    public static int ERROR_DS_MISSING_FSMO_SETTINGS() {
+        return (int)8434L;
+    }
+    public static int ERROR_DS_UNABLE_TO_SURRENDER_ROLES() {
+        return (int)8435L;
+    }
+    public static int ERROR_DS_DRA_GENERIC() {
+        return (int)8436L;
+    }
+    public static int ERROR_DS_DRA_INVALID_PARAMETER() {
+        return (int)8437L;
+    }
+    public static int ERROR_DS_DRA_BUSY() {
+        return (int)8438L;
+    }
+    public static int ERROR_DS_DRA_BAD_DN() {
+        return (int)8439L;
+    }
+    public static int ERROR_DS_DRA_BAD_NC() {
+        return (int)8440L;
+    }
+    public static int ERROR_DS_DRA_DN_EXISTS() {
+        return (int)8441L;
+    }
+    public static int ERROR_DS_DRA_INTERNAL_ERROR() {
+        return (int)8442L;
+    }
+    public static int ERROR_DS_DRA_INCONSISTENT_DIT() {
+        return (int)8443L;
+    }
+    public static int ERROR_DS_DRA_CONNECTION_FAILED() {
+        return (int)8444L;
+    }
+    public static int ERROR_DS_DRA_BAD_INSTANCE_TYPE() {
+        return (int)8445L;
+    }
+    public static int ERROR_DS_DRA_OUT_OF_MEM() {
+        return (int)8446L;
+    }
+    public static int ERROR_DS_DRA_MAIL_PROBLEM() {
+        return (int)8447L;
+    }
+    public static int ERROR_DS_DRA_REF_ALREADY_EXISTS() {
+        return (int)8448L;
+    }
+    public static int ERROR_DS_DRA_REF_NOT_FOUND() {
+        return (int)8449L;
+    }
+    public static int ERROR_DS_DRA_OBJ_IS_REP_SOURCE() {
+        return (int)8450L;
+    }
+    public static int ERROR_DS_DRA_DB_ERROR() {
+        return (int)8451L;
+    }
+    public static int ERROR_DS_DRA_NO_REPLICA() {
+        return (int)8452L;
+    }
+    public static int ERROR_DS_DRA_ACCESS_DENIED() {
+        return (int)8453L;
+    }
+    public static int ERROR_DS_DRA_NOT_SUPPORTED() {
+        return (int)8454L;
+    }
+    public static int ERROR_DS_DRA_RPC_CANCELLED() {
+        return (int)8455L;
+    }
+    public static int ERROR_DS_DRA_SOURCE_DISABLED() {
+        return (int)8456L;
+    }
+    public static int ERROR_DS_DRA_SINK_DISABLED() {
+        return (int)8457L;
+    }
+    public static int ERROR_DS_DRA_NAME_COLLISION() {
+        return (int)8458L;
+    }
+    public static int ERROR_DS_DRA_SOURCE_REINSTALLED() {
+        return (int)8459L;
+    }
+    public static int ERROR_DS_DRA_MISSING_PARENT() {
+        return (int)8460L;
+    }
+    public static int ERROR_DS_DRA_PREEMPTED() {
+        return (int)8461L;
+    }
+    public static int ERROR_DS_DRA_ABANDON_SYNC() {
+        return (int)8462L;
+    }
+    public static int ERROR_DS_DRA_SHUTDOWN() {
+        return (int)8463L;
+    }
+    public static int ERROR_DS_DRA_INCOMPATIBLE_PARTIAL_SET() {
+        return (int)8464L;
+    }
+    public static int ERROR_DS_DRA_SOURCE_IS_PARTIAL_REPLICA() {
+        return (int)8465L;
+    }
+    public static int ERROR_DS_DRA_EXTN_CONNECTION_FAILED() {
+        return (int)8466L;
+    }
+    public static int ERROR_DS_INSTALL_SCHEMA_MISMATCH() {
+        return (int)8467L;
+    }
+    public static int ERROR_DS_DUP_LINK_ID() {
+        return (int)8468L;
+    }
+    public static int ERROR_DS_NAME_ERROR_RESOLVING() {
+        return (int)8469L;
+    }
+    public static int ERROR_DS_NAME_ERROR_NOT_FOUND() {
+        return (int)8470L;
+    }
+    public static int ERROR_DS_NAME_ERROR_NOT_UNIQUE() {
+        return (int)8471L;
+    }
+    public static int ERROR_DS_NAME_ERROR_NO_MAPPING() {
+        return (int)8472L;
+    }
+    public static int ERROR_DS_NAME_ERROR_DOMAIN_ONLY() {
+        return (int)8473L;
+    }
+    public static int ERROR_DS_NAME_ERROR_NO_SYNTACTICAL_MAPPING() {
+        return (int)8474L;
+    }
+    public static int ERROR_DS_CONSTRUCTED_ATT_MOD() {
+        return (int)8475L;
+    }
+    public static int ERROR_DS_WRONG_OM_OBJ_CLASS() {
+        return (int)8476L;
+    }
+    public static int ERROR_DS_DRA_REPL_PENDING() {
+        return (int)8477L;
+    }
+    public static int ERROR_DS_DS_REQUIRED() {
+        return (int)8478L;
+    }
+    public static int ERROR_DS_INVALID_LDAP_DISPLAY_NAME() {
+        return (int)8479L;
+    }
+    public static int ERROR_DS_NON_BASE_SEARCH() {
+        return (int)8480L;
+    }
+    public static int ERROR_DS_CANT_RETRIEVE_ATTS() {
+        return (int)8481L;
+    }
+    public static int ERROR_DS_BACKLINK_WITHOUT_LINK() {
+        return (int)8482L;
+    }
+    public static int ERROR_DS_EPOCH_MISMATCH() {
+        return (int)8483L;
+    }
+    public static int ERROR_DS_SRC_NAME_MISMATCH() {
+        return (int)8484L;
+    }
+    public static int ERROR_DS_SRC_AND_DST_NC_IDENTICAL() {
+        return (int)8485L;
+    }
+    public static int ERROR_DS_DST_NC_MISMATCH() {
+        return (int)8486L;
+    }
+    public static int ERROR_DS_NOT_AUTHORITIVE_FOR_DST_NC() {
+        return (int)8487L;
+    }
+    public static int ERROR_DS_SRC_GUID_MISMATCH() {
+        return (int)8488L;
+    }
+    public static int ERROR_DS_CANT_MOVE_DELETED_OBJECT() {
+        return (int)8489L;
+    }
+    public static int ERROR_DS_PDC_OPERATION_IN_PROGRESS() {
+        return (int)8490L;
+    }
+    public static int ERROR_DS_CROSS_DOMAIN_CLEANUP_REQD() {
+        return (int)8491L;
+    }
+    public static int ERROR_DS_ILLEGAL_XDOM_MOVE_OPERATION() {
+        return (int)8492L;
+    }
+    public static int ERROR_DS_CANT_WITH_ACCT_GROUP_MEMBERSHPS() {
+        return (int)8493L;
+    }
+    public static int ERROR_DS_NC_MUST_HAVE_NC_PARENT() {
+        return (int)8494L;
+    }
+    public static int ERROR_DS_CR_IMPOSSIBLE_TO_VALIDATE() {
+        return (int)8495L;
+    }
+    public static int ERROR_DS_DST_DOMAIN_NOT_NATIVE() {
+        return (int)8496L;
+    }
+    public static int ERROR_DS_MISSING_INFRASTRUCTURE_CONTAINER() {
+        return (int)8497L;
+    }
+    public static int ERROR_DS_CANT_MOVE_ACCOUNT_GROUP() {
+        return (int)8498L;
+    }
+    public static int ERROR_DS_CANT_MOVE_RESOURCE_GROUP() {
+        return (int)8499L;
+    }
+    public static int ERROR_DS_INVALID_SEARCH_FLAG() {
+        return (int)8500L;
+    }
+    public static int ERROR_DS_NO_TREE_DELETE_ABOVE_NC() {
+        return (int)8501L;
+    }
+    public static int ERROR_DS_COULDNT_LOCK_TREE_FOR_DELETE() {
+        return (int)8502L;
+    }
+    public static int ERROR_DS_COULDNT_IDENTIFY_OBJECTS_FOR_TREE_DELETE() {
+        return (int)8503L;
+    }
+    public static int ERROR_DS_SAM_INIT_FAILURE() {
+        return (int)8504L;
+    }
+    public static int ERROR_DS_SENSITIVE_GROUP_VIOLATION() {
+        return (int)8505L;
+    }
+    public static int ERROR_DS_CANT_MOD_PRIMARYGROUPID() {
+        return (int)8506L;
+    }
+    public static int ERROR_DS_ILLEGAL_BASE_SCHEMA_MOD() {
+        return (int)8507L;
+    }
+    public static int ERROR_DS_NONSAFE_SCHEMA_CHANGE() {
+        return (int)8508L;
+    }
+    public static int ERROR_DS_SCHEMA_UPDATE_DISALLOWED() {
+        return (int)8509L;
+    }
+    public static int ERROR_DS_CANT_CREATE_UNDER_SCHEMA() {
+        return (int)8510L;
+    }
+    public static int ERROR_DS_INSTALL_NO_SRC_SCH_VERSION() {
+        return (int)8511L;
+    }
+    public static int ERROR_DS_INSTALL_NO_SCH_VERSION_IN_INIFILE() {
+        return (int)8512L;
+    }
+    public static int ERROR_DS_INVALID_GROUP_TYPE() {
+        return (int)8513L;
+    }
+    public static int ERROR_DS_NO_NEST_GLOBALGROUP_IN_MIXEDDOMAIN() {
+        return (int)8514L;
+    }
+    public static int ERROR_DS_NO_NEST_LOCALGROUP_IN_MIXEDDOMAIN() {
+        return (int)8515L;
+    }
+    public static int ERROR_DS_GLOBAL_CANT_HAVE_LOCAL_MEMBER() {
+        return (int)8516L;
+    }
+    public static int ERROR_DS_GLOBAL_CANT_HAVE_UNIVERSAL_MEMBER() {
+        return (int)8517L;
+    }
+    public static int ERROR_DS_UNIVERSAL_CANT_HAVE_LOCAL_MEMBER() {
+        return (int)8518L;
+    }
+    public static int ERROR_DS_GLOBAL_CANT_HAVE_CROSSDOMAIN_MEMBER() {
+        return (int)8519L;
+    }
+    public static int ERROR_DS_LOCAL_CANT_HAVE_CROSSDOMAIN_LOCAL_MEMBER() {
+        return (int)8520L;
+    }
+    public static int ERROR_DS_HAVE_PRIMARY_MEMBERS() {
+        return (int)8521L;
+    }
+    public static int ERROR_DS_STRING_SD_CONVERSION_FAILED() {
+        return (int)8522L;
+    }
+    public static int ERROR_DS_NAMING_MASTER_GC() {
+        return (int)8523L;
+    }
+    public static int ERROR_DS_DNS_LOOKUP_FAILURE() {
+        return (int)8524L;
+    }
+    public static int ERROR_DS_COULDNT_UPDATE_SPNS() {
+        return (int)8525L;
+    }
+    public static int ERROR_DS_CANT_RETRIEVE_SD() {
+        return (int)8526L;
+    }
+    public static int ERROR_DS_KEY_NOT_UNIQUE() {
+        return (int)8527L;
+    }
+    public static int ERROR_DS_WRONG_LINKED_ATT_SYNTAX() {
+        return (int)8528L;
+    }
+    public static int ERROR_DS_SAM_NEED_BOOTKEY_PASSWORD() {
+        return (int)8529L;
+    }
+    public static int ERROR_DS_SAM_NEED_BOOTKEY_FLOPPY() {
+        return (int)8530L;
+    }
+    public static int ERROR_DS_CANT_START() {
+        return (int)8531L;
+    }
+    public static int ERROR_DS_INIT_FAILURE() {
+        return (int)8532L;
+    }
+    public static int ERROR_DS_NO_PKT_PRIVACY_ON_CONNECTION() {
+        return (int)8533L;
+    }
+    public static int ERROR_DS_SOURCE_DOMAIN_IN_FOREST() {
+        return (int)8534L;
+    }
+    public static int ERROR_DS_DESTINATION_DOMAIN_NOT_IN_FOREST() {
+        return (int)8535L;
+    }
+    public static int ERROR_DS_DESTINATION_AUDITING_NOT_ENABLED() {
+        return (int)8536L;
+    }
+    public static int ERROR_DS_CANT_FIND_DC_FOR_SRC_DOMAIN() {
+        return (int)8537L;
+    }
+    public static int ERROR_DS_SRC_OBJ_NOT_GROUP_OR_USER() {
+        return (int)8538L;
+    }
+    public static int ERROR_DS_SRC_SID_EXISTS_IN_FOREST() {
+        return (int)8539L;
+    }
+    public static int ERROR_DS_SRC_AND_DST_OBJECT_CLASS_MISMATCH() {
+        return (int)8540L;
+    }
+    public static int ERROR_SAM_INIT_FAILURE() {
+        return (int)8541L;
+    }
+    public static int ERROR_DS_DRA_SCHEMA_INFO_SHIP() {
+        return (int)8542L;
+    }
+    public static int ERROR_DS_DRA_SCHEMA_CONFLICT() {
+        return (int)8543L;
+    }
+    public static int ERROR_DS_DRA_EARLIER_SCHEMA_CONFLICT() {
+        return (int)8544L;
+    }
+    public static int ERROR_DS_DRA_OBJ_NC_MISMATCH() {
+        return (int)8545L;
+    }
+    public static int ERROR_DS_NC_STILL_HAS_DSAS() {
+        return (int)8546L;
+    }
+    public static int ERROR_DS_GC_REQUIRED() {
+        return (int)8547L;
+    }
+    public static int ERROR_DS_LOCAL_MEMBER_OF_LOCAL_ONLY() {
+        return (int)8548L;
+    }
+    public static int ERROR_DS_NO_FPO_IN_UNIVERSAL_GROUPS() {
+        return (int)8549L;
+    }
+    public static int ERROR_DS_CANT_ADD_TO_GC() {
+        return (int)8550L;
+    }
+    public static int ERROR_DS_NO_CHECKPOINT_WITH_PDC() {
+        return (int)8551L;
+    }
+    public static int ERROR_DS_SOURCE_AUDITING_NOT_ENABLED() {
+        return (int)8552L;
+    }
+    public static int ERROR_DS_CANT_CREATE_IN_NONDOMAIN_NC() {
+        return (int)8553L;
+    }
+    public static int ERROR_DS_INVALID_NAME_FOR_SPN() {
+        return (int)8554L;
+    }
+    public static int ERROR_DS_FILTER_USES_CONTRUCTED_ATTRS() {
+        return (int)8555L;
+    }
+    public static int ERROR_DS_UNICODEPWD_NOT_IN_QUOTES() {
+        return (int)8556L;
+    }
+    public static int ERROR_DS_MACHINE_ACCOUNT_QUOTA_EXCEEDED() {
+        return (int)8557L;
+    }
+    public static int ERROR_DS_MUST_BE_RUN_ON_DST_DC() {
+        return (int)8558L;
+    }
+    public static int ERROR_DS_SRC_DC_MUST_BE_SP4_OR_GREATER() {
+        return (int)8559L;
+    }
+    public static int ERROR_DS_CANT_TREE_DELETE_CRITICAL_OBJ() {
+        return (int)8560L;
+    }
+    public static int ERROR_DS_INIT_FAILURE_CONSOLE() {
+        return (int)8561L;
+    }
+    public static int ERROR_DS_SAM_INIT_FAILURE_CONSOLE() {
+        return (int)8562L;
+    }
+    public static int ERROR_DS_FOREST_VERSION_TOO_HIGH() {
+        return (int)8563L;
+    }
+    public static int ERROR_DS_DOMAIN_VERSION_TOO_HIGH() {
+        return (int)8564L;
+    }
+    public static int ERROR_DS_FOREST_VERSION_TOO_LOW() {
+        return (int)8565L;
+    }
+    public static int ERROR_DS_DOMAIN_VERSION_TOO_LOW() {
+        return (int)8566L;
+    }
+    public static int ERROR_DS_INCOMPATIBLE_VERSION() {
+        return (int)8567L;
     }
 }
 

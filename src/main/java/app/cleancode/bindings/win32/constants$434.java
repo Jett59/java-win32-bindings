@@ -9,38 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$434 {
 
-    static final FunctionDescriptor PFN_CERT_DLL_OPEN_STORE_PROV_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetScrollInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetScrollInfo$MH = RuntimeHelper.downcallHandle(
+        "SetScrollInfo",
+        constants$434.SetScrollInfo$FUNC
+    );
+    static final FunctionDescriptor GetScrollInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetScrollInfo$MH = RuntimeHelper.downcallHandle(
+        "GetScrollInfo",
+        constants$434.GetScrollInfo$FUNC
+    );
+    static final FunctionDescriptor DefFrameProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_DLL_OPEN_STORE_PROV_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$434.PFN_CERT_DLL_OPEN_STORE_PROV_FUNC$FUNC
+    static final MethodHandle DefFrameProcA$MH = RuntimeHelper.downcallHandle(
+        "DefFrameProcA",
+        constants$434.DefFrameProcA$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_CLOSE$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_CLOSE$MH = RuntimeHelper.downcallHandle(
-        constants$434.PFN_CERT_STORE_PROV_CLOSE$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_READ_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DefFrameProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_READ_CERT$MH = RuntimeHelper.downcallHandle(
-        constants$434.PFN_CERT_STORE_PROV_READ_CERT$FUNC
+    static final MethodHandle DefFrameProcW$MH = RuntimeHelper.downcallHandle(
+        "DefFrameProcW",
+        constants$434.DefFrameProcW$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_WRITE_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DefMDIChildProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DefMDIChildProcA$MH = RuntimeHelper.downcallHandle(
+        "DefMDIChildProcA",
+        constants$434.DefMDIChildProcA$FUNC
+    );
+    static final FunctionDescriptor DefMDIChildProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DefMDIChildProcW$MH = RuntimeHelper.downcallHandle(
+        "DefMDIChildProcW",
+        constants$434.DefMDIChildProcW$FUNC
     );
 }
 

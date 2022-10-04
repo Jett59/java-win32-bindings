@@ -9,12 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$559 {
 
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryW");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryW");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
+    static final FunctionDescriptor inet_addr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle inet_addr$MH = RuntimeHelper.downcallHandle(
+        "inet_addr",
+        constants$559.inet_addr$FUNC
+    );
+    static final FunctionDescriptor inet_ntoa$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.structLayout(
+            MemoryLayout.unionLayout(
+                MemoryLayout.structLayout(
+                    Constants$root.C_CHAR$LAYOUT.withName("s_b1"),
+                    Constants$root.C_CHAR$LAYOUT.withName("s_b2"),
+                    Constants$root.C_CHAR$LAYOUT.withName("s_b3"),
+                    Constants$root.C_CHAR$LAYOUT.withName("s_b4")
+                ).withName("S_un_b"),
+                MemoryLayout.structLayout(
+                    Constants$root.C_SHORT$LAYOUT.withName("s_w1"),
+                    Constants$root.C_SHORT$LAYOUT.withName("s_w2")
+                ).withName("S_un_w"),
+                Constants$root.C_LONG$LAYOUT.withName("S_addr")
+            ).withName("S_un")
+        ).withName("in_addr")
+    );
+    static final MethodHandle inet_ntoa$MH = RuntimeHelper.downcallHandle(
+        "inet_ntoa",
+        constants$559.inet_ntoa$FUNC
+    );
+    static final FunctionDescriptor listen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle listen$MH = RuntimeHelper.downcallHandle(
+        "listen",
+        constants$559.listen$FUNC
+    );
+    static final FunctionDescriptor ntohl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ntohl$MH = RuntimeHelper.downcallHandle(
+        "ntohl",
+        constants$559.ntohl$FUNC
+    );
+    static final FunctionDescriptor ntohs$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle ntohs$MH = RuntimeHelper.downcallHandle(
+        "ntohs",
+        constants$559.ntohs$FUNC
+    );
+    static final FunctionDescriptor recv$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle recv$MH = RuntimeHelper.downcallHandle(
+        "recv",
+        constants$559.recv$FUNC
+    );
 }
 
 

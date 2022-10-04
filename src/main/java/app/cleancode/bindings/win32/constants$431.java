@@ -9,35 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$431 {
 
-    static final FunctionDescriptor PFN_CMSG_EXPORT_KEY_AGREE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CopyImage$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_EXPORT_KEY_AGREE$MH = RuntimeHelper.downcallHandle(
-        constants$431.PFN_CMSG_EXPORT_KEY_AGREE$FUNC
+    static final MethodHandle CopyImage$MH = RuntimeHelper.downcallHandle(
+        "CopyImage",
+        constants$431.CopyImage$FUNC
     );
-    static final FunctionDescriptor PFN_CMSG_EXPORT_MAIL_LIST$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DrawIconEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CMSG_EXPORT_MAIL_LIST$MH = RuntimeHelper.downcallHandle(
-        constants$431.PFN_CMSG_EXPORT_MAIL_LIST$FUNC
-    );
-    static final FunctionDescriptor PFN_CMSG_IMPORT_KEY_TRANS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DrawIconEx$MH = RuntimeHelper.downcallHandle(
+        "DrawIconEx",
+        constants$431.DrawIconEx$FUNC
+    );
+    static final FunctionDescriptor CreateIconIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_IMPORT_KEY_TRANS$MH = RuntimeHelper.downcallHandle(
-        constants$431.PFN_CMSG_IMPORT_KEY_TRANS$FUNC
+    static final MethodHandle CreateIconIndirect$MH = RuntimeHelper.downcallHandle(
+        "CreateIconIndirect",
+        constants$431.CreateIconIndirect$FUNC
+    );
+    static final FunctionDescriptor CopyIcon$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CopyIcon$MH = RuntimeHelper.downcallHandle(
+        "CopyIcon",
+        constants$431.CopyIcon$FUNC
+    );
+    static final FunctionDescriptor GetIconInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetIconInfo$MH = RuntimeHelper.downcallHandle(
+        "GetIconInfo",
+        constants$431.GetIconInfo$FUNC
+    );
+    static final FunctionDescriptor GetIconInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetIconInfoExA$MH = RuntimeHelper.downcallHandle(
+        "GetIconInfoExA",
+        constants$431.GetIconInfoExA$FUNC
     );
 }
 

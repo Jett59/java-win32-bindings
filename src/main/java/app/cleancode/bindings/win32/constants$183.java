@@ -9,70 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$183 {
 
-    static final FunctionDescriptor GetCharacterPlacementW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetCharacterPlacementW$MH = RuntimeHelper.downcallHandle(
-        "GetCharacterPlacementW",
-        constants$183.GetCharacterPlacementW$FUNC
-    );
-    static final FunctionDescriptor GetFontUnicodeRanges$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetUmsCompletionListEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetFontUnicodeRanges$MH = RuntimeHelper.downcallHandle(
-        "GetFontUnicodeRanges",
-        constants$183.GetFontUnicodeRanges$FUNC
+    static final MethodHandle GetUmsCompletionListEvent$MH = RuntimeHelper.downcallHandle(
+        "GetUmsCompletionListEvent",
+        constants$183.GetUmsCompletionListEvent$FUNC
     );
-    static final FunctionDescriptor GetGlyphIndicesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetGlyphIndicesA$MH = RuntimeHelper.downcallHandle(
-        "GetGlyphIndicesA",
-        constants$183.GetGlyphIndicesA$FUNC
-    );
-    static final FunctionDescriptor GetGlyphIndicesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetGlyphIndicesW$MH = RuntimeHelper.downcallHandle(
-        "GetGlyphIndicesW",
-        constants$183.GetGlyphIndicesW$FUNC
-    );
-    static final FunctionDescriptor GetTextExtentPointI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExecuteUmsThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextExtentPointI$MH = RuntimeHelper.downcallHandle(
-        "GetTextExtentPointI",
-        constants$183.GetTextExtentPointI$FUNC
+    static final MethodHandle ExecuteUmsThread$MH = RuntimeHelper.downcallHandle(
+        "ExecuteUmsThread",
+        constants$183.ExecuteUmsThread$FUNC
     );
-    static final FunctionDescriptor GetTextExtentExPointI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor UmsThreadYield$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextExtentExPointI$MH = RuntimeHelper.downcallHandle(
-        "GetTextExtentExPointI",
-        constants$183.GetTextExtentExPointI$FUNC
+    static final MethodHandle UmsThreadYield$MH = RuntimeHelper.downcallHandle(
+        "UmsThreadYield",
+        constants$183.UmsThreadYield$FUNC
+    );
+    static final FunctionDescriptor DeleteUmsCompletionList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteUmsCompletionList$MH = RuntimeHelper.downcallHandle(
+        "DeleteUmsCompletionList",
+        constants$183.DeleteUmsCompletionList$FUNC
+    );
+    static final FunctionDescriptor GetCurrentUmsThread$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetCurrentUmsThread$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentUmsThread",
+        constants$183.GetCurrentUmsThread$FUNC
+    );
+    static final FunctionDescriptor GetNextUmsListItem$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetNextUmsListItem$MH = RuntimeHelper.downcallHandle(
+        "GetNextUmsListItem",
+        constants$183.GetNextUmsListItem$FUNC
     );
 }
 

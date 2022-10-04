@@ -9,52 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$79 {
 
-    static final FunctionDescriptor GetProcessIoCounters$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFileSizeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetProcessIoCounters$MH = RuntimeHelper.downcallHandle(
-        "GetProcessIoCounters",
-        constants$79.GetProcessIoCounters$FUNC
+    static final MethodHandle GetFileSizeEx$MH = RuntimeHelper.downcallHandle(
+        "GetFileSizeEx",
+        constants$79.GetFileSizeEx$FUNC
     );
-    static final FunctionDescriptor GetProcessWorkingSetSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetFileType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetProcessWorkingSetSize$MH = RuntimeHelper.downcallHandle(
-        "GetProcessWorkingSetSize",
-        constants$79.GetProcessWorkingSetSize$FUNC
+    static final MethodHandle GetFileType$MH = RuntimeHelper.downcallHandle(
+        "GetFileType",
+        constants$79.GetFileType$FUNC
     );
-    static final FunctionDescriptor SetProcessWorkingSetSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFinalPathNameByHandleA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SetProcessWorkingSetSize$MH = RuntimeHelper.downcallHandle(
-        "SetProcessWorkingSetSize",
-        constants$79.SetProcessWorkingSetSize$FUNC
-    );
-    static final FunctionDescriptor FatalExit$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle FatalExit$MH = RuntimeHelper.downcallHandle(
-        "FatalExit",
-        constants$79.FatalExit$FUNC
+    static final MethodHandle GetFinalPathNameByHandleA$MH = RuntimeHelper.downcallHandle(
+        "GetFinalPathNameByHandleA",
+        constants$79.GetFinalPathNameByHandleA$FUNC
     );
-    static final FunctionDescriptor SetEnvironmentStringsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFinalPathNameByHandleW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetFinalPathNameByHandleW$MH = RuntimeHelper.downcallHandle(
+        "GetFinalPathNameByHandleW",
+        constants$79.GetFinalPathNameByHandleW$FUNC
+    );
+    static final FunctionDescriptor GetFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetEnvironmentStringsA$MH = RuntimeHelper.downcallHandle(
-        "SetEnvironmentStringsA",
-        constants$79.SetEnvironmentStringsA$FUNC
+    static final MethodHandle GetFileTime$MH = RuntimeHelper.downcallHandle(
+        "GetFileTime",
+        constants$79.GetFileTime$FUNC
     );
-    static final FunctionDescriptor SwitchToFiber$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor GetFullPathNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SwitchToFiber$MH = RuntimeHelper.downcallHandle(
-        "SwitchToFiber",
-        constants$79.SwitchToFiber$FUNC
+    static final MethodHandle GetFullPathNameW$MH = RuntimeHelper.downcallHandle(
+        "GetFullPathNameW",
+        constants$79.GetFullPathNameW$FUNC
     );
 }
 

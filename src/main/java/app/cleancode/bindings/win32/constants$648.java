@@ -9,12 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$648 {
 
-    static final MemorySegment szOID_SERIALIZED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.3.1");
-    static final MemorySegment szOID_NT_PRINCIPAL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2.3");
-    static final MemorySegment szOID_INTERNATIONALIZED_EMAIL_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2.4");
-    static final MemorySegment szOID_PRODUCT_UPDATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.31.1");
-    static final MemorySegment szOID_ANY_APPLICATION_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.12.1");
-    static final MemorySegment szOID_AUTO_ENROLL_CTL_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.1");
+    static final FunctionDescriptor SCardGetProviderIdA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetProviderIdA$MH = RuntimeHelper.downcallHandle(
+        "SCardGetProviderIdA",
+        constants$648.SCardGetProviderIdA$FUNC
+    );
+    static final FunctionDescriptor SCardGetProviderIdW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetProviderIdW$MH = RuntimeHelper.downcallHandle(
+        "SCardGetProviderIdW",
+        constants$648.SCardGetProviderIdW$FUNC
+    );
+    static final FunctionDescriptor SCardGetCardTypeProviderNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetCardTypeProviderNameA$MH = RuntimeHelper.downcallHandle(
+        "SCardGetCardTypeProviderNameA",
+        constants$648.SCardGetCardTypeProviderNameA$FUNC
+    );
+    static final FunctionDescriptor SCardGetCardTypeProviderNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetCardTypeProviderNameW$MH = RuntimeHelper.downcallHandle(
+        "SCardGetCardTypeProviderNameW",
+        constants$648.SCardGetCardTypeProviderNameW$FUNC
+    );
+    static final FunctionDescriptor SCardIntroduceReaderGroupA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardIntroduceReaderGroupA$MH = RuntimeHelper.downcallHandle(
+        "SCardIntroduceReaderGroupA",
+        constants$648.SCardIntroduceReaderGroupA$FUNC
+    );
+    static final FunctionDescriptor SCardIntroduceReaderGroupW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardIntroduceReaderGroupW$MH = RuntimeHelper.downcallHandle(
+        "SCardIntroduceReaderGroupW",
+        constants$648.SCardIntroduceReaderGroupW$FUNC
+    );
 }
 
 

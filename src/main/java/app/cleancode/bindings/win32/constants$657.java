@@ -9,12 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$657 {
 
-    static final MemorySegment szOID_NT5_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.6");
-    static final MemorySegment szOID_OEM_WHQL_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.7");
-    static final MemorySegment szOID_EMBEDDED_NT_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.8");
-    static final MemorySegment szOID_ROOT_LIST_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.9");
-    static final MemorySegment szOID_KP_QUALIFIED_SUBORDINATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.10");
-    static final MemorySegment szOID_KP_KEY_RECOVERY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.11");
+    static final FunctionDescriptor LPOCNDSCPROC$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LPOCNDSCPROC$MH = RuntimeHelper.downcallHandle(
+        constants$657.LPOCNDSCPROC$FUNC
+    );
+    static final FunctionDescriptor SCardUIDlgSelectCardA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardUIDlgSelectCardA$MH = RuntimeHelper.downcallHandle(
+        "SCardUIDlgSelectCardA",
+        constants$657.SCardUIDlgSelectCardA$FUNC
+    );
+    static final FunctionDescriptor SCardUIDlgSelectCardW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardUIDlgSelectCardW$MH = RuntimeHelper.downcallHandle(
+        "SCardUIDlgSelectCardW",
+        constants$657.SCardUIDlgSelectCardW$FUNC
+    );
+    static final FunctionDescriptor GetOpenCardNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetOpenCardNameA$MH = RuntimeHelper.downcallHandle(
+        "GetOpenCardNameA",
+        constants$657.GetOpenCardNameA$FUNC
+    );
+    static final FunctionDescriptor GetOpenCardNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetOpenCardNameW$MH = RuntimeHelper.downcallHandle(
+        "GetOpenCardNameW",
+        constants$657.GetOpenCardNameW$FUNC
+    );
+    static final FunctionDescriptor SCardDlgExtendedError$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle SCardDlgExtendedError$MH = RuntimeHelper.downcallHandle(
+        "SCardDlgExtendedError",
+        constants$657.SCardDlgExtendedError$FUNC
+    );
 }
 
 

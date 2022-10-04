@@ -9,54 +9,31 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$459 {
 
-    static final FunctionDescriptor PFN_CRYPT_VERIFY_ENCODED_SIGNATURE_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CALINFO_ENUMPROCEXA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_VERIFY_ENCODED_SIGNATURE_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$459.PFN_CRYPT_VERIFY_ENCODED_SIGNATURE_FUNC$FUNC
+    static final MethodHandle CALINFO_ENUMPROCEXA$MH = RuntimeHelper.downcallHandle(
+        constants$459.CALINFO_ENUMPROCEXA$FUNC
     );
-    static final FunctionDescriptor CertVerifyTimeValidity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertVerifyTimeValidity$MH = RuntimeHelper.downcallHandle(
-        "CertVerifyTimeValidity",
-        constants$459.CertVerifyTimeValidity$FUNC
-    );
-    static final FunctionDescriptor CertVerifyCRLTimeValidity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertVerifyCRLTimeValidity$MH = RuntimeHelper.downcallHandle(
-        "CertVerifyCRLTimeValidity",
-        constants$459.CertVerifyCRLTimeValidity$FUNC
-    );
-    static final FunctionDescriptor CertVerifyValidityNesting$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertVerifyValidityNesting$MH = RuntimeHelper.downcallHandle(
-        "CertVerifyValidityNesting",
-        constants$459.CertVerifyValidityNesting$FUNC
-    );
-    static final FunctionDescriptor CertVerifyCRLRevocation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LANGUAGEGROUP_ENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CertVerifyCRLRevocation$MH = RuntimeHelper.downcallHandle(
-        "CertVerifyCRLRevocation",
-        constants$459.CertVerifyCRLRevocation$FUNC
+    static final MethodHandle LANGUAGEGROUP_ENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$459.LANGUAGEGROUP_ENUMPROCW$FUNC
+    );
+    static final FunctionDescriptor LANGGROUPLOCALE_ENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle LANGGROUPLOCALE_ENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$459.LANGGROUPLOCALE_ENUMPROCW$FUNC
     );
 }
 

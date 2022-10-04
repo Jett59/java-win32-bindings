@@ -9,12 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$665 {
 
-    static final MemorySegment szOID_PKIX_POLICY_QUALIFIER_CPS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.2.1");
-    static final MemorySegment szOID_PKIX_POLICY_QUALIFIER_USERNOTICE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.2.2");
-    static final MemorySegment szOID_ROOT_PROGRAM_FLAGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.1.1");
-    static final MemorySegment szOID_CERT_POLICIES_95_QUALIFIER1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.7.1.1");
-    static final MemorySegment szOID_RDN_TPM_MANUFACTURER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.1");
-    static final MemorySegment szOID_RDN_TPM_MODEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.2");
+    static final FunctionDescriptor GetPrinterDriverW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDriverW$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDriverW",
+        constants$665.GetPrinterDriverW$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDriverDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDriverDirectoryA$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDriverDirectoryA",
+        constants$665.GetPrinterDriverDirectoryA$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDriverDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDriverDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDriverDirectoryW",
+        constants$665.GetPrinterDriverDirectoryW$FUNC
+    );
+    static final FunctionDescriptor DeletePrinterDriverA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrinterDriverA$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterDriverA",
+        constants$665.DeletePrinterDriverA$FUNC
+    );
+    static final FunctionDescriptor DeletePrinterDriverW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrinterDriverW$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterDriverW",
+        constants$665.DeletePrinterDriverW$FUNC
+    );
+    static final FunctionDescriptor DeletePrinterDriverExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeletePrinterDriverExA$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterDriverExA",
+        constants$665.DeletePrinterDriverExA$FUNC
+    );
 }
 
 

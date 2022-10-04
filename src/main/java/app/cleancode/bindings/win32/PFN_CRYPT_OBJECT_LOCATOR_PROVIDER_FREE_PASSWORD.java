@@ -11,13 +11,13 @@ public interface PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD {
 
     void apply(java.lang.foreign.MemoryAddress pPluginContext, java.lang.foreign.MemoryAddress pwszPassword);
     static MemorySegment allocate(PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD.class, fi, constants$481.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD.class, fi, constants$634.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$FUNC, session);
     }
     static PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pPluginContext, java.lang.foreign.MemoryAddress _pwszPassword) -> {
             try {
-                constants$482.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pPluginContext, (java.lang.foreign.Addressable)_pwszPassword);
+                constants$634.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pPluginContext, (java.lang.foreign.Addressable)_pwszPassword);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

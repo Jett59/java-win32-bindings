@@ -9,57 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$314 {
 
-    static final FunctionDescriptor InflateRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExtTextOutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ExtTextOutW$MH = RuntimeHelper.downcallHandle(
+        "ExtTextOutW",
+        constants$314.ExtTextOutW$FUNC
+    );
+    static final FunctionDescriptor PolyTextOutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PolyTextOutA$MH = RuntimeHelper.downcallHandle(
+        "PolyTextOutA",
+        constants$314.PolyTextOutA$FUNC
+    );
+    static final FunctionDescriptor PolyTextOutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PolyTextOutW$MH = RuntimeHelper.downcallHandle(
+        "PolyTextOutW",
+        constants$314.PolyTextOutW$FUNC
+    );
+    static final FunctionDescriptor CreatePolygonRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle InflateRect$MH = RuntimeHelper.downcallHandle(
-        "InflateRect",
-        constants$314.InflateRect$FUNC
+    static final MethodHandle CreatePolygonRgn$MH = RuntimeHelper.downcallHandle(
+        "CreatePolygonRgn",
+        constants$314.CreatePolygonRgn$FUNC
     );
-    static final FunctionDescriptor IntersectRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DPtoLP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IntersectRect$MH = RuntimeHelper.downcallHandle(
-        "IntersectRect",
-        constants$314.IntersectRect$FUNC
-    );
-    static final FunctionDescriptor UnionRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnionRect$MH = RuntimeHelper.downcallHandle(
-        "UnionRect",
-        constants$314.UnionRect$FUNC
-    );
-    static final FunctionDescriptor SubtractRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SubtractRect$MH = RuntimeHelper.downcallHandle(
-        "SubtractRect",
-        constants$314.SubtractRect$FUNC
-    );
-    static final FunctionDescriptor OffsetRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle OffsetRect$MH = RuntimeHelper.downcallHandle(
-        "OffsetRect",
-        constants$314.OffsetRect$FUNC
+    static final MethodHandle DPtoLP$MH = RuntimeHelper.downcallHandle(
+        "DPtoLP",
+        constants$314.DPtoLP$FUNC
     );
-    static final FunctionDescriptor IsRectEmpty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor LPtoDP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle IsRectEmpty$MH = RuntimeHelper.downcallHandle(
-        "IsRectEmpty",
-        constants$314.IsRectEmpty$FUNC
+    static final MethodHandle LPtoDP$MH = RuntimeHelper.downcallHandle(
+        "LPtoDP",
+        constants$314.LPtoDP$FUNC
     );
 }
 

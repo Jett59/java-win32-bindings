@@ -11,13 +11,13 @@ public interface PFN_CERT_STORE_PROV_FIND_CTL {
 
     int apply(java.lang.foreign.MemoryAddress hStoreProv, java.lang.foreign.MemoryAddress pFindInfo, java.lang.foreign.MemoryAddress pPrevCtlContext, int dwFlags, java.lang.foreign.MemoryAddress ppvStoreProvFindInfo, java.lang.foreign.MemoryAddress ppProvCtlContext);
     static MemorySegment allocate(PFN_CERT_STORE_PROV_FIND_CTL fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_FIND_CTL.class, fi, constants$440.PFN_CERT_STORE_PROV_FIND_CTL$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_FIND_CTL.class, fi, constants$593.PFN_CERT_STORE_PROV_FIND_CTL$FUNC, session);
     }
     static PFN_CERT_STORE_PROV_FIND_CTL ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hStoreProv, java.lang.foreign.MemoryAddress _pFindInfo, java.lang.foreign.MemoryAddress _pPrevCtlContext, int _dwFlags, java.lang.foreign.MemoryAddress _ppvStoreProvFindInfo, java.lang.foreign.MemoryAddress _ppProvCtlContext) -> {
             try {
-                return (int)constants$441.PFN_CERT_STORE_PROV_FIND_CTL$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pFindInfo, (java.lang.foreign.Addressable)_pPrevCtlContext, _dwFlags, (java.lang.foreign.Addressable)_ppvStoreProvFindInfo, (java.lang.foreign.Addressable)_ppProvCtlContext);
+                return (int)constants$593.PFN_CERT_STORE_PROV_FIND_CTL$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pFindInfo, (java.lang.foreign.Addressable)_pPrevCtlContext, _dwFlags, (java.lang.foreign.Addressable)_ppvStoreProvFindInfo, (java.lang.foreign.Addressable)_ppProvCtlContext);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

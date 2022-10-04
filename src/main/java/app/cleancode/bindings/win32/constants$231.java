@@ -9,54 +9,73 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$231 {
 
-    static final FunctionDescriptor DESKTOPENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReadEventLogW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle DESKTOPENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$231.DESKTOPENUMPROC$FUNC
-    );
-    static final FunctionDescriptor wvsprintfA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle wvsprintfA$MH = RuntimeHelper.downcallHandle(
-        "wvsprintfA",
-        constants$231.wvsprintfA$FUNC
+    static final MethodHandle ReadEventLogW$MH = RuntimeHelper.downcallHandle(
+        "ReadEventLogW",
+        constants$231.ReadEventLogW$FUNC
     );
-    static final FunctionDescriptor wvsprintfW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReportEventA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle wvsprintfW$MH = RuntimeHelper.downcallHandle(
-        "wvsprintfW",
-        constants$231.wvsprintfW$FUNC
-    );
-    static final FunctionDescriptor wsprintfA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle wsprintfA$MH = RuntimeHelper.downcallHandleVariadic(
-        "wsprintfA",
-        constants$231.wsprintfA$FUNC
+    static final MethodHandle ReportEventA$MH = RuntimeHelper.downcallHandle(
+        "ReportEventA",
+        constants$231.ReportEventA$FUNC
     );
-    static final FunctionDescriptor wsprintfW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReportEventW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle wsprintfW$MH = RuntimeHelper.downcallHandleVariadic(
-        "wsprintfW",
-        constants$231.wsprintfW$FUNC
+    static final MethodHandle ReportEventW$MH = RuntimeHelper.downcallHandle(
+        "ReportEventW",
+        constants$231.ReportEventW$FUNC
     );
-    static final FunctionDescriptor LoadKeyboardLayoutA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetEventLogInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadKeyboardLayoutA$MH = RuntimeHelper.downcallHandle(
-        "LoadKeyboardLayoutA",
-        constants$231.LoadKeyboardLayoutA$FUNC
+    static final MethodHandle GetEventLogInformation$MH = RuntimeHelper.downcallHandle(
+        "GetEventLogInformation",
+        constants$231.GetEventLogInformation$FUNC
+    );
+    static final FunctionDescriptor OperationStart$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OperationStart$MH = RuntimeHelper.downcallHandle(
+        "OperationStart",
+        constants$231.OperationStart$FUNC
+    );
+    static final FunctionDescriptor OperationEnd$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OperationEnd$MH = RuntimeHelper.downcallHandle(
+        "OperationEnd",
+        constants$231.OperationEnd$FUNC
     );
 }
 

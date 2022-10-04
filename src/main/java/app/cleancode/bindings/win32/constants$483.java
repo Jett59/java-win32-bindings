@@ -9,54 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$483 {
 
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_INITIALIZE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AttachConsole$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle AttachConsole$MH = RuntimeHelper.downcallHandle(
+        "AttachConsole",
+        constants$483.AttachConsole$FUNC
+    );
+    static final FunctionDescriptor GetConsoleCP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetConsoleCP$MH = RuntimeHelper.downcallHandle(
+        "GetConsoleCP",
+        constants$483.GetConsoleCP$FUNC
+    );
+    static final FunctionDescriptor GetConsoleOutputCP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetConsoleOutputCP$MH = RuntimeHelper.downcallHandle(
+        "GetConsoleOutputCP",
+        constants$483.GetConsoleOutputCP$FUNC
+    );
+    static final FunctionDescriptor GetConsoleMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_INITIALIZE$MH = RuntimeHelper.downcallHandle(
-        constants$483.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_INITIALIZE$FUNC
+    static final MethodHandle GetConsoleMode$MH = RuntimeHelper.downcallHandle(
+        "GetConsoleMode",
+        constants$483.GetConsoleMode$FUNC
     );
-    static final FunctionDescriptor CertIsWeakHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetConsoleMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertIsWeakHash$MH = RuntimeHelper.downcallHandle(
-        "CertIsWeakHash",
-        constants$483.CertIsWeakHash$FUNC
+    static final MethodHandle SetConsoleMode$MH = RuntimeHelper.downcallHandle(
+        "SetConsoleMode",
+        constants$483.SetConsoleMode$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_IS_WEAK_HASH$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetNumberOfConsoleInputEvents$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_IS_WEAK_HASH$MH = RuntimeHelper.downcallHandle(
-        constants$483.PFN_CERT_IS_WEAK_HASH$FUNC
-    );
-    static final FunctionDescriptor QueryUsersOnEncryptedFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle QueryUsersOnEncryptedFile$MH = RuntimeHelper.downcallHandle(
-        "QueryUsersOnEncryptedFile",
-        constants$483.QueryUsersOnEncryptedFile$FUNC
-    );
-    static final FunctionDescriptor QueryRecoveryAgentsOnEncryptedFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle QueryRecoveryAgentsOnEncryptedFile$MH = RuntimeHelper.downcallHandle(
-        "QueryRecoveryAgentsOnEncryptedFile",
-        constants$483.QueryRecoveryAgentsOnEncryptedFile$FUNC
+    static final MethodHandle GetNumberOfConsoleInputEvents$MH = RuntimeHelper.downcallHandle(
+        "GetNumberOfConsoleInputEvents",
+        constants$483.GetNumberOfConsoleInputEvents$FUNC
     );
 }
 

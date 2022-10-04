@@ -9,12 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$576 {
 
-    static final MemorySegment MS_DEF_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Cryptographic Provider v1.0");
-    static final MemorySegment MS_ENHANCED_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced Cryptographic Provider v1.0");
-    static final MemorySegment MS_ENHANCED_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_ENHANCED_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced Cryptographic Provider v1.0");
-    static final MemorySegment MS_STRONG_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Strong Cryptographic Provider");
-    static final MemorySegment MS_STRONG_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final FunctionDescriptor CryptUnregisterOIDFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptUnregisterOIDFunction$MH = RuntimeHelper.downcallHandle(
+        "CryptUnregisterOIDFunction",
+        constants$576.CryptUnregisterOIDFunction$FUNC
+    );
+    static final FunctionDescriptor CryptRegisterDefaultOIDFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptRegisterDefaultOIDFunction$MH = RuntimeHelper.downcallHandle(
+        "CryptRegisterDefaultOIDFunction",
+        constants$576.CryptRegisterDefaultOIDFunction$FUNC
+    );
+    static final FunctionDescriptor CryptUnregisterDefaultOIDFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptUnregisterDefaultOIDFunction$MH = RuntimeHelper.downcallHandle(
+        "CryptUnregisterDefaultOIDFunction",
+        constants$576.CryptUnregisterDefaultOIDFunction$FUNC
+    );
+    static final FunctionDescriptor CryptSetOIDFunctionValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptSetOIDFunctionValue$MH = RuntimeHelper.downcallHandle(
+        "CryptSetOIDFunctionValue",
+        constants$576.CryptSetOIDFunctionValue$FUNC
+    );
+    static final FunctionDescriptor CryptGetOIDFunctionValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGetOIDFunctionValue$MH = RuntimeHelper.downcallHandle(
+        "CryptGetOIDFunctionValue",
+        constants$576.CryptGetOIDFunctionValue$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_ENUM_OID_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

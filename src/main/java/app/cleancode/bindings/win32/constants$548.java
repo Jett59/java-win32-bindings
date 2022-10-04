@@ -9,31 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$548 {
 
-    static final FunctionDescriptor GetServiceRegistryStateKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SHFileOperationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetServiceRegistryStateKey$MH = RuntimeHelper.downcallHandle(
-        "GetServiceRegistryStateKey",
-        constants$548.GetServiceRegistryStateKey$FUNC
+    static final MethodHandle SHFileOperationW$MH = RuntimeHelper.downcallHandle(
+        "SHFileOperationW",
+        constants$548.SHFileOperationW$FUNC
     );
-    static final FunctionDescriptor GetServiceDirectory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SHFreeNameMappings$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetServiceDirectory$MH = RuntimeHelper.downcallHandle(
-        "GetServiceDirectory",
-        constants$548.GetServiceDirectory$FUNC
+    static final MethodHandle SHFreeNameMappings$MH = RuntimeHelper.downcallHandle(
+        "SHFreeNameMappings",
+        constants$548.SHFreeNameMappings$FUNC
     );
-    static final MemorySegment OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OutOfProcessFunctionTableCallback");
-    static final MemorySegment ACCESS_DS_SOURCE_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DS");
-    static final MemorySegment ACCESS_DS_SOURCE_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Directory Service Object");
+    static final FunctionDescriptor ShellExecuteExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ShellExecuteExA$MH = RuntimeHelper.downcallHandle(
+        "ShellExecuteExA",
+        constants$548.ShellExecuteExA$FUNC
+    );
+    static final FunctionDescriptor ShellExecuteExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ShellExecuteExW$MH = RuntimeHelper.downcallHandle(
+        "ShellExecuteExW",
+        constants$548.ShellExecuteExW$FUNC
+    );
+    static final FunctionDescriptor SHCreateProcessAsUserW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHCreateProcessAsUserW$MH = RuntimeHelper.downcallHandle(
+        "SHCreateProcessAsUserW",
+        constants$548.SHCreateProcessAsUserW$FUNC
+    );
+    static final FunctionDescriptor SHEvaluateSystemCommandTemplate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHEvaluateSystemCommandTemplate$MH = RuntimeHelper.downcallHandle(
+        "SHEvaluateSystemCommandTemplate",
+        constants$548.SHEvaluateSystemCommandTemplate$FUNC
+    );
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$752 {
 
-    static final MemorySegment SPLDS_PRINT_NETWORK_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printNetworkAddress");
-    static final MemorySegment SPLDS_PRINT_NOTIFY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printNotify");
-    static final MemorySegment SPLDS_PRINT_NUMBER_UP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printNumberUp");
-    static final MemorySegment SPLDS_PRINT_ORIENTATIONS_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printOrientationsSupported");
-    static final MemorySegment SPLDS_PRINT_OWNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printOwner");
-    static final MemorySegment SPLDS_PRINT_PAGES_PER_MINUTE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printPagesPerMinute");
+    static final MemorySegment MS_ENH_DSS_DH_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced DSS and Diffie-Hellman Cryptographic Provider");
+    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft DH SChannel Cryptographic Provider");
+    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft DH SChannel Cryptographic Provider");
+    static final MemorySegment MS_SCARD_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Smart Card Crypto Provider");
+    static final MemorySegment MS_SCARD_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
 }
 
 

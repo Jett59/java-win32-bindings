@@ -9,51 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$108 {
 
-    static final FunctionDescriptor GlobalAddAtomW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor CancelWaitableTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GlobalAddAtomW$MH = RuntimeHelper.downcallHandle(
-        "GlobalAddAtomW",
-        constants$108.GlobalAddAtomW$FUNC
+    static final MethodHandle CancelWaitableTimer$MH = RuntimeHelper.downcallHandle(
+        "CancelWaitableTimer",
+        constants$108.CancelWaitableTimer$FUNC
     );
-    static final FunctionDescriptor GlobalAddAtomExA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor CreateMutexExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GlobalAddAtomExA$MH = RuntimeHelper.downcallHandle(
-        "GlobalAddAtomExA",
-        constants$108.GlobalAddAtomExA$FUNC
+    static final MethodHandle CreateMutexExA$MH = RuntimeHelper.downcallHandle(
+        "CreateMutexExA",
+        constants$108.CreateMutexExA$FUNC
     );
-    static final FunctionDescriptor GlobalAddAtomExW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor CreateMutexExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GlobalAddAtomExW$MH = RuntimeHelper.downcallHandle(
-        "GlobalAddAtomExW",
-        constants$108.GlobalAddAtomExW$FUNC
+    static final MethodHandle CreateMutexExW$MH = RuntimeHelper.downcallHandle(
+        "CreateMutexExW",
+        constants$108.CreateMutexExW$FUNC
     );
-    static final FunctionDescriptor GlobalFindAtomA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GlobalFindAtomA$MH = RuntimeHelper.downcallHandle(
-        "GlobalFindAtomA",
-        constants$108.GlobalFindAtomA$FUNC
-    );
-    static final FunctionDescriptor GlobalFindAtomW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GlobalFindAtomW$MH = RuntimeHelper.downcallHandle(
-        "GlobalFindAtomW",
-        constants$108.GlobalFindAtomW$FUNC
-    );
-    static final FunctionDescriptor GlobalGetAtomNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor CreateEventExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GlobalGetAtomNameA$MH = RuntimeHelper.downcallHandle(
-        "GlobalGetAtomNameA",
-        constants$108.GlobalGetAtomNameA$FUNC
+    static final MethodHandle CreateEventExA$MH = RuntimeHelper.downcallHandle(
+        "CreateEventExA",
+        constants$108.CreateEventExA$FUNC
+    );
+    static final FunctionDescriptor CreateEventExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateEventExW$MH = RuntimeHelper.downcallHandle(
+        "CreateEventExW",
+        constants$108.CreateEventExW$FUNC
+    );
+    static final FunctionDescriptor CreateSemaphoreExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateSemaphoreExW$MH = RuntimeHelper.downcallHandle(
+        "CreateSemaphoreExW",
+        constants$108.CreateSemaphoreExW$FUNC
     );
 }
 

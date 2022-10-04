@@ -9,12 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$614 {
 
-    static final MemorySegment szOID_INFOSEC_mosaicKMandUpdSig$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.20");
-    static final MemorySegment szOID_INFOSEC_mosaicUpdatedInteg$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.21");
-    static final MemorySegment szOID_NIST_sha256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.2.1");
-    static final MemorySegment szOID_NIST_sha384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.2.2");
-    static final MemorySegment szOID_NIST_sha512$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.2.3");
-    static final MemorySegment szOID_COMMON_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.3");
+    static final FunctionDescriptor PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$614.PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC
+    );
+    static final FunctionDescriptor CryptExportPublicKeyInfoFromBCryptKeyHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptExportPublicKeyInfoFromBCryptKeyHandle$MH = RuntimeHelper.downcallHandle(
+        "CryptExportPublicKeyInfoFromBCryptKeyHandle",
+        constants$614.CryptExportPublicKeyInfoFromBCryptKeyHandle$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_FROM_BCRYPT_HANDLE_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_FROM_BCRYPT_HANDLE_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$614.PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_FROM_BCRYPT_HANDLE_FUNC$FUNC
+    );
+    static final FunctionDescriptor CryptImportPublicKeyInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptImportPublicKeyInfo$MH = RuntimeHelper.downcallHandle(
+        "CryptImportPublicKeyInfo",
+        constants$614.CryptImportPublicKeyInfo$FUNC
+    );
+    static final FunctionDescriptor CryptImportPublicKeyInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptImportPublicKeyInfoEx$MH = RuntimeHelper.downcallHandle(
+        "CryptImportPublicKeyInfoEx",
+        constants$614.CryptImportPublicKeyInfoEx$FUNC
+    );
 }
 
 

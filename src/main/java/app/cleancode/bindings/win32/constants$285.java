@@ -9,52 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$285 {
 
-    static final FunctionDescriptor TranslateAcceleratorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTextExtentPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle TranslateAcceleratorW$MH = RuntimeHelper.downcallHandle(
-        "TranslateAcceleratorW",
-        constants$285.TranslateAcceleratorW$FUNC
-    );
-    static final FunctionDescriptor GetSystemMetrics$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetSystemMetrics$MH = RuntimeHelper.downcallHandle(
-        "GetSystemMetrics",
-        constants$285.GetSystemMetrics$FUNC
-    );
-    static final FunctionDescriptor GetSystemMetricsForDpi$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetSystemMetricsForDpi$MH = RuntimeHelper.downcallHandle(
-        "GetSystemMetricsForDpi",
-        constants$285.GetSystemMetricsForDpi$FUNC
+    static final MethodHandle GetTextExtentPointA$MH = RuntimeHelper.downcallHandle(
+        "GetTextExtentPointA",
+        constants$285.GetTextExtentPointA$FUNC
     );
-    static final FunctionDescriptor LoadMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetTextExtentPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextExtentPointW$MH = RuntimeHelper.downcallHandle(
+        "GetTextExtentPointW",
+        constants$285.GetTextExtentPointW$FUNC
+    );
+    static final FunctionDescriptor GetTextExtentPoint32A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextExtentPoint32A$MH = RuntimeHelper.downcallHandle(
+        "GetTextExtentPoint32A",
+        constants$285.GetTextExtentPoint32A$FUNC
+    );
+    static final FunctionDescriptor GetTextExtentPoint32W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextExtentPoint32W$MH = RuntimeHelper.downcallHandle(
+        "GetTextExtentPoint32W",
+        constants$285.GetTextExtentPoint32W$FUNC
+    );
+    static final FunctionDescriptor GetTextExtentExPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadMenuA$MH = RuntimeHelper.downcallHandle(
-        "LoadMenuA",
-        constants$285.LoadMenuA$FUNC
+    static final MethodHandle GetTextExtentExPointA$MH = RuntimeHelper.downcallHandle(
+        "GetTextExtentExPointA",
+        constants$285.GetTextExtentExPointA$FUNC
     );
-    static final FunctionDescriptor LoadMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetTextExtentExPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadMenuW$MH = RuntimeHelper.downcallHandle(
-        "LoadMenuW",
-        constants$285.LoadMenuW$FUNC
-    );
-    static final FunctionDescriptor LoadMenuIndirectA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LoadMenuIndirectA$MH = RuntimeHelper.downcallHandle(
-        "LoadMenuIndirectA",
-        constants$285.LoadMenuIndirectA$FUNC
+    static final MethodHandle GetTextExtentExPointW$MH = RuntimeHelper.downcallHandle(
+        "GetTextExtentExPointW",
+        constants$285.GetTextExtentExPointW$FUNC
     );
 }
 

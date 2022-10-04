@@ -11,13 +11,13 @@ public interface DATEFMT_ENUMPROCEXEX {
 
     int apply(java.lang.foreign.MemoryAddress _x0, int _x1, long _x2);
     static MemorySegment allocate(DATEFMT_ENUMPROCEXEX fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(DATEFMT_ENUMPROCEXEX.class, fi, constants$376.DATEFMT_ENUMPROCEXEX$FUNC, session);
+        return RuntimeHelper.upcallStub(DATEFMT_ENUMPROCEXEX.class, fi, constants$481.DATEFMT_ENUMPROCEXEX$FUNC, session);
     }
     static DATEFMT_ENUMPROCEXEX ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, int __x1, long __x2) -> {
             try {
-                return (int)constants$376.DATEFMT_ENUMPROCEXEX$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, __x2);
+                return (int)constants$481.DATEFMT_ENUMPROCEXEX$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, __x2);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

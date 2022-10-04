@@ -9,44 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$439 {
 
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FIND_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SystemParametersInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_FIND_CERT$MH = RuntimeHelper.downcallHandle(
-        constants$439.PFN_CERT_STORE_PROV_FIND_CERT$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FREE_FIND_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_FREE_FIND_CERT$MH = RuntimeHelper.downcallHandle(
-        constants$439.PFN_CERT_STORE_PROV_FREE_FIND_CERT$FUNC
+    static final MethodHandle SystemParametersInfoA$MH = RuntimeHelper.downcallHandle(
+        "SystemParametersInfoA",
+        constants$439.SystemParametersInfoA$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_GET_CERT_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SystemParametersInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_GET_CERT_PROPERTY$MH = RuntimeHelper.downcallHandle(
-        constants$439.PFN_CERT_STORE_PROV_GET_CERT_PROPERTY$FUNC
+    static final MethodHandle SystemParametersInfoW$MH = RuntimeHelper.downcallHandle(
+        "SystemParametersInfoW",
+        constants$439.SystemParametersInfoW$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FIND_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SystemParametersInfoForDpi$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SystemParametersInfoForDpi$MH = RuntimeHelper.downcallHandle(
+        "SystemParametersInfoForDpi",
+        constants$439.SystemParametersInfoForDpi$FUNC
+    );
+    static final FunctionDescriptor SoundSentry$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle SoundSentry$MH = RuntimeHelper.downcallHandle(
+        "SoundSentry",
+        constants$439.SoundSentry$FUNC
+    );
+    static final FunctionDescriptor SetDebugErrorLevel$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDebugErrorLevel$MH = RuntimeHelper.downcallHandle(
+        "SetDebugErrorLevel",
+        constants$439.SetDebugErrorLevel$FUNC
+    );
+    static final FunctionDescriptor SetLastErrorEx$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetLastErrorEx$MH = RuntimeHelper.downcallHandle(
+        "SetLastErrorEx",
+        constants$439.SetLastErrorEx$FUNC
     );
 }
 

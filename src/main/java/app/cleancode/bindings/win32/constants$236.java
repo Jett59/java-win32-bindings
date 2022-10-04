@@ -9,56 +9,79 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$236 {
 
-    static final FunctionDescriptor CreateWindowStationW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LookupAccountNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateWindowStationW$MH = RuntimeHelper.downcallHandle(
-        "CreateWindowStationW",
-        constants$236.CreateWindowStationW$FUNC
+    static final MethodHandle LookupAccountNameA$MH = RuntimeHelper.downcallHandle(
+        "LookupAccountNameA",
+        constants$236.LookupAccountNameA$FUNC
     );
-    static final FunctionDescriptor OpenWindowStationA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LookupAccountNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OpenWindowStationA$MH = RuntimeHelper.downcallHandle(
-        "OpenWindowStationA",
-        constants$236.OpenWindowStationA$FUNC
-    );
-    static final FunctionDescriptor OpenWindowStationW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OpenWindowStationW$MH = RuntimeHelper.downcallHandle(
-        "OpenWindowStationW",
-        constants$236.OpenWindowStationW$FUNC
-    );
-    static final FunctionDescriptor EnumWindowStationsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumWindowStationsA$MH = RuntimeHelper.downcallHandle(
-        "EnumWindowStationsA",
-        constants$236.EnumWindowStationsA$FUNC
-    );
-    static final FunctionDescriptor EnumWindowStationsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumWindowStationsW$MH = RuntimeHelper.downcallHandle(
-        "EnumWindowStationsW",
-        constants$236.EnumWindowStationsW$FUNC
-    );
-    static final FunctionDescriptor CloseWindowStation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CloseWindowStation$MH = RuntimeHelper.downcallHandle(
-        "CloseWindowStation",
-        constants$236.CloseWindowStation$FUNC
+    static final MethodHandle LookupAccountNameW$MH = RuntimeHelper.downcallHandle(
+        "LookupAccountNameW",
+        constants$236.LookupAccountNameW$FUNC
+    );
+    static final FunctionDescriptor LookupAccountNameLocalA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LookupAccountNameLocalA$MH = RuntimeHelper.downcallHandle(
+        "LookupAccountNameLocalA",
+        constants$236.LookupAccountNameLocalA$FUNC
+    );
+    static final FunctionDescriptor LookupAccountNameLocalW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LookupAccountNameLocalW$MH = RuntimeHelper.downcallHandle(
+        "LookupAccountNameLocalW",
+        constants$236.LookupAccountNameLocalW$FUNC
+    );
+    static final FunctionDescriptor LookupAccountSidLocalA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LookupAccountSidLocalA$MH = RuntimeHelper.downcallHandle(
+        "LookupAccountSidLocalA",
+        constants$236.LookupAccountSidLocalA$FUNC
+    );
+    static final FunctionDescriptor LookupAccountSidLocalW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LookupAccountSidLocalW$MH = RuntimeHelper.downcallHandle(
+        "LookupAccountSidLocalW",
+        constants$236.LookupAccountSidLocalW$FUNC
     );
 }
 

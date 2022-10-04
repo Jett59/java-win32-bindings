@@ -11,13 +11,13 @@ public interface PFN_CERT_IS_WEAK_HASH {
 
     int apply(int dwHashUseType, java.lang.foreign.MemoryAddress pwszCNGHashAlgid, int dwChainFlags, java.lang.foreign.MemoryAddress pSignerChainContext, java.lang.foreign.MemoryAddress pTimeStamp, java.lang.foreign.MemoryAddress pwszFileName);
     static MemorySegment allocate(PFN_CERT_IS_WEAK_HASH fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_IS_WEAK_HASH.class, fi, constants$483.PFN_CERT_IS_WEAK_HASH$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_IS_WEAK_HASH.class, fi, constants$635.PFN_CERT_IS_WEAK_HASH$FUNC, session);
     }
     static PFN_CERT_IS_WEAK_HASH ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int _dwHashUseType, java.lang.foreign.MemoryAddress _pwszCNGHashAlgid, int _dwChainFlags, java.lang.foreign.MemoryAddress _pSignerChainContext, java.lang.foreign.MemoryAddress _pTimeStamp, java.lang.foreign.MemoryAddress _pwszFileName) -> {
             try {
-                return (int)constants$483.PFN_CERT_IS_WEAK_HASH$MH.invokeExact((Addressable)symbol, _dwHashUseType, (java.lang.foreign.Addressable)_pwszCNGHashAlgid, _dwChainFlags, (java.lang.foreign.Addressable)_pSignerChainContext, (java.lang.foreign.Addressable)_pTimeStamp, (java.lang.foreign.Addressable)_pwszFileName);
+                return (int)constants$635.PFN_CERT_IS_WEAK_HASH$MH.invokeExact((Addressable)symbol, _dwHashUseType, (java.lang.foreign.Addressable)_pwszCNGHashAlgid, _dwChainFlags, (java.lang.foreign.Addressable)_pSignerChainContext, (java.lang.foreign.Addressable)_pTimeStamp, (java.lang.foreign.Addressable)_pwszFileName);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

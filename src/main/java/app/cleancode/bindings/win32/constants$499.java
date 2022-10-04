@@ -9,64 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$499 {
 
-    static final FunctionDescriptor SCardLocateCardsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegRenameKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardLocateCardsW$MH = RuntimeHelper.downcallHandle(
-        "SCardLocateCardsW",
-        constants$499.SCardLocateCardsW$FUNC
+    static final MethodHandle RegRenameKey$MH = RuntimeHelper.downcallHandle(
+        "RegRenameKey",
+        constants$499.RegRenameKey$FUNC
     );
-    static final FunctionDescriptor SCardLocateCardsByATRA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegSaveKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegSaveKeyA$MH = RuntimeHelper.downcallHandle(
+        "RegSaveKeyA",
+        constants$499.RegSaveKeyA$FUNC
+    );
+    static final FunctionDescriptor RegSaveKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegSaveKeyW$MH = RuntimeHelper.downcallHandle(
+        "RegSaveKeyW",
+        constants$499.RegSaveKeyW$FUNC
+    );
+    static final FunctionDescriptor RegSetKeySecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegSetKeySecurity$MH = RuntimeHelper.downcallHandle(
+        "RegSetKeySecurity",
+        constants$499.RegSetKeySecurity$FUNC
+    );
+    static final FunctionDescriptor RegSetValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardLocateCardsByATRA$MH = RuntimeHelper.downcallHandle(
-        "SCardLocateCardsByATRA",
-        constants$499.SCardLocateCardsByATRA$FUNC
+    static final MethodHandle RegSetValueA$MH = RuntimeHelper.downcallHandle(
+        "RegSetValueA",
+        constants$499.RegSetValueA$FUNC
     );
-    static final FunctionDescriptor SCardLocateCardsByATRW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegSetValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardLocateCardsByATRW$MH = RuntimeHelper.downcallHandle(
-        "SCardLocateCardsByATRW",
-        constants$499.SCardLocateCardsByATRW$FUNC
-    );
-    static final FunctionDescriptor SCardGetStatusChangeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SCardGetStatusChangeA$MH = RuntimeHelper.downcallHandle(
-        "SCardGetStatusChangeA",
-        constants$499.SCardGetStatusChangeA$FUNC
-    );
-    static final FunctionDescriptor SCardGetStatusChangeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SCardGetStatusChangeW$MH = RuntimeHelper.downcallHandle(
-        "SCardGetStatusChangeW",
-        constants$499.SCardGetStatusChangeW$FUNC
-    );
-    static final FunctionDescriptor SCardCancel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SCardCancel$MH = RuntimeHelper.downcallHandle(
-        "SCardCancel",
-        constants$499.SCardCancel$FUNC
+    static final MethodHandle RegSetValueW$MH = RuntimeHelper.downcallHandle(
+        "RegSetValueW",
+        constants$499.RegSetValueW$FUNC
     );
 }
 

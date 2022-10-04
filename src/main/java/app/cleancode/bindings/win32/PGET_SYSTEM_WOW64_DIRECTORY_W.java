@@ -11,13 +11,13 @@ public interface PGET_SYSTEM_WOW64_DIRECTORY_W {
 
     int apply(java.lang.foreign.MemoryAddress lpBuffer, int uSize);
     static MemorySegment allocate(PGET_SYSTEM_WOW64_DIRECTORY_W fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PGET_SYSTEM_WOW64_DIRECTORY_W.class, fi, constants$115.PGET_SYSTEM_WOW64_DIRECTORY_W$FUNC, session);
+        return RuntimeHelper.upcallStub(PGET_SYSTEM_WOW64_DIRECTORY_W.class, fi, constants$216.PGET_SYSTEM_WOW64_DIRECTORY_W$FUNC, session);
     }
     static PGET_SYSTEM_WOW64_DIRECTORY_W ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _lpBuffer, int _uSize) -> {
             try {
-                return (int)constants$115.PGET_SYSTEM_WOW64_DIRECTORY_W$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_lpBuffer, _uSize);
+                return (int)constants$216.PGET_SYSTEM_WOW64_DIRECTORY_W$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_lpBuffer, _uSize);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

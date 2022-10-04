@@ -9,12 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$563 {
 
-    static final MemoryAddress RT_VXD$ADDR = MemoryAddress.ofLong(20L);
-    static final MemoryAddress RT_ANICURSOR$ADDR = MemoryAddress.ofLong(21L);
-    static final MemoryAddress RT_ANIICON$ADDR = MemoryAddress.ofLong(22L);
-    static final MemoryAddress RT_HTML$ADDR = MemoryAddress.ofLong(23L);
-    static final MemoryAddress RT_MANIFEST$ADDR = MemoryAddress.ofLong(24L);
-    static final MemoryAddress CREATEPROCESS_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(1L);
+    static final FunctionDescriptor WSAIsBlocking$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle WSAIsBlocking$MH = RuntimeHelper.downcallHandle(
+        "WSAIsBlocking",
+        constants$563.WSAIsBlocking$FUNC
+    );
+    static final FunctionDescriptor WSAUnhookBlockingHook$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle WSAUnhookBlockingHook$MH = RuntimeHelper.downcallHandle(
+        "WSAUnhookBlockingHook",
+        constants$563.WSAUnhookBlockingHook$FUNC
+    );
+    static final FunctionDescriptor WSASetBlockingHook$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WSASetBlockingHook$MH = RuntimeHelper.downcallHandle(
+        "WSASetBlockingHook",
+        constants$563.WSASetBlockingHook$FUNC
+    );
+    static final FunctionDescriptor WSACancelBlockingCall$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle WSACancelBlockingCall$MH = RuntimeHelper.downcallHandle(
+        "WSACancelBlockingCall",
+        constants$563.WSACancelBlockingCall$FUNC
+    );
+    static final FunctionDescriptor WSAAsyncGetServByName$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WSAAsyncGetServByName$MH = RuntimeHelper.downcallHandle(
+        "WSAAsyncGetServByName",
+        constants$563.WSAAsyncGetServByName$FUNC
+    );
+    static final FunctionDescriptor WSAAsyncGetServByPort$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WSAAsyncGetServByPort$MH = RuntimeHelper.downcallHandle(
+        "WSAAsyncGetServByPort",
+        constants$563.WSAAsyncGetServByPort$FUNC
+    );
 }
 
 

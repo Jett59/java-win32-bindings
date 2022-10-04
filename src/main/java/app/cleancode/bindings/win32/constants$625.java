@@ -9,12 +9,37 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$625 {
 
-    static final MemoryAddress X509_NAME$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress X509_PUBLIC_KEY_INFO$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress X509_AUTHORITY_KEY_ID$ADDR = MemoryAddress.ofLong(9L);
-    static final MemoryAddress X509_KEY_ATTRIBUTES$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress X509_KEY_USAGE_RESTRICTION$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress X509_ALTERNATE_NAME$ADDR = MemoryAddress.ofLong(12L);
+    static final FunctionDescriptor CryptUninstallCancelRetrieval$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptUninstallCancelRetrieval$MH = RuntimeHelper.downcallHandle(
+        "CryptUninstallCancelRetrieval",
+        constants$625.CryptUninstallCancelRetrieval$FUNC
+    );
+    static final FunctionDescriptor CryptCancelAsyncRetrieval$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptCancelAsyncRetrieval$MH = RuntimeHelper.downcallHandle(
+        "CryptCancelAsyncRetrieval",
+        constants$625.CryptCancelAsyncRetrieval$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_ASYNC_RETRIEVAL_COMPLETION_FUNC$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_ASYNC_RETRIEVAL_COMPLETION_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$625.PFN_CRYPT_ASYNC_RETRIEVAL_COMPLETION_FUNC$FUNC
+    );
+    static final FunctionDescriptor PFN_CANCEL_ASYNC_RETRIEVAL_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CANCEL_ASYNC_RETRIEVAL_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$625.PFN_CANCEL_ASYNC_RETRIEVAL_FUNC$FUNC
+    );
 }
 
 

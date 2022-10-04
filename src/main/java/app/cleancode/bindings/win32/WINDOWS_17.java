@@ -9,3005 +9,3261 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_17 extends WINDOWS_16 {
 
-    public static int FILE_CREATE_PIPE_INSTANCE() {
-        return (int)4L;
+    public static int TCCollectionDeviceRequested() {
+        return (int)3L;
     }
-    public static int FILE_READ_EA() {
-        return (int)8L;
-    }
-    public static int FILE_WRITE_EA() {
-        return (int)16L;
-    }
-    public static int FILE_EXECUTE() {
-        return (int)32L;
-    }
-    public static int FILE_TRAVERSE() {
-        return (int)32L;
-    }
-    public static int FILE_DELETE_CHILD() {
-        return (int)64L;
-    }
-    public static int FILE_READ_ATTRIBUTES() {
-        return (int)128L;
-    }
-    public static int FILE_WRITE_ATTRIBUTES() {
-        return (int)256L;
-    }
-    public static int FILE_ALL_ACCESS() {
-        return (int)2032127L;
-    }
-    public static int FILE_GENERIC_READ() {
-        return (int)1179785L;
-    }
-    public static int FILE_GENERIC_WRITE() {
-        return (int)1179926L;
-    }
-    public static int FILE_GENERIC_EXECUTE() {
-        return (int)1179808L;
-    }
-    public static int MAILSLOT_NO_MESSAGE() {
-        return (int)4294967295L;
-    }
-    public static int MAILSLOT_WAIT_FOREVER() {
-        return (int)4294967295L;
-    }
-    public static long FILE_INVALID_FILE_ID() {
-        return -1L;
-    }
-    public static int REPARSE_GUID_DATA_BUFFER_HEADER_SIZE() {
-        return (int)24L;
-    }
-    public static int MAXIMUM_REPARSE_DATA_BUFFER_SIZE() {
-        return (int)16384L;
-    }
-    public static int IO_REPARSE_TAG_RESERVED_ZERO() {
+    public static OfAddress PDEVICEDUMP_COLLECTION_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_SUBSECTION_POINTER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_STRUCTURE_VERSION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_SECTION_HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PGP_LOG_PAGE_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_PUBLIC_SUBSECTION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_RESTRICTED_SUBSECTION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_PRIVATE_SUBSECTION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_STORAGEDEVICE_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_STORAGESTACK_PUBLIC_STATE_RECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDEVICEDUMP_STORAGESTACK_PUBLIC_DUMP = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_IDLE_POWER = Constants$root.C_POINTER$LAYOUT;
+    public static int StoragePowerupUnknown() {
         return (int)0L;
     }
-    public static int IO_REPARSE_TAG_RESERVED_ONE() {
+    public static int StoragePowerupIO() {
         return (int)1L;
     }
-    public static int IO_REPARSE_TAG_RESERVED_TWO() {
+    public static int StoragePowerupDeviceAttention() {
         return (int)2L;
     }
-    public static int IO_REPARSE_TAG_RESERVED_RANGE() {
-        return (int)2L;
-    }
-    public static int IO_REPARSE_TAG_MOUNT_POINT() {
-        return (int)2684354563L;
-    }
-    public static int IO_REPARSE_TAG_HSM() {
-        return (int)3221225476L;
-    }
-    public static int IO_REPARSE_TAG_HSM2() {
-        return (int)2147483654L;
-    }
-    public static int IO_REPARSE_TAG_SIS() {
-        return (int)2147483655L;
-    }
-    public static int IO_REPARSE_TAG_WIM() {
-        return (int)2147483656L;
-    }
-    public static int IO_REPARSE_TAG_CSV() {
-        return (int)2147483657L;
-    }
-    public static int IO_REPARSE_TAG_DFS() {
-        return (int)2147483658L;
-    }
-    public static int IO_REPARSE_TAG_SYMLINK() {
-        return (int)2684354572L;
-    }
-    public static int IO_REPARSE_TAG_DFSR() {
-        return (int)2147483666L;
-    }
-    public static int IO_REPARSE_TAG_DEDUP() {
-        return (int)2147483667L;
-    }
-    public static int IO_REPARSE_TAG_NFS() {
-        return (int)2147483668L;
-    }
-    public static int IO_REPARSE_TAG_FILE_PLACEHOLDER() {
-        return (int)2147483669L;
-    }
-    public static int IO_REPARSE_TAG_WOF() {
-        return (int)2147483671L;
-    }
-    public static int IO_REPARSE_TAG_WCI() {
-        return (int)2147483672L;
-    }
-    public static int IO_REPARSE_TAG_WCI_1() {
-        return (int)2415923224L;
-    }
-    public static int IO_REPARSE_TAG_GLOBAL_REPARSE() {
-        return (int)2684354585L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD() {
-        return (int)2415919130L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_1() {
-        return (int)2415923226L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_2() {
-        return (int)2415927322L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_3() {
-        return (int)2415931418L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_4() {
-        return (int)2415935514L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_5() {
-        return (int)2415939610L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_6() {
-        return (int)2415943706L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_7() {
-        return (int)2415947802L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_8() {
-        return (int)2415951898L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_9() {
-        return (int)2415955994L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_A() {
-        return (int)2415960090L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_B() {
-        return (int)2415964186L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_C() {
-        return (int)2415968282L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_D() {
-        return (int)2415972378L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_E() {
-        return (int)2415976474L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_F() {
-        return (int)2415980570L;
-    }
-    public static int IO_REPARSE_TAG_CLOUD_MASK() {
-        return (int)61440L;
-    }
-    public static int IO_REPARSE_TAG_APPEXECLINK() {
-        return (int)2147483675L;
-    }
-    public static int IO_REPARSE_TAG_PROJFS() {
-        return (int)2415919132L;
-    }
-    public static int IO_REPARSE_TAG_STORAGE_SYNC() {
-        return (int)2147483678L;
-    }
-    public static int IO_REPARSE_TAG_WCI_TOMBSTONE() {
-        return (int)2684354591L;
-    }
-    public static int IO_REPARSE_TAG_UNHANDLED() {
-        return (int)2147483680L;
-    }
-    public static int IO_REPARSE_TAG_ONEDRIVE() {
-        return (int)2147483681L;
-    }
-    public static int IO_REPARSE_TAG_PROJFS_TOMBSTONE() {
-        return (int)2684354594L;
-    }
-    public static int IO_REPARSE_TAG_AF_UNIX() {
-        return (int)2147483683L;
-    }
-    public static int IO_REPARSE_TAG_WCI_LINK() {
-        return (int)2684354599L;
-    }
-    public static int IO_REPARSE_TAG_WCI_LINK_1() {
-        return (int)2684358695L;
-    }
-    public static int SHUFFLE_FILE_FLAG_SKIP_INITIALIZING_NEW_CLUSTERS() {
-        return (int)1L;
-    }
-    public static int IO_COMPLETION_ALL_ACCESS() {
-        return (int)2031619L;
-    }
-    public static long IO_QOS_MAX_RESERVATION() {
-        return 1000000000L;
-    }
-    public static MemorySegment SMB_CCF_APP_INSTANCE_EA_NAME() {
-        return constants$556.SMB_CCF_APP_INSTANCE_EA_NAME$SEGMENT;
-    }
-    public static int PERFSTATE_POLICY_CHANGE_DECREASE_MAX() {
-        return (int)2L;
-    }
-    public static int PERFSTATE_POLICY_CHANGE_INCREASE_MAX() {
-        return (int)3L;
-    }
-    public static int PROCESSOR_PERF_BOOST_MODE_MAX() {
-        return (int)6L;
-    }
-    public static int CORE_PARKING_POLICY_CHANGE_MAX() {
-        return (int)3L;
-    }
-    public static int ES_SYSTEM_REQUIRED() {
-        return (int)1L;
-    }
-    public static int ES_DISPLAY_REQUIRED() {
-        return (int)2L;
-    }
-    public static int ES_USER_PRESENT() {
-        return (int)4L;
-    }
-    public static int ES_AWAYMODE_REQUIRED() {
-        return (int)64L;
-    }
-    public static int ES_CONTINUOUS() {
-        return (int)2147483648L;
-    }
-    public static int DIAGNOSTIC_REASON_NOT_SPECIFIED() {
-        return (int)2147483648L;
-    }
-    public static int DIAGNOSTIC_REASON_INVALID_FLAGS() {
-        return (int)2147483640L;
-    }
-    public static int POWER_REQUEST_CONTEXT_VERSION() {
+    public static OfAddress PSTORAGE_POWERUP_REASON_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_IDLE_POWERUP_REASON = Constants$root.C_POINTER$LAYOUT;
+    public static int StorageDevicePowerCapUnitsPercent() {
         return (int)0L;
     }
-    public static int POWER_REQUEST_CONTEXT_SIMPLE_STRING() {
+    public static int StorageDevicePowerCapUnitsMilliwatts() {
         return (int)1L;
     }
-    public static int POWER_REQUEST_CONTEXT_DETAILED_STRING() {
-        return (int)2L;
-    }
-    public static int POWER_SETTING_VALUE_VERSION() {
+    public static OfAddress PSTORAGE_DEVICE_POWER_CAP_UNITS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_DEVICE_POWER_CAP = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_RPMB_DATA_FRAME = Constants$root.C_POINTER$LAYOUT;
+    public static int StorRpmbProgramAuthKey() {
         return (int)1L;
     }
-    public static int POWER_PLATFORM_ROLE_V1() {
-        return (int)1L;
-    }
-    public static int POWER_PLATFORM_ROLE_V1_MAX() {
-        return (int)8L;
-    }
-    public static int POWER_PLATFORM_ROLE_V2() {
+    public static int StorRpmbQueryWriteCounter() {
         return (int)2L;
     }
-    public static int POWER_PLATFORM_ROLE_V2_MAX() {
-        return (int)9L;
-    }
-    public static int POWER_PLATFORM_ROLE_VERSION() {
-        return (int)2L;
-    }
-    public static int POWER_PLATFORM_ROLE_VERSION_MAX() {
-        return (int)9L;
-    }
-    public static int POWER_ACTION_CRITICAL() {
-        return (int)2147483648L;
-    }
-    public static int POWER_FORCE_TRIGGER_RESET() {
-        return (int)2147483648L;
-    }
-    public static int BATTERY_DISCHARGE_FLAGS_ENABLE() {
-        return (int)2147483648L;
-    }
-    public static int IMAGE_FILE_MACHINE_AXP64() {
-        return (int)644L;
-    }
-    public static int IMAGE_NT_OPTIONAL_HDR_MAGIC() {
-        return (int)523L;
-    }
-    public static int IMAGE_SCN_MEM_WRITE() {
-        return (int)2147483648L;
-    }
-    public static short IMAGE_SYM_UNDEFINED() {
-        return (short)0L;
-    }
-    public static short IMAGE_SYM_ABSOLUTE() {
-        return (short)-1L;
-    }
-    public static short IMAGE_SYM_DEBUG() {
-        return (short)-2L;
-    }
-    public static int IMAGE_SYM_SECTION_MAX_EX() {
-        return (int)2147483647L;
-    }
-    public static byte IMAGE_SYM_CLASS_END_OF_FUNCTION() {
-        return (byte)255L;
-    }
-    public static MemorySegment IMAGE_ARCHIVE_START() {
-        return constants$556.IMAGE_ARCHIVE_START$SEGMENT;
-    }
-    public static MemorySegment IMAGE_ARCHIVE_END() {
-        return constants$556.IMAGE_ARCHIVE_END$SEGMENT;
-    }
-    public static MemorySegment IMAGE_ARCHIVE_PAD() {
-        return constants$556.IMAGE_ARCHIVE_PAD$SEGMENT;
-    }
-    public static MemorySegment IMAGE_ARCHIVE_LINKER_MEMBER() {
-        return constants$556.IMAGE_ARCHIVE_LINKER_MEMBER$SEGMENT;
-    }
-    public static MemorySegment IMAGE_ARCHIVE_LONGNAMES_MEMBER() {
-        return constants$556.IMAGE_ARCHIVE_LONGNAMES_MEMBER$SEGMENT;
-    }
-    public static MemorySegment IMAGE_ARCHIVE_HYBRIDMAP_MEMBER() {
-        return constants$557.IMAGE_ARCHIVE_HYBRIDMAP_MEMBER$SEGMENT;
-    }
-    public static long IMAGE_ORDINAL_FLAG64() {
-        return -9223372036854775808L;
-    }
-    public static int IMAGE_ORDINAL_FLAG32() {
-        return (int)2147483648L;
-    }
-    public static long IMAGE_ORDINAL_FLAG() {
-        return -9223372036854775808L;
-    }
-    public static int IMAGE_RESOURCE_NAME_IS_STRING() {
-        return (int)2147483648L;
-    }
-    public static int IMAGE_RESOURCE_DATA_IS_DIRECTORY() {
-        return (int)2147483648L;
-    }
-    public static int IMAGE_HOT_PATCH_CHUNK_INVERSE() {
-        return (int)2147483648L;
-    }
-    public static int IMAGE_GUARD_CF_FUNCTION_TABLE_SIZE_MASK() {
-        return (int)4026531840L;
-    }
-    public static int IMAGE_ENCLAVE_LONG_ID_LENGTH() {
-        return (int)32L;
-    }
-    public static int IMAGE_ENCLAVE_SHORT_ID_LENGTH() {
-        return (int)16L;
-    }
-    public static int IMAGE_ENCLAVE_MINIMUM_CONFIG_SIZE() {
-        return (int)76L;
-    }
-    public static int RTL_RUN_ONCE_CHECK_ONLY() {
-        return (int)1L;
-    }
-    public static int RTL_RUN_ONCE_ASYNC() {
-        return (int)2L;
-    }
-    public static int RTL_RUN_ONCE_INIT_FAILED() {
-        return (int)4L;
-    }
-    public static int FAST_FAIL_INVALID_FAST_FAIL_CODE() {
-        return (int)4294967295L;
-    }
-    public static int COMPRESSION_FORMAT_NONE() {
-        return (int)0L;
-    }
-    public static int COMPRESSION_FORMAT_DEFAULT() {
-        return (int)1L;
-    }
-    public static int COMPRESSION_FORMAT_LZNT1() {
-        return (int)2L;
-    }
-    public static int COMPRESSION_FORMAT_XPRESS() {
+    public static int StorRpmbAuthenticatedWrite() {
         return (int)3L;
     }
-    public static int COMPRESSION_FORMAT_XPRESS_HUFF() {
+    public static int StorRpmbAuthenticatedRead() {
         return (int)4L;
     }
-    public static int COMPRESSION_ENGINE_STANDARD() {
-        return (int)0L;
-    }
-    public static int COMPRESSION_ENGINE_MAXIMUM() {
-        return (int)256L;
-    }
-    public static int COMPRESSION_ENGINE_HIBER() {
-        return (int)512L;
-    }
-    public static int SEF_MACL_VALID_FLAGS() {
-        return (int)1792L;
-    }
-    public static int RTL_UMS_VERSION() {
-        return (int)256L;
-    }
-    public static int VRL_PREDEFINED_CLASS_BEGIN() {
-        return (int)1L;
-    }
-    public static int VRL_CUSTOM_CLASS_BEGIN() {
-        return (int)256L;
-    }
-    public static int VRL_CLASS_CONSISTENCY() {
-        return (int)1L;
-    }
-    public static int VRL_ENABLE_KERNEL_BREAKS() {
-        return (int)-2147483648L;
-    }
-    public static int CTMF_INCLUDE_APPCONTAINER() {
-        return (int)1L;
-    }
-    public static int CTMF_INCLUDE_LPAC() {
-        return (int)2L;
-    }
-    public static int CTMF_VALID_FLAGS() {
-        return (int)3L;
-    }
-    public static int FLUSH_NV_MEMORY_IN_FLAG_NO_DRAIN() {
-        return (int)1L;
-    }
-    public static long FLUSH_NV_MEMORY_DEFAULT_TOKEN() {
-        return -1L;
-    }
-    public static int WRITE_NV_MEMORY_FLAG_FLUSH() {
-        return (int)1L;
-    }
-    public static int WRITE_NV_MEMORY_FLAG_NON_TEMPORAL() {
-        return (int)2L;
-    }
-    public static int WRITE_NV_MEMORY_FLAG_PERSIST() {
-        return (int)3L;
-    }
-    public static int WRITE_NV_MEMORY_FLAG_NO_DRAIN() {
-        return (int)256L;
-    }
-    public static int FILL_NV_MEMORY_FLAG_FLUSH() {
-        return (int)1L;
-    }
-    public static int FILL_NV_MEMORY_FLAG_NON_TEMPORAL() {
-        return (int)2L;
-    }
-    public static int FILL_NV_MEMORY_FLAG_PERSIST() {
-        return (int)3L;
-    }
-    public static int FILL_NV_MEMORY_FLAG_NO_DRAIN() {
-        return (int)256L;
-    }
-    public static byte RTL_CORRELATION_VECTOR_VERSION_1() {
-        return (byte)1L;
-    }
-    public static byte RTL_CORRELATION_VECTOR_VERSION_2() {
-        return (byte)2L;
-    }
-    public static byte RTL_CORRELATION_VECTOR_VERSION_CURRENT() {
-        return (byte)2L;
-    }
-    public static int RTL_CORRELATION_VECTOR_V1_PREFIX_LENGTH() {
-        return (int)16L;
-    }
-    public static int RTL_CORRELATION_VECTOR_V1_LENGTH() {
-        return (int)64L;
-    }
-    public static int RTL_CORRELATION_VECTOR_V2_PREFIX_LENGTH() {
-        return (int)22L;
-    }
-    public static int RTL_CORRELATION_VECTOR_V2_LENGTH() {
-        return (int)128L;
-    }
-    public static MemorySegment IMAGE_POLICY_SECTION_NAME() {
-        return constants$557.IMAGE_POLICY_SECTION_NAME$SEGMENT;
-    }
-    public static int RTL_CRITICAL_SECTION_ALL_FLAG_BITS() {
-        return (int)4278190080L;
-    }
-    public static int RTL_CRITICAL_SECTION_FLAG_RESERVED() {
-        return (int)3758096384L;
-    }
-    public static int ACTIVATION_CONTEXT_PATH_TYPE_NONE() {
-        return (int)1L;
-    }
-    public static int ACTIVATION_CONTEXT_PATH_TYPE_WIN32_FILE() {
-        return (int)2L;
-    }
-    public static int ACTIVATION_CONTEXT_PATH_TYPE_URL() {
-        return (int)3L;
-    }
-    public static int ACTIVATION_CONTEXT_PATH_TYPE_ASSEMBLYREF() {
-        return (int)4L;
-    }
-    public static MemorySegment UNIFIEDBUILDREVISION_KEY() {
-        return constants$557.UNIFIEDBUILDREVISION_KEY$SEGMENT;
-    }
-    public static MemorySegment UNIFIEDBUILDREVISION_VALUE() {
-        return constants$557.UNIFIEDBUILDREVISION_VALUE$SEGMENT;
-    }
-    public static MemorySegment DEVICEFAMILYDEVICEFORM_KEY() {
-        return constants$557.DEVICEFAMILYDEVICEFORM_KEY$SEGMENT;
-    }
-    public static MemorySegment DEVICEFAMILYDEVICEFORM_VALUE() {
-        return constants$557.DEVICEFAMILYDEVICEFORM_VALUE$SEGMENT;
-    }
-    public static int KEY_QUERY_VALUE() {
-        return (int)1L;
-    }
-    public static int KEY_SET_VALUE() {
-        return (int)2L;
-    }
-    public static int KEY_CREATE_SUB_KEY() {
-        return (int)4L;
-    }
-    public static int KEY_ENUMERATE_SUB_KEYS() {
-        return (int)8L;
-    }
-    public static int KEY_NOTIFY() {
-        return (int)16L;
-    }
-    public static int KEY_CREATE_LINK() {
-        return (int)32L;
-    }
-    public static int KEY_WOW64_32KEY() {
-        return (int)512L;
-    }
-    public static int KEY_WOW64_64KEY() {
-        return (int)256L;
-    }
-    public static int KEY_WOW64_RES() {
-        return (int)768L;
-    }
-    public static int KEY_READ() {
-        return (int)131097L;
-    }
-    public static int KEY_WRITE() {
-        return (int)131078L;
-    }
-    public static int KEY_EXECUTE() {
-        return (int)131097L;
-    }
-    public static int KEY_ALL_ACCESS() {
-        return (int)983103L;
-    }
-    public static int REG_OPTION_RESERVED() {
-        return (int)0L;
-    }
-    public static int REG_OPTION_NON_VOLATILE() {
-        return (int)0L;
-    }
-    public static int REG_OPTION_VOLATILE() {
-        return (int)1L;
-    }
-    public static int REG_OPTION_CREATE_LINK() {
-        return (int)2L;
-    }
-    public static int REG_OPTION_BACKUP_RESTORE() {
-        return (int)4L;
-    }
-    public static int REG_OPTION_OPEN_LINK() {
-        return (int)8L;
-    }
-    public static int REG_OPTION_DONT_VIRTUALIZE() {
-        return (int)16L;
-    }
-    public static int REG_LEGAL_OPTION() {
-        return (int)31L;
-    }
-    public static int REG_OPEN_LEGAL_OPTION() {
-        return (int)28L;
-    }
-    public static int REG_CREATED_NEW_KEY() {
-        return (int)1L;
-    }
-    public static int REG_OPENED_EXISTING_KEY() {
-        return (int)2L;
-    }
-    public static int REG_WHOLE_HIVE_VOLATILE() {
-        return (int)1L;
-    }
-    public static int REG_REFRESH_HIVE() {
-        return (int)2L;
-    }
-    public static int REG_NO_LAZY_FLUSH() {
-        return (int)4L;
-    }
-    public static int REG_FORCE_RESTORE() {
-        return (int)8L;
-    }
-    public static int REG_APP_HIVE() {
-        return (int)16L;
-    }
-    public static int REG_PROCESS_PRIVATE() {
-        return (int)32L;
-    }
-    public static int REG_START_JOURNAL() {
-        return (int)64L;
-    }
-    public static int REG_HIVE_EXACT_FILE_GROWTH() {
-        return (int)128L;
-    }
-    public static int REG_HIVE_NO_RM() {
-        return (int)256L;
-    }
-    public static int REG_HIVE_SINGLE_LOG() {
-        return (int)512L;
-    }
-    public static int REG_BOOT_HIVE() {
-        return (int)1024L;
-    }
-    public static int REG_LOAD_HIVE_OPEN_HANDLE() {
-        return (int)2048L;
-    }
-    public static int REG_FLUSH_HIVE_FILE_GROWTH() {
-        return (int)4096L;
-    }
-    public static int REG_OPEN_READ_ONLY() {
-        return (int)8192L;
-    }
-    public static int REG_IMMUTABLE() {
-        return (int)16384L;
-    }
-    public static int REG_NO_IMPERSONATION_FALLBACK() {
-        return (int)32768L;
-    }
-    public static int REG_APP_HIVE_OPEN_READ_ONLY() {
-        return (int)8192L;
-    }
-    public static int REG_UNLOAD_LEGAL_FLAGS() {
-        return (int)1L;
-    }
-    public static int REG_NOTIFY_CHANGE_NAME() {
-        return (int)1L;
-    }
-    public static int REG_NOTIFY_CHANGE_ATTRIBUTES() {
-        return (int)2L;
-    }
-    public static int REG_NOTIFY_CHANGE_LAST_SET() {
-        return (int)4L;
-    }
-    public static int REG_NOTIFY_CHANGE_SECURITY() {
-        return (int)8L;
-    }
-    public static int REG_NOTIFY_THREAD_AGNOSTIC() {
-        return (int)268435456L;
-    }
-    public static int REG_LEGAL_CHANGE_FILTER() {
-        return (int)268435471L;
-    }
-    public static int REG_NONE() {
-        return (int)0L;
-    }
-    public static int REG_SZ() {
-        return (int)1L;
-    }
-    public static int REG_EXPAND_SZ() {
-        return (int)2L;
-    }
-    public static int REG_BINARY() {
-        return (int)3L;
-    }
-    public static int REG_DWORD() {
-        return (int)4L;
-    }
-    public static int REG_DWORD_LITTLE_ENDIAN() {
-        return (int)4L;
-    }
-    public static int REG_DWORD_BIG_ENDIAN() {
+    public static int StorRpmbReadResultRequest() {
         return (int)5L;
     }
-    public static int REG_LINK() {
+    public static int StorRpmbAuthenticatedDeviceConfigWrite() {
         return (int)6L;
     }
-    public static int REG_MULTI_SZ() {
+    public static int StorRpmbAuthenticatedDeviceConfigRead() {
         return (int)7L;
     }
-    public static int REG_RESOURCE_LIST() {
+    public static OfAddress PSTORAGE_RPMB_COMMAND_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_EVENT_NOTIFICATION = Constants$root.C_POINTER$LAYOUT;
+    public static int StorageCounterTypeUnknown() {
+        return (int)0L;
+    }
+    public static int StorageCounterTypeTemperatureCelsius() {
+        return (int)1L;
+    }
+    public static int StorageCounterTypeTemperatureCelsiusMax() {
+        return (int)2L;
+    }
+    public static int StorageCounterTypeReadErrorsTotal() {
+        return (int)3L;
+    }
+    public static int StorageCounterTypeReadErrorsCorrected() {
+        return (int)4L;
+    }
+    public static int StorageCounterTypeReadErrorsUncorrected() {
+        return (int)5L;
+    }
+    public static int StorageCounterTypeWriteErrorsTotal() {
+        return (int)6L;
+    }
+    public static int StorageCounterTypeWriteErrorsCorrected() {
+        return (int)7L;
+    }
+    public static int StorageCounterTypeWriteErrorsUncorrected() {
         return (int)8L;
     }
-    public static int REG_FULL_RESOURCE_DESCRIPTOR() {
+    public static int StorageCounterTypeManufactureDate() {
         return (int)9L;
     }
-    public static int REG_RESOURCE_REQUIREMENTS_LIST() {
+    public static int StorageCounterTypeStartStopCycleCount() {
         return (int)10L;
     }
-    public static int REG_QWORD() {
+    public static int StorageCounterTypeStartStopCycleCountMax() {
         return (int)11L;
     }
-    public static int REG_QWORD_LITTLE_ENDIAN() {
-        return (int)11L;
-    }
-    public static int SERVICE_DRIVER() {
-        return (int)11L;
-    }
-    public static int SERVICE_WIN32() {
-        return (int)48L;
-    }
-    public static int SERVICE_USER_SHARE_PROCESS() {
-        return (int)96L;
-    }
-    public static int SERVICE_USER_OWN_PROCESS() {
-        return (int)80L;
-    }
-    public static int SERVICE_TYPE_ALL() {
-        return (int)1023L;
-    }
-    public static int CM_SERVICE_VALID_PROMOTION_MASK() {
-        return (int)511L;
-    }
-    public static int TAPE_ERASE_SHORT() {
-        return (int)0L;
-    }
-    public static int TAPE_ERASE_LONG() {
-        return (int)1L;
-    }
-    public static int TAPE_LOAD() {
-        return (int)0L;
-    }
-    public static int TAPE_UNLOAD() {
-        return (int)1L;
-    }
-    public static int TAPE_TENSION() {
-        return (int)2L;
-    }
-    public static int TAPE_LOCK() {
-        return (int)3L;
-    }
-    public static int TAPE_UNLOCK() {
-        return (int)4L;
-    }
-    public static int TAPE_FORMAT() {
-        return (int)5L;
-    }
-    public static int TAPE_SETMARKS() {
-        return (int)0L;
-    }
-    public static int TAPE_FILEMARKS() {
-        return (int)1L;
-    }
-    public static int TAPE_SHORT_FILEMARKS() {
-        return (int)2L;
-    }
-    public static int TAPE_LONG_FILEMARKS() {
-        return (int)3L;
-    }
-    public static int TAPE_ABSOLUTE_POSITION() {
-        return (int)0L;
-    }
-    public static int TAPE_LOGICAL_POSITION() {
-        return (int)1L;
-    }
-    public static int TAPE_PSEUDO_LOGICAL_POSITION() {
-        return (int)2L;
-    }
-    public static int TAPE_REWIND() {
-        return (int)0L;
-    }
-    public static int TAPE_ABSOLUTE_BLOCK() {
-        return (int)1L;
-    }
-    public static int TAPE_LOGICAL_BLOCK() {
-        return (int)2L;
-    }
-    public static int TAPE_PSEUDO_LOGICAL_BLOCK() {
-        return (int)3L;
-    }
-    public static int TAPE_SPACE_END_OF_DATA() {
-        return (int)4L;
-    }
-    public static int TAPE_SPACE_RELATIVE_BLOCKS() {
-        return (int)5L;
-    }
-    public static int TAPE_SPACE_FILEMARKS() {
-        return (int)6L;
-    }
-    public static int TAPE_SPACE_SEQUENTIAL_FMKS() {
-        return (int)7L;
-    }
-    public static int TAPE_SPACE_SETMARKS() {
-        return (int)8L;
-    }
-    public static int TAPE_SPACE_SEQUENTIAL_SMKS() {
-        return (int)9L;
-    }
-    public static int TAPE_DRIVE_RESERVED_BIT() {
-        return (int)2147483648L;
-    }
-    public static int TAPE_DRIVE_LOAD_UNLOAD() {
-        return (int)2147483649L;
-    }
-    public static int TAPE_DRIVE_TENSION() {
-        return (int)2147483650L;
-    }
-    public static int TAPE_DRIVE_LOCK_UNLOCK() {
-        return (int)2147483652L;
-    }
-    public static int TAPE_DRIVE_REWIND_IMMEDIATE() {
-        return (int)2147483656L;
-    }
-    public static int TAPE_DRIVE_SET_BLOCK_SIZE() {
-        return (int)2147483664L;
-    }
-    public static int TAPE_DRIVE_LOAD_UNLD_IMMED() {
-        return (int)2147483680L;
-    }
-    public static int TAPE_DRIVE_TENSION_IMMED() {
-        return (int)2147483712L;
-    }
-    public static int TAPE_DRIVE_LOCK_UNLK_IMMED() {
-        return (int)2147483776L;
-    }
-    public static int TAPE_DRIVE_SET_ECC() {
-        return (int)2147483904L;
-    }
-    public static int TAPE_DRIVE_SET_COMPRESSION() {
-        return (int)2147484160L;
-    }
-    public static int TAPE_DRIVE_SET_PADDING() {
-        return (int)2147484672L;
-    }
-    public static int TAPE_DRIVE_SET_REPORT_SMKS() {
-        return (int)2147485696L;
-    }
-    public static int TAPE_DRIVE_ABSOLUTE_BLK() {
-        return (int)2147487744L;
-    }
-    public static int TAPE_DRIVE_ABS_BLK_IMMED() {
-        return (int)2147491840L;
-    }
-    public static int TAPE_DRIVE_LOGICAL_BLK() {
-        return (int)2147500032L;
-    }
-    public static int TAPE_DRIVE_LOG_BLK_IMMED() {
-        return (int)2147516416L;
-    }
-    public static int TAPE_DRIVE_END_OF_DATA() {
-        return (int)2147549184L;
-    }
-    public static int TAPE_DRIVE_RELATIVE_BLKS() {
-        return (int)2147614720L;
-    }
-    public static int TAPE_DRIVE_FILEMARKS() {
-        return (int)2147745792L;
-    }
-    public static int TAPE_DRIVE_SEQUENTIAL_FMKS() {
-        return (int)2148007936L;
-    }
-    public static int TAPE_DRIVE_SETMARKS() {
-        return (int)2148532224L;
-    }
-    public static int TAPE_DRIVE_SEQUENTIAL_SMKS() {
-        return (int)2149580800L;
-    }
-    public static int TAPE_DRIVE_REVERSE_POSITION() {
-        return (int)2151677952L;
-    }
-    public static int TAPE_DRIVE_SPACE_IMMEDIATE() {
-        return (int)2155872256L;
-    }
-    public static int TAPE_DRIVE_WRITE_SETMARKS() {
-        return (int)2164260864L;
-    }
-    public static int TAPE_DRIVE_WRITE_FILEMARKS() {
-        return (int)2181038080L;
-    }
-    public static int TAPE_DRIVE_WRITE_SHORT_FMKS() {
-        return (int)2214592512L;
-    }
-    public static int TAPE_DRIVE_WRITE_LONG_FMKS() {
-        return (int)2281701376L;
-    }
-    public static int TAPE_DRIVE_WRITE_MARK_IMMED() {
-        return (int)2415919104L;
-    }
-    public static int TAPE_DRIVE_FORMAT() {
-        return (int)2684354560L;
-    }
-    public static int TAPE_DRIVE_FORMAT_IMMEDIATE() {
-        return (int)3221225472L;
-    }
-    public static int TAPE_DRIVE_HIGH_FEATURES() {
-        return (int)2147483648L;
-    }
-    public static int TAPE_FIXED_PARTITIONS() {
-        return (int)0L;
-    }
-    public static int TAPE_SELECT_PARTITIONS() {
-        return (int)1L;
-    }
-    public static int TAPE_INITIATOR_PARTITIONS() {
-        return (int)2L;
-    }
-    public static int TAPE_QUERY_DRIVE_PARAMETERS() {
-        return (int)0L;
-    }
-    public static int TAPE_QUERY_MEDIA_CAPACITY() {
-        return (int)1L;
-    }
-    public static int TAPE_CHECK_FOR_DRIVE_PROBLEM() {
-        return (int)2L;
-    }
-    public static int TAPE_QUERY_IO_ERROR_DATA() {
-        return (int)3L;
-    }
-    public static int TAPE_QUERY_DEVICE_ERROR_DATA() {
-        return (int)4L;
-    }
-    public static int TRANSACTIONMANAGER_QUERY_INFORMATION() {
-        return (int)1L;
-    }
-    public static int TRANSACTIONMANAGER_SET_INFORMATION() {
-        return (int)2L;
-    }
-    public static int TRANSACTIONMANAGER_RECOVER() {
-        return (int)4L;
-    }
-    public static int TRANSACTIONMANAGER_RENAME() {
-        return (int)8L;
-    }
-    public static int TRANSACTIONMANAGER_CREATE_RM() {
-        return (int)16L;
-    }
-    public static int TRANSACTIONMANAGER_BIND_TRANSACTION() {
-        return (int)32L;
-    }
-    public static int TRANSACTIONMANAGER_GENERIC_READ() {
-        return (int)131073L;
-    }
-    public static int TRANSACTIONMANAGER_GENERIC_WRITE() {
-        return (int)131102L;
-    }
-    public static int TRANSACTIONMANAGER_GENERIC_EXECUTE() {
-        return (int)131072L;
-    }
-    public static int TRANSACTIONMANAGER_ALL_ACCESS() {
-        return (int)983103L;
-    }
-    public static int TRANSACTION_QUERY_INFORMATION() {
-        return (int)1L;
-    }
-    public static int TRANSACTION_SET_INFORMATION() {
-        return (int)2L;
-    }
-    public static int TRANSACTION_ENLIST() {
-        return (int)4L;
-    }
-    public static int TRANSACTION_COMMIT() {
-        return (int)8L;
-    }
-    public static int TRANSACTION_ROLLBACK() {
-        return (int)16L;
-    }
-    public static int TRANSACTION_PROPAGATE() {
-        return (int)32L;
-    }
-    public static int TRANSACTION_RIGHT_RESERVED1() {
-        return (int)64L;
-    }
-    public static int TRANSACTION_GENERIC_READ() {
-        return (int)1179649L;
-    }
-    public static int TRANSACTION_GENERIC_WRITE() {
-        return (int)1179710L;
-    }
-    public static int TRANSACTION_GENERIC_EXECUTE() {
-        return (int)1179672L;
-    }
-    public static int TRANSACTION_ALL_ACCESS() {
-        return (int)2031679L;
-    }
-    public static int TRANSACTION_RESOURCE_MANAGER_RIGHTS() {
-        return (int)1179703L;
-    }
-    public static int RESOURCEMANAGER_QUERY_INFORMATION() {
-        return (int)1L;
-    }
-    public static int RESOURCEMANAGER_SET_INFORMATION() {
-        return (int)2L;
-    }
-    public static int RESOURCEMANAGER_RECOVER() {
-        return (int)4L;
-    }
-    public static int RESOURCEMANAGER_ENLIST() {
-        return (int)8L;
-    }
-    public static int RESOURCEMANAGER_GET_NOTIFICATION() {
-        return (int)16L;
-    }
-    public static int RESOURCEMANAGER_REGISTER_PROTOCOL() {
-        return (int)32L;
-    }
-    public static int RESOURCEMANAGER_COMPLETE_PROPAGATION() {
-        return (int)64L;
-    }
-    public static int RESOURCEMANAGER_GENERIC_READ() {
-        return (int)1179649L;
-    }
-    public static int RESOURCEMANAGER_GENERIC_WRITE() {
-        return (int)1179774L;
-    }
-    public static int RESOURCEMANAGER_GENERIC_EXECUTE() {
-        return (int)1179740L;
-    }
-    public static int RESOURCEMANAGER_ALL_ACCESS() {
-        return (int)2031743L;
-    }
-    public static int ENLISTMENT_QUERY_INFORMATION() {
-        return (int)1L;
-    }
-    public static int ENLISTMENT_SET_INFORMATION() {
-        return (int)2L;
-    }
-    public static int ENLISTMENT_RECOVER() {
-        return (int)4L;
-    }
-    public static int ENLISTMENT_SUBORDINATE_RIGHTS() {
-        return (int)8L;
-    }
-    public static int ENLISTMENT_SUPERIOR_RIGHTS() {
-        return (int)16L;
-    }
-    public static int ENLISTMENT_GENERIC_READ() {
-        return (int)131073L;
-    }
-    public static int ENLISTMENT_GENERIC_WRITE() {
-        return (int)131102L;
-    }
-    public static int ENLISTMENT_GENERIC_EXECUTE() {
-        return (int)131100L;
-    }
-    public static int ENLISTMENT_ALL_ACCESS() {
-        return (int)983071L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_ASSEMBLY_INFORMATION() {
-        return (int)1L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_DLL_REDIRECTION() {
-        return (int)2L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_WINDOW_CLASS_REDIRECTION() {
-        return (int)3L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_COM_SERVER_REDIRECTION() {
-        return (int)4L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_COM_INTERFACE_REDIRECTION() {
-        return (int)5L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_COM_TYPE_LIBRARY_REDIRECTION() {
-        return (int)6L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_COM_PROGID_REDIRECTION() {
-        return (int)7L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_GLOBAL_OBJECT_RENAME_TABLE() {
-        return (int)8L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_CLR_SURROGATES() {
-        return (int)9L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_APPLICATION_SETTINGS() {
-        return (int)10L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_COMPATIBILITY_INFO() {
-        return (int)11L;
-    }
-    public static int ACTIVATION_CONTEXT_SECTION_WINRT_ACTIVATABLE_CLASSES() {
+    public static int StorageCounterTypeLoadUnloadCycleCount() {
         return (int)12L;
     }
-    public static int HFILE_ERROR() {
-        return (int)-1L;
-    }
-    public static int DM_IN_BUFFER() {
-        return (int)8L;
-    }
-    public static int DM_IN_PROMPT() {
-        return (int)4L;
-    }
-    public static int DM_OUT_BUFFER() {
-        return (int)2L;
-    }
-    public static int DM_OUT_DEFAULT() {
-        return (int)1L;
-    }
-    public static MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE() {
-        return constants$558.DPI_AWARENESS_CONTEXT_UNAWARE$ADDR;
-    }
-    public static MemoryAddress DPI_AWARENESS_CONTEXT_SYSTEM_AWARE() {
-        return constants$558.DPI_AWARENESS_CONTEXT_SYSTEM_AWARE$ADDR;
-    }
-    public static MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE() {
-        return constants$558.DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE$ADDR;
-    }
-    public static MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2() {
-        return constants$558.DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2$ADDR;
-    }
-    public static MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED() {
-        return constants$558.DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED$ADDR;
-    }
-    public static int STILL_ACTIVE() {
-        return (int)259L;
-    }
-    public static int EXCEPTION_ACCESS_VIOLATION() {
-        return (int)3221225477L;
-    }
-    public static int EXCEPTION_DATATYPE_MISALIGNMENT() {
-        return (int)2147483650L;
-    }
-    public static int EXCEPTION_BREAKPOINT() {
-        return (int)2147483651L;
-    }
-    public static int EXCEPTION_SINGLE_STEP() {
-        return (int)2147483652L;
-    }
-    public static int EXCEPTION_ARRAY_BOUNDS_EXCEEDED() {
-        return (int)3221225612L;
-    }
-    public static int EXCEPTION_FLT_DENORMAL_OPERAND() {
-        return (int)3221225613L;
-    }
-    public static int EXCEPTION_FLT_DIVIDE_BY_ZERO() {
-        return (int)3221225614L;
-    }
-    public static int EXCEPTION_FLT_INEXACT_RESULT() {
-        return (int)3221225615L;
-    }
-    public static int EXCEPTION_FLT_INVALID_OPERATION() {
-        return (int)3221225616L;
-    }
-    public static int EXCEPTION_FLT_OVERFLOW() {
-        return (int)3221225617L;
-    }
-    public static int EXCEPTION_FLT_STACK_CHECK() {
-        return (int)3221225618L;
-    }
-    public static int EXCEPTION_FLT_UNDERFLOW() {
-        return (int)3221225619L;
-    }
-    public static int EXCEPTION_INT_DIVIDE_BY_ZERO() {
-        return (int)3221225620L;
-    }
-    public static int EXCEPTION_INT_OVERFLOW() {
-        return (int)3221225621L;
-    }
-    public static int EXCEPTION_PRIV_INSTRUCTION() {
-        return (int)3221225622L;
-    }
-    public static int EXCEPTION_IN_PAGE_ERROR() {
-        return (int)3221225478L;
-    }
-    public static int EXCEPTION_ILLEGAL_INSTRUCTION() {
-        return (int)3221225501L;
-    }
-    public static int EXCEPTION_NONCONTINUABLE_EXCEPTION() {
-        return (int)3221225509L;
-    }
-    public static int EXCEPTION_STACK_OVERFLOW() {
-        return (int)3221225725L;
-    }
-    public static int EXCEPTION_INVALID_DISPOSITION() {
-        return (int)3221225510L;
-    }
-    public static int EXCEPTION_GUARD_PAGE() {
-        return (int)2147483649L;
-    }
-    public static int EXCEPTION_INVALID_HANDLE() {
-        return (int)3221225480L;
-    }
-    public static int CONTROL_C_EXIT() {
-        return (int)3221225786L;
-    }
-    public static int LHND() {
-        return (int)66L;
-    }
-    public static int LPTR() {
-        return (int)64L;
-    }
-    public static int NONZEROLHND() {
-        return (int)2L;
-    }
-    public static int NONZEROLPTR() {
-        return (int)0L;
-    }
-    public static int NUMA_NO_PREFERRED_NODE() {
-        return (int)4294967295L;
-    }
-    public static int WAIT_FAILED() {
-        return (int)4294967295L;
-    }
-    public static int WAIT_OBJECT_0() {
-        return (int)0L;
-    }
-    public static int WAIT_ABANDONED() {
-        return (int)128L;
-    }
-    public static int WAIT_ABANDONED_0() {
-        return (int)128L;
-    }
-    public static int WAIT_IO_COMPLETION() {
-        return (int)192L;
-    }
-    public static int FILE_FLAG_WRITE_THROUGH() {
-        return (int)2147483648L;
-    }
-    public static int SECURITY_ANONYMOUS() {
-        return (int)0L;
-    }
-    public static int SECURITY_IDENTIFICATION() {
-        return (int)65536L;
-    }
-    public static int SECURITY_IMPERSONATION() {
-        return (int)131072L;
-    }
-    public static int SECURITY_DELEGATION() {
-        return (int)196608L;
-    }
-    public static int SP_SERIALCOMM() {
-        return (int)1L;
-    }
-    public static int PST_UNSPECIFIED() {
-        return (int)0L;
-    }
-    public static int PST_RS232() {
-        return (int)1L;
-    }
-    public static int PST_PARALLELPORT() {
-        return (int)2L;
-    }
-    public static int PST_RS422() {
-        return (int)3L;
-    }
-    public static int PST_RS423() {
-        return (int)4L;
-    }
-    public static int PST_RS449() {
-        return (int)5L;
-    }
-    public static int PST_MODEM() {
-        return (int)6L;
-    }
-    public static int PST_FAX() {
-        return (int)33L;
-    }
-    public static int PST_SCANNER() {
-        return (int)34L;
-    }
-    public static int PST_NETWORK_BRIDGE() {
-        return (int)256L;
-    }
-    public static int PST_LAT() {
-        return (int)257L;
-    }
-    public static int PST_TCPIP_TELNET() {
-        return (int)258L;
-    }
-    public static int PST_X25() {
-        return (int)259L;
-    }
-    public static int PCF_DTRDSR() {
-        return (int)1L;
-    }
-    public static int PCF_RTSCTS() {
-        return (int)2L;
-    }
-    public static int PCF_RLSD() {
-        return (int)4L;
-    }
-    public static int PCF_PARITY_CHECK() {
-        return (int)8L;
-    }
-    public static int PCF_XONXOFF() {
-        return (int)16L;
-    }
-    public static int PCF_SETXCHAR() {
-        return (int)32L;
-    }
-    public static int PCF_TOTALTIMEOUTS() {
-        return (int)64L;
-    }
-    public static int PCF_INTTIMEOUTS() {
-        return (int)128L;
-    }
-    public static int PCF_SPECIALCHARS() {
-        return (int)256L;
-    }
-    public static int PCF_16BITMODE() {
-        return (int)512L;
-    }
-    public static int SP_PARITY() {
-        return (int)1L;
-    }
-    public static int SP_BAUD() {
-        return (int)2L;
-    }
-    public static int SP_DATABITS() {
-        return (int)4L;
-    }
-    public static int SP_STOPBITS() {
-        return (int)8L;
-    }
-    public static int SP_HANDSHAKING() {
-        return (int)16L;
-    }
-    public static int SP_PARITY_CHECK() {
-        return (int)32L;
-    }
-    public static int SP_RLSD() {
-        return (int)64L;
-    }
-    public static int BAUD_075() {
-        return (int)1L;
-    }
-    public static int BAUD_110() {
-        return (int)2L;
-    }
-    public static int BAUD_134_5() {
-        return (int)4L;
-    }
-    public static int BAUD_150() {
-        return (int)8L;
-    }
-    public static int BAUD_300() {
-        return (int)16L;
-    }
-    public static int BAUD_600() {
-        return (int)32L;
-    }
-    public static int BAUD_1200() {
-        return (int)64L;
-    }
-    public static int BAUD_1800() {
-        return (int)128L;
-    }
-    public static int BAUD_2400() {
-        return (int)256L;
-    }
-    public static int BAUD_4800() {
-        return (int)512L;
-    }
-    public static int BAUD_7200() {
-        return (int)1024L;
-    }
-    public static int BAUD_9600() {
-        return (int)2048L;
-    }
-    public static int BAUD_14400() {
-        return (int)4096L;
-    }
-    public static int BAUD_19200() {
-        return (int)8192L;
-    }
-    public static int BAUD_38400() {
-        return (int)16384L;
-    }
-    public static int BAUD_56K() {
-        return (int)32768L;
-    }
-    public static int BAUD_128K() {
-        return (int)65536L;
-    }
-    public static int BAUD_115200() {
-        return (int)131072L;
-    }
-    public static int BAUD_57600() {
-        return (int)262144L;
-    }
-    public static int BAUD_USER() {
-        return (int)268435456L;
-    }
-    public static short DATABITS_5() {
-        return (short)1L;
-    }
-    public static short DATABITS_6() {
-        return (short)2L;
-    }
-    public static short DATABITS_7() {
-        return (short)4L;
-    }
-    public static short DATABITS_8() {
-        return (short)8L;
-    }
-    public static short DATABITS_16() {
-        return (short)16L;
-    }
-    public static short DATABITS_16X() {
-        return (short)32L;
-    }
-    public static short STOPBITS_10() {
-        return (short)1L;
-    }
-    public static short STOPBITS_15() {
-        return (short)2L;
-    }
-    public static short STOPBITS_20() {
-        return (short)4L;
-    }
-    public static short PARITY_NONE() {
-        return (short)256L;
-    }
-    public static short PARITY_ODD() {
-        return (short)512L;
-    }
-    public static short PARITY_EVEN() {
-        return (short)1024L;
-    }
-    public static short PARITY_MARK() {
-        return (short)2048L;
-    }
-    public static short PARITY_SPACE() {
-        return (short)4096L;
-    }
-    public static int COMMPROP_INITIALIZED() {
-        return (int)3879531822L;
-    }
-    public static int GMEM_LOWER() {
-        return (int)4096L;
-    }
-    public static int GHND() {
-        return (int)66L;
-    }
-    public static int GPTR() {
-        return (int)64L;
-    }
-    public static int CREATE_IGNORE_SYSTEM_DEFAULT() {
-        return (int)2147483648L;
-    }
-    public static int THREAD_PRIORITY_LOWEST() {
-        return (int)-2L;
-    }
-    public static int THREAD_PRIORITY_BELOW_NORMAL() {
-        return (int)-1L;
-    }
-    public static int THREAD_PRIORITY_HIGHEST() {
-        return (int)2L;
-    }
-    public static int THREAD_PRIORITY_ABOVE_NORMAL() {
-        return (int)1L;
-    }
-    public static int THREAD_PRIORITY_ERROR_RETURN() {
-        return (int)2147483647L;
-    }
-    public static int THREAD_PRIORITY_TIME_CRITICAL() {
-        return (int)15L;
-    }
-    public static int THREAD_PRIORITY_IDLE() {
-        return (int)-15L;
-    }
-    public static int STD_INPUT_HANDLE() {
-        return (int)4294967286L;
-    }
-    public static int STD_OUTPUT_HANDLE() {
-        return (int)4294967285L;
-    }
-    public static int STD_ERROR_HANDLE() {
-        return (int)4294967284L;
-    }
-    public static int INFINITE() {
-        return (int)4294967295L;
-    }
-    public static int IE_BADID() {
-        return (int)-1L;
-    }
-    public static int IE_OPEN() {
-        return (int)-2L;
-    }
-    public static int IE_NOPEN() {
-        return (int)-3L;
-    }
-    public static int IE_MEMORY() {
-        return (int)-4L;
-    }
-    public static int IE_DEFAULT() {
-        return (int)-5L;
-    }
-    public static int IE_HARDWARE() {
-        return (int)-10L;
-    }
-    public static int IE_BYTESIZE() {
-        return (int)-11L;
-    }
-    public static int IE_BAUDRATE() {
-        return (int)-12L;
-    }
-    public static int MS_CTS_ON() {
-        return (int)16L;
-    }
-    public static int MS_DSR_ON() {
-        return (int)32L;
-    }
-    public static int MS_RING_ON() {
-        return (int)64L;
-    }
-    public static int MS_RLSD_ON() {
-        return (int)128L;
-    }
-    public static int S_SERDVNA() {
-        return (int)-1L;
-    }
-    public static int S_SEROFM() {
-        return (int)-2L;
-    }
-    public static int S_SERMACT() {
-        return (int)-3L;
-    }
-    public static int S_SERQFUL() {
-        return (int)-4L;
-    }
-    public static int S_SERBDNT() {
-        return (int)-5L;
-    }
-    public static int S_SERDLN() {
-        return (int)-6L;
-    }
-    public static int S_SERDCC() {
-        return (int)-7L;
-    }
-    public static int S_SERDTP() {
-        return (int)-8L;
-    }
-    public static int S_SERDVL() {
-        return (int)-9L;
-    }
-    public static int S_SERDMD() {
-        return (int)-10L;
-    }
-    public static int S_SERDSH() {
-        return (int)-11L;
-    }
-    public static int S_SERDPT() {
-        return (int)-12L;
-    }
-    public static int S_SERDFQ() {
-        return (int)-13L;
-    }
-    public static int S_SERDDR() {
-        return (int)-14L;
-    }
-    public static int S_SERDSR() {
-        return (int)-15L;
-    }
-    public static int S_SERDST() {
-        return (int)-16L;
-    }
-    public static int NMPWAIT_WAIT_FOREVER() {
-        return (int)4294967295L;
-    }
-    public static int FS_CASE_IS_PRESERVED() {
-        return (int)2L;
-    }
-    public static int FS_CASE_SENSITIVE() {
-        return (int)1L;
-    }
-    public static int FS_UNICODE_STORED_ON_DISK() {
-        return (int)4L;
-    }
-    public static int FS_PERSISTENT_ACLS() {
-        return (int)8L;
-    }
-    public static int FS_VOL_IS_COMPRESSED() {
-        return (int)32768L;
-    }
-    public static int FS_FILE_COMPRESSION() {
-        return (int)16L;
-    }
-    public static int FS_FILE_ENCRYPTION() {
-        return (int)131072L;
-    }
-    public static short INVALID_ATOM() {
-        return (short)0L;
-    }
-    public static int SCS_THIS_PLATFORM_BINARY() {
-        return (int)6L;
-    }
-    public static int UMS_VERSION() {
-        return (int)256L;
-    }
-    public static int CRITICAL_SECTION_NO_DEBUG_INFO() {
-        return (int)16777216L;
-    }
-    public static int EFS_USE_RECOVERY_KEYS() {
-        return (int)1L;
-    }
-    public static int CREATE_FOR_IMPORT() {
-        return (int)1L;
-    }
-    public static int CREATE_FOR_DIR() {
-        return (int)2L;
-    }
-    public static int OVERWRITE_HIDDEN() {
-        return (int)4L;
-    }
-    public static int EFSRPC_SECURE_ONLY() {
-        return (int)8L;
-    }
-    public static int EFS_DROP_ALTERNATE_STREAMS() {
-        return (int)16L;
-    }
-    public static int PROTECTION_LEVEL_SAME() {
-        return (int)4294967295L;
-    }
-    public static int PROTECTION_LEVEL_NONE() {
-        return (int)4294967294L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_PARENT_PROCESS() {
-        return (int)131072L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_HANDLE_LIST() {
-        return (int)131074L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_GROUP_AFFINITY() {
-        return (int)196611L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_PREFERRED_NODE() {
-        return (int)131076L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_IDEAL_PROCESSOR() {
-        return (int)196613L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_UMS_THREAD() {
-        return (int)196614L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_MITIGATION_POLICY() {
-        return (int)131079L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_SECURITY_CAPABILITIES() {
-        return (int)131081L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_PROTECTION_LEVEL() {
-        return (int)131083L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_PSEUDOCONSOLE() {
-        return (int)131094L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_MASK() {
-        return (int)768L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_DEFER() {
-        return (int)0L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON() {
-        return (int)256L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_OFF() {
-        return (int)512L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_FORCE_RELOCATE_IMAGES_ALWAYS_ON_REQ_RELOCS() {
-        return (int)768L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HEAP_TERMINATE_MASK() {
-        return (int)12288L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HEAP_TERMINATE_DEFER() {
-        return (int)0L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HEAP_TERMINATE_ALWAYS_ON() {
-        return (int)4096L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HEAP_TERMINATE_ALWAYS_OFF() {
-        return (int)8192L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HEAP_TERMINATE_RESERVED() {
-        return (int)12288L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_MASK() {
-        return (int)196608L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_DEFER() {
-        return (int)0L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_ON() {
-        return (int)65536L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_ALWAYS_OFF() {
-        return (int)131072L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_BOTTOM_UP_ASLR_RESERVED() {
-        return (int)196608L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HIGH_ENTROPY_ASLR_MASK() {
-        return (int)3145728L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HIGH_ENTROPY_ASLR_DEFER() {
-        return (int)0L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HIGH_ENTROPY_ASLR_ALWAYS_ON() {
-        return (int)1048576L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HIGH_ENTROPY_ASLR_ALWAYS_OFF() {
-        return (int)2097152L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_HIGH_ENTROPY_ASLR_RESERVED() {
-        return (int)3145728L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_STRICT_HANDLE_CHECKS_MASK() {
-        return (int)50331648L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_STRICT_HANDLE_CHECKS_DEFER() {
-        return (int)0L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_STRICT_HANDLE_CHECKS_ALWAYS_ON() {
-        return (int)16777216L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_STRICT_HANDLE_CHECKS_ALWAYS_OFF() {
-        return (int)33554432L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_STRICT_HANDLE_CHECKS_RESERVED() {
-        return (int)50331648L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_WIN32K_SYSTEM_CALL_DISABLE_MASK() {
-        return (int)805306368L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_WIN32K_SYSTEM_CALL_DISABLE_DEFER() {
-        return (int)0L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_WIN32K_SYSTEM_CALL_DISABLE_ALWAYS_ON() {
-        return (int)268435456L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_WIN32K_SYSTEM_CALL_DISABLE_ALWAYS_OFF() {
-        return (int)536870912L;
-    }
-    public static int PROCESS_CREATION_MITIGATION_POLICY_WIN32K_SYSTEM_CALL_DISABLE_RESERVED() {
-        return (int)805306368L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_EXTENSION_POINT_DISABLE_MASK() {
-        return 12884901888L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_EXTENSION_POINT_DISABLE_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_EXTENSION_POINT_DISABLE_ALWAYS_ON() {
-        return 4294967296L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_EXTENSION_POINT_DISABLE_ALWAYS_OFF() {
-        return 8589934592L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_EXTENSION_POINT_DISABLE_RESERVED() {
-        return 12884901888L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_PROHIBIT_DYNAMIC_CODE_MASK() {
-        return 206158430208L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_PROHIBIT_DYNAMIC_CODE_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_PROHIBIT_DYNAMIC_CODE_ALWAYS_ON() {
-        return 68719476736L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_PROHIBIT_DYNAMIC_CODE_ALWAYS_OFF() {
-        return 137438953472L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_PROHIBIT_DYNAMIC_CODE_ALWAYS_ON_ALLOW_OPT_OUT() {
-        return 206158430208L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_CONTROL_FLOW_GUARD_MASK() {
-        return 3298534883328L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_CONTROL_FLOW_GUARD_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_CONTROL_FLOW_GUARD_ALWAYS_ON() {
-        return 1099511627776L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_CONTROL_FLOW_GUARD_ALWAYS_OFF() {
-        return 2199023255552L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_CONTROL_FLOW_GUARD_EXPORT_SUPPRESSION() {
-        return 3298534883328L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_BLOCK_NON_MICROSOFT_BINARIES_MASK() {
-        return 52776558133248L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_BLOCK_NON_MICROSOFT_BINARIES_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_BLOCK_NON_MICROSOFT_BINARIES_ALWAYS_ON() {
-        return 17592186044416L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_BLOCK_NON_MICROSOFT_BINARIES_ALWAYS_OFF() {
-        return 35184372088832L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_BLOCK_NON_MICROSOFT_BINARIES_ALLOW_STORE() {
-        return 52776558133248L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_FONT_DISABLE_MASK() {
-        return 844424930131968L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_FONT_DISABLE_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_FONT_DISABLE_ALWAYS_ON() {
-        return 281474976710656L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_FONT_DISABLE_ALWAYS_OFF() {
-        return 562949953421312L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_AUDIT_NONSYSTEM_FONTS() {
-        return 844424930131968L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_REMOTE_MASK() {
-        return 13510798882111488L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_REMOTE_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_REMOTE_ALWAYS_ON() {
-        return 4503599627370496L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_REMOTE_ALWAYS_OFF() {
-        return 9007199254740992L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_REMOTE_RESERVED() {
-        return 13510798882111488L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_LOW_LABEL_MASK() {
-        return 216172782113783808L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_LOW_LABEL_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_LOW_LABEL_ALWAYS_ON() {
-        return 72057594037927936L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_LOW_LABEL_ALWAYS_OFF() {
-        return 144115188075855872L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_NO_LOW_LABEL_RESERVED() {
-        return 216172782113783808L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_PREFER_SYSTEM32_MASK() {
-        return 3458764513820540928L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_PREFER_SYSTEM32_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_PREFER_SYSTEM32_ALWAYS_ON() {
-        return 1152921504606846976L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_PREFER_SYSTEM32_ALWAYS_OFF() {
-        return 2305843009213693952L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY_IMAGE_LOAD_PREFER_SYSTEM32_RESERVED() {
-        return 3458764513820540928L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_LOADER_INTEGRITY_CONTINUITY_MASK() {
-        return 48L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_LOADER_INTEGRITY_CONTINUITY_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_LOADER_INTEGRITY_CONTINUITY_ALWAYS_ON() {
-        return 16L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_LOADER_INTEGRITY_CONTINUITY_ALWAYS_OFF() {
-        return 32L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_LOADER_INTEGRITY_CONTINUITY_AUDIT() {
-        return 48L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_STRICT_CONTROL_FLOW_GUARD_MASK() {
-        return 768L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_STRICT_CONTROL_FLOW_GUARD_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_STRICT_CONTROL_FLOW_GUARD_ALWAYS_ON() {
-        return 256L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_STRICT_CONTROL_FLOW_GUARD_ALWAYS_OFF() {
-        return 512L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_STRICT_CONTROL_FLOW_GUARD_RESERVED() {
-        return 768L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_MODULE_TAMPERING_PROTECTION_MASK() {
-        return 12288L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_MODULE_TAMPERING_PROTECTION_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_MODULE_TAMPERING_PROTECTION_ALWAYS_ON() {
-        return 4096L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_MODULE_TAMPERING_PROTECTION_ALWAYS_OFF() {
-        return 8192L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_MODULE_TAMPERING_PROTECTION_NOINHERIT() {
-        return 12288L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_RESTRICT_INDIRECT_BRANCH_PREDICTION_MASK() {
-        return 196608L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_RESTRICT_INDIRECT_BRANCH_PREDICTION_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_RESTRICT_INDIRECT_BRANCH_PREDICTION_ALWAYS_ON() {
-        return 65536L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_RESTRICT_INDIRECT_BRANCH_PREDICTION_ALWAYS_OFF() {
-        return 131072L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_RESTRICT_INDIRECT_BRANCH_PREDICTION_RESERVED() {
-        return 196608L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_ALLOW_DOWNGRADE_DYNAMIC_CODE_POLICY_MASK() {
-        return 3145728L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_ALLOW_DOWNGRADE_DYNAMIC_CODE_POLICY_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_ALLOW_DOWNGRADE_DYNAMIC_CODE_POLICY_ALWAYS_ON() {
-        return 1048576L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_ALLOW_DOWNGRADE_DYNAMIC_CODE_POLICY_ALWAYS_OFF() {
-        return 2097152L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_ALLOW_DOWNGRADE_DYNAMIC_CODE_POLICY_RESERVED() {
-        return 3145728L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_SPECULATIVE_STORE_BYPASS_DISABLE_MASK() {
-        return 50331648L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_SPECULATIVE_STORE_BYPASS_DISABLE_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_SPECULATIVE_STORE_BYPASS_DISABLE_ALWAYS_ON() {
-        return 16777216L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_SPECULATIVE_STORE_BYPASS_DISABLE_ALWAYS_OFF() {
-        return 33554432L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_SPECULATIVE_STORE_BYPASS_DISABLE_RESERVED() {
-        return 50331648L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_USER_SHADOW_STACKS_MASK() {
-        return 805306368L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_USER_SHADOW_STACKS_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_USER_SHADOW_STACKS_ALWAYS_ON() {
-        return 268435456L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_USER_SHADOW_STACKS_ALWAYS_OFF() {
-        return 536870912L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_USER_SHADOW_STACKS_STRICT_MODE() {
-        return 805306368L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_MASK() {
-        return 12884901888L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_ALWAYS_ON() {
-        return 4294967296L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_ALWAYS_OFF() {
-        return 8589934592L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_RELAXED_MODE() {
-        return 12884901888L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_BLOCK_NON_CET_BINARIES_MASK() {
-        return 206158430208L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_BLOCK_NON_CET_BINARIES_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_BLOCK_NON_CET_BINARIES_ALWAYS_ON() {
-        return 68719476736L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_BLOCK_NON_CET_BINARIES_ALWAYS_OFF() {
-        return 137438953472L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_BLOCK_NON_CET_BINARIES_NON_EHCONT() {
-        return 206158430208L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_DYNAMIC_APIS_OUT_OF_PROC_ONLY_MASK() {
-        return 844424930131968L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_DYNAMIC_APIS_OUT_OF_PROC_ONLY_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_DYNAMIC_APIS_OUT_OF_PROC_ONLY_ALWAYS_ON() {
-        return 281474976710656L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_DYNAMIC_APIS_OUT_OF_PROC_ONLY_ALWAYS_OFF() {
-        return 562949953421312L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_POLICY2_CET_DYNAMIC_APIS_OUT_OF_PROC_ONLY_RESERVED() {
-        return 844424930131968L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_JOB_LIST() {
-        return (int)131085L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_CHILD_PROCESS_POLICY() {
-        return (int)131086L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_ALL_APPLICATION_PACKAGES_POLICY() {
-        return (int)131087L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_WIN32K_FILTER() {
-        return (int)131088L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_DESKTOP_APP_POLICY() {
-        return (int)131090L;
-    }
-    public static int PROC_THREAD_ATTRIBUTE_MITIGATION_AUDIT_POLICY() {
-        return (int)131096L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_CET_USER_SHADOW_STACKS_MASK() {
-        return 805306368L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_CET_USER_SHADOW_STACKS_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_CET_USER_SHADOW_STACKS_ALWAYS_ON() {
-        return 268435456L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_CET_USER_SHADOW_STACKS_ALWAYS_OFF() {
-        return 536870912L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_CET_USER_SHADOW_STACKS_RESERVED() {
-        return 805306368L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_MASK() {
-        return 12884901888L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_ALWAYS_ON() {
-        return 4294967296L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_ALWAYS_OFF() {
-        return 8589934592L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_USER_CET_SET_CONTEXT_IP_VALIDATION_RESERVED() {
-        return 12884901888L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_BLOCK_NON_CET_BINARIES_MASK() {
-        return 206158430208L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_BLOCK_NON_CET_BINARIES_DEFER() {
-        return 0L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_BLOCK_NON_CET_BINARIES_ALWAYS_ON() {
-        return 68719476736L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_BLOCK_NON_CET_BINARIES_ALWAYS_OFF() {
-        return 137438953472L;
-    }
-    public static long PROCESS_CREATION_MITIGATION_AUDIT_POLICY2_BLOCK_NON_CET_BINARIES_RESERVED() {
-        return 206158430208L;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_A() {
-        return constants$558.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_A$SEGMENT;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_W() {
-        return constants$559.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_W$SEGMENT;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_T() {
-        return constants$559.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_T$SEGMENT;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_A() {
-        return constants$559.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_A$SEGMENT;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_W() {
-        return constants$559.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_W$SEGMENT;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T() {
-        return constants$559.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T$SEGMENT;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A() {
-        return constants$559.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A$SEGMENT;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W() {
-        return constants$560.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W$SEGMENT;
-    }
-    public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T() {
-        return constants$560.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T$SEGMENT;
-    }
-    public static int BASE_SEARCH_PATH_INVALID_FLAGS() {
-        return (int)-98306L;
-    }
-    public static int COPYFILE2_MESSAGE_COPY_OFFLOAD() {
-        return (int)1L;
-    }
-    public static int LOGON_ZERO_PASSWORD_BUFFER() {
-        return (int)2147483648L;
-    }
-    public static int DOCKINFO_UNDOCKED() {
-        return (int)1L;
-    }
-    public static int DOCKINFO_DOCKED() {
-        return (int)2L;
-    }
-    public static int DOCKINFO_USER_SUPPLIED() {
-        return (int)4L;
-    }
-    public static int DOCKINFO_USER_UNDOCKED() {
-        return (int)5L;
-    }
-    public static int DOCKINFO_USER_DOCKED() {
-        return (int)6L;
-    }
-    public static int ERROR_SUCCESS() {
-        return (int)0L;
-    }
-    public static int NO_ERROR() {
-        return (int)0L;
-    }
-    public static int SEC_E_OK() {
-        return (int)0L;
-    }
-    public static int ERROR_INVALID_FUNCTION() {
-        return (int)1L;
-    }
-    public static int ERROR_FILE_NOT_FOUND() {
-        return (int)2L;
-    }
-    public static int ERROR_PATH_NOT_FOUND() {
-        return (int)3L;
-    }
-    public static int ERROR_TOO_MANY_OPEN_FILES() {
-        return (int)4L;
-    }
-    public static int ERROR_ACCESS_DENIED() {
-        return (int)5L;
-    }
-    public static int ERROR_INVALID_HANDLE() {
-        return (int)6L;
-    }
-    public static int ERROR_ARENA_TRASHED() {
-        return (int)7L;
-    }
-    public static int ERROR_NOT_ENOUGH_MEMORY() {
-        return (int)8L;
-    }
-    public static int ERROR_INVALID_BLOCK() {
-        return (int)9L;
-    }
-    public static int ERROR_BAD_ENVIRONMENT() {
-        return (int)10L;
-    }
-    public static int ERROR_BAD_FORMAT() {
-        return (int)11L;
-    }
-    public static int ERROR_INVALID_ACCESS() {
-        return (int)12L;
-    }
-    public static int ERROR_INVALID_DATA() {
+    public static int StorageCounterTypeLoadUnloadCycleCountMax() {
         return (int)13L;
     }
-    public static int ERROR_OUTOFMEMORY() {
+    public static int StorageCounterTypeWearPercentage() {
         return (int)14L;
     }
-    public static int ERROR_INVALID_DRIVE() {
+    public static int StorageCounterTypeWearPercentageWarning() {
         return (int)15L;
     }
-    public static int ERROR_CURRENT_DIRECTORY() {
+    public static int StorageCounterTypeWearPercentageMax() {
         return (int)16L;
     }
-    public static int ERROR_NOT_SAME_DEVICE() {
+    public static int StorageCounterTypePowerOnHours() {
         return (int)17L;
     }
-    public static int ERROR_NO_MORE_FILES() {
+    public static int StorageCounterTypeReadLatency100NSMax() {
         return (int)18L;
     }
-    public static int ERROR_WRITE_PROTECT() {
+    public static int StorageCounterTypeWriteLatency100NSMax() {
         return (int)19L;
     }
-    public static int ERROR_BAD_UNIT() {
+    public static int StorageCounterTypeFlushLatency100NSMax() {
         return (int)20L;
     }
-    public static int ERROR_NOT_READY() {
+    public static int StorageCounterTypeMax() {
         return (int)21L;
     }
-    public static int ERROR_BAD_COMMAND() {
+    public static OfAddress PSTORAGE_COUNTER_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_COUNTER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_COUNTERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_HW_FIRMWARE_INFO_QUERY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_HW_FIRMWARE_SLOT_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_HW_FIRMWARE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_HW_FIRMWARE_DOWNLOAD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_HW_FIRMWARE_DOWNLOAD_V2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_HW_FIRMWARE_ACTIVATE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_PROTOCOL_COMMAND = Constants$root.C_POINTER$LAYOUT;
+    public static int StorAttributeMgmt_ClearAttribute() {
+        return (int)0L;
+    }
+    public static int StorAttributeMgmt_SetAttribute() {
+        return (int)1L;
+    }
+    public static int StorAttributeMgmt_ResetAttribute() {
+        return (int)2L;
+    }
+    public static OfAddress PSTORAGE_ATTRIBUTE_MGMT_ACTION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_ATTRIBUTE_MGMT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_HEALTH_NOTIFICATION_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_LOGICAL_DEVICE_INSTANCE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_LOGICAL_DEVICES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PHYSICAL_DEVICE_INSTANCE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PHYSICAL_DEVICES = Constants$root.C_POINTER$LAYOUT;
+    public static int ScmRegionFlagNone() {
+        return (int)0L;
+    }
+    public static int ScmRegionFlagLabel() {
+        return (int)1L;
+    }
+    public static OfAddress PSCM_REGION_FLAG = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_REGION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_REGIONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_INTERLEAVED_PD_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_LD_INTERLEAVE_SET_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static int ScmPhysicalDeviceQuery_Descriptor() {
+        return (int)0L;
+    }
+    public static int ScmPhysicalDeviceQuery_IsSupported() {
+        return (int)1L;
+    }
+    public static int ScmPhysicalDeviceQuery_Max() {
+        return (int)2L;
+    }
+    public static OfAddress PSCM_PD_QUERY_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static int ScmPhysicalDeviceProperty_DeviceInfo() {
+        return (int)0L;
+    }
+    public static int ScmPhysicalDeviceProperty_ManagementStatus() {
+        return (int)1L;
+    }
+    public static int ScmPhysicalDeviceProperty_FirmwareInfo() {
+        return (int)2L;
+    }
+    public static int ScmPhysicalDeviceProperty_LocationString() {
+        return (int)3L;
+    }
+    public static int ScmPhysicalDeviceProperty_DeviceSpecificInfo() {
+        return (int)4L;
+    }
+    public static int ScmPhysicalDeviceProperty_DeviceHandle() {
+        return (int)5L;
+    }
+    public static int ScmPhysicalDeviceProperty_Max() {
+        return (int)6L;
+    }
+    public static OfAddress PSCM_PD_PROPERTY_ID = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_PROPERTY_QUERY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_DESCRIPTOR_HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_DEVICE_HANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_DEVICE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_DEVICE_SPECIFIC_PROPERTY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_DEVICE_SPECIFIC_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_FIRMWARE_SLOT_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_FIRMWARE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static int ScmPhysicalDeviceHealth_Unknown() {
+        return (int)0L;
+    }
+    public static int ScmPhysicalDeviceHealth_Unhealthy() {
+        return (int)1L;
+    }
+    public static int ScmPhysicalDeviceHealth_Warning() {
+        return (int)2L;
+    }
+    public static int ScmPhysicalDeviceHealth_Healthy() {
+        return (int)3L;
+    }
+    public static int ScmPhysicalDeviceHealth_Max() {
+        return (int)4L;
+    }
+    public static OfAddress PSCM_PD_HEALTH_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static int ScmPhysicalDeviceOpStatus_Unknown() {
+        return (int)0L;
+    }
+    public static int ScmPhysicalDeviceOpStatus_Ok() {
+        return (int)1L;
+    }
+    public static int ScmPhysicalDeviceOpStatus_PredictingFailure() {
+        return (int)2L;
+    }
+    public static int ScmPhysicalDeviceOpStatus_InService() {
+        return (int)3L;
+    }
+    public static int ScmPhysicalDeviceOpStatus_HardwareError() {
+        return (int)4L;
+    }
+    public static int ScmPhysicalDeviceOpStatus_NotUsable() {
+        return (int)5L;
+    }
+    public static int ScmPhysicalDeviceOpStatus_TransientError() {
+        return (int)6L;
+    }
+    public static int ScmPhysicalDeviceOpStatus_Missing() {
+        return (int)7L;
+    }
+    public static int ScmPhysicalDeviceOpStatus_Max() {
+        return (int)8L;
+    }
+    public static OfAddress PSCM_PD_OPERATIONAL_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static int ScmPhysicalDeviceOpReason_Unknown() {
+        return (int)0L;
+    }
+    public static int ScmPhysicalDeviceOpReason_Media() {
+        return (int)1L;
+    }
+    public static int ScmPhysicalDeviceOpReason_ThresholdExceeded() {
+        return (int)2L;
+    }
+    public static int ScmPhysicalDeviceOpReason_LostData() {
+        return (int)3L;
+    }
+    public static int ScmPhysicalDeviceOpReason_EnergySource() {
+        return (int)4L;
+    }
+    public static int ScmPhysicalDeviceOpReason_Configuration() {
+        return (int)5L;
+    }
+    public static int ScmPhysicalDeviceOpReason_DeviceController() {
+        return (int)6L;
+    }
+    public static int ScmPhysicalDeviceOpReason_MediaController() {
+        return (int)7L;
+    }
+    public static int ScmPhysicalDeviceOpReason_Component() {
+        return (int)8L;
+    }
+    public static int ScmPhysicalDeviceOpReason_BackgroundOperation() {
+        return (int)9L;
+    }
+    public static int ScmPhysicalDeviceOpReason_InvalidFirmware() {
+        return (int)10L;
+    }
+    public static int ScmPhysicalDeviceOpReason_HealthCheck() {
+        return (int)11L;
+    }
+    public static int ScmPhysicalDeviceOpReason_LostDataPersistence() {
+        return (int)12L;
+    }
+    public static int ScmPhysicalDeviceOpReason_DisabledByPlatform() {
+        return (int)13L;
+    }
+    public static int ScmPhysicalDeviceOpReason_PermanentError() {
+        return (int)14L;
+    }
+    public static int ScmPhysicalDeviceOpReason_LostWritePersistence() {
+        return (int)15L;
+    }
+    public static int ScmPhysicalDeviceOpReason_FatalError() {
+        return (int)16L;
+    }
+    public static int ScmPhysicalDeviceOpReason_DataPersistenceLossImminent() {
+        return (int)17L;
+    }
+    public static int ScmPhysicalDeviceOpReason_WritePersistenceLossImminent() {
+        return (int)18L;
+    }
+    public static int ScmPhysicalDeviceOpReason_MediaRemainingSpareBlock() {
+        return (int)19L;
+    }
+    public static int ScmPhysicalDeviceOpReason_PerformanceDegradation() {
+        return (int)20L;
+    }
+    public static int ScmPhysicalDeviceOpReason_ExcessiveTemperature() {
+        return (int)21L;
+    }
+    public static int ScmPhysicalDeviceOpReason_Max() {
         return (int)22L;
     }
-    public static int ERROR_CRC() {
+    public static OfAddress PSCM_PD_OPERATIONAL_STATUS_REASON = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_MANAGEMENT_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_LOCATION_STRING = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_FIRMWARE_DOWNLOAD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_FIRMWARE_ACTIVATE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_PASSTHROUGH_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_PASSTHROUGH_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_PASSTHROUGH_INVDIMM_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_PASSTHROUGH_INVDIMM_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_REINITIALIZE_MEDIA_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static int ScmPhysicalDeviceReinit_Success() {
+        return (int)0L;
+    }
+    public static int ScmPhysicalDeviceReinit_RebootNeeded() {
+        return (int)1L;
+    }
+    public static int ScmPhysicalDeviceReinit_ColdBootNeeded() {
+        return (int)2L;
+    }
+    public static int ScmPhysicalDeviceReinit_Max() {
+        return (int)3L;
+    }
+    public static OfAddress PSCM_PD_MEDIA_REINITIALIZATION_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCM_PD_REINITIALIZE_MEDIA_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static int Unknown() {
+        return (int)0L;
+    }
+    public static int F5_1Pt2_512() {
+        return (int)1L;
+    }
+    public static int F3_1Pt44_512() {
+        return (int)2L;
+    }
+    public static int F3_2Pt88_512() {
+        return (int)3L;
+    }
+    public static int F3_20Pt8_512() {
+        return (int)4L;
+    }
+    public static int F3_720_512() {
+        return (int)5L;
+    }
+    public static int F5_360_512() {
+        return (int)6L;
+    }
+    public static int F5_320_512() {
+        return (int)7L;
+    }
+    public static int F5_320_1024() {
+        return (int)8L;
+    }
+    public static int F5_180_512() {
+        return (int)9L;
+    }
+    public static int F5_160_512() {
+        return (int)10L;
+    }
+    public static int RemovableMedia() {
+        return (int)11L;
+    }
+    public static int FixedMedia() {
+        return (int)12L;
+    }
+    public static int F3_120M_512() {
+        return (int)13L;
+    }
+    public static int F3_640_512() {
+        return (int)14L;
+    }
+    public static int F5_640_512() {
+        return (int)15L;
+    }
+    public static int F5_720_512() {
+        return (int)16L;
+    }
+    public static int F3_1Pt2_512() {
+        return (int)17L;
+    }
+    public static int F3_1Pt23_1024() {
+        return (int)18L;
+    }
+    public static int F5_1Pt23_1024() {
+        return (int)19L;
+    }
+    public static int F3_128Mb_512() {
+        return (int)20L;
+    }
+    public static int F3_230Mb_512() {
+        return (int)21L;
+    }
+    public static int F8_256_128() {
+        return (int)22L;
+    }
+    public static int F3_200Mb_512() {
         return (int)23L;
     }
-    public static int ERROR_BAD_LENGTH() {
+    public static int F3_240M_512() {
         return (int)24L;
     }
-    public static int ERROR_SEEK() {
+    public static int F3_32M_512() {
         return (int)25L;
     }
-    public static int ERROR_NOT_DOS_DISK() {
-        return (int)26L;
-    }
-    public static int ERROR_SECTOR_NOT_FOUND() {
-        return (int)27L;
-    }
-    public static int ERROR_OUT_OF_PAPER() {
-        return (int)28L;
-    }
-    public static int ERROR_WRITE_FAULT() {
-        return (int)29L;
-    }
-    public static int ERROR_READ_FAULT() {
-        return (int)30L;
-    }
-    public static int ERROR_GEN_FAILURE() {
-        return (int)31L;
-    }
-    public static int ERROR_SHARING_VIOLATION() {
-        return (int)32L;
-    }
-    public static int ERROR_LOCK_VIOLATION() {
-        return (int)33L;
-    }
-    public static int ERROR_WRONG_DISK() {
-        return (int)34L;
-    }
-    public static int ERROR_SHARING_BUFFER_EXCEEDED() {
-        return (int)36L;
-    }
-    public static int ERROR_HANDLE_EOF() {
-        return (int)38L;
-    }
-    public static int ERROR_HANDLE_DISK_FULL() {
-        return (int)39L;
-    }
-    public static int ERROR_NOT_SUPPORTED() {
-        return (int)50L;
-    }
-    public static int ERROR_REM_NOT_LIST() {
-        return (int)51L;
-    }
-    public static int ERROR_DUP_NAME() {
-        return (int)52L;
-    }
-    public static int ERROR_BAD_NETPATH() {
-        return (int)53L;
-    }
-    public static int ERROR_NETWORK_BUSY() {
-        return (int)54L;
-    }
-    public static int ERROR_DEV_NOT_EXIST() {
-        return (int)55L;
-    }
-    public static int ERROR_TOO_MANY_CMDS() {
-        return (int)56L;
-    }
-    public static int ERROR_ADAP_HDW_ERR() {
-        return (int)57L;
-    }
-    public static int ERROR_BAD_NET_RESP() {
-        return (int)58L;
-    }
-    public static int ERROR_UNEXP_NET_ERR() {
-        return (int)59L;
-    }
-    public static int ERROR_BAD_REM_ADAP() {
-        return (int)60L;
-    }
-    public static int ERROR_PRINTQ_FULL() {
-        return (int)61L;
-    }
-    public static int ERROR_NO_SPOOL_SPACE() {
-        return (int)62L;
-    }
-    public static int ERROR_PRINT_CANCELLED() {
-        return (int)63L;
-    }
-    public static int ERROR_NETNAME_DELETED() {
-        return (int)64L;
-    }
-    public static int ERROR_NETWORK_ACCESS_DENIED() {
-        return (int)65L;
-    }
-    public static int ERROR_BAD_DEV_TYPE() {
-        return (int)66L;
-    }
-    public static int ERROR_BAD_NET_NAME() {
-        return (int)67L;
-    }
-    public static int ERROR_TOO_MANY_NAMES() {
-        return (int)68L;
-    }
-    public static int ERROR_TOO_MANY_SESS() {
-        return (int)69L;
-    }
-    public static int ERROR_SHARING_PAUSED() {
-        return (int)70L;
-    }
-    public static int ERROR_REQ_NOT_ACCEP() {
-        return (int)71L;
-    }
-    public static int ERROR_REDIR_PAUSED() {
-        return (int)72L;
-    }
-    public static int ERROR_FILE_EXISTS() {
-        return (int)80L;
-    }
-    public static int ERROR_CANNOT_MAKE() {
-        return (int)82L;
-    }
-    public static int ERROR_FAIL_I24() {
-        return (int)83L;
-    }
-    public static int ERROR_OUT_OF_STRUCTURES() {
-        return (int)84L;
-    }
-    public static int ERROR_ALREADY_ASSIGNED() {
-        return (int)85L;
-    }
-    public static int ERROR_INVALID_PASSWORD() {
-        return (int)86L;
-    }
-    public static int ERROR_INVALID_PARAMETER() {
-        return (int)87L;
-    }
-    public static int ERROR_NET_WRITE_FAULT() {
-        return (int)88L;
-    }
-    public static int ERROR_NO_PROC_SLOTS() {
-        return (int)89L;
-    }
-    public static int ERROR_TOO_MANY_SEMAPHORES() {
-        return (int)100L;
-    }
-    public static int ERROR_EXCL_SEM_ALREADY_OWNED() {
-        return (int)101L;
-    }
-    public static int ERROR_SEM_IS_SET() {
-        return (int)102L;
-    }
-    public static int ERROR_TOO_MANY_SEM_REQUESTS() {
-        return (int)103L;
-    }
-    public static int ERROR_INVALID_AT_INTERRUPT_TIME() {
-        return (int)104L;
-    }
-    public static int ERROR_SEM_OWNER_DIED() {
-        return (int)105L;
-    }
-    public static int ERROR_SEM_USER_LIMIT() {
-        return (int)106L;
-    }
-    public static int ERROR_DISK_CHANGE() {
-        return (int)107L;
-    }
-    public static int ERROR_DRIVE_LOCKED() {
-        return (int)108L;
-    }
-    public static int ERROR_BROKEN_PIPE() {
-        return (int)109L;
-    }
-    public static int ERROR_OPEN_FAILED() {
-        return (int)110L;
-    }
-    public static int ERROR_BUFFER_OVERFLOW() {
-        return (int)111L;
-    }
-    public static int ERROR_DISK_FULL() {
-        return (int)112L;
-    }
-    public static int ERROR_NO_MORE_SEARCH_HANDLES() {
-        return (int)113L;
-    }
-    public static int ERROR_INVALID_TARGET_HANDLE() {
-        return (int)114L;
-    }
-    public static int ERROR_INVALID_CATEGORY() {
-        return (int)117L;
-    }
-    public static int ERROR_INVALID_VERIFY_SWITCH() {
-        return (int)118L;
-    }
-    public static int ERROR_BAD_DRIVER_LEVEL() {
-        return (int)119L;
-    }
-    public static int ERROR_CALL_NOT_IMPLEMENTED() {
-        return (int)120L;
-    }
-    public static int ERROR_SEM_TIMEOUT() {
-        return (int)121L;
-    }
-    public static int ERROR_INSUFFICIENT_BUFFER() {
-        return (int)122L;
-    }
-    public static int ERROR_INVALID_NAME() {
-        return (int)123L;
-    }
-    public static int ERROR_INVALID_LEVEL() {
-        return (int)124L;
-    }
-    public static int ERROR_NO_VOLUME_LABEL() {
-        return (int)125L;
-    }
-    public static int ERROR_MOD_NOT_FOUND() {
-        return (int)126L;
-    }
-    public static int ERROR_PROC_NOT_FOUND() {
-        return (int)127L;
-    }
-    public static int ERROR_WAIT_NO_CHILDREN() {
-        return (int)128L;
-    }
-    public static int ERROR_CHILD_NOT_COMPLETE() {
-        return (int)129L;
-    }
-    public static int ERROR_DIRECT_ACCESS_HANDLE() {
-        return (int)130L;
-    }
-    public static int ERROR_NEGATIVE_SEEK() {
-        return (int)131L;
-    }
-    public static int ERROR_SEEK_ON_DEVICE() {
-        return (int)132L;
-    }
-    public static int ERROR_IS_JOIN_TARGET() {
-        return (int)133L;
-    }
-    public static int ERROR_IS_JOINED() {
-        return (int)134L;
-    }
-    public static int ERROR_IS_SUBSTED() {
-        return (int)135L;
-    }
-    public static int ERROR_NOT_JOINED() {
-        return (int)136L;
-    }
-    public static int ERROR_NOT_SUBSTED() {
-        return (int)137L;
-    }
-    public static int ERROR_JOIN_TO_JOIN() {
-        return (int)138L;
-    }
-    public static int ERROR_SUBST_TO_SUBST() {
-        return (int)139L;
-    }
-    public static int ERROR_JOIN_TO_SUBST() {
-        return (int)140L;
-    }
-    public static int ERROR_SUBST_TO_JOIN() {
-        return (int)141L;
-    }
-    public static int ERROR_BUSY_DRIVE() {
-        return (int)142L;
-    }
-    public static int ERROR_SAME_DRIVE() {
-        return (int)143L;
-    }
-    public static int ERROR_DIR_NOT_ROOT() {
-        return (int)144L;
-    }
-    public static int ERROR_DIR_NOT_EMPTY() {
-        return (int)145L;
-    }
-    public static int ERROR_IS_SUBST_PATH() {
-        return (int)146L;
-    }
-    public static int ERROR_IS_JOIN_PATH() {
-        return (int)147L;
-    }
-    public static int ERROR_PATH_BUSY() {
-        return (int)148L;
-    }
-    public static int ERROR_IS_SUBST_TARGET() {
-        return (int)149L;
-    }
-    public static int ERROR_SYSTEM_TRACE() {
-        return (int)150L;
-    }
-    public static int ERROR_INVALID_EVENT_COUNT() {
-        return (int)151L;
-    }
-    public static int ERROR_TOO_MANY_MUXWAITERS() {
-        return (int)152L;
-    }
-    public static int ERROR_INVALID_LIST_FORMAT() {
-        return (int)153L;
-    }
-    public static int ERROR_LABEL_TOO_LONG() {
-        return (int)154L;
-    }
-    public static int ERROR_TOO_MANY_TCBS() {
-        return (int)155L;
-    }
-    public static int ERROR_SIGNAL_REFUSED() {
-        return (int)156L;
-    }
-    public static int ERROR_DISCARDED() {
-        return (int)157L;
-    }
-    public static int ERROR_NOT_LOCKED() {
-        return (int)158L;
-    }
-    public static int ERROR_BAD_THREADID_ADDR() {
-        return (int)159L;
-    }
-    public static int ERROR_BAD_ARGUMENTS() {
-        return (int)160L;
-    }
-    public static int ERROR_BAD_PATHNAME() {
-        return (int)161L;
-    }
-    public static int ERROR_SIGNAL_PENDING() {
-        return (int)162L;
-    }
-    public static int ERROR_MAX_THRDS_REACHED() {
-        return (int)164L;
-    }
-    public static int ERROR_LOCK_FAILED() {
-        return (int)167L;
-    }
-    public static int ERROR_BUSY() {
-        return (int)170L;
-    }
-    public static int ERROR_DEVICE_SUPPORT_IN_PROGRESS() {
-        return (int)171L;
-    }
-    public static int ERROR_CANCEL_VIOLATION() {
-        return (int)173L;
-    }
-    public static int ERROR_ATOMIC_LOCKS_NOT_SUPPORTED() {
-        return (int)174L;
-    }
-    public static int ERROR_INVALID_SEGMENT_NUMBER() {
-        return (int)180L;
-    }
-    public static int ERROR_INVALID_ORDINAL() {
-        return (int)182L;
-    }
-    public static int ERROR_ALREADY_EXISTS() {
-        return (int)183L;
-    }
-    public static int ERROR_INVALID_FLAG_NUMBER() {
-        return (int)186L;
-    }
-    public static int ERROR_SEM_NOT_FOUND() {
-        return (int)187L;
-    }
-    public static int ERROR_INVALID_STARTING_CODESEG() {
-        return (int)188L;
-    }
-    public static int ERROR_INVALID_STACKSEG() {
-        return (int)189L;
-    }
-    public static int ERROR_INVALID_MODULETYPE() {
-        return (int)190L;
-    }
-    public static int ERROR_INVALID_EXE_SIGNATURE() {
-        return (int)191L;
-    }
-    public static int ERROR_EXE_MARKED_INVALID() {
-        return (int)192L;
-    }
-    public static int ERROR_BAD_EXE_FORMAT() {
-        return (int)193L;
-    }
-    public static int ERROR_ITERATED_DATA_EXCEEDS_64k() {
-        return (int)194L;
-    }
-    public static int ERROR_INVALID_MINALLOCSIZE() {
-        return (int)195L;
-    }
-    public static int ERROR_DYNLINK_FROM_INVALID_RING() {
-        return (int)196L;
-    }
-    public static int ERROR_IOPL_NOT_ENABLED() {
-        return (int)197L;
-    }
-    public static int ERROR_INVALID_SEGDPL() {
-        return (int)198L;
-    }
-    public static int ERROR_AUTODATASEG_EXCEEDS_64k() {
-        return (int)199L;
-    }
-    public static int ERROR_RING2SEG_MUST_BE_MOVABLE() {
-        return (int)200L;
-    }
-    public static int ERROR_RELOC_CHAIN_XEEDS_SEGLIM() {
-        return (int)201L;
-    }
-    public static int ERROR_INFLOOP_IN_RELOC_CHAIN() {
-        return (int)202L;
-    }
-    public static int ERROR_ENVVAR_NOT_FOUND() {
-        return (int)203L;
-    }
-    public static int ERROR_NO_SIGNAL_SENT() {
-        return (int)205L;
-    }
-    public static int ERROR_FILENAME_EXCED_RANGE() {
-        return (int)206L;
-    }
-    public static int ERROR_RING2_STACK_IN_USE() {
-        return (int)207L;
-    }
-    public static int ERROR_META_EXPANSION_TOO_LONG() {
-        return (int)208L;
-    }
-    public static int ERROR_INVALID_SIGNAL_NUMBER() {
-        return (int)209L;
-    }
-    public static int ERROR_THREAD_1_INACTIVE() {
-        return (int)210L;
-    }
-    public static int ERROR_LOCKED() {
-        return (int)212L;
-    }
-    public static int ERROR_TOO_MANY_MODULES() {
-        return (int)214L;
-    }
-    public static int ERROR_NESTING_NOT_ALLOWED() {
-        return (int)215L;
-    }
-    public static int ERROR_EXE_MACHINE_TYPE_MISMATCH() {
-        return (int)216L;
-    }
-    public static int ERROR_EXE_CANNOT_MODIFY_SIGNED_BINARY() {
-        return (int)217L;
-    }
-    public static int ERROR_EXE_CANNOT_MODIFY_STRONG_SIGNED_BINARY() {
-        return (int)218L;
-    }
-    public static int ERROR_FILE_CHECKED_OUT() {
-        return (int)220L;
-    }
-    public static int ERROR_CHECKOUT_REQUIRED() {
-        return (int)221L;
-    }
-    public static int ERROR_BAD_FILE_TYPE() {
-        return (int)222L;
-    }
-    public static int ERROR_FILE_TOO_LARGE() {
-        return (int)223L;
-    }
-    public static int ERROR_FORMS_AUTH_REQUIRED() {
-        return (int)224L;
-    }
-    public static int ERROR_VIRUS_INFECTED() {
-        return (int)225L;
-    }
-    public static int ERROR_VIRUS_DELETED() {
-        return (int)226L;
-    }
-    public static int ERROR_PIPE_LOCAL() {
-        return (int)229L;
-    }
-    public static int ERROR_BAD_PIPE() {
-        return (int)230L;
-    }
-    public static int ERROR_PIPE_BUSY() {
-        return (int)231L;
-    }
-    public static int ERROR_NO_DATA() {
-        return (int)232L;
-    }
-    public static int ERROR_PIPE_NOT_CONNECTED() {
-        return (int)233L;
-    }
-    public static int ERROR_MORE_DATA() {
-        return (int)234L;
-    }
-    public static int ERROR_NO_WORK_DONE() {
-        return (int)235L;
-    }
-    public static int ERROR_VC_DISCONNECTED() {
-        return (int)240L;
-    }
-    public static int ERROR_INVALID_EA_NAME() {
-        return (int)254L;
-    }
-    public static int ERROR_EA_LIST_INCONSISTENT() {
-        return (int)255L;
-    }
-    public static int WAIT_TIMEOUT() {
-        return (int)258L;
-    }
-    public static int ERROR_NO_MORE_ITEMS() {
-        return (int)259L;
-    }
-    public static int ERROR_CANNOT_COPY() {
-        return (int)266L;
-    }
-    public static int ERROR_DIRECTORY() {
-        return (int)267L;
-    }
-    public static int ERROR_EAS_DIDNT_FIT() {
-        return (int)275L;
-    }
-    public static int ERROR_EA_FILE_CORRUPT() {
-        return (int)276L;
-    }
-    public static int ERROR_EA_TABLE_FULL() {
-        return (int)277L;
-    }
-    public static int ERROR_INVALID_EA_HANDLE() {
-        return (int)278L;
-    }
-    public static int ERROR_EAS_NOT_SUPPORTED() {
-        return (int)282L;
-    }
-    public static int ERROR_NOT_OWNER() {
-        return (int)288L;
-    }
-    public static int ERROR_TOO_MANY_POSTS() {
-        return (int)298L;
-    }
-    public static int ERROR_PARTIAL_COPY() {
-        return (int)299L;
-    }
-    public static int ERROR_OPLOCK_NOT_GRANTED() {
-        return (int)300L;
-    }
-    public static int ERROR_INVALID_OPLOCK_PROTOCOL() {
-        return (int)301L;
-    }
-    public static int ERROR_DISK_TOO_FRAGMENTED() {
-        return (int)302L;
-    }
-    public static int ERROR_DELETE_PENDING() {
-        return (int)303L;
-    }
-    public static int ERROR_INCOMPATIBLE_WITH_GLOBAL_SHORT_NAME_REGISTRY_SETTING() {
-        return (int)304L;
-    }
-    public static int ERROR_SHORT_NAMES_NOT_ENABLED_ON_VOLUME() {
-        return (int)305L;
-    }
-    public static int ERROR_SECURITY_STREAM_IS_INCONSISTENT() {
-        return (int)306L;
-    }
-    public static int ERROR_INVALID_LOCK_RANGE() {
-        return (int)307L;
-    }
-    public static int ERROR_IMAGE_SUBSYSTEM_NOT_PRESENT() {
-        return (int)308L;
-    }
-    public static int ERROR_NOTIFICATION_GUID_ALREADY_DEFINED() {
-        return (int)309L;
-    }
-    public static int ERROR_INVALID_EXCEPTION_HANDLER() {
-        return (int)310L;
-    }
-    public static int ERROR_DUPLICATE_PRIVILEGES() {
-        return (int)311L;
-    }
-    public static int ERROR_NO_RANGES_PROCESSED() {
-        return (int)312L;
-    }
-    public static int ERROR_NOT_ALLOWED_ON_SYSTEM_FILE() {
-        return (int)313L;
-    }
-    public static int ERROR_DISK_RESOURCES_EXHAUSTED() {
-        return (int)314L;
-    }
-    public static int ERROR_INVALID_TOKEN() {
-        return (int)315L;
-    }
-    public static int ERROR_DEVICE_FEATURE_NOT_SUPPORTED() {
-        return (int)316L;
-    }
-    public static int ERROR_MR_MID_NOT_FOUND() {
-        return (int)317L;
-    }
-    public static int ERROR_SCOPE_NOT_FOUND() {
-        return (int)318L;
-    }
-    public static int ERROR_UNDEFINED_SCOPE() {
-        return (int)319L;
-    }
-    public static int ERROR_INVALID_CAP() {
-        return (int)320L;
-    }
-    public static int ERROR_DEVICE_UNREACHABLE() {
-        return (int)321L;
-    }
-    public static int ERROR_DEVICE_NO_RESOURCES() {
-        return (int)322L;
-    }
-    public static int ERROR_DATA_CHECKSUM_ERROR() {
-        return (int)323L;
-    }
-    public static int ERROR_INTERMIXED_KERNEL_EA_OPERATION() {
-        return (int)324L;
-    }
-    public static int ERROR_FILE_LEVEL_TRIM_NOT_SUPPORTED() {
-        return (int)326L;
-    }
-    public static int ERROR_OFFSET_ALIGNMENT_VIOLATION() {
-        return (int)327L;
-    }
-    public static int ERROR_INVALID_FIELD_IN_PARAMETER_LIST() {
-        return (int)328L;
-    }
-    public static int ERROR_OPERATION_IN_PROGRESS() {
-        return (int)329L;
-    }
-    public static int ERROR_BAD_DEVICE_PATH() {
-        return (int)330L;
-    }
-    public static int ERROR_TOO_MANY_DESCRIPTORS() {
-        return (int)331L;
-    }
-    public static int ERROR_SCRUB_DATA_DISABLED() {
-        return (int)332L;
-    }
-    public static int ERROR_NOT_REDUNDANT_STORAGE() {
-        return (int)333L;
-    }
-    public static int ERROR_RESIDENT_FILE_NOT_SUPPORTED() {
-        return (int)334L;
-    }
-    public static int ERROR_COMPRESSED_FILE_NOT_SUPPORTED() {
-        return (int)335L;
-    }
-    public static int ERROR_DIRECTORY_NOT_SUPPORTED() {
-        return (int)336L;
-    }
-    public static int ERROR_NOT_READ_FROM_COPY() {
-        return (int)337L;
-    }
-    public static int ERROR_FT_WRITE_FAILURE() {
-        return (int)338L;
-    }
-    public static int ERROR_FT_DI_SCAN_REQUIRED() {
-        return (int)339L;
-    }
-    public static int ERROR_INVALID_KERNEL_INFO_VERSION() {
-        return (int)340L;
-    }
-    public static int ERROR_INVALID_PEP_INFO_VERSION() {
-        return (int)341L;
-    }
-    public static int ERROR_OBJECT_NOT_EXTERNALLY_BACKED() {
-        return (int)342L;
-    }
-    public static int ERROR_EXTERNAL_BACKING_PROVIDER_UNKNOWN() {
-        return (int)343L;
-    }
-    public static int ERROR_COMPRESSION_NOT_BENEFICIAL() {
-        return (int)344L;
-    }
-    public static int ERROR_STORAGE_TOPOLOGY_ID_MISMATCH() {
-        return (int)345L;
-    }
-    public static int ERROR_BLOCKED_BY_PARENTAL_CONTROLS() {
-        return (int)346L;
-    }
-    public static int ERROR_BLOCK_TOO_MANY_REFERENCES() {
-        return (int)347L;
-    }
-    public static int ERROR_MARKED_TO_DISALLOW_WRITES() {
-        return (int)348L;
-    }
-    public static int ERROR_ENCLAVE_FAILURE() {
-        return (int)349L;
-    }
-    public static int ERROR_FAIL_NOACTION_REBOOT() {
-        return (int)350L;
-    }
-    public static int ERROR_FAIL_SHUTDOWN() {
-        return (int)351L;
-    }
-    public static int ERROR_FAIL_RESTART() {
-        return (int)352L;
-    }
-    public static int ERROR_MAX_SESSIONS_REACHED() {
-        return (int)353L;
-    }
-    public static int ERROR_NETWORK_ACCESS_DENIED_EDP() {
-        return (int)354L;
-    }
-    public static int ERROR_DEVICE_HINT_NAME_BUFFER_TOO_SMALL() {
-        return (int)355L;
-    }
-    public static int ERROR_EDP_POLICY_DENIES_OPERATION() {
-        return (int)356L;
-    }
-    public static int ERROR_EDP_DPL_POLICY_CANT_BE_SATISFIED() {
-        return (int)357L;
-    }
-    public static int ERROR_CLOUD_FILE_SYNC_ROOT_METADATA_CORRUPT() {
-        return (int)358L;
-    }
-    public static int ERROR_DEVICE_IN_MAINTENANCE() {
-        return (int)359L;
-    }
-    public static int ERROR_NOT_SUPPORTED_ON_DAX() {
-        return (int)360L;
-    }
-    public static int ERROR_DAX_MAPPING_EXISTS() {
-        return (int)361L;
-    }
-    public static int ERROR_CLOUD_FILE_PROVIDER_NOT_RUNNING() {
-        return (int)362L;
-    }
-    public static int ERROR_CLOUD_FILE_METADATA_CORRUPT() {
-        return (int)363L;
-    }
-    public static int ERROR_CLOUD_FILE_METADATA_TOO_LARGE() {
-        return (int)364L;
-    }
-    public static int ERROR_CLOUD_FILE_PROPERTY_BLOB_TOO_LARGE() {
-        return (int)365L;
-    }
-    public static int ERROR_CLOUD_FILE_PROPERTY_BLOB_CHECKSUM_MISMATCH() {
-        return (int)366L;
-    }
-    public static int ERROR_CHILD_PROCESS_BLOCKED() {
-        return (int)367L;
-    }
-    public static int ERROR_STORAGE_LOST_DATA_PERSISTENCE() {
-        return (int)368L;
-    }
-    public static int ERROR_FILE_SYSTEM_VIRTUALIZATION_UNAVAILABLE() {
-        return (int)369L;
-    }
-    public static int ERROR_FILE_SYSTEM_VIRTUALIZATION_METADATA_CORRUPT() {
-        return (int)370L;
-    }
-    public static int ERROR_FILE_SYSTEM_VIRTUALIZATION_BUSY() {
-        return (int)371L;
-    }
-    public static int ERROR_FILE_SYSTEM_VIRTUALIZATION_PROVIDER_UNKNOWN() {
-        return (int)372L;
-    }
-    public static int ERROR_GDI_HANDLE_LEAK() {
-        return (int)373L;
-    }
-    public static int ERROR_CLOUD_FILE_TOO_MANY_PROPERTY_BLOBS() {
-        return (int)374L;
-    }
-    public static int ERROR_CLOUD_FILE_PROPERTY_VERSION_NOT_SUPPORTED() {
-        return (int)375L;
-    }
-    public static int ERROR_NOT_A_CLOUD_FILE() {
-        return (int)376L;
-    }
-    public static int ERROR_CLOUD_FILE_NOT_IN_SYNC() {
-        return (int)377L;
-    }
-    public static int ERROR_CLOUD_FILE_ALREADY_CONNECTED() {
-        return (int)378L;
-    }
-    public static int ERROR_CLOUD_FILE_NOT_SUPPORTED() {
-        return (int)379L;
-    }
-    public static int ERROR_CLOUD_FILE_INVALID_REQUEST() {
-        return (int)380L;
-    }
-    public static int ERROR_CLOUD_FILE_READ_ONLY_VOLUME() {
-        return (int)381L;
-    }
-    public static int ERROR_CLOUD_FILE_CONNECTED_PROVIDER_ONLY() {
-        return (int)382L;
-    }
-    public static int ERROR_CLOUD_FILE_VALIDATION_FAILED() {
-        return (int)383L;
-    }
-    public static int ERROR_SMB1_NOT_AVAILABLE() {
-        return (int)384L;
-    }
-    public static int ERROR_FILE_SYSTEM_VIRTUALIZATION_INVALID_OPERATION() {
-        return (int)385L;
-    }
-    public static int ERROR_CLOUD_FILE_AUTHENTICATION_FAILED() {
-        return (int)386L;
-    }
-    public static int ERROR_CLOUD_FILE_INSUFFICIENT_RESOURCES() {
-        return (int)387L;
-    }
-    public static int ERROR_CLOUD_FILE_NETWORK_UNAVAILABLE() {
-        return (int)388L;
-    }
-    public static int ERROR_CLOUD_FILE_UNSUCCESSFUL() {
-        return (int)389L;
-    }
-    public static int ERROR_CLOUD_FILE_NOT_UNDER_SYNC_ROOT() {
-        return (int)390L;
-    }
-    public static int ERROR_CLOUD_FILE_IN_USE() {
-        return (int)391L;
-    }
-    public static int ERROR_CLOUD_FILE_PINNED() {
-        return (int)392L;
-    }
-    public static int ERROR_CLOUD_FILE_REQUEST_ABORTED() {
-        return (int)393L;
-    }
-    public static int ERROR_CLOUD_FILE_PROPERTY_CORRUPT() {
-        return (int)394L;
-    }
-    public static int ERROR_CLOUD_FILE_ACCESS_DENIED() {
-        return (int)395L;
-    }
-    public static int ERROR_CLOUD_FILE_INCOMPATIBLE_HARDLINKS() {
-        return (int)396L;
-    }
-    public static int ERROR_CLOUD_FILE_PROPERTY_LOCK_CONFLICT() {
-        return (int)397L;
-    }
-    public static int ERROR_CLOUD_FILE_REQUEST_CANCELED() {
-        return (int)398L;
-    }
-    public static int ERROR_EXTERNAL_SYSKEY_NOT_SUPPORTED() {
-        return (int)399L;
-    }
-    public static int ERROR_THREAD_MODE_ALREADY_BACKGROUND() {
-        return (int)400L;
+    public static OfAddress PMEDIA_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFORMAT_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBAD_TRACK_NUMBER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFORMAT_EX_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_GEOMETRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPARTITION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSET_PARTITION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVE_LAYOUT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVERIFY_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREASSIGN_BLOCKS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREASSIGN_BLOCKS_EX = Constants$root.C_POINTER$LAYOUT;
+    public static int PARTITION_STYLE_MBR() {
+        return (int)0L;
+    }
+    public static int PARTITION_STYLE_GPT() {
+        return (int)1L;
+    }
+    public static int PARTITION_STYLE_RAW() {
+        return (int)2L;
+    }
+    public static OfAddress PPARTITION_INFORMATION_GPT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPARTITION_INFORMATION_MBR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSET_PARTITION_INFORMATION_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCREATE_DISK_GPT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCREATE_DISK_MBR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCREATE_DISK = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PGET_LENGTH_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPARTITION_INFORMATION_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVE_LAYOUT_INFORMATION_GPT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVE_LAYOUT_INFORMATION_MBR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVE_LAYOUT_INFORMATION_EX = Constants$root.C_POINTER$LAYOUT;
+    public static int DetectNone() {
+        return (int)0L;
+    }
+    public static int DetectInt13() {
+        return (int)1L;
+    }
+    public static int DetectExInt13() {
+        return (int)2L;
+    }
+    public static OfAddress PDISK_INT13_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_EX_INT13_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_DETECTION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_PARTITION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_GEOMETRY_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_CONTROLLER_NUMBER = Constants$root.C_POINTER$LAYOUT;
+    public static int EqualPriority() {
+        return (int)0L;
+    }
+    public static int KeepPrefetchedData() {
+        return (int)1L;
+    }
+    public static int KeepReadData() {
+        return (int)2L;
+    }
+    public static OfAddress PDISK_CACHE_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_GROW_PARTITION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PHISTOGRAM_BUCKET = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_HISTOGRAM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_PERFORMANCE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_RECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_LOGGING = Constants$root.C_POINTER$LAYOUT;
+    public static int RequestSize() {
+        return (int)0L;
+    }
+    public static int RequestLocation() {
+        return (int)1L;
+    }
+    public static OfAddress PBIN_RANGE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPERF_BIN = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBIN_COUNT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBIN_RESULTS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PGETVERSIONINPARAMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPGETVERSIONINPARAMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PIDEREGS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPIDEREGS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSENDCMDINPARAMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSENDCMDINPARAMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVERSTATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVERSTATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSENDCMDOUTPARAMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSENDCMDOUTPARAMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PGET_DISK_ATTRIBUTES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSET_DISK_ATTRIBUTES = Constants$root.C_POINTER$LAYOUT;
+    public static int AllElements() {
+        return (int)0L;
+    }
+    public static int ChangerTransport() {
+        return (int)1L;
+    }
+    public static int ChangerSlot() {
+        return (int)2L;
+    }
+    public static int ChangerIEPort() {
+        return (int)3L;
+    }
+    public static int ChangerDrive() {
+        return (int)4L;
+    }
+    public static int ChangerDoor() {
+        return (int)5L;
+    }
+    public static int ChangerKeypad() {
+        return (int)6L;
+    }
+    public static int ChangerMaxElement() {
+        return (int)7L;
+    }
+    public static OfAddress PELEMENT_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_ELEMENT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_ELEMENT_LIST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PGET_CHANGER_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_PRODUCT_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_SET_ACCESS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_READ_ELEMENT_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_ELEMENT_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_ELEMENT_STATUS_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_INITIALIZE_ELEMENT_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_SET_POSITION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_EXCHANGE_MEDIUM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_MOVE_MEDIUM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHANGER_SEND_VOLUME_TAG_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREAD_ELEMENT_ADDRESS_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static int DeviceProblemNone() {
+        return (int)0L;
+    }
+    public static int DeviceProblemHardware() {
+        return (int)1L;
+    }
+    public static int DeviceProblemCHMError() {
+        return (int)2L;
+    }
+    public static int DeviceProblemDoorOpen() {
+        return (int)3L;
+    }
+    public static int DeviceProblemCalibrationError() {
+        return (int)4L;
+    }
+    public static int DeviceProblemTargetFailure() {
+        return (int)5L;
+    }
+    public static int DeviceProblemCHMMoveError() {
+        return (int)6L;
+    }
+    public static int DeviceProblemCHMZeroError() {
+        return (int)7L;
+    }
+    public static int DeviceProblemCartridgeInsertError() {
+        return (int)8L;
+    }
+    public static int DeviceProblemPositionError() {
+        return (int)9L;
+    }
+    public static int DeviceProblemSensorError() {
+        return (int)10L;
+    }
+    public static int DeviceProblemCartridgeEjectError() {
+        return (int)11L;
+    }
+    public static int DeviceProblemGripperError() {
+        return (int)12L;
+    }
+    public static int DeviceProblemDriveError() {
+        return (int)13L;
+    }
+    public static OfAddress PCHANGER_DEVICE_PROBLEM_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPATHNAME_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_QUERY_FAT_BPB_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNTFS_VOLUME_DATA_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNTFS_EXTENDED_VOLUME_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREFS_VOLUME_DATA_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTARTING_LCN_INPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTARTING_LCN_INPUT_BUFFER_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVOLUME_BITMAP_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTARTING_VCN_INPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PRETRIEVAL_POINTERS_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PRETRIEVAL_POINTERS_AND_REFCOUNT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PRETRIEVAL_POINTER_COUNT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNTFS_FILE_RECORD_INPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNTFS_FILE_RECORD_OUTPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMOVE_FILE_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMOVE_FILE_RECORD_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMOVE_FILE_DATA32 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFIND_BY_SID_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFIND_BY_SID_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMFT_ENUM_DATA_V0 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMFT_ENUM_DATA_V1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMFT_ENUM_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCREATE_USN_JOURNAL_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREAD_FILE_USN_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREAD_USN_JOURNAL_DATA_V0 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREAD_USN_JOURNAL_DATA_V1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREAD_USN_JOURNAL_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_TRACK_MODIFIED_RANGES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_RANGE_TRACK_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_RECORD_V2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_RECORD_V3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_RECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_RECORD_COMMON_HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_RECORD_EXTENT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_RECORD_V4 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_RECORD_UNION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_JOURNAL_DATA_V0 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_JOURNAL_DATA_V1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_JOURNAL_DATA_V2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUSN_JOURNAL_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDELETE_USN_JOURNAL_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMARK_HANDLE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMARK_HANDLE_INFO32 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBULK_SECURITY_TEST_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_PREFETCH = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_PREFETCH_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILESYSTEM_STATISTICS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFAT_STATISTICS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PEXFAT_STATISTICS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNTFS_STATISTICS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILESYSTEM_STATISTICS_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNTFS_STATISTICS_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_OBJECTID_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_SET_SPARSE_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ZERO_DATA_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ZERO_DATA_INFORMATION_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ALLOCATED_RANGE_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PENCRYPTION_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDECRYPTION_STATUS_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREQUEST_RAW_ENCRYPTED_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PENCRYPTED_DATA_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PEXTENDED_ENCRYPTED_DATA_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPLEX_READ_DATA_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSI_COPYFILE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_MAKE_COMPATIBLE_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_SET_DEFECT_MGMT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_QUERY_SPARING_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_QUERY_ON_DISK_VOL_INFO_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_INITIATE_REPAIR_OUTPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static int ShrinkPrepare() {
+        return (int)1L;
+    }
+    public static int ShrinkCommit() {
+        return (int)2L;
+    }
+    public static int ShrinkAbort() {
+        return (int)3L;
+    }
+    public static OfAddress PSHRINK_VOLUME_REQUEST_TYPES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSHRINK_VOLUME_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_MODIFY_RM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_QUERY_RM_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_ROLLFORWARD_REDO_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_START_RM_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_GET_METADATA_INFO_OUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_LIST_TRANSACTION_LOCKED_FILES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_LIST_TRANSACTIONS_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_LIST_TRANSACTIONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_READ_BACKUP_INFORMATION_OUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_WRITE_BACKUP_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_GET_TRANSACTED_VERSION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_SAVEPOINT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_CREATE_MINIVERSION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTXFS_TRANSACTION_ACTIVE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBOOT_AREA_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PRETRIEVAL_POINTER_BASE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_FS_PERSISTENT_VOLUME_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_SYSTEM_RECOGNITION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREQUEST_OPLOCK_INPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREQUEST_OPLOCK_OUTPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVIRTUAL_STORAGE_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_QUERY_DEPENDENT_VOLUME_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_QUERY_DEPENDENT_VOLUME_LEV1_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_QUERY_DEPENDENT_VOLUME_LEV2_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTORAGE_QUERY_DEPENDENT_VOLUME_RESPONSE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_CHANGE_MACHINE_SID_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_CHANGE_MACHINE_SID_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_QUERY_STATS_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_QUERY_STATS_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_ENUM_SDS_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_ENUM_SDS_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_ENUM_SDS_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_GLOBAL_CHANGE_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSD_GLOBAL_CHANGE_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PLOOKUP_STREAM_FROM_CLUSTER_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PLOOKUP_STREAM_FROM_CLUSTER_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PLOOKUP_STREAM_FROM_CLUSTER_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_TYPE_NOTIFICATION_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static MemorySegment FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$644.FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE$SEGMENT,"FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE");
+    }
+    public static MemorySegment FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$644.FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE$SEGMENT,"FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE");
+    }
+    public static MemorySegment FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$645.FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE$SEGMENT,"FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE");
+    }
+    public static OfAddress PCSV_MGMT_LOCK = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_NAMESPACE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static int CsvControlStartRedirectFile() {
+        return (int)2L;
+    }
+    public static int CsvControlStopRedirectFile() {
+        return (int)3L;
+    }
+    public static int CsvControlQueryRedirectState() {
+        return (int)4L;
+    }
+    public static int CsvControlQueryFileRevision() {
+        return (int)6L;
+    }
+    public static int CsvControlQueryMdsPath() {
+        return (int)8L;
+    }
+    public static int CsvControlQueryFileRevisionFileId128() {
+        return (int)9L;
+    }
+    public static int CsvControlQueryVolumeRedirectState() {
+        return (int)10L;
+    }
+    public static int CsvControlEnableUSNRangeModificationTracking() {
+        return (int)13L;
+    }
+    public static int CsvControlMarkHandleLocalVolumeMount() {
+        return (int)14L;
+    }
+    public static int CsvControlUnmarkHandleLocalVolumeMount() {
+        return (int)15L;
+    }
+    public static int CsvControlGetCsvFsMdsPathV2() {
+        return (int)18L;
+    }
+    public static int CsvControlDisableCaching() {
+        return (int)19L;
+    }
+    public static int CsvControlEnableCaching() {
+        return (int)20L;
+    }
+    public static int CsvControlStartForceDFO() {
+        return (int)21L;
+    }
+    public static int CsvControlStopForceDFO() {
+        return (int)22L;
+    }
+    public static OfAddress PCSV_CONTROL_OP = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_CONTROL_PARAM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_QUERY_REDIRECT_STATE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_QUERY_FILE_REVISION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_QUERY_FILE_REVISION_FILE_ID_128 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_QUERY_MDS_PATH = Constants$root.C_POINTER$LAYOUT;
+    public static int CsvFsDiskConnectivityNone() {
+        return (int)0L;
+    }
+    public static int CsvFsDiskConnectivityMdsNodeOnly() {
+        return (int)1L;
+    }
+    public static int CsvFsDiskConnectivitySubsetOfNodes() {
+        return (int)2L;
+    }
+    public static int CsvFsDiskConnectivityAllNodes() {
+        return (int)3L;
+    }
+    public static OfAddress PCSVFS_DISK_CONNECTIVITY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_QUERY_VOLUME_REDIRECT_STATE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_QUERY_MDS_PATH_V2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_QUERY_VETO_FILE_DIRECT_IO_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static int StorageReserveIdNone() {
+        return (int)0L;
+    }
+    public static int StorageReserveIdHard() {
+        return (int)1L;
+    }
+    public static int StorageReserveIdSoft() {
+        return (int)2L;
+    }
+    public static int StorageReserveIdUpdateScratch() {
+        return (int)3L;
+    }
+    public static int StorageReserveIdMax() {
+        return (int)4L;
+    }
+    public static OfAddress PSTORAGE_RESERVE_ID = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCSV_IS_OWNED_BY_CSVFS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_LEVEL_TRIM_RANGE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_LEVEL_TRIM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_LEVEL_TRIM_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static int QUERY_FILE_LAYOUT_FILTER_TYPE_NONE() {
+        return (int)0L;
+    }
+    public static int QUERY_FILE_LAYOUT_FILTER_TYPE_CLUSTERS() {
+        return (int)1L;
+    }
+    public static int QUERY_FILE_LAYOUT_FILTER_TYPE_FILEID() {
+        return (int)2L;
+    }
+    public static int QUERY_FILE_LAYOUT_FILTER_TYPE_STORAGE_RESERVE_ID() {
+        return (int)3L;
+    }
+    public static int QUERY_FILE_LAYOUT_NUM_FILTER_TYPES() {
+        return (int)4L;
+    }
+    public static OfAddress PCLUSTER_RANGE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_REFERENCE_RANGE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PQUERY_FILE_LAYOUT_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PQUERY_FILE_LAYOUT_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_LAYOUT_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_LAYOUT_NAME_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_LAYOUT_INFO_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTREAM_LAYOUT_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTREAM_EXTENT_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_GET_INTEGRITY_INFORMATION_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_SET_INTEGRITY_INFORMATION_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_SET_INTEGRITY_INFORMATION_BUFFER_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_OFFLOAD_READ_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_OFFLOAD_READ_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_OFFLOAD_WRITE_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_OFFLOAD_WRITE_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSET_PURGE_FAILURE_MODE_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREPAIR_COPIES_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREPAIR_COPIES_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_REGION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_REGION_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_REGION_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWRITE_USN_REASON_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static int FileStorageTierMediaTypeUnspecified() {
+        return (int)0L;
+    }
+    public static int FileStorageTierMediaTypeDisk() {
+        return (int)1L;
+    }
+    public static int FileStorageTierMediaTypeSsd() {
+        return (int)2L;
+    }
+    public static int FileStorageTierMediaTypeScm() {
+        return (int)4L;
+    }
+    public static int FileStorageTierMediaTypeMax() {
+        return (int)5L;
+    }
+    public static OfAddress PFILE_STORAGE_TIER_MEDIA_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static int FileStorageTierClassUnspecified() {
+        return (int)0L;
+    }
+    public static int FileStorageTierClassCapacity() {
+        return (int)1L;
+    }
+    public static int FileStorageTierClassPerformance() {
+        return (int)2L;
+    }
+    public static int FileStorageTierClassMax() {
+        return (int)3L;
+    }
+    public static OfAddress PFILE_STORAGE_TIER_CLASS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_STORAGE_TIER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_QUERY_STORAGE_CLASSES_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTREAM_INFORMATION_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_QUERY_REGION_INFO_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_STORAGE_TIER_REGION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFSCTL_QUERY_REGION_INFO_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_DESIRED_STORAGE_CLASS_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDUPLICATE_EXTENTS_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDUPLICATE_EXTENTS_DATA32 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDUPLICATE_EXTENTS_DATA_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDUPLICATE_EXTENTS_DATA_EX32 = Constants$root.C_POINTER$LAYOUT;
+    public static int SmrGcStateInactive() {
+        return (int)0L;
+    }
+    public static int SmrGcStatePaused() {
+        return (int)1L;
+    }
+    public static int SmrGcStateActive() {
+        return (int)2L;
+    }
+    public static int SmrGcStateActiveFullSpeed() {
+        return (int)3L;
+    }
+    public static OfAddress PREFS_SMR_VOLUME_GC_STATE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREFS_SMR_VOLUME_INFO_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static int SmrGcActionStart() {
+        return (int)1L;
+    }
+    public static int SmrGcActionStartFullSpeed() {
+        return (int)2L;
+    }
+    public static int SmrGcActionPause() {
+        return (int)3L;
+    }
+    public static int SmrGcActionStop() {
+        return (int)4L;
+    }
+    public static OfAddress PREFS_SMR_VOLUME_GC_ACTION = Constants$root.C_POINTER$LAYOUT;
+    public static int SmrGcMethodCompaction() {
+        return (int)1L;
+    }
+    public static int SmrGcMethodCompression() {
+        return (int)2L;
+    }
+    public static int SmrGcMethodRotation() {
+        return (int)3L;
+    }
+    public static OfAddress PREFS_SMR_VOLUME_GC_METHOD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREFS_SMR_VOLUME_GC_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTREAMS_QUERY_PARAMETERS_OUTPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTREAMS_ASSOCIATE_ID_INPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSTREAMS_QUERY_ID_OUTPUT_BUFFER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PQUERY_BAD_RANGES_INPUT_RANGE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PQUERY_BAD_RANGES_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PQUERY_BAD_RANGES_OUTPUT_RANGE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PQUERY_BAD_RANGES_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSET_DAX_ALLOC_ALIGNMENT_HINT_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static int VirtualStorageBehaviorUndefined() {
+        return (int)0L;
+    }
+    public static int VirtualStorageBehaviorCacheWriteThrough() {
+        return (int)1L;
+    }
+    public static int VirtualStorageBehaviorCacheWriteBack() {
+        return (int)2L;
+    }
+    public static OfAddress PVIRTUAL_STORAGE_BEHAVIOR_CODE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVIRTUAL_STORAGE_SET_BEHAVIOR_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PENCRYPTION_KEY_CTRL_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWOF_EXTERNAL_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWOF_EXTERNAL_FILE_ID = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWOF_VERSION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWIM_PROVIDER_EXTERNAL_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWIM_PROVIDER_ADD_OVERLAY_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWIM_PROVIDER_UPDATE_OVERLAY_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWIM_PROVIDER_REMOVE_OVERLAY_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWIM_PROVIDER_SUSPEND_OVERLAY_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWIM_PROVIDER_OVERLAY_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_PROVIDER_EXTERNAL_INFO_V0 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_PROVIDER_EXTERNAL_INFO_V1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_PROVIDER_EXTERNAL_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCONTAINER_VOLUME_STATE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCONTAINER_ROOT_INFO_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCONTAINER_ROOT_INFO_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVIRTUALIZATION_INSTANCE_INFO_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVIRTUALIZATION_INSTANCE_INFO_INPUT_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVIRTUALIZATION_INSTANCE_INFO_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PGET_FILTER_FILE_IDENTIFIER_INPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PGET_FILTER_FILE_IDENTIFIER_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISK_EXTENT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVOLUME_DISK_EXTENTS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PVOLUME_GET_GPT_ATTRIBUTES_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PIO_IRP_EXT_TRACK_OFFSET_HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static MemorySegment GUID_DEVINTERFACE_SMARTCARD_READER$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$645.GUID_DEVINTERFACE_SMARTCARD_READER$SEGMENT,"GUID_DEVINTERFACE_SMARTCARD_READER");
+    }
+    public static OfAddress PSCARD_IO_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARD_IO_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCSCARD_IO_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARD_T0_COMMAND = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCARD_T0_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARD_T0_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCARD_T1_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARD_T1_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCBYTE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCVOID = Constants$root.C_POINTER$LAYOUT;
+    public static MemorySegment g_rgSCardT0Pci$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$645.g_rgSCardT0Pci$SEGMENT,"g_rgSCardT0Pci");
+    }
+    public static MemorySegment g_rgSCardT1Pci$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$645.g_rgSCardT1Pci$SEGMENT,"g_rgSCardT1Pci");
+    }
+    public static MemorySegment g_rgSCardRawPci$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$646.g_rgSCardRawPci$SEGMENT,"g_rgSCardRawPci");
+    }
+    public static OfAddress PSCARDCONTEXT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARDCONTEXT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCARDHANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARDHANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle SCardEstablishContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$646.SCardEstablishContext$MH,"SCardEstablishContext");
+    }
+    public static int SCardEstablishContext ( int dwScope,  Addressable pvReserved1,  Addressable pvReserved2,  Addressable phContext) {
+        var mh$ = SCardEstablishContext$MH();
+        try {
+            return (int)mh$.invokeExact(dwScope, pvReserved1, pvReserved2, phContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardReleaseContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$646.SCardReleaseContext$MH,"SCardReleaseContext");
+    }
+    public static int SCardReleaseContext ( long hContext) {
+        var mh$ = SCardReleaseContext$MH();
+        try {
+            return (int)mh$.invokeExact(hContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardIsValidContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$646.SCardIsValidContext$MH,"SCardIsValidContext");
+    }
+    public static int SCardIsValidContext ( long hContext) {
+        var mh$ = SCardIsValidContext$MH();
+        try {
+            return (int)mh$.invokeExact(hContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListReaderGroupsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$646.SCardListReaderGroupsA$MH,"SCardListReaderGroupsA");
+    }
+    public static int SCardListReaderGroupsA ( long hContext,  Addressable mszGroups,  Addressable pcchGroups) {
+        var mh$ = SCardListReaderGroupsA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, mszGroups, pcchGroups);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListReaderGroupsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$646.SCardListReaderGroupsW$MH,"SCardListReaderGroupsW");
+    }
+    public static int SCardListReaderGroupsW ( long hContext,  Addressable mszGroups,  Addressable pcchGroups) {
+        var mh$ = SCardListReaderGroupsW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, mszGroups, pcchGroups);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListReadersA$MH() {
+        return RuntimeHelper.requireNonNull(constants$647.SCardListReadersA$MH,"SCardListReadersA");
+    }
+    public static int SCardListReadersA ( long hContext,  Addressable mszGroups,  Addressable mszReaders,  Addressable pcchReaders) {
+        var mh$ = SCardListReadersA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, mszGroups, mszReaders, pcchReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListReadersW$MH() {
+        return RuntimeHelper.requireNonNull(constants$647.SCardListReadersW$MH,"SCardListReadersW");
+    }
+    public static int SCardListReadersW ( long hContext,  Addressable mszGroups,  Addressable mszReaders,  Addressable pcchReaders) {
+        var mh$ = SCardListReadersW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, mszGroups, mszReaders, pcchReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListCardsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$647.SCardListCardsA$MH,"SCardListCardsA");
+    }
+    public static int SCardListCardsA ( long hContext,  Addressable pbAtr,  Addressable rgquidInterfaces,  int cguidInterfaceCount,  Addressable mszCards,  Addressable pcchCards) {
+        var mh$ = SCardListCardsA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, pbAtr, rgquidInterfaces, cguidInterfaceCount, mszCards, pcchCards);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListCardsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$647.SCardListCardsW$MH,"SCardListCardsW");
+    }
+    public static int SCardListCardsW ( long hContext,  Addressable pbAtr,  Addressable rgquidInterfaces,  int cguidInterfaceCount,  Addressable mszCards,  Addressable pcchCards) {
+        var mh$ = SCardListCardsW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, pbAtr, rgquidInterfaces, cguidInterfaceCount, mszCards, pcchCards);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListInterfacesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$647.SCardListInterfacesA$MH,"SCardListInterfacesA");
+    }
+    public static int SCardListInterfacesA ( long hContext,  Addressable szCard,  Addressable pguidInterfaces,  Addressable pcguidInterfaces) {
+        var mh$ = SCardListInterfacesA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCard, pguidInterfaces, pcguidInterfaces);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListInterfacesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$647.SCardListInterfacesW$MH,"SCardListInterfacesW");
+    }
+    public static int SCardListInterfacesW ( long hContext,  Addressable szCard,  Addressable pguidInterfaces,  Addressable pcguidInterfaces) {
+        var mh$ = SCardListInterfacesW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCard, pguidInterfaces, pcguidInterfaces);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetProviderIdA$MH() {
+        return RuntimeHelper.requireNonNull(constants$648.SCardGetProviderIdA$MH,"SCardGetProviderIdA");
+    }
+    public static int SCardGetProviderIdA ( long hContext,  Addressable szCard,  Addressable pguidProviderId) {
+        var mh$ = SCardGetProviderIdA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCard, pguidProviderId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetProviderIdW$MH() {
+        return RuntimeHelper.requireNonNull(constants$648.SCardGetProviderIdW$MH,"SCardGetProviderIdW");
+    }
+    public static int SCardGetProviderIdW ( long hContext,  Addressable szCard,  Addressable pguidProviderId) {
+        var mh$ = SCardGetProviderIdW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCard, pguidProviderId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetCardTypeProviderNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$648.SCardGetCardTypeProviderNameA$MH,"SCardGetCardTypeProviderNameA");
+    }
+    public static int SCardGetCardTypeProviderNameA ( long hContext,  Addressable szCardName,  int dwProviderId,  Addressable szProvider,  Addressable pcchProvider) {
+        var mh$ = SCardGetCardTypeProviderNameA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCardName, dwProviderId, szProvider, pcchProvider);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetCardTypeProviderNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$648.SCardGetCardTypeProviderNameW$MH,"SCardGetCardTypeProviderNameW");
+    }
+    public static int SCardGetCardTypeProviderNameW ( long hContext,  Addressable szCardName,  int dwProviderId,  Addressable szProvider,  Addressable pcchProvider) {
+        var mh$ = SCardGetCardTypeProviderNameW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCardName, dwProviderId, szProvider, pcchProvider);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardIntroduceReaderGroupA$MH() {
+        return RuntimeHelper.requireNonNull(constants$648.SCardIntroduceReaderGroupA$MH,"SCardIntroduceReaderGroupA");
+    }
+    public static int SCardIntroduceReaderGroupA ( long hContext,  Addressable szGroupName) {
+        var mh$ = SCardIntroduceReaderGroupA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardIntroduceReaderGroupW$MH() {
+        return RuntimeHelper.requireNonNull(constants$648.SCardIntroduceReaderGroupW$MH,"SCardIntroduceReaderGroupW");
+    }
+    public static int SCardIntroduceReaderGroupW ( long hContext,  Addressable szGroupName) {
+        var mh$ = SCardIntroduceReaderGroupW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardForgetReaderGroupA$MH() {
+        return RuntimeHelper.requireNonNull(constants$649.SCardForgetReaderGroupA$MH,"SCardForgetReaderGroupA");
+    }
+    public static int SCardForgetReaderGroupA ( long hContext,  Addressable szGroupName) {
+        var mh$ = SCardForgetReaderGroupA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardForgetReaderGroupW$MH() {
+        return RuntimeHelper.requireNonNull(constants$649.SCardForgetReaderGroupW$MH,"SCardForgetReaderGroupW");
+    }
+    public static int SCardForgetReaderGroupW ( long hContext,  Addressable szGroupName) {
+        var mh$ = SCardForgetReaderGroupW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardIntroduceReaderA$MH() {
+        return RuntimeHelper.requireNonNull(constants$649.SCardIntroduceReaderA$MH,"SCardIntroduceReaderA");
+    }
+    public static int SCardIntroduceReaderA ( long hContext,  Addressable szReaderName,  Addressable szDeviceName) {
+        var mh$ = SCardIntroduceReaderA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, szDeviceName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardIntroduceReaderW$MH() {
+        return RuntimeHelper.requireNonNull(constants$649.SCardIntroduceReaderW$MH,"SCardIntroduceReaderW");
+    }
+    public static int SCardIntroduceReaderW ( long hContext,  Addressable szReaderName,  Addressable szDeviceName) {
+        var mh$ = SCardIntroduceReaderW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, szDeviceName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardForgetReaderA$MH() {
+        return RuntimeHelper.requireNonNull(constants$649.SCardForgetReaderA$MH,"SCardForgetReaderA");
+    }
+    public static int SCardForgetReaderA ( long hContext,  Addressable szReaderName) {
+        var mh$ = SCardForgetReaderA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardForgetReaderW$MH() {
+        return RuntimeHelper.requireNonNull(constants$649.SCardForgetReaderW$MH,"SCardForgetReaderW");
+    }
+    public static int SCardForgetReaderW ( long hContext,  Addressable szReaderName) {
+        var mh$ = SCardForgetReaderW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardAddReaderToGroupA$MH() {
+        return RuntimeHelper.requireNonNull(constants$650.SCardAddReaderToGroupA$MH,"SCardAddReaderToGroupA");
+    }
+    public static int SCardAddReaderToGroupA ( long hContext,  Addressable szReaderName,  Addressable szGroupName) {
+        var mh$ = SCardAddReaderToGroupA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, szGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardAddReaderToGroupW$MH() {
+        return RuntimeHelper.requireNonNull(constants$650.SCardAddReaderToGroupW$MH,"SCardAddReaderToGroupW");
+    }
+    public static int SCardAddReaderToGroupW ( long hContext,  Addressable szReaderName,  Addressable szGroupName) {
+        var mh$ = SCardAddReaderToGroupW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, szGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardRemoveReaderFromGroupA$MH() {
+        return RuntimeHelper.requireNonNull(constants$650.SCardRemoveReaderFromGroupA$MH,"SCardRemoveReaderFromGroupA");
+    }
+    public static int SCardRemoveReaderFromGroupA ( long hContext,  Addressable szReaderName,  Addressable szGroupName) {
+        var mh$ = SCardRemoveReaderFromGroupA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, szGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardRemoveReaderFromGroupW$MH() {
+        return RuntimeHelper.requireNonNull(constants$650.SCardRemoveReaderFromGroupW$MH,"SCardRemoveReaderFromGroupW");
+    }
+    public static int SCardRemoveReaderFromGroupW ( long hContext,  Addressable szReaderName,  Addressable szGroupName) {
+        var mh$ = SCardRemoveReaderFromGroupW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, szGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardIntroduceCardTypeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$650.SCardIntroduceCardTypeA$MH,"SCardIntroduceCardTypeA");
+    }
+    public static int SCardIntroduceCardTypeA ( long hContext,  Addressable szCardName,  Addressable pguidPrimaryProvider,  Addressable rgguidInterfaces,  int dwInterfaceCount,  Addressable pbAtr,  Addressable pbAtrMask,  int cbAtrLen) {
+        var mh$ = SCardIntroduceCardTypeA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCardName, pguidPrimaryProvider, rgguidInterfaces, dwInterfaceCount, pbAtr, pbAtrMask, cbAtrLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardIntroduceCardTypeW$MH() {
+        return RuntimeHelper.requireNonNull(constants$650.SCardIntroduceCardTypeW$MH,"SCardIntroduceCardTypeW");
+    }
+    public static int SCardIntroduceCardTypeW ( long hContext,  Addressable szCardName,  Addressable pguidPrimaryProvider,  Addressable rgguidInterfaces,  int dwInterfaceCount,  Addressable pbAtr,  Addressable pbAtrMask,  int cbAtrLen) {
+        var mh$ = SCardIntroduceCardTypeW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCardName, pguidPrimaryProvider, rgguidInterfaces, dwInterfaceCount, pbAtr, pbAtrMask, cbAtrLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardSetCardTypeProviderNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$651.SCardSetCardTypeProviderNameA$MH,"SCardSetCardTypeProviderNameA");
+    }
+    public static int SCardSetCardTypeProviderNameA ( long hContext,  Addressable szCardName,  int dwProviderId,  Addressable szProvider) {
+        var mh$ = SCardSetCardTypeProviderNameA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCardName, dwProviderId, szProvider);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardSetCardTypeProviderNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$651.SCardSetCardTypeProviderNameW$MH,"SCardSetCardTypeProviderNameW");
+    }
+    public static int SCardSetCardTypeProviderNameW ( long hContext,  Addressable szCardName,  int dwProviderId,  Addressable szProvider) {
+        var mh$ = SCardSetCardTypeProviderNameW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCardName, dwProviderId, szProvider);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardForgetCardTypeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$651.SCardForgetCardTypeA$MH,"SCardForgetCardTypeA");
+    }
+    public static int SCardForgetCardTypeA ( long hContext,  Addressable szCardName) {
+        var mh$ = SCardForgetCardTypeA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCardName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardForgetCardTypeW$MH() {
+        return RuntimeHelper.requireNonNull(constants$651.SCardForgetCardTypeW$MH,"SCardForgetCardTypeW");
+    }
+    public static int SCardForgetCardTypeW ( long hContext,  Addressable szCardName) {
+        var mh$ = SCardForgetCardTypeW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szCardName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardFreeMemory$MH() {
+        return RuntimeHelper.requireNonNull(constants$651.SCardFreeMemory$MH,"SCardFreeMemory");
+    }
+    public static int SCardFreeMemory ( long hContext,  Addressable pvMem) {
+        var mh$ = SCardFreeMemory$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, pvMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardAccessStartedEvent$MH() {
+        return RuntimeHelper.requireNonNull(constants$651.SCardAccessStartedEvent$MH,"SCardAccessStartedEvent");
+    }
+    public static MemoryAddress SCardAccessStartedEvent () {
+        var mh$ = SCardAccessStartedEvent$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardReleaseStartedEvent$MH() {
+        return RuntimeHelper.requireNonNull(constants$652.SCardReleaseStartedEvent$MH,"SCardReleaseStartedEvent");
+    }
+    public static void SCardReleaseStartedEvent () {
+        var mh$ = SCardReleaseStartedEvent$MH();
+        try {
+            mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PSCARD_READERSTATEA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARD_READERSTATEA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCARD_READERSTATEW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARD_READERSTATEW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCARD_READERSTATE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARD_READERSTATE = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle SCardLocateCardsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$652.SCardLocateCardsA$MH,"SCardLocateCardsA");
+    }
+    public static int SCardLocateCardsA ( long hContext,  Addressable mszCards,  Addressable rgReaderStates,  int cReaders) {
+        var mh$ = SCardLocateCardsA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, mszCards, rgReaderStates, cReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardLocateCardsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$652.SCardLocateCardsW$MH,"SCardLocateCardsW");
+    }
+    public static int SCardLocateCardsW ( long hContext,  Addressable mszCards,  Addressable rgReaderStates,  int cReaders) {
+        var mh$ = SCardLocateCardsW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, mszCards, rgReaderStates, cReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PSCARD_ATRMASK = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSCARD_ATRMASK = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle SCardLocateCardsByATRA$MH() {
+        return RuntimeHelper.requireNonNull(constants$652.SCardLocateCardsByATRA$MH,"SCardLocateCardsByATRA");
+    }
+    public static int SCardLocateCardsByATRA ( long hContext,  Addressable rgAtrMasks,  int cAtrs,  Addressable rgReaderStates,  int cReaders) {
+        var mh$ = SCardLocateCardsByATRA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, rgAtrMasks, cAtrs, rgReaderStates, cReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardLocateCardsByATRW$MH() {
+        return RuntimeHelper.requireNonNull(constants$652.SCardLocateCardsByATRW$MH,"SCardLocateCardsByATRW");
+    }
+    public static int SCardLocateCardsByATRW ( long hContext,  Addressable rgAtrMasks,  int cAtrs,  Addressable rgReaderStates,  int cReaders) {
+        var mh$ = SCardLocateCardsByATRW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, rgAtrMasks, cAtrs, rgReaderStates, cReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetStatusChangeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$652.SCardGetStatusChangeA$MH,"SCardGetStatusChangeA");
+    }
+    public static int SCardGetStatusChangeA ( long hContext,  int dwTimeout,  Addressable rgReaderStates,  int cReaders) {
+        var mh$ = SCardGetStatusChangeA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, dwTimeout, rgReaderStates, cReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetStatusChangeW$MH() {
+        return RuntimeHelper.requireNonNull(constants$653.SCardGetStatusChangeW$MH,"SCardGetStatusChangeW");
+    }
+    public static int SCardGetStatusChangeW ( long hContext,  int dwTimeout,  Addressable rgReaderStates,  int cReaders) {
+        var mh$ = SCardGetStatusChangeW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, dwTimeout, rgReaderStates, cReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardCancel$MH() {
+        return RuntimeHelper.requireNonNull(constants$653.SCardCancel$MH,"SCardCancel");
+    }
+    public static int SCardCancel ( long hContext) {
+        var mh$ = SCardCancel$MH();
+        try {
+            return (int)mh$.invokeExact(hContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardConnectA$MH() {
+        return RuntimeHelper.requireNonNull(constants$653.SCardConnectA$MH,"SCardConnectA");
+    }
+    public static int SCardConnectA ( long hContext,  Addressable szReader,  int dwShareMode,  int dwPreferredProtocols,  Addressable phCard,  Addressable pdwActiveProtocol) {
+        var mh$ = SCardConnectA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReader, dwShareMode, dwPreferredProtocols, phCard, pdwActiveProtocol);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardConnectW$MH() {
+        return RuntimeHelper.requireNonNull(constants$653.SCardConnectW$MH,"SCardConnectW");
+    }
+    public static int SCardConnectW ( long hContext,  Addressable szReader,  int dwShareMode,  int dwPreferredProtocols,  Addressable phCard,  Addressable pdwActiveProtocol) {
+        var mh$ = SCardConnectW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReader, dwShareMode, dwPreferredProtocols, phCard, pdwActiveProtocol);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardReconnect$MH() {
+        return RuntimeHelper.requireNonNull(constants$653.SCardReconnect$MH,"SCardReconnect");
+    }
+    public static int SCardReconnect ( long hCard,  int dwShareMode,  int dwPreferredProtocols,  int dwInitialization,  Addressable pdwActiveProtocol) {
+        var mh$ = SCardReconnect$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, dwShareMode, dwPreferredProtocols, dwInitialization, pdwActiveProtocol);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardDisconnect$MH() {
+        return RuntimeHelper.requireNonNull(constants$653.SCardDisconnect$MH,"SCardDisconnect");
+    }
+    public static int SCardDisconnect ( long hCard,  int dwDisposition) {
+        var mh$ = SCardDisconnect$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, dwDisposition);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardBeginTransaction$MH() {
+        return RuntimeHelper.requireNonNull(constants$654.SCardBeginTransaction$MH,"SCardBeginTransaction");
+    }
+    public static int SCardBeginTransaction ( long hCard) {
+        var mh$ = SCardBeginTransaction$MH();
+        try {
+            return (int)mh$.invokeExact(hCard);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardEndTransaction$MH() {
+        return RuntimeHelper.requireNonNull(constants$654.SCardEndTransaction$MH,"SCardEndTransaction");
+    }
+    public static int SCardEndTransaction ( long hCard,  int dwDisposition) {
+        var mh$ = SCardEndTransaction$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, dwDisposition);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardCancelTransaction$MH() {
+        return RuntimeHelper.requireNonNull(constants$654.SCardCancelTransaction$MH,"SCardCancelTransaction");
+    }
+    public static int SCardCancelTransaction ( long hCard) {
+        var mh$ = SCardCancelTransaction$MH();
+        try {
+            return (int)mh$.invokeExact(hCard);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardState$MH() {
+        return RuntimeHelper.requireNonNull(constants$654.SCardState$MH,"SCardState");
+    }
+    public static int SCardState ( long hCard,  Addressable pdwState,  Addressable pdwProtocol,  Addressable pbAtr,  Addressable pcbAtrLen) {
+        var mh$ = SCardState$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, pdwState, pdwProtocol, pbAtr, pcbAtrLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardStatusA$MH() {
+        return RuntimeHelper.requireNonNull(constants$654.SCardStatusA$MH,"SCardStatusA");
+    }
+    public static int SCardStatusA ( long hCard,  Addressable mszReaderNames,  Addressable pcchReaderLen,  Addressable pdwState,  Addressable pdwProtocol,  Addressable pbAtr,  Addressable pcbAtrLen) {
+        var mh$ = SCardStatusA$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, mszReaderNames, pcchReaderLen, pdwState, pdwProtocol, pbAtr, pcbAtrLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardStatusW$MH() {
+        return RuntimeHelper.requireNonNull(constants$654.SCardStatusW$MH,"SCardStatusW");
+    }
+    public static int SCardStatusW ( long hCard,  Addressable mszReaderNames,  Addressable pcchReaderLen,  Addressable pdwState,  Addressable pdwProtocol,  Addressable pbAtr,  Addressable pcbAtrLen) {
+        var mh$ = SCardStatusW$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, mszReaderNames, pcchReaderLen, pdwState, pdwProtocol, pbAtr, pcbAtrLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardTransmit$MH() {
+        return RuntimeHelper.requireNonNull(constants$655.SCardTransmit$MH,"SCardTransmit");
+    }
+    public static int SCardTransmit ( long hCard,  Addressable pioSendPci,  Addressable pbSendBuffer,  int cbSendLength,  Addressable pioRecvPci,  Addressable pbRecvBuffer,  Addressable pcbRecvLength) {
+        var mh$ = SCardTransmit$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, pioSendPci, pbSendBuffer, cbSendLength, pioRecvPci, pbRecvBuffer, pcbRecvLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetTransmitCount$MH() {
+        return RuntimeHelper.requireNonNull(constants$655.SCardGetTransmitCount$MH,"SCardGetTransmitCount");
+    }
+    public static int SCardGetTransmitCount ( long hCard,  Addressable pcTransmitCount) {
+        var mh$ = SCardGetTransmitCount$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, pcTransmitCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardControl$MH() {
+        return RuntimeHelper.requireNonNull(constants$655.SCardControl$MH,"SCardControl");
+    }
+    public static int SCardControl ( long hCard,  int dwControlCode,  Addressable lpInBuffer,  int cbInBufferSize,  Addressable lpOutBuffer,  int cbOutBufferSize,  Addressable lpBytesReturned) {
+        var mh$ = SCardControl$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, dwControlCode, lpInBuffer, cbInBufferSize, lpOutBuffer, cbOutBufferSize, lpBytesReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetAttrib$MH() {
+        return RuntimeHelper.requireNonNull(constants$655.SCardGetAttrib$MH,"SCardGetAttrib");
+    }
+    public static int SCardGetAttrib ( long hCard,  int dwAttrId,  Addressable pbAttr,  Addressable pcbAttrLen) {
+        var mh$ = SCardGetAttrib$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, dwAttrId, pbAttr, pcbAttrLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardSetAttrib$MH() {
+        return RuntimeHelper.requireNonNull(constants$655.SCardSetAttrib$MH,"SCardSetAttrib");
+    }
+    public static int SCardSetAttrib ( long hCard,  int dwAttrId,  Addressable pbAttr,  int cbAttrLen) {
+        var mh$ = SCardSetAttrib$MH();
+        try {
+            return (int)mh$.invokeExact(hCard, dwAttrId, pbAttr, cbAttrLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress POPENCARD_SEARCH_CRITERIAA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARD_SEARCH_CRITERIAA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POPENCARD_SEARCH_CRITERIAW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARD_SEARCH_CRITERIAW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POPENCARD_SEARCH_CRITERIA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARD_SEARCH_CRITERIA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POPENCARDNAME_EXA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARDNAME_EXA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POPENCARDNAME_EXW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARDNAME_EXW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POPENCARDNAME_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARDNAME_EX = Constants$root.C_POINTER$LAYOUT;
+    public static int RSR_MATCH_TYPE_READER_AND_CONTAINER() {
+        return (int)1L;
+    }
+    public static int RSR_MATCH_TYPE_SERIAL_NUMBER() {
+        return (int)2L;
+    }
+    public static int RSR_MATCH_TYPE_ALL_CARDS() {
+        return (int)3L;
+    }
+    public static OfAddress PREADER_SEL_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREADER_SEL_RESPONSE = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle SCardUIDlgSelectCardA$MH() {
+        return RuntimeHelper.requireNonNull(constants$657.SCardUIDlgSelectCardA$MH,"SCardUIDlgSelectCardA");
+    }
+    public static int SCardUIDlgSelectCardA ( Addressable x0) {
+        var mh$ = SCardUIDlgSelectCardA$MH();
+        try {
+            return (int)mh$.invokeExact(x0);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardUIDlgSelectCardW$MH() {
+        return RuntimeHelper.requireNonNull(constants$657.SCardUIDlgSelectCardW$MH,"SCardUIDlgSelectCardW");
+    }
+    public static int SCardUIDlgSelectCardW ( Addressable x0) {
+        var mh$ = SCardUIDlgSelectCardW$MH();
+        try {
+            return (int)mh$.invokeExact(x0);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress POPENCARDNAMEA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARDNAMEA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POPENCARDNAMEW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARDNAMEW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POPENCARDNAME = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOPENCARDNAME = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle GetOpenCardNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$657.GetOpenCardNameA$MH,"GetOpenCardNameA");
+    }
+    public static int GetOpenCardNameA ( Addressable x0) {
+        var mh$ = GetOpenCardNameA$MH();
+        try {
+            return (int)mh$.invokeExact(x0);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetOpenCardNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$657.GetOpenCardNameW$MH,"GetOpenCardNameW");
+    }
+    public static int GetOpenCardNameW ( Addressable x0) {
+        var mh$ = GetOpenCardNameW$MH();
+        try {
+            return (int)mh$.invokeExact(x0);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardDlgExtendedError$MH() {
+        return RuntimeHelper.requireNonNull(constants$657.SCardDlgExtendedError$MH,"SCardDlgExtendedError");
+    }
+    public static int SCardDlgExtendedError () {
+        var mh$ = SCardDlgExtendedError$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardReadCacheA$MH() {
+        return RuntimeHelper.requireNonNull(constants$658.SCardReadCacheA$MH,"SCardReadCacheA");
+    }
+    public static int SCardReadCacheA ( long hContext,  Addressable CardIdentifier,  int FreshnessCounter,  Addressable LookupName,  Addressable Data,  Addressable DataLen) {
+        var mh$ = SCardReadCacheA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, CardIdentifier, FreshnessCounter, LookupName, Data, DataLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardReadCacheW$MH() {
+        return RuntimeHelper.requireNonNull(constants$658.SCardReadCacheW$MH,"SCardReadCacheW");
+    }
+    public static int SCardReadCacheW ( long hContext,  Addressable CardIdentifier,  int FreshnessCounter,  Addressable LookupName,  Addressable Data,  Addressable DataLen) {
+        var mh$ = SCardReadCacheW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, CardIdentifier, FreshnessCounter, LookupName, Data, DataLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardWriteCacheA$MH() {
+        return RuntimeHelper.requireNonNull(constants$658.SCardWriteCacheA$MH,"SCardWriteCacheA");
+    }
+    public static int SCardWriteCacheA ( long hContext,  Addressable CardIdentifier,  int FreshnessCounter,  Addressable LookupName,  Addressable Data,  int DataLen) {
+        var mh$ = SCardWriteCacheA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, CardIdentifier, FreshnessCounter, LookupName, Data, DataLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardWriteCacheW$MH() {
+        return RuntimeHelper.requireNonNull(constants$658.SCardWriteCacheW$MH,"SCardWriteCacheW");
+    }
+    public static int SCardWriteCacheW ( long hContext,  Addressable CardIdentifier,  int FreshnessCounter,  Addressable LookupName,  Addressable Data,  int DataLen) {
+        var mh$ = SCardWriteCacheW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, CardIdentifier, FreshnessCounter, LookupName, Data, DataLen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetReaderIconA$MH() {
+        return RuntimeHelper.requireNonNull(constants$658.SCardGetReaderIconA$MH,"SCardGetReaderIconA");
+    }
+    public static int SCardGetReaderIconA ( long hContext,  Addressable szReaderName,  Addressable pbIcon,  Addressable pcbIcon) {
+        var mh$ = SCardGetReaderIconA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, pbIcon, pcbIcon);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetReaderIconW$MH() {
+        return RuntimeHelper.requireNonNull(constants$658.SCardGetReaderIconW$MH,"SCardGetReaderIconW");
+    }
+    public static int SCardGetReaderIconW ( long hContext,  Addressable szReaderName,  Addressable pbIcon,  Addressable pcbIcon) {
+        var mh$ = SCardGetReaderIconW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, pbIcon, pcbIcon);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetDeviceTypeIdA$MH() {
+        return RuntimeHelper.requireNonNull(constants$659.SCardGetDeviceTypeIdA$MH,"SCardGetDeviceTypeIdA");
+    }
+    public static int SCardGetDeviceTypeIdA ( long hContext,  Addressable szReaderName,  Addressable pdwDeviceTypeId) {
+        var mh$ = SCardGetDeviceTypeIdA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, pdwDeviceTypeId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetDeviceTypeIdW$MH() {
+        return RuntimeHelper.requireNonNull(constants$659.SCardGetDeviceTypeIdW$MH,"SCardGetDeviceTypeIdW");
+    }
+    public static int SCardGetDeviceTypeIdW ( long hContext,  Addressable szReaderName,  Addressable pdwDeviceTypeId) {
+        var mh$ = SCardGetDeviceTypeIdW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, pdwDeviceTypeId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetReaderDeviceInstanceIdA$MH() {
+        return RuntimeHelper.requireNonNull(constants$659.SCardGetReaderDeviceInstanceIdA$MH,"SCardGetReaderDeviceInstanceIdA");
+    }
+    public static int SCardGetReaderDeviceInstanceIdA ( long hContext,  Addressable szReaderName,  Addressable szDeviceInstanceId,  Addressable pcchDeviceInstanceId) {
+        var mh$ = SCardGetReaderDeviceInstanceIdA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, szDeviceInstanceId, pcchDeviceInstanceId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardGetReaderDeviceInstanceIdW$MH() {
+        return RuntimeHelper.requireNonNull(constants$659.SCardGetReaderDeviceInstanceIdW$MH,"SCardGetReaderDeviceInstanceIdW");
+    }
+    public static int SCardGetReaderDeviceInstanceIdW ( long hContext,  Addressable szReaderName,  Addressable szDeviceInstanceId,  Addressable pcchDeviceInstanceId) {
+        var mh$ = SCardGetReaderDeviceInstanceIdW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szReaderName, szDeviceInstanceId, pcchDeviceInstanceId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListReadersWithDeviceInstanceIdA$MH() {
+        return RuntimeHelper.requireNonNull(constants$659.SCardListReadersWithDeviceInstanceIdA$MH,"SCardListReadersWithDeviceInstanceIdA");
+    }
+    public static int SCardListReadersWithDeviceInstanceIdA ( long hContext,  Addressable szDeviceInstanceId,  Addressable mszReaders,  Addressable pcchReaders) {
+        var mh$ = SCardListReadersWithDeviceInstanceIdA$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szDeviceInstanceId, mszReaders, pcchReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardListReadersWithDeviceInstanceIdW$MH() {
+        return RuntimeHelper.requireNonNull(constants$659.SCardListReadersWithDeviceInstanceIdW$MH,"SCardListReadersWithDeviceInstanceIdW");
+    }
+    public static int SCardListReadersWithDeviceInstanceIdW ( long hContext,  Addressable szDeviceInstanceId,  Addressable mszReaders,  Addressable pcchReaders) {
+        var mh$ = SCardListReadersWithDeviceInstanceIdW$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, szDeviceInstanceId, mszReaders, pcchReaders);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SCardAudit$MH() {
+        return RuntimeHelper.requireNonNull(constants$660.SCardAudit$MH,"SCardAudit");
+    }
+    public static int SCardAudit ( long hContext,  int dwEvent) {
+        var mh$ = SCardAudit$MH();
+        try {
+            return (int)mh$.invokeExact(hContext, dwEvent);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PPRINTER_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_4A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_4A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_4W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_4W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_4 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_4 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_5A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_5A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_5W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_5W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_5 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_5 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_6 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_6 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_7A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_7A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_7W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_7W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_7 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_7 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_8A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_8A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_8W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_8W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_8 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_8 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_9A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_9A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_9W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_9W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_INFO_9 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_INFO_9 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_4A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_4A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_4W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_4W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_INFO_4 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJOB_INFO_4 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PADDJOB_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPADDJOB_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PADDJOB_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPADDJOB_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PADDJOB_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPADDJOB_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_3A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_3A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_3W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_3W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_4A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_4A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_4W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_4W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_4 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_4 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_5A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_5A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_5W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_5W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_5 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_5 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_6A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_6A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_6W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_6W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_6 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_6 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_8A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_8A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_8W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_8W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDRIVER_INFO_8 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDRIVER_INFO_8 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFORM_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPFORM_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFORM_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPFORM_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFORM_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPFORM_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFORM_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPFORM_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFORM_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPFORM_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFORM_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPFORM_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_3A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_3A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_3W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_3W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDOC_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDOC_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTPROCESSOR_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTPROCESSOR_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTPROCESSOR_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTPROCESSOR_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTPROCESSOR_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTPROCESSOR_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTPROCESSOR_CAPS_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTPROCESSOR_CAPS_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_3A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_3A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_3W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_3W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPORT_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPORT_INFO_3 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMONITOR_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMONITOR_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMONITOR_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMONITOR_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMONITOR_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMONITOR_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMONITOR_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMONITOR_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMONITOR_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMONITOR_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMONITOR_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMONITOR_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDATATYPES_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDATATYPES_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDATATYPES_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDATATYPES_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDATATYPES_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDATATYPES_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_DEFAULTSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_DEFAULTSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_DEFAULTSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_DEFAULTSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_DEFAULTS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_DEFAULTS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_ENUM_VALUESA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_ENUM_VALUESA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_ENUM_VALUESW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_ENUM_VALUESW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_ENUM_VALUES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_ENUM_VALUES = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle EnumPrintersA$MH() {
+        return RuntimeHelper.requireNonNull(constants$660.EnumPrintersA$MH,"EnumPrintersA");
+    }
+    public static int EnumPrintersA ( int Flags,  Addressable Name,  int Level,  Addressable pPrinterEnum,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPrintersA$MH();
+        try {
+            return (int)mh$.invokeExact(Flags, Name, Level, pPrinterEnum, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrintersW$MH() {
+        return RuntimeHelper.requireNonNull(constants$660.EnumPrintersW$MH,"EnumPrintersW");
+    }
+    public static int EnumPrintersW ( int Flags,  Addressable Name,  int Level,  Addressable pPrinterEnum,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPrintersW$MH();
+        try {
+            return (int)mh$.invokeExact(Flags, Name, Level, pPrinterEnum, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSpoolFileHandle$MH() {
+        return RuntimeHelper.requireNonNull(constants$660.GetSpoolFileHandle$MH,"GetSpoolFileHandle");
+    }
+    public static MemoryAddress GetSpoolFileHandle ( Addressable hPrinter) {
+        var mh$ = GetSpoolFileHandle$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CommitSpoolData$MH() {
+        return RuntimeHelper.requireNonNull(constants$660.CommitSpoolData$MH,"CommitSpoolData");
+    }
+    public static MemoryAddress CommitSpoolData ( Addressable hPrinter,  Addressable hSpoolFile,  int cbCommit) {
+        var mh$ = CommitSpoolData$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hPrinter, hSpoolFile, cbCommit);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CloseSpoolFileHandle$MH() {
+        return RuntimeHelper.requireNonNull(constants$660.CloseSpoolFileHandle$MH,"CloseSpoolFileHandle");
+    }
+    public static int CloseSpoolFileHandle ( Addressable hPrinter,  Addressable hSpoolFile) {
+        var mh$ = CloseSpoolFileHandle$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, hSpoolFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenPrinterA$MH() {
+        return RuntimeHelper.requireNonNull(constants$661.OpenPrinterA$MH,"OpenPrinterA");
+    }
+    public static int OpenPrinterA ( Addressable pPrinterName,  Addressable phPrinter,  Addressable pDefault) {
+        var mh$ = OpenPrinterA$MH();
+        try {
+            return (int)mh$.invokeExact(pPrinterName, phPrinter, pDefault);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenPrinterW$MH() {
+        return RuntimeHelper.requireNonNull(constants$661.OpenPrinterW$MH,"OpenPrinterW");
+    }
+    public static int OpenPrinterW ( Addressable pPrinterName,  Addressable phPrinter,  Addressable pDefault) {
+        var mh$ = OpenPrinterW$MH();
+        try {
+            return (int)mh$.invokeExact(pPrinterName, phPrinter, pDefault);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ResetPrinterA$MH() {
+        return RuntimeHelper.requireNonNull(constants$661.ResetPrinterA$MH,"ResetPrinterA");
+    }
+    public static int ResetPrinterA ( Addressable hPrinter,  Addressable pDefault) {
+        var mh$ = ResetPrinterA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pDefault);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ResetPrinterW$MH() {
+        return RuntimeHelper.requireNonNull(constants$661.ResetPrinterW$MH,"ResetPrinterW");
+    }
+    public static int ResetPrinterW ( Addressable hPrinter,  Addressable pDefault) {
+        var mh$ = ResetPrinterW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pDefault);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetJobA$MH() {
+        return RuntimeHelper.requireNonNull(constants$661.SetJobA$MH,"SetJobA");
+    }
+    public static int SetJobA ( Addressable hPrinter,  int JobId,  int Level,  Addressable pJob,  int Command) {
+        var mh$ = SetJobA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId, Level, pJob, Command);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetJobW$MH() {
+        return RuntimeHelper.requireNonNull(constants$661.SetJobW$MH,"SetJobW");
+    }
+    public static int SetJobW ( Addressable hPrinter,  int JobId,  int Level,  Addressable pJob,  int Command) {
+        var mh$ = SetJobW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId, Level, pJob, Command);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetJobA$MH() {
+        return RuntimeHelper.requireNonNull(constants$662.GetJobA$MH,"GetJobA");
+    }
+    public static int GetJobA ( Addressable hPrinter,  int JobId,  int Level,  Addressable pJob,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetJobA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId, Level, pJob, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetJobW$MH() {
+        return RuntimeHelper.requireNonNull(constants$662.GetJobW$MH,"GetJobW");
+    }
+    public static int GetJobW ( Addressable hPrinter,  int JobId,  int Level,  Addressable pJob,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetJobW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId, Level, pJob, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumJobsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$662.EnumJobsA$MH,"EnumJobsA");
+    }
+    public static int EnumJobsA ( Addressable hPrinter,  int FirstJob,  int NoJobs,  int Level,  Addressable pJob,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumJobsA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, FirstJob, NoJobs, Level, pJob, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumJobsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$662.EnumJobsW$MH,"EnumJobsW");
+    }
+    public static int EnumJobsW ( Addressable hPrinter,  int FirstJob,  int NoJobs,  int Level,  Addressable pJob,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumJobsW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, FirstJob, NoJobs, Level, pJob, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterA$MH() {
+        return RuntimeHelper.requireNonNull(constants$662.AddPrinterA$MH,"AddPrinterA");
+    }
+    public static MemoryAddress AddPrinterA ( Addressable pName,  int Level,  Addressable pPrinter) {
+        var mh$ = AddPrinterA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pName, Level, pPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterW$MH() {
+        return RuntimeHelper.requireNonNull(constants$662.AddPrinterW$MH,"AddPrinterW");
+    }
+    public static MemoryAddress AddPrinterW ( Addressable pName,  int Level,  Addressable pPrinter) {
+        var mh$ = AddPrinterW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pName, Level, pPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$663.DeletePrinter$MH,"DeletePrinter");
+    }
+    public static int DeletePrinter ( Addressable hPrinter) {
+        var mh$ = DeletePrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPrinterA$MH() {
+        return RuntimeHelper.requireNonNull(constants$663.SetPrinterA$MH,"SetPrinterA");
+    }
+    public static int SetPrinterA ( Addressable hPrinter,  int Level,  Addressable pPrinter,  int Command) {
+        var mh$ = SetPrinterA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pPrinter, Command);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPrinterW$MH() {
+        return RuntimeHelper.requireNonNull(constants$663.SetPrinterW$MH,"SetPrinterW");
+    }
+    public static int SetPrinterW ( Addressable hPrinter,  int Level,  Addressable pPrinter,  int Command) {
+        var mh$ = SetPrinterW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pPrinter, Command);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterA$MH() {
+        return RuntimeHelper.requireNonNull(constants$663.GetPrinterA$MH,"GetPrinterA");
+    }
+    public static int GetPrinterA ( Addressable hPrinter,  int Level,  Addressable pPrinter,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pPrinter, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterW$MH() {
+        return RuntimeHelper.requireNonNull(constants$663.GetPrinterW$MH,"GetPrinterW");
+    }
+    public static int GetPrinterW ( Addressable hPrinter,  int Level,  Addressable pPrinter,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pPrinter, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterDriverA$MH() {
+        return RuntimeHelper.requireNonNull(constants$663.AddPrinterDriverA$MH,"AddPrinterDriverA");
+    }
+    public static int AddPrinterDriverA ( Addressable pName,  int Level,  Addressable pDriverInfo) {
+        var mh$ = AddPrinterDriverA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pDriverInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterDriverW$MH() {
+        return RuntimeHelper.requireNonNull(constants$664.AddPrinterDriverW$MH,"AddPrinterDriverW");
+    }
+    public static int AddPrinterDriverW ( Addressable pName,  int Level,  Addressable pDriverInfo) {
+        var mh$ = AddPrinterDriverW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pDriverInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterDriverExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$664.AddPrinterDriverExA$MH,"AddPrinterDriverExA");
+    }
+    public static int AddPrinterDriverExA ( Addressable pName,  int Level,  Addressable lpbDriverInfo,  int dwFileCopyFlags) {
+        var mh$ = AddPrinterDriverExA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, lpbDriverInfo, dwFileCopyFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterDriverExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$664.AddPrinterDriverExW$MH,"AddPrinterDriverExW");
+    }
+    public static int AddPrinterDriverExW ( Addressable pName,  int Level,  Addressable lpbDriverInfo,  int dwFileCopyFlags) {
+        var mh$ = AddPrinterDriverExW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, lpbDriverInfo, dwFileCopyFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrinterDriversA$MH() {
+        return RuntimeHelper.requireNonNull(constants$664.EnumPrinterDriversA$MH,"EnumPrinterDriversA");
+    }
+    public static int EnumPrinterDriversA ( Addressable pName,  Addressable pEnvironment,  int Level,  Addressable pDriverInfo,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPrinterDriversA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, Level, pDriverInfo, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrinterDriversW$MH() {
+        return RuntimeHelper.requireNonNull(constants$664.EnumPrinterDriversW$MH,"EnumPrinterDriversW");
+    }
+    public static int EnumPrinterDriversW ( Addressable pName,  Addressable pEnvironment,  int Level,  Addressable pDriverInfo,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPrinterDriversW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, Level, pDriverInfo, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDriverA$MH() {
+        return RuntimeHelper.requireNonNull(constants$664.GetPrinterDriverA$MH,"GetPrinterDriverA");
+    }
+    public static int GetPrinterDriverA ( Addressable hPrinter,  Addressable pEnvironment,  int Level,  Addressable pDriverInfo,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDriverA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pEnvironment, Level, pDriverInfo, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDriverW$MH() {
+        return RuntimeHelper.requireNonNull(constants$665.GetPrinterDriverW$MH,"GetPrinterDriverW");
+    }
+    public static int GetPrinterDriverW ( Addressable hPrinter,  Addressable pEnvironment,  int Level,  Addressable pDriverInfo,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDriverW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pEnvironment, Level, pDriverInfo, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDriverDirectoryA$MH() {
+        return RuntimeHelper.requireNonNull(constants$665.GetPrinterDriverDirectoryA$MH,"GetPrinterDriverDirectoryA");
+    }
+    public static int GetPrinterDriverDirectoryA ( Addressable pName,  Addressable pEnvironment,  int Level,  Addressable pDriverDirectory,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDriverDirectoryA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, Level, pDriverDirectory, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDriverDirectoryW$MH() {
+        return RuntimeHelper.requireNonNull(constants$665.GetPrinterDriverDirectoryW$MH,"GetPrinterDriverDirectoryW");
+    }
+    public static int GetPrinterDriverDirectoryW ( Addressable pName,  Addressable pEnvironment,  int Level,  Addressable pDriverDirectory,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDriverDirectoryW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, Level, pDriverDirectory, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDriverA$MH() {
+        return RuntimeHelper.requireNonNull(constants$665.DeletePrinterDriverA$MH,"DeletePrinterDriverA");
+    }
+    public static int DeletePrinterDriverA ( Addressable pName,  Addressable pEnvironment,  Addressable pDriverName) {
+        var mh$ = DeletePrinterDriverA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pDriverName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDriverW$MH() {
+        return RuntimeHelper.requireNonNull(constants$665.DeletePrinterDriverW$MH,"DeletePrinterDriverW");
+    }
+    public static int DeletePrinterDriverW ( Addressable pName,  Addressable pEnvironment,  Addressable pDriverName) {
+        var mh$ = DeletePrinterDriverW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pDriverName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDriverExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$665.DeletePrinterDriverExA$MH,"DeletePrinterDriverExA");
+    }
+    public static int DeletePrinterDriverExA ( Addressable pName,  Addressable pEnvironment,  Addressable pDriverName,  int dwDeleteFlag,  int dwVersionFlag) {
+        var mh$ = DeletePrinterDriverExA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pDriverName, dwDeleteFlag, dwVersionFlag);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDriverExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$666.DeletePrinterDriverExW$MH,"DeletePrinterDriverExW");
+    }
+    public static int DeletePrinterDriverExW ( Addressable pName,  Addressable pEnvironment,  Addressable pDriverName,  int dwDeleteFlag,  int dwVersionFlag) {
+        var mh$ = DeletePrinterDriverExW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pDriverName, dwDeleteFlag, dwVersionFlag);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrintProcessorA$MH() {
+        return RuntimeHelper.requireNonNull(constants$666.AddPrintProcessorA$MH,"AddPrintProcessorA");
+    }
+    public static int AddPrintProcessorA ( Addressable pName,  Addressable pEnvironment,  Addressable pPathName,  Addressable pPrintProcessorName) {
+        var mh$ = AddPrintProcessorA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pPathName, pPrintProcessorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrintProcessorW$MH() {
+        return RuntimeHelper.requireNonNull(constants$666.AddPrintProcessorW$MH,"AddPrintProcessorW");
+    }
+    public static int AddPrintProcessorW ( Addressable pName,  Addressable pEnvironment,  Addressable pPathName,  Addressable pPrintProcessorName) {
+        var mh$ = AddPrintProcessorW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pPathName, pPrintProcessorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrintProcessorsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$666.EnumPrintProcessorsA$MH,"EnumPrintProcessorsA");
+    }
+    public static int EnumPrintProcessorsA ( Addressable pName,  Addressable pEnvironment,  int Level,  Addressable pPrintProcessorInfo,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPrintProcessorsA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, Level, pPrintProcessorInfo, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrintProcessorsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$666.EnumPrintProcessorsW$MH,"EnumPrintProcessorsW");
+    }
+    public static int EnumPrintProcessorsW ( Addressable pName,  Addressable pEnvironment,  int Level,  Addressable pPrintProcessorInfo,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPrintProcessorsW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, Level, pPrintProcessorInfo, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrintProcessorDirectoryA$MH() {
+        return RuntimeHelper.requireNonNull(constants$666.GetPrintProcessorDirectoryA$MH,"GetPrintProcessorDirectoryA");
+    }
+    public static int GetPrintProcessorDirectoryA ( Addressable pName,  Addressable pEnvironment,  int Level,  Addressable pPrintProcessorInfo,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrintProcessorDirectoryA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, Level, pPrintProcessorInfo, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrintProcessorDirectoryW$MH() {
+        return RuntimeHelper.requireNonNull(constants$667.GetPrintProcessorDirectoryW$MH,"GetPrintProcessorDirectoryW");
+    }
+    public static int GetPrintProcessorDirectoryW ( Addressable pName,  Addressable pEnvironment,  int Level,  Addressable pPrintProcessorInfo,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrintProcessorDirectoryW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, Level, pPrintProcessorInfo, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrintProcessorDatatypesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$667.EnumPrintProcessorDatatypesA$MH,"EnumPrintProcessorDatatypesA");
+    }
+    public static int EnumPrintProcessorDatatypesA ( Addressable pName,  Addressable pPrintProcessorName,  int Level,  Addressable pDatatypes,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPrintProcessorDatatypesA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pPrintProcessorName, Level, pDatatypes, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrintProcessorDatatypesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$667.EnumPrintProcessorDatatypesW$MH,"EnumPrintProcessorDatatypesW");
+    }
+    public static int EnumPrintProcessorDatatypesW ( Addressable pName,  Addressable pPrintProcessorName,  int Level,  Addressable pDatatypes,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPrintProcessorDatatypesW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pPrintProcessorName, Level, pDatatypes, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrintProcessorA$MH() {
+        return RuntimeHelper.requireNonNull(constants$667.DeletePrintProcessorA$MH,"DeletePrintProcessorA");
+    }
+    public static int DeletePrintProcessorA ( Addressable pName,  Addressable pEnvironment,  Addressable pPrintProcessorName) {
+        var mh$ = DeletePrintProcessorA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pPrintProcessorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrintProcessorW$MH() {
+        return RuntimeHelper.requireNonNull(constants$667.DeletePrintProcessorW$MH,"DeletePrintProcessorW");
+    }
+    public static int DeletePrintProcessorW ( Addressable pName,  Addressable pEnvironment,  Addressable pPrintProcessorName) {
+        var mh$ = DeletePrintProcessorW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pPrintProcessorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StartDocPrinterA$MH() {
+        return RuntimeHelper.requireNonNull(constants$667.StartDocPrinterA$MH,"StartDocPrinterA");
+    }
+    public static int StartDocPrinterA ( Addressable hPrinter,  int Level,  Addressable pDocInfo) {
+        var mh$ = StartDocPrinterA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pDocInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StartDocPrinterW$MH() {
+        return RuntimeHelper.requireNonNull(constants$668.StartDocPrinterW$MH,"StartDocPrinterW");
+    }
+    public static int StartDocPrinterW ( Addressable hPrinter,  int Level,  Addressable pDocInfo) {
+        var mh$ = StartDocPrinterW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pDocInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StartPagePrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$668.StartPagePrinter$MH,"StartPagePrinter");
+    }
+    public static int StartPagePrinter ( Addressable hPrinter) {
+        var mh$ = StartPagePrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$668.WritePrinter$MH,"WritePrinter");
+    }
+    public static int WritePrinter ( Addressable hPrinter,  Addressable pBuf,  int cbBuf,  Addressable pcWritten) {
+        var mh$ = WritePrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pBuf, cbBuf, pcWritten);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FlushPrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$668.FlushPrinter$MH,"FlushPrinter");
+    }
+    public static int FlushPrinter ( Addressable hPrinter,  Addressable pBuf,  int cbBuf,  Addressable pcWritten,  int cSleep) {
+        var mh$ = FlushPrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pBuf, cbBuf, pcWritten, cSleep);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EndPagePrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$668.EndPagePrinter$MH,"EndPagePrinter");
+    }
+    public static int EndPagePrinter ( Addressable hPrinter) {
+        var mh$ = EndPagePrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AbortPrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$668.AbortPrinter$MH,"AbortPrinter");
+    }
+    public static int AbortPrinter ( Addressable hPrinter) {
+        var mh$ = AbortPrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadPrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$669.ReadPrinter$MH,"ReadPrinter");
+    }
+    public static int ReadPrinter ( Addressable hPrinter,  Addressable pBuf,  int cbBuf,  Addressable pNoBytesRead) {
+        var mh$ = ReadPrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pBuf, cbBuf, pNoBytesRead);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EndDocPrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$669.EndDocPrinter$MH,"EndDocPrinter");
+    }
+    public static int EndDocPrinter ( Addressable hPrinter) {
+        var mh$ = EndDocPrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddJobA$MH() {
+        return RuntimeHelper.requireNonNull(constants$669.AddJobA$MH,"AddJobA");
+    }
+    public static int AddJobA ( Addressable hPrinter,  int Level,  Addressable pData,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = AddJobA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pData, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddJobW$MH() {
+        return RuntimeHelper.requireNonNull(constants$669.AddJobW$MH,"AddJobW");
+    }
+    public static int AddJobW ( Addressable hPrinter,  int Level,  Addressable pData,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = AddJobW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pData, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ScheduleJob$MH() {
+        return RuntimeHelper.requireNonNull(constants$669.ScheduleJob$MH,"ScheduleJob");
+    }
+    public static int ScheduleJob ( Addressable hPrinter,  int JobId) {
+        var mh$ = ScheduleJob$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PrinterProperties$MH() {
+        return RuntimeHelper.requireNonNull(constants$669.PrinterProperties$MH,"PrinterProperties");
+    }
+    public static int PrinterProperties ( Addressable hWnd,  Addressable hPrinter) {
+        var mh$ = PrinterProperties$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, hPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DocumentPropertiesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$670.DocumentPropertiesA$MH,"DocumentPropertiesA");
+    }
+    public static int DocumentPropertiesA ( Addressable hWnd,  Addressable hPrinter,  Addressable pDeviceName,  Addressable pDevModeOutput,  Addressable pDevModeInput,  int fMode) {
+        var mh$ = DocumentPropertiesA$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, hPrinter, pDeviceName, pDevModeOutput, pDevModeInput, fMode);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DocumentPropertiesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$670.DocumentPropertiesW$MH,"DocumentPropertiesW");
+    }
+    public static int DocumentPropertiesW ( Addressable hWnd,  Addressable hPrinter,  Addressable pDeviceName,  Addressable pDevModeOutput,  Addressable pDevModeInput,  int fMode) {
+        var mh$ = DocumentPropertiesW$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, hPrinter, pDeviceName, pDevModeOutput, pDevModeInput, fMode);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AdvancedDocumentPropertiesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$670.AdvancedDocumentPropertiesA$MH,"AdvancedDocumentPropertiesA");
+    }
+    public static int AdvancedDocumentPropertiesA ( Addressable hWnd,  Addressable hPrinter,  Addressable pDeviceName,  Addressable pDevModeOutput,  Addressable pDevModeInput) {
+        var mh$ = AdvancedDocumentPropertiesA$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, hPrinter, pDeviceName, pDevModeOutput, pDevModeInput);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AdvancedDocumentPropertiesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$670.AdvancedDocumentPropertiesW$MH,"AdvancedDocumentPropertiesW");
+    }
+    public static int AdvancedDocumentPropertiesW ( Addressable hWnd,  Addressable hPrinter,  Addressable pDeviceName,  Addressable pDevModeOutput,  Addressable pDevModeInput) {
+        var mh$ = AdvancedDocumentPropertiesW$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, hPrinter, pDeviceName, pDevModeOutput, pDevModeInput);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ExtDeviceMode$MH() {
+        return RuntimeHelper.requireNonNull(constants$670.ExtDeviceMode$MH,"ExtDeviceMode");
+    }
+    public static int ExtDeviceMode ( Addressable hWnd,  Addressable hInst,  Addressable pDevModeOutput,  Addressable pDeviceName,  Addressable pPort,  Addressable pDevModeInput,  Addressable pProfile,  int fMode) {
+        var mh$ = ExtDeviceMode$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, hInst, pDevModeOutput, pDeviceName, pPort, pDevModeInput, pProfile, fMode);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDataA$MH() {
+        return RuntimeHelper.requireNonNull(constants$670.GetPrinterDataA$MH,"GetPrinterDataA");
+    }
+    public static int GetPrinterDataA ( Addressable hPrinter,  Addressable pValueName,  Addressable pType,  Addressable pData,  int nSize,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDataA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pValueName, pType, pData, nSize, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDataW$MH() {
+        return RuntimeHelper.requireNonNull(constants$671.GetPrinterDataW$MH,"GetPrinterDataW");
+    }
+    public static int GetPrinterDataW ( Addressable hPrinter,  Addressable pValueName,  Addressable pType,  Addressable pData,  int nSize,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDataW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pValueName, pType, pData, nSize, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDataExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$671.GetPrinterDataExA$MH,"GetPrinterDataExA");
+    }
+    public static int GetPrinterDataExA ( Addressable hPrinter,  Addressable pKeyName,  Addressable pValueName,  Addressable pType,  Addressable pData,  int nSize,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDataExA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pValueName, pType, pData, nSize, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDataExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$671.GetPrinterDataExW$MH,"GetPrinterDataExW");
+    }
+    public static int GetPrinterDataExW ( Addressable hPrinter,  Addressable pKeyName,  Addressable pValueName,  Addressable pType,  Addressable pData,  int nSize,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDataExW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pValueName, pType, pData, nSize, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrinterDataA$MH() {
+        return RuntimeHelper.requireNonNull(constants$671.EnumPrinterDataA$MH,"EnumPrinterDataA");
+    }
+    public static int EnumPrinterDataA ( Addressable hPrinter,  int dwIndex,  Addressable pValueName,  int cbValueName,  Addressable pcbValueName,  Addressable pType,  Addressable pData,  int cbData,  Addressable pcbData) {
+        var mh$ = EnumPrinterDataA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, dwIndex, pValueName, cbValueName, pcbValueName, pType, pData, cbData, pcbData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrinterDataW$MH() {
+        return RuntimeHelper.requireNonNull(constants$671.EnumPrinterDataW$MH,"EnumPrinterDataW");
+    }
+    public static int EnumPrinterDataW ( Addressable hPrinter,  int dwIndex,  Addressable pValueName,  int cbValueName,  Addressable pcbValueName,  Addressable pType,  Addressable pData,  int cbData,  Addressable pcbData) {
+        var mh$ = EnumPrinterDataW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, dwIndex, pValueName, cbValueName, pcbValueName, pType, pData, cbData, pcbData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrinterDataExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$671.EnumPrinterDataExA$MH,"EnumPrinterDataExA");
+    }
+    public static int EnumPrinterDataExA ( Addressable hPrinter,  Addressable pKeyName,  Addressable pEnumValues,  int cbEnumValues,  Addressable pcbEnumValues,  Addressable pnEnumValues) {
+        var mh$ = EnumPrinterDataExA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pEnumValues, cbEnumValues, pcbEnumValues, pnEnumValues);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrinterDataExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$672.EnumPrinterDataExW$MH,"EnumPrinterDataExW");
+    }
+    public static int EnumPrinterDataExW ( Addressable hPrinter,  Addressable pKeyName,  Addressable pEnumValues,  int cbEnumValues,  Addressable pcbEnumValues,  Addressable pnEnumValues) {
+        var mh$ = EnumPrinterDataExW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pEnumValues, cbEnumValues, pcbEnumValues, pnEnumValues);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrinterKeyA$MH() {
+        return RuntimeHelper.requireNonNull(constants$672.EnumPrinterKeyA$MH,"EnumPrinterKeyA");
+    }
+    public static int EnumPrinterKeyA ( Addressable hPrinter,  Addressable pKeyName,  Addressable pSubkey,  int cbSubkey,  Addressable pcbSubkey) {
+        var mh$ = EnumPrinterKeyA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pSubkey, cbSubkey, pcbSubkey);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPrinterKeyW$MH() {
+        return RuntimeHelper.requireNonNull(constants$672.EnumPrinterKeyW$MH,"EnumPrinterKeyW");
+    }
+    public static int EnumPrinterKeyW ( Addressable hPrinter,  Addressable pKeyName,  Addressable pSubkey,  int cbSubkey,  Addressable pcbSubkey) {
+        var mh$ = EnumPrinterKeyW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pSubkey, cbSubkey, pcbSubkey);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPrinterDataA$MH() {
+        return RuntimeHelper.requireNonNull(constants$672.SetPrinterDataA$MH,"SetPrinterDataA");
+    }
+    public static int SetPrinterDataA ( Addressable hPrinter,  Addressable pValueName,  int Type,  Addressable pData,  int cbData) {
+        var mh$ = SetPrinterDataA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pValueName, Type, pData, cbData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPrinterDataW$MH() {
+        return RuntimeHelper.requireNonNull(constants$672.SetPrinterDataW$MH,"SetPrinterDataW");
+    }
+    public static int SetPrinterDataW ( Addressable hPrinter,  Addressable pValueName,  int Type,  Addressable pData,  int cbData) {
+        var mh$ = SetPrinterDataW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pValueName, Type, pData, cbData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPrinterDataExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$672.SetPrinterDataExA$MH,"SetPrinterDataExA");
+    }
+    public static int SetPrinterDataExA ( Addressable hPrinter,  Addressable pKeyName,  Addressable pValueName,  int Type,  Addressable pData,  int cbData) {
+        var mh$ = SetPrinterDataExA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pValueName, Type, pData, cbData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPrinterDataExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$673.SetPrinterDataExW$MH,"SetPrinterDataExW");
+    }
+    public static int SetPrinterDataExW ( Addressable hPrinter,  Addressable pKeyName,  Addressable pValueName,  int Type,  Addressable pData,  int cbData) {
+        var mh$ = SetPrinterDataExW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pValueName, Type, pData, cbData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDataA$MH() {
+        return RuntimeHelper.requireNonNull(constants$673.DeletePrinterDataA$MH,"DeletePrinterDataA");
+    }
+    public static int DeletePrinterDataA ( Addressable hPrinter,  Addressable pValueName) {
+        var mh$ = DeletePrinterDataA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pValueName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDataW$MH() {
+        return RuntimeHelper.requireNonNull(constants$673.DeletePrinterDataW$MH,"DeletePrinterDataW");
+    }
+    public static int DeletePrinterDataW ( Addressable hPrinter,  Addressable pValueName) {
+        var mh$ = DeletePrinterDataW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pValueName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDataExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$673.DeletePrinterDataExA$MH,"DeletePrinterDataExA");
+    }
+    public static int DeletePrinterDataExA ( Addressable hPrinter,  Addressable pKeyName,  Addressable pValueName) {
+        var mh$ = DeletePrinterDataExA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pValueName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDataExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$673.DeletePrinterDataExW$MH,"DeletePrinterDataExW");
+    }
+    public static int DeletePrinterDataExW ( Addressable hPrinter,  Addressable pKeyName,  Addressable pValueName) {
+        var mh$ = DeletePrinterDataExW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName, pValueName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterKeyA$MH() {
+        return RuntimeHelper.requireNonNull(constants$673.DeletePrinterKeyA$MH,"DeletePrinterKeyA");
+    }
+    public static int DeletePrinterKeyA ( Addressable hPrinter,  Addressable pKeyName) {
+        var mh$ = DeletePrinterKeyA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterKeyW$MH() {
+        return RuntimeHelper.requireNonNull(constants$674.DeletePrinterKeyW$MH,"DeletePrinterKeyW");
+    }
+    public static int DeletePrinterKeyW ( Addressable hPrinter,  Addressable pKeyName) {
+        var mh$ = DeletePrinterKeyW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pKeyName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PPRINTER_NOTIFY_OPTIONS_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_NOTIFY_OPTIONS_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_NOTIFY_OPTIONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_NOTIFY_OPTIONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_NOTIFY_INFO_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_NOTIFY_INFO_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_NOTIFY_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_NOTIFY_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBINARY_CONTAINER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBIDI_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBIDI_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBIDI_REQUEST_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBIDI_REQUEST_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBIDI_REQUEST_CONTAINER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBIDI_REQUEST_CONTAINER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBIDI_RESPONSE_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBIDI_RESPONSE_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBIDI_RESPONSE_CONTAINER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBIDI_RESPONSE_CONTAINER = Constants$root.C_POINTER$LAYOUT;
+    public static int BIDI_NULL() {
+        return (int)0L;
+    }
+    public static int BIDI_INT() {
+        return (int)1L;
+    }
+    public static int BIDI_FLOAT() {
+        return (int)2L;
+    }
+    public static int BIDI_BOOL() {
+        return (int)3L;
+    }
+    public static int BIDI_STRING() {
+        return (int)4L;
+    }
+    public static int BIDI_TEXT() {
+        return (int)5L;
+    }
+    public static int BIDI_ENUM() {
+        return (int)6L;
+    }
+    public static int BIDI_BLOB() {
+        return (int)7L;
+    }
+    public static MethodHandle WaitForPrinterChange$MH() {
+        return RuntimeHelper.requireNonNull(constants$674.WaitForPrinterChange$MH,"WaitForPrinterChange");
+    }
+    public static int WaitForPrinterChange ( Addressable hPrinter,  int Flags) {
+        var mh$ = WaitForPrinterChange$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstPrinterChangeNotification$MH() {
+        return RuntimeHelper.requireNonNull(constants$674.FindFirstPrinterChangeNotification$MH,"FindFirstPrinterChangeNotification");
+    }
+    public static MemoryAddress FindFirstPrinterChangeNotification ( Addressable hPrinter,  int fdwFilter,  int fdwOptions,  Addressable pPrinterNotifyOptions) {
+        var mh$ = FindFirstPrinterChangeNotification$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hPrinter, fdwFilter, fdwOptions, pPrinterNotifyOptions);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindNextPrinterChangeNotification$MH() {
+        return RuntimeHelper.requireNonNull(constants$674.FindNextPrinterChangeNotification$MH,"FindNextPrinterChangeNotification");
+    }
+    public static int FindNextPrinterChangeNotification ( Addressable hChange,  Addressable pdwChange,  Addressable pvReserved,  Addressable ppPrinterNotifyInfo) {
+        var mh$ = FindNextPrinterChangeNotification$MH();
+        try {
+            return (int)mh$.invokeExact(hChange, pdwChange, pvReserved, ppPrinterNotifyInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FreePrinterNotifyInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$674.FreePrinterNotifyInfo$MH,"FreePrinterNotifyInfo");
+    }
+    public static int FreePrinterNotifyInfo ( Addressable pPrinterNotifyInfo) {
+        var mh$ = FreePrinterNotifyInfo$MH();
+        try {
+            return (int)mh$.invokeExact(pPrinterNotifyInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindClosePrinterChangeNotification$MH() {
+        return RuntimeHelper.requireNonNull(constants$674.FindClosePrinterChangeNotification$MH,"FindClosePrinterChangeNotification");
+    }
+    public static int FindClosePrinterChangeNotification ( Addressable hChange) {
+        var mh$ = FindClosePrinterChangeNotification$MH();
+        try {
+            return (int)mh$.invokeExact(hChange);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PrinterMessageBoxA$MH() {
+        return RuntimeHelper.requireNonNull(constants$675.PrinterMessageBoxA$MH,"PrinterMessageBoxA");
+    }
+    public static int PrinterMessageBoxA ( Addressable hPrinter,  int Error,  Addressable hWnd,  Addressable pText,  Addressable pCaption,  int dwType) {
+        var mh$ = PrinterMessageBoxA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Error, hWnd, pText, pCaption, dwType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PrinterMessageBoxW$MH() {
+        return RuntimeHelper.requireNonNull(constants$675.PrinterMessageBoxW$MH,"PrinterMessageBoxW");
+    }
+    public static int PrinterMessageBoxW ( Addressable hPrinter,  int Error,  Addressable hWnd,  Addressable pText,  Addressable pCaption,  int dwType) {
+        var mh$ = PrinterMessageBoxW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Error, hWnd, pText, pCaption, dwType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ClosePrinter$MH() {
+        return RuntimeHelper.requireNonNull(constants$675.ClosePrinter$MH,"ClosePrinter");
+    }
+    public static int ClosePrinter ( Addressable hPrinter) {
+        var mh$ = ClosePrinter$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddFormA$MH() {
+        return RuntimeHelper.requireNonNull(constants$675.AddFormA$MH,"AddFormA");
+    }
+    public static int AddFormA ( Addressable hPrinter,  int Level,  Addressable pForm) {
+        var mh$ = AddFormA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pForm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddFormW$MH() {
+        return RuntimeHelper.requireNonNull(constants$675.AddFormW$MH,"AddFormW");
+    }
+    public static int AddFormW ( Addressable hPrinter,  int Level,  Addressable pForm) {
+        var mh$ = AddFormW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pForm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteFormA$MH() {
+        return RuntimeHelper.requireNonNull(constants$675.DeleteFormA$MH,"DeleteFormA");
+    }
+    public static int DeleteFormA ( Addressable hPrinter,  Addressable pFormName) {
+        var mh$ = DeleteFormA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pFormName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteFormW$MH() {
+        return RuntimeHelper.requireNonNull(constants$676.DeleteFormW$MH,"DeleteFormW");
+    }
+    public static int DeleteFormW ( Addressable hPrinter,  Addressable pFormName) {
+        var mh$ = DeleteFormW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pFormName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFormA$MH() {
+        return RuntimeHelper.requireNonNull(constants$676.GetFormA$MH,"GetFormA");
+    }
+    public static int GetFormA ( Addressable hPrinter,  Addressable pFormName,  int Level,  Addressable pForm,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetFormA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pFormName, Level, pForm, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFormW$MH() {
+        return RuntimeHelper.requireNonNull(constants$676.GetFormW$MH,"GetFormW");
+    }
+    public static int GetFormW ( Addressable hPrinter,  Addressable pFormName,  int Level,  Addressable pForm,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetFormW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pFormName, Level, pForm, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFormA$MH() {
+        return RuntimeHelper.requireNonNull(constants$676.SetFormA$MH,"SetFormA");
+    }
+    public static int SetFormA ( Addressable hPrinter,  Addressable pFormName,  int Level,  Addressable pForm) {
+        var mh$ = SetFormA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pFormName, Level, pForm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFormW$MH() {
+        return RuntimeHelper.requireNonNull(constants$676.SetFormW$MH,"SetFormW");
+    }
+    public static int SetFormW ( Addressable hPrinter,  Addressable pFormName,  int Level,  Addressable pForm) {
+        var mh$ = SetFormW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pFormName, Level, pForm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumFormsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$676.EnumFormsA$MH,"EnumFormsA");
+    }
+    public static int EnumFormsA ( Addressable hPrinter,  int Level,  Addressable pForm,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumFormsA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pForm, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumFormsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.EnumFormsW$MH,"EnumFormsW");
+    }
+    public static int EnumFormsW ( Addressable hPrinter,  int Level,  Addressable pForm,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumFormsW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pForm, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumMonitorsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.EnumMonitorsA$MH,"EnumMonitorsA");
+    }
+    public static int EnumMonitorsA ( Addressable pName,  int Level,  Addressable pMonitor,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumMonitorsA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pMonitor, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumMonitorsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.EnumMonitorsW$MH,"EnumMonitorsW");
+    }
+    public static int EnumMonitorsW ( Addressable pName,  int Level,  Addressable pMonitor,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumMonitorsW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pMonitor, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddMonitorA$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.AddMonitorA$MH,"AddMonitorA");
+    }
+    public static int AddMonitorA ( Addressable pName,  int Level,  Addressable pMonitors) {
+        var mh$ = AddMonitorA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pMonitors);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
     }
 }
 

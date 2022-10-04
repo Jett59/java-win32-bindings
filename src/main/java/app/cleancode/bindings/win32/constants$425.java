@@ -9,48 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$425 {
 
-    static final FunctionDescriptor CryptEnumOIDFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetClassNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptEnumOIDFunction$MH = RuntimeHelper.downcallHandle(
-        "CryptEnumOIDFunction",
-        constants$425.CryptEnumOIDFunction$FUNC
-    );
-    static final FunctionDescriptor CryptFindOIDInfo$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptFindOIDInfo$MH = RuntimeHelper.downcallHandle(
-        "CryptFindOIDInfo",
-        constants$425.CryptFindOIDInfo$FUNC
+    static final MethodHandle GetClassNameA$MH = RuntimeHelper.downcallHandle(
+        "GetClassNameA",
+        constants$425.GetClassNameA$FUNC
     );
-    static final FunctionDescriptor CryptRegisterOIDInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetClassNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptRegisterOIDInfo$MH = RuntimeHelper.downcallHandle(
-        "CryptRegisterOIDInfo",
-        constants$425.CryptRegisterOIDInfo$FUNC
+    static final MethodHandle GetClassNameW$MH = RuntimeHelper.downcallHandle(
+        "GetClassNameW",
+        constants$425.GetClassNameW$FUNC
     );
-    static final FunctionDescriptor CryptUnregisterOIDInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTopWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptUnregisterOIDInfo$MH = RuntimeHelper.downcallHandle(
-        "CryptUnregisterOIDInfo",
-        constants$425.CryptUnregisterOIDInfo$FUNC
+    static final MethodHandle GetTopWindow$MH = RuntimeHelper.downcallHandle(
+        "GetTopWindow",
+        constants$425.GetTopWindow$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_ENUM_OID_INFO$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowThreadProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_ENUM_OID_INFO$MH = RuntimeHelper.downcallHandle(
-        constants$425.PFN_CRYPT_ENUM_OID_INFO$FUNC
+    static final MethodHandle GetWindowThreadProcessId$MH = RuntimeHelper.downcallHandle(
+        "GetWindowThreadProcessId",
+        constants$425.GetWindowThreadProcessId$FUNC
+    );
+    static final FunctionDescriptor IsGUIThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IsGUIThread$MH = RuntimeHelper.downcallHandle(
+        "IsGUIThread",
+        constants$425.IsGUIThread$FUNC
+    );
+    static final FunctionDescriptor GetLastActivePopup$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetLastActivePopup$MH = RuntimeHelper.downcallHandle(
+        "GetLastActivePopup",
+        constants$425.GetLastActivePopup$FUNC
     );
 }
 

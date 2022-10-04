@@ -9,12 +9,34 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$633 {
 
-    static final MemoryAddress PKCS_ATTRIBUTES$ADDR = MemoryAddress.ofLong(48L);
-    static final MemoryAddress PKCS_SORTED_CTL$ADDR = MemoryAddress.ofLong(49L);
-    static final MemoryAddress X509_ECC_SIGNATURE$ADDR = MemoryAddress.ofLong(47L);
-    static final MemoryAddress X942_DH_PARAMETERS$ADDR = MemoryAddress.ofLong(50L);
-    static final MemoryAddress X509_BITS_WITHOUT_TRAILING_ZEROES$ADDR = MemoryAddress.ofLong(51L);
-    static final MemoryAddress X942_OTHER_INFO$ADDR = MemoryAddress.ofLong(52L);
+    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH$MH = RuntimeHelper.downcallHandle(
+        constants$633.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_GET$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_GET$MH = RuntimeHelper.downcallHandle(
+        constants$633.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_GET$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_RELEASE$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_RELEASE$MH = RuntimeHelper.downcallHandle(
+        constants$633.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_RELEASE$FUNC
+    );
 }
 
 

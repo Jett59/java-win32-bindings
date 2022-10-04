@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$754 {
 
-    static final MemorySegment SPLDS_PRINT_START_TIME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printStartTime");
-    static final MemorySegment SPLDS_PRINT_STATUS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printStatus");
-    static final MemorySegment SPLDS_PRIORITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("priority");
-    static final MemorySegment SPLDS_SERVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("serverName");
-    static final MemorySegment SPLDS_SHORT_SERVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("shortServerName");
-    static final MemorySegment SPLDS_UNC_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("uNCName");
+    static final MemorySegment MS_ENH_RSA_AES_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider");
+    static final MemorySegment EXPO_OFFLOAD_REG_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ExpoOffload");
+    static final MemorySegment EXPO_OFFLOAD_FUNC_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OffloadModExpo");
+    static final MemorySegment szKEY_CRYPTOAPI_PRIVATE_KEY_OPTIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Software\\Policies\\Microsoft\\Cryptography");
+    static final MemorySegment szKEY_CACHE_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CachePrivateKeys");
+    static final MemorySegment szKEY_CACHE_SECONDS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivateKeyLifetimeSeconds");
 }
 
 

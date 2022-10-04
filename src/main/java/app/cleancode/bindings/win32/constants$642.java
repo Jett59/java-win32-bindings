@@ -9,12 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$642 {
 
-    static final MemorySegment szOID_AUTHORITY_KEY_IDENTIFIER2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.35");
-    static final MemorySegment szOID_SUBJECT_KEY_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.14");
-    static final MemorySegment szOID_SUBJECT_ALT_NAME2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.17");
-    static final MemorySegment szOID_ISSUER_ALT_NAME2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.18");
-    static final MemorySegment szOID_CRL_REASON_CODE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.21");
-    static final MemorySegment szOID_REASON_CODE_HOLD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.23");
+    static final  GroupLayout GUID_DEVINTERFACE_COMPORT$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_COMPORT$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_COMPORT", constants$642.GUID_DEVINTERFACE_COMPORT$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR", constants$642.GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR$LAYOUT);
+    static final FunctionDescriptor DeviceDsmParameterBlock$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeviceDsmParameterBlock$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmParameterBlock",
+        constants$642.DeviceDsmParameterBlock$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmDataSetRanges$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeviceDsmDataSetRanges$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmDataSetRanges",
+        constants$642.DeviceDsmDataSetRanges$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmNumberOfDataSetRanges$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeviceDsmNumberOfDataSetRanges$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmNumberOfDataSetRanges",
+        constants$642.DeviceDsmNumberOfDataSetRanges$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmGetInputLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmGetInputLength$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmGetInputLength",
+        constants$642.DeviceDsmGetInputLength$FUNC
+    );
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$728 {
 
-    static final MemorySegment CRYPTNET_PRE_FETCH_MIN_AFTER_NEXT_UPDATE_PRE_FETCH_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_AFTER_CURRENT_TIME_PRE_FETCH_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_TRIGGER_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_SCAN_AFTER_TRIGGER_DELAY_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_RETRIEVAL_TIMEOUT_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("d");
+    static final MemorySegment SMB_CCF_APP_INSTANCE_EA_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ClusteredApplicationInstance");
+    static final MemorySegment IMAGE_ARCHIVE_START$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("!<arch>\n");
+    static final MemorySegment IMAGE_ARCHIVE_END$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("`\n");
+    static final MemorySegment IMAGE_ARCHIVE_PAD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\n");
+    static final MemorySegment IMAGE_ARCHIVE_LINKER_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("/               ");
 }
 
 

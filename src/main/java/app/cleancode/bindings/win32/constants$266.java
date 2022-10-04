@@ -9,56 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$266 {
 
-    static final FunctionDescriptor OemToCharW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateBrushIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateBrushIndirect$MH = RuntimeHelper.downcallHandle(
+        "CreateBrushIndirect",
+        constants$266.CreateBrushIndirect$FUNC
+    );
+    static final FunctionDescriptor CreateCompatibleBitmap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateCompatibleBitmap$MH = RuntimeHelper.downcallHandle(
+        "CreateCompatibleBitmap",
+        constants$266.CreateCompatibleBitmap$FUNC
+    );
+    static final FunctionDescriptor CreateDiscardableBitmap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateDiscardableBitmap$MH = RuntimeHelper.downcallHandle(
+        "CreateDiscardableBitmap",
+        constants$266.CreateDiscardableBitmap$FUNC
+    );
+    static final FunctionDescriptor CreateCompatibleDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateCompatibleDC$MH = RuntimeHelper.downcallHandle(
+        "CreateCompatibleDC",
+        constants$266.CreateCompatibleDC$FUNC
+    );
+    static final FunctionDescriptor CreateDCA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle OemToCharW$MH = RuntimeHelper.downcallHandle(
-        "OemToCharW",
-        constants$266.OemToCharW$FUNC
+    static final MethodHandle CreateDCA$MH = RuntimeHelper.downcallHandle(
+        "CreateDCA",
+        constants$266.CreateDCA$FUNC
     );
-    static final FunctionDescriptor CharToOemBuffA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDCW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CharToOemBuffA$MH = RuntimeHelper.downcallHandle(
-        "CharToOemBuffA",
-        constants$266.CharToOemBuffA$FUNC
-    );
-    static final FunctionDescriptor CharToOemBuffW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CharToOemBuffW$MH = RuntimeHelper.downcallHandle(
-        "CharToOemBuffW",
-        constants$266.CharToOemBuffW$FUNC
-    );
-    static final FunctionDescriptor OemToCharBuffA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OemToCharBuffA$MH = RuntimeHelper.downcallHandle(
-        "OemToCharBuffA",
-        constants$266.OemToCharBuffA$FUNC
-    );
-    static final FunctionDescriptor OemToCharBuffW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OemToCharBuffW$MH = RuntimeHelper.downcallHandle(
-        "OemToCharBuffW",
-        constants$266.OemToCharBuffW$FUNC
-    );
-    static final FunctionDescriptor CharUpperA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CharUpperA$MH = RuntimeHelper.downcallHandle(
-        "CharUpperA",
-        constants$266.CharUpperA$FUNC
+    static final MethodHandle CreateDCW$MH = RuntimeHelper.downcallHandle(
+        "CreateDCW",
+        constants$266.CreateDCW$FUNC
     );
 }
 

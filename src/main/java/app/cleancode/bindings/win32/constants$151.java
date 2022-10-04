@@ -9,53 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$151 {
 
-    static final FunctionDescriptor GetNumaProcessorNode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetNumaProcessorNode$MH = RuntimeHelper.downcallHandle(
-        "GetNumaProcessorNode",
-        constants$151.GetNumaProcessorNode$FUNC
-    );
-    static final FunctionDescriptor GetNumaNodeNumberFromHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetProcAddress$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetNumaNodeNumberFromHandle$MH = RuntimeHelper.downcallHandle(
-        "GetNumaNodeNumberFromHandle",
-        constants$151.GetNumaNodeNumberFromHandle$FUNC
+    static final MethodHandle GetProcAddress$MH = RuntimeHelper.downcallHandle(
+        "GetProcAddress",
+        constants$151.GetProcAddress$FUNC
     );
-    static final FunctionDescriptor GetNumaProcessorNodeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LoadLibraryExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LoadLibraryExA$MH = RuntimeHelper.downcallHandle(
+        "LoadLibraryExA",
+        constants$151.LoadLibraryExA$FUNC
+    );
+    static final FunctionDescriptor LoadLibraryExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LoadLibraryExW$MH = RuntimeHelper.downcallHandle(
+        "LoadLibraryExW",
+        constants$151.LoadLibraryExW$FUNC
+    );
+    static final FunctionDescriptor LoadResource$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetNumaProcessorNodeEx$MH = RuntimeHelper.downcallHandle(
-        "GetNumaProcessorNodeEx",
-        constants$151.GetNumaProcessorNodeEx$FUNC
+    static final MethodHandle LoadResource$MH = RuntimeHelper.downcallHandle(
+        "LoadResource",
+        constants$151.LoadResource$FUNC
     );
-    static final FunctionDescriptor GetNumaNodeProcessorMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor LoadStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetNumaNodeProcessorMask$MH = RuntimeHelper.downcallHandle(
-        "GetNumaNodeProcessorMask",
-        constants$151.GetNumaNodeProcessorMask$FUNC
+    static final MethodHandle LoadStringA$MH = RuntimeHelper.downcallHandle(
+        "LoadStringA",
+        constants$151.LoadStringA$FUNC
     );
-    static final FunctionDescriptor GetNumaAvailableMemoryNode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor LoadStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetNumaAvailableMemoryNode$MH = RuntimeHelper.downcallHandle(
-        "GetNumaAvailableMemoryNode",
-        constants$151.GetNumaAvailableMemoryNode$FUNC
-    );
-    static final FunctionDescriptor GetNumaAvailableMemoryNodeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetNumaAvailableMemoryNodeEx$MH = RuntimeHelper.downcallHandle(
-        "GetNumaAvailableMemoryNodeEx",
-        constants$151.GetNumaAvailableMemoryNodeEx$FUNC
+    static final MethodHandle LoadStringW$MH = RuntimeHelper.downcallHandle(
+        "LoadStringW",
+        constants$151.LoadStringW$FUNC
     );
 }
 

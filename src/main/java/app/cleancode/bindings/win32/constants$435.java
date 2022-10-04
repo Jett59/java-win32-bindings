@@ -9,37 +9,74 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$435 {
 
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_WRITE_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TranslateMDISysAccel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_WRITE_CERT$MH = RuntimeHelper.downcallHandle(
-        constants$435.PFN_CERT_STORE_PROV_WRITE_CERT$FUNC
+    static final MethodHandle TranslateMDISysAccel$MH = RuntimeHelper.downcallHandle(
+        "TranslateMDISysAccel",
+        constants$435.TranslateMDISysAccel$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_DELETE_CERT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor ArrangeIconicWindows$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_DELETE_CERT$MH = RuntimeHelper.downcallHandle(
-        constants$435.PFN_CERT_STORE_PROV_DELETE_CERT$FUNC
+    static final MethodHandle ArrangeIconicWindows$MH = RuntimeHelper.downcallHandle(
+        "ArrangeIconicWindows",
+        constants$435.ArrangeIconicWindows$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_SET_CERT_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateMDIWindowA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CreateMDIWindowA$MH = RuntimeHelper.downcallHandle(
+        "CreateMDIWindowA",
+        constants$435.CreateMDIWindowA$FUNC
+    );
+    static final FunctionDescriptor CreateMDIWindowW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CreateMDIWindowW$MH = RuntimeHelper.downcallHandle(
+        "CreateMDIWindowW",
+        constants$435.CreateMDIWindowW$FUNC
+    );
+    static final FunctionDescriptor TileWindows$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_SET_CERT_PROPERTY$MH = RuntimeHelper.downcallHandle(
-        constants$435.PFN_CERT_STORE_PROV_SET_CERT_PROPERTY$FUNC
+    static final MethodHandle TileWindows$MH = RuntimeHelper.downcallHandle(
+        "TileWindows",
+        constants$435.TileWindows$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_READ_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CascadeWindows$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CascadeWindows$MH = RuntimeHelper.downcallHandle(
+        "CascadeWindows",
+        constants$435.CascadeWindows$FUNC
     );
 }
 

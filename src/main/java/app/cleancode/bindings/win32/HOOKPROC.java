@@ -11,13 +11,13 @@ public interface HOOKPROC {
 
     long apply(int code, long wParam, long lParam);
     static MemorySegment allocate(HOOKPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(HOOKPROC.class, fi, constants$224.HOOKPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(HOOKPROC.class, fi, constants$328.HOOKPROC$FUNC, session);
     }
     static HOOKPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int _code, long _wParam, long _lParam) -> {
             try {
-                return (long)constants$224.HOOKPROC$MH.invokeExact((Addressable)symbol, _code, _wParam, _lParam);
+                return (long)constants$328.HOOKPROC$MH.invokeExact((Addressable)symbol, _code, _wParam, _lParam);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

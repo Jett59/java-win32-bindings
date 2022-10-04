@@ -9,49 +9,76 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$84 {
 
-    static final FunctionDescriptor GetProcessDEPPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFilePointerEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.unionLayout(
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("$anon$0"),
+            MemoryLayout.structLayout(
+                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
+                Constants$root.C_LONG$LAYOUT.withName("HighPart")
+            ).withName("u"),
+            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
+        ).withName("_LARGE_INTEGER"),
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetFilePointerEx$MH = RuntimeHelper.downcallHandle(
+        "SetFilePointerEx",
+        constants$84.SetFilePointerEx$FUNC
+    );
+    static final FunctionDescriptor SetFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetProcessDEPPolicy$MH = RuntimeHelper.downcallHandle(
-        "GetProcessDEPPolicy",
-        constants$84.GetProcessDEPPolicy$FUNC
+    static final MethodHandle SetFileTime$MH = RuntimeHelper.downcallHandle(
+        "SetFileTime",
+        constants$84.SetFileTime$FUNC
     );
-    static final FunctionDescriptor RequestWakeupLatency$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFileValidData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetFileValidData$MH = RuntimeHelper.downcallHandle(
+        "SetFileValidData",
+        constants$84.SetFileValidData$FUNC
+    );
+    static final FunctionDescriptor UnlockFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RequestWakeupLatency$MH = RuntimeHelper.downcallHandle(
-        "RequestWakeupLatency",
-        constants$84.RequestWakeupLatency$FUNC
+    static final MethodHandle UnlockFile$MH = RuntimeHelper.downcallHandle(
+        "UnlockFile",
+        constants$84.UnlockFile$FUNC
     );
-    static final FunctionDescriptor IsSystemResumeAutomatic$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle IsSystemResumeAutomatic$MH = RuntimeHelper.downcallHandle(
-        "IsSystemResumeAutomatic",
-        constants$84.IsSystemResumeAutomatic$FUNC
-    );
-    static final FunctionDescriptor GetThreadSelectorEntry$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor UnlockFileEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetThreadSelectorEntry$MH = RuntimeHelper.downcallHandle(
-        "GetThreadSelectorEntry",
-        constants$84.GetThreadSelectorEntry$FUNC
+    static final MethodHandle UnlockFileEx$MH = RuntimeHelper.downcallHandle(
+        "UnlockFileEx",
+        constants$84.UnlockFileEx$FUNC
     );
-    static final FunctionDescriptor SetThreadExecutionState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetThreadExecutionState$MH = RuntimeHelper.downcallHandle(
-        "SetThreadExecutionState",
-        constants$84.SetThreadExecutionState$FUNC
-    );
-    static final FunctionDescriptor PowerCreateRequest$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor WriteFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PowerCreateRequest$MH = RuntimeHelper.downcallHandle(
-        "PowerCreateRequest",
-        constants$84.PowerCreateRequest$FUNC
+    static final MethodHandle WriteFile$MH = RuntimeHelper.downcallHandle(
+        "WriteFile",
+        constants$84.WriteFile$FUNC
     );
 }
 

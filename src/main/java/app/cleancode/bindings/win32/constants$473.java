@@ -9,42 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$473 {
 
-    static final FunctionDescriptor CryptCancelAsyncRetrieval$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetThreadUILanguage$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
+    static final MethodHandle GetThreadUILanguage$MH = RuntimeHelper.downcallHandle(
+        "GetThreadUILanguage",
+        constants$473.GetThreadUILanguage$FUNC
     );
-    static final MethodHandle CryptCancelAsyncRetrieval$MH = RuntimeHelper.downcallHandle(
-        "CryptCancelAsyncRetrieval",
-        constants$473.CryptCancelAsyncRetrieval$FUNC
-    );
-    static final FunctionDescriptor PFN_CRYPT_ASYNC_RETRIEVAL_COMPLETION_FUNC$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetProcessPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_ASYNC_RETRIEVAL_COMPLETION_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$473.PFN_CRYPT_ASYNC_RETRIEVAL_COMPLETION_FUNC$FUNC
+    static final MethodHandle GetProcessPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
+        "GetProcessPreferredUILanguages",
+        constants$473.GetProcessPreferredUILanguages$FUNC
     );
-    static final FunctionDescriptor PFN_CANCEL_ASYNC_RETRIEVAL_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetProcessPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CANCEL_ASYNC_RETRIEVAL_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$473.PFN_CANCEL_ASYNC_RETRIEVAL_FUNC$FUNC
+    static final MethodHandle SetProcessPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
+        "SetProcessPreferredUILanguages",
+        constants$473.SetProcessPreferredUILanguages$FUNC
     );
-    static final FunctionDescriptor CryptGetObjectUrl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetUserPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetUserPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
+        "GetUserPreferredUILanguages",
+        constants$473.GetUserPreferredUILanguages$FUNC
+    );
+    static final FunctionDescriptor GetSystemPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptGetObjectUrl$MH = RuntimeHelper.downcallHandle(
-        "CryptGetObjectUrl",
-        constants$473.CryptGetObjectUrl$FUNC
+    static final MethodHandle GetSystemPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
+        "GetSystemPreferredUILanguages",
+        constants$473.GetSystemPreferredUILanguages$FUNC
+    );
+    static final FunctionDescriptor GetThreadPreferredUILanguages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetThreadPreferredUILanguages$MH = RuntimeHelper.downcallHandle(
+        "GetThreadPreferredUILanguages",
+        constants$473.GetThreadPreferredUILanguages$FUNC
     );
 }
 

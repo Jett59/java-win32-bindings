@@ -9,42 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$242 {
 
-    static final FunctionDescriptor GetMessageTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetMessageTime$MH = RuntimeHelper.downcallHandle(
-        "GetMessageTime",
-        constants$242.GetMessageTime$FUNC
+    static final FunctionDescriptor UnregisterWait$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor GetMessageExtraInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT);
-    static final MethodHandle GetMessageExtraInfo$MH = RuntimeHelper.downcallHandle(
-        "GetMessageExtraInfo",
-        constants$242.GetMessageExtraInfo$FUNC
+    static final MethodHandle UnregisterWait$MH = RuntimeHelper.downcallHandle(
+        "UnregisterWait",
+        constants$242.UnregisterWait$FUNC
     );
-    static final FunctionDescriptor GetUnpredictedMessagePos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetUnpredictedMessagePos$MH = RuntimeHelper.downcallHandle(
-        "GetUnpredictedMessagePos",
-        constants$242.GetUnpredictedMessagePos$FUNC
+    static final FunctionDescriptor BindIoCompletionCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final FunctionDescriptor IsWow64Message$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle IsWow64Message$MH = RuntimeHelper.downcallHandle(
-        "IsWow64Message",
-        constants$242.IsWow64Message$FUNC
+    static final MethodHandle BindIoCompletionCallback$MH = RuntimeHelper.downcallHandle(
+        "BindIoCompletionCallback",
+        constants$242.BindIoCompletionCallback$FUNC
     );
-    static final FunctionDescriptor SetMessageExtraInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SetMessageExtraInfo$MH = RuntimeHelper.downcallHandle(
-        "SetMessageExtraInfo",
-        constants$242.SetMessageExtraInfo$FUNC
-    );
-    static final FunctionDescriptor SendMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetTimerQueueTimer$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SendMessageA$MH = RuntimeHelper.downcallHandle(
-        "SendMessageA",
-        constants$242.SendMessageA$FUNC
+    static final MethodHandle SetTimerQueueTimer$MH = RuntimeHelper.downcallHandle(
+        "SetTimerQueueTimer",
+        constants$242.SetTimerQueueTimer$FUNC
+    );
+    static final FunctionDescriptor CancelTimerQueueTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CancelTimerQueueTimer$MH = RuntimeHelper.downcallHandle(
+        "CancelTimerQueueTimer",
+        constants$242.CancelTimerQueueTimer$FUNC
+    );
+    static final FunctionDescriptor DeleteTimerQueue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteTimerQueue$MH = RuntimeHelper.downcallHandle(
+        "DeleteTimerQueue",
+        constants$242.DeleteTimerQueue$FUNC
+    );
+    static final FunctionDescriptor InitializeThreadpoolEnvironment$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle InitializeThreadpoolEnvironment$MH = RuntimeHelper.downcallHandle(
+        "InitializeThreadpoolEnvironment",
+        constants$242.InitializeThreadpoolEnvironment$FUNC
     );
 }
 

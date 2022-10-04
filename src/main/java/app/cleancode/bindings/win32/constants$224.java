@@ -9,34 +9,72 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$224 {
 
-    static final FunctionDescriptor GRAYSTRINGPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MoveFileExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GRAYSTRINGPROC$MH = RuntimeHelper.downcallHandle(
-        constants$224.GRAYSTRINGPROC$FUNC
+    static final MethodHandle MoveFileExW$MH = RuntimeHelper.downcallHandle(
+        "MoveFileExW",
+        constants$224.MoveFileExW$FUNC
     );
-    static final FunctionDescriptor WNDENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MoveFileWithProgressA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNDENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$224.WNDENUMPROC$FUNC
+    static final MethodHandle MoveFileWithProgressA$MH = RuntimeHelper.downcallHandle(
+        "MoveFileWithProgressA",
+        constants$224.MoveFileWithProgressA$FUNC
     );
-    static final FunctionDescriptor HOOKPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor MoveFileWithProgressW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle HOOKPROC$MH = RuntimeHelper.downcallHandle(
-        constants$224.HOOKPROC$FUNC
+    static final MethodHandle MoveFileWithProgressW$MH = RuntimeHelper.downcallHandle(
+        "MoveFileWithProgressW",
+        constants$224.MoveFileWithProgressW$FUNC
     );
-    static final FunctionDescriptor SENDASYNCPROC$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor MoveFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MoveFileTransactedA$MH = RuntimeHelper.downcallHandle(
+        "MoveFileTransactedA",
+        constants$224.MoveFileTransactedA$FUNC
+    );
+    static final FunctionDescriptor MoveFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MoveFileTransactedW$MH = RuntimeHelper.downcallHandle(
+        "MoveFileTransactedW",
+        constants$224.MoveFileTransactedW$FUNC
+    );
+    static final FunctionDescriptor ReplaceFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReplaceFileA$MH = RuntimeHelper.downcallHandle(
+        "ReplaceFileA",
+        constants$224.ReplaceFileA$FUNC
     );
 }
 

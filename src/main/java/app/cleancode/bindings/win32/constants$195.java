@@ -9,67 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$195 {
 
-    static final FunctionDescriptor SetRectRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DosDateTimeToFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DosDateTimeToFileTime$MH = RuntimeHelper.downcallHandle(
+        "DosDateTimeToFileTime",
+        constants$195.DosDateTimeToFileTime$FUNC
+    );
+    static final FunctionDescriptor FormatMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetRectRgn$MH = RuntimeHelper.downcallHandle(
-        "SetRectRgn",
-        constants$195.SetRectRgn$FUNC
+    static final MethodHandle FormatMessageA$MH = RuntimeHelper.downcallHandle(
+        "FormatMessageA",
+        constants$195.FormatMessageA$FUNC
     );
-    static final FunctionDescriptor StretchDIBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FormatMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle StretchDIBits$MH = RuntimeHelper.downcallHandle(
-        "StretchDIBits",
-        constants$195.StretchDIBits$FUNC
+    static final MethodHandle FormatMessageW$MH = RuntimeHelper.downcallHandle(
+        "FormatMessageW",
+        constants$195.FormatMessageW$FUNC
     );
-    static final FunctionDescriptor SetROP2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateMailslotA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetROP2$MH = RuntimeHelper.downcallHandle(
-        "SetROP2",
-        constants$195.SetROP2$FUNC
+    static final MethodHandle CreateMailslotA$MH = RuntimeHelper.downcallHandle(
+        "CreateMailslotA",
+        constants$195.CreateMailslotA$FUNC
     );
-    static final FunctionDescriptor SetStretchBltMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateMailslotW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetStretchBltMode$MH = RuntimeHelper.downcallHandle(
-        "SetStretchBltMode",
-        constants$195.SetStretchBltMode$FUNC
+    static final MethodHandle CreateMailslotW$MH = RuntimeHelper.downcallHandle(
+        "CreateMailslotW",
+        constants$195.CreateMailslotW$FUNC
     );
-    static final FunctionDescriptor SetSystemPaletteUse$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMailslotInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetSystemPaletteUse$MH = RuntimeHelper.downcallHandle(
-        "SetSystemPaletteUse",
-        constants$195.SetSystemPaletteUse$FUNC
-    );
-    static final FunctionDescriptor SetTextCharacterExtra$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetTextCharacterExtra$MH = RuntimeHelper.downcallHandle(
-        "SetTextCharacterExtra",
-        constants$195.SetTextCharacterExtra$FUNC
+    static final MethodHandle GetMailslotInfo$MH = RuntimeHelper.downcallHandle(
+        "GetMailslotInfo",
+        constants$195.GetMailslotInfo$FUNC
     );
 }
 

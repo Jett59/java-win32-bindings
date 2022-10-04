@@ -9,53 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$99 {
 
-    static final FunctionDescriptor lstrlenA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle lstrlenA$MH = RuntimeHelper.downcallHandle(
-        "lstrlenA",
-        constants$99.lstrlenA$FUNC
-    );
-    static final FunctionDescriptor lstrlenW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle lstrlenW$MH = RuntimeHelper.downcallHandle(
-        "lstrlenW",
-        constants$99.lstrlenW$FUNC
-    );
-    static final FunctionDescriptor OpenFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor HeapValidate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OpenFile$MH = RuntimeHelper.downcallHandle(
-        "OpenFile",
-        constants$99.OpenFile$FUNC
-    );
-    static final FunctionDescriptor _lopen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle _lopen$MH = RuntimeHelper.downcallHandle(
-        "_lopen",
-        constants$99._lopen$FUNC
-    );
-    static final FunctionDescriptor _lcreat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle _lcreat$MH = RuntimeHelper.downcallHandle(
-        "_lcreat",
-        constants$99._lcreat$FUNC
-    );
-    static final FunctionDescriptor _lread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle _lread$MH = RuntimeHelper.downcallHandle(
-        "_lread",
-        constants$99._lread$FUNC
+    static final MethodHandle HeapValidate$MH = RuntimeHelper.downcallHandle(
+        "HeapValidate",
+        constants$99.HeapValidate$FUNC
+    );
+    static final FunctionDescriptor HeapSummary$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle HeapSummary$MH = RuntimeHelper.downcallHandle(
+        "HeapSummary",
+        constants$99.HeapSummary$FUNC
+    );
+    static final FunctionDescriptor GetProcessHeaps$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessHeaps$MH = RuntimeHelper.downcallHandle(
+        "GetProcessHeaps",
+        constants$99.GetProcessHeaps$FUNC
+    );
+    static final FunctionDescriptor HeapLock$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle HeapLock$MH = RuntimeHelper.downcallHandle(
+        "HeapLock",
+        constants$99.HeapLock$FUNC
+    );
+    static final FunctionDescriptor HeapUnlock$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle HeapUnlock$MH = RuntimeHelper.downcallHandle(
+        "HeapUnlock",
+        constants$99.HeapUnlock$FUNC
+    );
+    static final FunctionDescriptor HeapWalk$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle HeapWalk$MH = RuntimeHelper.downcallHandle(
+        "HeapWalk",
+        constants$99.HeapWalk$FUNC
     );
 }
 

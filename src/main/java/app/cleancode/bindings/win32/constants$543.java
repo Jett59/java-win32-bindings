@@ -9,66 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$543 {
 
-    static final FunctionDescriptor QueryServiceConfig2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor joyGetThreshold$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle QueryServiceConfig2A$MH = RuntimeHelper.downcallHandle(
-        "QueryServiceConfig2A",
-        constants$543.QueryServiceConfig2A$FUNC
+    static final MethodHandle joyGetThreshold$MH = RuntimeHelper.downcallHandle(
+        "joyGetThreshold",
+        constants$543.joyGetThreshold$FUNC
     );
-    static final FunctionDescriptor QueryServiceConfig2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor joyReleaseCapture$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle joyReleaseCapture$MH = RuntimeHelper.downcallHandle(
+        "joyReleaseCapture",
+        constants$543.joyReleaseCapture$FUNC
+    );
+    static final FunctionDescriptor joySetCapture$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle QueryServiceConfig2W$MH = RuntimeHelper.downcallHandle(
-        "QueryServiceConfig2W",
-        constants$543.QueryServiceConfig2W$FUNC
+    static final MethodHandle joySetCapture$MH = RuntimeHelper.downcallHandle(
+        "joySetCapture",
+        constants$543.joySetCapture$FUNC
     );
-    static final FunctionDescriptor QueryServiceLockStatusA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor joySetThreshold$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle QueryServiceLockStatusA$MH = RuntimeHelper.downcallHandle(
-        "QueryServiceLockStatusA",
-        constants$543.QueryServiceLockStatusA$FUNC
+    static final MethodHandle joySetThreshold$MH = RuntimeHelper.downcallHandle(
+        "joySetThreshold",
+        constants$543.joySetThreshold$FUNC
     );
-    static final FunctionDescriptor QueryServiceLockStatusW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor joyConfigChanged$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle QueryServiceLockStatusW$MH = RuntimeHelper.downcallHandle(
-        "QueryServiceLockStatusW",
-        constants$543.QueryServiceLockStatusW$FUNC
+    static final MethodHandle joyConfigChanged$MH = RuntimeHelper.downcallHandle(
+        "joyConfigChanged",
+        constants$543.joyConfigChanged$FUNC
     );
-    static final FunctionDescriptor QueryServiceObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle QueryServiceObjectSecurity$MH = RuntimeHelper.downcallHandle(
-        "QueryServiceObjectSecurity",
-        constants$543.QueryServiceObjectSecurity$FUNC
-    );
-    static final FunctionDescriptor QueryServiceStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CommandLineToArgvW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle QueryServiceStatus$MH = RuntimeHelper.downcallHandle(
-        "QueryServiceStatus",
-        constants$543.QueryServiceStatus$FUNC
+    static final MethodHandle CommandLineToArgvW$MH = RuntimeHelper.downcallHandle(
+        "CommandLineToArgvW",
+        constants$543.CommandLineToArgvW$FUNC
     );
 }
 

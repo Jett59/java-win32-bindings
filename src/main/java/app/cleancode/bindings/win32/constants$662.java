@@ -9,12 +9,76 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$662 {
 
-    static final MemorySegment szOID_PIN_RULES_CTL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.32");
-    static final MemorySegment szOID_PIN_RULES_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.33");
-    static final MemorySegment szOID_PIN_RULES_DOMAIN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.34");
-    static final MemorySegment szOID_PIN_RULES_LOG_END_DATE_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.35");
-    static final MemorySegment szOID_IUM_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.37");
-    static final MemorySegment szOID_EV_WHQL_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.39");
+    static final FunctionDescriptor GetJobA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetJobA$MH = RuntimeHelper.downcallHandle(
+        "GetJobA",
+        constants$662.GetJobA$FUNC
+    );
+    static final FunctionDescriptor GetJobW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetJobW$MH = RuntimeHelper.downcallHandle(
+        "GetJobW",
+        constants$662.GetJobW$FUNC
+    );
+    static final FunctionDescriptor EnumJobsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumJobsA$MH = RuntimeHelper.downcallHandle(
+        "EnumJobsA",
+        constants$662.EnumJobsA$FUNC
+    );
+    static final FunctionDescriptor EnumJobsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumJobsW$MH = RuntimeHelper.downcallHandle(
+        "EnumJobsW",
+        constants$662.EnumJobsW$FUNC
+    );
+    static final FunctionDescriptor AddPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPrinterA$MH = RuntimeHelper.downcallHandle(
+        "AddPrinterA",
+        constants$662.AddPrinterA$FUNC
+    );
+    static final FunctionDescriptor AddPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPrinterW$MH = RuntimeHelper.downcallHandle(
+        "AddPrinterW",
+        constants$662.AddPrinterW$FUNC
+    );
 }
 
 

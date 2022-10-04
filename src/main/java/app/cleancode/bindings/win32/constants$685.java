@@ -9,12 +9,68 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$685 {
 
-    static final MemorySegment CERT_STRONG_SIGN_ECDSA_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
-    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.");
-    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.1");
-    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_CURRENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.1");
-    static final MemorySegment szOID_CERT_STRONG_KEY_OS_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.");
-    static final MemorySegment szOID_CERT_STRONG_KEY_OS_1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.1");
+    static final FunctionDescriptor DeletePrinterDriverPackageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrinterDriverPackageW$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterDriverPackageW",
+        constants$685.DeletePrinterDriverPackageW$FUNC
+    );
+    static final FunctionDescriptor ReportJobProcessingProgress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ReportJobProcessingProgress$MH = RuntimeHelper.downcallHandle(
+        "ReportJobProcessingProgress",
+        constants$685.ReportJobProcessingProgress$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDriver2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDriver2A$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDriver2A",
+        constants$685.GetPrinterDriver2A$FUNC
+    );
+    static final FunctionDescriptor GetPrinterDriver2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrinterDriver2W$MH = RuntimeHelper.downcallHandle(
+        "GetPrinterDriver2W",
+        constants$685.GetPrinterDriver2W$FUNC
+    );
+    static final FunctionDescriptor GetPrintExecutionData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrintExecutionData$MH = RuntimeHelper.downcallHandle(
+        "GetPrintExecutionData",
+        constants$685.GetPrintExecutionData$FUNC
+    );
+    static final FunctionDescriptor GetJobNamedPropertyValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetJobNamedPropertyValue$MH = RuntimeHelper.downcallHandle(
+        "GetJobNamedPropertyValue",
+        constants$685.GetJobNamedPropertyValue$FUNC
+    );
 }
 
 

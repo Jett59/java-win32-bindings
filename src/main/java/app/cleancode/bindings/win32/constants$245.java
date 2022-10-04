@@ -9,52 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$245 {
 
-    static final FunctionDescriptor RegisterDeviceNotificationW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegisterDeviceNotificationW$MH = RuntimeHelper.downcallHandle(
-        "RegisterDeviceNotificationW",
-        constants$245.RegisterDeviceNotificationW$FUNC
-    );
-    static final FunctionDescriptor UnregisterDeviceNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCurrentHwProfileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle UnregisterDeviceNotification$MH = RuntimeHelper.downcallHandle(
-        "UnregisterDeviceNotification",
-        constants$245.UnregisterDeviceNotification$FUNC
+    static final MethodHandle GetCurrentHwProfileW$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentHwProfileW",
+        constants$245.GetCurrentHwProfileW$FUNC
     );
-    static final FunctionDescriptor RegisterPowerSettingNotification$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor VerifyVersionInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle VerifyVersionInfoA$MH = RuntimeHelper.downcallHandle(
+        "VerifyVersionInfoA",
+        constants$245.VerifyVersionInfoA$FUNC
+    );
+    static final FunctionDescriptor VerifyVersionInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle VerifyVersionInfoW$MH = RuntimeHelper.downcallHandle(
+        "VerifyVersionInfoW",
+        constants$245.VerifyVersionInfoW$FUNC
+    );
+    static final FunctionDescriptor HRESULT_FROM_WIN32$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegisterPowerSettingNotification$MH = RuntimeHelper.downcallHandle(
-        "RegisterPowerSettingNotification",
-        constants$245.RegisterPowerSettingNotification$FUNC
+    static final MethodHandle HRESULT_FROM_WIN32$MH = RuntimeHelper.downcallHandle(
+        "HRESULT_FROM_WIN32",
+        constants$245.HRESULT_FROM_WIN32$FUNC
     );
-    static final FunctionDescriptor UnregisterPowerSettingNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnregisterPowerSettingNotification$MH = RuntimeHelper.downcallHandle(
-        "UnregisterPowerSettingNotification",
-        constants$245.UnregisterPowerSettingNotification$FUNC
-    );
-    static final FunctionDescriptor RegisterSuspendResumeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SystemTimeToTzSpecificLocalTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegisterSuspendResumeNotification$MH = RuntimeHelper.downcallHandle(
-        "RegisterSuspendResumeNotification",
-        constants$245.RegisterSuspendResumeNotification$FUNC
-    );
-    static final FunctionDescriptor UnregisterSuspendResumeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle UnregisterSuspendResumeNotification$MH = RuntimeHelper.downcallHandle(
-        "UnregisterSuspendResumeNotification",
-        constants$245.UnregisterSuspendResumeNotification$FUNC
+    static final MethodHandle SystemTimeToTzSpecificLocalTime$MH = RuntimeHelper.downcallHandle(
+        "SystemTimeToTzSpecificLocalTime",
+        constants$245.SystemTimeToTzSpecificLocalTime$FUNC
+    );
+    static final FunctionDescriptor TzSpecificLocalTimeToSystemTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle TzSpecificLocalTimeToSystemTime$MH = RuntimeHelper.downcallHandle(
+        "TzSpecificLocalTimeToSystemTime",
+        constants$245.TzSpecificLocalTimeToSystemTime$FUNC
     );
 }
 

@@ -9,44 +9,80 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$157 {
 
-    static final FunctionDescriptor QueryThreadProfiling$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle QueryThreadProfiling$MH = RuntimeHelper.downcallHandle(
-        "QueryThreadProfiling",
-        constants$157.QueryThreadProfiling$FUNC
-    );
-    static final FunctionDescriptor ReadThreadProfilingData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddAuditAccessAceEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReadThreadProfilingData$MH = RuntimeHelper.downcallHandle(
-        "ReadThreadProfilingData",
-        constants$157.ReadThreadProfilingData$FUNC
+    static final MethodHandle AddAuditAccessAceEx$MH = RuntimeHelper.downcallHandle(
+        "AddAuditAccessAceEx",
+        constants$157.AddAuditAccessAceEx$FUNC
     );
-    static final FunctionDescriptor RaiseCustomSystemEventTrigger$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RaiseCustomSystemEventTrigger$MH = RuntimeHelper.downcallHandle(
-        "RaiseCustomSystemEventTrigger",
-        constants$157.RaiseCustomSystemEventTrigger$FUNC
-    );
-    static final FunctionDescriptor OLDFONTENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AddAuditAccessObjectAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle OLDFONTENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$157.OLDFONTENUMPROCA$FUNC
+    static final MethodHandle AddAuditAccessObjectAce$MH = RuntimeHelper.downcallHandle(
+        "AddAuditAccessObjectAce",
+        constants$157.AddAuditAccessObjectAce$FUNC
     );
-    static final FunctionDescriptor OLDFONTENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AddMandatoryAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddMandatoryAce$MH = RuntimeHelper.downcallHandle(
+        "AddMandatoryAce",
+        constants$157.AddMandatoryAce$FUNC
+    );
+    static final FunctionDescriptor AddResourceAttributeAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddResourceAttributeAce$MH = RuntimeHelper.downcallHandle(
+        "AddResourceAttributeAce",
+        constants$157.AddResourceAttributeAce$FUNC
+    );
+    static final FunctionDescriptor AddScopedPolicyIDAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddScopedPolicyIDAce$MH = RuntimeHelper.downcallHandle(
+        "AddScopedPolicyIDAce",
+        constants$157.AddScopedPolicyIDAce$FUNC
+    );
+    static final FunctionDescriptor AdjustTokenGroups$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AdjustTokenGroups$MH = RuntimeHelper.downcallHandle(
+        "AdjustTokenGroups",
+        constants$157.AdjustTokenGroups$FUNC
     );
 }
 

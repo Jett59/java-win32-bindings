@@ -9,12 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$566 {
 
-    static final MemoryAddress HWND_TOPMOST$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemoryAddress HWND_NOTOPMOST$ADDR = MemoryAddress.ofLong(-2L);
-    static final MemoryAddress HBMMENU_CALLBACK$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemoryAddress HBMMENU_SYSTEM$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress HBMMENU_MBAR_RESTORE$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress HBMMENU_MBAR_MINIMIZE$ADDR = MemoryAddress.ofLong(3L);
+    static final FunctionDescriptor CryptReleaseContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptReleaseContext$MH = RuntimeHelper.downcallHandle(
+        "CryptReleaseContext",
+        constants$566.CryptReleaseContext$FUNC
+    );
+    static final FunctionDescriptor CryptGenKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGenKey$MH = RuntimeHelper.downcallHandle(
+        "CryptGenKey",
+        constants$566.CryptGenKey$FUNC
+    );
+    static final FunctionDescriptor CryptDeriveKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptDeriveKey$MH = RuntimeHelper.downcallHandle(
+        "CryptDeriveKey",
+        constants$566.CryptDeriveKey$FUNC
+    );
+    static final FunctionDescriptor CryptDestroyKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CryptDestroyKey$MH = RuntimeHelper.downcallHandle(
+        "CryptDestroyKey",
+        constants$566.CryptDestroyKey$FUNC
+    );
+    static final FunctionDescriptor CryptSetKeyParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptSetKeyParam$MH = RuntimeHelper.downcallHandle(
+        "CryptSetKeyParam",
+        constants$566.CryptSetKeyParam$FUNC
+    );
+    static final FunctionDescriptor CryptGetKeyParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptGetKeyParam$MH = RuntimeHelper.downcallHandle(
+        "CryptGetKeyParam",
+        constants$566.CryptGetKeyParam$FUNC
+    );
 }
 
 

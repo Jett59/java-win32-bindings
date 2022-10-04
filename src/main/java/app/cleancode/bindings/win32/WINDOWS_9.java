@@ -9,6 +9,1419 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_9 extends WINDOWS_8 {
 
+    public static int TC_PUBLIC_DEVICEDUMP_CONTENT_GPLOG_MAX() {
+        return (int)16L;
+    }
+    public static int TC_DEVICEDUMP_SUBSECTION_DESC_LENGTH() {
+        return (int)16L;
+    }
+    public static int CDB_SIZE() {
+        return (int)16L;
+    }
+    public static int TELEMETRY_COMMAND_SIZE() {
+        return (int)16L;
+    }
+    public static int DEVICEDUMP_CAP_PRIVATE_SECTION() {
+        return (int)1L;
+    }
+    public static int DEVICEDUMP_CAP_RESTRICTED_SECTION() {
+        return (int)2L;
+    }
+    public static int STORAGE_IDLE_POWERUP_REASON_VERSION_V1() {
+        return (int)1L;
+    }
+    public static int STORAGE_DEVICE_POWER_CAP_VERSION_V1() {
+        return (int)1L;
+    }
+    public static int STORAGE_EVENT_NOTIFICATION_VERSION_V1() {
+        return (int)1L;
+    }
+    public static int STORAGE_EVENT_MEDIA_STATUS() {
+        return (int)1L;
+    }
+    public static int STORAGE_EVENT_DEVICE_STATUS() {
+        return (int)2L;
+    }
+    public static int STORAGE_EVENT_DEVICE_OPERATION() {
+        return (int)4L;
+    }
+    public static int READ_COPY_NUMBER_KEY() {
+        return (int)1380142592L;
+    }
+    public static int READ_COPY_NUMBER_BYPASS_CACHE_FLAG() {
+        return (int)256L;
+    }
+    public static int STORAGE_HW_FIRMWARE_REQUEST_FLAG_CONTROLLER() {
+        return (int)1L;
+    }
+    public static int STORAGE_HW_FIRMWARE_REQUEST_FLAG_LAST_SEGMENT() {
+        return (int)2L;
+    }
+    public static int STORAGE_HW_FIRMWARE_REQUEST_FLAG_FIRST_SEGMENT() {
+        return (int)4L;
+    }
+    public static int STORAGE_HW_FIRMWARE_INVALID_SLOT() {
+        return (int)255L;
+    }
+    public static int STORAGE_HW_FIRMWARE_REVISION_LENGTH() {
+        return (int)16L;
+    }
+    public static int STORAGE_PROTOCOL_STRUCTURE_VERSION() {
+        return (int)1L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_PENDING() {
+        return (int)0L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_SUCCESS() {
+        return (int)1L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_ERROR() {
+        return (int)2L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_INVALID_REQUEST() {
+        return (int)3L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_NO_DEVICE() {
+        return (int)4L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_BUSY() {
+        return (int)5L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_DATA_OVERRUN() {
+        return (int)6L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_INSUFFICIENT_RESOURCES() {
+        return (int)7L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_THROTTLED_REQUEST() {
+        return (int)8L;
+    }
+    public static int STORAGE_PROTOCOL_STATUS_NOT_SUPPORTED() {
+        return (int)255L;
+    }
+    public static int STORAGE_PROTOCOL_COMMAND_LENGTH_NVME() {
+        return (int)64L;
+    }
+    public static int STORAGE_PROTOCOL_SPECIFIC_NVME_ADMIN_COMMAND() {
+        return (int)1L;
+    }
+    public static int STORAGE_PROTOCOL_SPECIFIC_NVME_NVM_COMMAND() {
+        return (int)2L;
+    }
+    public static int STORATTRIBUTE_NONE() {
+        return (int)0L;
+    }
+    public static int STORATTRIBUTE_MANAGEMENT_STATE() {
+        return (int)1L;
+    }
+    public static int IOCTL_SCMBUS_DEVICE_FUNCTION_BASE() {
+        return (int)0L;
+    }
+    public static int IOCTL_SCM_LOGICAL_DEVICE_FUNCTION_BASE() {
+        return (int)768L;
+    }
+    public static int IOCTL_SCM_PHYSICAL_DEVICE_FUNCTION_BASE() {
+        return (int)1536L;
+    }
+    public static int SCM_MAX_SYMLINK_LEN_IN_CHARS() {
+        return (int)256L;
+    }
+    public static int MAX_INTERFACE_CODES() {
+        return (int)8L;
+    }
+    public static int SCM_PD_FIRMWARE_REVISION_LENGTH_BYTES() {
+        return (int)32L;
+    }
+    public static int SCM_PD_PROPERTY_NAME_LENGTH_IN_CHARS() {
+        return (int)128L;
+    }
+    public static int SCM_PD_MAX_OPERATIONAL_STATUS() {
+        return (int)16L;
+    }
+    public static int SCM_PD_FIRMWARE_LAST_DOWNLOAD() {
+        return (int)1L;
+    }
+    public static int PARTITION_ENTRY_UNUSED() {
+        return (int)0L;
+    }
+    public static int PARTITION_FAT_12() {
+        return (int)1L;
+    }
+    public static int PARTITION_XENIX_1() {
+        return (int)2L;
+    }
+    public static int PARTITION_XENIX_2() {
+        return (int)3L;
+    }
+    public static int PARTITION_FAT_16() {
+        return (int)4L;
+    }
+    public static int PARTITION_EXTENDED() {
+        return (int)5L;
+    }
+    public static int PARTITION_HUGE() {
+        return (int)6L;
+    }
+    public static int PARTITION_IFS() {
+        return (int)7L;
+    }
+    public static int PARTITION_OS2BOOTMGR() {
+        return (int)10L;
+    }
+    public static int PARTITION_FAT32() {
+        return (int)11L;
+    }
+    public static int PARTITION_FAT32_XINT13() {
+        return (int)12L;
+    }
+    public static int PARTITION_XINT13() {
+        return (int)14L;
+    }
+    public static int PARTITION_XINT13_EXTENDED() {
+        return (int)15L;
+    }
+    public static int PARTITION_MSFT_RECOVERY() {
+        return (int)39L;
+    }
+    public static int PARTITION_MAIN_OS() {
+        return (int)40L;
+    }
+    public static int PARTIITON_OS_DATA() {
+        return (int)41L;
+    }
+    public static int PARTITION_PRE_INSTALLED() {
+        return (int)42L;
+    }
+    public static int PARTITION_BSP() {
+        return (int)43L;
+    }
+    public static int PARTITION_DPP() {
+        return (int)44L;
+    }
+    public static int PARTITION_WINDOWS_SYSTEM() {
+        return (int)45L;
+    }
+    public static int PARTITION_PREP() {
+        return (int)65L;
+    }
+    public static int PARTITION_LDM() {
+        return (int)66L;
+    }
+    public static int PARTITION_DM() {
+        return (int)84L;
+    }
+    public static int PARTITION_EZDRIVE() {
+        return (int)85L;
+    }
+    public static int PARTITION_UNIX() {
+        return (int)99L;
+    }
+    public static int PARTITION_SPACES_DATA() {
+        return (int)215L;
+    }
+    public static int PARTITION_SPACES() {
+        return (int)231L;
+    }
+    public static int PARTITION_GPT() {
+        return (int)238L;
+    }
+    public static int PARTITION_SYSTEM() {
+        return (int)239L;
+    }
+    public static int VALID_NTFT() {
+        return (int)192L;
+    }
+    public static int PARTITION_NTFT() {
+        return (int)128L;
+    }
+    public static int HIST_NO_OF_BUCKETS() {
+        return (int)24L;
+    }
+    public static int DISK_LOGGING_START() {
+        return (int)0L;
+    }
+    public static int DISK_LOGGING_STOP() {
+        return (int)1L;
+    }
+    public static int DISK_LOGGING_DUMP() {
+        return (int)2L;
+    }
+    public static int DISK_BINNING() {
+        return (int)3L;
+    }
+    public static int CAP_ATA_ID_CMD() {
+        return (int)1L;
+    }
+    public static int CAP_ATAPI_ID_CMD() {
+        return (int)2L;
+    }
+    public static int CAP_SMART_CMD() {
+        return (int)4L;
+    }
+    public static int ATAPI_ID_CMD() {
+        return (int)161L;
+    }
+    public static int ID_CMD() {
+        return (int)236L;
+    }
+    public static int SMART_CMD() {
+        return (int)176L;
+    }
+    public static int SMART_CYL_LOW() {
+        return (int)79L;
+    }
+    public static int SMART_CYL_HI() {
+        return (int)194L;
+    }
+    public static int SMART_NO_ERROR() {
+        return (int)0L;
+    }
+    public static int SMART_IDE_ERROR() {
+        return (int)1L;
+    }
+    public static int SMART_INVALID_FLAG() {
+        return (int)2L;
+    }
+    public static int SMART_INVALID_COMMAND() {
+        return (int)3L;
+    }
+    public static int SMART_INVALID_BUFFER() {
+        return (int)4L;
+    }
+    public static int SMART_INVALID_DRIVE() {
+        return (int)5L;
+    }
+    public static int SMART_INVALID_IOCTL() {
+        return (int)6L;
+    }
+    public static int SMART_ERROR_NO_MEM() {
+        return (int)7L;
+    }
+    public static int SMART_INVALID_REGISTER() {
+        return (int)8L;
+    }
+    public static int SMART_NOT_SUPPORTED() {
+        return (int)9L;
+    }
+    public static int SMART_NO_IDE_DEVICE() {
+        return (int)10L;
+    }
+    public static int SMART_OFFLINE_ROUTINE_OFFLINE() {
+        return (int)0L;
+    }
+    public static int SMART_SHORT_SELFTEST_OFFLINE() {
+        return (int)1L;
+    }
+    public static int SMART_EXTENDED_SELFTEST_OFFLINE() {
+        return (int)2L;
+    }
+    public static int SMART_ABORT_OFFLINE_SELFTEST() {
+        return (int)127L;
+    }
+    public static int SMART_SHORT_SELFTEST_CAPTIVE() {
+        return (int)129L;
+    }
+    public static int SMART_EXTENDED_SELFTEST_CAPTIVE() {
+        return (int)130L;
+    }
+    public static int READ_ATTRIBUTE_BUFFER_SIZE() {
+        return (int)512L;
+    }
+    public static int IDENTIFY_BUFFER_SIZE() {
+        return (int)512L;
+    }
+    public static int READ_THRESHOLD_BUFFER_SIZE() {
+        return (int)512L;
+    }
+    public static int SMART_LOG_SECTOR_SIZE() {
+        return (int)512L;
+    }
+    public static int READ_ATTRIBUTES() {
+        return (int)208L;
+    }
+    public static int READ_THRESHOLDS() {
+        return (int)209L;
+    }
+    public static int ENABLE_DISABLE_AUTOSAVE() {
+        return (int)210L;
+    }
+    public static int SAVE_ATTRIBUTE_VALUES() {
+        return (int)211L;
+    }
+    public static int EXECUTE_OFFLINE_DIAGS() {
+        return (int)212L;
+    }
+    public static int SMART_READ_LOG() {
+        return (int)213L;
+    }
+    public static int SMART_WRITE_LOG() {
+        return (int)214L;
+    }
+    public static int ENABLE_SMART() {
+        return (int)216L;
+    }
+    public static int DISABLE_SMART() {
+        return (int)217L;
+    }
+    public static int RETURN_SMART_STATUS() {
+        return (int)218L;
+    }
+    public static int ENABLE_DISABLE_AUTO_OFFLINE() {
+        return (int)219L;
+    }
+    public static int DISK_ATTRIBUTE_OFFLINE() {
+        return (int)1L;
+    }
+    public static int DISK_ATTRIBUTE_READ_ONLY() {
+        return (int)2L;
+    }
+    public static int MAX_VOLUME_ID_SIZE() {
+        return (int)36L;
+    }
+    public static int MAX_VOLUME_TEMPLATE_SIZE() {
+        return (int)40L;
+    }
+    public static int VENDOR_ID_LENGTH() {
+        return (int)8L;
+    }
+    public static int PRODUCT_ID_LENGTH() {
+        return (int)16L;
+    }
+    public static int REVISION_LENGTH() {
+        return (int)4L;
+    }
+    public static int SERIAL_NUMBER_LENGTH() {
+        return (int)32L;
+    }
+    public static int CHANGER_BAR_CODE_SCANNER_INSTALLED() {
+        return (int)1L;
+    }
+    public static int CHANGER_INIT_ELEM_STAT_WITH_RANGE() {
+        return (int)2L;
+    }
+    public static int CHANGER_CLOSE_IEPORT() {
+        return (int)4L;
+    }
+    public static int CHANGER_OPEN_IEPORT() {
+        return (int)8L;
+    }
+    public static int CHANGER_STATUS_NON_VOLATILE() {
+        return (int)16L;
+    }
+    public static int CHANGER_EXCHANGE_MEDIA() {
+        return (int)32L;
+    }
+    public static int CHANGER_CLEANER_SLOT() {
+        return (int)64L;
+    }
+    public static int CHANGER_LOCK_UNLOCK() {
+        return (int)128L;
+    }
+    public static int CHANGER_CARTRIDGE_MAGAZINE() {
+        return (int)256L;
+    }
+    public static int CHANGER_MEDIUM_FLIP() {
+        return (int)512L;
+    }
+    public static int CHANGER_POSITION_TO_ELEMENT() {
+        return (int)1024L;
+    }
+    public static int CHANGER_REPORT_IEPORT_STATE() {
+        return (int)2048L;
+    }
+    public static int CHANGER_STORAGE_DRIVE() {
+        return (int)4096L;
+    }
+    public static int CHANGER_STORAGE_IEPORT() {
+        return (int)8192L;
+    }
+    public static int CHANGER_STORAGE_SLOT() {
+        return (int)16384L;
+    }
+    public static int CHANGER_STORAGE_TRANSPORT() {
+        return (int)32768L;
+    }
+    public static int CHANGER_DRIVE_CLEANING_REQUIRED() {
+        return (int)65536L;
+    }
+    public static int CHANGER_PREDISMOUNT_EJECT_REQUIRED() {
+        return (int)131072L;
+    }
+    public static int CHANGER_CLEANER_ACCESS_NOT_VALID() {
+        return (int)262144L;
+    }
+    public static int CHANGER_PREMOUNT_EJECT_REQUIRED() {
+        return (int)524288L;
+    }
+    public static int CHANGER_VOLUME_IDENTIFICATION() {
+        return (int)1048576L;
+    }
+    public static int CHANGER_VOLUME_SEARCH() {
+        return (int)2097152L;
+    }
+    public static int CHANGER_VOLUME_ASSERT() {
+        return (int)4194304L;
+    }
+    public static int CHANGER_VOLUME_REPLACE() {
+        return (int)8388608L;
+    }
+    public static int CHANGER_VOLUME_UNDEFINE() {
+        return (int)16777216L;
+    }
+    public static int CHANGER_SERIAL_NUMBER_VALID() {
+        return (int)67108864L;
+    }
+    public static int CHANGER_DEVICE_REINITIALIZE_CAPABLE() {
+        return (int)134217728L;
+    }
+    public static int CHANGER_KEYPAD_ENABLE_DISABLE() {
+        return (int)268435456L;
+    }
+    public static int CHANGER_DRIVE_EMPTY_ON_DOOR_ACCESS() {
+        return (int)536870912L;
+    }
+    public static int CHANGER_TO_TRANSPORT() {
+        return (int)1L;
+    }
+    public static int CHANGER_TO_SLOT() {
+        return (int)2L;
+    }
+    public static int CHANGER_TO_IEPORT() {
+        return (int)4L;
+    }
+    public static int CHANGER_TO_DRIVE() {
+        return (int)8L;
+    }
+    public static int LOCK_UNLOCK_IEPORT() {
+        return (int)1L;
+    }
+    public static int LOCK_UNLOCK_DOOR() {
+        return (int)2L;
+    }
+    public static int LOCK_UNLOCK_KEYPAD() {
+        return (int)4L;
+    }
+    public static int LOCK_ELEMENT() {
+        return (int)0L;
+    }
+    public static int UNLOCK_ELEMENT() {
+        return (int)1L;
+    }
+    public static int EXTEND_IEPORT() {
+        return (int)2L;
+    }
+    public static int RETRACT_IEPORT() {
+        return (int)3L;
+    }
+    public static int ELEMENT_STATUS_FULL() {
+        return (int)1L;
+    }
+    public static int ELEMENT_STATUS_IMPEXP() {
+        return (int)2L;
+    }
+    public static int ELEMENT_STATUS_EXCEPT() {
+        return (int)4L;
+    }
+    public static int ELEMENT_STATUS_ACCESS() {
+        return (int)8L;
+    }
+    public static int ELEMENT_STATUS_EXENAB() {
+        return (int)16L;
+    }
+    public static int ELEMENT_STATUS_INENAB() {
+        return (int)32L;
+    }
+    public static int ELEMENT_STATUS_PRODUCT_DATA() {
+        return (int)64L;
+    }
+    public static int ELEMENT_STATUS_LUN_VALID() {
+        return (int)4096L;
+    }
+    public static int ELEMENT_STATUS_ID_VALID() {
+        return (int)8192L;
+    }
+    public static int ELEMENT_STATUS_NOT_BUS() {
+        return (int)32768L;
+    }
+    public static int ELEMENT_STATUS_INVERT() {
+        return (int)4194304L;
+    }
+    public static int ELEMENT_STATUS_SVALID() {
+        return (int)8388608L;
+    }
+    public static int ELEMENT_STATUS_PVOLTAG() {
+        return (int)268435456L;
+    }
+    public static int ELEMENT_STATUS_AVOLTAG() {
+        return (int)536870912L;
+    }
+    public static int ERROR_LABEL_UNREADABLE() {
+        return (int)1L;
+    }
+    public static int ERROR_LABEL_QUESTIONABLE() {
+        return (int)2L;
+    }
+    public static int ERROR_SLOT_NOT_PRESENT() {
+        return (int)4L;
+    }
+    public static int ERROR_DRIVE_NOT_INSTALLED() {
+        return (int)8L;
+    }
+    public static int ERROR_TRAY_MALFUNCTION() {
+        return (int)16L;
+    }
+    public static int ERROR_INIT_STATUS_NEEDED() {
+        return (int)17L;
+    }
+    public static int SEARCH_ALL() {
+        return (int)0L;
+    }
+    public static int SEARCH_PRIMARY() {
+        return (int)1L;
+    }
+    public static int SEARCH_ALTERNATE() {
+        return (int)2L;
+    }
+    public static int SEARCH_ALL_NO_SEQ() {
+        return (int)4L;
+    }
+    public static int SEARCH_PRI_NO_SEQ() {
+        return (int)5L;
+    }
+    public static int SEARCH_ALT_NO_SEQ() {
+        return (int)6L;
+    }
+    public static int ASSERT_PRIMARY() {
+        return (int)8L;
+    }
+    public static int ASSERT_ALTERNATE() {
+        return (int)9L;
+    }
+    public static int REPLACE_PRIMARY() {
+        return (int)10L;
+    }
+    public static int REPLACE_ALTERNATE() {
+        return (int)11L;
+    }
+    public static int UNDEFINE_PRIMARY() {
+        return (int)12L;
+    }
+    public static int UNDEFINE_ALTERNATE() {
+        return (int)13L;
+    }
+    public static int GET_VOLUME_BITMAP_FLAG_MASK_METADATA() {
+        return (int)1L;
+    }
+    public static int FLAG_USN_TRACK_MODIFIED_RANGES_ENABLE() {
+        return (int)1L;
+    }
+    public static int FILE_PREFETCH_TYPE_FOR_CREATE() {
+        return (int)1L;
+    }
+    public static int FILE_PREFETCH_TYPE_FOR_DIRENUM() {
+        return (int)2L;
+    }
+    public static int FILE_PREFETCH_TYPE_FOR_CREATE_EX() {
+        return (int)3L;
+    }
+    public static int FILE_PREFETCH_TYPE_FOR_DIRENUM_EX() {
+        return (int)4L;
+    }
+    public static int FILE_PREFETCH_TYPE_MAX() {
+        return (int)4L;
+    }
+    public static int FILESYSTEM_STATISTICS_TYPE_NTFS() {
+        return (int)1L;
+    }
+    public static int FILESYSTEM_STATISTICS_TYPE_FAT() {
+        return (int)2L;
+    }
+    public static int FILESYSTEM_STATISTICS_TYPE_EXFAT() {
+        return (int)3L;
+    }
+    public static int FILESYSTEM_STATISTICS_TYPE_REFS() {
+        return (int)4L;
+    }
+    public static int FILE_SET_ENCRYPTION() {
+        return (int)1L;
+    }
+    public static int FILE_CLEAR_ENCRYPTION() {
+        return (int)2L;
+    }
+    public static int STREAM_SET_ENCRYPTION() {
+        return (int)3L;
+    }
+    public static int STREAM_CLEAR_ENCRYPTION() {
+        return (int)4L;
+    }
+    public static int MAXIMUM_ENCRYPTION_VALUE() {
+        return (int)4L;
+    }
+    public static int ENCRYPTED_DATA_INFO_SPARSE_FILE() {
+        return (int)1L;
+    }
+    public static int COPYFILE_SIS_LINK() {
+        return (int)1L;
+    }
+    public static int COPYFILE_SIS_REPLACE() {
+        return (int)2L;
+    }
+    public static int COPYFILE_SIS_FLAGS() {
+        return (int)3L;
+    }
+    public static int TXFS_RM_FLAG_LOGGING_MODE() {
+        return (int)1L;
+    }
+    public static int TXFS_RM_FLAG_RENAME_RM() {
+        return (int)2L;
+    }
+    public static int TXFS_RM_FLAG_LOG_CONTAINER_COUNT_MAX() {
+        return (int)4L;
+    }
+    public static int TXFS_RM_FLAG_LOG_CONTAINER_COUNT_MIN() {
+        return (int)8L;
+    }
+    public static int TXFS_RM_FLAG_LOG_GROWTH_INCREMENT_NUM_CONTAINERS() {
+        return (int)16L;
+    }
+    public static int TXFS_RM_FLAG_LOG_GROWTH_INCREMENT_PERCENT() {
+        return (int)32L;
+    }
+    public static int TXFS_RM_FLAG_LOG_AUTO_SHRINK_PERCENTAGE() {
+        return (int)64L;
+    }
+    public static int TXFS_RM_FLAG_LOG_NO_CONTAINER_COUNT_MAX() {
+        return (int)128L;
+    }
+    public static int TXFS_RM_FLAG_LOG_NO_CONTAINER_COUNT_MIN() {
+        return (int)256L;
+    }
+    public static int TXFS_RM_FLAG_GROW_LOG() {
+        return (int)1024L;
+    }
+    public static int TXFS_RM_FLAG_SHRINK_LOG() {
+        return (int)2048L;
+    }
+    public static int TXFS_RM_FLAG_ENFORCE_MINIMUM_SIZE() {
+        return (int)4096L;
+    }
+    public static int TXFS_RM_FLAG_PRESERVE_CHANGES() {
+        return (int)8192L;
+    }
+    public static int TXFS_RM_FLAG_RESET_RM_AT_NEXT_START() {
+        return (int)16384L;
+    }
+    public static int TXFS_RM_FLAG_DO_NOT_RESET_RM_AT_NEXT_START() {
+        return (int)32768L;
+    }
+    public static int TXFS_RM_FLAG_PREFER_CONSISTENCY() {
+        return (int)65536L;
+    }
+    public static int TXFS_RM_FLAG_PREFER_AVAILABILITY() {
+        return (int)131072L;
+    }
+    public static int TXFS_TRANSACTION_STATE_NONE() {
+        return (int)0L;
+    }
+    public static int TXFS_TRANSACTION_STATE_ACTIVE() {
+        return (int)1L;
+    }
+    public static int TXFS_TRANSACTION_STATE_PREPARED() {
+        return (int)2L;
+    }
+    public static int TXFS_TRANSACTION_STATE_NOTACTIVE() {
+        return (int)3L;
+    }
+    public static int TXFS_RM_STATE_NOT_STARTED() {
+        return (int)0L;
+    }
+    public static int TXFS_RM_STATE_STARTING() {
+        return (int)1L;
+    }
+    public static int TXFS_RM_STATE_ACTIVE() {
+        return (int)2L;
+    }
+    public static int TXFS_RM_STATE_SHUTTING_DOWN() {
+        return (int)3L;
+    }
+    public static int TXFS_ROLLFORWARD_REDO_FLAG_USE_LAST_REDO_LSN() {
+        return (int)1L;
+    }
+    public static int TXFS_ROLLFORWARD_REDO_FLAG_USE_LAST_VIRTUAL_CLOCK() {
+        return (int)2L;
+    }
+    public static int TXFS_START_RM_FLAG_LOG_CONTAINER_COUNT_MAX() {
+        return (int)1L;
+    }
+    public static int TXFS_START_RM_FLAG_LOG_CONTAINER_COUNT_MIN() {
+        return (int)2L;
+    }
+    public static int TXFS_START_RM_FLAG_LOG_CONTAINER_SIZE() {
+        return (int)4L;
+    }
+    public static int TXFS_START_RM_FLAG_LOG_GROWTH_INCREMENT_NUM_CONTAINERS() {
+        return (int)8L;
+    }
+    public static int TXFS_START_RM_FLAG_LOG_GROWTH_INCREMENT_PERCENT() {
+        return (int)16L;
+    }
+    public static int TXFS_START_RM_FLAG_LOG_AUTO_SHRINK_PERCENTAGE() {
+        return (int)32L;
+    }
+    public static int TXFS_START_RM_FLAG_LOG_NO_CONTAINER_COUNT_MAX() {
+        return (int)64L;
+    }
+    public static int TXFS_START_RM_FLAG_LOG_NO_CONTAINER_COUNT_MIN() {
+        return (int)128L;
+    }
+    public static int TXFS_START_RM_FLAG_RECOVER_BEST_EFFORT() {
+        return (int)512L;
+    }
+    public static int TXFS_START_RM_FLAG_LOGGING_MODE() {
+        return (int)1024L;
+    }
+    public static int TXFS_START_RM_FLAG_PRESERVE_CHANGES() {
+        return (int)2048L;
+    }
+    public static int TXFS_START_RM_FLAG_PREFER_CONSISTENCY() {
+        return (int)4096L;
+    }
+    public static int TXFS_START_RM_FLAG_PREFER_AVAILABILITY() {
+        return (int)8192L;
+    }
+    public static int TXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY_FLAG_CREATED() {
+        return (int)1L;
+    }
+    public static int TXFS_LIST_TRANSACTION_LOCKED_FILES_ENTRY_FLAG_DELETED() {
+        return (int)2L;
+    }
+    public static int TXFS_SAVEPOINT_SET() {
+        return (int)1L;
+    }
+    public static int TXFS_SAVEPOINT_ROLLBACK() {
+        return (int)2L;
+    }
+    public static int TXFS_SAVEPOINT_CLEAR() {
+        return (int)4L;
+    }
+    public static int TXFS_SAVEPOINT_CLEAR_ALL() {
+        return (int)16L;
+    }
+    public static int REQUEST_OPLOCK_CURRENT_VERSION() {
+        return (int)1L;
+    }
+    public static int QUERY_DEPENDENT_VOLUME_REQUEST_FLAG_HOST_VOLUMES() {
+        return (int)1L;
+    }
+    public static int QUERY_DEPENDENT_VOLUME_REQUEST_FLAG_GUEST_VOLUMES() {
+        return (int)2L;
+    }
+    public static int SD_GLOBAL_CHANGE_TYPE_MACHINE_SID() {
+        return (int)1L;
+    }
+    public static int LOOKUP_STREAM_FROM_CLUSTER_ENTRY_FLAG_PAGE_FILE() {
+        return (int)1L;
+    }
+    public static int LOOKUP_STREAM_FROM_CLUSTER_ENTRY_FLAG_DENY_DEFRAG_SET() {
+        return (int)2L;
+    }
+    public static int LOOKUP_STREAM_FROM_CLUSTER_ENTRY_FLAG_FS_SYSTEM_FILE() {
+        return (int)4L;
+    }
+    public static int LOOKUP_STREAM_FROM_CLUSTER_ENTRY_FLAG_TXF_SYSTEM_FILE() {
+        return (int)8L;
+    }
+    public static int LOOKUP_STREAM_FROM_CLUSTER_ENTRY_ATTRIBUTE_DATA() {
+        return (int)16777216L;
+    }
+    public static int LOOKUP_STREAM_FROM_CLUSTER_ENTRY_ATTRIBUTE_INDEX() {
+        return (int)33554432L;
+    }
+    public static int LOOKUP_STREAM_FROM_CLUSTER_ENTRY_ATTRIBUTE_SYSTEM() {
+        return (int)50331648L;
+    }
+    public static int FILE_TYPE_NOTIFICATION_FLAG_USAGE_BEGIN() {
+        return (int)1L;
+    }
+    public static int FILE_TYPE_NOTIFICATION_FLAG_USAGE_END() {
+        return (int)2L;
+    }
+    public static int CSV_MGMTLOCK_CHECK_VOLUME_REDIRECTED() {
+        return (int)1L;
+    }
+    public static int CSV_QUERY_MDS_PATH_V2_VERSION_1() {
+        return (int)1L;
+    }
+    public static int CSV_QUERY_MDS_PATH_FLAG_STORAGE_ON_THIS_NODE_IS_CONNECTED() {
+        return (int)1L;
+    }
+    public static int CSV_QUERY_MDS_PATH_FLAG_CSV_DIRECT_IO_ENABLED() {
+        return (int)2L;
+    }
+    public static int CSV_QUERY_MDS_PATH_FLAG_SMB_BYPASS_CSV_ENABLED() {
+        return (int)4L;
+    }
+    public static int SET_PURGE_FAILURE_MODE_ENABLED() {
+        return (int)1L;
+    }
+    public static int SET_PURGE_FAILURE_MODE_DISABLED() {
+        return (int)2L;
+    }
+    public static int FILE_REGION_USAGE_VALID_CACHED_DATA() {
+        return (int)1L;
+    }
+    public static int FILE_REGION_USAGE_VALID_NONCACHED_DATA() {
+        return (int)2L;
+    }
+    public static int FILE_REGION_USAGE_OTHER_PAGE_ALIGNMENT() {
+        return (int)4L;
+    }
+    public static int FILE_REGION_USAGE_LARGE_PAGE_ALIGNMENT() {
+        return (int)8L;
+    }
+    public static int FILE_REGION_USAGE_HUGE_PAGE_ALIGNMENT() {
+        return (int)16L;
+    }
+    public static int QUERY_STORAGE_CLASSES_FLAGS_MEASURE_READ() {
+        return (int)1073741824L;
+    }
+    public static int QUERY_STORAGE_CLASSES_FLAGS_NO_DEFRAG_VOLUME() {
+        return (int)536870912L;
+    }
+    public static int DUPLICATE_EXTENTS_DATA_EX_SOURCE_ATOMIC() {
+        return (int)1L;
+    }
+    public static int DUPLICATE_EXTENTS_DATA_EX_ASYNC() {
+        return (int)2L;
+    }
+    public static int REFS_SMR_VOLUME_INFO_OUTPUT_VERSION_V1() {
+        return (int)1L;
+    }
+    public static int REFS_SMR_VOLUME_GC_PARAMETERS_VERSION_V1() {
+        return (int)1L;
+    }
+    public static int WIM_PROVIDER_HASH_SIZE() {
+        return (int)20L;
+    }
+    public static int PROJFS_PROTOCOL_VERSION() {
+        return (int)3L;
+    }
+    public static int IOCTL_VOLUME_BASE() {
+        return (int)86L;
+    }
+    public static int EFS_TRACKED_OFFSET_HEADER_FLAG() {
+        return (int)1L;
+    }
+    public static int SPACES_TRACKED_OFFSET_HEADER_FLAG() {
+        return (int)2L;
+    }
+    public static int SCARD_ATR_LENGTH() {
+        return (int)33L;
+    }
+    public static int SCARD_PROTOCOL_UNDEFINED() {
+        return (int)0L;
+    }
+    public static int SCARD_PROTOCOL_T0() {
+        return (int)1L;
+    }
+    public static int SCARD_PROTOCOL_T1() {
+        return (int)2L;
+    }
+    public static int SCARD_PROTOCOL_RAW() {
+        return (int)65536L;
+    }
+    public static int SCARD_PROTOCOL_OPTIMAL() {
+        return (int)0L;
+    }
+    public static int SCARD_POWER_DOWN() {
+        return (int)0L;
+    }
+    public static int SCARD_COLD_RESET() {
+        return (int)1L;
+    }
+    public static int SCARD_WARM_RESET() {
+        return (int)2L;
+    }
+    public static int MAXIMUM_ATTR_STRING_LENGTH() {
+        return (int)32L;
+    }
+    public static int MAXIMUM_SMARTCARD_READERS() {
+        return (int)10L;
+    }
+    public static int SCARD_CLASS_VENDOR_INFO() {
+        return (int)1L;
+    }
+    public static int SCARD_CLASS_COMMUNICATIONS() {
+        return (int)2L;
+    }
+    public static int SCARD_CLASS_PROTOCOL() {
+        return (int)3L;
+    }
+    public static int SCARD_CLASS_POWER_MGMT() {
+        return (int)4L;
+    }
+    public static int SCARD_CLASS_SECURITY() {
+        return (int)5L;
+    }
+    public static int SCARD_CLASS_MECHANICAL() {
+        return (int)6L;
+    }
+    public static int SCARD_CLASS_VENDOR_DEFINED() {
+        return (int)7L;
+    }
+    public static int SCARD_CLASS_IFD_PROTOCOL() {
+        return (int)8L;
+    }
+    public static int SCARD_CLASS_ICC_STATE() {
+        return (int)9L;
+    }
+    public static int SCARD_CLASS_PERF() {
+        return (int)32766L;
+    }
+    public static int SCARD_CLASS_SYSTEM() {
+        return (int)32767L;
+    }
+    public static int SCARD_T0_HEADER_LENGTH() {
+        return (int)7L;
+    }
+    public static int SCARD_T0_CMD_LENGTH() {
+        return (int)5L;
+    }
+    public static int SCARD_T1_PROLOGUE_LENGTH() {
+        return (int)3L;
+    }
+    public static int SCARD_T1_EPILOGUE_LENGTH() {
+        return (int)2L;
+    }
+    public static int SCARD_T1_EPILOGUE_LENGTH_LRC() {
+        return (int)1L;
+    }
+    public static int SCARD_T1_MAX_IFS() {
+        return (int)254L;
+    }
+    public static int SCARD_UNKNOWN() {
+        return (int)0L;
+    }
+    public static int SCARD_ABSENT() {
+        return (int)1L;
+    }
+    public static int SCARD_PRESENT() {
+        return (int)2L;
+    }
+    public static int SCARD_SWALLOWED() {
+        return (int)3L;
+    }
+    public static int SCARD_POWERED() {
+        return (int)4L;
+    }
+    public static int SCARD_NEGOTIABLE() {
+        return (int)5L;
+    }
+    public static int SCARD_SPECIFIC() {
+        return (int)6L;
+    }
+    public static int SCARD_READER_SWALLOWS() {
+        return (int)1L;
+    }
+    public static int SCARD_READER_EJECTS() {
+        return (int)2L;
+    }
+    public static int SCARD_READER_CONFISCATES() {
+        return (int)4L;
+    }
+    public static int SCARD_READER_CONTACTLESS() {
+        return (int)8L;
+    }
+    public static int SCARD_READER_TYPE_SERIAL() {
+        return (int)1L;
+    }
+    public static int SCARD_READER_TYPE_PARALELL() {
+        return (int)2L;
+    }
+    public static int SCARD_READER_TYPE_KEYBOARD() {
+        return (int)4L;
+    }
+    public static int SCARD_READER_TYPE_SCSI() {
+        return (int)8L;
+    }
+    public static int SCARD_READER_TYPE_IDE() {
+        return (int)16L;
+    }
+    public static int SCARD_READER_TYPE_USB() {
+        return (int)32L;
+    }
+    public static int SCARD_READER_TYPE_PCMCIA() {
+        return (int)64L;
+    }
+    public static int SCARD_READER_TYPE_TPM() {
+        return (int)128L;
+    }
+    public static int SCARD_READER_TYPE_NFC() {
+        return (int)256L;
+    }
+    public static int SCARD_READER_TYPE_UICC() {
+        return (int)512L;
+    }
+    public static int SCARD_READER_TYPE_NGC() {
+        return (int)1024L;
+    }
+    public static int SCARD_READER_TYPE_EMBEDDEDSE() {
+        return (int)2048L;
+    }
+    public static int SCARD_READER_TYPE_VENDOR() {
+        return (int)240L;
+    }
+    public static int SCARD_SCOPE_USER() {
+        return (int)0L;
+    }
+    public static int SCARD_SCOPE_TERMINAL() {
+        return (int)1L;
+    }
+    public static int SCARD_SCOPE_SYSTEM() {
+        return (int)2L;
+    }
+    public static int SCARD_PROVIDER_PRIMARY() {
+        return (int)1L;
+    }
+    public static int SCARD_PROVIDER_CSP() {
+        return (int)2L;
+    }
+    public static int SCARD_PROVIDER_KSP() {
+        return (int)3L;
+    }
+    public static int SCARD_STATE_UNAWARE() {
+        return (int)0L;
+    }
+    public static int SCARD_STATE_IGNORE() {
+        return (int)1L;
+    }
+    public static int SCARD_STATE_CHANGED() {
+        return (int)2L;
+    }
+    public static int SCARD_STATE_UNKNOWN() {
+        return (int)4L;
+    }
+    public static int SCARD_STATE_UNAVAILABLE() {
+        return (int)8L;
+    }
+    public static int SCARD_STATE_EMPTY() {
+        return (int)16L;
+    }
+    public static int SCARD_STATE_PRESENT() {
+        return (int)32L;
+    }
+    public static int SCARD_STATE_ATRMATCH() {
+        return (int)64L;
+    }
+    public static int SCARD_STATE_EXCLUSIVE() {
+        return (int)128L;
+    }
+    public static int SCARD_STATE_INUSE() {
+        return (int)256L;
+    }
+    public static int SCARD_STATE_MUTE() {
+        return (int)512L;
+    }
+    public static int SCARD_STATE_UNPOWERED() {
+        return (int)1024L;
+    }
+    public static int SCARD_SHARE_EXCLUSIVE() {
+        return (int)1L;
+    }
+    public static int SCARD_SHARE_SHARED() {
+        return (int)2L;
+    }
+    public static int SCARD_SHARE_DIRECT() {
+        return (int)3L;
+    }
+    public static int SCARD_LEAVE_CARD() {
+        return (int)0L;
+    }
+    public static int SCARD_RESET_CARD() {
+        return (int)1L;
+    }
+    public static int SCARD_UNPOWER_CARD() {
+        return (int)2L;
+    }
+    public static int SCARD_EJECT_CARD() {
+        return (int)3L;
+    }
+    public static int SC_DLG_MINIMAL_UI() {
+        return (int)1L;
+    }
+    public static int SC_DLG_NO_UI() {
+        return (int)2L;
+    }
+    public static int SC_DLG_FORCE_UI() {
+        return (int)4L;
+    }
+    public static int SCERR_NOCARDNAME() {
+        return (int)16384L;
+    }
+    public static int SCERR_NOGUIDS() {
+        return (int)32768L;
+    }
+    public static int SCARD_AUDIT_CHV_FAILURE() {
+        return (int)0L;
+    }
+    public static int SCARD_AUDIT_CHV_SUCCESS() {
+        return (int)1L;
+    }
+    public static int DSPRINT_PUBLISH() {
+        return (int)1L;
+    }
+    public static int DSPRINT_UPDATE() {
+        return (int)2L;
+    }
+    public static int DSPRINT_UNPUBLISH() {
+        return (int)4L;
+    }
+    public static int DSPRINT_REPUBLISH() {
+        return (int)8L;
+    }
+    public static int PRINTER_CONTROL_PAUSE() {
+        return (int)1L;
+    }
+    public static int PRINTER_CONTROL_RESUME() {
+        return (int)2L;
+    }
+    public static int PRINTER_CONTROL_PURGE() {
+        return (int)3L;
+    }
+    public static int PRINTER_CONTROL_SET_STATUS() {
+        return (int)4L;
+    }
+    public static int PRINTER_STATUS_PAUSED() {
+        return (int)1L;
+    }
+    public static int PRINTER_STATUS_ERROR() {
+        return (int)2L;
+    }
+    public static int PRINTER_STATUS_PENDING_DELETION() {
+        return (int)4L;
+    }
+    public static int PRINTER_STATUS_PAPER_JAM() {
+        return (int)8L;
+    }
+    public static int PRINTER_STATUS_PAPER_OUT() {
+        return (int)16L;
+    }
+    public static int PRINTER_STATUS_MANUAL_FEED() {
+        return (int)32L;
+    }
+    public static int PRINTER_STATUS_PAPER_PROBLEM() {
+        return (int)64L;
+    }
+    public static int PRINTER_STATUS_OFFLINE() {
+        return (int)128L;
+    }
+    public static int PRINTER_STATUS_IO_ACTIVE() {
+        return (int)256L;
+    }
+    public static int PRINTER_STATUS_BUSY() {
+        return (int)512L;
+    }
+    public static int PRINTER_STATUS_PRINTING() {
+        return (int)1024L;
+    }
+    public static int PRINTER_STATUS_OUTPUT_BIN_FULL() {
+        return (int)2048L;
+    }
+    public static int PRINTER_STATUS_NOT_AVAILABLE() {
+        return (int)4096L;
+    }
+    public static int PRINTER_STATUS_WAITING() {
+        return (int)8192L;
+    }
+    public static int PRINTER_STATUS_PROCESSING() {
+        return (int)16384L;
+    }
+    public static int PRINTER_STATUS_INITIALIZING() {
+        return (int)32768L;
+    }
+    public static int PRINTER_STATUS_WARMING_UP() {
+        return (int)65536L;
+    }
+    public static int PRINTER_STATUS_TONER_LOW() {
+        return (int)131072L;
+    }
+    public static int PRINTER_STATUS_NO_TONER() {
+        return (int)262144L;
+    }
+    public static int PRINTER_STATUS_PAGE_PUNT() {
+        return (int)524288L;
+    }
+    public static int PRINTER_STATUS_USER_INTERVENTION() {
+        return (int)1048576L;
+    }
+    public static int PRINTER_STATUS_OUT_OF_MEMORY() {
+        return (int)2097152L;
+    }
+    public static int PRINTER_STATUS_DOOR_OPEN() {
+        return (int)4194304L;
+    }
+    public static int PRINTER_STATUS_SERVER_UNKNOWN() {
+        return (int)8388608L;
+    }
+    public static int PRINTER_STATUS_POWER_SAVE() {
+        return (int)16777216L;
+    }
+    public static int PRINTER_STATUS_SERVER_OFFLINE() {
+        return (int)33554432L;
+    }
+    public static int PRINTER_STATUS_DRIVER_UPDATE_NEEDED() {
+        return (int)67108864L;
+    }
+    public static int PRINTER_ATTRIBUTE_QUEUED() {
+        return (int)1L;
+    }
+    public static int PRINTER_ATTRIBUTE_DIRECT() {
+        return (int)2L;
+    }
+    public static int PRINTER_ATTRIBUTE_DEFAULT() {
+        return (int)4L;
+    }
+    public static int PRINTER_ATTRIBUTE_SHARED() {
+        return (int)8L;
+    }
+    public static int PRINTER_ATTRIBUTE_NETWORK() {
+        return (int)16L;
+    }
+    public static int PRINTER_ATTRIBUTE_HIDDEN() {
+        return (int)32L;
+    }
+    public static int PRINTER_ATTRIBUTE_LOCAL() {
+        return (int)64L;
+    }
+    public static int PRINTER_ATTRIBUTE_ENABLE_DEVQ() {
+        return (int)128L;
+    }
+    public static int PRINTER_ATTRIBUTE_KEEPPRINTEDJOBS() {
+        return (int)256L;
+    }
+    public static int PRINTER_ATTRIBUTE_DO_COMPLETE_FIRST() {
+        return (int)512L;
+    }
+    public static int PRINTER_ATTRIBUTE_WORK_OFFLINE() {
+        return (int)1024L;
+    }
+    public static int PRINTER_ATTRIBUTE_ENABLE_BIDI() {
+        return (int)2048L;
+    }
+    public static int PRINTER_ATTRIBUTE_RAW_ONLY() {
+        return (int)4096L;
+    }
+    public static int PRINTER_ATTRIBUTE_PUBLISHED() {
+        return (int)8192L;
+    }
+    public static int PRINTER_ATTRIBUTE_FAX() {
+        return (int)16384L;
+    }
+    public static int PRINTER_ATTRIBUTE_TS() {
+        return (int)32768L;
+    }
+    public static int PRINTER_ATTRIBUTE_PUSHED_USER() {
+        return (int)131072L;
+    }
+    public static int PRINTER_ATTRIBUTE_PUSHED_MACHINE() {
+        return (int)262144L;
+    }
+    public static int PRINTER_ATTRIBUTE_MACHINE() {
+        return (int)524288L;
+    }
+    public static int PRINTER_ATTRIBUTE_FRIENDLY_NAME() {
+        return (int)1048576L;
+    }
+    public static int PRINTER_ATTRIBUTE_TS_GENERIC_DRIVER() {
+        return (int)2097152L;
+    }
+    public static int PRINTER_ATTRIBUTE_PER_USER() {
+        return (int)4194304L;
+    }
+    public static int PRINTER_ATTRIBUTE_ENTERPRISE_CLOUD() {
+        return (int)8388608L;
+    }
+    public static int NO_PRIORITY() {
+        return (int)0L;
+    }
+    public static int MAX_PRIORITY() {
+        return (int)99L;
+    }
+    public static int MIN_PRIORITY() {
+        return (int)1L;
+    }
+    public static int DEF_PRIORITY() {
+        return (int)1L;
+    }
+    public static int JOB_CONTROL_PAUSE() {
+        return (int)1L;
+    }
+    public static int JOB_CONTROL_RESUME() {
+        return (int)2L;
+    }
+    public static int JOB_CONTROL_CANCEL() {
+        return (int)3L;
+    }
+    public static int JOB_CONTROL_RESTART() {
+        return (int)4L;
+    }
+    public static int JOB_CONTROL_DELETE() {
+        return (int)5L;
+    }
+    public static int JOB_CONTROL_SENT_TO_PRINTER() {
+        return (int)6L;
+    }
+    public static int JOB_CONTROL_LAST_PAGE_EJECTED() {
+        return (int)7L;
+    }
+    public static int JOB_CONTROL_RETAIN() {
+        return (int)8L;
+    }
+    public static int JOB_CONTROL_RELEASE() {
+        return (int)9L;
+    }
+    public static int JOB_STATUS_PAUSED() {
+        return (int)1L;
+    }
+    public static int JOB_STATUS_ERROR() {
+        return (int)2L;
+    }
+    public static int JOB_STATUS_DELETING() {
+        return (int)4L;
+    }
+    public static int JOB_STATUS_SPOOLING() {
+        return (int)8L;
+    }
+    public static int JOB_STATUS_PRINTING() {
+        return (int)16L;
+    }
+    public static int JOB_STATUS_OFFLINE() {
+        return (int)32L;
+    }
+    public static int JOB_STATUS_PAPEROUT() {
+        return (int)64L;
+    }
+    public static int JOB_STATUS_PRINTED() {
+        return (int)128L;
+    }
+    public static int JOB_STATUS_DELETED() {
+        return (int)256L;
+    }
+    public static int JOB_STATUS_BLOCKED_DEVQ() {
+        return (int)512L;
+    }
+    public static int JOB_STATUS_USER_INTERVENTION() {
+        return (int)1024L;
+    }
+    public static int JOB_STATUS_RESTART() {
+        return (int)2048L;
+    }
+    public static int JOB_STATUS_COMPLETE() {
+        return (int)4096L;
+    }
+    public static int JOB_STATUS_RETAINED() {
+        return (int)8192L;
+    }
     public static int JOB_STATUS_RENDERING_LOCALLY() {
         return (int)16384L;
     }
@@ -575,6 +1988,57 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int UPDP_CHECK_DRIVERSTORE() {
         return (int)4L;
+    }
+    public static int COM_RIGHTS_EXECUTE() {
+        return (int)1L;
+    }
+    public static int COM_RIGHTS_EXECUTE_LOCAL() {
+        return (int)2L;
+    }
+    public static int COM_RIGHTS_EXECUTE_REMOTE() {
+        return (int)4L;
+    }
+    public static int COM_RIGHTS_ACTIVATE_LOCAL() {
+        return (int)8L;
+    }
+    public static int COM_RIGHTS_ACTIVATE_REMOTE() {
+        return (int)16L;
+    }
+    public static int COM_RIGHTS_RESERVED1() {
+        return (int)32L;
+    }
+    public static int COM_RIGHTS_RESERVED2() {
+        return (int)64L;
+    }
+    public static int CWMO_MAX_HANDLES() {
+        return (int)56L;
+    }
+    public static int CWCSTORAGENAME() {
+        return (int)32L;
+    }
+    public static int STGFMT_STORAGE() {
+        return (int)0L;
+    }
+    public static int STGFMT_NATIVE() {
+        return (int)1L;
+    }
+    public static int STGFMT_FILE() {
+        return (int)3L;
+    }
+    public static int STGFMT_ANY() {
+        return (int)4L;
+    }
+    public static int STGFMT_DOCFILE() {
+        return (int)5L;
+    }
+    public static int STGFMT_DOCUMENT() {
+        return (int)0L;
+    }
+    public static int STGOPTIONS_VERSION() {
+        return (int)2L;
+    }
+    public static int CCH_MAX_PROPSTG_NAME() {
+        return (int)31L;
     }
     public static int SERVICE_ACTIVE() {
         return (int)1L;
@@ -1454,1680 +2918,6 @@ import static java.lang.foreign.ValueLayout.*;
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
-    }
-    public static MethodHandle _mm_prefetch$MH() {
-        return RuntimeHelper.requireNonNull(constants$4._mm_prefetch$MH,"_mm_prefetch");
-    }
-    public static void _mm_prefetch ( Addressable a,  int sel) {
-        var mh$ = _mm_prefetch$MH();
-        try {
-            mh$.invokeExact(a, sel);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _m_prefetchw$MH() {
-        return RuntimeHelper.requireNonNull(constants$5._m_prefetchw$MH,"_m_prefetchw");
-    }
-    public static void _m_prefetchw ( Addressable Source) {
-        var mh$ = _m_prefetchw$MH();
-        try {
-            mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _mm_getcsr$MH() {
-        return RuntimeHelper.requireNonNull(constants$5._mm_getcsr$MH,"_mm_getcsr");
-    }
-    public static int _mm_getcsr () {
-        var mh$ = _mm_getcsr$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _mm_setcsr$MH() {
-        return RuntimeHelper.requireNonNull(constants$5._mm_setcsr$MH,"_mm_setcsr");
-    }
-    public static void _mm_setcsr ( int MxCsr) {
-        var mh$ = _mm_setcsr$MH();
-        try {
-            mh$.invokeExact(MxCsr);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _mul128$MH() {
-        return RuntimeHelper.requireNonNull(constants$5._mul128$MH,"_mul128");
-    }
-    public static long _mul128 ( long Multiplier,  long Multiplicand,  Addressable HighProduct) {
-        var mh$ = _mul128$MH();
-        try {
-            return (long)mh$.invokeExact(Multiplier, Multiplicand, HighProduct);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _umul128$MH() {
-        return RuntimeHelper.requireNonNull(constants$5._umul128$MH,"_umul128");
-    }
-    public static long _umul128 ( long Multiplier,  long Multiplicand,  Addressable HighProduct) {
-        var mh$ = _umul128$MH();
-        try {
-            return (long)mh$.invokeExact(Multiplier, Multiplicand, HighProduct);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle MultiplyExtract128$MH() {
-        return RuntimeHelper.requireNonNull(constants$5.MultiplyExtract128$MH,"MultiplyExtract128");
-    }
-    public static long MultiplyExtract128 ( long Multiplier,  long Multiplicand,  byte Shift) {
-        var mh$ = MultiplyExtract128$MH();
-        try {
-            return (long)mh$.invokeExact(Multiplier, Multiplicand, Shift);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnsignedMultiplyExtract128$MH() {
-        return RuntimeHelper.requireNonNull(constants$6.UnsignedMultiplyExtract128$MH,"UnsignedMultiplyExtract128");
-    }
-    public static long UnsignedMultiplyExtract128 ( long Multiplier,  long Multiplicand,  byte Shift) {
-        var mh$ = UnsignedMultiplyExtract128$MH();
-        try {
-            return (long)mh$.invokeExact(Multiplier, Multiplicand, Shift);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PXMM_SAVE_AREA32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCONTEXT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRUNTIME_FUNCTION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSCOPE_TABLE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PUNWIND_HISTORY_TABLE_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PUNWIND_HISTORY_TABLE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PDISPATCHER_CONTEXT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PKNONVOLATILE_CONTEXT_POINTERS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSCOPE_TABLE_ARM = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSCOPE_TABLE_ARM64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PKNONVOLATILE_CONTEXT_POINTERS_ARM64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PLDT_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle ReadAcquire8$MH() {
-        return RuntimeHelper.requireNonNull(constants$8.ReadAcquire8$MH,"ReadAcquire8");
-    }
-    public static byte ReadAcquire8 ( Addressable Source) {
-        var mh$ = ReadAcquire8$MH();
-        try {
-            return (byte)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadNoFence8$MH() {
-        return RuntimeHelper.requireNonNull(constants$8.ReadNoFence8$MH,"ReadNoFence8");
-    }
-    public static byte ReadNoFence8 ( Addressable Source) {
-        var mh$ = ReadNoFence8$MH();
-        try {
-            return (byte)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteRelease8$MH() {
-        return RuntimeHelper.requireNonNull(constants$8.WriteRelease8$MH,"WriteRelease8");
-    }
-    public static void WriteRelease8 ( Addressable Destination,  byte Value) {
-        var mh$ = WriteRelease8$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteNoFence8$MH() {
-        return RuntimeHelper.requireNonNull(constants$8.WriteNoFence8$MH,"WriteNoFence8");
-    }
-    public static void WriteNoFence8 ( Addressable Destination,  byte Value) {
-        var mh$ = WriteNoFence8$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadAcquire16$MH() {
-        return RuntimeHelper.requireNonNull(constants$8.ReadAcquire16$MH,"ReadAcquire16");
-    }
-    public static short ReadAcquire16 ( Addressable Source) {
-        var mh$ = ReadAcquire16$MH();
-        try {
-            return (short)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadNoFence16$MH() {
-        return RuntimeHelper.requireNonNull(constants$9.ReadNoFence16$MH,"ReadNoFence16");
-    }
-    public static short ReadNoFence16 ( Addressable Source) {
-        var mh$ = ReadNoFence16$MH();
-        try {
-            return (short)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteRelease16$MH() {
-        return RuntimeHelper.requireNonNull(constants$9.WriteRelease16$MH,"WriteRelease16");
-    }
-    public static void WriteRelease16 ( Addressable Destination,  short Value) {
-        var mh$ = WriteRelease16$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteNoFence16$MH() {
-        return RuntimeHelper.requireNonNull(constants$9.WriteNoFence16$MH,"WriteNoFence16");
-    }
-    public static void WriteNoFence16 ( Addressable Destination,  short Value) {
-        var mh$ = WriteNoFence16$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadAcquire$MH() {
-        return RuntimeHelper.requireNonNull(constants$9.ReadAcquire$MH,"ReadAcquire");
-    }
-    public static int ReadAcquire ( Addressable Source) {
-        var mh$ = ReadAcquire$MH();
-        try {
-            return (int)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$9.ReadNoFence$MH,"ReadNoFence");
-    }
-    public static int ReadNoFence ( Addressable Source) {
-        var mh$ = ReadNoFence$MH();
-        try {
-            return (int)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteRelease$MH() {
-        return RuntimeHelper.requireNonNull(constants$9.WriteRelease$MH,"WriteRelease");
-    }
-    public static void WriteRelease ( Addressable Destination,  int Value) {
-        var mh$ = WriteRelease$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$10.WriteNoFence$MH,"WriteNoFence");
-    }
-    public static void WriteNoFence ( Addressable Destination,  int Value) {
-        var mh$ = WriteNoFence$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadAcquire64$MH() {
-        return RuntimeHelper.requireNonNull(constants$10.ReadAcquire64$MH,"ReadAcquire64");
-    }
-    public static long ReadAcquire64 ( Addressable Source) {
-        var mh$ = ReadAcquire64$MH();
-        try {
-            return (long)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadNoFence64$MH() {
-        return RuntimeHelper.requireNonNull(constants$10.ReadNoFence64$MH,"ReadNoFence64");
-    }
-    public static long ReadNoFence64 ( Addressable Source) {
-        var mh$ = ReadNoFence64$MH();
-        try {
-            return (long)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteRelease64$MH() {
-        return RuntimeHelper.requireNonNull(constants$10.WriteRelease64$MH,"WriteRelease64");
-    }
-    public static void WriteRelease64 ( Addressable Destination,  long Value) {
-        var mh$ = WriteRelease64$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteNoFence64$MH() {
-        return RuntimeHelper.requireNonNull(constants$10.WriteNoFence64$MH,"WriteNoFence64");
-    }
-    public static void WriteNoFence64 ( Addressable Destination,  long Value) {
-        var mh$ = WriteNoFence64$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadRaw8$MH() {
-        return RuntimeHelper.requireNonNull(constants$10.ReadRaw8$MH,"ReadRaw8");
-    }
-    public static byte ReadRaw8 ( Addressable Source) {
-        var mh$ = ReadRaw8$MH();
-        try {
-            return (byte)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteRaw8$MH() {
-        return RuntimeHelper.requireNonNull(constants$11.WriteRaw8$MH,"WriteRaw8");
-    }
-    public static void WriteRaw8 ( Addressable Destination,  byte Value) {
-        var mh$ = WriteRaw8$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadRaw16$MH() {
-        return RuntimeHelper.requireNonNull(constants$11.ReadRaw16$MH,"ReadRaw16");
-    }
-    public static short ReadRaw16 ( Addressable Source) {
-        var mh$ = ReadRaw16$MH();
-        try {
-            return (short)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteRaw16$MH() {
-        return RuntimeHelper.requireNonNull(constants$11.WriteRaw16$MH,"WriteRaw16");
-    }
-    public static void WriteRaw16 ( Addressable Destination,  short Value) {
-        var mh$ = WriteRaw16$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$11.ReadRaw$MH,"ReadRaw");
-    }
-    public static int ReadRaw ( Addressable Source) {
-        var mh$ = ReadRaw$MH();
-        try {
-            return (int)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$11.WriteRaw$MH,"WriteRaw");
-    }
-    public static void WriteRaw ( Addressable Destination,  int Value) {
-        var mh$ = WriteRaw$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadRaw64$MH() {
-        return RuntimeHelper.requireNonNull(constants$11.ReadRaw64$MH,"ReadRaw64");
-    }
-    public static long ReadRaw64 ( Addressable Source) {
-        var mh$ = ReadRaw64$MH();
-        try {
-            return (long)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteRaw64$MH() {
-        return RuntimeHelper.requireNonNull(constants$12.WriteRaw64$MH,"WriteRaw64");
-    }
-    public static void WriteRaw64 ( Addressable Destination,  long Value) {
-        var mh$ = WriteRaw64$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadUCharAcquire$MH() {
-        return RuntimeHelper.requireNonNull(constants$12.ReadUCharAcquire$MH,"ReadUCharAcquire");
-    }
-    public static byte ReadUCharAcquire ( Addressable Source) {
-        var mh$ = ReadUCharAcquire$MH();
-        try {
-            return (byte)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadUCharNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$12.ReadUCharNoFence$MH,"ReadUCharNoFence");
-    }
-    public static byte ReadUCharNoFence ( Addressable Source) {
-        var mh$ = ReadUCharNoFence$MH();
-        try {
-            return (byte)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadBooleanAcquire$MH() {
-        return RuntimeHelper.requireNonNull(constants$12.ReadBooleanAcquire$MH,"ReadBooleanAcquire");
-    }
-    public static byte ReadBooleanAcquire ( Addressable Source) {
-        var mh$ = ReadBooleanAcquire$MH();
-        try {
-            return (byte)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadBooleanNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$12.ReadBooleanNoFence$MH,"ReadBooleanNoFence");
-    }
-    public static byte ReadBooleanNoFence ( Addressable Source) {
-        var mh$ = ReadBooleanNoFence$MH();
-        try {
-            return (byte)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadUCharRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$12.ReadUCharRaw$MH,"ReadUCharRaw");
-    }
-    public static byte ReadUCharRaw ( Addressable Source) {
-        var mh$ = ReadUCharRaw$MH();
-        try {
-            return (byte)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteUCharRelease$MH() {
-        return RuntimeHelper.requireNonNull(constants$13.WriteUCharRelease$MH,"WriteUCharRelease");
-    }
-    public static void WriteUCharRelease ( Addressable Destination,  byte Value) {
-        var mh$ = WriteUCharRelease$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteUCharNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$13.WriteUCharNoFence$MH,"WriteUCharNoFence");
-    }
-    public static void WriteUCharNoFence ( Addressable Destination,  byte Value) {
-        var mh$ = WriteUCharNoFence$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteBooleanRelease$MH() {
-        return RuntimeHelper.requireNonNull(constants$13.WriteBooleanRelease$MH,"WriteBooleanRelease");
-    }
-    public static void WriteBooleanRelease ( Addressable Destination,  byte Value) {
-        var mh$ = WriteBooleanRelease$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteBooleanNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$13.WriteBooleanNoFence$MH,"WriteBooleanNoFence");
-    }
-    public static void WriteBooleanNoFence ( Addressable Destination,  byte Value) {
-        var mh$ = WriteBooleanNoFence$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteUCharRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$13.WriteUCharRaw$MH,"WriteUCharRaw");
-    }
-    public static void WriteUCharRaw ( Addressable Destination,  byte Value) {
-        var mh$ = WriteUCharRaw$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadUShortAcquire$MH() {
-        return RuntimeHelper.requireNonNull(constants$13.ReadUShortAcquire$MH,"ReadUShortAcquire");
-    }
-    public static short ReadUShortAcquire ( Addressable Source) {
-        var mh$ = ReadUShortAcquire$MH();
-        try {
-            return (short)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadUShortNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$14.ReadUShortNoFence$MH,"ReadUShortNoFence");
-    }
-    public static short ReadUShortNoFence ( Addressable Source) {
-        var mh$ = ReadUShortNoFence$MH();
-        try {
-            return (short)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadUShortRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$14.ReadUShortRaw$MH,"ReadUShortRaw");
-    }
-    public static short ReadUShortRaw ( Addressable Source) {
-        var mh$ = ReadUShortRaw$MH();
-        try {
-            return (short)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteUShortRelease$MH() {
-        return RuntimeHelper.requireNonNull(constants$14.WriteUShortRelease$MH,"WriteUShortRelease");
-    }
-    public static void WriteUShortRelease ( Addressable Destination,  short Value) {
-        var mh$ = WriteUShortRelease$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteUShortNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$14.WriteUShortNoFence$MH,"WriteUShortNoFence");
-    }
-    public static void WriteUShortNoFence ( Addressable Destination,  short Value) {
-        var mh$ = WriteUShortNoFence$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteUShortRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$14.WriteUShortRaw$MH,"WriteUShortRaw");
-    }
-    public static void WriteUShortRaw ( Addressable Destination,  short Value) {
-        var mh$ = WriteUShortRaw$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadULongAcquire$MH() {
-        return RuntimeHelper.requireNonNull(constants$14.ReadULongAcquire$MH,"ReadULongAcquire");
-    }
-    public static int ReadULongAcquire ( Addressable Source) {
-        var mh$ = ReadULongAcquire$MH();
-        try {
-            return (int)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadULongNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$15.ReadULongNoFence$MH,"ReadULongNoFence");
-    }
-    public static int ReadULongNoFence ( Addressable Source) {
-        var mh$ = ReadULongNoFence$MH();
-        try {
-            return (int)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadULongRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$15.ReadULongRaw$MH,"ReadULongRaw");
-    }
-    public static int ReadULongRaw ( Addressable Source) {
-        var mh$ = ReadULongRaw$MH();
-        try {
-            return (int)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteULongRelease$MH() {
-        return RuntimeHelper.requireNonNull(constants$15.WriteULongRelease$MH,"WriteULongRelease");
-    }
-    public static void WriteULongRelease ( Addressable Destination,  int Value) {
-        var mh$ = WriteULongRelease$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteULongNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$15.WriteULongNoFence$MH,"WriteULongNoFence");
-    }
-    public static void WriteULongNoFence ( Addressable Destination,  int Value) {
-        var mh$ = WriteULongNoFence$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteULongRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$15.WriteULongRaw$MH,"WriteULongRaw");
-    }
-    public static void WriteULongRaw ( Addressable Destination,  int Value) {
-        var mh$ = WriteULongRaw$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadULong64Acquire$MH() {
-        return RuntimeHelper.requireNonNull(constants$15.ReadULong64Acquire$MH,"ReadULong64Acquire");
-    }
-    public static long ReadULong64Acquire ( Addressable Source) {
-        var mh$ = ReadULong64Acquire$MH();
-        try {
-            return (long)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadULong64NoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$16.ReadULong64NoFence$MH,"ReadULong64NoFence");
-    }
-    public static long ReadULong64NoFence ( Addressable Source) {
-        var mh$ = ReadULong64NoFence$MH();
-        try {
-            return (long)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadULong64Raw$MH() {
-        return RuntimeHelper.requireNonNull(constants$16.ReadULong64Raw$MH,"ReadULong64Raw");
-    }
-    public static long ReadULong64Raw ( Addressable Source) {
-        var mh$ = ReadULong64Raw$MH();
-        try {
-            return (long)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteULong64Release$MH() {
-        return RuntimeHelper.requireNonNull(constants$16.WriteULong64Release$MH,"WriteULong64Release");
-    }
-    public static void WriteULong64Release ( Addressable Destination,  long Value) {
-        var mh$ = WriteULong64Release$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteULong64NoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$16.WriteULong64NoFence$MH,"WriteULong64NoFence");
-    }
-    public static void WriteULong64NoFence ( Addressable Destination,  long Value) {
-        var mh$ = WriteULong64NoFence$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WriteULong64Raw$MH() {
-        return RuntimeHelper.requireNonNull(constants$16.WriteULong64Raw$MH,"WriteULong64Raw");
-    }
-    public static void WriteULong64Raw ( Addressable Destination,  long Value) {
-        var mh$ = WriteULong64Raw$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadPointerAcquire$MH() {
-        return RuntimeHelper.requireNonNull(constants$16.ReadPointerAcquire$MH,"ReadPointerAcquire");
-    }
-    public static MemoryAddress ReadPointerAcquire ( Addressable Source) {
-        var mh$ = ReadPointerAcquire$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadPointerNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$17.ReadPointerNoFence$MH,"ReadPointerNoFence");
-    }
-    public static MemoryAddress ReadPointerNoFence ( Addressable Source) {
-        var mh$ = ReadPointerNoFence$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReadPointerRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$17.ReadPointerRaw$MH,"ReadPointerRaw");
-    }
-    public static MemoryAddress ReadPointerRaw ( Addressable Source) {
-        var mh$ = ReadPointerRaw$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Source);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WritePointerRelease$MH() {
-        return RuntimeHelper.requireNonNull(constants$17.WritePointerRelease$MH,"WritePointerRelease");
-    }
-    public static void WritePointerRelease ( Addressable Destination,  Addressable Value) {
-        var mh$ = WritePointerRelease$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WritePointerNoFence$MH() {
-        return RuntimeHelper.requireNonNull(constants$17.WritePointerNoFence$MH,"WritePointerNoFence");
-    }
-    public static void WritePointerNoFence ( Addressable Destination,  Addressable Value) {
-        var mh$ = WritePointerNoFence$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WritePointerRaw$MH() {
-        return RuntimeHelper.requireNonNull(constants$17.WritePointerRaw$MH,"WritePointerRaw");
-    }
-    public static void WritePointerRaw ( Addressable Destination,  Addressable Value) {
-        var mh$ = WritePointerRaw$MH();
-        try {
-            mh$.invokeExact(Destination, Value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PWOW64_FLOATING_SAVE_AREA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWOW64_CONTEXT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWOW64_LDT_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWOW64_DESCRIPTOR_TABLE_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEXCEPTION_RECORD = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEXCEPTION_RECORD32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEXCEPTION_RECORD64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEXCEPTION_POINTERS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_TOKEN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSECURITY_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSID = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCLAIMS_BLOB = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_MASK = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PGENERIC_MAPPING = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PLUID_AND_ATTRIBUTES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PLUID_AND_ATTRIBUTES_ARRAY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSID_IDENTIFIER_AUTHORITY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PISID = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSE_SID = Constants$root.C_POINTER$LAYOUT;
-    public static int SidTypeUser() {
-        return (int)1L;
-    }
-    public static int SidTypeGroup() {
-        return (int)2L;
-    }
-    public static int SidTypeDomain() {
-        return (int)3L;
-    }
-    public static int SidTypeAlias() {
-        return (int)4L;
-    }
-    public static int SidTypeWellKnownGroup() {
-        return (int)5L;
-    }
-    public static int SidTypeDeletedAccount() {
-        return (int)6L;
-    }
-    public static int SidTypeInvalid() {
-        return (int)7L;
-    }
-    public static int SidTypeUnknown() {
-        return (int)8L;
-    }
-    public static int SidTypeComputer() {
-        return (int)9L;
-    }
-    public static int SidTypeLabel() {
-        return (int)10L;
-    }
-    public static int SidTypeLogonSession() {
-        return (int)11L;
-    }
-    public static OfAddress PSID_NAME_USE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSID_AND_ATTRIBUTES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSID_AND_ATTRIBUTES_ARRAY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSID_HASH_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSID_AND_ATTRIBUTES_HASH = Constants$root.C_POINTER$LAYOUT;
-    public static int WinNullSid() {
-        return (int)0L;
-    }
-    public static int WinWorldSid() {
-        return (int)1L;
-    }
-    public static int WinLocalSid() {
-        return (int)2L;
-    }
-    public static int WinCreatorOwnerSid() {
-        return (int)3L;
-    }
-    public static int WinCreatorGroupSid() {
-        return (int)4L;
-    }
-    public static int WinCreatorOwnerServerSid() {
-        return (int)5L;
-    }
-    public static int WinCreatorGroupServerSid() {
-        return (int)6L;
-    }
-    public static int WinNtAuthoritySid() {
-        return (int)7L;
-    }
-    public static int WinDialupSid() {
-        return (int)8L;
-    }
-    public static int WinNetworkSid() {
-        return (int)9L;
-    }
-    public static int WinBatchSid() {
-        return (int)10L;
-    }
-    public static int WinInteractiveSid() {
-        return (int)11L;
-    }
-    public static int WinServiceSid() {
-        return (int)12L;
-    }
-    public static int WinAnonymousSid() {
-        return (int)13L;
-    }
-    public static int WinProxySid() {
-        return (int)14L;
-    }
-    public static int WinEnterpriseControllersSid() {
-        return (int)15L;
-    }
-    public static int WinSelfSid() {
-        return (int)16L;
-    }
-    public static int WinAuthenticatedUserSid() {
-        return (int)17L;
-    }
-    public static int WinRestrictedCodeSid() {
-        return (int)18L;
-    }
-    public static int WinTerminalServerSid() {
-        return (int)19L;
-    }
-    public static int WinRemoteLogonIdSid() {
-        return (int)20L;
-    }
-    public static int WinLogonIdsSid() {
-        return (int)21L;
-    }
-    public static int WinLocalSystemSid() {
-        return (int)22L;
-    }
-    public static int WinLocalServiceSid() {
-        return (int)23L;
-    }
-    public static int WinNetworkServiceSid() {
-        return (int)24L;
-    }
-    public static int WinBuiltinDomainSid() {
-        return (int)25L;
-    }
-    public static int WinBuiltinAdministratorsSid() {
-        return (int)26L;
-    }
-    public static int WinBuiltinUsersSid() {
-        return (int)27L;
-    }
-    public static int WinBuiltinGuestsSid() {
-        return (int)28L;
-    }
-    public static int WinBuiltinPowerUsersSid() {
-        return (int)29L;
-    }
-    public static int WinBuiltinAccountOperatorsSid() {
-        return (int)30L;
-    }
-    public static int WinBuiltinSystemOperatorsSid() {
-        return (int)31L;
-    }
-    public static int WinBuiltinPrintOperatorsSid() {
-        return (int)32L;
-    }
-    public static int WinBuiltinBackupOperatorsSid() {
-        return (int)33L;
-    }
-    public static int WinBuiltinReplicatorSid() {
-        return (int)34L;
-    }
-    public static int WinBuiltinPreWindows2000CompatibleAccessSid() {
-        return (int)35L;
-    }
-    public static int WinBuiltinRemoteDesktopUsersSid() {
-        return (int)36L;
-    }
-    public static int WinBuiltinNetworkConfigurationOperatorsSid() {
-        return (int)37L;
-    }
-    public static int WinAccountAdministratorSid() {
-        return (int)38L;
-    }
-    public static int WinAccountGuestSid() {
-        return (int)39L;
-    }
-    public static int WinAccountKrbtgtSid() {
-        return (int)40L;
-    }
-    public static int WinAccountDomainAdminsSid() {
-        return (int)41L;
-    }
-    public static int WinAccountDomainUsersSid() {
-        return (int)42L;
-    }
-    public static int WinAccountDomainGuestsSid() {
-        return (int)43L;
-    }
-    public static int WinAccountComputersSid() {
-        return (int)44L;
-    }
-    public static int WinAccountControllersSid() {
-        return (int)45L;
-    }
-    public static int WinAccountCertAdminsSid() {
-        return (int)46L;
-    }
-    public static int WinAccountSchemaAdminsSid() {
-        return (int)47L;
-    }
-    public static int WinAccountEnterpriseAdminsSid() {
-        return (int)48L;
-    }
-    public static int WinAccountPolicyAdminsSid() {
-        return (int)49L;
-    }
-    public static int WinAccountRasAndIasServersSid() {
-        return (int)50L;
-    }
-    public static int WinNTLMAuthenticationSid() {
-        return (int)51L;
-    }
-    public static int WinDigestAuthenticationSid() {
-        return (int)52L;
-    }
-    public static int WinSChannelAuthenticationSid() {
-        return (int)53L;
-    }
-    public static int WinThisOrganizationSid() {
-        return (int)54L;
-    }
-    public static int WinOtherOrganizationSid() {
-        return (int)55L;
-    }
-    public static int WinBuiltinIncomingForestTrustBuildersSid() {
-        return (int)56L;
-    }
-    public static int WinBuiltinPerfMonitoringUsersSid() {
-        return (int)57L;
-    }
-    public static int WinBuiltinPerfLoggingUsersSid() {
-        return (int)58L;
-    }
-    public static int WinBuiltinAuthorizationAccessSid() {
-        return (int)59L;
-    }
-    public static int WinBuiltinTerminalServerLicenseServersSid() {
-        return (int)60L;
-    }
-    public static int WinBuiltinDCOMUsersSid() {
-        return (int)61L;
-    }
-    public static int WinBuiltinIUsersSid() {
-        return (int)62L;
-    }
-    public static int WinIUserSid() {
-        return (int)63L;
-    }
-    public static int WinBuiltinCryptoOperatorsSid() {
-        return (int)64L;
-    }
-    public static int WinUntrustedLabelSid() {
-        return (int)65L;
-    }
-    public static int WinLowLabelSid() {
-        return (int)66L;
-    }
-    public static int WinMediumLabelSid() {
-        return (int)67L;
-    }
-    public static int WinHighLabelSid() {
-        return (int)68L;
-    }
-    public static int WinSystemLabelSid() {
-        return (int)69L;
-    }
-    public static int WinWriteRestrictedCodeSid() {
-        return (int)70L;
-    }
-    public static int WinCreatorOwnerRightsSid() {
-        return (int)71L;
-    }
-    public static int WinCacheablePrincipalsGroupSid() {
-        return (int)72L;
-    }
-    public static int WinNonCacheablePrincipalsGroupSid() {
-        return (int)73L;
-    }
-    public static int WinEnterpriseReadonlyControllersSid() {
-        return (int)74L;
-    }
-    public static int WinAccountReadonlyControllersSid() {
-        return (int)75L;
-    }
-    public static int WinBuiltinEventLogReadersGroup() {
-        return (int)76L;
-    }
-    public static int WinNewEnterpriseReadonlyControllersSid() {
-        return (int)77L;
-    }
-    public static int WinBuiltinCertSvcDComAccessGroup() {
-        return (int)78L;
-    }
-    public static int WinMediumPlusLabelSid() {
-        return (int)79L;
-    }
-    public static int WinLocalLogonSid() {
-        return (int)80L;
-    }
-    public static int WinConsoleLogonSid() {
-        return (int)81L;
-    }
-    public static int WinThisOrganizationCertificateSid() {
-        return (int)82L;
-    }
-    public static int WinApplicationPackageAuthoritySid() {
-        return (int)83L;
-    }
-    public static int WinBuiltinAnyPackageSid() {
-        return (int)84L;
-    }
-    public static int WinCapabilityInternetClientSid() {
-        return (int)85L;
-    }
-    public static int WinCapabilityInternetClientServerSid() {
-        return (int)86L;
-    }
-    public static int WinCapabilityPrivateNetworkClientServerSid() {
-        return (int)87L;
-    }
-    public static int WinCapabilityPicturesLibrarySid() {
-        return (int)88L;
-    }
-    public static int WinCapabilityVideosLibrarySid() {
-        return (int)89L;
-    }
-    public static int WinCapabilityMusicLibrarySid() {
-        return (int)90L;
-    }
-    public static int WinCapabilityDocumentsLibrarySid() {
-        return (int)91L;
-    }
-    public static int WinCapabilitySharedUserCertificatesSid() {
-        return (int)92L;
-    }
-    public static int WinCapabilityEnterpriseAuthenticationSid() {
-        return (int)93L;
-    }
-    public static int WinCapabilityRemovableStorageSid() {
-        return (int)94L;
-    }
-    public static int WinBuiltinRDSRemoteAccessServersSid() {
-        return (int)95L;
-    }
-    public static int WinBuiltinRDSEndpointServersSid() {
-        return (int)96L;
-    }
-    public static int WinBuiltinRDSManagementServersSid() {
-        return (int)97L;
-    }
-    public static int WinUserModeDriversSid() {
-        return (int)98L;
-    }
-    public static int WinBuiltinHyperVAdminsSid() {
-        return (int)99L;
-    }
-    public static int WinAccountCloneableControllersSid() {
-        return (int)100L;
-    }
-    public static int WinBuiltinAccessControlAssistanceOperatorsSid() {
-        return (int)101L;
-    }
-    public static int WinBuiltinRemoteManagementUsersSid() {
-        return (int)102L;
-    }
-    public static int WinAuthenticationAuthorityAssertedSid() {
-        return (int)103L;
-    }
-    public static int WinAuthenticationServiceAssertedSid() {
-        return (int)104L;
-    }
-    public static int WinLocalAccountSid() {
-        return (int)105L;
-    }
-    public static int WinLocalAccountAndAdministratorSid() {
-        return (int)106L;
-    }
-    public static int WinAccountProtectedUsersSid() {
-        return (int)107L;
-    }
-    public static int WinCapabilityAppointmentsSid() {
-        return (int)108L;
-    }
-    public static int WinCapabilityContactsSid() {
-        return (int)109L;
-    }
-    public static int WinAccountDefaultSystemManagedSid() {
-        return (int)110L;
-    }
-    public static int WinBuiltinDefaultSystemManagedGroupSid() {
-        return (int)111L;
-    }
-    public static int WinBuiltinStorageReplicaAdminsSid() {
-        return (int)112L;
-    }
-    public static int WinAccountKeyAdminsSid() {
-        return (int)113L;
-    }
-    public static int WinAccountEnterpriseKeyAdminsSid() {
-        return (int)114L;
-    }
-    public static int WinAuthenticationKeyTrustSid() {
-        return (int)115L;
-    }
-    public static int WinAuthenticationKeyPropertyMFASid() {
-        return (int)116L;
-    }
-    public static int WinAuthenticationKeyPropertyAttestationSid() {
-        return (int)117L;
-    }
-    public static int WinAuthenticationFreshKeyAuthSid() {
-        return (int)118L;
-    }
-    public static int WinBuiltinDeviceOwnersSid() {
-        return (int)119L;
-    }
-    public static OfAddress PACL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACE_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_ALLOWED_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_DENIED_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_AUDIT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_ALARM_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_RESOURCE_ATTRIBUTE_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_SCOPED_POLICY_ID_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_MANDATORY_LABEL_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_PROCESS_TRUST_LABEL_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_ACCESS_FILTER_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_ALLOWED_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_DENIED_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_AUDIT_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_ALARM_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_ALLOWED_CALLBACK_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_DENIED_CALLBACK_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_AUDIT_CALLBACK_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_ALARM_CALLBACK_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_ALLOWED_CALLBACK_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACCESS_DENIED_CALLBACK_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_AUDIT_CALLBACK_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_ALARM_CALLBACK_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
-    public static int AclRevisionInformation() {
-        return (int)1L;
-    }
-    public static int AclSizeInformation() {
-        return (int)2L;
-    }
-    public static OfAddress PACL_REVISION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACL_SIZE_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSECURITY_DESCRIPTOR_CONTROL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PISECURITY_DESCRIPTOR_RELATIVE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PISECURITY_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSECURITY_OBJECT_AI_PARAMS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress POBJECT_TYPE_LIST = Constants$root.C_POINTER$LAYOUT;
-    public static int AuditEventObjectAccess() {
-        return (int)0L;
-    }
-    public static int AuditEventDirectoryServiceAccess() {
-        return (int)1L;
-    }
-    public static OfAddress PAUDIT_EVENT_TYPE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPRIVILEGE_SET = Constants$root.C_POINTER$LAYOUT;
-    public static int AccessReasonNone() {
-        return (int)0L;
-    }
-    public static int AccessReasonAllowedAce() {
-        return (int)65536L;
-    }
-    public static int AccessReasonDeniedAce() {
-        return (int)131072L;
-    }
-    public static int AccessReasonAllowedParentAce() {
-        return (int)196608L;
-    }
-    public static int AccessReasonDeniedParentAce() {
-        return (int)262144L;
-    }
-    public static int AccessReasonNotGrantedByCape() {
-        return (int)327680L;
-    }
-    public static int AccessReasonNotGrantedByParentCape() {
-        return (int)393216L;
-    }
-    public static int AccessReasonNotGrantedToAppContainer() {
-        return (int)458752L;
-    }
-    public static int AccessReasonMissingPrivilege() {
-        return (int)1048576L;
-    }
-    public static int AccessReasonFromPrivilege() {
-        return (int)2097152L;
-    }
-    public static int AccessReasonIntegrityLevel() {
-        return (int)3145728L;
-    }
-    public static int AccessReasonOwnership() {
-        return (int)4194304L;
-    }
-    public static int AccessReasonNullDacl() {
-        return (int)5242880L;
-    }
-    public static int AccessReasonEmptyDacl() {
-        return (int)6291456L;
-    }
-    public static int AccessReasonNoSD() {
-        return (int)7340032L;
-    }
-    public static int AccessReasonNoGrant() {
-        return (int)8388608L;
-    }
-    public static int AccessReasonTrustLabel() {
-        return (int)9437184L;
-    }
-    public static int AccessReasonFilterAce() {
-        return (int)10485760L;
-    }
-    public static OfAddress PACCESS_REASONS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSE_SECURITY_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSE_ACCESS_REQUEST = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSE_ACCESS_REPLY = Constants$root.C_POINTER$LAYOUT;
-    public static int SecurityAnonymous() {
-        return (int)0L;
-    }
-    public static int SecurityIdentification() {
-        return (int)1L;
-    }
-    public static int SecurityImpersonation() {
-        return (int)2L;
-    }
-    public static int SecurityDelegation() {
-        return (int)3L;
-    }
-    public static OfAddress PSECURITY_IMPERSONATION_LEVEL = Constants$root.C_POINTER$LAYOUT;
-    public static int TokenPrimary() {
-        return (int)1L;
-    }
-    public static int TokenImpersonation() {
-        return (int)2L;
-    }
-    public static OfAddress PTOKEN_TYPE = Constants$root.C_POINTER$LAYOUT;
-    public static int TokenElevationTypeDefault() {
-        return (int)1L;
-    }
-    public static int TokenElevationTypeFull() {
-        return (int)2L;
-    }
-    public static int TokenElevationTypeLimited() {
-        return (int)3L;
-    }
-    public static OfAddress PTOKEN_ELEVATION_TYPE = Constants$root.C_POINTER$LAYOUT;
-    public static int TokenUser() {
-        return (int)1L;
-    }
-    public static int TokenGroups() {
-        return (int)2L;
-    }
-    public static int TokenPrivileges() {
-        return (int)3L;
-    }
-    public static int TokenOwner() {
-        return (int)4L;
-    }
-    public static int TokenPrimaryGroup() {
-        return (int)5L;
-    }
-    public static int TokenDefaultDacl() {
-        return (int)6L;
-    }
-    public static int TokenSource() {
-        return (int)7L;
-    }
-    public static int TokenType() {
-        return (int)8L;
-    }
-    public static int TokenImpersonationLevel() {
-        return (int)9L;
-    }
-    public static int TokenStatistics() {
-        return (int)10L;
-    }
-    public static int TokenRestrictedSids() {
-        return (int)11L;
-    }
-    public static int TokenSessionId() {
-        return (int)12L;
-    }
-    public static int TokenGroupsAndPrivileges() {
-        return (int)13L;
-    }
-    public static int TokenSessionReference() {
-        return (int)14L;
-    }
-    public static int TokenSandBoxInert() {
-        return (int)15L;
-    }
-    public static int TokenAuditPolicy() {
-        return (int)16L;
-    }
-    public static int TokenOrigin() {
-        return (int)17L;
-    }
-    public static int TokenElevationType() {
-        return (int)18L;
-    }
-    public static int TokenLinkedToken() {
-        return (int)19L;
-    }
-    public static int TokenElevation() {
-        return (int)20L;
-    }
-    public static int TokenHasRestrictions() {
-        return (int)21L;
-    }
-    public static int TokenAccessInformation() {
-        return (int)22L;
-    }
-    public static int TokenVirtualizationAllowed() {
-        return (int)23L;
-    }
-    public static int TokenVirtualizationEnabled() {
-        return (int)24L;
-    }
-    public static int TokenIntegrityLevel() {
-        return (int)25L;
-    }
-    public static int TokenUIAccess() {
-        return (int)26L;
-    }
-    public static int TokenMandatoryPolicy() {
-        return (int)27L;
-    }
-    public static int TokenLogonSid() {
-        return (int)28L;
-    }
-    public static int TokenIsAppContainer() {
-        return (int)29L;
-    }
-    public static int TokenCapabilities() {
-        return (int)30L;
-    }
-    public static int TokenAppContainerSid() {
-        return (int)31L;
-    }
-    public static int TokenAppContainerNumber() {
-        return (int)32L;
-    }
-    public static int TokenUserClaimAttributes() {
-        return (int)33L;
-    }
-    public static int TokenDeviceClaimAttributes() {
-        return (int)34L;
-    }
-    public static int TokenRestrictedUserClaimAttributes() {
-        return (int)35L;
-    }
-    public static int TokenRestrictedDeviceClaimAttributes() {
-        return (int)36L;
-    }
-    public static int TokenDeviceGroups() {
-        return (int)37L;
-    }
-    public static int TokenRestrictedDeviceGroups() {
-        return (int)38L;
-    }
-    public static int TokenSecurityAttributes() {
-        return (int)39L;
-    }
-    public static int TokenIsRestricted() {
-        return (int)40L;
-    }
-    public static int TokenProcessTrustLevel() {
-        return (int)41L;
-    }
-    public static int TokenPrivateNameSpace() {
-        return (int)42L;
-    }
-    public static int TokenSingletonAttributes() {
-        return (int)43L;
-    }
-    public static int TokenBnoIsolation() {
-        return (int)44L;
-    }
-    public static int TokenChildProcessFlags() {
-        return (int)45L;
-    }
-    public static int TokenIsLessPrivilegedAppContainer() {
-        return (int)46L;
-    }
-    public static int TokenIsSandboxed() {
-        return (int)47L;
-    }
-    public static int TokenOriginatingProcessTrustLevel() {
-        return (int)48L;
-    }
-    public static int MaxTokenInfoClass() {
-        return (int)49L;
-    }
-    public static OfAddress PTOKEN_INFORMATION_CLASS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_USER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_GROUPS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_PRIVILEGES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_OWNER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_PRIMARY_GROUP = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_DEFAULT_DACL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_USER_CLAIMS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_DEVICE_CLAIMS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_GROUPS_AND_PRIVILEGES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_LINKED_TOKEN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_ELEVATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_MANDATORY_LABEL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_MANDATORY_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSECURITY_ATTRIBUTES_OPAQUE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_ACCESS_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_AUDIT_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_SOURCE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_STATISTICS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_CONTROL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_ORIGIN = Constants$root.C_POINTER$LAYOUT;
-    public static int MandatoryLevelUntrusted() {
-        return (int)0L;
-    }
-    public static int MandatoryLevelLow() {
-        return (int)1L;
-    }
-    public static int MandatoryLevelMedium() {
-        return (int)2L;
-    }
-    public static int MandatoryLevelHigh() {
-        return (int)3L;
-    }
-    public static int MandatoryLevelSystem() {
-        return (int)4L;
-    }
-    public static int MandatoryLevelSecureProcess() {
-        return (int)5L;
-    }
-    public static int MandatoryLevelCount() {
-        return (int)6L;
-    }
-    public static OfAddress PMANDATORY_LEVEL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_APPCONTAINER_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_SID_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOKEN_BNO_ISOLATION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCLAIM_SECURITY_ATTRIBUTE_V1 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCLAIM_SECURITY_ATTRIBUTES_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSECURITY_CONTEXT_TRACKING_MODE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSECURITY_QUALITY_OF_SERVICE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSE_IMPERSONATION_STATE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSECURITY_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSE_SIGNING_LEVEL = Constants$root.C_POINTER$LAYOUT;
-    public static int SeImageSignatureNone() {
-        return (int)0L;
-    }
-    public static int SeImageSignatureEmbedded() {
-        return (int)1L;
-    }
-    public static int SeImageSignatureCache() {
-        return (int)2L;
-    }
-    public static int SeImageSignatureCatalogCached() {
-        return (int)3L;
-    }
-    public static int SeImageSignatureCatalogNotCached() {
-        return (int)4L;
-    }
-    public static int SeImageSignatureCatalogHint() {
-        return (int)5L;
-    }
-    public static int SeImageSignaturePackageCatalog() {
-        return (int)6L;
-    }
-    public static OfAddress PSE_IMAGE_SIGNATURE_TYPE = Constants$root.C_POINTER$LAYOUT;
-    public static int SeLearningModeInvalidType() {
-        return (int)0L;
-    }
-    public static int SeLearningModeSettings() {
-        return (int)1L;
-    }
-    public static int SeLearningModeMax() {
-        return (int)2L;
-    }
-    public static OfAddress PSECURITY_CAPABILITIES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPSECURITY_CAPABILITIES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOB_SET_ARRAY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEXCEPTION_REGISTRATION_RECORD = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PNT_TIB = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PNT_TIB32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PNT_TIB64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PUMS_CREATE_THREAD_ATTRIBUTES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_DYNAMIC_EH_CONTINUATION_TARGET = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PQUOTA_LIMITS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRATE_QUOTA_LIMIT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PQUOTA_LIMITS_EX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIO_COUNTERS = Constants$root.C_POINTER$LAYOUT;
-    public static int PMCCounter() {
-        return (int)0L;
-    }
-    public static int MaxHardwareCounterType() {
-        return (int)1L;
-    }
-    public static OfAddress PHARDWARE_COUNTER_TYPE = Constants$root.C_POINTER$LAYOUT;
-    public static int ProcessDEPPolicy() {
-        return (int)0L;
-    }
-    public static int ProcessASLRPolicy() {
-        return (int)1L;
-    }
-    public static int ProcessDynamicCodePolicy() {
-        return (int)2L;
-    }
-    public static int ProcessStrictHandleCheckPolicy() {
-        return (int)3L;
-    }
-    public static int ProcessSystemCallDisablePolicy() {
-        return (int)4L;
-    }
-    public static int ProcessMitigationOptionsMask() {
-        return (int)5L;
-    }
-    public static int ProcessExtensionPointDisablePolicy() {
-        return (int)6L;
-    }
-    public static int ProcessControlFlowGuardPolicy() {
-        return (int)7L;
-    }
-    public static int ProcessSignaturePolicy() {
-        return (int)8L;
-    }
-    public static int ProcessFontDisablePolicy() {
-        return (int)9L;
-    }
-    public static int ProcessImageLoadPolicy() {
-        return (int)10L;
-    }
-    public static int ProcessSystemCallFilterPolicy() {
-        return (int)11L;
-    }
-    public static int ProcessPayloadRestrictionPolicy() {
-        return (int)12L;
-    }
-    public static int ProcessChildProcessPolicy() {
-        return (int)13L;
-    }
-    public static int ProcessSideChannelIsolationPolicy() {
-        return (int)14L;
-    }
-    public static int ProcessUserShadowStackPolicy() {
-        return (int)15L;
-    }
-    public static int MaxProcessMitigationPolicy() {
-        return (int)16L;
-    }
-    public static OfAddress PPROCESS_MITIGATION_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_ASLR_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_DEP_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_DYNAMIC_CODE_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_BINARY_SIGNATURE_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_FONT_DISABLE_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_IMAGE_LOAD_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_CHILD_PROCESS_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MITIGATION_USER_SHADOW_STACK_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_BASIC_ACCOUNTING_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_BASIC_LIMIT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_EXTENDED_LIMIT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_BASIC_PROCESS_ID_LIST = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_BASIC_UI_RESTRICTIONS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_SECURITY_LIMIT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_END_OF_JOB_TIME_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_ASSOCIATE_COMPLETION_PORT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_BASIC_AND_IO_ACCOUNTING_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_JOBSET_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int ToleranceLow() {
-        return (int)1L;
-    }
-    public static int ToleranceMedium() {
-        return (int)2L;
-    }
-    public static int ToleranceHigh() {
-        return (int)3L;
-    }
-    public static OfAddress PJOBOBJECT_RATE_CONTROL_TOLERANCE = Constants$root.C_POINTER$LAYOUT;
-    public static int ToleranceIntervalShort() {
-        return (int)1L;
-    }
-    public static int ToleranceIntervalMedium() {
-        return (int)2L;
-    }
-    public static int ToleranceIntervalLong() {
-        return (int)3L;
-    }
-    public static OfAddress PJOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_NOTIFICATION_LIMIT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_LIMIT_VIOLATION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PJOBOBJECT_CPU_RATE_CONTROL_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int JOB_OBJECT_NET_RATE_CONTROL_ENABLE() {
-        return (int)1L;
-    }
-    public static int JOB_OBJECT_NET_RATE_CONTROL_MAX_BANDWIDTH() {
-        return (int)2L;
-    }
-    public static int JOB_OBJECT_NET_RATE_CONTROL_DSCP_TAG() {
-        return (int)4L;
-    }
-    public static int JOB_OBJECT_NET_RATE_CONTROL_VALID_FLAGS() {
-        return (int)7L;
-    }
-    public static int JOB_OBJECT_IO_RATE_CONTROL_ENABLE() {
-        return (int)1L;
-    }
-    public static int JOB_OBJECT_IO_RATE_CONTROL_STANDALONE_VOLUME() {
-        return (int)2L;
-    }
-    public static int JOB_OBJECT_IO_RATE_CONTROL_FORCE_UNIT_ACCESS_ALL() {
-        return (int)4L;
-    }
-    public static int JOB_OBJECT_IO_RATE_CONTROL_FORCE_UNIT_ACCESS_ON_SOFT_CAP() {
-        return (int)8L;
-    }
-    public static int JOB_OBJECT_IO_RATE_CONTROL_VALID_FLAGS() {
-        return (int)15L;
-    }
-    public static int JOBOBJECT_IO_ATTRIBUTION_CONTROL_ENABLE() {
-        return (int)1L;
     }
 }
 

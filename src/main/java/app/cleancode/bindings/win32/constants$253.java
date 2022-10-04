@@ -9,50 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$253 {
 
-    static final FunctionDescriptor ShowWindowAsync$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindActCtxSectionGuid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ShowWindowAsync$MH = RuntimeHelper.downcallHandle(
-        "ShowWindowAsync",
-        constants$253.ShowWindowAsync$FUNC
-    );
-    static final FunctionDescriptor FlashWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle FlashWindow$MH = RuntimeHelper.downcallHandle(
-        "FlashWindow",
-        constants$253.FlashWindow$FUNC
-    );
-    static final FunctionDescriptor FlashWindowEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FlashWindowEx$MH = RuntimeHelper.downcallHandle(
-        "FlashWindowEx",
-        constants$253.FlashWindowEx$FUNC
+    static final MethodHandle FindActCtxSectionGuid$MH = RuntimeHelper.downcallHandle(
+        "FindActCtxSectionGuid",
+        constants$253.FindActCtxSectionGuid$FUNC
     );
-    static final FunctionDescriptor ShowOwnedPopups$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor QueryActCtxW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ShowOwnedPopups$MH = RuntimeHelper.downcallHandle(
-        "ShowOwnedPopups",
-        constants$253.ShowOwnedPopups$FUNC
-    );
-    static final FunctionDescriptor OpenIcon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle OpenIcon$MH = RuntimeHelper.downcallHandle(
-        "OpenIcon",
-        constants$253.OpenIcon$FUNC
+    static final MethodHandle QueryActCtxW$MH = RuntimeHelper.downcallHandle(
+        "QueryActCtxW",
+        constants$253.QueryActCtxW$FUNC
     );
-    static final FunctionDescriptor CloseWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PQUERYACTCTXW_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CloseWindow$MH = RuntimeHelper.downcallHandle(
-        "CloseWindow",
-        constants$253.CloseWindow$FUNC
+    static final MethodHandle PQUERYACTCTXW_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$253.PQUERYACTCTXW_FUNC$FUNC
+    );
+    static final FunctionDescriptor WTSGetActiveConsoleSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle WTSGetActiveConsoleSessionId$MH = RuntimeHelper.downcallHandle(
+        "WTSGetActiveConsoleSessionId",
+        constants$253.WTSGetActiveConsoleSessionId$FUNC
+    );
+    static final FunctionDescriptor WTSGetServiceSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle WTSGetServiceSessionId$MH = RuntimeHelper.downcallHandle(
+        "WTSGetServiceSessionId",
+        constants$253.WTSGetServiceSessionId$FUNC
     );
 }
 

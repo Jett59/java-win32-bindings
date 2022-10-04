@@ -9,57 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$138 {
 
-    static final FunctionDescriptor SetDefaultCommConfigA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ResetWriteWatch$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle ResetWriteWatch$MH = RuntimeHelper.downcallHandle(
+        "ResetWriteWatch",
+        constants$138.ResetWriteWatch$FUNC
+    );
+    static final FunctionDescriptor CreateMemoryResourceNotification$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateMemoryResourceNotification$MH = RuntimeHelper.downcallHandle(
+        "CreateMemoryResourceNotification",
+        constants$138.CreateMemoryResourceNotification$FUNC
+    );
+    static final FunctionDescriptor QueryMemoryResourceNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryMemoryResourceNotification$MH = RuntimeHelper.downcallHandle(
+        "QueryMemoryResourceNotification",
+        constants$138.QueryMemoryResourceNotification$FUNC
+    );
+    static final FunctionDescriptor GetSystemFileCacheSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetSystemFileCacheSize$MH = RuntimeHelper.downcallHandle(
+        "GetSystemFileCacheSize",
+        constants$138.GetSystemFileCacheSize$FUNC
+    );
+    static final FunctionDescriptor SetSystemFileCacheSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetSystemFileCacheSize$MH = RuntimeHelper.downcallHandle(
+        "SetSystemFileCacheSize",
+        constants$138.SetSystemFileCacheSize$FUNC
+    );
+    static final FunctionDescriptor CreateFileMappingNumaW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetDefaultCommConfigA$MH = RuntimeHelper.downcallHandle(
-        "SetDefaultCommConfigA",
-        constants$138.SetDefaultCommConfigA$FUNC
-    );
-    static final FunctionDescriptor SetDefaultCommConfigW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetDefaultCommConfigW$MH = RuntimeHelper.downcallHandle(
-        "SetDefaultCommConfigW",
-        constants$138.SetDefaultCommConfigW$FUNC
-    );
-    static final FunctionDescriptor GetComputerNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetComputerNameA$MH = RuntimeHelper.downcallHandle(
-        "GetComputerNameA",
-        constants$138.GetComputerNameA$FUNC
-    );
-    static final FunctionDescriptor GetComputerNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetComputerNameW$MH = RuntimeHelper.downcallHandle(
-        "GetComputerNameW",
-        constants$138.GetComputerNameW$FUNC
-    );
-    static final FunctionDescriptor DnsHostnameToComputerNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DnsHostnameToComputerNameA$MH = RuntimeHelper.downcallHandle(
-        "DnsHostnameToComputerNameA",
-        constants$138.DnsHostnameToComputerNameA$FUNC
-    );
-    static final FunctionDescriptor DnsHostnameToComputerNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DnsHostnameToComputerNameW$MH = RuntimeHelper.downcallHandle(
-        "DnsHostnameToComputerNameW",
-        constants$138.DnsHostnameToComputerNameW$FUNC
+    static final MethodHandle CreateFileMappingNumaW$MH = RuntimeHelper.downcallHandle(
+        "CreateFileMappingNumaW",
+        constants$138.CreateFileMappingNumaW$FUNC
     );
 }
 

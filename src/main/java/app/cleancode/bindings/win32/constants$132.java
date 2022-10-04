@@ -9,79 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$132 {
 
-    static final FunctionDescriptor PrivilegedServiceAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnumSystemFirmwareTables$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PrivilegedServiceAuditAlarmA$MH = RuntimeHelper.downcallHandle(
-        "PrivilegedServiceAuditAlarmA",
-        constants$132.PrivilegedServiceAuditAlarmA$FUNC
+    static final MethodHandle EnumSystemFirmwareTables$MH = RuntimeHelper.downcallHandle(
+        "EnumSystemFirmwareTables",
+        constants$132.EnumSystemFirmwareTables$FUNC
     );
-    static final FunctionDescriptor AddConditionalAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetSystemFirmwareTable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddConditionalAce$MH = RuntimeHelper.downcallHandle(
-        "AddConditionalAce",
-        constants$132.AddConditionalAce$FUNC
-    );
-    static final FunctionDescriptor SetFileSecurityA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetFileSecurityA$MH = RuntimeHelper.downcallHandle(
-        "SetFileSecurityA",
-        constants$132.SetFileSecurityA$FUNC
-    );
-    static final FunctionDescriptor GetFileSecurityA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetFileSecurityA$MH = RuntimeHelper.downcallHandle(
-        "GetFileSecurityA",
-        constants$132.GetFileSecurityA$FUNC
-    );
-    static final FunctionDescriptor ReadDirectoryChangesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ReadDirectoryChangesW$MH = RuntimeHelper.downcallHandle(
-        "ReadDirectoryChangesW",
-        constants$132.ReadDirectoryChangesW$FUNC
-    );
-    static final FunctionDescriptor ReadDirectoryChangesExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReadDirectoryChangesExW$MH = RuntimeHelper.downcallHandle(
-        "ReadDirectoryChangesExW",
-        constants$132.ReadDirectoryChangesExW$FUNC
+    static final MethodHandle GetSystemFirmwareTable$MH = RuntimeHelper.downcallHandle(
+        "GetSystemFirmwareTable",
+        constants$132.GetSystemFirmwareTable$FUNC
+    );
+    static final FunctionDescriptor DnsHostnameToComputerNameExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DnsHostnameToComputerNameExW$MH = RuntimeHelper.downcallHandle(
+        "DnsHostnameToComputerNameExW",
+        constants$132.DnsHostnameToComputerNameExW$FUNC
+    );
+    static final FunctionDescriptor GetPhysicallyInstalledSystemMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPhysicallyInstalledSystemMemory$MH = RuntimeHelper.downcallHandle(
+        "GetPhysicallyInstalledSystemMemory",
+        constants$132.GetPhysicallyInstalledSystemMemory$FUNC
+    );
+    static final FunctionDescriptor SetComputerNameEx2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetComputerNameEx2W$MH = RuntimeHelper.downcallHandle(
+        "SetComputerNameEx2W",
+        constants$132.SetComputerNameEx2W$FUNC
+    );
+    static final FunctionDescriptor SetSystemTimeAdjustment$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetSystemTimeAdjustment$MH = RuntimeHelper.downcallHandle(
+        "SetSystemTimeAdjustment",
+        constants$132.SetSystemTimeAdjustment$FUNC
     );
 }
 

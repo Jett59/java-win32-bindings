@@ -9,55 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$520 {
 
-    static final FunctionDescriptor DeletePrinterDataW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterDataW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDataW",
-        constants$520.DeletePrinterDataW$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterDataExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mmioRenameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterDataExA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDataExA",
-        constants$520.DeletePrinterDataExA$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterDataExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterDataExW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDataExW",
-        constants$520.DeletePrinterDataExW$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterKeyA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterKeyA",
-        constants$520.DeletePrinterKeyA$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterKeyW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterKeyW",
-        constants$520.DeletePrinterKeyW$FUNC
-    );
-    static final FunctionDescriptor WaitForPrinterChange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WaitForPrinterChange$MH = RuntimeHelper.downcallHandle(
-        "WaitForPrinterChange",
-        constants$520.WaitForPrinterChange$FUNC
+    static final MethodHandle mmioRenameW$MH = RuntimeHelper.downcallHandle(
+        "mmioRenameW",
+        constants$520.mmioRenameW$FUNC
+    );
+    static final FunctionDescriptor mmioClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mmioClose$MH = RuntimeHelper.downcallHandle(
+        "mmioClose",
+        constants$520.mmioClose$FUNC
+    );
+    static final FunctionDescriptor mmioRead$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mmioRead$MH = RuntimeHelper.downcallHandle(
+        "mmioRead",
+        constants$520.mmioRead$FUNC
+    );
+    static final FunctionDescriptor mmioWrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mmioWrite$MH = RuntimeHelper.downcallHandle(
+        "mmioWrite",
+        constants$520.mmioWrite$FUNC
+    );
+    static final FunctionDescriptor mmioSeek$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mmioSeek$MH = RuntimeHelper.downcallHandle(
+        "mmioSeek",
+        constants$520.mmioSeek$FUNC
+    );
+    static final FunctionDescriptor mmioGetInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mmioGetInfo$MH = RuntimeHelper.downcallHandle(
+        "mmioGetInfo",
+        constants$520.mmioGetInfo$FUNC
     );
 }
 

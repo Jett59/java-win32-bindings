@@ -9,50 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$180 {
 
-    static final FunctionDescriptor GetStockObject$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetProcessAffinityMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessAffinityMask$MH = RuntimeHelper.downcallHandle(
+        "GetProcessAffinityMask",
+        constants$180.GetProcessAffinityMask$FUNC
+    );
+    static final FunctionDescriptor SetProcessAffinityMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetProcessAffinityMask$MH = RuntimeHelper.downcallHandle(
+        "SetProcessAffinityMask",
+        constants$180.SetProcessAffinityMask$FUNC
+    );
+    static final FunctionDescriptor GetProcessIoCounters$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessIoCounters$MH = RuntimeHelper.downcallHandle(
+        "GetProcessIoCounters",
+        constants$180.GetProcessIoCounters$FUNC
+    );
+    static final FunctionDescriptor GetProcessWorkingSetSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessWorkingSetSize$MH = RuntimeHelper.downcallHandle(
+        "GetProcessWorkingSetSize",
+        constants$180.GetProcessWorkingSetSize$FUNC
+    );
+    static final FunctionDescriptor SetProcessWorkingSetSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetProcessWorkingSetSize$MH = RuntimeHelper.downcallHandle(
+        "SetProcessWorkingSetSize",
+        constants$180.SetProcessWorkingSetSize$FUNC
+    );
+    static final FunctionDescriptor FatalExit$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetStockObject$MH = RuntimeHelper.downcallHandle(
-        "GetStockObject",
-        constants$180.GetStockObject$FUNC
-    );
-    static final FunctionDescriptor GetStretchBltMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetStretchBltMode$MH = RuntimeHelper.downcallHandle(
-        "GetStretchBltMode",
-        constants$180.GetStretchBltMode$FUNC
-    );
-    static final FunctionDescriptor GetSystemPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetSystemPaletteEntries$MH = RuntimeHelper.downcallHandle(
-        "GetSystemPaletteEntries",
-        constants$180.GetSystemPaletteEntries$FUNC
-    );
-    static final FunctionDescriptor GetSystemPaletteUse$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetSystemPaletteUse$MH = RuntimeHelper.downcallHandle(
-        "GetSystemPaletteUse",
-        constants$180.GetSystemPaletteUse$FUNC
-    );
-    static final FunctionDescriptor GetTextCharacterExtra$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTextCharacterExtra$MH = RuntimeHelper.downcallHandle(
-        "GetTextCharacterExtra",
-        constants$180.GetTextCharacterExtra$FUNC
-    );
-    static final FunctionDescriptor GetTextAlign$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTextAlign$MH = RuntimeHelper.downcallHandle(
-        "GetTextAlign",
-        constants$180.GetTextAlign$FUNC
+    static final MethodHandle FatalExit$MH = RuntimeHelper.downcallHandle(
+        "FatalExit",
+        constants$180.FatalExit$FUNC
     );
 }
 

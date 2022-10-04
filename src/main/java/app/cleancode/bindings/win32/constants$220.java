@@ -9,45 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$220 {
 
-    static final FunctionDescriptor wglDeleteContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle wglDeleteContext$MH = RuntimeHelper.downcallHandle(
-        "wglDeleteContext",
-        constants$220.wglDeleteContext$FUNC
-    );
-    static final FunctionDescriptor wglGetCurrentContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle wglGetCurrentContext$MH = RuntimeHelper.downcallHandle(
-        "wglGetCurrentContext",
-        constants$220.wglGetCurrentContext$FUNC
-    );
-    static final FunctionDescriptor wglGetCurrentDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle wglGetCurrentDC$MH = RuntimeHelper.downcallHandle(
-        "wglGetCurrentDC",
-        constants$220.wglGetCurrentDC$FUNC
-    );
-    static final FunctionDescriptor wglGetProcAddress$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle wglGetProcAddress$MH = RuntimeHelper.downcallHandle(
-        "wglGetProcAddress",
-        constants$220.wglGetProcAddress$FUNC
-    );
-    static final FunctionDescriptor wglMakeCurrent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFileAttributesTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle wglMakeCurrent$MH = RuntimeHelper.downcallHandle(
-        "wglMakeCurrent",
-        constants$220.wglMakeCurrent$FUNC
+    static final MethodHandle GetFileAttributesTransactedA$MH = RuntimeHelper.downcallHandle(
+        "GetFileAttributesTransactedA",
+        constants$220.GetFileAttributesTransactedA$FUNC
     );
-    static final FunctionDescriptor wglShareLists$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFileAttributesTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle wglShareLists$MH = RuntimeHelper.downcallHandle(
-        "wglShareLists",
-        constants$220.wglShareLists$FUNC
+    static final MethodHandle GetFileAttributesTransactedW$MH = RuntimeHelper.downcallHandle(
+        "GetFileAttributesTransactedW",
+        constants$220.GetFileAttributesTransactedW$FUNC
+    );
+    static final FunctionDescriptor GetCompressedFileSizeTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCompressedFileSizeTransactedA$MH = RuntimeHelper.downcallHandle(
+        "GetCompressedFileSizeTransactedA",
+        constants$220.GetCompressedFileSizeTransactedA$FUNC
+    );
+    static final FunctionDescriptor GetCompressedFileSizeTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCompressedFileSizeTransactedW$MH = RuntimeHelper.downcallHandle(
+        "GetCompressedFileSizeTransactedW",
+        constants$220.GetCompressedFileSizeTransactedW$FUNC
+    );
+    static final FunctionDescriptor DeleteFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteFileTransactedA$MH = RuntimeHelper.downcallHandle(
+        "DeleteFileTransactedA",
+        constants$220.DeleteFileTransactedA$FUNC
+    );
+    static final FunctionDescriptor DeleteFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteFileTransactedW$MH = RuntimeHelper.downcallHandle(
+        "DeleteFileTransactedW",
+        constants$220.DeleteFileTransactedW$FUNC
     );
 }
 

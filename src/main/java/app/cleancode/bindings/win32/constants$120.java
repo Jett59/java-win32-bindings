@@ -9,103 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$120 {
 
-    static final FunctionDescriptor FindFirstFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor UpdateProcThreadAttribute$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindFirstFileTransactedA$MH = RuntimeHelper.downcallHandle(
-        "FindFirstFileTransactedA",
-        constants$120.FindFirstFileTransactedA$FUNC
+    static final MethodHandle UpdateProcThreadAttribute$MH = RuntimeHelper.downcallHandle(
+        "UpdateProcThreadAttribute",
+        constants$120.UpdateProcThreadAttribute$FUNC
     );
-    static final FunctionDescriptor FindFirstFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetProcessDynamicEHContinuationTargets$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindFirstFileTransactedW$MH = RuntimeHelper.downcallHandle(
-        "FindFirstFileTransactedW",
-        constants$120.FindFirstFileTransactedW$FUNC
+    static final MethodHandle SetProcessDynamicEHContinuationTargets$MH = RuntimeHelper.downcallHandle(
+        "SetProcessDynamicEHContinuationTargets",
+        constants$120.SetProcessDynamicEHContinuationTargets$FUNC
     );
-    static final FunctionDescriptor CopyFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetProcessDynamicEnforcedCetCompatibleRanges$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetProcessDynamicEnforcedCetCompatibleRanges$MH = RuntimeHelper.downcallHandle(
+        "SetProcessDynamicEnforcedCetCompatibleRanges",
+        constants$120.SetProcessDynamicEnforcedCetCompatibleRanges$FUNC
+    );
+    static final FunctionDescriptor SetProcessAffinityUpdateMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CopyFileA$MH = RuntimeHelper.downcallHandle(
-        "CopyFileA",
-        constants$120.CopyFileA$FUNC
+    static final MethodHandle SetProcessAffinityUpdateMode$MH = RuntimeHelper.downcallHandle(
+        "SetProcessAffinityUpdateMode",
+        constants$120.SetProcessAffinityUpdateMode$FUNC
     );
-    static final FunctionDescriptor CopyFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CopyFileW$MH = RuntimeHelper.downcallHandle(
-        "CopyFileW",
-        constants$120.CopyFileW$FUNC
-    );
-    static final FunctionDescriptor LPPROGRESS_ROUTINE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        MemoryLayout.unionLayout(
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
-                Constants$root.C_LONG$LAYOUT.withName("HighPart")
-            ).withName("$anon$0"),
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
-                Constants$root.C_LONG$LAYOUT.withName("HighPart")
-            ).withName("u"),
-            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
-        ).withName("_LARGE_INTEGER"),
-        MemoryLayout.unionLayout(
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
-                Constants$root.C_LONG$LAYOUT.withName("HighPart")
-            ).withName("$anon$0"),
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
-                Constants$root.C_LONG$LAYOUT.withName("HighPart")
-            ).withName("u"),
-            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
-        ).withName("_LARGE_INTEGER"),
-        MemoryLayout.unionLayout(
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
-                Constants$root.C_LONG$LAYOUT.withName("HighPart")
-            ).withName("$anon$0"),
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
-                Constants$root.C_LONG$LAYOUT.withName("HighPart")
-            ).withName("u"),
-            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
-        ).withName("_LARGE_INTEGER"),
-        MemoryLayout.unionLayout(
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
-                Constants$root.C_LONG$LAYOUT.withName("HighPart")
-            ).withName("$anon$0"),
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("LowPart"),
-                Constants$root.C_LONG$LAYOUT.withName("HighPart")
-            ).withName("u"),
-            Constants$root.C_LONG_LONG$LAYOUT.withName("QuadPart")
-        ).withName("_LARGE_INTEGER"),
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor QueryProcessAffinityUpdateMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LPPROGRESS_ROUTINE$MH = RuntimeHelper.downcallHandle(
-        constants$120.LPPROGRESS_ROUTINE$FUNC
+    static final MethodHandle QueryProcessAffinityUpdateMode$MH = RuntimeHelper.downcallHandle(
+        "QueryProcessAffinityUpdateMode",
+        constants$120.QueryProcessAffinityUpdateMode$FUNC
+    );
+    static final FunctionDescriptor CreateRemoteThreadEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateRemoteThreadEx$MH = RuntimeHelper.downcallHandle(
+        "CreateRemoteThreadEx",
+        constants$120.CreateRemoteThreadEx$FUNC
     );
 }
 

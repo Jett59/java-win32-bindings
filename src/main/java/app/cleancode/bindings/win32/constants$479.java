@@ -9,52 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$479 {
 
-    static final FunctionDescriptor CertOpenServerOcspResponse$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetCurrencyFormatEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertOpenServerOcspResponse$MH = RuntimeHelper.downcallHandle(
-        "CertOpenServerOcspResponse",
-        constants$479.CertOpenServerOcspResponse$FUNC
-    );
-    static final FunctionDescriptor CertAddRefServerOcspResponse$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddRefServerOcspResponse$MH = RuntimeHelper.downcallHandle(
-        "CertAddRefServerOcspResponse",
-        constants$479.CertAddRefServerOcspResponse$FUNC
-    );
-    static final FunctionDescriptor CertCloseServerOcspResponse$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertCloseServerOcspResponse$MH = RuntimeHelper.downcallHandle(
-        "CertCloseServerOcspResponse",
-        constants$479.CertCloseServerOcspResponse$FUNC
+    static final MethodHandle GetCurrencyFormatEx$MH = RuntimeHelper.downcallHandle(
+        "GetCurrencyFormatEx",
+        constants$479.GetCurrencyFormatEx$FUNC
     );
-    static final FunctionDescriptor CertGetServerOcspResponseContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetUserDefaultLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetUserDefaultLocaleName$MH = RuntimeHelper.downcallHandle(
+        "GetUserDefaultLocaleName",
+        constants$479.GetUserDefaultLocaleName$FUNC
+    );
+    static final FunctionDescriptor GetSystemDefaultLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetSystemDefaultLocaleName$MH = RuntimeHelper.downcallHandle(
+        "GetSystemDefaultLocaleName",
+        constants$479.GetSystemDefaultLocaleName$FUNC
+    );
+    static final FunctionDescriptor IsNLSDefinedString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IsNLSDefinedString$MH = RuntimeHelper.downcallHandle(
+        "IsNLSDefinedString",
+        constants$479.IsNLSDefinedString$FUNC
+    );
+    static final FunctionDescriptor GetNLSVersionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertGetServerOcspResponseContext$MH = RuntimeHelper.downcallHandle(
-        "CertGetServerOcspResponseContext",
-        constants$479.CertGetServerOcspResponseContext$FUNC
+    static final MethodHandle GetNLSVersionEx$MH = RuntimeHelper.downcallHandle(
+        "GetNLSVersionEx",
+        constants$479.GetNLSVersionEx$FUNC
     );
-    static final FunctionDescriptor CertAddRefServerOcspResponseContext$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor IsValidNLSVersion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertAddRefServerOcspResponseContext$MH = RuntimeHelper.downcallHandle(
-        "CertAddRefServerOcspResponseContext",
-        constants$479.CertAddRefServerOcspResponseContext$FUNC
-    );
-    static final FunctionDescriptor CertFreeServerOcspResponseContext$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFreeServerOcspResponseContext$MH = RuntimeHelper.downcallHandle(
-        "CertFreeServerOcspResponseContext",
-        constants$479.CertFreeServerOcspResponseContext$FUNC
+    static final MethodHandle IsValidNLSVersion$MH = RuntimeHelper.downcallHandle(
+        "IsValidNLSVersion",
+        constants$479.IsValidNLSVersion$FUNC
     );
 }
 

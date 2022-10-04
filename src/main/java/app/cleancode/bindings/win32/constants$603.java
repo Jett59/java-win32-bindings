@@ -9,12 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$603 {
 
-    static final MemorySegment szOID_NIST_AES192_WRAP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.1.25");
-    static final MemorySegment szOID_NIST_AES256_WRAP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.1.45");
-    static final MemorySegment szOID_DH_SINGLE_PASS_STDDH_SHA1_KDF$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.133.16.840.63.0.2");
-    static final MemorySegment szOID_DH_SINGLE_PASS_STDDH_SHA256_KDF$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.1.11.1");
-    static final MemorySegment szOID_DH_SINGLE_PASS_STDDH_SHA384_KDF$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.1.11.2");
-    static final MemorySegment szOID_DS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5");
+    static final FunctionDescriptor CertControlStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertControlStore$MH = RuntimeHelper.downcallHandle(
+        "CertControlStore",
+        constants$603.CertControlStore$FUNC
+    );
+    static final FunctionDescriptor CertSetStoreProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertSetStoreProperty$MH = RuntimeHelper.downcallHandle(
+        "CertSetStoreProperty",
+        constants$603.CertSetStoreProperty$FUNC
+    );
+    static final FunctionDescriptor CertGetStoreProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetStoreProperty$MH = RuntimeHelper.downcallHandle(
+        "CertGetStoreProperty",
+        constants$603.CertGetStoreProperty$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_CREATE_CONTEXT_SORT_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_CREATE_CONTEXT_SORT_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$603.PFN_CERT_CREATE_CONTEXT_SORT_FUNC$FUNC
+    );
+    static final FunctionDescriptor CertCreateContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertCreateContext$MH = RuntimeHelper.downcallHandle(
+        "CertCreateContext",
+        constants$603.CertCreateContext$FUNC
+    );
 }
 
 

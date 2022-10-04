@@ -11,13 +11,13 @@ public interface DESKTOPENUMPROCW {
 
     int apply(java.lang.foreign.MemoryAddress _x0, long _x1);
     static MemorySegment allocate(DESKTOPENUMPROCW fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(DESKTOPENUMPROCW.class, fi, constants$230.DESKTOPENUMPROCW$FUNC, session);
+        return RuntimeHelper.upcallStub(DESKTOPENUMPROCW.class, fi, constants$334.DESKTOPENUMPROCW$FUNC, session);
     }
     static DESKTOPENUMPROCW ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, long __x1) -> {
             try {
-                return (int)constants$230.DESKTOPENUMPROCW$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1);
+                return (int)constants$334.DESKTOPENUMPROCW$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

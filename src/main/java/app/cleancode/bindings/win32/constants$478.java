@@ -9,53 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$478 {
 
-    static final FunctionDescriptor PFXIsPFXBlob$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsNormalizedString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IsNormalizedString$MH = RuntimeHelper.downcallHandle(
+        "IsNormalizedString",
+        constants$478.IsNormalizedString$FUNC
+    );
+    static final FunctionDescriptor VerifyScripts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VerifyScripts$MH = RuntimeHelper.downcallHandle(
+        "VerifyScripts",
+        constants$478.VerifyScripts$FUNC
+    );
+    static final FunctionDescriptor GetStringScripts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetStringScripts$MH = RuntimeHelper.downcallHandle(
+        "GetStringScripts",
+        constants$478.GetStringScripts$FUNC
+    );
+    static final FunctionDescriptor GetLocaleInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetLocaleInfoEx$MH = RuntimeHelper.downcallHandle(
+        "GetLocaleInfoEx",
+        constants$478.GetLocaleInfoEx$FUNC
+    );
+    static final FunctionDescriptor GetCalendarInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFXIsPFXBlob$MH = RuntimeHelper.downcallHandle(
-        "PFXIsPFXBlob",
-        constants$478.PFXIsPFXBlob$FUNC
+    static final MethodHandle GetCalendarInfoEx$MH = RuntimeHelper.downcallHandle(
+        "GetCalendarInfoEx",
+        constants$478.GetCalendarInfoEx$FUNC
     );
-    static final FunctionDescriptor PFXVerifyPassword$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetNumberFormatEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PFXVerifyPassword$MH = RuntimeHelper.downcallHandle(
-        "PFXVerifyPassword",
-        constants$478.PFXVerifyPassword$FUNC
-    );
-    static final FunctionDescriptor PFXExportCertStoreEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFXExportCertStoreEx$MH = RuntimeHelper.downcallHandle(
-        "PFXExportCertStoreEx",
-        constants$478.PFXExportCertStoreEx$FUNC
-    );
-    static final FunctionDescriptor PFXExportCertStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PFXExportCertStore$MH = RuntimeHelper.downcallHandle(
-        "PFXExportCertStore",
-        constants$478.PFXExportCertStore$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$MH = RuntimeHelper.downcallHandle(
-        constants$478.PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$FUNC
+    static final MethodHandle GetNumberFormatEx$MH = RuntimeHelper.downcallHandle(
+        "GetNumberFormatEx",
+        constants$478.GetNumberFormatEx$FUNC
     );
 }
 

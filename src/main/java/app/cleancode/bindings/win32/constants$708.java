@@ -9,12 +9,27 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$708 {
 
-    static final MemoryAddress CTL_FIND_NO_SIGNER_PTR$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemorySegment CERT_PHYSICAL_STORE_DEFAULT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_PHYSICAL_STORE_GROUP_POLICY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_PHYSICAL_STORE_LOCAL_MACHINE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_PHYSICAL_STORE_DS_USER_CERTIFICATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_PHYSICAL_STORE_LOCAL_MACHINE_GROUP_POLICY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
+    static final FunctionDescriptor SERVICE_MAIN_FUNCTIONA$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SERVICE_MAIN_FUNCTIONA$MH = RuntimeHelper.downcallHandle(
+        constants$708.SERVICE_MAIN_FUNCTIONA$FUNC
+    );
+    static final FunctionDescriptor LPSERVICE_MAIN_FUNCTIONW$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LPSERVICE_MAIN_FUNCTIONW$MH = RuntimeHelper.downcallHandle(
+        constants$708.LPSERVICE_MAIN_FUNCTIONW$FUNC
+    );
+    static final FunctionDescriptor LPSERVICE_MAIN_FUNCTIONA$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LPSERVICE_MAIN_FUNCTIONA$MH = RuntimeHelper.downcallHandle(
+        constants$708.LPSERVICE_MAIN_FUNCTIONA$FUNC
+    );
 }
 
 

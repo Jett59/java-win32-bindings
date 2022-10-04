@@ -9,48 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$534 {
 
-    static final  GroupLayout DOMAIN_JOIN_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment DOMAIN_JOIN_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("DOMAIN_JOIN_GUID", constants$534.DOMAIN_JOIN_GUID$LAYOUT);
-    static final  GroupLayout DOMAIN_LEAVE_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment DOMAIN_LEAVE_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("DOMAIN_LEAVE_GUID", constants$534.DOMAIN_LEAVE_GUID$LAYOUT);
-    static final  GroupLayout FIREWALL_PORT_OPEN_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment FIREWALL_PORT_OPEN_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("FIREWALL_PORT_OPEN_GUID", constants$534.FIREWALL_PORT_OPEN_GUID$LAYOUT);
-    static final  GroupLayout FIREWALL_PORT_CLOSE_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment FIREWALL_PORT_CLOSE_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("FIREWALL_PORT_CLOSE_GUID", constants$534.FIREWALL_PORT_CLOSE_GUID$LAYOUT);
-    static final  GroupLayout MACHINE_POLICY_PRESENT_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment MACHINE_POLICY_PRESENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("MACHINE_POLICY_PRESENT_GUID", constants$534.MACHINE_POLICY_PRESENT_GUID$LAYOUT);
-    static final  GroupLayout USER_POLICY_PRESENT_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment USER_POLICY_PRESENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("USER_POLICY_PRESENT_GUID", constants$534.USER_POLICY_PRESENT_GUID$LAYOUT);
+    static final FunctionDescriptor midiOutPrepareHeader$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutPrepareHeader$MH = RuntimeHelper.downcallHandle(
+        "midiOutPrepareHeader",
+        constants$534.midiOutPrepareHeader$FUNC
+    );
+    static final FunctionDescriptor midiOutUnprepareHeader$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutUnprepareHeader$MH = RuntimeHelper.downcallHandle(
+        "midiOutUnprepareHeader",
+        constants$534.midiOutUnprepareHeader$FUNC
+    );
+    static final FunctionDescriptor midiOutShortMsg$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutShortMsg$MH = RuntimeHelper.downcallHandle(
+        "midiOutShortMsg",
+        constants$534.midiOutShortMsg$FUNC
+    );
+    static final FunctionDescriptor midiOutLongMsg$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutLongMsg$MH = RuntimeHelper.downcallHandle(
+        "midiOutLongMsg",
+        constants$534.midiOutLongMsg$FUNC
+    );
+    static final FunctionDescriptor midiOutReset$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle midiOutReset$MH = RuntimeHelper.downcallHandle(
+        "midiOutReset",
+        constants$534.midiOutReset$FUNC
+    );
+    static final FunctionDescriptor midiOutCachePatches$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutCachePatches$MH = RuntimeHelper.downcallHandle(
+        "midiOutCachePatches",
+        constants$534.midiOutCachePatches$FUNC
+    );
 }
 
 

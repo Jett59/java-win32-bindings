@@ -9,73 +9,32 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$331 {
 
-    static final FunctionDescriptor DefMDIChildProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor DRAWSTATEPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DefMDIChildProcW$MH = RuntimeHelper.downcallHandle(
-        "DefMDIChildProcW",
-        constants$331.DefMDIChildProcW$FUNC
+    static final MethodHandle DRAWSTATEPROC$MH = RuntimeHelper.downcallHandle(
+        constants$331.DRAWSTATEPROC$FUNC
     );
-    static final FunctionDescriptor TranslateMDISysAccel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PROPENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle TranslateMDISysAccel$MH = RuntimeHelper.downcallHandle(
-        "TranslateMDISysAccel",
-        constants$331.TranslateMDISysAccel$FUNC
+    static final MethodHandle PROPENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$331.PROPENUMPROC$FUNC
     );
-    static final FunctionDescriptor ArrangeIconicWindows$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ArrangeIconicWindows$MH = RuntimeHelper.downcallHandle(
-        "ArrangeIconicWindows",
-        constants$331.ArrangeIconicWindows$FUNC
-    );
-    static final FunctionDescriptor CreateMDIWindowA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor PROPENUMPROCEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CreateMDIWindowA$MH = RuntimeHelper.downcallHandle(
-        "CreateMDIWindowA",
-        constants$331.CreateMDIWindowA$FUNC
-    );
-    static final FunctionDescriptor CreateMDIWindowW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle CreateMDIWindowW$MH = RuntimeHelper.downcallHandle(
-        "CreateMDIWindowW",
-        constants$331.CreateMDIWindowW$FUNC
-    );
-    static final FunctionDescriptor TileWindows$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle TileWindows$MH = RuntimeHelper.downcallHandle(
-        "TileWindows",
-        constants$331.TileWindows$FUNC
+    static final MethodHandle PROPENUMPROCEX$MH = RuntimeHelper.downcallHandle(
+        constants$331.PROPENUMPROCEX$FUNC
     );
 }
 

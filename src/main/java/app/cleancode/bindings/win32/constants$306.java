@@ -9,57 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$306 {
 
-    static final FunctionDescriptor GetMenuContextHelpId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTextMetricsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetMenuContextHelpId$MH = RuntimeHelper.downcallHandle(
-        "GetMenuContextHelpId",
-        constants$306.GetMenuContextHelpId$FUNC
+    static final MethodHandle GetTextMetricsA$MH = RuntimeHelper.downcallHandle(
+        "GetTextMetricsA",
+        constants$306.GetTextMetricsA$FUNC
     );
-    static final FunctionDescriptor MessageBoxA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTextMetricsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextMetricsW$MH = RuntimeHelper.downcallHandle(
+        "GetTextMetricsW",
+        constants$306.GetTextMetricsW$FUNC
+    );
+    static final FunctionDescriptor AngleArc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_FLOAT$LAYOUT,
+        Constants$root.C_FLOAT$LAYOUT
+    );
+    static final MethodHandle AngleArc$MH = RuntimeHelper.downcallHandle(
+        "AngleArc",
+        constants$306.AngleArc$FUNC
+    );
+    static final FunctionDescriptor PolyPolyline$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle MessageBoxA$MH = RuntimeHelper.downcallHandle(
-        "MessageBoxA",
-        constants$306.MessageBoxA$FUNC
+    static final MethodHandle PolyPolyline$MH = RuntimeHelper.downcallHandle(
+        "PolyPolyline",
+        constants$306.PolyPolyline$FUNC
     );
-    static final FunctionDescriptor MessageBoxW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWorldTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle MessageBoxW$MH = RuntimeHelper.downcallHandle(
-        "MessageBoxW",
-        constants$306.MessageBoxW$FUNC
-    );
-    static final FunctionDescriptor MessageBoxExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle MessageBoxExA$MH = RuntimeHelper.downcallHandle(
-        "MessageBoxExA",
-        constants$306.MessageBoxExA$FUNC
-    );
-    static final FunctionDescriptor MessageBoxExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle MessageBoxExW$MH = RuntimeHelper.downcallHandle(
-        "MessageBoxExW",
-        constants$306.MessageBoxExW$FUNC
-    );
-    static final FunctionDescriptor MSGBOXCALLBACK$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetWorldTransform$MH = RuntimeHelper.downcallHandle(
+        "GetWorldTransform",
+        constants$306.GetWorldTransform$FUNC
+    );
+    static final FunctionDescriptor SetWorldTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetWorldTransform$MH = RuntimeHelper.downcallHandle(
+        "SetWorldTransform",
+        constants$306.SetWorldTransform$FUNC
     );
 }
 

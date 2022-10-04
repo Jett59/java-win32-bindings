@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$550 {
 
-    static final MemorySegment SE_MACHINE_ACCOUNT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeMachineAccountPrivilege");
-    static final MemorySegment SE_TCB_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTcbPrivilege");
-    static final MemorySegment SE_SECURITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSecurityPrivilege");
-    static final MemorySegment SE_TAKE_OWNERSHIP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTakeOwnershipPrivilege");
-    static final MemorySegment SE_LOAD_DRIVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeLoadDriverPrivilege");
-    static final MemorySegment SE_SYSTEM_PROFILE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemProfilePrivilege");
+    static final FunctionDescriptor SHGetPropertyStoreForWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHGetPropertyStoreForWindow$MH = RuntimeHelper.downcallHandle(
+        "SHGetPropertyStoreForWindow",
+        constants$550.SHGetPropertyStoreForWindow$FUNC
+    );
+    static final FunctionDescriptor Shell_NotifyIconA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle Shell_NotifyIconA$MH = RuntimeHelper.downcallHandle(
+        "Shell_NotifyIconA",
+        constants$550.Shell_NotifyIconA$FUNC
+    );
+    static final FunctionDescriptor Shell_NotifyIconW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle Shell_NotifyIconW$MH = RuntimeHelper.downcallHandle(
+        "Shell_NotifyIconW",
+        constants$550.Shell_NotifyIconW$FUNC
+    );
+    static final FunctionDescriptor Shell_NotifyIconGetRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle Shell_NotifyIconGetRect$MH = RuntimeHelper.downcallHandle(
+        "Shell_NotifyIconGetRect",
+        constants$550.Shell_NotifyIconGetRect$FUNC
+    );
+    static final FunctionDescriptor SHGetFileInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHGetFileInfoA$MH = RuntimeHelper.downcallHandle(
+        "SHGetFileInfoA",
+        constants$550.SHGetFileInfoA$FUNC
+    );
+    static final FunctionDescriptor SHGetFileInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHGetFileInfoW$MH = RuntimeHelper.downcallHandle(
+        "SHGetFileInfoW",
+        constants$550.SHGetFileInfoW$FUNC
+    );
 }
 
 

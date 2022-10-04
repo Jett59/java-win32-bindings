@@ -11,13 +11,13 @@ public interface TIMEFMT_ENUMPROCW {
 
     int apply(java.lang.foreign.MemoryAddress _x0);
     static MemorySegment allocate(TIMEFMT_ENUMPROCW fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(TIMEFMT_ENUMPROCW.class, fi, constants$356.TIMEFMT_ENUMPROCW$FUNC, session);
+        return RuntimeHelper.upcallStub(TIMEFMT_ENUMPROCW.class, fi, constants$461.TIMEFMT_ENUMPROCW$FUNC, session);
     }
     static TIMEFMT_ENUMPROCW ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0) -> {
             try {
-                return (int)constants$356.TIMEFMT_ENUMPROCW$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0);
+                return (int)constants$461.TIMEFMT_ENUMPROCW$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,51 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$238 {
 
-    static final FunctionDescriptor SetUserObjectInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor BuildCommDCBA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetUserObjectInformationA$MH = RuntimeHelper.downcallHandle(
-        "SetUserObjectInformationA",
-        constants$238.SetUserObjectInformationA$FUNC
-    );
-    static final FunctionDescriptor SetUserObjectInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetUserObjectInformationW$MH = RuntimeHelper.downcallHandle(
-        "SetUserObjectInformationW",
-        constants$238.SetUserObjectInformationW$FUNC
-    );
-    static final FunctionDescriptor IsHungAppWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsHungAppWindow$MH = RuntimeHelper.downcallHandle(
-        "IsHungAppWindow",
-        constants$238.IsHungAppWindow$FUNC
+    static final MethodHandle BuildCommDCBA$MH = RuntimeHelper.downcallHandle(
+        "BuildCommDCBA",
+        constants$238.BuildCommDCBA$FUNC
     );
-    static final FunctionDescriptor DisableProcessWindowsGhosting$FUNC = FunctionDescriptor.ofVoid();
-    static final MethodHandle DisableProcessWindowsGhosting$MH = RuntimeHelper.downcallHandle(
-        "DisableProcessWindowsGhosting",
-        constants$238.DisableProcessWindowsGhosting$FUNC
-    );
-    static final FunctionDescriptor RegisterWindowMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor BuildCommDCBW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegisterWindowMessageA$MH = RuntimeHelper.downcallHandle(
-        "RegisterWindowMessageA",
-        constants$238.RegisterWindowMessageA$FUNC
+    static final MethodHandle BuildCommDCBW$MH = RuntimeHelper.downcallHandle(
+        "BuildCommDCBW",
+        constants$238.BuildCommDCBW$FUNC
     );
-    static final FunctionDescriptor RegisterWindowMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor BuildCommDCBAndTimeoutsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegisterWindowMessageW$MH = RuntimeHelper.downcallHandle(
-        "RegisterWindowMessageW",
-        constants$238.RegisterWindowMessageW$FUNC
+    static final MethodHandle BuildCommDCBAndTimeoutsA$MH = RuntimeHelper.downcallHandle(
+        "BuildCommDCBAndTimeoutsA",
+        constants$238.BuildCommDCBAndTimeoutsA$FUNC
+    );
+    static final FunctionDescriptor BuildCommDCBAndTimeoutsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle BuildCommDCBAndTimeoutsW$MH = RuntimeHelper.downcallHandle(
+        "BuildCommDCBAndTimeoutsW",
+        constants$238.BuildCommDCBAndTimeoutsW$FUNC
+    );
+    static final FunctionDescriptor CommConfigDialogA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CommConfigDialogA$MH = RuntimeHelper.downcallHandle(
+        "CommConfigDialogA",
+        constants$238.CommConfigDialogA$FUNC
+    );
+    static final FunctionDescriptor CommConfigDialogW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CommConfigDialogW$MH = RuntimeHelper.downcallHandle(
+        "CommConfigDialogW",
+        constants$238.CommConfigDialogW$FUNC
     );
 }
 

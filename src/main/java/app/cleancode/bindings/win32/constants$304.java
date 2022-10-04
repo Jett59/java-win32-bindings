@@ -9,53 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$304 {
 
-    static final FunctionDescriptor GetWindowTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetEnhMetaFileBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetWindowTextA$MH = RuntimeHelper.downcallHandle(
-        "GetWindowTextA",
-        constants$304.GetWindowTextA$FUNC
-    );
-    static final FunctionDescriptor GetWindowTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetWindowTextW$MH = RuntimeHelper.downcallHandle(
-        "GetWindowTextW",
-        constants$304.GetWindowTextW$FUNC
-    );
-    static final FunctionDescriptor GetWindowTextLengthA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWindowTextLengthA$MH = RuntimeHelper.downcallHandle(
-        "GetWindowTextLengthA",
-        constants$304.GetWindowTextLengthA$FUNC
+    static final MethodHandle GetEnhMetaFileBits$MH = RuntimeHelper.downcallHandle(
+        "GetEnhMetaFileBits",
+        constants$304.GetEnhMetaFileBits$FUNC
     );
-    static final FunctionDescriptor GetWindowTextLengthW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetWindowTextLengthW$MH = RuntimeHelper.downcallHandle(
-        "GetWindowTextLengthW",
-        constants$304.GetWindowTextLengthW$FUNC
-    );
-    static final FunctionDescriptor GetClientRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetEnhMetaFileDescriptionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetClientRect$MH = RuntimeHelper.downcallHandle(
-        "GetClientRect",
-        constants$304.GetClientRect$FUNC
+    static final MethodHandle GetEnhMetaFileDescriptionA$MH = RuntimeHelper.downcallHandle(
+        "GetEnhMetaFileDescriptionA",
+        constants$304.GetEnhMetaFileDescriptionA$FUNC
     );
-    static final FunctionDescriptor GetWindowRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetEnhMetaFileDescriptionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWindowRect$MH = RuntimeHelper.downcallHandle(
-        "GetWindowRect",
-        constants$304.GetWindowRect$FUNC
+    static final MethodHandle GetEnhMetaFileDescriptionW$MH = RuntimeHelper.downcallHandle(
+        "GetEnhMetaFileDescriptionW",
+        constants$304.GetEnhMetaFileDescriptionW$FUNC
+    );
+    static final FunctionDescriptor GetEnhMetaFileHeader$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetEnhMetaFileHeader$MH = RuntimeHelper.downcallHandle(
+        "GetEnhMetaFileHeader",
+        constants$304.GetEnhMetaFileHeader$FUNC
+    );
+    static final FunctionDescriptor GetEnhMetaFilePaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetEnhMetaFilePaletteEntries$MH = RuntimeHelper.downcallHandle(
+        "GetEnhMetaFilePaletteEntries",
+        constants$304.GetEnhMetaFilePaletteEntries$FUNC
+    );
+    static final FunctionDescriptor GetEnhMetaFilePixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetEnhMetaFilePixelFormat$MH = RuntimeHelper.downcallHandle(
+        "GetEnhMetaFilePixelFormat",
+        constants$304.GetEnhMetaFilePixelFormat$FUNC
     );
 }
 

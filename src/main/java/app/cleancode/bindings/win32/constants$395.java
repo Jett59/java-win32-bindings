@@ -9,69 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$395 {
 
-    static final FunctionDescriptor InitiateSystemShutdownExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CalculatePopupWindowPosition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle InitiateSystemShutdownExA$MH = RuntimeHelper.downcallHandle(
-        "InitiateSystemShutdownExA",
-        constants$395.InitiateSystemShutdownExA$FUNC
-    );
-    static final FunctionDescriptor InitiateSystemShutdownExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InitiateSystemShutdownExW$MH = RuntimeHelper.downcallHandle(
-        "InitiateSystemShutdownExW",
-        constants$395.InitiateSystemShutdownExW$FUNC
+    static final MethodHandle CalculatePopupWindowPosition$MH = RuntimeHelper.downcallHandle(
+        "CalculatePopupWindowPosition",
+        constants$395.CalculatePopupWindowPosition$FUNC
     );
-    static final FunctionDescriptor InitiateShutdownA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMenuInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InitiateShutdownA$MH = RuntimeHelper.downcallHandle(
-        "InitiateShutdownA",
-        constants$395.InitiateShutdownA$FUNC
+    static final MethodHandle GetMenuInfo$MH = RuntimeHelper.downcallHandle(
+        "GetMenuInfo",
+        constants$395.GetMenuInfo$FUNC
     );
-    static final FunctionDescriptor InitiateShutdownW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetMenuInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetMenuInfo$MH = RuntimeHelper.downcallHandle(
+        "SetMenuInfo",
+        constants$395.SetMenuInfo$FUNC
+    );
+    static final FunctionDescriptor EndMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle EndMenu$MH = RuntimeHelper.downcallHandle(
+        "EndMenu",
+        constants$395.EndMenu$FUNC
+    );
+    static final FunctionDescriptor InsertMenuItemA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InitiateShutdownW$MH = RuntimeHelper.downcallHandle(
-        "InitiateShutdownW",
-        constants$395.InitiateShutdownW$FUNC
+    static final MethodHandle InsertMenuItemA$MH = RuntimeHelper.downcallHandle(
+        "InsertMenuItemA",
+        constants$395.InsertMenuItemA$FUNC
     );
-    static final FunctionDescriptor CheckForHiberboot$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InsertMenuItemW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CheckForHiberboot$MH = RuntimeHelper.downcallHandle(
-        "CheckForHiberboot",
-        constants$395.CheckForHiberboot$FUNC
-    );
-    static final FunctionDescriptor RegSaveKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegSaveKeyExA$MH = RuntimeHelper.downcallHandle(
-        "RegSaveKeyExA",
-        constants$395.RegSaveKeyExA$FUNC
+    static final MethodHandle InsertMenuItemW$MH = RuntimeHelper.downcallHandle(
+        "InsertMenuItemW",
+        constants$395.InsertMenuItemW$FUNC
     );
 }
 

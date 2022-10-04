@@ -9,9 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$757 {
 
-    static final MemorySegment SERVICES_FAILED_DATABASE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ServicesFailed");
-    static final MemorySegment SERVICE_TRIGGER_STARTED_ARGUMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("T");
-    static final MemorySegment SC_AGGREGATE_STORAGE_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment szOID_PKCS_7$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7");
+    static final MemorySegment szOID_PKCS_8$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.8");
+    static final MemorySegment szOID_PKCS_9$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9");
+    static final MemorySegment szOID_PKCS_10$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.10");
+    static final MemorySegment szOID_PKCS_12$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12");
+    static final MemorySegment szOID_RSA_RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
 }
 
 

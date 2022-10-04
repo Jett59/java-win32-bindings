@@ -11,13 +11,13 @@ public interface APPLICATION_RECOVERY_CALLBACK {
 
     int apply(java.lang.foreign.MemoryAddress pvParameter);
     static MemorySegment allocate(APPLICATION_RECOVERY_CALLBACK fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(APPLICATION_RECOVERY_CALLBACK.class, fi, constants$152.APPLICATION_RECOVERY_CALLBACK$FUNC, session);
+        return RuntimeHelper.upcallStub(APPLICATION_RECOVERY_CALLBACK.class, fi, constants$256.APPLICATION_RECOVERY_CALLBACK$FUNC, session);
     }
     static APPLICATION_RECOVERY_CALLBACK ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pvParameter) -> {
             try {
-                return (int)constants$152.APPLICATION_RECOVERY_CALLBACK$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pvParameter);
+                return (int)constants$256.APPLICATION_RECOVERY_CALLBACK$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pvParameter);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,52 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$409 {
 
-    static final FunctionDescriptor gethostbyaddr$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AdjustWindowRectEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle gethostbyaddr$MH = RuntimeHelper.downcallHandle(
-        "gethostbyaddr",
-        constants$409.gethostbyaddr$FUNC
+    static final MethodHandle AdjustWindowRectEx$MH = RuntimeHelper.downcallHandle(
+        "AdjustWindowRectEx",
+        constants$409.AdjustWindowRectEx$FUNC
     );
-    static final FunctionDescriptor gethostbyname$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle gethostbyname$MH = RuntimeHelper.downcallHandle(
-        "gethostbyname",
-        constants$409.gethostbyname$FUNC
-    );
-    static final FunctionDescriptor gethostname$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AdjustWindowRectExForDpi$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle gethostname$MH = RuntimeHelper.downcallHandle(
-        "gethostname",
-        constants$409.gethostname$FUNC
-    );
-    static final FunctionDescriptor getservbyport$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle getservbyport$MH = RuntimeHelper.downcallHandle(
-        "getservbyport",
-        constants$409.getservbyport$FUNC
-    );
-    static final FunctionDescriptor getservbyname$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle getservbyname$MH = RuntimeHelper.downcallHandle(
-        "getservbyname",
-        constants$409.getservbyname$FUNC
-    );
-    static final FunctionDescriptor getprotobynumber$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle getprotobynumber$MH = RuntimeHelper.downcallHandle(
-        "getprotobynumber",
-        constants$409.getprotobynumber$FUNC
+    static final MethodHandle AdjustWindowRectExForDpi$MH = RuntimeHelper.downcallHandle(
+        "AdjustWindowRectExForDpi",
+        constants$409.AdjustWindowRectExForDpi$FUNC
+    );
+    static final FunctionDescriptor SetWindowContextHelpId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetWindowContextHelpId$MH = RuntimeHelper.downcallHandle(
+        "SetWindowContextHelpId",
+        constants$409.SetWindowContextHelpId$FUNC
+    );
+    static final FunctionDescriptor GetWindowContextHelpId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetWindowContextHelpId$MH = RuntimeHelper.downcallHandle(
+        "GetWindowContextHelpId",
+        constants$409.GetWindowContextHelpId$FUNC
+    );
+    static final FunctionDescriptor SetMenuContextHelpId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetMenuContextHelpId$MH = RuntimeHelper.downcallHandle(
+        "SetMenuContextHelpId",
+        constants$409.SetMenuContextHelpId$FUNC
+    );
+    static final FunctionDescriptor GetMenuContextHelpId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetMenuContextHelpId$MH = RuntimeHelper.downcallHandle(
+        "GetMenuContextHelpId",
+        constants$409.GetMenuContextHelpId$FUNC
     );
 }
 

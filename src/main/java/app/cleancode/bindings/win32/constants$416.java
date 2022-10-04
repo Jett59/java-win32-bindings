@@ -9,72 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$416 {
 
-    static final FunctionDescriptor CryptImportKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor ChildWindowFromPointEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptImportKey$MH = RuntimeHelper.downcallHandle(
-        "CryptImportKey",
-        constants$416.CryptImportKey$FUNC
-    );
-    static final FunctionDescriptor CryptEncrypt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("x"),
+            Constants$root.C_LONG$LAYOUT.withName("y")
+        ).withName("tagPOINT"),
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptEncrypt$MH = RuntimeHelper.downcallHandle(
-        "CryptEncrypt",
-        constants$416.CryptEncrypt$FUNC
+    static final MethodHandle ChildWindowFromPointEx$MH = RuntimeHelper.downcallHandle(
+        "ChildWindowFromPointEx",
+        constants$416.ChildWindowFromPointEx$FUNC
     );
-    static final FunctionDescriptor CryptDecrypt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSysColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetSysColor$MH = RuntimeHelper.downcallHandle(
+        "GetSysColor",
+        constants$416.GetSysColor$FUNC
+    );
+    static final FunctionDescriptor GetSysColorBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetSysColorBrush$MH = RuntimeHelper.downcallHandle(
+        "GetSysColorBrush",
+        constants$416.GetSysColorBrush$FUNC
+    );
+    static final FunctionDescriptor SetSysColors$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptDecrypt$MH = RuntimeHelper.downcallHandle(
-        "CryptDecrypt",
-        constants$416.CryptDecrypt$FUNC
+    static final MethodHandle SetSysColors$MH = RuntimeHelper.downcallHandle(
+        "SetSysColors",
+        constants$416.SetSysColors$FUNC
     );
-    static final FunctionDescriptor CryptCreateHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DrawFocusRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptCreateHash$MH = RuntimeHelper.downcallHandle(
-        "CryptCreateHash",
-        constants$416.CryptCreateHash$FUNC
+    static final MethodHandle DrawFocusRect$MH = RuntimeHelper.downcallHandle(
+        "DrawFocusRect",
+        constants$416.DrawFocusRect$FUNC
     );
-    static final FunctionDescriptor CryptHashData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor FillRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptHashData$MH = RuntimeHelper.downcallHandle(
-        "CryptHashData",
-        constants$416.CryptHashData$FUNC
-    );
-    static final FunctionDescriptor CryptHashSessionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CryptHashSessionKey$MH = RuntimeHelper.downcallHandle(
-        "CryptHashSessionKey",
-        constants$416.CryptHashSessionKey$FUNC
+    static final MethodHandle FillRect$MH = RuntimeHelper.downcallHandle(
+        "FillRect",
+        constants$416.FillRect$FUNC
     );
 }
 

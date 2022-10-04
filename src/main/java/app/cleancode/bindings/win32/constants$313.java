@@ -9,57 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$313 {
 
-    static final FunctionDescriptor FillRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetObjectA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FillRect$MH = RuntimeHelper.downcallHandle(
-        "FillRect",
-        constants$313.FillRect$FUNC
+    static final MethodHandle GetObjectA$MH = RuntimeHelper.downcallHandle(
+        "GetObjectA",
+        constants$313.GetObjectA$FUNC
     );
-    static final FunctionDescriptor FrameRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetObjectW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FrameRect$MH = RuntimeHelper.downcallHandle(
-        "FrameRect",
-        constants$313.FrameRect$FUNC
+    static final MethodHandle GetObjectW$MH = RuntimeHelper.downcallHandle(
+        "GetObjectW",
+        constants$313.GetObjectW$FUNC
     );
-    static final FunctionDescriptor InvertRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle InvertRect$MH = RuntimeHelper.downcallHandle(
-        "InvertRect",
-        constants$313.InvertRect$FUNC
-    );
-    static final FunctionDescriptor SetRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MoveToEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MoveToEx$MH = RuntimeHelper.downcallHandle(
+        "MoveToEx",
+        constants$313.MoveToEx$FUNC
+    );
+    static final FunctionDescriptor TextOutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetRect$MH = RuntimeHelper.downcallHandle(
-        "SetRect",
-        constants$313.SetRect$FUNC
+    static final MethodHandle TextOutA$MH = RuntimeHelper.downcallHandle(
+        "TextOutA",
+        constants$313.TextOutA$FUNC
     );
-    static final FunctionDescriptor SetRectEmpty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetRectEmpty$MH = RuntimeHelper.downcallHandle(
-        "SetRectEmpty",
-        constants$313.SetRectEmpty$FUNC
-    );
-    static final FunctionDescriptor CopyRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TextOutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle TextOutW$MH = RuntimeHelper.downcallHandle(
+        "TextOutW",
+        constants$313.TextOutW$FUNC
+    );
+    static final FunctionDescriptor ExtTextOutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CopyRect$MH = RuntimeHelper.downcallHandle(
-        "CopyRect",
-        constants$313.CopyRect$FUNC
+    static final MethodHandle ExtTextOutA$MH = RuntimeHelper.downcallHandle(
+        "ExtTextOutA",
+        constants$313.ExtTextOutA$FUNC
     );
 }
 

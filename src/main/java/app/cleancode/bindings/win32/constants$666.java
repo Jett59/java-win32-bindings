@@ -9,12 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$666 {
 
-    static final MemorySegment szOID_RDN_TPM_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.3");
-    static final MemorySegment szOID_RDN_TCG_PLATFORM_MANUFACTURER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.4");
-    static final MemorySegment szOID_RDN_TCG_PLATFORM_MODEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.5");
-    static final MemorySegment szOID_RDN_TCG_PLATFORM_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.6");
-    static final MemorySegment szOID_CT_CERT_SCTLIST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.11129.2.4.2");
-    static final MemorySegment szOID_ENROLL_EK_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.23");
+    static final FunctionDescriptor DeletePrinterDriverExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeletePrinterDriverExW$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterDriverExW",
+        constants$666.DeletePrinterDriverExW$FUNC
+    );
+    static final FunctionDescriptor AddPrintProcessorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPrintProcessorA$MH = RuntimeHelper.downcallHandle(
+        "AddPrintProcessorA",
+        constants$666.AddPrintProcessorA$FUNC
+    );
+    static final FunctionDescriptor AddPrintProcessorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPrintProcessorW$MH = RuntimeHelper.downcallHandle(
+        "AddPrintProcessorW",
+        constants$666.AddPrintProcessorW$FUNC
+    );
+    static final FunctionDescriptor EnumPrintProcessorsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrintProcessorsA$MH = RuntimeHelper.downcallHandle(
+        "EnumPrintProcessorsA",
+        constants$666.EnumPrintProcessorsA$FUNC
+    );
+    static final FunctionDescriptor EnumPrintProcessorsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumPrintProcessorsW$MH = RuntimeHelper.downcallHandle(
+        "EnumPrintProcessorsW",
+        constants$666.EnumPrintProcessorsW$FUNC
+    );
+    static final FunctionDescriptor GetPrintProcessorDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrintProcessorDirectoryA$MH = RuntimeHelper.downcallHandle(
+        "GetPrintProcessorDirectoryA",
+        constants$666.GetPrintProcessorDirectoryA$FUNC
+    );
 }
 
 

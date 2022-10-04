@@ -9,61 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$382 {
 
-    static final FunctionDescriptor RegConnectRegistryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegConnectRegistryA$MH = RuntimeHelper.downcallHandle(
-        "RegConnectRegistryA",
-        constants$382.RegConnectRegistryA$FUNC
-    );
-    static final FunctionDescriptor RegConnectRegistryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegConnectRegistryW$MH = RuntimeHelper.downcallHandle(
-        "RegConnectRegistryW",
-        constants$382.RegConnectRegistryW$FUNC
-    );
-    static final FunctionDescriptor RegConnectRegistryExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor RegisterPointerInputTargetEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegConnectRegistryExA$MH = RuntimeHelper.downcallHandle(
-        "RegConnectRegistryExA",
-        constants$382.RegConnectRegistryExA$FUNC
+    static final MethodHandle RegisterPointerInputTargetEx$MH = RuntimeHelper.downcallHandle(
+        "RegisterPointerInputTargetEx",
+        constants$382.RegisterPointerInputTargetEx$FUNC
     );
-    static final FunctionDescriptor RegConnectRegistryExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor UnregisterPointerInputTargetEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle UnregisterPointerInputTargetEx$MH = RuntimeHelper.downcallHandle(
+        "UnregisterPointerInputTargetEx",
+        constants$382.UnregisterPointerInputTargetEx$FUNC
+    );
+    static final FunctionDescriptor CreateSyntheticPointerDevice$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateSyntheticPointerDevice$MH = RuntimeHelper.downcallHandle(
+        "CreateSyntheticPointerDevice",
+        constants$382.CreateSyntheticPointerDevice$FUNC
+    );
+    static final FunctionDescriptor InjectSyntheticPointerInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle InjectSyntheticPointerInput$MH = RuntimeHelper.downcallHandle(
+        "InjectSyntheticPointerInput",
+        constants$382.InjectSyntheticPointerInput$FUNC
+    );
+    static final FunctionDescriptor DestroySyntheticPointerDevice$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegConnectRegistryExW$MH = RuntimeHelper.downcallHandle(
-        "RegConnectRegistryExW",
-        constants$382.RegConnectRegistryExW$FUNC
+    static final MethodHandle DestroySyntheticPointerDevice$MH = RuntimeHelper.downcallHandle(
+        "DestroySyntheticPointerDevice",
+        constants$382.DestroySyntheticPointerDevice$FUNC
     );
-    static final FunctionDescriptor RegCreateKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor EnableMouseInPointer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegCreateKeyA$MH = RuntimeHelper.downcallHandle(
-        "RegCreateKeyA",
-        constants$382.RegCreateKeyA$FUNC
-    );
-    static final FunctionDescriptor RegCreateKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegCreateKeyW$MH = RuntimeHelper.downcallHandle(
-        "RegCreateKeyW",
-        constants$382.RegCreateKeyW$FUNC
+    static final MethodHandle EnableMouseInPointer$MH = RuntimeHelper.downcallHandle(
+        "EnableMouseInPointer",
+        constants$382.EnableMouseInPointer$FUNC
     );
 }
 

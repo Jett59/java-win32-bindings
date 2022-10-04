@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$624 {
 
-    static final MemoryAddress X509_CERT$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress X509_CERT_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress X509_CERT_CRL_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress X509_CERT_REQUEST_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress X509_EXTENSIONS$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress X509_NAME_VALUE$ADDR = MemoryAddress.ofLong(6L);
+    static final FunctionDescriptor PFN_FREE_ENCODED_OBJECT_FUNC$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_FREE_ENCODED_OBJECT_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$624.PFN_FREE_ENCODED_OBJECT_FUNC$FUNC
+    );
+    static final FunctionDescriptor CryptRetrieveObjectByUrlA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptRetrieveObjectByUrlA$MH = RuntimeHelper.downcallHandle(
+        "CryptRetrieveObjectByUrlA",
+        constants$624.CryptRetrieveObjectByUrlA$FUNC
+    );
+    static final FunctionDescriptor CryptRetrieveObjectByUrlW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptRetrieveObjectByUrlW$MH = RuntimeHelper.downcallHandle(
+        "CryptRetrieveObjectByUrlW",
+        constants$624.CryptRetrieveObjectByUrlW$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_CANCEL_RETRIEVAL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_CANCEL_RETRIEVAL$MH = RuntimeHelper.downcallHandle(
+        constants$624.PFN_CRYPT_CANCEL_RETRIEVAL$FUNC
+    );
+    static final FunctionDescriptor CryptInstallCancelRetrieval$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptInstallCancelRetrieval$MH = RuntimeHelper.downcallHandle(
+        "CryptInstallCancelRetrieval",
+        constants$624.CryptInstallCancelRetrieval$FUNC
+    );
 }
 
 

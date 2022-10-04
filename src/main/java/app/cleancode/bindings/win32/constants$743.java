@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$743 {
 
-    static final MemorySegment SPLREG_BEEP_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("BeepEnabled");
-    static final MemorySegment SPLREG_NET_POPUP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("NetPopup");
-    static final MemorySegment SPLREG_RETRY_POPUP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RetryPopup");
-    static final MemorySegment SPLREG_NET_POPUP_TO_COMPUTER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("NetPopupToComputer");
-    static final MemorySegment SPLREG_EVENT_LOG$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("EventLog");
-    static final MemorySegment SPLREG_MAJOR_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("MajorVersion");
+    static final MemoryAddress IDC_HELP$ADDR = MemoryAddress.ofLong(32651L);
+    static final MemoryAddress IDC_PIN$ADDR = MemoryAddress.ofLong(32671L);
+    static final MemoryAddress IDC_PERSON$ADDR = MemoryAddress.ofLong(32672L);
+    static final MemoryAddress IDI_APPLICATION$ADDR = MemoryAddress.ofLong(32512L);
+    static final MemoryAddress IDI_HAND$ADDR = MemoryAddress.ofLong(32513L);
+    static final MemoryAddress IDI_QUESTION$ADDR = MemoryAddress.ofLong(32514L);
 }
 
 

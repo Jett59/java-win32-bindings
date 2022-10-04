@@ -9,59 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$343 {
 
-    static final FunctionDescriptor GetTitleBarInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DrawEdge$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTitleBarInfo$MH = RuntimeHelper.downcallHandle(
-        "GetTitleBarInfo",
-        constants$343.GetTitleBarInfo$FUNC
-    );
-    static final FunctionDescriptor GetMenuBarInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetMenuBarInfo$MH = RuntimeHelper.downcallHandle(
-        "GetMenuBarInfo",
-        constants$343.GetMenuBarInfo$FUNC
+    static final MethodHandle DrawEdge$MH = RuntimeHelper.downcallHandle(
+        "DrawEdge",
+        constants$343.DrawEdge$FUNC
     );
-    static final FunctionDescriptor GetScrollBarInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DrawFrameControl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetScrollBarInfo$MH = RuntimeHelper.downcallHandle(
-        "GetScrollBarInfo",
-        constants$343.GetScrollBarInfo$FUNC
+    static final MethodHandle DrawFrameControl$MH = RuntimeHelper.downcallHandle(
+        "DrawFrameControl",
+        constants$343.DrawFrameControl$FUNC
     );
-    static final FunctionDescriptor GetComboBoxInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DrawCaption$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetComboBoxInfo$MH = RuntimeHelper.downcallHandle(
-        "GetComboBoxInfo",
-        constants$343.GetComboBoxInfo$FUNC
-    );
-    static final FunctionDescriptor GetAncestor$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetAncestor$MH = RuntimeHelper.downcallHandle(
-        "GetAncestor",
-        constants$343.GetAncestor$FUNC
+    static final MethodHandle DrawCaption$MH = RuntimeHelper.downcallHandle(
+        "DrawCaption",
+        constants$343.DrawCaption$FUNC
     );
-    static final FunctionDescriptor RealChildWindowFromPoint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DrawAnimatedRects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT")
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RealChildWindowFromPoint$MH = RuntimeHelper.downcallHandle(
-        "RealChildWindowFromPoint",
-        constants$343.RealChildWindowFromPoint$FUNC
+    static final MethodHandle DrawAnimatedRects$MH = RuntimeHelper.downcallHandle(
+        "DrawAnimatedRects",
+        constants$343.DrawAnimatedRects$FUNC
+    );
+    static final FunctionDescriptor GetMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetMessageA$MH = RuntimeHelper.downcallHandle(
+        "GetMessageA",
+        constants$343.GetMessageA$FUNC
+    );
+    static final FunctionDescriptor GetMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetMessageW$MH = RuntimeHelper.downcallHandle(
+        "GetMessageW",
+        constants$343.GetMessageW$FUNC
     );
 }
 

@@ -9,12 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$604 {
 
-    static final MemorySegment szOID_DSALG$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.8");
-    static final MemorySegment szOID_DSALG_CRPT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.8.1");
-    static final MemorySegment szOID_DSALG_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.8.2");
-    static final MemorySegment szOID_DSALG_SIGN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.8.3");
-    static final MemorySegment szOID_DSALG_RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.8.1.1");
-    static final MemorySegment szOID_OIW$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14");
+    static final FunctionDescriptor CertRegisterSystemStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertRegisterSystemStore$MH = RuntimeHelper.downcallHandle(
+        "CertRegisterSystemStore",
+        constants$604.CertRegisterSystemStore$FUNC
+    );
+    static final FunctionDescriptor CertRegisterPhysicalStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertRegisterPhysicalStore$MH = RuntimeHelper.downcallHandle(
+        "CertRegisterPhysicalStore",
+        constants$604.CertRegisterPhysicalStore$FUNC
+    );
+    static final FunctionDescriptor CertUnregisterSystemStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertUnregisterSystemStore$MH = RuntimeHelper.downcallHandle(
+        "CertUnregisterSystemStore",
+        constants$604.CertUnregisterSystemStore$FUNC
+    );
+    static final FunctionDescriptor CertUnregisterPhysicalStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertUnregisterPhysicalStore$MH = RuntimeHelper.downcallHandle(
+        "CertUnregisterPhysicalStore",
+        constants$604.CertUnregisterPhysicalStore$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_ENUM_SYSTEM_STORE_LOCATION$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_ENUM_SYSTEM_STORE_LOCATION$MH = RuntimeHelper.downcallHandle(
+        constants$604.PFN_CERT_ENUM_SYSTEM_STORE_LOCATION$FUNC
+    );
 }
 
 

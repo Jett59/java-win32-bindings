@@ -9,66 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$252 {
 
-    static final FunctionDescriptor AnimateWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor ZombifyActCtx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AnimateWindow$MH = RuntimeHelper.downcallHandle(
-        "AnimateWindow",
-        constants$252.AnimateWindow$FUNC
+    static final MethodHandle ZombifyActCtx$MH = RuntimeHelper.downcallHandle(
+        "ZombifyActCtx",
+        constants$252.ZombifyActCtx$FUNC
     );
-    static final FunctionDescriptor UpdateLayeredWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle UpdateLayeredWindow$MH = RuntimeHelper.downcallHandle(
-        "UpdateLayeredWindow",
-        constants$252.UpdateLayeredWindow$FUNC
-    );
-    static final FunctionDescriptor UpdateLayeredWindowIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ActivateActCtx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle UpdateLayeredWindowIndirect$MH = RuntimeHelper.downcallHandle(
-        "UpdateLayeredWindowIndirect",
-        constants$252.UpdateLayeredWindowIndirect$FUNC
+    static final MethodHandle ActivateActCtx$MH = RuntimeHelper.downcallHandle(
+        "ActivateActCtx",
+        constants$252.ActivateActCtx$FUNC
     );
-    static final FunctionDescriptor GetLayeredWindowAttributes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeactivateActCtx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DeactivateActCtx$MH = RuntimeHelper.downcallHandle(
+        "DeactivateActCtx",
+        constants$252.DeactivateActCtx$FUNC
+    );
+    static final FunctionDescriptor GetCurrentActCtx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCurrentActCtx$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentActCtx",
+        constants$252.GetCurrentActCtx$FUNC
+    );
+    static final FunctionDescriptor FindActCtxSectionStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetLayeredWindowAttributes$MH = RuntimeHelper.downcallHandle(
-        "GetLayeredWindowAttributes",
-        constants$252.GetLayeredWindowAttributes$FUNC
+    static final MethodHandle FindActCtxSectionStringA$MH = RuntimeHelper.downcallHandle(
+        "FindActCtxSectionStringA",
+        constants$252.FindActCtxSectionStringA$FUNC
     );
-    static final FunctionDescriptor PrintWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PrintWindow$MH = RuntimeHelper.downcallHandle(
-        "PrintWindow",
-        constants$252.PrintWindow$FUNC
-    );
-    static final FunctionDescriptor SetLayeredWindowAttributes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindActCtxSectionStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetLayeredWindowAttributes$MH = RuntimeHelper.downcallHandle(
-        "SetLayeredWindowAttributes",
-        constants$252.SetLayeredWindowAttributes$FUNC
+    static final MethodHandle FindActCtxSectionStringW$MH = RuntimeHelper.downcallHandle(
+        "FindActCtxSectionStringW",
+        constants$252.FindActCtxSectionStringW$FUNC
     );
 }
 

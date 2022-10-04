@@ -9,64 +9,40 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$91 {
 
-    static final FunctionDescriptor WaitCommEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LPTOP_LEVEL_EXCEPTION_FILTER$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WaitCommEvent$MH = RuntimeHelper.downcallHandle(
-        "WaitCommEvent",
-        constants$91.WaitCommEvent$FUNC
+    static final MethodHandle LPTOP_LEVEL_EXCEPTION_FILTER$MH = RuntimeHelper.downcallHandle(
+        constants$91.LPTOP_LEVEL_EXCEPTION_FILTER$FUNC
     );
-    static final FunctionDescriptor OpenCommPort$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor RaiseException$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OpenCommPort$MH = RuntimeHelper.downcallHandle(
-        "OpenCommPort",
-        constants$91.OpenCommPort$FUNC
-    );
-    static final FunctionDescriptor GetCommPorts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCommPorts$MH = RuntimeHelper.downcallHandle(
-        "GetCommPorts",
-        constants$91.GetCommPorts$FUNC
+    static final MethodHandle RaiseException$MH = RuntimeHelper.downcallHandle(
+        "RaiseException",
+        constants$91.RaiseException$FUNC
     );
-    static final FunctionDescriptor SetTapePosition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetTapePosition$MH = RuntimeHelper.downcallHandle(
-        "SetTapePosition",
-        constants$91.SetTapePosition$FUNC
-    );
-    static final FunctionDescriptor GetTapePosition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor UnhandledExceptionFilter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTapePosition$MH = RuntimeHelper.downcallHandle(
-        "GetTapePosition",
-        constants$91.GetTapePosition$FUNC
+    static final MethodHandle UnhandledExceptionFilter$MH = RuntimeHelper.downcallHandle(
+        "UnhandledExceptionFilter",
+        constants$91.UnhandledExceptionFilter$FUNC
     );
-    static final FunctionDescriptor PrepareTape$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor SetUnhandledExceptionFilter$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PrepareTape$MH = RuntimeHelper.downcallHandle(
-        "PrepareTape",
-        constants$91.PrepareTape$FUNC
+    static final MethodHandle SetUnhandledExceptionFilter$MH = RuntimeHelper.downcallHandle(
+        "SetUnhandledExceptionFilter",
+        constants$91.SetUnhandledExceptionFilter$FUNC
+    );
+    static final FunctionDescriptor GetLastError$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetLastError$MH = RuntimeHelper.downcallHandle(
+        "GetLastError",
+        constants$91.GetLastError$FUNC
     );
 }
 

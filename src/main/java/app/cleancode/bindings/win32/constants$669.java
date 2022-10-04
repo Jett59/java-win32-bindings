@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$669 {
 
-    static final MemorySegment szOID_ENROLL_EKVERIFYCREDS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.32");
-    static final MemorySegment szOID_ENROLL_SCEP_ERROR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.33");
-    static final MemorySegment szOID_ENROLL_SCEP_SERVER_STATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.34");
-    static final MemorySegment szOID_ENROLL_SCEP_CHALLENGE_ANSWER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.35");
-    static final MemorySegment szOID_ENROLL_SCEP_CLIENT_REQUEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.37");
-    static final MemorySegment szOID_ENROLL_SCEP_SERVER_MESSAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.38");
+    static final FunctionDescriptor ReadPrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReadPrinter$MH = RuntimeHelper.downcallHandle(
+        "ReadPrinter",
+        constants$669.ReadPrinter$FUNC
+    );
+    static final FunctionDescriptor EndDocPrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EndDocPrinter$MH = RuntimeHelper.downcallHandle(
+        "EndDocPrinter",
+        constants$669.EndDocPrinter$FUNC
+    );
+    static final FunctionDescriptor AddJobA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddJobA$MH = RuntimeHelper.downcallHandle(
+        "AddJobA",
+        constants$669.AddJobA$FUNC
+    );
+    static final FunctionDescriptor AddJobW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddJobW$MH = RuntimeHelper.downcallHandle(
+        "AddJobW",
+        constants$669.AddJobW$FUNC
+    );
+    static final FunctionDescriptor ScheduleJob$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ScheduleJob$MH = RuntimeHelper.downcallHandle(
+        "ScheduleJob",
+        constants$669.ScheduleJob$FUNC
+    );
+    static final FunctionDescriptor PrinterProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PrinterProperties$MH = RuntimeHelper.downcallHandle(
+        "PrinterProperties",
+        constants$669.PrinterProperties$FUNC
+    );
 }
 
 

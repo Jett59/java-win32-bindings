@@ -9,61 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$371 {
 
-    static final FunctionDescriptor EnumSystemLanguageGroupsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CharUpperBuffA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumSystemLanguageGroupsA$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemLanguageGroupsA",
-        constants$371.EnumSystemLanguageGroupsA$FUNC
+    static final MethodHandle CharUpperBuffA$MH = RuntimeHelper.downcallHandle(
+        "CharUpperBuffA",
+        constants$371.CharUpperBuffA$FUNC
     );
-    static final FunctionDescriptor EnumSystemLanguageGroupsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CharUpperBuffW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumSystemLanguageGroupsW$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemLanguageGroupsW",
-        constants$371.EnumSystemLanguageGroupsW$FUNC
+    static final MethodHandle CharUpperBuffW$MH = RuntimeHelper.downcallHandle(
+        "CharUpperBuffW",
+        constants$371.CharUpperBuffW$FUNC
     );
-    static final FunctionDescriptor EnumLanguageGroupLocalesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CharLowerA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CharLowerA$MH = RuntimeHelper.downcallHandle(
+        "CharLowerA",
+        constants$371.CharLowerA$FUNC
+    );
+    static final FunctionDescriptor CharLowerW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CharLowerW$MH = RuntimeHelper.downcallHandle(
+        "CharLowerW",
+        constants$371.CharLowerW$FUNC
+    );
+    static final FunctionDescriptor CharLowerBuffA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumLanguageGroupLocalesA$MH = RuntimeHelper.downcallHandle(
-        "EnumLanguageGroupLocalesA",
-        constants$371.EnumLanguageGroupLocalesA$FUNC
+    static final MethodHandle CharLowerBuffA$MH = RuntimeHelper.downcallHandle(
+        "CharLowerBuffA",
+        constants$371.CharLowerBuffA$FUNC
     );
-    static final FunctionDescriptor EnumLanguageGroupLocalesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CharLowerBuffW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumLanguageGroupLocalesW$MH = RuntimeHelper.downcallHandle(
-        "EnumLanguageGroupLocalesW",
-        constants$371.EnumLanguageGroupLocalesW$FUNC
-    );
-    static final FunctionDescriptor EnumUILanguagesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumUILanguagesA$MH = RuntimeHelper.downcallHandle(
-        "EnumUILanguagesA",
-        constants$371.EnumUILanguagesA$FUNC
-    );
-    static final FunctionDescriptor EnumUILanguagesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumUILanguagesW$MH = RuntimeHelper.downcallHandle(
-        "EnumUILanguagesW",
-        constants$371.EnumUILanguagesW$FUNC
+    static final MethodHandle CharLowerBuffW$MH = RuntimeHelper.downcallHandle(
+        "CharLowerBuffW",
+        constants$371.CharLowerBuffW$FUNC
     );
 }
 

@@ -9,65 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$372 {
 
-    static final FunctionDescriptor EnumSystemCodePagesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CharNextA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CharNextA$MH = RuntimeHelper.downcallHandle(
+        "CharNextA",
+        constants$372.CharNextA$FUNC
+    );
+    static final FunctionDescriptor CharNextW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CharNextW$MH = RuntimeHelper.downcallHandle(
+        "CharNextW",
+        constants$372.CharNextW$FUNC
+    );
+    static final FunctionDescriptor CharPrevA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CharPrevA$MH = RuntimeHelper.downcallHandle(
+        "CharPrevA",
+        constants$372.CharPrevA$FUNC
+    );
+    static final FunctionDescriptor CharPrevW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CharPrevW$MH = RuntimeHelper.downcallHandle(
+        "CharPrevW",
+        constants$372.CharPrevW$FUNC
+    );
+    static final FunctionDescriptor CharNextExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumSystemCodePagesA$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemCodePagesA",
-        constants$372.EnumSystemCodePagesA$FUNC
+    static final MethodHandle CharNextExA$MH = RuntimeHelper.downcallHandle(
+        "CharNextExA",
+        constants$372.CharNextExA$FUNC
     );
-    static final FunctionDescriptor EnumSystemCodePagesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CharPrevExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumSystemCodePagesW$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemCodePagesW",
-        constants$372.EnumSystemCodePagesW$FUNC
-    );
-    static final FunctionDescriptor IdnToAscii$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle IdnToAscii$MH = RuntimeHelper.downcallHandle(
-        "IdnToAscii",
-        constants$372.IdnToAscii$FUNC
-    );
-    static final FunctionDescriptor IdnToUnicode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle IdnToUnicode$MH = RuntimeHelper.downcallHandle(
-        "IdnToUnicode",
-        constants$372.IdnToUnicode$FUNC
-    );
-    static final FunctionDescriptor IdnToNameprepUnicode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle IdnToNameprepUnicode$MH = RuntimeHelper.downcallHandle(
-        "IdnToNameprepUnicode",
-        constants$372.IdnToNameprepUnicode$FUNC
-    );
-    static final FunctionDescriptor NormalizeString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle NormalizeString$MH = RuntimeHelper.downcallHandle(
-        "NormalizeString",
-        constants$372.NormalizeString$FUNC
+    static final MethodHandle CharPrevExA$MH = RuntimeHelper.downcallHandle(
+        "CharPrevExA",
+        constants$372.CharPrevExA$FUNC
     );
 }
 

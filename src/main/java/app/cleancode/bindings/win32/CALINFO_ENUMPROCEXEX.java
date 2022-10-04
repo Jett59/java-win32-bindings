@@ -11,13 +11,13 @@ public interface CALINFO_ENUMPROCEXEX {
 
     int apply(java.lang.foreign.MemoryAddress _x0, int _x1, java.lang.foreign.MemoryAddress _x2, long _x3);
     static MemorySegment allocate(CALINFO_ENUMPROCEXEX fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(CALINFO_ENUMPROCEXEX.class, fi, constants$375.CALINFO_ENUMPROCEXEX$FUNC, session);
+        return RuntimeHelper.upcallStub(CALINFO_ENUMPROCEXEX.class, fi, constants$480.CALINFO_ENUMPROCEXEX$FUNC, session);
     }
     static CALINFO_ENUMPROCEXEX ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, int __x1, java.lang.foreign.MemoryAddress __x2, long __x3) -> {
             try {
-                return (int)constants$375.CALINFO_ENUMPROCEXEX$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, (java.lang.foreign.Addressable)__x2, __x3);
+                return (int)constants$480.CALINFO_ENUMPROCEXEX$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, (java.lang.foreign.Addressable)__x2, __x3);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

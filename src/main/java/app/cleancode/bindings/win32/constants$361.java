@@ -9,64 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$361 {
 
-    static final FunctionDescriptor LoadStringByReference$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DialogBoxParamW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle LoadStringByReference$MH = RuntimeHelper.downcallHandle(
-        "LoadStringByReference",
-        constants$361.LoadStringByReference$FUNC
+    static final MethodHandle DialogBoxParamW$MH = RuntimeHelper.downcallHandle(
+        "DialogBoxParamW",
+        constants$361.DialogBoxParamW$FUNC
     );
-    static final FunctionDescriptor IsDBCSLeadByte$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
-    );
-    static final MethodHandle IsDBCSLeadByte$MH = RuntimeHelper.downcallHandle(
-        "IsDBCSLeadByte",
-        constants$361.IsDBCSLeadByte$FUNC
-    );
-    static final FunctionDescriptor IsDBCSLeadByteEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
-    );
-    static final MethodHandle IsDBCSLeadByteEx$MH = RuntimeHelper.downcallHandle(
-        "IsDBCSLeadByteEx",
-        constants$361.IsDBCSLeadByteEx$FUNC
-    );
-    static final FunctionDescriptor LocaleNameToLCID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DialogBoxIndirectParamA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle LocaleNameToLCID$MH = RuntimeHelper.downcallHandle(
-        "LocaleNameToLCID",
-        constants$361.LocaleNameToLCID$FUNC
-    );
-    static final FunctionDescriptor LCIDToLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle LCIDToLocaleName$MH = RuntimeHelper.downcallHandle(
-        "LCIDToLocaleName",
-        constants$361.LCIDToLocaleName$FUNC
-    );
-    static final FunctionDescriptor GetDurationFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DialogBoxIndirectParamA$MH = RuntimeHelper.downcallHandle(
+        "DialogBoxIndirectParamA",
+        constants$361.DialogBoxIndirectParamA$FUNC
+    );
+    static final FunctionDescriptor DialogBoxIndirectParamW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DialogBoxIndirectParamW$MH = RuntimeHelper.downcallHandle(
+        "DialogBoxIndirectParamW",
+        constants$361.DialogBoxIndirectParamW$FUNC
+    );
+    static final FunctionDescriptor EndDialog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EndDialog$MH = RuntimeHelper.downcallHandle(
+        "EndDialog",
+        constants$361.EndDialog$FUNC
+    );
+    static final FunctionDescriptor GetDlgItem$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetDurationFormat$MH = RuntimeHelper.downcallHandle(
-        "GetDurationFormat",
-        constants$361.GetDurationFormat$FUNC
+    static final MethodHandle GetDlgItem$MH = RuntimeHelper.downcallHandle(
+        "GetDlgItem",
+        constants$361.GetDlgItem$FUNC
+    );
+    static final FunctionDescriptor SetDlgItemInt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDlgItemInt$MH = RuntimeHelper.downcallHandle(
+        "SetDlgItemInt",
+        constants$361.SetDlgItemInt$FUNC
     );
 }
 

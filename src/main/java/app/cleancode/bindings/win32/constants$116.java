@@ -9,58 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$116 {
 
-    static final FunctionDescriptor SetSearchPathMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TlsSetValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle TlsSetValue$MH = RuntimeHelper.downcallHandle(
+        "TlsSetValue",
+        constants$116.TlsSetValue$FUNC
+    );
+    static final FunctionDescriptor TlsFree$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetSearchPathMode$MH = RuntimeHelper.downcallHandle(
-        "SetSearchPathMode",
-        constants$116.SetSearchPathMode$FUNC
+    static final MethodHandle TlsFree$MH = RuntimeHelper.downcallHandle(
+        "TlsFree",
+        constants$116.TlsFree$FUNC
     );
-    static final FunctionDescriptor CreateDirectoryExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateProcessA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateDirectoryExA$MH = RuntimeHelper.downcallHandle(
-        "CreateDirectoryExA",
-        constants$116.CreateDirectoryExA$FUNC
-    );
-    static final FunctionDescriptor CreateDirectoryExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateDirectoryExW$MH = RuntimeHelper.downcallHandle(
-        "CreateDirectoryExW",
-        constants$116.CreateDirectoryExW$FUNC
-    );
-    static final FunctionDescriptor CreateDirectoryTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateDirectoryTransactedA$MH = RuntimeHelper.downcallHandle(
-        "CreateDirectoryTransactedA",
-        constants$116.CreateDirectoryTransactedA$FUNC
+    static final MethodHandle CreateProcessA$MH = RuntimeHelper.downcallHandle(
+        "CreateProcessA",
+        constants$116.CreateProcessA$FUNC
     );
-    static final FunctionDescriptor CreateDirectoryTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateProcessW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateDirectoryTransactedW$MH = RuntimeHelper.downcallHandle(
-        "CreateDirectoryTransactedW",
-        constants$116.CreateDirectoryTransactedW$FUNC
+    static final MethodHandle CreateProcessW$MH = RuntimeHelper.downcallHandle(
+        "CreateProcessW",
+        constants$116.CreateProcessW$FUNC
     );
-    static final FunctionDescriptor RemoveDirectoryTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor SetProcessShutdownParameters$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RemoveDirectoryTransactedA$MH = RuntimeHelper.downcallHandle(
-        "RemoveDirectoryTransactedA",
-        constants$116.RemoveDirectoryTransactedA$FUNC
+    static final MethodHandle SetProcessShutdownParameters$MH = RuntimeHelper.downcallHandle(
+        "SetProcessShutdownParameters",
+        constants$116.SetProcessShutdownParameters$FUNC
+    );
+    static final FunctionDescriptor GetProcessVersion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetProcessVersion$MH = RuntimeHelper.downcallHandle(
+        "GetProcessVersion",
+        constants$116.GetProcessVersion$FUNC
     );
 }
 

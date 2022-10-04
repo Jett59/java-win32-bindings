@@ -9,49 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$74 {
 
-    static final FunctionDescriptor GlobalReAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FileTimeToLocalFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FileTimeToLocalFileTime$MH = RuntimeHelper.downcallHandle(
+        "FileTimeToLocalFileTime",
+        constants$74.FileTimeToLocalFileTime$FUNC
+    );
+    static final FunctionDescriptor FindClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindClose$MH = RuntimeHelper.downcallHandle(
+        "FindClose",
+        constants$74.FindClose$FUNC
+    );
+    static final FunctionDescriptor FindCloseChangeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindCloseChangeNotification$MH = RuntimeHelper.downcallHandle(
+        "FindCloseChangeNotification",
+        constants$74.FindCloseChangeNotification$FUNC
+    );
+    static final FunctionDescriptor FindFirstChangeNotificationA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GlobalReAlloc$MH = RuntimeHelper.downcallHandle(
-        "GlobalReAlloc",
-        constants$74.GlobalReAlloc$FUNC
+    static final MethodHandle FindFirstChangeNotificationA$MH = RuntimeHelper.downcallHandle(
+        "FindFirstChangeNotificationA",
+        constants$74.FindFirstChangeNotificationA$FUNC
     );
-    static final FunctionDescriptor GlobalSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor FindFirstChangeNotificationW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FindFirstChangeNotificationW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstChangeNotificationW",
+        constants$74.FindFirstChangeNotificationW$FUNC
+    );
+    static final FunctionDescriptor FindFirstFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GlobalSize$MH = RuntimeHelper.downcallHandle(
-        "GlobalSize",
-        constants$74.GlobalSize$FUNC
-    );
-    static final FunctionDescriptor GlobalUnlock$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GlobalUnlock$MH = RuntimeHelper.downcallHandle(
-        "GlobalUnlock",
-        constants$74.GlobalUnlock$FUNC
-    );
-    static final FunctionDescriptor GlobalLock$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GlobalLock$MH = RuntimeHelper.downcallHandle(
-        "GlobalLock",
-        constants$74.GlobalLock$FUNC
-    );
-    static final FunctionDescriptor GlobalFlags$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GlobalFlags$MH = RuntimeHelper.downcallHandle(
-        "GlobalFlags",
-        constants$74.GlobalFlags$FUNC
-    );
-    static final FunctionDescriptor GlobalHandle$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GlobalHandle$MH = RuntimeHelper.downcallHandle(
-        "GlobalHandle",
-        constants$74.GlobalHandle$FUNC
+    static final MethodHandle FindFirstFileA$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFileA",
+        constants$74.FindFirstFileA$FUNC
     );
 }
 

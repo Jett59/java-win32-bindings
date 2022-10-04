@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$729 {
 
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_PROCESS_NAME_LIST_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_URL_LIST_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_DISABLE_INFORMATION_EVENTS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_LOG_FILE_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("L");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_TIMEOUT_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("T");
-    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_MAX_AGE_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment IMAGE_ARCHIVE_LONGNAMES_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("//              ");
+    static final MemorySegment IMAGE_ARCHIVE_HYBRIDMAP_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("/<HYBRIDMAP>/   ");
+    static final MemorySegment IMAGE_POLICY_SECTION_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".tPolicy");
+    static final MemorySegment UNIFIEDBUILDREVISION_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
+    static final MemorySegment UNIFIEDBUILDREVISION_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("U");
+    static final MemorySegment DEVICEFAMILYDEVICEFORM_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
 }
 
 

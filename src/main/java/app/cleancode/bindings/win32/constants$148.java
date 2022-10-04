@@ -9,53 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$148 {
 
-    static final FunctionDescriptor ReleaseActCtx$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ReleaseActCtx$MH = RuntimeHelper.downcallHandle(
-        "ReleaseActCtx",
-        constants$148.ReleaseActCtx$FUNC
-    );
-    static final FunctionDescriptor ZombifyActCtx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ZombifyActCtx$MH = RuntimeHelper.downcallHandle(
-        "ZombifyActCtx",
-        constants$148.ZombifyActCtx$FUNC
-    );
-    static final FunctionDescriptor ActivateActCtx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ENUMRESTYPEPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ActivateActCtx$MH = RuntimeHelper.downcallHandle(
-        "ActivateActCtx",
-        constants$148.ActivateActCtx$FUNC
-    );
-    static final FunctionDescriptor DeactivateActCtx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle DeactivateActCtx$MH = RuntimeHelper.downcallHandle(
-        "DeactivateActCtx",
-        constants$148.DeactivateActCtx$FUNC
+    static final MethodHandle ENUMRESTYPEPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$148.ENUMRESTYPEPROCW$FUNC
     );
-    static final FunctionDescriptor GetCurrentActCtx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DisableThreadLibraryCalls$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCurrentActCtx$MH = RuntimeHelper.downcallHandle(
-        "GetCurrentActCtx",
-        constants$148.GetCurrentActCtx$FUNC
+    static final MethodHandle DisableThreadLibraryCalls$MH = RuntimeHelper.downcallHandle(
+        "DisableThreadLibraryCalls",
+        constants$148.DisableThreadLibraryCalls$FUNC
     );
-    static final FunctionDescriptor FindActCtxSectionStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindResourceExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle FindResourceExW$MH = RuntimeHelper.downcallHandle(
+        "FindResourceExW",
+        constants$148.FindResourceExW$FUNC
+    );
+    static final FunctionDescriptor FindStringOrdinal$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FindStringOrdinal$MH = RuntimeHelper.downcallHandle(
+        "FindStringOrdinal",
+        constants$148.FindStringOrdinal$FUNC
+    );
+    static final FunctionDescriptor FreeLibrary$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindActCtxSectionStringA$MH = RuntimeHelper.downcallHandle(
-        "FindActCtxSectionStringA",
-        constants$148.FindActCtxSectionStringA$FUNC
+    static final MethodHandle FreeLibrary$MH = RuntimeHelper.downcallHandle(
+        "FreeLibrary",
+        constants$148.FreeLibrary$FUNC
     );
 }
 

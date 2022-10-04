@@ -9,64 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$396 {
 
-    static final FunctionDescriptor RegSaveKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMenuItemInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegSaveKeyExW$MH = RuntimeHelper.downcallHandle(
-        "RegSaveKeyExW",
-        constants$396.RegSaveKeyExW$FUNC
-    );
-    static final FunctionDescriptor WNetAddConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetAddConnectionA$MH = RuntimeHelper.downcallHandle(
-        "WNetAddConnectionA",
-        constants$396.WNetAddConnectionA$FUNC
+    static final MethodHandle GetMenuItemInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetMenuItemInfoA",
+        constants$396.GetMenuItemInfoA$FUNC
     );
-    static final FunctionDescriptor WNetAddConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMenuItemInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetAddConnectionW$MH = RuntimeHelper.downcallHandle(
-        "WNetAddConnectionW",
-        constants$396.WNetAddConnectionW$FUNC
+    static final MethodHandle GetMenuItemInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetMenuItemInfoW",
+        constants$396.GetMenuItemInfoW$FUNC
     );
-    static final FunctionDescriptor WNetAddConnection2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetMenuItemInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetMenuItemInfoA$MH = RuntimeHelper.downcallHandle(
+        "SetMenuItemInfoA",
+        constants$396.SetMenuItemInfoA$FUNC
+    );
+    static final FunctionDescriptor SetMenuItemInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetMenuItemInfoW$MH = RuntimeHelper.downcallHandle(
+        "SetMenuItemInfoW",
+        constants$396.SetMenuItemInfoW$FUNC
+    );
+    static final FunctionDescriptor GetMenuDefaultItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetAddConnection2A$MH = RuntimeHelper.downcallHandle(
-        "WNetAddConnection2A",
-        constants$396.WNetAddConnection2A$FUNC
+    static final MethodHandle GetMenuDefaultItem$MH = RuntimeHelper.downcallHandle(
+        "GetMenuDefaultItem",
+        constants$396.GetMenuDefaultItem$FUNC
     );
-    static final FunctionDescriptor WNetAddConnection2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetMenuDefaultItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetAddConnection2W$MH = RuntimeHelper.downcallHandle(
-        "WNetAddConnection2W",
-        constants$396.WNetAddConnection2W$FUNC
-    );
-    static final FunctionDescriptor WNetAddConnection3A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WNetAddConnection3A$MH = RuntimeHelper.downcallHandle(
-        "WNetAddConnection3A",
-        constants$396.WNetAddConnection3A$FUNC
+    static final MethodHandle SetMenuDefaultItem$MH = RuntimeHelper.downcallHandle(
+        "SetMenuDefaultItem",
+        constants$396.SetMenuDefaultItem$FUNC
     );
 }
 

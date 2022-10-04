@@ -9,12 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$681 {
 
-    static final MemorySegment CRYPT_OID_DECODE_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllDecodeObject");
-    static final MemorySegment CRYPT_OID_ENCODE_OBJECT_EX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllEncodeObjectEx");
-    static final MemorySegment CRYPT_OID_DECODE_OBJECT_EX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllDecodeObjectEx");
-    static final MemorySegment CRYPT_OID_CREATE_COM_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllCreateCOMObject");
-    static final MemorySegment CRYPT_OID_VERIFY_REVOCATION_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllVerifyRevocation");
-    static final MemorySegment CRYPT_OID_VERIFY_CTL_USAGE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllVerifyCTLUsage");
+    static final FunctionDescriptor DeletePrinterConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrinterConnectionA$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterConnectionA",
+        constants$681.DeletePrinterConnectionA$FUNC
+    );
+    static final FunctionDescriptor DeletePrinterConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrinterConnectionW$MH = RuntimeHelper.downcallHandle(
+        "DeletePrinterConnectionW",
+        constants$681.DeletePrinterConnectionW$FUNC
+    );
+    static final FunctionDescriptor ConnectToPrinterDlg$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ConnectToPrinterDlg$MH = RuntimeHelper.downcallHandle(
+        "ConnectToPrinterDlg",
+        constants$681.ConnectToPrinterDlg$FUNC
+    );
+    static final FunctionDescriptor AddPrintProvidorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPrintProvidorA$MH = RuntimeHelper.downcallHandle(
+        "AddPrintProvidorA",
+        constants$681.AddPrintProvidorA$FUNC
+    );
+    static final FunctionDescriptor AddPrintProvidorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddPrintProvidorW$MH = RuntimeHelper.downcallHandle(
+        "AddPrintProvidorW",
+        constants$681.AddPrintProvidorW$FUNC
+    );
+    static final FunctionDescriptor DeletePrintProvidorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeletePrintProvidorA$MH = RuntimeHelper.downcallHandle(
+        "DeletePrintProvidorA",
+        constants$681.DeletePrintProvidorA$FUNC
+    );
 }
 
 

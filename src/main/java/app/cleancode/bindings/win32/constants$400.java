@@ -9,61 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$400 {
 
-    static final FunctionDescriptor WNetDisconnectDialog1A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetActiveWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetDisconnectDialog1A$MH = RuntimeHelper.downcallHandle(
-        "WNetDisconnectDialog1A",
-        constants$400.WNetDisconnectDialog1A$FUNC
+    static final MethodHandle SetActiveWindow$MH = RuntimeHelper.downcallHandle(
+        "SetActiveWindow",
+        constants$400.SetActiveWindow$FUNC
     );
-    static final FunctionDescriptor WNetDisconnectDialog1W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetForegroundWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetForegroundWindow$MH = RuntimeHelper.downcallHandle(
+        "GetForegroundWindow",
+        constants$400.GetForegroundWindow$FUNC
+    );
+    static final FunctionDescriptor PaintDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetDisconnectDialog1W$MH = RuntimeHelper.downcallHandle(
-        "WNetDisconnectDialog1W",
-        constants$400.WNetDisconnectDialog1W$FUNC
+    static final MethodHandle PaintDesktop$MH = RuntimeHelper.downcallHandle(
+        "PaintDesktop",
+        constants$400.PaintDesktop$FUNC
     );
-    static final FunctionDescriptor WNetOpenEnumA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SwitchToThisWindow$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SwitchToThisWindow$MH = RuntimeHelper.downcallHandle(
+        "SwitchToThisWindow",
+        constants$400.SwitchToThisWindow$FUNC
+    );
+    static final FunctionDescriptor SetForegroundWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetOpenEnumA$MH = RuntimeHelper.downcallHandle(
-        "WNetOpenEnumA",
-        constants$400.WNetOpenEnumA$FUNC
+    static final MethodHandle SetForegroundWindow$MH = RuntimeHelper.downcallHandle(
+        "SetForegroundWindow",
+        constants$400.SetForegroundWindow$FUNC
     );
-    static final FunctionDescriptor WNetOpenEnumW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor AllowSetForegroundWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetOpenEnumW$MH = RuntimeHelper.downcallHandle(
-        "WNetOpenEnumW",
-        constants$400.WNetOpenEnumW$FUNC
-    );
-    static final FunctionDescriptor WNetEnumResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetEnumResourceA$MH = RuntimeHelper.downcallHandle(
-        "WNetEnumResourceA",
-        constants$400.WNetEnumResourceA$FUNC
-    );
-    static final FunctionDescriptor WNetEnumResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetEnumResourceW$MH = RuntimeHelper.downcallHandle(
-        "WNetEnumResourceW",
-        constants$400.WNetEnumResourceW$FUNC
+    static final MethodHandle AllowSetForegroundWindow$MH = RuntimeHelper.downcallHandle(
+        "AllowSetForegroundWindow",
+        constants$400.AllowSetForegroundWindow$FUNC
     );
 }
 

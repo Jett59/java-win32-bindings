@@ -9,60 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$282 {
 
-    static final FunctionDescriptor SetCapture$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetObjectType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetCapture$MH = RuntimeHelper.downcallHandle(
-        "SetCapture",
-        constants$282.SetCapture$FUNC
+    static final MethodHandle GetObjectType$MH = RuntimeHelper.downcallHandle(
+        "GetObjectType",
+        constants$282.GetObjectType$FUNC
     );
-    static final FunctionDescriptor ReleaseCapture$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle ReleaseCapture$MH = RuntimeHelper.downcallHandle(
-        "ReleaseCapture",
-        constants$282.ReleaseCapture$FUNC
-    );
-    static final FunctionDescriptor MsgWaitForMultipleObjects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetOutlineTextMetricsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle MsgWaitForMultipleObjects$MH = RuntimeHelper.downcallHandle(
-        "MsgWaitForMultipleObjects",
-        constants$282.MsgWaitForMultipleObjects$FUNC
-    );
-    static final FunctionDescriptor MsgWaitForMultipleObjectsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle MsgWaitForMultipleObjectsEx$MH = RuntimeHelper.downcallHandle(
-        "MsgWaitForMultipleObjectsEx",
-        constants$282.MsgWaitForMultipleObjectsEx$FUNC
-    );
-    static final FunctionDescriptor SetTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetTimer$MH = RuntimeHelper.downcallHandle(
-        "SetTimer",
-        constants$282.SetTimer$FUNC
+    static final MethodHandle GetOutlineTextMetricsA$MH = RuntimeHelper.downcallHandle(
+        "GetOutlineTextMetricsA",
+        constants$282.GetOutlineTextMetricsA$FUNC
     );
-    static final FunctionDescriptor SetCoalescableTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetOutlineTextMetricsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetOutlineTextMetricsW$MH = RuntimeHelper.downcallHandle(
+        "GetOutlineTextMetricsW",
+        constants$282.GetOutlineTextMetricsW$FUNC
+    );
+    static final FunctionDescriptor GetPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPaletteEntries$MH = RuntimeHelper.downcallHandle(
+        "GetPaletteEntries",
+        constants$282.GetPaletteEntries$FUNC
+    );
+    static final FunctionDescriptor GetPixel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetCoalescableTimer$MH = RuntimeHelper.downcallHandle(
-        "SetCoalescableTimer",
-        constants$282.SetCoalescableTimer$FUNC
+    static final MethodHandle GetPixel$MH = RuntimeHelper.downcallHandle(
+        "GetPixel",
+        constants$282.GetPixel$FUNC
+    );
+    static final FunctionDescriptor GetPixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPixelFormat$MH = RuntimeHelper.downcallHandle(
+        "GetPixelFormat",
+        constants$282.GetPixelFormat$FUNC
     );
 }
 

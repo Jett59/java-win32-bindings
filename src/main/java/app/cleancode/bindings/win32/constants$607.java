@@ -9,12 +9,77 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$607 {
 
-    static final MemorySegment szOID_OIWSEC_mdc2RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.14");
-    static final MemorySegment szOID_OIWSEC_shaRSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.15");
-    static final MemorySegment szOID_OIWSEC_dhCommMod$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.16");
-    static final MemorySegment szOID_OIWSEC_desEDE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.17");
-    static final MemorySegment szOID_OIWSEC_sha$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.18");
-    static final MemorySegment szOID_OIWSEC_mdc2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.19");
+    static final FunctionDescriptor CryptMsgGetAndVerifySigner$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgGetAndVerifySigner$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgGetAndVerifySigner",
+        constants$607.CryptMsgGetAndVerifySigner$FUNC
+    );
+    static final FunctionDescriptor CryptMsgSignCTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgSignCTL$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgSignCTL",
+        constants$607.CryptMsgSignCTL$FUNC
+    );
+    static final FunctionDescriptor CryptMsgEncodeAndSignCTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgEncodeAndSignCTL$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgEncodeAndSignCTL",
+        constants$607.CryptMsgEncodeAndSignCTL$FUNC
+    );
+    static final FunctionDescriptor CertFindSubjectInSortedCTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindSubjectInSortedCTL$MH = RuntimeHelper.downcallHandle(
+        "CertFindSubjectInSortedCTL",
+        constants$607.CertFindSubjectInSortedCTL$FUNC
+    );
+    static final FunctionDescriptor CertEnumSubjectInSortedCTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertEnumSubjectInSortedCTL$MH = RuntimeHelper.downcallHandle(
+        "CertEnumSubjectInSortedCTL",
+        constants$607.CertEnumSubjectInSortedCTL$FUNC
+    );
+    static final FunctionDescriptor CertVerifyCTLUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertVerifyCTLUsage$MH = RuntimeHelper.downcallHandle(
+        "CertVerifyCTLUsage",
+        constants$607.CertVerifyCTLUsage$FUNC
+    );
 }
 
 

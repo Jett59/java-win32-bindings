@@ -9,69 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$210 {
 
-    static final FunctionDescriptor ExtTextOutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GlobalFindAtomW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ExtTextOutA$MH = RuntimeHelper.downcallHandle(
-        "ExtTextOutA",
-        constants$210.ExtTextOutA$FUNC
+    static final MethodHandle GlobalFindAtomW$MH = RuntimeHelper.downcallHandle(
+        "GlobalFindAtomW",
+        constants$210.GlobalFindAtomW$FUNC
     );
-    static final FunctionDescriptor ExtTextOutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GlobalGetAtomNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GlobalGetAtomNameA$MH = RuntimeHelper.downcallHandle(
+        "GlobalGetAtomNameA",
+        constants$210.GlobalGetAtomNameA$FUNC
+    );
+    static final FunctionDescriptor GlobalGetAtomNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GlobalGetAtomNameW$MH = RuntimeHelper.downcallHandle(
+        "GlobalGetAtomNameW",
+        constants$210.GlobalGetAtomNameW$FUNC
+    );
+    static final FunctionDescriptor AddAtomA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ExtTextOutW$MH = RuntimeHelper.downcallHandle(
-        "ExtTextOutW",
-        constants$210.ExtTextOutW$FUNC
+    static final MethodHandle AddAtomA$MH = RuntimeHelper.downcallHandle(
+        "AddAtomA",
+        constants$210.AddAtomA$FUNC
     );
-    static final FunctionDescriptor PolyTextOutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor AddAtomW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PolyTextOutA$MH = RuntimeHelper.downcallHandle(
-        "PolyTextOutA",
-        constants$210.PolyTextOutA$FUNC
+    static final MethodHandle AddAtomW$MH = RuntimeHelper.downcallHandle(
+        "AddAtomW",
+        constants$210.AddAtomW$FUNC
     );
-    static final FunctionDescriptor PolyTextOutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor FindAtomA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PolyTextOutW$MH = RuntimeHelper.downcallHandle(
-        "PolyTextOutW",
-        constants$210.PolyTextOutW$FUNC
-    );
-    static final FunctionDescriptor CreatePolygonRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreatePolygonRgn$MH = RuntimeHelper.downcallHandle(
-        "CreatePolygonRgn",
-        constants$210.CreatePolygonRgn$FUNC
-    );
-    static final FunctionDescriptor DPtoLP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DPtoLP$MH = RuntimeHelper.downcallHandle(
-        "DPtoLP",
-        constants$210.DPtoLP$FUNC
+    static final MethodHandle FindAtomA$MH = RuntimeHelper.downcallHandle(
+        "FindAtomA",
+        constants$210.FindAtomA$FUNC
     );
 }
 

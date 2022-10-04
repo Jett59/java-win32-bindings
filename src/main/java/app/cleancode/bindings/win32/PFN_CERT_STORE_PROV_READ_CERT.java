@@ -11,13 +11,13 @@ public interface PFN_CERT_STORE_PROV_READ_CERT {
 
     int apply(java.lang.foreign.MemoryAddress hStoreProv, java.lang.foreign.MemoryAddress pStoreCertContext, int dwFlags, java.lang.foreign.MemoryAddress ppProvCertContext);
     static MemorySegment allocate(PFN_CERT_STORE_PROV_READ_CERT fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_READ_CERT.class, fi, constants$434.PFN_CERT_STORE_PROV_READ_CERT$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_READ_CERT.class, fi, constants$586.PFN_CERT_STORE_PROV_READ_CERT$FUNC, session);
     }
     static PFN_CERT_STORE_PROV_READ_CERT ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hStoreProv, java.lang.foreign.MemoryAddress _pStoreCertContext, int _dwFlags, java.lang.foreign.MemoryAddress _ppProvCertContext) -> {
             try {
-                return (int)constants$434.PFN_CERT_STORE_PROV_READ_CERT$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pStoreCertContext, _dwFlags, (java.lang.foreign.Addressable)_ppProvCertContext);
+                return (int)constants$586.PFN_CERT_STORE_PROV_READ_CERT$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pStoreCertContext, _dwFlags, (java.lang.foreign.Addressable)_ppProvCertContext);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

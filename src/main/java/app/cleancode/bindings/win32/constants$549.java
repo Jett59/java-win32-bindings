@@ -9,12 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$549 {
 
-    static final MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment SE_CREATE_TOKEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateTokenPrivilege");
-    static final MemorySegment SE_ASSIGNPRIMARYTOKEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeAssignPrimaryTokenPrivilege");
-    static final MemorySegment SE_LOCK_MEMORY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeLockMemoryPrivilege");
-    static final MemorySegment SE_INCREASE_QUOTA_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseQuotaPrivilege");
-    static final MemorySegment SE_UNSOLICITED_INPUT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeUnsolicitedInputPrivilege");
+    static final FunctionDescriptor AssocCreateForClasses$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AssocCreateForClasses$MH = RuntimeHelper.downcallHandle(
+        "AssocCreateForClasses",
+        constants$549.AssocCreateForClasses$FUNC
+    );
+    static final FunctionDescriptor SHQueryRecycleBinA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHQueryRecycleBinA$MH = RuntimeHelper.downcallHandle(
+        "SHQueryRecycleBinA",
+        constants$549.SHQueryRecycleBinA$FUNC
+    );
+    static final FunctionDescriptor SHQueryRecycleBinW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHQueryRecycleBinW$MH = RuntimeHelper.downcallHandle(
+        "SHQueryRecycleBinW",
+        constants$549.SHQueryRecycleBinW$FUNC
+    );
+    static final FunctionDescriptor SHEmptyRecycleBinA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHEmptyRecycleBinA$MH = RuntimeHelper.downcallHandle(
+        "SHEmptyRecycleBinA",
+        constants$549.SHEmptyRecycleBinA$FUNC
+    );
+    static final FunctionDescriptor SHEmptyRecycleBinW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SHEmptyRecycleBinW$MH = RuntimeHelper.downcallHandle(
+        "SHEmptyRecycleBinW",
+        constants$549.SHEmptyRecycleBinW$FUNC
+    );
+    static final FunctionDescriptor SHQueryUserNotificationState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SHQueryUserNotificationState$MH = RuntimeHelper.downcallHandle(
+        "SHQueryUserNotificationState",
+        constants$549.SHQueryUserNotificationState$FUNC
+    );
 }
 
 

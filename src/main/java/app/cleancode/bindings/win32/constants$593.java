@@ -9,12 +9,37 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$593 {
 
-    static final MemorySegment szOID_ANSI_X942$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10046");
-    static final MemorySegment szOID_ANSI_X942_DH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10046.2.1");
-    static final MemorySegment szOID_X957$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10040");
-    static final MemorySegment szOID_X957_DSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10040.4.1");
-    static final MemorySegment szOID_X957_SHA1DSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10040.4.3");
-    static final MemorySegment szOID_ECC_PUBLIC_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.2.1");
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_FIND_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_FIND_CTL$MH = RuntimeHelper.downcallHandle(
+        constants$593.PFN_CERT_STORE_PROV_FIND_CTL$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_FREE_FIND_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_FREE_FIND_CTL$MH = RuntimeHelper.downcallHandle(
+        constants$593.PFN_CERT_STORE_PROV_FREE_FIND_CTL$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_GET_CTL_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_GET_CTL_PROPERTY$MH = RuntimeHelper.downcallHandle(
+        constants$593.PFN_CERT_STORE_PROV_GET_CTL_PROPERTY$FUNC
+    );
 }
 
 

@@ -9,12 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$601 {
 
-    static final MemorySegment szOID_ECC_CURVE_X962P239V2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.5");
-    static final MemorySegment szOID_ECC_CURVE_X962P239V3$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.6");
-    static final MemorySegment szOID_ECC_CURVE_X962P256V1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.7");
-    static final MemorySegment szOID_ECDSA_SHA1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.4.1");
-    static final MemorySegment szOID_ECDSA_SPECIFIED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.4.3");
-    static final MemorySegment szOID_ECDSA_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.4.3.2");
+    static final FunctionDescriptor CertEnumCTLsInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertEnumCTLsInStore$MH = RuntimeHelper.downcallHandle(
+        "CertEnumCTLsInStore",
+        constants$601.CertEnumCTLsInStore$FUNC
+    );
+    static final FunctionDescriptor CertFindSubjectInCTL$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertFindSubjectInCTL$MH = RuntimeHelper.downcallHandle(
+        "CertFindSubjectInCTL",
+        constants$601.CertFindSubjectInCTL$FUNC
+    );
+    static final FunctionDescriptor CertFindCTLInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindCTLInStore$MH = RuntimeHelper.downcallHandle(
+        "CertFindCTLInStore",
+        constants$601.CertFindCTLInStore$FUNC
+    );
+    static final FunctionDescriptor CertAddEncodedCTLToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddEncodedCTLToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddEncodedCTLToStore",
+        constants$601.CertAddEncodedCTLToStore$FUNC
+    );
+    static final FunctionDescriptor CertAddCTLContextToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddCTLContextToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddCTLContextToStore",
+        constants$601.CertAddCTLContextToStore$FUNC
+    );
+    static final FunctionDescriptor CertSerializeCTLStoreElement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertSerializeCTLStoreElement$MH = RuntimeHelper.downcallHandle(
+        "CertSerializeCTLStoreElement",
+        constants$601.CertSerializeCTLStoreElement$FUNC
+    );
 }
 
 

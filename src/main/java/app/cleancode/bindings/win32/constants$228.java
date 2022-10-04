@@ -9,34 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$228 {
 
-    static final FunctionDescriptor PROPENUMPROCEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle PROPENUMPROCEX$MH = RuntimeHelper.downcallHandle(
-        constants$228.PROPENUMPROCEX$FUNC
-    );
-    static final FunctionDescriptor EDITWORDBREAKPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFileBandwidthReservation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EDITWORDBREAKPROC$MH = RuntimeHelper.downcallHandle(
-        constants$228.EDITWORDBREAKPROC$FUNC
-    );
-    static final FunctionDescriptor NAMEENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle NAMEENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$228.NAMEENUMPROCA$FUNC
+    static final MethodHandle SetFileBandwidthReservation$MH = RuntimeHelper.downcallHandle(
+        "SetFileBandwidthReservation",
+        constants$228.SetFileBandwidthReservation$FUNC
     );
-    static final FunctionDescriptor NAMEENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFileBandwidthReservation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileBandwidthReservation$MH = RuntimeHelper.downcallHandle(
+        "GetFileBandwidthReservation",
+        constants$228.GetFileBandwidthReservation$FUNC
+    );
+    static final FunctionDescriptor ClearEventLogA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ClearEventLogA$MH = RuntimeHelper.downcallHandle(
+        "ClearEventLogA",
+        constants$228.ClearEventLogA$FUNC
+    );
+    static final FunctionDescriptor ClearEventLogW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ClearEventLogW$MH = RuntimeHelper.downcallHandle(
+        "ClearEventLogW",
+        constants$228.ClearEventLogW$FUNC
+    );
+    static final FunctionDescriptor BackupEventLogA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle BackupEventLogA$MH = RuntimeHelper.downcallHandle(
+        "BackupEventLogA",
+        constants$228.BackupEventLogA$FUNC
+    );
+    static final FunctionDescriptor BackupEventLogW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle BackupEventLogW$MH = RuntimeHelper.downcallHandle(
+        "BackupEventLogW",
+        constants$228.BackupEventLogW$FUNC
     );
 }
 

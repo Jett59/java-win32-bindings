@@ -9,57 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$175 {
 
-    static final FunctionDescriptor GetCharABCWidthsFloatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor wWinMain$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCharABCWidthsFloatA$MH = RuntimeHelper.downcallHandle(
-        "GetCharABCWidthsFloatA",
-        constants$175.GetCharABCWidthsFloatA$FUNC
-    );
-    static final FunctionDescriptor GetCharABCWidthsFloatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCharABCWidthsFloatW$MH = RuntimeHelper.downcallHandle(
-        "GetCharABCWidthsFloatW",
-        constants$175.GetCharABCWidthsFloatW$FUNC
-    );
-    static final FunctionDescriptor GetClipBox$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetClipBox$MH = RuntimeHelper.downcallHandle(
-        "GetClipBox",
-        constants$175.GetClipBox$FUNC
-    );
-    static final FunctionDescriptor GetClipRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetClipRgn$MH = RuntimeHelper.downcallHandle(
-        "GetClipRgn",
-        constants$175.GetClipRgn$FUNC
-    );
-    static final FunctionDescriptor GetMetaRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetMetaRgn$MH = RuntimeHelper.downcallHandle(
-        "GetMetaRgn",
-        constants$175.GetMetaRgn$FUNC
-    );
-    static final FunctionDescriptor GetCurrentObject$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetCurrentObject$MH = RuntimeHelper.downcallHandle(
-        "GetCurrentObject",
-        constants$175.GetCurrentObject$FUNC
+    static final MethodHandle wWinMain$MH = RuntimeHelper.downcallHandle(
+        "wWinMain",
+        constants$175.wWinMain$FUNC
+    );
+    static final FunctionDescriptor GlobalAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle GlobalAlloc$MH = RuntimeHelper.downcallHandle(
+        "GlobalAlloc",
+        constants$175.GlobalAlloc$FUNC
+    );
+    static final FunctionDescriptor GlobalReAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GlobalReAlloc$MH = RuntimeHelper.downcallHandle(
+        "GlobalReAlloc",
+        constants$175.GlobalReAlloc$FUNC
+    );
+    static final FunctionDescriptor GlobalSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalSize$MH = RuntimeHelper.downcallHandle(
+        "GlobalSize",
+        constants$175.GlobalSize$FUNC
+    );
+    static final FunctionDescriptor GlobalUnlock$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalUnlock$MH = RuntimeHelper.downcallHandle(
+        "GlobalUnlock",
+        constants$175.GlobalUnlock$FUNC
+    );
+    static final FunctionDescriptor GlobalLock$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalLock$MH = RuntimeHelper.downcallHandle(
+        "GlobalLock",
+        constants$175.GlobalLock$FUNC
     );
 }
 

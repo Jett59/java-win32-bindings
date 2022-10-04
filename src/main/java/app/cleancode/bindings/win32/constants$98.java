@@ -9,55 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$98 {
 
-    static final FunctionDescriptor lstrcpynA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor HeapReAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle HeapReAlloc$MH = RuntimeHelper.downcallHandle(
+        "HeapReAlloc",
+        constants$98.HeapReAlloc$FUNC
+    );
+    static final FunctionDescriptor HeapFree$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle HeapFree$MH = RuntimeHelper.downcallHandle(
+        "HeapFree",
+        constants$98.HeapFree$FUNC
+    );
+    static final FunctionDescriptor HeapSize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle HeapSize$MH = RuntimeHelper.downcallHandle(
+        "HeapSize",
+        constants$98.HeapSize$FUNC
+    );
+    static final FunctionDescriptor GetProcessHeap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetProcessHeap$MH = RuntimeHelper.downcallHandle(
+        "GetProcessHeap",
+        constants$98.GetProcessHeap$FUNC
+    );
+    static final FunctionDescriptor HeapCompact$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle lstrcpynA$MH = RuntimeHelper.downcallHandle(
-        "lstrcpynA",
-        constants$98.lstrcpynA$FUNC
+    static final MethodHandle HeapCompact$MH = RuntimeHelper.downcallHandle(
+        "HeapCompact",
+        constants$98.HeapCompact$FUNC
     );
-    static final FunctionDescriptor lstrcpynW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor HeapSetInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle lstrcpynW$MH = RuntimeHelper.downcallHandle(
-        "lstrcpynW",
-        constants$98.lstrcpynW$FUNC
-    );
-    static final FunctionDescriptor lstrcpyA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle lstrcpyA$MH = RuntimeHelper.downcallHandle(
-        "lstrcpyA",
-        constants$98.lstrcpyA$FUNC
-    );
-    static final FunctionDescriptor lstrcpyW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle lstrcpyW$MH = RuntimeHelper.downcallHandle(
-        "lstrcpyW",
-        constants$98.lstrcpyW$FUNC
-    );
-    static final FunctionDescriptor lstrcatA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle lstrcatA$MH = RuntimeHelper.downcallHandle(
-        "lstrcatA",
-        constants$98.lstrcatA$FUNC
-    );
-    static final FunctionDescriptor lstrcatW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle lstrcatW$MH = RuntimeHelper.downcallHandle(
-        "lstrcatW",
-        constants$98.lstrcatW$FUNC
+    static final MethodHandle HeapSetInformation$MH = RuntimeHelper.downcallHandle(
+        "HeapSetInformation",
+        constants$98.HeapSetInformation$FUNC
     );
 }
 

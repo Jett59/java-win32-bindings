@@ -9,51 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$109 {
 
-    static final FunctionDescriptor GlobalGetAtomNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor CreateWaitableTimerExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateWaitableTimerExW$MH = RuntimeHelper.downcallHandle(
+        "CreateWaitableTimerExW",
+        constants$109.CreateWaitableTimerExW$FUNC
+    );
+    static final FunctionDescriptor EnterSynchronizationBarrier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GlobalGetAtomNameW$MH = RuntimeHelper.downcallHandle(
-        "GlobalGetAtomNameW",
-        constants$109.GlobalGetAtomNameW$FUNC
+    static final MethodHandle EnterSynchronizationBarrier$MH = RuntimeHelper.downcallHandle(
+        "EnterSynchronizationBarrier",
+        constants$109.EnterSynchronizationBarrier$FUNC
     );
-    static final FunctionDescriptor AddAtomA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddAtomA$MH = RuntimeHelper.downcallHandle(
-        "AddAtomA",
-        constants$109.AddAtomA$FUNC
-    );
-    static final FunctionDescriptor AddAtomW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddAtomW$MH = RuntimeHelper.downcallHandle(
-        "AddAtomW",
-        constants$109.AddAtomW$FUNC
-    );
-    static final FunctionDescriptor FindAtomA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FindAtomA$MH = RuntimeHelper.downcallHandle(
-        "FindAtomA",
-        constants$109.FindAtomA$FUNC
-    );
-    static final FunctionDescriptor FindAtomW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FindAtomW$MH = RuntimeHelper.downcallHandle(
-        "FindAtomW",
-        constants$109.FindAtomW$FUNC
-    );
-    static final FunctionDescriptor GetAtomNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor InitializeSynchronizationBarrier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetAtomNameA$MH = RuntimeHelper.downcallHandle(
-        "GetAtomNameA",
-        constants$109.GetAtomNameA$FUNC
+    static final MethodHandle InitializeSynchronizationBarrier$MH = RuntimeHelper.downcallHandle(
+        "InitializeSynchronizationBarrier",
+        constants$109.InitializeSynchronizationBarrier$FUNC
+    );
+    static final FunctionDescriptor DeleteSynchronizationBarrier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteSynchronizationBarrier$MH = RuntimeHelper.downcallHandle(
+        "DeleteSynchronizationBarrier",
+        constants$109.DeleteSynchronizationBarrier$FUNC
+    );
+    static final FunctionDescriptor Sleep$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle Sleep$MH = RuntimeHelper.downcallHandle(
+        "Sleep",
+        constants$109.Sleep$FUNC
+    );
+    static final FunctionDescriptor WaitOnAddress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WaitOnAddress$MH = RuntimeHelper.downcallHandle(
+        "WaitOnAddress",
+        constants$109.WaitOnAddress$FUNC
     );
 }
 

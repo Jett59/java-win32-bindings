@@ -9,62 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$525 {
 
-    static final FunctionDescriptor EnumPortsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor waveOutClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumPortsW$MH = RuntimeHelper.downcallHandle(
-        "EnumPortsW",
-        constants$525.EnumPortsW$FUNC
+    static final MethodHandle waveOutClose$MH = RuntimeHelper.downcallHandle(
+        "waveOutClose",
+        constants$525.waveOutClose$FUNC
     );
-    static final FunctionDescriptor AddPortA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveOutPrepareHeader$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveOutPrepareHeader$MH = RuntimeHelper.downcallHandle(
+        "waveOutPrepareHeader",
+        constants$525.waveOutPrepareHeader$FUNC
+    );
+    static final FunctionDescriptor waveOutUnprepareHeader$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveOutUnprepareHeader$MH = RuntimeHelper.downcallHandle(
+        "waveOutUnprepareHeader",
+        constants$525.waveOutUnprepareHeader$FUNC
+    );
+    static final FunctionDescriptor waveOutWrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveOutWrite$MH = RuntimeHelper.downcallHandle(
+        "waveOutWrite",
+        constants$525.waveOutWrite$FUNC
+    );
+    static final FunctionDescriptor waveOutPause$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddPortA$MH = RuntimeHelper.downcallHandle(
-        "AddPortA",
-        constants$525.AddPortA$FUNC
+    static final MethodHandle waveOutPause$MH = RuntimeHelper.downcallHandle(
+        "waveOutPause",
+        constants$525.waveOutPause$FUNC
     );
-    static final FunctionDescriptor AddPortW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor waveOutRestart$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddPortW$MH = RuntimeHelper.downcallHandle(
-        "AddPortW",
-        constants$525.AddPortW$FUNC
-    );
-    static final FunctionDescriptor ConfigurePortA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ConfigurePortA$MH = RuntimeHelper.downcallHandle(
-        "ConfigurePortA",
-        constants$525.ConfigurePortA$FUNC
-    );
-    static final FunctionDescriptor ConfigurePortW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ConfigurePortW$MH = RuntimeHelper.downcallHandle(
-        "ConfigurePortW",
-        constants$525.ConfigurePortW$FUNC
-    );
-    static final FunctionDescriptor DeletePortA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePortA$MH = RuntimeHelper.downcallHandle(
-        "DeletePortA",
-        constants$525.DeletePortA$FUNC
+    static final MethodHandle waveOutRestart$MH = RuntimeHelper.downcallHandle(
+        "waveOutRestart",
+        constants$525.waveOutRestart$FUNC
     );
 }
 

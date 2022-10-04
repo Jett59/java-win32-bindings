@@ -9,24 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$353 {
 
-    static final FunctionDescriptor DATEFMT_ENUMPROCEXA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor UnregisterClassA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DATEFMT_ENUMPROCEXA$MH = RuntimeHelper.downcallHandle(
-        constants$353.DATEFMT_ENUMPROCEXA$FUNC
-    );
-    static final FunctionDescriptor TIMEFMT_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle TIMEFMT_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$353.TIMEFMT_ENUMPROCA$FUNC
+    static final MethodHandle UnregisterClassA$MH = RuntimeHelper.downcallHandle(
+        "UnregisterClassA",
+        constants$353.UnregisterClassA$FUNC
     );
-    static final FunctionDescriptor CALINFO_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor UnregisterClassW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CALINFO_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$353.CALINFO_ENUMPROCA$FUNC
+    static final MethodHandle UnregisterClassW$MH = RuntimeHelper.downcallHandle(
+        "UnregisterClassW",
+        constants$353.UnregisterClassW$FUNC
+    );
+    static final FunctionDescriptor GetClassInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetClassInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetClassInfoA",
+        constants$353.GetClassInfoA$FUNC
+    );
+    static final FunctionDescriptor GetClassInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetClassInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetClassInfoW",
+        constants$353.GetClassInfoW$FUNC
+    );
+    static final FunctionDescriptor RegisterClassExA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterClassExA$MH = RuntimeHelper.downcallHandle(
+        "RegisterClassExA",
+        constants$353.RegisterClassExA$FUNC
+    );
+    static final FunctionDescriptor RegisterClassExW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterClassExW$MH = RuntimeHelper.downcallHandle(
+        "RegisterClassExW",
+        constants$353.RegisterClassExW$FUNC
     );
 }
 

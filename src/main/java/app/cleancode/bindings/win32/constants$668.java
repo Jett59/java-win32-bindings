@@ -9,12 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$668 {
 
-    static final MemorySegment szOID_ENROLL_ENCRYPTION_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.29");
-    static final MemorySegment szOID_KP_TPM_EK_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.8.1");
-    static final MemorySegment szOID_KP_TPM_PLATFORM_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.8.2");
-    static final MemorySegment szOID_KP_TPM_AIK_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.8.3");
-    static final MemorySegment szOID_ENROLL_EKVERIFYKEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.30");
-    static final MemorySegment szOID_ENROLL_EKVERIFYCERT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.31");
+    static final FunctionDescriptor StartDocPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StartDocPrinterW$MH = RuntimeHelper.downcallHandle(
+        "StartDocPrinterW",
+        constants$668.StartDocPrinterW$FUNC
+    );
+    static final FunctionDescriptor StartPagePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StartPagePrinter$MH = RuntimeHelper.downcallHandle(
+        "StartPagePrinter",
+        constants$668.StartPagePrinter$FUNC
+    );
+    static final FunctionDescriptor WritePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WritePrinter$MH = RuntimeHelper.downcallHandle(
+        "WritePrinter",
+        constants$668.WritePrinter$FUNC
+    );
+    static final FunctionDescriptor FlushPrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle FlushPrinter$MH = RuntimeHelper.downcallHandle(
+        "FlushPrinter",
+        constants$668.FlushPrinter$FUNC
+    );
+    static final FunctionDescriptor EndPagePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EndPagePrinter$MH = RuntimeHelper.downcallHandle(
+        "EndPagePrinter",
+        constants$668.EndPagePrinter$FUNC
+    );
+    static final FunctionDescriptor AbortPrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AbortPrinter$MH = RuntimeHelper.downcallHandle(
+        "AbortPrinter",
+        constants$668.AbortPrinter$FUNC
+    );
 }
 
 

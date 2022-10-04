@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$696 {
 
-    static final MemoryAddress CERT_STORE_PROV_PHYSICAL_W$ADDR = MemoryAddress.ofLong(14L);
-    static final MemoryAddress CERT_STORE_PROV_PHYSICAL$ADDR = MemoryAddress.ofLong(14L);
-    static final MemoryAddress CERT_STORE_PROV_SMART_CARD_W$ADDR = MemoryAddress.ofLong(15L);
-    static final MemoryAddress CERT_STORE_PROV_SMART_CARD$ADDR = MemoryAddress.ofLong(15L);
-    static final MemoryAddress CERT_STORE_PROV_LDAP_W$ADDR = MemoryAddress.ofLong(16L);
-    static final MemoryAddress CERT_STORE_PROV_LDAP$ADDR = MemoryAddress.ofLong(16L);
+    static final FunctionDescriptor CoCreateInstanceEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoCreateInstanceEx$MH = RuntimeHelper.downcallHandle(
+        "CoCreateInstanceEx",
+        constants$696.CoCreateInstanceEx$FUNC
+    );
+    static final FunctionDescriptor CoCreateInstanceFromApp$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoCreateInstanceFromApp$MH = RuntimeHelper.downcallHandle(
+        "CoCreateInstanceFromApp",
+        constants$696.CoCreateInstanceFromApp$FUNC
+    );
+    static final FunctionDescriptor CoRegisterActivationFilter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoRegisterActivationFilter$MH = RuntimeHelper.downcallHandle(
+        "CoRegisterActivationFilter",
+        constants$696.CoRegisterActivationFilter$FUNC
+    );
+    static final FunctionDescriptor CoGetCancelObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetCancelObject$MH = RuntimeHelper.downcallHandle(
+        "CoGetCancelObject",
+        constants$696.CoGetCancelObject$FUNC
+    );
+    static final FunctionDescriptor CoSetCancelObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoSetCancelObject$MH = RuntimeHelper.downcallHandle(
+        "CoSetCancelObject",
+        constants$696.CoSetCancelObject$FUNC
+    );
+    static final FunctionDescriptor CoCancelCall$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CoCancelCall$MH = RuntimeHelper.downcallHandle(
+        "CoCancelCall",
+        constants$696.CoCancelCall$FUNC
+    );
 }
 
 

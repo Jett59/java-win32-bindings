@@ -9,57 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$344 {
 
-    static final FunctionDescriptor RealGetWindowClassA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RealGetWindowClassA$MH = RuntimeHelper.downcallHandle(
-        "RealGetWindowClassA",
-        constants$344.RealGetWindowClassA$FUNC
-    );
-    static final FunctionDescriptor RealGetWindowClassW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RealGetWindowClassW$MH = RuntimeHelper.downcallHandle(
-        "RealGetWindowClassW",
-        constants$344.RealGetWindowClassW$FUNC
-    );
-    static final FunctionDescriptor GetAltTabInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetAltTabInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetAltTabInfoA",
-        constants$344.GetAltTabInfoA$FUNC
-    );
-    static final FunctionDescriptor GetAltTabInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetAltTabInfoW$MH = RuntimeHelper.downcallHandle(
-        "GetAltTabInfoW",
-        constants$344.GetAltTabInfoW$FUNC
-    );
-    static final FunctionDescriptor GetListBoxInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TranslateMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetListBoxInfo$MH = RuntimeHelper.downcallHandle(
-        "GetListBoxInfo",
-        constants$344.GetListBoxInfo$FUNC
+    static final MethodHandle TranslateMessage$MH = RuntimeHelper.downcallHandle(
+        "TranslateMessage",
+        constants$344.TranslateMessage$FUNC
     );
-    static final FunctionDescriptor LockWorkStation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle LockWorkStation$MH = RuntimeHelper.downcallHandle(
-        "LockWorkStation",
-        constants$344.LockWorkStation$FUNC
+    static final FunctionDescriptor DispatchMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DispatchMessageA$MH = RuntimeHelper.downcallHandle(
+        "DispatchMessageA",
+        constants$344.DispatchMessageA$FUNC
+    );
+    static final FunctionDescriptor DispatchMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DispatchMessageW$MH = RuntimeHelper.downcallHandle(
+        "DispatchMessageW",
+        constants$344.DispatchMessageW$FUNC
+    );
+    static final FunctionDescriptor SetMessageQueue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetMessageQueue$MH = RuntimeHelper.downcallHandle(
+        "SetMessageQueue",
+        constants$344.SetMessageQueue$FUNC
+    );
+    static final FunctionDescriptor PeekMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PeekMessageA$MH = RuntimeHelper.downcallHandle(
+        "PeekMessageA",
+        constants$344.PeekMessageA$FUNC
+    );
+    static final FunctionDescriptor PeekMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PeekMessageW$MH = RuntimeHelper.downcallHandle(
+        "PeekMessageW",
+        constants$344.PeekMessageW$FUNC
     );
 }
 

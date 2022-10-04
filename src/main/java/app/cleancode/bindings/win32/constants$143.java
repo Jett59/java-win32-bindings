@@ -9,52 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$143 {
 
-    static final FunctionDescriptor OpenPrivateNamespaceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor QueryVirtualMemoryInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle OpenPrivateNamespaceA$MH = RuntimeHelper.downcallHandle(
-        "OpenPrivateNamespaceA",
-        constants$143.OpenPrivateNamespaceA$FUNC
+    static final MethodHandle QueryVirtualMemoryInformation$MH = RuntimeHelper.downcallHandle(
+        "QueryVirtualMemoryInformation",
+        constants$143.QueryVirtualMemoryInformation$FUNC
     );
-    static final FunctionDescriptor CreateBoundaryDescriptorA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor MapViewOfFileNuma2$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle MapViewOfFileNuma2$MH = RuntimeHelper.downcallHandle(
+        "MapViewOfFileNuma2",
+        constants$143.MapViewOfFileNuma2$FUNC
+    );
+    static final FunctionDescriptor MapViewOfFile2$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle MapViewOfFile2$MH = RuntimeHelper.downcallHandle(
+        "MapViewOfFile2",
+        constants$143.MapViewOfFile2$FUNC
+    );
+    static final FunctionDescriptor UnmapViewOfFile2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateBoundaryDescriptorA$MH = RuntimeHelper.downcallHandle(
-        "CreateBoundaryDescriptorA",
-        constants$143.CreateBoundaryDescriptorA$FUNC
+    static final MethodHandle UnmapViewOfFile2$MH = RuntimeHelper.downcallHandle(
+        "UnmapViewOfFile2",
+        constants$143.UnmapViewOfFile2$FUNC
     );
-    static final FunctionDescriptor AddIntegrityLabelToBoundaryDescriptor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor VirtualUnlockEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddIntegrityLabelToBoundaryDescriptor$MH = RuntimeHelper.downcallHandle(
-        "AddIntegrityLabelToBoundaryDescriptor",
-        constants$143.AddIntegrityLabelToBoundaryDescriptor$FUNC
-    );
-    static final FunctionDescriptor GetCurrentHwProfileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCurrentHwProfileA$MH = RuntimeHelper.downcallHandle(
-        "GetCurrentHwProfileA",
-        constants$143.GetCurrentHwProfileA$FUNC
-    );
-    static final FunctionDescriptor GetCurrentHwProfileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCurrentHwProfileW$MH = RuntimeHelper.downcallHandle(
-        "GetCurrentHwProfileW",
-        constants$143.GetCurrentHwProfileW$FUNC
-    );
-    static final FunctionDescriptor VerifyVersionInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle VerifyVersionInfoA$MH = RuntimeHelper.downcallHandle(
-        "VerifyVersionInfoA",
-        constants$143.VerifyVersionInfoA$FUNC
+    static final MethodHandle VirtualUnlockEx$MH = RuntimeHelper.downcallHandle(
+        "VirtualUnlockEx",
+        constants$143.VirtualUnlockEx$FUNC
+    );
+    static final FunctionDescriptor VirtualAlloc2$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualAlloc2$MH = RuntimeHelper.downcallHandle(
+        "VirtualAlloc2",
+        constants$143.VirtualAlloc2$FUNC
     );
 }
 

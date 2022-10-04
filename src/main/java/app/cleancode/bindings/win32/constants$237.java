@@ -9,59 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$237 {
 
-    static final FunctionDescriptor SetProcessWindowStation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetProcessWindowStation$MH = RuntimeHelper.downcallHandle(
-        "SetProcessWindowStation",
-        constants$237.SetProcessWindowStation$FUNC
-    );
-    static final FunctionDescriptor GetProcessWindowStation$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetProcessWindowStation$MH = RuntimeHelper.downcallHandle(
-        "GetProcessWindowStation",
-        constants$237.GetProcessWindowStation$FUNC
-    );
-    static final FunctionDescriptor SetUserObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LookupPrivilegeValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetUserObjectSecurity$MH = RuntimeHelper.downcallHandle(
-        "SetUserObjectSecurity",
-        constants$237.SetUserObjectSecurity$FUNC
+    static final MethodHandle LookupPrivilegeValueA$MH = RuntimeHelper.downcallHandle(
+        "LookupPrivilegeValueA",
+        constants$237.LookupPrivilegeValueA$FUNC
     );
-    static final FunctionDescriptor GetUserObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LookupPrivilegeValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetUserObjectSecurity$MH = RuntimeHelper.downcallHandle(
-        "GetUserObjectSecurity",
-        constants$237.GetUserObjectSecurity$FUNC
+    static final MethodHandle LookupPrivilegeValueW$MH = RuntimeHelper.downcallHandle(
+        "LookupPrivilegeValueW",
+        constants$237.LookupPrivilegeValueW$FUNC
     );
-    static final FunctionDescriptor GetUserObjectInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LookupPrivilegeNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetUserObjectInformationA$MH = RuntimeHelper.downcallHandle(
-        "GetUserObjectInformationA",
-        constants$237.GetUserObjectInformationA$FUNC
+    static final MethodHandle LookupPrivilegeNameA$MH = RuntimeHelper.downcallHandle(
+        "LookupPrivilegeNameA",
+        constants$237.LookupPrivilegeNameA$FUNC
     );
-    static final FunctionDescriptor GetUserObjectInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LookupPrivilegeNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetUserObjectInformationW$MH = RuntimeHelper.downcallHandle(
-        "GetUserObjectInformationW",
-        constants$237.GetUserObjectInformationW$FUNC
+    static final MethodHandle LookupPrivilegeNameW$MH = RuntimeHelper.downcallHandle(
+        "LookupPrivilegeNameW",
+        constants$237.LookupPrivilegeNameW$FUNC
+    );
+    static final FunctionDescriptor LookupPrivilegeDisplayNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LookupPrivilegeDisplayNameA$MH = RuntimeHelper.downcallHandle(
+        "LookupPrivilegeDisplayNameA",
+        constants$237.LookupPrivilegeDisplayNameA$FUNC
+    );
+    static final FunctionDescriptor LookupPrivilegeDisplayNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LookupPrivilegeDisplayNameW$MH = RuntimeHelper.downcallHandle(
+        "LookupPrivilegeDisplayNameW",
+        constants$237.LookupPrivilegeDisplayNameW$FUNC
     );
 }
 

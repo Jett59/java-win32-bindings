@@ -9,44 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$81 {
 
-    static final FunctionDescriptor PUMS_SCHEDULER_ENTRY_POINT$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PUMS_SCHEDULER_ENTRY_POINT$MH = RuntimeHelper.downcallHandle(
-        constants$81.PUMS_SCHEDULER_ENTRY_POINT$FUNC
-    );
-    static final FunctionDescriptor CreateUmsCompletionList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateUmsCompletionList$MH = RuntimeHelper.downcallHandle(
-        "CreateUmsCompletionList",
-        constants$81.CreateUmsCompletionList$FUNC
-    );
-    static final FunctionDescriptor DequeueUmsCompletionListItems$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTempFileNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DequeueUmsCompletionListItems$MH = RuntimeHelper.downcallHandle(
-        "DequeueUmsCompletionListItems",
-        constants$81.DequeueUmsCompletionListItems$FUNC
+    static final MethodHandle GetTempFileNameW$MH = RuntimeHelper.downcallHandle(
+        "GetTempFileNameW",
+        constants$81.GetTempFileNameW$FUNC
     );
-    static final FunctionDescriptor GetUmsCompletionListEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetVolumeInformationByHandleW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetVolumeInformationByHandleW$MH = RuntimeHelper.downcallHandle(
+        "GetVolumeInformationByHandleW",
+        constants$81.GetVolumeInformationByHandleW$FUNC
+    );
+    static final FunctionDescriptor GetVolumeInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetVolumeInformationW$MH = RuntimeHelper.downcallHandle(
+        "GetVolumeInformationW",
+        constants$81.GetVolumeInformationW$FUNC
+    );
+    static final FunctionDescriptor GetVolumePathNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetVolumePathNameW$MH = RuntimeHelper.downcallHandle(
+        "GetVolumePathNameW",
+        constants$81.GetVolumePathNameW$FUNC
+    );
+    static final FunctionDescriptor LocalFileTimeToFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetUmsCompletionListEvent$MH = RuntimeHelper.downcallHandle(
-        "GetUmsCompletionListEvent",
-        constants$81.GetUmsCompletionListEvent$FUNC
+    static final MethodHandle LocalFileTimeToFileTime$MH = RuntimeHelper.downcallHandle(
+        "LocalFileTimeToFileTime",
+        constants$81.LocalFileTimeToFileTime$FUNC
     );
-    static final FunctionDescriptor ExecuteUmsThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor LockFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ExecuteUmsThread$MH = RuntimeHelper.downcallHandle(
-        "ExecuteUmsThread",
-        constants$81.ExecuteUmsThread$FUNC
+    static final MethodHandle LockFile$MH = RuntimeHelper.downcallHandle(
+        "LockFile",
+        constants$81.LockFile$FUNC
     );
 }
 

@@ -9,59 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$211 {
 
-    static final FunctionDescriptor LPtoDP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindAtomW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindAtomW$MH = RuntimeHelper.downcallHandle(
+        "FindAtomW",
+        constants$211.FindAtomW$FUNC
+    );
+    static final FunctionDescriptor GetAtomNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetAtomNameA$MH = RuntimeHelper.downcallHandle(
+        "GetAtomNameA",
+        constants$211.GetAtomNameA$FUNC
+    );
+    static final FunctionDescriptor GetAtomNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetAtomNameW$MH = RuntimeHelper.downcallHandle(
+        "GetAtomNameW",
+        constants$211.GetAtomNameW$FUNC
+    );
+    static final FunctionDescriptor GetProfileIntA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LPtoDP$MH = RuntimeHelper.downcallHandle(
-        "LPtoDP",
-        constants$211.LPtoDP$FUNC
+    static final MethodHandle GetProfileIntA$MH = RuntimeHelper.downcallHandle(
+        "GetProfileIntA",
+        constants$211.GetProfileIntA$FUNC
     );
-    static final FunctionDescriptor Polygon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetProfileIntW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle Polygon$MH = RuntimeHelper.downcallHandle(
-        "Polygon",
-        constants$211.Polygon$FUNC
+    static final MethodHandle GetProfileIntW$MH = RuntimeHelper.downcallHandle(
+        "GetProfileIntW",
+        constants$211.GetProfileIntW$FUNC
     );
-    static final FunctionDescriptor Polyline$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetProfileStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle Polyline$MH = RuntimeHelper.downcallHandle(
-        "Polyline",
-        constants$211.Polyline$FUNC
-    );
-    static final FunctionDescriptor PolyBezier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PolyBezier$MH = RuntimeHelper.downcallHandle(
-        "PolyBezier",
-        constants$211.PolyBezier$FUNC
-    );
-    static final FunctionDescriptor PolyBezierTo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PolyBezierTo$MH = RuntimeHelper.downcallHandle(
-        "PolyBezierTo",
-        constants$211.PolyBezierTo$FUNC
-    );
-    static final FunctionDescriptor PolylineTo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PolylineTo$MH = RuntimeHelper.downcallHandle(
-        "PolylineTo",
-        constants$211.PolylineTo$FUNC
+    static final MethodHandle GetProfileStringA$MH = RuntimeHelper.downcallHandle(
+        "GetProfileStringA",
+        constants$211.GetProfileStringA$FUNC
     );
 }
 

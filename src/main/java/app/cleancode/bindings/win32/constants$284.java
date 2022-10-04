@@ -9,55 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$284 {
 
-    static final FunctionDescriptor CreateAcceleratorTableA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateAcceleratorTableA$MH = RuntimeHelper.downcallHandle(
-        "CreateAcceleratorTableA",
-        constants$284.CreateAcceleratorTableA$FUNC
-    );
-    static final FunctionDescriptor CreateAcceleratorTableW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateAcceleratorTableW$MH = RuntimeHelper.downcallHandle(
-        "CreateAcceleratorTableW",
-        constants$284.CreateAcceleratorTableW$FUNC
-    );
-    static final FunctionDescriptor DestroyAcceleratorTable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetStretchBltMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DestroyAcceleratorTable$MH = RuntimeHelper.downcallHandle(
-        "DestroyAcceleratorTable",
-        constants$284.DestroyAcceleratorTable$FUNC
+    static final MethodHandle GetStretchBltMode$MH = RuntimeHelper.downcallHandle(
+        "GetStretchBltMode",
+        constants$284.GetStretchBltMode$FUNC
     );
-    static final FunctionDescriptor CopyAcceleratorTableA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSystemPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CopyAcceleratorTableA$MH = RuntimeHelper.downcallHandle(
-        "CopyAcceleratorTableA",
-        constants$284.CopyAcceleratorTableA$FUNC
-    );
-    static final FunctionDescriptor CopyAcceleratorTableW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CopyAcceleratorTableW$MH = RuntimeHelper.downcallHandle(
-        "CopyAcceleratorTableW",
-        constants$284.CopyAcceleratorTableW$FUNC
-    );
-    static final FunctionDescriptor TranslateAcceleratorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle TranslateAcceleratorA$MH = RuntimeHelper.downcallHandle(
-        "TranslateAcceleratorA",
-        constants$284.TranslateAcceleratorA$FUNC
+    static final MethodHandle GetSystemPaletteEntries$MH = RuntimeHelper.downcallHandle(
+        "GetSystemPaletteEntries",
+        constants$284.GetSystemPaletteEntries$FUNC
+    );
+    static final FunctionDescriptor GetSystemPaletteUse$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetSystemPaletteUse$MH = RuntimeHelper.downcallHandle(
+        "GetSystemPaletteUse",
+        constants$284.GetSystemPaletteUse$FUNC
+    );
+    static final FunctionDescriptor GetTextCharacterExtra$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextCharacterExtra$MH = RuntimeHelper.downcallHandle(
+        "GetTextCharacterExtra",
+        constants$284.GetTextCharacterExtra$FUNC
+    );
+    static final FunctionDescriptor GetTextAlign$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextAlign$MH = RuntimeHelper.downcallHandle(
+        "GetTextAlign",
+        constants$284.GetTextAlign$FUNC
+    );
+    static final FunctionDescriptor GetTextColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextColor$MH = RuntimeHelper.downcallHandle(
+        "GetTextColor",
+        constants$284.GetTextColor$FUNC
     );
 }
 

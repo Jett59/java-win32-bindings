@@ -11,13 +11,13 @@ public interface PFN_CERT_STORE_PROV_WRITE_CTL {
 
     int apply(java.lang.foreign.MemoryAddress hStoreProv, java.lang.foreign.MemoryAddress pCtlContext, int dwFlags);
     static MemorySegment allocate(PFN_CERT_STORE_PROV_WRITE_CTL fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_WRITE_CTL.class, fi, constants$437.PFN_CERT_STORE_PROV_WRITE_CTL$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_WRITE_CTL.class, fi, constants$589.PFN_CERT_STORE_PROV_WRITE_CTL$FUNC, session);
     }
     static PFN_CERT_STORE_PROV_WRITE_CTL ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hStoreProv, java.lang.foreign.MemoryAddress _pCtlContext, int _dwFlags) -> {
             try {
-                return (int)constants$437.PFN_CERT_STORE_PROV_WRITE_CTL$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pCtlContext, _dwFlags);
+                return (int)constants$589.PFN_CERT_STORE_PROV_WRITE_CTL$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pCtlContext, _dwFlags);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

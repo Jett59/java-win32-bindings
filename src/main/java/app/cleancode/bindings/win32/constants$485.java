@@ -9,59 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$485 {
 
-    static final FunctionDescriptor DuplicateEncryptionInfoFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WriteConsoleA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DuplicateEncryptionInfoFile$MH = RuntimeHelper.downcallHandle(
-        "DuplicateEncryptionInfoFile",
-        constants$485.DuplicateEncryptionInfoFile$FUNC
-    );
-    static final FunctionDescriptor GetEncryptedFileMetadata$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetEncryptedFileMetadata$MH = RuntimeHelper.downcallHandle(
-        "GetEncryptedFileMetadata",
-        constants$485.GetEncryptedFileMetadata$FUNC
+    static final MethodHandle WriteConsoleA$MH = RuntimeHelper.downcallHandle(
+        "WriteConsoleA",
+        constants$485.WriteConsoleA$FUNC
     );
-    static final FunctionDescriptor SetEncryptedFileMetadata$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor WriteConsoleW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetEncryptedFileMetadata$MH = RuntimeHelper.downcallHandle(
-        "SetEncryptedFileMetadata",
-        constants$485.SetEncryptedFileMetadata$FUNC
+    static final MethodHandle WriteConsoleW$MH = RuntimeHelper.downcallHandle(
+        "WriteConsoleW",
+        constants$485.WriteConsoleW$FUNC
     );
-    static final FunctionDescriptor FreeEncryptedFileMetadata$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor PHANDLER_ROUTINE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PHANDLER_ROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$485.PHANDLER_ROUTINE$FUNC
+    );
+    static final FunctionDescriptor SetConsoleCtrlHandler$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetConsoleCtrlHandler$MH = RuntimeHelper.downcallHandle(
+        "SetConsoleCtrlHandler",
+        constants$485.SetConsoleCtrlHandler$FUNC
+    );
+    static final FunctionDescriptor CreatePseudoConsole$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_SHORT$LAYOUT.withName("X"),
+            Constants$root.C_SHORT$LAYOUT.withName("Y")
+        ).withName("_COORD"),
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FreeEncryptedFileMetadata$MH = RuntimeHelper.downcallHandle(
-        "FreeEncryptedFileMetadata",
-        constants$485.FreeEncryptedFileMetadata$FUNC
+    static final MethodHandle CreatePseudoConsole$MH = RuntimeHelper.downcallHandle(
+        "CreatePseudoConsole",
+        constants$485.CreatePseudoConsole$FUNC
     );
-    static final  GroupLayout GUID_DEVINTERFACE_DISK$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_DISK$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_DISK", constants$485.GUID_DEVINTERFACE_DISK$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_CDROM$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_CDROM$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_CDROM", constants$485.GUID_DEVINTERFACE_CDROM$LAYOUT);
 }
 
 

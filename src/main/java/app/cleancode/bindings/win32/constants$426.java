@@ -9,55 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$426 {
 
-    static final FunctionDescriptor CryptEnumOIDInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptEnumOIDInfo$MH = RuntimeHelper.downcallHandle(
-        "CryptEnumOIDInfo",
-        constants$426.CryptEnumOIDInfo$FUNC
-    );
-    static final FunctionDescriptor CryptFindLocalizedName$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptFindLocalizedName$MH = RuntimeHelper.downcallHandle(
-        "CryptFindLocalizedName",
-        constants$426.CryptFindLocalizedName$FUNC
-    );
-    static final FunctionDescriptor PFN_CMSG_STREAM_OUTPUT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_STREAM_OUTPUT$MH = RuntimeHelper.downcallHandle(
-        constants$426.PFN_CMSG_STREAM_OUTPUT$FUNC
+    static final MethodHandle GetWindow$MH = RuntimeHelper.downcallHandle(
+        "GetWindow",
+        constants$426.GetWindow$FUNC
     );
-    static final FunctionDescriptor CryptMsgOpenToEncode$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetWindowsHookA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptMsgOpenToEncode$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgOpenToEncode",
-        constants$426.CryptMsgOpenToEncode$FUNC
+    static final MethodHandle SetWindowsHookA$MH = RuntimeHelper.downcallHandle(
+        "SetWindowsHookA",
+        constants$426.SetWindowsHookA$FUNC
     );
-    static final FunctionDescriptor CryptMsgCalculateEncodedLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetWindowsHookW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetWindowsHookW$MH = RuntimeHelper.downcallHandle(
+        "SetWindowsHookW",
+        constants$426.SetWindowsHookW$FUNC
+    );
+    static final FunctionDescriptor UnhookWindowsHook$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnhookWindowsHook$MH = RuntimeHelper.downcallHandle(
+        "UnhookWindowsHook",
+        constants$426.UnhookWindowsHook$FUNC
+    );
+    static final FunctionDescriptor SetWindowsHookExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptMsgCalculateEncodedLength$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgCalculateEncodedLength",
-        constants$426.CryptMsgCalculateEncodedLength$FUNC
+    static final MethodHandle SetWindowsHookExA$MH = RuntimeHelper.downcallHandle(
+        "SetWindowsHookExA",
+        constants$426.SetWindowsHookExA$FUNC
+    );
+    static final FunctionDescriptor SetWindowsHookExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetWindowsHookExW$MH = RuntimeHelper.downcallHandle(
+        "SetWindowsHookExW",
+        constants$426.SetWindowsHookExW$FUNC
     );
 }
 

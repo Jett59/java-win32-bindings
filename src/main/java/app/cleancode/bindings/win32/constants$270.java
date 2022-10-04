@@ -9,43 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$270 {
 
-    static final FunctionDescriptor IsCharUpperW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle IsCharUpperW$MH = RuntimeHelper.downcallHandle(
-        "IsCharUpperW",
-        constants$270.IsCharUpperW$FUNC
-    );
-    static final FunctionDescriptor IsCharLowerA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
-    );
-    static final MethodHandle IsCharLowerA$MH = RuntimeHelper.downcallHandle(
-        "IsCharLowerA",
-        constants$270.IsCharLowerA$FUNC
-    );
-    static final FunctionDescriptor IsCharLowerW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle IsCharLowerW$MH = RuntimeHelper.downcallHandle(
-        "IsCharLowerW",
-        constants$270.IsCharLowerW$FUNC
-    );
-    static final FunctionDescriptor SetFocus$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreatePatternBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetFocus$MH = RuntimeHelper.downcallHandle(
-        "SetFocus",
-        constants$270.SetFocus$FUNC
+    static final MethodHandle CreatePatternBrush$MH = RuntimeHelper.downcallHandle(
+        "CreatePatternBrush",
+        constants$270.CreatePatternBrush$FUNC
     );
-    static final FunctionDescriptor GetActiveWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetActiveWindow$MH = RuntimeHelper.downcallHandle(
-        "GetActiveWindow",
-        constants$270.GetActiveWindow$FUNC
+    static final FunctionDescriptor CreateRectRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final FunctionDescriptor GetFocus$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetFocus$MH = RuntimeHelper.downcallHandle(
-        "GetFocus",
-        constants$270.GetFocus$FUNC
+    static final MethodHandle CreateRectRgn$MH = RuntimeHelper.downcallHandle(
+        "CreateRectRgn",
+        constants$270.CreateRectRgn$FUNC
+    );
+    static final FunctionDescriptor CreateRectRgnIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateRectRgnIndirect$MH = RuntimeHelper.downcallHandle(
+        "CreateRectRgnIndirect",
+        constants$270.CreateRectRgnIndirect$FUNC
+    );
+    static final FunctionDescriptor CreateRoundRectRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateRoundRectRgn$MH = RuntimeHelper.downcallHandle(
+        "CreateRoundRectRgn",
+        constants$270.CreateRoundRectRgn$FUNC
+    );
+    static final FunctionDescriptor CreateScalableFontResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateScalableFontResourceA$MH = RuntimeHelper.downcallHandle(
+        "CreateScalableFontResourceA",
+        constants$270.CreateScalableFontResourceA$FUNC
+    );
+    static final FunctionDescriptor CreateScalableFontResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateScalableFontResourceW$MH = RuntimeHelper.downcallHandle(
+        "CreateScalableFontResourceW",
+        constants$270.CreateScalableFontResourceW$FUNC
     );
 }
 

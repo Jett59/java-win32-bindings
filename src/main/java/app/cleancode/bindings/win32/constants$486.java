@@ -9,48 +9,80 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$486 {
 
-    static final  GroupLayout GUID_DEVINTERFACE_PARTITION$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_PARTITION$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_PARTITION", constants$486.GUID_DEVINTERFACE_PARTITION$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_TAPE$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_TAPE$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_TAPE", constants$486.GUID_DEVINTERFACE_TAPE$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_WRITEONCEDISK$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_WRITEONCEDISK$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_WRITEONCEDISK", constants$486.GUID_DEVINTERFACE_WRITEONCEDISK$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_VOLUME$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_VOLUME$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_VOLUME", constants$486.GUID_DEVINTERFACE_VOLUME$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_MEDIUMCHANGER$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_MEDIUMCHANGER$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_MEDIUMCHANGER", constants$486.GUID_DEVINTERFACE_MEDIUMCHANGER$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_FLOPPY$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_FLOPPY$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_FLOPPY", constants$486.GUID_DEVINTERFACE_FLOPPY$LAYOUT);
+    static final FunctionDescriptor ResizePseudoConsole$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_SHORT$LAYOUT.withName("X"),
+            Constants$root.C_SHORT$LAYOUT.withName("Y")
+        ).withName("_COORD")
+    );
+    static final MethodHandle ResizePseudoConsole$MH = RuntimeHelper.downcallHandle(
+        "ResizePseudoConsole",
+        constants$486.ResizePseudoConsole$FUNC
+    );
+    static final FunctionDescriptor ClosePseudoConsole$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ClosePseudoConsole$MH = RuntimeHelper.downcallHandle(
+        "ClosePseudoConsole",
+        constants$486.ClosePseudoConsole$FUNC
+    );
+    static final FunctionDescriptor VerFindFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VerFindFileA$MH = RuntimeHelper.downcallHandle(
+        "VerFindFileA",
+        constants$486.VerFindFileA$FUNC
+    );
+    static final FunctionDescriptor VerFindFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VerFindFileW$MH = RuntimeHelper.downcallHandle(
+        "VerFindFileW",
+        constants$486.VerFindFileW$FUNC
+    );
+    static final FunctionDescriptor VerInstallFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VerInstallFileA$MH = RuntimeHelper.downcallHandle(
+        "VerInstallFileA",
+        constants$486.VerInstallFileA$FUNC
+    );
+    static final FunctionDescriptor VerInstallFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VerInstallFileW$MH = RuntimeHelper.downcallHandle(
+        "VerInstallFileW",
+        constants$486.VerInstallFileW$FUNC
+    );
 }
 
 

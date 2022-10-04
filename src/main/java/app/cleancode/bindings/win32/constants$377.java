@@ -9,60 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$377 {
 
-    static final FunctionDescriptor LOCALE_ENUMPROCEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor VkKeyScanW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle VkKeyScanW$MH = RuntimeHelper.downcallHandle(
+        "VkKeyScanW",
+        constants$377.VkKeyScanW$FUNC
+    );
+    static final FunctionDescriptor VkKeyScanExA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VkKeyScanExA$MH = RuntimeHelper.downcallHandle(
+        "VkKeyScanExA",
+        constants$377.VkKeyScanExA$FUNC
+    );
+    static final FunctionDescriptor VkKeyScanExW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VkKeyScanExW$MH = RuntimeHelper.downcallHandle(
+        "VkKeyScanExW",
+        constants$377.VkKeyScanExW$FUNC
+    );
+    static final FunctionDescriptor keybd_event$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle LOCALE_ENUMPROCEX$MH = RuntimeHelper.downcallHandle(
-        constants$377.LOCALE_ENUMPROCEX$FUNC
+    static final MethodHandle keybd_event$MH = RuntimeHelper.downcallHandle(
+        "keybd_event",
+        constants$377.keybd_event$FUNC
     );
-    static final FunctionDescriptor EnumSystemLocalesEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor mouse_event$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EnumSystemLocalesEx$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemLocalesEx",
-        constants$377.EnumSystemLocalesEx$FUNC
+    static final MethodHandle mouse_event$MH = RuntimeHelper.downcallHandle(
+        "mouse_event",
+        constants$377.mouse_event$FUNC
     );
-    static final FunctionDescriptor ResolveLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SendInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ResolveLocaleName$MH = RuntimeHelper.downcallHandle(
-        "ResolveLocaleName",
-        constants$377.ResolveLocaleName$FUNC
-    );
-    static final FunctionDescriptor VerFindFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle VerFindFileA$MH = RuntimeHelper.downcallHandle(
-        "VerFindFileA",
-        constants$377.VerFindFileA$FUNC
-    );
-    static final FunctionDescriptor VerFindFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle VerFindFileW$MH = RuntimeHelper.downcallHandle(
-        "VerFindFileW",
-        constants$377.VerFindFileW$FUNC
+    static final MethodHandle SendInput$MH = RuntimeHelper.downcallHandle(
+        "SendInput",
+        constants$377.SendInput$FUNC
     );
 }
 

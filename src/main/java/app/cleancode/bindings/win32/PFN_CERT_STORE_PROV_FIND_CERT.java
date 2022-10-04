@@ -11,13 +11,13 @@ public interface PFN_CERT_STORE_PROV_FIND_CERT {
 
     int apply(java.lang.foreign.MemoryAddress hStoreProv, java.lang.foreign.MemoryAddress pFindInfo, java.lang.foreign.MemoryAddress pPrevCertContext, int dwFlags, java.lang.foreign.MemoryAddress ppvStoreProvFindInfo, java.lang.foreign.MemoryAddress ppProvCertContext);
     static MemorySegment allocate(PFN_CERT_STORE_PROV_FIND_CERT fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_FIND_CERT.class, fi, constants$438.PFN_CERT_STORE_PROV_FIND_CERT$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_STORE_PROV_FIND_CERT.class, fi, constants$591.PFN_CERT_STORE_PROV_FIND_CERT$FUNC, session);
     }
     static PFN_CERT_STORE_PROV_FIND_CERT ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hStoreProv, java.lang.foreign.MemoryAddress _pFindInfo, java.lang.foreign.MemoryAddress _pPrevCertContext, int _dwFlags, java.lang.foreign.MemoryAddress _ppvStoreProvFindInfo, java.lang.foreign.MemoryAddress _ppProvCertContext) -> {
             try {
-                return (int)constants$439.PFN_CERT_STORE_PROV_FIND_CERT$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pFindInfo, (java.lang.foreign.Addressable)_pPrevCertContext, _dwFlags, (java.lang.foreign.Addressable)_ppvStoreProvFindInfo, (java.lang.foreign.Addressable)_ppProvCertContext);
+                return (int)constants$591.PFN_CERT_STORE_PROV_FIND_CERT$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hStoreProv, (java.lang.foreign.Addressable)_pFindInfo, (java.lang.foreign.Addressable)_pPrevCertContext, _dwFlags, (java.lang.foreign.Addressable)_ppvStoreProvFindInfo, (java.lang.foreign.Addressable)_ppProvCertContext);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

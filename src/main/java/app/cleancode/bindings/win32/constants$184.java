@@ -9,63 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$184 {
 
-    static final FunctionDescriptor GetCharWidthI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor QueryUmsThreadInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCharWidthI$MH = RuntimeHelper.downcallHandle(
-        "GetCharWidthI",
-        constants$184.GetCharWidthI$FUNC
-    );
-    static final FunctionDescriptor GetCharABCWidthsI$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCharABCWidthsI$MH = RuntimeHelper.downcallHandle(
-        "GetCharABCWidthsI",
-        constants$184.GetCharABCWidthsI$FUNC
-    );
-    static final FunctionDescriptor AddFontResourceExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddFontResourceExA$MH = RuntimeHelper.downcallHandle(
-        "AddFontResourceExA",
-        constants$184.AddFontResourceExA$FUNC
+    static final MethodHandle QueryUmsThreadInformation$MH = RuntimeHelper.downcallHandle(
+        "QueryUmsThreadInformation",
+        constants$184.QueryUmsThreadInformation$FUNC
     );
-    static final FunctionDescriptor AddFontResourceExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetUmsThreadInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddFontResourceExW$MH = RuntimeHelper.downcallHandle(
-        "AddFontResourceExW",
-        constants$184.AddFontResourceExW$FUNC
-    );
-    static final FunctionDescriptor RemoveFontResourceExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetUmsThreadInformation$MH = RuntimeHelper.downcallHandle(
+        "SetUmsThreadInformation",
+        constants$184.SetUmsThreadInformation$FUNC
+    );
+    static final FunctionDescriptor DeleteUmsThreadContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RemoveFontResourceExA$MH = RuntimeHelper.downcallHandle(
-        "RemoveFontResourceExA",
-        constants$184.RemoveFontResourceExA$FUNC
+    static final MethodHandle DeleteUmsThreadContext$MH = RuntimeHelper.downcallHandle(
+        "DeleteUmsThreadContext",
+        constants$184.DeleteUmsThreadContext$FUNC
     );
-    static final FunctionDescriptor RemoveFontResourceExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateUmsThreadContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateUmsThreadContext$MH = RuntimeHelper.downcallHandle(
+        "CreateUmsThreadContext",
+        constants$184.CreateUmsThreadContext$FUNC
+    );
+    static final FunctionDescriptor EnterUmsSchedulingMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnterUmsSchedulingMode$MH = RuntimeHelper.downcallHandle(
+        "EnterUmsSchedulingMode",
+        constants$184.EnterUmsSchedulingMode$FUNC
+    );
+    static final FunctionDescriptor GetUmsSystemThreadInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RemoveFontResourceExW$MH = RuntimeHelper.downcallHandle(
-        "RemoveFontResourceExW",
-        constants$184.RemoveFontResourceExW$FUNC
+    static final MethodHandle GetUmsSystemThreadInformation$MH = RuntimeHelper.downcallHandle(
+        "GetUmsSystemThreadInformation",
+        constants$184.GetUmsSystemThreadInformation$FUNC
     );
 }
 

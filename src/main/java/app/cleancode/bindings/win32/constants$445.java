@@ -9,56 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$445 {
 
-    static final FunctionDescriptor CertDuplicateCRLContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnableNonClientDpiScaling$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertDuplicateCRLContext$MH = RuntimeHelper.downcallHandle(
-        "CertDuplicateCRLContext",
-        constants$445.CertDuplicateCRLContext$FUNC
+    static final MethodHandle EnableNonClientDpiScaling$MH = RuntimeHelper.downcallHandle(
+        "EnableNonClientDpiScaling",
+        constants$445.EnableNonClientDpiScaling$FUNC
     );
-    static final FunctionDescriptor CertCreateCRLContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InheritWindowMonitor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle InheritWindowMonitor$MH = RuntimeHelper.downcallHandle(
+        "InheritWindowMonitor",
+        constants$445.InheritWindowMonitor$FUNC
+    );
+    static final FunctionDescriptor SetProcessDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetProcessDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
+        "SetProcessDpiAwarenessContext",
+        constants$445.SetProcessDpiAwarenessContext$FUNC
+    );
+    static final FunctionDescriptor GetDpiAwarenessContextForProcess$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDpiAwarenessContextForProcess$MH = RuntimeHelper.downcallHandle(
+        "GetDpiAwarenessContextForProcess",
+        constants$445.GetDpiAwarenessContextForProcess$FUNC
+    );
+    static final FunctionDescriptor SetThreadDpiHostingBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertCreateCRLContext$MH = RuntimeHelper.downcallHandle(
-        "CertCreateCRLContext",
-        constants$445.CertCreateCRLContext$FUNC
+    static final MethodHandle SetThreadDpiHostingBehavior$MH = RuntimeHelper.downcallHandle(
+        "SetThreadDpiHostingBehavior",
+        constants$445.SetThreadDpiHostingBehavior$FUNC
     );
-    static final FunctionDescriptor CertFreeCRLContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFreeCRLContext$MH = RuntimeHelper.downcallHandle(
-        "CertFreeCRLContext",
-        constants$445.CertFreeCRLContext$FUNC
-    );
-    static final FunctionDescriptor CertSetCRLContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertSetCRLContextProperty$MH = RuntimeHelper.downcallHandle(
-        "CertSetCRLContextProperty",
-        constants$445.CertSetCRLContextProperty$FUNC
-    );
-    static final FunctionDescriptor CertGetCRLContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertGetCRLContextProperty$MH = RuntimeHelper.downcallHandle(
-        "CertGetCRLContextProperty",
-        constants$445.CertGetCRLContextProperty$FUNC
-    );
-    static final FunctionDescriptor CertEnumCRLContextProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertEnumCRLContextProperties$MH = RuntimeHelper.downcallHandle(
-        "CertEnumCRLContextProperties",
-        constants$445.CertEnumCRLContextProperties$FUNC
+    static final FunctionDescriptor GetThreadDpiHostingBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetThreadDpiHostingBehavior$MH = RuntimeHelper.downcallHandle(
+        "GetThreadDpiHostingBehavior",
+        constants$445.GetThreadDpiHostingBehavior$FUNC
     );
 }
 

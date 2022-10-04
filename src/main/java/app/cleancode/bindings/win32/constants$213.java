@@ -9,67 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$213 {
 
-    static final FunctionDescriptor ScaleViewportExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WriteProfileSectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ScaleViewportExtEx$MH = RuntimeHelper.downcallHandle(
-        "ScaleViewportExtEx",
-        constants$213.ScaleViewportExtEx$FUNC
+    static final MethodHandle WriteProfileSectionW$MH = RuntimeHelper.downcallHandle(
+        "WriteProfileSectionW",
+        constants$213.WriteProfileSectionW$FUNC
     );
-    static final FunctionDescriptor ScaleWindowExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPrivateProfileIntA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ScaleWindowExtEx$MH = RuntimeHelper.downcallHandle(
-        "ScaleWindowExtEx",
-        constants$213.ScaleWindowExtEx$FUNC
-    );
-    static final FunctionDescriptor SetBitmapDimensionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetBitmapDimensionEx$MH = RuntimeHelper.downcallHandle(
-        "SetBitmapDimensionEx",
-        constants$213.SetBitmapDimensionEx$FUNC
-    );
-    static final FunctionDescriptor SetBrushOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetBrushOrgEx$MH = RuntimeHelper.downcallHandle(
-        "SetBrushOrgEx",
-        constants$213.SetBrushOrgEx$FUNC
-    );
-    static final FunctionDescriptor GetTextFaceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextFaceA$MH = RuntimeHelper.downcallHandle(
-        "GetTextFaceA",
-        constants$213.GetTextFaceA$FUNC
+    static final MethodHandle GetPrivateProfileIntA$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileIntA",
+        constants$213.GetPrivateProfileIntA$FUNC
     );
-    static final FunctionDescriptor GetTextFaceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPrivateProfileIntW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextFaceW$MH = RuntimeHelper.downcallHandle(
-        "GetTextFaceW",
-        constants$213.GetTextFaceW$FUNC
+    static final MethodHandle GetPrivateProfileIntW$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileIntW",
+        constants$213.GetPrivateProfileIntW$FUNC
+    );
+    static final FunctionDescriptor GetPrivateProfileStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrivateProfileStringA$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileStringA",
+        constants$213.GetPrivateProfileStringA$FUNC
+    );
+    static final FunctionDescriptor GetPrivateProfileStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrivateProfileStringW$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileStringW",
+        constants$213.GetPrivateProfileStringW$FUNC
+    );
+    static final FunctionDescriptor WritePrivateProfileStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WritePrivateProfileStringA$MH = RuntimeHelper.downcallHandle(
+        "WritePrivateProfileStringA",
+        constants$213.WritePrivateProfileStringA$FUNC
     );
 }
 

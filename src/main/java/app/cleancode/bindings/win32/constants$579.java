@@ -9,12 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$579 {
 
-    static final MemorySegment MS_DEF_DSS_DH_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS and Diffie-Hellman Cryptographic Provider");
-    static final MemorySegment MS_ENH_DSS_DH_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced DSS and Diffie-Hellman Cryptographic Provider");
-    static final MemorySegment MS_ENH_DSS_DH_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_ENH_DSS_DH_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced DSS and Diffie-Hellman Cryptographic Provider");
-    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft DH SChannel Cryptographic Provider");
-    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final FunctionDescriptor CryptMsgCalculateEncodedLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptMsgCalculateEncodedLength$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgCalculateEncodedLength",
+        constants$579.CryptMsgCalculateEncodedLength$FUNC
+    );
+    static final FunctionDescriptor CryptMsgOpenToDecode$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgOpenToDecode$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgOpenToDecode",
+        constants$579.CryptMsgOpenToDecode$FUNC
+    );
+    static final FunctionDescriptor CryptMsgDuplicate$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgDuplicate$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgDuplicate",
+        constants$579.CryptMsgDuplicate$FUNC
+    );
+    static final FunctionDescriptor CryptMsgClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgClose$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgClose",
+        constants$579.CryptMsgClose$FUNC
+    );
+    static final FunctionDescriptor CryptMsgUpdate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptMsgUpdate$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgUpdate",
+        constants$579.CryptMsgUpdate$FUNC
+    );
+    static final FunctionDescriptor CryptMsgGetParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgGetParam$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgGetParam",
+        constants$579.CryptMsgGetParam$FUNC
+    );
 }
 
 

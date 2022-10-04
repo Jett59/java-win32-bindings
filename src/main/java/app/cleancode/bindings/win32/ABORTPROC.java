@@ -11,13 +11,13 @@ public interface ABORTPROC {
 
     int apply(java.lang.foreign.MemoryAddress _x0, int _x1);
     static MemorySegment allocate(ABORTPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(ABORTPROC.class, fi, constants$204.ABORTPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(ABORTPROC.class, fi, constants$308.ABORTPROC$FUNC, session);
     }
     static ABORTPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, int __x1) -> {
             try {
-                return (int)constants$204.ABORTPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1);
+                return (int)constants$308.ABORTPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,12 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$701 {
 
-    static final MemorySegment CERT_PROT_ROOT_PEER_USAGES_VALUE_NAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PeerUsages");
-    static final MemorySegment CERT_PROT_ROOT_PEER_USAGES_DEFAULT_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.2");
-    static final MemorySegment CERT_TRUST_PUB_SAFER_GROUP_POLICY_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_LOCAL_MACHINE_SYSTEM_STORE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_TRUST_PUB_SAFER_LOCAL_MACHINE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_TRUST_PUB_AUTHENTICODE_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
+    static final FunctionDescriptor DllCanUnloadNow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle DllCanUnloadNow$MH = RuntimeHelper.downcallHandle(
+        "DllCanUnloadNow",
+        constants$701.DllCanUnloadNow$FUNC
+    );
+    static final FunctionDescriptor CoTaskMemAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CoTaskMemAlloc$MH = RuntimeHelper.downcallHandle(
+        "CoTaskMemAlloc",
+        constants$701.CoTaskMemAlloc$FUNC
+    );
+    static final FunctionDescriptor CoTaskMemRealloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CoTaskMemRealloc$MH = RuntimeHelper.downcallHandle(
+        "CoTaskMemRealloc",
+        constants$701.CoTaskMemRealloc$FUNC
+    );
+    static final FunctionDescriptor CoTaskMemFree$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoTaskMemFree$MH = RuntimeHelper.downcallHandle(
+        "CoTaskMemFree",
+        constants$701.CoTaskMemFree$FUNC
+    );
+    static final FunctionDescriptor CoFileTimeNow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoFileTimeNow$MH = RuntimeHelper.downcallHandle(
+        "CoFileTimeNow",
+        constants$701.CoFileTimeNow$FUNC
+    );
+    static final FunctionDescriptor CLSIDFromProgIDEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CLSIDFromProgIDEx$MH = RuntimeHelper.downcallHandle(
+        "CLSIDFromProgIDEx",
+        constants$701.CLSIDFromProgIDEx$FUNC
+    );
 }
 
 

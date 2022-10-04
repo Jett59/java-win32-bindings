@@ -9,73 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$362 {
 
-    static final FunctionDescriptor GetNumberFormatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDlgItemInt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetNumberFormatA$MH = RuntimeHelper.downcallHandle(
-        "GetNumberFormatA",
-        constants$362.GetNumberFormatA$FUNC
+    static final MethodHandle GetDlgItemInt$MH = RuntimeHelper.downcallHandle(
+        "GetDlgItemInt",
+        constants$362.GetDlgItemInt$FUNC
     );
-    static final FunctionDescriptor GetNumberFormatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetDlgItemTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetDlgItemTextA$MH = RuntimeHelper.downcallHandle(
+        "SetDlgItemTextA",
+        constants$362.SetDlgItemTextA$FUNC
+    );
+    static final FunctionDescriptor SetDlgItemTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetDlgItemTextW$MH = RuntimeHelper.downcallHandle(
+        "SetDlgItemTextW",
+        constants$362.SetDlgItemTextW$FUNC
+    );
+    static final FunctionDescriptor GetDlgItemTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetNumberFormatW$MH = RuntimeHelper.downcallHandle(
-        "GetNumberFormatW",
-        constants$362.GetNumberFormatW$FUNC
+    static final MethodHandle GetDlgItemTextA$MH = RuntimeHelper.downcallHandle(
+        "GetDlgItemTextA",
+        constants$362.GetDlgItemTextA$FUNC
     );
-    static final FunctionDescriptor GetCurrencyFormatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDlgItemTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetCurrencyFormatA$MH = RuntimeHelper.downcallHandle(
-        "GetCurrencyFormatA",
-        constants$362.GetCurrencyFormatA$FUNC
+    static final MethodHandle GetDlgItemTextW$MH = RuntimeHelper.downcallHandle(
+        "GetDlgItemTextW",
+        constants$362.GetDlgItemTextW$FUNC
     );
-    static final FunctionDescriptor GetCurrencyFormatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CheckDlgButton$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetCurrencyFormatW$MH = RuntimeHelper.downcallHandle(
-        "GetCurrencyFormatW",
-        constants$362.GetCurrencyFormatW$FUNC
-    );
-    static final FunctionDescriptor EnumCalendarInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumCalendarInfoA$MH = RuntimeHelper.downcallHandle(
-        "EnumCalendarInfoA",
-        constants$362.EnumCalendarInfoA$FUNC
-    );
-    static final FunctionDescriptor EnumCalendarInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumCalendarInfoW$MH = RuntimeHelper.downcallHandle(
-        "EnumCalendarInfoW",
-        constants$362.EnumCalendarInfoW$FUNC
+    static final MethodHandle CheckDlgButton$MH = RuntimeHelper.downcallHandle(
+        "CheckDlgButton",
+        constants$362.CheckDlgButton$FUNC
     );
 }
 

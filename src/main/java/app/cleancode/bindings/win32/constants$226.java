@@ -9,38 +9,73 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$226 {
 
-    static final FunctionDescriptor PROPENUMPROCEXA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindFirstFileNameTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PROPENUMPROCEXA$MH = RuntimeHelper.downcallHandle(
-        constants$226.PROPENUMPROCEXA$FUNC
+    static final MethodHandle FindFirstFileNameTransactedW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFileNameTransactedW",
+        constants$226.FindFirstFileNameTransactedW$FUNC
     );
-    static final FunctionDescriptor PROPENUMPROCEXW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle PROPENUMPROCEXW$MH = RuntimeHelper.downcallHandle(
-        constants$226.PROPENUMPROCEXW$FUNC
-    );
-    static final FunctionDescriptor EDITWORDBREAKPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateNamedPipeA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateNamedPipeA$MH = RuntimeHelper.downcallHandle(
+        "CreateNamedPipeA",
+        constants$226.CreateNamedPipeA$FUNC
+    );
+    static final FunctionDescriptor GetNamedPipeHandleStateA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EDITWORDBREAKPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$226.EDITWORDBREAKPROCA$FUNC
+    static final MethodHandle GetNamedPipeHandleStateA$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeHandleStateA",
+        constants$226.GetNamedPipeHandleStateA$FUNC
     );
-    static final FunctionDescriptor EDITWORDBREAKPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CallNamedPipeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CallNamedPipeA$MH = RuntimeHelper.downcallHandle(
+        "CallNamedPipeA",
+        constants$226.CallNamedPipeA$FUNC
+    );
+    static final FunctionDescriptor WaitNamedPipeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WaitNamedPipeA$MH = RuntimeHelper.downcallHandle(
+        "WaitNamedPipeA",
+        constants$226.WaitNamedPipeA$FUNC
+    );
+    static final FunctionDescriptor GetNamedPipeClientComputerNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetNamedPipeClientComputerNameA$MH = RuntimeHelper.downcallHandle(
+        "GetNamedPipeClientComputerNameA",
+        constants$226.GetNamedPipeClientComputerNameA$FUNC
     );
 }
 

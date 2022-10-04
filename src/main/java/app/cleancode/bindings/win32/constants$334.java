@@ -9,64 +9,26 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$334 {
 
-    static final FunctionDescriptor EnumDisplayDevicesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DESKTOPENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DESKTOPENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$334.DESKTOPENUMPROCW$FUNC
+    );
+    static final FunctionDescriptor WINSTAENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EnumDisplayDevicesA$MH = RuntimeHelper.downcallHandle(
-        "EnumDisplayDevicesA",
-        constants$334.EnumDisplayDevicesA$FUNC
+    static final MethodHandle WINSTAENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$334.WINSTAENUMPROC$FUNC
     );
-    static final FunctionDescriptor EnumDisplayDevicesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DESKTOPENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EnumDisplayDevicesW$MH = RuntimeHelper.downcallHandle(
-        "EnumDisplayDevicesW",
-        constants$334.EnumDisplayDevicesW$FUNC
-    );
-    static final FunctionDescriptor GetDisplayConfigBufferSizes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDisplayConfigBufferSizes$MH = RuntimeHelper.downcallHandle(
-        "GetDisplayConfigBufferSizes",
-        constants$334.GetDisplayConfigBufferSizes$FUNC
-    );
-    static final FunctionDescriptor SetDisplayConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetDisplayConfig$MH = RuntimeHelper.downcallHandle(
-        "SetDisplayConfig",
-        constants$334.SetDisplayConfig$FUNC
-    );
-    static final FunctionDescriptor QueryDisplayConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle QueryDisplayConfig$MH = RuntimeHelper.downcallHandle(
-        "QueryDisplayConfig",
-        constants$334.QueryDisplayConfig$FUNC
-    );
-    static final FunctionDescriptor DisplayConfigGetDeviceInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DisplayConfigGetDeviceInfo$MH = RuntimeHelper.downcallHandle(
-        "DisplayConfigGetDeviceInfo",
-        constants$334.DisplayConfigGetDeviceInfo$FUNC
+    static final MethodHandle DESKTOPENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$334.DESKTOPENUMPROC$FUNC
     );
 }
 

@@ -9,60 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$251 {
 
-    static final FunctionDescriptor CreateWindowExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetVolumePathNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateWindowExW$MH = RuntimeHelper.downcallHandle(
-        "CreateWindowExW",
-        constants$251.CreateWindowExW$FUNC
-    );
-    static final FunctionDescriptor IsWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IsWindow$MH = RuntimeHelper.downcallHandle(
-        "IsWindow",
-        constants$251.IsWindow$FUNC
-    );
-    static final FunctionDescriptor IsMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IsMenu$MH = RuntimeHelper.downcallHandle(
-        "IsMenu",
-        constants$251.IsMenu$FUNC
-    );
-    static final FunctionDescriptor IsChild$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IsChild$MH = RuntimeHelper.downcallHandle(
-        "IsChild",
-        constants$251.IsChild$FUNC
-    );
-    static final FunctionDescriptor DestroyWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DestroyWindow$MH = RuntimeHelper.downcallHandle(
-        "DestroyWindow",
-        constants$251.DestroyWindow$FUNC
-    );
-    static final FunctionDescriptor ShowWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ShowWindow$MH = RuntimeHelper.downcallHandle(
-        "ShowWindow",
-        constants$251.ShowWindow$FUNC
+    static final MethodHandle GetVolumePathNameA$MH = RuntimeHelper.downcallHandle(
+        "GetVolumePathNameA",
+        constants$251.GetVolumePathNameA$FUNC
+    );
+    static final FunctionDescriptor GetVolumePathNamesForVolumeNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetVolumePathNamesForVolumeNameA$MH = RuntimeHelper.downcallHandle(
+        "GetVolumePathNamesForVolumeNameA",
+        constants$251.GetVolumePathNamesForVolumeNameA$FUNC
+    );
+    static final FunctionDescriptor CreateActCtxA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateActCtxA$MH = RuntimeHelper.downcallHandle(
+        "CreateActCtxA",
+        constants$251.CreateActCtxA$FUNC
+    );
+    static final FunctionDescriptor CreateActCtxW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateActCtxW$MH = RuntimeHelper.downcallHandle(
+        "CreateActCtxW",
+        constants$251.CreateActCtxW$FUNC
+    );
+    static final FunctionDescriptor AddRefActCtx$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddRefActCtx$MH = RuntimeHelper.downcallHandle(
+        "AddRefActCtx",
+        constants$251.AddRefActCtx$FUNC
+    );
+    static final FunctionDescriptor ReleaseActCtx$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReleaseActCtx$MH = RuntimeHelper.downcallHandle(
+        "ReleaseActCtx",
+        constants$251.ReleaseActCtx$FUNC
     );
 }
 

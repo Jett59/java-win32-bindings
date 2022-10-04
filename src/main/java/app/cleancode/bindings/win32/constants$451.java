@@ -9,56 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$451 {
 
-    static final FunctionDescriptor CertSetStoreProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPointerDeviceRects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerDeviceRects$MH = RuntimeHelper.downcallHandle(
+        "GetPointerDeviceRects",
+        constants$451.GetPointerDeviceRects$FUNC
+    );
+    static final FunctionDescriptor GetPointerDeviceCursors$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerDeviceCursors$MH = RuntimeHelper.downcallHandle(
+        "GetPointerDeviceCursors",
+        constants$451.GetPointerDeviceCursors$FUNC
+    );
+    static final FunctionDescriptor GetRawPointerDeviceData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetRawPointerDeviceData$MH = RuntimeHelper.downcallHandle(
+        "GetRawPointerDeviceData",
+        constants$451.GetRawPointerDeviceData$FUNC
+    );
+    static final FunctionDescriptor ChangeWindowMessageFilter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ChangeWindowMessageFilter$MH = RuntimeHelper.downcallHandle(
+        "ChangeWindowMessageFilter",
+        constants$451.ChangeWindowMessageFilter$FUNC
+    );
+    static final FunctionDescriptor ChangeWindowMessageFilterEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertSetStoreProperty$MH = RuntimeHelper.downcallHandle(
-        "CertSetStoreProperty",
-        constants$451.CertSetStoreProperty$FUNC
+    static final MethodHandle ChangeWindowMessageFilterEx$MH = RuntimeHelper.downcallHandle(
+        "ChangeWindowMessageFilterEx",
+        constants$451.ChangeWindowMessageFilterEx$FUNC
     );
-    static final FunctionDescriptor CertGetStoreProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetGestureInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertGetStoreProperty$MH = RuntimeHelper.downcallHandle(
-        "CertGetStoreProperty",
-        constants$451.CertGetStoreProperty$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_CREATE_CONTEXT_SORT_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_CREATE_CONTEXT_SORT_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$451.PFN_CERT_CREATE_CONTEXT_SORT_FUNC$FUNC
-    );
-    static final FunctionDescriptor CertCreateContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertCreateContext$MH = RuntimeHelper.downcallHandle(
-        "CertCreateContext",
-        constants$451.CertCreateContext$FUNC
-    );
-    static final FunctionDescriptor CertRegisterSystemStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertRegisterSystemStore$MH = RuntimeHelper.downcallHandle(
-        "CertRegisterSystemStore",
-        constants$451.CertRegisterSystemStore$FUNC
+    static final MethodHandle GetGestureInfo$MH = RuntimeHelper.downcallHandle(
+        "GetGestureInfo",
+        constants$451.GetGestureInfo$FUNC
     );
 }
 

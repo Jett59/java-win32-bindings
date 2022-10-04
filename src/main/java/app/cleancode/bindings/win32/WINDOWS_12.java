@@ -9,7625 +9,8880 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_12 extends WINDOWS_11 {
 
-    public static OfAddress LPPOLYTEXTW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPOLYTEXT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPPOLYTEXT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPPOLYTEXT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMAT2 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPGLYPHMETRICS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPPOINTFX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPTTPOLYCURVE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPTTPOLYGONHEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPGCP_RESULTSA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPGCP_RESULTSW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPGCP_RESULTS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPRASTERIZER_STATUS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPIXELFORMATDESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPPIXELFORMATDESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle AddFontResourceA$MH() {
-        return RuntimeHelper.requireNonNull(constants$159.AddFontResourceA$MH,"AddFontResourceA");
+    public static OfAddress PPROCESS_LEAP_SECOND_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle SetProcessInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$125.SetProcessInformation$MH,"SetProcessInformation");
     }
-    public static int AddFontResourceA ( Addressable x0) {
-        var mh$ = AddFontResourceA$MH();
+    public static int SetProcessInformation ( Addressable hProcess,  int ProcessInformationClass,  Addressable ProcessInformation,  int ProcessInformationSize) {
+        var mh$ = SetProcessInformation$MH();
         try {
-            return (int)mh$.invokeExact(x0);
+            return (int)mh$.invokeExact(hProcess, ProcessInformationClass, ProcessInformation, ProcessInformationSize);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle AddFontResourceW$MH() {
-        return RuntimeHelper.requireNonNull(constants$160.AddFontResourceW$MH,"AddFontResourceW");
+    public static MethodHandle GetProcessInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$125.GetProcessInformation$MH,"GetProcessInformation");
     }
-    public static int AddFontResourceW ( Addressable x0) {
-        var mh$ = AddFontResourceW$MH();
+    public static int GetProcessInformation ( Addressable hProcess,  int ProcessInformationClass,  Addressable ProcessInformation,  int ProcessInformationSize) {
+        var mh$ = GetProcessInformation$MH();
         try {
-            return (int)mh$.invokeExact(x0);
+            return (int)mh$.invokeExact(hProcess, ProcessInformationClass, ProcessInformation, ProcessInformationSize);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle AnimatePalette$MH() {
-        return RuntimeHelper.requireNonNull(constants$160.AnimatePalette$MH,"AnimatePalette");
+    public static MethodHandle GetSystemCpuSetInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$125.GetSystemCpuSetInformation$MH,"GetSystemCpuSetInformation");
     }
-    public static int AnimatePalette ( Addressable hPal,  int iStartIndex,  int cEntries,  Addressable ppe) {
-        var mh$ = AnimatePalette$MH();
+    public static int GetSystemCpuSetInformation ( Addressable Information,  int BufferLength,  Addressable ReturnedLength,  Addressable Process,  int Flags) {
+        var mh$ = GetSystemCpuSetInformation$MH();
         try {
-            return (int)mh$.invokeExact(hPal, iStartIndex, cEntries, ppe);
+            return (int)mh$.invokeExact(Information, BufferLength, ReturnedLength, Process, Flags);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle Arc$MH() {
-        return RuntimeHelper.requireNonNull(constants$160.Arc$MH,"Arc");
+    public static MethodHandle GetProcessDefaultCpuSets$MH() {
+        return RuntimeHelper.requireNonNull(constants$125.GetProcessDefaultCpuSets$MH,"GetProcessDefaultCpuSets");
     }
-    public static int Arc ( Addressable hdc,  int x1,  int y1,  int x2,  int y2,  int x3,  int y3,  int x4,  int y4) {
-        var mh$ = Arc$MH();
+    public static int GetProcessDefaultCpuSets ( Addressable Process,  Addressable CpuSetIds,  int CpuSetIdCount,  Addressable RequiredIdCount) {
+        var mh$ = GetProcessDefaultCpuSets$MH();
         try {
-            return (int)mh$.invokeExact(hdc, x1, y1, x2, y2, x3, y3, x4, y4);
+            return (int)mh$.invokeExact(Process, CpuSetIds, CpuSetIdCount, RequiredIdCount);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle BitBlt$MH() {
-        return RuntimeHelper.requireNonNull(constants$160.BitBlt$MH,"BitBlt");
+    public static MethodHandle SetProcessDefaultCpuSets$MH() {
+        return RuntimeHelper.requireNonNull(constants$125.SetProcessDefaultCpuSets$MH,"SetProcessDefaultCpuSets");
     }
-    public static int BitBlt ( Addressable hdc,  int x,  int y,  int cx,  int cy,  Addressable hdcSrc,  int x1,  int y1,  int rop) {
-        var mh$ = BitBlt$MH();
+    public static int SetProcessDefaultCpuSets ( Addressable Process,  Addressable CpuSetIds,  int CpuSetIdCount) {
+        var mh$ = SetProcessDefaultCpuSets$MH();
         try {
-            return (int)mh$.invokeExact(hdc, x, y, cx, cy, hdcSrc, x1, y1, rop);
+            return (int)mh$.invokeExact(Process, CpuSetIds, CpuSetIdCount);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CancelDC$MH() {
-        return RuntimeHelper.requireNonNull(constants$160.CancelDC$MH,"CancelDC");
+    public static MethodHandle GetThreadSelectedCpuSets$MH() {
+        return RuntimeHelper.requireNonNull(constants$125.GetThreadSelectedCpuSets$MH,"GetThreadSelectedCpuSets");
     }
-    public static int CancelDC ( Addressable hdc) {
-        var mh$ = CancelDC$MH();
+    public static int GetThreadSelectedCpuSets ( Addressable Thread,  Addressable CpuSetIds,  int CpuSetIdCount,  Addressable RequiredIdCount) {
+        var mh$ = GetThreadSelectedCpuSets$MH();
         try {
-            return (int)mh$.invokeExact(hdc);
+            return (int)mh$.invokeExact(Thread, CpuSetIds, CpuSetIdCount, RequiredIdCount);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle Chord$MH() {
-        return RuntimeHelper.requireNonNull(constants$160.Chord$MH,"Chord");
+    public static MethodHandle SetThreadSelectedCpuSets$MH() {
+        return RuntimeHelper.requireNonNull(constants$126.SetThreadSelectedCpuSets$MH,"SetThreadSelectedCpuSets");
     }
-    public static int Chord ( Addressable hdc,  int x1,  int y1,  int x2,  int y2,  int x3,  int y3,  int x4,  int y4) {
-        var mh$ = Chord$MH();
+    public static int SetThreadSelectedCpuSets ( Addressable Thread,  Addressable CpuSetIds,  int CpuSetIdCount) {
+        var mh$ = SetThreadSelectedCpuSets$MH();
         try {
-            return (int)mh$.invokeExact(hdc, x1, y1, x2, y2, x3, y3, x4, y4);
+            return (int)mh$.invokeExact(Thread, CpuSetIds, CpuSetIdCount);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle ChoosePixelFormat$MH() {
-        return RuntimeHelper.requireNonNull(constants$161.ChoosePixelFormat$MH,"ChoosePixelFormat");
+    public static MethodHandle CreateProcessAsUserA$MH() {
+        return RuntimeHelper.requireNonNull(constants$126.CreateProcessAsUserA$MH,"CreateProcessAsUserA");
     }
-    public static int ChoosePixelFormat ( Addressable hdc,  Addressable ppfd) {
-        var mh$ = ChoosePixelFormat$MH();
+    public static int CreateProcessAsUserA ( Addressable hToken,  Addressable lpApplicationName,  Addressable lpCommandLine,  Addressable lpProcessAttributes,  Addressable lpThreadAttributes,  int bInheritHandles,  int dwCreationFlags,  Addressable lpEnvironment,  Addressable lpCurrentDirectory,  Addressable lpStartupInfo,  Addressable lpProcessInformation) {
+        var mh$ = CreateProcessAsUserA$MH();
         try {
-            return (int)mh$.invokeExact(hdc, ppfd);
+            return (int)mh$.invokeExact(hToken, lpApplicationName, lpCommandLine, lpProcessAttributes, lpThreadAttributes, bInheritHandles, dwCreationFlags, lpEnvironment, lpCurrentDirectory, lpStartupInfo, lpProcessInformation);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CloseMetaFile$MH() {
-        return RuntimeHelper.requireNonNull(constants$161.CloseMetaFile$MH,"CloseMetaFile");
+    public static MethodHandle GetProcessShutdownParameters$MH() {
+        return RuntimeHelper.requireNonNull(constants$126.GetProcessShutdownParameters$MH,"GetProcessShutdownParameters");
     }
-    public static MemoryAddress CloseMetaFile ( Addressable hdc) {
-        var mh$ = CloseMetaFile$MH();
+    public static int GetProcessShutdownParameters ( Addressable lpdwLevel,  Addressable lpdwFlags) {
+        var mh$ = GetProcessShutdownParameters$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc);
+            return (int)mh$.invokeExact(lpdwLevel, lpdwFlags);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CombineRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$161.CombineRgn$MH,"CombineRgn");
+    public static MethodHandle SetThreadDescription$MH() {
+        return RuntimeHelper.requireNonNull(constants$126.SetThreadDescription$MH,"SetThreadDescription");
     }
-    public static int CombineRgn ( Addressable hrgnDst,  Addressable hrgnSrc1,  Addressable hrgnSrc2,  int iMode) {
-        var mh$ = CombineRgn$MH();
+    public static int SetThreadDescription ( Addressable hThread,  Addressable lpThreadDescription) {
+        var mh$ = SetThreadDescription$MH();
         try {
-            return (int)mh$.invokeExact(hrgnDst, hrgnSrc1, hrgnSrc2, iMode);
+            return (int)mh$.invokeExact(hThread, lpThreadDescription);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CopyMetaFileA$MH() {
-        return RuntimeHelper.requireNonNull(constants$161.CopyMetaFileA$MH,"CopyMetaFileA");
+    public static MethodHandle GetThreadDescription$MH() {
+        return RuntimeHelper.requireNonNull(constants$126.GetThreadDescription$MH,"GetThreadDescription");
     }
-    public static MemoryAddress CopyMetaFileA ( Addressable x0,  Addressable x1) {
-        var mh$ = CopyMetaFileA$MH();
+    public static int GetThreadDescription ( Addressable hThread,  Addressable ppszThreadDescription) {
+        var mh$ = GetThreadDescription$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x0, x1);
+            return (int)mh$.invokeExact(hThread, ppszThreadDescription);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CopyMetaFileW$MH() {
-        return RuntimeHelper.requireNonNull(constants$161.CopyMetaFileW$MH,"CopyMetaFileW");
+    public static OfAddress LPSYSTEM_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMEMORYSTATUSEX = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle GlobalMemoryStatusEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$126.GlobalMemoryStatusEx$MH,"GlobalMemoryStatusEx");
     }
-    public static MemoryAddress CopyMetaFileW ( Addressable x0,  Addressable x1) {
-        var mh$ = CopyMetaFileW$MH();
+    public static int GlobalMemoryStatusEx ( Addressable lpBuffer) {
+        var mh$ = GlobalMemoryStatusEx$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x0, x1);
+            return (int)mh$.invokeExact(lpBuffer);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CreateBitmap$MH() {
-        return RuntimeHelper.requireNonNull(constants$161.CreateBitmap$MH,"CreateBitmap");
+    public static MethodHandle GetSystemInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$127.GetSystemInfo$MH,"GetSystemInfo");
     }
-    public static MemoryAddress CreateBitmap ( int nWidth,  int nHeight,  int nPlanes,  int nBitCount,  Addressable lpBits) {
-        var mh$ = CreateBitmap$MH();
+    public static void GetSystemInfo ( Addressable lpSystemInfo) {
+        var mh$ = GetSystemInfo$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(nWidth, nHeight, nPlanes, nBitCount, lpBits);
+            mh$.invokeExact(lpSystemInfo);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CreateBitmapIndirect$MH() {
-        return RuntimeHelper.requireNonNull(constants$162.CreateBitmapIndirect$MH,"CreateBitmapIndirect");
+    public static MethodHandle GetSystemTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$127.GetSystemTime$MH,"GetSystemTime");
     }
-    public static MemoryAddress CreateBitmapIndirect ( Addressable pbm) {
-        var mh$ = CreateBitmapIndirect$MH();
+    public static void GetSystemTime ( Addressable lpSystemTime) {
+        var mh$ = GetSystemTime$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pbm);
+            mh$.invokeExact(lpSystemTime);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CreateBrushIndirect$MH() {
-        return RuntimeHelper.requireNonNull(constants$162.CreateBrushIndirect$MH,"CreateBrushIndirect");
+    public static MethodHandle GetSystemTimeAsFileTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$127.GetSystemTimeAsFileTime$MH,"GetSystemTimeAsFileTime");
     }
-    public static MemoryAddress CreateBrushIndirect ( Addressable plbrush) {
-        var mh$ = CreateBrushIndirect$MH();
+    public static void GetSystemTimeAsFileTime ( Addressable lpSystemTimeAsFileTime) {
+        var mh$ = GetSystemTimeAsFileTime$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(plbrush);
+            mh$.invokeExact(lpSystemTimeAsFileTime);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CreateCompatibleBitmap$MH() {
-        return RuntimeHelper.requireNonNull(constants$162.CreateCompatibleBitmap$MH,"CreateCompatibleBitmap");
+    public static MethodHandle GetLocalTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$127.GetLocalTime$MH,"GetLocalTime");
     }
-    public static MemoryAddress CreateCompatibleBitmap ( Addressable hdc,  int cx,  int cy) {
-        var mh$ = CreateCompatibleBitmap$MH();
+    public static void GetLocalTime ( Addressable lpSystemTime) {
+        var mh$ = GetLocalTime$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, cx, cy);
+            mh$.invokeExact(lpSystemTime);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CreateDiscardableBitmap$MH() {
-        return RuntimeHelper.requireNonNull(constants$162.CreateDiscardableBitmap$MH,"CreateDiscardableBitmap");
+    public static MethodHandle IsUserCetAvailableInEnvironment$MH() {
+        return RuntimeHelper.requireNonNull(constants$127.IsUserCetAvailableInEnvironment$MH,"IsUserCetAvailableInEnvironment");
     }
-    public static MemoryAddress CreateDiscardableBitmap ( Addressable hdc,  int cx,  int cy) {
-        var mh$ = CreateDiscardableBitmap$MH();
+    public static int IsUserCetAvailableInEnvironment ( int UserCetEnvironment) {
+        var mh$ = IsUserCetAvailableInEnvironment$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, cx, cy);
+            return (int)mh$.invokeExact(UserCetEnvironment);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CreateCompatibleDC$MH() {
-        return RuntimeHelper.requireNonNull(constants$162.CreateCompatibleDC$MH,"CreateCompatibleDC");
+    public static MethodHandle GetSystemLeapSecondInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$127.GetSystemLeapSecondInformation$MH,"GetSystemLeapSecondInformation");
     }
-    public static MemoryAddress CreateCompatibleDC ( Addressable hdc) {
-        var mh$ = CreateCompatibleDC$MH();
+    public static int GetSystemLeapSecondInformation ( Addressable Enabled,  Addressable Flags) {
+        var mh$ = GetSystemLeapSecondInformation$MH();
         try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc);
+            return (int)mh$.invokeExact(Enabled, Flags);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle CreateDCA$MH() {
-        return RuntimeHelper.requireNonNull(constants$162.CreateDCA$MH,"CreateDCA");
+    public static MethodHandle GetVersion$MH() {
+        return RuntimeHelper.requireNonNull(constants$128.GetVersion$MH,"GetVersion");
     }
-    public static MemoryAddress CreateDCA ( Addressable pwszDriver,  Addressable pwszDevice,  Addressable pszPort,  Addressable pdm) {
-        var mh$ = CreateDCA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pwszDriver, pwszDevice, pszPort, pdm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDCW$MH() {
-        return RuntimeHelper.requireNonNull(constants$163.CreateDCW$MH,"CreateDCW");
-    }
-    public static MemoryAddress CreateDCW ( Addressable pwszDriver,  Addressable pwszDevice,  Addressable pszPort,  Addressable pdm) {
-        var mh$ = CreateDCW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pwszDriver, pwszDevice, pszPort, pdm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDIBitmap$MH() {
-        return RuntimeHelper.requireNonNull(constants$163.CreateDIBitmap$MH,"CreateDIBitmap");
-    }
-    public static MemoryAddress CreateDIBitmap ( Addressable hdc,  Addressable pbmih,  int flInit,  Addressable pjBits,  Addressable pbmi,  int iUsage) {
-        var mh$ = CreateDIBitmap$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, pbmih, flInit, pjBits, pbmi, iUsage);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDIBPatternBrush$MH() {
-        return RuntimeHelper.requireNonNull(constants$163.CreateDIBPatternBrush$MH,"CreateDIBPatternBrush");
-    }
-    public static MemoryAddress CreateDIBPatternBrush ( Addressable h,  int iUsage) {
-        var mh$ = CreateDIBPatternBrush$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(h, iUsage);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDIBPatternBrushPt$MH() {
-        return RuntimeHelper.requireNonNull(constants$163.CreateDIBPatternBrushPt$MH,"CreateDIBPatternBrushPt");
-    }
-    public static MemoryAddress CreateDIBPatternBrushPt ( Addressable lpPackedDIB,  int iUsage) {
-        var mh$ = CreateDIBPatternBrushPt$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpPackedDIB, iUsage);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateEllipticRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$163.CreateEllipticRgn$MH,"CreateEllipticRgn");
-    }
-    public static MemoryAddress CreateEllipticRgn ( int x1,  int y1,  int x2,  int y2) {
-        var mh$ = CreateEllipticRgn$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x1, y1, x2, y2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateEllipticRgnIndirect$MH() {
-        return RuntimeHelper.requireNonNull(constants$163.CreateEllipticRgnIndirect$MH,"CreateEllipticRgnIndirect");
-    }
-    public static MemoryAddress CreateEllipticRgnIndirect ( Addressable lprect) {
-        var mh$ = CreateEllipticRgnIndirect$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lprect);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateFontIndirectA$MH() {
-        return RuntimeHelper.requireNonNull(constants$164.CreateFontIndirectA$MH,"CreateFontIndirectA");
-    }
-    public static MemoryAddress CreateFontIndirectA ( Addressable lplf) {
-        var mh$ = CreateFontIndirectA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lplf);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateFontIndirectW$MH() {
-        return RuntimeHelper.requireNonNull(constants$164.CreateFontIndirectW$MH,"CreateFontIndirectW");
-    }
-    public static MemoryAddress CreateFontIndirectW ( Addressable lplf) {
-        var mh$ = CreateFontIndirectW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lplf);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateFontA$MH() {
-        return RuntimeHelper.requireNonNull(constants$164.CreateFontA$MH,"CreateFontA");
-    }
-    public static MemoryAddress CreateFontA ( int cHeight,  int cWidth,  int cEscapement,  int cOrientation,  int cWeight,  int bItalic,  int bUnderline,  int bStrikeOut,  int iCharSet,  int iOutPrecision,  int iClipPrecision,  int iQuality,  int iPitchAndFamily,  Addressable pszFaceName) {
-        var mh$ = CreateFontA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(cHeight, cWidth, cEscapement, cOrientation, cWeight, bItalic, bUnderline, bStrikeOut, iCharSet, iOutPrecision, iClipPrecision, iQuality, iPitchAndFamily, pszFaceName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateFontW$MH() {
-        return RuntimeHelper.requireNonNull(constants$164.CreateFontW$MH,"CreateFontW");
-    }
-    public static MemoryAddress CreateFontW ( int cHeight,  int cWidth,  int cEscapement,  int cOrientation,  int cWeight,  int bItalic,  int bUnderline,  int bStrikeOut,  int iCharSet,  int iOutPrecision,  int iClipPrecision,  int iQuality,  int iPitchAndFamily,  Addressable pszFaceName) {
-        var mh$ = CreateFontW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(cHeight, cWidth, cEscapement, cOrientation, cWeight, bItalic, bUnderline, bStrikeOut, iCharSet, iOutPrecision, iClipPrecision, iQuality, iPitchAndFamily, pszFaceName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateHatchBrush$MH() {
-        return RuntimeHelper.requireNonNull(constants$164.CreateHatchBrush$MH,"CreateHatchBrush");
-    }
-    public static MemoryAddress CreateHatchBrush ( int iHatch,  int color) {
-        var mh$ = CreateHatchBrush$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(iHatch, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateICA$MH() {
-        return RuntimeHelper.requireNonNull(constants$164.CreateICA$MH,"CreateICA");
-    }
-    public static MemoryAddress CreateICA ( Addressable pszDriver,  Addressable pszDevice,  Addressable pszPort,  Addressable pdm) {
-        var mh$ = CreateICA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pszDriver, pszDevice, pszPort, pdm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateICW$MH() {
-        return RuntimeHelper.requireNonNull(constants$165.CreateICW$MH,"CreateICW");
-    }
-    public static MemoryAddress CreateICW ( Addressable pszDriver,  Addressable pszDevice,  Addressable pszPort,  Addressable pdm) {
-        var mh$ = CreateICW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pszDriver, pszDevice, pszPort, pdm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateMetaFileA$MH() {
-        return RuntimeHelper.requireNonNull(constants$165.CreateMetaFileA$MH,"CreateMetaFileA");
-    }
-    public static MemoryAddress CreateMetaFileA ( Addressable pszFile) {
-        var mh$ = CreateMetaFileA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pszFile);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateMetaFileW$MH() {
-        return RuntimeHelper.requireNonNull(constants$165.CreateMetaFileW$MH,"CreateMetaFileW");
-    }
-    public static MemoryAddress CreateMetaFileW ( Addressable pszFile) {
-        var mh$ = CreateMetaFileW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pszFile);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreatePalette$MH() {
-        return RuntimeHelper.requireNonNull(constants$165.CreatePalette$MH,"CreatePalette");
-    }
-    public static MemoryAddress CreatePalette ( Addressable plpal) {
-        var mh$ = CreatePalette$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(plpal);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreatePen$MH() {
-        return RuntimeHelper.requireNonNull(constants$165.CreatePen$MH,"CreatePen");
-    }
-    public static MemoryAddress CreatePen ( int iStyle,  int cWidth,  int color) {
-        var mh$ = CreatePen$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(iStyle, cWidth, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreatePenIndirect$MH() {
-        return RuntimeHelper.requireNonNull(constants$165.CreatePenIndirect$MH,"CreatePenIndirect");
-    }
-    public static MemoryAddress CreatePenIndirect ( Addressable plpen) {
-        var mh$ = CreatePenIndirect$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(plpen);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreatePolyPolygonRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$166.CreatePolyPolygonRgn$MH,"CreatePolyPolygonRgn");
-    }
-    public static MemoryAddress CreatePolyPolygonRgn ( Addressable pptl,  Addressable pc,  int cPoly,  int iMode) {
-        var mh$ = CreatePolyPolygonRgn$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pptl, pc, cPoly, iMode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreatePatternBrush$MH() {
-        return RuntimeHelper.requireNonNull(constants$166.CreatePatternBrush$MH,"CreatePatternBrush");
-    }
-    public static MemoryAddress CreatePatternBrush ( Addressable hbm) {
-        var mh$ = CreatePatternBrush$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hbm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateRectRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$166.CreateRectRgn$MH,"CreateRectRgn");
-    }
-    public static MemoryAddress CreateRectRgn ( int x1,  int y1,  int x2,  int y2) {
-        var mh$ = CreateRectRgn$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x1, y1, x2, y2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateRectRgnIndirect$MH() {
-        return RuntimeHelper.requireNonNull(constants$166.CreateRectRgnIndirect$MH,"CreateRectRgnIndirect");
-    }
-    public static MemoryAddress CreateRectRgnIndirect ( Addressable lprect) {
-        var mh$ = CreateRectRgnIndirect$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lprect);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateRoundRectRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$166.CreateRoundRectRgn$MH,"CreateRoundRectRgn");
-    }
-    public static MemoryAddress CreateRoundRectRgn ( int x1,  int y1,  int x2,  int y2,  int w,  int h) {
-        var mh$ = CreateRoundRectRgn$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x1, y1, x2, y2, w, h);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateScalableFontResourceA$MH() {
-        return RuntimeHelper.requireNonNull(constants$166.CreateScalableFontResourceA$MH,"CreateScalableFontResourceA");
-    }
-    public static int CreateScalableFontResourceA ( int fdwHidden,  Addressable lpszFont,  Addressable lpszFile,  Addressable lpszPath) {
-        var mh$ = CreateScalableFontResourceA$MH();
-        try {
-            return (int)mh$.invokeExact(fdwHidden, lpszFont, lpszFile, lpszPath);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateScalableFontResourceW$MH() {
-        return RuntimeHelper.requireNonNull(constants$167.CreateScalableFontResourceW$MH,"CreateScalableFontResourceW");
-    }
-    public static int CreateScalableFontResourceW ( int fdwHidden,  Addressable lpszFont,  Addressable lpszFile,  Addressable lpszPath) {
-        var mh$ = CreateScalableFontResourceW$MH();
-        try {
-            return (int)mh$.invokeExact(fdwHidden, lpszFont, lpszFile, lpszPath);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateSolidBrush$MH() {
-        return RuntimeHelper.requireNonNull(constants$167.CreateSolidBrush$MH,"CreateSolidBrush");
-    }
-    public static MemoryAddress CreateSolidBrush ( int color) {
-        var mh$ = CreateSolidBrush$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DeleteDC$MH() {
-        return RuntimeHelper.requireNonNull(constants$167.DeleteDC$MH,"DeleteDC");
-    }
-    public static int DeleteDC ( Addressable hdc) {
-        var mh$ = DeleteDC$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DeleteMetaFile$MH() {
-        return RuntimeHelper.requireNonNull(constants$167.DeleteMetaFile$MH,"DeleteMetaFile");
-    }
-    public static int DeleteMetaFile ( Addressable hmf) {
-        var mh$ = DeleteMetaFile$MH();
-        try {
-            return (int)mh$.invokeExact(hmf);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DeleteObject$MH() {
-        return RuntimeHelper.requireNonNull(constants$167.DeleteObject$MH,"DeleteObject");
-    }
-    public static int DeleteObject ( Addressable ho) {
-        var mh$ = DeleteObject$MH();
-        try {
-            return (int)mh$.invokeExact(ho);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DescribePixelFormat$MH() {
-        return RuntimeHelper.requireNonNull(constants$167.DescribePixelFormat$MH,"DescribePixelFormat");
-    }
-    public static int DescribePixelFormat ( Addressable hdc,  int iPixelFormat,  int nBytes,  Addressable ppfd) {
-        var mh$ = DescribePixelFormat$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iPixelFormat, nBytes, ppfd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DeviceCapabilitiesA$MH() {
-        return RuntimeHelper.requireNonNull(constants$168.DeviceCapabilitiesA$MH,"DeviceCapabilitiesA");
-    }
-    public static int DeviceCapabilitiesA ( Addressable pDevice,  Addressable pPort,  short fwCapability,  Addressable pOutput,  Addressable pDevMode) {
-        var mh$ = DeviceCapabilitiesA$MH();
-        try {
-            return (int)mh$.invokeExact(pDevice, pPort, fwCapability, pOutput, pDevMode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DeviceCapabilitiesW$MH() {
-        return RuntimeHelper.requireNonNull(constants$168.DeviceCapabilitiesW$MH,"DeviceCapabilitiesW");
-    }
-    public static int DeviceCapabilitiesW ( Addressable pDevice,  Addressable pPort,  short fwCapability,  Addressable pOutput,  Addressable pDevMode) {
-        var mh$ = DeviceCapabilitiesW$MH();
-        try {
-            return (int)mh$.invokeExact(pDevice, pPort, fwCapability, pOutput, pDevMode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DrawEscape$MH() {
-        return RuntimeHelper.requireNonNull(constants$169.DrawEscape$MH,"DrawEscape");
-    }
-    public static int DrawEscape ( Addressable hdc,  int iEscape,  int cjIn,  Addressable lpIn) {
-        var mh$ = DrawEscape$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iEscape, cjIn, lpIn);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle Ellipse$MH() {
-        return RuntimeHelper.requireNonNull(constants$169.Ellipse$MH,"Ellipse");
-    }
-    public static int Ellipse ( Addressable hdc,  int left,  int top,  int right,  int bottom) {
-        var mh$ = Ellipse$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, left, top, right, bottom);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumFontFamiliesExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$169.EnumFontFamiliesExA$MH,"EnumFontFamiliesExA");
-    }
-    public static int EnumFontFamiliesExA ( Addressable hdc,  Addressable lpLogfont,  Addressable lpProc,  long lParam,  int dwFlags) {
-        var mh$ = EnumFontFamiliesExA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpLogfont, lpProc, lParam, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumFontFamiliesExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$169.EnumFontFamiliesExW$MH,"EnumFontFamiliesExW");
-    }
-    public static int EnumFontFamiliesExW ( Addressable hdc,  Addressable lpLogfont,  Addressable lpProc,  long lParam,  int dwFlags) {
-        var mh$ = EnumFontFamiliesExW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpLogfont, lpProc, lParam, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumFontFamiliesA$MH() {
-        return RuntimeHelper.requireNonNull(constants$169.EnumFontFamiliesA$MH,"EnumFontFamiliesA");
-    }
-    public static int EnumFontFamiliesA ( Addressable hdc,  Addressable lpLogfont,  Addressable lpProc,  long lParam) {
-        var mh$ = EnumFontFamiliesA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpLogfont, lpProc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumFontFamiliesW$MH() {
-        return RuntimeHelper.requireNonNull(constants$169.EnumFontFamiliesW$MH,"EnumFontFamiliesW");
-    }
-    public static int EnumFontFamiliesW ( Addressable hdc,  Addressable lpLogfont,  Addressable lpProc,  long lParam) {
-        var mh$ = EnumFontFamiliesW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpLogfont, lpProc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumFontsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$170.EnumFontsA$MH,"EnumFontsA");
-    }
-    public static int EnumFontsA ( Addressable hdc,  Addressable lpLogfont,  Addressable lpProc,  long lParam) {
-        var mh$ = EnumFontsA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpLogfont, lpProc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumFontsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$170.EnumFontsW$MH,"EnumFontsW");
-    }
-    public static int EnumFontsW ( Addressable hdc,  Addressable lpLogfont,  Addressable lpProc,  long lParam) {
-        var mh$ = EnumFontsW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpLogfont, lpProc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumObjects$MH() {
-        return RuntimeHelper.requireNonNull(constants$170.EnumObjects$MH,"EnumObjects");
-    }
-    public static int EnumObjects ( Addressable hdc,  int nType,  Addressable lpFunc,  long lParam) {
-        var mh$ = EnumObjects$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, nType, lpFunc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EqualRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$170.EqualRgn$MH,"EqualRgn");
-    }
-    public static int EqualRgn ( Addressable hrgn1,  Addressable hrgn2) {
-        var mh$ = EqualRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hrgn1, hrgn2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle Escape$MH() {
-        return RuntimeHelper.requireNonNull(constants$170.Escape$MH,"Escape");
-    }
-    public static int Escape ( Addressable hdc,  int iEscape,  int cjIn,  Addressable pvIn,  Addressable pvOut) {
-        var mh$ = Escape$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iEscape, cjIn, pvIn, pvOut);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExtEscape$MH() {
-        return RuntimeHelper.requireNonNull(constants$170.ExtEscape$MH,"ExtEscape");
-    }
-    public static int ExtEscape ( Addressable hdc,  int iEscape,  int cjInput,  Addressable lpInData,  int cjOutput,  Addressable lpOutData) {
-        var mh$ = ExtEscape$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iEscape, cjInput, lpInData, cjOutput, lpOutData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExcludeClipRect$MH() {
-        return RuntimeHelper.requireNonNull(constants$171.ExcludeClipRect$MH,"ExcludeClipRect");
-    }
-    public static int ExcludeClipRect ( Addressable hdc,  int left,  int top,  int right,  int bottom) {
-        var mh$ = ExcludeClipRect$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, left, top, right, bottom);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExtCreateRegion$MH() {
-        return RuntimeHelper.requireNonNull(constants$171.ExtCreateRegion$MH,"ExtCreateRegion");
-    }
-    public static MemoryAddress ExtCreateRegion ( Addressable lpx,  int nCount,  Addressable lpData) {
-        var mh$ = ExtCreateRegion$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpx, nCount, lpData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExtFloodFill$MH() {
-        return RuntimeHelper.requireNonNull(constants$171.ExtFloodFill$MH,"ExtFloodFill");
-    }
-    public static int ExtFloodFill ( Addressable hdc,  int x,  int y,  int color,  int type) {
-        var mh$ = ExtFloodFill$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, color, type);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle FillRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$171.FillRgn$MH,"FillRgn");
-    }
-    public static int FillRgn ( Addressable hdc,  Addressable hrgn,  Addressable hbr) {
-        var mh$ = FillRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn, hbr);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle FloodFill$MH() {
-        return RuntimeHelper.requireNonNull(constants$171.FloodFill$MH,"FloodFill");
-    }
-    public static int FloodFill ( Addressable hdc,  int x,  int y,  int color) {
-        var mh$ = FloodFill$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle FrameRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$171.FrameRgn$MH,"FrameRgn");
-    }
-    public static int FrameRgn ( Addressable hdc,  Addressable hrgn,  Addressable hbr,  int w,  int h) {
-        var mh$ = FrameRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn, hbr, w, h);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetROP2$MH() {
-        return RuntimeHelper.requireNonNull(constants$172.GetROP2$MH,"GetROP2");
-    }
-    public static int GetROP2 ( Addressable hdc) {
-        var mh$ = GetROP2$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetAspectRatioFilterEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$172.GetAspectRatioFilterEx$MH,"GetAspectRatioFilterEx");
-    }
-    public static int GetAspectRatioFilterEx ( Addressable hdc,  Addressable lpsize) {
-        var mh$ = GetAspectRatioFilterEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpsize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetBkColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$172.GetBkColor$MH,"GetBkColor");
-    }
-    public static int GetBkColor ( Addressable hdc) {
-        var mh$ = GetBkColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDCBrushColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$172.GetDCBrushColor$MH,"GetDCBrushColor");
-    }
-    public static int GetDCBrushColor ( Addressable hdc) {
-        var mh$ = GetDCBrushColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDCPenColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$172.GetDCPenColor$MH,"GetDCPenColor");
-    }
-    public static int GetDCPenColor ( Addressable hdc) {
-        var mh$ = GetDCPenColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetBkMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$172.GetBkMode$MH,"GetBkMode");
-    }
-    public static int GetBkMode ( Addressable hdc) {
-        var mh$ = GetBkMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetBitmapBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$173.GetBitmapBits$MH,"GetBitmapBits");
-    }
-    public static int GetBitmapBits ( Addressable hbit,  int cb,  Addressable lpvBits) {
-        var mh$ = GetBitmapBits$MH();
-        try {
-            return (int)mh$.invokeExact(hbit, cb, lpvBits);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetBitmapDimensionEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$173.GetBitmapDimensionEx$MH,"GetBitmapDimensionEx");
-    }
-    public static int GetBitmapDimensionEx ( Addressable hbit,  Addressable lpsize) {
-        var mh$ = GetBitmapDimensionEx$MH();
-        try {
-            return (int)mh$.invokeExact(hbit, lpsize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetBoundsRect$MH() {
-        return RuntimeHelper.requireNonNull(constants$173.GetBoundsRect$MH,"GetBoundsRect");
-    }
-    public static int GetBoundsRect ( Addressable hdc,  Addressable lprect,  int flags) {
-        var mh$ = GetBoundsRect$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lprect, flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetBrushOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$173.GetBrushOrgEx$MH,"GetBrushOrgEx");
-    }
-    public static int GetBrushOrgEx ( Addressable hdc,  Addressable lppt) {
-        var mh$ = GetBrushOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharWidthA$MH() {
-        return RuntimeHelper.requireNonNull(constants$173.GetCharWidthA$MH,"GetCharWidthA");
-    }
-    public static int GetCharWidthA ( Addressable hdc,  int iFirst,  int iLast,  Addressable lpBuffer) {
-        var mh$ = GetCharWidthA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iFirst, iLast, lpBuffer);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharWidthW$MH() {
-        return RuntimeHelper.requireNonNull(constants$173.GetCharWidthW$MH,"GetCharWidthW");
-    }
-    public static int GetCharWidthW ( Addressable hdc,  int iFirst,  int iLast,  Addressable lpBuffer) {
-        var mh$ = GetCharWidthW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iFirst, iLast, lpBuffer);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharWidth32A$MH() {
-        return RuntimeHelper.requireNonNull(constants$174.GetCharWidth32A$MH,"GetCharWidth32A");
-    }
-    public static int GetCharWidth32A ( Addressable hdc,  int iFirst,  int iLast,  Addressable lpBuffer) {
-        var mh$ = GetCharWidth32A$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iFirst, iLast, lpBuffer);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharWidth32W$MH() {
-        return RuntimeHelper.requireNonNull(constants$174.GetCharWidth32W$MH,"GetCharWidth32W");
-    }
-    public static int GetCharWidth32W ( Addressable hdc,  int iFirst,  int iLast,  Addressable lpBuffer) {
-        var mh$ = GetCharWidth32W$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iFirst, iLast, lpBuffer);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharWidthFloatA$MH() {
-        return RuntimeHelper.requireNonNull(constants$174.GetCharWidthFloatA$MH,"GetCharWidthFloatA");
-    }
-    public static int GetCharWidthFloatA ( Addressable hdc,  int iFirst,  int iLast,  Addressable lpBuffer) {
-        var mh$ = GetCharWidthFloatA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iFirst, iLast, lpBuffer);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharWidthFloatW$MH() {
-        return RuntimeHelper.requireNonNull(constants$174.GetCharWidthFloatW$MH,"GetCharWidthFloatW");
-    }
-    public static int GetCharWidthFloatW ( Addressable hdc,  int iFirst,  int iLast,  Addressable lpBuffer) {
-        var mh$ = GetCharWidthFloatW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iFirst, iLast, lpBuffer);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharABCWidthsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$174.GetCharABCWidthsA$MH,"GetCharABCWidthsA");
-    }
-    public static int GetCharABCWidthsA ( Addressable hdc,  int wFirst,  int wLast,  Addressable lpABC) {
-        var mh$ = GetCharABCWidthsA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, wFirst, wLast, lpABC);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharABCWidthsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$174.GetCharABCWidthsW$MH,"GetCharABCWidthsW");
-    }
-    public static int GetCharABCWidthsW ( Addressable hdc,  int wFirst,  int wLast,  Addressable lpABC) {
-        var mh$ = GetCharABCWidthsW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, wFirst, wLast, lpABC);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharABCWidthsFloatA$MH() {
-        return RuntimeHelper.requireNonNull(constants$175.GetCharABCWidthsFloatA$MH,"GetCharABCWidthsFloatA");
-    }
-    public static int GetCharABCWidthsFloatA ( Addressable hdc,  int iFirst,  int iLast,  Addressable lpABC) {
-        var mh$ = GetCharABCWidthsFloatA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iFirst, iLast, lpABC);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharABCWidthsFloatW$MH() {
-        return RuntimeHelper.requireNonNull(constants$175.GetCharABCWidthsFloatW$MH,"GetCharABCWidthsFloatW");
-    }
-    public static int GetCharABCWidthsFloatW ( Addressable hdc,  int iFirst,  int iLast,  Addressable lpABC) {
-        var mh$ = GetCharABCWidthsFloatW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iFirst, iLast, lpABC);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClipBox$MH() {
-        return RuntimeHelper.requireNonNull(constants$175.GetClipBox$MH,"GetClipBox");
-    }
-    public static int GetClipBox ( Addressable hdc,  Addressable lprect) {
-        var mh$ = GetClipBox$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lprect);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClipRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$175.GetClipRgn$MH,"GetClipRgn");
-    }
-    public static int GetClipRgn ( Addressable hdc,  Addressable hrgn) {
-        var mh$ = GetClipRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMetaRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$175.GetMetaRgn$MH,"GetMetaRgn");
-    }
-    public static int GetMetaRgn ( Addressable hdc,  Addressable hrgn) {
-        var mh$ = GetMetaRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCurrentObject$MH() {
-        return RuntimeHelper.requireNonNull(constants$175.GetCurrentObject$MH,"GetCurrentObject");
-    }
-    public static MemoryAddress GetCurrentObject ( Addressable hdc,  int type) {
-        var mh$ = GetCurrentObject$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, type);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCurrentPositionEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$176.GetCurrentPositionEx$MH,"GetCurrentPositionEx");
-    }
-    public static int GetCurrentPositionEx ( Addressable hdc,  Addressable lppt) {
-        var mh$ = GetCurrentPositionEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDeviceCaps$MH() {
-        return RuntimeHelper.requireNonNull(constants$176.GetDeviceCaps$MH,"GetDeviceCaps");
-    }
-    public static int GetDeviceCaps ( Addressable hdc,  int index) {
-        var mh$ = GetDeviceCaps$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, index);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDIBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$176.GetDIBits$MH,"GetDIBits");
-    }
-    public static int GetDIBits ( Addressable hdc,  Addressable hbm,  int start,  int cLines,  Addressable lpvBits,  Addressable lpbmi,  int usage) {
-        var mh$ = GetDIBits$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hbm, start, cLines, lpvBits, lpbmi, usage);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetFontData$MH() {
-        return RuntimeHelper.requireNonNull(constants$176.GetFontData$MH,"GetFontData");
-    }
-    public static int GetFontData ( Addressable hdc,  int dwTable,  int dwOffset,  Addressable pvBuffer,  int cjBuffer) {
-        var mh$ = GetFontData$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, dwTable, dwOffset, pvBuffer, cjBuffer);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetGlyphOutlineA$MH() {
-        return RuntimeHelper.requireNonNull(constants$176.GetGlyphOutlineA$MH,"GetGlyphOutlineA");
-    }
-    public static int GetGlyphOutlineA ( Addressable hdc,  int uChar,  int fuFormat,  Addressable lpgm,  int cjBuffer,  Addressable pvBuffer,  Addressable lpmat2) {
-        var mh$ = GetGlyphOutlineA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, uChar, fuFormat, lpgm, cjBuffer, pvBuffer, lpmat2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetGlyphOutlineW$MH() {
-        return RuntimeHelper.requireNonNull(constants$176.GetGlyphOutlineW$MH,"GetGlyphOutlineW");
-    }
-    public static int GetGlyphOutlineW ( Addressable hdc,  int uChar,  int fuFormat,  Addressable lpgm,  int cjBuffer,  Addressable pvBuffer,  Addressable lpmat2) {
-        var mh$ = GetGlyphOutlineW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, uChar, fuFormat, lpgm, cjBuffer, pvBuffer, lpmat2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetGraphicsMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$177.GetGraphicsMode$MH,"GetGraphicsMode");
-    }
-    public static int GetGraphicsMode ( Addressable hdc) {
-        var mh$ = GetGraphicsMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMapMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$177.GetMapMode$MH,"GetMapMode");
-    }
-    public static int GetMapMode ( Addressable hdc) {
-        var mh$ = GetMapMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMetaFileBitsEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$177.GetMetaFileBitsEx$MH,"GetMetaFileBitsEx");
-    }
-    public static int GetMetaFileBitsEx ( Addressable hMF,  int cbBuffer,  Addressable lpData) {
-        var mh$ = GetMetaFileBitsEx$MH();
-        try {
-            return (int)mh$.invokeExact(hMF, cbBuffer, lpData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMetaFileA$MH() {
-        return RuntimeHelper.requireNonNull(constants$177.GetMetaFileA$MH,"GetMetaFileA");
-    }
-    public static MemoryAddress GetMetaFileA ( Addressable lpName) {
-        var mh$ = GetMetaFileA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMetaFileW$MH() {
-        return RuntimeHelper.requireNonNull(constants$177.GetMetaFileW$MH,"GetMetaFileW");
-    }
-    public static MemoryAddress GetMetaFileW ( Addressable lpName) {
-        var mh$ = GetMetaFileW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetNearestColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$177.GetNearestColor$MH,"GetNearestColor");
-    }
-    public static int GetNearestColor ( Addressable hdc,  int color) {
-        var mh$ = GetNearestColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetNearestPaletteIndex$MH() {
-        return RuntimeHelper.requireNonNull(constants$178.GetNearestPaletteIndex$MH,"GetNearestPaletteIndex");
-    }
-    public static int GetNearestPaletteIndex ( Addressable h,  int color) {
-        var mh$ = GetNearestPaletteIndex$MH();
-        try {
-            return (int)mh$.invokeExact(h, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetObjectType$MH() {
-        return RuntimeHelper.requireNonNull(constants$178.GetObjectType$MH,"GetObjectType");
-    }
-    public static int GetObjectType ( Addressable h) {
-        var mh$ = GetObjectType$MH();
-        try {
-            return (int)mh$.invokeExact(h);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetOutlineTextMetricsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$178.GetOutlineTextMetricsA$MH,"GetOutlineTextMetricsA");
-    }
-    public static int GetOutlineTextMetricsA ( Addressable hdc,  int cjCopy,  Addressable potm) {
-        var mh$ = GetOutlineTextMetricsA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, cjCopy, potm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetOutlineTextMetricsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$178.GetOutlineTextMetricsW$MH,"GetOutlineTextMetricsW");
-    }
-    public static int GetOutlineTextMetricsW ( Addressable hdc,  int cjCopy,  Addressable potm) {
-        var mh$ = GetOutlineTextMetricsW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, cjCopy, potm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetPaletteEntries$MH() {
-        return RuntimeHelper.requireNonNull(constants$178.GetPaletteEntries$MH,"GetPaletteEntries");
-    }
-    public static int GetPaletteEntries ( Addressable hpal,  int iStart,  int cEntries,  Addressable pPalEntries) {
-        var mh$ = GetPaletteEntries$MH();
-        try {
-            return (int)mh$.invokeExact(hpal, iStart, cEntries, pPalEntries);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetPixel$MH() {
-        return RuntimeHelper.requireNonNull(constants$178.GetPixel$MH,"GetPixel");
-    }
-    public static int GetPixel ( Addressable hdc,  int x,  int y) {
-        var mh$ = GetPixel$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetPixelFormat$MH() {
-        return RuntimeHelper.requireNonNull(constants$179.GetPixelFormat$MH,"GetPixelFormat");
-    }
-    public static int GetPixelFormat ( Addressable hdc) {
-        var mh$ = GetPixelFormat$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetPolyFillMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$179.GetPolyFillMode$MH,"GetPolyFillMode");
-    }
-    public static int GetPolyFillMode ( Addressable hdc) {
-        var mh$ = GetPolyFillMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetRasterizerCaps$MH() {
-        return RuntimeHelper.requireNonNull(constants$179.GetRasterizerCaps$MH,"GetRasterizerCaps");
-    }
-    public static int GetRasterizerCaps ( Addressable lpraststat,  int cjBytes) {
-        var mh$ = GetRasterizerCaps$MH();
-        try {
-            return (int)mh$.invokeExact(lpraststat, cjBytes);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetRandomRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$179.GetRandomRgn$MH,"GetRandomRgn");
-    }
-    public static int GetRandomRgn ( Addressable hdc,  Addressable hrgn,  int i) {
-        var mh$ = GetRandomRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn, i);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetRegionData$MH() {
-        return RuntimeHelper.requireNonNull(constants$179.GetRegionData$MH,"GetRegionData");
-    }
-    public static int GetRegionData ( Addressable hrgn,  int nCount,  Addressable lpRgnData) {
-        var mh$ = GetRegionData$MH();
-        try {
-            return (int)mh$.invokeExact(hrgn, nCount, lpRgnData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetRgnBox$MH() {
-        return RuntimeHelper.requireNonNull(constants$179.GetRgnBox$MH,"GetRgnBox");
-    }
-    public static int GetRgnBox ( Addressable hrgn,  Addressable lprc) {
-        var mh$ = GetRgnBox$MH();
-        try {
-            return (int)mh$.invokeExact(hrgn, lprc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetStockObject$MH() {
-        return RuntimeHelper.requireNonNull(constants$180.GetStockObject$MH,"GetStockObject");
-    }
-    public static MemoryAddress GetStockObject ( int i) {
-        var mh$ = GetStockObject$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(i);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetStretchBltMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$180.GetStretchBltMode$MH,"GetStretchBltMode");
-    }
-    public static int GetStretchBltMode ( Addressable hdc) {
-        var mh$ = GetStretchBltMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetSystemPaletteEntries$MH() {
-        return RuntimeHelper.requireNonNull(constants$180.GetSystemPaletteEntries$MH,"GetSystemPaletteEntries");
-    }
-    public static int GetSystemPaletteEntries ( Addressable hdc,  int iStart,  int cEntries,  Addressable pPalEntries) {
-        var mh$ = GetSystemPaletteEntries$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iStart, cEntries, pPalEntries);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetSystemPaletteUse$MH() {
-        return RuntimeHelper.requireNonNull(constants$180.GetSystemPaletteUse$MH,"GetSystemPaletteUse");
-    }
-    public static int GetSystemPaletteUse ( Addressable hdc) {
-        var mh$ = GetSystemPaletteUse$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextCharacterExtra$MH() {
-        return RuntimeHelper.requireNonNull(constants$180.GetTextCharacterExtra$MH,"GetTextCharacterExtra");
-    }
-    public static int GetTextCharacterExtra ( Addressable hdc) {
-        var mh$ = GetTextCharacterExtra$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextAlign$MH() {
-        return RuntimeHelper.requireNonNull(constants$180.GetTextAlign$MH,"GetTextAlign");
-    }
-    public static int GetTextAlign ( Addressable hdc) {
-        var mh$ = GetTextAlign$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$181.GetTextColor$MH,"GetTextColor");
-    }
-    public static int GetTextColor ( Addressable hdc) {
-        var mh$ = GetTextColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextExtentPointA$MH() {
-        return RuntimeHelper.requireNonNull(constants$181.GetTextExtentPointA$MH,"GetTextExtentPointA");
-    }
-    public static int GetTextExtentPointA ( Addressable hdc,  Addressable lpString,  int c,  Addressable lpsz) {
-        var mh$ = GetTextExtentPointA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpString, c, lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextExtentPointW$MH() {
-        return RuntimeHelper.requireNonNull(constants$181.GetTextExtentPointW$MH,"GetTextExtentPointW");
-    }
-    public static int GetTextExtentPointW ( Addressable hdc,  Addressable lpString,  int c,  Addressable lpsz) {
-        var mh$ = GetTextExtentPointW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpString, c, lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextExtentPoint32A$MH() {
-        return RuntimeHelper.requireNonNull(constants$181.GetTextExtentPoint32A$MH,"GetTextExtentPoint32A");
-    }
-    public static int GetTextExtentPoint32A ( Addressable hdc,  Addressable lpString,  int c,  Addressable psizl) {
-        var mh$ = GetTextExtentPoint32A$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpString, c, psizl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextExtentPoint32W$MH() {
-        return RuntimeHelper.requireNonNull(constants$181.GetTextExtentPoint32W$MH,"GetTextExtentPoint32W");
-    }
-    public static int GetTextExtentPoint32W ( Addressable hdc,  Addressable lpString,  int c,  Addressable psizl) {
-        var mh$ = GetTextExtentPoint32W$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpString, c, psizl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextExtentExPointA$MH() {
-        return RuntimeHelper.requireNonNull(constants$181.GetTextExtentExPointA$MH,"GetTextExtentExPointA");
-    }
-    public static int GetTextExtentExPointA ( Addressable hdc,  Addressable lpszString,  int cchString,  int nMaxExtent,  Addressable lpnFit,  Addressable lpnDx,  Addressable lpSize) {
-        var mh$ = GetTextExtentExPointA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpszString, cchString, nMaxExtent, lpnFit, lpnDx, lpSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextExtentExPointW$MH() {
-        return RuntimeHelper.requireNonNull(constants$182.GetTextExtentExPointW$MH,"GetTextExtentExPointW");
-    }
-    public static int GetTextExtentExPointW ( Addressable hdc,  Addressable lpszString,  int cchString,  int nMaxExtent,  Addressable lpnFit,  Addressable lpnDx,  Addressable lpSize) {
-        var mh$ = GetTextExtentExPointW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpszString, cchString, nMaxExtent, lpnFit, lpnDx, lpSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextCharset$MH() {
-        return RuntimeHelper.requireNonNull(constants$182.GetTextCharset$MH,"GetTextCharset");
-    }
-    public static int GetTextCharset ( Addressable hdc) {
-        var mh$ = GetTextCharset$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextCharsetInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$182.GetTextCharsetInfo$MH,"GetTextCharsetInfo");
-    }
-    public static int GetTextCharsetInfo ( Addressable hdc,  Addressable lpSig,  int dwFlags) {
-        var mh$ = GetTextCharsetInfo$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpSig, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle TranslateCharsetInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$182.TranslateCharsetInfo$MH,"TranslateCharsetInfo");
-    }
-    public static int TranslateCharsetInfo ( Addressable lpSrc,  Addressable lpCs,  int dwFlags) {
-        var mh$ = TranslateCharsetInfo$MH();
-        try {
-            return (int)mh$.invokeExact(lpSrc, lpCs, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetFontLanguageInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$182.GetFontLanguageInfo$MH,"GetFontLanguageInfo");
-    }
-    public static int GetFontLanguageInfo ( Addressable hdc) {
-        var mh$ = GetFontLanguageInfo$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharacterPlacementA$MH() {
-        return RuntimeHelper.requireNonNull(constants$182.GetCharacterPlacementA$MH,"GetCharacterPlacementA");
-    }
-    public static int GetCharacterPlacementA ( Addressable hdc,  Addressable lpString,  int nCount,  int nMexExtent,  Addressable lpResults,  int dwFlags) {
-        var mh$ = GetCharacterPlacementA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpString, nCount, nMexExtent, lpResults, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharacterPlacementW$MH() {
-        return RuntimeHelper.requireNonNull(constants$183.GetCharacterPlacementW$MH,"GetCharacterPlacementW");
-    }
-    public static int GetCharacterPlacementW ( Addressable hdc,  Addressable lpString,  int nCount,  int nMexExtent,  Addressable lpResults,  int dwFlags) {
-        var mh$ = GetCharacterPlacementW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpString, nCount, nMexExtent, lpResults, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PWCRANGE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWCRANGE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PGLYPHSET = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPGLYPHSET = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle GetFontUnicodeRanges$MH() {
-        return RuntimeHelper.requireNonNull(constants$183.GetFontUnicodeRanges$MH,"GetFontUnicodeRanges");
-    }
-    public static int GetFontUnicodeRanges ( Addressable hdc,  Addressable lpgs) {
-        var mh$ = GetFontUnicodeRanges$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpgs);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetGlyphIndicesA$MH() {
-        return RuntimeHelper.requireNonNull(constants$183.GetGlyphIndicesA$MH,"GetGlyphIndicesA");
-    }
-    public static int GetGlyphIndicesA ( Addressable hdc,  Addressable lpstr,  int c,  Addressable pgi,  int fl) {
-        var mh$ = GetGlyphIndicesA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpstr, c, pgi, fl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetGlyphIndicesW$MH() {
-        return RuntimeHelper.requireNonNull(constants$183.GetGlyphIndicesW$MH,"GetGlyphIndicesW");
-    }
-    public static int GetGlyphIndicesW ( Addressable hdc,  Addressable lpstr,  int c,  Addressable pgi,  int fl) {
-        var mh$ = GetGlyphIndicesW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpstr, c, pgi, fl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextExtentPointI$MH() {
-        return RuntimeHelper.requireNonNull(constants$183.GetTextExtentPointI$MH,"GetTextExtentPointI");
-    }
-    public static int GetTextExtentPointI ( Addressable hdc,  Addressable pgiIn,  int cgi,  Addressable psize) {
-        var mh$ = GetTextExtentPointI$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, pgiIn, cgi, psize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextExtentExPointI$MH() {
-        return RuntimeHelper.requireNonNull(constants$183.GetTextExtentExPointI$MH,"GetTextExtentExPointI");
-    }
-    public static int GetTextExtentExPointI ( Addressable hdc,  Addressable lpwszString,  int cwchString,  int nMaxExtent,  Addressable lpnFit,  Addressable lpnDx,  Addressable lpSize) {
-        var mh$ = GetTextExtentExPointI$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpwszString, cwchString, nMaxExtent, lpnFit, lpnDx, lpSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharWidthI$MH() {
-        return RuntimeHelper.requireNonNull(constants$184.GetCharWidthI$MH,"GetCharWidthI");
-    }
-    public static int GetCharWidthI ( Addressable hdc,  int giFirst,  int cgi,  Addressable pgi,  Addressable piWidths) {
-        var mh$ = GetCharWidthI$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, giFirst, cgi, pgi, piWidths);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetCharABCWidthsI$MH() {
-        return RuntimeHelper.requireNonNull(constants$184.GetCharABCWidthsI$MH,"GetCharABCWidthsI");
-    }
-    public static int GetCharABCWidthsI ( Addressable hdc,  int giFirst,  int cgi,  Addressable pgi,  Addressable pabc) {
-        var mh$ = GetCharABCWidthsI$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, giFirst, cgi, pgi, pabc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PDESIGNVECTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDESIGNVECTOR = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle AddFontResourceExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$184.AddFontResourceExA$MH,"AddFontResourceExA");
-    }
-    public static int AddFontResourceExA ( Addressable name,  int fl,  Addressable res) {
-        var mh$ = AddFontResourceExA$MH();
-        try {
-            return (int)mh$.invokeExact(name, fl, res);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AddFontResourceExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$184.AddFontResourceExW$MH,"AddFontResourceExW");
-    }
-    public static int AddFontResourceExW ( Addressable name,  int fl,  Addressable res) {
-        var mh$ = AddFontResourceExW$MH();
-        try {
-            return (int)mh$.invokeExact(name, fl, res);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RemoveFontResourceExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$184.RemoveFontResourceExA$MH,"RemoveFontResourceExA");
-    }
-    public static int RemoveFontResourceExA ( Addressable name,  int fl,  Addressable pdv) {
-        var mh$ = RemoveFontResourceExA$MH();
-        try {
-            return (int)mh$.invokeExact(name, fl, pdv);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RemoveFontResourceExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$184.RemoveFontResourceExW$MH,"RemoveFontResourceExW");
-    }
-    public static int RemoveFontResourceExW ( Addressable name,  int fl,  Addressable pdv) {
-        var mh$ = RemoveFontResourceExW$MH();
-        try {
-            return (int)mh$.invokeExact(name, fl, pdv);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AddFontMemResourceEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$185.AddFontMemResourceEx$MH,"AddFontMemResourceEx");
-    }
-    public static MemoryAddress AddFontMemResourceEx ( Addressable pFileView,  int cjSize,  Addressable pvResrved,  Addressable pNumFonts) {
-        var mh$ = AddFontMemResourceEx$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pFileView, cjSize, pvResrved, pNumFonts);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RemoveFontMemResourceEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$185.RemoveFontMemResourceEx$MH,"RemoveFontMemResourceEx");
-    }
-    public static int RemoveFontMemResourceEx ( Addressable h) {
-        var mh$ = RemoveFontMemResourceEx$MH();
-        try {
-            return (int)mh$.invokeExact(h);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PAXISINFOA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPAXISINFOA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PAXISINFOW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPAXISINFOW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PAXISINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPAXISINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PAXESLISTA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPAXESLISTA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PAXESLISTW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPAXESLISTW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PAXESLIST = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPAXESLIST = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PENUMLOGFONTEXDVA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPENUMLOGFONTEXDVA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PENUMLOGFONTEXDVW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPENUMLOGFONTEXDVW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PENUMLOGFONTEXDV = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPENUMLOGFONTEXDV = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle CreateFontIndirectExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$185.CreateFontIndirectExA$MH,"CreateFontIndirectExA");
-    }
-    public static MemoryAddress CreateFontIndirectExA ( Addressable x0) {
-        var mh$ = CreateFontIndirectExA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateFontIndirectExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$185.CreateFontIndirectExW$MH,"CreateFontIndirectExW");
-    }
-    public static MemoryAddress CreateFontIndirectExW ( Addressable x0) {
-        var mh$ = CreateFontIndirectExW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PENUMTEXTMETRICA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPENUMTEXTMETRICA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PENUMTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPENUMTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PENUMTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPENUMTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle GetViewportExtEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$185.GetViewportExtEx$MH,"GetViewportExtEx");
-    }
-    public static int GetViewportExtEx ( Addressable hdc,  Addressable lpsize) {
-        var mh$ = GetViewportExtEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpsize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetViewportOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$185.GetViewportOrgEx$MH,"GetViewportOrgEx");
-    }
-    public static int GetViewportOrgEx ( Addressable hdc,  Addressable lppoint) {
-        var mh$ = GetViewportOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lppoint);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetWindowExtEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$186.GetWindowExtEx$MH,"GetWindowExtEx");
-    }
-    public static int GetWindowExtEx ( Addressable hdc,  Addressable lpsize) {
-        var mh$ = GetWindowExtEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpsize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetWindowOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$186.GetWindowOrgEx$MH,"GetWindowOrgEx");
-    }
-    public static int GetWindowOrgEx ( Addressable hdc,  Addressable lppoint) {
-        var mh$ = GetWindowOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lppoint);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IntersectClipRect$MH() {
-        return RuntimeHelper.requireNonNull(constants$186.IntersectClipRect$MH,"IntersectClipRect");
-    }
-    public static int IntersectClipRect ( Addressable hdc,  int left,  int top,  int right,  int bottom) {
-        var mh$ = IntersectClipRect$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, left, top, right, bottom);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle InvertRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$186.InvertRgn$MH,"InvertRgn");
-    }
-    public static int InvertRgn ( Addressable hdc,  Addressable hrgn) {
-        var mh$ = InvertRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle LineDDA$MH() {
-        return RuntimeHelper.requireNonNull(constants$186.LineDDA$MH,"LineDDA");
-    }
-    public static int LineDDA ( int xStart,  int yStart,  int xEnd,  int yEnd,  Addressable lpProc,  long data) {
-        var mh$ = LineDDA$MH();
-        try {
-            return (int)mh$.invokeExact(xStart, yStart, xEnd, yEnd, lpProc, data);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle LineTo$MH() {
-        return RuntimeHelper.requireNonNull(constants$186.LineTo$MH,"LineTo");
-    }
-    public static int LineTo ( Addressable hdc,  int x,  int y) {
-        var mh$ = LineTo$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle MaskBlt$MH() {
-        return RuntimeHelper.requireNonNull(constants$187.MaskBlt$MH,"MaskBlt");
-    }
-    public static int MaskBlt ( Addressable hdcDest,  int xDest,  int yDest,  int width,  int height,  Addressable hdcSrc,  int xSrc,  int ySrc,  Addressable hbmMask,  int xMask,  int yMask,  int rop) {
-        var mh$ = MaskBlt$MH();
-        try {
-            return (int)mh$.invokeExact(hdcDest, xDest, yDest, width, height, hdcSrc, xSrc, ySrc, hbmMask, xMask, yMask, rop);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PlgBlt$MH() {
-        return RuntimeHelper.requireNonNull(constants$187.PlgBlt$MH,"PlgBlt");
-    }
-    public static int PlgBlt ( Addressable hdcDest,  Addressable lpPoint,  Addressable hdcSrc,  int xSrc,  int ySrc,  int width,  int height,  Addressable hbmMask,  int xMask,  int yMask) {
-        var mh$ = PlgBlt$MH();
-        try {
-            return (int)mh$.invokeExact(hdcDest, lpPoint, hdcSrc, xSrc, ySrc, width, height, hbmMask, xMask, yMask);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OffsetClipRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$187.OffsetClipRgn$MH,"OffsetClipRgn");
-    }
-    public static int OffsetClipRgn ( Addressable hdc,  int x,  int y) {
-        var mh$ = OffsetClipRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OffsetRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$187.OffsetRgn$MH,"OffsetRgn");
-    }
-    public static int OffsetRgn ( Addressable hrgn,  int x,  int y) {
-        var mh$ = OffsetRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hrgn, x, y);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PatBlt$MH() {
-        return RuntimeHelper.requireNonNull(constants$187.PatBlt$MH,"PatBlt");
-    }
-    public static int PatBlt ( Addressable hdc,  int x,  int y,  int w,  int h,  int rop) {
-        var mh$ = PatBlt$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, w, h, rop);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle Pie$MH() {
-        return RuntimeHelper.requireNonNull(constants$187.Pie$MH,"Pie");
-    }
-    public static int Pie ( Addressable hdc,  int left,  int top,  int right,  int bottom,  int xr1,  int yr1,  int xr2,  int yr2) {
-        var mh$ = Pie$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, left, top, right, bottom, xr1, yr1, xr2, yr2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PlayMetaFile$MH() {
-        return RuntimeHelper.requireNonNull(constants$188.PlayMetaFile$MH,"PlayMetaFile");
-    }
-    public static int PlayMetaFile ( Addressable hdc,  Addressable hmf) {
-        var mh$ = PlayMetaFile$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hmf);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PaintRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$188.PaintRgn$MH,"PaintRgn");
-    }
-    public static int PaintRgn ( Addressable hdc,  Addressable hrgn) {
-        var mh$ = PaintRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PolyPolygon$MH() {
-        return RuntimeHelper.requireNonNull(constants$188.PolyPolygon$MH,"PolyPolygon");
-    }
-    public static int PolyPolygon ( Addressable hdc,  Addressable apt,  Addressable asz,  int csz) {
-        var mh$ = PolyPolygon$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, asz, csz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PtInRegion$MH() {
-        return RuntimeHelper.requireNonNull(constants$188.PtInRegion$MH,"PtInRegion");
-    }
-    public static int PtInRegion ( Addressable hrgn,  int x,  int y) {
-        var mh$ = PtInRegion$MH();
-        try {
-            return (int)mh$.invokeExact(hrgn, x, y);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PtVisible$MH() {
-        return RuntimeHelper.requireNonNull(constants$188.PtVisible$MH,"PtVisible");
-    }
-    public static int PtVisible ( Addressable hdc,  int x,  int y) {
-        var mh$ = PtVisible$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RectInRegion$MH() {
-        return RuntimeHelper.requireNonNull(constants$188.RectInRegion$MH,"RectInRegion");
-    }
-    public static int RectInRegion ( Addressable hrgn,  Addressable lprect) {
-        var mh$ = RectInRegion$MH();
-        try {
-            return (int)mh$.invokeExact(hrgn, lprect);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RectVisible$MH() {
-        return RuntimeHelper.requireNonNull(constants$189.RectVisible$MH,"RectVisible");
-    }
-    public static int RectVisible ( Addressable hdc,  Addressable lprect) {
-        var mh$ = RectVisible$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lprect);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle Rectangle$MH() {
-        return RuntimeHelper.requireNonNull(constants$189.Rectangle$MH,"Rectangle");
-    }
-    public static int Rectangle ( Addressable hdc,  int left,  int top,  int right,  int bottom) {
-        var mh$ = Rectangle$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, left, top, right, bottom);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RestoreDC$MH() {
-        return RuntimeHelper.requireNonNull(constants$189.RestoreDC$MH,"RestoreDC");
-    }
-    public static int RestoreDC ( Addressable hdc,  int nSavedDC) {
-        var mh$ = RestoreDC$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, nSavedDC);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ResetDCA$MH() {
-        return RuntimeHelper.requireNonNull(constants$189.ResetDCA$MH,"ResetDCA");
-    }
-    public static MemoryAddress ResetDCA ( Addressable hdc,  Addressable lpdm) {
-        var mh$ = ResetDCA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, lpdm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ResetDCW$MH() {
-        return RuntimeHelper.requireNonNull(constants$189.ResetDCW$MH,"ResetDCW");
-    }
-    public static MemoryAddress ResetDCW ( Addressable hdc,  Addressable lpdm) {
-        var mh$ = ResetDCW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, lpdm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RealizePalette$MH() {
-        return RuntimeHelper.requireNonNull(constants$189.RealizePalette$MH,"RealizePalette");
-    }
-    public static int RealizePalette ( Addressable hdc) {
-        var mh$ = RealizePalette$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RemoveFontResourceA$MH() {
-        return RuntimeHelper.requireNonNull(constants$190.RemoveFontResourceA$MH,"RemoveFontResourceA");
-    }
-    public static int RemoveFontResourceA ( Addressable lpFileName) {
-        var mh$ = RemoveFontResourceA$MH();
-        try {
-            return (int)mh$.invokeExact(lpFileName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RemoveFontResourceW$MH() {
-        return RuntimeHelper.requireNonNull(constants$190.RemoveFontResourceW$MH,"RemoveFontResourceW");
-    }
-    public static int RemoveFontResourceW ( Addressable lpFileName) {
-        var mh$ = RemoveFontResourceW$MH();
-        try {
-            return (int)mh$.invokeExact(lpFileName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RoundRect$MH() {
-        return RuntimeHelper.requireNonNull(constants$190.RoundRect$MH,"RoundRect");
-    }
-    public static int RoundRect ( Addressable hdc,  int left,  int top,  int right,  int bottom,  int width,  int height) {
-        var mh$ = RoundRect$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, left, top, right, bottom, width, height);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ResizePalette$MH() {
-        return RuntimeHelper.requireNonNull(constants$190.ResizePalette$MH,"ResizePalette");
-    }
-    public static int ResizePalette ( Addressable hpal,  int n) {
-        var mh$ = ResizePalette$MH();
-        try {
-            return (int)mh$.invokeExact(hpal, n);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SaveDC$MH() {
-        return RuntimeHelper.requireNonNull(constants$190.SaveDC$MH,"SaveDC");
-    }
-    public static int SaveDC ( Addressable hdc) {
-        var mh$ = SaveDC$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SelectClipRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$190.SelectClipRgn$MH,"SelectClipRgn");
-    }
-    public static int SelectClipRgn ( Addressable hdc,  Addressable hrgn) {
-        var mh$ = SelectClipRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExtSelectClipRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$191.ExtSelectClipRgn$MH,"ExtSelectClipRgn");
-    }
-    public static int ExtSelectClipRgn ( Addressable hdc,  Addressable hrgn,  int mode) {
-        var mh$ = ExtSelectClipRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hrgn, mode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetMetaRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$191.SetMetaRgn$MH,"SetMetaRgn");
-    }
-    public static int SetMetaRgn ( Addressable hdc) {
-        var mh$ = SetMetaRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SelectObject$MH() {
-        return RuntimeHelper.requireNonNull(constants$191.SelectObject$MH,"SelectObject");
-    }
-    public static MemoryAddress SelectObject ( Addressable hdc,  Addressable h) {
-        var mh$ = SelectObject$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, h);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SelectPalette$MH() {
-        return RuntimeHelper.requireNonNull(constants$191.SelectPalette$MH,"SelectPalette");
-    }
-    public static MemoryAddress SelectPalette ( Addressable hdc,  Addressable hPal,  int bForceBkgd) {
-        var mh$ = SelectPalette$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, hPal, bForceBkgd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetBkColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$191.SetBkColor$MH,"SetBkColor");
-    }
-    public static int SetBkColor ( Addressable hdc,  int color) {
-        var mh$ = SetBkColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDCBrushColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$191.SetDCBrushColor$MH,"SetDCBrushColor");
-    }
-    public static int SetDCBrushColor ( Addressable hdc,  int color) {
-        var mh$ = SetDCBrushColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDCPenColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$192.SetDCPenColor$MH,"SetDCPenColor");
-    }
-    public static int SetDCPenColor ( Addressable hdc,  int color) {
-        var mh$ = SetDCPenColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetBkMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$192.SetBkMode$MH,"SetBkMode");
-    }
-    public static int SetBkMode ( Addressable hdc,  int mode) {
-        var mh$ = SetBkMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, mode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetBitmapBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$192.SetBitmapBits$MH,"SetBitmapBits");
-    }
-    public static int SetBitmapBits ( Addressable hbm,  int cb,  Addressable pvBits) {
-        var mh$ = SetBitmapBits$MH();
-        try {
-            return (int)mh$.invokeExact(hbm, cb, pvBits);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetBoundsRect$MH() {
-        return RuntimeHelper.requireNonNull(constants$192.SetBoundsRect$MH,"SetBoundsRect");
-    }
-    public static int SetBoundsRect ( Addressable hdc,  Addressable lprect,  int flags) {
-        var mh$ = SetBoundsRect$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lprect, flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDIBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$192.SetDIBits$MH,"SetDIBits");
-    }
-    public static int SetDIBits ( Addressable hdc,  Addressable hbm,  int start,  int cLines,  Addressable lpBits,  Addressable lpbmi,  int ColorUse) {
-        var mh$ = SetDIBits$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hbm, start, cLines, lpBits, lpbmi, ColorUse);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDIBitsToDevice$MH() {
-        return RuntimeHelper.requireNonNull(constants$192.SetDIBitsToDevice$MH,"SetDIBitsToDevice");
-    }
-    public static int SetDIBitsToDevice ( Addressable hdc,  int xDest,  int yDest,  int w,  int h,  int xSrc,  int ySrc,  int StartScan,  int cLines,  Addressable lpvBits,  Addressable lpbmi,  int ColorUse) {
-        var mh$ = SetDIBitsToDevice$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, xDest, yDest, w, h, xSrc, ySrc, StartScan, cLines, lpvBits, lpbmi, ColorUse);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetMapperFlags$MH() {
-        return RuntimeHelper.requireNonNull(constants$193.SetMapperFlags$MH,"SetMapperFlags");
-    }
-    public static int SetMapperFlags ( Addressable hdc,  int flags) {
-        var mh$ = SetMapperFlags$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetGraphicsMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$193.SetGraphicsMode$MH,"SetGraphicsMode");
-    }
-    public static int SetGraphicsMode ( Addressable hdc,  int iMode) {
-        var mh$ = SetGraphicsMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iMode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetMapMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$193.SetMapMode$MH,"SetMapMode");
-    }
-    public static int SetMapMode ( Addressable hdc,  int iMode) {
-        var mh$ = SetMapMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iMode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetLayout$MH() {
-        return RuntimeHelper.requireNonNull(constants$193.SetLayout$MH,"SetLayout");
-    }
-    public static int SetLayout ( Addressable hdc,  int l) {
-        var mh$ = SetLayout$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, l);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetLayout$MH() {
-        return RuntimeHelper.requireNonNull(constants$193.GetLayout$MH,"GetLayout");
-    }
-    public static int GetLayout ( Addressable hdc) {
-        var mh$ = GetLayout$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetMetaFileBitsEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$193.SetMetaFileBitsEx$MH,"SetMetaFileBitsEx");
-    }
-    public static MemoryAddress SetMetaFileBitsEx ( int cbBuffer,  Addressable lpData) {
-        var mh$ = SetMetaFileBitsEx$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(cbBuffer, lpData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetPaletteEntries$MH() {
-        return RuntimeHelper.requireNonNull(constants$194.SetPaletteEntries$MH,"SetPaletteEntries");
-    }
-    public static int SetPaletteEntries ( Addressable hpal,  int iStart,  int cEntries,  Addressable pPalEntries) {
-        var mh$ = SetPaletteEntries$MH();
-        try {
-            return (int)mh$.invokeExact(hpal, iStart, cEntries, pPalEntries);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetPixel$MH() {
-        return RuntimeHelper.requireNonNull(constants$194.SetPixel$MH,"SetPixel");
-    }
-    public static int SetPixel ( Addressable hdc,  int x,  int y,  int color) {
-        var mh$ = SetPixel$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetPixelV$MH() {
-        return RuntimeHelper.requireNonNull(constants$194.SetPixelV$MH,"SetPixelV");
-    }
-    public static int SetPixelV ( Addressable hdc,  int x,  int y,  int color) {
-        var mh$ = SetPixelV$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetPixelFormat$MH() {
-        return RuntimeHelper.requireNonNull(constants$194.SetPixelFormat$MH,"SetPixelFormat");
-    }
-    public static int SetPixelFormat ( Addressable hdc,  int format,  Addressable ppfd) {
-        var mh$ = SetPixelFormat$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, format, ppfd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetPolyFillMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$194.SetPolyFillMode$MH,"SetPolyFillMode");
-    }
-    public static int SetPolyFillMode ( Addressable hdc,  int mode) {
-        var mh$ = SetPolyFillMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, mode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle StretchBlt$MH() {
-        return RuntimeHelper.requireNonNull(constants$194.StretchBlt$MH,"StretchBlt");
-    }
-    public static int StretchBlt ( Addressable hdcDest,  int xDest,  int yDest,  int wDest,  int hDest,  Addressable hdcSrc,  int xSrc,  int ySrc,  int wSrc,  int hSrc,  int rop) {
-        var mh$ = StretchBlt$MH();
-        try {
-            return (int)mh$.invokeExact(hdcDest, xDest, yDest, wDest, hDest, hdcSrc, xSrc, ySrc, wSrc, hSrc, rop);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetRectRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$195.SetRectRgn$MH,"SetRectRgn");
-    }
-    public static int SetRectRgn ( Addressable hrgn,  int left,  int top,  int right,  int bottom) {
-        var mh$ = SetRectRgn$MH();
-        try {
-            return (int)mh$.invokeExact(hrgn, left, top, right, bottom);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle StretchDIBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$195.StretchDIBits$MH,"StretchDIBits");
-    }
-    public static int StretchDIBits ( Addressable hdc,  int xDest,  int yDest,  int DestWidth,  int DestHeight,  int xSrc,  int ySrc,  int SrcWidth,  int SrcHeight,  Addressable lpBits,  Addressable lpbmi,  int iUsage,  int rop) {
-        var mh$ = StretchDIBits$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, xDest, yDest, DestWidth, DestHeight, xSrc, ySrc, SrcWidth, SrcHeight, lpBits, lpbmi, iUsage, rop);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetROP2$MH() {
-        return RuntimeHelper.requireNonNull(constants$195.SetROP2$MH,"SetROP2");
-    }
-    public static int SetROP2 ( Addressable hdc,  int rop2) {
-        var mh$ = SetROP2$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, rop2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetStretchBltMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$195.SetStretchBltMode$MH,"SetStretchBltMode");
-    }
-    public static int SetStretchBltMode ( Addressable hdc,  int mode) {
-        var mh$ = SetStretchBltMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, mode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetSystemPaletteUse$MH() {
-        return RuntimeHelper.requireNonNull(constants$195.SetSystemPaletteUse$MH,"SetSystemPaletteUse");
-    }
-    public static int SetSystemPaletteUse ( Addressable hdc,  int use) {
-        var mh$ = SetSystemPaletteUse$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, use);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetTextCharacterExtra$MH() {
-        return RuntimeHelper.requireNonNull(constants$195.SetTextCharacterExtra$MH,"SetTextCharacterExtra");
-    }
-    public static int SetTextCharacterExtra ( Addressable hdc,  int extra) {
-        var mh$ = SetTextCharacterExtra$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, extra);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetTextColor$MH() {
-        return RuntimeHelper.requireNonNull(constants$196.SetTextColor$MH,"SetTextColor");
-    }
-    public static int SetTextColor ( Addressable hdc,  int color) {
-        var mh$ = SetTextColor$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, color);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetTextAlign$MH() {
-        return RuntimeHelper.requireNonNull(constants$196.SetTextAlign$MH,"SetTextAlign");
-    }
-    public static int SetTextAlign ( Addressable hdc,  int align) {
-        var mh$ = SetTextAlign$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, align);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetTextJustification$MH() {
-        return RuntimeHelper.requireNonNull(constants$196.SetTextJustification$MH,"SetTextJustification");
-    }
-    public static int SetTextJustification ( Addressable hdc,  int extra,  int count) {
-        var mh$ = SetTextJustification$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, extra, count);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UpdateColors$MH() {
-        return RuntimeHelper.requireNonNull(constants$196.UpdateColors$MH,"UpdateColors");
-    }
-    public static int UpdateColors ( Addressable hdc) {
-        var mh$ = UpdateColors$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PTRIVERTEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPTRIVERTEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PGRADIENT_TRIANGLE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPGRADIENT_TRIANGLE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PGRADIENT_RECT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPGRADIENT_RECT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PBLENDFUNCTION = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle AlphaBlend$MH() {
-        return RuntimeHelper.requireNonNull(constants$196.AlphaBlend$MH,"AlphaBlend");
-    }
-    public static int AlphaBlend ( Addressable hdcDest,  int xoriginDest,  int yoriginDest,  int wDest,  int hDest,  Addressable hdcSrc,  int xoriginSrc,  int yoriginSrc,  int wSrc,  int hSrc,  MemorySegment ftn) {
-        var mh$ = AlphaBlend$MH();
-        try {
-            return (int)mh$.invokeExact(hdcDest, xoriginDest, yoriginDest, wDest, hDest, hdcSrc, xoriginSrc, yoriginSrc, wSrc, hSrc, ftn);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle TransparentBlt$MH() {
-        return RuntimeHelper.requireNonNull(constants$196.TransparentBlt$MH,"TransparentBlt");
-    }
-    public static int TransparentBlt ( Addressable hdcDest,  int xoriginDest,  int yoriginDest,  int wDest,  int hDest,  Addressable hdcSrc,  int xoriginSrc,  int yoriginSrc,  int wSrc,  int hSrc,  int crTransparent) {
-        var mh$ = TransparentBlt$MH();
-        try {
-            return (int)mh$.invokeExact(hdcDest, xoriginDest, yoriginDest, wDest, hDest, hdcSrc, xoriginSrc, yoriginSrc, wSrc, hSrc, crTransparent);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GradientFill$MH() {
-        return RuntimeHelper.requireNonNull(constants$197.GradientFill$MH,"GradientFill");
-    }
-    public static int GradientFill ( Addressable hdc,  Addressable pVertex,  int nVertex,  Addressable pMesh,  int nMesh,  int ulMode) {
-        var mh$ = GradientFill$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, pVertex, nVertex, pMesh, nMesh, ulMode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GdiAlphaBlend$MH() {
-        return RuntimeHelper.requireNonNull(constants$197.GdiAlphaBlend$MH,"GdiAlphaBlend");
-    }
-    public static int GdiAlphaBlend ( Addressable hdcDest,  int xoriginDest,  int yoriginDest,  int wDest,  int hDest,  Addressable hdcSrc,  int xoriginSrc,  int yoriginSrc,  int wSrc,  int hSrc,  MemorySegment ftn) {
-        var mh$ = GdiAlphaBlend$MH();
-        try {
-            return (int)mh$.invokeExact(hdcDest, xoriginDest, yoriginDest, wDest, hDest, hdcSrc, xoriginSrc, yoriginSrc, wSrc, hSrc, ftn);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GdiTransparentBlt$MH() {
-        return RuntimeHelper.requireNonNull(constants$197.GdiTransparentBlt$MH,"GdiTransparentBlt");
-    }
-    public static int GdiTransparentBlt ( Addressable hdcDest,  int xoriginDest,  int yoriginDest,  int wDest,  int hDest,  Addressable hdcSrc,  int xoriginSrc,  int yoriginSrc,  int wSrc,  int hSrc,  int crTransparent) {
-        var mh$ = GdiTransparentBlt$MH();
-        try {
-            return (int)mh$.invokeExact(hdcDest, xoriginDest, yoriginDest, wDest, hDest, hdcSrc, xoriginSrc, yoriginSrc, wSrc, hSrc, crTransparent);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GdiGradientFill$MH() {
-        return RuntimeHelper.requireNonNull(constants$197.GdiGradientFill$MH,"GdiGradientFill");
-    }
-    public static int GdiGradientFill ( Addressable hdc,  Addressable pVertex,  int nVertex,  Addressable pMesh,  int nCount,  int ulMode) {
-        var mh$ = GdiGradientFill$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, pVertex, nVertex, pMesh, nCount, ulMode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PlayMetaFileRecord$MH() {
-        return RuntimeHelper.requireNonNull(constants$197.PlayMetaFileRecord$MH,"PlayMetaFileRecord");
-    }
-    public static int PlayMetaFileRecord ( Addressable hdc,  Addressable lpHandleTable,  Addressable lpMR,  int noObjs) {
-        var mh$ = PlayMetaFileRecord$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpHandleTable, lpMR, noObjs);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumMetaFile$MH() {
-        return RuntimeHelper.requireNonNull(constants$198.EnumMetaFile$MH,"EnumMetaFile");
-    }
-    public static int EnumMetaFile ( Addressable hdc,  Addressable hmf,  Addressable proc,  long param) {
-        var mh$ = EnumMetaFile$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hmf, proc, param);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CloseEnhMetaFile$MH() {
-        return RuntimeHelper.requireNonNull(constants$198.CloseEnhMetaFile$MH,"CloseEnhMetaFile");
-    }
-    public static MemoryAddress CloseEnhMetaFile ( Addressable hdc) {
-        var mh$ = CloseEnhMetaFile$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CopyEnhMetaFileA$MH() {
-        return RuntimeHelper.requireNonNull(constants$198.CopyEnhMetaFileA$MH,"CopyEnhMetaFileA");
-    }
-    public static MemoryAddress CopyEnhMetaFileA ( Addressable hEnh,  Addressable lpFileName) {
-        var mh$ = CopyEnhMetaFileA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hEnh, lpFileName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CopyEnhMetaFileW$MH() {
-        return RuntimeHelper.requireNonNull(constants$199.CopyEnhMetaFileW$MH,"CopyEnhMetaFileW");
-    }
-    public static MemoryAddress CopyEnhMetaFileW ( Addressable hEnh,  Addressable lpFileName) {
-        var mh$ = CopyEnhMetaFileW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hEnh, lpFileName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateEnhMetaFileA$MH() {
-        return RuntimeHelper.requireNonNull(constants$199.CreateEnhMetaFileA$MH,"CreateEnhMetaFileA");
-    }
-    public static MemoryAddress CreateEnhMetaFileA ( Addressable hdc,  Addressable lpFilename,  Addressable lprc,  Addressable lpDesc) {
-        var mh$ = CreateEnhMetaFileA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, lpFilename, lprc, lpDesc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateEnhMetaFileW$MH() {
-        return RuntimeHelper.requireNonNull(constants$199.CreateEnhMetaFileW$MH,"CreateEnhMetaFileW");
-    }
-    public static MemoryAddress CreateEnhMetaFileW ( Addressable hdc,  Addressable lpFilename,  Addressable lprc,  Addressable lpDesc) {
-        var mh$ = CreateEnhMetaFileW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, lpFilename, lprc, lpDesc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DeleteEnhMetaFile$MH() {
-        return RuntimeHelper.requireNonNull(constants$199.DeleteEnhMetaFile$MH,"DeleteEnhMetaFile");
-    }
-    public static int DeleteEnhMetaFile ( Addressable hmf) {
-        var mh$ = DeleteEnhMetaFile$MH();
-        try {
-            return (int)mh$.invokeExact(hmf);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumEnhMetaFile$MH() {
-        return RuntimeHelper.requireNonNull(constants$199.EnumEnhMetaFile$MH,"EnumEnhMetaFile");
-    }
-    public static int EnumEnhMetaFile ( Addressable hdc,  Addressable hmf,  Addressable proc,  Addressable param,  Addressable lpRect) {
-        var mh$ = EnumEnhMetaFile$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hmf, proc, param, lpRect);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetEnhMetaFileA$MH() {
-        return RuntimeHelper.requireNonNull(constants$199.GetEnhMetaFileA$MH,"GetEnhMetaFileA");
-    }
-    public static MemoryAddress GetEnhMetaFileA ( Addressable lpName) {
-        var mh$ = GetEnhMetaFileA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetEnhMetaFileW$MH() {
-        return RuntimeHelper.requireNonNull(constants$200.GetEnhMetaFileW$MH,"GetEnhMetaFileW");
-    }
-    public static MemoryAddress GetEnhMetaFileW ( Addressable lpName) {
-        var mh$ = GetEnhMetaFileW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetEnhMetaFileBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$200.GetEnhMetaFileBits$MH,"GetEnhMetaFileBits");
-    }
-    public static int GetEnhMetaFileBits ( Addressable hEMF,  int nSize,  Addressable lpData) {
-        var mh$ = GetEnhMetaFileBits$MH();
-        try {
-            return (int)mh$.invokeExact(hEMF, nSize, lpData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetEnhMetaFileDescriptionA$MH() {
-        return RuntimeHelper.requireNonNull(constants$200.GetEnhMetaFileDescriptionA$MH,"GetEnhMetaFileDescriptionA");
-    }
-    public static int GetEnhMetaFileDescriptionA ( Addressable hemf,  int cchBuffer,  Addressable lpDescription) {
-        var mh$ = GetEnhMetaFileDescriptionA$MH();
-        try {
-            return (int)mh$.invokeExact(hemf, cchBuffer, lpDescription);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetEnhMetaFileDescriptionW$MH() {
-        return RuntimeHelper.requireNonNull(constants$200.GetEnhMetaFileDescriptionW$MH,"GetEnhMetaFileDescriptionW");
-    }
-    public static int GetEnhMetaFileDescriptionW ( Addressable hemf,  int cchBuffer,  Addressable lpDescription) {
-        var mh$ = GetEnhMetaFileDescriptionW$MH();
-        try {
-            return (int)mh$.invokeExact(hemf, cchBuffer, lpDescription);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetEnhMetaFileHeader$MH() {
-        return RuntimeHelper.requireNonNull(constants$200.GetEnhMetaFileHeader$MH,"GetEnhMetaFileHeader");
-    }
-    public static int GetEnhMetaFileHeader ( Addressable hemf,  int nSize,  Addressable lpEnhMetaHeader) {
-        var mh$ = GetEnhMetaFileHeader$MH();
-        try {
-            return (int)mh$.invokeExact(hemf, nSize, lpEnhMetaHeader);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetEnhMetaFilePaletteEntries$MH() {
-        return RuntimeHelper.requireNonNull(constants$200.GetEnhMetaFilePaletteEntries$MH,"GetEnhMetaFilePaletteEntries");
-    }
-    public static int GetEnhMetaFilePaletteEntries ( Addressable hemf,  int nNumEntries,  Addressable lpPaletteEntries) {
-        var mh$ = GetEnhMetaFilePaletteEntries$MH();
-        try {
-            return (int)mh$.invokeExact(hemf, nNumEntries, lpPaletteEntries);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetEnhMetaFilePixelFormat$MH() {
-        return RuntimeHelper.requireNonNull(constants$201.GetEnhMetaFilePixelFormat$MH,"GetEnhMetaFilePixelFormat");
-    }
-    public static int GetEnhMetaFilePixelFormat ( Addressable hemf,  int cbBuffer,  Addressable ppfd) {
-        var mh$ = GetEnhMetaFilePixelFormat$MH();
-        try {
-            return (int)mh$.invokeExact(hemf, cbBuffer, ppfd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetWinMetaFileBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$201.GetWinMetaFileBits$MH,"GetWinMetaFileBits");
-    }
-    public static int GetWinMetaFileBits ( Addressable hemf,  int cbData16,  Addressable pData16,  int iMapMode,  Addressable hdcRef) {
-        var mh$ = GetWinMetaFileBits$MH();
-        try {
-            return (int)mh$.invokeExact(hemf, cbData16, pData16, iMapMode, hdcRef);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PlayEnhMetaFile$MH() {
-        return RuntimeHelper.requireNonNull(constants$201.PlayEnhMetaFile$MH,"PlayEnhMetaFile");
-    }
-    public static int PlayEnhMetaFile ( Addressable hdc,  Addressable hmf,  Addressable lprect) {
-        var mh$ = PlayEnhMetaFile$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hmf, lprect);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PlayEnhMetaFileRecord$MH() {
-        return RuntimeHelper.requireNonNull(constants$201.PlayEnhMetaFileRecord$MH,"PlayEnhMetaFileRecord");
-    }
-    public static int PlayEnhMetaFileRecord ( Addressable hdc,  Addressable pht,  Addressable pmr,  int cht) {
-        var mh$ = PlayEnhMetaFileRecord$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, pht, pmr, cht);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetEnhMetaFileBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$201.SetEnhMetaFileBits$MH,"SetEnhMetaFileBits");
-    }
-    public static MemoryAddress SetEnhMetaFileBits ( int nSize,  Addressable pb) {
-        var mh$ = SetEnhMetaFileBits$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(nSize, pb);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetWinMetaFileBits$MH() {
-        return RuntimeHelper.requireNonNull(constants$201.SetWinMetaFileBits$MH,"SetWinMetaFileBits");
-    }
-    public static MemoryAddress SetWinMetaFileBits ( int nSize,  Addressable lpMeta16Data,  Addressable hdcRef,  Addressable lpMFP) {
-        var mh$ = SetWinMetaFileBits$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(nSize, lpMeta16Data, hdcRef, lpMFP);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GdiComment$MH() {
-        return RuntimeHelper.requireNonNull(constants$202.GdiComment$MH,"GdiComment");
-    }
-    public static int GdiComment ( Addressable hdc,  int nSize,  Addressable lpData) {
-        var mh$ = GdiComment$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, nSize, lpData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextMetricsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$202.GetTextMetricsA$MH,"GetTextMetricsA");
-    }
-    public static int GetTextMetricsA ( Addressable hdc,  Addressable lptm) {
-        var mh$ = GetTextMetricsA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lptm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextMetricsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$202.GetTextMetricsW$MH,"GetTextMetricsW");
-    }
-    public static int GetTextMetricsW ( Addressable hdc,  Addressable lptm) {
-        var mh$ = GetTextMetricsW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lptm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress LPDIBSECTION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PDIBSECTION = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle AngleArc$MH() {
-        return RuntimeHelper.requireNonNull(constants$202.AngleArc$MH,"AngleArc");
-    }
-    public static int AngleArc ( Addressable hdc,  int x,  int y,  int r,  float StartAngle,  float SweepAngle) {
-        var mh$ = AngleArc$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, r, StartAngle, SweepAngle);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PolyPolyline$MH() {
-        return RuntimeHelper.requireNonNull(constants$202.PolyPolyline$MH,"PolyPolyline");
-    }
-    public static int PolyPolyline ( Addressable hdc,  Addressable apt,  Addressable asz,  int csz) {
-        var mh$ = PolyPolyline$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, asz, csz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetWorldTransform$MH() {
-        return RuntimeHelper.requireNonNull(constants$202.GetWorldTransform$MH,"GetWorldTransform");
-    }
-    public static int GetWorldTransform ( Addressable hdc,  Addressable lpxf) {
-        var mh$ = GetWorldTransform$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpxf);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetWorldTransform$MH() {
-        return RuntimeHelper.requireNonNull(constants$203.SetWorldTransform$MH,"SetWorldTransform");
-    }
-    public static int SetWorldTransform ( Addressable hdc,  Addressable lpxf) {
-        var mh$ = SetWorldTransform$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpxf);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ModifyWorldTransform$MH() {
-        return RuntimeHelper.requireNonNull(constants$203.ModifyWorldTransform$MH,"ModifyWorldTransform");
-    }
-    public static int ModifyWorldTransform ( Addressable hdc,  Addressable lpxf,  int mode) {
-        var mh$ = ModifyWorldTransform$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpxf, mode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CombineTransform$MH() {
-        return RuntimeHelper.requireNonNull(constants$203.CombineTransform$MH,"CombineTransform");
-    }
-    public static int CombineTransform ( Addressable lpxfOut,  Addressable lpxf1,  Addressable lpxf2) {
-        var mh$ = CombineTransform$MH();
-        try {
-            return (int)mh$.invokeExact(lpxfOut, lpxf1, lpxf2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDIBSection$MH() {
-        return RuntimeHelper.requireNonNull(constants$203.CreateDIBSection$MH,"CreateDIBSection");
-    }
-    public static MemoryAddress CreateDIBSection ( Addressable hdc,  Addressable pbmi,  int usage,  Addressable ppvBits,  Addressable hSection,  int offset) {
-        var mh$ = CreateDIBSection$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, pbmi, usage, ppvBits, hSection, offset);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDIBColorTable$MH() {
-        return RuntimeHelper.requireNonNull(constants$203.GetDIBColorTable$MH,"GetDIBColorTable");
-    }
-    public static int GetDIBColorTable ( Addressable hdc,  int iStart,  int cEntries,  Addressable prgbq) {
-        var mh$ = GetDIBColorTable$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iStart, cEntries, prgbq);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDIBColorTable$MH() {
-        return RuntimeHelper.requireNonNull(constants$203.SetDIBColorTable$MH,"SetDIBColorTable");
-    }
-    public static int SetDIBColorTable ( Addressable hdc,  int iStart,  int cEntries,  Addressable prgbq) {
-        var mh$ = SetDIBColorTable$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, iStart, cEntries, prgbq);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PCOLORADJUSTMENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCOLORADJUSTMENT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle SetColorAdjustment$MH() {
-        return RuntimeHelper.requireNonNull(constants$204.SetColorAdjustment$MH,"SetColorAdjustment");
-    }
-    public static int SetColorAdjustment ( Addressable hdc,  Addressable lpca) {
-        var mh$ = SetColorAdjustment$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpca);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetColorAdjustment$MH() {
-        return RuntimeHelper.requireNonNull(constants$204.GetColorAdjustment$MH,"GetColorAdjustment");
-    }
-    public static int GetColorAdjustment ( Addressable hdc,  Addressable lpca) {
-        var mh$ = GetColorAdjustment$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpca);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateHalftonePalette$MH() {
-        return RuntimeHelper.requireNonNull(constants$204.CreateHalftonePalette$MH,"CreateHalftonePalette");
-    }
-    public static MemoryAddress CreateHalftonePalette ( Addressable hdc) {
-        var mh$ = CreateHalftonePalette$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress LPDOCINFOA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDOCINFOW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDOCINFO = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle StartDocA$MH() {
-        return RuntimeHelper.requireNonNull(constants$204.StartDocA$MH,"StartDocA");
-    }
-    public static int StartDocA ( Addressable hdc,  Addressable lpdi) {
-        var mh$ = StartDocA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpdi);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle StartDocW$MH() {
-        return RuntimeHelper.requireNonNull(constants$205.StartDocW$MH,"StartDocW");
-    }
-    public static int StartDocW ( Addressable hdc,  Addressable lpdi) {
-        var mh$ = StartDocW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpdi);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EndDoc$MH() {
-        return RuntimeHelper.requireNonNull(constants$205.EndDoc$MH,"EndDoc");
-    }
-    public static int EndDoc ( Addressable hdc) {
-        var mh$ = EndDoc$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle StartPage$MH() {
-        return RuntimeHelper.requireNonNull(constants$205.StartPage$MH,"StartPage");
-    }
-    public static int StartPage ( Addressable hdc) {
-        var mh$ = StartPage$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EndPage$MH() {
-        return RuntimeHelper.requireNonNull(constants$205.EndPage$MH,"EndPage");
-    }
-    public static int EndPage ( Addressable hdc) {
-        var mh$ = EndPage$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AbortDoc$MH() {
-        return RuntimeHelper.requireNonNull(constants$205.AbortDoc$MH,"AbortDoc");
-    }
-    public static int AbortDoc ( Addressable hdc) {
-        var mh$ = AbortDoc$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetAbortProc$MH() {
-        return RuntimeHelper.requireNonNull(constants$205.SetAbortProc$MH,"SetAbortProc");
-    }
-    public static int SetAbortProc ( Addressable hdc,  Addressable proc) {
-        var mh$ = SetAbortProc$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, proc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AbortPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$206.AbortPath$MH,"AbortPath");
-    }
-    public static int AbortPath ( Addressable hdc) {
-        var mh$ = AbortPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ArcTo$MH() {
-        return RuntimeHelper.requireNonNull(constants$206.ArcTo$MH,"ArcTo");
-    }
-    public static int ArcTo ( Addressable hdc,  int left,  int top,  int right,  int bottom,  int xr1,  int yr1,  int xr2,  int yr2) {
-        var mh$ = ArcTo$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, left, top, right, bottom, xr1, yr1, xr2, yr2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle BeginPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$206.BeginPath$MH,"BeginPath");
-    }
-    public static int BeginPath ( Addressable hdc) {
-        var mh$ = BeginPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CloseFigure$MH() {
-        return RuntimeHelper.requireNonNull(constants$206.CloseFigure$MH,"CloseFigure");
-    }
-    public static int CloseFigure ( Addressable hdc) {
-        var mh$ = CloseFigure$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EndPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$206.EndPath$MH,"EndPath");
-    }
-    public static int EndPath ( Addressable hdc) {
-        var mh$ = EndPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle FillPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$206.FillPath$MH,"FillPath");
-    }
-    public static int FillPath ( Addressable hdc) {
-        var mh$ = FillPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle FlattenPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$207.FlattenPath$MH,"FlattenPath");
-    }
-    public static int FlattenPath ( Addressable hdc) {
-        var mh$ = FlattenPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$207.GetPath$MH,"GetPath");
-    }
-    public static int GetPath ( Addressable hdc,  Addressable apt,  Addressable aj,  int cpt) {
-        var mh$ = GetPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, aj, cpt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PathToRegion$MH() {
-        return RuntimeHelper.requireNonNull(constants$207.PathToRegion$MH,"PathToRegion");
-    }
-    public static MemoryAddress PathToRegion ( Addressable hdc) {
-        var mh$ = PathToRegion$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PolyDraw$MH() {
-        return RuntimeHelper.requireNonNull(constants$207.PolyDraw$MH,"PolyDraw");
-    }
-    public static int PolyDraw ( Addressable hdc,  Addressable apt,  Addressable aj,  int cpt) {
-        var mh$ = PolyDraw$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, aj, cpt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SelectClipPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$207.SelectClipPath$MH,"SelectClipPath");
-    }
-    public static int SelectClipPath ( Addressable hdc,  int mode) {
-        var mh$ = SelectClipPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, mode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetArcDirection$MH() {
-        return RuntimeHelper.requireNonNull(constants$207.SetArcDirection$MH,"SetArcDirection");
-    }
-    public static int SetArcDirection ( Addressable hdc,  int dir) {
-        var mh$ = SetArcDirection$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, dir);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetMiterLimit$MH() {
-        return RuntimeHelper.requireNonNull(constants$208.SetMiterLimit$MH,"SetMiterLimit");
-    }
-    public static int SetMiterLimit ( Addressable hdc,  float limit,  Addressable old) {
-        var mh$ = SetMiterLimit$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, limit, old);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle StrokeAndFillPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$208.StrokeAndFillPath$MH,"StrokeAndFillPath");
-    }
-    public static int StrokeAndFillPath ( Addressable hdc) {
-        var mh$ = StrokeAndFillPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle StrokePath$MH() {
-        return RuntimeHelper.requireNonNull(constants$208.StrokePath$MH,"StrokePath");
-    }
-    public static int StrokePath ( Addressable hdc) {
-        var mh$ = StrokePath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WidenPath$MH() {
-        return RuntimeHelper.requireNonNull(constants$208.WidenPath$MH,"WidenPath");
-    }
-    public static int WidenPath ( Addressable hdc) {
-        var mh$ = WidenPath$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExtCreatePen$MH() {
-        return RuntimeHelper.requireNonNull(constants$208.ExtCreatePen$MH,"ExtCreatePen");
-    }
-    public static MemoryAddress ExtCreatePen ( int iPenStyle,  int cWidth,  Addressable plbrush,  int cStyle,  Addressable pstyle) {
-        var mh$ = ExtCreatePen$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(iPenStyle, cWidth, plbrush, cStyle, pstyle);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMiterLimit$MH() {
-        return RuntimeHelper.requireNonNull(constants$208.GetMiterLimit$MH,"GetMiterLimit");
-    }
-    public static int GetMiterLimit ( Addressable hdc,  Addressable plimit) {
-        var mh$ = GetMiterLimit$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, plimit);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetArcDirection$MH() {
-        return RuntimeHelper.requireNonNull(constants$209.GetArcDirection$MH,"GetArcDirection");
-    }
-    public static int GetArcDirection ( Addressable hdc) {
-        var mh$ = GetArcDirection$MH();
-        try {
-            return (int)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetObjectA$MH() {
-        return RuntimeHelper.requireNonNull(constants$209.GetObjectA$MH,"GetObjectA");
-    }
-    public static int GetObjectA ( Addressable h,  int c,  Addressable pv) {
-        var mh$ = GetObjectA$MH();
-        try {
-            return (int)mh$.invokeExact(h, c, pv);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetObjectW$MH() {
-        return RuntimeHelper.requireNonNull(constants$209.GetObjectW$MH,"GetObjectW");
-    }
-    public static int GetObjectW ( Addressable h,  int c,  Addressable pv) {
-        var mh$ = GetObjectW$MH();
-        try {
-            return (int)mh$.invokeExact(h, c, pv);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle MoveToEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$209.MoveToEx$MH,"MoveToEx");
-    }
-    public static int MoveToEx ( Addressable hdc,  int x,  int y,  Addressable lppt) {
-        var mh$ = MoveToEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle TextOutA$MH() {
-        return RuntimeHelper.requireNonNull(constants$209.TextOutA$MH,"TextOutA");
-    }
-    public static int TextOutA ( Addressable hdc,  int x,  int y,  Addressable lpString,  int c) {
-        var mh$ = TextOutA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lpString, c);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle TextOutW$MH() {
-        return RuntimeHelper.requireNonNull(constants$209.TextOutW$MH,"TextOutW");
-    }
-    public static int TextOutW ( Addressable hdc,  int x,  int y,  Addressable lpString,  int c) {
-        var mh$ = TextOutW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lpString, c);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExtTextOutA$MH() {
-        return RuntimeHelper.requireNonNull(constants$210.ExtTextOutA$MH,"ExtTextOutA");
-    }
-    public static int ExtTextOutA ( Addressable hdc,  int x,  int y,  int options,  Addressable lprect,  Addressable lpString,  int c,  Addressable lpDx) {
-        var mh$ = ExtTextOutA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, options, lprect, lpString, c, lpDx);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExtTextOutW$MH() {
-        return RuntimeHelper.requireNonNull(constants$210.ExtTextOutW$MH,"ExtTextOutW");
-    }
-    public static int ExtTextOutW ( Addressable hdc,  int x,  int y,  int options,  Addressable lprect,  Addressable lpString,  int c,  Addressable lpDx) {
-        var mh$ = ExtTextOutW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, options, lprect, lpString, c, lpDx);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PolyTextOutA$MH() {
-        return RuntimeHelper.requireNonNull(constants$210.PolyTextOutA$MH,"PolyTextOutA");
-    }
-    public static int PolyTextOutA ( Addressable hdc,  Addressable ppt,  int nstrings) {
-        var mh$ = PolyTextOutA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, ppt, nstrings);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PolyTextOutW$MH() {
-        return RuntimeHelper.requireNonNull(constants$210.PolyTextOutW$MH,"PolyTextOutW");
-    }
-    public static int PolyTextOutW ( Addressable hdc,  Addressable ppt,  int nstrings) {
-        var mh$ = PolyTextOutW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, ppt, nstrings);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreatePolygonRgn$MH() {
-        return RuntimeHelper.requireNonNull(constants$210.CreatePolygonRgn$MH,"CreatePolygonRgn");
-    }
-    public static MemoryAddress CreatePolygonRgn ( Addressable pptl,  int cPoint,  int iMode) {
-        var mh$ = CreatePolygonRgn$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pptl, cPoint, iMode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DPtoLP$MH() {
-        return RuntimeHelper.requireNonNull(constants$210.DPtoLP$MH,"DPtoLP");
-    }
-    public static int DPtoLP ( Addressable hdc,  Addressable lppt,  int c) {
-        var mh$ = DPtoLP$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lppt, c);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle LPtoDP$MH() {
-        return RuntimeHelper.requireNonNull(constants$211.LPtoDP$MH,"LPtoDP");
-    }
-    public static int LPtoDP ( Addressable hdc,  Addressable lppt,  int c) {
-        var mh$ = LPtoDP$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lppt, c);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle Polygon$MH() {
-        return RuntimeHelper.requireNonNull(constants$211.Polygon$MH,"Polygon");
-    }
-    public static int Polygon ( Addressable hdc,  Addressable apt,  int cpt) {
-        var mh$ = Polygon$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, cpt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle Polyline$MH() {
-        return RuntimeHelper.requireNonNull(constants$211.Polyline$MH,"Polyline");
-    }
-    public static int Polyline ( Addressable hdc,  Addressable apt,  int cpt) {
-        var mh$ = Polyline$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, cpt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PolyBezier$MH() {
-        return RuntimeHelper.requireNonNull(constants$211.PolyBezier$MH,"PolyBezier");
-    }
-    public static int PolyBezier ( Addressable hdc,  Addressable apt,  int cpt) {
-        var mh$ = PolyBezier$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, cpt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PolyBezierTo$MH() {
-        return RuntimeHelper.requireNonNull(constants$211.PolyBezierTo$MH,"PolyBezierTo");
-    }
-    public static int PolyBezierTo ( Addressable hdc,  Addressable apt,  int cpt) {
-        var mh$ = PolyBezierTo$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, cpt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PolylineTo$MH() {
-        return RuntimeHelper.requireNonNull(constants$211.PolylineTo$MH,"PolylineTo");
-    }
-    public static int PolylineTo ( Addressable hdc,  Addressable apt,  int cpt) {
-        var mh$ = PolylineTo$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, apt, cpt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetViewportExtEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$212.SetViewportExtEx$MH,"SetViewportExtEx");
-    }
-    public static int SetViewportExtEx ( Addressable hdc,  int x,  int y,  Addressable lpsz) {
-        var mh$ = SetViewportExtEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetViewportOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$212.SetViewportOrgEx$MH,"SetViewportOrgEx");
-    }
-    public static int SetViewportOrgEx ( Addressable hdc,  int x,  int y,  Addressable lppt) {
-        var mh$ = SetViewportOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetWindowExtEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$212.SetWindowExtEx$MH,"SetWindowExtEx");
-    }
-    public static int SetWindowExtEx ( Addressable hdc,  int x,  int y,  Addressable lpsz) {
-        var mh$ = SetWindowExtEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetWindowOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$212.SetWindowOrgEx$MH,"SetWindowOrgEx");
-    }
-    public static int SetWindowOrgEx ( Addressable hdc,  int x,  int y,  Addressable lppt) {
-        var mh$ = SetWindowOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OffsetViewportOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$212.OffsetViewportOrgEx$MH,"OffsetViewportOrgEx");
-    }
-    public static int OffsetViewportOrgEx ( Addressable hdc,  int x,  int y,  Addressable lppt) {
-        var mh$ = OffsetViewportOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OffsetWindowOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$212.OffsetWindowOrgEx$MH,"OffsetWindowOrgEx");
-    }
-    public static int OffsetWindowOrgEx ( Addressable hdc,  int x,  int y,  Addressable lppt) {
-        var mh$ = OffsetWindowOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ScaleViewportExtEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$213.ScaleViewportExtEx$MH,"ScaleViewportExtEx");
-    }
-    public static int ScaleViewportExtEx ( Addressable hdc,  int xn,  int dx,  int yn,  int yd,  Addressable lpsz) {
-        var mh$ = ScaleViewportExtEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, xn, dx, yn, yd, lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ScaleWindowExtEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$213.ScaleWindowExtEx$MH,"ScaleWindowExtEx");
-    }
-    public static int ScaleWindowExtEx ( Addressable hdc,  int xn,  int xd,  int yn,  int yd,  Addressable lpsz) {
-        var mh$ = ScaleWindowExtEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, xn, xd, yn, yd, lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetBitmapDimensionEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$213.SetBitmapDimensionEx$MH,"SetBitmapDimensionEx");
-    }
-    public static int SetBitmapDimensionEx ( Addressable hbm,  int w,  int h,  Addressable lpsz) {
-        var mh$ = SetBitmapDimensionEx$MH();
-        try {
-            return (int)mh$.invokeExact(hbm, w, h, lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetBrushOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$213.SetBrushOrgEx$MH,"SetBrushOrgEx");
-    }
-    public static int SetBrushOrgEx ( Addressable hdc,  int x,  int y,  Addressable lppt) {
-        var mh$ = SetBrushOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextFaceA$MH() {
-        return RuntimeHelper.requireNonNull(constants$213.GetTextFaceA$MH,"GetTextFaceA");
-    }
-    public static int GetTextFaceA ( Addressable hdc,  int c,  Addressable lpName) {
-        var mh$ = GetTextFaceA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, c, lpName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetTextFaceW$MH() {
-        return RuntimeHelper.requireNonNull(constants$213.GetTextFaceW$MH,"GetTextFaceW");
-    }
-    public static int GetTextFaceW ( Addressable hdc,  int c,  Addressable lpName) {
-        var mh$ = GetTextFaceW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, c, lpName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress LPKERNINGPAIR = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle GetKerningPairsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$214.GetKerningPairsA$MH,"GetKerningPairsA");
-    }
-    public static int GetKerningPairsA ( Addressable hdc,  int nPairs,  Addressable lpKernPair) {
-        var mh$ = GetKerningPairsA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, nPairs, lpKernPair);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKerningPairsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$214.GetKerningPairsW$MH,"GetKerningPairsW");
-    }
-    public static int GetKerningPairsW ( Addressable hdc,  int nPairs,  Addressable lpKernPair) {
-        var mh$ = GetKerningPairsW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, nPairs, lpKernPair);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDCOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$214.GetDCOrgEx$MH,"GetDCOrgEx");
-    }
-    public static int GetDCOrgEx ( Addressable hdc,  Addressable lppt) {
-        var mh$ = GetDCOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lppt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle FixBrushOrgEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$214.FixBrushOrgEx$MH,"FixBrushOrgEx");
-    }
-    public static int FixBrushOrgEx ( Addressable hdc,  int x,  int y,  Addressable ptl) {
-        var mh$ = FixBrushOrgEx$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, x, y, ptl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnrealizeObject$MH() {
-        return RuntimeHelper.requireNonNull(constants$214.UnrealizeObject$MH,"UnrealizeObject");
-    }
-    public static int UnrealizeObject ( Addressable h) {
-        var mh$ = UnrealizeObject$MH();
-        try {
-            return (int)mh$.invokeExact(h);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GdiFlush$MH() {
-        return RuntimeHelper.requireNonNull(constants$214.GdiFlush$MH,"GdiFlush");
-    }
-    public static int GdiFlush () {
-        var mh$ = GdiFlush$MH();
+    public static int GetVersion () {
+        var mh$ = GetVersion$MH();
         try {
             return (int)mh$.invokeExact();
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GdiSetBatchLimit$MH() {
-        return RuntimeHelper.requireNonNull(constants$215.GdiSetBatchLimit$MH,"GdiSetBatchLimit");
+    public static MethodHandle SetLocalTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$128.SetLocalTime$MH,"SetLocalTime");
     }
-    public static int GdiSetBatchLimit ( int dw) {
-        var mh$ = GdiSetBatchLimit$MH();
+    public static int SetLocalTime ( Addressable lpSystemTime) {
+        var mh$ = SetLocalTime$MH();
         try {
-            return (int)mh$.invokeExact(dw);
+            return (int)mh$.invokeExact(lpSystemTime);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GdiGetBatchLimit$MH() {
-        return RuntimeHelper.requireNonNull(constants$215.GdiGetBatchLimit$MH,"GdiGetBatchLimit");
+    public static MethodHandle GetTickCount$MH() {
+        return RuntimeHelper.requireNonNull(constants$128.GetTickCount$MH,"GetTickCount");
     }
-    public static int GdiGetBatchLimit () {
-        var mh$ = GdiGetBatchLimit$MH();
+    public static int GetTickCount () {
+        var mh$ = GetTickCount$MH();
         try {
             return (int)mh$.invokeExact();
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SetICMMode$MH() {
-        return RuntimeHelper.requireNonNull(constants$216.SetICMMode$MH,"SetICMMode");
-    }
-    public static int SetICMMode ( Addressable hdc,  int mode) {
-        var mh$ = SetICMMode$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, mode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CheckColorsInGamut$MH() {
-        return RuntimeHelper.requireNonNull(constants$216.CheckColorsInGamut$MH,"CheckColorsInGamut");
-    }
-    public static int CheckColorsInGamut ( Addressable hdc,  Addressable lpRGBTriple,  Addressable dlpBuffer,  int nCount) {
-        var mh$ = CheckColorsInGamut$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpRGBTriple, dlpBuffer, nCount);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetColorSpace$MH() {
-        return RuntimeHelper.requireNonNull(constants$216.GetColorSpace$MH,"GetColorSpace");
-    }
-    public static MemoryAddress GetColorSpace ( Addressable hdc) {
-        var mh$ = GetColorSpace$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetLogColorSpaceA$MH() {
-        return RuntimeHelper.requireNonNull(constants$216.GetLogColorSpaceA$MH,"GetLogColorSpaceA");
-    }
-    public static int GetLogColorSpaceA ( Addressable hColorSpace,  Addressable lpBuffer,  int nSize) {
-        var mh$ = GetLogColorSpaceA$MH();
-        try {
-            return (int)mh$.invokeExact(hColorSpace, lpBuffer, nSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetLogColorSpaceW$MH() {
-        return RuntimeHelper.requireNonNull(constants$216.GetLogColorSpaceW$MH,"GetLogColorSpaceW");
-    }
-    public static int GetLogColorSpaceW ( Addressable hColorSpace,  Addressable lpBuffer,  int nSize) {
-        var mh$ = GetLogColorSpaceW$MH();
-        try {
-            return (int)mh$.invokeExact(hColorSpace, lpBuffer, nSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateColorSpaceA$MH() {
-        return RuntimeHelper.requireNonNull(constants$216.CreateColorSpaceA$MH,"CreateColorSpaceA");
-    }
-    public static MemoryAddress CreateColorSpaceA ( Addressable lplcs) {
-        var mh$ = CreateColorSpaceA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lplcs);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateColorSpaceW$MH() {
-        return RuntimeHelper.requireNonNull(constants$217.CreateColorSpaceW$MH,"CreateColorSpaceW");
-    }
-    public static MemoryAddress CreateColorSpaceW ( Addressable lplcs) {
-        var mh$ = CreateColorSpaceW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lplcs);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetColorSpace$MH() {
-        return RuntimeHelper.requireNonNull(constants$217.SetColorSpace$MH,"SetColorSpace");
-    }
-    public static MemoryAddress SetColorSpace ( Addressable hdc,  Addressable hcs) {
-        var mh$ = SetColorSpace$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hdc, hcs);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DeleteColorSpace$MH() {
-        return RuntimeHelper.requireNonNull(constants$217.DeleteColorSpace$MH,"DeleteColorSpace");
-    }
-    public static int DeleteColorSpace ( Addressable hcs) {
-        var mh$ = DeleteColorSpace$MH();
-        try {
-            return (int)mh$.invokeExact(hcs);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetICMProfileA$MH() {
-        return RuntimeHelper.requireNonNull(constants$217.GetICMProfileA$MH,"GetICMProfileA");
-    }
-    public static int GetICMProfileA ( Addressable hdc,  Addressable pBufSize,  Addressable pszFilename) {
-        var mh$ = GetICMProfileA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, pBufSize, pszFilename);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetICMProfileW$MH() {
-        return RuntimeHelper.requireNonNull(constants$217.GetICMProfileW$MH,"GetICMProfileW");
-    }
-    public static int GetICMProfileW ( Addressable hdc,  Addressable pBufSize,  Addressable pszFilename) {
-        var mh$ = GetICMProfileW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, pBufSize, pszFilename);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetICMProfileA$MH() {
-        return RuntimeHelper.requireNonNull(constants$217.SetICMProfileA$MH,"SetICMProfileA");
-    }
-    public static int SetICMProfileA ( Addressable hdc,  Addressable lpFileName) {
-        var mh$ = SetICMProfileA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpFileName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetICMProfileW$MH() {
-        return RuntimeHelper.requireNonNull(constants$218.SetICMProfileW$MH,"SetICMProfileW");
-    }
-    public static int SetICMProfileW ( Addressable hdc,  Addressable lpFileName) {
-        var mh$ = SetICMProfileW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpFileName);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDeviceGammaRamp$MH() {
-        return RuntimeHelper.requireNonNull(constants$218.GetDeviceGammaRamp$MH,"GetDeviceGammaRamp");
-    }
-    public static int GetDeviceGammaRamp ( Addressable hdc,  Addressable lpRamp) {
-        var mh$ = GetDeviceGammaRamp$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpRamp);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDeviceGammaRamp$MH() {
-        return RuntimeHelper.requireNonNull(constants$218.SetDeviceGammaRamp$MH,"SetDeviceGammaRamp");
-    }
-    public static int SetDeviceGammaRamp ( Addressable hdc,  Addressable lpRamp) {
-        var mh$ = SetDeviceGammaRamp$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, lpRamp);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ColorMatchToTarget$MH() {
-        return RuntimeHelper.requireNonNull(constants$218.ColorMatchToTarget$MH,"ColorMatchToTarget");
-    }
-    public static int ColorMatchToTarget ( Addressable hdc,  Addressable hdcTarget,  int action) {
-        var mh$ = ColorMatchToTarget$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hdcTarget, action);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumICMProfilesA$MH() {
-        return RuntimeHelper.requireNonNull(constants$218.EnumICMProfilesA$MH,"EnumICMProfilesA");
-    }
-    public static int EnumICMProfilesA ( Addressable hdc,  Addressable proc,  long param) {
-        var mh$ = EnumICMProfilesA$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, proc, param);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumICMProfilesW$MH() {
-        return RuntimeHelper.requireNonNull(constants$218.EnumICMProfilesW$MH,"EnumICMProfilesW");
-    }
-    public static int EnumICMProfilesW ( Addressable hdc,  Addressable proc,  long param) {
-        var mh$ = EnumICMProfilesW$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, proc, param);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UpdateICMRegKeyA$MH() {
-        return RuntimeHelper.requireNonNull(constants$219.UpdateICMRegKeyA$MH,"UpdateICMRegKeyA");
-    }
-    public static int UpdateICMRegKeyA ( int reserved,  Addressable lpszCMID,  Addressable lpszFileName,  int command) {
-        var mh$ = UpdateICMRegKeyA$MH();
-        try {
-            return (int)mh$.invokeExact(reserved, lpszCMID, lpszFileName, command);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UpdateICMRegKeyW$MH() {
-        return RuntimeHelper.requireNonNull(constants$219.UpdateICMRegKeyW$MH,"UpdateICMRegKeyW");
-    }
-    public static int UpdateICMRegKeyW ( int reserved,  Addressable lpszCMID,  Addressable lpszFileName,  int command) {
-        var mh$ = UpdateICMRegKeyW$MH();
-        try {
-            return (int)mh$.invokeExact(reserved, lpszCMID, lpszFileName, command);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ColorCorrectPalette$MH() {
-        return RuntimeHelper.requireNonNull(constants$219.ColorCorrectPalette$MH,"ColorCorrectPalette");
-    }
-    public static int ColorCorrectPalette ( Addressable hdc,  Addressable hPal,  int deFirst,  int num) {
-        var mh$ = ColorCorrectPalette$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, hPal, deFirst, num);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PEMR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRTEXT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRABORTPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRBEGINPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRENDPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCLOSEFIGURE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRFLATTENPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRWIDENPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETMETARGN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSAVEDC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRREALIZEPALETTE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSELECTCLIPPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETBKMODE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETMAPMODE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETLAYOUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETPOLYFILLMODE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETROP2 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETSTRETCHBLTMODE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETICMMODE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETTEXTALIGN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETMITERLIMIT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRRESTOREDC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETARCDIRECTION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETMAPPERFLAGS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETBKCOLOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETTEXTCOLOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSELECTOBJECT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRDELETEOBJECT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSELECTPALETTE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRRESIZEPALETTE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETPALETTEENTRIES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETCOLORADJUSTMENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRGDICOMMENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREOF = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRLINETO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRMOVETOEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMROFFSETCLIPRGN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRFILLPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSTROKEANDFILLPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSTROKEPATH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREXCLUDECLIPRECT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRINTERSECTCLIPRECT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETVIEWPORTORGEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETWINDOWORGEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETBRUSHORGEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETVIEWPORTEXTEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETWINDOWEXTEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSCALEVIEWPORTEXTEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSCALEWINDOWEXTEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETWORLDTRANSFORM = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRMODIFYWORLDTRANSFORM = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETPIXELV = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREXTFLOODFILL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRELLIPSE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRRECTANGLE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRROUNDRECT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRARC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRARCTO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCHORD = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPIE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRANGLEARC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYLINE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYBEZIER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYGON = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYBEZIERTO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYLINETO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYLINE16 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYBEZIER16 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYGON16 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYBEZIERTO16 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYLINETO16 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYDRAW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYDRAW16 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYPOLYLINE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYPOLYGON = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYPOLYLINE16 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYPOLYGON16 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRINVERTRGN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPAINTRGN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRFILLRGN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRFRAMERGN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREXTSELECTCLIPRGN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREXTTEXTOUTA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREXTTEXTOUTW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYTEXTOUTA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPOLYTEXTOUTW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRBITBLT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSTRETCHBLT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRMASKBLT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPLGBLT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETDIBITSTODEVICE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSTRETCHDIBITS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREXTCREATEFONTINDIRECTW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCREATEPALETTE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCREATEPEN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREXTCREATEPEN = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCREATEBRUSHINDIRECT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCREATEMONOBRUSH = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCREATEDIBPATTERNBRUSHPT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRFORMAT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRGLSRECORD = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRGLSBOUNDEDRECORD = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRPIXELFORMAT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCREATECOLORSPACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETCOLORSPACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSELECTCOLORSPACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRDELETECOLORSPACE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMREXTESCAPE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRDRAWESCAPE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRNAMEDESCAPE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETICMPROFILE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETICMPROFILEA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRSETICMPROFILEW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCREATECOLORSPACEW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCOLORMATCHTOTARGET = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRCOLORCORRECTPALETTE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRALPHABLEND = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRGRADIENTFILL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEMRTRANSPARENTBLT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle wglCopyContext$MH() {
-        return RuntimeHelper.requireNonNull(constants$219.wglCopyContext$MH,"wglCopyContext");
-    }
-    public static int wglCopyContext ( Addressable x0,  Addressable x1,  int x2) {
-        var mh$ = wglCopyContext$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglCreateContext$MH() {
-        return RuntimeHelper.requireNonNull(constants$219.wglCreateContext$MH,"wglCreateContext");
-    }
-    public static MemoryAddress wglCreateContext ( Addressable x0) {
-        var mh$ = wglCreateContext$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglCreateLayerContext$MH() {
-        return RuntimeHelper.requireNonNull(constants$219.wglCreateLayerContext$MH,"wglCreateLayerContext");
-    }
-    public static MemoryAddress wglCreateLayerContext ( Addressable x0,  int x1) {
-        var mh$ = wglCreateLayerContext$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x0, x1);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglDeleteContext$MH() {
-        return RuntimeHelper.requireNonNull(constants$220.wglDeleteContext$MH,"wglDeleteContext");
-    }
-    public static int wglDeleteContext ( Addressable x0) {
-        var mh$ = wglDeleteContext$MH();
-        try {
-            return (int)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglGetCurrentContext$MH() {
-        return RuntimeHelper.requireNonNull(constants$220.wglGetCurrentContext$MH,"wglGetCurrentContext");
-    }
-    public static MemoryAddress wglGetCurrentContext () {
-        var mh$ = wglGetCurrentContext$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglGetCurrentDC$MH() {
-        return RuntimeHelper.requireNonNull(constants$220.wglGetCurrentDC$MH,"wglGetCurrentDC");
-    }
-    public static MemoryAddress wglGetCurrentDC () {
-        var mh$ = wglGetCurrentDC$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglGetProcAddress$MH() {
-        return RuntimeHelper.requireNonNull(constants$220.wglGetProcAddress$MH,"wglGetProcAddress");
-    }
-    public static MemoryAddress wglGetProcAddress ( Addressable x0) {
-        var mh$ = wglGetProcAddress$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglMakeCurrent$MH() {
-        return RuntimeHelper.requireNonNull(constants$220.wglMakeCurrent$MH,"wglMakeCurrent");
-    }
-    public static int wglMakeCurrent ( Addressable x0,  Addressable x1) {
-        var mh$ = wglMakeCurrent$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglShareLists$MH() {
-        return RuntimeHelper.requireNonNull(constants$220.wglShareLists$MH,"wglShareLists");
-    }
-    public static int wglShareLists ( Addressable x0,  Addressable x1) {
-        var mh$ = wglShareLists$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglUseFontBitmapsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$221.wglUseFontBitmapsA$MH,"wglUseFontBitmapsA");
-    }
-    public static int wglUseFontBitmapsA ( Addressable x0,  int x1,  int x2,  int x3) {
-        var mh$ = wglUseFontBitmapsA$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2, x3);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglUseFontBitmapsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$221.wglUseFontBitmapsW$MH,"wglUseFontBitmapsW");
-    }
-    public static int wglUseFontBitmapsW ( Addressable x0,  int x1,  int x2,  int x3) {
-        var mh$ = wglUseFontBitmapsW$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2, x3);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SwapBuffers$MH() {
-        return RuntimeHelper.requireNonNull(constants$221.SwapBuffers$MH,"SwapBuffers");
-    }
-    public static int SwapBuffers ( Addressable x0) {
-        var mh$ = SwapBuffers$MH();
-        try {
-            return (int)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PPOINTFLOAT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PGLYPHMETRICSFLOAT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPGLYPHMETRICSFLOAT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle wglUseFontOutlinesA$MH() {
-        return RuntimeHelper.requireNonNull(constants$221.wglUseFontOutlinesA$MH,"wglUseFontOutlinesA");
-    }
-    public static int wglUseFontOutlinesA ( Addressable x0,  int x1,  int x2,  int x3,  float x4,  float x5,  int x6,  Addressable x7) {
-        var mh$ = wglUseFontOutlinesA$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2, x3, x4, x5, x6, x7);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglUseFontOutlinesW$MH() {
-        return RuntimeHelper.requireNonNull(constants$221.wglUseFontOutlinesW$MH,"wglUseFontOutlinesW");
-    }
-    public static int wglUseFontOutlinesW ( Addressable x0,  int x1,  int x2,  int x3,  float x4,  float x5,  int x6,  Addressable x7) {
-        var mh$ = wglUseFontOutlinesW$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2, x3, x4, x5, x6, x7);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PLAYERPLANEDESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPLAYERPLANEDESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle wglDescribeLayerPlane$MH() {
-        return RuntimeHelper.requireNonNull(constants$221.wglDescribeLayerPlane$MH,"wglDescribeLayerPlane");
-    }
-    public static int wglDescribeLayerPlane ( Addressable x0,  int x1,  int x2,  int x3,  Addressable x4) {
-        var mh$ = wglDescribeLayerPlane$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2, x3, x4);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglSetLayerPaletteEntries$MH() {
-        return RuntimeHelper.requireNonNull(constants$222.wglSetLayerPaletteEntries$MH,"wglSetLayerPaletteEntries");
-    }
-    public static int wglSetLayerPaletteEntries ( Addressable x0,  int x1,  int x2,  int x3,  Addressable x4) {
-        var mh$ = wglSetLayerPaletteEntries$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2, x3, x4);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglGetLayerPaletteEntries$MH() {
-        return RuntimeHelper.requireNonNull(constants$222.wglGetLayerPaletteEntries$MH,"wglGetLayerPaletteEntries");
-    }
-    public static int wglGetLayerPaletteEntries ( Addressable x0,  int x1,  int x2,  int x3,  Addressable x4) {
-        var mh$ = wglGetLayerPaletteEntries$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2, x3, x4);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglRealizeLayerPalette$MH() {
-        return RuntimeHelper.requireNonNull(constants$222.wglRealizeLayerPalette$MH,"wglRealizeLayerPalette");
-    }
-    public static int wglRealizeLayerPalette ( Addressable x0,  int x1,  int x2) {
-        var mh$ = wglRealizeLayerPalette$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wglSwapLayerBuffers$MH() {
-        return RuntimeHelper.requireNonNull(constants$222.wglSwapLayerBuffers$MH,"wglSwapLayerBuffers");
-    }
-    public static int wglSwapLayerBuffers ( Addressable x0,  int x1) {
-        var mh$ = wglSwapLayerBuffers$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PWGLSWAP = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWGLSWAP = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle wglSwapMultipleBuffers$MH() {
-        return RuntimeHelper.requireNonNull(constants$222.wglSwapMultipleBuffers$MH,"wglSwapMultipleBuffers");
-    }
-    public static int wglSwapMultipleBuffers ( int x0,  Addressable x1) {
-        var mh$ = wglSwapMultipleBuffers$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress HDWP = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMENUTEMPLATEA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMENUTEMPLATEW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMENUTEMPLATE = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle wvsprintfA$MH() {
-        return RuntimeHelper.requireNonNull(constants$231.wvsprintfA$MH,"wvsprintfA");
-    }
-    public static int wvsprintfA ( Addressable x0,  Addressable x1,  Addressable arglist) {
-        var mh$ = wvsprintfA$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, arglist);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wvsprintfW$MH() {
-        return RuntimeHelper.requireNonNull(constants$231.wvsprintfW$MH,"wvsprintfW");
-    }
-    public static int wvsprintfW ( Addressable x0,  Addressable x1,  Addressable arglist) {
-        var mh$ = wvsprintfW$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, arglist);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wsprintfA$MH() {
-        return RuntimeHelper.requireNonNull(constants$231.wsprintfA$MH,"wsprintfA");
-    }
-    public static int wsprintfA ( Addressable x0,  Addressable x1, Object... x2) {
-        var mh$ = wsprintfA$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle wsprintfW$MH() {
-        return RuntimeHelper.requireNonNull(constants$231.wsprintfW$MH,"wsprintfW");
-    }
-    public static int wsprintfW ( Addressable x0,  Addressable x1, Object... x2) {
-        var mh$ = wsprintfW$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress LPCBT_CREATEWNDA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCBT_CREATEWNDW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCBT_CREATEWND = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCBTACTIVATESTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWTSSESSION_NOTIFICATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPSHELLHOOKINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEVENTMSGMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPEVENTMSGMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPEVENTMSGMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEVENTMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPEVENTMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPEVENTMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCWPSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPCWPSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCWPSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCWPRETSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPCWPRETSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCWPRETSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPKBDLLHOOKSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PKBDLLHOOKSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMSLLHOOKSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMSLLHOOKSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PDEBUGHOOKINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPDEBUGHOOKINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDEBUGHOOKINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMOUSEHOOKSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMOUSEHOOKSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMOUSEHOOKSTRUCTEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMOUSEHOOKSTRUCTEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPHARDWAREHOOKSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PHARDWAREHOOKSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle LoadKeyboardLayoutA$MH() {
-        return RuntimeHelper.requireNonNull(constants$231.LoadKeyboardLayoutA$MH,"LoadKeyboardLayoutA");
-    }
-    public static MemoryAddress LoadKeyboardLayoutA ( Addressable pwszKLID,  int Flags) {
-        var mh$ = LoadKeyboardLayoutA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pwszKLID, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle LoadKeyboardLayoutW$MH() {
-        return RuntimeHelper.requireNonNull(constants$232.LoadKeyboardLayoutW$MH,"LoadKeyboardLayoutW");
-    }
-    public static MemoryAddress LoadKeyboardLayoutW ( Addressable pwszKLID,  int Flags) {
-        var mh$ = LoadKeyboardLayoutW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pwszKLID, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ActivateKeyboardLayout$MH() {
-        return RuntimeHelper.requireNonNull(constants$232.ActivateKeyboardLayout$MH,"ActivateKeyboardLayout");
-    }
-    public static MemoryAddress ActivateKeyboardLayout ( Addressable hkl,  int Flags) {
-        var mh$ = ActivateKeyboardLayout$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hkl, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ToUnicodeEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$232.ToUnicodeEx$MH,"ToUnicodeEx");
-    }
-    public static int ToUnicodeEx ( int wVirtKey,  int wScanCode,  Addressable lpKeyState,  Addressable pwszBuff,  int cchBuff,  int wFlags,  Addressable dwhkl) {
-        var mh$ = ToUnicodeEx$MH();
-        try {
-            return (int)mh$.invokeExact(wVirtKey, wScanCode, lpKeyState, pwszBuff, cchBuff, wFlags, dwhkl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnloadKeyboardLayout$MH() {
-        return RuntimeHelper.requireNonNull(constants$232.UnloadKeyboardLayout$MH,"UnloadKeyboardLayout");
-    }
-    public static int UnloadKeyboardLayout ( Addressable hkl) {
-        var mh$ = UnloadKeyboardLayout$MH();
-        try {
-            return (int)mh$.invokeExact(hkl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyboardLayoutNameA$MH() {
-        return RuntimeHelper.requireNonNull(constants$232.GetKeyboardLayoutNameA$MH,"GetKeyboardLayoutNameA");
-    }
-    public static int GetKeyboardLayoutNameA ( Addressable pwszKLID) {
-        var mh$ = GetKeyboardLayoutNameA$MH();
-        try {
-            return (int)mh$.invokeExact(pwszKLID);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyboardLayoutNameW$MH() {
-        return RuntimeHelper.requireNonNull(constants$232.GetKeyboardLayoutNameW$MH,"GetKeyboardLayoutNameW");
-    }
-    public static int GetKeyboardLayoutNameW ( Addressable pwszKLID) {
-        var mh$ = GetKeyboardLayoutNameW$MH();
-        try {
-            return (int)mh$.invokeExact(pwszKLID);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyboardLayoutList$MH() {
-        return RuntimeHelper.requireNonNull(constants$233.GetKeyboardLayoutList$MH,"GetKeyboardLayoutList");
-    }
-    public static int GetKeyboardLayoutList ( int nBuff,  Addressable lpList) {
-        var mh$ = GetKeyboardLayoutList$MH();
-        try {
-            return (int)mh$.invokeExact(nBuff, lpList);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyboardLayout$MH() {
-        return RuntimeHelper.requireNonNull(constants$233.GetKeyboardLayout$MH,"GetKeyboardLayout");
-    }
-    public static MemoryAddress GetKeyboardLayout ( int idThread) {
-        var mh$ = GetKeyboardLayout$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(idThread);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PMOUSEMOVEPOINT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMOUSEMOVEPOINT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle GetMouseMovePointsEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$233.GetMouseMovePointsEx$MH,"GetMouseMovePointsEx");
-    }
-    public static int GetMouseMovePointsEx ( int cbSize,  Addressable lppt,  Addressable lpptBuf,  int nBufPoints,  int resolution) {
-        var mh$ = GetMouseMovePointsEx$MH();
-        try {
-            return (int)mh$.invokeExact(cbSize, lppt, lpptBuf, nBufPoints, resolution);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDesktopA$MH() {
-        return RuntimeHelper.requireNonNull(constants$233.CreateDesktopA$MH,"CreateDesktopA");
-    }
-    public static MemoryAddress CreateDesktopA ( Addressable lpszDesktop,  Addressable lpszDevice,  Addressable pDevmode,  int dwFlags,  int dwDesiredAccess,  Addressable lpsa) {
-        var mh$ = CreateDesktopA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszDesktop, lpszDevice, pDevmode, dwFlags, dwDesiredAccess, lpsa);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDesktopW$MH() {
-        return RuntimeHelper.requireNonNull(constants$233.CreateDesktopW$MH,"CreateDesktopW");
-    }
-    public static MemoryAddress CreateDesktopW ( Addressable lpszDesktop,  Addressable lpszDevice,  Addressable pDevmode,  int dwFlags,  int dwDesiredAccess,  Addressable lpsa) {
-        var mh$ = CreateDesktopW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszDesktop, lpszDevice, pDevmode, dwFlags, dwDesiredAccess, lpsa);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDesktopExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$233.CreateDesktopExA$MH,"CreateDesktopExA");
-    }
-    public static MemoryAddress CreateDesktopExA ( Addressable lpszDesktop,  Addressable lpszDevice,  Addressable pDevmode,  int dwFlags,  int dwDesiredAccess,  Addressable lpsa,  int ulHeapSize,  Addressable pvoid) {
-        var mh$ = CreateDesktopExA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszDesktop, lpszDevice, pDevmode, dwFlags, dwDesiredAccess, lpsa, ulHeapSize, pvoid);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDesktopExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$234.CreateDesktopExW$MH,"CreateDesktopExW");
-    }
-    public static MemoryAddress CreateDesktopExW ( Addressable lpszDesktop,  Addressable lpszDevice,  Addressable pDevmode,  int dwFlags,  int dwDesiredAccess,  Addressable lpsa,  int ulHeapSize,  Addressable pvoid) {
-        var mh$ = CreateDesktopExW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszDesktop, lpszDevice, pDevmode, dwFlags, dwDesiredAccess, lpsa, ulHeapSize, pvoid);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OpenDesktopA$MH() {
-        return RuntimeHelper.requireNonNull(constants$234.OpenDesktopA$MH,"OpenDesktopA");
-    }
-    public static MemoryAddress OpenDesktopA ( Addressable lpszDesktop,  int dwFlags,  int fInherit,  int dwDesiredAccess) {
-        var mh$ = OpenDesktopA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszDesktop, dwFlags, fInherit, dwDesiredAccess);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OpenDesktopW$MH() {
-        return RuntimeHelper.requireNonNull(constants$234.OpenDesktopW$MH,"OpenDesktopW");
-    }
-    public static MemoryAddress OpenDesktopW ( Addressable lpszDesktop,  int dwFlags,  int fInherit,  int dwDesiredAccess) {
-        var mh$ = OpenDesktopW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszDesktop, dwFlags, fInherit, dwDesiredAccess);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OpenInputDesktop$MH() {
-        return RuntimeHelper.requireNonNull(constants$234.OpenInputDesktop$MH,"OpenInputDesktop");
-    }
-    public static MemoryAddress OpenInputDesktop ( int dwFlags,  int fInherit,  int dwDesiredAccess) {
-        var mh$ = OpenInputDesktop$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwFlags, fInherit, dwDesiredAccess);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumDesktopsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$234.EnumDesktopsA$MH,"EnumDesktopsA");
-    }
-    public static int EnumDesktopsA ( Addressable hwinsta,  Addressable lpEnumFunc,  long lParam) {
-        var mh$ = EnumDesktopsA$MH();
-        try {
-            return (int)mh$.invokeExact(hwinsta, lpEnumFunc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumDesktopsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$234.EnumDesktopsW$MH,"EnumDesktopsW");
-    }
-    public static int EnumDesktopsW ( Addressable hwinsta,  Addressable lpEnumFunc,  long lParam) {
-        var mh$ = EnumDesktopsW$MH();
-        try {
-            return (int)mh$.invokeExact(hwinsta, lpEnumFunc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumDesktopWindows$MH() {
-        return RuntimeHelper.requireNonNull(constants$235.EnumDesktopWindows$MH,"EnumDesktopWindows");
-    }
-    public static int EnumDesktopWindows ( Addressable hDesktop,  Addressable lpfn,  long lParam) {
-        var mh$ = EnumDesktopWindows$MH();
-        try {
-            return (int)mh$.invokeExact(hDesktop, lpfn, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SwitchDesktop$MH() {
-        return RuntimeHelper.requireNonNull(constants$235.SwitchDesktop$MH,"SwitchDesktop");
-    }
-    public static int SwitchDesktop ( Addressable hDesktop) {
-        var mh$ = SwitchDesktop$MH();
-        try {
-            return (int)mh$.invokeExact(hDesktop);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetThreadDesktop$MH() {
-        return RuntimeHelper.requireNonNull(constants$235.SetThreadDesktop$MH,"SetThreadDesktop");
-    }
-    public static int SetThreadDesktop ( Addressable hDesktop) {
-        var mh$ = SetThreadDesktop$MH();
-        try {
-            return (int)mh$.invokeExact(hDesktop);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CloseDesktop$MH() {
-        return RuntimeHelper.requireNonNull(constants$235.CloseDesktop$MH,"CloseDesktop");
-    }
-    public static int CloseDesktop ( Addressable hDesktop) {
-        var mh$ = CloseDesktop$MH();
-        try {
-            return (int)mh$.invokeExact(hDesktop);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetThreadDesktop$MH() {
-        return RuntimeHelper.requireNonNull(constants$235.GetThreadDesktop$MH,"GetThreadDesktop");
-    }
-    public static MemoryAddress GetThreadDesktop ( int dwThreadId) {
-        var mh$ = GetThreadDesktop$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwThreadId);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateWindowStationA$MH() {
-        return RuntimeHelper.requireNonNull(constants$235.CreateWindowStationA$MH,"CreateWindowStationA");
-    }
-    public static MemoryAddress CreateWindowStationA ( Addressable lpwinsta,  int dwFlags,  int dwDesiredAccess,  Addressable lpsa) {
-        var mh$ = CreateWindowStationA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpwinsta, dwFlags, dwDesiredAccess, lpsa);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateWindowStationW$MH() {
-        return RuntimeHelper.requireNonNull(constants$236.CreateWindowStationW$MH,"CreateWindowStationW");
-    }
-    public static MemoryAddress CreateWindowStationW ( Addressable lpwinsta,  int dwFlags,  int dwDesiredAccess,  Addressable lpsa) {
-        var mh$ = CreateWindowStationW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpwinsta, dwFlags, dwDesiredAccess, lpsa);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OpenWindowStationA$MH() {
-        return RuntimeHelper.requireNonNull(constants$236.OpenWindowStationA$MH,"OpenWindowStationA");
-    }
-    public static MemoryAddress OpenWindowStationA ( Addressable lpszWinSta,  int fInherit,  int dwDesiredAccess) {
-        var mh$ = OpenWindowStationA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszWinSta, fInherit, dwDesiredAccess);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OpenWindowStationW$MH() {
-        return RuntimeHelper.requireNonNull(constants$236.OpenWindowStationW$MH,"OpenWindowStationW");
-    }
-    public static MemoryAddress OpenWindowStationW ( Addressable lpszWinSta,  int fInherit,  int dwDesiredAccess) {
-        var mh$ = OpenWindowStationW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszWinSta, fInherit, dwDesiredAccess);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumWindowStationsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$236.EnumWindowStationsA$MH,"EnumWindowStationsA");
-    }
-    public static int EnumWindowStationsA ( Addressable lpEnumFunc,  long lParam) {
-        var mh$ = EnumWindowStationsA$MH();
-        try {
-            return (int)mh$.invokeExact(lpEnumFunc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumWindowStationsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$236.EnumWindowStationsW$MH,"EnumWindowStationsW");
-    }
-    public static int EnumWindowStationsW ( Addressable lpEnumFunc,  long lParam) {
-        var mh$ = EnumWindowStationsW$MH();
-        try {
-            return (int)mh$.invokeExact(lpEnumFunc, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CloseWindowStation$MH() {
-        return RuntimeHelper.requireNonNull(constants$236.CloseWindowStation$MH,"CloseWindowStation");
-    }
-    public static int CloseWindowStation ( Addressable hWinSta) {
-        var mh$ = CloseWindowStation$MH();
-        try {
-            return (int)mh$.invokeExact(hWinSta);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetProcessWindowStation$MH() {
-        return RuntimeHelper.requireNonNull(constants$237.SetProcessWindowStation$MH,"SetProcessWindowStation");
-    }
-    public static int SetProcessWindowStation ( Addressable hWinSta) {
-        var mh$ = SetProcessWindowStation$MH();
-        try {
-            return (int)mh$.invokeExact(hWinSta);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetProcessWindowStation$MH() {
-        return RuntimeHelper.requireNonNull(constants$237.GetProcessWindowStation$MH,"GetProcessWindowStation");
-    }
-    public static MemoryAddress GetProcessWindowStation () {
-        var mh$ = GetProcessWindowStation$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetUserObjectSecurity$MH() {
-        return RuntimeHelper.requireNonNull(constants$237.SetUserObjectSecurity$MH,"SetUserObjectSecurity");
-    }
-    public static int SetUserObjectSecurity ( Addressable hObj,  Addressable pSIRequested,  Addressable pSID) {
-        var mh$ = SetUserObjectSecurity$MH();
-        try {
-            return (int)mh$.invokeExact(hObj, pSIRequested, pSID);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetUserObjectSecurity$MH() {
-        return RuntimeHelper.requireNonNull(constants$237.GetUserObjectSecurity$MH,"GetUserObjectSecurity");
-    }
-    public static int GetUserObjectSecurity ( Addressable hObj,  Addressable pSIRequested,  Addressable pSID,  int nLength,  Addressable lpnLengthNeeded) {
-        var mh$ = GetUserObjectSecurity$MH();
-        try {
-            return (int)mh$.invokeExact(hObj, pSIRequested, pSID, nLength, lpnLengthNeeded);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PUSEROBJECTFLAGS = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle GetUserObjectInformationA$MH() {
-        return RuntimeHelper.requireNonNull(constants$237.GetUserObjectInformationA$MH,"GetUserObjectInformationA");
-    }
-    public static int GetUserObjectInformationA ( Addressable hObj,  int nIndex,  Addressable pvInfo,  int nLength,  Addressable lpnLengthNeeded) {
-        var mh$ = GetUserObjectInformationA$MH();
-        try {
-            return (int)mh$.invokeExact(hObj, nIndex, pvInfo, nLength, lpnLengthNeeded);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetUserObjectInformationW$MH() {
-        return RuntimeHelper.requireNonNull(constants$237.GetUserObjectInformationW$MH,"GetUserObjectInformationW");
-    }
-    public static int GetUserObjectInformationW ( Addressable hObj,  int nIndex,  Addressable pvInfo,  int nLength,  Addressable lpnLengthNeeded) {
-        var mh$ = GetUserObjectInformationW$MH();
-        try {
-            return (int)mh$.invokeExact(hObj, nIndex, pvInfo, nLength, lpnLengthNeeded);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetUserObjectInformationA$MH() {
-        return RuntimeHelper.requireNonNull(constants$238.SetUserObjectInformationA$MH,"SetUserObjectInformationA");
-    }
-    public static int SetUserObjectInformationA ( Addressable hObj,  int nIndex,  Addressable pvInfo,  int nLength) {
-        var mh$ = SetUserObjectInformationA$MH();
-        try {
-            return (int)mh$.invokeExact(hObj, nIndex, pvInfo, nLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetUserObjectInformationW$MH() {
-        return RuntimeHelper.requireNonNull(constants$238.SetUserObjectInformationW$MH,"SetUserObjectInformationW");
-    }
-    public static int SetUserObjectInformationW ( Addressable hObj,  int nIndex,  Addressable pvInfo,  int nLength) {
-        var mh$ = SetUserObjectInformationW$MH();
-        try {
-            return (int)mh$.invokeExact(hObj, nIndex, pvInfo, nLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PWNDCLASSEXA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPWNDCLASSEXA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWNDCLASSEXA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWNDCLASSEXW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPWNDCLASSEXW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWNDCLASSEXW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWNDCLASSEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPWNDCLASSEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWNDCLASSEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWNDCLASSA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPWNDCLASSA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWNDCLASSA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWNDCLASSW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPWNDCLASSW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWNDCLASSW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWNDCLASS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPWNDCLASS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWNDCLASS = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle IsHungAppWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$238.IsHungAppWindow$MH,"IsHungAppWindow");
-    }
-    public static int IsHungAppWindow ( Addressable hwnd) {
-        var mh$ = IsHungAppWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DisableProcessWindowsGhosting$MH() {
-        return RuntimeHelper.requireNonNull(constants$238.DisableProcessWindowsGhosting$MH,"DisableProcessWindowsGhosting");
-    }
-    public static void DisableProcessWindowsGhosting () {
-        var mh$ = DisableProcessWindowsGhosting$MH();
-        try {
-            mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMSG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMINMAXINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMINMAXINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCOPYDATASTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMDINEXTMENU = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMDINEXTMENU = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPOWERBROADCAST_SETTING = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RegisterWindowMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$238.RegisterWindowMessageA$MH,"RegisterWindowMessageA");
-    }
-    public static int RegisterWindowMessageA ( Addressable lpString) {
-        var mh$ = RegisterWindowMessageA$MH();
-        try {
-            return (int)mh$.invokeExact(lpString);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterWindowMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$238.RegisterWindowMessageW$MH,"RegisterWindowMessageW");
-    }
-    public static int RegisterWindowMessageW ( Addressable lpString) {
-        var mh$ = RegisterWindowMessageW$MH();
-        try {
-            return (int)mh$.invokeExact(lpString);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress LPWINDOWPOS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWINDOWPOS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPNCCALCSIZE_PARAMS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPTRACKMOUSEEVENT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle TrackMouseEvent$MH() {
-        return RuntimeHelper.requireNonNull(constants$239.TrackMouseEvent$MH,"TrackMouseEvent");
-    }
-    public static int TrackMouseEvent ( Addressable lpEventTrack) {
-        var mh$ = TrackMouseEvent$MH();
-        try {
-            return (int)mh$.invokeExact(lpEventTrack);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DrawEdge$MH() {
-        return RuntimeHelper.requireNonNull(constants$239.DrawEdge$MH,"DrawEdge");
-    }
-    public static int DrawEdge ( Addressable hdc,  Addressable qrc,  int edge,  int grfFlags) {
-        var mh$ = DrawEdge$MH();
-        try {
-            return (int)mh$.invokeExact(hdc, qrc, edge, grfFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DrawFrameControl$MH() {
-        return RuntimeHelper.requireNonNull(constants$239.DrawFrameControl$MH,"DrawFrameControl");
-    }
-    public static int DrawFrameControl ( Addressable x0,  Addressable x1,  int x2,  int x3) {
-        var mh$ = DrawFrameControl$MH();
-        try {
-            return (int)mh$.invokeExact(x0, x1, x2, x3);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DrawCaption$MH() {
-        return RuntimeHelper.requireNonNull(constants$239.DrawCaption$MH,"DrawCaption");
-    }
-    public static int DrawCaption ( Addressable hwnd,  Addressable hdc,  Addressable lprect,  int flags) {
-        var mh$ = DrawCaption$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, hdc, lprect, flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DrawAnimatedRects$MH() {
-        return RuntimeHelper.requireNonNull(constants$239.DrawAnimatedRects$MH,"DrawAnimatedRects");
-    }
-    public static int DrawAnimatedRects ( Addressable hwnd,  int idAni,  Addressable lprcFrom,  Addressable lprcTo) {
-        var mh$ = DrawAnimatedRects$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, idAni, lprcFrom, lprcTo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress LPACCEL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPAINTSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPPAINTSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPPAINTSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCREATESTRUCTA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCREATESTRUCTW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCREATESTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PWINDOWPLACEMENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPWINDOWPLACEMENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPNMHDR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPSTYLESTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMEASUREITEMSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMEASUREITEMSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PDRAWITEMSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDRAWITEMSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PDELETEITEMSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDELETEITEMSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCOMPAREITEMSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCOMPAREITEMSTRUCT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle GetMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$239.GetMessageA$MH,"GetMessageA");
-    }
-    public static int GetMessageA ( Addressable lpMsg,  Addressable hWnd,  int wMsgFilterMin,  int wMsgFilterMax) {
-        var mh$ = GetMessageA$MH();
-        try {
-            return (int)mh$.invokeExact(lpMsg, hWnd, wMsgFilterMin, wMsgFilterMax);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$240.GetMessageW$MH,"GetMessageW");
-    }
-    public static int GetMessageW ( Addressable lpMsg,  Addressable hWnd,  int wMsgFilterMin,  int wMsgFilterMax) {
-        var mh$ = GetMessageW$MH();
-        try {
-            return (int)mh$.invokeExact(lpMsg, hWnd, wMsgFilterMin, wMsgFilterMax);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle TranslateMessage$MH() {
-        return RuntimeHelper.requireNonNull(constants$240.TranslateMessage$MH,"TranslateMessage");
-    }
-    public static int TranslateMessage ( Addressable lpMsg) {
-        var mh$ = TranslateMessage$MH();
-        try {
-            return (int)mh$.invokeExact(lpMsg);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DispatchMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$240.DispatchMessageA$MH,"DispatchMessageA");
-    }
-    public static long DispatchMessageA ( Addressable lpMsg) {
-        var mh$ = DispatchMessageA$MH();
-        try {
-            return (long)mh$.invokeExact(lpMsg);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DispatchMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$240.DispatchMessageW$MH,"DispatchMessageW");
-    }
-    public static long DispatchMessageW ( Addressable lpMsg) {
-        var mh$ = DispatchMessageW$MH();
-        try {
-            return (long)mh$.invokeExact(lpMsg);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetMessageQueue$MH() {
-        return RuntimeHelper.requireNonNull(constants$240.SetMessageQueue$MH,"SetMessageQueue");
-    }
-    public static int SetMessageQueue ( int cMessagesMax) {
-        var mh$ = SetMessageQueue$MH();
-        try {
-            return (int)mh$.invokeExact(cMessagesMax);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PeekMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$240.PeekMessageA$MH,"PeekMessageA");
-    }
-    public static int PeekMessageA ( Addressable lpMsg,  Addressable hWnd,  int wMsgFilterMin,  int wMsgFilterMax,  int wRemoveMsg) {
-        var mh$ = PeekMessageA$MH();
-        try {
-            return (int)mh$.invokeExact(lpMsg, hWnd, wMsgFilterMin, wMsgFilterMax, wRemoveMsg);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PeekMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$241.PeekMessageW$MH,"PeekMessageW");
-    }
-    public static int PeekMessageW ( Addressable lpMsg,  Addressable hWnd,  int wMsgFilterMin,  int wMsgFilterMax,  int wRemoveMsg) {
-        var mh$ = PeekMessageW$MH();
-        try {
-            return (int)mh$.invokeExact(lpMsg, hWnd, wMsgFilterMin, wMsgFilterMax, wRemoveMsg);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterHotKey$MH() {
-        return RuntimeHelper.requireNonNull(constants$241.RegisterHotKey$MH,"RegisterHotKey");
-    }
-    public static int RegisterHotKey ( Addressable hWnd,  int id,  int fsModifiers,  int vk) {
-        var mh$ = RegisterHotKey$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, id, fsModifiers, vk);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterHotKey$MH() {
-        return RuntimeHelper.requireNonNull(constants$241.UnregisterHotKey$MH,"UnregisterHotKey");
-    }
-    public static int UnregisterHotKey ( Addressable hWnd,  int id) {
-        var mh$ = UnregisterHotKey$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, id);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ExitWindowsEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$241.ExitWindowsEx$MH,"ExitWindowsEx");
-    }
-    public static int ExitWindowsEx ( int uFlags,  int dwReason) {
-        var mh$ = ExitWindowsEx$MH();
-        try {
-            return (int)mh$.invokeExact(uFlags, dwReason);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SwapMouseButton$MH() {
-        return RuntimeHelper.requireNonNull(constants$241.SwapMouseButton$MH,"SwapMouseButton");
-    }
-    public static int SwapMouseButton ( int fSwap) {
-        var mh$ = SwapMouseButton$MH();
-        try {
-            return (int)mh$.invokeExact(fSwap);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMessagePos$MH() {
-        return RuntimeHelper.requireNonNull(constants$241.GetMessagePos$MH,"GetMessagePos");
-    }
-    public static int GetMessagePos () {
-        var mh$ = GetMessagePos$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMessageTime$MH() {
-        return RuntimeHelper.requireNonNull(constants$242.GetMessageTime$MH,"GetMessageTime");
-    }
-    public static int GetMessageTime () {
-        var mh$ = GetMessageTime$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetMessageExtraInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$242.GetMessageExtraInfo$MH,"GetMessageExtraInfo");
-    }
-    public static long GetMessageExtraInfo () {
-        var mh$ = GetMessageExtraInfo$MH();
+    public static MethodHandle GetTickCount64$MH() {
+        return RuntimeHelper.requireNonNull(constants$128.GetTickCount64$MH,"GetTickCount64");
+    }
+    public static long GetTickCount64 () {
+        var mh$ = GetTickCount64$MH();
         try {
             return (long)mh$.invokeExact();
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetUnpredictedMessagePos$MH() {
-        return RuntimeHelper.requireNonNull(constants$242.GetUnpredictedMessagePos$MH,"GetUnpredictedMessagePos");
+    public static MethodHandle GetSystemTimeAdjustment$MH() {
+        return RuntimeHelper.requireNonNull(constants$128.GetSystemTimeAdjustment$MH,"GetSystemTimeAdjustment");
     }
-    public static int GetUnpredictedMessagePos () {
-        var mh$ = GetUnpredictedMessagePos$MH();
+    public static int GetSystemTimeAdjustment ( Addressable lpTimeAdjustment,  Addressable lpTimeIncrement,  Addressable lpTimeAdjustmentDisabled) {
+        var mh$ = GetSystemTimeAdjustment$MH();
         try {
-            return (int)mh$.invokeExact();
+            return (int)mh$.invokeExact(lpTimeAdjustment, lpTimeIncrement, lpTimeAdjustmentDisabled);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle IsWow64Message$MH() {
-        return RuntimeHelper.requireNonNull(constants$242.IsWow64Message$MH,"IsWow64Message");
+    public static MethodHandle GetSystemTimeAdjustmentPrecise$MH() {
+        return RuntimeHelper.requireNonNull(constants$128.GetSystemTimeAdjustmentPrecise$MH,"GetSystemTimeAdjustmentPrecise");
     }
-    public static int IsWow64Message () {
-        var mh$ = IsWow64Message$MH();
+    public static int GetSystemTimeAdjustmentPrecise ( Addressable lpTimeAdjustment,  Addressable lpTimeIncrement,  Addressable lpTimeAdjustmentDisabled) {
+        var mh$ = GetSystemTimeAdjustmentPrecise$MH();
         try {
-            return (int)mh$.invokeExact();
+            return (int)mh$.invokeExact(lpTimeAdjustment, lpTimeIncrement, lpTimeAdjustmentDisabled);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SetMessageExtraInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$242.SetMessageExtraInfo$MH,"SetMessageExtraInfo");
+    public static MethodHandle GetSystemDirectoryA$MH() {
+        return RuntimeHelper.requireNonNull(constants$129.GetSystemDirectoryA$MH,"GetSystemDirectoryA");
     }
-    public static long SetMessageExtraInfo ( long lParam) {
-        var mh$ = SetMessageExtraInfo$MH();
+    public static int GetSystemDirectoryA ( Addressable lpBuffer,  int uSize) {
+        var mh$ = GetSystemDirectoryA$MH();
         try {
-            return (long)mh$.invokeExact(lParam);
+            return (int)mh$.invokeExact(lpBuffer, uSize);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SendMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$242.SendMessageA$MH,"SendMessageA");
+    public static MethodHandle GetSystemDirectoryW$MH() {
+        return RuntimeHelper.requireNonNull(constants$129.GetSystemDirectoryW$MH,"GetSystemDirectoryW");
     }
-    public static long SendMessageA ( Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = SendMessageA$MH();
+    public static int GetSystemDirectoryW ( Addressable lpBuffer,  int uSize) {
+        var mh$ = GetSystemDirectoryW$MH();
         try {
-            return (long)mh$.invokeExact(hWnd, Msg, wParam, lParam);
+            return (int)mh$.invokeExact(lpBuffer, uSize);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SendMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$243.SendMessageW$MH,"SendMessageW");
+    public static MethodHandle GetWindowsDirectoryA$MH() {
+        return RuntimeHelper.requireNonNull(constants$129.GetWindowsDirectoryA$MH,"GetWindowsDirectoryA");
     }
-    public static long SendMessageW ( Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = SendMessageW$MH();
+    public static int GetWindowsDirectoryA ( Addressable lpBuffer,  int uSize) {
+        var mh$ = GetWindowsDirectoryA$MH();
         try {
-            return (long)mh$.invokeExact(hWnd, Msg, wParam, lParam);
+            return (int)mh$.invokeExact(lpBuffer, uSize);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SendMessageTimeoutA$MH() {
-        return RuntimeHelper.requireNonNull(constants$243.SendMessageTimeoutA$MH,"SendMessageTimeoutA");
+    public static MethodHandle GetWindowsDirectoryW$MH() {
+        return RuntimeHelper.requireNonNull(constants$129.GetWindowsDirectoryW$MH,"GetWindowsDirectoryW");
     }
-    public static long SendMessageTimeoutA ( Addressable hWnd,  int Msg,  long wParam,  long lParam,  int fuFlags,  int uTimeout,  Addressable lpdwResult) {
-        var mh$ = SendMessageTimeoutA$MH();
+    public static int GetWindowsDirectoryW ( Addressable lpBuffer,  int uSize) {
+        var mh$ = GetWindowsDirectoryW$MH();
         try {
-            return (long)mh$.invokeExact(hWnd, Msg, wParam, lParam, fuFlags, uTimeout, lpdwResult);
+            return (int)mh$.invokeExact(lpBuffer, uSize);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SendMessageTimeoutW$MH() {
-        return RuntimeHelper.requireNonNull(constants$243.SendMessageTimeoutW$MH,"SendMessageTimeoutW");
+    public static MethodHandle GetSystemWindowsDirectoryA$MH() {
+        return RuntimeHelper.requireNonNull(constants$129.GetSystemWindowsDirectoryA$MH,"GetSystemWindowsDirectoryA");
     }
-    public static long SendMessageTimeoutW ( Addressable hWnd,  int Msg,  long wParam,  long lParam,  int fuFlags,  int uTimeout,  Addressable lpdwResult) {
-        var mh$ = SendMessageTimeoutW$MH();
+    public static int GetSystemWindowsDirectoryA ( Addressable lpBuffer,  int uSize) {
+        var mh$ = GetSystemWindowsDirectoryA$MH();
         try {
-            return (long)mh$.invokeExact(hWnd, Msg, wParam, lParam, fuFlags, uTimeout, lpdwResult);
+            return (int)mh$.invokeExact(lpBuffer, uSize);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SendNotifyMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$243.SendNotifyMessageA$MH,"SendNotifyMessageA");
+    public static MethodHandle GetSystemWindowsDirectoryW$MH() {
+        return RuntimeHelper.requireNonNull(constants$129.GetSystemWindowsDirectoryW$MH,"GetSystemWindowsDirectoryW");
     }
-    public static int SendNotifyMessageA ( Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = SendNotifyMessageA$MH();
+    public static int GetSystemWindowsDirectoryW ( Addressable lpBuffer,  int uSize) {
+        var mh$ = GetSystemWindowsDirectoryW$MH();
         try {
-            return (int)mh$.invokeExact(hWnd, Msg, wParam, lParam);
+            return (int)mh$.invokeExact(lpBuffer, uSize);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SendNotifyMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$243.SendNotifyMessageW$MH,"SendNotifyMessageW");
-    }
-    public static int SendNotifyMessageW ( Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = SendNotifyMessageW$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SendMessageCallbackA$MH() {
-        return RuntimeHelper.requireNonNull(constants$243.SendMessageCallbackA$MH,"SendMessageCallbackA");
-    }
-    public static int SendMessageCallbackA ( Addressable hWnd,  int Msg,  long wParam,  long lParam,  Addressable lpResultCallBack,  long dwData) {
-        var mh$ = SendMessageCallbackA$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, Msg, wParam, lParam, lpResultCallBack, dwData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SendMessageCallbackW$MH() {
-        return RuntimeHelper.requireNonNull(constants$244.SendMessageCallbackW$MH,"SendMessageCallbackW");
-    }
-    public static int SendMessageCallbackW ( Addressable hWnd,  int Msg,  long wParam,  long lParam,  Addressable lpResultCallBack,  long dwData) {
-        var mh$ = SendMessageCallbackW$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, Msg, wParam, lParam, lpResultCallBack, dwData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PBSMINFO = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle BroadcastSystemMessageExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$244.BroadcastSystemMessageExA$MH,"BroadcastSystemMessageExA");
-    }
-    public static int BroadcastSystemMessageExA ( int flags,  Addressable lpInfo,  int Msg,  long wParam,  long lParam,  Addressable pbsmInfo) {
-        var mh$ = BroadcastSystemMessageExA$MH();
-        try {
-            return (int)mh$.invokeExact(flags, lpInfo, Msg, wParam, lParam, pbsmInfo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle BroadcastSystemMessageExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$244.BroadcastSystemMessageExW$MH,"BroadcastSystemMessageExW");
-    }
-    public static int BroadcastSystemMessageExW ( int flags,  Addressable lpInfo,  int Msg,  long wParam,  long lParam,  Addressable pbsmInfo) {
-        var mh$ = BroadcastSystemMessageExW$MH();
-        try {
-            return (int)mh$.invokeExact(flags, lpInfo, Msg, wParam, lParam, pbsmInfo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle BroadcastSystemMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$244.BroadcastSystemMessageA$MH,"BroadcastSystemMessageA");
-    }
-    public static int BroadcastSystemMessageA ( int flags,  Addressable lpInfo,  int Msg,  long wParam,  long lParam) {
-        var mh$ = BroadcastSystemMessageA$MH();
-        try {
-            return (int)mh$.invokeExact(flags, lpInfo, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle BroadcastSystemMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$244.BroadcastSystemMessageW$MH,"BroadcastSystemMessageW");
-    }
-    public static int BroadcastSystemMessageW ( int flags,  Addressable lpInfo,  int Msg,  long wParam,  long lParam) {
-        var mh$ = BroadcastSystemMessageW$MH();
-        try {
-            return (int)mh$.invokeExact(flags, lpInfo, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress HDEVNOTIFY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PHDEVNOTIFY = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RegisterDeviceNotificationA$MH() {
-        return RuntimeHelper.requireNonNull(constants$244.RegisterDeviceNotificationA$MH,"RegisterDeviceNotificationA");
-    }
-    public static MemoryAddress RegisterDeviceNotificationA ( Addressable hRecipient,  Addressable NotificationFilter,  int Flags) {
-        var mh$ = RegisterDeviceNotificationA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hRecipient, NotificationFilter, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterDeviceNotificationW$MH() {
-        return RuntimeHelper.requireNonNull(constants$245.RegisterDeviceNotificationW$MH,"RegisterDeviceNotificationW");
-    }
-    public static MemoryAddress RegisterDeviceNotificationW ( Addressable hRecipient,  Addressable NotificationFilter,  int Flags) {
-        var mh$ = RegisterDeviceNotificationW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hRecipient, NotificationFilter, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterDeviceNotification$MH() {
-        return RuntimeHelper.requireNonNull(constants$245.UnregisterDeviceNotification$MH,"UnregisterDeviceNotification");
-    }
-    public static int UnregisterDeviceNotification ( Addressable Handle) {
-        var mh$ = UnregisterDeviceNotification$MH();
-        try {
-            return (int)mh$.invokeExact(Handle);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress HPOWERNOTIFY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PHPOWERNOTIFY = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RegisterPowerSettingNotification$MH() {
-        return RuntimeHelper.requireNonNull(constants$245.RegisterPowerSettingNotification$MH,"RegisterPowerSettingNotification");
-    }
-    public static MemoryAddress RegisterPowerSettingNotification ( Addressable hRecipient,  Addressable PowerSettingGuid,  int Flags) {
-        var mh$ = RegisterPowerSettingNotification$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hRecipient, PowerSettingGuid, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterPowerSettingNotification$MH() {
-        return RuntimeHelper.requireNonNull(constants$245.UnregisterPowerSettingNotification$MH,"UnregisterPowerSettingNotification");
-    }
-    public static int UnregisterPowerSettingNotification ( Addressable Handle) {
-        var mh$ = UnregisterPowerSettingNotification$MH();
-        try {
-            return (int)mh$.invokeExact(Handle);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterSuspendResumeNotification$MH() {
-        return RuntimeHelper.requireNonNull(constants$245.RegisterSuspendResumeNotification$MH,"RegisterSuspendResumeNotification");
-    }
-    public static MemoryAddress RegisterSuspendResumeNotification ( Addressable hRecipient,  int Flags) {
-        var mh$ = RegisterSuspendResumeNotification$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hRecipient, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterSuspendResumeNotification$MH() {
-        return RuntimeHelper.requireNonNull(constants$245.UnregisterSuspendResumeNotification$MH,"UnregisterSuspendResumeNotification");
-    }
-    public static int UnregisterSuspendResumeNotification ( Addressable Handle) {
-        var mh$ = UnregisterSuspendResumeNotification$MH();
-        try {
-            return (int)mh$.invokeExact(Handle);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PostMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$246.PostMessageA$MH,"PostMessageA");
-    }
-    public static int PostMessageA ( Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = PostMessageA$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PostMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$246.PostMessageW$MH,"PostMessageW");
-    }
-    public static int PostMessageW ( Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = PostMessageW$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PostThreadMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$246.PostThreadMessageA$MH,"PostThreadMessageA");
-    }
-    public static int PostThreadMessageA ( int idThread,  int Msg,  long wParam,  long lParam) {
-        var mh$ = PostThreadMessageA$MH();
-        try {
-            return (int)mh$.invokeExact(idThread, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PostThreadMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$246.PostThreadMessageW$MH,"PostThreadMessageW");
-    }
-    public static int PostThreadMessageW ( int idThread,  int Msg,  long wParam,  long lParam) {
-        var mh$ = PostThreadMessageW$MH();
-        try {
-            return (int)mh$.invokeExact(idThread, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AttachThreadInput$MH() {
-        return RuntimeHelper.requireNonNull(constants$246.AttachThreadInput$MH,"AttachThreadInput");
-    }
-    public static int AttachThreadInput ( int idAttach,  int idAttachTo,  int fAttach) {
-        var mh$ = AttachThreadInput$MH();
-        try {
-            return (int)mh$.invokeExact(idAttach, idAttachTo, fAttach);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ReplyMessage$MH() {
-        return RuntimeHelper.requireNonNull(constants$246.ReplyMessage$MH,"ReplyMessage");
-    }
-    public static int ReplyMessage ( long lResult) {
-        var mh$ = ReplyMessage$MH();
-        try {
-            return (int)mh$.invokeExact(lResult);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WaitMessage$MH() {
-        return RuntimeHelper.requireNonNull(constants$247.WaitMessage$MH,"WaitMessage");
-    }
-    public static int WaitMessage () {
-        var mh$ = WaitMessage$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle WaitForInputIdle$MH() {
-        return RuntimeHelper.requireNonNull(constants$247.WaitForInputIdle$MH,"WaitForInputIdle");
-    }
-    public static int WaitForInputIdle ( Addressable hProcess,  int dwMilliseconds) {
-        var mh$ = WaitForInputIdle$MH();
-        try {
-            return (int)mh$.invokeExact(hProcess, dwMilliseconds);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DefWindowProcA$MH() {
-        return RuntimeHelper.requireNonNull(constants$247.DefWindowProcA$MH,"DefWindowProcA");
-    }
-    public static long DefWindowProcA ( Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = DefWindowProcA$MH();
-        try {
-            return (long)mh$.invokeExact(hWnd, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DefWindowProcW$MH() {
-        return RuntimeHelper.requireNonNull(constants$247.DefWindowProcW$MH,"DefWindowProcW");
-    }
-    public static long DefWindowProcW ( Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = DefWindowProcW$MH();
-        try {
-            return (long)mh$.invokeExact(hWnd, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PostQuitMessage$MH() {
-        return RuntimeHelper.requireNonNull(constants$247.PostQuitMessage$MH,"PostQuitMessage");
-    }
-    public static void PostQuitMessage ( int nExitCode) {
-        var mh$ = PostQuitMessage$MH();
-        try {
-            mh$.invokeExact(nExitCode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CallWindowProcA$MH() {
-        return RuntimeHelper.requireNonNull(constants$247.CallWindowProcA$MH,"CallWindowProcA");
-    }
-    public static long CallWindowProcA ( Addressable lpPrevWndFunc,  Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = CallWindowProcA$MH();
-        try {
-            return (long)mh$.invokeExact(lpPrevWndFunc, hWnd, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CallWindowProcW$MH() {
-        return RuntimeHelper.requireNonNull(constants$248.CallWindowProcW$MH,"CallWindowProcW");
-    }
-    public static long CallWindowProcW ( Addressable lpPrevWndFunc,  Addressable hWnd,  int Msg,  long wParam,  long lParam) {
-        var mh$ = CallWindowProcW$MH();
-        try {
-            return (long)mh$.invokeExact(lpPrevWndFunc, hWnd, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle InSendMessage$MH() {
-        return RuntimeHelper.requireNonNull(constants$248.InSendMessage$MH,"InSendMessage");
-    }
-    public static int InSendMessage () {
-        var mh$ = InSendMessage$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle InSendMessageEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$248.InSendMessageEx$MH,"InSendMessageEx");
-    }
-    public static int InSendMessageEx ( Addressable lpReserved) {
-        var mh$ = InSendMessageEx$MH();
-        try {
-            return (int)mh$.invokeExact(lpReserved);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDoubleClickTime$MH() {
-        return RuntimeHelper.requireNonNull(constants$248.GetDoubleClickTime$MH,"GetDoubleClickTime");
-    }
-    public static int GetDoubleClickTime () {
-        var mh$ = GetDoubleClickTime$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDoubleClickTime$MH() {
-        return RuntimeHelper.requireNonNull(constants$248.SetDoubleClickTime$MH,"SetDoubleClickTime");
-    }
-    public static int SetDoubleClickTime ( int x0) {
-        var mh$ = SetDoubleClickTime$MH();
-        try {
-            return (int)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterClassA$MH() {
-        return RuntimeHelper.requireNonNull(constants$248.RegisterClassA$MH,"RegisterClassA");
-    }
-    public static short RegisterClassA ( Addressable lpWndClass) {
-        var mh$ = RegisterClassA$MH();
-        try {
-            return (short)mh$.invokeExact(lpWndClass);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterClassW$MH() {
-        return RuntimeHelper.requireNonNull(constants$249.RegisterClassW$MH,"RegisterClassW");
-    }
-    public static short RegisterClassW ( Addressable lpWndClass) {
-        var mh$ = RegisterClassW$MH();
-        try {
-            return (short)mh$.invokeExact(lpWndClass);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterClassA$MH() {
-        return RuntimeHelper.requireNonNull(constants$249.UnregisterClassA$MH,"UnregisterClassA");
-    }
-    public static int UnregisterClassA ( Addressable lpClassName,  Addressable hInstance) {
-        var mh$ = UnregisterClassA$MH();
-        try {
-            return (int)mh$.invokeExact(lpClassName, hInstance);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterClassW$MH() {
-        return RuntimeHelper.requireNonNull(constants$249.UnregisterClassW$MH,"UnregisterClassW");
-    }
-    public static int UnregisterClassW ( Addressable lpClassName,  Addressable hInstance) {
-        var mh$ = UnregisterClassW$MH();
-        try {
-            return (int)mh$.invokeExact(lpClassName, hInstance);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClassInfoA$MH() {
-        return RuntimeHelper.requireNonNull(constants$249.GetClassInfoA$MH,"GetClassInfoA");
-    }
-    public static int GetClassInfoA ( Addressable hInstance,  Addressable lpClassName,  Addressable lpWndClass) {
-        var mh$ = GetClassInfoA$MH();
-        try {
-            return (int)mh$.invokeExact(hInstance, lpClassName, lpWndClass);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClassInfoW$MH() {
-        return RuntimeHelper.requireNonNull(constants$249.GetClassInfoW$MH,"GetClassInfoW");
-    }
-    public static int GetClassInfoW ( Addressable hInstance,  Addressable lpClassName,  Addressable lpWndClass) {
-        var mh$ = GetClassInfoW$MH();
-        try {
-            return (int)mh$.invokeExact(hInstance, lpClassName, lpWndClass);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterClassExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$249.RegisterClassExA$MH,"RegisterClassExA");
-    }
-    public static short RegisterClassExA ( Addressable x0) {
-        var mh$ = RegisterClassExA$MH();
-        try {
-            return (short)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterClassExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$250.RegisterClassExW$MH,"RegisterClassExW");
-    }
-    public static short RegisterClassExW ( Addressable x0) {
-        var mh$ = RegisterClassExW$MH();
-        try {
-            return (short)mh$.invokeExact(x0);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClassInfoExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$250.GetClassInfoExA$MH,"GetClassInfoExA");
-    }
-    public static int GetClassInfoExA ( Addressable hInstance,  Addressable lpszClass,  Addressable lpwcx) {
-        var mh$ = GetClassInfoExA$MH();
-        try {
-            return (int)mh$.invokeExact(hInstance, lpszClass, lpwcx);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClassInfoExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$250.GetClassInfoExW$MH,"GetClassInfoExW");
-    }
-    public static int GetClassInfoExW ( Addressable hInstance,  Addressable lpszClass,  Addressable lpwcx) {
-        var mh$ = GetClassInfoExW$MH();
-        try {
-            return (int)mh$.invokeExact(hInstance, lpszClass, lpwcx);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateWindowExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$250.CreateWindowExA$MH,"CreateWindowExA");
-    }
-    public static MemoryAddress CreateWindowExA ( int dwExStyle,  Addressable lpClassName,  Addressable lpWindowName,  int dwStyle,  int X,  int Y,  int nWidth,  int nHeight,  Addressable hWndParent,  Addressable hMenu,  Addressable hInstance,  Addressable lpParam) {
-        var mh$ = CreateWindowExA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateWindowExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$251.CreateWindowExW$MH,"CreateWindowExW");
-    }
-    public static MemoryAddress CreateWindowExW ( int dwExStyle,  Addressable lpClassName,  Addressable lpWindowName,  int dwStyle,  int X,  int Y,  int nWidth,  int nHeight,  Addressable hWndParent,  Addressable hMenu,  Addressable hInstance,  Addressable lpParam) {
-        var mh$ = CreateWindowExW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$251.IsWindow$MH,"IsWindow");
-    }
-    public static int IsWindow ( Addressable hWnd) {
-        var mh$ = IsWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsMenu$MH() {
-        return RuntimeHelper.requireNonNull(constants$251.IsMenu$MH,"IsMenu");
-    }
-    public static int IsMenu ( Addressable hMenu) {
-        var mh$ = IsMenu$MH();
-        try {
-            return (int)mh$.invokeExact(hMenu);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsChild$MH() {
-        return RuntimeHelper.requireNonNull(constants$251.IsChild$MH,"IsChild");
-    }
-    public static int IsChild ( Addressable hWndParent,  Addressable hWnd) {
-        var mh$ = IsChild$MH();
-        try {
-            return (int)mh$.invokeExact(hWndParent, hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DestroyWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$251.DestroyWindow$MH,"DestroyWindow");
-    }
-    public static int DestroyWindow ( Addressable hWnd) {
-        var mh$ = DestroyWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ShowWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$251.ShowWindow$MH,"ShowWindow");
-    }
-    public static int ShowWindow ( Addressable hWnd,  int nCmdShow) {
-        var mh$ = ShowWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, nCmdShow);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AnimateWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$252.AnimateWindow$MH,"AnimateWindow");
-    }
-    public static int AnimateWindow ( Addressable hWnd,  int dwTime,  int dwFlags) {
-        var mh$ = AnimateWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, dwTime, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UpdateLayeredWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$252.UpdateLayeredWindow$MH,"UpdateLayeredWindow");
-    }
-    public static int UpdateLayeredWindow ( Addressable hWnd,  Addressable hdcDst,  Addressable pptDst,  Addressable psize,  Addressable hdcSrc,  Addressable pptSrc,  int crKey,  Addressable pblend,  int dwFlags) {
-        var mh$ = UpdateLayeredWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, hdcDst, pptDst, psize, hdcSrc, pptSrc, crKey, pblend, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PUPDATELAYEREDWINDOWINFO = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle UpdateLayeredWindowIndirect$MH() {
-        return RuntimeHelper.requireNonNull(constants$252.UpdateLayeredWindowIndirect$MH,"UpdateLayeredWindowIndirect");
-    }
-    public static int UpdateLayeredWindowIndirect ( Addressable hWnd,  Addressable pULWInfo) {
-        var mh$ = UpdateLayeredWindowIndirect$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, pULWInfo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetLayeredWindowAttributes$MH() {
-        return RuntimeHelper.requireNonNull(constants$252.GetLayeredWindowAttributes$MH,"GetLayeredWindowAttributes");
-    }
-    public static int GetLayeredWindowAttributes ( Addressable hwnd,  Addressable pcrKey,  Addressable pbAlpha,  Addressable pdwFlags) {
-        var mh$ = GetLayeredWindowAttributes$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, pcrKey, pbAlpha, pdwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PrintWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$252.PrintWindow$MH,"PrintWindow");
-    }
-    public static int PrintWindow ( Addressable hwnd,  Addressable hdcBlt,  int nFlags) {
-        var mh$ = PrintWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, hdcBlt, nFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetLayeredWindowAttributes$MH() {
-        return RuntimeHelper.requireNonNull(constants$252.SetLayeredWindowAttributes$MH,"SetLayeredWindowAttributes");
-    }
-    public static int SetLayeredWindowAttributes ( Addressable hwnd,  int crKey,  byte bAlpha,  int dwFlags) {
-        var mh$ = SetLayeredWindowAttributes$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, crKey, bAlpha, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ShowWindowAsync$MH() {
-        return RuntimeHelper.requireNonNull(constants$253.ShowWindowAsync$MH,"ShowWindowAsync");
-    }
-    public static int ShowWindowAsync ( Addressable hWnd,  int nCmdShow) {
-        var mh$ = ShowWindowAsync$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, nCmdShow);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle FlashWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$253.FlashWindow$MH,"FlashWindow");
-    }
-    public static int FlashWindow ( Addressable hWnd,  int bInvert) {
-        var mh$ = FlashWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, bInvert);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PFLASHWINFO = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle FlashWindowEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$253.FlashWindowEx$MH,"FlashWindowEx");
-    }
-    public static int FlashWindowEx ( Addressable pfwi) {
-        var mh$ = FlashWindowEx$MH();
-        try {
-            return (int)mh$.invokeExact(pfwi);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ShowOwnedPopups$MH() {
-        return RuntimeHelper.requireNonNull(constants$253.ShowOwnedPopups$MH,"ShowOwnedPopups");
-    }
-    public static int ShowOwnedPopups ( Addressable hWnd,  int fShow) {
-        var mh$ = ShowOwnedPopups$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, fShow);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OpenIcon$MH() {
-        return RuntimeHelper.requireNonNull(constants$253.OpenIcon$MH,"OpenIcon");
-    }
-    public static int OpenIcon ( Addressable hWnd) {
-        var mh$ = OpenIcon$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CloseWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$253.CloseWindow$MH,"CloseWindow");
-    }
-    public static int CloseWindow ( Addressable hWnd) {
-        var mh$ = CloseWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle MoveWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$254.MoveWindow$MH,"MoveWindow");
-    }
-    public static int MoveWindow ( Addressable hWnd,  int X,  int Y,  int nWidth,  int nHeight,  int bRepaint) {
-        var mh$ = MoveWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, X, Y, nWidth, nHeight, bRepaint);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetWindowPos$MH() {
-        return RuntimeHelper.requireNonNull(constants$254.SetWindowPos$MH,"SetWindowPos");
-    }
-    public static int SetWindowPos ( Addressable hWnd,  Addressable hWndInsertAfter,  int X,  int Y,  int cx,  int cy,  int uFlags) {
-        var mh$ = SetWindowPos$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, hWndInsertAfter, X, Y, cx, cy, uFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetWindowPlacement$MH() {
-        return RuntimeHelper.requireNonNull(constants$254.GetWindowPlacement$MH,"GetWindowPlacement");
-    }
-    public static int GetWindowPlacement ( Addressable hWnd,  Addressable lpwndpl) {
-        var mh$ = GetWindowPlacement$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, lpwndpl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetWindowPlacement$MH() {
-        return RuntimeHelper.requireNonNull(constants$254.SetWindowPlacement$MH,"SetWindowPlacement");
-    }
-    public static int SetWindowPlacement ( Addressable hWnd,  Addressable lpwndpl) {
-        var mh$ = SetWindowPlacement$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, lpwndpl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetWindowDisplayAffinity$MH() {
-        return RuntimeHelper.requireNonNull(constants$254.GetWindowDisplayAffinity$MH,"GetWindowDisplayAffinity");
-    }
-    public static int GetWindowDisplayAffinity ( Addressable hWnd,  Addressable pdwAffinity) {
-        var mh$ = GetWindowDisplayAffinity$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, pdwAffinity);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetWindowDisplayAffinity$MH() {
-        return RuntimeHelper.requireNonNull(constants$254.SetWindowDisplayAffinity$MH,"SetWindowDisplayAffinity");
-    }
-    public static int SetWindowDisplayAffinity ( Addressable hWnd,  int dwAffinity) {
-        var mh$ = SetWindowDisplayAffinity$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, dwAffinity);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle BeginDeferWindowPos$MH() {
-        return RuntimeHelper.requireNonNull(constants$255.BeginDeferWindowPos$MH,"BeginDeferWindowPos");
-    }
-    public static MemoryAddress BeginDeferWindowPos ( int nNumWindows) {
-        var mh$ = BeginDeferWindowPos$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(nNumWindows);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DeferWindowPos$MH() {
-        return RuntimeHelper.requireNonNull(constants$255.DeferWindowPos$MH,"DeferWindowPos");
-    }
-    public static MemoryAddress DeferWindowPos ( Addressable hWinPosInfo,  Addressable hWnd,  Addressable hWndInsertAfter,  int x,  int y,  int cx,  int cy,  int uFlags) {
-        var mh$ = DeferWindowPos$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hWinPosInfo, hWnd, hWndInsertAfter, x, y, cx, cy, uFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EndDeferWindowPos$MH() {
-        return RuntimeHelper.requireNonNull(constants$255.EndDeferWindowPos$MH,"EndDeferWindowPos");
-    }
-    public static int EndDeferWindowPos ( Addressable hWinPosInfo) {
-        var mh$ = EndDeferWindowPos$MH();
-        try {
-            return (int)mh$.invokeExact(hWinPosInfo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsWindowVisible$MH() {
-        return RuntimeHelper.requireNonNull(constants$255.IsWindowVisible$MH,"IsWindowVisible");
-    }
-    public static int IsWindowVisible ( Addressable hWnd) {
-        var mh$ = IsWindowVisible$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsIconic$MH() {
-        return RuntimeHelper.requireNonNull(constants$255.IsIconic$MH,"IsIconic");
-    }
-    public static int IsIconic ( Addressable hWnd) {
-        var mh$ = IsIconic$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AnyPopup$MH() {
-        return RuntimeHelper.requireNonNull(constants$255.AnyPopup$MH,"AnyPopup");
-    }
-    public static int AnyPopup () {
-        var mh$ = AnyPopup$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle BringWindowToTop$MH() {
-        return RuntimeHelper.requireNonNull(constants$256.BringWindowToTop$MH,"BringWindowToTop");
-    }
-    public static int BringWindowToTop ( Addressable hWnd) {
-        var mh$ = BringWindowToTop$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsZoomed$MH() {
-        return RuntimeHelper.requireNonNull(constants$256.IsZoomed$MH,"IsZoomed");
-    }
-    public static int IsZoomed ( Addressable hWnd) {
-        var mh$ = IsZoomed$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress LPDLGTEMPLATEA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDLGTEMPLATEW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDLGTEMPLATE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCDLGTEMPLATEA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCDLGTEMPLATEW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPCDLGTEMPLATE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PDLGITEMTEMPLATEA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PDLGITEMTEMPLATEW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PDLGITEMTEMPLATE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDLGITEMTEMPLATEA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDLGITEMTEMPLATEW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPDLGITEMTEMPLATE = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle CreateDialogParamA$MH() {
-        return RuntimeHelper.requireNonNull(constants$256.CreateDialogParamA$MH,"CreateDialogParamA");
-    }
-    public static MemoryAddress CreateDialogParamA ( Addressable hInstance,  Addressable lpTemplateName,  Addressable hWndParent,  Addressable lpDialogFunc,  long dwInitParam) {
-        var mh$ = CreateDialogParamA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hInstance, lpTemplateName, hWndParent, lpDialogFunc, dwInitParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDialogParamW$MH() {
-        return RuntimeHelper.requireNonNull(constants$256.CreateDialogParamW$MH,"CreateDialogParamW");
-    }
-    public static MemoryAddress CreateDialogParamW ( Addressable hInstance,  Addressable lpTemplateName,  Addressable hWndParent,  Addressable lpDialogFunc,  long dwInitParam) {
-        var mh$ = CreateDialogParamW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hInstance, lpTemplateName, hWndParent, lpDialogFunc, dwInitParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDialogIndirectParamA$MH() {
-        return RuntimeHelper.requireNonNull(constants$256.CreateDialogIndirectParamA$MH,"CreateDialogIndirectParamA");
-    }
-    public static MemoryAddress CreateDialogIndirectParamA ( Addressable hInstance,  Addressable lpTemplate,  Addressable hWndParent,  Addressable lpDialogFunc,  long dwInitParam) {
-        var mh$ = CreateDialogIndirectParamA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hInstance, lpTemplate, hWndParent, lpDialogFunc, dwInitParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CreateDialogIndirectParamW$MH() {
-        return RuntimeHelper.requireNonNull(constants$256.CreateDialogIndirectParamW$MH,"CreateDialogIndirectParamW");
-    }
-    public static MemoryAddress CreateDialogIndirectParamW ( Addressable hInstance,  Addressable lpTemplate,  Addressable hWndParent,  Addressable lpDialogFunc,  long dwInitParam) {
-        var mh$ = CreateDialogIndirectParamW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hInstance, lpTemplate, hWndParent, lpDialogFunc, dwInitParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DialogBoxParamA$MH() {
-        return RuntimeHelper.requireNonNull(constants$257.DialogBoxParamA$MH,"DialogBoxParamA");
-    }
-    public static long DialogBoxParamA ( Addressable hInstance,  Addressable lpTemplateName,  Addressable hWndParent,  Addressable lpDialogFunc,  long dwInitParam) {
-        var mh$ = DialogBoxParamA$MH();
-        try {
-            return (long)mh$.invokeExact(hInstance, lpTemplateName, hWndParent, lpDialogFunc, dwInitParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DialogBoxParamW$MH() {
-        return RuntimeHelper.requireNonNull(constants$257.DialogBoxParamW$MH,"DialogBoxParamW");
-    }
-    public static long DialogBoxParamW ( Addressable hInstance,  Addressable lpTemplateName,  Addressable hWndParent,  Addressable lpDialogFunc,  long dwInitParam) {
-        var mh$ = DialogBoxParamW$MH();
-        try {
-            return (long)mh$.invokeExact(hInstance, lpTemplateName, hWndParent, lpDialogFunc, dwInitParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DialogBoxIndirectParamA$MH() {
-        return RuntimeHelper.requireNonNull(constants$257.DialogBoxIndirectParamA$MH,"DialogBoxIndirectParamA");
-    }
-    public static long DialogBoxIndirectParamA ( Addressable hInstance,  Addressable hDialogTemplate,  Addressable hWndParent,  Addressable lpDialogFunc,  long dwInitParam) {
-        var mh$ = DialogBoxIndirectParamA$MH();
-        try {
-            return (long)mh$.invokeExact(hInstance, hDialogTemplate, hWndParent, lpDialogFunc, dwInitParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DialogBoxIndirectParamW$MH() {
-        return RuntimeHelper.requireNonNull(constants$257.DialogBoxIndirectParamW$MH,"DialogBoxIndirectParamW");
-    }
-    public static long DialogBoxIndirectParamW ( Addressable hInstance,  Addressable hDialogTemplate,  Addressable hWndParent,  Addressable lpDialogFunc,  long dwInitParam) {
-        var mh$ = DialogBoxIndirectParamW$MH();
-        try {
-            return (long)mh$.invokeExact(hInstance, hDialogTemplate, hWndParent, lpDialogFunc, dwInitParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EndDialog$MH() {
-        return RuntimeHelper.requireNonNull(constants$257.EndDialog$MH,"EndDialog");
-    }
-    public static int EndDialog ( Addressable hDlg,  long nResult) {
-        var mh$ = EndDialog$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nResult);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDlgItem$MH() {
-        return RuntimeHelper.requireNonNull(constants$257.GetDlgItem$MH,"GetDlgItem");
-    }
-    public static MemoryAddress GetDlgItem ( Addressable hDlg,  int nIDDlgItem) {
-        var mh$ = GetDlgItem$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hDlg, nIDDlgItem);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDlgItemInt$MH() {
-        return RuntimeHelper.requireNonNull(constants$258.SetDlgItemInt$MH,"SetDlgItemInt");
-    }
-    public static int SetDlgItemInt ( Addressable hDlg,  int nIDDlgItem,  int uValue,  int bSigned) {
-        var mh$ = SetDlgItemInt$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDDlgItem, uValue, bSigned);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDlgItemInt$MH() {
-        return RuntimeHelper.requireNonNull(constants$258.GetDlgItemInt$MH,"GetDlgItemInt");
-    }
-    public static int GetDlgItemInt ( Addressable hDlg,  int nIDDlgItem,  Addressable lpTranslated,  int bSigned) {
-        var mh$ = GetDlgItemInt$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDDlgItem, lpTranslated, bSigned);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDlgItemTextA$MH() {
-        return RuntimeHelper.requireNonNull(constants$258.SetDlgItemTextA$MH,"SetDlgItemTextA");
-    }
-    public static int SetDlgItemTextA ( Addressable hDlg,  int nIDDlgItem,  Addressable lpString) {
-        var mh$ = SetDlgItemTextA$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDDlgItem, lpString);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetDlgItemTextW$MH() {
-        return RuntimeHelper.requireNonNull(constants$258.SetDlgItemTextW$MH,"SetDlgItemTextW");
-    }
-    public static int SetDlgItemTextW ( Addressable hDlg,  int nIDDlgItem,  Addressable lpString) {
-        var mh$ = SetDlgItemTextW$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDDlgItem, lpString);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDlgItemTextA$MH() {
-        return RuntimeHelper.requireNonNull(constants$258.GetDlgItemTextA$MH,"GetDlgItemTextA");
-    }
-    public static int GetDlgItemTextA ( Addressable hDlg,  int nIDDlgItem,  Addressable lpString,  int cchMax) {
-        var mh$ = GetDlgItemTextA$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDDlgItem, lpString, cchMax);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDlgItemTextW$MH() {
-        return RuntimeHelper.requireNonNull(constants$258.GetDlgItemTextW$MH,"GetDlgItemTextW");
-    }
-    public static int GetDlgItemTextW ( Addressable hDlg,  int nIDDlgItem,  Addressable lpString,  int cchMax) {
-        var mh$ = GetDlgItemTextW$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDDlgItem, lpString, cchMax);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CheckDlgButton$MH() {
-        return RuntimeHelper.requireNonNull(constants$259.CheckDlgButton$MH,"CheckDlgButton");
-    }
-    public static int CheckDlgButton ( Addressable hDlg,  int nIDButton,  int uCheck) {
-        var mh$ = CheckDlgButton$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDButton, uCheck);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CheckRadioButton$MH() {
-        return RuntimeHelper.requireNonNull(constants$259.CheckRadioButton$MH,"CheckRadioButton");
-    }
-    public static int CheckRadioButton ( Addressable hDlg,  int nIDFirstButton,  int nIDLastButton,  int nIDCheckButton) {
-        var mh$ = CheckRadioButton$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDFirstButton, nIDLastButton, nIDCheckButton);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsDlgButtonChecked$MH() {
-        return RuntimeHelper.requireNonNull(constants$259.IsDlgButtonChecked$MH,"IsDlgButtonChecked");
-    }
-    public static int IsDlgButtonChecked ( Addressable hDlg,  int nIDButton) {
-        var mh$ = IsDlgButtonChecked$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, nIDButton);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SendDlgItemMessageA$MH() {
-        return RuntimeHelper.requireNonNull(constants$259.SendDlgItemMessageA$MH,"SendDlgItemMessageA");
-    }
-    public static long SendDlgItemMessageA ( Addressable hDlg,  int nIDDlgItem,  int Msg,  long wParam,  long lParam) {
-        var mh$ = SendDlgItemMessageA$MH();
-        try {
-            return (long)mh$.invokeExact(hDlg, nIDDlgItem, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SendDlgItemMessageW$MH() {
-        return RuntimeHelper.requireNonNull(constants$259.SendDlgItemMessageW$MH,"SendDlgItemMessageW");
-    }
-    public static long SendDlgItemMessageW ( Addressable hDlg,  int nIDDlgItem,  int Msg,  long wParam,  long lParam) {
-        var mh$ = SendDlgItemMessageW$MH();
-        try {
-            return (long)mh$.invokeExact(hDlg, nIDDlgItem, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetNextDlgGroupItem$MH() {
-        return RuntimeHelper.requireNonNull(constants$259.GetNextDlgGroupItem$MH,"GetNextDlgGroupItem");
-    }
-    public static MemoryAddress GetNextDlgGroupItem ( Addressable hDlg,  Addressable hCtl,  int bPrevious) {
-        var mh$ = GetNextDlgGroupItem$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hDlg, hCtl, bPrevious);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetNextDlgTabItem$MH() {
-        return RuntimeHelper.requireNonNull(constants$260.GetNextDlgTabItem$MH,"GetNextDlgTabItem");
-    }
-    public static MemoryAddress GetNextDlgTabItem ( Addressable hDlg,  Addressable hCtl,  int bPrevious) {
-        var mh$ = GetNextDlgTabItem$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hDlg, hCtl, bPrevious);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDlgCtrlID$MH() {
-        return RuntimeHelper.requireNonNull(constants$260.GetDlgCtrlID$MH,"GetDlgCtrlID");
-    }
-    public static int GetDlgCtrlID ( Addressable hWnd) {
-        var mh$ = GetDlgCtrlID$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDialogBaseUnits$MH() {
-        return RuntimeHelper.requireNonNull(constants$260.GetDialogBaseUnits$MH,"GetDialogBaseUnits");
-    }
-    public static int GetDialogBaseUnits () {
-        var mh$ = GetDialogBaseUnits$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DefDlgProcA$MH() {
-        return RuntimeHelper.requireNonNull(constants$260.DefDlgProcA$MH,"DefDlgProcA");
-    }
-    public static long DefDlgProcA ( Addressable hDlg,  int Msg,  long wParam,  long lParam) {
-        var mh$ = DefDlgProcA$MH();
-        try {
-            return (long)mh$.invokeExact(hDlg, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DefDlgProcW$MH() {
-        return RuntimeHelper.requireNonNull(constants$260.DefDlgProcW$MH,"DefDlgProcW");
-    }
-    public static long DefDlgProcW ( Addressable hDlg,  int Msg,  long wParam,  long lParam) {
-        var mh$ = DefDlgProcW$MH();
-        try {
-            return (long)mh$.invokeExact(hDlg, Msg, wParam, lParam);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static int DCDC_DEFAULT() {
+    public static int ComputerNameNetBIOS() {
         return (int)0L;
     }
-    public static int DCDC_DISABLE_FONT_UPDATE() {
+    public static int ComputerNameDnsHostname() {
         return (int)1L;
     }
-    public static int DCDC_DISABLE_RELAYOUT() {
+    public static int ComputerNameDnsDomain() {
         return (int)2L;
     }
-    public static MethodHandle SetDialogControlDpiChangeBehavior$MH() {
-        return RuntimeHelper.requireNonNull(constants$260.SetDialogControlDpiChangeBehavior$MH,"SetDialogControlDpiChangeBehavior");
-    }
-    public static int SetDialogControlDpiChangeBehavior ( Addressable hWnd,  int mask,  int values) {
-        var mh$ = SetDialogControlDpiChangeBehavior$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, mask, values);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDialogControlDpiChangeBehavior$MH() {
-        return RuntimeHelper.requireNonNull(constants$261.GetDialogControlDpiChangeBehavior$MH,"GetDialogControlDpiChangeBehavior");
-    }
-    public static int GetDialogControlDpiChangeBehavior ( Addressable hWnd) {
-        var mh$ = GetDialogControlDpiChangeBehavior$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static int DDC_DEFAULT() {
-        return (int)0L;
-    }
-    public static int DDC_DISABLE_ALL() {
-        return (int)1L;
-    }
-    public static int DDC_DISABLE_RESIZE() {
-        return (int)2L;
-    }
-    public static int DDC_DISABLE_CONTROL_RELAYOUT() {
-        return (int)4L;
-    }
-    public static MethodHandle SetDialogDpiChangeBehavior$MH() {
-        return RuntimeHelper.requireNonNull(constants$261.SetDialogDpiChangeBehavior$MH,"SetDialogDpiChangeBehavior");
-    }
-    public static int SetDialogDpiChangeBehavior ( Addressable hDlg,  int mask,  int values) {
-        var mh$ = SetDialogDpiChangeBehavior$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg, mask, values);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDialogDpiChangeBehavior$MH() {
-        return RuntimeHelper.requireNonNull(constants$261.GetDialogDpiChangeBehavior$MH,"GetDialogDpiChangeBehavior");
-    }
-    public static int GetDialogDpiChangeBehavior ( Addressable hDlg) {
-        var mh$ = GetDialogDpiChangeBehavior$MH();
-        try {
-            return (int)mh$.invokeExact(hDlg);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CallMsgFilterA$MH() {
-        return RuntimeHelper.requireNonNull(constants$261.CallMsgFilterA$MH,"CallMsgFilterA");
-    }
-    public static int CallMsgFilterA ( Addressable lpMsg,  int nCode) {
-        var mh$ = CallMsgFilterA$MH();
-        try {
-            return (int)mh$.invokeExact(lpMsg, nCode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CallMsgFilterW$MH() {
-        return RuntimeHelper.requireNonNull(constants$261.CallMsgFilterW$MH,"CallMsgFilterW");
-    }
-    public static int CallMsgFilterW ( Addressable lpMsg,  int nCode) {
-        var mh$ = CallMsgFilterW$MH();
-        try {
-            return (int)mh$.invokeExact(lpMsg, nCode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OpenClipboard$MH() {
-        return RuntimeHelper.requireNonNull(constants$261.OpenClipboard$MH,"OpenClipboard");
-    }
-    public static int OpenClipboard ( Addressable hWndNewOwner) {
-        var mh$ = OpenClipboard$MH();
-        try {
-            return (int)mh$.invokeExact(hWndNewOwner);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CloseClipboard$MH() {
-        return RuntimeHelper.requireNonNull(constants$262.CloseClipboard$MH,"CloseClipboard");
-    }
-    public static int CloseClipboard () {
-        var mh$ = CloseClipboard$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClipboardSequenceNumber$MH() {
-        return RuntimeHelper.requireNonNull(constants$262.GetClipboardSequenceNumber$MH,"GetClipboardSequenceNumber");
-    }
-    public static int GetClipboardSequenceNumber () {
-        var mh$ = GetClipboardSequenceNumber$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClipboardOwner$MH() {
-        return RuntimeHelper.requireNonNull(constants$262.GetClipboardOwner$MH,"GetClipboardOwner");
-    }
-    public static MemoryAddress GetClipboardOwner () {
-        var mh$ = GetClipboardOwner$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetClipboardViewer$MH() {
-        return RuntimeHelper.requireNonNull(constants$262.SetClipboardViewer$MH,"SetClipboardViewer");
-    }
-    public static MemoryAddress SetClipboardViewer ( Addressable hWndNewViewer) {
-        var mh$ = SetClipboardViewer$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hWndNewViewer);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClipboardViewer$MH() {
-        return RuntimeHelper.requireNonNull(constants$262.GetClipboardViewer$MH,"GetClipboardViewer");
-    }
-    public static MemoryAddress GetClipboardViewer () {
-        var mh$ = GetClipboardViewer$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ChangeClipboardChain$MH() {
-        return RuntimeHelper.requireNonNull(constants$262.ChangeClipboardChain$MH,"ChangeClipboardChain");
-    }
-    public static int ChangeClipboardChain ( Addressable hWndRemove,  Addressable hWndNewNext) {
-        var mh$ = ChangeClipboardChain$MH();
-        try {
-            return (int)mh$.invokeExact(hWndRemove, hWndNewNext);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetClipboardData$MH() {
-        return RuntimeHelper.requireNonNull(constants$263.SetClipboardData$MH,"SetClipboardData");
-    }
-    public static MemoryAddress SetClipboardData ( int uFormat,  Addressable hMem) {
-        var mh$ = SetClipboardData$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(uFormat, hMem);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClipboardData$MH() {
-        return RuntimeHelper.requireNonNull(constants$263.GetClipboardData$MH,"GetClipboardData");
-    }
-    public static MemoryAddress GetClipboardData ( int uFormat) {
-        var mh$ = GetClipboardData$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(uFormat);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterClipboardFormatA$MH() {
-        return RuntimeHelper.requireNonNull(constants$263.RegisterClipboardFormatA$MH,"RegisterClipboardFormatA");
-    }
-    public static int RegisterClipboardFormatA ( Addressable lpszFormat) {
-        var mh$ = RegisterClipboardFormatA$MH();
-        try {
-            return (int)mh$.invokeExact(lpszFormat);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterClipboardFormatW$MH() {
-        return RuntimeHelper.requireNonNull(constants$263.RegisterClipboardFormatW$MH,"RegisterClipboardFormatW");
-    }
-    public static int RegisterClipboardFormatW ( Addressable lpszFormat) {
-        var mh$ = RegisterClipboardFormatW$MH();
-        try {
-            return (int)mh$.invokeExact(lpszFormat);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CountClipboardFormats$MH() {
-        return RuntimeHelper.requireNonNull(constants$263.CountClipboardFormats$MH,"CountClipboardFormats");
-    }
-    public static int CountClipboardFormats () {
-        var mh$ = CountClipboardFormats$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumClipboardFormats$MH() {
-        return RuntimeHelper.requireNonNull(constants$263.EnumClipboardFormats$MH,"EnumClipboardFormats");
-    }
-    public static int EnumClipboardFormats ( int format) {
-        var mh$ = EnumClipboardFormats$MH();
-        try {
-            return (int)mh$.invokeExact(format);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClipboardFormatNameA$MH() {
-        return RuntimeHelper.requireNonNull(constants$264.GetClipboardFormatNameA$MH,"GetClipboardFormatNameA");
-    }
-    public static int GetClipboardFormatNameA ( int format,  Addressable lpszFormatName,  int cchMaxCount) {
-        var mh$ = GetClipboardFormatNameA$MH();
-        try {
-            return (int)mh$.invokeExact(format, lpszFormatName, cchMaxCount);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetClipboardFormatNameW$MH() {
-        return RuntimeHelper.requireNonNull(constants$264.GetClipboardFormatNameW$MH,"GetClipboardFormatNameW");
-    }
-    public static int GetClipboardFormatNameW ( int format,  Addressable lpszFormatName,  int cchMaxCount) {
-        var mh$ = GetClipboardFormatNameW$MH();
-        try {
-            return (int)mh$.invokeExact(format, lpszFormatName, cchMaxCount);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EmptyClipboard$MH() {
-        return RuntimeHelper.requireNonNull(constants$264.EmptyClipboard$MH,"EmptyClipboard");
-    }
-    public static int EmptyClipboard () {
-        var mh$ = EmptyClipboard$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsClipboardFormatAvailable$MH() {
-        return RuntimeHelper.requireNonNull(constants$264.IsClipboardFormatAvailable$MH,"IsClipboardFormatAvailable");
-    }
-    public static int IsClipboardFormatAvailable ( int format) {
-        var mh$ = IsClipboardFormatAvailable$MH();
-        try {
-            return (int)mh$.invokeExact(format);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetPriorityClipboardFormat$MH() {
-        return RuntimeHelper.requireNonNull(constants$264.GetPriorityClipboardFormat$MH,"GetPriorityClipboardFormat");
-    }
-    public static int GetPriorityClipboardFormat ( Addressable paFormatPriorityList,  int cFormats) {
-        var mh$ = GetPriorityClipboardFormat$MH();
-        try {
-            return (int)mh$.invokeExact(paFormatPriorityList, cFormats);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetOpenClipboardWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$264.GetOpenClipboardWindow$MH,"GetOpenClipboardWindow");
-    }
-    public static MemoryAddress GetOpenClipboardWindow () {
-        var mh$ = GetOpenClipboardWindow$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AddClipboardFormatListener$MH() {
-        return RuntimeHelper.requireNonNull(constants$265.AddClipboardFormatListener$MH,"AddClipboardFormatListener");
-    }
-    public static int AddClipboardFormatListener ( Addressable hwnd) {
-        var mh$ = AddClipboardFormatListener$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RemoveClipboardFormatListener$MH() {
-        return RuntimeHelper.requireNonNull(constants$265.RemoveClipboardFormatListener$MH,"RemoveClipboardFormatListener");
-    }
-    public static int RemoveClipboardFormatListener ( Addressable hwnd) {
-        var mh$ = RemoveClipboardFormatListener$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetUpdatedClipboardFormats$MH() {
-        return RuntimeHelper.requireNonNull(constants$265.GetUpdatedClipboardFormats$MH,"GetUpdatedClipboardFormats");
-    }
-    public static int GetUpdatedClipboardFormats ( Addressable lpuiFormats,  int cFormats,  Addressable pcFormatsOut) {
-        var mh$ = GetUpdatedClipboardFormats$MH();
-        try {
-            return (int)mh$.invokeExact(lpuiFormats, cFormats, pcFormatsOut);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharToOemA$MH() {
-        return RuntimeHelper.requireNonNull(constants$265.CharToOemA$MH,"CharToOemA");
-    }
-    public static int CharToOemA ( Addressable pSrc,  Addressable pDst) {
-        var mh$ = CharToOemA$MH();
-        try {
-            return (int)mh$.invokeExact(pSrc, pDst);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharToOemW$MH() {
-        return RuntimeHelper.requireNonNull(constants$265.CharToOemW$MH,"CharToOemW");
-    }
-    public static int CharToOemW ( Addressable pSrc,  Addressable pDst) {
-        var mh$ = CharToOemW$MH();
-        try {
-            return (int)mh$.invokeExact(pSrc, pDst);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OemToCharA$MH() {
-        return RuntimeHelper.requireNonNull(constants$265.OemToCharA$MH,"OemToCharA");
-    }
-    public static int OemToCharA ( Addressable pSrc,  Addressable pDst) {
-        var mh$ = OemToCharA$MH();
-        try {
-            return (int)mh$.invokeExact(pSrc, pDst);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OemToCharW$MH() {
-        return RuntimeHelper.requireNonNull(constants$266.OemToCharW$MH,"OemToCharW");
-    }
-    public static int OemToCharW ( Addressable pSrc,  Addressable pDst) {
-        var mh$ = OemToCharW$MH();
-        try {
-            return (int)mh$.invokeExact(pSrc, pDst);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharToOemBuffA$MH() {
-        return RuntimeHelper.requireNonNull(constants$266.CharToOemBuffA$MH,"CharToOemBuffA");
-    }
-    public static int CharToOemBuffA ( Addressable lpszSrc,  Addressable lpszDst,  int cchDstLength) {
-        var mh$ = CharToOemBuffA$MH();
-        try {
-            return (int)mh$.invokeExact(lpszSrc, lpszDst, cchDstLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharToOemBuffW$MH() {
-        return RuntimeHelper.requireNonNull(constants$266.CharToOemBuffW$MH,"CharToOemBuffW");
-    }
-    public static int CharToOemBuffW ( Addressable lpszSrc,  Addressable lpszDst,  int cchDstLength) {
-        var mh$ = CharToOemBuffW$MH();
-        try {
-            return (int)mh$.invokeExact(lpszSrc, lpszDst, cchDstLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OemToCharBuffA$MH() {
-        return RuntimeHelper.requireNonNull(constants$266.OemToCharBuffA$MH,"OemToCharBuffA");
-    }
-    public static int OemToCharBuffA ( Addressable lpszSrc,  Addressable lpszDst,  int cchDstLength) {
-        var mh$ = OemToCharBuffA$MH();
-        try {
-            return (int)mh$.invokeExact(lpszSrc, lpszDst, cchDstLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OemToCharBuffW$MH() {
-        return RuntimeHelper.requireNonNull(constants$266.OemToCharBuffW$MH,"OemToCharBuffW");
-    }
-    public static int OemToCharBuffW ( Addressable lpszSrc,  Addressable lpszDst,  int cchDstLength) {
-        var mh$ = OemToCharBuffW$MH();
-        try {
-            return (int)mh$.invokeExact(lpszSrc, lpszDst, cchDstLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharUpperA$MH() {
-        return RuntimeHelper.requireNonNull(constants$266.CharUpperA$MH,"CharUpperA");
-    }
-    public static MemoryAddress CharUpperA ( Addressable lpsz) {
-        var mh$ = CharUpperA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharUpperW$MH() {
-        return RuntimeHelper.requireNonNull(constants$267.CharUpperW$MH,"CharUpperW");
-    }
-    public static MemoryAddress CharUpperW ( Addressable lpsz) {
-        var mh$ = CharUpperW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharUpperBuffA$MH() {
-        return RuntimeHelper.requireNonNull(constants$267.CharUpperBuffA$MH,"CharUpperBuffA");
-    }
-    public static int CharUpperBuffA ( Addressable lpsz,  int cchLength) {
-        var mh$ = CharUpperBuffA$MH();
-        try {
-            return (int)mh$.invokeExact(lpsz, cchLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharUpperBuffW$MH() {
-        return RuntimeHelper.requireNonNull(constants$267.CharUpperBuffW$MH,"CharUpperBuffW");
-    }
-    public static int CharUpperBuffW ( Addressable lpsz,  int cchLength) {
-        var mh$ = CharUpperBuffW$MH();
-        try {
-            return (int)mh$.invokeExact(lpsz, cchLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharLowerA$MH() {
-        return RuntimeHelper.requireNonNull(constants$267.CharLowerA$MH,"CharLowerA");
-    }
-    public static MemoryAddress CharLowerA ( Addressable lpsz) {
-        var mh$ = CharLowerA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharLowerW$MH() {
-        return RuntimeHelper.requireNonNull(constants$267.CharLowerW$MH,"CharLowerW");
-    }
-    public static MemoryAddress CharLowerW ( Addressable lpsz) {
-        var mh$ = CharLowerW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharLowerBuffA$MH() {
-        return RuntimeHelper.requireNonNull(constants$267.CharLowerBuffA$MH,"CharLowerBuffA");
-    }
-    public static int CharLowerBuffA ( Addressable lpsz,  int cchLength) {
-        var mh$ = CharLowerBuffA$MH();
-        try {
-            return (int)mh$.invokeExact(lpsz, cchLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharLowerBuffW$MH() {
-        return RuntimeHelper.requireNonNull(constants$268.CharLowerBuffW$MH,"CharLowerBuffW");
-    }
-    public static int CharLowerBuffW ( Addressable lpsz,  int cchLength) {
-        var mh$ = CharLowerBuffW$MH();
-        try {
-            return (int)mh$.invokeExact(lpsz, cchLength);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharNextA$MH() {
-        return RuntimeHelper.requireNonNull(constants$268.CharNextA$MH,"CharNextA");
-    }
-    public static MemoryAddress CharNextA ( Addressable lpsz) {
-        var mh$ = CharNextA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharNextW$MH() {
-        return RuntimeHelper.requireNonNull(constants$268.CharNextW$MH,"CharNextW");
-    }
-    public static MemoryAddress CharNextW ( Addressable lpsz) {
-        var mh$ = CharNextW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpsz);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharPrevA$MH() {
-        return RuntimeHelper.requireNonNull(constants$268.CharPrevA$MH,"CharPrevA");
-    }
-    public static MemoryAddress CharPrevA ( Addressable lpszStart,  Addressable lpszCurrent) {
-        var mh$ = CharPrevA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszStart, lpszCurrent);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharPrevW$MH() {
-        return RuntimeHelper.requireNonNull(constants$268.CharPrevW$MH,"CharPrevW");
-    }
-    public static MemoryAddress CharPrevW ( Addressable lpszStart,  Addressable lpszCurrent) {
-        var mh$ = CharPrevW$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszStart, lpszCurrent);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharNextExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$268.CharNextExA$MH,"CharNextExA");
-    }
-    public static MemoryAddress CharNextExA ( short CodePage,  Addressable lpCurrentChar,  int dwFlags) {
-        var mh$ = CharNextExA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(CodePage, lpCurrentChar, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CharPrevExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$269.CharPrevExA$MH,"CharPrevExA");
-    }
-    public static MemoryAddress CharPrevExA ( short CodePage,  Addressable lpStart,  Addressable lpCurrentChar,  int dwFlags) {
-        var mh$ = CharPrevExA$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(CodePage, lpStart, lpCurrentChar, dwFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsCharAlphaA$MH() {
-        return RuntimeHelper.requireNonNull(constants$269.IsCharAlphaA$MH,"IsCharAlphaA");
-    }
-    public static int IsCharAlphaA ( byte ch) {
-        var mh$ = IsCharAlphaA$MH();
-        try {
-            return (int)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsCharAlphaW$MH() {
-        return RuntimeHelper.requireNonNull(constants$269.IsCharAlphaW$MH,"IsCharAlphaW");
-    }
-    public static int IsCharAlphaW ( short ch) {
-        var mh$ = IsCharAlphaW$MH();
-        try {
-            return (int)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsCharAlphaNumericA$MH() {
-        return RuntimeHelper.requireNonNull(constants$269.IsCharAlphaNumericA$MH,"IsCharAlphaNumericA");
-    }
-    public static int IsCharAlphaNumericA ( byte ch) {
-        var mh$ = IsCharAlphaNumericA$MH();
-        try {
-            return (int)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsCharAlphaNumericW$MH() {
-        return RuntimeHelper.requireNonNull(constants$269.IsCharAlphaNumericW$MH,"IsCharAlphaNumericW");
-    }
-    public static int IsCharAlphaNumericW ( short ch) {
-        var mh$ = IsCharAlphaNumericW$MH();
-        try {
-            return (int)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsCharUpperA$MH() {
-        return RuntimeHelper.requireNonNull(constants$269.IsCharUpperA$MH,"IsCharUpperA");
-    }
-    public static int IsCharUpperA ( byte ch) {
-        var mh$ = IsCharUpperA$MH();
-        try {
-            return (int)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsCharUpperW$MH() {
-        return RuntimeHelper.requireNonNull(constants$270.IsCharUpperW$MH,"IsCharUpperW");
-    }
-    public static int IsCharUpperW ( short ch) {
-        var mh$ = IsCharUpperW$MH();
-        try {
-            return (int)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsCharLowerA$MH() {
-        return RuntimeHelper.requireNonNull(constants$270.IsCharLowerA$MH,"IsCharLowerA");
-    }
-    public static int IsCharLowerA ( byte ch) {
-        var mh$ = IsCharLowerA$MH();
-        try {
-            return (int)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsCharLowerW$MH() {
-        return RuntimeHelper.requireNonNull(constants$270.IsCharLowerW$MH,"IsCharLowerW");
-    }
-    public static int IsCharLowerW ( short ch) {
-        var mh$ = IsCharLowerW$MH();
-        try {
-            return (int)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetFocus$MH() {
-        return RuntimeHelper.requireNonNull(constants$270.SetFocus$MH,"SetFocus");
-    }
-    public static MemoryAddress SetFocus ( Addressable hWnd) {
-        var mh$ = SetFocus$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetActiveWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$270.GetActiveWindow$MH,"GetActiveWindow");
-    }
-    public static MemoryAddress GetActiveWindow () {
-        var mh$ = GetActiveWindow$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetFocus$MH() {
-        return RuntimeHelper.requireNonNull(constants$270.GetFocus$MH,"GetFocus");
-    }
-    public static MemoryAddress GetFocus () {
-        var mh$ = GetFocus$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKBCodePage$MH() {
-        return RuntimeHelper.requireNonNull(constants$271.GetKBCodePage$MH,"GetKBCodePage");
-    }
-    public static int GetKBCodePage () {
-        var mh$ = GetKBCodePage$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyState$MH() {
-        return RuntimeHelper.requireNonNull(constants$271.GetKeyState$MH,"GetKeyState");
-    }
-    public static short GetKeyState ( int nVirtKey) {
-        var mh$ = GetKeyState$MH();
-        try {
-            return (short)mh$.invokeExact(nVirtKey);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetAsyncKeyState$MH() {
-        return RuntimeHelper.requireNonNull(constants$271.GetAsyncKeyState$MH,"GetAsyncKeyState");
-    }
-    public static short GetAsyncKeyState ( int vKey) {
-        var mh$ = GetAsyncKeyState$MH();
-        try {
-            return (short)mh$.invokeExact(vKey);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyboardState$MH() {
-        return RuntimeHelper.requireNonNull(constants$271.GetKeyboardState$MH,"GetKeyboardState");
-    }
-    public static int GetKeyboardState ( Addressable lpKeyState) {
-        var mh$ = GetKeyboardState$MH();
-        try {
-            return (int)mh$.invokeExact(lpKeyState);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetKeyboardState$MH() {
-        return RuntimeHelper.requireNonNull(constants$271.SetKeyboardState$MH,"SetKeyboardState");
-    }
-    public static int SetKeyboardState ( Addressable lpKeyState) {
-        var mh$ = SetKeyboardState$MH();
-        try {
-            return (int)mh$.invokeExact(lpKeyState);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyNameTextA$MH() {
-        return RuntimeHelper.requireNonNull(constants$271.GetKeyNameTextA$MH,"GetKeyNameTextA");
-    }
-    public static int GetKeyNameTextA ( int lParam,  Addressable lpString,  int cchSize) {
-        var mh$ = GetKeyNameTextA$MH();
-        try {
-            return (int)mh$.invokeExact(lParam, lpString, cchSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyNameTextW$MH() {
-        return RuntimeHelper.requireNonNull(constants$272.GetKeyNameTextW$MH,"GetKeyNameTextW");
-    }
-    public static int GetKeyNameTextW ( int lParam,  Addressable lpString,  int cchSize) {
-        var mh$ = GetKeyNameTextW$MH();
-        try {
-            return (int)mh$.invokeExact(lParam, lpString, cchSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetKeyboardType$MH() {
-        return RuntimeHelper.requireNonNull(constants$272.GetKeyboardType$MH,"GetKeyboardType");
-    }
-    public static int GetKeyboardType ( int nTypeFlag) {
-        var mh$ = GetKeyboardType$MH();
-        try {
-            return (int)mh$.invokeExact(nTypeFlag);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ToAscii$MH() {
-        return RuntimeHelper.requireNonNull(constants$272.ToAscii$MH,"ToAscii");
-    }
-    public static int ToAscii ( int uVirtKey,  int uScanCode,  Addressable lpKeyState,  Addressable lpChar,  int uFlags) {
-        var mh$ = ToAscii$MH();
-        try {
-            return (int)mh$.invokeExact(uVirtKey, uScanCode, lpKeyState, lpChar, uFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ToAsciiEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$272.ToAsciiEx$MH,"ToAsciiEx");
-    }
-    public static int ToAsciiEx ( int uVirtKey,  int uScanCode,  Addressable lpKeyState,  Addressable lpChar,  int uFlags,  Addressable dwhkl) {
-        var mh$ = ToAsciiEx$MH();
-        try {
-            return (int)mh$.invokeExact(uVirtKey, uScanCode, lpKeyState, lpChar, uFlags, dwhkl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle ToUnicode$MH() {
-        return RuntimeHelper.requireNonNull(constants$272.ToUnicode$MH,"ToUnicode");
-    }
-    public static int ToUnicode ( int wVirtKey,  int wScanCode,  Addressable lpKeyState,  Addressable pwszBuff,  int cchBuff,  int wFlags) {
-        var mh$ = ToUnicode$MH();
-        try {
-            return (int)mh$.invokeExact(wVirtKey, wScanCode, lpKeyState, pwszBuff, cchBuff, wFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle OemKeyScan$MH() {
-        return RuntimeHelper.requireNonNull(constants$272.OemKeyScan$MH,"OemKeyScan");
-    }
-    public static int OemKeyScan ( short wOemChar) {
-        var mh$ = OemKeyScan$MH();
-        try {
-            return (int)mh$.invokeExact(wOemChar);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle VkKeyScanA$MH() {
-        return RuntimeHelper.requireNonNull(constants$273.VkKeyScanA$MH,"VkKeyScanA");
-    }
-    public static short VkKeyScanA ( byte ch) {
-        var mh$ = VkKeyScanA$MH();
-        try {
-            return (short)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle VkKeyScanW$MH() {
-        return RuntimeHelper.requireNonNull(constants$273.VkKeyScanW$MH,"VkKeyScanW");
-    }
-    public static short VkKeyScanW ( short ch) {
-        var mh$ = VkKeyScanW$MH();
-        try {
-            return (short)mh$.invokeExact(ch);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle VkKeyScanExA$MH() {
-        return RuntimeHelper.requireNonNull(constants$273.VkKeyScanExA$MH,"VkKeyScanExA");
-    }
-    public static short VkKeyScanExA ( byte ch,  Addressable dwhkl) {
-        var mh$ = VkKeyScanExA$MH();
-        try {
-            return (short)mh$.invokeExact(ch, dwhkl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle VkKeyScanExW$MH() {
-        return RuntimeHelper.requireNonNull(constants$273.VkKeyScanExW$MH,"VkKeyScanExW");
-    }
-    public static short VkKeyScanExW ( short ch,  Addressable dwhkl) {
-        var mh$ = VkKeyScanExW$MH();
-        try {
-            return (short)mh$.invokeExact(ch, dwhkl);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle keybd_event$MH() {
-        return RuntimeHelper.requireNonNull(constants$273.keybd_event$MH,"keybd_event");
-    }
-    public static void keybd_event ( byte bVk,  byte bScan,  int dwFlags,  long dwExtraInfo) {
-        var mh$ = keybd_event$MH();
-        try {
-            mh$.invokeExact(bVk, bScan, dwFlags, dwExtraInfo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle mouse_event$MH() {
-        return RuntimeHelper.requireNonNull(constants$273.mouse_event$MH,"mouse_event");
-    }
-    public static void mouse_event ( int dwFlags,  int dx,  int dy,  int dwData,  long dwExtraInfo) {
-        var mh$ = mouse_event$MH();
-        try {
-            mh$.invokeExact(dwFlags, dx, dy, dwData, dwExtraInfo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PMOUSEINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPMOUSEINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PKEYBDINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPKEYBDINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PHARDWAREINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPHARDWAREINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle SendInput$MH() {
-        return RuntimeHelper.requireNonNull(constants$274.SendInput$MH,"SendInput");
-    }
-    public static int SendInput ( int cInputs,  Addressable pInputs,  int cbSize) {
-        var mh$ = SendInput$MH();
-        try {
-            return (int)mh$.invokeExact(cInputs, pInputs, cbSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress HTOUCHINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOUCHINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCTOUCHINPUT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle GetTouchInputInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$274.GetTouchInputInfo$MH,"GetTouchInputInfo");
-    }
-    public static int GetTouchInputInfo ( Addressable hTouchInput,  int cInputs,  Addressable pInputs,  int cbSize) {
-        var mh$ = GetTouchInputInfo$MH();
-        try {
-            return (int)mh$.invokeExact(hTouchInput, cInputs, pInputs, cbSize);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CloseTouchInputHandle$MH() {
-        return RuntimeHelper.requireNonNull(constants$274.CloseTouchInputHandle$MH,"CloseTouchInputHandle");
-    }
-    public static int CloseTouchInputHandle ( Addressable hTouchInput) {
-        var mh$ = CloseTouchInputHandle$MH();
-        try {
-            return (int)mh$.invokeExact(hTouchInput);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterTouchWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$274.RegisterTouchWindow$MH,"RegisterTouchWindow");
-    }
-    public static int RegisterTouchWindow ( Addressable hwnd,  int ulFlags) {
-        var mh$ = RegisterTouchWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, ulFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterTouchWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$274.UnregisterTouchWindow$MH,"UnregisterTouchWindow");
-    }
-    public static int UnregisterTouchWindow ( Addressable hwnd) {
-        var mh$ = UnregisterTouchWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsTouchWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$274.IsTouchWindow$MH,"IsTouchWindow");
-    }
-    public static int IsTouchWindow ( Addressable hwnd,  Addressable pulFlags) {
-        var mh$ = IsTouchWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, pulFlags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static int PT_POINTER() {
-        return (int)1L;
-    }
-    public static int PT_TOUCH() {
-        return (int)2L;
-    }
-    public static int PT_PEN() {
+    public static int ComputerNameDnsFullyQualified() {
         return (int)3L;
     }
-    public static int PT_MOUSE() {
+    public static int ComputerNamePhysicalNetBIOS() {
         return (int)4L;
     }
-    public static int PT_TOUCHPAD() {
+    public static int ComputerNamePhysicalDnsHostname() {
         return (int)5L;
     }
-    public static int POINTER_CHANGE_NONE() {
-        return (int)0L;
-    }
-    public static int POINTER_CHANGE_FIRSTBUTTON_DOWN() {
-        return (int)1L;
-    }
-    public static int POINTER_CHANGE_FIRSTBUTTON_UP() {
-        return (int)2L;
-    }
-    public static int POINTER_CHANGE_SECONDBUTTON_DOWN() {
-        return (int)3L;
-    }
-    public static int POINTER_CHANGE_SECONDBUTTON_UP() {
-        return (int)4L;
-    }
-    public static int POINTER_CHANGE_THIRDBUTTON_DOWN() {
-        return (int)5L;
-    }
-    public static int POINTER_CHANGE_THIRDBUTTON_UP() {
+    public static int ComputerNamePhysicalDnsDomain() {
         return (int)6L;
     }
-    public static int POINTER_CHANGE_FOURTHBUTTON_DOWN() {
+    public static int ComputerNamePhysicalDnsFullyQualified() {
         return (int)7L;
     }
-    public static int POINTER_CHANGE_FOURTHBUTTON_UP() {
+    public static int ComputerNameMax() {
         return (int)8L;
     }
-    public static int POINTER_CHANGE_FIFTHBUTTON_DOWN() {
-        return (int)9L;
+    public static MethodHandle GetComputerNameExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$130.GetComputerNameExA$MH,"GetComputerNameExA");
     }
-    public static int POINTER_CHANGE_FIFTHBUTTON_UP() {
-        return (int)10L;
+    public static int GetComputerNameExA ( int NameType,  Addressable lpBuffer,  Addressable nSize) {
+        var mh$ = GetComputerNameExA$MH();
+        try {
+            return (int)mh$.invokeExact(NameType, lpBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
     }
-    public static int POINTER_FEEDBACK_DEFAULT() {
+    public static MethodHandle GetComputerNameExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$130.GetComputerNameExW$MH,"GetComputerNameExW");
+    }
+    public static int GetComputerNameExW ( int NameType,  Addressable lpBuffer,  Addressable nSize) {
+        var mh$ = GetComputerNameExW$MH();
+        try {
+            return (int)mh$.invokeExact(NameType, lpBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetComputerNameExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$130.SetComputerNameExW$MH,"SetComputerNameExW");
+    }
+    public static int SetComputerNameExW ( int NameType,  Addressable lpBuffer) {
+        var mh$ = SetComputerNameExW$MH();
+        try {
+            return (int)mh$.invokeExact(NameType, lpBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSystemTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$130.SetSystemTime$MH,"SetSystemTime");
+    }
+    public static int SetSystemTime ( Addressable lpSystemTime) {
+        var mh$ = SetSystemTime$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetVersionExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$130.GetVersionExA$MH,"GetVersionExA");
+    }
+    public static int GetVersionExA ( Addressable lpVersionInformation) {
+        var mh$ = GetVersionExA$MH();
+        try {
+            return (int)mh$.invokeExact(lpVersionInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetVersionExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$130.GetVersionExW$MH,"GetVersionExW");
+    }
+    public static int GetVersionExW ( Addressable lpVersionInformation) {
+        var mh$ = GetVersionExW$MH();
+        try {
+            return (int)mh$.invokeExact(lpVersionInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetLogicalProcessorInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$131.GetLogicalProcessorInformation$MH,"GetLogicalProcessorInformation");
+    }
+    public static int GetLogicalProcessorInformation ( Addressable Buffer,  Addressable ReturnedLength) {
+        var mh$ = GetLogicalProcessorInformation$MH();
+        try {
+            return (int)mh$.invokeExact(Buffer, ReturnedLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetLogicalProcessorInformationEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$131.GetLogicalProcessorInformationEx$MH,"GetLogicalProcessorInformationEx");
+    }
+    public static int GetLogicalProcessorInformationEx ( int RelationshipType,  Addressable Buffer,  Addressable ReturnedLength) {
+        var mh$ = GetLogicalProcessorInformationEx$MH();
+        try {
+            return (int)mh$.invokeExact(RelationshipType, Buffer, ReturnedLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNativeSystemInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$131.GetNativeSystemInfo$MH,"GetNativeSystemInfo");
+    }
+    public static void GetNativeSystemInfo ( Addressable lpSystemInfo) {
+        var mh$ = GetNativeSystemInfo$MH();
+        try {
+            mh$.invokeExact(lpSystemInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSystemTimePreciseAsFileTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$131.GetSystemTimePreciseAsFileTime$MH,"GetSystemTimePreciseAsFileTime");
+    }
+    public static void GetSystemTimePreciseAsFileTime ( Addressable lpSystemTimeAsFileTime) {
+        var mh$ = GetSystemTimePreciseAsFileTime$MH();
+        try {
+            mh$.invokeExact(lpSystemTimeAsFileTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProductInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$131.GetProductInfo$MH,"GetProductInfo");
+    }
+    public static int GetProductInfo ( int dwOSMajorVersion,  int dwOSMinorVersion,  int dwSpMajorVersion,  int dwSpMinorVersion,  Addressable pdwReturnedProductType) {
+        var mh$ = GetProductInfo$MH();
+        try {
+            return (int)mh$.invokeExact(dwOSMajorVersion, dwOSMinorVersion, dwSpMajorVersion, dwSpMinorVersion, pdwReturnedProductType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetOsSafeBootMode$MH() {
+        return RuntimeHelper.requireNonNull(constants$131.GetOsSafeBootMode$MH,"GetOsSafeBootMode");
+    }
+    public static int GetOsSafeBootMode ( Addressable Flags) {
+        var mh$ = GetOsSafeBootMode$MH();
+        try {
+            return (int)mh$.invokeExact(Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumSystemFirmwareTables$MH() {
+        return RuntimeHelper.requireNonNull(constants$132.EnumSystemFirmwareTables$MH,"EnumSystemFirmwareTables");
+    }
+    public static int EnumSystemFirmwareTables ( int FirmwareTableProviderSignature,  Addressable pFirmwareTableEnumBuffer,  int BufferSize) {
+        var mh$ = EnumSystemFirmwareTables$MH();
+        try {
+            return (int)mh$.invokeExact(FirmwareTableProviderSignature, pFirmwareTableEnumBuffer, BufferSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSystemFirmwareTable$MH() {
+        return RuntimeHelper.requireNonNull(constants$132.GetSystemFirmwareTable$MH,"GetSystemFirmwareTable");
+    }
+    public static int GetSystemFirmwareTable ( int FirmwareTableProviderSignature,  int FirmwareTableID,  Addressable pFirmwareTableBuffer,  int BufferSize) {
+        var mh$ = GetSystemFirmwareTable$MH();
+        try {
+            return (int)mh$.invokeExact(FirmwareTableProviderSignature, FirmwareTableID, pFirmwareTableBuffer, BufferSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DnsHostnameToComputerNameExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$132.DnsHostnameToComputerNameExW$MH,"DnsHostnameToComputerNameExW");
+    }
+    public static int DnsHostnameToComputerNameExW ( Addressable Hostname,  Addressable ComputerName,  Addressable nSize) {
+        var mh$ = DnsHostnameToComputerNameExW$MH();
+        try {
+            return (int)mh$.invokeExact(Hostname, ComputerName, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPhysicallyInstalledSystemMemory$MH() {
+        return RuntimeHelper.requireNonNull(constants$132.GetPhysicallyInstalledSystemMemory$MH,"GetPhysicallyInstalledSystemMemory");
+    }
+    public static int GetPhysicallyInstalledSystemMemory ( Addressable TotalMemoryInKilobytes) {
+        var mh$ = GetPhysicallyInstalledSystemMemory$MH();
+        try {
+            return (int)mh$.invokeExact(TotalMemoryInKilobytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetComputerNameEx2W$MH() {
+        return RuntimeHelper.requireNonNull(constants$132.SetComputerNameEx2W$MH,"SetComputerNameEx2W");
+    }
+    public static int SetComputerNameEx2W ( int NameType,  int Flags,  Addressable lpBuffer) {
+        var mh$ = SetComputerNameEx2W$MH();
+        try {
+            return (int)mh$.invokeExact(NameType, Flags, lpBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSystemTimeAdjustment$MH() {
+        return RuntimeHelper.requireNonNull(constants$132.SetSystemTimeAdjustment$MH,"SetSystemTimeAdjustment");
+    }
+    public static int SetSystemTimeAdjustment ( int dwTimeAdjustment,  int bTimeAdjustmentDisabled) {
+        var mh$ = SetSystemTimeAdjustment$MH();
+        try {
+            return (int)mh$.invokeExact(dwTimeAdjustment, bTimeAdjustmentDisabled);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSystemTimeAdjustmentPrecise$MH() {
+        return RuntimeHelper.requireNonNull(constants$133.SetSystemTimeAdjustmentPrecise$MH,"SetSystemTimeAdjustmentPrecise");
+    }
+    public static int SetSystemTimeAdjustmentPrecise ( long dwTimeAdjustment,  int bTimeAdjustmentDisabled) {
+        var mh$ = SetSystemTimeAdjustmentPrecise$MH();
+        try {
+            return (int)mh$.invokeExact(dwTimeAdjustment, bTimeAdjustmentDisabled);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InstallELAMCertificateInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$133.InstallELAMCertificateInfo$MH,"InstallELAMCertificateInfo");
+    }
+    public static int InstallELAMCertificateInfo ( Addressable ELAMFile) {
+        var mh$ = InstallELAMCertificateInfo$MH();
+        try {
+            return (int)mh$.invokeExact(ELAMFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProcessorSystemCycleTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$133.GetProcessorSystemCycleTime$MH,"GetProcessorSystemCycleTime");
+    }
+    public static int GetProcessorSystemCycleTime ( short Group,  Addressable Buffer,  Addressable ReturnedLength) {
+        var mh$ = GetProcessorSystemCycleTime$MH();
+        try {
+            return (int)mh$.invokeExact(Group, Buffer, ReturnedLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetOsManufacturingMode$MH() {
+        return RuntimeHelper.requireNonNull(constants$133.GetOsManufacturingMode$MH,"GetOsManufacturingMode");
+    }
+    public static int GetOsManufacturingMode ( Addressable pbEnabled) {
+        var mh$ = GetOsManufacturingMode$MH();
+        try {
+            return (int)mh$.invokeExact(pbEnabled);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetIntegratedDisplaySize$MH() {
+        return RuntimeHelper.requireNonNull(constants$133.GetIntegratedDisplaySize$MH,"GetIntegratedDisplaySize");
+    }
+    public static int GetIntegratedDisplaySize ( Addressable sizeInInches) {
+        var mh$ = GetIntegratedDisplaySize$MH();
+        try {
+            return (int)mh$.invokeExact(sizeInInches);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetComputerNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$133.SetComputerNameA$MH,"SetComputerNameA");
+    }
+    public static int SetComputerNameA ( Addressable lpComputerName) {
+        var mh$ = SetComputerNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpComputerName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetComputerNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$134.SetComputerNameW$MH,"SetComputerNameW");
+    }
+    public static int SetComputerNameW ( Addressable lpComputerName) {
+        var mh$ = SetComputerNameW$MH();
+        try {
+            return (int)mh$.invokeExact(lpComputerName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetComputerNameExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$134.SetComputerNameExA$MH,"SetComputerNameExA");
+    }
+    public static int SetComputerNameExA ( int NameType,  Addressable lpBuffer) {
+        var mh$ = SetComputerNameExA$MH();
+        try {
+            return (int)mh$.invokeExact(NameType, lpBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualAlloc$MH() {
+        return RuntimeHelper.requireNonNull(constants$134.VirtualAlloc$MH,"VirtualAlloc");
+    }
+    public static MemoryAddress VirtualAlloc ( Addressable lpAddress,  long dwSize,  int flAllocationType,  int flProtect) {
+        var mh$ = VirtualAlloc$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpAddress, dwSize, flAllocationType, flProtect);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualProtect$MH() {
+        return RuntimeHelper.requireNonNull(constants$134.VirtualProtect$MH,"VirtualProtect");
+    }
+    public static int VirtualProtect ( Addressable lpAddress,  long dwSize,  int flNewProtect,  Addressable lpflOldProtect) {
+        var mh$ = VirtualProtect$MH();
+        try {
+            return (int)mh$.invokeExact(lpAddress, dwSize, flNewProtect, lpflOldProtect);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualFree$MH() {
+        return RuntimeHelper.requireNonNull(constants$134.VirtualFree$MH,"VirtualFree");
+    }
+    public static int VirtualFree ( Addressable lpAddress,  long dwSize,  int dwFreeType) {
+        var mh$ = VirtualFree$MH();
+        try {
+            return (int)mh$.invokeExact(lpAddress, dwSize, dwFreeType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualQuery$MH() {
+        return RuntimeHelper.requireNonNull(constants$134.VirtualQuery$MH,"VirtualQuery");
+    }
+    public static long VirtualQuery ( Addressable lpAddress,  Addressable lpBuffer,  long dwLength) {
+        var mh$ = VirtualQuery$MH();
+        try {
+            return (long)mh$.invokeExact(lpAddress, lpBuffer, dwLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualAllocEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$135.VirtualAllocEx$MH,"VirtualAllocEx");
+    }
+    public static MemoryAddress VirtualAllocEx ( Addressable hProcess,  Addressable lpAddress,  long dwSize,  int flAllocationType,  int flProtect) {
+        var mh$ = VirtualAllocEx$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hProcess, lpAddress, dwSize, flAllocationType, flProtect);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualProtectEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$135.VirtualProtectEx$MH,"VirtualProtectEx");
+    }
+    public static int VirtualProtectEx ( Addressable hProcess,  Addressable lpAddress,  long dwSize,  int flNewProtect,  Addressable lpflOldProtect) {
+        var mh$ = VirtualProtectEx$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpAddress, dwSize, flNewProtect, lpflOldProtect);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualQueryEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$135.VirtualQueryEx$MH,"VirtualQueryEx");
+    }
+    public static long VirtualQueryEx ( Addressable hProcess,  Addressable lpAddress,  Addressable lpBuffer,  long dwLength) {
+        var mh$ = VirtualQueryEx$MH();
+        try {
+            return (long)mh$.invokeExact(hProcess, lpAddress, lpBuffer, dwLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadProcessMemory$MH() {
+        return RuntimeHelper.requireNonNull(constants$135.ReadProcessMemory$MH,"ReadProcessMemory");
+    }
+    public static int ReadProcessMemory ( Addressable hProcess,  Addressable lpBaseAddress,  Addressable lpBuffer,  long nSize,  Addressable lpNumberOfBytesRead) {
+        var mh$ = ReadProcessMemory$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpBaseAddress, lpBuffer, nSize, lpNumberOfBytesRead);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteProcessMemory$MH() {
+        return RuntimeHelper.requireNonNull(constants$135.WriteProcessMemory$MH,"WriteProcessMemory");
+    }
+    public static int WriteProcessMemory ( Addressable hProcess,  Addressable lpBaseAddress,  Addressable lpBuffer,  long nSize,  Addressable lpNumberOfBytesWritten) {
+        var mh$ = WriteProcessMemory$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpBaseAddress, lpBuffer, nSize, lpNumberOfBytesWritten);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateFileMappingW$MH() {
+        return RuntimeHelper.requireNonNull(constants$135.CreateFileMappingW$MH,"CreateFileMappingW");
+    }
+    public static MemoryAddress CreateFileMappingW ( Addressable hFile,  Addressable lpFileMappingAttributes,  int flProtect,  int dwMaximumSizeHigh,  int dwMaximumSizeLow,  Addressable lpName) {
+        var mh$ = CreateFileMappingW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFile, lpFileMappingAttributes, flProtect, dwMaximumSizeHigh, dwMaximumSizeLow, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenFileMappingW$MH() {
+        return RuntimeHelper.requireNonNull(constants$136.OpenFileMappingW$MH,"OpenFileMappingW");
+    }
+    public static MemoryAddress OpenFileMappingW ( int dwDesiredAccess,  int bInheritHandle,  Addressable lpName) {
+        var mh$ = OpenFileMappingW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwDesiredAccess, bInheritHandle, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapViewOfFile$MH() {
+        return RuntimeHelper.requireNonNull(constants$136.MapViewOfFile$MH,"MapViewOfFile");
+    }
+    public static MemoryAddress MapViewOfFile ( Addressable hFileMappingObject,  int dwDesiredAccess,  int dwFileOffsetHigh,  int dwFileOffsetLow,  long dwNumberOfBytesToMap) {
+        var mh$ = MapViewOfFile$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFileMappingObject, dwDesiredAccess, dwFileOffsetHigh, dwFileOffsetLow, dwNumberOfBytesToMap);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapViewOfFileEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$136.MapViewOfFileEx$MH,"MapViewOfFileEx");
+    }
+    public static MemoryAddress MapViewOfFileEx ( Addressable hFileMappingObject,  int dwDesiredAccess,  int dwFileOffsetHigh,  int dwFileOffsetLow,  long dwNumberOfBytesToMap,  Addressable lpBaseAddress) {
+        var mh$ = MapViewOfFileEx$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFileMappingObject, dwDesiredAccess, dwFileOffsetHigh, dwFileOffsetLow, dwNumberOfBytesToMap, lpBaseAddress);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualFreeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$136.VirtualFreeEx$MH,"VirtualFreeEx");
+    }
+    public static int VirtualFreeEx ( Addressable hProcess,  Addressable lpAddress,  long dwSize,  int dwFreeType) {
+        var mh$ = VirtualFreeEx$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpAddress, dwSize, dwFreeType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FlushViewOfFile$MH() {
+        return RuntimeHelper.requireNonNull(constants$136.FlushViewOfFile$MH,"FlushViewOfFile");
+    }
+    public static int FlushViewOfFile ( Addressable lpBaseAddress,  long dwNumberOfBytesToFlush) {
+        var mh$ = FlushViewOfFile$MH();
+        try {
+            return (int)mh$.invokeExact(lpBaseAddress, dwNumberOfBytesToFlush);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UnmapViewOfFile$MH() {
+        return RuntimeHelper.requireNonNull(constants$136.UnmapViewOfFile$MH,"UnmapViewOfFile");
+    }
+    public static int UnmapViewOfFile ( Addressable lpBaseAddress) {
+        var mh$ = UnmapViewOfFile$MH();
+        try {
+            return (int)mh$.invokeExact(lpBaseAddress);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetLargePageMinimum$MH() {
+        return RuntimeHelper.requireNonNull(constants$137.GetLargePageMinimum$MH,"GetLargePageMinimum");
+    }
+    public static long GetLargePageMinimum () {
+        var mh$ = GetLargePageMinimum$MH();
+        try {
+            return (long)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProcessWorkingSetSizeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$137.GetProcessWorkingSetSizeEx$MH,"GetProcessWorkingSetSizeEx");
+    }
+    public static int GetProcessWorkingSetSizeEx ( Addressable hProcess,  Addressable lpMinimumWorkingSetSize,  Addressable lpMaximumWorkingSetSize,  Addressable Flags) {
+        var mh$ = GetProcessWorkingSetSizeEx$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpMinimumWorkingSetSize, lpMaximumWorkingSetSize, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetProcessWorkingSetSizeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$137.SetProcessWorkingSetSizeEx$MH,"SetProcessWorkingSetSizeEx");
+    }
+    public static int SetProcessWorkingSetSizeEx ( Addressable hProcess,  long dwMinimumWorkingSetSize,  long dwMaximumWorkingSetSize,  int Flags) {
+        var mh$ = SetProcessWorkingSetSizeEx$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, dwMinimumWorkingSetSize, dwMaximumWorkingSetSize, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualLock$MH() {
+        return RuntimeHelper.requireNonNull(constants$137.VirtualLock$MH,"VirtualLock");
+    }
+    public static int VirtualLock ( Addressable lpAddress,  long dwSize) {
+        var mh$ = VirtualLock$MH();
+        try {
+            return (int)mh$.invokeExact(lpAddress, dwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualUnlock$MH() {
+        return RuntimeHelper.requireNonNull(constants$137.VirtualUnlock$MH,"VirtualUnlock");
+    }
+    public static int VirtualUnlock ( Addressable lpAddress,  long dwSize) {
+        var mh$ = VirtualUnlock$MH();
+        try {
+            return (int)mh$.invokeExact(lpAddress, dwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetWriteWatch$MH() {
+        return RuntimeHelper.requireNonNull(constants$137.GetWriteWatch$MH,"GetWriteWatch");
+    }
+    public static int GetWriteWatch ( int dwFlags,  Addressable lpBaseAddress,  long dwRegionSize,  Addressable lpAddresses,  Addressable lpdwCount,  Addressable lpdwGranularity) {
+        var mh$ = GetWriteWatch$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpBaseAddress, dwRegionSize, lpAddresses, lpdwCount, lpdwGranularity);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ResetWriteWatch$MH() {
+        return RuntimeHelper.requireNonNull(constants$138.ResetWriteWatch$MH,"ResetWriteWatch");
+    }
+    public static int ResetWriteWatch ( Addressable lpBaseAddress,  long dwRegionSize) {
+        var mh$ = ResetWriteWatch$MH();
+        try {
+            return (int)mh$.invokeExact(lpBaseAddress, dwRegionSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int LowMemoryResourceNotification() {
+        return (int)0L;
+    }
+    public static int HighMemoryResourceNotification() {
         return (int)1L;
     }
-    public static int POINTER_FEEDBACK_INDIRECT() {
-        return (int)2L;
+    public static MethodHandle CreateMemoryResourceNotification$MH() {
+        return RuntimeHelper.requireNonNull(constants$138.CreateMemoryResourceNotification$MH,"CreateMemoryResourceNotification");
     }
-    public static int POINTER_FEEDBACK_NONE() {
-        return (int)3L;
-    }
-    public static MethodHandle InitializeTouchInjection$MH() {
-        return RuntimeHelper.requireNonNull(constants$275.InitializeTouchInjection$MH,"InitializeTouchInjection");
-    }
-    public static int InitializeTouchInjection ( int maxCount,  int dwMode) {
-        var mh$ = InitializeTouchInjection$MH();
+    public static MemoryAddress CreateMemoryResourceNotification ( int NotificationType) {
+        var mh$ = CreateMemoryResourceNotification$MH();
         try {
-            return (int)mh$.invokeExact(maxCount, dwMode);
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(NotificationType);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle InjectTouchInput$MH() {
-        return RuntimeHelper.requireNonNull(constants$275.InjectTouchInput$MH,"InjectTouchInput");
+    public static MethodHandle QueryMemoryResourceNotification$MH() {
+        return RuntimeHelper.requireNonNull(constants$138.QueryMemoryResourceNotification$MH,"QueryMemoryResourceNotification");
     }
-    public static int InjectTouchInput ( int count,  Addressable contacts) {
-        var mh$ = InjectTouchInput$MH();
+    public static int QueryMemoryResourceNotification ( Addressable ResourceNotificationHandle,  Addressable ResourceState) {
+        var mh$ = QueryMemoryResourceNotification$MH();
         try {
-            return (int)mh$.invokeExact(count, contacts);
+            return (int)mh$.invokeExact(ResourceNotificationHandle, ResourceState);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static OfAddress PUSAGE_PROPERTIES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPOINTER_TYPE_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PINPUT_INJECTION_VALUE = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle GetPointerType$MH() {
-        return RuntimeHelper.requireNonNull(constants$275.GetPointerType$MH,"GetPointerType");
+    public static MethodHandle GetSystemFileCacheSize$MH() {
+        return RuntimeHelper.requireNonNull(constants$138.GetSystemFileCacheSize$MH,"GetSystemFileCacheSize");
     }
-    public static int GetPointerType ( int pointerId,  Addressable pointerType) {
-        var mh$ = GetPointerType$MH();
+    public static int GetSystemFileCacheSize ( Addressable lpMinimumFileCacheSize,  Addressable lpMaximumFileCacheSize,  Addressable lpFlags) {
+        var mh$ = GetSystemFileCacheSize$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, pointerType);
+            return (int)mh$.invokeExact(lpMinimumFileCacheSize, lpMaximumFileCacheSize, lpFlags);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerCursorId$MH() {
-        return RuntimeHelper.requireNonNull(constants$275.GetPointerCursorId$MH,"GetPointerCursorId");
+    public static MethodHandle SetSystemFileCacheSize$MH() {
+        return RuntimeHelper.requireNonNull(constants$138.SetSystemFileCacheSize$MH,"SetSystemFileCacheSize");
     }
-    public static int GetPointerCursorId ( int pointerId,  Addressable cursorId) {
-        var mh$ = GetPointerCursorId$MH();
+    public static int SetSystemFileCacheSize ( long MinimumFileCacheSize,  long MaximumFileCacheSize,  int Flags) {
+        var mh$ = SetSystemFileCacheSize$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, cursorId);
+            return (int)mh$.invokeExact(MinimumFileCacheSize, MaximumFileCacheSize, Flags);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$275.GetPointerInfo$MH,"GetPointerInfo");
+    public static MethodHandle CreateFileMappingNumaW$MH() {
+        return RuntimeHelper.requireNonNull(constants$138.CreateFileMappingNumaW$MH,"CreateFileMappingNumaW");
     }
-    public static int GetPointerInfo ( int pointerId,  Addressable pointerInfo) {
-        var mh$ = GetPointerInfo$MH();
+    public static MemoryAddress CreateFileMappingNumaW ( Addressable hFile,  Addressable lpFileMappingAttributes,  int flProtect,  int dwMaximumSizeHigh,  int dwMaximumSizeLow,  Addressable lpName,  int nndPreferred) {
+        var mh$ = CreateFileMappingNumaW$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, pointerInfo);
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFile, lpFileMappingAttributes, flProtect, dwMaximumSizeHigh, dwMaximumSizeLow, lpName, nndPreferred);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerInfoHistory$MH() {
-        return RuntimeHelper.requireNonNull(constants$275.GetPointerInfoHistory$MH,"GetPointerInfoHistory");
+    public static OfAddress PWIN32_MEMORY_RANGE_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle PrefetchVirtualMemory$MH() {
+        return RuntimeHelper.requireNonNull(constants$139.PrefetchVirtualMemory$MH,"PrefetchVirtualMemory");
     }
-    public static int GetPointerInfoHistory ( int pointerId,  Addressable entriesCount,  Addressable pointerInfo) {
-        var mh$ = GetPointerInfoHistory$MH();
+    public static int PrefetchVirtualMemory ( Addressable hProcess,  long NumberOfEntries,  Addressable VirtualAddresses,  int Flags) {
+        var mh$ = PrefetchVirtualMemory$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, entriesCount, pointerInfo);
+            return (int)mh$.invokeExact(hProcess, NumberOfEntries, VirtualAddresses, Flags);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerFrameInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$276.GetPointerFrameInfo$MH,"GetPointerFrameInfo");
+    public static MethodHandle CreateFileMappingFromApp$MH() {
+        return RuntimeHelper.requireNonNull(constants$139.CreateFileMappingFromApp$MH,"CreateFileMappingFromApp");
     }
-    public static int GetPointerFrameInfo ( int pointerId,  Addressable pointerCount,  Addressable pointerInfo) {
-        var mh$ = GetPointerFrameInfo$MH();
+    public static MemoryAddress CreateFileMappingFromApp ( Addressable hFile,  Addressable SecurityAttributes,  int PageProtection,  long MaximumSize,  Addressable Name) {
+        var mh$ = CreateFileMappingFromApp$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, pointerCount, pointerInfo);
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFile, SecurityAttributes, PageProtection, MaximumSize, Name);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerFrameInfoHistory$MH() {
-        return RuntimeHelper.requireNonNull(constants$276.GetPointerFrameInfoHistory$MH,"GetPointerFrameInfoHistory");
+    public static MethodHandle MapViewOfFileFromApp$MH() {
+        return RuntimeHelper.requireNonNull(constants$139.MapViewOfFileFromApp$MH,"MapViewOfFileFromApp");
     }
-    public static int GetPointerFrameInfoHistory ( int pointerId,  Addressable entriesCount,  Addressable pointerCount,  Addressable pointerInfo) {
-        var mh$ = GetPointerFrameInfoHistory$MH();
+    public static MemoryAddress MapViewOfFileFromApp ( Addressable hFileMappingObject,  int DesiredAccess,  long FileOffset,  long NumberOfBytesToMap) {
+        var mh$ = MapViewOfFileFromApp$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, entriesCount, pointerCount, pointerInfo);
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFileMappingObject, DesiredAccess, FileOffset, NumberOfBytesToMap);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerTouchInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$276.GetPointerTouchInfo$MH,"GetPointerTouchInfo");
+    public static MethodHandle UnmapViewOfFileEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$139.UnmapViewOfFileEx$MH,"UnmapViewOfFileEx");
     }
-    public static int GetPointerTouchInfo ( int pointerId,  Addressable touchInfo) {
-        var mh$ = GetPointerTouchInfo$MH();
+    public static int UnmapViewOfFileEx ( Addressable BaseAddress,  int UnmapFlags) {
+        var mh$ = UnmapViewOfFileEx$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, touchInfo);
+            return (int)mh$.invokeExact(BaseAddress, UnmapFlags);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerTouchInfoHistory$MH() {
-        return RuntimeHelper.requireNonNull(constants$276.GetPointerTouchInfoHistory$MH,"GetPointerTouchInfoHistory");
+    public static MethodHandle AllocateUserPhysicalPages$MH() {
+        return RuntimeHelper.requireNonNull(constants$139.AllocateUserPhysicalPages$MH,"AllocateUserPhysicalPages");
     }
-    public static int GetPointerTouchInfoHistory ( int pointerId,  Addressable entriesCount,  Addressable touchInfo) {
-        var mh$ = GetPointerTouchInfoHistory$MH();
+    public static int AllocateUserPhysicalPages ( Addressable hProcess,  Addressable NumberOfPages,  Addressable PageArray) {
+        var mh$ = AllocateUserPhysicalPages$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, entriesCount, touchInfo);
+            return (int)mh$.invokeExact(hProcess, NumberOfPages, PageArray);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerFrameTouchInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$276.GetPointerFrameTouchInfo$MH,"GetPointerFrameTouchInfo");
+    public static MethodHandle FreeUserPhysicalPages$MH() {
+        return RuntimeHelper.requireNonNull(constants$139.FreeUserPhysicalPages$MH,"FreeUserPhysicalPages");
     }
-    public static int GetPointerFrameTouchInfo ( int pointerId,  Addressable pointerCount,  Addressable touchInfo) {
-        var mh$ = GetPointerFrameTouchInfo$MH();
+    public static int FreeUserPhysicalPages ( Addressable hProcess,  Addressable NumberOfPages,  Addressable PageArray) {
+        var mh$ = FreeUserPhysicalPages$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, pointerCount, touchInfo);
+            return (int)mh$.invokeExact(hProcess, NumberOfPages, PageArray);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerFrameTouchInfoHistory$MH() {
-        return RuntimeHelper.requireNonNull(constants$276.GetPointerFrameTouchInfoHistory$MH,"GetPointerFrameTouchInfoHistory");
+    public static MethodHandle MapUserPhysicalPages$MH() {
+        return RuntimeHelper.requireNonNull(constants$140.MapUserPhysicalPages$MH,"MapUserPhysicalPages");
     }
-    public static int GetPointerFrameTouchInfoHistory ( int pointerId,  Addressable entriesCount,  Addressable pointerCount,  Addressable touchInfo) {
-        var mh$ = GetPointerFrameTouchInfoHistory$MH();
+    public static int MapUserPhysicalPages ( Addressable VirtualAddress,  long NumberOfPages,  Addressable PageArray) {
+        var mh$ = MapUserPhysicalPages$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, entriesCount, pointerCount, touchInfo);
+            return (int)mh$.invokeExact(VirtualAddress, NumberOfPages, PageArray);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerPenInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$277.GetPointerPenInfo$MH,"GetPointerPenInfo");
+    public static MethodHandle AllocateUserPhysicalPagesNuma$MH() {
+        return RuntimeHelper.requireNonNull(constants$140.AllocateUserPhysicalPagesNuma$MH,"AllocateUserPhysicalPagesNuma");
     }
-    public static int GetPointerPenInfo ( int pointerId,  Addressable penInfo) {
-        var mh$ = GetPointerPenInfo$MH();
+    public static int AllocateUserPhysicalPagesNuma ( Addressable hProcess,  Addressable NumberOfPages,  Addressable PageArray,  int nndPreferred) {
+        var mh$ = AllocateUserPhysicalPagesNuma$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, penInfo);
+            return (int)mh$.invokeExact(hProcess, NumberOfPages, PageArray, nndPreferred);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerPenInfoHistory$MH() {
-        return RuntimeHelper.requireNonNull(constants$277.GetPointerPenInfoHistory$MH,"GetPointerPenInfoHistory");
+    public static MethodHandle VirtualAllocExNuma$MH() {
+        return RuntimeHelper.requireNonNull(constants$140.VirtualAllocExNuma$MH,"VirtualAllocExNuma");
     }
-    public static int GetPointerPenInfoHistory ( int pointerId,  Addressable entriesCount,  Addressable penInfo) {
-        var mh$ = GetPointerPenInfoHistory$MH();
+    public static MemoryAddress VirtualAllocExNuma ( Addressable hProcess,  Addressable lpAddress,  long dwSize,  int flAllocationType,  int flProtect,  int nndPreferred) {
+        var mh$ = VirtualAllocExNuma$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, entriesCount, penInfo);
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hProcess, lpAddress, dwSize, flAllocationType, flProtect, nndPreferred);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerFramePenInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$277.GetPointerFramePenInfo$MH,"GetPointerFramePenInfo");
+    public static MethodHandle GetMemoryErrorHandlingCapabilities$MH() {
+        return RuntimeHelper.requireNonNull(constants$140.GetMemoryErrorHandlingCapabilities$MH,"GetMemoryErrorHandlingCapabilities");
     }
-    public static int GetPointerFramePenInfo ( int pointerId,  Addressable pointerCount,  Addressable penInfo) {
-        var mh$ = GetPointerFramePenInfo$MH();
+    public static int GetMemoryErrorHandlingCapabilities ( Addressable Capabilities) {
+        var mh$ = GetMemoryErrorHandlingCapabilities$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, pointerCount, penInfo);
+            return (int)mh$.invokeExact(Capabilities);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle GetPointerFramePenInfoHistory$MH() {
-        return RuntimeHelper.requireNonNull(constants$277.GetPointerFramePenInfoHistory$MH,"GetPointerFramePenInfoHistory");
+    public static MethodHandle RegisterBadMemoryNotification$MH() {
+        return RuntimeHelper.requireNonNull(constants$141.RegisterBadMemoryNotification$MH,"RegisterBadMemoryNotification");
     }
-    public static int GetPointerFramePenInfoHistory ( int pointerId,  Addressable entriesCount,  Addressable pointerCount,  Addressable penInfo) {
-        var mh$ = GetPointerFramePenInfoHistory$MH();
+    public static MemoryAddress RegisterBadMemoryNotification ( Addressable Callback) {
+        var mh$ = RegisterBadMemoryNotification$MH();
         try {
-            return (int)mh$.invokeExact(pointerId, entriesCount, pointerCount, penInfo);
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Callback);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle SkipPointerFrameMessages$MH() {
-        return RuntimeHelper.requireNonNull(constants$277.SkipPointerFrameMessages$MH,"SkipPointerFrameMessages");
+    public static MethodHandle UnregisterBadMemoryNotification$MH() {
+        return RuntimeHelper.requireNonNull(constants$141.UnregisterBadMemoryNotification$MH,"UnregisterBadMemoryNotification");
     }
-    public static int SkipPointerFrameMessages ( int pointerId) {
-        var mh$ = SkipPointerFrameMessages$MH();
+    public static int UnregisterBadMemoryNotification ( Addressable RegistrationHandle) {
+        var mh$ = UnregisterBadMemoryNotification$MH();
         try {
-            return (int)mh$.invokeExact(pointerId);
+            return (int)mh$.invokeExact(RegistrationHandle);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static MethodHandle RegisterPointerInputTarget$MH() {
-        return RuntimeHelper.requireNonNull(constants$277.RegisterPointerInputTarget$MH,"RegisterPointerInputTarget");
-    }
-    public static int RegisterPointerInputTarget ( Addressable hwnd,  int pointerType) {
-        var mh$ = RegisterPointerInputTarget$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, pointerType);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterPointerInputTarget$MH() {
-        return RuntimeHelper.requireNonNull(constants$278.UnregisterPointerInputTarget$MH,"UnregisterPointerInputTarget");
-    }
-    public static int UnregisterPointerInputTarget ( Addressable hwnd,  int pointerType) {
-        var mh$ = UnregisterPointerInputTarget$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, pointerType);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterPointerInputTargetEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$278.RegisterPointerInputTargetEx$MH,"RegisterPointerInputTargetEx");
-    }
-    public static int RegisterPointerInputTargetEx ( Addressable hwnd,  int pointerType,  int fObserve) {
-        var mh$ = RegisterPointerInputTargetEx$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, pointerType, fObserve);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle UnregisterPointerInputTargetEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$278.UnregisterPointerInputTargetEx$MH,"UnregisterPointerInputTargetEx");
-    }
-    public static int UnregisterPointerInputTargetEx ( Addressable hwnd,  int pointerType) {
-        var mh$ = UnregisterPointerInputTargetEx$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, pointerType);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress HSYNTHETICPOINTERDEVICE = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle CreateSyntheticPointerDevice$MH() {
-        return RuntimeHelper.requireNonNull(constants$278.CreateSyntheticPointerDevice$MH,"CreateSyntheticPointerDevice");
-    }
-    public static MemoryAddress CreateSyntheticPointerDevice ( int pointerType,  int maxCount,  int mode) {
-        var mh$ = CreateSyntheticPointerDevice$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pointerType, maxCount, mode);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle InjectSyntheticPointerInput$MH() {
-        return RuntimeHelper.requireNonNull(constants$278.InjectSyntheticPointerInput$MH,"InjectSyntheticPointerInput");
-    }
-    public static int InjectSyntheticPointerInput ( Addressable device,  Addressable pointerInfo,  int count) {
-        var mh$ = InjectSyntheticPointerInput$MH();
-        try {
-            return (int)mh$.invokeExact(device, pointerInfo, count);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle DestroySyntheticPointerDevice$MH() {
-        return RuntimeHelper.requireNonNull(constants$278.DestroySyntheticPointerDevice$MH,"DestroySyntheticPointerDevice");
-    }
-    public static void DestroySyntheticPointerDevice ( Addressable device) {
-        var mh$ = DestroySyntheticPointerDevice$MH();
-        try {
-            mh$.invokeExact(device);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnableMouseInPointer$MH() {
-        return RuntimeHelper.requireNonNull(constants$279.EnableMouseInPointer$MH,"EnableMouseInPointer");
-    }
-    public static int EnableMouseInPointer ( int fEnable) {
-        var mh$ = EnableMouseInPointer$MH();
-        try {
-            return (int)mh$.invokeExact(fEnable);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle IsMouseInPointerEnabled$MH() {
-        return RuntimeHelper.requireNonNull(constants$279.IsMouseInPointerEnabled$MH,"IsMouseInPointerEnabled");
-    }
-    public static int IsMouseInPointerEnabled () {
-        var mh$ = IsMouseInPointerEnabled$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnableMouseInPointerForThread$MH() {
-        return RuntimeHelper.requireNonNull(constants$279.EnableMouseInPointerForThread$MH,"EnableMouseInPointerForThread");
-    }
-    public static int EnableMouseInPointerForThread () {
-        var mh$ = EnableMouseInPointerForThread$MH();
-        try {
-            return (int)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegisterTouchHitTestingWindow$MH() {
-        return RuntimeHelper.requireNonNull(constants$279.RegisterTouchHitTestingWindow$MH,"RegisterTouchHitTestingWindow");
-    }
-    public static int RegisterTouchHitTestingWindow ( Addressable hwnd,  int value) {
-        var mh$ = RegisterTouchHitTestingWindow$MH();
-        try {
-            return (int)mh$.invokeExact(hwnd, value);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PTOUCH_HIT_TESTING_PROXIMITY_EVALUATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTOUCH_HIT_TESTING_INPUT = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle EvaluateProximityToRect$MH() {
-        return RuntimeHelper.requireNonNull(constants$279.EvaluateProximityToRect$MH,"EvaluateProximityToRect");
-    }
-    public static int EvaluateProximityToRect ( Addressable controlBoundingBox,  Addressable pHitTestingInput,  Addressable pProximityEval) {
-        var mh$ = EvaluateProximityToRect$MH();
-        try {
-            return (int)mh$.invokeExact(controlBoundingBox, pHitTestingInput, pProximityEval);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EvaluateProximityToPolygon$MH() {
-        return RuntimeHelper.requireNonNull(constants$279.EvaluateProximityToPolygon$MH,"EvaluateProximityToPolygon");
-    }
-    public static int EvaluateProximityToPolygon ( int numVertices,  Addressable controlPolygon,  Addressable pHitTestingInput,  Addressable pProximityEval) {
-        var mh$ = EvaluateProximityToPolygon$MH();
-        try {
-            return (int)mh$.invokeExact(numVertices, controlPolygon, pHitTestingInput, pProximityEval);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle PackTouchHitTestingProximityEvaluation$MH() {
-        return RuntimeHelper.requireNonNull(constants$280.PackTouchHitTestingProximityEvaluation$MH,"PackTouchHitTestingProximityEvaluation");
-    }
-    public static long PackTouchHitTestingProximityEvaluation ( Addressable pHitTestingInput,  Addressable pProximityEval) {
-        var mh$ = PackTouchHitTestingProximityEvaluation$MH();
-        try {
-            return (long)mh$.invokeExact(pHitTestingInput, pProximityEval);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static int FEEDBACK_TOUCH_CONTACTVISUALIZATION() {
+    public static int VmOfferPriorityVeryLow() {
         return (int)1L;
     }
-    public static int FEEDBACK_PEN_BARRELVISUALIZATION() {
+    public static int VmOfferPriorityLow() {
         return (int)2L;
     }
-    public static int FEEDBACK_PEN_TAP() {
+    public static int VmOfferPriorityBelowNormal() {
         return (int)3L;
     }
-    public static int FEEDBACK_PEN_DOUBLETAP() {
+    public static int VmOfferPriorityNormal() {
         return (int)4L;
     }
-    public static int FEEDBACK_PEN_PRESSANDHOLD() {
+    public static MethodHandle OfferVirtualMemory$MH() {
+        return RuntimeHelper.requireNonNull(constants$141.OfferVirtualMemory$MH,"OfferVirtualMemory");
+    }
+    public static int OfferVirtualMemory ( Addressable VirtualAddress,  long Size,  int Priority) {
+        var mh$ = OfferVirtualMemory$MH();
+        try {
+            return (int)mh$.invokeExact(VirtualAddress, Size, Priority);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReclaimVirtualMemory$MH() {
+        return RuntimeHelper.requireNonNull(constants$141.ReclaimVirtualMemory$MH,"ReclaimVirtualMemory");
+    }
+    public static int ReclaimVirtualMemory ( Addressable VirtualAddress,  long Size) {
+        var mh$ = ReclaimVirtualMemory$MH();
+        try {
+            return (int)mh$.invokeExact(VirtualAddress, Size);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DiscardVirtualMemory$MH() {
+        return RuntimeHelper.requireNonNull(constants$142.DiscardVirtualMemory$MH,"DiscardVirtualMemory");
+    }
+    public static int DiscardVirtualMemory ( Addressable VirtualAddress,  long Size) {
+        var mh$ = DiscardVirtualMemory$MH();
+        try {
+            return (int)mh$.invokeExact(VirtualAddress, Size);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetProcessValidCallTargets$MH() {
+        return RuntimeHelper.requireNonNull(constants$142.SetProcessValidCallTargets$MH,"SetProcessValidCallTargets");
+    }
+    public static int SetProcessValidCallTargets ( Addressable hProcess,  Addressable VirtualAddress,  long RegionSize,  int NumberOfOffsets,  Addressable OffsetInformation) {
+        var mh$ = SetProcessValidCallTargets$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, VirtualAddress, RegionSize, NumberOfOffsets, OffsetInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetProcessValidCallTargetsForMappedView$MH() {
+        return RuntimeHelper.requireNonNull(constants$142.SetProcessValidCallTargetsForMappedView$MH,"SetProcessValidCallTargetsForMappedView");
+    }
+    public static int SetProcessValidCallTargetsForMappedView ( Addressable Process,  Addressable VirtualAddress,  long RegionSize,  int NumberOfOffsets,  Addressable OffsetInformation,  Addressable Section,  long ExpectedFileOffset) {
+        var mh$ = SetProcessValidCallTargetsForMappedView$MH();
+        try {
+            return (int)mh$.invokeExact(Process, VirtualAddress, RegionSize, NumberOfOffsets, OffsetInformation, Section, ExpectedFileOffset);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualAllocFromApp$MH() {
+        return RuntimeHelper.requireNonNull(constants$142.VirtualAllocFromApp$MH,"VirtualAllocFromApp");
+    }
+    public static MemoryAddress VirtualAllocFromApp ( Addressable BaseAddress,  long Size,  int AllocationType,  int Protection) {
+        var mh$ = VirtualAllocFromApp$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(BaseAddress, Size, AllocationType, Protection);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualProtectFromApp$MH() {
+        return RuntimeHelper.requireNonNull(constants$142.VirtualProtectFromApp$MH,"VirtualProtectFromApp");
+    }
+    public static int VirtualProtectFromApp ( Addressable Address,  long Size,  int NewProtection,  Addressable OldProtection) {
+        var mh$ = VirtualProtectFromApp$MH();
+        try {
+            return (int)mh$.invokeExact(Address, Size, NewProtection, OldProtection);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenFileMappingFromApp$MH() {
+        return RuntimeHelper.requireNonNull(constants$142.OpenFileMappingFromApp$MH,"OpenFileMappingFromApp");
+    }
+    public static MemoryAddress OpenFileMappingFromApp ( int DesiredAccess,  int InheritHandle,  Addressable Name) {
+        var mh$ = OpenFileMappingFromApp$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(DesiredAccess, InheritHandle, Name);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int MemoryRegionInfo() {
+        return (int)0L;
+    }
+    public static MethodHandle QueryVirtualMemoryInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$143.QueryVirtualMemoryInformation$MH,"QueryVirtualMemoryInformation");
+    }
+    public static int QueryVirtualMemoryInformation ( Addressable Process,  Addressable VirtualAddress,  int MemoryInformationClass,  Addressable MemoryInformation,  long MemoryInformationSize,  Addressable ReturnSize) {
+        var mh$ = QueryVirtualMemoryInformation$MH();
+        try {
+            return (int)mh$.invokeExact(Process, VirtualAddress, MemoryInformationClass, MemoryInformation, MemoryInformationSize, ReturnSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapViewOfFileNuma2$MH() {
+        return RuntimeHelper.requireNonNull(constants$143.MapViewOfFileNuma2$MH,"MapViewOfFileNuma2");
+    }
+    public static MemoryAddress MapViewOfFileNuma2 ( Addressable FileMappingHandle,  Addressable ProcessHandle,  long Offset,  Addressable BaseAddress,  long ViewSize,  int AllocationType,  int PageProtection,  int PreferredNode) {
+        var mh$ = MapViewOfFileNuma2$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(FileMappingHandle, ProcessHandle, Offset, BaseAddress, ViewSize, AllocationType, PageProtection, PreferredNode);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapViewOfFile2$MH() {
+        return RuntimeHelper.requireNonNull(constants$143.MapViewOfFile2$MH,"MapViewOfFile2");
+    }
+    public static MemoryAddress MapViewOfFile2 ( Addressable FileMappingHandle,  Addressable ProcessHandle,  long Offset,  Addressable BaseAddress,  long ViewSize,  int AllocationType,  int PageProtection) {
+        var mh$ = MapViewOfFile2$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(FileMappingHandle, ProcessHandle, Offset, BaseAddress, ViewSize, AllocationType, PageProtection);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UnmapViewOfFile2$MH() {
+        return RuntimeHelper.requireNonNull(constants$143.UnmapViewOfFile2$MH,"UnmapViewOfFile2");
+    }
+    public static int UnmapViewOfFile2 ( Addressable Process,  Addressable BaseAddress,  int UnmapFlags) {
+        var mh$ = UnmapViewOfFile2$MH();
+        try {
+            return (int)mh$.invokeExact(Process, BaseAddress, UnmapFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualUnlockEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$143.VirtualUnlockEx$MH,"VirtualUnlockEx");
+    }
+    public static int VirtualUnlockEx ( Addressable Process,  Addressable Address,  long Size) {
+        var mh$ = VirtualUnlockEx$MH();
+        try {
+            return (int)mh$.invokeExact(Process, Address, Size);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualAlloc2$MH() {
+        return RuntimeHelper.requireNonNull(constants$143.VirtualAlloc2$MH,"VirtualAlloc2");
+    }
+    public static MemoryAddress VirtualAlloc2 ( Addressable Process,  Addressable BaseAddress,  long Size,  int AllocationType,  int PageProtection,  Addressable ExtendedParameters,  int ParameterCount) {
+        var mh$ = VirtualAlloc2$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Process, BaseAddress, Size, AllocationType, PageProtection, ExtendedParameters, ParameterCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapViewOfFile3$MH() {
+        return RuntimeHelper.requireNonNull(constants$144.MapViewOfFile3$MH,"MapViewOfFile3");
+    }
+    public static MemoryAddress MapViewOfFile3 ( Addressable FileMapping,  Addressable Process,  Addressable BaseAddress,  long Offset,  long ViewSize,  int AllocationType,  int PageProtection,  Addressable ExtendedParameters,  int ParameterCount) {
+        var mh$ = MapViewOfFile3$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(FileMapping, Process, BaseAddress, Offset, ViewSize, AllocationType, PageProtection, ExtendedParameters, ParameterCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VirtualAlloc2FromApp$MH() {
+        return RuntimeHelper.requireNonNull(constants$144.VirtualAlloc2FromApp$MH,"VirtualAlloc2FromApp");
+    }
+    public static MemoryAddress VirtualAlloc2FromApp ( Addressable Process,  Addressable BaseAddress,  long Size,  int AllocationType,  int PageProtection,  Addressable ExtendedParameters,  int ParameterCount) {
+        var mh$ = VirtualAlloc2FromApp$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Process, BaseAddress, Size, AllocationType, PageProtection, ExtendedParameters, ParameterCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapViewOfFile3FromApp$MH() {
+        return RuntimeHelper.requireNonNull(constants$144.MapViewOfFile3FromApp$MH,"MapViewOfFile3FromApp");
+    }
+    public static MemoryAddress MapViewOfFile3FromApp ( Addressable FileMapping,  Addressable Process,  Addressable BaseAddress,  long Offset,  long ViewSize,  int AllocationType,  int PageProtection,  Addressable ExtendedParameters,  int ParameterCount) {
+        var mh$ = MapViewOfFile3FromApp$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(FileMapping, Process, BaseAddress, Offset, ViewSize, AllocationType, PageProtection, ExtendedParameters, ParameterCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateFileMapping2$MH() {
+        return RuntimeHelper.requireNonNull(constants$144.CreateFileMapping2$MH,"CreateFileMapping2");
+    }
+    public static MemoryAddress CreateFileMapping2 ( Addressable File,  Addressable SecurityAttributes,  int DesiredAccess,  int PageProtection,  int AllocationAttributes,  long MaximumSize,  Addressable Name,  Addressable ExtendedParameters,  int ParameterCount) {
+        var mh$ = CreateFileMapping2$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(File, SecurityAttributes, DesiredAccess, PageProtection, AllocationAttributes, MaximumSize, Name, ExtendedParameters, ParameterCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsEnclaveTypeSupported$MH() {
+        return RuntimeHelper.requireNonNull(constants$144.IsEnclaveTypeSupported$MH,"IsEnclaveTypeSupported");
+    }
+    public static int IsEnclaveTypeSupported ( int flEnclaveType) {
+        var mh$ = IsEnclaveTypeSupported$MH();
+        try {
+            return (int)mh$.invokeExact(flEnclaveType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateEnclave$MH() {
+        return RuntimeHelper.requireNonNull(constants$144.CreateEnclave$MH,"CreateEnclave");
+    }
+    public static MemoryAddress CreateEnclave ( Addressable hProcess,  Addressable lpAddress,  long dwSize,  long dwInitialCommitment,  int flEnclaveType,  Addressable lpEnclaveInformation,  int dwInfoLength,  Addressable lpEnclaveError) {
+        var mh$ = CreateEnclave$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hProcess, lpAddress, dwSize, dwInitialCommitment, flEnclaveType, lpEnclaveInformation, dwInfoLength, lpEnclaveError);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadEnclaveData$MH() {
+        return RuntimeHelper.requireNonNull(constants$145.LoadEnclaveData$MH,"LoadEnclaveData");
+    }
+    public static int LoadEnclaveData ( Addressable hProcess,  Addressable lpAddress,  Addressable lpBuffer,  long nSize,  int flProtect,  Addressable lpPageInformation,  int dwInfoLength,  Addressable lpNumberOfBytesWritten,  Addressable lpEnclaveError) {
+        var mh$ = LoadEnclaveData$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpAddress, lpBuffer, nSize, flProtect, lpPageInformation, dwInfoLength, lpNumberOfBytesWritten, lpEnclaveError);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InitializeEnclave$MH() {
+        return RuntimeHelper.requireNonNull(constants$145.InitializeEnclave$MH,"InitializeEnclave");
+    }
+    public static int InitializeEnclave ( Addressable hProcess,  Addressable lpAddress,  Addressable lpEnclaveInformation,  int dwInfoLength,  Addressable lpEnclaveError) {
+        var mh$ = InitializeEnclave$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpAddress, lpEnclaveInformation, dwInfoLength, lpEnclaveError);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadEnclaveImageA$MH() {
+        return RuntimeHelper.requireNonNull(constants$145.LoadEnclaveImageA$MH,"LoadEnclaveImageA");
+    }
+    public static int LoadEnclaveImageA ( Addressable lpEnclaveAddress,  Addressable lpImageName) {
+        var mh$ = LoadEnclaveImageA$MH();
+        try {
+            return (int)mh$.invokeExact(lpEnclaveAddress, lpImageName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadEnclaveImageW$MH() {
+        return RuntimeHelper.requireNonNull(constants$145.LoadEnclaveImageW$MH,"LoadEnclaveImageW");
+    }
+    public static int LoadEnclaveImageW ( Addressable lpEnclaveAddress,  Addressable lpImageName) {
+        var mh$ = LoadEnclaveImageW$MH();
+        try {
+            return (int)mh$.invokeExact(lpEnclaveAddress, lpImageName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CallEnclave$MH() {
+        return RuntimeHelper.requireNonNull(constants$145.CallEnclave$MH,"CallEnclave");
+    }
+    public static int CallEnclave ( Addressable lpRoutine,  Addressable lpParameter,  int fWaitForThread,  Addressable lpReturnValue) {
+        var mh$ = CallEnclave$MH();
+        try {
+            return (int)mh$.invokeExact(lpRoutine, lpParameter, fWaitForThread, lpReturnValue);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle TerminateEnclave$MH() {
+        return RuntimeHelper.requireNonNull(constants$145.TerminateEnclave$MH,"TerminateEnclave");
+    }
+    public static int TerminateEnclave ( Addressable lpAddress,  int fWait) {
+        var mh$ = TerminateEnclave$MH();
+        try {
+            return (int)mh$.invokeExact(lpAddress, fWait);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteEnclave$MH() {
+        return RuntimeHelper.requireNonNull(constants$146.DeleteEnclave$MH,"DeleteEnclave");
+    }
+    public static int DeleteEnclave ( Addressable lpAddress) {
+        var mh$ = DeleteEnclave$MH();
+        try {
+            return (int)mh$.invokeExact(lpAddress);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsProcessInJob$MH() {
+        return RuntimeHelper.requireNonNull(constants$146.IsProcessInJob$MH,"IsProcessInJob");
+    }
+    public static int IsProcessInJob ( Addressable ProcessHandle,  Addressable JobHandle,  Addressable Result) {
+        var mh$ = IsProcessInJob$MH();
+        try {
+            return (int)mh$.invokeExact(ProcessHandle, JobHandle, Result);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PENUMUILANG = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle DisableThreadLibraryCalls$MH() {
+        return RuntimeHelper.requireNonNull(constants$148.DisableThreadLibraryCalls$MH,"DisableThreadLibraryCalls");
+    }
+    public static int DisableThreadLibraryCalls ( Addressable hLibModule) {
+        var mh$ = DisableThreadLibraryCalls$MH();
+        try {
+            return (int)mh$.invokeExact(hLibModule);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindResourceExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$148.FindResourceExW$MH,"FindResourceExW");
+    }
+    public static MemoryAddress FindResourceExW ( Addressable hModule,  Addressable lpType,  Addressable lpName,  short wLanguage) {
+        var mh$ = FindResourceExW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hModule, lpType, lpName, wLanguage);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindStringOrdinal$MH() {
+        return RuntimeHelper.requireNonNull(constants$148.FindStringOrdinal$MH,"FindStringOrdinal");
+    }
+    public static int FindStringOrdinal ( int dwFindStringOrdinalFlags,  Addressable lpStringSource,  int cchSource,  Addressable lpStringValue,  int cchValue,  int bIgnoreCase) {
+        var mh$ = FindStringOrdinal$MH();
+        try {
+            return (int)mh$.invokeExact(dwFindStringOrdinalFlags, lpStringSource, cchSource, lpStringValue, cchValue, bIgnoreCase);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FreeLibrary$MH() {
+        return RuntimeHelper.requireNonNull(constants$148.FreeLibrary$MH,"FreeLibrary");
+    }
+    public static int FreeLibrary ( Addressable hLibModule) {
+        var mh$ = FreeLibrary$MH();
+        try {
+            return (int)mh$.invokeExact(hLibModule);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FreeLibraryAndExitThread$MH() {
+        return RuntimeHelper.requireNonNull(constants$149.FreeLibraryAndExitThread$MH,"FreeLibraryAndExitThread");
+    }
+    public static void FreeLibraryAndExitThread ( Addressable hLibModule,  int dwExitCode) {
+        var mh$ = FreeLibraryAndExitThread$MH();
+        try {
+            mh$.invokeExact(hLibModule, dwExitCode);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FreeResource$MH() {
+        return RuntimeHelper.requireNonNull(constants$149.FreeResource$MH,"FreeResource");
+    }
+    public static int FreeResource ( Addressable hResData) {
+        var mh$ = FreeResource$MH();
+        try {
+            return (int)mh$.invokeExact(hResData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetModuleFileNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$149.GetModuleFileNameA$MH,"GetModuleFileNameA");
+    }
+    public static int GetModuleFileNameA ( Addressable hModule,  Addressable lpFilename,  int nSize) {
+        var mh$ = GetModuleFileNameA$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpFilename, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetModuleFileNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$149.GetModuleFileNameW$MH,"GetModuleFileNameW");
+    }
+    public static int GetModuleFileNameW ( Addressable hModule,  Addressable lpFilename,  int nSize) {
+        var mh$ = GetModuleFileNameW$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpFilename, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetModuleHandleA$MH() {
+        return RuntimeHelper.requireNonNull(constants$149.GetModuleHandleA$MH,"GetModuleHandleA");
+    }
+    public static MemoryAddress GetModuleHandleA ( Addressable lpModuleName) {
+        var mh$ = GetModuleHandleA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpModuleName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetModuleHandleW$MH() {
+        return RuntimeHelper.requireNonNull(constants$149.GetModuleHandleW$MH,"GetModuleHandleW");
+    }
+    public static MemoryAddress GetModuleHandleW ( Addressable lpModuleName) {
+        var mh$ = GetModuleHandleW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpModuleName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetModuleHandleExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$150.GetModuleHandleExA$MH,"GetModuleHandleExA");
+    }
+    public static int GetModuleHandleExA ( int dwFlags,  Addressable lpModuleName,  Addressable phModule) {
+        var mh$ = GetModuleHandleExA$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpModuleName, phModule);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetModuleHandleExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$150.GetModuleHandleExW$MH,"GetModuleHandleExW");
+    }
+    public static int GetModuleHandleExW ( int dwFlags,  Addressable lpModuleName,  Addressable phModule) {
+        var mh$ = GetModuleHandleExW$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpModuleName, phModule);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProcAddress$MH() {
+        return RuntimeHelper.requireNonNull(constants$151.GetProcAddress$MH,"GetProcAddress");
+    }
+    public static MemoryAddress GetProcAddress ( Addressable hModule,  Addressable lpProcName) {
+        var mh$ = GetProcAddress$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hModule, lpProcName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PREDIRECTION_FUNCTION_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCREDIRECTION_FUNCTION_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PREDIRECTION_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCREDIRECTION_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle LoadLibraryExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$151.LoadLibraryExA$MH,"LoadLibraryExA");
+    }
+    public static MemoryAddress LoadLibraryExA ( Addressable lpLibFileName,  Addressable hFile,  int dwFlags) {
+        var mh$ = LoadLibraryExA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpLibFileName, hFile, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadLibraryExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$151.LoadLibraryExW$MH,"LoadLibraryExW");
+    }
+    public static MemoryAddress LoadLibraryExW ( Addressable lpLibFileName,  Addressable hFile,  int dwFlags) {
+        var mh$ = LoadLibraryExW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpLibFileName, hFile, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadResource$MH() {
+        return RuntimeHelper.requireNonNull(constants$151.LoadResource$MH,"LoadResource");
+    }
+    public static MemoryAddress LoadResource ( Addressable hModule,  Addressable hResInfo) {
+        var mh$ = LoadResource$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hModule, hResInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadStringA$MH() {
+        return RuntimeHelper.requireNonNull(constants$151.LoadStringA$MH,"LoadStringA");
+    }
+    public static int LoadStringA ( Addressable hInstance,  int uID,  Addressable lpBuffer,  int cchBufferMax) {
+        var mh$ = LoadStringA$MH();
+        try {
+            return (int)mh$.invokeExact(hInstance, uID, lpBuffer, cchBufferMax);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadStringW$MH() {
+        return RuntimeHelper.requireNonNull(constants$151.LoadStringW$MH,"LoadStringW");
+    }
+    public static int LoadStringW ( Addressable hInstance,  int uID,  Addressable lpBuffer,  int cchBufferMax) {
+        var mh$ = LoadStringW$MH();
+        try {
+            return (int)mh$.invokeExact(hInstance, uID, lpBuffer, cchBufferMax);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LockResource$MH() {
+        return RuntimeHelper.requireNonNull(constants$152.LockResource$MH,"LockResource");
+    }
+    public static MemoryAddress LockResource ( Addressable hResData) {
+        var mh$ = LockResource$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hResData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SizeofResource$MH() {
+        return RuntimeHelper.requireNonNull(constants$152.SizeofResource$MH,"SizeofResource");
+    }
+    public static int SizeofResource ( Addressable hModule,  Addressable hResInfo) {
+        var mh$ = SizeofResource$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, hResInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress DLL_DIRECTORY_COOKIE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDLL_DIRECTORY_COOKIE = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle AddDllDirectory$MH() {
+        return RuntimeHelper.requireNonNull(constants$152.AddDllDirectory$MH,"AddDllDirectory");
+    }
+    public static MemoryAddress AddDllDirectory ( Addressable NewDirectory) {
+        var mh$ = AddDllDirectory$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(NewDirectory);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RemoveDllDirectory$MH() {
+        return RuntimeHelper.requireNonNull(constants$152.RemoveDllDirectory$MH,"RemoveDllDirectory");
+    }
+    public static int RemoveDllDirectory ( Addressable Cookie) {
+        var mh$ = RemoveDllDirectory$MH();
+        try {
+            return (int)mh$.invokeExact(Cookie);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetDefaultDllDirectories$MH() {
+        return RuntimeHelper.requireNonNull(constants$152.SetDefaultDllDirectories$MH,"SetDefaultDllDirectories");
+    }
+    public static int SetDefaultDllDirectories ( int DirectoryFlags) {
+        var mh$ = SetDefaultDllDirectories$MH();
+        try {
+            return (int)mh$.invokeExact(DirectoryFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceLanguagesExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$152.EnumResourceLanguagesExA$MH,"EnumResourceLanguagesExA");
+    }
+    public static int EnumResourceLanguagesExA ( Addressable hModule,  Addressable lpType,  Addressable lpName,  Addressable lpEnumFunc,  long lParam,  int dwFlags,  short LangId) {
+        var mh$ = EnumResourceLanguagesExA$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpType, lpName, lpEnumFunc, lParam, dwFlags, LangId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceLanguagesExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$153.EnumResourceLanguagesExW$MH,"EnumResourceLanguagesExW");
+    }
+    public static int EnumResourceLanguagesExW ( Addressable hModule,  Addressable lpType,  Addressable lpName,  Addressable lpEnumFunc,  long lParam,  int dwFlags,  short LangId) {
+        var mh$ = EnumResourceLanguagesExW$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpType, lpName, lpEnumFunc, lParam, dwFlags, LangId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceNamesExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$153.EnumResourceNamesExA$MH,"EnumResourceNamesExA");
+    }
+    public static int EnumResourceNamesExA ( Addressable hModule,  Addressable lpType,  Addressable lpEnumFunc,  long lParam,  int dwFlags,  short LangId) {
+        var mh$ = EnumResourceNamesExA$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpType, lpEnumFunc, lParam, dwFlags, LangId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceNamesExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$153.EnumResourceNamesExW$MH,"EnumResourceNamesExW");
+    }
+    public static int EnumResourceNamesExW ( Addressable hModule,  Addressable lpType,  Addressable lpEnumFunc,  long lParam,  int dwFlags,  short LangId) {
+        var mh$ = EnumResourceNamesExW$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpType, lpEnumFunc, lParam, dwFlags, LangId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceTypesExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$153.EnumResourceTypesExA$MH,"EnumResourceTypesExA");
+    }
+    public static int EnumResourceTypesExA ( Addressable hModule,  Addressable lpEnumFunc,  long lParam,  int dwFlags,  short LangId) {
+        var mh$ = EnumResourceTypesExA$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpEnumFunc, lParam, dwFlags, LangId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceTypesExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$153.EnumResourceTypesExW$MH,"EnumResourceTypesExW");
+    }
+    public static int EnumResourceTypesExW ( Addressable hModule,  Addressable lpEnumFunc,  long lParam,  int dwFlags,  short LangId) {
+        var mh$ = EnumResourceTypesExW$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpEnumFunc, lParam, dwFlags, LangId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindResourceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$153.FindResourceW$MH,"FindResourceW");
+    }
+    public static MemoryAddress FindResourceW ( Addressable hModule,  Addressable lpName,  Addressable lpType) {
+        var mh$ = FindResourceW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hModule, lpName, lpType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadLibraryA$MH() {
+        return RuntimeHelper.requireNonNull(constants$154.LoadLibraryA$MH,"LoadLibraryA");
+    }
+    public static MemoryAddress LoadLibraryA ( Addressable lpLibFileName) {
+        var mh$ = LoadLibraryA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpLibFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadLibraryW$MH() {
+        return RuntimeHelper.requireNonNull(constants$154.LoadLibraryW$MH,"LoadLibraryW");
+    }
+    public static MemoryAddress LoadLibraryW ( Addressable lpLibFileName) {
+        var mh$ = LoadLibraryW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpLibFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceNamesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$154.EnumResourceNamesW$MH,"EnumResourceNamesW");
+    }
+    public static int EnumResourceNamesW ( Addressable hModule,  Addressable lpType,  Addressable lpEnumFunc,  long lParam) {
+        var mh$ = EnumResourceNamesW$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpType, lpEnumFunc, lParam);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheck$MH() {
+        return RuntimeHelper.requireNonNull(constants$154.AccessCheck$MH,"AccessCheck");
+    }
+    public static int AccessCheck ( Addressable pSecurityDescriptor,  Addressable ClientToken,  int DesiredAccess,  Addressable GenericMapping,  Addressable PrivilegeSet,  Addressable PrivilegeSetLength,  Addressable GrantedAccess,  Addressable AccessStatus) {
+        var mh$ = AccessCheck$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, ClientToken, DesiredAccess, GenericMapping, PrivilegeSet, PrivilegeSetLength, GrantedAccess, AccessStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckAndAuditAlarmW$MH() {
+        return RuntimeHelper.requireNonNull(constants$154.AccessCheckAndAuditAlarmW$MH,"AccessCheckAndAuditAlarmW");
+    }
+    public static int AccessCheckAndAuditAlarmW ( Addressable SubsystemName,  Addressable HandleId,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable SecurityDescriptor,  int DesiredAccess,  Addressable GenericMapping,  int ObjectCreation,  Addressable GrantedAccess,  Addressable AccessStatus,  Addressable pfGenerateOnClose) {
+        var mh$ = AccessCheckAndAuditAlarmW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ObjectTypeName, ObjectName, SecurityDescriptor, DesiredAccess, GenericMapping, ObjectCreation, GrantedAccess, AccessStatus, pfGenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckByType$MH() {
+        return RuntimeHelper.requireNonNull(constants$154.AccessCheckByType$MH,"AccessCheckByType");
+    }
+    public static int AccessCheckByType ( Addressable pSecurityDescriptor,  Addressable PrincipalSelfSid,  Addressable ClientToken,  int DesiredAccess,  Addressable ObjectTypeList,  int ObjectTypeListLength,  Addressable GenericMapping,  Addressable PrivilegeSet,  Addressable PrivilegeSetLength,  Addressable GrantedAccess,  Addressable AccessStatus) {
+        var mh$ = AccessCheckByType$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, PrincipalSelfSid, ClientToken, DesiredAccess, ObjectTypeList, ObjectTypeListLength, GenericMapping, PrivilegeSet, PrivilegeSetLength, GrantedAccess, AccessStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckByTypeResultList$MH() {
+        return RuntimeHelper.requireNonNull(constants$155.AccessCheckByTypeResultList$MH,"AccessCheckByTypeResultList");
+    }
+    public static int AccessCheckByTypeResultList ( Addressable pSecurityDescriptor,  Addressable PrincipalSelfSid,  Addressable ClientToken,  int DesiredAccess,  Addressable ObjectTypeList,  int ObjectTypeListLength,  Addressable GenericMapping,  Addressable PrivilegeSet,  Addressable PrivilegeSetLength,  Addressable GrantedAccessList,  Addressable AccessStatusList) {
+        var mh$ = AccessCheckByTypeResultList$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, PrincipalSelfSid, ClientToken, DesiredAccess, ObjectTypeList, ObjectTypeListLength, GenericMapping, PrivilegeSet, PrivilegeSetLength, GrantedAccessList, AccessStatusList);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckByTypeAndAuditAlarmW$MH() {
+        return RuntimeHelper.requireNonNull(constants$155.AccessCheckByTypeAndAuditAlarmW$MH,"AccessCheckByTypeAndAuditAlarmW");
+    }
+    public static int AccessCheckByTypeAndAuditAlarmW ( Addressable SubsystemName,  Addressable HandleId,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable SecurityDescriptor,  Addressable PrincipalSelfSid,  int DesiredAccess,  int AuditType,  int Flags,  Addressable ObjectTypeList,  int ObjectTypeListLength,  Addressable GenericMapping,  int ObjectCreation,  Addressable GrantedAccess,  Addressable AccessStatus,  Addressable pfGenerateOnClose) {
+        var mh$ = AccessCheckByTypeAndAuditAlarmW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ObjectTypeName, ObjectName, SecurityDescriptor, PrincipalSelfSid, DesiredAccess, AuditType, Flags, ObjectTypeList, ObjectTypeListLength, GenericMapping, ObjectCreation, GrantedAccess, AccessStatus, pfGenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckByTypeResultListAndAuditAlarmW$MH() {
+        return RuntimeHelper.requireNonNull(constants$155.AccessCheckByTypeResultListAndAuditAlarmW$MH,"AccessCheckByTypeResultListAndAuditAlarmW");
+    }
+    public static int AccessCheckByTypeResultListAndAuditAlarmW ( Addressable SubsystemName,  Addressable HandleId,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable SecurityDescriptor,  Addressable PrincipalSelfSid,  int DesiredAccess,  int AuditType,  int Flags,  Addressable ObjectTypeList,  int ObjectTypeListLength,  Addressable GenericMapping,  int ObjectCreation,  Addressable GrantedAccessList,  Addressable AccessStatusList,  Addressable pfGenerateOnClose) {
+        var mh$ = AccessCheckByTypeResultListAndAuditAlarmW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ObjectTypeName, ObjectName, SecurityDescriptor, PrincipalSelfSid, DesiredAccess, AuditType, Flags, ObjectTypeList, ObjectTypeListLength, GenericMapping, ObjectCreation, GrantedAccessList, AccessStatusList, pfGenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckByTypeResultListAndAuditAlarmByHandleW$MH() {
+        return RuntimeHelper.requireNonNull(constants$155.AccessCheckByTypeResultListAndAuditAlarmByHandleW$MH,"AccessCheckByTypeResultListAndAuditAlarmByHandleW");
+    }
+    public static int AccessCheckByTypeResultListAndAuditAlarmByHandleW ( Addressable SubsystemName,  Addressable HandleId,  Addressable ClientToken,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable SecurityDescriptor,  Addressable PrincipalSelfSid,  int DesiredAccess,  int AuditType,  int Flags,  Addressable ObjectTypeList,  int ObjectTypeListLength,  Addressable GenericMapping,  int ObjectCreation,  Addressable GrantedAccessList,  Addressable AccessStatusList,  Addressable pfGenerateOnClose) {
+        var mh$ = AccessCheckByTypeResultListAndAuditAlarmByHandleW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ClientToken, ObjectTypeName, ObjectName, SecurityDescriptor, PrincipalSelfSid, DesiredAccess, AuditType, Flags, ObjectTypeList, ObjectTypeListLength, GenericMapping, ObjectCreation, GrantedAccessList, AccessStatusList, pfGenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAccessAllowedAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$155.AddAccessAllowedAce$MH,"AddAccessAllowedAce");
+    }
+    public static int AddAccessAllowedAce ( Addressable pAcl,  int dwAceRevision,  int AccessMask,  Addressable pSid) {
+        var mh$ = AddAccessAllowedAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AccessMask, pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAccessAllowedAceEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$155.AddAccessAllowedAceEx$MH,"AddAccessAllowedAceEx");
+    }
+    public static int AddAccessAllowedAceEx ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int AccessMask,  Addressable pSid) {
+        var mh$ = AddAccessAllowedAceEx$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, AccessMask, pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAccessAllowedObjectAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$156.AddAccessAllowedObjectAce$MH,"AddAccessAllowedObjectAce");
+    }
+    public static int AddAccessAllowedObjectAce ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int AccessMask,  Addressable ObjectTypeGuid,  Addressable InheritedObjectTypeGuid,  Addressable pSid) {
+        var mh$ = AddAccessAllowedObjectAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, AccessMask, ObjectTypeGuid, InheritedObjectTypeGuid, pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAccessDeniedAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$156.AddAccessDeniedAce$MH,"AddAccessDeniedAce");
+    }
+    public static int AddAccessDeniedAce ( Addressable pAcl,  int dwAceRevision,  int AccessMask,  Addressable pSid) {
+        var mh$ = AddAccessDeniedAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AccessMask, pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAccessDeniedAceEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$156.AddAccessDeniedAceEx$MH,"AddAccessDeniedAceEx");
+    }
+    public static int AddAccessDeniedAceEx ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int AccessMask,  Addressable pSid) {
+        var mh$ = AddAccessDeniedAceEx$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, AccessMask, pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAccessDeniedObjectAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$156.AddAccessDeniedObjectAce$MH,"AddAccessDeniedObjectAce");
+    }
+    public static int AddAccessDeniedObjectAce ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int AccessMask,  Addressable ObjectTypeGuid,  Addressable InheritedObjectTypeGuid,  Addressable pSid) {
+        var mh$ = AddAccessDeniedObjectAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, AccessMask, ObjectTypeGuid, InheritedObjectTypeGuid, pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$156.AddAce$MH,"AddAce");
+    }
+    public static int AddAce ( Addressable pAcl,  int dwAceRevision,  int dwStartingAceIndex,  Addressable pAceList,  int nAceListLength) {
+        var mh$ = AddAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, dwStartingAceIndex, pAceList, nAceListLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAuditAccessAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$156.AddAuditAccessAce$MH,"AddAuditAccessAce");
+    }
+    public static int AddAuditAccessAce ( Addressable pAcl,  int dwAceRevision,  int dwAccessMask,  Addressable pSid,  int bAuditSuccess,  int bAuditFailure) {
+        var mh$ = AddAuditAccessAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, dwAccessMask, pSid, bAuditSuccess, bAuditFailure);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAuditAccessAceEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$157.AddAuditAccessAceEx$MH,"AddAuditAccessAceEx");
+    }
+    public static int AddAuditAccessAceEx ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int dwAccessMask,  Addressable pSid,  int bAuditSuccess,  int bAuditFailure) {
+        var mh$ = AddAuditAccessAceEx$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, dwAccessMask, pSid, bAuditSuccess, bAuditFailure);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAuditAccessObjectAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$157.AddAuditAccessObjectAce$MH,"AddAuditAccessObjectAce");
+    }
+    public static int AddAuditAccessObjectAce ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int AccessMask,  Addressable ObjectTypeGuid,  Addressable InheritedObjectTypeGuid,  Addressable pSid,  int bAuditSuccess,  int bAuditFailure) {
+        var mh$ = AddAuditAccessObjectAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, AccessMask, ObjectTypeGuid, InheritedObjectTypeGuid, pSid, bAuditSuccess, bAuditFailure);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddMandatoryAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$157.AddMandatoryAce$MH,"AddMandatoryAce");
+    }
+    public static int AddMandatoryAce ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int MandatoryPolicy,  Addressable pLabelSid) {
+        var mh$ = AddMandatoryAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, MandatoryPolicy, pLabelSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddResourceAttributeAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$157.AddResourceAttributeAce$MH,"AddResourceAttributeAce");
+    }
+    public static int AddResourceAttributeAce ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int AccessMask,  Addressable pSid,  Addressable pAttributeInfo,  Addressable pReturnLength) {
+        var mh$ = AddResourceAttributeAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, AccessMask, pSid, pAttributeInfo, pReturnLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddScopedPolicyIDAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$157.AddScopedPolicyIDAce$MH,"AddScopedPolicyIDAce");
+    }
+    public static int AddScopedPolicyIDAce ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  int AccessMask,  Addressable pSid) {
+        var mh$ = AddScopedPolicyIDAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, AccessMask, pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AdjustTokenGroups$MH() {
+        return RuntimeHelper.requireNonNull(constants$157.AdjustTokenGroups$MH,"AdjustTokenGroups");
+    }
+    public static int AdjustTokenGroups ( Addressable TokenHandle,  int ResetToDefault,  Addressable NewState,  int BufferLength,  Addressable PreviousState,  Addressable ReturnLength) {
+        var mh$ = AdjustTokenGroups$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle, ResetToDefault, NewState, BufferLength, PreviousState, ReturnLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AdjustTokenPrivileges$MH() {
+        return RuntimeHelper.requireNonNull(constants$158.AdjustTokenPrivileges$MH,"AdjustTokenPrivileges");
+    }
+    public static int AdjustTokenPrivileges ( Addressable TokenHandle,  int DisableAllPrivileges,  Addressable NewState,  int BufferLength,  Addressable PreviousState,  Addressable ReturnLength) {
+        var mh$ = AdjustTokenPrivileges$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle, DisableAllPrivileges, NewState, BufferLength, PreviousState, ReturnLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AllocateAndInitializeSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$158.AllocateAndInitializeSid$MH,"AllocateAndInitializeSid");
+    }
+    public static int AllocateAndInitializeSid ( Addressable pIdentifierAuthority,  byte nSubAuthorityCount,  int nSubAuthority0,  int nSubAuthority1,  int nSubAuthority2,  int nSubAuthority3,  int nSubAuthority4,  int nSubAuthority5,  int nSubAuthority6,  int nSubAuthority7,  Addressable pSid) {
+        var mh$ = AllocateAndInitializeSid$MH();
+        try {
+            return (int)mh$.invokeExact(pIdentifierAuthority, nSubAuthorityCount, nSubAuthority0, nSubAuthority1, nSubAuthority2, nSubAuthority3, nSubAuthority4, nSubAuthority5, nSubAuthority6, nSubAuthority7, pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AllocateLocallyUniqueId$MH() {
+        return RuntimeHelper.requireNonNull(constants$158.AllocateLocallyUniqueId$MH,"AllocateLocallyUniqueId");
+    }
+    public static int AllocateLocallyUniqueId ( Addressable Luid) {
+        var mh$ = AllocateLocallyUniqueId$MH();
+        try {
+            return (int)mh$.invokeExact(Luid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AreAllAccessesGranted$MH() {
+        return RuntimeHelper.requireNonNull(constants$158.AreAllAccessesGranted$MH,"AreAllAccessesGranted");
+    }
+    public static int AreAllAccessesGranted ( int GrantedAccess,  int DesiredAccess) {
+        var mh$ = AreAllAccessesGranted$MH();
+        try {
+            return (int)mh$.invokeExact(GrantedAccess, DesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AreAnyAccessesGranted$MH() {
+        return RuntimeHelper.requireNonNull(constants$158.AreAnyAccessesGranted$MH,"AreAnyAccessesGranted");
+    }
+    public static int AreAnyAccessesGranted ( int GrantedAccess,  int DesiredAccess) {
+        var mh$ = AreAnyAccessesGranted$MH();
+        try {
+            return (int)mh$.invokeExact(GrantedAccess, DesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CheckTokenMembership$MH() {
+        return RuntimeHelper.requireNonNull(constants$158.CheckTokenMembership$MH,"CheckTokenMembership");
+    }
+    public static int CheckTokenMembership ( Addressable TokenHandle,  Addressable SidToCheck,  Addressable IsMember) {
+        var mh$ = CheckTokenMembership$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle, SidToCheck, IsMember);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CheckTokenCapability$MH() {
+        return RuntimeHelper.requireNonNull(constants$159.CheckTokenCapability$MH,"CheckTokenCapability");
+    }
+    public static int CheckTokenCapability ( Addressable TokenHandle,  Addressable CapabilitySidToCheck,  Addressable HasCapability) {
+        var mh$ = CheckTokenCapability$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle, CapabilitySidToCheck, HasCapability);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetAppContainerAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$159.GetAppContainerAce$MH,"GetAppContainerAce");
+    }
+    public static int GetAppContainerAce ( Addressable Acl,  int StartingAceIndex,  Addressable AppContainerAce,  Addressable AppContainerAceIndex) {
+        var mh$ = GetAppContainerAce$MH();
+        try {
+            return (int)mh$.invokeExact(Acl, StartingAceIndex, AppContainerAce, AppContainerAceIndex);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CheckTokenMembershipEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$159.CheckTokenMembershipEx$MH,"CheckTokenMembershipEx");
+    }
+    public static int CheckTokenMembershipEx ( Addressable TokenHandle,  Addressable SidToCheck,  int Flags,  Addressable IsMember) {
+        var mh$ = CheckTokenMembershipEx$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle, SidToCheck, Flags, IsMember);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ConvertToAutoInheritPrivateObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$159.ConvertToAutoInheritPrivateObjectSecurity$MH,"ConvertToAutoInheritPrivateObjectSecurity");
+    }
+    public static int ConvertToAutoInheritPrivateObjectSecurity ( Addressable ParentDescriptor,  Addressable CurrentSecurityDescriptor,  Addressable NewSecurityDescriptor,  Addressable ObjectType,  byte IsDirectoryObject,  Addressable GenericMapping) {
+        var mh$ = ConvertToAutoInheritPrivateObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(ParentDescriptor, CurrentSecurityDescriptor, NewSecurityDescriptor, ObjectType, IsDirectoryObject, GenericMapping);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CopySid$MH() {
+        return RuntimeHelper.requireNonNull(constants$159.CopySid$MH,"CopySid");
+    }
+    public static int CopySid ( int nDestinationSidLength,  Addressable pDestinationSid,  Addressable pSourceSid) {
+        var mh$ = CopySid$MH();
+        try {
+            return (int)mh$.invokeExact(nDestinationSidLength, pDestinationSid, pSourceSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreatePrivateObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$159.CreatePrivateObjectSecurity$MH,"CreatePrivateObjectSecurity");
+    }
+    public static int CreatePrivateObjectSecurity ( Addressable ParentDescriptor,  Addressable CreatorDescriptor,  Addressable NewDescriptor,  int IsDirectoryObject,  Addressable Token,  Addressable GenericMapping) {
+        var mh$ = CreatePrivateObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(ParentDescriptor, CreatorDescriptor, NewDescriptor, IsDirectoryObject, Token, GenericMapping);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreatePrivateObjectSecurityEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$160.CreatePrivateObjectSecurityEx$MH,"CreatePrivateObjectSecurityEx");
+    }
+    public static int CreatePrivateObjectSecurityEx ( Addressable ParentDescriptor,  Addressable CreatorDescriptor,  Addressable NewDescriptor,  Addressable ObjectType,  int IsContainerObject,  int AutoInheritFlags,  Addressable Token,  Addressable GenericMapping) {
+        var mh$ = CreatePrivateObjectSecurityEx$MH();
+        try {
+            return (int)mh$.invokeExact(ParentDescriptor, CreatorDescriptor, NewDescriptor, ObjectType, IsContainerObject, AutoInheritFlags, Token, GenericMapping);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreatePrivateObjectSecurityWithMultipleInheritance$MH() {
+        return RuntimeHelper.requireNonNull(constants$160.CreatePrivateObjectSecurityWithMultipleInheritance$MH,"CreatePrivateObjectSecurityWithMultipleInheritance");
+    }
+    public static int CreatePrivateObjectSecurityWithMultipleInheritance ( Addressable ParentDescriptor,  Addressable CreatorDescriptor,  Addressable NewDescriptor,  Addressable ObjectTypes,  int GuidCount,  int IsContainerObject,  int AutoInheritFlags,  Addressable Token,  Addressable GenericMapping) {
+        var mh$ = CreatePrivateObjectSecurityWithMultipleInheritance$MH();
+        try {
+            return (int)mh$.invokeExact(ParentDescriptor, CreatorDescriptor, NewDescriptor, ObjectTypes, GuidCount, IsContainerObject, AutoInheritFlags, Token, GenericMapping);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateRestrictedToken$MH() {
+        return RuntimeHelper.requireNonNull(constants$160.CreateRestrictedToken$MH,"CreateRestrictedToken");
+    }
+    public static int CreateRestrictedToken ( Addressable ExistingTokenHandle,  int Flags,  int DisableSidCount,  Addressable SidsToDisable,  int DeletePrivilegeCount,  Addressable PrivilegesToDelete,  int RestrictedSidCount,  Addressable SidsToRestrict,  Addressable NewTokenHandle) {
+        var mh$ = CreateRestrictedToken$MH();
+        try {
+            return (int)mh$.invokeExact(ExistingTokenHandle, Flags, DisableSidCount, SidsToDisable, DeletePrivilegeCount, PrivilegesToDelete, RestrictedSidCount, SidsToRestrict, NewTokenHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateWellKnownSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$160.CreateWellKnownSid$MH,"CreateWellKnownSid");
+    }
+    public static int CreateWellKnownSid ( int WellKnownSidType,  Addressable DomainSid,  Addressable pSid,  Addressable cbSid) {
+        var mh$ = CreateWellKnownSid$MH();
+        try {
+            return (int)mh$.invokeExact(WellKnownSidType, DomainSid, pSid, cbSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EqualDomainSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$160.EqualDomainSid$MH,"EqualDomainSid");
+    }
+    public static int EqualDomainSid ( Addressable pSid1,  Addressable pSid2,  Addressable pfEqual) {
+        var mh$ = EqualDomainSid$MH();
+        try {
+            return (int)mh$.invokeExact(pSid1, pSid2, pfEqual);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$160.DeleteAce$MH,"DeleteAce");
+    }
+    public static int DeleteAce ( Addressable pAcl,  int dwAceIndex) {
+        var mh$ = DeleteAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceIndex);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DestroyPrivateObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$161.DestroyPrivateObjectSecurity$MH,"DestroyPrivateObjectSecurity");
+    }
+    public static int DestroyPrivateObjectSecurity ( Addressable ObjectDescriptor) {
+        var mh$ = DestroyPrivateObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(ObjectDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DuplicateToken$MH() {
+        return RuntimeHelper.requireNonNull(constants$161.DuplicateToken$MH,"DuplicateToken");
+    }
+    public static int DuplicateToken ( Addressable ExistingTokenHandle,  int ImpersonationLevel,  Addressable DuplicateTokenHandle) {
+        var mh$ = DuplicateToken$MH();
+        try {
+            return (int)mh$.invokeExact(ExistingTokenHandle, ImpersonationLevel, DuplicateTokenHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DuplicateTokenEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$161.DuplicateTokenEx$MH,"DuplicateTokenEx");
+    }
+    public static int DuplicateTokenEx ( Addressable hExistingToken,  int dwDesiredAccess,  Addressable lpTokenAttributes,  int ImpersonationLevel,  int TokenType,  Addressable phNewToken) {
+        var mh$ = DuplicateTokenEx$MH();
+        try {
+            return (int)mh$.invokeExact(hExistingToken, dwDesiredAccess, lpTokenAttributes, ImpersonationLevel, TokenType, phNewToken);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EqualPrefixSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$161.EqualPrefixSid$MH,"EqualPrefixSid");
+    }
+    public static int EqualPrefixSid ( Addressable pSid1,  Addressable pSid2) {
+        var mh$ = EqualPrefixSid$MH();
+        try {
+            return (int)mh$.invokeExact(pSid1, pSid2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EqualSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$161.EqualSid$MH,"EqualSid");
+    }
+    public static int EqualSid ( Addressable pSid1,  Addressable pSid2) {
+        var mh$ = EqualSid$MH();
+        try {
+            return (int)mh$.invokeExact(pSid1, pSid2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstFreeAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$161.FindFirstFreeAce$MH,"FindFirstFreeAce");
+    }
+    public static int FindFirstFreeAce ( Addressable pAcl,  Addressable pAce) {
+        var mh$ = FindFirstFreeAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, pAce);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FreeSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$162.FreeSid$MH,"FreeSid");
+    }
+    public static MemoryAddress FreeSid ( Addressable pSid) {
+        var mh$ = FreeSid$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$162.GetAce$MH,"GetAce");
+    }
+    public static int GetAce ( Addressable pAcl,  int dwAceIndex,  Addressable pAce) {
+        var mh$ = GetAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceIndex, pAce);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetAclInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$162.GetAclInformation$MH,"GetAclInformation");
+    }
+    public static int GetAclInformation ( Addressable pAcl,  Addressable pAclInformation,  int nAclInformationLength,  int dwAclInformationClass) {
+        var mh$ = GetAclInformation$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, pAclInformation, nAclInformationLength, dwAclInformationClass);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFileSecurityW$MH() {
+        return RuntimeHelper.requireNonNull(constants$162.GetFileSecurityW$MH,"GetFileSecurityW");
+    }
+    public static int GetFileSecurityW ( Addressable lpFileName,  int RequestedInformation,  Addressable pSecurityDescriptor,  int nLength,  Addressable lpnLengthNeeded) {
+        var mh$ = GetFileSecurityW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, RequestedInformation, pSecurityDescriptor, nLength, lpnLengthNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetKernelObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$162.GetKernelObjectSecurity$MH,"GetKernelObjectSecurity");
+    }
+    public static int GetKernelObjectSecurity ( Addressable Handle,  int RequestedInformation,  Addressable pSecurityDescriptor,  int nLength,  Addressable lpnLengthNeeded) {
+        var mh$ = GetKernelObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(Handle, RequestedInformation, pSecurityDescriptor, nLength, lpnLengthNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetLengthSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$162.GetLengthSid$MH,"GetLengthSid");
+    }
+    public static int GetLengthSid ( Addressable pSid) {
+        var mh$ = GetLengthSid$MH();
+        try {
+            return (int)mh$.invokeExact(pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$163.GetPrivateObjectSecurity$MH,"GetPrivateObjectSecurity");
+    }
+    public static int GetPrivateObjectSecurity ( Addressable ObjectDescriptor,  int SecurityInformation,  Addressable ResultantDescriptor,  int DescriptorLength,  Addressable ReturnLength) {
+        var mh$ = GetPrivateObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(ObjectDescriptor, SecurityInformation, ResultantDescriptor, DescriptorLength, ReturnLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSecurityDescriptorControl$MH() {
+        return RuntimeHelper.requireNonNull(constants$163.GetSecurityDescriptorControl$MH,"GetSecurityDescriptorControl");
+    }
+    public static int GetSecurityDescriptorControl ( Addressable pSecurityDescriptor,  Addressable pControl,  Addressable lpdwRevision) {
+        var mh$ = GetSecurityDescriptorControl$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, pControl, lpdwRevision);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSecurityDescriptorDacl$MH() {
+        return RuntimeHelper.requireNonNull(constants$163.GetSecurityDescriptorDacl$MH,"GetSecurityDescriptorDacl");
+    }
+    public static int GetSecurityDescriptorDacl ( Addressable pSecurityDescriptor,  Addressable lpbDaclPresent,  Addressable pDacl,  Addressable lpbDaclDefaulted) {
+        var mh$ = GetSecurityDescriptorDacl$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, lpbDaclPresent, pDacl, lpbDaclDefaulted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSecurityDescriptorGroup$MH() {
+        return RuntimeHelper.requireNonNull(constants$163.GetSecurityDescriptorGroup$MH,"GetSecurityDescriptorGroup");
+    }
+    public static int GetSecurityDescriptorGroup ( Addressable pSecurityDescriptor,  Addressable pGroup,  Addressable lpbGroupDefaulted) {
+        var mh$ = GetSecurityDescriptorGroup$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, pGroup, lpbGroupDefaulted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSecurityDescriptorLength$MH() {
+        return RuntimeHelper.requireNonNull(constants$163.GetSecurityDescriptorLength$MH,"GetSecurityDescriptorLength");
+    }
+    public static int GetSecurityDescriptorLength ( Addressable pSecurityDescriptor) {
+        var mh$ = GetSecurityDescriptorLength$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSecurityDescriptorOwner$MH() {
+        return RuntimeHelper.requireNonNull(constants$163.GetSecurityDescriptorOwner$MH,"GetSecurityDescriptorOwner");
+    }
+    public static int GetSecurityDescriptorOwner ( Addressable pSecurityDescriptor,  Addressable pOwner,  Addressable lpbOwnerDefaulted) {
+        var mh$ = GetSecurityDescriptorOwner$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, pOwner, lpbOwnerDefaulted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSecurityDescriptorRMControl$MH() {
+        return RuntimeHelper.requireNonNull(constants$164.GetSecurityDescriptorRMControl$MH,"GetSecurityDescriptorRMControl");
+    }
+    public static int GetSecurityDescriptorRMControl ( Addressable SecurityDescriptor,  Addressable RMControl) {
+        var mh$ = GetSecurityDescriptorRMControl$MH();
+        try {
+            return (int)mh$.invokeExact(SecurityDescriptor, RMControl);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSecurityDescriptorSacl$MH() {
+        return RuntimeHelper.requireNonNull(constants$164.GetSecurityDescriptorSacl$MH,"GetSecurityDescriptorSacl");
+    }
+    public static int GetSecurityDescriptorSacl ( Addressable pSecurityDescriptor,  Addressable lpbSaclPresent,  Addressable pSacl,  Addressable lpbSaclDefaulted) {
+        var mh$ = GetSecurityDescriptorSacl$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, lpbSaclPresent, pSacl, lpbSaclDefaulted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSidIdentifierAuthority$MH() {
+        return RuntimeHelper.requireNonNull(constants$164.GetSidIdentifierAuthority$MH,"GetSidIdentifierAuthority");
+    }
+    public static MemoryAddress GetSidIdentifierAuthority ( Addressable pSid) {
+        var mh$ = GetSidIdentifierAuthority$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSidLengthRequired$MH() {
+        return RuntimeHelper.requireNonNull(constants$164.GetSidLengthRequired$MH,"GetSidLengthRequired");
+    }
+    public static int GetSidLengthRequired ( byte nSubAuthorityCount) {
+        var mh$ = GetSidLengthRequired$MH();
+        try {
+            return (int)mh$.invokeExact(nSubAuthorityCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSidSubAuthority$MH() {
+        return RuntimeHelper.requireNonNull(constants$164.GetSidSubAuthority$MH,"GetSidSubAuthority");
+    }
+    public static MemoryAddress GetSidSubAuthority ( Addressable pSid,  int nSubAuthority) {
+        var mh$ = GetSidSubAuthority$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pSid, nSubAuthority);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSidSubAuthorityCount$MH() {
+        return RuntimeHelper.requireNonNull(constants$164.GetSidSubAuthorityCount$MH,"GetSidSubAuthorityCount");
+    }
+    public static MemoryAddress GetSidSubAuthorityCount ( Addressable pSid) {
+        var mh$ = GetSidSubAuthorityCount$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetTokenInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$165.GetTokenInformation$MH,"GetTokenInformation");
+    }
+    public static int GetTokenInformation ( Addressable TokenHandle,  int TokenInformationClass,  Addressable TokenInformation,  int TokenInformationLength,  Addressable ReturnLength) {
+        var mh$ = GetTokenInformation$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle, TokenInformationClass, TokenInformation, TokenInformationLength, ReturnLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetWindowsAccountDomainSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$165.GetWindowsAccountDomainSid$MH,"GetWindowsAccountDomainSid");
+    }
+    public static int GetWindowsAccountDomainSid ( Addressable pSid,  Addressable pDomainSid,  Addressable cbDomainSid) {
+        var mh$ = GetWindowsAccountDomainSid$MH();
+        try {
+            return (int)mh$.invokeExact(pSid, pDomainSid, cbDomainSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ImpersonateAnonymousToken$MH() {
+        return RuntimeHelper.requireNonNull(constants$165.ImpersonateAnonymousToken$MH,"ImpersonateAnonymousToken");
+    }
+    public static int ImpersonateAnonymousToken ( Addressable ThreadHandle) {
+        var mh$ = ImpersonateAnonymousToken$MH();
+        try {
+            return (int)mh$.invokeExact(ThreadHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ImpersonateLoggedOnUser$MH() {
+        return RuntimeHelper.requireNonNull(constants$165.ImpersonateLoggedOnUser$MH,"ImpersonateLoggedOnUser");
+    }
+    public static int ImpersonateLoggedOnUser ( Addressable hToken) {
+        var mh$ = ImpersonateLoggedOnUser$MH();
+        try {
+            return (int)mh$.invokeExact(hToken);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ImpersonateSelf$MH() {
+        return RuntimeHelper.requireNonNull(constants$165.ImpersonateSelf$MH,"ImpersonateSelf");
+    }
+    public static int ImpersonateSelf ( int ImpersonationLevel) {
+        var mh$ = ImpersonateSelf$MH();
+        try {
+            return (int)mh$.invokeExact(ImpersonationLevel);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InitializeAcl$MH() {
+        return RuntimeHelper.requireNonNull(constants$165.InitializeAcl$MH,"InitializeAcl");
+    }
+    public static int InitializeAcl ( Addressable pAcl,  int nAclLength,  int dwAclRevision) {
+        var mh$ = InitializeAcl$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, nAclLength, dwAclRevision);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InitializeSecurityDescriptor$MH() {
+        return RuntimeHelper.requireNonNull(constants$166.InitializeSecurityDescriptor$MH,"InitializeSecurityDescriptor");
+    }
+    public static int InitializeSecurityDescriptor ( Addressable pSecurityDescriptor,  int dwRevision) {
+        var mh$ = InitializeSecurityDescriptor$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, dwRevision);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InitializeSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$166.InitializeSid$MH,"InitializeSid");
+    }
+    public static int InitializeSid ( Addressable Sid,  Addressable pIdentifierAuthority,  byte nSubAuthorityCount) {
+        var mh$ = InitializeSid$MH();
+        try {
+            return (int)mh$.invokeExact(Sid, pIdentifierAuthority, nSubAuthorityCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsTokenRestricted$MH() {
+        return RuntimeHelper.requireNonNull(constants$166.IsTokenRestricted$MH,"IsTokenRestricted");
+    }
+    public static int IsTokenRestricted ( Addressable TokenHandle) {
+        var mh$ = IsTokenRestricted$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsValidAcl$MH() {
+        return RuntimeHelper.requireNonNull(constants$166.IsValidAcl$MH,"IsValidAcl");
+    }
+    public static int IsValidAcl ( Addressable pAcl) {
+        var mh$ = IsValidAcl$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsValidSecurityDescriptor$MH() {
+        return RuntimeHelper.requireNonNull(constants$166.IsValidSecurityDescriptor$MH,"IsValidSecurityDescriptor");
+    }
+    public static int IsValidSecurityDescriptor ( Addressable pSecurityDescriptor) {
+        var mh$ = IsValidSecurityDescriptor$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsValidSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$166.IsValidSid$MH,"IsValidSid");
+    }
+    public static int IsValidSid ( Addressable pSid) {
+        var mh$ = IsValidSid$MH();
+        try {
+            return (int)mh$.invokeExact(pSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsWellKnownSid$MH() {
+        return RuntimeHelper.requireNonNull(constants$167.IsWellKnownSid$MH,"IsWellKnownSid");
+    }
+    public static int IsWellKnownSid ( Addressable pSid,  int WellKnownSidType) {
+        var mh$ = IsWellKnownSid$MH();
+        try {
+            return (int)mh$.invokeExact(pSid, WellKnownSidType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MakeAbsoluteSD$MH() {
+        return RuntimeHelper.requireNonNull(constants$167.MakeAbsoluteSD$MH,"MakeAbsoluteSD");
+    }
+    public static int MakeAbsoluteSD ( Addressable pSelfRelativeSecurityDescriptor,  Addressable pAbsoluteSecurityDescriptor,  Addressable lpdwAbsoluteSecurityDescriptorSize,  Addressable pDacl,  Addressable lpdwDaclSize,  Addressable pSacl,  Addressable lpdwSaclSize,  Addressable pOwner,  Addressable lpdwOwnerSize,  Addressable pPrimaryGroup,  Addressable lpdwPrimaryGroupSize) {
+        var mh$ = MakeAbsoluteSD$MH();
+        try {
+            return (int)mh$.invokeExact(pSelfRelativeSecurityDescriptor, pAbsoluteSecurityDescriptor, lpdwAbsoluteSecurityDescriptorSize, pDacl, lpdwDaclSize, pSacl, lpdwSaclSize, pOwner, lpdwOwnerSize, pPrimaryGroup, lpdwPrimaryGroupSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MakeSelfRelativeSD$MH() {
+        return RuntimeHelper.requireNonNull(constants$167.MakeSelfRelativeSD$MH,"MakeSelfRelativeSD");
+    }
+    public static int MakeSelfRelativeSD ( Addressable pAbsoluteSecurityDescriptor,  Addressable pSelfRelativeSecurityDescriptor,  Addressable lpdwBufferLength) {
+        var mh$ = MakeSelfRelativeSD$MH();
+        try {
+            return (int)mh$.invokeExact(pAbsoluteSecurityDescriptor, pSelfRelativeSecurityDescriptor, lpdwBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapGenericMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$167.MapGenericMask$MH,"MapGenericMask");
+    }
+    public static void MapGenericMask ( Addressable AccessMask,  Addressable GenericMapping) {
+        var mh$ = MapGenericMask$MH();
+        try {
+            mh$.invokeExact(AccessMask, GenericMapping);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ObjectCloseAuditAlarmW$MH() {
+        return RuntimeHelper.requireNonNull(constants$167.ObjectCloseAuditAlarmW$MH,"ObjectCloseAuditAlarmW");
+    }
+    public static int ObjectCloseAuditAlarmW ( Addressable SubsystemName,  Addressable HandleId,  int GenerateOnClose) {
+        var mh$ = ObjectCloseAuditAlarmW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, GenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ObjectDeleteAuditAlarmW$MH() {
+        return RuntimeHelper.requireNonNull(constants$167.ObjectDeleteAuditAlarmW$MH,"ObjectDeleteAuditAlarmW");
+    }
+    public static int ObjectDeleteAuditAlarmW ( Addressable SubsystemName,  Addressable HandleId,  int GenerateOnClose) {
+        var mh$ = ObjectDeleteAuditAlarmW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, GenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ObjectOpenAuditAlarmW$MH() {
+        return RuntimeHelper.requireNonNull(constants$168.ObjectOpenAuditAlarmW$MH,"ObjectOpenAuditAlarmW");
+    }
+    public static int ObjectOpenAuditAlarmW ( Addressable SubsystemName,  Addressable HandleId,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable pSecurityDescriptor,  Addressable ClientToken,  int DesiredAccess,  int GrantedAccess,  Addressable Privileges,  int ObjectCreation,  int AccessGranted,  Addressable GenerateOnClose) {
+        var mh$ = ObjectOpenAuditAlarmW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ObjectTypeName, ObjectName, pSecurityDescriptor, ClientToken, DesiredAccess, GrantedAccess, Privileges, ObjectCreation, AccessGranted, GenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ObjectPrivilegeAuditAlarmW$MH() {
+        return RuntimeHelper.requireNonNull(constants$168.ObjectPrivilegeAuditAlarmW$MH,"ObjectPrivilegeAuditAlarmW");
+    }
+    public static int ObjectPrivilegeAuditAlarmW ( Addressable SubsystemName,  Addressable HandleId,  Addressable ClientToken,  int DesiredAccess,  Addressable Privileges,  int AccessGranted) {
+        var mh$ = ObjectPrivilegeAuditAlarmW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ClientToken, DesiredAccess, Privileges, AccessGranted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PrivilegeCheck$MH() {
+        return RuntimeHelper.requireNonNull(constants$168.PrivilegeCheck$MH,"PrivilegeCheck");
+    }
+    public static int PrivilegeCheck ( Addressable ClientToken,  Addressable RequiredPrivileges,  Addressable pfResult) {
+        var mh$ = PrivilegeCheck$MH();
+        try {
+            return (int)mh$.invokeExact(ClientToken, RequiredPrivileges, pfResult);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PrivilegedServiceAuditAlarmW$MH() {
+        return RuntimeHelper.requireNonNull(constants$168.PrivilegedServiceAuditAlarmW$MH,"PrivilegedServiceAuditAlarmW");
+    }
+    public static int PrivilegedServiceAuditAlarmW ( Addressable SubsystemName,  Addressable ServiceName,  Addressable ClientToken,  Addressable Privileges,  int AccessGranted) {
+        var mh$ = PrivilegedServiceAuditAlarmW$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, ServiceName, ClientToken, Privileges, AccessGranted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QuerySecurityAccessMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$168.QuerySecurityAccessMask$MH,"QuerySecurityAccessMask");
+    }
+    public static void QuerySecurityAccessMask ( int SecurityInformation,  Addressable DesiredAccess) {
+        var mh$ = QuerySecurityAccessMask$MH();
+        try {
+            mh$.invokeExact(SecurityInformation, DesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RevertToSelf$MH() {
+        return RuntimeHelper.requireNonNull(constants$168.RevertToSelf$MH,"RevertToSelf");
+    }
+    public static int RevertToSelf () {
+        var mh$ = RevertToSelf$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetAclInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$169.SetAclInformation$MH,"SetAclInformation");
+    }
+    public static int SetAclInformation ( Addressable pAcl,  Addressable pAclInformation,  int nAclInformationLength,  int dwAclInformationClass) {
+        var mh$ = SetAclInformation$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, pAclInformation, nAclInformationLength, dwAclInformationClass);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFileSecurityW$MH() {
+        return RuntimeHelper.requireNonNull(constants$169.SetFileSecurityW$MH,"SetFileSecurityW");
+    }
+    public static int SetFileSecurityW ( Addressable lpFileName,  int SecurityInformation,  Addressable pSecurityDescriptor) {
+        var mh$ = SetFileSecurityW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, SecurityInformation, pSecurityDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetKernelObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$169.SetKernelObjectSecurity$MH,"SetKernelObjectSecurity");
+    }
+    public static int SetKernelObjectSecurity ( Addressable Handle,  int SecurityInformation,  Addressable SecurityDescriptor) {
+        var mh$ = SetKernelObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(Handle, SecurityInformation, SecurityDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPrivateObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$169.SetPrivateObjectSecurity$MH,"SetPrivateObjectSecurity");
+    }
+    public static int SetPrivateObjectSecurity ( int SecurityInformation,  Addressable ModificationDescriptor,  Addressable ObjectsSecurityDescriptor,  Addressable GenericMapping,  Addressable Token) {
+        var mh$ = SetPrivateObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(SecurityInformation, ModificationDescriptor, ObjectsSecurityDescriptor, GenericMapping, Token);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPrivateObjectSecurityEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$169.SetPrivateObjectSecurityEx$MH,"SetPrivateObjectSecurityEx");
+    }
+    public static int SetPrivateObjectSecurityEx ( int SecurityInformation,  Addressable ModificationDescriptor,  Addressable ObjectsSecurityDescriptor,  int AutoInheritFlags,  Addressable GenericMapping,  Addressable Token) {
+        var mh$ = SetPrivateObjectSecurityEx$MH();
+        try {
+            return (int)mh$.invokeExact(SecurityInformation, ModificationDescriptor, ObjectsSecurityDescriptor, AutoInheritFlags, GenericMapping, Token);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSecurityAccessMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$169.SetSecurityAccessMask$MH,"SetSecurityAccessMask");
+    }
+    public static void SetSecurityAccessMask ( int SecurityInformation,  Addressable DesiredAccess) {
+        var mh$ = SetSecurityAccessMask$MH();
+        try {
+            mh$.invokeExact(SecurityInformation, DesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSecurityDescriptorControl$MH() {
+        return RuntimeHelper.requireNonNull(constants$170.SetSecurityDescriptorControl$MH,"SetSecurityDescriptorControl");
+    }
+    public static int SetSecurityDescriptorControl ( Addressable pSecurityDescriptor,  short ControlBitsOfInterest,  short ControlBitsToSet) {
+        var mh$ = SetSecurityDescriptorControl$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, ControlBitsOfInterest, ControlBitsToSet);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSecurityDescriptorDacl$MH() {
+        return RuntimeHelper.requireNonNull(constants$170.SetSecurityDescriptorDacl$MH,"SetSecurityDescriptorDacl");
+    }
+    public static int SetSecurityDescriptorDacl ( Addressable pSecurityDescriptor,  int bDaclPresent,  Addressable pDacl,  int bDaclDefaulted) {
+        var mh$ = SetSecurityDescriptorDacl$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, bDaclPresent, pDacl, bDaclDefaulted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSecurityDescriptorGroup$MH() {
+        return RuntimeHelper.requireNonNull(constants$170.SetSecurityDescriptorGroup$MH,"SetSecurityDescriptorGroup");
+    }
+    public static int SetSecurityDescriptorGroup ( Addressable pSecurityDescriptor,  Addressable pGroup,  int bGroupDefaulted) {
+        var mh$ = SetSecurityDescriptorGroup$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, pGroup, bGroupDefaulted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSecurityDescriptorOwner$MH() {
+        return RuntimeHelper.requireNonNull(constants$170.SetSecurityDescriptorOwner$MH,"SetSecurityDescriptorOwner");
+    }
+    public static int SetSecurityDescriptorOwner ( Addressable pSecurityDescriptor,  Addressable pOwner,  int bOwnerDefaulted) {
+        var mh$ = SetSecurityDescriptorOwner$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, pOwner, bOwnerDefaulted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSecurityDescriptorRMControl$MH() {
+        return RuntimeHelper.requireNonNull(constants$170.SetSecurityDescriptorRMControl$MH,"SetSecurityDescriptorRMControl");
+    }
+    public static int SetSecurityDescriptorRMControl ( Addressable SecurityDescriptor,  Addressable RMControl) {
+        var mh$ = SetSecurityDescriptorRMControl$MH();
+        try {
+            return (int)mh$.invokeExact(SecurityDescriptor, RMControl);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSecurityDescriptorSacl$MH() {
+        return RuntimeHelper.requireNonNull(constants$170.SetSecurityDescriptorSacl$MH,"SetSecurityDescriptorSacl");
+    }
+    public static int SetSecurityDescriptorSacl ( Addressable pSecurityDescriptor,  int bSaclPresent,  Addressable pSacl,  int bSaclDefaulted) {
+        var mh$ = SetSecurityDescriptorSacl$MH();
+        try {
+            return (int)mh$.invokeExact(pSecurityDescriptor, bSaclPresent, pSacl, bSaclDefaulted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetTokenInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$171.SetTokenInformation$MH,"SetTokenInformation");
+    }
+    public static int SetTokenInformation ( Addressable TokenHandle,  int TokenInformationClass,  Addressable TokenInformation,  int TokenInformationLength) {
+        var mh$ = SetTokenInformation$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle, TokenInformationClass, TokenInformation, TokenInformationLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetCachedSigningLevel$MH() {
+        return RuntimeHelper.requireNonNull(constants$171.SetCachedSigningLevel$MH,"SetCachedSigningLevel");
+    }
+    public static int SetCachedSigningLevel ( Addressable SourceFiles,  int SourceFileCount,  int Flags,  Addressable TargetFile) {
+        var mh$ = SetCachedSigningLevel$MH();
+        try {
+            return (int)mh$.invokeExact(SourceFiles, SourceFileCount, Flags, TargetFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCachedSigningLevel$MH() {
+        return RuntimeHelper.requireNonNull(constants$171.GetCachedSigningLevel$MH,"GetCachedSigningLevel");
+    }
+    public static int GetCachedSigningLevel ( Addressable File,  Addressable Flags,  Addressable SigningLevel,  Addressable Thumbprint,  Addressable ThumbprintSize,  Addressable ThumbprintAlgorithm) {
+        var mh$ = GetCachedSigningLevel$MH();
+        try {
+            return (int)mh$.invokeExact(File, Flags, SigningLevel, Thumbprint, ThumbprintSize, ThumbprintAlgorithm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CveEventWrite$MH() {
+        return RuntimeHelper.requireNonNull(constants$171.CveEventWrite$MH,"CveEventWrite");
+    }
+    public static int CveEventWrite ( Addressable CveId,  Addressable AdditionalDetails) {
+        var mh$ = CveEventWrite$MH();
+        try {
+            return (int)mh$.invokeExact(CveId, AdditionalDetails);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeriveCapabilitySidsFromName$MH() {
+        return RuntimeHelper.requireNonNull(constants$171.DeriveCapabilitySidsFromName$MH,"DeriveCapabilitySidsFromName");
+    }
+    public static int DeriveCapabilitySidsFromName ( Addressable CapName,  Addressable CapabilityGroupSids,  Addressable CapabilityGroupSidCount,  Addressable CapabilitySids,  Addressable CapabilitySidCount) {
+        var mh$ = DeriveCapabilitySidsFromName$MH();
+        try {
+            return (int)mh$.invokeExact(CapName, CapabilityGroupSids, CapabilityGroupSidCount, CapabilitySids, CapabilitySidCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreatePrivateNamespaceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$171.CreatePrivateNamespaceW$MH,"CreatePrivateNamespaceW");
+    }
+    public static MemoryAddress CreatePrivateNamespaceW ( Addressable lpPrivateNamespaceAttributes,  Addressable lpBoundaryDescriptor,  Addressable lpAliasPrefix) {
+        var mh$ = CreatePrivateNamespaceW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpPrivateNamespaceAttributes, lpBoundaryDescriptor, lpAliasPrefix);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenPrivateNamespaceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$172.OpenPrivateNamespaceW$MH,"OpenPrivateNamespaceW");
+    }
+    public static MemoryAddress OpenPrivateNamespaceW ( Addressable lpBoundaryDescriptor,  Addressable lpAliasPrefix) {
+        var mh$ = OpenPrivateNamespaceW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpBoundaryDescriptor, lpAliasPrefix);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ClosePrivateNamespace$MH() {
+        return RuntimeHelper.requireNonNull(constants$172.ClosePrivateNamespace$MH,"ClosePrivateNamespace");
+    }
+    public static byte ClosePrivateNamespace ( Addressable Handle,  int Flags) {
+        var mh$ = ClosePrivateNamespace$MH();
+        try {
+            return (byte)mh$.invokeExact(Handle, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateBoundaryDescriptorW$MH() {
+        return RuntimeHelper.requireNonNull(constants$172.CreateBoundaryDescriptorW$MH,"CreateBoundaryDescriptorW");
+    }
+    public static MemoryAddress CreateBoundaryDescriptorW ( Addressable Name,  int Flags) {
+        var mh$ = CreateBoundaryDescriptorW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Name, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddSIDToBoundaryDescriptor$MH() {
+        return RuntimeHelper.requireNonNull(constants$172.AddSIDToBoundaryDescriptor$MH,"AddSIDToBoundaryDescriptor");
+    }
+    public static int AddSIDToBoundaryDescriptor ( Addressable BoundaryDescriptor,  Addressable RequiredSid) {
+        var mh$ = AddSIDToBoundaryDescriptor$MH();
+        try {
+            return (int)mh$.invokeExact(BoundaryDescriptor, RequiredSid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteBoundaryDescriptor$MH() {
+        return RuntimeHelper.requireNonNull(constants$172.DeleteBoundaryDescriptor$MH,"DeleteBoundaryDescriptor");
+    }
+    public static void DeleteBoundaryDescriptor ( Addressable BoundaryDescriptor) {
+        var mh$ = DeleteBoundaryDescriptor$MH();
+        try {
+            mh$.invokeExact(BoundaryDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaHighestNodeNumber$MH() {
+        return RuntimeHelper.requireNonNull(constants$172.GetNumaHighestNodeNumber$MH,"GetNumaHighestNodeNumber");
+    }
+    public static int GetNumaHighestNodeNumber ( Addressable HighestNodeNumber) {
+        var mh$ = GetNumaHighestNodeNumber$MH();
+        try {
+            return (int)mh$.invokeExact(HighestNodeNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaNodeProcessorMaskEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$173.GetNumaNodeProcessorMaskEx$MH,"GetNumaNodeProcessorMaskEx");
+    }
+    public static int GetNumaNodeProcessorMaskEx ( short Node,  Addressable ProcessorMask) {
+        var mh$ = GetNumaNodeProcessorMaskEx$MH();
+        try {
+            return (int)mh$.invokeExact(Node, ProcessorMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaProximityNodeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$173.GetNumaProximityNodeEx$MH,"GetNumaProximityNodeEx");
+    }
+    public static int GetNumaProximityNodeEx ( int ProximityId,  Addressable NodeNumber) {
+        var mh$ = GetNumaProximityNodeEx$MH();
+        try {
+            return (int)mh$.invokeExact(ProximityId, NodeNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProcessGroupAffinity$MH() {
+        return RuntimeHelper.requireNonNull(constants$173.GetProcessGroupAffinity$MH,"GetProcessGroupAffinity");
+    }
+    public static int GetProcessGroupAffinity ( Addressable hProcess,  Addressable GroupCount,  Addressable GroupArray) {
+        var mh$ = GetProcessGroupAffinity$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, GroupCount, GroupArray);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetThreadGroupAffinity$MH() {
+        return RuntimeHelper.requireNonNull(constants$173.GetThreadGroupAffinity$MH,"GetThreadGroupAffinity");
+    }
+    public static int GetThreadGroupAffinity ( Addressable hThread,  Addressable GroupAffinity) {
+        var mh$ = GetThreadGroupAffinity$MH();
+        try {
+            return (int)mh$.invokeExact(hThread, GroupAffinity);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadGroupAffinity$MH() {
+        return RuntimeHelper.requireNonNull(constants$173.SetThreadGroupAffinity$MH,"SetThreadGroupAffinity");
+    }
+    public static int SetThreadGroupAffinity ( Addressable hThread,  Addressable GroupAffinity,  Addressable PreviousGroupAffinity) {
+        var mh$ = SetThreadGroupAffinity$MH();
+        try {
+            return (int)mh$.invokeExact(hThread, GroupAffinity, PreviousGroupAffinity);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress LPLDT_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCOMMPROP = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCOMSTAT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPDCB = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCOMMTIMEOUTS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCOMMCONFIG = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMEMORYSTATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJIT_DEBUG_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJIT_DEBUG_INFO32 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPJIT_DEBUG_INFO64 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPEXCEPTION_RECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPEXCEPTION_POINTERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPOFSTRUCT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POFSTRUCT = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle WinMain$MH() {
+        return RuntimeHelper.requireNonNull(constants$174.WinMain$MH,"WinMain");
+    }
+    public static int WinMain ( Addressable hInstance,  Addressable hPrevInstance,  Addressable lpCmdLine,  int nShowCmd) {
+        var mh$ = WinMain$MH();
+        try {
+            return (int)mh$.invokeExact(hInstance, hPrevInstance, lpCmdLine, nShowCmd);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle wWinMain$MH() {
+        return RuntimeHelper.requireNonNull(constants$175.wWinMain$MH,"wWinMain");
+    }
+    public static int wWinMain ( Addressable hInstance,  Addressable hPrevInstance,  Addressable lpCmdLine,  int nShowCmd) {
+        var mh$ = wWinMain$MH();
+        try {
+            return (int)mh$.invokeExact(hInstance, hPrevInstance, lpCmdLine, nShowCmd);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalAlloc$MH() {
+        return RuntimeHelper.requireNonNull(constants$175.GlobalAlloc$MH,"GlobalAlloc");
+    }
+    public static MemoryAddress GlobalAlloc ( int uFlags,  long dwBytes) {
+        var mh$ = GlobalAlloc$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(uFlags, dwBytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalReAlloc$MH() {
+        return RuntimeHelper.requireNonNull(constants$175.GlobalReAlloc$MH,"GlobalReAlloc");
+    }
+    public static MemoryAddress GlobalReAlloc ( Addressable hMem,  long dwBytes,  int uFlags) {
+        var mh$ = GlobalReAlloc$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hMem, dwBytes, uFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalSize$MH() {
+        return RuntimeHelper.requireNonNull(constants$175.GlobalSize$MH,"GlobalSize");
+    }
+    public static long GlobalSize ( Addressable hMem) {
+        var mh$ = GlobalSize$MH();
+        try {
+            return (long)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalUnlock$MH() {
+        return RuntimeHelper.requireNonNull(constants$175.GlobalUnlock$MH,"GlobalUnlock");
+    }
+    public static int GlobalUnlock ( Addressable hMem) {
+        var mh$ = GlobalUnlock$MH();
+        try {
+            return (int)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalLock$MH() {
+        return RuntimeHelper.requireNonNull(constants$175.GlobalLock$MH,"GlobalLock");
+    }
+    public static MemoryAddress GlobalLock ( Addressable hMem) {
+        var mh$ = GlobalLock$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalFlags$MH() {
+        return RuntimeHelper.requireNonNull(constants$176.GlobalFlags$MH,"GlobalFlags");
+    }
+    public static int GlobalFlags ( Addressable hMem) {
+        var mh$ = GlobalFlags$MH();
+        try {
+            return (int)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalHandle$MH() {
+        return RuntimeHelper.requireNonNull(constants$176.GlobalHandle$MH,"GlobalHandle");
+    }
+    public static MemoryAddress GlobalHandle ( Addressable pMem) {
+        var mh$ = GlobalHandle$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalFree$MH() {
+        return RuntimeHelper.requireNonNull(constants$176.GlobalFree$MH,"GlobalFree");
+    }
+    public static MemoryAddress GlobalFree ( Addressable hMem) {
+        var mh$ = GlobalFree$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalCompact$MH() {
+        return RuntimeHelper.requireNonNull(constants$176.GlobalCompact$MH,"GlobalCompact");
+    }
+    public static long GlobalCompact ( int dwMinFree) {
+        var mh$ = GlobalCompact$MH();
+        try {
+            return (long)mh$.invokeExact(dwMinFree);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalFix$MH() {
+        return RuntimeHelper.requireNonNull(constants$176.GlobalFix$MH,"GlobalFix");
+    }
+    public static void GlobalFix ( Addressable hMem) {
+        var mh$ = GlobalFix$MH();
+        try {
+            mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalUnfix$MH() {
+        return RuntimeHelper.requireNonNull(constants$176.GlobalUnfix$MH,"GlobalUnfix");
+    }
+    public static void GlobalUnfix ( Addressable hMem) {
+        var mh$ = GlobalUnfix$MH();
+        try {
+            mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalWire$MH() {
+        return RuntimeHelper.requireNonNull(constants$177.GlobalWire$MH,"GlobalWire");
+    }
+    public static MemoryAddress GlobalWire ( Addressable hMem) {
+        var mh$ = GlobalWire$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalUnWire$MH() {
+        return RuntimeHelper.requireNonNull(constants$177.GlobalUnWire$MH,"GlobalUnWire");
+    }
+    public static int GlobalUnWire ( Addressable hMem) {
+        var mh$ = GlobalUnWire$MH();
+        try {
+            return (int)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalMemoryStatus$MH() {
+        return RuntimeHelper.requireNonNull(constants$177.GlobalMemoryStatus$MH,"GlobalMemoryStatus");
+    }
+    public static void GlobalMemoryStatus ( Addressable lpBuffer) {
+        var mh$ = GlobalMemoryStatus$MH();
+        try {
+            mh$.invokeExact(lpBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalAlloc$MH() {
+        return RuntimeHelper.requireNonNull(constants$177.LocalAlloc$MH,"LocalAlloc");
+    }
+    public static MemoryAddress LocalAlloc ( int uFlags,  long uBytes) {
+        var mh$ = LocalAlloc$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(uFlags, uBytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalReAlloc$MH() {
+        return RuntimeHelper.requireNonNull(constants$177.LocalReAlloc$MH,"LocalReAlloc");
+    }
+    public static MemoryAddress LocalReAlloc ( Addressable hMem,  long uBytes,  int uFlags) {
+        var mh$ = LocalReAlloc$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hMem, uBytes, uFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalLock$MH() {
+        return RuntimeHelper.requireNonNull(constants$177.LocalLock$MH,"LocalLock");
+    }
+    public static MemoryAddress LocalLock ( Addressable hMem) {
+        var mh$ = LocalLock$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalHandle$MH() {
+        return RuntimeHelper.requireNonNull(constants$178.LocalHandle$MH,"LocalHandle");
+    }
+    public static MemoryAddress LocalHandle ( Addressable pMem) {
+        var mh$ = LocalHandle$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalUnlock$MH() {
+        return RuntimeHelper.requireNonNull(constants$178.LocalUnlock$MH,"LocalUnlock");
+    }
+    public static int LocalUnlock ( Addressable hMem) {
+        var mh$ = LocalUnlock$MH();
+        try {
+            return (int)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalSize$MH() {
+        return RuntimeHelper.requireNonNull(constants$178.LocalSize$MH,"LocalSize");
+    }
+    public static long LocalSize ( Addressable hMem) {
+        var mh$ = LocalSize$MH();
+        try {
+            return (long)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalFlags$MH() {
+        return RuntimeHelper.requireNonNull(constants$178.LocalFlags$MH,"LocalFlags");
+    }
+    public static int LocalFlags ( Addressable hMem) {
+        var mh$ = LocalFlags$MH();
+        try {
+            return (int)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalFree$MH() {
+        return RuntimeHelper.requireNonNull(constants$178.LocalFree$MH,"LocalFree");
+    }
+    public static MemoryAddress LocalFree ( Addressable hMem) {
+        var mh$ = LocalFree$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hMem);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalShrink$MH() {
+        return RuntimeHelper.requireNonNull(constants$178.LocalShrink$MH,"LocalShrink");
+    }
+    public static long LocalShrink ( Addressable hMem,  int cbNewSize) {
+        var mh$ = LocalShrink$MH();
+        try {
+            return (long)mh$.invokeExact(hMem, cbNewSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalCompact$MH() {
+        return RuntimeHelper.requireNonNull(constants$179.LocalCompact$MH,"LocalCompact");
+    }
+    public static long LocalCompact ( int uMinFree) {
+        var mh$ = LocalCompact$MH();
+        try {
+            return (long)mh$.invokeExact(uMinFree);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetBinaryTypeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$179.GetBinaryTypeA$MH,"GetBinaryTypeA");
+    }
+    public static int GetBinaryTypeA ( Addressable lpApplicationName,  Addressable lpBinaryType) {
+        var mh$ = GetBinaryTypeA$MH();
+        try {
+            return (int)mh$.invokeExact(lpApplicationName, lpBinaryType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetBinaryTypeW$MH() {
+        return RuntimeHelper.requireNonNull(constants$179.GetBinaryTypeW$MH,"GetBinaryTypeW");
+    }
+    public static int GetBinaryTypeW ( Addressable lpApplicationName,  Addressable lpBinaryType) {
+        var mh$ = GetBinaryTypeW$MH();
+        try {
+            return (int)mh$.invokeExact(lpApplicationName, lpBinaryType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetShortPathNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$179.GetShortPathNameA$MH,"GetShortPathNameA");
+    }
+    public static int GetShortPathNameA ( Addressable lpszLongPath,  Addressable lpszShortPath,  int cchBuffer) {
+        var mh$ = GetShortPathNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszLongPath, lpszShortPath, cchBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetLongPathNameTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$179.GetLongPathNameTransactedA$MH,"GetLongPathNameTransactedA");
+    }
+    public static int GetLongPathNameTransactedA ( Addressable lpszShortPath,  Addressable lpszLongPath,  int cchBuffer,  Addressable hTransaction) {
+        var mh$ = GetLongPathNameTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszShortPath, lpszLongPath, cchBuffer, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetLongPathNameTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$179.GetLongPathNameTransactedW$MH,"GetLongPathNameTransactedW");
+    }
+    public static int GetLongPathNameTransactedW ( Addressable lpszShortPath,  Addressable lpszLongPath,  int cchBuffer,  Addressable hTransaction) {
+        var mh$ = GetLongPathNameTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszShortPath, lpszLongPath, cchBuffer, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProcessAffinityMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$180.GetProcessAffinityMask$MH,"GetProcessAffinityMask");
+    }
+    public static int GetProcessAffinityMask ( Addressable hProcess,  Addressable lpProcessAffinityMask,  Addressable lpSystemAffinityMask) {
+        var mh$ = GetProcessAffinityMask$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpProcessAffinityMask, lpSystemAffinityMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetProcessAffinityMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$180.SetProcessAffinityMask$MH,"SetProcessAffinityMask");
+    }
+    public static int SetProcessAffinityMask ( Addressable hProcess,  long dwProcessAffinityMask) {
+        var mh$ = SetProcessAffinityMask$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, dwProcessAffinityMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProcessIoCounters$MH() {
+        return RuntimeHelper.requireNonNull(constants$180.GetProcessIoCounters$MH,"GetProcessIoCounters");
+    }
+    public static int GetProcessIoCounters ( Addressable hProcess,  Addressable lpIoCounters) {
+        var mh$ = GetProcessIoCounters$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpIoCounters);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProcessWorkingSetSize$MH() {
+        return RuntimeHelper.requireNonNull(constants$180.GetProcessWorkingSetSize$MH,"GetProcessWorkingSetSize");
+    }
+    public static int GetProcessWorkingSetSize ( Addressable hProcess,  Addressable lpMinimumWorkingSetSize,  Addressable lpMaximumWorkingSetSize) {
+        var mh$ = GetProcessWorkingSetSize$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpMinimumWorkingSetSize, lpMaximumWorkingSetSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetProcessWorkingSetSize$MH() {
+        return RuntimeHelper.requireNonNull(constants$180.SetProcessWorkingSetSize$MH,"SetProcessWorkingSetSize");
+    }
+    public static int SetProcessWorkingSetSize ( Addressable hProcess,  long dwMinimumWorkingSetSize,  long dwMaximumWorkingSetSize) {
+        var mh$ = SetProcessWorkingSetSize$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, dwMinimumWorkingSetSize, dwMaximumWorkingSetSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FatalExit$MH() {
+        return RuntimeHelper.requireNonNull(constants$180.FatalExit$MH,"FatalExit");
+    }
+    public static void FatalExit ( int ExitCode) {
+        var mh$ = FatalExit$MH();
+        try {
+            mh$.invokeExact(ExitCode);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetEnvironmentStringsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$181.SetEnvironmentStringsA$MH,"SetEnvironmentStringsA");
+    }
+    public static int SetEnvironmentStringsA ( Addressable NewEnvironment) {
+        var mh$ = SetEnvironmentStringsA$MH();
+        try {
+            return (int)mh$.invokeExact(NewEnvironment);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SwitchToFiber$MH() {
+        return RuntimeHelper.requireNonNull(constants$181.SwitchToFiber$MH,"SwitchToFiber");
+    }
+    public static void SwitchToFiber ( Addressable lpFiber) {
+        var mh$ = SwitchToFiber$MH();
+        try {
+            mh$.invokeExact(lpFiber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteFiber$MH() {
+        return RuntimeHelper.requireNonNull(constants$181.DeleteFiber$MH,"DeleteFiber");
+    }
+    public static void DeleteFiber ( Addressable lpFiber) {
+        var mh$ = DeleteFiber$MH();
+        try {
+            mh$.invokeExact(lpFiber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ConvertFiberToThread$MH() {
+        return RuntimeHelper.requireNonNull(constants$181.ConvertFiberToThread$MH,"ConvertFiberToThread");
+    }
+    public static int ConvertFiberToThread () {
+        var mh$ = ConvertFiberToThread$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateFiberEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$181.CreateFiberEx$MH,"CreateFiberEx");
+    }
+    public static MemoryAddress CreateFiberEx ( long dwStackCommitSize,  long dwStackReserveSize,  int dwFlags,  Addressable lpStartAddress,  Addressable lpParameter) {
+        var mh$ = CreateFiberEx$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwStackCommitSize, dwStackReserveSize, dwFlags, lpStartAddress, lpParameter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ConvertThreadToFiberEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$181.ConvertThreadToFiberEx$MH,"ConvertThreadToFiberEx");
+    }
+    public static MemoryAddress ConvertThreadToFiberEx ( Addressable lpParameter,  int dwFlags) {
+        var mh$ = ConvertThreadToFiberEx$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpParameter, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateFiber$MH() {
+        return RuntimeHelper.requireNonNull(constants$182.CreateFiber$MH,"CreateFiber");
+    }
+    public static MemoryAddress CreateFiber ( long dwStackSize,  Addressable lpStartAddress,  Addressable lpParameter) {
+        var mh$ = CreateFiber$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwStackSize, lpStartAddress, lpParameter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ConvertThreadToFiber$MH() {
+        return RuntimeHelper.requireNonNull(constants$182.ConvertThreadToFiber$MH,"ConvertThreadToFiber");
+    }
+    public static MemoryAddress ConvertThreadToFiber ( Addressable lpParameter) {
+        var mh$ = ConvertThreadToFiber$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpParameter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PUMS_CONTEXT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUMS_COMPLETION_LIST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUMS_THREAD_INFO_CLASS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUMS_SCHEDULER_STARTUP_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUMS_SYSTEM_THREAD_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle CreateUmsCompletionList$MH() {
+        return RuntimeHelper.requireNonNull(constants$182.CreateUmsCompletionList$MH,"CreateUmsCompletionList");
+    }
+    public static int CreateUmsCompletionList ( Addressable UmsCompletionList) {
+        var mh$ = CreateUmsCompletionList$MH();
+        try {
+            return (int)mh$.invokeExact(UmsCompletionList);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DequeueUmsCompletionListItems$MH() {
+        return RuntimeHelper.requireNonNull(constants$182.DequeueUmsCompletionListItems$MH,"DequeueUmsCompletionListItems");
+    }
+    public static int DequeueUmsCompletionListItems ( Addressable UmsCompletionList,  int WaitTimeOut,  Addressable UmsThreadList) {
+        var mh$ = DequeueUmsCompletionListItems$MH();
+        try {
+            return (int)mh$.invokeExact(UmsCompletionList, WaitTimeOut, UmsThreadList);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetUmsCompletionListEvent$MH() {
+        return RuntimeHelper.requireNonNull(constants$183.GetUmsCompletionListEvent$MH,"GetUmsCompletionListEvent");
+    }
+    public static int GetUmsCompletionListEvent ( Addressable UmsCompletionList,  Addressable UmsCompletionEvent) {
+        var mh$ = GetUmsCompletionListEvent$MH();
+        try {
+            return (int)mh$.invokeExact(UmsCompletionList, UmsCompletionEvent);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ExecuteUmsThread$MH() {
+        return RuntimeHelper.requireNonNull(constants$183.ExecuteUmsThread$MH,"ExecuteUmsThread");
+    }
+    public static int ExecuteUmsThread ( Addressable UmsThread) {
+        var mh$ = ExecuteUmsThread$MH();
+        try {
+            return (int)mh$.invokeExact(UmsThread);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UmsThreadYield$MH() {
+        return RuntimeHelper.requireNonNull(constants$183.UmsThreadYield$MH,"UmsThreadYield");
+    }
+    public static int UmsThreadYield ( Addressable SchedulerParam) {
+        var mh$ = UmsThreadYield$MH();
+        try {
+            return (int)mh$.invokeExact(SchedulerParam);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteUmsCompletionList$MH() {
+        return RuntimeHelper.requireNonNull(constants$183.DeleteUmsCompletionList$MH,"DeleteUmsCompletionList");
+    }
+    public static int DeleteUmsCompletionList ( Addressable UmsCompletionList) {
+        var mh$ = DeleteUmsCompletionList$MH();
+        try {
+            return (int)mh$.invokeExact(UmsCompletionList);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCurrentUmsThread$MH() {
+        return RuntimeHelper.requireNonNull(constants$183.GetCurrentUmsThread$MH,"GetCurrentUmsThread");
+    }
+    public static MemoryAddress GetCurrentUmsThread () {
+        var mh$ = GetCurrentUmsThread$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNextUmsListItem$MH() {
+        return RuntimeHelper.requireNonNull(constants$183.GetNextUmsListItem$MH,"GetNextUmsListItem");
+    }
+    public static MemoryAddress GetNextUmsListItem ( Addressable UmsContext) {
+        var mh$ = GetNextUmsListItem$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(UmsContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryUmsThreadInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$184.QueryUmsThreadInformation$MH,"QueryUmsThreadInformation");
+    }
+    public static int QueryUmsThreadInformation ( Addressable UmsThread,  int UmsThreadInfoClass,  Addressable UmsThreadInformation,  int UmsThreadInformationLength,  Addressable ReturnLength) {
+        var mh$ = QueryUmsThreadInformation$MH();
+        try {
+            return (int)mh$.invokeExact(UmsThread, UmsThreadInfoClass, UmsThreadInformation, UmsThreadInformationLength, ReturnLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetUmsThreadInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$184.SetUmsThreadInformation$MH,"SetUmsThreadInformation");
+    }
+    public static int SetUmsThreadInformation ( Addressable UmsThread,  int UmsThreadInfoClass,  Addressable UmsThreadInformation,  int UmsThreadInformationLength) {
+        var mh$ = SetUmsThreadInformation$MH();
+        try {
+            return (int)mh$.invokeExact(UmsThread, UmsThreadInfoClass, UmsThreadInformation, UmsThreadInformationLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteUmsThreadContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$184.DeleteUmsThreadContext$MH,"DeleteUmsThreadContext");
+    }
+    public static int DeleteUmsThreadContext ( Addressable UmsThread) {
+        var mh$ = DeleteUmsThreadContext$MH();
+        try {
+            return (int)mh$.invokeExact(UmsThread);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateUmsThreadContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$184.CreateUmsThreadContext$MH,"CreateUmsThreadContext");
+    }
+    public static int CreateUmsThreadContext ( Addressable lpUmsThread) {
+        var mh$ = CreateUmsThreadContext$MH();
+        try {
+            return (int)mh$.invokeExact(lpUmsThread);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnterUmsSchedulingMode$MH() {
+        return RuntimeHelper.requireNonNull(constants$184.EnterUmsSchedulingMode$MH,"EnterUmsSchedulingMode");
+    }
+    public static int EnterUmsSchedulingMode ( Addressable SchedulerStartupInfo) {
+        var mh$ = EnterUmsSchedulingMode$MH();
+        try {
+            return (int)mh$.invokeExact(SchedulerStartupInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetUmsSystemThreadInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$184.GetUmsSystemThreadInformation$MH,"GetUmsSystemThreadInformation");
+    }
+    public static int GetUmsSystemThreadInformation ( Addressable ThreadHandle,  Addressable SystemThreadInfo) {
+        var mh$ = GetUmsSystemThreadInformation$MH();
+        try {
+            return (int)mh$.invokeExact(ThreadHandle, SystemThreadInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadAffinityMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$185.SetThreadAffinityMask$MH,"SetThreadAffinityMask");
+    }
+    public static long SetThreadAffinityMask ( Addressable hThread,  long dwThreadAffinityMask) {
+        var mh$ = SetThreadAffinityMask$MH();
+        try {
+            return (long)mh$.invokeExact(hThread, dwThreadAffinityMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetProcessDEPPolicy$MH() {
+        return RuntimeHelper.requireNonNull(constants$185.SetProcessDEPPolicy$MH,"SetProcessDEPPolicy");
+    }
+    public static int SetProcessDEPPolicy ( int dwFlags) {
+        var mh$ = SetProcessDEPPolicy$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProcessDEPPolicy$MH() {
+        return RuntimeHelper.requireNonNull(constants$185.GetProcessDEPPolicy$MH,"GetProcessDEPPolicy");
+    }
+    public static int GetProcessDEPPolicy ( Addressable hProcess,  Addressable lpFlags,  Addressable lpPermanent) {
+        var mh$ = GetProcessDEPPolicy$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, lpFlags, lpPermanent);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RequestWakeupLatency$MH() {
+        return RuntimeHelper.requireNonNull(constants$185.RequestWakeupLatency$MH,"RequestWakeupLatency");
+    }
+    public static int RequestWakeupLatency ( int latency) {
+        var mh$ = RequestWakeupLatency$MH();
+        try {
+            return (int)mh$.invokeExact(latency);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsSystemResumeAutomatic$MH() {
+        return RuntimeHelper.requireNonNull(constants$185.IsSystemResumeAutomatic$MH,"IsSystemResumeAutomatic");
+    }
+    public static int IsSystemResumeAutomatic () {
+        var mh$ = IsSystemResumeAutomatic$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetThreadSelectorEntry$MH() {
+        return RuntimeHelper.requireNonNull(constants$185.GetThreadSelectorEntry$MH,"GetThreadSelectorEntry");
+    }
+    public static int GetThreadSelectorEntry ( Addressable hThread,  int dwSelector,  Addressable lpSelectorEntry) {
+        var mh$ = GetThreadSelectorEntry$MH();
+        try {
+            return (int)mh$.invokeExact(hThread, dwSelector, lpSelectorEntry);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadExecutionState$MH() {
+        return RuntimeHelper.requireNonNull(constants$186.SetThreadExecutionState$MH,"SetThreadExecutionState");
+    }
+    public static int SetThreadExecutionState ( int esFlags) {
+        var mh$ = SetThreadExecutionState$MH();
+        try {
+            return (int)mh$.invokeExact(esFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PPOWER_REQUEST_CONTEXT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPOWER_REQUEST_CONTEXT = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle PowerCreateRequest$MH() {
+        return RuntimeHelper.requireNonNull(constants$186.PowerCreateRequest$MH,"PowerCreateRequest");
+    }
+    public static MemoryAddress PowerCreateRequest ( Addressable Context) {
+        var mh$ = PowerCreateRequest$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Context);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PowerSetRequest$MH() {
+        return RuntimeHelper.requireNonNull(constants$186.PowerSetRequest$MH,"PowerSetRequest");
+    }
+    public static int PowerSetRequest ( Addressable PowerRequest,  int RequestType) {
+        var mh$ = PowerSetRequest$MH();
+        try {
+            return (int)mh$.invokeExact(PowerRequest, RequestType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PowerClearRequest$MH() {
+        return RuntimeHelper.requireNonNull(constants$186.PowerClearRequest$MH,"PowerClearRequest");
+    }
+    public static int PowerClearRequest ( Addressable PowerRequest,  int RequestType) {
+        var mh$ = PowerClearRequest$MH();
+        try {
+            return (int)mh$.invokeExact(PowerRequest, RequestType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFileCompletionNotificationModes$MH() {
+        return RuntimeHelper.requireNonNull(constants$186.SetFileCompletionNotificationModes$MH,"SetFileCompletionNotificationModes");
+    }
+    public static int SetFileCompletionNotificationModes ( Addressable FileHandle,  byte Flags) {
+        var mh$ = SetFileCompletionNotificationModes$MH();
+        try {
+            return (int)mh$.invokeExact(FileHandle, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle Wow64GetThreadSelectorEntry$MH() {
+        return RuntimeHelper.requireNonNull(constants$186.Wow64GetThreadSelectorEntry$MH,"Wow64GetThreadSelectorEntry");
+    }
+    public static int Wow64GetThreadSelectorEntry ( Addressable hThread,  int dwSelector,  Addressable lpSelectorEntry) {
+        var mh$ = Wow64GetThreadSelectorEntry$MH();
+        try {
+            return (int)mh$.invokeExact(hThread, dwSelector, lpSelectorEntry);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DebugSetProcessKillOnExit$MH() {
+        return RuntimeHelper.requireNonNull(constants$187.DebugSetProcessKillOnExit$MH,"DebugSetProcessKillOnExit");
+    }
+    public static int DebugSetProcessKillOnExit ( int KillOnExit) {
+        var mh$ = DebugSetProcessKillOnExit$MH();
+        try {
+            return (int)mh$.invokeExact(KillOnExit);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DebugBreakProcess$MH() {
+        return RuntimeHelper.requireNonNull(constants$187.DebugBreakProcess$MH,"DebugBreakProcess");
+    }
+    public static int DebugBreakProcess ( Addressable Process) {
+        var mh$ = DebugBreakProcess$MH();
+        try {
+            return (int)mh$.invokeExact(Process);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PulseEvent$MH() {
+        return RuntimeHelper.requireNonNull(constants$187.PulseEvent$MH,"PulseEvent");
+    }
+    public static int PulseEvent ( Addressable hEvent) {
+        var mh$ = PulseEvent$MH();
+        try {
+            return (int)mh$.invokeExact(hEvent);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalDeleteAtom$MH() {
+        return RuntimeHelper.requireNonNull(constants$187.GlobalDeleteAtom$MH,"GlobalDeleteAtom");
+    }
+    public static short GlobalDeleteAtom ( short nAtom) {
+        var mh$ = GlobalDeleteAtom$MH();
+        try {
+            return (short)mh$.invokeExact(nAtom);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InitAtomTable$MH() {
+        return RuntimeHelper.requireNonNull(constants$187.InitAtomTable$MH,"InitAtomTable");
+    }
+    public static int InitAtomTable ( int nSize) {
+        var mh$ = InitAtomTable$MH();
+        try {
+            return (int)mh$.invokeExact(nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteAtom$MH() {
+        return RuntimeHelper.requireNonNull(constants$187.DeleteAtom$MH,"DeleteAtom");
+    }
+    public static short DeleteAtom ( short nAtom) {
+        var mh$ = DeleteAtom$MH();
+        try {
+            return (short)mh$.invokeExact(nAtom);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetHandleCount$MH() {
+        return RuntimeHelper.requireNonNull(constants$188.SetHandleCount$MH,"SetHandleCount");
+    }
+    public static int SetHandleCount ( int uNumber) {
+        var mh$ = SetHandleCount$MH();
+        try {
+            return (int)mh$.invokeExact(uNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RequestDeviceWakeup$MH() {
+        return RuntimeHelper.requireNonNull(constants$188.RequestDeviceWakeup$MH,"RequestDeviceWakeup");
+    }
+    public static int RequestDeviceWakeup ( Addressable hDevice) {
+        var mh$ = RequestDeviceWakeup$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CancelDeviceWakeupRequest$MH() {
+        return RuntimeHelper.requireNonNull(constants$188.CancelDeviceWakeupRequest$MH,"CancelDeviceWakeupRequest");
+    }
+    public static int CancelDeviceWakeupRequest ( Addressable hDevice) {
+        var mh$ = CancelDeviceWakeupRequest$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDevicePowerState$MH() {
+        return RuntimeHelper.requireNonNull(constants$188.GetDevicePowerState$MH,"GetDevicePowerState");
+    }
+    public static int GetDevicePowerState ( Addressable hDevice,  Addressable pfOn) {
+        var mh$ = GetDevicePowerState$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, pfOn);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetMessageWaitingIndicator$MH() {
+        return RuntimeHelper.requireNonNull(constants$188.SetMessageWaitingIndicator$MH,"SetMessageWaitingIndicator");
+    }
+    public static int SetMessageWaitingIndicator ( Addressable hMsgIndicator,  int ulMsgCount) {
+        var mh$ = SetMessageWaitingIndicator$MH();
+        try {
+            return (int)mh$.invokeExact(hMsgIndicator, ulMsgCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFileShortNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$188.SetFileShortNameA$MH,"SetFileShortNameA");
+    }
+    public static int SetFileShortNameA ( Addressable hFile,  Addressable lpShortName) {
+        var mh$ = SetFileShortNameA$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpShortName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFileShortNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$189.SetFileShortNameW$MH,"SetFileShortNameW");
+    }
+    public static int SetFileShortNameW ( Addressable hFile,  Addressable lpShortName) {
+        var mh$ = SetFileShortNameW$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpShortName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadModule$MH() {
+        return RuntimeHelper.requireNonNull(constants$189.LoadModule$MH,"LoadModule");
+    }
+    public static int LoadModule ( Addressable lpModuleName,  Addressable lpParameterBlock) {
+        var mh$ = LoadModule$MH();
+        try {
+            return (int)mh$.invokeExact(lpModuleName, lpParameterBlock);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WinExec$MH() {
+        return RuntimeHelper.requireNonNull(constants$189.WinExec$MH,"WinExec");
+    }
+    public static int WinExec ( Addressable lpCmdLine,  int uCmdShow) {
+        var mh$ = WinExec$MH();
+        try {
+            return (int)mh$.invokeExact(lpCmdLine, uCmdShow);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ClearCommBreak$MH() {
+        return RuntimeHelper.requireNonNull(constants$189.ClearCommBreak$MH,"ClearCommBreak");
+    }
+    public static int ClearCommBreak ( Addressable hFile) {
+        var mh$ = ClearCommBreak$MH();
+        try {
+            return (int)mh$.invokeExact(hFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ClearCommError$MH() {
+        return RuntimeHelper.requireNonNull(constants$189.ClearCommError$MH,"ClearCommError");
+    }
+    public static int ClearCommError ( Addressable hFile,  Addressable lpErrors,  Addressable lpStat) {
+        var mh$ = ClearCommError$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpErrors, lpStat);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetupComm$MH() {
+        return RuntimeHelper.requireNonNull(constants$189.SetupComm$MH,"SetupComm");
+    }
+    public static int SetupComm ( Addressable hFile,  int dwInQueue,  int dwOutQueue) {
+        var mh$ = SetupComm$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, dwInQueue, dwOutQueue);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EscapeCommFunction$MH() {
+        return RuntimeHelper.requireNonNull(constants$190.EscapeCommFunction$MH,"EscapeCommFunction");
+    }
+    public static int EscapeCommFunction ( Addressable hFile,  int dwFunc) {
+        var mh$ = EscapeCommFunction$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, dwFunc);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCommConfig$MH() {
+        return RuntimeHelper.requireNonNull(constants$190.GetCommConfig$MH,"GetCommConfig");
+    }
+    public static int GetCommConfig ( Addressable hCommDev,  Addressable lpCC,  Addressable lpdwSize) {
+        var mh$ = GetCommConfig$MH();
+        try {
+            return (int)mh$.invokeExact(hCommDev, lpCC, lpdwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCommMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$190.GetCommMask$MH,"GetCommMask");
+    }
+    public static int GetCommMask ( Addressable hFile,  Addressable lpEvtMask) {
+        var mh$ = GetCommMask$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpEvtMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCommProperties$MH() {
+        return RuntimeHelper.requireNonNull(constants$190.GetCommProperties$MH,"GetCommProperties");
+    }
+    public static int GetCommProperties ( Addressable hFile,  Addressable lpCommProp) {
+        var mh$ = GetCommProperties$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpCommProp);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCommModemStatus$MH() {
+        return RuntimeHelper.requireNonNull(constants$190.GetCommModemStatus$MH,"GetCommModemStatus");
+    }
+    public static int GetCommModemStatus ( Addressable hFile,  Addressable lpModemStat) {
+        var mh$ = GetCommModemStatus$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpModemStat);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCommState$MH() {
+        return RuntimeHelper.requireNonNull(constants$190.GetCommState$MH,"GetCommState");
+    }
+    public static int GetCommState ( Addressable hFile,  Addressable lpDCB) {
+        var mh$ = GetCommState$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpDCB);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCommTimeouts$MH() {
+        return RuntimeHelper.requireNonNull(constants$191.GetCommTimeouts$MH,"GetCommTimeouts");
+    }
+    public static int GetCommTimeouts ( Addressable hFile,  Addressable lpCommTimeouts) {
+        var mh$ = GetCommTimeouts$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpCommTimeouts);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PurgeComm$MH() {
+        return RuntimeHelper.requireNonNull(constants$191.PurgeComm$MH,"PurgeComm");
+    }
+    public static int PurgeComm ( Addressable hFile,  int dwFlags) {
+        var mh$ = PurgeComm$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetCommBreak$MH() {
+        return RuntimeHelper.requireNonNull(constants$191.SetCommBreak$MH,"SetCommBreak");
+    }
+    public static int SetCommBreak ( Addressable hFile) {
+        var mh$ = SetCommBreak$MH();
+        try {
+            return (int)mh$.invokeExact(hFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetCommConfig$MH() {
+        return RuntimeHelper.requireNonNull(constants$191.SetCommConfig$MH,"SetCommConfig");
+    }
+    public static int SetCommConfig ( Addressable hCommDev,  Addressable lpCC,  int dwSize) {
+        var mh$ = SetCommConfig$MH();
+        try {
+            return (int)mh$.invokeExact(hCommDev, lpCC, dwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetCommMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$191.SetCommMask$MH,"SetCommMask");
+    }
+    public static int SetCommMask ( Addressable hFile,  int dwEvtMask) {
+        var mh$ = SetCommMask$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, dwEvtMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetCommState$MH() {
+        return RuntimeHelper.requireNonNull(constants$191.SetCommState$MH,"SetCommState");
+    }
+    public static int SetCommState ( Addressable hFile,  Addressable lpDCB) {
+        var mh$ = SetCommState$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpDCB);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetCommTimeouts$MH() {
+        return RuntimeHelper.requireNonNull(constants$192.SetCommTimeouts$MH,"SetCommTimeouts");
+    }
+    public static int SetCommTimeouts ( Addressable hFile,  Addressable lpCommTimeouts) {
+        var mh$ = SetCommTimeouts$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpCommTimeouts);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle TransmitCommChar$MH() {
+        return RuntimeHelper.requireNonNull(constants$192.TransmitCommChar$MH,"TransmitCommChar");
+    }
+    public static int TransmitCommChar ( Addressable hFile,  byte cChar) {
+        var mh$ = TransmitCommChar$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, cChar);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WaitCommEvent$MH() {
+        return RuntimeHelper.requireNonNull(constants$192.WaitCommEvent$MH,"WaitCommEvent");
+    }
+    public static int WaitCommEvent ( Addressable hFile,  Addressable lpEvtMask,  Addressable lpOverlapped) {
+        var mh$ = WaitCommEvent$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpEvtMask, lpOverlapped);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenCommPort$MH() {
+        return RuntimeHelper.requireNonNull(constants$192.OpenCommPort$MH,"OpenCommPort");
+    }
+    public static MemoryAddress OpenCommPort ( int uPortNumber,  int dwDesiredAccess,  int dwFlagsAndAttributes) {
+        var mh$ = OpenCommPort$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(uPortNumber, dwDesiredAccess, dwFlagsAndAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCommPorts$MH() {
+        return RuntimeHelper.requireNonNull(constants$192.GetCommPorts$MH,"GetCommPorts");
+    }
+    public static int GetCommPorts ( Addressable lpPortNumbers,  int uPortNumbersCount,  Addressable puPortNumbersFound) {
+        var mh$ = GetCommPorts$MH();
+        try {
+            return (int)mh$.invokeExact(lpPortNumbers, uPortNumbersCount, puPortNumbersFound);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetTapePosition$MH() {
+        return RuntimeHelper.requireNonNull(constants$192.SetTapePosition$MH,"SetTapePosition");
+    }
+    public static int SetTapePosition ( Addressable hDevice,  int dwPositionMethod,  int dwPartition,  int dwOffsetLow,  int dwOffsetHigh,  int bImmediate) {
+        var mh$ = SetTapePosition$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, dwPositionMethod, dwPartition, dwOffsetLow, dwOffsetHigh, bImmediate);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetTapePosition$MH() {
+        return RuntimeHelper.requireNonNull(constants$193.GetTapePosition$MH,"GetTapePosition");
+    }
+    public static int GetTapePosition ( Addressable hDevice,  int dwPositionType,  Addressable lpdwPartition,  Addressable lpdwOffsetLow,  Addressable lpdwOffsetHigh) {
+        var mh$ = GetTapePosition$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, dwPositionType, lpdwPartition, lpdwOffsetLow, lpdwOffsetHigh);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PrepareTape$MH() {
+        return RuntimeHelper.requireNonNull(constants$193.PrepareTape$MH,"PrepareTape");
+    }
+    public static int PrepareTape ( Addressable hDevice,  int dwOperation,  int bImmediate) {
+        var mh$ = PrepareTape$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, dwOperation, bImmediate);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EraseTape$MH() {
+        return RuntimeHelper.requireNonNull(constants$193.EraseTape$MH,"EraseTape");
+    }
+    public static int EraseTape ( Addressable hDevice,  int dwEraseType,  int bImmediate) {
+        var mh$ = EraseTape$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, dwEraseType, bImmediate);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateTapePartition$MH() {
+        return RuntimeHelper.requireNonNull(constants$193.CreateTapePartition$MH,"CreateTapePartition");
+    }
+    public static int CreateTapePartition ( Addressable hDevice,  int dwPartitionMethod,  int dwCount,  int dwSize) {
+        var mh$ = CreateTapePartition$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, dwPartitionMethod, dwCount, dwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteTapemark$MH() {
+        return RuntimeHelper.requireNonNull(constants$193.WriteTapemark$MH,"WriteTapemark");
+    }
+    public static int WriteTapemark ( Addressable hDevice,  int dwTapemarkType,  int dwTapemarkCount,  int bImmediate) {
+        var mh$ = WriteTapemark$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, dwTapemarkType, dwTapemarkCount, bImmediate);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetTapeStatus$MH() {
+        return RuntimeHelper.requireNonNull(constants$193.GetTapeStatus$MH,"GetTapeStatus");
+    }
+    public static int GetTapeStatus ( Addressable hDevice) {
+        var mh$ = GetTapeStatus$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetTapeParameters$MH() {
+        return RuntimeHelper.requireNonNull(constants$194.GetTapeParameters$MH,"GetTapeParameters");
+    }
+    public static int GetTapeParameters ( Addressable hDevice,  int dwOperation,  Addressable lpdwSize,  Addressable lpTapeInformation) {
+        var mh$ = GetTapeParameters$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, dwOperation, lpdwSize, lpTapeInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetTapeParameters$MH() {
+        return RuntimeHelper.requireNonNull(constants$194.SetTapeParameters$MH,"SetTapeParameters");
+    }
+    public static int SetTapeParameters ( Addressable hDevice,  int dwOperation,  Addressable lpTapeInformation) {
+        var mh$ = SetTapeParameters$MH();
+        try {
+            return (int)mh$.invokeExact(hDevice, dwOperation, lpTapeInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MulDiv$MH() {
+        return RuntimeHelper.requireNonNull(constants$194.MulDiv$MH,"MulDiv");
+    }
+    public static int MulDiv ( int nNumber,  int nNumerator,  int nDenominator) {
+        var mh$ = MulDiv$MH();
+        try {
+            return (int)mh$.invokeExact(nNumber, nNumerator, nDenominator);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int DEPPolicyAlwaysOff() {
+        return (int)0L;
+    }
+    public static int DEPPolicyAlwaysOn() {
+        return (int)1L;
+    }
+    public static int DEPPolicyOptIn() {
+        return (int)2L;
+    }
+    public static int DEPPolicyOptOut() {
+        return (int)3L;
+    }
+    public static int DEPTotalPolicyCount() {
+        return (int)4L;
+    }
+    public static MethodHandle GetSystemDEPPolicy$MH() {
+        return RuntimeHelper.requireNonNull(constants$194.GetSystemDEPPolicy$MH,"GetSystemDEPPolicy");
+    }
+    public static int GetSystemDEPPolicy () {
+        var mh$ = GetSystemDEPPolicy$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetSystemRegistryQuota$MH() {
+        return RuntimeHelper.requireNonNull(constants$194.GetSystemRegistryQuota$MH,"GetSystemRegistryQuota");
+    }
+    public static int GetSystemRegistryQuota ( Addressable pdwQuotaAllowed,  Addressable pdwQuotaUsed) {
+        var mh$ = GetSystemRegistryQuota$MH();
+        try {
+            return (int)mh$.invokeExact(pdwQuotaAllowed, pdwQuotaUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FileTimeToDosDateTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$194.FileTimeToDosDateTime$MH,"FileTimeToDosDateTime");
+    }
+    public static int FileTimeToDosDateTime ( Addressable lpFileTime,  Addressable lpFatDate,  Addressable lpFatTime) {
+        var mh$ = FileTimeToDosDateTime$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileTime, lpFatDate, lpFatTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DosDateTimeToFileTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$195.DosDateTimeToFileTime$MH,"DosDateTimeToFileTime");
+    }
+    public static int DosDateTimeToFileTime ( short wFatDate,  short wFatTime,  Addressable lpFileTime) {
+        var mh$ = DosDateTimeToFileTime$MH();
+        try {
+            return (int)mh$.invokeExact(wFatDate, wFatTime, lpFileTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FormatMessageA$MH() {
+        return RuntimeHelper.requireNonNull(constants$195.FormatMessageA$MH,"FormatMessageA");
+    }
+    public static int FormatMessageA ( int dwFlags,  Addressable lpSource,  int dwMessageId,  int dwLanguageId,  Addressable lpBuffer,  int nSize,  Addressable Arguments) {
+        var mh$ = FormatMessageA$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, nSize, Arguments);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FormatMessageW$MH() {
+        return RuntimeHelper.requireNonNull(constants$195.FormatMessageW$MH,"FormatMessageW");
+    }
+    public static int FormatMessageW ( int dwFlags,  Addressable lpSource,  int dwMessageId,  int dwLanguageId,  Addressable lpBuffer,  int nSize,  Addressable Arguments) {
+        var mh$ = FormatMessageW$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpSource, dwMessageId, dwLanguageId, lpBuffer, nSize, Arguments);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateMailslotA$MH() {
+        return RuntimeHelper.requireNonNull(constants$195.CreateMailslotA$MH,"CreateMailslotA");
+    }
+    public static MemoryAddress CreateMailslotA ( Addressable lpName,  int nMaxMessageSize,  int lReadTimeout,  Addressable lpSecurityAttributes) {
+        var mh$ = CreateMailslotA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpName, nMaxMessageSize, lReadTimeout, lpSecurityAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateMailslotW$MH() {
+        return RuntimeHelper.requireNonNull(constants$195.CreateMailslotW$MH,"CreateMailslotW");
+    }
+    public static MemoryAddress CreateMailslotW ( Addressable lpName,  int nMaxMessageSize,  int lReadTimeout,  Addressable lpSecurityAttributes) {
+        var mh$ = CreateMailslotW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpName, nMaxMessageSize, lReadTimeout, lpSecurityAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetMailslotInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$195.GetMailslotInfo$MH,"GetMailslotInfo");
+    }
+    public static int GetMailslotInfo ( Addressable hMailslot,  Addressable lpMaxMessageSize,  Addressable lpNextSize,  Addressable lpMessageCount,  Addressable lpReadTimeout) {
+        var mh$ = GetMailslotInfo$MH();
+        try {
+            return (int)mh$.invokeExact(hMailslot, lpMaxMessageSize, lpNextSize, lpMessageCount, lpReadTimeout);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetMailslotInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$196.SetMailslotInfo$MH,"SetMailslotInfo");
+    }
+    public static int SetMailslotInfo ( Addressable hMailslot,  int lReadTimeout) {
+        var mh$ = SetMailslotInfo$MH();
+        try {
+            return (int)mh$.invokeExact(hMailslot, lReadTimeout);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EncryptFileA$MH() {
+        return RuntimeHelper.requireNonNull(constants$196.EncryptFileA$MH,"EncryptFileA");
+    }
+    public static int EncryptFileA ( Addressable lpFileName) {
+        var mh$ = EncryptFileA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EncryptFileW$MH() {
+        return RuntimeHelper.requireNonNull(constants$196.EncryptFileW$MH,"EncryptFileW");
+    }
+    public static int EncryptFileW ( Addressable lpFileName) {
+        var mh$ = EncryptFileW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DecryptFileA$MH() {
+        return RuntimeHelper.requireNonNull(constants$196.DecryptFileA$MH,"DecryptFileA");
+    }
+    public static int DecryptFileA ( Addressable lpFileName,  int dwReserved) {
+        var mh$ = DecryptFileA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, dwReserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DecryptFileW$MH() {
+        return RuntimeHelper.requireNonNull(constants$196.DecryptFileW$MH,"DecryptFileW");
+    }
+    public static int DecryptFileW ( Addressable lpFileName,  int dwReserved) {
+        var mh$ = DecryptFileW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, dwReserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FileEncryptionStatusA$MH() {
+        return RuntimeHelper.requireNonNull(constants$196.FileEncryptionStatusA$MH,"FileEncryptionStatusA");
+    }
+    public static int FileEncryptionStatusA ( Addressable lpFileName,  Addressable lpStatus) {
+        var mh$ = FileEncryptionStatusA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FileEncryptionStatusW$MH() {
+        return RuntimeHelper.requireNonNull(constants$197.FileEncryptionStatusW$MH,"FileEncryptionStatusW");
+    }
+    public static int FileEncryptionStatusW ( Addressable lpFileName,  Addressable lpStatus) {
+        var mh$ = FileEncryptionStatusW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenEncryptedFileRawA$MH() {
+        return RuntimeHelper.requireNonNull(constants$197.OpenEncryptedFileRawA$MH,"OpenEncryptedFileRawA");
+    }
+    public static int OpenEncryptedFileRawA ( Addressable lpFileName,  int ulFlags,  Addressable pvContext) {
+        var mh$ = OpenEncryptedFileRawA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, ulFlags, pvContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenEncryptedFileRawW$MH() {
+        return RuntimeHelper.requireNonNull(constants$198.OpenEncryptedFileRawW$MH,"OpenEncryptedFileRawW");
+    }
+    public static int OpenEncryptedFileRawW ( Addressable lpFileName,  int ulFlags,  Addressable pvContext) {
+        var mh$ = OpenEncryptedFileRawW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, ulFlags, pvContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadEncryptedFileRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$198.ReadEncryptedFileRaw$MH,"ReadEncryptedFileRaw");
+    }
+    public static int ReadEncryptedFileRaw ( Addressable pfExportCallback,  Addressable pvCallbackContext,  Addressable pvContext) {
+        var mh$ = ReadEncryptedFileRaw$MH();
+        try {
+            return (int)mh$.invokeExact(pfExportCallback, pvCallbackContext, pvContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteEncryptedFileRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$198.WriteEncryptedFileRaw$MH,"WriteEncryptedFileRaw");
+    }
+    public static int WriteEncryptedFileRaw ( Addressable pfImportCallback,  Addressable pvCallbackContext,  Addressable pvContext) {
+        var mh$ = WriteEncryptedFileRaw$MH();
+        try {
+            return (int)mh$.invokeExact(pfImportCallback, pvCallbackContext, pvContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CloseEncryptedFileRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$198.CloseEncryptedFileRaw$MH,"CloseEncryptedFileRaw");
+    }
+    public static void CloseEncryptedFileRaw ( Addressable pvContext) {
+        var mh$ = CloseEncryptedFileRaw$MH();
+        try {
+            mh$.invokeExact(pvContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcmpA$MH() {
+        return RuntimeHelper.requireNonNull(constants$198.lstrcmpA$MH,"lstrcmpA");
+    }
+    public static int lstrcmpA ( Addressable lpString1,  Addressable lpString2) {
+        var mh$ = lstrcmpA$MH();
+        try {
+            return (int)mh$.invokeExact(lpString1, lpString2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcmpW$MH() {
+        return RuntimeHelper.requireNonNull(constants$198.lstrcmpW$MH,"lstrcmpW");
+    }
+    public static int lstrcmpW ( Addressable lpString1,  Addressable lpString2) {
+        var mh$ = lstrcmpW$MH();
+        try {
+            return (int)mh$.invokeExact(lpString1, lpString2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcmpiA$MH() {
+        return RuntimeHelper.requireNonNull(constants$199.lstrcmpiA$MH,"lstrcmpiA");
+    }
+    public static int lstrcmpiA ( Addressable lpString1,  Addressable lpString2) {
+        var mh$ = lstrcmpiA$MH();
+        try {
+            return (int)mh$.invokeExact(lpString1, lpString2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcmpiW$MH() {
+        return RuntimeHelper.requireNonNull(constants$199.lstrcmpiW$MH,"lstrcmpiW");
+    }
+    public static int lstrcmpiW ( Addressable lpString1,  Addressable lpString2) {
+        var mh$ = lstrcmpiW$MH();
+        try {
+            return (int)mh$.invokeExact(lpString1, lpString2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcpynA$MH() {
+        return RuntimeHelper.requireNonNull(constants$199.lstrcpynA$MH,"lstrcpynA");
+    }
+    public static MemoryAddress lstrcpynA ( Addressable lpString1,  Addressable lpString2,  int iMaxLength) {
+        var mh$ = lstrcpynA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpString1, lpString2, iMaxLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcpynW$MH() {
+        return RuntimeHelper.requireNonNull(constants$199.lstrcpynW$MH,"lstrcpynW");
+    }
+    public static MemoryAddress lstrcpynW ( Addressable lpString1,  Addressable lpString2,  int iMaxLength) {
+        var mh$ = lstrcpynW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpString1, lpString2, iMaxLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcpyA$MH() {
+        return RuntimeHelper.requireNonNull(constants$199.lstrcpyA$MH,"lstrcpyA");
+    }
+    public static MemoryAddress lstrcpyA ( Addressable lpString1,  Addressable lpString2) {
+        var mh$ = lstrcpyA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpString1, lpString2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcpyW$MH() {
+        return RuntimeHelper.requireNonNull(constants$199.lstrcpyW$MH,"lstrcpyW");
+    }
+    public static MemoryAddress lstrcpyW ( Addressable lpString1,  Addressable lpString2) {
+        var mh$ = lstrcpyW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpString1, lpString2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcatA$MH() {
+        return RuntimeHelper.requireNonNull(constants$200.lstrcatA$MH,"lstrcatA");
+    }
+    public static MemoryAddress lstrcatA ( Addressable lpString1,  Addressable lpString2) {
+        var mh$ = lstrcatA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpString1, lpString2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrcatW$MH() {
+        return RuntimeHelper.requireNonNull(constants$200.lstrcatW$MH,"lstrcatW");
+    }
+    public static MemoryAddress lstrcatW ( Addressable lpString1,  Addressable lpString2) {
+        var mh$ = lstrcatW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpString1, lpString2);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrlenA$MH() {
+        return RuntimeHelper.requireNonNull(constants$200.lstrlenA$MH,"lstrlenA");
+    }
+    public static int lstrlenA ( Addressable lpString) {
+        var mh$ = lstrlenA$MH();
+        try {
+            return (int)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle lstrlenW$MH() {
+        return RuntimeHelper.requireNonNull(constants$200.lstrlenW$MH,"lstrlenW");
+    }
+    public static int lstrlenW ( Addressable lpString) {
+        var mh$ = lstrlenW$MH();
+        try {
+            return (int)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenFile$MH() {
+        return RuntimeHelper.requireNonNull(constants$200.OpenFile$MH,"OpenFile");
+    }
+    public static int OpenFile ( Addressable lpFileName,  Addressable lpReOpenBuff,  int uStyle) {
+        var mh$ = OpenFile$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpReOpenBuff, uStyle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _lopen$MH() {
+        return RuntimeHelper.requireNonNull(constants$200._lopen$MH,"_lopen");
+    }
+    public static int _lopen ( Addressable lpPathName,  int iReadWrite) {
+        var mh$ = _lopen$MH();
+        try {
+            return (int)mh$.invokeExact(lpPathName, iReadWrite);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _lcreat$MH() {
+        return RuntimeHelper.requireNonNull(constants$201._lcreat$MH,"_lcreat");
+    }
+    public static int _lcreat ( Addressable lpPathName,  int iAttribute) {
+        var mh$ = _lcreat$MH();
+        try {
+            return (int)mh$.invokeExact(lpPathName, iAttribute);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _lread$MH() {
+        return RuntimeHelper.requireNonNull(constants$201._lread$MH,"_lread");
+    }
+    public static int _lread ( int hFile,  Addressable lpBuffer,  int uBytes) {
+        var mh$ = _lread$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpBuffer, uBytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _lwrite$MH() {
+        return RuntimeHelper.requireNonNull(constants$201._lwrite$MH,"_lwrite");
+    }
+    public static int _lwrite ( int hFile,  Addressable lpBuffer,  int uBytes) {
+        var mh$ = _lwrite$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpBuffer, uBytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _hread$MH() {
+        return RuntimeHelper.requireNonNull(constants$201._hread$MH,"_hread");
+    }
+    public static int _hread ( int hFile,  Addressable lpBuffer,  int lBytes) {
+        var mh$ = _hread$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpBuffer, lBytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _hwrite$MH() {
+        return RuntimeHelper.requireNonNull(constants$201._hwrite$MH,"_hwrite");
+    }
+    public static int _hwrite ( int hFile,  Addressable lpBuffer,  int lBytes) {
+        var mh$ = _hwrite$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpBuffer, lBytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _lclose$MH() {
+        return RuntimeHelper.requireNonNull(constants$201._lclose$MH,"_lclose");
+    }
+    public static int _lclose ( int hFile) {
+        var mh$ = _lclose$MH();
+        try {
+            return (int)mh$.invokeExact(hFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _llseek$MH() {
+        return RuntimeHelper.requireNonNull(constants$202._llseek$MH,"_llseek");
+    }
+    public static int _llseek ( int hFile,  int lOffset,  int iOrigin) {
+        var mh$ = _llseek$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lOffset, iOrigin);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsTextUnicode$MH() {
+        return RuntimeHelper.requireNonNull(constants$202.IsTextUnicode$MH,"IsTextUnicode");
+    }
+    public static int IsTextUnicode ( Addressable lpv,  int iSize,  Addressable lpiResult) {
+        var mh$ = IsTextUnicode$MH();
+        try {
+            return (int)mh$.invokeExact(lpv, iSize, lpiResult);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BackupRead$MH() {
+        return RuntimeHelper.requireNonNull(constants$202.BackupRead$MH,"BackupRead");
+    }
+    public static int BackupRead ( Addressable hFile,  Addressable lpBuffer,  int nNumberOfBytesToRead,  Addressable lpNumberOfBytesRead,  int bAbort,  int bProcessSecurity,  Addressable lpContext) {
+        var mh$ = BackupRead$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpBuffer, nNumberOfBytesToRead, lpNumberOfBytesRead, bAbort, bProcessSecurity, lpContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BackupSeek$MH() {
+        return RuntimeHelper.requireNonNull(constants$202.BackupSeek$MH,"BackupSeek");
+    }
+    public static int BackupSeek ( Addressable hFile,  int dwLowBytesToSeek,  int dwHighBytesToSeek,  Addressable lpdwLowByteSeeked,  Addressable lpdwHighByteSeeked,  Addressable lpContext) {
+        var mh$ = BackupSeek$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, dwLowBytesToSeek, dwHighBytesToSeek, lpdwLowByteSeeked, lpdwHighByteSeeked, lpContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BackupWrite$MH() {
+        return RuntimeHelper.requireNonNull(constants$202.BackupWrite$MH,"BackupWrite");
+    }
+    public static int BackupWrite ( Addressable hFile,  Addressable lpBuffer,  int nNumberOfBytesToWrite,  Addressable lpNumberOfBytesWritten,  int bAbort,  int bProcessSecurity,  Addressable lpContext) {
+        var mh$ = BackupWrite$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpBuffer, nNumberOfBytesToWrite, lpNumberOfBytesWritten, bAbort, bProcessSecurity, lpContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress LPWIN32_STREAM_ID = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSTARTUPINFOEXA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSTARTUPINFOEXW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSTARTUPINFOEX = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle OpenMutexA$MH() {
+        return RuntimeHelper.requireNonNull(constants$202.OpenMutexA$MH,"OpenMutexA");
+    }
+    public static MemoryAddress OpenMutexA ( int dwDesiredAccess,  int bInheritHandle,  Addressable lpName) {
+        var mh$ = OpenMutexA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwDesiredAccess, bInheritHandle, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateSemaphoreA$MH() {
+        return RuntimeHelper.requireNonNull(constants$203.CreateSemaphoreA$MH,"CreateSemaphoreA");
+    }
+    public static MemoryAddress CreateSemaphoreA ( Addressable lpSemaphoreAttributes,  int lInitialCount,  int lMaximumCount,  Addressable lpName) {
+        var mh$ = CreateSemaphoreA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpSemaphoreAttributes, lInitialCount, lMaximumCount, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenSemaphoreA$MH() {
+        return RuntimeHelper.requireNonNull(constants$203.OpenSemaphoreA$MH,"OpenSemaphoreA");
+    }
+    public static MemoryAddress OpenSemaphoreA ( int dwDesiredAccess,  int bInheritHandle,  Addressable lpName) {
+        var mh$ = OpenSemaphoreA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwDesiredAccess, bInheritHandle, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateWaitableTimerA$MH() {
+        return RuntimeHelper.requireNonNull(constants$203.CreateWaitableTimerA$MH,"CreateWaitableTimerA");
+    }
+    public static MemoryAddress CreateWaitableTimerA ( Addressable lpTimerAttributes,  int bManualReset,  Addressable lpTimerName) {
+        var mh$ = CreateWaitableTimerA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpTimerAttributes, bManualReset, lpTimerName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenWaitableTimerA$MH() {
+        return RuntimeHelper.requireNonNull(constants$203.OpenWaitableTimerA$MH,"OpenWaitableTimerA");
+    }
+    public static MemoryAddress OpenWaitableTimerA ( int dwDesiredAccess,  int bInheritHandle,  Addressable lpTimerName) {
+        var mh$ = OpenWaitableTimerA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwDesiredAccess, bInheritHandle, lpTimerName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateSemaphoreExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$203.CreateSemaphoreExA$MH,"CreateSemaphoreExA");
+    }
+    public static MemoryAddress CreateSemaphoreExA ( Addressable lpSemaphoreAttributes,  int lInitialCount,  int lMaximumCount,  Addressable lpName,  int dwFlags,  int dwDesiredAccess) {
+        var mh$ = CreateSemaphoreExA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpSemaphoreAttributes, lInitialCount, lMaximumCount, lpName, dwFlags, dwDesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateWaitableTimerExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$203.CreateWaitableTimerExA$MH,"CreateWaitableTimerExA");
+    }
+    public static MemoryAddress CreateWaitableTimerExA ( Addressable lpTimerAttributes,  Addressable lpTimerName,  int dwFlags,  int dwDesiredAccess) {
+        var mh$ = CreateWaitableTimerExA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpTimerAttributes, lpTimerName, dwFlags, dwDesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateFileMappingA$MH() {
+        return RuntimeHelper.requireNonNull(constants$204.CreateFileMappingA$MH,"CreateFileMappingA");
+    }
+    public static MemoryAddress CreateFileMappingA ( Addressable hFile,  Addressable lpFileMappingAttributes,  int flProtect,  int dwMaximumSizeHigh,  int dwMaximumSizeLow,  Addressable lpName) {
+        var mh$ = CreateFileMappingA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFile, lpFileMappingAttributes, flProtect, dwMaximumSizeHigh, dwMaximumSizeLow, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateFileMappingNumaA$MH() {
+        return RuntimeHelper.requireNonNull(constants$204.CreateFileMappingNumaA$MH,"CreateFileMappingNumaA");
+    }
+    public static MemoryAddress CreateFileMappingNumaA ( Addressable hFile,  Addressable lpFileMappingAttributes,  int flProtect,  int dwMaximumSizeHigh,  int dwMaximumSizeLow,  Addressable lpName,  int nndPreferred) {
+        var mh$ = CreateFileMappingNumaA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFile, lpFileMappingAttributes, flProtect, dwMaximumSizeHigh, dwMaximumSizeLow, lpName, nndPreferred);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenFileMappingA$MH() {
+        return RuntimeHelper.requireNonNull(constants$204.OpenFileMappingA$MH,"OpenFileMappingA");
+    }
+    public static MemoryAddress OpenFileMappingA ( int dwDesiredAccess,  int bInheritHandle,  Addressable lpName) {
+        var mh$ = OpenFileMappingA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwDesiredAccess, bInheritHandle, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetLogicalDriveStringsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$204.GetLogicalDriveStringsA$MH,"GetLogicalDriveStringsA");
+    }
+    public static int GetLogicalDriveStringsA ( int nBufferLength,  Addressable lpBuffer) {
+        var mh$ = GetLogicalDriveStringsA$MH();
+        try {
+            return (int)mh$.invokeExact(nBufferLength, lpBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LoadPackagedLibrary$MH() {
+        return RuntimeHelper.requireNonNull(constants$204.LoadPackagedLibrary$MH,"LoadPackagedLibrary");
+    }
+    public static MemoryAddress LoadPackagedLibrary ( Addressable lpwLibFileName,  int Reserved) {
+        var mh$ = LoadPackagedLibrary$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpwLibFileName, Reserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryFullProcessImageNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$204.QueryFullProcessImageNameA$MH,"QueryFullProcessImageNameA");
+    }
+    public static int QueryFullProcessImageNameA ( Addressable hProcess,  int dwFlags,  Addressable lpExeName,  Addressable lpdwSize) {
+        var mh$ = QueryFullProcessImageNameA$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, dwFlags, lpExeName, lpdwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryFullProcessImageNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$205.QueryFullProcessImageNameW$MH,"QueryFullProcessImageNameW");
+    }
+    public static int QueryFullProcessImageNameW ( Addressable hProcess,  int dwFlags,  Addressable lpExeName,  Addressable lpdwSize) {
+        var mh$ = QueryFullProcessImageNameW$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, dwFlags, lpExeName, lpdwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int ProcThreadAttributeParentProcess() {
+        return (int)0L;
+    }
+    public static int ProcThreadAttributeHandleList() {
+        return (int)2L;
+    }
+    public static int ProcThreadAttributeGroupAffinity() {
+        return (int)3L;
+    }
+    public static int ProcThreadAttributePreferredNode() {
+        return (int)4L;
+    }
+    public static int ProcThreadAttributeIdealProcessor() {
         return (int)5L;
     }
+    public static int ProcThreadAttributeUmsThread() {
+        return (int)6L;
+    }
+    public static int ProcThreadAttributeMitigationPolicy() {
+        return (int)7L;
+    }
+    public static int ProcThreadAttributeSecurityCapabilities() {
+        return (int)9L;
+    }
+    public static int ProcThreadAttributeProtectionLevel() {
+        return (int)11L;
+    }
+    public static int ProcThreadAttributeJobList() {
+        return (int)13L;
+    }
+    public static int ProcThreadAttributeChildProcessPolicy() {
+        return (int)14L;
+    }
+    public static int ProcThreadAttributeAllApplicationPackagesPolicy() {
+        return (int)15L;
+    }
+    public static int ProcThreadAttributeWin32kFilter() {
+        return (int)16L;
+    }
+    public static int ProcThreadAttributeSafeOpenPromptOriginClaim() {
+        return (int)17L;
+    }
+    public static int ProcThreadAttributeDesktopAppPolicy() {
+        return (int)18L;
+    }
+    public static int ProcThreadAttributePseudoConsole() {
+        return (int)22L;
+    }
+    public static int ProcThreadAttributeMitigationAuditPolicy() {
+        return (int)24L;
+    }
+    public static MethodHandle GetStartupInfoA$MH() {
+        return RuntimeHelper.requireNonNull(constants$205.GetStartupInfoA$MH,"GetStartupInfoA");
+    }
+    public static void GetStartupInfoA ( Addressable lpStartupInfo) {
+        var mh$ = GetStartupInfoA$MH();
+        try {
+            mh$.invokeExact(lpStartupInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFirmwareEnvironmentVariableA$MH() {
+        return RuntimeHelper.requireNonNull(constants$205.GetFirmwareEnvironmentVariableA$MH,"GetFirmwareEnvironmentVariableA");
+    }
+    public static int GetFirmwareEnvironmentVariableA ( Addressable lpName,  Addressable lpGuid,  Addressable pBuffer,  int nSize) {
+        var mh$ = GetFirmwareEnvironmentVariableA$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpGuid, pBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFirmwareEnvironmentVariableW$MH() {
+        return RuntimeHelper.requireNonNull(constants$205.GetFirmwareEnvironmentVariableW$MH,"GetFirmwareEnvironmentVariableW");
+    }
+    public static int GetFirmwareEnvironmentVariableW ( Addressable lpName,  Addressable lpGuid,  Addressable pBuffer,  int nSize) {
+        var mh$ = GetFirmwareEnvironmentVariableW$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpGuid, pBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFirmwareEnvironmentVariableExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$205.GetFirmwareEnvironmentVariableExA$MH,"GetFirmwareEnvironmentVariableExA");
+    }
+    public static int GetFirmwareEnvironmentVariableExA ( Addressable lpName,  Addressable lpGuid,  Addressable pBuffer,  int nSize,  Addressable pdwAttribubutes) {
+        var mh$ = GetFirmwareEnvironmentVariableExA$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpGuid, pBuffer, nSize, pdwAttribubutes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFirmwareEnvironmentVariableExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$205.GetFirmwareEnvironmentVariableExW$MH,"GetFirmwareEnvironmentVariableExW");
+    }
+    public static int GetFirmwareEnvironmentVariableExW ( Addressable lpName,  Addressable lpGuid,  Addressable pBuffer,  int nSize,  Addressable pdwAttribubutes) {
+        var mh$ = GetFirmwareEnvironmentVariableExW$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpGuid, pBuffer, nSize, pdwAttribubutes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFirmwareEnvironmentVariableA$MH() {
+        return RuntimeHelper.requireNonNull(constants$206.SetFirmwareEnvironmentVariableA$MH,"SetFirmwareEnvironmentVariableA");
+    }
+    public static int SetFirmwareEnvironmentVariableA ( Addressable lpName,  Addressable lpGuid,  Addressable pValue,  int nSize) {
+        var mh$ = SetFirmwareEnvironmentVariableA$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpGuid, pValue, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFirmwareEnvironmentVariableW$MH() {
+        return RuntimeHelper.requireNonNull(constants$206.SetFirmwareEnvironmentVariableW$MH,"SetFirmwareEnvironmentVariableW");
+    }
+    public static int SetFirmwareEnvironmentVariableW ( Addressable lpName,  Addressable lpGuid,  Addressable pValue,  int nSize) {
+        var mh$ = SetFirmwareEnvironmentVariableW$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpGuid, pValue, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFirmwareEnvironmentVariableExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$206.SetFirmwareEnvironmentVariableExA$MH,"SetFirmwareEnvironmentVariableExA");
+    }
+    public static int SetFirmwareEnvironmentVariableExA ( Addressable lpName,  Addressable lpGuid,  Addressable pValue,  int nSize,  int dwAttributes) {
+        var mh$ = SetFirmwareEnvironmentVariableExA$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpGuid, pValue, nSize, dwAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFirmwareEnvironmentVariableExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$206.SetFirmwareEnvironmentVariableExW$MH,"SetFirmwareEnvironmentVariableExW");
+    }
+    public static int SetFirmwareEnvironmentVariableExW ( Addressable lpName,  Addressable lpGuid,  Addressable pValue,  int nSize,  int dwAttributes) {
+        var mh$ = SetFirmwareEnvironmentVariableExW$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpGuid, pValue, nSize, dwAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFirmwareType$MH() {
+        return RuntimeHelper.requireNonNull(constants$206.GetFirmwareType$MH,"GetFirmwareType");
+    }
+    public static int GetFirmwareType ( Addressable FirmwareType) {
+        var mh$ = GetFirmwareType$MH();
+        try {
+            return (int)mh$.invokeExact(FirmwareType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsNativeVhdBoot$MH() {
+        return RuntimeHelper.requireNonNull(constants$206.IsNativeVhdBoot$MH,"IsNativeVhdBoot");
+    }
+    public static int IsNativeVhdBoot ( Addressable NativeVhdBoot) {
+        var mh$ = IsNativeVhdBoot$MH();
+        try {
+            return (int)mh$.invokeExact(NativeVhdBoot);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindResourceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$207.FindResourceA$MH,"FindResourceA");
+    }
+    public static MemoryAddress FindResourceA ( Addressable hModule,  Addressable lpName,  Addressable lpType) {
+        var mh$ = FindResourceA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hModule, lpName, lpType);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindResourceExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$207.FindResourceExA$MH,"FindResourceExA");
+    }
+    public static MemoryAddress FindResourceExA ( Addressable hModule,  Addressable lpType,  Addressable lpName,  short wLanguage) {
+        var mh$ = FindResourceExA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hModule, lpType, lpName, wLanguage);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceTypesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$207.EnumResourceTypesA$MH,"EnumResourceTypesA");
+    }
+    public static int EnumResourceTypesA ( Addressable hModule,  Addressable lpEnumFunc,  long lParam) {
+        var mh$ = EnumResourceTypesA$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpEnumFunc, lParam);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceTypesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$207.EnumResourceTypesW$MH,"EnumResourceTypesW");
+    }
+    public static int EnumResourceTypesW ( Addressable hModule,  Addressable lpEnumFunc,  long lParam) {
+        var mh$ = EnumResourceTypesW$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpEnumFunc, lParam);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceNamesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$207.EnumResourceNamesA$MH,"EnumResourceNamesA");
+    }
+    public static int EnumResourceNamesA ( Addressable hModule,  Addressable lpType,  Addressable lpEnumFunc,  long lParam) {
+        var mh$ = EnumResourceNamesA$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpType, lpEnumFunc, lParam);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceLanguagesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$207.EnumResourceLanguagesA$MH,"EnumResourceLanguagesA");
+    }
+    public static int EnumResourceLanguagesA ( Addressable hModule,  Addressable lpType,  Addressable lpName,  Addressable lpEnumFunc,  long lParam) {
+        var mh$ = EnumResourceLanguagesA$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpType, lpName, lpEnumFunc, lParam);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumResourceLanguagesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$208.EnumResourceLanguagesW$MH,"EnumResourceLanguagesW");
+    }
+    public static int EnumResourceLanguagesW ( Addressable hModule,  Addressable lpType,  Addressable lpName,  Addressable lpEnumFunc,  long lParam) {
+        var mh$ = EnumResourceLanguagesW$MH();
+        try {
+            return (int)mh$.invokeExact(hModule, lpType, lpName, lpEnumFunc, lParam);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BeginUpdateResourceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$208.BeginUpdateResourceA$MH,"BeginUpdateResourceA");
+    }
+    public static MemoryAddress BeginUpdateResourceA ( Addressable pFileName,  int bDeleteExistingResources) {
+        var mh$ = BeginUpdateResourceA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pFileName, bDeleteExistingResources);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BeginUpdateResourceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$208.BeginUpdateResourceW$MH,"BeginUpdateResourceW");
+    }
+    public static MemoryAddress BeginUpdateResourceW ( Addressable pFileName,  int bDeleteExistingResources) {
+        var mh$ = BeginUpdateResourceW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pFileName, bDeleteExistingResources);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UpdateResourceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$208.UpdateResourceA$MH,"UpdateResourceA");
+    }
+    public static int UpdateResourceA ( Addressable hUpdate,  Addressable lpType,  Addressable lpName,  short wLanguage,  Addressable lpData,  int cb) {
+        var mh$ = UpdateResourceA$MH();
+        try {
+            return (int)mh$.invokeExact(hUpdate, lpType, lpName, wLanguage, lpData, cb);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UpdateResourceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$208.UpdateResourceW$MH,"UpdateResourceW");
+    }
+    public static int UpdateResourceW ( Addressable hUpdate,  Addressable lpType,  Addressable lpName,  short wLanguage,  Addressable lpData,  int cb) {
+        var mh$ = UpdateResourceW$MH();
+        try {
+            return (int)mh$.invokeExact(hUpdate, lpType, lpName, wLanguage, lpData, cb);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EndUpdateResourceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$208.EndUpdateResourceA$MH,"EndUpdateResourceA");
+    }
+    public static int EndUpdateResourceA ( Addressable hUpdate,  int fDiscard) {
+        var mh$ = EndUpdateResourceA$MH();
+        try {
+            return (int)mh$.invokeExact(hUpdate, fDiscard);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EndUpdateResourceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$209.EndUpdateResourceW$MH,"EndUpdateResourceW");
+    }
+    public static int EndUpdateResourceW ( Addressable hUpdate,  int fDiscard) {
+        var mh$ = EndUpdateResourceW$MH();
+        try {
+            return (int)mh$.invokeExact(hUpdate, fDiscard);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalAddAtomA$MH() {
+        return RuntimeHelper.requireNonNull(constants$209.GlobalAddAtomA$MH,"GlobalAddAtomA");
+    }
+    public static short GlobalAddAtomA ( Addressable lpString) {
+        var mh$ = GlobalAddAtomA$MH();
+        try {
+            return (short)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalAddAtomW$MH() {
+        return RuntimeHelper.requireNonNull(constants$209.GlobalAddAtomW$MH,"GlobalAddAtomW");
+    }
+    public static short GlobalAddAtomW ( Addressable lpString) {
+        var mh$ = GlobalAddAtomW$MH();
+        try {
+            return (short)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalAddAtomExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$209.GlobalAddAtomExA$MH,"GlobalAddAtomExA");
+    }
+    public static short GlobalAddAtomExA ( Addressable lpString,  int Flags) {
+        var mh$ = GlobalAddAtomExA$MH();
+        try {
+            return (short)mh$.invokeExact(lpString, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalAddAtomExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$209.GlobalAddAtomExW$MH,"GlobalAddAtomExW");
+    }
+    public static short GlobalAddAtomExW ( Addressable lpString,  int Flags) {
+        var mh$ = GlobalAddAtomExW$MH();
+        try {
+            return (short)mh$.invokeExact(lpString, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalFindAtomA$MH() {
+        return RuntimeHelper.requireNonNull(constants$209.GlobalFindAtomA$MH,"GlobalFindAtomA");
+    }
+    public static short GlobalFindAtomA ( Addressable lpString) {
+        var mh$ = GlobalFindAtomA$MH();
+        try {
+            return (short)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalFindAtomW$MH() {
+        return RuntimeHelper.requireNonNull(constants$210.GlobalFindAtomW$MH,"GlobalFindAtomW");
+    }
+    public static short GlobalFindAtomW ( Addressable lpString) {
+        var mh$ = GlobalFindAtomW$MH();
+        try {
+            return (short)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalGetAtomNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$210.GlobalGetAtomNameA$MH,"GlobalGetAtomNameA");
+    }
+    public static int GlobalGetAtomNameA ( short nAtom,  Addressable lpBuffer,  int nSize) {
+        var mh$ = GlobalGetAtomNameA$MH();
+        try {
+            return (int)mh$.invokeExact(nAtom, lpBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GlobalGetAtomNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$210.GlobalGetAtomNameW$MH,"GlobalGetAtomNameW");
+    }
+    public static int GlobalGetAtomNameW ( short nAtom,  Addressable lpBuffer,  int nSize) {
+        var mh$ = GlobalGetAtomNameW$MH();
+        try {
+            return (int)mh$.invokeExact(nAtom, lpBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAtomA$MH() {
+        return RuntimeHelper.requireNonNull(constants$210.AddAtomA$MH,"AddAtomA");
+    }
+    public static short AddAtomA ( Addressable lpString) {
+        var mh$ = AddAtomA$MH();
+        try {
+            return (short)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddAtomW$MH() {
+        return RuntimeHelper.requireNonNull(constants$210.AddAtomW$MH,"AddAtomW");
+    }
+    public static short AddAtomW ( Addressable lpString) {
+        var mh$ = AddAtomW$MH();
+        try {
+            return (short)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindAtomA$MH() {
+        return RuntimeHelper.requireNonNull(constants$210.FindAtomA$MH,"FindAtomA");
+    }
+    public static short FindAtomA ( Addressable lpString) {
+        var mh$ = FindAtomA$MH();
+        try {
+            return (short)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindAtomW$MH() {
+        return RuntimeHelper.requireNonNull(constants$211.FindAtomW$MH,"FindAtomW");
+    }
+    public static short FindAtomW ( Addressable lpString) {
+        var mh$ = FindAtomW$MH();
+        try {
+            return (short)mh$.invokeExact(lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetAtomNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$211.GetAtomNameA$MH,"GetAtomNameA");
+    }
+    public static int GetAtomNameA ( short nAtom,  Addressable lpBuffer,  int nSize) {
+        var mh$ = GetAtomNameA$MH();
+        try {
+            return (int)mh$.invokeExact(nAtom, lpBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetAtomNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$211.GetAtomNameW$MH,"GetAtomNameW");
+    }
+    public static int GetAtomNameW ( short nAtom,  Addressable lpBuffer,  int nSize) {
+        var mh$ = GetAtomNameW$MH();
+        try {
+            return (int)mh$.invokeExact(nAtom, lpBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProfileIntA$MH() {
+        return RuntimeHelper.requireNonNull(constants$211.GetProfileIntA$MH,"GetProfileIntA");
+    }
+    public static int GetProfileIntA ( Addressable lpAppName,  Addressable lpKeyName,  int nDefault) {
+        var mh$ = GetProfileIntA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, nDefault);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProfileIntW$MH() {
+        return RuntimeHelper.requireNonNull(constants$211.GetProfileIntW$MH,"GetProfileIntW");
+    }
+    public static int GetProfileIntW ( Addressable lpAppName,  Addressable lpKeyName,  int nDefault) {
+        var mh$ = GetProfileIntW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, nDefault);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProfileStringA$MH() {
+        return RuntimeHelper.requireNonNull(constants$211.GetProfileStringA$MH,"GetProfileStringA");
+    }
+    public static int GetProfileStringA ( Addressable lpAppName,  Addressable lpKeyName,  Addressable lpDefault,  Addressable lpReturnedString,  int nSize) {
+        var mh$ = GetProfileStringA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, lpDefault, lpReturnedString, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProfileStringW$MH() {
+        return RuntimeHelper.requireNonNull(constants$212.GetProfileStringW$MH,"GetProfileStringW");
+    }
+    public static int GetProfileStringW ( Addressable lpAppName,  Addressable lpKeyName,  Addressable lpDefault,  Addressable lpReturnedString,  int nSize) {
+        var mh$ = GetProfileStringW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, lpDefault, lpReturnedString, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteProfileStringA$MH() {
+        return RuntimeHelper.requireNonNull(constants$212.WriteProfileStringA$MH,"WriteProfileStringA");
+    }
+    public static int WriteProfileStringA ( Addressable lpAppName,  Addressable lpKeyName,  Addressable lpString) {
+        var mh$ = WriteProfileStringA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteProfileStringW$MH() {
+        return RuntimeHelper.requireNonNull(constants$212.WriteProfileStringW$MH,"WriteProfileStringW");
+    }
+    public static int WriteProfileStringW ( Addressable lpAppName,  Addressable lpKeyName,  Addressable lpString) {
+        var mh$ = WriteProfileStringW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProfileSectionA$MH() {
+        return RuntimeHelper.requireNonNull(constants$212.GetProfileSectionA$MH,"GetProfileSectionA");
+    }
+    public static int GetProfileSectionA ( Addressable lpAppName,  Addressable lpReturnedString,  int nSize) {
+        var mh$ = GetProfileSectionA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpReturnedString, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetProfileSectionW$MH() {
+        return RuntimeHelper.requireNonNull(constants$212.GetProfileSectionW$MH,"GetProfileSectionW");
+    }
+    public static int GetProfileSectionW ( Addressable lpAppName,  Addressable lpReturnedString,  int nSize) {
+        var mh$ = GetProfileSectionW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpReturnedString, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteProfileSectionA$MH() {
+        return RuntimeHelper.requireNonNull(constants$212.WriteProfileSectionA$MH,"WriteProfileSectionA");
+    }
+    public static int WriteProfileSectionA ( Addressable lpAppName,  Addressable lpString) {
+        var mh$ = WriteProfileSectionA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteProfileSectionW$MH() {
+        return RuntimeHelper.requireNonNull(constants$213.WriteProfileSectionW$MH,"WriteProfileSectionW");
+    }
+    public static int WriteProfileSectionW ( Addressable lpAppName,  Addressable lpString) {
+        var mh$ = WriteProfileSectionW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpString);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileIntA$MH() {
+        return RuntimeHelper.requireNonNull(constants$213.GetPrivateProfileIntA$MH,"GetPrivateProfileIntA");
+    }
+    public static int GetPrivateProfileIntA ( Addressable lpAppName,  Addressable lpKeyName,  int nDefault,  Addressable lpFileName) {
+        var mh$ = GetPrivateProfileIntA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, nDefault, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileIntW$MH() {
+        return RuntimeHelper.requireNonNull(constants$213.GetPrivateProfileIntW$MH,"GetPrivateProfileIntW");
+    }
+    public static int GetPrivateProfileIntW ( Addressable lpAppName,  Addressable lpKeyName,  int nDefault,  Addressable lpFileName) {
+        var mh$ = GetPrivateProfileIntW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, nDefault, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileStringA$MH() {
+        return RuntimeHelper.requireNonNull(constants$213.GetPrivateProfileStringA$MH,"GetPrivateProfileStringA");
+    }
+    public static int GetPrivateProfileStringA ( Addressable lpAppName,  Addressable lpKeyName,  Addressable lpDefault,  Addressable lpReturnedString,  int nSize,  Addressable lpFileName) {
+        var mh$ = GetPrivateProfileStringA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, lpDefault, lpReturnedString, nSize, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileStringW$MH() {
+        return RuntimeHelper.requireNonNull(constants$213.GetPrivateProfileStringW$MH,"GetPrivateProfileStringW");
+    }
+    public static int GetPrivateProfileStringW ( Addressable lpAppName,  Addressable lpKeyName,  Addressable lpDefault,  Addressable lpReturnedString,  int nSize,  Addressable lpFileName) {
+        var mh$ = GetPrivateProfileStringW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, lpDefault, lpReturnedString, nSize, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePrivateProfileStringA$MH() {
+        return RuntimeHelper.requireNonNull(constants$213.WritePrivateProfileStringA$MH,"WritePrivateProfileStringA");
+    }
+    public static int WritePrivateProfileStringA ( Addressable lpAppName,  Addressable lpKeyName,  Addressable lpString,  Addressable lpFileName) {
+        var mh$ = WritePrivateProfileStringA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, lpString, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePrivateProfileStringW$MH() {
+        return RuntimeHelper.requireNonNull(constants$214.WritePrivateProfileStringW$MH,"WritePrivateProfileStringW");
+    }
+    public static int WritePrivateProfileStringW ( Addressable lpAppName,  Addressable lpKeyName,  Addressable lpString,  Addressable lpFileName) {
+        var mh$ = WritePrivateProfileStringW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpKeyName, lpString, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileSectionA$MH() {
+        return RuntimeHelper.requireNonNull(constants$214.GetPrivateProfileSectionA$MH,"GetPrivateProfileSectionA");
+    }
+    public static int GetPrivateProfileSectionA ( Addressable lpAppName,  Addressable lpReturnedString,  int nSize,  Addressable lpFileName) {
+        var mh$ = GetPrivateProfileSectionA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpReturnedString, nSize, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileSectionW$MH() {
+        return RuntimeHelper.requireNonNull(constants$214.GetPrivateProfileSectionW$MH,"GetPrivateProfileSectionW");
+    }
+    public static int GetPrivateProfileSectionW ( Addressable lpAppName,  Addressable lpReturnedString,  int nSize,  Addressable lpFileName) {
+        var mh$ = GetPrivateProfileSectionW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpReturnedString, nSize, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePrivateProfileSectionA$MH() {
+        return RuntimeHelper.requireNonNull(constants$214.WritePrivateProfileSectionA$MH,"WritePrivateProfileSectionA");
+    }
+    public static int WritePrivateProfileSectionA ( Addressable lpAppName,  Addressable lpString,  Addressable lpFileName) {
+        var mh$ = WritePrivateProfileSectionA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpString, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePrivateProfileSectionW$MH() {
+        return RuntimeHelper.requireNonNull(constants$214.WritePrivateProfileSectionW$MH,"WritePrivateProfileSectionW");
+    }
+    public static int WritePrivateProfileSectionW ( Addressable lpAppName,  Addressable lpString,  Addressable lpFileName) {
+        var mh$ = WritePrivateProfileSectionW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAppName, lpString, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileSectionNamesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$214.GetPrivateProfileSectionNamesA$MH,"GetPrivateProfileSectionNamesA");
+    }
+    public static int GetPrivateProfileSectionNamesA ( Addressable lpszReturnBuffer,  int nSize,  Addressable lpFileName) {
+        var mh$ = GetPrivateProfileSectionNamesA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszReturnBuffer, nSize, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileSectionNamesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$215.GetPrivateProfileSectionNamesW$MH,"GetPrivateProfileSectionNamesW");
+    }
+    public static int GetPrivateProfileSectionNamesW ( Addressable lpszReturnBuffer,  int nSize,  Addressable lpFileName) {
+        var mh$ = GetPrivateProfileSectionNamesW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszReturnBuffer, nSize, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileStructA$MH() {
+        return RuntimeHelper.requireNonNull(constants$215.GetPrivateProfileStructA$MH,"GetPrivateProfileStructA");
+    }
+    public static int GetPrivateProfileStructA ( Addressable lpszSection,  Addressable lpszKey,  Addressable lpStruct,  int uSizeStruct,  Addressable szFile) {
+        var mh$ = GetPrivateProfileStructA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszSection, lpszKey, lpStruct, uSizeStruct, szFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrivateProfileStructW$MH() {
+        return RuntimeHelper.requireNonNull(constants$215.GetPrivateProfileStructW$MH,"GetPrivateProfileStructW");
+    }
+    public static int GetPrivateProfileStructW ( Addressable lpszSection,  Addressable lpszKey,  Addressable lpStruct,  int uSizeStruct,  Addressable szFile) {
+        var mh$ = GetPrivateProfileStructW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszSection, lpszKey, lpStruct, uSizeStruct, szFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePrivateProfileStructA$MH() {
+        return RuntimeHelper.requireNonNull(constants$215.WritePrivateProfileStructA$MH,"WritePrivateProfileStructA");
+    }
+    public static int WritePrivateProfileStructA ( Addressable lpszSection,  Addressable lpszKey,  Addressable lpStruct,  int uSizeStruct,  Addressable szFile) {
+        var mh$ = WritePrivateProfileStructA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszSection, lpszKey, lpStruct, uSizeStruct, szFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePrivateProfileStructW$MH() {
+        return RuntimeHelper.requireNonNull(constants$215.WritePrivateProfileStructW$MH,"WritePrivateProfileStructW");
+    }
+    public static int WritePrivateProfileStructW ( Addressable lpszSection,  Addressable lpszKey,  Addressable lpStruct,  int uSizeStruct,  Addressable szFile) {
+        var mh$ = WritePrivateProfileStructW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszSection, lpszKey, lpStruct, uSizeStruct, szFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle Wow64EnableWow64FsRedirection$MH() {
+        return RuntimeHelper.requireNonNull(constants$215.Wow64EnableWow64FsRedirection$MH,"Wow64EnableWow64FsRedirection");
+    }
+    public static byte Wow64EnableWow64FsRedirection ( byte Wow64FsEnableRedirection) {
+        var mh$ = Wow64EnableWow64FsRedirection$MH();
+        try {
+            return (byte)mh$.invokeExact(Wow64FsEnableRedirection);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetDllDirectoryA$MH() {
+        return RuntimeHelper.requireNonNull(constants$216.SetDllDirectoryA$MH,"SetDllDirectoryA");
+    }
+    public static int SetDllDirectoryA ( Addressable lpPathName) {
+        var mh$ = SetDllDirectoryA$MH();
+        try {
+            return (int)mh$.invokeExact(lpPathName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetDllDirectoryW$MH() {
+        return RuntimeHelper.requireNonNull(constants$216.SetDllDirectoryW$MH,"SetDllDirectoryW");
+    }
+    public static int SetDllDirectoryW ( Addressable lpPathName) {
+        var mh$ = SetDllDirectoryW$MH();
+        try {
+            return (int)mh$.invokeExact(lpPathName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDllDirectoryA$MH() {
+        return RuntimeHelper.requireNonNull(constants$217.GetDllDirectoryA$MH,"GetDllDirectoryA");
+    }
+    public static int GetDllDirectoryA ( int nBufferLength,  Addressable lpBuffer) {
+        var mh$ = GetDllDirectoryA$MH();
+        try {
+            return (int)mh$.invokeExact(nBufferLength, lpBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDllDirectoryW$MH() {
+        return RuntimeHelper.requireNonNull(constants$217.GetDllDirectoryW$MH,"GetDllDirectoryW");
+    }
+    public static int GetDllDirectoryW ( int nBufferLength,  Addressable lpBuffer) {
+        var mh$ = GetDllDirectoryW$MH();
+        try {
+            return (int)mh$.invokeExact(nBufferLength, lpBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSearchPathMode$MH() {
+        return RuntimeHelper.requireNonNull(constants$217.SetSearchPathMode$MH,"SetSearchPathMode");
+    }
+    public static int SetSearchPathMode ( int Flags) {
+        var mh$ = SetSearchPathMode$MH();
+        try {
+            return (int)mh$.invokeExact(Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateDirectoryExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$217.CreateDirectoryExA$MH,"CreateDirectoryExA");
+    }
+    public static int CreateDirectoryExA ( Addressable lpTemplateDirectory,  Addressable lpNewDirectory,  Addressable lpSecurityAttributes) {
+        var mh$ = CreateDirectoryExA$MH();
+        try {
+            return (int)mh$.invokeExact(lpTemplateDirectory, lpNewDirectory, lpSecurityAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateDirectoryExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$217.CreateDirectoryExW$MH,"CreateDirectoryExW");
+    }
+    public static int CreateDirectoryExW ( Addressable lpTemplateDirectory,  Addressable lpNewDirectory,  Addressable lpSecurityAttributes) {
+        var mh$ = CreateDirectoryExW$MH();
+        try {
+            return (int)mh$.invokeExact(lpTemplateDirectory, lpNewDirectory, lpSecurityAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateDirectoryTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$217.CreateDirectoryTransactedA$MH,"CreateDirectoryTransactedA");
+    }
+    public static int CreateDirectoryTransactedA ( Addressable lpTemplateDirectory,  Addressable lpNewDirectory,  Addressable lpSecurityAttributes,  Addressable hTransaction) {
+        var mh$ = CreateDirectoryTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpTemplateDirectory, lpNewDirectory, lpSecurityAttributes, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateDirectoryTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$218.CreateDirectoryTransactedW$MH,"CreateDirectoryTransactedW");
+    }
+    public static int CreateDirectoryTransactedW ( Addressable lpTemplateDirectory,  Addressable lpNewDirectory,  Addressable lpSecurityAttributes,  Addressable hTransaction) {
+        var mh$ = CreateDirectoryTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpTemplateDirectory, lpNewDirectory, lpSecurityAttributes, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RemoveDirectoryTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$218.RemoveDirectoryTransactedA$MH,"RemoveDirectoryTransactedA");
+    }
+    public static int RemoveDirectoryTransactedA ( Addressable lpPathName,  Addressable hTransaction) {
+        var mh$ = RemoveDirectoryTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpPathName, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RemoveDirectoryTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$218.RemoveDirectoryTransactedW$MH,"RemoveDirectoryTransactedW");
+    }
+    public static int RemoveDirectoryTransactedW ( Addressable lpPathName,  Addressable hTransaction) {
+        var mh$ = RemoveDirectoryTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpPathName, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFullPathNameTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$218.GetFullPathNameTransactedA$MH,"GetFullPathNameTransactedA");
+    }
+    public static int GetFullPathNameTransactedA ( Addressable lpFileName,  int nBufferLength,  Addressable lpBuffer,  Addressable lpFilePart,  Addressable hTransaction) {
+        var mh$ = GetFullPathNameTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, nBufferLength, lpBuffer, lpFilePart, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFullPathNameTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$218.GetFullPathNameTransactedW$MH,"GetFullPathNameTransactedW");
+    }
+    public static int GetFullPathNameTransactedW ( Addressable lpFileName,  int nBufferLength,  Addressable lpBuffer,  Addressable lpFilePart,  Addressable hTransaction) {
+        var mh$ = GetFullPathNameTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, nBufferLength, lpBuffer, lpFilePart, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DefineDosDeviceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$218.DefineDosDeviceA$MH,"DefineDosDeviceA");
+    }
+    public static int DefineDosDeviceA ( int dwFlags,  Addressable lpDeviceName,  Addressable lpTargetPath) {
+        var mh$ = DefineDosDeviceA$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpDeviceName, lpTargetPath);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryDosDeviceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$219.QueryDosDeviceA$MH,"QueryDosDeviceA");
+    }
+    public static int QueryDosDeviceA ( Addressable lpDeviceName,  Addressable lpTargetPath,  int ucchMax) {
+        var mh$ = QueryDosDeviceA$MH();
+        try {
+            return (int)mh$.invokeExact(lpDeviceName, lpTargetPath, ucchMax);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateFileTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$219.CreateFileTransactedA$MH,"CreateFileTransactedA");
+    }
+    public static MemoryAddress CreateFileTransactedA ( Addressable lpFileName,  int dwDesiredAccess,  int dwShareMode,  Addressable lpSecurityAttributes,  int dwCreationDisposition,  int dwFlagsAndAttributes,  Addressable hTemplateFile,  Addressable hTransaction,  Addressable pusMiniVersion,  Addressable lpExtendedParameter) {
+        var mh$ = CreateFileTransactedA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile, hTransaction, pusMiniVersion, lpExtendedParameter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateFileTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$219.CreateFileTransactedW$MH,"CreateFileTransactedW");
+    }
+    public static MemoryAddress CreateFileTransactedW ( Addressable lpFileName,  int dwDesiredAccess,  int dwShareMode,  Addressable lpSecurityAttributes,  int dwCreationDisposition,  int dwFlagsAndAttributes,  Addressable hTemplateFile,  Addressable hTransaction,  Addressable pusMiniVersion,  Addressable lpExtendedParameter) {
+        var mh$ = CreateFileTransactedW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile, hTransaction, pusMiniVersion, lpExtendedParameter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReOpenFile$MH() {
+        return RuntimeHelper.requireNonNull(constants$219.ReOpenFile$MH,"ReOpenFile");
+    }
+    public static MemoryAddress ReOpenFile ( Addressable hOriginalFile,  int dwDesiredAccess,  int dwShareMode,  int dwFlagsAndAttributes) {
+        var mh$ = ReOpenFile$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hOriginalFile, dwDesiredAccess, dwShareMode, dwFlagsAndAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFileAttributesTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$219.SetFileAttributesTransactedA$MH,"SetFileAttributesTransactedA");
+    }
+    public static int SetFileAttributesTransactedA ( Addressable lpFileName,  int dwFileAttributes,  Addressable hTransaction) {
+        var mh$ = SetFileAttributesTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, dwFileAttributes, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFileAttributesTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$219.SetFileAttributesTransactedW$MH,"SetFileAttributesTransactedW");
+    }
+    public static int SetFileAttributesTransactedW ( Addressable lpFileName,  int dwFileAttributes,  Addressable hTransaction) {
+        var mh$ = SetFileAttributesTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, dwFileAttributes, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFileAttributesTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$220.GetFileAttributesTransactedA$MH,"GetFileAttributesTransactedA");
+    }
+    public static int GetFileAttributesTransactedA ( Addressable lpFileName,  int fInfoLevelId,  Addressable lpFileInformation,  Addressable hTransaction) {
+        var mh$ = GetFileAttributesTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, fInfoLevelId, lpFileInformation, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFileAttributesTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$220.GetFileAttributesTransactedW$MH,"GetFileAttributesTransactedW");
+    }
+    public static int GetFileAttributesTransactedW ( Addressable lpFileName,  int fInfoLevelId,  Addressable lpFileInformation,  Addressable hTransaction) {
+        var mh$ = GetFileAttributesTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, fInfoLevelId, lpFileInformation, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCompressedFileSizeTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$220.GetCompressedFileSizeTransactedA$MH,"GetCompressedFileSizeTransactedA");
+    }
+    public static int GetCompressedFileSizeTransactedA ( Addressable lpFileName,  Addressable lpFileSizeHigh,  Addressable hTransaction) {
+        var mh$ = GetCompressedFileSizeTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpFileSizeHigh, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCompressedFileSizeTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$220.GetCompressedFileSizeTransactedW$MH,"GetCompressedFileSizeTransactedW");
+    }
+    public static int GetCompressedFileSizeTransactedW ( Addressable lpFileName,  Addressable lpFileSizeHigh,  Addressable hTransaction) {
+        var mh$ = GetCompressedFileSizeTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpFileSizeHigh, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteFileTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$220.DeleteFileTransactedA$MH,"DeleteFileTransactedA");
+    }
+    public static int DeleteFileTransactedA ( Addressable lpFileName,  Addressable hTransaction) {
+        var mh$ = DeleteFileTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteFileTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$220.DeleteFileTransactedW$MH,"DeleteFileTransactedW");
+    }
+    public static int DeleteFileTransactedW ( Addressable lpFileName,  Addressable hTransaction) {
+        var mh$ = DeleteFileTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CheckNameLegalDOS8Dot3A$MH() {
+        return RuntimeHelper.requireNonNull(constants$221.CheckNameLegalDOS8Dot3A$MH,"CheckNameLegalDOS8Dot3A");
+    }
+    public static int CheckNameLegalDOS8Dot3A ( Addressable lpName,  Addressable lpOemName,  int OemNameSize,  Addressable pbNameContainsSpaces,  Addressable pbNameLegal) {
+        var mh$ = CheckNameLegalDOS8Dot3A$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpOemName, OemNameSize, pbNameContainsSpaces, pbNameLegal);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CheckNameLegalDOS8Dot3W$MH() {
+        return RuntimeHelper.requireNonNull(constants$221.CheckNameLegalDOS8Dot3W$MH,"CheckNameLegalDOS8Dot3W");
+    }
+    public static int CheckNameLegalDOS8Dot3W ( Addressable lpName,  Addressable lpOemName,  int OemNameSize,  Addressable pbNameContainsSpaces,  Addressable pbNameLegal) {
+        var mh$ = CheckNameLegalDOS8Dot3W$MH();
+        try {
+            return (int)mh$.invokeExact(lpName, lpOemName, OemNameSize, pbNameContainsSpaces, pbNameLegal);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstFileTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$221.FindFirstFileTransactedA$MH,"FindFirstFileTransactedA");
+    }
+    public static MemoryAddress FindFirstFileTransactedA ( Addressable lpFileName,  int fInfoLevelId,  Addressable lpFindFileData,  int fSearchOp,  Addressable lpSearchFilter,  int dwAdditionalFlags,  Addressable hTransaction) {
+        var mh$ = FindFirstFileTransactedA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpFileName, fInfoLevelId, lpFindFileData, fSearchOp, lpSearchFilter, dwAdditionalFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstFileTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$221.FindFirstFileTransactedW$MH,"FindFirstFileTransactedW");
+    }
+    public static MemoryAddress FindFirstFileTransactedW ( Addressable lpFileName,  int fInfoLevelId,  Addressable lpFindFileData,  int fSearchOp,  Addressable lpSearchFilter,  int dwAdditionalFlags,  Addressable hTransaction) {
+        var mh$ = FindFirstFileTransactedW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpFileName, fInfoLevelId, lpFindFileData, fSearchOp, lpSearchFilter, dwAdditionalFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CopyFileA$MH() {
+        return RuntimeHelper.requireNonNull(constants$221.CopyFileA$MH,"CopyFileA");
+    }
+    public static int CopyFileA ( Addressable lpExistingFileName,  Addressable lpNewFileName,  int bFailIfExists) {
+        var mh$ = CopyFileA$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, bFailIfExists);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CopyFileW$MH() {
+        return RuntimeHelper.requireNonNull(constants$221.CopyFileW$MH,"CopyFileW");
+    }
+    public static int CopyFileW ( Addressable lpExistingFileName,  Addressable lpNewFileName,  int bFailIfExists) {
+        var mh$ = CopyFileW$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, bFailIfExists);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CopyFileExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$222.CopyFileExA$MH,"CopyFileExA");
+    }
+    public static int CopyFileExA ( Addressable lpExistingFileName,  Addressable lpNewFileName,  Addressable lpProgressRoutine,  Addressable lpData,  Addressable pbCancel,  int dwCopyFlags) {
+        var mh$ = CopyFileExA$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, lpProgressRoutine, lpData, pbCancel, dwCopyFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CopyFileExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$222.CopyFileExW$MH,"CopyFileExW");
+    }
+    public static int CopyFileExW ( Addressable lpExistingFileName,  Addressable lpNewFileName,  Addressable lpProgressRoutine,  Addressable lpData,  Addressable pbCancel,  int dwCopyFlags) {
+        var mh$ = CopyFileExW$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, lpProgressRoutine, lpData, pbCancel, dwCopyFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CopyFileTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$222.CopyFileTransactedA$MH,"CopyFileTransactedA");
+    }
+    public static int CopyFileTransactedA ( Addressable lpExistingFileName,  Addressable lpNewFileName,  Addressable lpProgressRoutine,  Addressable lpData,  Addressable pbCancel,  int dwCopyFlags,  Addressable hTransaction) {
+        var mh$ = CopyFileTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, lpProgressRoutine, lpData, pbCancel, dwCopyFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CopyFileTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$222.CopyFileTransactedW$MH,"CopyFileTransactedW");
+    }
+    public static int CopyFileTransactedW ( Addressable lpExistingFileName,  Addressable lpNewFileName,  Addressable lpProgressRoutine,  Addressable lpData,  Addressable pbCancel,  int dwCopyFlags,  Addressable hTransaction) {
+        var mh$ = CopyFileTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, lpProgressRoutine, lpData, pbCancel, dwCopyFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int COPYFILE2_CALLBACK_NONE() {
+        return (int)0L;
+    }
+    public static int COPYFILE2_CALLBACK_CHUNK_STARTED() {
+        return (int)1L;
+    }
+    public static int COPYFILE2_CALLBACK_CHUNK_FINISHED() {
+        return (int)2L;
+    }
+    public static int COPYFILE2_CALLBACK_STREAM_STARTED() {
+        return (int)3L;
+    }
+    public static int COPYFILE2_CALLBACK_STREAM_FINISHED() {
+        return (int)4L;
+    }
+    public static int COPYFILE2_CALLBACK_POLL_CONTINUE() {
+        return (int)5L;
+    }
+    public static int COPYFILE2_CALLBACK_ERROR() {
+        return (int)6L;
+    }
+    public static int COPYFILE2_CALLBACK_MAX() {
+        return (int)7L;
+    }
+    public static int COPYFILE2_PROGRESS_CONTINUE() {
+        return (int)0L;
+    }
+    public static int COPYFILE2_PROGRESS_CANCEL() {
+        return (int)1L;
+    }
+    public static int COPYFILE2_PROGRESS_STOP() {
+        return (int)2L;
+    }
+    public static int COPYFILE2_PROGRESS_QUIET() {
+        return (int)3L;
+    }
+    public static int COPYFILE2_PROGRESS_PAUSE() {
+        return (int)4L;
+    }
+    public static int COPYFILE2_PHASE_NONE() {
+        return (int)0L;
+    }
+    public static int COPYFILE2_PHASE_PREPARE_SOURCE() {
+        return (int)1L;
+    }
+    public static int COPYFILE2_PHASE_PREPARE_DEST() {
+        return (int)2L;
+    }
+    public static int COPYFILE2_PHASE_READ_SOURCE() {
+        return (int)3L;
+    }
+    public static int COPYFILE2_PHASE_WRITE_DESTINATION() {
+        return (int)4L;
+    }
+    public static int COPYFILE2_PHASE_SERVER_COPY() {
+        return (int)5L;
+    }
+    public static int COPYFILE2_PHASE_NAMEGRAFT_COPY() {
+        return (int)6L;
+    }
+    public static int COPYFILE2_PHASE_MAX() {
+        return (int)7L;
+    }
+    public static MethodHandle CopyFile2$MH() {
+        return RuntimeHelper.requireNonNull(constants$223.CopyFile2$MH,"CopyFile2");
+    }
+    public static int CopyFile2 ( Addressable pwszExistingFileName,  Addressable pwszNewFileName,  Addressable pExtendedParameters) {
+        var mh$ = CopyFile2$MH();
+        try {
+            return (int)mh$.invokeExact(pwszExistingFileName, pwszNewFileName, pExtendedParameters);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MoveFileA$MH() {
+        return RuntimeHelper.requireNonNull(constants$223.MoveFileA$MH,"MoveFileA");
+    }
+    public static int MoveFileA ( Addressable lpExistingFileName,  Addressable lpNewFileName) {
+        var mh$ = MoveFileA$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MoveFileW$MH() {
+        return RuntimeHelper.requireNonNull(constants$223.MoveFileW$MH,"MoveFileW");
+    }
+    public static int MoveFileW ( Addressable lpExistingFileName,  Addressable lpNewFileName) {
+        var mh$ = MoveFileW$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MoveFileExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$223.MoveFileExA$MH,"MoveFileExA");
+    }
+    public static int MoveFileExA ( Addressable lpExistingFileName,  Addressable lpNewFileName,  int dwFlags) {
+        var mh$ = MoveFileExA$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MoveFileExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$224.MoveFileExW$MH,"MoveFileExW");
+    }
+    public static int MoveFileExW ( Addressable lpExistingFileName,  Addressable lpNewFileName,  int dwFlags) {
+        var mh$ = MoveFileExW$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MoveFileWithProgressA$MH() {
+        return RuntimeHelper.requireNonNull(constants$224.MoveFileWithProgressA$MH,"MoveFileWithProgressA");
+    }
+    public static int MoveFileWithProgressA ( Addressable lpExistingFileName,  Addressable lpNewFileName,  Addressable lpProgressRoutine,  Addressable lpData,  int dwFlags) {
+        var mh$ = MoveFileWithProgressA$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, lpProgressRoutine, lpData, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MoveFileWithProgressW$MH() {
+        return RuntimeHelper.requireNonNull(constants$224.MoveFileWithProgressW$MH,"MoveFileWithProgressW");
+    }
+    public static int MoveFileWithProgressW ( Addressable lpExistingFileName,  Addressable lpNewFileName,  Addressable lpProgressRoutine,  Addressable lpData,  int dwFlags) {
+        var mh$ = MoveFileWithProgressW$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, lpProgressRoutine, lpData, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MoveFileTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$224.MoveFileTransactedA$MH,"MoveFileTransactedA");
+    }
+    public static int MoveFileTransactedA ( Addressable lpExistingFileName,  Addressable lpNewFileName,  Addressable lpProgressRoutine,  Addressable lpData,  int dwFlags,  Addressable hTransaction) {
+        var mh$ = MoveFileTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, lpProgressRoutine, lpData, dwFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MoveFileTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$224.MoveFileTransactedW$MH,"MoveFileTransactedW");
+    }
+    public static int MoveFileTransactedW ( Addressable lpExistingFileName,  Addressable lpNewFileName,  Addressable lpProgressRoutine,  Addressable lpData,  int dwFlags,  Addressable hTransaction) {
+        var mh$ = MoveFileTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpExistingFileName, lpNewFileName, lpProgressRoutine, lpData, dwFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReplaceFileA$MH() {
+        return RuntimeHelper.requireNonNull(constants$224.ReplaceFileA$MH,"ReplaceFileA");
+    }
+    public static int ReplaceFileA ( Addressable lpReplacedFileName,  Addressable lpReplacementFileName,  Addressable lpBackupFileName,  int dwReplaceFlags,  Addressable lpExclude,  Addressable lpReserved) {
+        var mh$ = ReplaceFileA$MH();
+        try {
+            return (int)mh$.invokeExact(lpReplacedFileName, lpReplacementFileName, lpBackupFileName, dwReplaceFlags, lpExclude, lpReserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReplaceFileW$MH() {
+        return RuntimeHelper.requireNonNull(constants$225.ReplaceFileW$MH,"ReplaceFileW");
+    }
+    public static int ReplaceFileW ( Addressable lpReplacedFileName,  Addressable lpReplacementFileName,  Addressable lpBackupFileName,  int dwReplaceFlags,  Addressable lpExclude,  Addressable lpReserved) {
+        var mh$ = ReplaceFileW$MH();
+        try {
+            return (int)mh$.invokeExact(lpReplacedFileName, lpReplacementFileName, lpBackupFileName, dwReplaceFlags, lpExclude, lpReserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateHardLinkA$MH() {
+        return RuntimeHelper.requireNonNull(constants$225.CreateHardLinkA$MH,"CreateHardLinkA");
+    }
+    public static int CreateHardLinkA ( Addressable lpFileName,  Addressable lpExistingFileName,  Addressable lpSecurityAttributes) {
+        var mh$ = CreateHardLinkA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpExistingFileName, lpSecurityAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateHardLinkW$MH() {
+        return RuntimeHelper.requireNonNull(constants$225.CreateHardLinkW$MH,"CreateHardLinkW");
+    }
+    public static int CreateHardLinkW ( Addressable lpFileName,  Addressable lpExistingFileName,  Addressable lpSecurityAttributes) {
+        var mh$ = CreateHardLinkW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpExistingFileName, lpSecurityAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateHardLinkTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$225.CreateHardLinkTransactedA$MH,"CreateHardLinkTransactedA");
+    }
+    public static int CreateHardLinkTransactedA ( Addressable lpFileName,  Addressable lpExistingFileName,  Addressable lpSecurityAttributes,  Addressable hTransaction) {
+        var mh$ = CreateHardLinkTransactedA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpExistingFileName, lpSecurityAttributes, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateHardLinkTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$225.CreateHardLinkTransactedW$MH,"CreateHardLinkTransactedW");
+    }
+    public static int CreateHardLinkTransactedW ( Addressable lpFileName,  Addressable lpExistingFileName,  Addressable lpSecurityAttributes,  Addressable hTransaction) {
+        var mh$ = CreateHardLinkTransactedW$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, lpExistingFileName, lpSecurityAttributes, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstStreamTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$225.FindFirstStreamTransactedW$MH,"FindFirstStreamTransactedW");
+    }
+    public static MemoryAddress FindFirstStreamTransactedW ( Addressable lpFileName,  int InfoLevel,  Addressable lpFindStreamData,  int dwFlags,  Addressable hTransaction) {
+        var mh$ = FindFirstStreamTransactedW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpFileName, InfoLevel, lpFindStreamData, dwFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstFileNameTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$226.FindFirstFileNameTransactedW$MH,"FindFirstFileNameTransactedW");
+    }
+    public static MemoryAddress FindFirstFileNameTransactedW ( Addressable lpFileName,  int dwFlags,  Addressable StringLength,  Addressable LinkName,  Addressable hTransaction) {
+        var mh$ = FindFirstFileNameTransactedW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpFileName, dwFlags, StringLength, LinkName, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateNamedPipeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$226.CreateNamedPipeA$MH,"CreateNamedPipeA");
+    }
+    public static MemoryAddress CreateNamedPipeA ( Addressable lpName,  int dwOpenMode,  int dwPipeMode,  int nMaxInstances,  int nOutBufferSize,  int nInBufferSize,  int nDefaultTimeOut,  Addressable lpSecurityAttributes) {
+        var mh$ = CreateNamedPipeA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpName, dwOpenMode, dwPipeMode, nMaxInstances, nOutBufferSize, nInBufferSize, nDefaultTimeOut, lpSecurityAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNamedPipeHandleStateA$MH() {
+        return RuntimeHelper.requireNonNull(constants$226.GetNamedPipeHandleStateA$MH,"GetNamedPipeHandleStateA");
+    }
+    public static int GetNamedPipeHandleStateA ( Addressable hNamedPipe,  Addressable lpState,  Addressable lpCurInstances,  Addressable lpMaxCollectionCount,  Addressable lpCollectDataTimeout,  Addressable lpUserName,  int nMaxUserNameSize) {
+        var mh$ = GetNamedPipeHandleStateA$MH();
+        try {
+            return (int)mh$.invokeExact(hNamedPipe, lpState, lpCurInstances, lpMaxCollectionCount, lpCollectDataTimeout, lpUserName, nMaxUserNameSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CallNamedPipeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$226.CallNamedPipeA$MH,"CallNamedPipeA");
+    }
+    public static int CallNamedPipeA ( Addressable lpNamedPipeName,  Addressable lpInBuffer,  int nInBufferSize,  Addressable lpOutBuffer,  int nOutBufferSize,  Addressable lpBytesRead,  int nTimeOut) {
+        var mh$ = CallNamedPipeA$MH();
+        try {
+            return (int)mh$.invokeExact(lpNamedPipeName, lpInBuffer, nInBufferSize, lpOutBuffer, nOutBufferSize, lpBytesRead, nTimeOut);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WaitNamedPipeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$226.WaitNamedPipeA$MH,"WaitNamedPipeA");
+    }
+    public static int WaitNamedPipeA ( Addressable lpNamedPipeName,  int nTimeOut) {
+        var mh$ = WaitNamedPipeA$MH();
+        try {
+            return (int)mh$.invokeExact(lpNamedPipeName, nTimeOut);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNamedPipeClientComputerNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$226.GetNamedPipeClientComputerNameA$MH,"GetNamedPipeClientComputerNameA");
+    }
+    public static int GetNamedPipeClientComputerNameA ( Addressable Pipe,  Addressable ClientComputerName,  int ClientComputerNameLength) {
+        var mh$ = GetNamedPipeClientComputerNameA$MH();
+        try {
+            return (int)mh$.invokeExact(Pipe, ClientComputerName, ClientComputerNameLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNamedPipeClientProcessId$MH() {
+        return RuntimeHelper.requireNonNull(constants$227.GetNamedPipeClientProcessId$MH,"GetNamedPipeClientProcessId");
+    }
+    public static int GetNamedPipeClientProcessId ( Addressable Pipe,  Addressable ClientProcessId) {
+        var mh$ = GetNamedPipeClientProcessId$MH();
+        try {
+            return (int)mh$.invokeExact(Pipe, ClientProcessId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNamedPipeClientSessionId$MH() {
+        return RuntimeHelper.requireNonNull(constants$227.GetNamedPipeClientSessionId$MH,"GetNamedPipeClientSessionId");
+    }
+    public static int GetNamedPipeClientSessionId ( Addressable Pipe,  Addressable ClientSessionId) {
+        var mh$ = GetNamedPipeClientSessionId$MH();
+        try {
+            return (int)mh$.invokeExact(Pipe, ClientSessionId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNamedPipeServerProcessId$MH() {
+        return RuntimeHelper.requireNonNull(constants$227.GetNamedPipeServerProcessId$MH,"GetNamedPipeServerProcessId");
+    }
+    public static int GetNamedPipeServerProcessId ( Addressable Pipe,  Addressable ServerProcessId) {
+        var mh$ = GetNamedPipeServerProcessId$MH();
+        try {
+            return (int)mh$.invokeExact(Pipe, ServerProcessId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNamedPipeServerSessionId$MH() {
+        return RuntimeHelper.requireNonNull(constants$227.GetNamedPipeServerSessionId$MH,"GetNamedPipeServerSessionId");
+    }
+    public static int GetNamedPipeServerSessionId ( Addressable Pipe,  Addressable ServerSessionId) {
+        var mh$ = GetNamedPipeServerSessionId$MH();
+        try {
+            return (int)mh$.invokeExact(Pipe, ServerSessionId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetVolumeLabelA$MH() {
+        return RuntimeHelper.requireNonNull(constants$227.SetVolumeLabelA$MH,"SetVolumeLabelA");
+    }
+    public static int SetVolumeLabelA ( Addressable lpRootPathName,  Addressable lpVolumeName) {
+        var mh$ = SetVolumeLabelA$MH();
+        try {
+            return (int)mh$.invokeExact(lpRootPathName, lpVolumeName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetVolumeLabelW$MH() {
+        return RuntimeHelper.requireNonNull(constants$227.SetVolumeLabelW$MH,"SetVolumeLabelW");
+    }
+    public static int SetVolumeLabelW ( Addressable lpRootPathName,  Addressable lpVolumeName) {
+        var mh$ = SetVolumeLabelW$MH();
+        try {
+            return (int)mh$.invokeExact(lpRootPathName, lpVolumeName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFileBandwidthReservation$MH() {
+        return RuntimeHelper.requireNonNull(constants$228.SetFileBandwidthReservation$MH,"SetFileBandwidthReservation");
+    }
+    public static int SetFileBandwidthReservation ( Addressable hFile,  int nPeriodMilliseconds,  int nBytesPerPeriod,  int bDiscardable,  Addressable lpTransferSize,  Addressable lpNumOutstandingRequests) {
+        var mh$ = SetFileBandwidthReservation$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, nPeriodMilliseconds, nBytesPerPeriod, bDiscardable, lpTransferSize, lpNumOutstandingRequests);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFileBandwidthReservation$MH() {
+        return RuntimeHelper.requireNonNull(constants$228.GetFileBandwidthReservation$MH,"GetFileBandwidthReservation");
+    }
+    public static int GetFileBandwidthReservation ( Addressable hFile,  Addressable lpPeriodMilliseconds,  Addressable lpBytesPerPeriod,  Addressable pDiscardable,  Addressable lpTransferSize,  Addressable lpNumOutstandingRequests) {
+        var mh$ = GetFileBandwidthReservation$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, lpPeriodMilliseconds, lpBytesPerPeriod, pDiscardable, lpTransferSize, lpNumOutstandingRequests);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ClearEventLogA$MH() {
+        return RuntimeHelper.requireNonNull(constants$228.ClearEventLogA$MH,"ClearEventLogA");
+    }
+    public static int ClearEventLogA ( Addressable hEventLog,  Addressable lpBackupFileName) {
+        var mh$ = ClearEventLogA$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, lpBackupFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ClearEventLogW$MH() {
+        return RuntimeHelper.requireNonNull(constants$228.ClearEventLogW$MH,"ClearEventLogW");
+    }
+    public static int ClearEventLogW ( Addressable hEventLog,  Addressable lpBackupFileName) {
+        var mh$ = ClearEventLogW$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, lpBackupFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BackupEventLogA$MH() {
+        return RuntimeHelper.requireNonNull(constants$228.BackupEventLogA$MH,"BackupEventLogA");
+    }
+    public static int BackupEventLogA ( Addressable hEventLog,  Addressable lpBackupFileName) {
+        var mh$ = BackupEventLogA$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, lpBackupFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BackupEventLogW$MH() {
+        return RuntimeHelper.requireNonNull(constants$228.BackupEventLogW$MH,"BackupEventLogW");
+    }
+    public static int BackupEventLogW ( Addressable hEventLog,  Addressable lpBackupFileName) {
+        var mh$ = BackupEventLogW$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, lpBackupFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CloseEventLog$MH() {
+        return RuntimeHelper.requireNonNull(constants$229.CloseEventLog$MH,"CloseEventLog");
+    }
+    public static int CloseEventLog ( Addressable hEventLog) {
+        var mh$ = CloseEventLog$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeregisterEventSource$MH() {
+        return RuntimeHelper.requireNonNull(constants$229.DeregisterEventSource$MH,"DeregisterEventSource");
+    }
+    public static int DeregisterEventSource ( Addressable hEventLog) {
+        var mh$ = DeregisterEventSource$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle NotifyChangeEventLog$MH() {
+        return RuntimeHelper.requireNonNull(constants$229.NotifyChangeEventLog$MH,"NotifyChangeEventLog");
+    }
+    public static int NotifyChangeEventLog ( Addressable hEventLog,  Addressable hEvent) {
+        var mh$ = NotifyChangeEventLog$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, hEvent);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumberOfEventLogRecords$MH() {
+        return RuntimeHelper.requireNonNull(constants$229.GetNumberOfEventLogRecords$MH,"GetNumberOfEventLogRecords");
+    }
+    public static int GetNumberOfEventLogRecords ( Addressable hEventLog,  Addressable NumberOfRecords) {
+        var mh$ = GetNumberOfEventLogRecords$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, NumberOfRecords);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetOldestEventLogRecord$MH() {
+        return RuntimeHelper.requireNonNull(constants$229.GetOldestEventLogRecord$MH,"GetOldestEventLogRecord");
+    }
+    public static int GetOldestEventLogRecord ( Addressable hEventLog,  Addressable OldestRecord) {
+        var mh$ = GetOldestEventLogRecord$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, OldestRecord);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenEventLogA$MH() {
+        return RuntimeHelper.requireNonNull(constants$229.OpenEventLogA$MH,"OpenEventLogA");
+    }
+    public static MemoryAddress OpenEventLogA ( Addressable lpUNCServerName,  Addressable lpSourceName) {
+        var mh$ = OpenEventLogA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpUNCServerName, lpSourceName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenEventLogW$MH() {
+        return RuntimeHelper.requireNonNull(constants$230.OpenEventLogW$MH,"OpenEventLogW");
+    }
+    public static MemoryAddress OpenEventLogW ( Addressable lpUNCServerName,  Addressable lpSourceName) {
+        var mh$ = OpenEventLogW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpUNCServerName, lpSourceName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterEventSourceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$230.RegisterEventSourceA$MH,"RegisterEventSourceA");
+    }
+    public static MemoryAddress RegisterEventSourceA ( Addressable lpUNCServerName,  Addressable lpSourceName) {
+        var mh$ = RegisterEventSourceA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpUNCServerName, lpSourceName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterEventSourceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$230.RegisterEventSourceW$MH,"RegisterEventSourceW");
+    }
+    public static MemoryAddress RegisterEventSourceW ( Addressable lpUNCServerName,  Addressable lpSourceName) {
+        var mh$ = RegisterEventSourceW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpUNCServerName, lpSourceName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenBackupEventLogA$MH() {
+        return RuntimeHelper.requireNonNull(constants$230.OpenBackupEventLogA$MH,"OpenBackupEventLogA");
+    }
+    public static MemoryAddress OpenBackupEventLogA ( Addressable lpUNCServerName,  Addressable lpFileName) {
+        var mh$ = OpenBackupEventLogA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpUNCServerName, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenBackupEventLogW$MH() {
+        return RuntimeHelper.requireNonNull(constants$230.OpenBackupEventLogW$MH,"OpenBackupEventLogW");
+    }
+    public static MemoryAddress OpenBackupEventLogW ( Addressable lpUNCServerName,  Addressable lpFileName) {
+        var mh$ = OpenBackupEventLogW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpUNCServerName, lpFileName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadEventLogA$MH() {
+        return RuntimeHelper.requireNonNull(constants$230.ReadEventLogA$MH,"ReadEventLogA");
+    }
+    public static int ReadEventLogA ( Addressable hEventLog,  int dwReadFlags,  int dwRecordOffset,  Addressable lpBuffer,  int nNumberOfBytesToRead,  Addressable pnBytesRead,  Addressable pnMinNumberOfBytesNeeded) {
+        var mh$ = ReadEventLogA$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, dwReadFlags, dwRecordOffset, lpBuffer, nNumberOfBytesToRead, pnBytesRead, pnMinNumberOfBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadEventLogW$MH() {
+        return RuntimeHelper.requireNonNull(constants$231.ReadEventLogW$MH,"ReadEventLogW");
+    }
+    public static int ReadEventLogW ( Addressable hEventLog,  int dwReadFlags,  int dwRecordOffset,  Addressable lpBuffer,  int nNumberOfBytesToRead,  Addressable pnBytesRead,  Addressable pnMinNumberOfBytesNeeded) {
+        var mh$ = ReadEventLogW$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, dwReadFlags, dwRecordOffset, lpBuffer, nNumberOfBytesToRead, pnBytesRead, pnMinNumberOfBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReportEventA$MH() {
+        return RuntimeHelper.requireNonNull(constants$231.ReportEventA$MH,"ReportEventA");
+    }
+    public static int ReportEventA ( Addressable hEventLog,  short wType,  short wCategory,  int dwEventID,  Addressable lpUserSid,  short wNumStrings,  int dwDataSize,  Addressable lpStrings,  Addressable lpRawData) {
+        var mh$ = ReportEventA$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, wType, wCategory, dwEventID, lpUserSid, wNumStrings, dwDataSize, lpStrings, lpRawData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReportEventW$MH() {
+        return RuntimeHelper.requireNonNull(constants$231.ReportEventW$MH,"ReportEventW");
+    }
+    public static int ReportEventW ( Addressable hEventLog,  short wType,  short wCategory,  int dwEventID,  Addressable lpUserSid,  short wNumStrings,  int dwDataSize,  Addressable lpStrings,  Addressable lpRawData) {
+        var mh$ = ReportEventW$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, wType, wCategory, dwEventID, lpUserSid, wNumStrings, dwDataSize, lpStrings, lpRawData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress LPEVENTLOG_FULL_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle GetEventLogInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$231.GetEventLogInformation$MH,"GetEventLogInformation");
+    }
+    public static int GetEventLogInformation ( Addressable hEventLog,  int dwInfoLevel,  Addressable lpBuffer,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = GetEventLogInformation$MH();
+        try {
+            return (int)mh$.invokeExact(hEventLog, dwInfoLevel, lpBuffer, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress POPERATION_START_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POPERATION_END_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle OperationStart$MH() {
+        return RuntimeHelper.requireNonNull(constants$231.OperationStart$MH,"OperationStart");
+    }
+    public static int OperationStart ( Addressable OperationStartParams) {
+        var mh$ = OperationStart$MH();
+        try {
+            return (int)mh$.invokeExact(OperationStartParams);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OperationEnd$MH() {
+        return RuntimeHelper.requireNonNull(constants$231.OperationEnd$MH,"OperationEnd");
+    }
+    public static int OperationEnd ( Addressable OperationEndParams) {
+        var mh$ = OperationEnd$MH();
+        try {
+            return (int)mh$.invokeExact(OperationEndParams);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckAndAuditAlarmA$MH() {
+        return RuntimeHelper.requireNonNull(constants$232.AccessCheckAndAuditAlarmA$MH,"AccessCheckAndAuditAlarmA");
+    }
+    public static int AccessCheckAndAuditAlarmA ( Addressable SubsystemName,  Addressable HandleId,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable SecurityDescriptor,  int DesiredAccess,  Addressable GenericMapping,  int ObjectCreation,  Addressable GrantedAccess,  Addressable AccessStatus,  Addressable pfGenerateOnClose) {
+        var mh$ = AccessCheckAndAuditAlarmA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ObjectTypeName, ObjectName, SecurityDescriptor, DesiredAccess, GenericMapping, ObjectCreation, GrantedAccess, AccessStatus, pfGenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckByTypeAndAuditAlarmA$MH() {
+        return RuntimeHelper.requireNonNull(constants$232.AccessCheckByTypeAndAuditAlarmA$MH,"AccessCheckByTypeAndAuditAlarmA");
+    }
+    public static int AccessCheckByTypeAndAuditAlarmA ( Addressable SubsystemName,  Addressable HandleId,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable SecurityDescriptor,  Addressable PrincipalSelfSid,  int DesiredAccess,  int AuditType,  int Flags,  Addressable ObjectTypeList,  int ObjectTypeListLength,  Addressable GenericMapping,  int ObjectCreation,  Addressable GrantedAccess,  Addressable AccessStatus,  Addressable pfGenerateOnClose) {
+        var mh$ = AccessCheckByTypeAndAuditAlarmA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ObjectTypeName, ObjectName, SecurityDescriptor, PrincipalSelfSid, DesiredAccess, AuditType, Flags, ObjectTypeList, ObjectTypeListLength, GenericMapping, ObjectCreation, GrantedAccess, AccessStatus, pfGenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckByTypeResultListAndAuditAlarmA$MH() {
+        return RuntimeHelper.requireNonNull(constants$232.AccessCheckByTypeResultListAndAuditAlarmA$MH,"AccessCheckByTypeResultListAndAuditAlarmA");
+    }
+    public static int AccessCheckByTypeResultListAndAuditAlarmA ( Addressable SubsystemName,  Addressable HandleId,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable SecurityDescriptor,  Addressable PrincipalSelfSid,  int DesiredAccess,  int AuditType,  int Flags,  Addressable ObjectTypeList,  int ObjectTypeListLength,  Addressable GenericMapping,  int ObjectCreation,  Addressable GrantedAccess,  Addressable AccessStatusList,  Addressable pfGenerateOnClose) {
+        var mh$ = AccessCheckByTypeResultListAndAuditAlarmA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ObjectTypeName, ObjectName, SecurityDescriptor, PrincipalSelfSid, DesiredAccess, AuditType, Flags, ObjectTypeList, ObjectTypeListLength, GenericMapping, ObjectCreation, GrantedAccess, AccessStatusList, pfGenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AccessCheckByTypeResultListAndAuditAlarmByHandleA$MH() {
+        return RuntimeHelper.requireNonNull(constants$232.AccessCheckByTypeResultListAndAuditAlarmByHandleA$MH,"AccessCheckByTypeResultListAndAuditAlarmByHandleA");
+    }
+    public static int AccessCheckByTypeResultListAndAuditAlarmByHandleA ( Addressable SubsystemName,  Addressable HandleId,  Addressable ClientToken,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable SecurityDescriptor,  Addressable PrincipalSelfSid,  int DesiredAccess,  int AuditType,  int Flags,  Addressable ObjectTypeList,  int ObjectTypeListLength,  Addressable GenericMapping,  int ObjectCreation,  Addressable GrantedAccess,  Addressable AccessStatusList,  Addressable pfGenerateOnClose) {
+        var mh$ = AccessCheckByTypeResultListAndAuditAlarmByHandleA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ClientToken, ObjectTypeName, ObjectName, SecurityDescriptor, PrincipalSelfSid, DesiredAccess, AuditType, Flags, ObjectTypeList, ObjectTypeListLength, GenericMapping, ObjectCreation, GrantedAccess, AccessStatusList, pfGenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ObjectOpenAuditAlarmA$MH() {
+        return RuntimeHelper.requireNonNull(constants$232.ObjectOpenAuditAlarmA$MH,"ObjectOpenAuditAlarmA");
+    }
+    public static int ObjectOpenAuditAlarmA ( Addressable SubsystemName,  Addressable HandleId,  Addressable ObjectTypeName,  Addressable ObjectName,  Addressable pSecurityDescriptor,  Addressable ClientToken,  int DesiredAccess,  int GrantedAccess,  Addressable Privileges,  int ObjectCreation,  int AccessGranted,  Addressable GenerateOnClose) {
+        var mh$ = ObjectOpenAuditAlarmA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ObjectTypeName, ObjectName, pSecurityDescriptor, ClientToken, DesiredAccess, GrantedAccess, Privileges, ObjectCreation, AccessGranted, GenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ObjectPrivilegeAuditAlarmA$MH() {
+        return RuntimeHelper.requireNonNull(constants$232.ObjectPrivilegeAuditAlarmA$MH,"ObjectPrivilegeAuditAlarmA");
+    }
+    public static int ObjectPrivilegeAuditAlarmA ( Addressable SubsystemName,  Addressable HandleId,  Addressable ClientToken,  int DesiredAccess,  Addressable Privileges,  int AccessGranted) {
+        var mh$ = ObjectPrivilegeAuditAlarmA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, ClientToken, DesiredAccess, Privileges, AccessGranted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ObjectCloseAuditAlarmA$MH() {
+        return RuntimeHelper.requireNonNull(constants$233.ObjectCloseAuditAlarmA$MH,"ObjectCloseAuditAlarmA");
+    }
+    public static int ObjectCloseAuditAlarmA ( Addressable SubsystemName,  Addressable HandleId,  int GenerateOnClose) {
+        var mh$ = ObjectCloseAuditAlarmA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, GenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ObjectDeleteAuditAlarmA$MH() {
+        return RuntimeHelper.requireNonNull(constants$233.ObjectDeleteAuditAlarmA$MH,"ObjectDeleteAuditAlarmA");
+    }
+    public static int ObjectDeleteAuditAlarmA ( Addressable SubsystemName,  Addressable HandleId,  int GenerateOnClose) {
+        var mh$ = ObjectDeleteAuditAlarmA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, HandleId, GenerateOnClose);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PrivilegedServiceAuditAlarmA$MH() {
+        return RuntimeHelper.requireNonNull(constants$233.PrivilegedServiceAuditAlarmA$MH,"PrivilegedServiceAuditAlarmA");
+    }
+    public static int PrivilegedServiceAuditAlarmA ( Addressable SubsystemName,  Addressable ServiceName,  Addressable ClientToken,  Addressable Privileges,  int AccessGranted) {
+        var mh$ = PrivilegedServiceAuditAlarmA$MH();
+        try {
+            return (int)mh$.invokeExact(SubsystemName, ServiceName, ClientToken, Privileges, AccessGranted);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddConditionalAce$MH() {
+        return RuntimeHelper.requireNonNull(constants$233.AddConditionalAce$MH,"AddConditionalAce");
+    }
+    public static int AddConditionalAce ( Addressable pAcl,  int dwAceRevision,  int AceFlags,  byte AceType,  int AccessMask,  Addressable pSid,  Addressable ConditionStr,  Addressable ReturnLength) {
+        var mh$ = AddConditionalAce$MH();
+        try {
+            return (int)mh$.invokeExact(pAcl, dwAceRevision, AceFlags, AceType, AccessMask, pSid, ConditionStr, ReturnLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetFileSecurityA$MH() {
+        return RuntimeHelper.requireNonNull(constants$233.SetFileSecurityA$MH,"SetFileSecurityA");
+    }
+    public static int SetFileSecurityA ( Addressable lpFileName,  int SecurityInformation,  Addressable pSecurityDescriptor) {
+        var mh$ = SetFileSecurityA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, SecurityInformation, pSecurityDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetFileSecurityA$MH() {
+        return RuntimeHelper.requireNonNull(constants$233.GetFileSecurityA$MH,"GetFileSecurityA");
+    }
+    public static int GetFileSecurityA ( Addressable lpFileName,  int RequestedInformation,  Addressable pSecurityDescriptor,  int nLength,  Addressable lpnLengthNeeded) {
+        var mh$ = GetFileSecurityA$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileName, RequestedInformation, pSecurityDescriptor, nLength, lpnLengthNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadDirectoryChangesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$234.ReadDirectoryChangesW$MH,"ReadDirectoryChangesW");
+    }
+    public static int ReadDirectoryChangesW ( Addressable hDirectory,  Addressable lpBuffer,  int nBufferLength,  int bWatchSubtree,  int dwNotifyFilter,  Addressable lpBytesReturned,  Addressable lpOverlapped,  Addressable lpCompletionRoutine) {
+        var mh$ = ReadDirectoryChangesW$MH();
+        try {
+            return (int)mh$.invokeExact(hDirectory, lpBuffer, nBufferLength, bWatchSubtree, dwNotifyFilter, lpBytesReturned, lpOverlapped, lpCompletionRoutine);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadDirectoryChangesExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$234.ReadDirectoryChangesExW$MH,"ReadDirectoryChangesExW");
+    }
+    public static int ReadDirectoryChangesExW ( Addressable hDirectory,  Addressable lpBuffer,  int nBufferLength,  int bWatchSubtree,  int dwNotifyFilter,  Addressable lpBytesReturned,  Addressable lpOverlapped,  Addressable lpCompletionRoutine,  int ReadDirectoryNotifyInformationClass) {
+        var mh$ = ReadDirectoryChangesExW$MH();
+        try {
+            return (int)mh$.invokeExact(hDirectory, lpBuffer, nBufferLength, bWatchSubtree, dwNotifyFilter, lpBytesReturned, lpOverlapped, lpCompletionRoutine, ReadDirectoryNotifyInformationClass);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapViewOfFileExNuma$MH() {
+        return RuntimeHelper.requireNonNull(constants$234.MapViewOfFileExNuma$MH,"MapViewOfFileExNuma");
+    }
+    public static MemoryAddress MapViewOfFileExNuma ( Addressable hFileMappingObject,  int dwDesiredAccess,  int dwFileOffsetHigh,  int dwFileOffsetLow,  long dwNumberOfBytesToMap,  Addressable lpBaseAddress,  int nndPreferred) {
+        var mh$ = MapViewOfFileExNuma$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hFileMappingObject, dwDesiredAccess, dwFileOffsetHigh, dwFileOffsetLow, dwNumberOfBytesToMap, lpBaseAddress, nndPreferred);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsBadReadPtr$MH() {
+        return RuntimeHelper.requireNonNull(constants$234.IsBadReadPtr$MH,"IsBadReadPtr");
+    }
+    public static int IsBadReadPtr ( Addressable lp,  long ucb) {
+        var mh$ = IsBadReadPtr$MH();
+        try {
+            return (int)mh$.invokeExact(lp, ucb);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsBadWritePtr$MH() {
+        return RuntimeHelper.requireNonNull(constants$234.IsBadWritePtr$MH,"IsBadWritePtr");
+    }
+    public static int IsBadWritePtr ( Addressable lp,  long ucb) {
+        var mh$ = IsBadWritePtr$MH();
+        try {
+            return (int)mh$.invokeExact(lp, ucb);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsBadHugeReadPtr$MH() {
+        return RuntimeHelper.requireNonNull(constants$234.IsBadHugeReadPtr$MH,"IsBadHugeReadPtr");
+    }
+    public static int IsBadHugeReadPtr ( Addressable lp,  long ucb) {
+        var mh$ = IsBadHugeReadPtr$MH();
+        try {
+            return (int)mh$.invokeExact(lp, ucb);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsBadHugeWritePtr$MH() {
+        return RuntimeHelper.requireNonNull(constants$235.IsBadHugeWritePtr$MH,"IsBadHugeWritePtr");
+    }
+    public static int IsBadHugeWritePtr ( Addressable lp,  long ucb) {
+        var mh$ = IsBadHugeWritePtr$MH();
+        try {
+            return (int)mh$.invokeExact(lp, ucb);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsBadCodePtr$MH() {
+        return RuntimeHelper.requireNonNull(constants$235.IsBadCodePtr$MH,"IsBadCodePtr");
+    }
+    public static int IsBadCodePtr ( Addressable lpfn) {
+        var mh$ = IsBadCodePtr$MH();
+        try {
+            return (int)mh$.invokeExact(lpfn);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsBadStringPtrA$MH() {
+        return RuntimeHelper.requireNonNull(constants$235.IsBadStringPtrA$MH,"IsBadStringPtrA");
+    }
+    public static int IsBadStringPtrA ( Addressable lpsz,  long ucchMax) {
+        var mh$ = IsBadStringPtrA$MH();
+        try {
+            return (int)mh$.invokeExact(lpsz, ucchMax);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsBadStringPtrW$MH() {
+        return RuntimeHelper.requireNonNull(constants$235.IsBadStringPtrW$MH,"IsBadStringPtrW");
+    }
+    public static int IsBadStringPtrW ( Addressable lpsz,  long ucchMax) {
+        var mh$ = IsBadStringPtrW$MH();
+        try {
+            return (int)mh$.invokeExact(lpsz, ucchMax);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupAccountSidA$MH() {
+        return RuntimeHelper.requireNonNull(constants$235.LookupAccountSidA$MH,"LookupAccountSidA");
+    }
+    public static int LookupAccountSidA ( Addressable lpSystemName,  Addressable Sid,  Addressable Name,  Addressable cchName,  Addressable ReferencedDomainName,  Addressable cchReferencedDomainName,  Addressable peUse) {
+        var mh$ = LookupAccountSidA$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, Sid, Name, cchName, ReferencedDomainName, cchReferencedDomainName, peUse);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupAccountSidW$MH() {
+        return RuntimeHelper.requireNonNull(constants$235.LookupAccountSidW$MH,"LookupAccountSidW");
+    }
+    public static int LookupAccountSidW ( Addressable lpSystemName,  Addressable Sid,  Addressable Name,  Addressable cchName,  Addressable ReferencedDomainName,  Addressable cchReferencedDomainName,  Addressable peUse) {
+        var mh$ = LookupAccountSidW$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, Sid, Name, cchName, ReferencedDomainName, cchReferencedDomainName, peUse);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupAccountNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$236.LookupAccountNameA$MH,"LookupAccountNameA");
+    }
+    public static int LookupAccountNameA ( Addressable lpSystemName,  Addressable lpAccountName,  Addressable Sid,  Addressable cbSid,  Addressable ReferencedDomainName,  Addressable cchReferencedDomainName,  Addressable peUse) {
+        var mh$ = LookupAccountNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, lpAccountName, Sid, cbSid, ReferencedDomainName, cchReferencedDomainName, peUse);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupAccountNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$236.LookupAccountNameW$MH,"LookupAccountNameW");
+    }
+    public static int LookupAccountNameW ( Addressable lpSystemName,  Addressable lpAccountName,  Addressable Sid,  Addressable cbSid,  Addressable ReferencedDomainName,  Addressable cchReferencedDomainName,  Addressable peUse) {
+        var mh$ = LookupAccountNameW$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, lpAccountName, Sid, cbSid, ReferencedDomainName, cchReferencedDomainName, peUse);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupAccountNameLocalA$MH() {
+        return RuntimeHelper.requireNonNull(constants$236.LookupAccountNameLocalA$MH,"LookupAccountNameLocalA");
+    }
+    public static int LookupAccountNameLocalA ( Addressable lpAccountName,  Addressable Sid,  Addressable cbSid,  Addressable ReferencedDomainName,  Addressable cchReferencedDomainName,  Addressable peUse) {
+        var mh$ = LookupAccountNameLocalA$MH();
+        try {
+            return (int)mh$.invokeExact(lpAccountName, Sid, cbSid, ReferencedDomainName, cchReferencedDomainName, peUse);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupAccountNameLocalW$MH() {
+        return RuntimeHelper.requireNonNull(constants$236.LookupAccountNameLocalW$MH,"LookupAccountNameLocalW");
+    }
+    public static int LookupAccountNameLocalW ( Addressable lpAccountName,  Addressable Sid,  Addressable cbSid,  Addressable ReferencedDomainName,  Addressable cchReferencedDomainName,  Addressable peUse) {
+        var mh$ = LookupAccountNameLocalW$MH();
+        try {
+            return (int)mh$.invokeExact(lpAccountName, Sid, cbSid, ReferencedDomainName, cchReferencedDomainName, peUse);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupAccountSidLocalA$MH() {
+        return RuntimeHelper.requireNonNull(constants$236.LookupAccountSidLocalA$MH,"LookupAccountSidLocalA");
+    }
+    public static int LookupAccountSidLocalA ( Addressable Sid,  Addressable Name,  Addressable cchName,  Addressable ReferencedDomainName,  Addressable cchReferencedDomainName,  Addressable peUse) {
+        var mh$ = LookupAccountSidLocalA$MH();
+        try {
+            return (int)mh$.invokeExact(Sid, Name, cchName, ReferencedDomainName, cchReferencedDomainName, peUse);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupAccountSidLocalW$MH() {
+        return RuntimeHelper.requireNonNull(constants$236.LookupAccountSidLocalW$MH,"LookupAccountSidLocalW");
+    }
+    public static int LookupAccountSidLocalW ( Addressable Sid,  Addressable Name,  Addressable cchName,  Addressable ReferencedDomainName,  Addressable cchReferencedDomainName,  Addressable peUse) {
+        var mh$ = LookupAccountSidLocalW$MH();
+        try {
+            return (int)mh$.invokeExact(Sid, Name, cchName, ReferencedDomainName, cchReferencedDomainName, peUse);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupPrivilegeValueA$MH() {
+        return RuntimeHelper.requireNonNull(constants$237.LookupPrivilegeValueA$MH,"LookupPrivilegeValueA");
+    }
+    public static int LookupPrivilegeValueA ( Addressable lpSystemName,  Addressable lpName,  Addressable lpLuid) {
+        var mh$ = LookupPrivilegeValueA$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, lpName, lpLuid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupPrivilegeValueW$MH() {
+        return RuntimeHelper.requireNonNull(constants$237.LookupPrivilegeValueW$MH,"LookupPrivilegeValueW");
+    }
+    public static int LookupPrivilegeValueW ( Addressable lpSystemName,  Addressable lpName,  Addressable lpLuid) {
+        var mh$ = LookupPrivilegeValueW$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, lpName, lpLuid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupPrivilegeNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$237.LookupPrivilegeNameA$MH,"LookupPrivilegeNameA");
+    }
+    public static int LookupPrivilegeNameA ( Addressable lpSystemName,  Addressable lpLuid,  Addressable lpName,  Addressable cchName) {
+        var mh$ = LookupPrivilegeNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, lpLuid, lpName, cchName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupPrivilegeNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$237.LookupPrivilegeNameW$MH,"LookupPrivilegeNameW");
+    }
+    public static int LookupPrivilegeNameW ( Addressable lpSystemName,  Addressable lpLuid,  Addressable lpName,  Addressable cchName) {
+        var mh$ = LookupPrivilegeNameW$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, lpLuid, lpName, cchName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupPrivilegeDisplayNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$237.LookupPrivilegeDisplayNameA$MH,"LookupPrivilegeDisplayNameA");
+    }
+    public static int LookupPrivilegeDisplayNameA ( Addressable lpSystemName,  Addressable lpName,  Addressable lpDisplayName,  Addressable cchDisplayName,  Addressable lpLanguageId) {
+        var mh$ = LookupPrivilegeDisplayNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, lpName, lpDisplayName, cchDisplayName, lpLanguageId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LookupPrivilegeDisplayNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$237.LookupPrivilegeDisplayNameW$MH,"LookupPrivilegeDisplayNameW");
+    }
+    public static int LookupPrivilegeDisplayNameW ( Addressable lpSystemName,  Addressable lpName,  Addressable lpDisplayName,  Addressable cchDisplayName,  Addressable lpLanguageId) {
+        var mh$ = LookupPrivilegeDisplayNameW$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemName, lpName, lpDisplayName, cchDisplayName, lpLanguageId);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BuildCommDCBA$MH() {
+        return RuntimeHelper.requireNonNull(constants$238.BuildCommDCBA$MH,"BuildCommDCBA");
+    }
+    public static int BuildCommDCBA ( Addressable lpDef,  Addressable lpDCB) {
+        var mh$ = BuildCommDCBA$MH();
+        try {
+            return (int)mh$.invokeExact(lpDef, lpDCB);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BuildCommDCBW$MH() {
+        return RuntimeHelper.requireNonNull(constants$238.BuildCommDCBW$MH,"BuildCommDCBW");
+    }
+    public static int BuildCommDCBW ( Addressable lpDef,  Addressable lpDCB) {
+        var mh$ = BuildCommDCBW$MH();
+        try {
+            return (int)mh$.invokeExact(lpDef, lpDCB);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BuildCommDCBAndTimeoutsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$238.BuildCommDCBAndTimeoutsA$MH,"BuildCommDCBAndTimeoutsA");
+    }
+    public static int BuildCommDCBAndTimeoutsA ( Addressable lpDef,  Addressable lpDCB,  Addressable lpCommTimeouts) {
+        var mh$ = BuildCommDCBAndTimeoutsA$MH();
+        try {
+            return (int)mh$.invokeExact(lpDef, lpDCB, lpCommTimeouts);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BuildCommDCBAndTimeoutsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$238.BuildCommDCBAndTimeoutsW$MH,"BuildCommDCBAndTimeoutsW");
+    }
+    public static int BuildCommDCBAndTimeoutsW ( Addressable lpDef,  Addressable lpDCB,  Addressable lpCommTimeouts) {
+        var mh$ = BuildCommDCBAndTimeoutsW$MH();
+        try {
+            return (int)mh$.invokeExact(lpDef, lpDCB, lpCommTimeouts);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CommConfigDialogA$MH() {
+        return RuntimeHelper.requireNonNull(constants$238.CommConfigDialogA$MH,"CommConfigDialogA");
+    }
+    public static int CommConfigDialogA ( Addressable lpszName,  Addressable hWnd,  Addressable lpCC) {
+        var mh$ = CommConfigDialogA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszName, hWnd, lpCC);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CommConfigDialogW$MH() {
+        return RuntimeHelper.requireNonNull(constants$238.CommConfigDialogW$MH,"CommConfigDialogW");
+    }
+    public static int CommConfigDialogW ( Addressable lpszName,  Addressable hWnd,  Addressable lpCC) {
+        var mh$ = CommConfigDialogW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszName, hWnd, lpCC);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDefaultCommConfigA$MH() {
+        return RuntimeHelper.requireNonNull(constants$239.GetDefaultCommConfigA$MH,"GetDefaultCommConfigA");
+    }
+    public static int GetDefaultCommConfigA ( Addressable lpszName,  Addressable lpCC,  Addressable lpdwSize) {
+        var mh$ = GetDefaultCommConfigA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszName, lpCC, lpdwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDefaultCommConfigW$MH() {
+        return RuntimeHelper.requireNonNull(constants$239.GetDefaultCommConfigW$MH,"GetDefaultCommConfigW");
+    }
+    public static int GetDefaultCommConfigW ( Addressable lpszName,  Addressable lpCC,  Addressable lpdwSize) {
+        var mh$ = GetDefaultCommConfigW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszName, lpCC, lpdwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetDefaultCommConfigA$MH() {
+        return RuntimeHelper.requireNonNull(constants$239.SetDefaultCommConfigA$MH,"SetDefaultCommConfigA");
+    }
+    public static int SetDefaultCommConfigA ( Addressable lpszName,  Addressable lpCC,  int dwSize) {
+        var mh$ = SetDefaultCommConfigA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszName, lpCC, dwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetDefaultCommConfigW$MH() {
+        return RuntimeHelper.requireNonNull(constants$239.SetDefaultCommConfigW$MH,"SetDefaultCommConfigW");
+    }
+    public static int SetDefaultCommConfigW ( Addressable lpszName,  Addressable lpCC,  int dwSize) {
+        var mh$ = SetDefaultCommConfigW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszName, lpCC, dwSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetComputerNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$239.GetComputerNameA$MH,"GetComputerNameA");
+    }
+    public static int GetComputerNameA ( Addressable lpBuffer,  Addressable nSize) {
+        var mh$ = GetComputerNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetComputerNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$239.GetComputerNameW$MH,"GetComputerNameW");
+    }
+    public static int GetComputerNameW ( Addressable lpBuffer,  Addressable nSize) {
+        var mh$ = GetComputerNameW$MH();
+        try {
+            return (int)mh$.invokeExact(lpBuffer, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DnsHostnameToComputerNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$240.DnsHostnameToComputerNameA$MH,"DnsHostnameToComputerNameA");
+    }
+    public static int DnsHostnameToComputerNameA ( Addressable Hostname,  Addressable ComputerName,  Addressable nSize) {
+        var mh$ = DnsHostnameToComputerNameA$MH();
+        try {
+            return (int)mh$.invokeExact(Hostname, ComputerName, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DnsHostnameToComputerNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$240.DnsHostnameToComputerNameW$MH,"DnsHostnameToComputerNameW");
+    }
+    public static int DnsHostnameToComputerNameW ( Addressable Hostname,  Addressable ComputerName,  Addressable nSize) {
+        var mh$ = DnsHostnameToComputerNameW$MH();
+        try {
+            return (int)mh$.invokeExact(Hostname, ComputerName, nSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetUserNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$240.GetUserNameA$MH,"GetUserNameA");
+    }
+    public static int GetUserNameA ( Addressable lpBuffer,  Addressable pcbBuffer) {
+        var mh$ = GetUserNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpBuffer, pcbBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetUserNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$240.GetUserNameW$MH,"GetUserNameW");
+    }
+    public static int GetUserNameW ( Addressable lpBuffer,  Addressable pcbBuffer) {
+        var mh$ = GetUserNameW$MH();
+        try {
+            return (int)mh$.invokeExact(lpBuffer, pcbBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LogonUserA$MH() {
+        return RuntimeHelper.requireNonNull(constants$240.LogonUserA$MH,"LogonUserA");
+    }
+    public static int LogonUserA ( Addressable lpszUsername,  Addressable lpszDomain,  Addressable lpszPassword,  int dwLogonType,  int dwLogonProvider,  Addressable phToken) {
+        var mh$ = LogonUserA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszUsername, lpszDomain, lpszPassword, dwLogonType, dwLogonProvider, phToken);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LogonUserW$MH() {
+        return RuntimeHelper.requireNonNull(constants$240.LogonUserW$MH,"LogonUserW");
+    }
+    public static int LogonUserW ( Addressable lpszUsername,  Addressable lpszDomain,  Addressable lpszPassword,  int dwLogonType,  int dwLogonProvider,  Addressable phToken) {
+        var mh$ = LogonUserW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszUsername, lpszDomain, lpszPassword, dwLogonType, dwLogonProvider, phToken);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LogonUserExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$241.LogonUserExA$MH,"LogonUserExA");
+    }
+    public static int LogonUserExA ( Addressable lpszUsername,  Addressable lpszDomain,  Addressable lpszPassword,  int dwLogonType,  int dwLogonProvider,  Addressable phToken,  Addressable ppLogonSid,  Addressable ppProfileBuffer,  Addressable pdwProfileLength,  Addressable pQuotaLimits) {
+        var mh$ = LogonUserExA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszUsername, lpszDomain, lpszPassword, dwLogonType, dwLogonProvider, phToken, ppLogonSid, ppProfileBuffer, pdwProfileLength, pQuotaLimits);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LogonUserExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$241.LogonUserExW$MH,"LogonUserExW");
+    }
+    public static int LogonUserExW ( Addressable lpszUsername,  Addressable lpszDomain,  Addressable lpszPassword,  int dwLogonType,  int dwLogonProvider,  Addressable phToken,  Addressable ppLogonSid,  Addressable ppProfileBuffer,  Addressable pdwProfileLength,  Addressable pQuotaLimits) {
+        var mh$ = LogonUserExW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszUsername, lpszDomain, lpszPassword, dwLogonType, dwLogonProvider, phToken, ppLogonSid, ppProfileBuffer, pdwProfileLength, pQuotaLimits);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateProcessWithLogonW$MH() {
+        return RuntimeHelper.requireNonNull(constants$241.CreateProcessWithLogonW$MH,"CreateProcessWithLogonW");
+    }
+    public static int CreateProcessWithLogonW ( Addressable lpUsername,  Addressable lpDomain,  Addressable lpPassword,  int dwLogonFlags,  Addressable lpApplicationName,  Addressable lpCommandLine,  int dwCreationFlags,  Addressable lpEnvironment,  Addressable lpCurrentDirectory,  Addressable lpStartupInfo,  Addressable lpProcessInformation) {
+        var mh$ = CreateProcessWithLogonW$MH();
+        try {
+            return (int)mh$.invokeExact(lpUsername, lpDomain, lpPassword, dwLogonFlags, lpApplicationName, lpCommandLine, dwCreationFlags, lpEnvironment, lpCurrentDirectory, lpStartupInfo, lpProcessInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateProcessWithTokenW$MH() {
+        return RuntimeHelper.requireNonNull(constants$241.CreateProcessWithTokenW$MH,"CreateProcessWithTokenW");
+    }
+    public static int CreateProcessWithTokenW ( Addressable hToken,  int dwLogonFlags,  Addressable lpApplicationName,  Addressable lpCommandLine,  int dwCreationFlags,  Addressable lpEnvironment,  Addressable lpCurrentDirectory,  Addressable lpStartupInfo,  Addressable lpProcessInformation) {
+        var mh$ = CreateProcessWithTokenW$MH();
+        try {
+            return (int)mh$.invokeExact(hToken, dwLogonFlags, lpApplicationName, lpCommandLine, dwCreationFlags, lpEnvironment, lpCurrentDirectory, lpStartupInfo, lpProcessInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsTokenUntrusted$MH() {
+        return RuntimeHelper.requireNonNull(constants$241.IsTokenUntrusted$MH,"IsTokenUntrusted");
+    }
+    public static int IsTokenUntrusted ( Addressable TokenHandle) {
+        var mh$ = IsTokenUntrusted$MH();
+        try {
+            return (int)mh$.invokeExact(TokenHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterWaitForSingleObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$241.RegisterWaitForSingleObject$MH,"RegisterWaitForSingleObject");
+    }
+    public static int RegisterWaitForSingleObject ( Addressable phNewWaitObject,  Addressable hObject,  Addressable Callback,  Addressable Context,  int dwMilliseconds,  int dwFlags) {
+        var mh$ = RegisterWaitForSingleObject$MH();
+        try {
+            return (int)mh$.invokeExact(phNewWaitObject, hObject, Callback, Context, dwMilliseconds, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UnregisterWait$MH() {
+        return RuntimeHelper.requireNonNull(constants$242.UnregisterWait$MH,"UnregisterWait");
+    }
+    public static int UnregisterWait ( Addressable WaitHandle) {
+        var mh$ = UnregisterWait$MH();
+        try {
+            return (int)mh$.invokeExact(WaitHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle BindIoCompletionCallback$MH() {
+        return RuntimeHelper.requireNonNull(constants$242.BindIoCompletionCallback$MH,"BindIoCompletionCallback");
+    }
+    public static int BindIoCompletionCallback ( Addressable FileHandle,  Addressable Function,  int Flags) {
+        var mh$ = BindIoCompletionCallback$MH();
+        try {
+            return (int)mh$.invokeExact(FileHandle, Function, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetTimerQueueTimer$MH() {
+        return RuntimeHelper.requireNonNull(constants$242.SetTimerQueueTimer$MH,"SetTimerQueueTimer");
+    }
+    public static MemoryAddress SetTimerQueueTimer ( Addressable TimerQueue,  Addressable Callback,  Addressable Parameter,  int DueTime,  int Period,  int PreferIo) {
+        var mh$ = SetTimerQueueTimer$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(TimerQueue, Callback, Parameter, DueTime, Period, PreferIo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CancelTimerQueueTimer$MH() {
+        return RuntimeHelper.requireNonNull(constants$242.CancelTimerQueueTimer$MH,"CancelTimerQueueTimer");
+    }
+    public static int CancelTimerQueueTimer ( Addressable TimerQueue,  Addressable Timer) {
+        var mh$ = CancelTimerQueueTimer$MH();
+        try {
+            return (int)mh$.invokeExact(TimerQueue, Timer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteTimerQueue$MH() {
+        return RuntimeHelper.requireNonNull(constants$242.DeleteTimerQueue$MH,"DeleteTimerQueue");
+    }
+    public static int DeleteTimerQueue ( Addressable TimerQueue) {
+        var mh$ = DeleteTimerQueue$MH();
+        try {
+            return (int)mh$.invokeExact(TimerQueue);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InitializeThreadpoolEnvironment$MH() {
+        return RuntimeHelper.requireNonNull(constants$242.InitializeThreadpoolEnvironment$MH,"InitializeThreadpoolEnvironment");
+    }
+    public static void InitializeThreadpoolEnvironment ( Addressable pcbe) {
+        var mh$ = InitializeThreadpoolEnvironment$MH();
+        try {
+            mh$.invokeExact(pcbe);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadpoolCallbackPool$MH() {
+        return RuntimeHelper.requireNonNull(constants$243.SetThreadpoolCallbackPool$MH,"SetThreadpoolCallbackPool");
+    }
+    public static void SetThreadpoolCallbackPool ( Addressable pcbe,  Addressable ptpp) {
+        var mh$ = SetThreadpoolCallbackPool$MH();
+        try {
+            mh$.invokeExact(pcbe, ptpp);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadpoolCallbackCleanupGroup$MH() {
+        return RuntimeHelper.requireNonNull(constants$243.SetThreadpoolCallbackCleanupGroup$MH,"SetThreadpoolCallbackCleanupGroup");
+    }
+    public static void SetThreadpoolCallbackCleanupGroup ( Addressable pcbe,  Addressable ptpcg,  Addressable pfng) {
+        var mh$ = SetThreadpoolCallbackCleanupGroup$MH();
+        try {
+            mh$.invokeExact(pcbe, ptpcg, pfng);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadpoolCallbackRunsLong$MH() {
+        return RuntimeHelper.requireNonNull(constants$243.SetThreadpoolCallbackRunsLong$MH,"SetThreadpoolCallbackRunsLong");
+    }
+    public static void SetThreadpoolCallbackRunsLong ( Addressable pcbe) {
+        var mh$ = SetThreadpoolCallbackRunsLong$MH();
+        try {
+            mh$.invokeExact(pcbe);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadpoolCallbackLibrary$MH() {
+        return RuntimeHelper.requireNonNull(constants$243.SetThreadpoolCallbackLibrary$MH,"SetThreadpoolCallbackLibrary");
+    }
+    public static void SetThreadpoolCallbackLibrary ( Addressable pcbe,  Addressable mod) {
+        var mh$ = SetThreadpoolCallbackLibrary$MH();
+        try {
+            mh$.invokeExact(pcbe, mod);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadpoolCallbackPriority$MH() {
+        return RuntimeHelper.requireNonNull(constants$243.SetThreadpoolCallbackPriority$MH,"SetThreadpoolCallbackPriority");
+    }
+    public static void SetThreadpoolCallbackPriority ( Addressable pcbe,  int Priority) {
+        var mh$ = SetThreadpoolCallbackPriority$MH();
+        try {
+            mh$.invokeExact(pcbe, Priority);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DestroyThreadpoolEnvironment$MH() {
+        return RuntimeHelper.requireNonNull(constants$243.DestroyThreadpoolEnvironment$MH,"DestroyThreadpoolEnvironment");
+    }
+    public static void DestroyThreadpoolEnvironment ( Addressable pcbe) {
+        var mh$ = DestroyThreadpoolEnvironment$MH();
+        try {
+            mh$.invokeExact(pcbe);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetThreadpoolCallbackPersistent$MH() {
+        return RuntimeHelper.requireNonNull(constants$244.SetThreadpoolCallbackPersistent$MH,"SetThreadpoolCallbackPersistent");
+    }
+    public static void SetThreadpoolCallbackPersistent ( Addressable pcbe) {
+        var mh$ = SetThreadpoolCallbackPersistent$MH();
+        try {
+            mh$.invokeExact(pcbe);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreatePrivateNamespaceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$244.CreatePrivateNamespaceA$MH,"CreatePrivateNamespaceA");
+    }
+    public static MemoryAddress CreatePrivateNamespaceA ( Addressable lpPrivateNamespaceAttributes,  Addressable lpBoundaryDescriptor,  Addressable lpAliasPrefix) {
+        var mh$ = CreatePrivateNamespaceA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpPrivateNamespaceAttributes, lpBoundaryDescriptor, lpAliasPrefix);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenPrivateNamespaceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$244.OpenPrivateNamespaceA$MH,"OpenPrivateNamespaceA");
+    }
+    public static MemoryAddress OpenPrivateNamespaceA ( Addressable lpBoundaryDescriptor,  Addressable lpAliasPrefix) {
+        var mh$ = OpenPrivateNamespaceA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpBoundaryDescriptor, lpAliasPrefix);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateBoundaryDescriptorA$MH() {
+        return RuntimeHelper.requireNonNull(constants$244.CreateBoundaryDescriptorA$MH,"CreateBoundaryDescriptorA");
+    }
+    public static MemoryAddress CreateBoundaryDescriptorA ( Addressable Name,  int Flags) {
+        var mh$ = CreateBoundaryDescriptorA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Name, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddIntegrityLabelToBoundaryDescriptor$MH() {
+        return RuntimeHelper.requireNonNull(constants$244.AddIntegrityLabelToBoundaryDescriptor$MH,"AddIntegrityLabelToBoundaryDescriptor");
+    }
+    public static int AddIntegrityLabelToBoundaryDescriptor ( Addressable BoundaryDescriptor,  Addressable IntegrityLabel) {
+        var mh$ = AddIntegrityLabelToBoundaryDescriptor$MH();
+        try {
+            return (int)mh$.invokeExact(BoundaryDescriptor, IntegrityLabel);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress LPHW_PROFILE_INFOA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPHW_PROFILE_INFOW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPHW_PROFILE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle GetCurrentHwProfileA$MH() {
+        return RuntimeHelper.requireNonNull(constants$244.GetCurrentHwProfileA$MH,"GetCurrentHwProfileA");
+    }
+    public static int GetCurrentHwProfileA ( Addressable lpHwProfileInfo) {
+        var mh$ = GetCurrentHwProfileA$MH();
+        try {
+            return (int)mh$.invokeExact(lpHwProfileInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCurrentHwProfileW$MH() {
+        return RuntimeHelper.requireNonNull(constants$245.GetCurrentHwProfileW$MH,"GetCurrentHwProfileW");
+    }
+    public static int GetCurrentHwProfileW ( Addressable lpHwProfileInfo) {
+        var mh$ = GetCurrentHwProfileW$MH();
+        try {
+            return (int)mh$.invokeExact(lpHwProfileInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VerifyVersionInfoA$MH() {
+        return RuntimeHelper.requireNonNull(constants$245.VerifyVersionInfoA$MH,"VerifyVersionInfoA");
+    }
+    public static int VerifyVersionInfoA ( Addressable lpVersionInformation,  int dwTypeMask,  long dwlConditionMask) {
+        var mh$ = VerifyVersionInfoA$MH();
+        try {
+            return (int)mh$.invokeExact(lpVersionInformation, dwTypeMask, dwlConditionMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle VerifyVersionInfoW$MH() {
+        return RuntimeHelper.requireNonNull(constants$245.VerifyVersionInfoW$MH,"VerifyVersionInfoW");
+    }
+    public static int VerifyVersionInfoW ( Addressable lpVersionInformation,  int dwTypeMask,  long dwlConditionMask) {
+        var mh$ = VerifyVersionInfoW$MH();
+        try {
+            return (int)mh$.invokeExact(lpVersionInformation, dwTypeMask, dwlConditionMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle HRESULT_FROM_WIN32$MH() {
+        return RuntimeHelper.requireNonNull(constants$245.HRESULT_FROM_WIN32$MH,"HRESULT_FROM_WIN32");
+    }
+    public static int HRESULT_FROM_WIN32 ( int x) {
+        var mh$ = HRESULT_FROM_WIN32$MH();
+        try {
+            return (int)mh$.invokeExact(x);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PTIME_ZONE_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPTIME_ZONE_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDYNAMIC_TIME_ZONE_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle SystemTimeToTzSpecificLocalTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$245.SystemTimeToTzSpecificLocalTime$MH,"SystemTimeToTzSpecificLocalTime");
+    }
+    public static int SystemTimeToTzSpecificLocalTime ( Addressable lpTimeZoneInformation,  Addressable lpUniversalTime,  Addressable lpLocalTime) {
+        var mh$ = SystemTimeToTzSpecificLocalTime$MH();
+        try {
+            return (int)mh$.invokeExact(lpTimeZoneInformation, lpUniversalTime, lpLocalTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle TzSpecificLocalTimeToSystemTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$245.TzSpecificLocalTimeToSystemTime$MH,"TzSpecificLocalTimeToSystemTime");
+    }
+    public static int TzSpecificLocalTimeToSystemTime ( Addressable lpTimeZoneInformation,  Addressable lpLocalTime,  Addressable lpUniversalTime) {
+        var mh$ = TzSpecificLocalTimeToSystemTime$MH();
+        try {
+            return (int)mh$.invokeExact(lpTimeZoneInformation, lpLocalTime, lpUniversalTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FileTimeToSystemTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$246.FileTimeToSystemTime$MH,"FileTimeToSystemTime");
+    }
+    public static int FileTimeToSystemTime ( Addressable lpFileTime,  Addressable lpSystemTime) {
+        var mh$ = FileTimeToSystemTime$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileTime, lpSystemTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SystemTimeToFileTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$246.SystemTimeToFileTime$MH,"SystemTimeToFileTime");
+    }
+    public static int SystemTimeToFileTime ( Addressable lpSystemTime,  Addressable lpFileTime) {
+        var mh$ = SystemTimeToFileTime$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemTime, lpFileTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetTimeZoneInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$246.GetTimeZoneInformation$MH,"GetTimeZoneInformation");
+    }
+    public static int GetTimeZoneInformation ( Addressable lpTimeZoneInformation) {
+        var mh$ = GetTimeZoneInformation$MH();
+        try {
+            return (int)mh$.invokeExact(lpTimeZoneInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetTimeZoneInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$246.SetTimeZoneInformation$MH,"SetTimeZoneInformation");
+    }
+    public static int SetTimeZoneInformation ( Addressable lpTimeZoneInformation) {
+        var mh$ = SetTimeZoneInformation$MH();
+        try {
+            return (int)mh$.invokeExact(lpTimeZoneInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetDynamicTimeZoneInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$246.SetDynamicTimeZoneInformation$MH,"SetDynamicTimeZoneInformation");
+    }
+    public static int SetDynamicTimeZoneInformation ( Addressable lpTimeZoneInformation) {
+        var mh$ = SetDynamicTimeZoneInformation$MH();
+        try {
+            return (int)mh$.invokeExact(lpTimeZoneInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDynamicTimeZoneInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$246.GetDynamicTimeZoneInformation$MH,"GetDynamicTimeZoneInformation");
+    }
+    public static int GetDynamicTimeZoneInformation ( Addressable pTimeZoneInformation) {
+        var mh$ = GetDynamicTimeZoneInformation$MH();
+        try {
+            return (int)mh$.invokeExact(pTimeZoneInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetTimeZoneInformationForYear$MH() {
+        return RuntimeHelper.requireNonNull(constants$247.GetTimeZoneInformationForYear$MH,"GetTimeZoneInformationForYear");
+    }
+    public static int GetTimeZoneInformationForYear ( short wYear,  Addressable pdtzi,  Addressable ptzi) {
+        var mh$ = GetTimeZoneInformationForYear$MH();
+        try {
+            return (int)mh$.invokeExact(wYear, pdtzi, ptzi);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumDynamicTimeZoneInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$247.EnumDynamicTimeZoneInformation$MH,"EnumDynamicTimeZoneInformation");
+    }
+    public static int EnumDynamicTimeZoneInformation ( int dwIndex,  Addressable lpTimeZoneInformation) {
+        var mh$ = EnumDynamicTimeZoneInformation$MH();
+        try {
+            return (int)mh$.invokeExact(dwIndex, lpTimeZoneInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDynamicTimeZoneInformationEffectiveYears$MH() {
+        return RuntimeHelper.requireNonNull(constants$247.GetDynamicTimeZoneInformationEffectiveYears$MH,"GetDynamicTimeZoneInformationEffectiveYears");
+    }
+    public static int GetDynamicTimeZoneInformationEffectiveYears ( Addressable lpTimeZoneInformation,  Addressable FirstYear,  Addressable LastYear) {
+        var mh$ = GetDynamicTimeZoneInformationEffectiveYears$MH();
+        try {
+            return (int)mh$.invokeExact(lpTimeZoneInformation, FirstYear, LastYear);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SystemTimeToTzSpecificLocalTimeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$247.SystemTimeToTzSpecificLocalTimeEx$MH,"SystemTimeToTzSpecificLocalTimeEx");
+    }
+    public static int SystemTimeToTzSpecificLocalTimeEx ( Addressable lpTimeZoneInformation,  Addressable lpUniversalTime,  Addressable lpLocalTime) {
+        var mh$ = SystemTimeToTzSpecificLocalTimeEx$MH();
+        try {
+            return (int)mh$.invokeExact(lpTimeZoneInformation, lpUniversalTime, lpLocalTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle TzSpecificLocalTimeToSystemTimeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$247.TzSpecificLocalTimeToSystemTimeEx$MH,"TzSpecificLocalTimeToSystemTimeEx");
+    }
+    public static int TzSpecificLocalTimeToSystemTimeEx ( Addressable lpTimeZoneInformation,  Addressable lpLocalTime,  Addressable lpUniversalTime) {
+        var mh$ = TzSpecificLocalTimeToSystemTimeEx$MH();
+        try {
+            return (int)mh$.invokeExact(lpTimeZoneInformation, lpLocalTime, lpUniversalTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalFileTimeToLocalSystemTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$247.LocalFileTimeToLocalSystemTime$MH,"LocalFileTimeToLocalSystemTime");
+    }
+    public static int LocalFileTimeToLocalSystemTime ( Addressable timeZoneInformation,  Addressable localFileTime,  Addressable localSystemTime) {
+        var mh$ = LocalFileTimeToLocalSystemTime$MH();
+        try {
+            return (int)mh$.invokeExact(timeZoneInformation, localFileTime, localSystemTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocalSystemTimeToLocalFileTime$MH() {
+        return RuntimeHelper.requireNonNull(constants$248.LocalSystemTimeToLocalFileTime$MH,"LocalSystemTimeToLocalFileTime");
+    }
+    public static int LocalSystemTimeToLocalFileTime ( Addressable timeZoneInformation,  Addressable localSystemTime,  Addressable localFileTime) {
+        var mh$ = LocalSystemTimeToLocalFileTime$MH();
+        try {
+            return (int)mh$.invokeExact(timeZoneInformation, localSystemTime, localFileTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetSystemPowerState$MH() {
+        return RuntimeHelper.requireNonNull(constants$248.SetSystemPowerState$MH,"SetSystemPowerState");
+    }
+    public static int SetSystemPowerState ( int fSuspend,  int fForce) {
+        var mh$ = SetSystemPowerState$MH();
+        try {
+            return (int)mh$.invokeExact(fSuspend, fForce);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress LPSYSTEM_POWER_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle GetSystemPowerStatus$MH() {
+        return RuntimeHelper.requireNonNull(constants$248.GetSystemPowerStatus$MH,"GetSystemPowerStatus");
+    }
+    public static int GetSystemPowerStatus ( Addressable lpSystemPowerStatus) {
+        var mh$ = GetSystemPowerStatus$MH();
+        try {
+            return (int)mh$.invokeExact(lpSystemPowerStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MapUserPhysicalPagesScatter$MH() {
+        return RuntimeHelper.requireNonNull(constants$248.MapUserPhysicalPagesScatter$MH,"MapUserPhysicalPagesScatter");
+    }
+    public static int MapUserPhysicalPagesScatter ( Addressable VirtualAddresses,  long NumberOfPages,  Addressable PageArray) {
+        var mh$ = MapUserPhysicalPagesScatter$MH();
+        try {
+            return (int)mh$.invokeExact(VirtualAddresses, NumberOfPages, PageArray);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateJobObjectA$MH() {
+        return RuntimeHelper.requireNonNull(constants$248.CreateJobObjectA$MH,"CreateJobObjectA");
+    }
+    public static MemoryAddress CreateJobObjectA ( Addressable lpJobAttributes,  Addressable lpName) {
+        var mh$ = CreateJobObjectA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpJobAttributes, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenJobObjectA$MH() {
+        return RuntimeHelper.requireNonNull(constants$248.OpenJobObjectA$MH,"OpenJobObjectA");
+    }
+    public static MemoryAddress OpenJobObjectA ( int dwDesiredAccess,  int bInheritHandle,  Addressable lpName) {
+        var mh$ = OpenJobObjectA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(dwDesiredAccess, bInheritHandle, lpName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateJobSet$MH() {
+        return RuntimeHelper.requireNonNull(constants$249.CreateJobSet$MH,"CreateJobSet");
+    }
+    public static int CreateJobSet ( int NumJob,  Addressable UserJobSet,  int Flags) {
+        var mh$ = CreateJobSet$MH();
+        try {
+            return (int)mh$.invokeExact(NumJob, UserJobSet, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstVolumeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$249.FindFirstVolumeA$MH,"FindFirstVolumeA");
+    }
+    public static MemoryAddress FindFirstVolumeA ( Addressable lpszVolumeName,  int cchBufferLength) {
+        var mh$ = FindFirstVolumeA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszVolumeName, cchBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindNextVolumeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$249.FindNextVolumeA$MH,"FindNextVolumeA");
+    }
+    public static int FindNextVolumeA ( Addressable hFindVolume,  Addressable lpszVolumeName,  int cchBufferLength) {
+        var mh$ = FindNextVolumeA$MH();
+        try {
+            return (int)mh$.invokeExact(hFindVolume, lpszVolumeName, cchBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstVolumeMountPointA$MH() {
+        return RuntimeHelper.requireNonNull(constants$249.FindFirstVolumeMountPointA$MH,"FindFirstVolumeMountPointA");
+    }
+    public static MemoryAddress FindFirstVolumeMountPointA ( Addressable lpszRootPathName,  Addressable lpszVolumeMountPoint,  int cchBufferLength) {
+        var mh$ = FindFirstVolumeMountPointA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszRootPathName, lpszVolumeMountPoint, cchBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindFirstVolumeMountPointW$MH() {
+        return RuntimeHelper.requireNonNull(constants$249.FindFirstVolumeMountPointW$MH,"FindFirstVolumeMountPointW");
+    }
+    public static MemoryAddress FindFirstVolumeMountPointW ( Addressable lpszRootPathName,  Addressable lpszVolumeMountPoint,  int cchBufferLength) {
+        var mh$ = FindFirstVolumeMountPointW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpszRootPathName, lpszVolumeMountPoint, cchBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindNextVolumeMountPointA$MH() {
+        return RuntimeHelper.requireNonNull(constants$249.FindNextVolumeMountPointA$MH,"FindNextVolumeMountPointA");
+    }
+    public static int FindNextVolumeMountPointA ( Addressable hFindVolumeMountPoint,  Addressable lpszVolumeMountPoint,  int cchBufferLength) {
+        var mh$ = FindNextVolumeMountPointA$MH();
+        try {
+            return (int)mh$.invokeExact(hFindVolumeMountPoint, lpszVolumeMountPoint, cchBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindNextVolumeMountPointW$MH() {
+        return RuntimeHelper.requireNonNull(constants$250.FindNextVolumeMountPointW$MH,"FindNextVolumeMountPointW");
+    }
+    public static int FindNextVolumeMountPointW ( Addressable hFindVolumeMountPoint,  Addressable lpszVolumeMountPoint,  int cchBufferLength) {
+        var mh$ = FindNextVolumeMountPointW$MH();
+        try {
+            return (int)mh$.invokeExact(hFindVolumeMountPoint, lpszVolumeMountPoint, cchBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindVolumeMountPointClose$MH() {
+        return RuntimeHelper.requireNonNull(constants$250.FindVolumeMountPointClose$MH,"FindVolumeMountPointClose");
+    }
+    public static int FindVolumeMountPointClose ( Addressable hFindVolumeMountPoint) {
+        var mh$ = FindVolumeMountPointClose$MH();
+        try {
+            return (int)mh$.invokeExact(hFindVolumeMountPoint);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetVolumeMountPointA$MH() {
+        return RuntimeHelper.requireNonNull(constants$250.SetVolumeMountPointA$MH,"SetVolumeMountPointA");
+    }
+    public static int SetVolumeMountPointA ( Addressable lpszVolumeMountPoint,  Addressable lpszVolumeName) {
+        var mh$ = SetVolumeMountPointA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszVolumeMountPoint, lpszVolumeName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetVolumeMountPointW$MH() {
+        return RuntimeHelper.requireNonNull(constants$250.SetVolumeMountPointW$MH,"SetVolumeMountPointW");
+    }
+    public static int SetVolumeMountPointW ( Addressable lpszVolumeMountPoint,  Addressable lpszVolumeName) {
+        var mh$ = SetVolumeMountPointW$MH();
+        try {
+            return (int)mh$.invokeExact(lpszVolumeMountPoint, lpszVolumeName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteVolumeMountPointA$MH() {
+        return RuntimeHelper.requireNonNull(constants$250.DeleteVolumeMountPointA$MH,"DeleteVolumeMountPointA");
+    }
+    public static int DeleteVolumeMountPointA ( Addressable lpszVolumeMountPoint) {
+        var mh$ = DeleteVolumeMountPointA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszVolumeMountPoint);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetVolumeNameForVolumeMountPointA$MH() {
+        return RuntimeHelper.requireNonNull(constants$250.GetVolumeNameForVolumeMountPointA$MH,"GetVolumeNameForVolumeMountPointA");
+    }
+    public static int GetVolumeNameForVolumeMountPointA ( Addressable lpszVolumeMountPoint,  Addressable lpszVolumeName,  int cchBufferLength) {
+        var mh$ = GetVolumeNameForVolumeMountPointA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszVolumeMountPoint, lpszVolumeName, cchBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetVolumePathNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$251.GetVolumePathNameA$MH,"GetVolumePathNameA");
+    }
+    public static int GetVolumePathNameA ( Addressable lpszFileName,  Addressable lpszVolumePathName,  int cchBufferLength) {
+        var mh$ = GetVolumePathNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszFileName, lpszVolumePathName, cchBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetVolumePathNamesForVolumeNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$251.GetVolumePathNamesForVolumeNameA$MH,"GetVolumePathNamesForVolumeNameA");
+    }
+    public static int GetVolumePathNamesForVolumeNameA ( Addressable lpszVolumeName,  Addressable lpszVolumePathNames,  int cchBufferLength,  Addressable lpcchReturnLength) {
+        var mh$ = GetVolumePathNamesForVolumeNameA$MH();
+        try {
+            return (int)mh$.invokeExact(lpszVolumeName, lpszVolumePathNames, cchBufferLength, lpcchReturnLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PACTCTXA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACTCTXW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACTCTX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCACTCTXA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCACTCTXW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCACTCTX = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle CreateActCtxA$MH() {
+        return RuntimeHelper.requireNonNull(constants$251.CreateActCtxA$MH,"CreateActCtxA");
+    }
+    public static MemoryAddress CreateActCtxA ( Addressable pActCtx) {
+        var mh$ = CreateActCtxA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pActCtx);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateActCtxW$MH() {
+        return RuntimeHelper.requireNonNull(constants$251.CreateActCtxW$MH,"CreateActCtxW");
+    }
+    public static MemoryAddress CreateActCtxW ( Addressable pActCtx) {
+        var mh$ = CreateActCtxW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pActCtx);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddRefActCtx$MH() {
+        return RuntimeHelper.requireNonNull(constants$251.AddRefActCtx$MH,"AddRefActCtx");
+    }
+    public static void AddRefActCtx ( Addressable hActCtx) {
+        var mh$ = AddRefActCtx$MH();
+        try {
+            mh$.invokeExact(hActCtx);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReleaseActCtx$MH() {
+        return RuntimeHelper.requireNonNull(constants$251.ReleaseActCtx$MH,"ReleaseActCtx");
+    }
+    public static void ReleaseActCtx ( Addressable hActCtx) {
+        var mh$ = ReleaseActCtx$MH();
+        try {
+            mh$.invokeExact(hActCtx);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ZombifyActCtx$MH() {
+        return RuntimeHelper.requireNonNull(constants$252.ZombifyActCtx$MH,"ZombifyActCtx");
+    }
+    public static int ZombifyActCtx ( Addressable hActCtx) {
+        var mh$ = ZombifyActCtx$MH();
+        try {
+            return (int)mh$.invokeExact(hActCtx);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ActivateActCtx$MH() {
+        return RuntimeHelper.requireNonNull(constants$252.ActivateActCtx$MH,"ActivateActCtx");
+    }
+    public static int ActivateActCtx ( Addressable hActCtx,  Addressable lpCookie) {
+        var mh$ = ActivateActCtx$MH();
+        try {
+            return (int)mh$.invokeExact(hActCtx, lpCookie);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeactivateActCtx$MH() {
+        return RuntimeHelper.requireNonNull(constants$252.DeactivateActCtx$MH,"DeactivateActCtx");
+    }
+    public static int DeactivateActCtx ( int dwFlags,  long ulCookie) {
+        var mh$ = DeactivateActCtx$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, ulCookie);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCurrentActCtx$MH() {
+        return RuntimeHelper.requireNonNull(constants$252.GetCurrentActCtx$MH,"GetCurrentActCtx");
+    }
+    public static int GetCurrentActCtx ( Addressable lphActCtx) {
+        var mh$ = GetCurrentActCtx$MH();
+        try {
+            return (int)mh$.invokeExact(lphActCtx);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PACTCTX_SECTION_KEYED_DATA_2600 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCACTCTX_SECTION_KEYED_DATA_2600 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACTCTX_SECTION_KEYED_DATA_ASSEMBLY_METADATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCACTCTX_SECTION_KEYED_DATA_ASSEMBLY_METADATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACTCTX_SECTION_KEYED_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCACTCTX_SECTION_KEYED_DATA = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle FindActCtxSectionStringA$MH() {
+        return RuntimeHelper.requireNonNull(constants$252.FindActCtxSectionStringA$MH,"FindActCtxSectionStringA");
+    }
+    public static int FindActCtxSectionStringA ( int dwFlags,  Addressable lpExtensionGuid,  int ulSectionId,  Addressable lpStringToFind,  Addressable ReturnedData) {
+        var mh$ = FindActCtxSectionStringA$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpExtensionGuid, ulSectionId, lpStringToFind, ReturnedData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindActCtxSectionStringW$MH() {
+        return RuntimeHelper.requireNonNull(constants$252.FindActCtxSectionStringW$MH,"FindActCtxSectionStringW");
+    }
+    public static int FindActCtxSectionStringW ( int dwFlags,  Addressable lpExtensionGuid,  int ulSectionId,  Addressable lpStringToFind,  Addressable ReturnedData) {
+        var mh$ = FindActCtxSectionStringW$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpExtensionGuid, ulSectionId, lpStringToFind, ReturnedData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FindActCtxSectionGuid$MH() {
+        return RuntimeHelper.requireNonNull(constants$253.FindActCtxSectionGuid$MH,"FindActCtxSectionGuid");
+    }
+    public static int FindActCtxSectionGuid ( int dwFlags,  Addressable lpExtensionGuid,  int ulSectionId,  Addressable lpGuidToFind,  Addressable ReturnedData) {
+        var mh$ = FindActCtxSectionGuid$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, lpExtensionGuid, ulSectionId, lpGuidToFind, ReturnedData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PACTIVATION_CONTEXT_BASIC_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCACTIVATION_CONTEXT_BASIC_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle QueryActCtxW$MH() {
+        return RuntimeHelper.requireNonNull(constants$253.QueryActCtxW$MH,"QueryActCtxW");
+    }
+    public static int QueryActCtxW ( int dwFlags,  Addressable hActCtx,  Addressable pvSubInstance,  int ulInfoClass,  Addressable pvBuffer,  long cbBuffer,  Addressable pcbWrittenOrRequired) {
+        var mh$ = QueryActCtxW$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, hActCtx, pvSubInstance, ulInfoClass, pvBuffer, cbBuffer, pcbWrittenOrRequired);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WTSGetActiveConsoleSessionId$MH() {
+        return RuntimeHelper.requireNonNull(constants$253.WTSGetActiveConsoleSessionId$MH,"WTSGetActiveConsoleSessionId");
+    }
+    public static int WTSGetActiveConsoleSessionId () {
+        var mh$ = WTSGetActiveConsoleSessionId$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WTSGetServiceSessionId$MH() {
+        return RuntimeHelper.requireNonNull(constants$253.WTSGetServiceSessionId$MH,"WTSGetServiceSessionId");
+    }
+    public static int WTSGetServiceSessionId () {
+        var mh$ = WTSGetServiceSessionId$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WTSIsServerContainer$MH() {
+        return RuntimeHelper.requireNonNull(constants$254.WTSIsServerContainer$MH,"WTSIsServerContainer");
+    }
+    public static byte WTSIsServerContainer () {
+        var mh$ = WTSIsServerContainer$MH();
+        try {
+            return (byte)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetActiveProcessorGroupCount$MH() {
+        return RuntimeHelper.requireNonNull(constants$254.GetActiveProcessorGroupCount$MH,"GetActiveProcessorGroupCount");
+    }
+    public static short GetActiveProcessorGroupCount () {
+        var mh$ = GetActiveProcessorGroupCount$MH();
+        try {
+            return (short)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetMaximumProcessorGroupCount$MH() {
+        return RuntimeHelper.requireNonNull(constants$254.GetMaximumProcessorGroupCount$MH,"GetMaximumProcessorGroupCount");
+    }
+    public static short GetMaximumProcessorGroupCount () {
+        var mh$ = GetMaximumProcessorGroupCount$MH();
+        try {
+            return (short)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetActiveProcessorCount$MH() {
+        return RuntimeHelper.requireNonNull(constants$254.GetActiveProcessorCount$MH,"GetActiveProcessorCount");
+    }
+    public static int GetActiveProcessorCount ( short GroupNumber) {
+        var mh$ = GetActiveProcessorCount$MH();
+        try {
+            return (int)mh$.invokeExact(GroupNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetMaximumProcessorCount$MH() {
+        return RuntimeHelper.requireNonNull(constants$254.GetMaximumProcessorCount$MH,"GetMaximumProcessorCount");
+    }
+    public static int GetMaximumProcessorCount ( short GroupNumber) {
+        var mh$ = GetMaximumProcessorCount$MH();
+        try {
+            return (int)mh$.invokeExact(GroupNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaProcessorNode$MH() {
+        return RuntimeHelper.requireNonNull(constants$254.GetNumaProcessorNode$MH,"GetNumaProcessorNode");
+    }
+    public static int GetNumaProcessorNode ( byte Processor,  Addressable NodeNumber) {
+        var mh$ = GetNumaProcessorNode$MH();
+        try {
+            return (int)mh$.invokeExact(Processor, NodeNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaNodeNumberFromHandle$MH() {
+        return RuntimeHelper.requireNonNull(constants$255.GetNumaNodeNumberFromHandle$MH,"GetNumaNodeNumberFromHandle");
+    }
+    public static int GetNumaNodeNumberFromHandle ( Addressable hFile,  Addressable NodeNumber) {
+        var mh$ = GetNumaNodeNumberFromHandle$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, NodeNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaProcessorNodeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$255.GetNumaProcessorNodeEx$MH,"GetNumaProcessorNodeEx");
+    }
+    public static int GetNumaProcessorNodeEx ( Addressable Processor,  Addressable NodeNumber) {
+        var mh$ = GetNumaProcessorNodeEx$MH();
+        try {
+            return (int)mh$.invokeExact(Processor, NodeNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaNodeProcessorMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$255.GetNumaNodeProcessorMask$MH,"GetNumaNodeProcessorMask");
+    }
+    public static int GetNumaNodeProcessorMask ( byte Node,  Addressable ProcessorMask) {
+        var mh$ = GetNumaNodeProcessorMask$MH();
+        try {
+            return (int)mh$.invokeExact(Node, ProcessorMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaAvailableMemoryNode$MH() {
+        return RuntimeHelper.requireNonNull(constants$255.GetNumaAvailableMemoryNode$MH,"GetNumaAvailableMemoryNode");
+    }
+    public static int GetNumaAvailableMemoryNode ( byte Node,  Addressable AvailableBytes) {
+        var mh$ = GetNumaAvailableMemoryNode$MH();
+        try {
+            return (int)mh$.invokeExact(Node, AvailableBytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaAvailableMemoryNodeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$255.GetNumaAvailableMemoryNodeEx$MH,"GetNumaAvailableMemoryNodeEx");
+    }
+    public static int GetNumaAvailableMemoryNodeEx ( short Node,  Addressable AvailableBytes) {
+        var mh$ = GetNumaAvailableMemoryNodeEx$MH();
+        try {
+            return (int)mh$.invokeExact(Node, AvailableBytes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetNumaProximityNode$MH() {
+        return RuntimeHelper.requireNonNull(constants$255.GetNumaProximityNode$MH,"GetNumaProximityNode");
+    }
+    public static int GetNumaProximityNode ( int ProximityId,  Addressable NodeNumber) {
+        var mh$ = GetNumaProximityNode$MH();
+        try {
+            return (int)mh$.invokeExact(ProximityId, NodeNumber);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterApplicationRecoveryCallback$MH() {
+        return RuntimeHelper.requireNonNull(constants$256.RegisterApplicationRecoveryCallback$MH,"RegisterApplicationRecoveryCallback");
+    }
+    public static int RegisterApplicationRecoveryCallback ( Addressable pRecoveyCallback,  Addressable pvParameter,  int dwPingInterval,  int dwFlags) {
+        var mh$ = RegisterApplicationRecoveryCallback$MH();
+        try {
+            return (int)mh$.invokeExact(pRecoveyCallback, pvParameter, dwPingInterval, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UnregisterApplicationRecoveryCallback$MH() {
+        return RuntimeHelper.requireNonNull(constants$256.UnregisterApplicationRecoveryCallback$MH,"UnregisterApplicationRecoveryCallback");
+    }
+    public static int UnregisterApplicationRecoveryCallback () {
+        var mh$ = UnregisterApplicationRecoveryCallback$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterApplicationRestart$MH() {
+        return RuntimeHelper.requireNonNull(constants$256.RegisterApplicationRestart$MH,"RegisterApplicationRestart");
+    }
+    public static int RegisterApplicationRestart ( Addressable pwzCommandline,  int dwFlags) {
+        var mh$ = RegisterApplicationRestart$MH();
+        try {
+            return (int)mh$.invokeExact(pwzCommandline, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UnregisterApplicationRestart$MH() {
+        return RuntimeHelper.requireNonNull(constants$256.UnregisterApplicationRestart$MH,"UnregisterApplicationRestart");
+    }
+    public static int UnregisterApplicationRestart () {
+        var mh$ = UnregisterApplicationRestart$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetApplicationRecoveryCallback$MH() {
+        return RuntimeHelper.requireNonNull(constants$257.GetApplicationRecoveryCallback$MH,"GetApplicationRecoveryCallback");
+    }
+    public static int GetApplicationRecoveryCallback ( Addressable hProcess,  Addressable pRecoveryCallback,  Addressable ppvParameter,  Addressable pdwPingInterval,  Addressable pdwFlags) {
+        var mh$ = GetApplicationRecoveryCallback$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, pRecoveryCallback, ppvParameter, pdwPingInterval, pdwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetApplicationRestartSettings$MH() {
+        return RuntimeHelper.requireNonNull(constants$257.GetApplicationRestartSettings$MH,"GetApplicationRestartSettings");
+    }
+    public static int GetApplicationRestartSettings ( Addressable hProcess,  Addressable pwzCommandline,  Addressable pcchSize,  Addressable pdwFlags) {
+        var mh$ = GetApplicationRestartSettings$MH();
+        try {
+            return (int)mh$.invokeExact(hProcess, pwzCommandline, pcchSize, pdwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ApplicationRecoveryInProgress$MH() {
+        return RuntimeHelper.requireNonNull(constants$257.ApplicationRecoveryInProgress$MH,"ApplicationRecoveryInProgress");
+    }
+    public static int ApplicationRecoveryInProgress ( Addressable pbCancelled) {
+        var mh$ = ApplicationRecoveryInProgress$MH();
+        try {
+            return (int)mh$.invokeExact(pbCancelled);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ApplicationRecoveryFinished$MH() {
+        return RuntimeHelper.requireNonNull(constants$257.ApplicationRecoveryFinished$MH,"ApplicationRecoveryFinished");
+    }
+    public static void ApplicationRecoveryFinished ( int bSuccess) {
+        var mh$ = ApplicationRecoveryFinished$MH();
+        try {
+            mh$.invokeExact(bSuccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PFILE_BASIC_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_STANDARD_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_NAME_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_CASE_SENSITIVE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_RENAME_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ALLOCATION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_END_OF_FILE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_STREAM_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_COMPRESSION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ATTRIBUTE_TAG_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_DISPOSITION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_DISPOSITION_INFO_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ID_BOTH_DIR_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_FULL_DIR_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static int IoPriorityHintVeryLow() {
+        return (int)0L;
+    }
+    public static int IoPriorityHintLow() {
+        return (int)1L;
+    }
+    public static int IoPriorityHintNormal() {
+        return (int)2L;
+    }
+    public static int MaximumIoPriorityHintType() {
+        return (int)3L;
+    }
+    public static OfAddress PFILE_IO_PRIORITY_HINT_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ALIGNMENT_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_STORAGE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ID_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_ID_EXTD_DIR_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFILE_REMOTE_PROTOCOL_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle GetFileInformationByHandleEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$257.GetFileInformationByHandleEx$MH,"GetFileInformationByHandleEx");
+    }
+    public static int GetFileInformationByHandleEx ( Addressable hFile,  int FileInformationClass,  Addressable lpFileInformation,  int dwBufferSize) {
+        var mh$ = GetFileInformationByHandleEx$MH();
+        try {
+            return (int)mh$.invokeExact(hFile, FileInformationClass, lpFileInformation, dwBufferSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int FileIdType() {
+        return (int)0L;
+    }
+    public static int ObjectIdType() {
+        return (int)1L;
+    }
+    public static int ExtendedFileIdType() {
+        return (int)2L;
+    }
+    public static int MaximumFileIdType() {
+        return (int)3L;
+    }
+    public static OfAddress PFILE_ID_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPFILE_ID_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle OpenFileById$MH() {
+        return RuntimeHelper.requireNonNull(constants$257.OpenFileById$MH,"OpenFileById");
+    }
+    public static MemoryAddress OpenFileById ( Addressable hVolumeHint,  Addressable lpFileId,  int dwDesiredAccess,  int dwShareMode,  Addressable lpSecurityAttributes,  int dwFlagsAndAttributes) {
+        var mh$ = OpenFileById$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hVolumeHint, lpFileId, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwFlagsAndAttributes);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateSymbolicLinkA$MH() {
+        return RuntimeHelper.requireNonNull(constants$258.CreateSymbolicLinkA$MH,"CreateSymbolicLinkA");
+    }
+    public static byte CreateSymbolicLinkA ( Addressable lpSymlinkFileName,  Addressable lpTargetFileName,  int dwFlags) {
+        var mh$ = CreateSymbolicLinkA$MH();
+        try {
+            return (byte)mh$.invokeExact(lpSymlinkFileName, lpTargetFileName, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateSymbolicLinkW$MH() {
+        return RuntimeHelper.requireNonNull(constants$258.CreateSymbolicLinkW$MH,"CreateSymbolicLinkW");
+    }
+    public static byte CreateSymbolicLinkW ( Addressable lpSymlinkFileName,  Addressable lpTargetFileName,  int dwFlags) {
+        var mh$ = CreateSymbolicLinkW$MH();
+        try {
+            return (byte)mh$.invokeExact(lpSymlinkFileName, lpTargetFileName, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryActCtxSettingsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$258.QueryActCtxSettingsW$MH,"QueryActCtxSettingsW");
+    }
+    public static int QueryActCtxSettingsW ( int dwFlags,  Addressable hActCtx,  Addressable settingsNameSpace,  Addressable settingName,  Addressable pvBuffer,  long dwBuffer,  Addressable pdwWrittenOrRequired) {
+        var mh$ = QueryActCtxSettingsW$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, hActCtx, settingsNameSpace, settingName, pvBuffer, dwBuffer, pdwWrittenOrRequired);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateSymbolicLinkTransactedA$MH() {
+        return RuntimeHelper.requireNonNull(constants$258.CreateSymbolicLinkTransactedA$MH,"CreateSymbolicLinkTransactedA");
+    }
+    public static byte CreateSymbolicLinkTransactedA ( Addressable lpSymlinkFileName,  Addressable lpTargetFileName,  int dwFlags,  Addressable hTransaction) {
+        var mh$ = CreateSymbolicLinkTransactedA$MH();
+        try {
+            return (byte)mh$.invokeExact(lpSymlinkFileName, lpTargetFileName, dwFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateSymbolicLinkTransactedW$MH() {
+        return RuntimeHelper.requireNonNull(constants$258.CreateSymbolicLinkTransactedW$MH,"CreateSymbolicLinkTransactedW");
+    }
+    public static byte CreateSymbolicLinkTransactedW ( Addressable lpSymlinkFileName,  Addressable lpTargetFileName,  int dwFlags,  Addressable hTransaction) {
+        var mh$ = CreateSymbolicLinkTransactedW$MH();
+        try {
+            return (byte)mh$.invokeExact(lpSymlinkFileName, lpTargetFileName, dwFlags, hTransaction);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReplacePartitionUnit$MH() {
+        return RuntimeHelper.requireNonNull(constants$258.ReplacePartitionUnit$MH,"ReplacePartitionUnit");
+    }
+    public static int ReplacePartitionUnit ( Addressable TargetPartition,  Addressable SparePartition,  int Flags) {
+        var mh$ = ReplacePartitionUnit$MH();
+        try {
+            return (int)mh$.invokeExact(TargetPartition, SparePartition, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddSecureMemoryCacheCallback$MH() {
+        return RuntimeHelper.requireNonNull(constants$259.AddSecureMemoryCacheCallback$MH,"AddSecureMemoryCacheCallback");
+    }
+    public static int AddSecureMemoryCacheCallback ( Addressable pfnCallBack) {
+        var mh$ = AddSecureMemoryCacheCallback$MH();
+        try {
+            return (int)mh$.invokeExact(pfnCallBack);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RemoveSecureMemoryCacheCallback$MH() {
+        return RuntimeHelper.requireNonNull(constants$259.RemoveSecureMemoryCacheCallback$MH,"RemoveSecureMemoryCacheCallback");
+    }
+    public static int RemoveSecureMemoryCacheCallback ( Addressable pfnCallBack) {
+        var mh$ = RemoveSecureMemoryCacheCallback$MH();
+        try {
+            return (int)mh$.invokeExact(pfnCallBack);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CopyContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$259.CopyContext$MH,"CopyContext");
+    }
+    public static int CopyContext ( Addressable Destination,  int ContextFlags,  Addressable Source) {
+        var mh$ = CopyContext$MH();
+        try {
+            return (int)mh$.invokeExact(Destination, ContextFlags, Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InitializeContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$259.InitializeContext$MH,"InitializeContext");
+    }
+    public static int InitializeContext ( Addressable Buffer,  int ContextFlags,  Addressable Context,  Addressable ContextLength) {
+        var mh$ = InitializeContext$MH();
+        try {
+            return (int)mh$.invokeExact(Buffer, ContextFlags, Context, ContextLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InitializeContext2$MH() {
+        return RuntimeHelper.requireNonNull(constants$259.InitializeContext2$MH,"InitializeContext2");
+    }
+    public static int InitializeContext2 ( Addressable Buffer,  int ContextFlags,  Addressable Context,  Addressable ContextLength,  long XStateCompactionMask) {
+        var mh$ = InitializeContext2$MH();
+        try {
+            return (int)mh$.invokeExact(Buffer, ContextFlags, Context, ContextLength, XStateCompactionMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetEnabledXStateFeatures$MH() {
+        return RuntimeHelper.requireNonNull(constants$259.GetEnabledXStateFeatures$MH,"GetEnabledXStateFeatures");
+    }
+    public static long GetEnabledXStateFeatures () {
+        var mh$ = GetEnabledXStateFeatures$MH();
+        try {
+            return (long)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetXStateFeaturesMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$260.GetXStateFeaturesMask$MH,"GetXStateFeaturesMask");
+    }
+    public static int GetXStateFeaturesMask ( Addressable Context,  Addressable FeatureMask) {
+        var mh$ = GetXStateFeaturesMask$MH();
+        try {
+            return (int)mh$.invokeExact(Context, FeatureMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LocateXStateFeature$MH() {
+        return RuntimeHelper.requireNonNull(constants$260.LocateXStateFeature$MH,"LocateXStateFeature");
+    }
+    public static MemoryAddress LocateXStateFeature ( Addressable Context,  int FeatureId,  Addressable Length) {
+        var mh$ = LocateXStateFeature$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Context, FeatureId, Length);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetXStateFeaturesMask$MH() {
+        return RuntimeHelper.requireNonNull(constants$260.SetXStateFeaturesMask$MH,"SetXStateFeaturesMask");
+    }
+    public static int SetXStateFeaturesMask ( Addressable Context,  long FeatureMask) {
+        var mh$ = SetXStateFeaturesMask$MH();
+        try {
+            return (int)mh$.invokeExact(Context, FeatureMask);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnableThreadProfiling$MH() {
+        return RuntimeHelper.requireNonNull(constants$260.EnableThreadProfiling$MH,"EnableThreadProfiling");
+    }
+    public static int EnableThreadProfiling ( Addressable ThreadHandle,  int Flags,  long HardwareCounters,  Addressable PerformanceDataHandle) {
+        var mh$ = EnableThreadProfiling$MH();
+        try {
+            return (int)mh$.invokeExact(ThreadHandle, Flags, HardwareCounters, PerformanceDataHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DisableThreadProfiling$MH() {
+        return RuntimeHelper.requireNonNull(constants$260.DisableThreadProfiling$MH,"DisableThreadProfiling");
+    }
+    public static int DisableThreadProfiling ( Addressable PerformanceDataHandle) {
+        var mh$ = DisableThreadProfiling$MH();
+        try {
+            return (int)mh$.invokeExact(PerformanceDataHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryThreadProfiling$MH() {
+        return RuntimeHelper.requireNonNull(constants$260.QueryThreadProfiling$MH,"QueryThreadProfiling");
+    }
+    public static int QueryThreadProfiling ( Addressable ThreadHandle,  Addressable Enabled) {
+        var mh$ = QueryThreadProfiling$MH();
+        try {
+            return (int)mh$.invokeExact(ThreadHandle, Enabled);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadThreadProfilingData$MH() {
+        return RuntimeHelper.requireNonNull(constants$261.ReadThreadProfilingData$MH,"ReadThreadProfilingData");
+    }
+    public static int ReadThreadProfilingData ( Addressable PerformanceDataHandle,  int Flags,  Addressable PerformanceData) {
+        var mh$ = ReadThreadProfilingData$MH();
+        try {
+            return (int)mh$.invokeExact(PerformanceDataHandle, Flags, PerformanceData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RaiseCustomSystemEventTrigger$MH() {
+        return RuntimeHelper.requireNonNull(constants$261.RaiseCustomSystemEventTrigger$MH,"RaiseCustomSystemEventTrigger");
+    }
+    public static int RaiseCustomSystemEventTrigger ( Addressable CustomSystemEventTriggerConfig) {
+        var mh$ = RaiseCustomSystemEventTrigger$MH();
+        try {
+            return (int)mh$.invokeExact(CustomSystemEventTriggerConfig);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PDRAWPATRECT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPSINJECTDATA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPSFEATURE_OUTPUT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPSFEATURE_CUSTPAPER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PXFORM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPXFORM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBITMAP = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPBITMAP = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBITMAP = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PRGBTRIPLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPRGBTRIPLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPRGBTRIPLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPRGBQUAD = Constants$root.C_POINTER$LAYOUT;
+    public static OfInt LCSCSTYPE = Constants$root.C_LONG$LAYOUT;
+    public static OfInt LCSGAMUTMATCH = Constants$root.C_LONG$LAYOUT;
+    public static OfInt FXPT16DOT16 = Constants$root.C_LONG$LAYOUT;
+    public static OfAddress LPFXPT16DOT16 = Constants$root.C_POINTER$LAYOUT;
+    public static OfInt FXPT2DOT30 = Constants$root.C_LONG$LAYOUT;
+    public static OfAddress LPFXPT2DOT30 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCIEXYZ = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCIEXYZTRIPLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPLOGCOLORSPACEA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPLOGCOLORSPACEW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPLOGCOLORSPACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBITMAPCOREHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBITMAPCOREHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBITMAPINFOHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBITMAPINFOHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBITMAPV4HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBITMAPV4HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBITMAPV5HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBITMAPV5HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBITMAPINFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBITMAPINFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBITMAPCOREINFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBITMAPCOREINFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPBITMAPFILEHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PBITMAPFILEHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PFONTSIGNATURE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPFONTSIGNATURE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCHARSETINFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPCHARSETINFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPCHARSETINFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PLOCALESIGNATURE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPLOCALESIGNATURE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PHANDLETABLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPHANDLETABLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMETARECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMETARECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMETAFILEPICT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PMETAHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPMETAHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PENHMETARECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPENHMETARECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PENHMETAHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPENHMETAHEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTEXTMETRICA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPTEXTMETRICA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPTEXTMETRICA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNEWTEXTMETRICA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPNEWTEXTMETRICA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPNEWTEXTMETRICA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNEWTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPNEWTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPNEWTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPELARRAY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPPELARRAY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPELARRAY = Constants$root.C_POINTER$LAYOUT;
 }
 
 

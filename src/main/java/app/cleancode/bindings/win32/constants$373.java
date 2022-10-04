@@ -9,71 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$373 {
 
-    static final FunctionDescriptor IsNormalizedString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsCharAlphaA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
     );
-    static final MethodHandle IsNormalizedString$MH = RuntimeHelper.downcallHandle(
-        "IsNormalizedString",
-        constants$373.IsNormalizedString$FUNC
+    static final MethodHandle IsCharAlphaA$MH = RuntimeHelper.downcallHandle(
+        "IsCharAlphaA",
+        constants$373.IsCharAlphaA$FUNC
     );
-    static final FunctionDescriptor VerifyScripts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsCharAlphaW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle VerifyScripts$MH = RuntimeHelper.downcallHandle(
-        "VerifyScripts",
-        constants$373.VerifyScripts$FUNC
+    static final MethodHandle IsCharAlphaW$MH = RuntimeHelper.downcallHandle(
+        "IsCharAlphaW",
+        constants$373.IsCharAlphaW$FUNC
     );
-    static final FunctionDescriptor GetStringScripts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsCharAlphaNumericA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
     );
-    static final MethodHandle GetStringScripts$MH = RuntimeHelper.downcallHandle(
-        "GetStringScripts",
-        constants$373.GetStringScripts$FUNC
+    static final MethodHandle IsCharAlphaNumericA$MH = RuntimeHelper.downcallHandle(
+        "IsCharAlphaNumericA",
+        constants$373.IsCharAlphaNumericA$FUNC
     );
-    static final FunctionDescriptor GetLocaleInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsCharAlphaNumericW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle GetLocaleInfoEx$MH = RuntimeHelper.downcallHandle(
-        "GetLocaleInfoEx",
-        constants$373.GetLocaleInfoEx$FUNC
+    static final MethodHandle IsCharAlphaNumericW$MH = RuntimeHelper.downcallHandle(
+        "IsCharAlphaNumericW",
+        constants$373.IsCharAlphaNumericW$FUNC
     );
-    static final FunctionDescriptor GetCalendarInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor IsCharUpperA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
     );
-    static final MethodHandle GetCalendarInfoEx$MH = RuntimeHelper.downcallHandle(
-        "GetCalendarInfoEx",
-        constants$373.GetCalendarInfoEx$FUNC
+    static final MethodHandle IsCharUpperA$MH = RuntimeHelper.downcallHandle(
+        "IsCharUpperA",
+        constants$373.IsCharUpperA$FUNC
     );
-    static final FunctionDescriptor GetNumberFormatEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor IsCharUpperW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle GetNumberFormatEx$MH = RuntimeHelper.downcallHandle(
-        "GetNumberFormatEx",
-        constants$373.GetNumberFormatEx$FUNC
+    static final MethodHandle IsCharUpperW$MH = RuntimeHelper.downcallHandle(
+        "IsCharUpperW",
+        constants$373.IsCharUpperW$FUNC
     );
 }
 

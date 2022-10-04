@@ -9,62 +9,45 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$182 {
 
-    static final FunctionDescriptor GetTextExtentExPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateFiber$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextExtentExPointW$MH = RuntimeHelper.downcallHandle(
-        "GetTextExtentExPointW",
-        constants$182.GetTextExtentExPointW$FUNC
+    static final MethodHandle CreateFiber$MH = RuntimeHelper.downcallHandle(
+        "CreateFiber",
+        constants$182.CreateFiber$FUNC
     );
-    static final FunctionDescriptor GetTextCharset$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ConvertThreadToFiber$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTextCharset$MH = RuntimeHelper.downcallHandle(
-        "GetTextCharset",
-        constants$182.GetTextCharset$FUNC
+    static final MethodHandle ConvertThreadToFiber$MH = RuntimeHelper.downcallHandle(
+        "ConvertThreadToFiber",
+        constants$182.ConvertThreadToFiber$FUNC
     );
-    static final FunctionDescriptor GetTextCharsetInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetTextCharsetInfo$MH = RuntimeHelper.downcallHandle(
-        "GetTextCharsetInfo",
-        constants$182.GetTextCharsetInfo$FUNC
-    );
-    static final FunctionDescriptor TranslateCharsetInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle TranslateCharsetInfo$MH = RuntimeHelper.downcallHandle(
-        "TranslateCharsetInfo",
-        constants$182.TranslateCharsetInfo$FUNC
-    );
-    static final FunctionDescriptor GetFontLanguageInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PUMS_SCHEDULER_ENTRY_POINT$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetFontLanguageInfo$MH = RuntimeHelper.downcallHandle(
-        "GetFontLanguageInfo",
-        constants$182.GetFontLanguageInfo$FUNC
+    static final MethodHandle PUMS_SCHEDULER_ENTRY_POINT$MH = RuntimeHelper.downcallHandle(
+        constants$182.PUMS_SCHEDULER_ENTRY_POINT$FUNC
     );
-    static final FunctionDescriptor GetCharacterPlacementA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateUmsCompletionList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateUmsCompletionList$MH = RuntimeHelper.downcallHandle(
+        "CreateUmsCompletionList",
+        constants$182.CreateUmsCompletionList$FUNC
+    );
+    static final FunctionDescriptor DequeueUmsCompletionListItems$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCharacterPlacementA$MH = RuntimeHelper.downcallHandle(
-        "GetCharacterPlacementA",
-        constants$182.GetCharacterPlacementA$FUNC
+    static final MethodHandle DequeueUmsCompletionListItems$MH = RuntimeHelper.downcallHandle(
+        "DequeueUmsCompletionListItems",
+        constants$182.DequeueUmsCompletionListItems$FUNC
     );
 }
 

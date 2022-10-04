@@ -9,52 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$80 {
 
-    static final FunctionDescriptor DeleteFiber$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteFiber$MH = RuntimeHelper.downcallHandle(
-        "DeleteFiber",
-        constants$80.DeleteFiber$FUNC
-    );
-    static final FunctionDescriptor ConvertFiberToThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle ConvertFiberToThread$MH = RuntimeHelper.downcallHandle(
-        "ConvertFiberToThread",
-        constants$80.ConvertFiberToThread$FUNC
-    );
-    static final FunctionDescriptor CreateFiberEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetFullPathNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateFiberEx$MH = RuntimeHelper.downcallHandle(
-        "CreateFiberEx",
-        constants$80.CreateFiberEx$FUNC
+    static final MethodHandle GetFullPathNameA$MH = RuntimeHelper.downcallHandle(
+        "GetFullPathNameA",
+        constants$80.GetFullPathNameA$FUNC
     );
-    static final FunctionDescriptor ConvertThreadToFiberEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetLogicalDrives$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetLogicalDrives$MH = RuntimeHelper.downcallHandle(
+        "GetLogicalDrives",
+        constants$80.GetLogicalDrives$FUNC
+    );
+    static final FunctionDescriptor GetLogicalDriveStringsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetLogicalDriveStringsW$MH = RuntimeHelper.downcallHandle(
+        "GetLogicalDriveStringsW",
+        constants$80.GetLogicalDriveStringsW$FUNC
+    );
+    static final FunctionDescriptor GetLongPathNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ConvertThreadToFiberEx$MH = RuntimeHelper.downcallHandle(
-        "ConvertThreadToFiberEx",
-        constants$80.ConvertThreadToFiberEx$FUNC
+    static final MethodHandle GetLongPathNameA$MH = RuntimeHelper.downcallHandle(
+        "GetLongPathNameA",
+        constants$80.GetLongPathNameA$FUNC
     );
-    static final FunctionDescriptor CreateFiber$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetLongPathNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateFiber$MH = RuntimeHelper.downcallHandle(
-        "CreateFiber",
-        constants$80.CreateFiber$FUNC
+    static final MethodHandle GetLongPathNameW$MH = RuntimeHelper.downcallHandle(
+        "GetLongPathNameW",
+        constants$80.GetLongPathNameW$FUNC
     );
-    static final FunctionDescriptor ConvertThreadToFiber$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetShortPathNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ConvertThreadToFiber$MH = RuntimeHelper.downcallHandle(
-        "ConvertThreadToFiber",
-        constants$80.ConvertThreadToFiber$FUNC
+    static final MethodHandle GetShortPathNameW$MH = RuntimeHelper.downcallHandle(
+        "GetShortPathNameW",
+        constants$80.GetShortPathNameW$FUNC
     );
 }
 

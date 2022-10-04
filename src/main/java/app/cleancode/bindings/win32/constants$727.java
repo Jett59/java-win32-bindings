@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$727 {
 
-    static final MemorySegment CRYPTNET_PRE_FETCH_MIN_OCSP_VALIDITY_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_AFTER_PUBLISH_PRE_FETCH_DIVISOR_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_BEFORE_NEXT_UPDATE_PRE_FETCH_DIVISOR_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_MIN_BEFORE_NEXT_UPDATE_PRE_FETCH_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_VALIDITY_PERIOD_AFTER_NEXT_UPDATE_PRE_FETCH_DIVISOR_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPTNET_PRE_FETCH_MAX_AFTER_NEXT_UPDATE_PRE_FETCH_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment SE_CREATE_SYMBOLIC_LINK_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateSymbolicLinkPrivilege");
+    static final MemorySegment SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeDelegateSessionUserImpersonatePrivilege");
+    static final MemorySegment SE_ACTIVATE_AS_USER_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
+    static final MemorySegment SE_CONSTRAINED_IMPERSONATION_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("c");
+    static final MemorySegment SE_SESSION_IMPERSONATION_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("s");
+    static final MemorySegment SE_MUMA_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("m");
 }
 
 

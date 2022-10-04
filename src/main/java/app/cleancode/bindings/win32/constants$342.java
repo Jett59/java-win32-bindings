@@ -9,50 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$342 {
 
-    static final FunctionDescriptor GetThreadDpiHostingBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetThreadDpiHostingBehavior$MH = RuntimeHelper.downcallHandle(
-        "GetThreadDpiHostingBehavior",
-        constants$342.GetThreadDpiHostingBehavior$FUNC
-    );
-    static final FunctionDescriptor GetWindowDpiHostingBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetWindowDpiHostingBehavior$MH = RuntimeHelper.downcallHandle(
-        "GetWindowDpiHostingBehavior",
-        constants$342.GetWindowDpiHostingBehavior$FUNC
-    );
-    static final FunctionDescriptor GetWindowModuleFileNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetUserObjectInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetWindowModuleFileNameA$MH = RuntimeHelper.downcallHandle(
-        "GetWindowModuleFileNameA",
-        constants$342.GetWindowModuleFileNameA$FUNC
+    static final MethodHandle SetUserObjectInformationW$MH = RuntimeHelper.downcallHandle(
+        "SetUserObjectInformationW",
+        constants$342.SetUserObjectInformationW$FUNC
     );
-    static final FunctionDescriptor GetWindowModuleFileNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetWindowModuleFileNameW$MH = RuntimeHelper.downcallHandle(
-        "GetWindowModuleFileNameW",
-        constants$342.GetWindowModuleFileNameW$FUNC
-    );
-    static final FunctionDescriptor GetCursorInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsHungAppWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCursorInfo$MH = RuntimeHelper.downcallHandle(
-        "GetCursorInfo",
-        constants$342.GetCursorInfo$FUNC
+    static final MethodHandle IsHungAppWindow$MH = RuntimeHelper.downcallHandle(
+        "IsHungAppWindow",
+        constants$342.IsHungAppWindow$FUNC
     );
-    static final FunctionDescriptor GetWindowInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DisableProcessWindowsGhosting$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle DisableProcessWindowsGhosting$MH = RuntimeHelper.downcallHandle(
+        "DisableProcessWindowsGhosting",
+        constants$342.DisableProcessWindowsGhosting$FUNC
+    );
+    static final FunctionDescriptor RegisterWindowMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWindowInfo$MH = RuntimeHelper.downcallHandle(
-        "GetWindowInfo",
-        constants$342.GetWindowInfo$FUNC
+    static final MethodHandle RegisterWindowMessageA$MH = RuntimeHelper.downcallHandle(
+        "RegisterWindowMessageA",
+        constants$342.RegisterWindowMessageA$FUNC
+    );
+    static final FunctionDescriptor RegisterWindowMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterWindowMessageW$MH = RuntimeHelper.downcallHandle(
+        "RegisterWindowMessageW",
+        constants$342.RegisterWindowMessageW$FUNC
+    );
+    static final FunctionDescriptor TrackMouseEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle TrackMouseEvent$MH = RuntimeHelper.downcallHandle(
+        "TrackMouseEvent",
+        constants$342.TrackMouseEvent$FUNC
     );
 }
 

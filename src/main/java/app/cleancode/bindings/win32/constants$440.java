@@ -9,44 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$440 {
 
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FIND_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_FIND_CRL$MH = RuntimeHelper.downcallHandle(
-        constants$440.PFN_CERT_STORE_PROV_FIND_CRL$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FREE_FIND_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor InternalGetWindowText$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_FREE_FIND_CRL$MH = RuntimeHelper.downcallHandle(
-        constants$440.PFN_CERT_STORE_PROV_FREE_FIND_CRL$FUNC
+    static final MethodHandle InternalGetWindowText$MH = RuntimeHelper.downcallHandle(
+        "InternalGetWindowText",
+        constants$440.InternalGetWindowText$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_GET_CRL_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CancelShutdown$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle CancelShutdown$MH = RuntimeHelper.downcallHandle(
+        "CancelShutdown",
+        constants$440.CancelShutdown$FUNC
+    );
+    static final FunctionDescriptor MonitorFromPoint$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_LONG$LAYOUT.withName("x"),
+            Constants$root.C_LONG$LAYOUT.withName("y")
+        ).withName("tagPOINT"),
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle MonitorFromPoint$MH = RuntimeHelper.downcallHandle(
+        "MonitorFromPoint",
+        constants$440.MonitorFromPoint$FUNC
+    );
+    static final FunctionDescriptor MonitorFromRect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle MonitorFromRect$MH = RuntimeHelper.downcallHandle(
+        "MonitorFromRect",
+        constants$440.MonitorFromRect$FUNC
+    );
+    static final FunctionDescriptor MonitorFromWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle MonitorFromWindow$MH = RuntimeHelper.downcallHandle(
+        "MonitorFromWindow",
+        constants$440.MonitorFromWindow$FUNC
+    );
+    static final FunctionDescriptor GetMonitorInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_GET_CRL_PROPERTY$MH = RuntimeHelper.downcallHandle(
-        constants$440.PFN_CERT_STORE_PROV_GET_CRL_PROPERTY$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FIND_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final MethodHandle GetMonitorInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetMonitorInfoA",
+        constants$440.GetMonitorInfoA$FUNC
     );
 }
 

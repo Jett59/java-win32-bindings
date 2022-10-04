@@ -9,46 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$296 {
 
-    static final FunctionDescriptor UpdateWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UpdateWindow$MH = RuntimeHelper.downcallHandle(
-        "UpdateWindow",
-        constants$296.UpdateWindow$FUNC
-    );
-    static final FunctionDescriptor SetActiveWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetActiveWindow$MH = RuntimeHelper.downcallHandle(
-        "SetActiveWindow",
-        constants$296.SetActiveWindow$FUNC
-    );
-    static final FunctionDescriptor GetForegroundWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetForegroundWindow$MH = RuntimeHelper.downcallHandle(
-        "GetForegroundWindow",
-        constants$296.GetForegroundWindow$FUNC
-    );
-    static final FunctionDescriptor PaintDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PaintDesktop$MH = RuntimeHelper.downcallHandle(
-        "PaintDesktop",
-        constants$296.PaintDesktop$FUNC
-    );
-    static final FunctionDescriptor SwitchToThisWindow$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor SetBkMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SwitchToThisWindow$MH = RuntimeHelper.downcallHandle(
-        "SwitchToThisWindow",
-        constants$296.SwitchToThisWindow$FUNC
+    static final MethodHandle SetBkMode$MH = RuntimeHelper.downcallHandle(
+        "SetBkMode",
+        constants$296.SetBkMode$FUNC
     );
-    static final FunctionDescriptor SetForegroundWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetBitmapBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetForegroundWindow$MH = RuntimeHelper.downcallHandle(
-        "SetForegroundWindow",
-        constants$296.SetForegroundWindow$FUNC
+    static final MethodHandle SetBitmapBits$MH = RuntimeHelper.downcallHandle(
+        "SetBitmapBits",
+        constants$296.SetBitmapBits$FUNC
+    );
+    static final FunctionDescriptor SetBoundsRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetBoundsRect$MH = RuntimeHelper.downcallHandle(
+        "SetBoundsRect",
+        constants$296.SetBoundsRect$FUNC
+    );
+    static final FunctionDescriptor SetDIBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDIBits$MH = RuntimeHelper.downcallHandle(
+        "SetDIBits",
+        constants$296.SetDIBits$FUNC
+    );
+    static final FunctionDescriptor SetDIBitsToDevice$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDIBitsToDevice$MH = RuntimeHelper.downcallHandle(
+        "SetDIBitsToDevice",
+        constants$296.SetDIBitsToDevice$FUNC
+    );
+    static final FunctionDescriptor SetMapperFlags$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetMapperFlags$MH = RuntimeHelper.downcallHandle(
+        "SetMapperFlags",
+        constants$296.SetMapperFlags$FUNC
     );
 }
 

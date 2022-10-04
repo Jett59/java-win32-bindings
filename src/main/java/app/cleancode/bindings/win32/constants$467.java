@@ -9,78 +9,73 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$467 {
 
-    static final FunctionDescriptor CryptGetMessageSignerCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetNumberFormatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptGetMessageSignerCount$MH = RuntimeHelper.downcallHandle(
-        "CryptGetMessageSignerCount",
-        constants$467.CryptGetMessageSignerCount$FUNC
+    static final MethodHandle GetNumberFormatA$MH = RuntimeHelper.downcallHandle(
+        "GetNumberFormatA",
+        constants$467.GetNumberFormatA$FUNC
     );
-    static final FunctionDescriptor CryptGetMessageCertificates$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetNumberFormatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptGetMessageCertificates$MH = RuntimeHelper.downcallHandle(
-        "CryptGetMessageCertificates",
-        constants$467.CryptGetMessageCertificates$FUNC
+    static final MethodHandle GetNumberFormatW$MH = RuntimeHelper.downcallHandle(
+        "GetNumberFormatW",
+        constants$467.GetNumberFormatW$FUNC
     );
-    static final FunctionDescriptor CryptVerifyDetachedMessageSignature$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetCurrencyFormatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptVerifyDetachedMessageSignature$MH = RuntimeHelper.downcallHandle(
-        "CryptVerifyDetachedMessageSignature",
-        constants$467.CryptVerifyDetachedMessageSignature$FUNC
-    );
-    static final FunctionDescriptor CryptEncryptMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetCurrencyFormatA$MH = RuntimeHelper.downcallHandle(
+        "GetCurrencyFormatA",
+        constants$467.GetCurrencyFormatA$FUNC
+    );
+    static final FunctionDescriptor GetCurrencyFormatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptEncryptMessage$MH = RuntimeHelper.downcallHandle(
-        "CryptEncryptMessage",
-        constants$467.CryptEncryptMessage$FUNC
+    static final MethodHandle GetCurrencyFormatW$MH = RuntimeHelper.downcallHandle(
+        "GetCurrencyFormatW",
+        constants$467.GetCurrencyFormatW$FUNC
     );
-    static final FunctionDescriptor CryptDecryptMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnumCalendarInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptDecryptMessage$MH = RuntimeHelper.downcallHandle(
-        "CryptDecryptMessage",
-        constants$467.CryptDecryptMessage$FUNC
+    static final MethodHandle EnumCalendarInfoA$MH = RuntimeHelper.downcallHandle(
+        "EnumCalendarInfoA",
+        constants$467.EnumCalendarInfoA$FUNC
     );
-    static final FunctionDescriptor CryptSignAndEncryptMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnumCalendarInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptSignAndEncryptMessage$MH = RuntimeHelper.downcallHandle(
-        "CryptSignAndEncryptMessage",
-        constants$467.CryptSignAndEncryptMessage$FUNC
+    static final MethodHandle EnumCalendarInfoW$MH = RuntimeHelper.downcallHandle(
+        "EnumCalendarInfoW",
+        constants$467.EnumCalendarInfoW$FUNC
     );
 }
 

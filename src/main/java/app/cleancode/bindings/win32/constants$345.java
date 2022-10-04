@@ -9,63 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$345 {
 
-    static final FunctionDescriptor UserHandleGrantAccess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle UserHandleGrantAccess$MH = RuntimeHelper.downcallHandle(
-        "UserHandleGrantAccess",
-        constants$345.UserHandleGrantAccess$FUNC
-    );
-    static final FunctionDescriptor GetRawInputData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RegisterHotKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetRawInputData$MH = RuntimeHelper.downcallHandle(
-        "GetRawInputData",
-        constants$345.GetRawInputData$FUNC
-    );
-    static final FunctionDescriptor GetRawInputDeviceInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetRawInputDeviceInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetRawInputDeviceInfoA",
-        constants$345.GetRawInputDeviceInfoA$FUNC
-    );
-    static final FunctionDescriptor GetRawInputDeviceInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetRawInputDeviceInfoW$MH = RuntimeHelper.downcallHandle(
-        "GetRawInputDeviceInfoW",
-        constants$345.GetRawInputDeviceInfoW$FUNC
-    );
-    static final FunctionDescriptor GetRawInputBuffer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetRawInputBuffer$MH = RuntimeHelper.downcallHandle(
-        "GetRawInputBuffer",
-        constants$345.GetRawInputBuffer$FUNC
-    );
-    static final FunctionDescriptor RegisterRawInputDevices$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegisterRawInputDevices$MH = RuntimeHelper.downcallHandle(
-        "RegisterRawInputDevices",
-        constants$345.RegisterRawInputDevices$FUNC
+    static final MethodHandle RegisterHotKey$MH = RuntimeHelper.downcallHandle(
+        "RegisterHotKey",
+        constants$345.RegisterHotKey$FUNC
+    );
+    static final FunctionDescriptor UnregisterHotKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle UnregisterHotKey$MH = RuntimeHelper.downcallHandle(
+        "UnregisterHotKey",
+        constants$345.UnregisterHotKey$FUNC
+    );
+    static final FunctionDescriptor ExitWindowsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ExitWindowsEx$MH = RuntimeHelper.downcallHandle(
+        "ExitWindowsEx",
+        constants$345.ExitWindowsEx$FUNC
+    );
+    static final FunctionDescriptor SwapMouseButton$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SwapMouseButton$MH = RuntimeHelper.downcallHandle(
+        "SwapMouseButton",
+        constants$345.SwapMouseButton$FUNC
+    );
+    static final FunctionDescriptor GetMessagePos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetMessagePos$MH = RuntimeHelper.downcallHandle(
+        "GetMessagePos",
+        constants$345.GetMessagePos$FUNC
+    );
+    static final FunctionDescriptor GetMessageTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetMessageTime$MH = RuntimeHelper.downcallHandle(
+        "GetMessageTime",
+        constants$345.GetMessageTime$FUNC
     );
 }
 

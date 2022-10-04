@@ -9,53 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$502 {
 
-    static final FunctionDescriptor SCardControl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegGetValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegGetValueW$MH = RuntimeHelper.downcallHandle(
+        "RegGetValueW",
+        constants$502.RegGetValueW$FUNC
+    );
+    static final FunctionDescriptor RegCopyTreeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegCopyTreeW$MH = RuntimeHelper.downcallHandle(
+        "RegCopyTreeW",
+        constants$502.RegCopyTreeW$FUNC
+    );
+    static final FunctionDescriptor RegLoadMUIStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardControl$MH = RuntimeHelper.downcallHandle(
-        "SCardControl",
-        constants$502.SCardControl$FUNC
+    static final MethodHandle RegLoadMUIStringA$MH = RuntimeHelper.downcallHandle(
+        "RegLoadMUIStringA",
+        constants$502.RegLoadMUIStringA$FUNC
     );
-    static final FunctionDescriptor SCardGetAttrib$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegLoadMUIStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardGetAttrib$MH = RuntimeHelper.downcallHandle(
-        "SCardGetAttrib",
-        constants$502.SCardGetAttrib$FUNC
+    static final MethodHandle RegLoadMUIStringW$MH = RuntimeHelper.downcallHandle(
+        "RegLoadMUIStringW",
+        constants$502.RegLoadMUIStringW$FUNC
     );
-    static final FunctionDescriptor SCardSetAttrib$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RegLoadAppKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardSetAttrib$MH = RuntimeHelper.downcallHandle(
-        "SCardSetAttrib",
-        constants$502.SCardSetAttrib$FUNC
+    static final MethodHandle RegLoadAppKeyA$MH = RuntimeHelper.downcallHandle(
+        "RegLoadAppKeyA",
+        constants$502.RegLoadAppKeyA$FUNC
     );
-    static final FunctionDescriptor LPOCNCONNPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegLoadAppKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LPOCNCONNPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$502.LPOCNCONNPROCA$FUNC
-    );
-    static final FunctionDescriptor LPOCNCONNPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final MethodHandle RegLoadAppKeyW$MH = RuntimeHelper.downcallHandle(
+        "RegLoadAppKeyW",
+        constants$502.RegLoadAppKeyW$FUNC
     );
 }
 

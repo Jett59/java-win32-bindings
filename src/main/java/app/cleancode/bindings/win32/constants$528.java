@@ -9,57 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$528 {
 
-    static final FunctionDescriptor ConnectToPrinterDlg$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor waveInGetErrorTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ConnectToPrinterDlg$MH = RuntimeHelper.downcallHandle(
-        "ConnectToPrinterDlg",
-        constants$528.ConnectToPrinterDlg$FUNC
+    static final MethodHandle waveInGetErrorTextA$MH = RuntimeHelper.downcallHandle(
+        "waveInGetErrorTextA",
+        constants$528.waveInGetErrorTextA$FUNC
     );
-    static final FunctionDescriptor AddPrintProvidorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveInGetErrorTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveInGetErrorTextW$MH = RuntimeHelper.downcallHandle(
+        "waveInGetErrorTextW",
+        constants$528.waveInGetErrorTextW$FUNC
+    );
+    static final FunctionDescriptor waveInOpen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle waveInOpen$MH = RuntimeHelper.downcallHandle(
+        "waveInOpen",
+        constants$528.waveInOpen$FUNC
+    );
+    static final FunctionDescriptor waveInClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddPrintProvidorA$MH = RuntimeHelper.downcallHandle(
-        "AddPrintProvidorA",
-        constants$528.AddPrintProvidorA$FUNC
+    static final MethodHandle waveInClose$MH = RuntimeHelper.downcallHandle(
+        "waveInClose",
+        constants$528.waveInClose$FUNC
     );
-    static final FunctionDescriptor AddPrintProvidorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddPrintProvidorW$MH = RuntimeHelper.downcallHandle(
-        "AddPrintProvidorW",
-        constants$528.AddPrintProvidorW$FUNC
-    );
-    static final FunctionDescriptor DeletePrintProvidorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveInPrepareHeader$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeletePrintProvidorA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrintProvidorA",
-        constants$528.DeletePrintProvidorA$FUNC
+    static final MethodHandle waveInPrepareHeader$MH = RuntimeHelper.downcallHandle(
+        "waveInPrepareHeader",
+        constants$528.waveInPrepareHeader$FUNC
     );
-    static final FunctionDescriptor DeletePrintProvidorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor waveInUnprepareHeader$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeletePrintProvidorW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrintProvidorW",
-        constants$528.DeletePrintProvidorW$FUNC
-    );
-    static final FunctionDescriptor IsValidDevmodeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle IsValidDevmodeA$MH = RuntimeHelper.downcallHandle(
-        "IsValidDevmodeA",
-        constants$528.IsValidDevmodeA$FUNC
+    static final MethodHandle waveInUnprepareHeader$MH = RuntimeHelper.downcallHandle(
+        "waveInUnprepareHeader",
+        constants$528.waveInUnprepareHeader$FUNC
     );
 }
 

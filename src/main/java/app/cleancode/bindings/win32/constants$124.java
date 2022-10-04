@@ -9,70 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$124 {
 
-    static final FunctionDescriptor CreateHardLinkW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetThreadInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetThreadInformation$MH = RuntimeHelper.downcallHandle(
+        "GetThreadInformation",
+        constants$124.GetThreadInformation$FUNC
+    );
+    static final FunctionDescriptor SetThreadInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetThreadInformation$MH = RuntimeHelper.downcallHandle(
+        "SetThreadInformation",
+        constants$124.SetThreadInformation$FUNC
+    );
+    static final FunctionDescriptor IsProcessCritical$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateHardLinkW$MH = RuntimeHelper.downcallHandle(
-        "CreateHardLinkW",
-        constants$124.CreateHardLinkW$FUNC
+    static final MethodHandle IsProcessCritical$MH = RuntimeHelper.downcallHandle(
+        "IsProcessCritical",
+        constants$124.IsProcessCritical$FUNC
     );
-    static final FunctionDescriptor CreateHardLinkTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetProtectedPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetProtectedPolicy$MH = RuntimeHelper.downcallHandle(
+        "SetProtectedPolicy",
+        constants$124.SetProtectedPolicy$FUNC
+    );
+    static final FunctionDescriptor QueryProtectedPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateHardLinkTransactedA$MH = RuntimeHelper.downcallHandle(
-        "CreateHardLinkTransactedA",
-        constants$124.CreateHardLinkTransactedA$FUNC
+    static final MethodHandle QueryProtectedPolicy$MH = RuntimeHelper.downcallHandle(
+        "QueryProtectedPolicy",
+        constants$124.QueryProtectedPolicy$FUNC
     );
-    static final FunctionDescriptor CreateHardLinkTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetThreadIdealProcessor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateHardLinkTransactedW$MH = RuntimeHelper.downcallHandle(
-        "CreateHardLinkTransactedW",
-        constants$124.CreateHardLinkTransactedW$FUNC
-    );
-    static final FunctionDescriptor FindFirstStreamTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FindFirstStreamTransactedW$MH = RuntimeHelper.downcallHandle(
-        "FindFirstStreamTransactedW",
-        constants$124.FindFirstStreamTransactedW$FUNC
-    );
-    static final FunctionDescriptor FindFirstFileNameTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FindFirstFileNameTransactedW$MH = RuntimeHelper.downcallHandle(
-        "FindFirstFileNameTransactedW",
-        constants$124.FindFirstFileNameTransactedW$FUNC
-    );
-    static final FunctionDescriptor CreateNamedPipeA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateNamedPipeA$MH = RuntimeHelper.downcallHandle(
-        "CreateNamedPipeA",
-        constants$124.CreateNamedPipeA$FUNC
+    static final MethodHandle SetThreadIdealProcessor$MH = RuntimeHelper.downcallHandle(
+        "SetThreadIdealProcessor",
+        constants$124.SetThreadIdealProcessor$FUNC
     );
 }
 

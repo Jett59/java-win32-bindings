@@ -21,14 +21,29 @@ class constants$72 {
     static final MethodHandle LPENCLAVE_ROUTINE$MH = RuntimeHelper.downcallHandle(
         constants$72.LPENCLAVE_ROUTINE$FUNC
     );
-    static final FunctionDescriptor PFIBER_START_ROUTINE$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor CompareFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFIBER_START_ROUTINE$MH = RuntimeHelper.downcallHandle(
-        constants$72.PFIBER_START_ROUTINE$FUNC
+    static final MethodHandle CompareFileTime$MH = RuntimeHelper.downcallHandle(
+        "CompareFileTime",
+        constants$72.CompareFileTime$FUNC
     );
-    static final FunctionDescriptor LPFIBER_START_ROUTINE$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor CreateDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateDirectoryA$MH = RuntimeHelper.downcallHandle(
+        "CreateDirectoryA",
+        constants$72.CreateDirectoryA$FUNC
+    );
+    static final FunctionDescriptor CreateDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "CreateDirectoryW",
+        constants$72.CreateDirectoryW$FUNC
     );
 }
 

@@ -9,37 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$367 {
 
-    static final FunctionDescriptor GetUserDefaultUILanguage$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
-    static final MethodHandle GetUserDefaultUILanguage$MH = RuntimeHelper.downcallHandle(
-        "GetUserDefaultUILanguage",
-        constants$367.GetUserDefaultUILanguage$FUNC
+    static final FunctionDescriptor GetClipboardData$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final FunctionDescriptor GetUserDefaultLangID$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
-    static final MethodHandle GetUserDefaultLangID$MH = RuntimeHelper.downcallHandle(
-        "GetUserDefaultLangID",
-        constants$367.GetUserDefaultLangID$FUNC
+    static final MethodHandle GetClipboardData$MH = RuntimeHelper.downcallHandle(
+        "GetClipboardData",
+        constants$367.GetClipboardData$FUNC
     );
-    static final FunctionDescriptor GetSystemDefaultLangID$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
-    static final MethodHandle GetSystemDefaultLangID$MH = RuntimeHelper.downcallHandle(
-        "GetSystemDefaultLangID",
-        constants$367.GetSystemDefaultLangID$FUNC
+    static final FunctionDescriptor RegisterClipboardFormatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor GetSystemDefaultLCID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetSystemDefaultLCID$MH = RuntimeHelper.downcallHandle(
-        "GetSystemDefaultLCID",
-        constants$367.GetSystemDefaultLCID$FUNC
+    static final MethodHandle RegisterClipboardFormatA$MH = RuntimeHelper.downcallHandle(
+        "RegisterClipboardFormatA",
+        constants$367.RegisterClipboardFormatA$FUNC
     );
-    static final FunctionDescriptor GetUserDefaultLCID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetUserDefaultLCID$MH = RuntimeHelper.downcallHandle(
-        "GetUserDefaultLCID",
-        constants$367.GetUserDefaultLCID$FUNC
+    static final FunctionDescriptor RegisterClipboardFormatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor SetThreadUILanguage$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
+    static final MethodHandle RegisterClipboardFormatW$MH = RuntimeHelper.downcallHandle(
+        "RegisterClipboardFormatW",
+        constants$367.RegisterClipboardFormatW$FUNC
     );
-    static final MethodHandle SetThreadUILanguage$MH = RuntimeHelper.downcallHandle(
-        "SetThreadUILanguage",
-        constants$367.SetThreadUILanguage$FUNC
+    static final FunctionDescriptor CountClipboardFormats$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle CountClipboardFormats$MH = RuntimeHelper.downcallHandle(
+        "CountClipboardFormats",
+        constants$367.CountClipboardFormats$FUNC
+    );
+    static final FunctionDescriptor EnumClipboardFormats$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EnumClipboardFormats$MH = RuntimeHelper.downcallHandle(
+        "EnumClipboardFormats",
+        constants$367.EnumClipboardFormats$FUNC
+    );
+    static final FunctionDescriptor GetClipboardFormatNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetClipboardFormatNameA$MH = RuntimeHelper.downcallHandle(
+        "GetClipboardFormatNameA",
+        constants$367.GetClipboardFormatNameA$FUNC
     );
 }
 

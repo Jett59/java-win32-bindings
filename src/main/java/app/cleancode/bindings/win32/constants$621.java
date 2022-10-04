@@ -9,12 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$621 {
 
-    static final MemorySegment szOID_CROSS_CERTIFICATE_PAIR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.40");
-    static final MemorySegment szOID_GIVEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.42");
-    static final MemorySegment szOID_INITIALS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.43");
-    static final MemorySegment szOID_DN_QUALIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.46");
-    static final MemorySegment szOID_DOMAIN_COMPONENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.9.2342.19200300.100.1.25");
-    static final MemorySegment szOID_PKCS_12_FRIENDLY_NAME_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.20");
+    static final FunctionDescriptor CryptSignMessageWithKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptSignMessageWithKey$MH = RuntimeHelper.downcallHandle(
+        "CryptSignMessageWithKey",
+        constants$621.CryptSignMessageWithKey$FUNC
+    );
+    static final FunctionDescriptor CryptVerifyMessageSignatureWithKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptVerifyMessageSignatureWithKey$MH = RuntimeHelper.downcallHandle(
+        "CryptVerifyMessageSignatureWithKey",
+        constants$621.CryptVerifyMessageSignatureWithKey$FUNC
+    );
+    static final FunctionDescriptor CertOpenSystemStoreA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertOpenSystemStoreA$MH = RuntimeHelper.downcallHandle(
+        "CertOpenSystemStoreA",
+        constants$621.CertOpenSystemStoreA$FUNC
+    );
+    static final FunctionDescriptor CertOpenSystemStoreW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertOpenSystemStoreW$MH = RuntimeHelper.downcallHandle(
+        "CertOpenSystemStoreW",
+        constants$621.CertOpenSystemStoreW$FUNC
+    );
+    static final FunctionDescriptor CertAddEncodedCertificateToSystemStoreA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertAddEncodedCertificateToSystemStoreA$MH = RuntimeHelper.downcallHandle(
+        "CertAddEncodedCertificateToSystemStoreA",
+        constants$621.CertAddEncodedCertificateToSystemStoreA$FUNC
+    );
+    static final FunctionDescriptor CertAddEncodedCertificateToSystemStoreW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertAddEncodedCertificateToSystemStoreW$MH = RuntimeHelper.downcallHandle(
+        "CertAddEncodedCertificateToSystemStoreW",
+        constants$621.CertAddEncodedCertificateToSystemStoreW$FUNC
+    );
 }
 
 

@@ -9,64 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$466 {
 
-    static final FunctionDescriptor CertGetNameStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LoadStringByReference$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LoadStringByReference$MH = RuntimeHelper.downcallHandle(
+        "LoadStringByReference",
+        constants$466.LoadStringByReference$FUNC
+    );
+    static final FunctionDescriptor IsDBCSLeadByte$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
+    );
+    static final MethodHandle IsDBCSLeadByte$MH = RuntimeHelper.downcallHandle(
+        "IsDBCSLeadByte",
+        constants$466.IsDBCSLeadByte$FUNC
+    );
+    static final FunctionDescriptor IsDBCSLeadByteEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
+    );
+    static final MethodHandle IsDBCSLeadByteEx$MH = RuntimeHelper.downcallHandle(
+        "IsDBCSLeadByteEx",
+        constants$466.IsDBCSLeadByteEx$FUNC
+    );
+    static final FunctionDescriptor LocaleNameToLCID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LocaleNameToLCID$MH = RuntimeHelper.downcallHandle(
+        "LocaleNameToLCID",
+        constants$466.LocaleNameToLCID$FUNC
+    );
+    static final FunctionDescriptor LCIDToLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LCIDToLocaleName$MH = RuntimeHelper.downcallHandle(
+        "LCIDToLocaleName",
+        constants$466.LCIDToLocaleName$FUNC
+    );
+    static final FunctionDescriptor GetDurationFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertGetNameStringA$MH = RuntimeHelper.downcallHandle(
-        "CertGetNameStringA",
-        constants$466.CertGetNameStringA$FUNC
-    );
-    static final FunctionDescriptor CertGetNameStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertGetNameStringW$MH = RuntimeHelper.downcallHandle(
-        "CertGetNameStringW",
-        constants$466.CertGetNameStringW$FUNC
-    );
-    static final FunctionDescriptor PFN_CRYPT_GET_SIGNER_CERTIFICATE$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CRYPT_GET_SIGNER_CERTIFICATE$MH = RuntimeHelper.downcallHandle(
-        constants$466.PFN_CRYPT_GET_SIGNER_CERTIFICATE$FUNC
-    );
-    static final FunctionDescriptor CryptSignMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptSignMessage$MH = RuntimeHelper.downcallHandle(
-        "CryptSignMessage",
-        constants$466.CryptSignMessage$FUNC
-    );
-    static final FunctionDescriptor CryptVerifyMessageSignature$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptVerifyMessageSignature$MH = RuntimeHelper.downcallHandle(
-        "CryptVerifyMessageSignature",
-        constants$466.CryptVerifyMessageSignature$FUNC
+    static final MethodHandle GetDurationFormat$MH = RuntimeHelper.downcallHandle(
+        "GetDurationFormat",
+        constants$466.GetDurationFormat$FUNC
     );
 }
 

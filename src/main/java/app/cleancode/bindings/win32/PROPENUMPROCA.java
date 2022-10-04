@@ -11,13 +11,13 @@ public interface PROPENUMPROCA {
 
     int apply(java.lang.foreign.MemoryAddress _x0, java.lang.foreign.MemoryAddress _x1, java.lang.foreign.MemoryAddress _x2);
     static MemorySegment allocate(PROPENUMPROCA fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PROPENUMPROCA.class, fi, constants$225.PROPENUMPROCA$FUNC, session);
+        return RuntimeHelper.upcallStub(PROPENUMPROCA.class, fi, constants$329.PROPENUMPROCA$FUNC, session);
     }
     static PROPENUMPROCA ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, java.lang.foreign.MemoryAddress __x1, java.lang.foreign.MemoryAddress __x2) -> {
             try {
-                return (int)constants$225.PROPENUMPROCA$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2);
+                return (int)constants$329.PROPENUMPROCA$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

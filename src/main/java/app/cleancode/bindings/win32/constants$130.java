@@ -9,84 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$130 {
 
-    static final FunctionDescriptor ReportEventW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor GetComputerNameExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ReportEventW$MH = RuntimeHelper.downcallHandle(
-        "ReportEventW",
-        constants$130.ReportEventW$FUNC
+    static final MethodHandle GetComputerNameExA$MH = RuntimeHelper.downcallHandle(
+        "GetComputerNameExA",
+        constants$130.GetComputerNameExA$FUNC
     );
-    static final FunctionDescriptor GetEventLogInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetComputerNameExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetEventLogInformation$MH = RuntimeHelper.downcallHandle(
-        "GetEventLogInformation",
-        constants$130.GetEventLogInformation$FUNC
-    );
-    static final FunctionDescriptor OperationStart$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OperationStart$MH = RuntimeHelper.downcallHandle(
-        "OperationStart",
-        constants$130.OperationStart$FUNC
-    );
-    static final FunctionDescriptor OperationEnd$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OperationEnd$MH = RuntimeHelper.downcallHandle(
-        "OperationEnd",
-        constants$130.OperationEnd$FUNC
-    );
-    static final FunctionDescriptor AccessCheckAndAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AccessCheckAndAuditAlarmA$MH = RuntimeHelper.downcallHandle(
-        "AccessCheckAndAuditAlarmA",
-        constants$130.AccessCheckAndAuditAlarmA$FUNC
+    static final MethodHandle GetComputerNameExW$MH = RuntimeHelper.downcallHandle(
+        "GetComputerNameExW",
+        constants$130.GetComputerNameExW$FUNC
     );
-    static final FunctionDescriptor AccessCheckByTypeAndAuditAlarmA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetComputerNameExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AccessCheckByTypeAndAuditAlarmA$MH = RuntimeHelper.downcallHandle(
-        "AccessCheckByTypeAndAuditAlarmA",
-        constants$130.AccessCheckByTypeAndAuditAlarmA$FUNC
+    static final MethodHandle SetComputerNameExW$MH = RuntimeHelper.downcallHandle(
+        "SetComputerNameExW",
+        constants$130.SetComputerNameExW$FUNC
+    );
+    static final FunctionDescriptor SetSystemTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetSystemTime$MH = RuntimeHelper.downcallHandle(
+        "SetSystemTime",
+        constants$130.SetSystemTime$FUNC
+    );
+    static final FunctionDescriptor GetVersionExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetVersionExA$MH = RuntimeHelper.downcallHandle(
+        "GetVersionExA",
+        constants$130.GetVersionExA$FUNC
+    );
+    static final FunctionDescriptor GetVersionExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetVersionExW$MH = RuntimeHelper.downcallHandle(
+        "GetVersionExW",
+        constants$130.GetVersionExW$FUNC
     );
 }
 

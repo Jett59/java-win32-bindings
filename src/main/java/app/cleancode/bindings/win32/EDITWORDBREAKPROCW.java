@@ -11,13 +11,13 @@ public interface EDITWORDBREAKPROCW {
 
     int apply(java.lang.foreign.MemoryAddress lpch, int ichCurrent, int cch, int code);
     static MemorySegment allocate(EDITWORDBREAKPROCW fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(EDITWORDBREAKPROCW.class, fi, constants$226.EDITWORDBREAKPROCW$FUNC, session);
+        return RuntimeHelper.upcallStub(EDITWORDBREAKPROCW.class, fi, constants$330.EDITWORDBREAKPROCW$FUNC, session);
     }
     static EDITWORDBREAKPROCW ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _lpch, int _ichCurrent, int _cch, int _code) -> {
             try {
-                return (int)constants$227.EDITWORDBREAKPROCW$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_lpch, _ichCurrent, _cch, _code);
+                return (int)constants$330.EDITWORDBREAKPROCW$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_lpch, _ichCurrent, _cch, _code);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

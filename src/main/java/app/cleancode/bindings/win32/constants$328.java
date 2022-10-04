@@ -9,56 +9,29 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$328 {
 
-    static final FunctionDescriptor GetIconInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNDENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetIconInfoExA$MH = RuntimeHelper.downcallHandle(
-        "GetIconInfoExA",
-        constants$328.GetIconInfoExA$FUNC
+    static final MethodHandle WNDENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$328.WNDENUMPROC$FUNC
     );
-    static final FunctionDescriptor GetIconInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor HOOKPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetIconInfoExW$MH = RuntimeHelper.downcallHandle(
-        "GetIconInfoExW",
-        constants$328.GetIconInfoExW$FUNC
+    static final MethodHandle HOOKPROC$MH = RuntimeHelper.downcallHandle(
+        constants$328.HOOKPROC$FUNC
     );
-    static final FunctionDescriptor IsDialogMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IsDialogMessageA$MH = RuntimeHelper.downcallHandle(
-        "IsDialogMessageA",
-        constants$328.IsDialogMessageA$FUNC
-    );
-    static final FunctionDescriptor IsDialogMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IsDialogMessageW$MH = RuntimeHelper.downcallHandle(
-        "IsDialogMessageW",
-        constants$328.IsDialogMessageW$FUNC
-    );
-    static final FunctionDescriptor MapDialogRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle MapDialogRect$MH = RuntimeHelper.downcallHandle(
-        "MapDialogRect",
-        constants$328.MapDialogRect$FUNC
-    );
-    static final FunctionDescriptor DlgDirListA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SENDASYNCPROC$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle DlgDirListA$MH = RuntimeHelper.downcallHandle(
-        "DlgDirListA",
-        constants$328.DlgDirListA$FUNC
+    static final MethodHandle SENDASYNCPROC$MH = RuntimeHelper.downcallHandle(
+        constants$328.SENDASYNCPROC$FUNC
     );
 }
 

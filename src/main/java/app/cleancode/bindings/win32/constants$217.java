@@ -9,53 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$217 {
 
-    static final FunctionDescriptor CreateColorSpaceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDllDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateColorSpaceW$MH = RuntimeHelper.downcallHandle(
-        "CreateColorSpaceW",
-        constants$217.CreateColorSpaceW$FUNC
+    static final MethodHandle GetDllDirectoryA$MH = RuntimeHelper.downcallHandle(
+        "GetDllDirectoryA",
+        constants$217.GetDllDirectoryA$FUNC
     );
-    static final FunctionDescriptor SetColorSpace$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDllDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetColorSpace$MH = RuntimeHelper.downcallHandle(
-        "SetColorSpace",
-        constants$217.SetColorSpace$FUNC
+    static final MethodHandle GetDllDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "GetDllDirectoryW",
+        constants$217.GetDllDirectoryW$FUNC
     );
-    static final FunctionDescriptor DeleteColorSpace$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor SetSearchPathMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeleteColorSpace$MH = RuntimeHelper.downcallHandle(
-        "DeleteColorSpace",
-        constants$217.DeleteColorSpace$FUNC
+    static final MethodHandle SetSearchPathMode$MH = RuntimeHelper.downcallHandle(
+        "SetSearchPathMode",
+        constants$217.SetSearchPathMode$FUNC
     );
-    static final FunctionDescriptor GetICMProfileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetICMProfileA$MH = RuntimeHelper.downcallHandle(
-        "GetICMProfileA",
-        constants$217.GetICMProfileA$FUNC
-    );
-    static final FunctionDescriptor GetICMProfileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDirectoryExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetICMProfileW$MH = RuntimeHelper.downcallHandle(
-        "GetICMProfileW",
-        constants$217.GetICMProfileW$FUNC
+    static final MethodHandle CreateDirectoryExA$MH = RuntimeHelper.downcallHandle(
+        "CreateDirectoryExA",
+        constants$217.CreateDirectoryExA$FUNC
     );
-    static final FunctionDescriptor SetICMProfileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDirectoryExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetICMProfileA$MH = RuntimeHelper.downcallHandle(
-        "SetICMProfileA",
-        constants$217.SetICMProfileA$FUNC
+    static final MethodHandle CreateDirectoryExW$MH = RuntimeHelper.downcallHandle(
+        "CreateDirectoryExW",
+        constants$217.CreateDirectoryExW$FUNC
+    );
+    static final FunctionDescriptor CreateDirectoryTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateDirectoryTransactedA$MH = RuntimeHelper.downcallHandle(
+        "CreateDirectoryTransactedA",
+        constants$217.CreateDirectoryTransactedA$FUNC
     );
 }
 

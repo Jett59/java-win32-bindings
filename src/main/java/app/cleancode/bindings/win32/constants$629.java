@@ -9,12 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$629 {
 
-    static final MemoryAddress X509_ENUMERATED$ADDR = MemoryAddress.ofLong(29L);
-    static final MemoryAddress X509_CHOICE_OF_TIME$ADDR = MemoryAddress.ofLong(30L);
-    static final MemoryAddress X509_AUTHORITY_KEY_ID2$ADDR = MemoryAddress.ofLong(31L);
-    static final MemoryAddress X509_AUTHORITY_INFO_ACCESS$ADDR = MemoryAddress.ofLong(32L);
-    static final MemoryAddress X509_SUBJECT_INFO_ACCESS$ADDR = MemoryAddress.ofLong(32L);
-    static final MemoryAddress X509_CRL_REASON_CODE$ADDR = MemoryAddress.ofLong(29L);
+    static final FunctionDescriptor PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$629.PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$FUNC
+    );
+    static final FunctionDescriptor CertVerifyCertificateChainPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertVerifyCertificateChainPolicy$MH = RuntimeHelper.downcallHandle(
+        "CertVerifyCertificateChainPolicy",
+        constants$629.CertVerifyCertificateChainPolicy$FUNC
+    );
+    static final FunctionDescriptor CryptStringToBinaryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptStringToBinaryA$MH = RuntimeHelper.downcallHandle(
+        "CryptStringToBinaryA",
+        constants$629.CryptStringToBinaryA$FUNC
+    );
+    static final FunctionDescriptor CryptStringToBinaryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptStringToBinaryW$MH = RuntimeHelper.downcallHandle(
+        "CryptStringToBinaryW",
+        constants$629.CryptStringToBinaryW$FUNC
+    );
+    static final FunctionDescriptor CryptBinaryToStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptBinaryToStringA$MH = RuntimeHelper.downcallHandle(
+        "CryptBinaryToStringA",
+        constants$629.CryptBinaryToStringA$FUNC
+    );
+    static final FunctionDescriptor CryptBinaryToStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptBinaryToStringW$MH = RuntimeHelper.downcallHandle(
+        "CryptBinaryToStringW",
+        constants$629.CryptBinaryToStringW$FUNC
+    );
 }
 
 

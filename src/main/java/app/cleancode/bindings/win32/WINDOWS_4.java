@@ -9,6 +9,165 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_4 extends WINDOWS_3 {
 
+    public static int WGL_SWAP_UNDERLAY11() {
+        return (int)67108864L;
+    }
+    public static int WGL_SWAP_UNDERLAY12() {
+        return (int)134217728L;
+    }
+    public static int WGL_SWAP_UNDERLAY13() {
+        return (int)268435456L;
+    }
+    public static int WGL_SWAP_UNDERLAY14() {
+        return (int)536870912L;
+    }
+    public static int WGL_SWAP_UNDERLAY15() {
+        return (int)1073741824L;
+    }
+    public static int WGL_SWAPMULTIPLE_MAX() {
+        return (int)16L;
+    }
+    public static int DIFFERENCE() {
+        return (int)11L;
+    }
+    public static int SB_HORZ() {
+        return (int)0L;
+    }
+    public static int SB_VERT() {
+        return (int)1L;
+    }
+    public static int SB_CTL() {
+        return (int)2L;
+    }
+    public static int SB_BOTH() {
+        return (int)3L;
+    }
+    public static int SB_LINEUP() {
+        return (int)0L;
+    }
+    public static int SB_LINELEFT() {
+        return (int)0L;
+    }
+    public static int SB_LINEDOWN() {
+        return (int)1L;
+    }
+    public static int SB_LINERIGHT() {
+        return (int)1L;
+    }
+    public static int SB_PAGEUP() {
+        return (int)2L;
+    }
+    public static int SB_PAGELEFT() {
+        return (int)2L;
+    }
+    public static int SB_PAGEDOWN() {
+        return (int)3L;
+    }
+    public static int SB_PAGERIGHT() {
+        return (int)3L;
+    }
+    public static int SB_THUMBPOSITION() {
+        return (int)4L;
+    }
+    public static int SB_THUMBTRACK() {
+        return (int)5L;
+    }
+    public static int SB_TOP() {
+        return (int)6L;
+    }
+    public static int SB_LEFT() {
+        return (int)6L;
+    }
+    public static int SB_BOTTOM() {
+        return (int)7L;
+    }
+    public static int SB_RIGHT() {
+        return (int)7L;
+    }
+    public static int SB_ENDSCROLL() {
+        return (int)8L;
+    }
+    public static int SW_HIDE() {
+        return (int)0L;
+    }
+    public static int SW_SHOWNORMAL() {
+        return (int)1L;
+    }
+    public static int SW_NORMAL() {
+        return (int)1L;
+    }
+    public static int SW_SHOWMINIMIZED() {
+        return (int)2L;
+    }
+    public static int SW_SHOWMAXIMIZED() {
+        return (int)3L;
+    }
+    public static int SW_MAXIMIZE() {
+        return (int)3L;
+    }
+    public static int SW_SHOWNOACTIVATE() {
+        return (int)4L;
+    }
+    public static int SW_SHOW() {
+        return (int)5L;
+    }
+    public static int SW_MINIMIZE() {
+        return (int)6L;
+    }
+    public static int SW_SHOWMINNOACTIVE() {
+        return (int)7L;
+    }
+    public static int SW_SHOWNA() {
+        return (int)8L;
+    }
+    public static int SW_RESTORE() {
+        return (int)9L;
+    }
+    public static int SW_SHOWDEFAULT() {
+        return (int)10L;
+    }
+    public static int SW_FORCEMINIMIZE() {
+        return (int)11L;
+    }
+    public static int SW_MAX() {
+        return (int)11L;
+    }
+    public static int HIDE_WINDOW() {
+        return (int)0L;
+    }
+    public static int SHOW_OPENWINDOW() {
+        return (int)1L;
+    }
+    public static int SHOW_ICONWINDOW() {
+        return (int)2L;
+    }
+    public static int SHOW_FULLSCREEN() {
+        return (int)3L;
+    }
+    public static int SHOW_OPENNOACTIVATE() {
+        return (int)4L;
+    }
+    public static int SW_PARENTCLOSING() {
+        return (int)1L;
+    }
+    public static int SW_OTHERZOOM() {
+        return (int)2L;
+    }
+    public static int SW_PARENTOPENING() {
+        return (int)3L;
+    }
+    public static int SW_OTHERUNZOOM() {
+        return (int)4L;
+    }
+    public static int AW_HOR_POSITIVE() {
+        return (int)1L;
+    }
+    public static int AW_HOR_NEGATIVE() {
+        return (int)2L;
+    }
+    public static int AW_VER_POSITIVE() {
+        return (int)4L;
+    }
     public static int AW_VER_NEGATIVE() {
         return (int)8L;
     }
@@ -2849,165 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int TOUCHINPUTMASKF_TIMEFROMSYSTEM() {
         return (int)1L;
-    }
-    public static int TOUCHINPUTMASKF_EXTRAINFO() {
-        return (int)2L;
-    }
-    public static int TOUCHINPUTMASKF_CONTACTAREA() {
-        return (int)4L;
-    }
-    public static int POINTER_FLAG_NONE() {
-        return (int)0L;
-    }
-    public static int POINTER_FLAG_NEW() {
-        return (int)1L;
-    }
-    public static int POINTER_FLAG_INRANGE() {
-        return (int)2L;
-    }
-    public static int POINTER_FLAG_INCONTACT() {
-        return (int)4L;
-    }
-    public static int POINTER_FLAG_FIRSTBUTTON() {
-        return (int)16L;
-    }
-    public static int POINTER_FLAG_SECONDBUTTON() {
-        return (int)32L;
-    }
-    public static int POINTER_FLAG_THIRDBUTTON() {
-        return (int)64L;
-    }
-    public static int POINTER_FLAG_FOURTHBUTTON() {
-        return (int)128L;
-    }
-    public static int POINTER_FLAG_FIFTHBUTTON() {
-        return (int)256L;
-    }
-    public static int POINTER_FLAG_PRIMARY() {
-        return (int)8192L;
-    }
-    public static int POINTER_FLAG_CONFIDENCE() {
-        return (int)16384L;
-    }
-    public static int POINTER_FLAG_CANCELED() {
-        return (int)32768L;
-    }
-    public static int POINTER_FLAG_DOWN() {
-        return (int)65536L;
-    }
-    public static int POINTER_FLAG_UPDATE() {
-        return (int)131072L;
-    }
-    public static int POINTER_FLAG_UP() {
-        return (int)262144L;
-    }
-    public static int POINTER_FLAG_WHEEL() {
-        return (int)524288L;
-    }
-    public static int POINTER_FLAG_HWHEEL() {
-        return (int)1048576L;
-    }
-    public static int POINTER_FLAG_CAPTURECHANGED() {
-        return (int)2097152L;
-    }
-    public static int POINTER_FLAG_HASTRANSFORM() {
-        return (int)4194304L;
-    }
-    public static int TOUCH_FLAG_NONE() {
-        return (int)0L;
-    }
-    public static int TOUCH_MASK_NONE() {
-        return (int)0L;
-    }
-    public static int TOUCH_MASK_CONTACTAREA() {
-        return (int)1L;
-    }
-    public static int TOUCH_MASK_ORIENTATION() {
-        return (int)2L;
-    }
-    public static int TOUCH_MASK_PRESSURE() {
-        return (int)4L;
-    }
-    public static int PEN_FLAG_NONE() {
-        return (int)0L;
-    }
-    public static int PEN_FLAG_BARREL() {
-        return (int)1L;
-    }
-    public static int PEN_FLAG_INVERTED() {
-        return (int)2L;
-    }
-    public static int PEN_FLAG_ERASER() {
-        return (int)4L;
-    }
-    public static int PEN_MASK_NONE() {
-        return (int)0L;
-    }
-    public static int PEN_MASK_PRESSURE() {
-        return (int)1L;
-    }
-    public static int PEN_MASK_ROTATION() {
-        return (int)2L;
-    }
-    public static int PEN_MASK_TILT_X() {
-        return (int)4L;
-    }
-    public static int PEN_MASK_TILT_Y() {
-        return (int)8L;
-    }
-    public static int POINTER_MESSAGE_FLAG_NEW() {
-        return (int)1L;
-    }
-    public static int POINTER_MESSAGE_FLAG_INRANGE() {
-        return (int)2L;
-    }
-    public static int POINTER_MESSAGE_FLAG_INCONTACT() {
-        return (int)4L;
-    }
-    public static int POINTER_MESSAGE_FLAG_FIRSTBUTTON() {
-        return (int)16L;
-    }
-    public static int POINTER_MESSAGE_FLAG_SECONDBUTTON() {
-        return (int)32L;
-    }
-    public static int POINTER_MESSAGE_FLAG_THIRDBUTTON() {
-        return (int)64L;
-    }
-    public static int POINTER_MESSAGE_FLAG_FOURTHBUTTON() {
-        return (int)128L;
-    }
-    public static int POINTER_MESSAGE_FLAG_FIFTHBUTTON() {
-        return (int)256L;
-    }
-    public static int POINTER_MESSAGE_FLAG_PRIMARY() {
-        return (int)8192L;
-    }
-    public static int POINTER_MESSAGE_FLAG_CONFIDENCE() {
-        return (int)16384L;
-    }
-    public static int POINTER_MESSAGE_FLAG_CANCELED() {
-        return (int)32768L;
-    }
-    public static int MAX_TOUCH_COUNT() {
-        return (int)256L;
-    }
-    public static int TOUCH_FEEDBACK_DEFAULT() {
-        return (int)1L;
-    }
-    public static int TOUCH_FEEDBACK_INDIRECT() {
-        return (int)2L;
-    }
-    public static int TOUCH_FEEDBACK_NONE() {
-        return (int)3L;
-    }
-    public static int TOUCH_HIT_TESTING_DEFAULT() {
-        return (int)0L;
-    }
-    public static int TOUCH_HIT_TESTING_CLIENT() {
-        return (int)1L;
-    }
-    public static int TOUCH_HIT_TESTING_NONE() {
-        return (int)2L;
     }
 }
 

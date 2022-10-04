@@ -11,13 +11,13 @@ public interface LPOCNDSCPROC {
 
     void apply(long _x0, long _x1, java.lang.foreign.MemoryAddress _x2);
     static MemorySegment allocate(LPOCNDSCPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(LPOCNDSCPROC.class, fi, constants$503.LPOCNDSCPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(LPOCNDSCPROC.class, fi, constants$656.LPOCNDSCPROC$FUNC, session);
     }
     static LPOCNDSCPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (long __x0, long __x1, java.lang.foreign.MemoryAddress __x2) -> {
             try {
-                constants$503.LPOCNDSCPROC$MH.invokeExact((Addressable)symbol, __x0, __x1, (java.lang.foreign.Addressable)__x2);
+                constants$657.LPOCNDSCPROC$MH.invokeExact((Addressable)symbol, __x0, __x1, (java.lang.foreign.Addressable)__x2);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,30 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$230 {
 
-    static final FunctionDescriptor WINSTAENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenEventLogW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WINSTAENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$230.WINSTAENUMPROCW$FUNC
+    static final MethodHandle OpenEventLogW$MH = RuntimeHelper.downcallHandle(
+        "OpenEventLogW",
+        constants$230.OpenEventLogW$FUNC
     );
-    static final FunctionDescriptor DESKTOPENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RegisterEventSourceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DESKTOPENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$230.DESKTOPENUMPROCW$FUNC
+    static final MethodHandle RegisterEventSourceA$MH = RuntimeHelper.downcallHandle(
+        "RegisterEventSourceA",
+        constants$230.RegisterEventSourceA$FUNC
     );
-    static final FunctionDescriptor WINSTAENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RegisterEventSourceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WINSTAENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$230.WINSTAENUMPROC$FUNC
+    static final MethodHandle RegisterEventSourceW$MH = RuntimeHelper.downcallHandle(
+        "RegisterEventSourceW",
+        constants$230.RegisterEventSourceW$FUNC
     );
-    static final FunctionDescriptor DESKTOPENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenBackupEventLogA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenBackupEventLogA$MH = RuntimeHelper.downcallHandle(
+        "OpenBackupEventLogA",
+        constants$230.OpenBackupEventLogA$FUNC
+    );
+    static final FunctionDescriptor OpenBackupEventLogW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenBackupEventLogW$MH = RuntimeHelper.downcallHandle(
+        "OpenBackupEventLogW",
+        constants$230.OpenBackupEventLogW$FUNC
+    );
+    static final FunctionDescriptor ReadEventLogA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReadEventLogA$MH = RuntimeHelper.downcallHandle(
+        "ReadEventLogA",
+        constants$230.ReadEventLogA$FUNC
     );
 }
 

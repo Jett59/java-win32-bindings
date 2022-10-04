@@ -9,60 +9,83 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$507 {
 
-    static final FunctionDescriptor EnumPrintersW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetGetConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumPrintersW$MH = RuntimeHelper.downcallHandle(
-        "EnumPrintersW",
-        constants$507.EnumPrintersW$FUNC
+    static final MethodHandle WNetGetConnectionW$MH = RuntimeHelper.downcallHandle(
+        "WNetGetConnectionW",
+        constants$507.WNetGetConnectionW$FUNC
     );
-    static final FunctionDescriptor GetSpoolFileHandle$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetSpoolFileHandle$MH = RuntimeHelper.downcallHandle(
-        "GetSpoolFileHandle",
-        constants$507.GetSpoolFileHandle$FUNC
-    );
-    static final FunctionDescriptor CommitSpoolData$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor WNetRestoreSingleConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CommitSpoolData$MH = RuntimeHelper.downcallHandle(
-        "CommitSpoolData",
-        constants$507.CommitSpoolData$FUNC
+    static final MethodHandle WNetRestoreSingleConnectionW$MH = RuntimeHelper.downcallHandle(
+        "WNetRestoreSingleConnectionW",
+        constants$507.WNetRestoreSingleConnectionW$FUNC
     );
-    static final FunctionDescriptor CloseSpoolFileHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetUseConnectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CloseSpoolFileHandle$MH = RuntimeHelper.downcallHandle(
-        "CloseSpoolFileHandle",
-        constants$507.CloseSpoolFileHandle$FUNC
-    );
-    static final FunctionDescriptor OpenPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle OpenPrinterA$MH = RuntimeHelper.downcallHandle(
-        "OpenPrinterA",
-        constants$507.OpenPrinterA$FUNC
+    static final MethodHandle WNetUseConnectionA$MH = RuntimeHelper.downcallHandle(
+        "WNetUseConnectionA",
+        constants$507.WNetUseConnectionA$FUNC
     );
-    static final FunctionDescriptor OpenPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetUseConnectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle OpenPrinterW$MH = RuntimeHelper.downcallHandle(
-        "OpenPrinterW",
-        constants$507.OpenPrinterW$FUNC
+    static final MethodHandle WNetUseConnectionW$MH = RuntimeHelper.downcallHandle(
+        "WNetUseConnectionW",
+        constants$507.WNetUseConnectionW$FUNC
+    );
+    static final FunctionDescriptor WNetUseConnection4A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetUseConnection4A$MH = RuntimeHelper.downcallHandle(
+        "WNetUseConnection4A",
+        constants$507.WNetUseConnection4A$FUNC
+    );
+    static final FunctionDescriptor WNetUseConnection4W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetUseConnection4W$MH = RuntimeHelper.downcallHandle(
+        "WNetUseConnection4W",
+        constants$507.WNetUseConnection4W$FUNC
     );
 }
 

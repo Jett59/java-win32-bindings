@@ -9,12 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$635 {
 
-    static final MemoryAddress CMC_DATA$ADDR = MemoryAddress.ofLong(59L);
-    static final MemoryAddress CMC_RESPONSE$ADDR = MemoryAddress.ofLong(60L);
-    static final MemoryAddress CMC_STATUS$ADDR = MemoryAddress.ofLong(61L);
-    static final MemoryAddress CMC_ADD_EXTENSIONS$ADDR = MemoryAddress.ofLong(62L);
-    static final MemoryAddress CMC_ADD_ATTRIBUTES$ADDR = MemoryAddress.ofLong(63L);
-    static final MemoryAddress X509_CERTIFICATE_TEMPLATE$ADDR = MemoryAddress.ofLong(64L);
+    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_INITIALIZE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_INITIALIZE$MH = RuntimeHelper.downcallHandle(
+        constants$635.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_INITIALIZE$FUNC
+    );
+    static final FunctionDescriptor CertIsWeakHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertIsWeakHash$MH = RuntimeHelper.downcallHandle(
+        "CertIsWeakHash",
+        constants$635.CertIsWeakHash$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_IS_WEAK_HASH$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_IS_WEAK_HASH$MH = RuntimeHelper.downcallHandle(
+        constants$635.PFN_CERT_IS_WEAK_HASH$FUNC
+    );
+    static final FunctionDescriptor CryptProtectData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptProtectData$MH = RuntimeHelper.downcallHandle(
+        "CryptProtectData",
+        constants$635.CryptProtectData$FUNC
+    );
 }
 
 

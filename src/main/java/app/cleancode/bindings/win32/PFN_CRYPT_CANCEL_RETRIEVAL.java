@@ -11,13 +11,13 @@ public interface PFN_CRYPT_CANCEL_RETRIEVAL {
 
     int apply(int dwFlags, java.lang.foreign.MemoryAddress pvArg);
     static MemorySegment allocate(PFN_CRYPT_CANCEL_RETRIEVAL fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_CANCEL_RETRIEVAL.class, fi, constants$472.PFN_CRYPT_CANCEL_RETRIEVAL$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_CANCEL_RETRIEVAL.class, fi, constants$624.PFN_CRYPT_CANCEL_RETRIEVAL$FUNC, session);
     }
     static PFN_CRYPT_CANCEL_RETRIEVAL ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int _dwFlags, java.lang.foreign.MemoryAddress _pvArg) -> {
             try {
-                return (int)constants$472.PFN_CRYPT_CANCEL_RETRIEVAL$MH.invokeExact((Addressable)symbol, _dwFlags, (java.lang.foreign.Addressable)_pvArg);
+                return (int)constants$624.PFN_CRYPT_CANCEL_RETRIEVAL$MH.invokeExact((Addressable)symbol, _dwFlags, (java.lang.foreign.Addressable)_pvArg);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -11,13 +11,13 @@ public interface LPFNDEVMODE {
 
     int apply(java.lang.foreign.MemoryAddress _x0, java.lang.foreign.MemoryAddress _x1, java.lang.foreign.MemoryAddress _x2, java.lang.foreign.MemoryAddress _x3, java.lang.foreign.MemoryAddress _x4, java.lang.foreign.MemoryAddress _x5, java.lang.foreign.MemoryAddress _x6, int _x7);
     static MemorySegment allocate(LPFNDEVMODE fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(LPFNDEVMODE.class, fi, constants$168.LPFNDEVMODE$FUNC, session);
+        return RuntimeHelper.upcallStub(LPFNDEVMODE.class, fi, constants$271.LPFNDEVMODE$FUNC, session);
     }
     static LPFNDEVMODE ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, java.lang.foreign.MemoryAddress __x1, java.lang.foreign.MemoryAddress __x2, java.lang.foreign.MemoryAddress __x3, java.lang.foreign.MemoryAddress __x4, java.lang.foreign.MemoryAddress __x5, java.lang.foreign.MemoryAddress __x6, int __x7) -> {
             try {
-                return (int)constants$168.LPFNDEVMODE$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, (java.lang.foreign.Addressable)__x3, (java.lang.foreign.Addressable)__x4, (java.lang.foreign.Addressable)__x5, (java.lang.foreign.Addressable)__x6, __x7);
+                return (int)constants$272.LPFNDEVMODE$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, (java.lang.foreign.Addressable)__x3, (java.lang.foreign.Addressable)__x4, (java.lang.foreign.Addressable)__x5, (java.lang.foreign.Addressable)__x6, __x7);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

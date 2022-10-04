@@ -9,47 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$271 {
 
-    static final FunctionDescriptor GetKBCodePage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetKBCodePage$MH = RuntimeHelper.downcallHandle(
-        "GetKBCodePage",
-        constants$271.GetKBCodePage$FUNC
-    );
-    static final FunctionDescriptor GetKeyState$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor CreateSolidBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetKeyState$MH = RuntimeHelper.downcallHandle(
-        "GetKeyState",
-        constants$271.GetKeyState$FUNC
+    static final MethodHandle CreateSolidBrush$MH = RuntimeHelper.downcallHandle(
+        "CreateSolidBrush",
+        constants$271.CreateSolidBrush$FUNC
     );
-    static final FunctionDescriptor GetAsyncKeyState$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetAsyncKeyState$MH = RuntimeHelper.downcallHandle(
-        "GetAsyncKeyState",
-        constants$271.GetAsyncKeyState$FUNC
-    );
-    static final FunctionDescriptor GetKeyboardState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeleteDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetKeyboardState$MH = RuntimeHelper.downcallHandle(
-        "GetKeyboardState",
-        constants$271.GetKeyboardState$FUNC
+    static final MethodHandle DeleteDC$MH = RuntimeHelper.downcallHandle(
+        "DeleteDC",
+        constants$271.DeleteDC$FUNC
     );
-    static final FunctionDescriptor SetKeyboardState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeleteMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetKeyboardState$MH = RuntimeHelper.downcallHandle(
-        "SetKeyboardState",
-        constants$271.SetKeyboardState$FUNC
+    static final MethodHandle DeleteMetaFile$MH = RuntimeHelper.downcallHandle(
+        "DeleteMetaFile",
+        constants$271.DeleteMetaFile$FUNC
     );
-    static final FunctionDescriptor GetKeyNameTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeleteObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteObject$MH = RuntimeHelper.downcallHandle(
+        "DeleteObject",
+        constants$271.DeleteObject$FUNC
+    );
+    static final FunctionDescriptor DescribePixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DescribePixelFormat$MH = RuntimeHelper.downcallHandle(
+        "DescribePixelFormat",
+        constants$271.DescribePixelFormat$FUNC
+    );
+    static final FunctionDescriptor LPFNDEVMODE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetKeyNameTextA$MH = RuntimeHelper.downcallHandle(
-        "GetKeyNameTextA",
-        constants$271.GetKeyNameTextA$FUNC
     );
 }
 

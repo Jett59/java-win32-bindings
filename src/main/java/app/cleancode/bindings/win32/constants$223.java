@@ -9,37 +9,46 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$223 {
 
-    static final FunctionDescriptor WNDPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor PCOPYFILE2_PROGRESS_ROUTINE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNDPROC$MH = RuntimeHelper.downcallHandle(
-        constants$223.WNDPROC$FUNC
+    static final MethodHandle PCOPYFILE2_PROGRESS_ROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$223.PCOPYFILE2_PROGRESS_ROUTINE$FUNC
     );
-    static final FunctionDescriptor DLGPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor CopyFile2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle DLGPROC$MH = RuntimeHelper.downcallHandle(
-        constants$223.DLGPROC$FUNC
-    );
-    static final FunctionDescriptor TIMERPROC$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CopyFile2$MH = RuntimeHelper.downcallHandle(
+        "CopyFile2",
+        constants$223.CopyFile2$FUNC
+    );
+    static final FunctionDescriptor MoveFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MoveFileA$MH = RuntimeHelper.downcallHandle(
+        "MoveFileA",
+        constants$223.MoveFileA$FUNC
+    );
+    static final FunctionDescriptor MoveFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MoveFileW$MH = RuntimeHelper.downcallHandle(
+        "MoveFileW",
+        constants$223.MoveFileW$FUNC
+    );
+    static final FunctionDescriptor MoveFileExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle TIMERPROC$MH = RuntimeHelper.downcallHandle(
-        constants$223.TIMERPROC$FUNC
-    );
-    static final FunctionDescriptor GRAYSTRINGPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final MethodHandle MoveFileExA$MH = RuntimeHelper.downcallHandle(
+        "MoveFileExA",
+        constants$223.MoveFileExA$FUNC
     );
 }
 

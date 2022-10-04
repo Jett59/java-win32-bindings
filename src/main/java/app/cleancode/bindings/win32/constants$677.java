@@ -9,12 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$677 {
 
-    static final MemorySegment szOID_CMC_IDENTIFICATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.2");
-    static final MemorySegment szOID_CMC_IDENTITY_PROOF$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.3");
-    static final MemorySegment szOID_CMC_DATA_RETURN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.4");
-    static final MemorySegment szOID_CMC_TRANSACTION_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.5");
-    static final MemorySegment szOID_CMC_SENDER_NONCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.6");
-    static final MemorySegment szOID_CMC_RECIPIENT_NONCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.7");
+    static final FunctionDescriptor EnumFormsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumFormsW$MH = RuntimeHelper.downcallHandle(
+        "EnumFormsW",
+        constants$677.EnumFormsW$FUNC
+    );
+    static final FunctionDescriptor EnumMonitorsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumMonitorsA$MH = RuntimeHelper.downcallHandle(
+        "EnumMonitorsA",
+        constants$677.EnumMonitorsA$FUNC
+    );
+    static final FunctionDescriptor EnumMonitorsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumMonitorsW$MH = RuntimeHelper.downcallHandle(
+        "EnumMonitorsW",
+        constants$677.EnumMonitorsW$FUNC
+    );
+    static final FunctionDescriptor AddMonitorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddMonitorA$MH = RuntimeHelper.downcallHandle(
+        "AddMonitorA",
+        constants$677.AddMonitorA$FUNC
+    );
+    static final FunctionDescriptor AddMonitorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AddMonitorW$MH = RuntimeHelper.downcallHandle(
+        "AddMonitorW",
+        constants$677.AddMonitorW$FUNC
+    );
+    static final FunctionDescriptor DeleteMonitorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteMonitorA$MH = RuntimeHelper.downcallHandle(
+        "DeleteMonitorA",
+        constants$677.DeleteMonitorA$FUNC
+    );
 }
 
 

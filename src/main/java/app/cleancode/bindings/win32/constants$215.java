@@ -9,31 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$215 {
 
-    static final FunctionDescriptor GdiSetBatchLimit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GdiSetBatchLimit$MH = RuntimeHelper.downcallHandle(
-        "GdiSetBatchLimit",
-        constants$215.GdiSetBatchLimit$FUNC
-    );
-    static final FunctionDescriptor GdiGetBatchLimit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GdiGetBatchLimit$MH = RuntimeHelper.downcallHandle(
-        "GdiGetBatchLimit",
-        constants$215.GdiGetBatchLimit$FUNC
-    );
-    static final FunctionDescriptor ICMENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPrivateProfileSectionNamesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ICMENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$215.ICMENUMPROCA$FUNC
+    static final MethodHandle GetPrivateProfileSectionNamesW$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileSectionNamesW",
+        constants$215.GetPrivateProfileSectionNamesW$FUNC
     );
-    static final FunctionDescriptor ICMENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPrivateProfileStructA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ICMENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$215.ICMENUMPROCW$FUNC
+    static final MethodHandle GetPrivateProfileStructA$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileStructA",
+        constants$215.GetPrivateProfileStructA$FUNC
+    );
+    static final FunctionDescriptor GetPrivateProfileStructW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPrivateProfileStructW$MH = RuntimeHelper.downcallHandle(
+        "GetPrivateProfileStructW",
+        constants$215.GetPrivateProfileStructW$FUNC
+    );
+    static final FunctionDescriptor WritePrivateProfileStructA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WritePrivateProfileStructA$MH = RuntimeHelper.downcallHandle(
+        "WritePrivateProfileStructA",
+        constants$215.WritePrivateProfileStructA$FUNC
+    );
+    static final FunctionDescriptor WritePrivateProfileStructW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WritePrivateProfileStructW$MH = RuntimeHelper.downcallHandle(
+        "WritePrivateProfileStructW",
+        constants$215.WritePrivateProfileStructW$FUNC
+    );
+    static final FunctionDescriptor Wow64EnableWow64FsRedirection$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
+    );
+    static final MethodHandle Wow64EnableWow64FsRedirection$MH = RuntimeHelper.downcallHandle(
+        "Wow64EnableWow64FsRedirection",
+        constants$215.Wow64EnableWow64FsRedirection$FUNC
     );
 }
 

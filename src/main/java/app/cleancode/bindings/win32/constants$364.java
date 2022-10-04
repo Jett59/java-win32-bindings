@@ -9,59 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$364 {
 
-    static final FunctionDescriptor EnumDateFormatsExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumDateFormatsExA$MH = RuntimeHelper.downcallHandle(
-        "EnumDateFormatsExA",
-        constants$364.EnumDateFormatsExA$FUNC
-    );
-    static final FunctionDescriptor EnumDateFormatsExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumDateFormatsExW$MH = RuntimeHelper.downcallHandle(
-        "EnumDateFormatsExW",
-        constants$364.EnumDateFormatsExW$FUNC
-    );
-    static final FunctionDescriptor IsValidLanguageGroup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle IsValidLanguageGroup$MH = RuntimeHelper.downcallHandle(
-        "IsValidLanguageGroup",
-        constants$364.IsValidLanguageGroup$FUNC
-    );
-    static final FunctionDescriptor GetNLSVersion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDlgCtrlID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetNLSVersion$MH = RuntimeHelper.downcallHandle(
-        "GetNLSVersion",
-        constants$364.GetNLSVersion$FUNC
+    static final MethodHandle GetDlgCtrlID$MH = RuntimeHelper.downcallHandle(
+        "GetDlgCtrlID",
+        constants$364.GetDlgCtrlID$FUNC
     );
-    static final FunctionDescriptor IsValidLocale$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDialogBaseUnits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetDialogBaseUnits$MH = RuntimeHelper.downcallHandle(
+        "GetDialogBaseUnits",
+        constants$364.GetDialogBaseUnits$FUNC
+    );
+    static final FunctionDescriptor DefDlgProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DefDlgProcA$MH = RuntimeHelper.downcallHandle(
+        "DefDlgProcA",
+        constants$364.DefDlgProcA$FUNC
+    );
+    static final FunctionDescriptor DefDlgProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DefDlgProcW$MH = RuntimeHelper.downcallHandle(
+        "DefDlgProcW",
+        constants$364.DefDlgProcW$FUNC
+    );
+    static final FunctionDescriptor SetDialogControlDpiChangeBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle IsValidLocale$MH = RuntimeHelper.downcallHandle(
-        "IsValidLocale",
-        constants$364.IsValidLocale$FUNC
+    static final MethodHandle SetDialogControlDpiChangeBehavior$MH = RuntimeHelper.downcallHandle(
+        "SetDialogControlDpiChangeBehavior",
+        constants$364.SetDialogControlDpiChangeBehavior$FUNC
     );
-    static final FunctionDescriptor GetGeoInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
+    static final FunctionDescriptor GetDialogControlDpiChangeBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetGeoInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetGeoInfoA",
-        constants$364.GetGeoInfoA$FUNC
+    static final MethodHandle GetDialogControlDpiChangeBehavior$MH = RuntimeHelper.downcallHandle(
+        "GetDialogControlDpiChangeBehavior",
+        constants$364.GetDialogControlDpiChangeBehavior$FUNC
     );
 }
 

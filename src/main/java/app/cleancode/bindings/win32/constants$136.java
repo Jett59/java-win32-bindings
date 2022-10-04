@@ -9,63 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$136 {
 
-    static final FunctionDescriptor LookupPrivilegeNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OpenFileMappingW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LookupPrivilegeNameA$MH = RuntimeHelper.downcallHandle(
-        "LookupPrivilegeNameA",
-        constants$136.LookupPrivilegeNameA$FUNC
+    static final MethodHandle OpenFileMappingW$MH = RuntimeHelper.downcallHandle(
+        "OpenFileMappingW",
+        constants$136.OpenFileMappingW$FUNC
     );
-    static final FunctionDescriptor LookupPrivilegeNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MapViewOfFile$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle MapViewOfFile$MH = RuntimeHelper.downcallHandle(
+        "MapViewOfFile",
+        constants$136.MapViewOfFile$FUNC
+    );
+    static final FunctionDescriptor MapViewOfFileEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LookupPrivilegeNameW$MH = RuntimeHelper.downcallHandle(
-        "LookupPrivilegeNameW",
-        constants$136.LookupPrivilegeNameW$FUNC
+    static final MethodHandle MapViewOfFileEx$MH = RuntimeHelper.downcallHandle(
+        "MapViewOfFileEx",
+        constants$136.MapViewOfFileEx$FUNC
     );
-    static final FunctionDescriptor LookupPrivilegeDisplayNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor VirtualFreeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualFreeEx$MH = RuntimeHelper.downcallHandle(
+        "VirtualFreeEx",
+        constants$136.VirtualFreeEx$FUNC
+    );
+    static final FunctionDescriptor FlushViewOfFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle FlushViewOfFile$MH = RuntimeHelper.downcallHandle(
+        "FlushViewOfFile",
+        constants$136.FlushViewOfFile$FUNC
+    );
+    static final FunctionDescriptor UnmapViewOfFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LookupPrivilegeDisplayNameA$MH = RuntimeHelper.downcallHandle(
-        "LookupPrivilegeDisplayNameA",
-        constants$136.LookupPrivilegeDisplayNameA$FUNC
-    );
-    static final FunctionDescriptor LookupPrivilegeDisplayNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LookupPrivilegeDisplayNameW$MH = RuntimeHelper.downcallHandle(
-        "LookupPrivilegeDisplayNameW",
-        constants$136.LookupPrivilegeDisplayNameW$FUNC
-    );
-    static final FunctionDescriptor BuildCommDCBA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle BuildCommDCBA$MH = RuntimeHelper.downcallHandle(
-        "BuildCommDCBA",
-        constants$136.BuildCommDCBA$FUNC
-    );
-    static final FunctionDescriptor BuildCommDCBW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle BuildCommDCBW$MH = RuntimeHelper.downcallHandle(
-        "BuildCommDCBW",
-        constants$136.BuildCommDCBW$FUNC
+    static final MethodHandle UnmapViewOfFile$MH = RuntimeHelper.downcallHandle(
+        "UnmapViewOfFile",
+        constants$136.UnmapViewOfFile$FUNC
     );
 }
 

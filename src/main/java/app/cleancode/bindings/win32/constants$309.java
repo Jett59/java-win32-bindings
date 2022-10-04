@@ -9,46 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$309 {
 
-    static final FunctionDescriptor CreateCaret$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateCaret$MH = RuntimeHelper.downcallHandle(
-        "CreateCaret",
-        constants$309.CreateCaret$FUNC
-    );
-    static final FunctionDescriptor GetCaretBlinkTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetCaretBlinkTime$MH = RuntimeHelper.downcallHandle(
-        "GetCaretBlinkTime",
-        constants$309.GetCaretBlinkTime$FUNC
-    );
-    static final FunctionDescriptor SetCaretBlinkTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetCaretBlinkTime$MH = RuntimeHelper.downcallHandle(
-        "SetCaretBlinkTime",
-        constants$309.SetCaretBlinkTime$FUNC
-    );
-    static final FunctionDescriptor DestroyCaret$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle DestroyCaret$MH = RuntimeHelper.downcallHandle(
-        "DestroyCaret",
-        constants$309.DestroyCaret$FUNC
-    );
-    static final FunctionDescriptor HideCaret$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EndDoc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle HideCaret$MH = RuntimeHelper.downcallHandle(
-        "HideCaret",
-        constants$309.HideCaret$FUNC
+    static final MethodHandle EndDoc$MH = RuntimeHelper.downcallHandle(
+        "EndDoc",
+        constants$309.EndDoc$FUNC
     );
-    static final FunctionDescriptor ShowCaret$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor StartPage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ShowCaret$MH = RuntimeHelper.downcallHandle(
-        "ShowCaret",
-        constants$309.ShowCaret$FUNC
+    static final MethodHandle StartPage$MH = RuntimeHelper.downcallHandle(
+        "StartPage",
+        constants$309.StartPage$FUNC
+    );
+    static final FunctionDescriptor EndPage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EndPage$MH = RuntimeHelper.downcallHandle(
+        "EndPage",
+        constants$309.EndPage$FUNC
+    );
+    static final FunctionDescriptor AbortDoc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AbortDoc$MH = RuntimeHelper.downcallHandle(
+        "AbortDoc",
+        constants$309.AbortDoc$FUNC
+    );
+    static final FunctionDescriptor SetAbortProc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetAbortProc$MH = RuntimeHelper.downcallHandle(
+        "SetAbortProc",
+        constants$309.SetAbortProc$FUNC
+    );
+    static final FunctionDescriptor AbortPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AbortPath$MH = RuntimeHelper.downcallHandle(
+        "AbortPath",
+        constants$309.AbortPath$FUNC
     );
 }
 

@@ -9,55 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$324 {
 
-    static final FunctionDescriptor LoadCursorA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor wglGetCurrentContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle wglGetCurrentContext$MH = RuntimeHelper.downcallHandle(
+        "wglGetCurrentContext",
+        constants$324.wglGetCurrentContext$FUNC
+    );
+    static final FunctionDescriptor wglGetCurrentDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle wglGetCurrentDC$MH = RuntimeHelper.downcallHandle(
+        "wglGetCurrentDC",
+        constants$324.wglGetCurrentDC$FUNC
+    );
+    static final FunctionDescriptor wglGetProcAddress$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wglGetProcAddress$MH = RuntimeHelper.downcallHandle(
+        "wglGetProcAddress",
+        constants$324.wglGetProcAddress$FUNC
+    );
+    static final FunctionDescriptor wglMakeCurrent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadCursorA$MH = RuntimeHelper.downcallHandle(
-        "LoadCursorA",
-        constants$324.LoadCursorA$FUNC
+    static final MethodHandle wglMakeCurrent$MH = RuntimeHelper.downcallHandle(
+        "wglMakeCurrent",
+        constants$324.wglMakeCurrent$FUNC
     );
-    static final FunctionDescriptor LoadCursorW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor wglShareLists$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadCursorW$MH = RuntimeHelper.downcallHandle(
-        "LoadCursorW",
-        constants$324.LoadCursorW$FUNC
+    static final MethodHandle wglShareLists$MH = RuntimeHelper.downcallHandle(
+        "wglShareLists",
+        constants$324.wglShareLists$FUNC
     );
-    static final FunctionDescriptor LoadCursorFromFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LoadCursorFromFileA$MH = RuntimeHelper.downcallHandle(
-        "LoadCursorFromFileA",
-        constants$324.LoadCursorFromFileA$FUNC
-    );
-    static final FunctionDescriptor LoadCursorFromFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LoadCursorFromFileW$MH = RuntimeHelper.downcallHandle(
-        "LoadCursorFromFileW",
-        constants$324.LoadCursorFromFileW$FUNC
-    );
-    static final FunctionDescriptor CreateCursor$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor wglUseFontBitmapsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateCursor$MH = RuntimeHelper.downcallHandle(
-        "CreateCursor",
-        constants$324.CreateCursor$FUNC
-    );
-    static final FunctionDescriptor DestroyCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DestroyCursor$MH = RuntimeHelper.downcallHandle(
-        "DestroyCursor",
-        constants$324.DestroyCursor$FUNC
+    static final MethodHandle wglUseFontBitmapsA$MH = RuntimeHelper.downcallHandle(
+        "wglUseFontBitmapsA",
+        constants$324.wglUseFontBitmapsA$FUNC
     );
 }
 

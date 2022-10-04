@@ -9,61 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$363 {
 
-    static final FunctionDescriptor EnumCalendarInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CheckRadioButton$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumCalendarInfoExA$MH = RuntimeHelper.downcallHandle(
-        "EnumCalendarInfoExA",
-        constants$363.EnumCalendarInfoExA$FUNC
+    static final MethodHandle CheckRadioButton$MH = RuntimeHelper.downcallHandle(
+        "CheckRadioButton",
+        constants$363.CheckRadioButton$FUNC
     );
-    static final FunctionDescriptor EnumCalendarInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsDlgButtonChecked$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle IsDlgButtonChecked$MH = RuntimeHelper.downcallHandle(
+        "IsDlgButtonChecked",
+        constants$363.IsDlgButtonChecked$FUNC
+    );
+    static final FunctionDescriptor SendDlgItemMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EnumCalendarInfoExW$MH = RuntimeHelper.downcallHandle(
-        "EnumCalendarInfoExW",
-        constants$363.EnumCalendarInfoExW$FUNC
+    static final MethodHandle SendDlgItemMessageA$MH = RuntimeHelper.downcallHandle(
+        "SendDlgItemMessageA",
+        constants$363.SendDlgItemMessageA$FUNC
     );
-    static final FunctionDescriptor EnumTimeFormatsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SendDlgItemMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumTimeFormatsA$MH = RuntimeHelper.downcallHandle(
-        "EnumTimeFormatsA",
-        constants$363.EnumTimeFormatsA$FUNC
-    );
-    static final FunctionDescriptor EnumTimeFormatsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EnumTimeFormatsW$MH = RuntimeHelper.downcallHandle(
-        "EnumTimeFormatsW",
-        constants$363.EnumTimeFormatsW$FUNC
+    static final MethodHandle SendDlgItemMessageW$MH = RuntimeHelper.downcallHandle(
+        "SendDlgItemMessageW",
+        constants$363.SendDlgItemMessageW$FUNC
     );
-    static final FunctionDescriptor EnumDateFormatsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetNextDlgGroupItem$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumDateFormatsA$MH = RuntimeHelper.downcallHandle(
-        "EnumDateFormatsA",
-        constants$363.EnumDateFormatsA$FUNC
-    );
-    static final FunctionDescriptor EnumDateFormatsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumDateFormatsW$MH = RuntimeHelper.downcallHandle(
-        "EnumDateFormatsW",
-        constants$363.EnumDateFormatsW$FUNC
+    static final MethodHandle GetNextDlgGroupItem$MH = RuntimeHelper.downcallHandle(
+        "GetNextDlgGroupItem",
+        constants$363.GetNextDlgGroupItem$FUNC
+    );
+    static final FunctionDescriptor GetNextDlgTabItem$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetNextDlgTabItem$MH = RuntimeHelper.downcallHandle(
+        "GetNextDlgTabItem",
+        constants$363.GetNextDlgTabItem$FUNC
     );
 }
 

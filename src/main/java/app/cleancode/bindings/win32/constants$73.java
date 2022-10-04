@@ -9,45 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$73 {
 
-    static final FunctionDescriptor LPFIBER_START_ROUTINE$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LPFIBER_START_ROUTINE$MH = RuntimeHelper.downcallHandle(
-        constants$73.LPFIBER_START_ROUTINE$FUNC
-    );
-    static final FunctionDescriptor PFIBER_CALLOUT_ROUTINE$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFIBER_CALLOUT_ROUTINE$MH = RuntimeHelper.downcallHandle(
-        constants$73.PFIBER_CALLOUT_ROUTINE$FUNC
-    );
-    static final FunctionDescriptor WinMain$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle WinMain$MH = RuntimeHelper.downcallHandle(
-        "WinMain",
-        constants$73.WinMain$FUNC
-    );
-    static final FunctionDescriptor wWinMain$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle wWinMain$MH = RuntimeHelper.downcallHandle(
-        "wWinMain",
-        constants$73.wWinMain$FUNC
-    );
-    static final FunctionDescriptor GlobalAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GlobalAlloc$MH = RuntimeHelper.downcallHandle(
-        "GlobalAlloc",
-        constants$73.GlobalAlloc$FUNC
+    static final MethodHandle CreateFileA$MH = RuntimeHelper.downcallHandle(
+        "CreateFileA",
+        constants$73.CreateFileA$FUNC
+    );
+    static final FunctionDescriptor CreateFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateFileW$MH = RuntimeHelper.downcallHandle(
+        "CreateFileW",
+        constants$73.CreateFileW$FUNC
+    );
+    static final FunctionDescriptor DefineDosDeviceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DefineDosDeviceW$MH = RuntimeHelper.downcallHandle(
+        "DefineDosDeviceW",
+        constants$73.DefineDosDeviceW$FUNC
+    );
+    static final FunctionDescriptor DeleteFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteFileA$MH = RuntimeHelper.downcallHandle(
+        "DeleteFileA",
+        constants$73.DeleteFileA$FUNC
+    );
+    static final FunctionDescriptor DeleteFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteFileW$MH = RuntimeHelper.downcallHandle(
+        "DeleteFileW",
+        constants$73.DeleteFileW$FUNC
+    );
+    static final FunctionDescriptor DeleteVolumeMountPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteVolumeMountPointW$MH = RuntimeHelper.downcallHandle(
+        "DeleteVolumeMountPointW",
+        constants$73.DeleteVolumeMountPointW$FUNC
     );
 }
 

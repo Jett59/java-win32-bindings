@@ -9,51 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$283 {
 
-    static final FunctionDescriptor KillTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle KillTimer$MH = RuntimeHelper.downcallHandle(
-        "KillTimer",
-        constants$283.KillTimer$FUNC
-    );
-    static final FunctionDescriptor IsWindowUnicode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetPolyFillMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsWindowUnicode$MH = RuntimeHelper.downcallHandle(
-        "IsWindowUnicode",
-        constants$283.IsWindowUnicode$FUNC
+    static final MethodHandle GetPolyFillMode$MH = RuntimeHelper.downcallHandle(
+        "GetPolyFillMode",
+        constants$283.GetPolyFillMode$FUNC
     );
-    static final FunctionDescriptor EnableWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetRasterizerCaps$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnableWindow$MH = RuntimeHelper.downcallHandle(
-        "EnableWindow",
-        constants$283.EnableWindow$FUNC
+    static final MethodHandle GetRasterizerCaps$MH = RuntimeHelper.downcallHandle(
+        "GetRasterizerCaps",
+        constants$283.GetRasterizerCaps$FUNC
     );
-    static final FunctionDescriptor IsWindowEnabled$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetRandomRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetRandomRgn$MH = RuntimeHelper.downcallHandle(
+        "GetRandomRgn",
+        constants$283.GetRandomRgn$FUNC
+    );
+    static final FunctionDescriptor GetRegionData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsWindowEnabled$MH = RuntimeHelper.downcallHandle(
-        "IsWindowEnabled",
-        constants$283.IsWindowEnabled$FUNC
+    static final MethodHandle GetRegionData$MH = RuntimeHelper.downcallHandle(
+        "GetRegionData",
+        constants$283.GetRegionData$FUNC
     );
-    static final FunctionDescriptor LoadAcceleratorsA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetRgnBox$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LoadAcceleratorsA$MH = RuntimeHelper.downcallHandle(
-        "LoadAcceleratorsA",
-        constants$283.LoadAcceleratorsA$FUNC
+    static final MethodHandle GetRgnBox$MH = RuntimeHelper.downcallHandle(
+        "GetRgnBox",
+        constants$283.GetRgnBox$FUNC
     );
-    static final FunctionDescriptor LoadAcceleratorsW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetStockObject$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LoadAcceleratorsW$MH = RuntimeHelper.downcallHandle(
-        "LoadAcceleratorsW",
-        constants$283.LoadAcceleratorsW$FUNC
+    static final MethodHandle GetStockObject$MH = RuntimeHelper.downcallHandle(
+        "GetStockObject",
+        constants$283.GetStockObject$FUNC
     );
 }
 

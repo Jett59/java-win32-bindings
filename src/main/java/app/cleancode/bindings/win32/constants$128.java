@@ -9,53 +9,45 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$128 {
 
-    static final FunctionDescriptor NotifyChangeEventLog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetVersion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetVersion$MH = RuntimeHelper.downcallHandle(
+        "GetVersion",
+        constants$128.GetVersion$FUNC
+    );
+    static final FunctionDescriptor SetLocalTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetLocalTime$MH = RuntimeHelper.downcallHandle(
+        "SetLocalTime",
+        constants$128.SetLocalTime$FUNC
+    );
+    static final FunctionDescriptor GetTickCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetTickCount$MH = RuntimeHelper.downcallHandle(
+        "GetTickCount",
+        constants$128.GetTickCount$FUNC
+    );
+    static final FunctionDescriptor GetTickCount64$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT);
+    static final MethodHandle GetTickCount64$MH = RuntimeHelper.downcallHandle(
+        "GetTickCount64",
+        constants$128.GetTickCount64$FUNC
+    );
+    static final FunctionDescriptor GetSystemTimeAdjustment$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle NotifyChangeEventLog$MH = RuntimeHelper.downcallHandle(
-        "NotifyChangeEventLog",
-        constants$128.NotifyChangeEventLog$FUNC
+    static final MethodHandle GetSystemTimeAdjustment$MH = RuntimeHelper.downcallHandle(
+        "GetSystemTimeAdjustment",
+        constants$128.GetSystemTimeAdjustment$FUNC
     );
-    static final FunctionDescriptor GetNumberOfEventLogRecords$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSystemTimeAdjustmentPrecise$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetNumberOfEventLogRecords$MH = RuntimeHelper.downcallHandle(
-        "GetNumberOfEventLogRecords",
-        constants$128.GetNumberOfEventLogRecords$FUNC
-    );
-    static final FunctionDescriptor GetOldestEventLogRecord$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetOldestEventLogRecord$MH = RuntimeHelper.downcallHandle(
-        "GetOldestEventLogRecord",
-        constants$128.GetOldestEventLogRecord$FUNC
-    );
-    static final FunctionDescriptor OpenEventLogA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OpenEventLogA$MH = RuntimeHelper.downcallHandle(
-        "OpenEventLogA",
-        constants$128.OpenEventLogA$FUNC
-    );
-    static final FunctionDescriptor OpenEventLogW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OpenEventLogW$MH = RuntimeHelper.downcallHandle(
-        "OpenEventLogW",
-        constants$128.OpenEventLogW$FUNC
-    );
-    static final FunctionDescriptor RegisterEventSourceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegisterEventSourceA$MH = RuntimeHelper.downcallHandle(
-        "RegisterEventSourceA",
-        constants$128.RegisterEventSourceA$FUNC
+    static final MethodHandle GetSystemTimeAdjustmentPrecise$MH = RuntimeHelper.downcallHandle(
+        "GetSystemTimeAdjustmentPrecise",
+        constants$128.GetSystemTimeAdjustmentPrecise$FUNC
     );
 }
 

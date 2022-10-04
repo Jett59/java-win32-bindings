@@ -9,65 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$370 {
 
-    static final FunctionDescriptor NotifyUILanguageChange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CharToOemBuffA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle NotifyUILanguageChange$MH = RuntimeHelper.downcallHandle(
-        "NotifyUILanguageChange",
-        constants$370.NotifyUILanguageChange$FUNC
-    );
-    static final FunctionDescriptor GetStringTypeExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetStringTypeExA$MH = RuntimeHelper.downcallHandle(
-        "GetStringTypeExA",
-        constants$370.GetStringTypeExA$FUNC
-    );
-    static final FunctionDescriptor GetStringTypeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetStringTypeA$MH = RuntimeHelper.downcallHandle(
-        "GetStringTypeA",
-        constants$370.GetStringTypeA$FUNC
-    );
-    static final FunctionDescriptor FoldStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle FoldStringA$MH = RuntimeHelper.downcallHandle(
-        "FoldStringA",
-        constants$370.FoldStringA$FUNC
+    static final MethodHandle CharToOemBuffA$MH = RuntimeHelper.downcallHandle(
+        "CharToOemBuffA",
+        constants$370.CharToOemBuffA$FUNC
     );
-    static final FunctionDescriptor EnumSystemLocalesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CharToOemBuffW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumSystemLocalesA$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemLocalesA",
-        constants$370.EnumSystemLocalesA$FUNC
+    static final MethodHandle CharToOemBuffW$MH = RuntimeHelper.downcallHandle(
+        "CharToOemBuffW",
+        constants$370.CharToOemBuffW$FUNC
     );
-    static final FunctionDescriptor EnumSystemLocalesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OemToCharBuffA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumSystemLocalesW$MH = RuntimeHelper.downcallHandle(
-        "EnumSystemLocalesW",
-        constants$370.EnumSystemLocalesW$FUNC
+    static final MethodHandle OemToCharBuffA$MH = RuntimeHelper.downcallHandle(
+        "OemToCharBuffA",
+        constants$370.OemToCharBuffA$FUNC
+    );
+    static final FunctionDescriptor OemToCharBuffW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle OemToCharBuffW$MH = RuntimeHelper.downcallHandle(
+        "OemToCharBuffW",
+        constants$370.OemToCharBuffW$FUNC
+    );
+    static final FunctionDescriptor CharUpperA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CharUpperA$MH = RuntimeHelper.downcallHandle(
+        "CharUpperA",
+        constants$370.CharUpperA$FUNC
+    );
+    static final FunctionDescriptor CharUpperW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CharUpperW$MH = RuntimeHelper.downcallHandle(
+        "CharUpperW",
+        constants$370.CharUpperW$FUNC
     );
 }
 

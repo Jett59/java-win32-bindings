@@ -9,55 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$335 {
 
-    static final FunctionDescriptor DisplayConfigSetDeviceInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor wvsprintfA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DisplayConfigSetDeviceInfo$MH = RuntimeHelper.downcallHandle(
-        "DisplayConfigSetDeviceInfo",
-        constants$335.DisplayConfigSetDeviceInfo$FUNC
+    static final MethodHandle wvsprintfA$MH = RuntimeHelper.downcallHandle(
+        "wvsprintfA",
+        constants$335.wvsprintfA$FUNC
     );
-    static final FunctionDescriptor SystemParametersInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor wvsprintfW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wvsprintfW$MH = RuntimeHelper.downcallHandle(
+        "wvsprintfW",
+        constants$335.wvsprintfW$FUNC
+    );
+    static final FunctionDescriptor wsprintfA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wsprintfA$MH = RuntimeHelper.downcallHandleVariadic(
+        "wsprintfA",
+        constants$335.wsprintfA$FUNC
+    );
+    static final FunctionDescriptor wsprintfW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle wsprintfW$MH = RuntimeHelper.downcallHandleVariadic(
+        "wsprintfW",
+        constants$335.wsprintfW$FUNC
+    );
+    static final FunctionDescriptor LoadKeyboardLayoutA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SystemParametersInfoA$MH = RuntimeHelper.downcallHandle(
-        "SystemParametersInfoA",
-        constants$335.SystemParametersInfoA$FUNC
+    static final MethodHandle LoadKeyboardLayoutA$MH = RuntimeHelper.downcallHandle(
+        "LoadKeyboardLayoutA",
+        constants$335.LoadKeyboardLayoutA$FUNC
     );
-    static final FunctionDescriptor SystemParametersInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LoadKeyboardLayoutW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SystemParametersInfoW$MH = RuntimeHelper.downcallHandle(
-        "SystemParametersInfoW",
-        constants$335.SystemParametersInfoW$FUNC
-    );
-    static final FunctionDescriptor SystemParametersInfoForDpi$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SystemParametersInfoForDpi$MH = RuntimeHelper.downcallHandle(
-        "SystemParametersInfoForDpi",
-        constants$335.SystemParametersInfoForDpi$FUNC
-    );
-    static final FunctionDescriptor SoundSentry$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle SoundSentry$MH = RuntimeHelper.downcallHandle(
-        "SoundSentry",
-        constants$335.SoundSentry$FUNC
-    );
-    static final FunctionDescriptor SetDebugErrorLevel$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetDebugErrorLevel$MH = RuntimeHelper.downcallHandle(
-        "SetDebugErrorLevel",
-        constants$335.SetDebugErrorLevel$FUNC
+    static final MethodHandle LoadKeyboardLayoutW$MH = RuntimeHelper.downcallHandle(
+        "LoadKeyboardLayoutW",
+        constants$335.LoadKeyboardLayoutW$FUNC
     );
 }
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$734 {
 
-    static final MemoryAddress CERT_CHAIN_POLICY_SSL$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress CERT_CHAIN_POLICY_BASIC_CONSTRAINTS$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress CERT_CHAIN_POLICY_NT_AUTH$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress CERT_CHAIN_POLICY_MICROSOFT_ROOT$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress CERT_CHAIN_POLICY_EV$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress CERT_CHAIN_POLICY_SSL_F12$ADDR = MemoryAddress.ofLong(9L);
+    static final MemoryAddress RT_ACCELERATOR$ADDR = MemoryAddress.ofLong(9L);
+    static final MemoryAddress RT_RCDATA$ADDR = MemoryAddress.ofLong(10L);
+    static final MemoryAddress RT_MESSAGETABLE$ADDR = MemoryAddress.ofLong(11L);
+    static final MemoryAddress RT_GROUP_CURSOR$ADDR = MemoryAddress.ofLong(12L);
+    static final MemoryAddress RT_GROUP_ICON$ADDR = MemoryAddress.ofLong(14L);
+    static final MemoryAddress RT_VERSION$ADDR = MemoryAddress.ofLong(16L);
 }
 
 

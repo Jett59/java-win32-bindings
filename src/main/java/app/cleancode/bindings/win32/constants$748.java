@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$748 {
 
-    static final MemorySegment SPLDS_DESCRIPTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("description");
-    static final MemorySegment SPLDS_DRIVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("driverName");
-    static final MemorySegment SPLDS_DRIVER_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("driverVersion");
-    static final MemorySegment SPLDS_LOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("location");
-    static final MemorySegment SPLDS_PORT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("portName");
-    static final MemorySegment SPLDS_PRINT_ATTRIBUTES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printAttributes");
+    static final MemorySegment WC_NETADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("m");
+    static final MemorySegment MS_DEF_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Cryptographic Provider v1.0");
+    static final MemorySegment MS_DEF_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_DEF_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Cryptographic Provider v1.0");
+    static final MemorySegment MS_ENHANCED_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced Cryptographic Provider v1.0");
+    static final MemorySegment MS_ENHANCED_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
 }
 
 

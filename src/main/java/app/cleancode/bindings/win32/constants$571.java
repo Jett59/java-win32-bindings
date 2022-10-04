@@ -9,12 +9,73 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$571 {
 
-    static final MemoryAddress IDC_PERSON$ADDR = MemoryAddress.ofLong(32672L);
-    static final MemoryAddress IDI_APPLICATION$ADDR = MemoryAddress.ofLong(32512L);
-    static final MemoryAddress IDI_HAND$ADDR = MemoryAddress.ofLong(32513L);
-    static final MemoryAddress IDI_QUESTION$ADDR = MemoryAddress.ofLong(32514L);
-    static final MemoryAddress IDI_EXCLAMATION$ADDR = MemoryAddress.ofLong(32515L);
-    static final MemoryAddress IDI_ASTERISK$ADDR = MemoryAddress.ofLong(32516L);
+    static final FunctionDescriptor CryptEnumProviderTypesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptEnumProviderTypesA$MH = RuntimeHelper.downcallHandle(
+        "CryptEnumProviderTypesA",
+        constants$571.CryptEnumProviderTypesA$FUNC
+    );
+    static final FunctionDescriptor CryptEnumProviderTypesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptEnumProviderTypesW$MH = RuntimeHelper.downcallHandle(
+        "CryptEnumProviderTypesW",
+        constants$571.CryptEnumProviderTypesW$FUNC
+    );
+    static final FunctionDescriptor CryptEnumProvidersA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptEnumProvidersA$MH = RuntimeHelper.downcallHandle(
+        "CryptEnumProvidersA",
+        constants$571.CryptEnumProvidersA$FUNC
+    );
+    static final FunctionDescriptor CryptEnumProvidersW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptEnumProvidersW$MH = RuntimeHelper.downcallHandle(
+        "CryptEnumProvidersW",
+        constants$571.CryptEnumProvidersW$FUNC
+    );
+    static final FunctionDescriptor CryptContextAddRef$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptContextAddRef$MH = RuntimeHelper.downcallHandle(
+        "CryptContextAddRef",
+        constants$571.CryptContextAddRef$FUNC
+    );
+    static final FunctionDescriptor CryptDuplicateKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptDuplicateKey$MH = RuntimeHelper.downcallHandle(
+        "CryptDuplicateKey",
+        constants$571.CryptDuplicateKey$FUNC
+    );
 }
 
 

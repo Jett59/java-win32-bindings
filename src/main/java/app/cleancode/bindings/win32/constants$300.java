@@ -9,68 +9,80 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$300 {
 
-    static final FunctionDescriptor ValidateRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ValidateRgn$MH = RuntimeHelper.downcallHandle(
-        "ValidateRgn",
-        constants$300.ValidateRgn$FUNC
-    );
-    static final FunctionDescriptor RedrawWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetTextAlign$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RedrawWindow$MH = RuntimeHelper.downcallHandle(
-        "RedrawWindow",
-        constants$300.RedrawWindow$FUNC
+    static final MethodHandle SetTextAlign$MH = RuntimeHelper.downcallHandle(
+        "SetTextAlign",
+        constants$300.SetTextAlign$FUNC
     );
-    static final FunctionDescriptor LockWindowUpdate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LockWindowUpdate$MH = RuntimeHelper.downcallHandle(
-        "LockWindowUpdate",
-        constants$300.LockWindowUpdate$FUNC
-    );
-    static final FunctionDescriptor ScrollWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetTextJustification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ScrollWindow$MH = RuntimeHelper.downcallHandle(
-        "ScrollWindow",
-        constants$300.ScrollWindow$FUNC
-    );
-    static final FunctionDescriptor ScrollDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ScrollDC$MH = RuntimeHelper.downcallHandle(
-        "ScrollDC",
-        constants$300.ScrollDC$FUNC
-    );
-    static final FunctionDescriptor ScrollWindowEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ScrollWindowEx$MH = RuntimeHelper.downcallHandle(
-        "ScrollWindowEx",
-        constants$300.ScrollWindowEx$FUNC
+    static final MethodHandle SetTextJustification$MH = RuntimeHelper.downcallHandle(
+        "SetTextJustification",
+        constants$300.SetTextJustification$FUNC
+    );
+    static final FunctionDescriptor UpdateColors$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UpdateColors$MH = RuntimeHelper.downcallHandle(
+        "UpdateColors",
+        constants$300.UpdateColors$FUNC
+    );
+    static final FunctionDescriptor AlphaBlend$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_CHAR$LAYOUT.withName("BlendOp"),
+            Constants$root.C_CHAR$LAYOUT.withName("BlendFlags"),
+            Constants$root.C_CHAR$LAYOUT.withName("SourceConstantAlpha"),
+            Constants$root.C_CHAR$LAYOUT.withName("AlphaFormat")
+        ).withName("_BLENDFUNCTION")
+    );
+    static final MethodHandle AlphaBlend$MH = RuntimeHelper.downcallHandle(
+        "AlphaBlend",
+        constants$300.AlphaBlend$FUNC
+    );
+    static final FunctionDescriptor TransparentBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle TransparentBlt$MH = RuntimeHelper.downcallHandle(
+        "TransparentBlt",
+        constants$300.TransparentBlt$FUNC
+    );
+    static final FunctionDescriptor GradientFill$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GradientFill$MH = RuntimeHelper.downcallHandle(
+        "GradientFill",
+        constants$300.GradientFill$FUNC
     );
 }
 

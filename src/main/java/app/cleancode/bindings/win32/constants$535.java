@@ -9,37 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$535 {
 
-    static final  GroupLayout RPC_INTERFACE_EVENT_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment RPC_INTERFACE_EVENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("RPC_INTERFACE_EVENT_GUID", constants$535.RPC_INTERFACE_EVENT_GUID$LAYOUT);
-    static final  GroupLayout NAMED_PIPE_EVENT_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment NAMED_PIPE_EVENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("NAMED_PIPE_EVENT_GUID", constants$535.NAMED_PIPE_EVENT_GUID$LAYOUT);
-    static final  GroupLayout CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID", constants$535.CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID$LAYOUT);
-    static final FunctionDescriptor SERVICE_MAIN_FUNCTIONW$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor midiOutCacheDrumPatches$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutCacheDrumPatches$MH = RuntimeHelper.downcallHandle(
+        "midiOutCacheDrumPatches",
+        constants$535.midiOutCacheDrumPatches$FUNC
+    );
+    static final FunctionDescriptor midiOutGetID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SERVICE_MAIN_FUNCTIONW$MH = RuntimeHelper.downcallHandle(
-        constants$535.SERVICE_MAIN_FUNCTIONW$FUNC
+    static final MethodHandle midiOutGetID$MH = RuntimeHelper.downcallHandle(
+        "midiOutGetID",
+        constants$535.midiOutGetID$FUNC
     );
-    static final FunctionDescriptor SERVICE_MAIN_FUNCTIONA$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor midiOutMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutMessage$MH = RuntimeHelper.downcallHandle(
+        "midiOutMessage",
+        constants$535.midiOutMessage$FUNC
+    );
+    static final FunctionDescriptor midiInGetNumDevs$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle midiInGetNumDevs$MH = RuntimeHelper.downcallHandle(
+        "midiInGetNumDevs",
+        constants$535.midiInGetNumDevs$FUNC
+    );
+    static final FunctionDescriptor midiInGetDevCapsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiInGetDevCapsA$MH = RuntimeHelper.downcallHandle(
+        "midiInGetDevCapsA",
+        constants$535.midiInGetDevCapsA$FUNC
+    );
+    static final FunctionDescriptor midiInGetDevCapsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiInGetDevCapsW$MH = RuntimeHelper.downcallHandle(
+        "midiInGetDevCapsW",
+        constants$535.midiInGetDevCapsW$FUNC
     );
 }
 

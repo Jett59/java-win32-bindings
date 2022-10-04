@@ -9,12 +9,79 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$632 {
 
-    static final MemoryAddress PKCS_RSA_PRIVATE_KEY$ADDR = MemoryAddress.ofLong(43L);
-    static final MemoryAddress PKCS_PRIVATE_KEY_INFO$ADDR = MemoryAddress.ofLong(44L);
-    static final MemoryAddress PKCS_ENCRYPTED_PRIVATE_KEY_INFO$ADDR = MemoryAddress.ofLong(45L);
-    static final MemoryAddress X509_PKIX_POLICY_QUALIFIER_USERNOTICE$ADDR = MemoryAddress.ofLong(46L);
-    static final MemoryAddress X509_DH_PUBLICKEY$ADDR = MemoryAddress.ofLong(38L);
-    static final MemoryAddress X509_DH_PARAMETERS$ADDR = MemoryAddress.ofLong(47L);
+    static final FunctionDescriptor CertFreeServerOcspResponseContext$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFreeServerOcspResponseContext$MH = RuntimeHelper.downcallHandle(
+        "CertFreeServerOcspResponseContext",
+        constants$632.CertFreeServerOcspResponseContext$FUNC
+    );
+    static final FunctionDescriptor CertRetrieveLogoOrBiometricInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertRetrieveLogoOrBiometricInfo$MH = RuntimeHelper.downcallHandle(
+        "CertRetrieveLogoOrBiometricInfo",
+        constants$632.CertRetrieveLogoOrBiometricInfo$FUNC
+    );
+    static final FunctionDescriptor CertSelectCertificateChains$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertSelectCertificateChains$MH = RuntimeHelper.downcallHandle(
+        "CertSelectCertificateChains",
+        constants$632.CertSelectCertificateChains$FUNC
+    );
+    static final FunctionDescriptor CertFreeCertificateChainList$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFreeCertificateChainList$MH = RuntimeHelper.downcallHandle(
+        "CertFreeCertificateChainList",
+        constants$632.CertFreeCertificateChainList$FUNC
+    );
+    static final FunctionDescriptor CryptRetrieveTimeStamp$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptRetrieveTimeStamp$MH = RuntimeHelper.downcallHandle(
+        "CryptRetrieveTimeStamp",
+        constants$632.CryptRetrieveTimeStamp$FUNC
+    );
+    static final FunctionDescriptor CryptVerifyTimeStampSignature$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptVerifyTimeStampSignature$MH = RuntimeHelper.downcallHandle(
+        "CryptVerifyTimeStampSignature",
+        constants$632.CryptVerifyTimeStampSignature$FUNC
+    );
 }
 
 

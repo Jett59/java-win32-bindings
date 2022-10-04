@@ -9,54 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$162 {
 
-    static final FunctionDescriptor CreateBitmapIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FreeSid$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateBitmapIndirect$MH = RuntimeHelper.downcallHandle(
-        "CreateBitmapIndirect",
-        constants$162.CreateBitmapIndirect$FUNC
+    static final MethodHandle FreeSid$MH = RuntimeHelper.downcallHandle(
+        "FreeSid",
+        constants$162.FreeSid$FUNC
     );
-    static final FunctionDescriptor CreateBrushIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateBrushIndirect$MH = RuntimeHelper.downcallHandle(
-        "CreateBrushIndirect",
-        constants$162.CreateBrushIndirect$FUNC
+    static final MethodHandle GetAce$MH = RuntimeHelper.downcallHandle(
+        "GetAce",
+        constants$162.GetAce$FUNC
     );
-    static final FunctionDescriptor CreateCompatibleBitmap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetAclInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateCompatibleBitmap$MH = RuntimeHelper.downcallHandle(
-        "CreateCompatibleBitmap",
-        constants$162.CreateCompatibleBitmap$FUNC
+    static final MethodHandle GetAclInformation$MH = RuntimeHelper.downcallHandle(
+        "GetAclInformation",
+        constants$162.GetAclInformation$FUNC
     );
-    static final FunctionDescriptor CreateDiscardableBitmap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetFileSecurityW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateDiscardableBitmap$MH = RuntimeHelper.downcallHandle(
-        "CreateDiscardableBitmap",
-        constants$162.CreateDiscardableBitmap$FUNC
-    );
-    static final FunctionDescriptor CreateCompatibleDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateCompatibleDC$MH = RuntimeHelper.downcallHandle(
-        "CreateCompatibleDC",
-        constants$162.CreateCompatibleDC$FUNC
+    static final MethodHandle GetFileSecurityW$MH = RuntimeHelper.downcallHandle(
+        "GetFileSecurityW",
+        constants$162.GetFileSecurityW$FUNC
     );
-    static final FunctionDescriptor CreateDCA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetKernelObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateDCA$MH = RuntimeHelper.downcallHandle(
-        "CreateDCA",
-        constants$162.CreateDCA$FUNC
+    static final MethodHandle GetKernelObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "GetKernelObjectSecurity",
+        constants$162.GetKernelObjectSecurity$FUNC
+    );
+    static final FunctionDescriptor GetLengthSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetLengthSid$MH = RuntimeHelper.downcallHandle(
+        "GetLengthSid",
+        constants$162.GetLengthSid$FUNC
     );
 }
 

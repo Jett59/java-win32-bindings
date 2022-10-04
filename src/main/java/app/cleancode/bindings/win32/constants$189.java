@@ -9,55 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$189 {
 
-    static final FunctionDescriptor RectVisible$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFileShortNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RectVisible$MH = RuntimeHelper.downcallHandle(
-        "RectVisible",
-        constants$189.RectVisible$FUNC
+    static final MethodHandle SetFileShortNameW$MH = RuntimeHelper.downcallHandle(
+        "SetFileShortNameW",
+        constants$189.SetFileShortNameW$FUNC
     );
-    static final FunctionDescriptor Rectangle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LoadModule$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle Rectangle$MH = RuntimeHelper.downcallHandle(
-        "Rectangle",
-        constants$189.Rectangle$FUNC
+    static final MethodHandle LoadModule$MH = RuntimeHelper.downcallHandle(
+        "LoadModule",
+        constants$189.LoadModule$FUNC
     );
-    static final FunctionDescriptor RestoreDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WinExec$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RestoreDC$MH = RuntimeHelper.downcallHandle(
-        "RestoreDC",
-        constants$189.RestoreDC$FUNC
+    static final MethodHandle WinExec$MH = RuntimeHelper.downcallHandle(
+        "WinExec",
+        constants$189.WinExec$FUNC
     );
-    static final FunctionDescriptor ResetDCA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ClearCommBreak$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ClearCommBreak$MH = RuntimeHelper.downcallHandle(
+        "ClearCommBreak",
+        constants$189.ClearCommBreak$FUNC
+    );
+    static final FunctionDescriptor ClearCommError$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ResetDCA$MH = RuntimeHelper.downcallHandle(
-        "ResetDCA",
-        constants$189.ResetDCA$FUNC
+    static final MethodHandle ClearCommError$MH = RuntimeHelper.downcallHandle(
+        "ClearCommError",
+        constants$189.ClearCommError$FUNC
     );
-    static final FunctionDescriptor ResetDCW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetupComm$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ResetDCW$MH = RuntimeHelper.downcallHandle(
-        "ResetDCW",
-        constants$189.ResetDCW$FUNC
-    );
-    static final FunctionDescriptor RealizePalette$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RealizePalette$MH = RuntimeHelper.downcallHandle(
-        "RealizePalette",
-        constants$189.RealizePalette$FUNC
+    static final MethodHandle SetupComm$MH = RuntimeHelper.downcallHandle(
+        "SetupComm",
+        constants$189.SetupComm$FUNC
     );
 }
 

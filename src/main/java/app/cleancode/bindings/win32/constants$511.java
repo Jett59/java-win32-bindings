@@ -9,77 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$511 {
 
-    static final FunctionDescriptor AddPrinterDriverExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetGetUserW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetGetUserW$MH = RuntimeHelper.downcallHandle(
+        "WNetGetUserW",
+        constants$511.WNetGetUserW$FUNC
+    );
+    static final FunctionDescriptor WNetGetProviderNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetGetProviderNameA$MH = RuntimeHelper.downcallHandle(
+        "WNetGetProviderNameA",
+        constants$511.WNetGetProviderNameA$FUNC
+    );
+    static final FunctionDescriptor WNetGetProviderNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetGetProviderNameW$MH = RuntimeHelper.downcallHandle(
+        "WNetGetProviderNameW",
+        constants$511.WNetGetProviderNameW$FUNC
+    );
+    static final FunctionDescriptor WNetGetNetworkInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetGetNetworkInformationA$MH = RuntimeHelper.downcallHandle(
+        "WNetGetNetworkInformationA",
+        constants$511.WNetGetNetworkInformationA$FUNC
+    );
+    static final FunctionDescriptor WNetGetNetworkInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WNetGetNetworkInformationW$MH = RuntimeHelper.downcallHandle(
+        "WNetGetNetworkInformationW",
+        constants$511.WNetGetNetworkInformationW$FUNC
+    );
+    static final FunctionDescriptor WNetGetLastErrorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle AddPrinterDriverExW$MH = RuntimeHelper.downcallHandle(
-        "AddPrinterDriverExW",
-        constants$511.AddPrinterDriverExW$FUNC
-    );
-    static final FunctionDescriptor EnumPrinterDriversA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnumPrinterDriversA$MH = RuntimeHelper.downcallHandle(
-        "EnumPrinterDriversA",
-        constants$511.EnumPrinterDriversA$FUNC
-    );
-    static final FunctionDescriptor EnumPrinterDriversW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnumPrinterDriversW$MH = RuntimeHelper.downcallHandle(
-        "EnumPrinterDriversW",
-        constants$511.EnumPrinterDriversW$FUNC
-    );
-    static final FunctionDescriptor GetPrinterDriverA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrinterDriverA$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDriverA",
-        constants$511.GetPrinterDriverA$FUNC
-    );
-    static final FunctionDescriptor GetPrinterDriverW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrinterDriverW$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDriverW",
-        constants$511.GetPrinterDriverW$FUNC
-    );
-    static final FunctionDescriptor GetPrinterDriverDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrinterDriverDirectoryA$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDriverDirectoryA",
-        constants$511.GetPrinterDriverDirectoryA$FUNC
+    static final MethodHandle WNetGetLastErrorA$MH = RuntimeHelper.downcallHandle(
+        "WNetGetLastErrorA",
+        constants$511.WNetGetLastErrorA$FUNC
     );
 }
 

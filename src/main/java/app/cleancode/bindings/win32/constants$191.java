@@ -9,54 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$191 {
 
-    static final FunctionDescriptor ExtSelectClipRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ExtSelectClipRgn$MH = RuntimeHelper.downcallHandle(
-        "ExtSelectClipRgn",
-        constants$191.ExtSelectClipRgn$FUNC
-    );
-    static final FunctionDescriptor SetMetaRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetMetaRgn$MH = RuntimeHelper.downcallHandle(
-        "SetMetaRgn",
-        constants$191.SetMetaRgn$FUNC
-    );
-    static final FunctionDescriptor SelectObject$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetCommTimeouts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SelectObject$MH = RuntimeHelper.downcallHandle(
-        "SelectObject",
-        constants$191.SelectObject$FUNC
+    static final MethodHandle GetCommTimeouts$MH = RuntimeHelper.downcallHandle(
+        "GetCommTimeouts",
+        constants$191.GetCommTimeouts$FUNC
     );
-    static final FunctionDescriptor SelectPalette$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor PurgeComm$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PurgeComm$MH = RuntimeHelper.downcallHandle(
+        "PurgeComm",
+        constants$191.PurgeComm$FUNC
+    );
+    static final FunctionDescriptor SetCommBreak$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetCommBreak$MH = RuntimeHelper.downcallHandle(
+        "SetCommBreak",
+        constants$191.SetCommBreak$FUNC
+    );
+    static final FunctionDescriptor SetCommConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SelectPalette$MH = RuntimeHelper.downcallHandle(
-        "SelectPalette",
-        constants$191.SelectPalette$FUNC
+    static final MethodHandle SetCommConfig$MH = RuntimeHelper.downcallHandle(
+        "SetCommConfig",
+        constants$191.SetCommConfig$FUNC
     );
-    static final FunctionDescriptor SetBkColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetCommMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetBkColor$MH = RuntimeHelper.downcallHandle(
-        "SetBkColor",
-        constants$191.SetBkColor$FUNC
+    static final MethodHandle SetCommMask$MH = RuntimeHelper.downcallHandle(
+        "SetCommMask",
+        constants$191.SetCommMask$FUNC
     );
-    static final FunctionDescriptor SetDCBrushColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetCommState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetDCBrushColor$MH = RuntimeHelper.downcallHandle(
-        "SetDCBrushColor",
-        constants$191.SetDCBrushColor$FUNC
+    static final MethodHandle SetCommState$MH = RuntimeHelper.downcallHandle(
+        "SetCommState",
+        constants$191.SetCommState$FUNC
     );
 }
 

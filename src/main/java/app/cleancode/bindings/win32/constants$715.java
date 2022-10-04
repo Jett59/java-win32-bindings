@@ -9,12 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$715 {
 
-    static final MemoryAddress URL_OID_CERTIFICATE_ISSUER$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress URL_OID_CERTIFICATE_CRL_DIST_POINT$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress URL_OID_CTL_ISSUER$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress URL_OID_CTL_NEXT_UPDATE$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress URL_OID_CRL_ISSUER$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress URL_OID_CERTIFICATE_FRESHEST_CRL$ADDR = MemoryAddress.ofLong(6L);
+    static final FunctionDescriptor QueryServiceConfigW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceConfigW$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceConfigW",
+        constants$715.QueryServiceConfigW$FUNC
+    );
+    static final FunctionDescriptor QueryServiceConfig2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceConfig2A$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceConfig2A",
+        constants$715.QueryServiceConfig2A$FUNC
+    );
+    static final FunctionDescriptor QueryServiceConfig2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceConfig2W$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceConfig2W",
+        constants$715.QueryServiceConfig2W$FUNC
+    );
+    static final FunctionDescriptor QueryServiceLockStatusA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceLockStatusA$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceLockStatusA",
+        constants$715.QueryServiceLockStatusA$FUNC
+    );
+    static final FunctionDescriptor QueryServiceLockStatusW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceLockStatusW$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceLockStatusW",
+        constants$715.QueryServiceLockStatusW$FUNC
+    );
+    static final FunctionDescriptor QueryServiceObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceObjectSecurity",
+        constants$715.QueryServiceObjectSecurity$FUNC
+    );
 }
 
 

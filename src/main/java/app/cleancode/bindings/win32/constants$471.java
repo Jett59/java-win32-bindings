@@ -9,48 +9,43 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$471 {
 
-    static final FunctionDescriptor CryptCreateAsyncHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetUserGeoID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetUserGeoID$MH = RuntimeHelper.downcallHandle(
+        "SetUserGeoID",
+        constants$471.SetUserGeoID$FUNC
+    );
+    static final FunctionDescriptor SetUserGeoName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptCreateAsyncHandle$MH = RuntimeHelper.downcallHandle(
-        "CryptCreateAsyncHandle",
-        constants$471.CryptCreateAsyncHandle$FUNC
+    static final MethodHandle SetUserGeoName$MH = RuntimeHelper.downcallHandle(
+        "SetUserGeoName",
+        constants$471.SetUserGeoName$FUNC
     );
-    static final FunctionDescriptor CryptSetAsyncParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor ConvertDefaultLocale$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptSetAsyncParam$MH = RuntimeHelper.downcallHandle(
-        "CryptSetAsyncParam",
-        constants$471.CryptSetAsyncParam$FUNC
+    static final MethodHandle ConvertDefaultLocale$MH = RuntimeHelper.downcallHandle(
+        "ConvertDefaultLocale",
+        constants$471.ConvertDefaultLocale$FUNC
     );
-    static final FunctionDescriptor CryptGetAsyncParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetSystemDefaultUILanguage$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
+    static final MethodHandle GetSystemDefaultUILanguage$MH = RuntimeHelper.downcallHandle(
+        "GetSystemDefaultUILanguage",
+        constants$471.GetSystemDefaultUILanguage$FUNC
     );
-    static final MethodHandle CryptGetAsyncParam$MH = RuntimeHelper.downcallHandle(
-        "CryptGetAsyncParam",
-        constants$471.CryptGetAsyncParam$FUNC
+    static final FunctionDescriptor GetThreadLocale$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetThreadLocale$MH = RuntimeHelper.downcallHandle(
+        "GetThreadLocale",
+        constants$471.GetThreadLocale$FUNC
     );
-    static final FunctionDescriptor CryptCloseAsyncHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor SetThreadLocale$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptCloseAsyncHandle$MH = RuntimeHelper.downcallHandle(
-        "CryptCloseAsyncHandle",
-        constants$471.CryptCloseAsyncHandle$FUNC
-    );
-    static final FunctionDescriptor PFN_FREE_ENCODED_OBJECT_FUNC$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_FREE_ENCODED_OBJECT_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$471.PFN_FREE_ENCODED_OBJECT_FUNC$FUNC
+    static final MethodHandle SetThreadLocale$MH = RuntimeHelper.downcallHandle(
+        "SetThreadLocale",
+        constants$471.SetThreadLocale$FUNC
     );
 }
 

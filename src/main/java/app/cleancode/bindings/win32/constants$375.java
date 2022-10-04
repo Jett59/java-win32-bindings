@@ -9,64 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$375 {
 
-    static final FunctionDescriptor FindNLSStringEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor GetKeyState$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle FindNLSStringEx$MH = RuntimeHelper.downcallHandle(
-        "FindNLSStringEx",
-        constants$375.FindNLSStringEx$FUNC
+    static final MethodHandle GetKeyState$MH = RuntimeHelper.downcallHandle(
+        "GetKeyState",
+        constants$375.GetKeyState$FUNC
     );
-    static final FunctionDescriptor LCMapStringEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor GetAsyncKeyState$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LCMapStringEx$MH = RuntimeHelper.downcallHandle(
-        "LCMapStringEx",
-        constants$375.LCMapStringEx$FUNC
+    static final MethodHandle GetAsyncKeyState$MH = RuntimeHelper.downcallHandle(
+        "GetAsyncKeyState",
+        constants$375.GetAsyncKeyState$FUNC
     );
-    static final FunctionDescriptor IsValidLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetKeyboardState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsValidLocaleName$MH = RuntimeHelper.downcallHandle(
-        "IsValidLocaleName",
-        constants$375.IsValidLocaleName$FUNC
+    static final MethodHandle GetKeyboardState$MH = RuntimeHelper.downcallHandle(
+        "GetKeyboardState",
+        constants$375.GetKeyboardState$FUNC
     );
-    static final FunctionDescriptor CALINFO_ENUMPROCEXEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetKeyboardState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetKeyboardState$MH = RuntimeHelper.downcallHandle(
+        "SetKeyboardState",
+        constants$375.SetKeyboardState$FUNC
+    );
+    static final FunctionDescriptor GetKeyNameTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CALINFO_ENUMPROCEXEX$MH = RuntimeHelper.downcallHandle(
-        constants$375.CALINFO_ENUMPROCEXEX$FUNC
+    static final MethodHandle GetKeyNameTextA$MH = RuntimeHelper.downcallHandle(
+        "GetKeyNameTextA",
+        constants$375.GetKeyNameTextA$FUNC
     );
-    static final FunctionDescriptor EnumCalendarInfoExEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetKeyNameTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnumCalendarInfoExEx$MH = RuntimeHelper.downcallHandle(
-        "EnumCalendarInfoExEx",
-        constants$375.EnumCalendarInfoExEx$FUNC
+    static final MethodHandle GetKeyNameTextW$MH = RuntimeHelper.downcallHandle(
+        "GetKeyNameTextW",
+        constants$375.GetKeyNameTextW$FUNC
     );
 }
 

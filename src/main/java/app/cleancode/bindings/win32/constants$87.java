@@ -9,52 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$87 {
 
-    static final FunctionDescriptor CancelDeviceWakeupRequest$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTempPathA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CancelDeviceWakeupRequest$MH = RuntimeHelper.downcallHandle(
-        "CancelDeviceWakeupRequest",
-        constants$87.CancelDeviceWakeupRequest$FUNC
+    static final MethodHandle GetTempPathA$MH = RuntimeHelper.downcallHandle(
+        "GetTempPathA",
+        constants$87.GetTempPathA$FUNC
     );
-    static final FunctionDescriptor GetDevicePowerState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindFirstFileNameW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDevicePowerState$MH = RuntimeHelper.downcallHandle(
-        "GetDevicePowerState",
-        constants$87.GetDevicePowerState$FUNC
+    static final MethodHandle FindFirstFileNameW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstFileNameW",
+        constants$87.FindFirstFileNameW$FUNC
     );
-    static final FunctionDescriptor SetMessageWaitingIndicator$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindNextFileNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindNextFileNameW$MH = RuntimeHelper.downcallHandle(
+        "FindNextFileNameW",
+        constants$87.FindNextFileNameW$FUNC
+    );
+    static final FunctionDescriptor GetVolumeInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetMessageWaitingIndicator$MH = RuntimeHelper.downcallHandle(
-        "SetMessageWaitingIndicator",
-        constants$87.SetMessageWaitingIndicator$FUNC
+    static final MethodHandle GetVolumeInformationA$MH = RuntimeHelper.downcallHandle(
+        "GetVolumeInformationA",
+        constants$87.GetVolumeInformationA$FUNC
     );
-    static final FunctionDescriptor SetFileShortNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTempFileNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetFileShortNameA$MH = RuntimeHelper.downcallHandle(
-        "SetFileShortNameA",
-        constants$87.SetFileShortNameA$FUNC
+    static final MethodHandle GetTempFileNameA$MH = RuntimeHelper.downcallHandle(
+        "GetTempFileNameA",
+        constants$87.GetTempFileNameA$FUNC
     );
-    static final FunctionDescriptor SetFileShortNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetFileShortNameW$MH = RuntimeHelper.downcallHandle(
-        "SetFileShortNameW",
-        constants$87.SetFileShortNameW$FUNC
-    );
-    static final FunctionDescriptor LoadModule$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LoadModule$MH = RuntimeHelper.downcallHandle(
-        "LoadModule",
-        constants$87.LoadModule$FUNC
+    static final FunctionDescriptor SetFileApisToOEM$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle SetFileApisToOEM$MH = RuntimeHelper.downcallHandle(
+        "SetFileApisToOEM",
+        constants$87.SetFileApisToOEM$FUNC
     );
 }
 

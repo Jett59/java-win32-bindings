@@ -9,12 +9,43 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$582 {
 
-    static final MemorySegment szKEY_CRYPTOAPI_PRIVATE_KEY_OPTIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Software\\Policies\\Microsoft\\Cryptography");
-    static final MemorySegment szKEY_CACHE_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CachePrivateKeys");
-    static final MemorySegment szKEY_CACHE_SECONDS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivateKeyLifetimeSeconds");
-    static final MemorySegment szPRIV_KEY_CACHE_MAX_ITEMS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivKeyCacheMaxItems");
-    static final MemorySegment szPRIV_KEY_CACHE_PURGE_INTERVAL_SECONDS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivKeyCachePurgeIntervalSeconds");
-    static final MemorySegment szOID_RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549");
+    static final FunctionDescriptor PFN_CMSG_EXPORT_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_EXPORT_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
+        constants$582.PFN_CMSG_EXPORT_ENCRYPT_KEY$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_IMPORT_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_IMPORT_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
+        constants$582.PFN_CMSG_IMPORT_ENCRYPT_KEY$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_GEN_CONTENT_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_GEN_CONTENT_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
+        constants$582.PFN_CMSG_GEN_CONTENT_ENCRYPT_KEY$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_EXPORT_KEY_TRANS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

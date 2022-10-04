@@ -9,56 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$317 {
 
-    static final FunctionDescriptor GetClassWord$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetClassWord$MH = RuntimeHelper.downcallHandle(
-        "GetClassWord",
-        constants$317.GetClassWord$FUNC
-    );
-    static final FunctionDescriptor SetClassWord$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor ScaleWindowExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetClassWord$MH = RuntimeHelper.downcallHandle(
-        "SetClassWord",
-        constants$317.SetClassWord$FUNC
+    static final MethodHandle ScaleWindowExtEx$MH = RuntimeHelper.downcallHandle(
+        "ScaleWindowExtEx",
+        constants$317.ScaleWindowExtEx$FUNC
     );
-    static final FunctionDescriptor GetClassLongA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetClassLongA$MH = RuntimeHelper.downcallHandle(
-        "GetClassLongA",
-        constants$317.GetClassLongA$FUNC
-    );
-    static final FunctionDescriptor GetClassLongW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetClassLongW$MH = RuntimeHelper.downcallHandle(
-        "GetClassLongW",
-        constants$317.GetClassLongW$FUNC
-    );
-    static final FunctionDescriptor SetClassLongA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetBitmapDimensionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetClassLongA$MH = RuntimeHelper.downcallHandle(
-        "SetClassLongA",
-        constants$317.SetClassLongA$FUNC
+    static final MethodHandle SetBitmapDimensionEx$MH = RuntimeHelper.downcallHandle(
+        "SetBitmapDimensionEx",
+        constants$317.SetBitmapDimensionEx$FUNC
     );
-    static final FunctionDescriptor SetClassLongW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetBrushOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetClassLongW$MH = RuntimeHelper.downcallHandle(
-        "SetClassLongW",
-        constants$317.SetClassLongW$FUNC
+    static final MethodHandle SetBrushOrgEx$MH = RuntimeHelper.downcallHandle(
+        "SetBrushOrgEx",
+        constants$317.SetBrushOrgEx$FUNC
+    );
+    static final FunctionDescriptor GetTextFaceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextFaceA$MH = RuntimeHelper.downcallHandle(
+        "GetTextFaceA",
+        constants$317.GetTextFaceA$FUNC
+    );
+    static final FunctionDescriptor GetTextFaceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTextFaceW$MH = RuntimeHelper.downcallHandle(
+        "GetTextFaceW",
+        constants$317.GetTextFaceW$FUNC
+    );
+    static final FunctionDescriptor GetKerningPairsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetKerningPairsA$MH = RuntimeHelper.downcallHandle(
+        "GetKerningPairsA",
+        constants$317.GetKerningPairsA$FUNC
     );
 }
 

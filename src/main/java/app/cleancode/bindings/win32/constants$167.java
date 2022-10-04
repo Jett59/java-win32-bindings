@@ -9,53 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$167 {
 
-    static final FunctionDescriptor CreateScalableFontResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsWellKnownSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateScalableFontResourceW$MH = RuntimeHelper.downcallHandle(
-        "CreateScalableFontResourceW",
-        constants$167.CreateScalableFontResourceW$FUNC
-    );
-    static final FunctionDescriptor CreateSolidBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateSolidBrush$MH = RuntimeHelper.downcallHandle(
-        "CreateSolidBrush",
-        constants$167.CreateSolidBrush$FUNC
+    static final MethodHandle IsWellKnownSid$MH = RuntimeHelper.downcallHandle(
+        "IsWellKnownSid",
+        constants$167.IsWellKnownSid$FUNC
     );
-    static final FunctionDescriptor DeleteDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteDC$MH = RuntimeHelper.downcallHandle(
-        "DeleteDC",
-        constants$167.DeleteDC$FUNC
-    );
-    static final FunctionDescriptor DeleteMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteMetaFile$MH = RuntimeHelper.downcallHandle(
-        "DeleteMetaFile",
-        constants$167.DeleteMetaFile$FUNC
-    );
-    static final FunctionDescriptor DeleteObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteObject$MH = RuntimeHelper.downcallHandle(
-        "DeleteObject",
-        constants$167.DeleteObject$FUNC
-    );
-    static final FunctionDescriptor DescribePixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MakeAbsoluteSD$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DescribePixelFormat$MH = RuntimeHelper.downcallHandle(
-        "DescribePixelFormat",
-        constants$167.DescribePixelFormat$FUNC
+    static final MethodHandle MakeAbsoluteSD$MH = RuntimeHelper.downcallHandle(
+        "MakeAbsoluteSD",
+        constants$167.MakeAbsoluteSD$FUNC
+    );
+    static final FunctionDescriptor MakeSelfRelativeSD$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MakeSelfRelativeSD$MH = RuntimeHelper.downcallHandle(
+        "MakeSelfRelativeSD",
+        constants$167.MakeSelfRelativeSD$FUNC
+    );
+    static final FunctionDescriptor MapGenericMask$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MapGenericMask$MH = RuntimeHelper.downcallHandle(
+        "MapGenericMask",
+        constants$167.MapGenericMask$FUNC
+    );
+    static final FunctionDescriptor ObjectCloseAuditAlarmW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ObjectCloseAuditAlarmW$MH = RuntimeHelper.downcallHandle(
+        "ObjectCloseAuditAlarmW",
+        constants$167.ObjectCloseAuditAlarmW$FUNC
+    );
+    static final FunctionDescriptor ObjectDeleteAuditAlarmW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ObjectDeleteAuditAlarmW$MH = RuntimeHelper.downcallHandle(
+        "ObjectDeleteAuditAlarmW",
+        constants$167.ObjectDeleteAuditAlarmW$FUNC
     );
 }
 

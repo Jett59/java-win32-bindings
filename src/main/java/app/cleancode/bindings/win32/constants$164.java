@@ -9,77 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$164 {
 
-    static final FunctionDescriptor CreateFontIndirectA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetSecurityDescriptorRMControl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateFontIndirectA$MH = RuntimeHelper.downcallHandle(
-        "CreateFontIndirectA",
-        constants$164.CreateFontIndirectA$FUNC
+    static final MethodHandle GetSecurityDescriptorRMControl$MH = RuntimeHelper.downcallHandle(
+        "GetSecurityDescriptorRMControl",
+        constants$164.GetSecurityDescriptorRMControl$FUNC
     );
-    static final FunctionDescriptor CreateFontIndirectW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetSecurityDescriptorSacl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateFontIndirectW$MH = RuntimeHelper.downcallHandle(
-        "CreateFontIndirectW",
-        constants$164.CreateFontIndirectW$FUNC
+    static final MethodHandle GetSecurityDescriptorSacl$MH = RuntimeHelper.downcallHandle(
+        "GetSecurityDescriptorSacl",
+        constants$164.GetSecurityDescriptorSacl$FUNC
     );
-    static final FunctionDescriptor CreateFontA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSidIdentifierAuthority$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateFontA$MH = RuntimeHelper.downcallHandle(
-        "CreateFontA",
-        constants$164.CreateFontA$FUNC
+    static final MethodHandle GetSidIdentifierAuthority$MH = RuntimeHelper.downcallHandle(
+        "GetSidIdentifierAuthority",
+        constants$164.GetSidIdentifierAuthority$FUNC
     );
-    static final FunctionDescriptor CreateFontW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetSidLengthRequired$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
     );
-    static final MethodHandle CreateFontW$MH = RuntimeHelper.downcallHandle(
-        "CreateFontW",
-        constants$164.CreateFontW$FUNC
+    static final MethodHandle GetSidLengthRequired$MH = RuntimeHelper.downcallHandle(
+        "GetSidLengthRequired",
+        constants$164.GetSidLengthRequired$FUNC
     );
-    static final FunctionDescriptor CreateHatchBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSidSubAuthority$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateHatchBrush$MH = RuntimeHelper.downcallHandle(
-        "CreateHatchBrush",
-        constants$164.CreateHatchBrush$FUNC
+    static final MethodHandle GetSidSubAuthority$MH = RuntimeHelper.downcallHandle(
+        "GetSidSubAuthority",
+        constants$164.GetSidSubAuthority$FUNC
     );
-    static final FunctionDescriptor CreateICA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetSidSubAuthorityCount$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateICA$MH = RuntimeHelper.downcallHandle(
-        "CreateICA",
-        constants$164.CreateICA$FUNC
+    static final MethodHandle GetSidSubAuthorityCount$MH = RuntimeHelper.downcallHandle(
+        "GetSidSubAuthorityCount",
+        constants$164.GetSidSubAuthorityCount$FUNC
     );
 }
 

@@ -9,57 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$100 {
 
-    static final FunctionDescriptor _lwrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle _lwrite$MH = RuntimeHelper.downcallHandle(
-        "_lwrite",
-        constants$100._lwrite$FUNC
-    );
-    static final FunctionDescriptor _hread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle _hread$MH = RuntimeHelper.downcallHandle(
-        "_hread",
-        constants$100._hread$FUNC
-    );
-    static final FunctionDescriptor _hwrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle _hwrite$MH = RuntimeHelper.downcallHandle(
-        "_hwrite",
-        constants$100._hwrite$FUNC
-    );
-    static final FunctionDescriptor _lclose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle _lclose$MH = RuntimeHelper.downcallHandle(
-        "_lclose",
-        constants$100._lclose$FUNC
-    );
-    static final FunctionDescriptor _llseek$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle _llseek$MH = RuntimeHelper.downcallHandle(
-        "_llseek",
-        constants$100._llseek$FUNC
-    );
-    static final FunctionDescriptor IsTextUnicode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor HeapQueryInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle IsTextUnicode$MH = RuntimeHelper.downcallHandle(
-        "IsTextUnicode",
-        constants$100.IsTextUnicode$FUNC
+    static final MethodHandle HeapQueryInformation$MH = RuntimeHelper.downcallHandle(
+        "HeapQueryInformation",
+        constants$100.HeapQueryInformation$FUNC
+    );
+    static final FunctionDescriptor InitializeSRWLock$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle InitializeSRWLock$MH = RuntimeHelper.downcallHandle(
+        "InitializeSRWLock",
+        constants$100.InitializeSRWLock$FUNC
+    );
+    static final FunctionDescriptor ReleaseSRWLockExclusive$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReleaseSRWLockExclusive$MH = RuntimeHelper.downcallHandle(
+        "ReleaseSRWLockExclusive",
+        constants$100.ReleaseSRWLockExclusive$FUNC
+    );
+    static final FunctionDescriptor ReleaseSRWLockShared$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReleaseSRWLockShared$MH = RuntimeHelper.downcallHandle(
+        "ReleaseSRWLockShared",
+        constants$100.ReleaseSRWLockShared$FUNC
+    );
+    static final FunctionDescriptor AcquireSRWLockExclusive$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AcquireSRWLockExclusive$MH = RuntimeHelper.downcallHandle(
+        "AcquireSRWLockExclusive",
+        constants$100.AcquireSRWLockExclusive$FUNC
+    );
+    static final FunctionDescriptor AcquireSRWLockShared$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle AcquireSRWLockShared$MH = RuntimeHelper.downcallHandle(
+        "AcquireSRWLockShared",
+        constants$100.AcquireSRWLockShared$FUNC
     );
 }
 

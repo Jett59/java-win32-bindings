@@ -11,13 +11,13 @@ public interface PFN_CMSG_IMPORT_ENCRYPT_KEY {
 
     int apply(long hCryptProv, int dwKeySpec, java.lang.foreign.MemoryAddress paiEncrypt, java.lang.foreign.MemoryAddress paiPubKey, java.lang.foreign.MemoryAddress pbEncodedKey, int cbEncodedKey, java.lang.foreign.MemoryAddress phEncryptKey);
     static MemorySegment allocate(PFN_CMSG_IMPORT_ENCRYPT_KEY fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CMSG_IMPORT_ENCRYPT_KEY.class, fi, constants$430.PFN_CMSG_IMPORT_ENCRYPT_KEY$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CMSG_IMPORT_ENCRYPT_KEY.class, fi, constants$582.PFN_CMSG_IMPORT_ENCRYPT_KEY$FUNC, session);
     }
     static PFN_CMSG_IMPORT_ENCRYPT_KEY ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (long _hCryptProv, int _dwKeySpec, java.lang.foreign.MemoryAddress _paiEncrypt, java.lang.foreign.MemoryAddress _paiPubKey, java.lang.foreign.MemoryAddress _pbEncodedKey, int _cbEncodedKey, java.lang.foreign.MemoryAddress _phEncryptKey) -> {
             try {
-                return (int)constants$430.PFN_CMSG_IMPORT_ENCRYPT_KEY$MH.invokeExact((Addressable)symbol, _hCryptProv, _dwKeySpec, (java.lang.foreign.Addressable)_paiEncrypt, (java.lang.foreign.Addressable)_paiPubKey, (java.lang.foreign.Addressable)_pbEncodedKey, _cbEncodedKey, (java.lang.foreign.Addressable)_phEncryptKey);
+                return (int)constants$582.PFN_CMSG_IMPORT_ENCRYPT_KEY$MH.invokeExact((Addressable)symbol, _hCryptProv, _dwKeySpec, (java.lang.foreign.Addressable)_paiEncrypt, (java.lang.foreign.Addressable)_paiPubKey, (java.lang.foreign.Addressable)_pbEncodedKey, _cbEncodedKey, (java.lang.foreign.Addressable)_phEncryptKey);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

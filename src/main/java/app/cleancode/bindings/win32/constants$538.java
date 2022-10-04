@@ -9,63 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$538 {
 
-    static final FunctionDescriptor LPHANDLER_FUNCTION_EX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor auxGetNumDevs$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle auxGetNumDevs$MH = RuntimeHelper.downcallHandle(
+        "auxGetNumDevs",
+        constants$538.auxGetNumDevs$FUNC
     );
-    static final MethodHandle LPHANDLER_FUNCTION_EX$MH = RuntimeHelper.downcallHandle(
-        constants$538.LPHANDLER_FUNCTION_EX$FUNC
-    );
-    static final FunctionDescriptor PFN_SC_NOTIFY_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_SC_NOTIFY_CALLBACK$MH = RuntimeHelper.downcallHandle(
-        constants$538.PFN_SC_NOTIFY_CALLBACK$FUNC
-    );
-    static final FunctionDescriptor ChangeServiceConfigA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor auxGetDevCapsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle auxGetDevCapsA$MH = RuntimeHelper.downcallHandle(
+        "auxGetDevCapsA",
+        constants$538.auxGetDevCapsA$FUNC
+    );
+    static final FunctionDescriptor auxGetDevCapsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle auxGetDevCapsW$MH = RuntimeHelper.downcallHandle(
+        "auxGetDevCapsW",
+        constants$538.auxGetDevCapsW$FUNC
+    );
+    static final FunctionDescriptor auxSetVolume$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ChangeServiceConfigA$MH = RuntimeHelper.downcallHandle(
-        "ChangeServiceConfigA",
-        constants$538.ChangeServiceConfigA$FUNC
+    static final MethodHandle auxSetVolume$MH = RuntimeHelper.downcallHandle(
+        "auxSetVolume",
+        constants$538.auxSetVolume$FUNC
     );
-    static final FunctionDescriptor ChangeServiceConfigW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ChangeServiceConfigW$MH = RuntimeHelper.downcallHandle(
-        "ChangeServiceConfigW",
-        constants$538.ChangeServiceConfigW$FUNC
-    );
-    static final FunctionDescriptor ChangeServiceConfig2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor auxGetVolume$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ChangeServiceConfig2A$MH = RuntimeHelper.downcallHandle(
-        "ChangeServiceConfig2A",
-        constants$538.ChangeServiceConfig2A$FUNC
+    static final MethodHandle auxGetVolume$MH = RuntimeHelper.downcallHandle(
+        "auxGetVolume",
+        constants$538.auxGetVolume$FUNC
+    );
+    static final FunctionDescriptor auxOutMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle auxOutMessage$MH = RuntimeHelper.downcallHandle(
+        "auxOutMessage",
+        constants$538.auxOutMessage$FUNC
     );
 }
 

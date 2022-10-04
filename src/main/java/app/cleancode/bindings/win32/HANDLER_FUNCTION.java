@@ -11,13 +11,13 @@ public interface HANDLER_FUNCTION {
 
     void apply(int dwControl);
     static MemorySegment allocate(HANDLER_FUNCTION fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(HANDLER_FUNCTION.class, fi, constants$536.HANDLER_FUNCTION$FUNC, session);
+        return RuntimeHelper.upcallStub(HANDLER_FUNCTION.class, fi, constants$709.HANDLER_FUNCTION$FUNC, session);
     }
     static HANDLER_FUNCTION ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int _dwControl) -> {
             try {
-                constants$537.HANDLER_FUNCTION$MH.invokeExact((Addressable)symbol, _dwControl);
+                constants$709.HANDLER_FUNCTION$MH.invokeExact((Addressable)symbol, _dwControl);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

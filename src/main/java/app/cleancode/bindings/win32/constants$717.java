@@ -9,12 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$717 {
 
-    static final MemoryAddress URL_OID_CERTIFICATE_ONLY_OCSP$ADDR = MemoryAddress.ofLong(13L);
-    static final MemorySegment TIME_VALID_OID_GET_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("TimeValidDllGetObject");
-    static final MemoryAddress TIME_VALID_OID_GET_CTL$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress TIME_VALID_OID_GET_CRL$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress TIME_VALID_OID_GET_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress TIME_VALID_OID_GET_FRESHEST_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(4L);
+    static final FunctionDescriptor SetServiceObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetServiceObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "SetServiceObjectSecurity",
+        constants$717.SetServiceObjectSecurity$FUNC
+    );
+    static final FunctionDescriptor SetServiceStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetServiceStatus$MH = RuntimeHelper.downcallHandle(
+        "SetServiceStatus",
+        constants$717.SetServiceStatus$FUNC
+    );
+    static final FunctionDescriptor StartServiceCtrlDispatcherA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StartServiceCtrlDispatcherA$MH = RuntimeHelper.downcallHandle(
+        "StartServiceCtrlDispatcherA",
+        constants$717.StartServiceCtrlDispatcherA$FUNC
+    );
+    static final FunctionDescriptor StartServiceCtrlDispatcherW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StartServiceCtrlDispatcherW$MH = RuntimeHelper.downcallHandle(
+        "StartServiceCtrlDispatcherW",
+        constants$717.StartServiceCtrlDispatcherW$FUNC
+    );
+    static final FunctionDescriptor StartServiceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StartServiceA$MH = RuntimeHelper.downcallHandle(
+        "StartServiceA",
+        constants$717.StartServiceA$FUNC
+    );
+    static final FunctionDescriptor StartServiceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StartServiceW$MH = RuntimeHelper.downcallHandle(
+        "StartServiceW",
+        constants$717.StartServiceW$FUNC
+    );
 }
 
 

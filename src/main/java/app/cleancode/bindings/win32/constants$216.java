@@ -9,55 +9,33 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$216 {
 
-    static final FunctionDescriptor SetICMMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PGET_SYSTEM_WOW64_DIRECTORY_A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetICMMode$MH = RuntimeHelper.downcallHandle(
-        "SetICMMode",
-        constants$216.SetICMMode$FUNC
+    static final MethodHandle PGET_SYSTEM_WOW64_DIRECTORY_A$MH = RuntimeHelper.downcallHandle(
+        constants$216.PGET_SYSTEM_WOW64_DIRECTORY_A$FUNC
     );
-    static final FunctionDescriptor CheckColorsInGamut$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor PGET_SYSTEM_WOW64_DIRECTORY_W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CheckColorsInGamut$MH = RuntimeHelper.downcallHandle(
-        "CheckColorsInGamut",
-        constants$216.CheckColorsInGamut$FUNC
+    static final MethodHandle PGET_SYSTEM_WOW64_DIRECTORY_W$MH = RuntimeHelper.downcallHandle(
+        constants$216.PGET_SYSTEM_WOW64_DIRECTORY_W$FUNC
     );
-    static final FunctionDescriptor GetColorSpace$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetDllDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetColorSpace$MH = RuntimeHelper.downcallHandle(
-        "GetColorSpace",
-        constants$216.GetColorSpace$FUNC
+    static final MethodHandle SetDllDirectoryA$MH = RuntimeHelper.downcallHandle(
+        "SetDllDirectoryA",
+        constants$216.SetDllDirectoryA$FUNC
     );
-    static final FunctionDescriptor GetLogColorSpaceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetLogColorSpaceA$MH = RuntimeHelper.downcallHandle(
-        "GetLogColorSpaceA",
-        constants$216.GetLogColorSpaceA$FUNC
-    );
-    static final FunctionDescriptor GetLogColorSpaceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetLogColorSpaceW$MH = RuntimeHelper.downcallHandle(
-        "GetLogColorSpaceW",
-        constants$216.GetLogColorSpaceW$FUNC
-    );
-    static final FunctionDescriptor CreateColorSpaceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetDllDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateColorSpaceA$MH = RuntimeHelper.downcallHandle(
-        "CreateColorSpaceA",
-        constants$216.CreateColorSpaceA$FUNC
+    static final MethodHandle SetDllDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "SetDllDirectoryW",
+        constants$216.SetDllDirectoryW$FUNC
     );
 }
 

@@ -9,62 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$427 {
 
-    static final FunctionDescriptor CryptMsgOpenToDecode$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor UnhookWindowsHookEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnhookWindowsHookEx$MH = RuntimeHelper.downcallHandle(
+        "UnhookWindowsHookEx",
+        constants$427.UnhookWindowsHookEx$FUNC
+    );
+    static final FunctionDescriptor CallNextHookEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CallNextHookEx$MH = RuntimeHelper.downcallHandle(
+        "CallNextHookEx",
+        constants$427.CallNextHookEx$FUNC
+    );
+    static final FunctionDescriptor CheckMenuRadioItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptMsgOpenToDecode$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgOpenToDecode",
-        constants$427.CryptMsgOpenToDecode$FUNC
-    );
-    static final FunctionDescriptor CryptMsgDuplicate$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptMsgDuplicate$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgDuplicate",
-        constants$427.CryptMsgDuplicate$FUNC
-    );
-    static final FunctionDescriptor CryptMsgClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptMsgClose$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgClose",
-        constants$427.CryptMsgClose$FUNC
-    );
-    static final FunctionDescriptor CryptMsgUpdate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptMsgUpdate$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgUpdate",
-        constants$427.CryptMsgUpdate$FUNC
+    static final MethodHandle CheckMenuRadioItem$MH = RuntimeHelper.downcallHandle(
+        "CheckMenuRadioItem",
+        constants$427.CheckMenuRadioItem$FUNC
     );
-    static final FunctionDescriptor CryptMsgGetParam$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LoadBitmapA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptMsgGetParam$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgGetParam",
-        constants$427.CryptMsgGetParam$FUNC
+    static final MethodHandle LoadBitmapA$MH = RuntimeHelper.downcallHandle(
+        "LoadBitmapA",
+        constants$427.LoadBitmapA$FUNC
     );
-    static final FunctionDescriptor CryptMsgControl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LoadBitmapW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptMsgControl$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgControl",
-        constants$427.CryptMsgControl$FUNC
+    static final MethodHandle LoadBitmapW$MH = RuntimeHelper.downcallHandle(
+        "LoadBitmapW",
+        constants$427.LoadBitmapW$FUNC
+    );
+    static final FunctionDescriptor LoadCursorA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LoadCursorA$MH = RuntimeHelper.downcallHandle(
+        "LoadCursorA",
+        constants$427.LoadCursorA$FUNC
     );
 }
 

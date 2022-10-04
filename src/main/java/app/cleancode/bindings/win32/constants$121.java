@@ -9,62 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$121 {
 
-    static final FunctionDescriptor CopyFileExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCurrentThreadStackLimits$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CopyFileExA$MH = RuntimeHelper.downcallHandle(
-        "CopyFileExA",
-        constants$121.CopyFileExA$FUNC
+    static final MethodHandle GetCurrentThreadStackLimits$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentThreadStackLimits",
+        constants$121.GetCurrentThreadStackLimits$FUNC
     );
-    static final FunctionDescriptor CopyFileExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetThreadContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CopyFileExW$MH = RuntimeHelper.downcallHandle(
-        "CopyFileExW",
-        constants$121.CopyFileExW$FUNC
+    static final MethodHandle GetThreadContext$MH = RuntimeHelper.downcallHandle(
+        "GetThreadContext",
+        constants$121.GetThreadContext$FUNC
     );
-    static final FunctionDescriptor CopyFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetProcessMitigationPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle GetProcessMitigationPolicy$MH = RuntimeHelper.downcallHandle(
+        "GetProcessMitigationPolicy",
+        constants$121.GetProcessMitigationPolicy$FUNC
+    );
+    static final FunctionDescriptor SetThreadContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CopyFileTransactedA$MH = RuntimeHelper.downcallHandle(
-        "CopyFileTransactedA",
-        constants$121.CopyFileTransactedA$FUNC
+    static final MethodHandle SetThreadContext$MH = RuntimeHelper.downcallHandle(
+        "SetThreadContext",
+        constants$121.SetThreadContext$FUNC
     );
-    static final FunctionDescriptor CopyFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetProcessMitigationPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CopyFileTransactedW$MH = RuntimeHelper.downcallHandle(
-        "CopyFileTransactedW",
-        constants$121.CopyFileTransactedW$FUNC
-    );
-    static final FunctionDescriptor PCOPYFILE2_PROGRESS_ROUTINE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PCOPYFILE2_PROGRESS_ROUTINE$MH = RuntimeHelper.downcallHandle(
-        constants$121.PCOPYFILE2_PROGRESS_ROUTINE$FUNC
+    static final MethodHandle SetProcessMitigationPolicy$MH = RuntimeHelper.downcallHandle(
+        "SetProcessMitigationPolicy",
+        constants$121.SetProcessMitigationPolicy$FUNC
+    );
+    static final FunctionDescriptor FlushInstructionCache$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle FlushInstructionCache$MH = RuntimeHelper.downcallHandle(
+        "FlushInstructionCache",
+        constants$121.FlushInstructionCache$FUNC
     );
 }
 

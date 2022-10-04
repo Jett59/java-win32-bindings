@@ -9,12 +9,37 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$700 {
 
-    static final MemorySegment CERT_GROUP_POLICY_SYSTEM_STORE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_EFSBLOB_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_EFSBLOB_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
-    static final MemorySegment CERT_PROT_ROOT_FLAGS_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_PROT_ROOT_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
-    static final MemorySegment CERT_PROT_ROOT_PEER_USAGES_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
+    static final FunctionDescriptor RoGetAgileReference$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RoGetAgileReference$MH = RuntimeHelper.downcallHandle(
+        "RoGetAgileReference",
+        constants$700.RoGetAgileReference$FUNC
+    );
+    static final FunctionDescriptor LPFNGETCLASSOBJECT$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LPFNGETCLASSOBJECT$MH = RuntimeHelper.downcallHandle(
+        constants$700.LPFNGETCLASSOBJECT$FUNC
+    );
+    static final FunctionDescriptor LPFNCANUNLOADNOW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle LPFNCANUNLOADNOW$MH = RuntimeHelper.downcallHandle(
+        constants$700.LPFNCANUNLOADNOW$FUNC
+    );
+    static final FunctionDescriptor DllGetClassObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DllGetClassObject$MH = RuntimeHelper.downcallHandle(
+        "DllGetClassObject",
+        constants$700.DllGetClassObject$FUNC
+    );
 }
 
 

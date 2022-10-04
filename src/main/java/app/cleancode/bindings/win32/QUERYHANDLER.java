@@ -11,13 +11,13 @@ public interface QUERYHANDLER {
 
     int apply(java.lang.foreign.MemoryAddress keycontext, java.lang.foreign.MemoryAddress val_list, int num_vals, java.lang.foreign.MemoryAddress outputbuffer, java.lang.foreign.MemoryAddress total_outlen, int input_blen);
     static MemorySegment allocate(QUERYHANDLER fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(QUERYHANDLER.class, fi, constants$380.QUERYHANDLER$FUNC, session);
+        return RuntimeHelper.upcallStub(QUERYHANDLER.class, fi, constants$489.QUERYHANDLER$FUNC, session);
     }
     static QUERYHANDLER ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _keycontext, java.lang.foreign.MemoryAddress _val_list, int _num_vals, java.lang.foreign.MemoryAddress _outputbuffer, java.lang.foreign.MemoryAddress _total_outlen, int _input_blen) -> {
             try {
-                return (int)constants$380.QUERYHANDLER$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_keycontext, (java.lang.foreign.Addressable)_val_list, _num_vals, (java.lang.foreign.Addressable)_outputbuffer, (java.lang.foreign.Addressable)_total_outlen, _input_blen);
+                return (int)constants$489.QUERYHANDLER$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_keycontext, (java.lang.foreign.Addressable)_val_list, _num_vals, (java.lang.foreign.Addressable)_outputbuffer, (java.lang.foreign.Addressable)_total_outlen, _input_blen);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

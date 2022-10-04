@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$745 {
 
-    static final MemorySegment SPLREG_REMOTE_FAX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RemoteFax");
-    static final MemorySegment SPLREG_RESTART_JOB_ON_POOL_ERROR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RestartJobOnPoolError");
-    static final MemorySegment SPLREG_RESTART_JOB_ON_POOL_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RestartJobOnPoolEnabled");
-    static final MemorySegment SPLREG_DNS_MACHINE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DNSMachineName");
-    static final MemorySegment SPLREG_ALLOW_USER_MANAGEFORMS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("AllowUserManageForms");
-    static final MemorySegment SPLREG_WEBSHAREMGMT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("WebShareMgmt");
+    static final MemoryAddress IDI_INFORMATION$ADDR = MemoryAddress.ofLong(32516L);
+    static final MemoryAddress WC_DIALOG$ADDR = MemoryAddress.ofLong(32770L);
+    static final MemoryAddress GR_GLOBAL$ADDR = MemoryAddress.ofLong(-2L);
+    static final MemoryAddress GEO_NAME_USER_DEFAULT$ADDR = MemoryAddress.ofLong(0L);
+    static final MemoryAddress LOCALE_NAME_USER_DEFAULT$ADDR = MemoryAddress.ofLong(0L);
+    static final MemorySegment LOCALE_NAME_INVARIANT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("");
 }
 
 

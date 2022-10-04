@@ -9,12 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$618 {
 
-    static final MemorySegment szOID_TELETEXT_TERMINAL_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.22");
-    static final MemorySegment szOID_FACSIMILE_TELEPHONE_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.23");
-    static final MemorySegment szOID_X21_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.24");
-    static final MemorySegment szOID_INTERNATIONAL_ISDN_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.25");
-    static final MemorySegment szOID_REGISTERED_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.26");
-    static final MemorySegment szOID_DESTINATION_INDICATOR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.27");
+    static final FunctionDescriptor CertStrToNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertStrToNameW$MH = RuntimeHelper.downcallHandle(
+        "CertStrToNameW",
+        constants$618.CertStrToNameW$FUNC
+    );
+    static final FunctionDescriptor CertGetNameStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertGetNameStringA$MH = RuntimeHelper.downcallHandle(
+        "CertGetNameStringA",
+        constants$618.CertGetNameStringA$FUNC
+    );
+    static final FunctionDescriptor CertGetNameStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertGetNameStringW$MH = RuntimeHelper.downcallHandle(
+        "CertGetNameStringW",
+        constants$618.CertGetNameStringW$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_GET_SIGNER_CERTIFICATE$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_GET_SIGNER_CERTIFICATE$MH = RuntimeHelper.downcallHandle(
+        constants$618.PFN_CRYPT_GET_SIGNER_CERTIFICATE$FUNC
+    );
+    static final FunctionDescriptor CryptSignMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptSignMessage$MH = RuntimeHelper.downcallHandle(
+        "CryptSignMessage",
+        constants$618.CryptSignMessage$FUNC
+    );
 }
 
 

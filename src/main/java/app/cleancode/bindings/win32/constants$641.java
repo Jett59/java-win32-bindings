@@ -9,12 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$641 {
 
-    static final MemorySegment szOID_KEY_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.15");
-    static final MemorySegment szOID_PRIVATEKEY_USAGE_PERIOD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.16");
-    static final MemorySegment szOID_BASIC_CONSTRAINTS2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.19");
-    static final MemorySegment szOID_CERT_POLICIES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.32");
-    static final MemorySegment szOID_ANY_CERT_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.32.0");
-    static final MemorySegment szOID_INHIBIT_ANY_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.54");
+    static final  GroupLayout GUID_DEVINTERFACE_SERVICE_VOLUME$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_SERVICE_VOLUME$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SERVICE_VOLUME", constants$641.GUID_DEVINTERFACE_SERVICE_VOLUME$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_HIDDEN_VOLUME$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_HIDDEN_VOLUME$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_HIDDEN_VOLUME", constants$641.GUID_DEVINTERFACE_HIDDEN_VOLUME$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB", constants$641.GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB$LAYOUT);
+    static final  GroupLayout GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE", constants$641.GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE$LAYOUT);
+    static final  GroupLayout GUID_SCM_PD_HEALTH_NOTIFICATION$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_SCM_PD_HEALTH_NOTIFICATION$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_SCM_PD_HEALTH_NOTIFICATION", constants$641.GUID_SCM_PD_HEALTH_NOTIFICATION$LAYOUT);
+    static final  GroupLayout GUID_SCM_PD_PASSTHROUGH_INVDIMM$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment GUID_SCM_PD_PASSTHROUGH_INVDIMM$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_SCM_PD_PASSTHROUGH_INVDIMM", constants$641.GUID_SCM_PD_PASSTHROUGH_INVDIMM$LAYOUT);
 }
 
 

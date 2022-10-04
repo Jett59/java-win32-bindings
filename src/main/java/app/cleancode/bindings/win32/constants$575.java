@@ -9,12 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$575 {
 
-    static final MemoryAddress HKEY_CURRENT_CONFIG$ADDR = MemoryAddress.ofLong(-2147483643L);
-    static final MemoryAddress HKEY_DYN_DATA$ADDR = MemoryAddress.ofLong(-2147483642L);
-    static final MemoryAddress HKEY_CURRENT_USER_LOCAL_SETTINGS$ADDR = MemoryAddress.ofLong(-2147483641L);
-    static final MemoryAddress WIN31_CLASS$ADDR = MemoryAddress.ofLong(0L);
-    static final MemorySegment MS_DEF_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Cryptographic Provider v1.0");
-    static final MemorySegment MS_DEF_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final FunctionDescriptor CryptInitOIDFunctionSet$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptInitOIDFunctionSet$MH = RuntimeHelper.downcallHandle(
+        "CryptInitOIDFunctionSet",
+        constants$575.CryptInitOIDFunctionSet$FUNC
+    );
+    static final FunctionDescriptor CryptGetOIDFunctionAddress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGetOIDFunctionAddress$MH = RuntimeHelper.downcallHandle(
+        "CryptGetOIDFunctionAddress",
+        constants$575.CryptGetOIDFunctionAddress$FUNC
+    );
+    static final FunctionDescriptor CryptGetDefaultOIDDllList$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGetDefaultOIDDllList$MH = RuntimeHelper.downcallHandle(
+        "CryptGetDefaultOIDDllList",
+        constants$575.CryptGetDefaultOIDDllList$FUNC
+    );
+    static final FunctionDescriptor CryptGetDefaultOIDFunctionAddress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptGetDefaultOIDFunctionAddress$MH = RuntimeHelper.downcallHandle(
+        "CryptGetDefaultOIDFunctionAddress",
+        constants$575.CryptGetDefaultOIDFunctionAddress$FUNC
+    );
+    static final FunctionDescriptor CryptFreeOIDFunctionAddress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CryptFreeOIDFunctionAddress$MH = RuntimeHelper.downcallHandle(
+        "CryptFreeOIDFunctionAddress",
+        constants$575.CryptFreeOIDFunctionAddress$FUNC
+    );
+    static final FunctionDescriptor CryptRegisterOIDFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptRegisterOIDFunction$MH = RuntimeHelper.downcallHandle(
+        "CryptRegisterOIDFunction",
+        constants$575.CryptRegisterOIDFunction$FUNC
+    );
 }
 
 

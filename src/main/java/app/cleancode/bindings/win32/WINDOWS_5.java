@@ -9,6 +9,165 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_5 extends WINDOWS_4 {
 
+    public static int TOUCHINPUTMASKF_EXTRAINFO() {
+        return (int)2L;
+    }
+    public static int TOUCHINPUTMASKF_CONTACTAREA() {
+        return (int)4L;
+    }
+    public static int POINTER_FLAG_NONE() {
+        return (int)0L;
+    }
+    public static int POINTER_FLAG_NEW() {
+        return (int)1L;
+    }
+    public static int POINTER_FLAG_INRANGE() {
+        return (int)2L;
+    }
+    public static int POINTER_FLAG_INCONTACT() {
+        return (int)4L;
+    }
+    public static int POINTER_FLAG_FIRSTBUTTON() {
+        return (int)16L;
+    }
+    public static int POINTER_FLAG_SECONDBUTTON() {
+        return (int)32L;
+    }
+    public static int POINTER_FLAG_THIRDBUTTON() {
+        return (int)64L;
+    }
+    public static int POINTER_FLAG_FOURTHBUTTON() {
+        return (int)128L;
+    }
+    public static int POINTER_FLAG_FIFTHBUTTON() {
+        return (int)256L;
+    }
+    public static int POINTER_FLAG_PRIMARY() {
+        return (int)8192L;
+    }
+    public static int POINTER_FLAG_CONFIDENCE() {
+        return (int)16384L;
+    }
+    public static int POINTER_FLAG_CANCELED() {
+        return (int)32768L;
+    }
+    public static int POINTER_FLAG_DOWN() {
+        return (int)65536L;
+    }
+    public static int POINTER_FLAG_UPDATE() {
+        return (int)131072L;
+    }
+    public static int POINTER_FLAG_UP() {
+        return (int)262144L;
+    }
+    public static int POINTER_FLAG_WHEEL() {
+        return (int)524288L;
+    }
+    public static int POINTER_FLAG_HWHEEL() {
+        return (int)1048576L;
+    }
+    public static int POINTER_FLAG_CAPTURECHANGED() {
+        return (int)2097152L;
+    }
+    public static int POINTER_FLAG_HASTRANSFORM() {
+        return (int)4194304L;
+    }
+    public static int TOUCH_FLAG_NONE() {
+        return (int)0L;
+    }
+    public static int TOUCH_MASK_NONE() {
+        return (int)0L;
+    }
+    public static int TOUCH_MASK_CONTACTAREA() {
+        return (int)1L;
+    }
+    public static int TOUCH_MASK_ORIENTATION() {
+        return (int)2L;
+    }
+    public static int TOUCH_MASK_PRESSURE() {
+        return (int)4L;
+    }
+    public static int PEN_FLAG_NONE() {
+        return (int)0L;
+    }
+    public static int PEN_FLAG_BARREL() {
+        return (int)1L;
+    }
+    public static int PEN_FLAG_INVERTED() {
+        return (int)2L;
+    }
+    public static int PEN_FLAG_ERASER() {
+        return (int)4L;
+    }
+    public static int PEN_MASK_NONE() {
+        return (int)0L;
+    }
+    public static int PEN_MASK_PRESSURE() {
+        return (int)1L;
+    }
+    public static int PEN_MASK_ROTATION() {
+        return (int)2L;
+    }
+    public static int PEN_MASK_TILT_X() {
+        return (int)4L;
+    }
+    public static int PEN_MASK_TILT_Y() {
+        return (int)8L;
+    }
+    public static int POINTER_MESSAGE_FLAG_NEW() {
+        return (int)1L;
+    }
+    public static int POINTER_MESSAGE_FLAG_INRANGE() {
+        return (int)2L;
+    }
+    public static int POINTER_MESSAGE_FLAG_INCONTACT() {
+        return (int)4L;
+    }
+    public static int POINTER_MESSAGE_FLAG_FIRSTBUTTON() {
+        return (int)16L;
+    }
+    public static int POINTER_MESSAGE_FLAG_SECONDBUTTON() {
+        return (int)32L;
+    }
+    public static int POINTER_MESSAGE_FLAG_THIRDBUTTON() {
+        return (int)64L;
+    }
+    public static int POINTER_MESSAGE_FLAG_FOURTHBUTTON() {
+        return (int)128L;
+    }
+    public static int POINTER_MESSAGE_FLAG_FIFTHBUTTON() {
+        return (int)256L;
+    }
+    public static int POINTER_MESSAGE_FLAG_PRIMARY() {
+        return (int)8192L;
+    }
+    public static int POINTER_MESSAGE_FLAG_CONFIDENCE() {
+        return (int)16384L;
+    }
+    public static int POINTER_MESSAGE_FLAG_CANCELED() {
+        return (int)32768L;
+    }
+    public static int MAX_TOUCH_COUNT() {
+        return (int)256L;
+    }
+    public static int TOUCH_FEEDBACK_DEFAULT() {
+        return (int)1L;
+    }
+    public static int TOUCH_FEEDBACK_INDIRECT() {
+        return (int)2L;
+    }
+    public static int TOUCH_FEEDBACK_NONE() {
+        return (int)3L;
+    }
+    public static int TOUCH_HIT_TESTING_DEFAULT() {
+        return (int)0L;
+    }
+    public static int TOUCH_HIT_TESTING_CLIENT() {
+        return (int)1L;
+    }
+    public static int TOUCH_HIT_TESTING_NONE() {
+        return (int)2L;
+    }
     public static int TOUCH_HIT_TESTING_PROXIMITY_CLOSEST() {
         return (int)0L;
     }
@@ -2849,165 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int WINEVENT_SKIPOWNTHREAD() {
         return (int)1L;
-    }
-    public static int WINEVENT_SKIPOWNPROCESS() {
-        return (int)2L;
-    }
-    public static int WINEVENT_INCONTEXT() {
-        return (int)4L;
-    }
-    public static int CHILDID_SELF() {
-        return (int)0L;
-    }
-    public static int INDEXID_OBJECT() {
-        return (int)0L;
-    }
-    public static int INDEXID_CONTAINER() {
-        return (int)0L;
-    }
-    public static int EVENT_MIN() {
-        return (int)1L;
-    }
-    public static int EVENT_MAX() {
-        return (int)2147483647L;
-    }
-    public static int EVENT_SYSTEM_SOUND() {
-        return (int)1L;
-    }
-    public static int EVENT_SYSTEM_ALERT() {
-        return (int)2L;
-    }
-    public static int EVENT_SYSTEM_FOREGROUND() {
-        return (int)3L;
-    }
-    public static int EVENT_SYSTEM_MENUSTART() {
-        return (int)4L;
-    }
-    public static int EVENT_SYSTEM_MENUEND() {
-        return (int)5L;
-    }
-    public static int EVENT_SYSTEM_MENUPOPUPSTART() {
-        return (int)6L;
-    }
-    public static int EVENT_SYSTEM_MENUPOPUPEND() {
-        return (int)7L;
-    }
-    public static int EVENT_SYSTEM_CAPTURESTART() {
-        return (int)8L;
-    }
-    public static int EVENT_SYSTEM_CAPTUREEND() {
-        return (int)9L;
-    }
-    public static int EVENT_SYSTEM_MOVESIZESTART() {
-        return (int)10L;
-    }
-    public static int EVENT_SYSTEM_MOVESIZEEND() {
-        return (int)11L;
-    }
-    public static int EVENT_SYSTEM_CONTEXTHELPSTART() {
-        return (int)12L;
-    }
-    public static int EVENT_SYSTEM_CONTEXTHELPEND() {
-        return (int)13L;
-    }
-    public static int EVENT_SYSTEM_DRAGDROPSTART() {
-        return (int)14L;
-    }
-    public static int EVENT_SYSTEM_DRAGDROPEND() {
-        return (int)15L;
-    }
-    public static int EVENT_SYSTEM_DIALOGSTART() {
-        return (int)16L;
-    }
-    public static int EVENT_SYSTEM_DIALOGEND() {
-        return (int)17L;
-    }
-    public static int EVENT_SYSTEM_SCROLLINGSTART() {
-        return (int)18L;
-    }
-    public static int EVENT_SYSTEM_SCROLLINGEND() {
-        return (int)19L;
-    }
-    public static int EVENT_SYSTEM_SWITCHSTART() {
-        return (int)20L;
-    }
-    public static int EVENT_SYSTEM_SWITCHEND() {
-        return (int)21L;
-    }
-    public static int EVENT_SYSTEM_MINIMIZESTART() {
-        return (int)22L;
-    }
-    public static int EVENT_SYSTEM_MINIMIZEEND() {
-        return (int)23L;
-    }
-    public static int EVENT_SYSTEM_DESKTOPSWITCH() {
-        return (int)32L;
-    }
-    public static int EVENT_SYSTEM_SWITCHER_APPGRABBED() {
-        return (int)36L;
-    }
-    public static int EVENT_SYSTEM_SWITCHER_APPOVERTARGET() {
-        return (int)37L;
-    }
-    public static int EVENT_SYSTEM_SWITCHER_APPDROPPED() {
-        return (int)38L;
-    }
-    public static int EVENT_SYSTEM_SWITCHER_CANCELLED() {
-        return (int)39L;
-    }
-    public static int EVENT_SYSTEM_IME_KEY_NOTIFICATION() {
-        return (int)41L;
-    }
-    public static int EVENT_SYSTEM_END() {
-        return (int)255L;
-    }
-    public static int EVENT_OEM_DEFINED_START() {
-        return (int)257L;
-    }
-    public static int EVENT_OEM_DEFINED_END() {
-        return (int)511L;
-    }
-    public static int EVENT_UIA_EVENTID_START() {
-        return (int)19968L;
-    }
-    public static int EVENT_UIA_EVENTID_END() {
-        return (int)20223L;
-    }
-    public static int EVENT_UIA_PROPID_START() {
-        return (int)29952L;
-    }
-    public static int EVENT_UIA_PROPID_END() {
-        return (int)30207L;
-    }
-    public static int EVENT_CONSOLE_CARET() {
-        return (int)16385L;
-    }
-    public static int EVENT_CONSOLE_UPDATE_REGION() {
-        return (int)16386L;
-    }
-    public static int EVENT_CONSOLE_UPDATE_SIMPLE() {
-        return (int)16387L;
-    }
-    public static int EVENT_CONSOLE_UPDATE_SCROLL() {
-        return (int)16388L;
-    }
-    public static int EVENT_CONSOLE_LAYOUT() {
-        return (int)16389L;
-    }
-    public static int EVENT_CONSOLE_START_APPLICATION() {
-        return (int)16390L;
-    }
-    public static int EVENT_CONSOLE_END_APPLICATION() {
-        return (int)16391L;
-    }
-    public static int CONSOLE_APPLICATION_16BIT() {
-        return (int)0L;
-    }
-    public static int CONSOLE_CARET_SELECTION() {
-        return (int)1L;
-    }
-    public static int CONSOLE_CARET_VISIBLE() {
-        return (int)2L;
     }
 }
 

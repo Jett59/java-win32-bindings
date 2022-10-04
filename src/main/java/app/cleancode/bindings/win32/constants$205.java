@@ -9,49 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$205 {
 
-    static final FunctionDescriptor StartDocW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor QueryFullProcessImageNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle StartDocW$MH = RuntimeHelper.downcallHandle(
-        "StartDocW",
-        constants$205.StartDocW$FUNC
+    static final MethodHandle QueryFullProcessImageNameW$MH = RuntimeHelper.downcallHandle(
+        "QueryFullProcessImageNameW",
+        constants$205.QueryFullProcessImageNameW$FUNC
     );
-    static final FunctionDescriptor EndDoc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetStartupInfoA$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EndDoc$MH = RuntimeHelper.downcallHandle(
-        "EndDoc",
-        constants$205.EndDoc$FUNC
+    static final MethodHandle GetStartupInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetStartupInfoA",
+        constants$205.GetStartupInfoA$FUNC
     );
-    static final FunctionDescriptor StartPage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle StartPage$MH = RuntimeHelper.downcallHandle(
-        "StartPage",
-        constants$205.StartPage$FUNC
-    );
-    static final FunctionDescriptor EndPage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EndPage$MH = RuntimeHelper.downcallHandle(
-        "EndPage",
-        constants$205.EndPage$FUNC
-    );
-    static final FunctionDescriptor AbortDoc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AbortDoc$MH = RuntimeHelper.downcallHandle(
-        "AbortDoc",
-        constants$205.AbortDoc$FUNC
-    );
-    static final FunctionDescriptor SetAbortProc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFirmwareEnvironmentVariableA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetFirmwareEnvironmentVariableA$MH = RuntimeHelper.downcallHandle(
+        "GetFirmwareEnvironmentVariableA",
+        constants$205.GetFirmwareEnvironmentVariableA$FUNC
+    );
+    static final FunctionDescriptor GetFirmwareEnvironmentVariableW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetFirmwareEnvironmentVariableW$MH = RuntimeHelper.downcallHandle(
+        "GetFirmwareEnvironmentVariableW",
+        constants$205.GetFirmwareEnvironmentVariableW$FUNC
+    );
+    static final FunctionDescriptor GetFirmwareEnvironmentVariableExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetAbortProc$MH = RuntimeHelper.downcallHandle(
-        "SetAbortProc",
-        constants$205.SetAbortProc$FUNC
+    static final MethodHandle GetFirmwareEnvironmentVariableExA$MH = RuntimeHelper.downcallHandle(
+        "GetFirmwareEnvironmentVariableExA",
+        constants$205.GetFirmwareEnvironmentVariableExA$FUNC
+    );
+    static final FunctionDescriptor GetFirmwareEnvironmentVariableExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFirmwareEnvironmentVariableExW$MH = RuntimeHelper.downcallHandle(
+        "GetFirmwareEnvironmentVariableExW",
+        constants$205.GetFirmwareEnvironmentVariableExW$FUNC
     );
 }
 

@@ -9,74 +9,74 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$464 {
 
-    static final FunctionDescriptor CryptImportPKCS8$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        MemoryLayout.structLayout(
-            MemoryLayout.structLayout(
-                Constants$root.C_LONG$LAYOUT.withName("cbData"),
-                MemoryLayout.paddingLayout(32),
-                Constants$root.C_POINTER$LAYOUT.withName("pbData")
-            ).withName("PrivateKey"),
-            Constants$root.C_POINTER$LAYOUT.withName("pResolvehCryptProvFunc"),
-            Constants$root.C_POINTER$LAYOUT.withName("pVoidResolveFunc"),
-            Constants$root.C_POINTER$LAYOUT.withName("pDecryptPrivateKeyFunc"),
-            Constants$root.C_POINTER$LAYOUT.withName("pVoidDecryptFunc")
-        ).withName("_CRYPT_PKCS8_IMPORT_PARAMS"),
+    static final FunctionDescriptor CompareStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CompareStringA$MH = RuntimeHelper.downcallHandle(
+        "CompareStringA",
+        constants$464.CompareStringA$FUNC
+    );
+    static final FunctionDescriptor FindNLSString$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptImportPKCS8$MH = RuntimeHelper.downcallHandle(
-        "CryptImportPKCS8",
-        constants$464.CryptImportPKCS8$FUNC
+    static final MethodHandle FindNLSString$MH = RuntimeHelper.downcallHandle(
+        "FindNLSString",
+        constants$464.FindNLSString$FUNC
     );
-    static final FunctionDescriptor PFN_EXPORT_PRIV_KEY_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor LCMapStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_EXPORT_PRIV_KEY_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$464.PFN_EXPORT_PRIV_KEY_FUNC$FUNC
-    );
-    static final FunctionDescriptor CryptExportPKCS8$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptExportPKCS8$MH = RuntimeHelper.downcallHandle(
-        "CryptExportPKCS8",
-        constants$464.CryptExportPKCS8$FUNC
+    static final MethodHandle LCMapStringW$MH = RuntimeHelper.downcallHandle(
+        "LCMapStringW",
+        constants$464.LCMapStringW$FUNC
     );
-    static final FunctionDescriptor CryptExportPKCS8Ex$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptExportPKCS8Ex$MH = RuntimeHelper.downcallHandle(
-        "CryptExportPKCS8Ex",
-        constants$464.CryptExportPKCS8Ex$FUNC
-    );
-    static final FunctionDescriptor CryptHashPublicKeyInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LCMapStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptHashPublicKeyInfo$MH = RuntimeHelper.downcallHandle(
-        "CryptHashPublicKeyInfo",
-        constants$464.CryptHashPublicKeyInfo$FUNC
+    static final MethodHandle LCMapStringA$MH = RuntimeHelper.downcallHandle(
+        "LCMapStringA",
+        constants$464.LCMapStringA$FUNC
+    );
+    static final FunctionDescriptor GetLocaleInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetLocaleInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetLocaleInfoW",
+        constants$464.GetLocaleInfoW$FUNC
+    );
+    static final FunctionDescriptor GetLocaleInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetLocaleInfoA$MH = RuntimeHelper.downcallHandle(
+        "GetLocaleInfoA",
+        constants$464.GetLocaleInfoA$FUNC
     );
 }
 

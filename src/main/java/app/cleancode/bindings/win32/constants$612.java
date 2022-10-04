@@ -9,12 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$612 {
 
-    static final MemorySegment szOID_INFOSEC_mosaicTokenProtection$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.8");
-    static final MemorySegment szOID_INFOSEC_sdnsKeyManagement$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.9");
-    static final MemorySegment szOID_INFOSEC_mosaicKeyManagement$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.10");
-    static final MemorySegment szOID_INFOSEC_sdnsKMandSig$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.11");
-    static final MemorySegment szOID_INFOSEC_mosaicKMandSig$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.12");
-    static final MemorySegment szOID_INFOSEC_SuiteASignature$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.13");
+    static final FunctionDescriptor CertVerifyCRLRevocation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertVerifyCRLRevocation$MH = RuntimeHelper.downcallHandle(
+        "CertVerifyCRLRevocation",
+        constants$612.CertVerifyCRLRevocation$FUNC
+    );
+    static final FunctionDescriptor CertAlgIdToOID$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertAlgIdToOID$MH = RuntimeHelper.downcallHandle(
+        "CertAlgIdToOID",
+        constants$612.CertAlgIdToOID$FUNC
+    );
+    static final FunctionDescriptor CertOIDToAlgId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertOIDToAlgId$MH = RuntimeHelper.downcallHandle(
+        "CertOIDToAlgId",
+        constants$612.CertOIDToAlgId$FUNC
+    );
+    static final FunctionDescriptor CertFindExtension$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindExtension$MH = RuntimeHelper.downcallHandle(
+        "CertFindExtension",
+        constants$612.CertFindExtension$FUNC
+    );
+    static final FunctionDescriptor CertFindAttribute$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindAttribute$MH = RuntimeHelper.downcallHandle(
+        "CertFindAttribute",
+        constants$612.CertFindAttribute$FUNC
+    );
+    static final FunctionDescriptor CertFindRDNAttr$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindRDNAttr$MH = RuntimeHelper.downcallHandle(
+        "CertFindRDNAttr",
+        constants$612.CertFindRDNAttr$FUNC
+    );
 }
 
 

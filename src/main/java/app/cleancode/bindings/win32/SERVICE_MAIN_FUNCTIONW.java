@@ -11,13 +11,13 @@ public interface SERVICE_MAIN_FUNCTIONW {
 
     void apply(int dwNumServicesArgs, java.lang.foreign.MemoryAddress lpServiceArgVectors);
     static MemorySegment allocate(SERVICE_MAIN_FUNCTIONW fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(SERVICE_MAIN_FUNCTIONW.class, fi, constants$535.SERVICE_MAIN_FUNCTIONW$FUNC, session);
+        return RuntimeHelper.upcallStub(SERVICE_MAIN_FUNCTIONW.class, fi, constants$707.SERVICE_MAIN_FUNCTIONW$FUNC, session);
     }
     static SERVICE_MAIN_FUNCTIONW ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int _dwNumServicesArgs, java.lang.foreign.MemoryAddress _lpServiceArgVectors) -> {
             try {
-                constants$535.SERVICE_MAIN_FUNCTIONW$MH.invokeExact((Addressable)symbol, _dwNumServicesArgs, (java.lang.foreign.Addressable)_lpServiceArgVectors);
+                constants$707.SERVICE_MAIN_FUNCTIONW$MH.invokeExact((Addressable)symbol, _dwNumServicesArgs, (java.lang.foreign.Addressable)_lpServiceArgVectors);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

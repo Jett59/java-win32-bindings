@@ -11,13 +11,13 @@ public interface PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC {
 
     int apply(long hNCryptKey, int dwCertEncodingType, java.lang.foreign.MemoryAddress pszPublicKeyObjId, int dwFlags, java.lang.foreign.MemoryAddress pvAuxInfo, java.lang.foreign.MemoryAddress pInfo, java.lang.foreign.MemoryAddress pcbInfo);
     static MemorySegment allocate(PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC.class, fi, constants$461.PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC.class, fi, constants$613.PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC, session);
     }
     static PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (long _hNCryptKey, int _dwCertEncodingType, java.lang.foreign.MemoryAddress _pszPublicKeyObjId, int _dwFlags, java.lang.foreign.MemoryAddress _pvAuxInfo, java.lang.foreign.MemoryAddress _pInfo, java.lang.foreign.MemoryAddress _pcbInfo) -> {
             try {
-                return (int)constants$461.PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$MH.invokeExact((Addressable)symbol, _hNCryptKey, _dwCertEncodingType, (java.lang.foreign.Addressable)_pszPublicKeyObjId, _dwFlags, (java.lang.foreign.Addressable)_pvAuxInfo, (java.lang.foreign.Addressable)_pInfo, (java.lang.foreign.Addressable)_pcbInfo);
+                return (int)constants$614.PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$MH.invokeExact((Addressable)symbol, _hNCryptKey, _dwCertEncodingType, (java.lang.foreign.Addressable)_pszPublicKeyObjId, _dwFlags, (java.lang.foreign.Addressable)_pvAuxInfo, (java.lang.foreign.Addressable)_pInfo, (java.lang.foreign.Addressable)_pcbInfo);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

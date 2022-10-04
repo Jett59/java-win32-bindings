@@ -9,84 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$187 {
 
-    static final FunctionDescriptor MaskBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DebugSetProcessKillOnExit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle MaskBlt$MH = RuntimeHelper.downcallHandle(
-        "MaskBlt",
-        constants$187.MaskBlt$FUNC
+    static final MethodHandle DebugSetProcessKillOnExit$MH = RuntimeHelper.downcallHandle(
+        "DebugSetProcessKillOnExit",
+        constants$187.DebugSetProcessKillOnExit$FUNC
     );
-    static final FunctionDescriptor PlgBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DebugBreakProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DebugBreakProcess$MH = RuntimeHelper.downcallHandle(
+        "DebugBreakProcess",
+        constants$187.DebugBreakProcess$FUNC
+    );
+    static final FunctionDescriptor PulseEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PulseEvent$MH = RuntimeHelper.downcallHandle(
+        "PulseEvent",
+        constants$187.PulseEvent$FUNC
+    );
+    static final FunctionDescriptor GlobalDeleteAtom$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle GlobalDeleteAtom$MH = RuntimeHelper.downcallHandle(
+        "GlobalDeleteAtom",
+        constants$187.GlobalDeleteAtom$FUNC
+    );
+    static final FunctionDescriptor InitAtomTable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PlgBlt$MH = RuntimeHelper.downcallHandle(
-        "PlgBlt",
-        constants$187.PlgBlt$FUNC
+    static final MethodHandle InitAtomTable$MH = RuntimeHelper.downcallHandle(
+        "InitAtomTable",
+        constants$187.InitAtomTable$FUNC
     );
-    static final FunctionDescriptor OffsetClipRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor DeleteAtom$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle OffsetClipRgn$MH = RuntimeHelper.downcallHandle(
-        "OffsetClipRgn",
-        constants$187.OffsetClipRgn$FUNC
-    );
-    static final FunctionDescriptor OffsetRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OffsetRgn$MH = RuntimeHelper.downcallHandle(
-        "OffsetRgn",
-        constants$187.OffsetRgn$FUNC
-    );
-    static final FunctionDescriptor PatBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PatBlt$MH = RuntimeHelper.downcallHandle(
-        "PatBlt",
-        constants$187.PatBlt$FUNC
-    );
-    static final FunctionDescriptor Pie$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle Pie$MH = RuntimeHelper.downcallHandle(
-        "Pie",
-        constants$187.Pie$FUNC
+    static final MethodHandle DeleteAtom$MH = RuntimeHelper.downcallHandle(
+        "DeleteAtom",
+        constants$187.DeleteAtom$FUNC
     );
 }
 

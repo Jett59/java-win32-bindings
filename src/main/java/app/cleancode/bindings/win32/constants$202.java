@@ -9,60 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$202 {
 
-    static final FunctionDescriptor GdiComment$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GdiComment$MH = RuntimeHelper.downcallHandle(
-        "GdiComment",
-        constants$202.GdiComment$FUNC
-    );
-    static final FunctionDescriptor GetTextMetricsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTextMetricsA$MH = RuntimeHelper.downcallHandle(
-        "GetTextMetricsA",
-        constants$202.GetTextMetricsA$FUNC
-    );
-    static final FunctionDescriptor GetTextMetricsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetTextMetricsW$MH = RuntimeHelper.downcallHandle(
-        "GetTextMetricsW",
-        constants$202.GetTextMetricsW$FUNC
-    );
-    static final FunctionDescriptor AngleArc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor _llseek$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_FLOAT$LAYOUT,
-        Constants$root.C_FLOAT$LAYOUT
-    );
-    static final MethodHandle AngleArc$MH = RuntimeHelper.downcallHandle(
-        "AngleArc",
-        constants$202.AngleArc$FUNC
-    );
-    static final FunctionDescriptor PolyPolyline$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PolyPolyline$MH = RuntimeHelper.downcallHandle(
-        "PolyPolyline",
-        constants$202.PolyPolyline$FUNC
+    static final MethodHandle _llseek$MH = RuntimeHelper.downcallHandle(
+        "_llseek",
+        constants$202._llseek$FUNC
     );
-    static final FunctionDescriptor GetWorldTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsTextUnicode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsTextUnicode$MH = RuntimeHelper.downcallHandle(
+        "IsTextUnicode",
+        constants$202.IsTextUnicode$FUNC
+    );
+    static final FunctionDescriptor BackupRead$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle BackupRead$MH = RuntimeHelper.downcallHandle(
+        "BackupRead",
+        constants$202.BackupRead$FUNC
+    );
+    static final FunctionDescriptor BackupSeek$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWorldTransform$MH = RuntimeHelper.downcallHandle(
-        "GetWorldTransform",
-        constants$202.GetWorldTransform$FUNC
+    static final MethodHandle BackupSeek$MH = RuntimeHelper.downcallHandle(
+        "BackupSeek",
+        constants$202.BackupSeek$FUNC
+    );
+    static final FunctionDescriptor BackupWrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle BackupWrite$MH = RuntimeHelper.downcallHandle(
+        "BackupWrite",
+        constants$202.BackupWrite$FUNC
+    );
+    static final FunctionDescriptor OpenMutexA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenMutexA$MH = RuntimeHelper.downcallHandle(
+        "OpenMutexA",
+        constants$202.OpenMutexA$FUNC
     );
 }
 

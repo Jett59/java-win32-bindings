@@ -11,13 +11,13 @@ public interface PFIBER_START_ROUTINE {
 
     void apply(java.lang.foreign.MemoryAddress lpFiberParameter);
     static MemorySegment allocate(PFIBER_START_ROUTINE fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFIBER_START_ROUTINE.class, fi, constants$72.PFIBER_START_ROUTINE$FUNC, session);
+        return RuntimeHelper.upcallStub(PFIBER_START_ROUTINE.class, fi, constants$173.PFIBER_START_ROUTINE$FUNC, session);
     }
     static PFIBER_START_ROUTINE ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _lpFiberParameter) -> {
             try {
-                constants$72.PFIBER_START_ROUTINE$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_lpFiberParameter);
+                constants$174.PFIBER_START_ROUTINE$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_lpFiberParameter);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,63 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$392 {
 
-    static final FunctionDescriptor RegDeleteKeyValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DestroyMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegDeleteKeyValueA$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteKeyValueA",
-        constants$392.RegDeleteKeyValueA$FUNC
+    static final MethodHandle DestroyMenu$MH = RuntimeHelper.downcallHandle(
+        "DestroyMenu",
+        constants$392.DestroyMenu$FUNC
     );
-    static final FunctionDescriptor RegDeleteKeyValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegDeleteKeyValueW$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteKeyValueW",
-        constants$392.RegDeleteKeyValueW$FUNC
-    );
-    static final FunctionDescriptor RegSetKeyValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CheckMenuItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CheckMenuItem$MH = RuntimeHelper.downcallHandle(
+        "CheckMenuItem",
+        constants$392.CheckMenuItem$FUNC
+    );
+    static final FunctionDescriptor EnableMenuItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EnableMenuItem$MH = RuntimeHelper.downcallHandle(
+        "EnableMenuItem",
+        constants$392.EnableMenuItem$FUNC
+    );
+    static final FunctionDescriptor GetSubMenu$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegSetKeyValueA$MH = RuntimeHelper.downcallHandle(
-        "RegSetKeyValueA",
-        constants$392.RegSetKeyValueA$FUNC
+    static final MethodHandle GetSubMenu$MH = RuntimeHelper.downcallHandle(
+        "GetSubMenu",
+        constants$392.GetSubMenu$FUNC
     );
-    static final FunctionDescriptor RegSetKeyValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMenuItemID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegSetKeyValueW$MH = RuntimeHelper.downcallHandle(
-        "RegSetKeyValueW",
-        constants$392.RegSetKeyValueW$FUNC
+    static final MethodHandle GetMenuItemID$MH = RuntimeHelper.downcallHandle(
+        "GetMenuItemID",
+        constants$392.GetMenuItemID$FUNC
     );
-    static final FunctionDescriptor RegDeleteTreeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetMenuItemCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegDeleteTreeA$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteTreeA",
-        constants$392.RegDeleteTreeA$FUNC
-    );
-    static final FunctionDescriptor RegDeleteTreeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegDeleteTreeW$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteTreeW",
-        constants$392.RegDeleteTreeW$FUNC
+    static final MethodHandle GetMenuItemCount$MH = RuntimeHelper.downcallHandle(
+        "GetMenuItemCount",
+        constants$392.GetMenuItemCount$FUNC
     );
 }
 

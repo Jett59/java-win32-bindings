@@ -9,48 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$488 {
 
-    static final  GroupLayout GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB", constants$488.GUID_DEVINTERFACE_UNIFIED_ACCESS_RPMB$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE", constants$488.GUID_DEVINTERFACE_SCM_PHYSICAL_DEVICE$LAYOUT);
-    static final  GroupLayout GUID_SCM_PD_HEALTH_NOTIFICATION$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_SCM_PD_HEALTH_NOTIFICATION$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_SCM_PD_HEALTH_NOTIFICATION", constants$488.GUID_SCM_PD_HEALTH_NOTIFICATION$LAYOUT);
-    static final  GroupLayout GUID_SCM_PD_PASSTHROUGH_INVDIMM$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_SCM_PD_PASSTHROUGH_INVDIMM$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_SCM_PD_PASSTHROUGH_INVDIMM", constants$488.GUID_SCM_PD_PASSTHROUGH_INVDIMM$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_COMPORT$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_COMPORT$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_COMPORT", constants$488.GUID_DEVINTERFACE_COMPORT$LAYOUT);
-    static final  GroupLayout GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR", constants$488.GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR$LAYOUT);
+    static final FunctionDescriptor GetFileVersionInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileVersionInfoExA$MH = RuntimeHelper.downcallHandle(
+        "GetFileVersionInfoExA",
+        constants$488.GetFileVersionInfoExA$FUNC
+    );
+    static final FunctionDescriptor GetFileVersionInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFileVersionInfoExW$MH = RuntimeHelper.downcallHandle(
+        "GetFileVersionInfoExW",
+        constants$488.GetFileVersionInfoExW$FUNC
+    );
+    static final FunctionDescriptor VerLanguageNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VerLanguageNameA$MH = RuntimeHelper.downcallHandle(
+        "VerLanguageNameA",
+        constants$488.VerLanguageNameA$FUNC
+    );
+    static final FunctionDescriptor VerLanguageNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VerLanguageNameW$MH = RuntimeHelper.downcallHandle(
+        "VerLanguageNameW",
+        constants$488.VerLanguageNameW$FUNC
+    );
+    static final FunctionDescriptor VerQueryValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VerQueryValueA$MH = RuntimeHelper.downcallHandle(
+        "VerQueryValueA",
+        constants$488.VerQueryValueA$FUNC
+    );
+    static final FunctionDescriptor VerQueryValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle VerQueryValueW$MH = RuntimeHelper.downcallHandle(
+        "VerQueryValueW",
+        constants$488.VerQueryValueW$FUNC
+    );
 }
 
 

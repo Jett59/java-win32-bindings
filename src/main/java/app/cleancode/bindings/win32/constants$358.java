@@ -9,48 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$358 {
 
-    static final FunctionDescriptor IsValidCodePage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetWindowPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle IsValidCodePage$MH = RuntimeHelper.downcallHandle(
-        "IsValidCodePage",
-        constants$358.IsValidCodePage$FUNC
+    static final MethodHandle SetWindowPos$MH = RuntimeHelper.downcallHandle(
+        "SetWindowPos",
+        constants$358.SetWindowPos$FUNC
     );
-    static final FunctionDescriptor GetACP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetACP$MH = RuntimeHelper.downcallHandle(
-        "GetACP",
-        constants$358.GetACP$FUNC
-    );
-    static final FunctionDescriptor GetOEMCP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetOEMCP$MH = RuntimeHelper.downcallHandle(
-        "GetOEMCP",
-        constants$358.GetOEMCP$FUNC
-    );
-    static final FunctionDescriptor GetCPInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowPlacement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCPInfo$MH = RuntimeHelper.downcallHandle(
-        "GetCPInfo",
-        constants$358.GetCPInfo$FUNC
+    static final MethodHandle GetWindowPlacement$MH = RuntimeHelper.downcallHandle(
+        "GetWindowPlacement",
+        constants$358.GetWindowPlacement$FUNC
     );
-    static final FunctionDescriptor GetCPInfoExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetWindowPlacement$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCPInfoExA$MH = RuntimeHelper.downcallHandle(
-        "GetCPInfoExA",
-        constants$358.GetCPInfoExA$FUNC
+    static final MethodHandle SetWindowPlacement$MH = RuntimeHelper.downcallHandle(
+        "SetWindowPlacement",
+        constants$358.SetWindowPlacement$FUNC
     );
-    static final FunctionDescriptor GetCPInfoExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowDisplayAffinity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCPInfoExW$MH = RuntimeHelper.downcallHandle(
-        "GetCPInfoExW",
-        constants$358.GetCPInfoExW$FUNC
+    static final MethodHandle GetWindowDisplayAffinity$MH = RuntimeHelper.downcallHandle(
+        "GetWindowDisplayAffinity",
+        constants$358.GetWindowDisplayAffinity$FUNC
+    );
+    static final FunctionDescriptor SetWindowDisplayAffinity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetWindowDisplayAffinity$MH = RuntimeHelper.downcallHandle(
+        "SetWindowDisplayAffinity",
+        constants$358.SetWindowDisplayAffinity$FUNC
+    );
+    static final FunctionDescriptor BeginDeferWindowPos$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle BeginDeferWindowPos$MH = RuntimeHelper.downcallHandle(
+        "BeginDeferWindowPos",
+        constants$358.BeginDeferWindowPos$FUNC
     );
 }
 

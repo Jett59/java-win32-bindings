@@ -9,12 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$704 {
 
-    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
-    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_LAST_SYNC_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("L");
-    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_ENCODED_CTL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
-    static final MemorySegment CERT_AUTH_ROOT_CTL_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
-    static final MemorySegment CERT_AUTH_ROOT_CTL_FILENAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("authroot.stl");
-    static final MemorySegment CERT_AUTH_ROOT_CAB_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
+    static final FunctionDescriptor StgOpenPropStg$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StgOpenPropStg$MH = RuntimeHelper.downcallHandle(
+        "StgOpenPropStg",
+        constants$704.StgOpenPropStg$FUNC
+    );
+    static final FunctionDescriptor StgCreatePropSetStg$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle StgCreatePropSetStg$MH = RuntimeHelper.downcallHandle(
+        "StgCreatePropSetStg",
+        constants$704.StgCreatePropSetStg$FUNC
+    );
+    static final FunctionDescriptor FmtIdToPropStgName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FmtIdToPropStgName$MH = RuntimeHelper.downcallHandle(
+        "FmtIdToPropStgName",
+        constants$704.FmtIdToPropStgName$FUNC
+    );
+    static final FunctionDescriptor PropStgNameToFmtId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PropStgNameToFmtId$MH = RuntimeHelper.downcallHandle(
+        "PropStgNameToFmtId",
+        constants$704.PropStgNameToFmtId$FUNC
+    );
+    static final FunctionDescriptor ReadClassStg$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ReadClassStg$MH = RuntimeHelper.downcallHandle(
+        "ReadClassStg",
+        constants$704.ReadClassStg$FUNC
+    );
+    static final FunctionDescriptor WriteClassStg$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WriteClassStg$MH = RuntimeHelper.downcallHandle(
+        "WriteClassStg",
+        constants$704.WriteClassStg$FUNC
+    );
 }
 
 

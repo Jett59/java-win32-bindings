@@ -9,59 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$137 {
 
-    static final FunctionDescriptor BuildCommDCBAndTimeoutsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetLargePageMinimum$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT);
+    static final MethodHandle GetLargePageMinimum$MH = RuntimeHelper.downcallHandle(
+        "GetLargePageMinimum",
+        constants$137.GetLargePageMinimum$FUNC
+    );
+    static final FunctionDescriptor GetProcessWorkingSetSizeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BuildCommDCBAndTimeoutsA$MH = RuntimeHelper.downcallHandle(
-        "BuildCommDCBAndTimeoutsA",
-        constants$137.BuildCommDCBAndTimeoutsA$FUNC
+    static final MethodHandle GetProcessWorkingSetSizeEx$MH = RuntimeHelper.downcallHandle(
+        "GetProcessWorkingSetSizeEx",
+        constants$137.GetProcessWorkingSetSizeEx$FUNC
     );
-    static final FunctionDescriptor BuildCommDCBAndTimeoutsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetProcessWorkingSetSizeEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetProcessWorkingSetSizeEx$MH = RuntimeHelper.downcallHandle(
+        "SetProcessWorkingSetSizeEx",
+        constants$137.SetProcessWorkingSetSizeEx$FUNC
+    );
+    static final FunctionDescriptor VirtualLock$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualLock$MH = RuntimeHelper.downcallHandle(
+        "VirtualLock",
+        constants$137.VirtualLock$FUNC
+    );
+    static final FunctionDescriptor VirtualUnlock$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualUnlock$MH = RuntimeHelper.downcallHandle(
+        "VirtualUnlock",
+        constants$137.VirtualUnlock$FUNC
+    );
+    static final FunctionDescriptor GetWriteWatch$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BuildCommDCBAndTimeoutsW$MH = RuntimeHelper.downcallHandle(
-        "BuildCommDCBAndTimeoutsW",
-        constants$137.BuildCommDCBAndTimeoutsW$FUNC
-    );
-    static final FunctionDescriptor CommConfigDialogA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CommConfigDialogA$MH = RuntimeHelper.downcallHandle(
-        "CommConfigDialogA",
-        constants$137.CommConfigDialogA$FUNC
-    );
-    static final FunctionDescriptor CommConfigDialogW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CommConfigDialogW$MH = RuntimeHelper.downcallHandle(
-        "CommConfigDialogW",
-        constants$137.CommConfigDialogW$FUNC
-    );
-    static final FunctionDescriptor GetDefaultCommConfigA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDefaultCommConfigA$MH = RuntimeHelper.downcallHandle(
-        "GetDefaultCommConfigA",
-        constants$137.GetDefaultCommConfigA$FUNC
-    );
-    static final FunctionDescriptor GetDefaultCommConfigW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDefaultCommConfigW$MH = RuntimeHelper.downcallHandle(
-        "GetDefaultCommConfigW",
-        constants$137.GetDefaultCommConfigW$FUNC
+    static final MethodHandle GetWriteWatch$MH = RuntimeHelper.downcallHandle(
+        "GetWriteWatch",
+        constants$137.GetWriteWatch$FUNC
     );
 }
 

@@ -9,49 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$83 {
 
-    static final FunctionDescriptor DeleteUmsThreadContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeleteUmsThreadContext$MH = RuntimeHelper.downcallHandle(
-        "DeleteUmsThreadContext",
-        constants$83.DeleteUmsThreadContext$FUNC
+    static final MethodHandle RemoveDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "RemoveDirectoryW",
+        constants$83.RemoveDirectoryW$FUNC
     );
-    static final FunctionDescriptor CreateUmsThreadContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetEndOfFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateUmsThreadContext$MH = RuntimeHelper.downcallHandle(
-        "CreateUmsThreadContext",
-        constants$83.CreateUmsThreadContext$FUNC
+    static final MethodHandle SetEndOfFile$MH = RuntimeHelper.downcallHandle(
+        "SetEndOfFile",
+        constants$83.SetEndOfFile$FUNC
     );
-    static final FunctionDescriptor EnterUmsSchedulingMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnterUmsSchedulingMode$MH = RuntimeHelper.downcallHandle(
-        "EnterUmsSchedulingMode",
-        constants$83.EnterUmsSchedulingMode$FUNC
-    );
-    static final FunctionDescriptor GetUmsSystemThreadInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFileAttributesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetUmsSystemThreadInformation$MH = RuntimeHelper.downcallHandle(
-        "GetUmsSystemThreadInformation",
-        constants$83.GetUmsSystemThreadInformation$FUNC
-    );
-    static final FunctionDescriptor SetThreadAffinityMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SetThreadAffinityMask$MH = RuntimeHelper.downcallHandle(
-        "SetThreadAffinityMask",
-        constants$83.SetThreadAffinityMask$FUNC
-    );
-    static final FunctionDescriptor SetProcessDEPPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetProcessDEPPolicy$MH = RuntimeHelper.downcallHandle(
-        "SetProcessDEPPolicy",
-        constants$83.SetProcessDEPPolicy$FUNC
+    static final MethodHandle SetFileAttributesA$MH = RuntimeHelper.downcallHandle(
+        "SetFileAttributesA",
+        constants$83.SetFileAttributesA$FUNC
+    );
+    static final FunctionDescriptor SetFileAttributesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetFileAttributesW$MH = RuntimeHelper.downcallHandle(
+        "SetFileAttributesW",
+        constants$83.SetFileAttributesW$FUNC
+    );
+    static final FunctionDescriptor SetFileInformationByHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetFileInformationByHandle$MH = RuntimeHelper.downcallHandle(
+        "SetFileInformationByHandle",
+        constants$83.SetFileInformationByHandle$FUNC
+    );
+    static final FunctionDescriptor SetFilePointer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetFilePointer$MH = RuntimeHelper.downcallHandle(
+        "SetFilePointer",
+        constants$83.SetFilePointer$FUNC
     );
 }
 

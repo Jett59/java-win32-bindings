@@ -9,62 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$113 {
 
-    static final FunctionDescriptor GetPrivateProfileSectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetExitCodeProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetExitCodeProcess$MH = RuntimeHelper.downcallHandle(
+        "GetExitCodeProcess",
+        constants$113.GetExitCodeProcess$FUNC
+    );
+    static final FunctionDescriptor SwitchToThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle SwitchToThread$MH = RuntimeHelper.downcallHandle(
+        "SwitchToThread",
+        constants$113.SwitchToThread$FUNC
+    );
+    static final FunctionDescriptor CreateThread$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPrivateProfileSectionW$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileSectionW",
-        constants$113.GetPrivateProfileSectionW$FUNC
+    static final MethodHandle CreateThread$MH = RuntimeHelper.downcallHandle(
+        "CreateThread",
+        constants$113.CreateThread$FUNC
     );
-    static final FunctionDescriptor WritePrivateProfileSectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateRemoteThread$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WritePrivateProfileSectionA$MH = RuntimeHelper.downcallHandle(
-        "WritePrivateProfileSectionA",
-        constants$113.WritePrivateProfileSectionA$FUNC
-    );
-    static final FunctionDescriptor WritePrivateProfileSectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WritePrivateProfileSectionW$MH = RuntimeHelper.downcallHandle(
-        "WritePrivateProfileSectionW",
-        constants$113.WritePrivateProfileSectionW$FUNC
-    );
-    static final FunctionDescriptor GetPrivateProfileSectionNamesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrivateProfileSectionNamesA$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileSectionNamesA",
-        constants$113.GetPrivateProfileSectionNamesA$FUNC
-    );
-    static final FunctionDescriptor GetPrivateProfileSectionNamesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrivateProfileSectionNamesW$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileSectionNamesW",
-        constants$113.GetPrivateProfileSectionNamesW$FUNC
-    );
-    static final FunctionDescriptor GetPrivateProfileStructA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPrivateProfileStructA$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileStructA",
-        constants$113.GetPrivateProfileStructA$FUNC
+    static final MethodHandle CreateRemoteThread$MH = RuntimeHelper.downcallHandle(
+        "CreateRemoteThread",
+        constants$113.CreateRemoteThread$FUNC
+    );
+    static final FunctionDescriptor GetCurrentThread$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetCurrentThread$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentThread",
+        constants$113.GetCurrentThread$FUNC
+    );
+    static final FunctionDescriptor GetCurrentThreadId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetCurrentThreadId$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentThreadId",
+        constants$113.GetCurrentThreadId$FUNC
     );
 }
 

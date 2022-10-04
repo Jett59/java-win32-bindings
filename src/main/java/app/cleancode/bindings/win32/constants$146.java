@@ -9,53 +9,41 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$146 {
 
-    static final FunctionDescriptor FindNextVolumeMountPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle FindNextVolumeMountPointA$MH = RuntimeHelper.downcallHandle(
-        "FindNextVolumeMountPointA",
-        constants$146.FindNextVolumeMountPointA$FUNC
-    );
-    static final FunctionDescriptor FindNextVolumeMountPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle FindNextVolumeMountPointW$MH = RuntimeHelper.downcallHandle(
-        "FindNextVolumeMountPointW",
-        constants$146.FindNextVolumeMountPointW$FUNC
-    );
-    static final FunctionDescriptor FindVolumeMountPointClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeleteEnclave$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FindVolumeMountPointClose$MH = RuntimeHelper.downcallHandle(
-        "FindVolumeMountPointClose",
-        constants$146.FindVolumeMountPointClose$FUNC
+    static final MethodHandle DeleteEnclave$MH = RuntimeHelper.downcallHandle(
+        "DeleteEnclave",
+        constants$146.DeleteEnclave$FUNC
     );
-    static final FunctionDescriptor SetVolumeMountPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsProcessInJob$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetVolumeMountPointA$MH = RuntimeHelper.downcallHandle(
-        "SetVolumeMountPointA",
-        constants$146.SetVolumeMountPointA$FUNC
+    static final MethodHandle IsProcessInJob$MH = RuntimeHelper.downcallHandle(
+        "IsProcessInJob",
+        constants$146.IsProcessInJob$FUNC
     );
-    static final FunctionDescriptor SetVolumeMountPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ENUMRESLANGPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle SetVolumeMountPointW$MH = RuntimeHelper.downcallHandle(
-        "SetVolumeMountPointW",
-        constants$146.SetVolumeMountPointW$FUNC
+    static final MethodHandle ENUMRESLANGPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$146.ENUMRESLANGPROCA$FUNC
     );
-    static final FunctionDescriptor DeleteVolumeMountPointA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor ENUMRESLANGPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle DeleteVolumeMountPointA$MH = RuntimeHelper.downcallHandle(
-        "DeleteVolumeMountPointA",
-        constants$146.DeleteVolumeMountPointA$FUNC
+    static final MethodHandle ENUMRESLANGPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$146.ENUMRESLANGPROCW$FUNC
     );
 }
 

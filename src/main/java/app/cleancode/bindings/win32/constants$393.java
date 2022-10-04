@@ -9,75 +9,69 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$393 {
 
-    static final FunctionDescriptor RegCopyTreeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegCopyTreeA$MH = RuntimeHelper.downcallHandle(
-        "RegCopyTreeA",
-        constants$393.RegCopyTreeA$FUNC
-    );
-    static final FunctionDescriptor RegGetValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor InsertMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegGetValueA$MH = RuntimeHelper.downcallHandle(
-        "RegGetValueA",
-        constants$393.RegGetValueA$FUNC
+    static final MethodHandle InsertMenuA$MH = RuntimeHelper.downcallHandle(
+        "InsertMenuA",
+        constants$393.InsertMenuA$FUNC
     );
-    static final FunctionDescriptor RegGetValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor InsertMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegGetValueW$MH = RuntimeHelper.downcallHandle(
-        "RegGetValueW",
-        constants$393.RegGetValueW$FUNC
+    static final MethodHandle InsertMenuW$MH = RuntimeHelper.downcallHandle(
+        "InsertMenuW",
+        constants$393.InsertMenuW$FUNC
     );
-    static final FunctionDescriptor RegCopyTreeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AppendMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegCopyTreeW$MH = RuntimeHelper.downcallHandle(
-        "RegCopyTreeW",
-        constants$393.RegCopyTreeW$FUNC
+    static final MethodHandle AppendMenuA$MH = RuntimeHelper.downcallHandle(
+        "AppendMenuA",
+        constants$393.AppendMenuA$FUNC
     );
-    static final FunctionDescriptor RegLoadMUIStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor AppendMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegLoadMUIStringA$MH = RuntimeHelper.downcallHandle(
-        "RegLoadMUIStringA",
-        constants$393.RegLoadMUIStringA$FUNC
+    static final MethodHandle AppendMenuW$MH = RuntimeHelper.downcallHandle(
+        "AppendMenuW",
+        constants$393.AppendMenuW$FUNC
     );
-    static final FunctionDescriptor RegLoadMUIStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ModifyMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegLoadMUIStringW$MH = RuntimeHelper.downcallHandle(
-        "RegLoadMUIStringW",
-        constants$393.RegLoadMUIStringW$FUNC
+    static final MethodHandle ModifyMenuA$MH = RuntimeHelper.downcallHandle(
+        "ModifyMenuA",
+        constants$393.ModifyMenuA$FUNC
+    );
+    static final FunctionDescriptor ModifyMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ModifyMenuW$MH = RuntimeHelper.downcallHandle(
+        "ModifyMenuW",
+        constants$393.ModifyMenuW$FUNC
     );
 }
 

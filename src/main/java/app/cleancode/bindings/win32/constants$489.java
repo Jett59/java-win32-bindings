@@ -9,56 +9,42 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$489 {
 
-    static final FunctionDescriptor DeviceDsmParameterBlock$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeviceDsmParameterBlock$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmParameterBlock",
-        constants$489.DeviceDsmParameterBlock$FUNC
-    );
-    static final FunctionDescriptor DeviceDsmDataSetRanges$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeviceDsmDataSetRanges$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmDataSetRanges",
-        constants$489.DeviceDsmDataSetRanges$FUNC
-    );
-    static final FunctionDescriptor DeviceDsmNumberOfDataSetRanges$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeviceDsmNumberOfDataSetRanges$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmNumberOfDataSetRanges",
-        constants$489.DeviceDsmNumberOfDataSetRanges$FUNC
-    );
-    static final FunctionDescriptor DeviceDsmGetInputLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DeviceDsmGetInputLength$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmGetInputLength",
-        constants$489.DeviceDsmGetInputLength$FUNC
-    );
-    static final FunctionDescriptor DeviceDsmGetNumberOfDataSetRanges$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DeviceDsmGetNumberOfDataSetRanges$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmGetNumberOfDataSetRanges",
-        constants$489.DeviceDsmGetNumberOfDataSetRanges$FUNC
-    );
-    static final FunctionDescriptor DeviceDsmInitializeInput$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor QUERYHANDLER$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeviceDsmInitializeInput$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmInitializeInput",
-        constants$489.DeviceDsmInitializeInput$FUNC
+    static final MethodHandle QUERYHANDLER$MH = RuntimeHelper.downcallHandle(
+        constants$489.QUERYHANDLER$FUNC
+    );
+    static final FunctionDescriptor PQUERYHANDLER$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PQUERYHANDLER$MH = RuntimeHelper.downcallHandle(
+        constants$489.PQUERYHANDLER$FUNC
+    );
+    static final FunctionDescriptor RegCloseKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegCloseKey$MH = RuntimeHelper.downcallHandle(
+        "RegCloseKey",
+        constants$489.RegCloseKey$FUNC
+    );
+    static final FunctionDescriptor RegOverridePredefKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegOverridePredefKey$MH = RuntimeHelper.downcallHandle(
+        "RegOverridePredefKey",
+        constants$489.RegOverridePredefKey$FUNC
     );
 }
 

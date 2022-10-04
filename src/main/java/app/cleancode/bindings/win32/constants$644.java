@@ -9,12 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$644 {
 
-    static final MemorySegment szOID_FRESHEST_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.46");
-    static final MemorySegment szOID_NAME_CONSTRAINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.30");
-    static final MemorySegment szOID_POLICY_MAPPINGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.33");
-    static final MemorySegment szOID_LEGACY_POLICY_MAPPINGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.5");
-    static final MemorySegment szOID_POLICY_CONSTRAINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.36");
-    static final MemorySegment szOID_RENEWAL_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.13.1");
+    static final FunctionDescriptor DeviceDsmValidateOutputLength$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmValidateOutputLength$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmValidateOutputLength",
+        constants$644.DeviceDsmValidateOutputLength$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmGetOutputBlockLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmGetOutputBlockLength$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmGetOutputBlockLength",
+        constants$644.DeviceDsmGetOutputBlockLength$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmInitializeOutput$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmInitializeOutput$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmInitializeOutput",
+        constants$644.DeviceDsmInitializeOutput$FUNC
+    );
+    static final FunctionDescriptor DeviceDsmValidateOutput$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle DeviceDsmValidateOutput$MH = RuntimeHelper.downcallHandle(
+        "DeviceDsmValidateOutput",
+        constants$644.DeviceDsmValidateOutput$FUNC
+    );
+    static final  GroupLayout FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE$SEGMENT = RuntimeHelper.lookupGlobalVariable("FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE", constants$644.FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE$LAYOUT);
+    static final  GroupLayout FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("Data1"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
+        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
+        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
+    ).withName("_GUID");
+    static final MemorySegment FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE$SEGMENT = RuntimeHelper.lookupGlobalVariable("FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE", constants$644.FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE$LAYOUT);
 }
 
 

@@ -9,12 +9,38 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$573 {
 
-    static final MemoryAddress GR_GLOBAL$ADDR = MemoryAddress.ofLong(-2L);
-    static final MemoryAddress GEO_NAME_USER_DEFAULT$ADDR = MemoryAddress.ofLong(0L);
-    static final MemoryAddress LOCALE_NAME_USER_DEFAULT$ADDR = MemoryAddress.ofLong(0L);
-    static final MemorySegment LOCALE_NAME_INVARIANT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("");
-    static final MemorySegment LOCALE_NAME_SYSTEM_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("!");
-    static final MemoryAddress HKEY_CLASSES_ROOT$ADDR = MemoryAddress.ofLong(-2147483648L);
+    static final FunctionDescriptor PCRYPT_RESOLVE_HCRYPTPROV_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PCRYPT_RESOLVE_HCRYPTPROV_FUNC$MH = RuntimeHelper.downcallHandle(
+        constants$573.PCRYPT_RESOLVE_HCRYPTPROV_FUNC$FUNC
+    );
+    static final FunctionDescriptor CryptFormatObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptFormatObject$MH = RuntimeHelper.downcallHandle(
+        "CryptFormatObject",
+        constants$573.CryptFormatObject$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_ALLOC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_ALLOC$MH = RuntimeHelper.downcallHandle(
+        constants$573.PFN_CRYPT_ALLOC$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_FREE$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

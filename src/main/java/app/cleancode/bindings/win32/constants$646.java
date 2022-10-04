@@ -9,12 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$646 {
 
-    static final MemorySegment szOID_AUTHORITY_INFO_ACCESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.1");
-    static final MemorySegment szOID_SUBJECT_INFO_ACCESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.11");
-    static final MemorySegment szOID_BIOMETRIC_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.2");
-    static final MemorySegment szOID_QC_STATEMENTS_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.3");
-    static final MemorySegment szOID_LOGOTYPE_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.12");
-    static final MemorySegment szOID_TLS_FEATURES_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.24");
+    static final  GroupLayout g_rgSCardRawPci$LAYOUT = MemoryLayout.structLayout(
+        Constants$root.C_LONG$LAYOUT.withName("dwProtocol"),
+        Constants$root.C_LONG$LAYOUT.withName("cbPciLength")
+    ).withName("_SCARD_IO_REQUEST");
+    static final MemorySegment g_rgSCardRawPci$SEGMENT = RuntimeHelper.lookupGlobalVariable("g_rgSCardRawPci", constants$646.g_rgSCardRawPci$LAYOUT);
+    static final FunctionDescriptor SCardEstablishContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardEstablishContext$MH = RuntimeHelper.downcallHandle(
+        "SCardEstablishContext",
+        constants$646.SCardEstablishContext$FUNC
+    );
+    static final FunctionDescriptor SCardReleaseContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SCardReleaseContext$MH = RuntimeHelper.downcallHandle(
+        "SCardReleaseContext",
+        constants$646.SCardReleaseContext$FUNC
+    );
+    static final FunctionDescriptor SCardIsValidContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SCardIsValidContext$MH = RuntimeHelper.downcallHandle(
+        "SCardIsValidContext",
+        constants$646.SCardIsValidContext$FUNC
+    );
+    static final FunctionDescriptor SCardListReaderGroupsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListReaderGroupsA$MH = RuntimeHelper.downcallHandle(
+        "SCardListReaderGroupsA",
+        constants$646.SCardListReaderGroupsA$FUNC
+    );
+    static final FunctionDescriptor SCardListReaderGroupsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardListReaderGroupsW$MH = RuntimeHelper.downcallHandle(
+        "SCardListReaderGroupsW",
+        constants$646.SCardListReaderGroupsW$FUNC
+    );
 }
 
 

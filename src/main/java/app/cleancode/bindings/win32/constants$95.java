@@ -9,49 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$95 {
 
-    static final FunctionDescriptor EncryptFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EncryptFileW$MH = RuntimeHelper.downcallHandle(
-        "EncryptFileW",
-        constants$95.EncryptFileW$FUNC
-    );
-    static final FunctionDescriptor DecryptFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreatePipe$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DecryptFileA$MH = RuntimeHelper.downcallHandle(
-        "DecryptFileA",
-        constants$95.DecryptFileA$FUNC
+    static final MethodHandle CreatePipe$MH = RuntimeHelper.downcallHandle(
+        "CreatePipe",
+        constants$95.CreatePipe$FUNC
     );
-    static final FunctionDescriptor DecryptFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DecryptFileW$MH = RuntimeHelper.downcallHandle(
-        "DecryptFileW",
-        constants$95.DecryptFileW$FUNC
-    );
-    static final FunctionDescriptor FileEncryptionStatusA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ConnectNamedPipe$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FileEncryptionStatusA$MH = RuntimeHelper.downcallHandle(
-        "FileEncryptionStatusA",
-        constants$95.FileEncryptionStatusA$FUNC
+    static final MethodHandle ConnectNamedPipe$MH = RuntimeHelper.downcallHandle(
+        "ConnectNamedPipe",
+        constants$95.ConnectNamedPipe$FUNC
     );
-    static final FunctionDescriptor FileEncryptionStatusW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DisconnectNamedPipe$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DisconnectNamedPipe$MH = RuntimeHelper.downcallHandle(
+        "DisconnectNamedPipe",
+        constants$95.DisconnectNamedPipe$FUNC
+    );
+    static final FunctionDescriptor SetNamedPipeHandleState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FileEncryptionStatusW$MH = RuntimeHelper.downcallHandle(
-        "FileEncryptionStatusW",
-        constants$95.FileEncryptionStatusW$FUNC
+    static final MethodHandle SetNamedPipeHandleState$MH = RuntimeHelper.downcallHandle(
+        "SetNamedPipeHandleState",
+        constants$95.SetNamedPipeHandleState$FUNC
     );
-    static final FunctionDescriptor PFE_EXPORT_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PeekNamedPipe$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PeekNamedPipe$MH = RuntimeHelper.downcallHandle(
+        "PeekNamedPipe",
+        constants$95.PeekNamedPipe$FUNC
+    );
+    static final FunctionDescriptor TransactNamedPipe$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle TransactNamedPipe$MH = RuntimeHelper.downcallHandle(
+        "TransactNamedPipe",
+        constants$95.TransactNamedPipe$FUNC
     );
 }
 

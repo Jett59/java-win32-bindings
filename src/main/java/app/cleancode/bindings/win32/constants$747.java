@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$747 {
 
-    static final MemorySegment SPLREG_PRINT_QUEUE_V4_DRIVER_DIRECTORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintQueueV4DriverDirectory");
-    static final MemorySegment SPLDS_SPOOLER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsSpooler");
-    static final MemorySegment SPLDS_DRIVER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsDriver");
-    static final MemorySegment SPLDS_USER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsUser");
-    static final MemorySegment SPLDS_ASSET_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("assetNumber");
-    static final MemorySegment SPLDS_BYTES_PER_MINUTE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("bytesPerMinute");
+    static final MemoryAddress HKEY_PERFORMANCE_TEXT$ADDR = MemoryAddress.ofLong(-2147483568L);
+    static final MemoryAddress HKEY_PERFORMANCE_NLSTEXT$ADDR = MemoryAddress.ofLong(-2147483552L);
+    static final MemoryAddress HKEY_CURRENT_CONFIG$ADDR = MemoryAddress.ofLong(-2147483643L);
+    static final MemoryAddress HKEY_DYN_DATA$ADDR = MemoryAddress.ofLong(-2147483642L);
+    static final MemoryAddress HKEY_CURRENT_USER_LOCAL_SETTINGS$ADDR = MemoryAddress.ofLong(-2147483641L);
+    static final MemoryAddress WIN31_CLASS$ADDR = MemoryAddress.ofLong(0L);
 }
 
 

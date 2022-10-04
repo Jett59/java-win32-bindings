@@ -11,13 +11,13 @@ public interface PM_OPEN_PROC {
 
     int apply(java.lang.foreign.MemoryAddress _x0);
     static MemorySegment allocate(PM_OPEN_PROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PM_OPEN_PROC.class, fi, constants$403.PM_OPEN_PROC$FUNC, session);
+        return RuntimeHelper.upcallStub(PM_OPEN_PROC.class, fi, constants$556.PM_OPEN_PROC$FUNC, session);
     }
     static PM_OPEN_PROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0) -> {
             try {
-                return (int)constants$404.PM_OPEN_PROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0);
+                return (int)constants$556.PM_OPEN_PROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,59 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$541 {
 
-    static final FunctionDescriptor GetServiceKeyNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mixerGetControlDetailsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetServiceKeyNameA$MH = RuntimeHelper.downcallHandle(
-        "GetServiceKeyNameA",
-        constants$541.GetServiceKeyNameA$FUNC
-    );
-    static final FunctionDescriptor GetServiceKeyNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetServiceKeyNameW$MH = RuntimeHelper.downcallHandle(
-        "GetServiceKeyNameW",
-        constants$541.GetServiceKeyNameW$FUNC
-    );
-    static final FunctionDescriptor GetServiceDisplayNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetServiceDisplayNameA$MH = RuntimeHelper.downcallHandle(
-        "GetServiceDisplayNameA",
-        constants$541.GetServiceDisplayNameA$FUNC
-    );
-    static final FunctionDescriptor GetServiceDisplayNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetServiceDisplayNameW$MH = RuntimeHelper.downcallHandle(
-        "GetServiceDisplayNameW",
-        constants$541.GetServiceDisplayNameW$FUNC
-    );
-    static final FunctionDescriptor LockServiceDatabase$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LockServiceDatabase$MH = RuntimeHelper.downcallHandle(
-        "LockServiceDatabase",
-        constants$541.LockServiceDatabase$FUNC
-    );
-    static final FunctionDescriptor NotifyBootConfigStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle NotifyBootConfigStatus$MH = RuntimeHelper.downcallHandle(
-        "NotifyBootConfigStatus",
-        constants$541.NotifyBootConfigStatus$FUNC
+    static final MethodHandle mixerGetControlDetailsW$MH = RuntimeHelper.downcallHandle(
+        "mixerGetControlDetailsW",
+        constants$541.mixerGetControlDetailsW$FUNC
+    );
+    static final FunctionDescriptor mixerSetControlDetails$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mixerSetControlDetails$MH = RuntimeHelper.downcallHandle(
+        "mixerSetControlDetails",
+        constants$541.mixerSetControlDetails$FUNC
+    );
+    static final FunctionDescriptor timeGetSystemTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle timeGetSystemTime$MH = RuntimeHelper.downcallHandle(
+        "timeGetSystemTime",
+        constants$541.timeGetSystemTime$FUNC
+    );
+    static final FunctionDescriptor timeGetTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle timeGetTime$MH = RuntimeHelper.downcallHandle(
+        "timeGetTime",
+        constants$541.timeGetTime$FUNC
+    );
+    static final FunctionDescriptor timeGetDevCaps$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle timeGetDevCaps$MH = RuntimeHelper.downcallHandle(
+        "timeGetDevCaps",
+        constants$541.timeGetDevCaps$FUNC
+    );
+    static final FunctionDescriptor timeBeginPeriod$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle timeBeginPeriod$MH = RuntimeHelper.downcallHandle(
+        "timeBeginPeriod",
+        constants$541.timeBeginPeriod$FUNC
     );
 }
 

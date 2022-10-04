@@ -9,71 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$389 {
 
-    static final FunctionDescriptor RegQueryMultipleValuesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetSystemMetrics$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetSystemMetrics$MH = RuntimeHelper.downcallHandle(
+        "GetSystemMetrics",
+        constants$389.GetSystemMetrics$FUNC
+    );
+    static final FunctionDescriptor GetSystemMetricsForDpi$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetSystemMetricsForDpi$MH = RuntimeHelper.downcallHandle(
+        "GetSystemMetricsForDpi",
+        constants$389.GetSystemMetricsForDpi$FUNC
+    );
+    static final FunctionDescriptor LoadMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegQueryMultipleValuesA$MH = RuntimeHelper.downcallHandle(
-        "RegQueryMultipleValuesA",
-        constants$389.RegQueryMultipleValuesA$FUNC
+    static final MethodHandle LoadMenuA$MH = RuntimeHelper.downcallHandle(
+        "LoadMenuA",
+        constants$389.LoadMenuA$FUNC
     );
-    static final FunctionDescriptor RegQueryMultipleValuesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LoadMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegQueryMultipleValuesW$MH = RuntimeHelper.downcallHandle(
-        "RegQueryMultipleValuesW",
-        constants$389.RegQueryMultipleValuesW$FUNC
+    static final MethodHandle LoadMenuW$MH = RuntimeHelper.downcallHandle(
+        "LoadMenuW",
+        constants$389.LoadMenuW$FUNC
     );
-    static final FunctionDescriptor RegQueryValueExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LoadMenuIndirectA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegQueryValueExA$MH = RuntimeHelper.downcallHandle(
-        "RegQueryValueExA",
-        constants$389.RegQueryValueExA$FUNC
+    static final MethodHandle LoadMenuIndirectA$MH = RuntimeHelper.downcallHandle(
+        "LoadMenuIndirectA",
+        constants$389.LoadMenuIndirectA$FUNC
     );
-    static final FunctionDescriptor RegQueryValueExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LoadMenuIndirectW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegQueryValueExW$MH = RuntimeHelper.downcallHandle(
-        "RegQueryValueExW",
-        constants$389.RegQueryValueExW$FUNC
-    );
-    static final FunctionDescriptor RegReplaceKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegReplaceKeyA$MH = RuntimeHelper.downcallHandle(
-        "RegReplaceKeyA",
-        constants$389.RegReplaceKeyA$FUNC
-    );
-    static final FunctionDescriptor RegReplaceKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegReplaceKeyW$MH = RuntimeHelper.downcallHandle(
-        "RegReplaceKeyW",
-        constants$389.RegReplaceKeyW$FUNC
+    static final MethodHandle LoadMenuIndirectW$MH = RuntimeHelper.downcallHandle(
+        "LoadMenuIndirectW",
+        constants$389.LoadMenuIndirectW$FUNC
     );
 }
 

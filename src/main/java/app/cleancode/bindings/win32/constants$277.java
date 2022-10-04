@@ -9,56 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$277 {
 
-    static final FunctionDescriptor GetPointerPenInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerPenInfo$MH = RuntimeHelper.downcallHandle(
-        "GetPointerPenInfo",
-        constants$277.GetPointerPenInfo$FUNC
-    );
-    static final FunctionDescriptor GetPointerPenInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetBitmapDimensionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPointerPenInfoHistory$MH = RuntimeHelper.downcallHandle(
-        "GetPointerPenInfoHistory",
-        constants$277.GetPointerPenInfoHistory$FUNC
+    static final MethodHandle GetBitmapDimensionEx$MH = RuntimeHelper.downcallHandle(
+        "GetBitmapDimensionEx",
+        constants$277.GetBitmapDimensionEx$FUNC
     );
-    static final FunctionDescriptor GetPointerFramePenInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetBoundsRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerFramePenInfo$MH = RuntimeHelper.downcallHandle(
-        "GetPointerFramePenInfo",
-        constants$277.GetPointerFramePenInfo$FUNC
-    );
-    static final FunctionDescriptor GetPointerFramePenInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerFramePenInfoHistory$MH = RuntimeHelper.downcallHandle(
-        "GetPointerFramePenInfoHistory",
-        constants$277.GetPointerFramePenInfoHistory$FUNC
-    );
-    static final FunctionDescriptor SkipPointerFrameMessages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SkipPointerFrameMessages$MH = RuntimeHelper.downcallHandle(
-        "SkipPointerFrameMessages",
-        constants$277.SkipPointerFrameMessages$FUNC
-    );
-    static final FunctionDescriptor RegisterPointerInputTarget$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegisterPointerInputTarget$MH = RuntimeHelper.downcallHandle(
-        "RegisterPointerInputTarget",
-        constants$277.RegisterPointerInputTarget$FUNC
+    static final MethodHandle GetBoundsRect$MH = RuntimeHelper.downcallHandle(
+        "GetBoundsRect",
+        constants$277.GetBoundsRect$FUNC
+    );
+    static final FunctionDescriptor GetBrushOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetBrushOrgEx$MH = RuntimeHelper.downcallHandle(
+        "GetBrushOrgEx",
+        constants$277.GetBrushOrgEx$FUNC
+    );
+    static final FunctionDescriptor GetCharWidthA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharWidthA$MH = RuntimeHelper.downcallHandle(
+        "GetCharWidthA",
+        constants$277.GetCharWidthA$FUNC
+    );
+    static final FunctionDescriptor GetCharWidthW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharWidthW$MH = RuntimeHelper.downcallHandle(
+        "GetCharWidthW",
+        constants$277.GetCharWidthW$FUNC
+    );
+    static final FunctionDescriptor GetCharWidth32A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharWidth32A$MH = RuntimeHelper.downcallHandle(
+        "GetCharWidth32A",
+        constants$277.GetCharWidth32A$FUNC
     );
 }
 

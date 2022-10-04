@@ -9,55 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$207 {
 
-    static final FunctionDescriptor FlattenPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FlattenPath$MH = RuntimeHelper.downcallHandle(
-        "FlattenPath",
-        constants$207.FlattenPath$FUNC
+    static final MethodHandle FindResourceA$MH = RuntimeHelper.downcallHandle(
+        "FindResourceA",
+        constants$207.FindResourceA$FUNC
     );
-    static final FunctionDescriptor GetPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FindResourceExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle GetPath$MH = RuntimeHelper.downcallHandle(
-        "GetPath",
-        constants$207.GetPath$FUNC
+    static final MethodHandle FindResourceExA$MH = RuntimeHelper.downcallHandle(
+        "FindResourceExA",
+        constants$207.FindResourceExA$FUNC
     );
-    static final FunctionDescriptor PathToRegion$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor EnumResourceTypesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PathToRegion$MH = RuntimeHelper.downcallHandle(
-        "PathToRegion",
-        constants$207.PathToRegion$FUNC
+    static final MethodHandle EnumResourceTypesA$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceTypesA",
+        constants$207.EnumResourceTypesA$FUNC
     );
-    static final FunctionDescriptor PolyDraw$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumResourceTypesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumResourceTypesW$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceTypesW",
+        constants$207.EnumResourceTypesW$FUNC
+    );
+    static final FunctionDescriptor EnumResourceNamesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PolyDraw$MH = RuntimeHelper.downcallHandle(
-        "PolyDraw",
-        constants$207.PolyDraw$FUNC
+    static final MethodHandle EnumResourceNamesA$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceNamesA",
+        constants$207.EnumResourceNamesA$FUNC
     );
-    static final FunctionDescriptor SelectClipPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumResourceLanguagesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SelectClipPath$MH = RuntimeHelper.downcallHandle(
-        "SelectClipPath",
-        constants$207.SelectClipPath$FUNC
-    );
-    static final FunctionDescriptor SetArcDirection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle SetArcDirection$MH = RuntimeHelper.downcallHandle(
-        "SetArcDirection",
-        constants$207.SetArcDirection$FUNC
+    static final MethodHandle EnumResourceLanguagesA$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceLanguagesA",
+        constants$207.EnumResourceLanguagesA$FUNC
     );
 }
 

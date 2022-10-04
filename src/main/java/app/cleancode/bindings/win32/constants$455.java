@@ -9,77 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$455 {
 
-    static final FunctionDescriptor CryptMsgSignCTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTimeFormatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetTimeFormatW$MH = RuntimeHelper.downcallHandle(
+        "GetTimeFormatW",
+        constants$455.GetTimeFormatW$FUNC
+    );
+    static final FunctionDescriptor GetTimeFormatEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetTimeFormatEx$MH = RuntimeHelper.downcallHandle(
+        "GetTimeFormatEx",
+        constants$455.GetTimeFormatEx$FUNC
+    );
+    static final FunctionDescriptor GetDateFormatEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptMsgSignCTL$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgSignCTL",
-        constants$455.CryptMsgSignCTL$FUNC
+    static final MethodHandle GetDateFormatEx$MH = RuntimeHelper.downcallHandle(
+        "GetDateFormatEx",
+        constants$455.GetDateFormatEx$FUNC
     );
-    static final FunctionDescriptor CryptMsgEncodeAndSignCTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDurationFormatEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetDurationFormatEx$MH = RuntimeHelper.downcallHandle(
+        "GetDurationFormatEx",
+        constants$455.GetDurationFormatEx$FUNC
+    );
+    static final FunctionDescriptor LOCALE_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptMsgEncodeAndSignCTL$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgEncodeAndSignCTL",
-        constants$455.CryptMsgEncodeAndSignCTL$FUNC
-    );
-    static final FunctionDescriptor CertFindSubjectInSortedCTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFindSubjectInSortedCTL$MH = RuntimeHelper.downcallHandle(
-        "CertFindSubjectInSortedCTL",
-        constants$455.CertFindSubjectInSortedCTL$FUNC
-    );
-    static final FunctionDescriptor CertEnumSubjectInSortedCTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertEnumSubjectInSortedCTL$MH = RuntimeHelper.downcallHandle(
-        "CertEnumSubjectInSortedCTL",
-        constants$455.CertEnumSubjectInSortedCTL$FUNC
-    );
-    static final FunctionDescriptor CertVerifyCTLUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertVerifyCTLUsage$MH = RuntimeHelper.downcallHandle(
-        "CertVerifyCTLUsage",
-        constants$455.CertVerifyCTLUsage$FUNC
-    );
-    static final FunctionDescriptor CertVerifyRevocation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertVerifyRevocation$MH = RuntimeHelper.downcallHandle(
-        "CertVerifyRevocation",
-        constants$455.CertVerifyRevocation$FUNC
+    static final MethodHandle LOCALE_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$455.LOCALE_ENUMPROCA$FUNC
     );
 }
 

@@ -9,59 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$280 {
 
-    static final FunctionDescriptor PackTouchHitTestingProximityEvaluation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetDeviceCaps$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PackTouchHitTestingProximityEvaluation$MH = RuntimeHelper.downcallHandle(
-        "PackTouchHitTestingProximityEvaluation",
-        constants$280.PackTouchHitTestingProximityEvaluation$FUNC
-    );
-    static final FunctionDescriptor GetWindowFeedbackSetting$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetWindowFeedbackSetting$MH = RuntimeHelper.downcallHandle(
-        "GetWindowFeedbackSetting",
-        constants$280.GetWindowFeedbackSetting$FUNC
-    );
-    static final FunctionDescriptor SetWindowFeedbackSetting$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetWindowFeedbackSetting$MH = RuntimeHelper.downcallHandle(
-        "SetWindowFeedbackSetting",
-        constants$280.SetWindowFeedbackSetting$FUNC
-    );
-    static final FunctionDescriptor GetPointerInputTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerInputTransform$MH = RuntimeHelper.downcallHandle(
-        "GetPointerInputTransform",
-        constants$280.GetPointerInputTransform$FUNC
-    );
-    static final FunctionDescriptor GetLastInputInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetLastInputInfo$MH = RuntimeHelper.downcallHandle(
-        "GetLastInputInfo",
-        constants$280.GetLastInputInfo$FUNC
-    );
-    static final FunctionDescriptor MapVirtualKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle MapVirtualKeyA$MH = RuntimeHelper.downcallHandle(
-        "MapVirtualKeyA",
-        constants$280.MapVirtualKeyA$FUNC
+    static final MethodHandle GetDeviceCaps$MH = RuntimeHelper.downcallHandle(
+        "GetDeviceCaps",
+        constants$280.GetDeviceCaps$FUNC
+    );
+    static final FunctionDescriptor GetDIBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetDIBits$MH = RuntimeHelper.downcallHandle(
+        "GetDIBits",
+        constants$280.GetDIBits$FUNC
+    );
+    static final FunctionDescriptor GetFontData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetFontData$MH = RuntimeHelper.downcallHandle(
+        "GetFontData",
+        constants$280.GetFontData$FUNC
+    );
+    static final FunctionDescriptor GetGlyphOutlineA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetGlyphOutlineA$MH = RuntimeHelper.downcallHandle(
+        "GetGlyphOutlineA",
+        constants$280.GetGlyphOutlineA$FUNC
+    );
+    static final FunctionDescriptor GetGlyphOutlineW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetGlyphOutlineW$MH = RuntimeHelper.downcallHandle(
+        "GetGlyphOutlineW",
+        constants$280.GetGlyphOutlineW$FUNC
+    );
+    static final FunctionDescriptor GetGraphicsMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetGraphicsMode$MH = RuntimeHelper.downcallHandle(
+        "GetGraphicsMode",
+        constants$280.GetGraphicsMode$FUNC
     );
 }
 

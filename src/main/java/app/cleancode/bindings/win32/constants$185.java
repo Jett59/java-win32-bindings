@@ -9,52 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$185 {
 
-    static final FunctionDescriptor AddFontMemResourceEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetThreadAffinityMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetThreadAffinityMask$MH = RuntimeHelper.downcallHandle(
+        "SetThreadAffinityMask",
+        constants$185.SetThreadAffinityMask$FUNC
+    );
+    static final FunctionDescriptor SetProcessDEPPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetProcessDEPPolicy$MH = RuntimeHelper.downcallHandle(
+        "SetProcessDEPPolicy",
+        constants$185.SetProcessDEPPolicy$FUNC
+    );
+    static final FunctionDescriptor GetProcessDEPPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessDEPPolicy$MH = RuntimeHelper.downcallHandle(
+        "GetProcessDEPPolicy",
+        constants$185.GetProcessDEPPolicy$FUNC
+    );
+    static final FunctionDescriptor RequestWakeupLatency$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RequestWakeupLatency$MH = RuntimeHelper.downcallHandle(
+        "RequestWakeupLatency",
+        constants$185.RequestWakeupLatency$FUNC
+    );
+    static final FunctionDescriptor IsSystemResumeAutomatic$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle IsSystemResumeAutomatic$MH = RuntimeHelper.downcallHandle(
+        "IsSystemResumeAutomatic",
+        constants$185.IsSystemResumeAutomatic$FUNC
+    );
+    static final FunctionDescriptor GetThreadSelectorEntry$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddFontMemResourceEx$MH = RuntimeHelper.downcallHandle(
-        "AddFontMemResourceEx",
-        constants$185.AddFontMemResourceEx$FUNC
-    );
-    static final FunctionDescriptor RemoveFontMemResourceEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RemoveFontMemResourceEx$MH = RuntimeHelper.downcallHandle(
-        "RemoveFontMemResourceEx",
-        constants$185.RemoveFontMemResourceEx$FUNC
-    );
-    static final FunctionDescriptor CreateFontIndirectExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateFontIndirectExA$MH = RuntimeHelper.downcallHandle(
-        "CreateFontIndirectExA",
-        constants$185.CreateFontIndirectExA$FUNC
-    );
-    static final FunctionDescriptor CreateFontIndirectExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateFontIndirectExW$MH = RuntimeHelper.downcallHandle(
-        "CreateFontIndirectExW",
-        constants$185.CreateFontIndirectExW$FUNC
-    );
-    static final FunctionDescriptor GetViewportExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetViewportExtEx$MH = RuntimeHelper.downcallHandle(
-        "GetViewportExtEx",
-        constants$185.GetViewportExtEx$FUNC
-    );
-    static final FunctionDescriptor GetViewportOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetViewportOrgEx$MH = RuntimeHelper.downcallHandle(
-        "GetViewportOrgEx",
-        constants$185.GetViewportOrgEx$FUNC
+    static final MethodHandle GetThreadSelectorEntry$MH = RuntimeHelper.downcallHandle(
+        "GetThreadSelectorEntry",
+        constants$185.GetThreadSelectorEntry$FUNC
     );
 }
 

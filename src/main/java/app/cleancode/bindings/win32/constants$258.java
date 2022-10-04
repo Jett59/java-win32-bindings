@@ -9,63 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$258 {
 
-    static final FunctionDescriptor SetDlgItemInt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateSymbolicLinkA$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetDlgItemInt$MH = RuntimeHelper.downcallHandle(
-        "SetDlgItemInt",
-        constants$258.SetDlgItemInt$FUNC
-    );
-    static final FunctionDescriptor GetDlgItemInt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetDlgItemInt$MH = RuntimeHelper.downcallHandle(
-        "GetDlgItemInt",
-        constants$258.GetDlgItemInt$FUNC
+    static final MethodHandle CreateSymbolicLinkA$MH = RuntimeHelper.downcallHandle(
+        "CreateSymbolicLinkA",
+        constants$258.CreateSymbolicLinkA$FUNC
     );
-    static final FunctionDescriptor SetDlgItemTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateSymbolicLinkW$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateSymbolicLinkW$MH = RuntimeHelper.downcallHandle(
+        "CreateSymbolicLinkW",
+        constants$258.CreateSymbolicLinkW$FUNC
+    );
+    static final FunctionDescriptor QueryActCtxSettingsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryActCtxSettingsW$MH = RuntimeHelper.downcallHandle(
+        "QueryActCtxSettingsW",
+        constants$258.QueryActCtxSettingsW$FUNC
+    );
+    static final FunctionDescriptor CreateSymbolicLinkTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetDlgItemTextA$MH = RuntimeHelper.downcallHandle(
-        "SetDlgItemTextA",
-        constants$258.SetDlgItemTextA$FUNC
+    static final MethodHandle CreateSymbolicLinkTransactedA$MH = RuntimeHelper.downcallHandle(
+        "CreateSymbolicLinkTransactedA",
+        constants$258.CreateSymbolicLinkTransactedA$FUNC
     );
-    static final FunctionDescriptor SetDlgItemTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateSymbolicLinkTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetDlgItemTextW$MH = RuntimeHelper.downcallHandle(
-        "SetDlgItemTextW",
-        constants$258.SetDlgItemTextW$FUNC
+    static final MethodHandle CreateSymbolicLinkTransactedW$MH = RuntimeHelper.downcallHandle(
+        "CreateSymbolicLinkTransactedW",
+        constants$258.CreateSymbolicLinkTransactedW$FUNC
     );
-    static final FunctionDescriptor GetDlgItemTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReplacePartitionUnit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetDlgItemTextA$MH = RuntimeHelper.downcallHandle(
-        "GetDlgItemTextA",
-        constants$258.GetDlgItemTextA$FUNC
-    );
-    static final FunctionDescriptor GetDlgItemTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetDlgItemTextW$MH = RuntimeHelper.downcallHandle(
-        "GetDlgItemTextW",
-        constants$258.GetDlgItemTextW$FUNC
+    static final MethodHandle ReplacePartitionUnit$MH = RuntimeHelper.downcallHandle(
+        "ReplacePartitionUnit",
+        constants$258.ReplacePartitionUnit$FUNC
     );
 }
 

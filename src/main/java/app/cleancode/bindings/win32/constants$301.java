@@ -9,62 +9,76 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$301 {
 
-    static final FunctionDescriptor SetScrollPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GdiAlphaBlend$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        MemoryLayout.structLayout(
+            Constants$root.C_CHAR$LAYOUT.withName("BlendOp"),
+            Constants$root.C_CHAR$LAYOUT.withName("BlendFlags"),
+            Constants$root.C_CHAR$LAYOUT.withName("SourceConstantAlpha"),
+            Constants$root.C_CHAR$LAYOUT.withName("AlphaFormat")
+        ).withName("_BLENDFUNCTION")
+    );
+    static final MethodHandle GdiAlphaBlend$MH = RuntimeHelper.downcallHandle(
+        "GdiAlphaBlend",
+        constants$301.GdiAlphaBlend$FUNC
+    );
+    static final FunctionDescriptor GdiTransparentBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetScrollPos$MH = RuntimeHelper.downcallHandle(
-        "SetScrollPos",
-        constants$301.SetScrollPos$FUNC
+    static final MethodHandle GdiTransparentBlt$MH = RuntimeHelper.downcallHandle(
+        "GdiTransparentBlt",
+        constants$301.GdiTransparentBlt$FUNC
     );
-    static final FunctionDescriptor GetScrollPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GdiGradientFill$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetScrollPos$MH = RuntimeHelper.downcallHandle(
-        "GetScrollPos",
-        constants$301.GetScrollPos$FUNC
-    );
-    static final FunctionDescriptor SetScrollRange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetScrollRange$MH = RuntimeHelper.downcallHandle(
-        "SetScrollRange",
-        constants$301.SetScrollRange$FUNC
-    );
-    static final FunctionDescriptor GetScrollRange$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetScrollRange$MH = RuntimeHelper.downcallHandle(
-        "GetScrollRange",
-        constants$301.GetScrollRange$FUNC
-    );
-    static final FunctionDescriptor ShowScrollBar$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ShowScrollBar$MH = RuntimeHelper.downcallHandle(
-        "ShowScrollBar",
-        constants$301.ShowScrollBar$FUNC
+    static final MethodHandle GdiGradientFill$MH = RuntimeHelper.downcallHandle(
+        "GdiGradientFill",
+        constants$301.GdiGradientFill$FUNC
     );
-    static final FunctionDescriptor EnableScrollBar$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PlayMetaFileRecord$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EnableScrollBar$MH = RuntimeHelper.downcallHandle(
-        "EnableScrollBar",
-        constants$301.EnableScrollBar$FUNC
+    static final MethodHandle PlayMetaFileRecord$MH = RuntimeHelper.downcallHandle(
+        "PlayMetaFileRecord",
+        constants$301.PlayMetaFileRecord$FUNC
+    );
+    static final FunctionDescriptor MFENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle MFENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$301.MFENUMPROC$FUNC
     );
 }
 

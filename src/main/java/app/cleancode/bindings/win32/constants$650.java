@@ -9,12 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$650 {
 
-    static final MemorySegment szOID_KP_CA_EXCHANGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.5");
-    static final MemorySegment szOID_KP_PRIVACY_CA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.36");
-    static final MemorySegment szOID_KP_KEY_RECOVERY_AGENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.6");
-    static final MemorySegment szOID_CERTIFICATE_TEMPLATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.7");
-    static final MemorySegment szOID_ENTERPRISE_OID_ROOT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.8");
-    static final MemorySegment szOID_RDN_DUMMY_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.9");
+    static final FunctionDescriptor SCardAddReaderToGroupA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardAddReaderToGroupA$MH = RuntimeHelper.downcallHandle(
+        "SCardAddReaderToGroupA",
+        constants$650.SCardAddReaderToGroupA$FUNC
+    );
+    static final FunctionDescriptor SCardAddReaderToGroupW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardAddReaderToGroupW$MH = RuntimeHelper.downcallHandle(
+        "SCardAddReaderToGroupW",
+        constants$650.SCardAddReaderToGroupW$FUNC
+    );
+    static final FunctionDescriptor SCardRemoveReaderFromGroupA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardRemoveReaderFromGroupA$MH = RuntimeHelper.downcallHandle(
+        "SCardRemoveReaderFromGroupA",
+        constants$650.SCardRemoveReaderFromGroupA$FUNC
+    );
+    static final FunctionDescriptor SCardRemoveReaderFromGroupW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardRemoveReaderFromGroupW$MH = RuntimeHelper.downcallHandle(
+        "SCardRemoveReaderFromGroupW",
+        constants$650.SCardRemoveReaderFromGroupW$FUNC
+    );
+    static final FunctionDescriptor SCardIntroduceCardTypeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SCardIntroduceCardTypeA$MH = RuntimeHelper.downcallHandle(
+        "SCardIntroduceCardTypeA",
+        constants$650.SCardIntroduceCardTypeA$FUNC
+    );
+    static final FunctionDescriptor SCardIntroduceCardTypeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SCardIntroduceCardTypeW$MH = RuntimeHelper.downcallHandle(
+        "SCardIntroduceCardTypeW",
+        constants$650.SCardIntroduceCardTypeW$FUNC
+    );
 }
 
 

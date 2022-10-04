@@ -9,63 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$110 {
 
-    static final FunctionDescriptor GetAtomNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetAtomNameW$MH = RuntimeHelper.downcallHandle(
-        "GetAtomNameW",
-        constants$110.GetAtomNameW$FUNC
-    );
-    static final FunctionDescriptor GetProfileIntA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetProfileIntA$MH = RuntimeHelper.downcallHandle(
-        "GetProfileIntA",
-        constants$110.GetProfileIntA$FUNC
-    );
-    static final FunctionDescriptor GetProfileIntW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetProfileIntW$MH = RuntimeHelper.downcallHandle(
-        "GetProfileIntW",
-        constants$110.GetProfileIntW$FUNC
-    );
-    static final FunctionDescriptor GetProfileStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetProfileStringA$MH = RuntimeHelper.downcallHandle(
-        "GetProfileStringA",
-        constants$110.GetProfileStringA$FUNC
-    );
-    static final FunctionDescriptor GetProfileStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetProfileStringW$MH = RuntimeHelper.downcallHandle(
-        "GetProfileStringW",
-        constants$110.GetProfileStringW$FUNC
-    );
-    static final FunctionDescriptor WriteProfileStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor WakeByAddressSingle$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WriteProfileStringA$MH = RuntimeHelper.downcallHandle(
-        "WriteProfileStringA",
-        constants$110.WriteProfileStringA$FUNC
+    static final MethodHandle WakeByAddressSingle$MH = RuntimeHelper.downcallHandle(
+        "WakeByAddressSingle",
+        constants$110.WakeByAddressSingle$FUNC
+    );
+    static final FunctionDescriptor WakeByAddressAll$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WakeByAddressAll$MH = RuntimeHelper.downcallHandle(
+        "WakeByAddressAll",
+        constants$110.WakeByAddressAll$FUNC
+    );
+    static final FunctionDescriptor SignalObjectAndWait$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SignalObjectAndWait$MH = RuntimeHelper.downcallHandle(
+        "SignalObjectAndWait",
+        constants$110.SignalObjectAndWait$FUNC
+    );
+    static final FunctionDescriptor WaitForMultipleObjects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WaitForMultipleObjects$MH = RuntimeHelper.downcallHandle(
+        "WaitForMultipleObjects",
+        constants$110.WaitForMultipleObjects$FUNC
+    );
+    static final FunctionDescriptor CreateSemaphoreW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateSemaphoreW$MH = RuntimeHelper.downcallHandle(
+        "CreateSemaphoreW",
+        constants$110.CreateSemaphoreW$FUNC
+    );
+    static final FunctionDescriptor CreateWaitableTimerW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateWaitableTimerW$MH = RuntimeHelper.downcallHandle(
+        "CreateWaitableTimerW",
+        constants$110.CreateWaitableTimerW$FUNC
     );
 }
 

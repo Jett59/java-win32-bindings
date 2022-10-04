@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$753 {
 
-    static final MemorySegment SPLDS_PRINT_RATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printRate");
-    static final MemorySegment SPLDS_PRINT_RATE_UNIT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printRateUnit");
-    static final MemorySegment SPLDS_PRINT_SEPARATOR_FILE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printSeparatorFile");
-    static final MemorySegment SPLDS_PRINT_SHARE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printShareName");
-    static final MemorySegment SPLDS_PRINT_SPOOLING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printSpooling");
-    static final MemorySegment SPLDS_PRINT_STAPLING_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printStaplingSupported");
+    static final MemorySegment MS_SCARD_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Smart Card Crypto Provider");
+    static final MemorySegment MS_ENH_RSA_AES_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider");
+    static final MemorySegment MS_ENH_RSA_AES_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_ENH_RSA_AES_PROV_XP_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider (Prototype)");
+    static final MemorySegment MS_ENH_RSA_AES_PROV_XP_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_ENH_RSA_AES_PROV_XP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider (Prototype)");
 }
 
 

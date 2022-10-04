@@ -9,61 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$166 {
 
-    static final FunctionDescriptor CreatePolyPolygonRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor InitializeSecurityDescriptor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreatePolyPolygonRgn$MH = RuntimeHelper.downcallHandle(
-        "CreatePolyPolygonRgn",
-        constants$166.CreatePolyPolygonRgn$FUNC
+    static final MethodHandle InitializeSecurityDescriptor$MH = RuntimeHelper.downcallHandle(
+        "InitializeSecurityDescriptor",
+        constants$166.InitializeSecurityDescriptor$FUNC
     );
-    static final FunctionDescriptor CreatePatternBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreatePatternBrush$MH = RuntimeHelper.downcallHandle(
-        "CreatePatternBrush",
-        constants$166.CreatePatternBrush$FUNC
-    );
-    static final FunctionDescriptor CreateRectRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateRectRgn$MH = RuntimeHelper.downcallHandle(
-        "CreateRectRgn",
-        constants$166.CreateRectRgn$FUNC
-    );
-    static final FunctionDescriptor CreateRectRgnIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateRectRgnIndirect$MH = RuntimeHelper.downcallHandle(
-        "CreateRectRgnIndirect",
-        constants$166.CreateRectRgnIndirect$FUNC
-    );
-    static final FunctionDescriptor CreateRoundRectRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CreateRoundRectRgn$MH = RuntimeHelper.downcallHandle(
-        "CreateRoundRectRgn",
-        constants$166.CreateRoundRectRgn$FUNC
-    );
-    static final FunctionDescriptor CreateScalableFontResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InitializeSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT
+    );
+    static final MethodHandle InitializeSid$MH = RuntimeHelper.downcallHandle(
+        "InitializeSid",
+        constants$166.InitializeSid$FUNC
+    );
+    static final FunctionDescriptor IsTokenRestricted$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateScalableFontResourceA$MH = RuntimeHelper.downcallHandle(
-        "CreateScalableFontResourceA",
-        constants$166.CreateScalableFontResourceA$FUNC
+    static final MethodHandle IsTokenRestricted$MH = RuntimeHelper.downcallHandle(
+        "IsTokenRestricted",
+        constants$166.IsTokenRestricted$FUNC
+    );
+    static final FunctionDescriptor IsValidAcl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsValidAcl$MH = RuntimeHelper.downcallHandle(
+        "IsValidAcl",
+        constants$166.IsValidAcl$FUNC
+    );
+    static final FunctionDescriptor IsValidSecurityDescriptor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsValidSecurityDescriptor$MH = RuntimeHelper.downcallHandle(
+        "IsValidSecurityDescriptor",
+        constants$166.IsValidSecurityDescriptor$FUNC
+    );
+    static final FunctionDescriptor IsValidSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsValidSid$MH = RuntimeHelper.downcallHandle(
+        "IsValidSid",
+        constants$166.IsValidSid$FUNC
     );
 }
 

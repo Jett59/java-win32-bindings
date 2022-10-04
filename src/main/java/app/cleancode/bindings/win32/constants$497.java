@@ -9,71 +9,83 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$497 {
 
-    static final FunctionDescriptor SCardRemoveReaderFromGroupA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegQueryInfoKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardRemoveReaderFromGroupA$MH = RuntimeHelper.downcallHandle(
-        "SCardRemoveReaderFromGroupA",
-        constants$497.SCardRemoveReaderFromGroupA$FUNC
+    static final MethodHandle RegQueryInfoKeyA$MH = RuntimeHelper.downcallHandle(
+        "RegQueryInfoKeyA",
+        constants$497.RegQueryInfoKeyA$FUNC
     );
-    static final FunctionDescriptor SCardRemoveReaderFromGroupW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegQueryInfoKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardRemoveReaderFromGroupW$MH = RuntimeHelper.downcallHandle(
-        "SCardRemoveReaderFromGroupW",
-        constants$497.SCardRemoveReaderFromGroupW$FUNC
+    static final MethodHandle RegQueryInfoKeyW$MH = RuntimeHelper.downcallHandle(
+        "RegQueryInfoKeyW",
+        constants$497.RegQueryInfoKeyW$FUNC
     );
-    static final FunctionDescriptor SCardIntroduceCardTypeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegQueryValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegQueryValueA$MH = RuntimeHelper.downcallHandle(
+        "RegQueryValueA",
+        constants$497.RegQueryValueA$FUNC
+    );
+    static final FunctionDescriptor RegQueryValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegQueryValueW$MH = RuntimeHelper.downcallHandle(
+        "RegQueryValueW",
+        constants$497.RegQueryValueW$FUNC
+    );
+    static final FunctionDescriptor RegQueryMultipleValuesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SCardIntroduceCardTypeA$MH = RuntimeHelper.downcallHandle(
-        "SCardIntroduceCardTypeA",
-        constants$497.SCardIntroduceCardTypeA$FUNC
-    );
-    static final FunctionDescriptor SCardIntroduceCardTypeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SCardIntroduceCardTypeW$MH = RuntimeHelper.downcallHandle(
-        "SCardIntroduceCardTypeW",
-        constants$497.SCardIntroduceCardTypeW$FUNC
-    );
-    static final FunctionDescriptor SCardSetCardTypeProviderNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardSetCardTypeProviderNameA$MH = RuntimeHelper.downcallHandle(
-        "SCardSetCardTypeProviderNameA",
-        constants$497.SCardSetCardTypeProviderNameA$FUNC
+    static final MethodHandle RegQueryMultipleValuesA$MH = RuntimeHelper.downcallHandle(
+        "RegQueryMultipleValuesA",
+        constants$497.RegQueryMultipleValuesA$FUNC
     );
-    static final FunctionDescriptor SCardSetCardTypeProviderNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegQueryMultipleValuesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardSetCardTypeProviderNameW$MH = RuntimeHelper.downcallHandle(
-        "SCardSetCardTypeProviderNameW",
-        constants$497.SCardSetCardTypeProviderNameW$FUNC
+    static final MethodHandle RegQueryMultipleValuesW$MH = RuntimeHelper.downcallHandle(
+        "RegQueryMultipleValuesW",
+        constants$497.RegQueryMultipleValuesW$FUNC
     );
 }
 

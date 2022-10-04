@@ -9,73 +9,39 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$523 {
 
-    static final FunctionDescriptor GetFormW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WAVECALLBACK$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetFormW$MH = RuntimeHelper.downcallHandle(
-        "GetFormW",
-        constants$523.GetFormW$FUNC
+    static final MethodHandle WAVECALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$523.WAVECALLBACK$FUNC
     );
-    static final FunctionDescriptor SetFormA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LPWAVECALLBACK$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle SetFormA$MH = RuntimeHelper.downcallHandle(
-        "SetFormA",
-        constants$523.SetFormA$FUNC
+    static final MethodHandle LPWAVECALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$523.LPWAVECALLBACK$FUNC
     );
-    static final FunctionDescriptor SetFormW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor waveOutGetNumDevs$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle waveOutGetNumDevs$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetNumDevs",
+        constants$523.waveOutGetNumDevs$FUNC
     );
-    static final MethodHandle SetFormW$MH = RuntimeHelper.downcallHandle(
-        "SetFormW",
-        constants$523.SetFormW$FUNC
+    static final FunctionDescriptor waveOutGetDevCapsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final FunctionDescriptor EnumFormsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnumFormsA$MH = RuntimeHelper.downcallHandle(
-        "EnumFormsA",
-        constants$523.EnumFormsA$FUNC
-    );
-    static final FunctionDescriptor EnumFormsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnumFormsW$MH = RuntimeHelper.downcallHandle(
-        "EnumFormsW",
-        constants$523.EnumFormsW$FUNC
-    );
-    static final FunctionDescriptor EnumMonitorsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnumMonitorsA$MH = RuntimeHelper.downcallHandle(
-        "EnumMonitorsA",
-        constants$523.EnumMonitorsA$FUNC
+    static final MethodHandle waveOutGetDevCapsA$MH = RuntimeHelper.downcallHandle(
+        "waveOutGetDevCapsA",
+        constants$523.waveOutGetDevCapsA$FUNC
     );
 }
 

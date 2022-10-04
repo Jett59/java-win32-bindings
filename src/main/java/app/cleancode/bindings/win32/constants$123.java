@@ -9,73 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$123 {
 
-    static final FunctionDescriptor MoveFileWithProgressW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetThreadIdealProcessorEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetThreadIdealProcessorEx$MH = RuntimeHelper.downcallHandle(
+        "GetThreadIdealProcessorEx",
+        constants$123.GetThreadIdealProcessorEx$FUNC
+    );
+    static final FunctionDescriptor GetCurrentProcessorNumberEx$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCurrentProcessorNumberEx$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentProcessorNumberEx",
+        constants$123.GetCurrentProcessorNumberEx$FUNC
+    );
+    static final FunctionDescriptor GetProcessPriorityBoost$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessPriorityBoost$MH = RuntimeHelper.downcallHandle(
+        "GetProcessPriorityBoost",
+        constants$123.GetProcessPriorityBoost$FUNC
+    );
+    static final FunctionDescriptor SetProcessPriorityBoost$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle MoveFileWithProgressW$MH = RuntimeHelper.downcallHandle(
-        "MoveFileWithProgressW",
-        constants$123.MoveFileWithProgressW$FUNC
+    static final MethodHandle SetProcessPriorityBoost$MH = RuntimeHelper.downcallHandle(
+        "SetProcessPriorityBoost",
+        constants$123.SetProcessPriorityBoost$FUNC
     );
-    static final FunctionDescriptor MoveFileTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle MoveFileTransactedA$MH = RuntimeHelper.downcallHandle(
-        "MoveFileTransactedA",
-        constants$123.MoveFileTransactedA$FUNC
-    );
-    static final FunctionDescriptor MoveFileTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle MoveFileTransactedW$MH = RuntimeHelper.downcallHandle(
-        "MoveFileTransactedW",
-        constants$123.MoveFileTransactedW$FUNC
-    );
-    static final FunctionDescriptor ReplaceFileA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetThreadIOPendingFlag$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ReplaceFileA$MH = RuntimeHelper.downcallHandle(
-        "ReplaceFileA",
-        constants$123.ReplaceFileA$FUNC
+    static final MethodHandle GetThreadIOPendingFlag$MH = RuntimeHelper.downcallHandle(
+        "GetThreadIOPendingFlag",
+        constants$123.GetThreadIOPendingFlag$FUNC
     );
-    static final FunctionDescriptor ReplaceFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ReplaceFileW$MH = RuntimeHelper.downcallHandle(
-        "ReplaceFileW",
-        constants$123.ReplaceFileW$FUNC
-    );
-    static final FunctionDescriptor CreateHardLinkA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSystemTimes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateHardLinkA$MH = RuntimeHelper.downcallHandle(
-        "CreateHardLinkA",
-        constants$123.CreateHardLinkA$FUNC
+    static final MethodHandle GetSystemTimes$MH = RuntimeHelper.downcallHandle(
+        "GetSystemTimes",
+        constants$123.GetSystemTimes$FUNC
     );
 }
 

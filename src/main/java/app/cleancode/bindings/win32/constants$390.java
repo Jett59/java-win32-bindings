@@ -9,59 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$390 {
 
-    static final FunctionDescriptor RegRestoreKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetMenu$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegRestoreKeyA$MH = RuntimeHelper.downcallHandle(
-        "RegRestoreKeyA",
-        constants$390.RegRestoreKeyA$FUNC
+    static final MethodHandle GetMenu$MH = RuntimeHelper.downcallHandle(
+        "GetMenu",
+        constants$390.GetMenu$FUNC
     );
-    static final FunctionDescriptor RegRestoreKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegRestoreKeyW$MH = RuntimeHelper.downcallHandle(
-        "RegRestoreKeyW",
-        constants$390.RegRestoreKeyW$FUNC
-    );
-    static final FunctionDescriptor RegRenameKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegRenameKey$MH = RuntimeHelper.downcallHandle(
-        "RegRenameKey",
-        constants$390.RegRenameKey$FUNC
+    static final MethodHandle SetMenu$MH = RuntimeHelper.downcallHandle(
+        "SetMenu",
+        constants$390.SetMenu$FUNC
     );
-    static final FunctionDescriptor RegSaveKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegSaveKeyA$MH = RuntimeHelper.downcallHandle(
-        "RegSaveKeyA",
-        constants$390.RegSaveKeyA$FUNC
-    );
-    static final FunctionDescriptor RegSaveKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegSaveKeyW$MH = RuntimeHelper.downcallHandle(
-        "RegSaveKeyW",
-        constants$390.RegSaveKeyW$FUNC
-    );
-    static final FunctionDescriptor RegSetKeySecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ChangeMenuA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegSetKeySecurity$MH = RuntimeHelper.downcallHandle(
-        "RegSetKeySecurity",
-        constants$390.RegSetKeySecurity$FUNC
+    static final MethodHandle ChangeMenuA$MH = RuntimeHelper.downcallHandle(
+        "ChangeMenuA",
+        constants$390.ChangeMenuA$FUNC
+    );
+    static final FunctionDescriptor ChangeMenuW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ChangeMenuW$MH = RuntimeHelper.downcallHandle(
+        "ChangeMenuW",
+        constants$390.ChangeMenuW$FUNC
+    );
+    static final FunctionDescriptor HiliteMenuItem$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle HiliteMenuItem$MH = RuntimeHelper.downcallHandle(
+        "HiliteMenuItem",
+        constants$390.HiliteMenuItem$FUNC
+    );
+    static final FunctionDescriptor GetMenuStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetMenuStringA$MH = RuntimeHelper.downcallHandle(
+        "GetMenuStringA",
+        constants$390.GetMenuStringA$FUNC
     );
 }
 

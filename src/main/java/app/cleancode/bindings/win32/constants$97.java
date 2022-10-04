@@ -9,53 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$97 {
 
-    static final FunctionDescriptor WriteEncryptedFileRaw$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CallNamedPipeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WriteEncryptedFileRaw$MH = RuntimeHelper.downcallHandle(
-        "WriteEncryptedFileRaw",
-        constants$97.WriteEncryptedFileRaw$FUNC
-    );
-    static final FunctionDescriptor CloseEncryptedFileRaw$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CloseEncryptedFileRaw$MH = RuntimeHelper.downcallHandle(
-        "CloseEncryptedFileRaw",
-        constants$97.CloseEncryptedFileRaw$FUNC
-    );
-    static final FunctionDescriptor lstrcmpA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle lstrcmpA$MH = RuntimeHelper.downcallHandle(
-        "lstrcmpA",
-        constants$97.lstrcmpA$FUNC
-    );
-    static final FunctionDescriptor lstrcmpW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CallNamedPipeW$MH = RuntimeHelper.downcallHandle(
+        "CallNamedPipeW",
+        constants$97.CallNamedPipeW$FUNC
+    );
+    static final FunctionDescriptor QueryPerformanceCounter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle lstrcmpW$MH = RuntimeHelper.downcallHandle(
-        "lstrcmpW",
-        constants$97.lstrcmpW$FUNC
+    static final MethodHandle QueryPerformanceCounter$MH = RuntimeHelper.downcallHandle(
+        "QueryPerformanceCounter",
+        constants$97.QueryPerformanceCounter$FUNC
     );
-    static final FunctionDescriptor lstrcmpiA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor QueryPerformanceFrequency$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryPerformanceFrequency$MH = RuntimeHelper.downcallHandle(
+        "QueryPerformanceFrequency",
+        constants$97.QueryPerformanceFrequency$FUNC
+    );
+    static final FunctionDescriptor HeapCreate$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle HeapCreate$MH = RuntimeHelper.downcallHandle(
+        "HeapCreate",
+        constants$97.HeapCreate$FUNC
+    );
+    static final FunctionDescriptor HeapDestroy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle HeapDestroy$MH = RuntimeHelper.downcallHandle(
+        "HeapDestroy",
+        constants$97.HeapDestroy$FUNC
+    );
+    static final FunctionDescriptor HeapAlloc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle lstrcmpiA$MH = RuntimeHelper.downcallHandle(
-        "lstrcmpiA",
-        constants$97.lstrcmpiA$FUNC
-    );
-    static final FunctionDescriptor lstrcmpiW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle lstrcmpiW$MH = RuntimeHelper.downcallHandle(
-        "lstrcmpiW",
-        constants$97.lstrcmpiW$FUNC
+    static final MethodHandle HeapAlloc$MH = RuntimeHelper.downcallHandle(
+        "HeapAlloc",
+        constants$97.HeapAlloc$FUNC
     );
 }
 

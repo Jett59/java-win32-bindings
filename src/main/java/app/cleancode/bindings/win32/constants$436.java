@@ -9,37 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$436 {
 
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_READ_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WinHelpA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle WinHelpA$MH = RuntimeHelper.downcallHandle(
+        "WinHelpA",
+        constants$436.WinHelpA$FUNC
+    );
+    static final FunctionDescriptor WinHelpW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle WinHelpW$MH = RuntimeHelper.downcallHandle(
+        "WinHelpW",
+        constants$436.WinHelpW$FUNC
+    );
+    static final FunctionDescriptor GetGuiResources$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetGuiResources$MH = RuntimeHelper.downcallHandle(
+        "GetGuiResources",
+        constants$436.GetGuiResources$FUNC
+    );
+    static final FunctionDescriptor ChangeDisplaySettingsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ChangeDisplaySettingsA$MH = RuntimeHelper.downcallHandle(
+        "ChangeDisplaySettingsA",
+        constants$436.ChangeDisplaySettingsA$FUNC
+    );
+    static final FunctionDescriptor ChangeDisplaySettingsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ChangeDisplaySettingsW$MH = RuntimeHelper.downcallHandle(
+        "ChangeDisplaySettingsW",
+        constants$436.ChangeDisplaySettingsW$FUNC
+    );
+    static final FunctionDescriptor ChangeDisplaySettingsExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_READ_CRL$MH = RuntimeHelper.downcallHandle(
-        constants$436.PFN_CERT_STORE_PROV_READ_CRL$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_WRITE_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_WRITE_CRL$MH = RuntimeHelper.downcallHandle(
-        constants$436.PFN_CERT_STORE_PROV_WRITE_CRL$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_DELETE_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_DELETE_CRL$MH = RuntimeHelper.downcallHandle(
-        constants$436.PFN_CERT_STORE_PROV_DELETE_CRL$FUNC
-    );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_SET_CRL_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final MethodHandle ChangeDisplaySettingsExA$MH = RuntimeHelper.downcallHandle(
+        "ChangeDisplaySettingsExA",
+        constants$436.ChangeDisplaySettingsExA$FUNC
     );
 }
 

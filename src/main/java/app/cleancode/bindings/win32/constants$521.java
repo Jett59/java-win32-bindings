@@ -9,63 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$521 {
 
-    static final FunctionDescriptor FindFirstPrinterChangeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor mmioSetInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mmioSetInfo$MH = RuntimeHelper.downcallHandle(
+        "mmioSetInfo",
+        constants$521.mmioSetInfo$FUNC
+    );
+    static final FunctionDescriptor mmioSetBuffer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle FindFirstPrinterChangeNotification$MH = RuntimeHelper.downcallHandle(
-        "FindFirstPrinterChangeNotification",
-        constants$521.FindFirstPrinterChangeNotification$FUNC
+    static final MethodHandle mmioSetBuffer$MH = RuntimeHelper.downcallHandle(
+        "mmioSetBuffer",
+        constants$521.mmioSetBuffer$FUNC
     );
-    static final FunctionDescriptor FindNextPrinterChangeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mmioFlush$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mmioFlush$MH = RuntimeHelper.downcallHandle(
+        "mmioFlush",
+        constants$521.mmioFlush$FUNC
+    );
+    static final FunctionDescriptor mmioAdvance$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle FindNextPrinterChangeNotification$MH = RuntimeHelper.downcallHandle(
-        "FindNextPrinterChangeNotification",
-        constants$521.FindNextPrinterChangeNotification$FUNC
+    static final MethodHandle mmioAdvance$MH = RuntimeHelper.downcallHandle(
+        "mmioAdvance",
+        constants$521.mmioAdvance$FUNC
     );
-    static final FunctionDescriptor FreePrinterNotifyInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FreePrinterNotifyInfo$MH = RuntimeHelper.downcallHandle(
-        "FreePrinterNotifyInfo",
-        constants$521.FreePrinterNotifyInfo$FUNC
-    );
-    static final FunctionDescriptor FindClosePrinterChangeNotification$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FindClosePrinterChangeNotification$MH = RuntimeHelper.downcallHandle(
-        "FindClosePrinterChangeNotification",
-        constants$521.FindClosePrinterChangeNotification$FUNC
-    );
-    static final FunctionDescriptor PrinterMessageBoxA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mmioSendMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle mmioSendMessage$MH = RuntimeHelper.downcallHandle(
+        "mmioSendMessage",
+        constants$521.mmioSendMessage$FUNC
+    );
+    static final FunctionDescriptor mmioDescend$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PrinterMessageBoxA$MH = RuntimeHelper.downcallHandle(
-        "PrinterMessageBoxA",
-        constants$521.PrinterMessageBoxA$FUNC
-    );
-    static final FunctionDescriptor PrinterMessageBoxW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PrinterMessageBoxW$MH = RuntimeHelper.downcallHandle(
-        "PrinterMessageBoxW",
-        constants$521.PrinterMessageBoxW$FUNC
+    static final MethodHandle mmioDescend$MH = RuntimeHelper.downcallHandle(
+        "mmioDescend",
+        constants$521.mmioDescend$FUNC
     );
 }
 

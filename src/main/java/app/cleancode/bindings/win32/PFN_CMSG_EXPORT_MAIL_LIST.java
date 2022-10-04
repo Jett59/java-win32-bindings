@@ -11,13 +11,13 @@ public interface PFN_CMSG_EXPORT_MAIL_LIST {
 
     int apply(java.lang.foreign.MemoryAddress pContentEncryptInfo, java.lang.foreign.MemoryAddress pMailListEncodeInfo, java.lang.foreign.MemoryAddress pMailListEncryptInfo, int dwFlags, java.lang.foreign.MemoryAddress pvReserved);
     static MemorySegment allocate(PFN_CMSG_EXPORT_MAIL_LIST fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CMSG_EXPORT_MAIL_LIST.class, fi, constants$431.PFN_CMSG_EXPORT_MAIL_LIST$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CMSG_EXPORT_MAIL_LIST.class, fi, constants$583.PFN_CMSG_EXPORT_MAIL_LIST$FUNC, session);
     }
     static PFN_CMSG_EXPORT_MAIL_LIST ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pContentEncryptInfo, java.lang.foreign.MemoryAddress _pMailListEncodeInfo, java.lang.foreign.MemoryAddress _pMailListEncryptInfo, int _dwFlags, java.lang.foreign.MemoryAddress _pvReserved) -> {
             try {
-                return (int)constants$431.PFN_CMSG_EXPORT_MAIL_LIST$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pContentEncryptInfo, (java.lang.foreign.Addressable)_pMailListEncodeInfo, (java.lang.foreign.Addressable)_pMailListEncryptInfo, _dwFlags, (java.lang.foreign.Addressable)_pvReserved);
+                return (int)constants$583.PFN_CMSG_EXPORT_MAIL_LIST$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pContentEncryptInfo, (java.lang.foreign.Addressable)_pMailListEncodeInfo, (java.lang.foreign.Addressable)_pMailListEncryptInfo, _dwFlags, (java.lang.foreign.Addressable)_pvReserved);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

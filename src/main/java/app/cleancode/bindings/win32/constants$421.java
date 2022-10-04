@@ -9,40 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$421 {
 
-    static final FunctionDescriptor PCRYPT_RESOLVE_HCRYPTPROV_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PCRYPT_RESOLVE_HCRYPTPROV_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$421.PCRYPT_RESOLVE_HCRYPTPROV_FUNC$FUNC
-    );
-    static final FunctionDescriptor CryptFormatObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetClassWord$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle SetClassWord$MH = RuntimeHelper.downcallHandle(
+        "SetClassWord",
+        constants$421.SetClassWord$FUNC
+    );
+    static final FunctionDescriptor GetClassLongA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptFormatObject$MH = RuntimeHelper.downcallHandle(
-        "CryptFormatObject",
-        constants$421.CryptFormatObject$FUNC
+    static final MethodHandle GetClassLongA$MH = RuntimeHelper.downcallHandle(
+        "GetClassLongA",
+        constants$421.GetClassLongA$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_ALLOC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor GetClassLongW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_ALLOC$MH = RuntimeHelper.downcallHandle(
-        constants$421.PFN_CRYPT_ALLOC$FUNC
+    static final MethodHandle GetClassLongW$MH = RuntimeHelper.downcallHandle(
+        "GetClassLongW",
+        constants$421.GetClassLongW$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_FREE$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor SetClassLongA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_FREE$MH = RuntimeHelper.downcallHandle(
-        constants$421.PFN_CRYPT_FREE$FUNC
+    static final MethodHandle SetClassLongA$MH = RuntimeHelper.downcallHandle(
+        "SetClassLongA",
+        constants$421.SetClassLongA$FUNC
+    );
+    static final FunctionDescriptor SetClassLongW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetClassLongW$MH = RuntimeHelper.downcallHandle(
+        "SetClassLongW",
+        constants$421.SetClassLongW$FUNC
+    );
+    static final FunctionDescriptor GetClassLongPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetClassLongPtrA$MH = RuntimeHelper.downcallHandle(
+        "GetClassLongPtrA",
+        constants$421.GetClassLongPtrA$FUNC
     );
 }
 

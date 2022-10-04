@@ -9,47 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$307 {
 
-    static final FunctionDescriptor MSGBOXCALLBACK$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle MSGBOXCALLBACK$MH = RuntimeHelper.downcallHandle(
-        constants$307.MSGBOXCALLBACK$FUNC
-    );
-    static final FunctionDescriptor MessageBoxIndirectA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle MessageBoxIndirectA$MH = RuntimeHelper.downcallHandle(
-        "MessageBoxIndirectA",
-        constants$307.MessageBoxIndirectA$FUNC
-    );
-    static final FunctionDescriptor MessageBoxIndirectW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle MessageBoxIndirectW$MH = RuntimeHelper.downcallHandle(
-        "MessageBoxIndirectW",
-        constants$307.MessageBoxIndirectW$FUNC
-    );
-    static final FunctionDescriptor MessageBeep$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ModifyWorldTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle MessageBeep$MH = RuntimeHelper.downcallHandle(
-        "MessageBeep",
-        constants$307.MessageBeep$FUNC
+    static final MethodHandle ModifyWorldTransform$MH = RuntimeHelper.downcallHandle(
+        "ModifyWorldTransform",
+        constants$307.ModifyWorldTransform$FUNC
     );
-    static final FunctionDescriptor ShowCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor CombineTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ShowCursor$MH = RuntimeHelper.downcallHandle(
-        "ShowCursor",
-        constants$307.ShowCursor$FUNC
+    static final MethodHandle CombineTransform$MH = RuntimeHelper.downcallHandle(
+        "CombineTransform",
+        constants$307.CombineTransform$FUNC
     );
-    static final FunctionDescriptor SetCursorPos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDIBSection$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetCursorPos$MH = RuntimeHelper.downcallHandle(
-        "SetCursorPos",
-        constants$307.SetCursorPos$FUNC
+    static final MethodHandle CreateDIBSection$MH = RuntimeHelper.downcallHandle(
+        "CreateDIBSection",
+        constants$307.CreateDIBSection$FUNC
+    );
+    static final FunctionDescriptor GetDIBColorTable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDIBColorTable$MH = RuntimeHelper.downcallHandle(
+        "GetDIBColorTable",
+        constants$307.GetDIBColorTable$FUNC
+    );
+    static final FunctionDescriptor SetDIBColorTable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetDIBColorTable$MH = RuntimeHelper.downcallHandle(
+        "SetDIBColorTable",
+        constants$307.SetDIBColorTable$FUNC
+    );
+    static final FunctionDescriptor SetColorAdjustment$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetColorAdjustment$MH = RuntimeHelper.downcallHandle(
+        "SetColorAdjustment",
+        constants$307.SetColorAdjustment$FUNC
     );
 }
 

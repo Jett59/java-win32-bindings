@@ -9,63 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$428 {
 
-    static final FunctionDescriptor CryptMsgVerifyCountersignatureEncoded$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptMsgVerifyCountersignatureEncoded$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgVerifyCountersignatureEncoded",
-        constants$428.CryptMsgVerifyCountersignatureEncoded$FUNC
-    );
-    static final FunctionDescriptor CryptMsgVerifyCountersignatureEncodedEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptMsgVerifyCountersignatureEncodedEx$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgVerifyCountersignatureEncodedEx",
-        constants$428.CryptMsgVerifyCountersignatureEncodedEx$FUNC
-    );
-    static final FunctionDescriptor CryptMsgCountersign$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptMsgCountersign$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgCountersign",
-        constants$428.CryptMsgCountersign$FUNC
-    );
-    static final FunctionDescriptor CryptMsgCountersignEncoded$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor LoadCursorW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptMsgCountersignEncoded$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgCountersignEncoded",
-        constants$428.CryptMsgCountersignEncoded$FUNC
+    static final MethodHandle LoadCursorW$MH = RuntimeHelper.downcallHandle(
+        "LoadCursorW",
+        constants$428.LoadCursorW$FUNC
     );
-    static final FunctionDescriptor PFN_CMSG_ALLOC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor LoadCursorFromFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_ALLOC$MH = RuntimeHelper.downcallHandle(
-        constants$428.PFN_CMSG_ALLOC$FUNC
+    static final MethodHandle LoadCursorFromFileA$MH = RuntimeHelper.downcallHandle(
+        "LoadCursorFromFileA",
+        constants$428.LoadCursorFromFileA$FUNC
+    );
+    static final FunctionDescriptor LoadCursorFromFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LoadCursorFromFileW$MH = RuntimeHelper.downcallHandle(
+        "LoadCursorFromFileW",
+        constants$428.LoadCursorFromFileW$FUNC
+    );
+    static final FunctionDescriptor CreateCursor$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateCursor$MH = RuntimeHelper.downcallHandle(
+        "CreateCursor",
+        constants$428.CreateCursor$FUNC
+    );
+    static final FunctionDescriptor DestroyCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DestroyCursor$MH = RuntimeHelper.downcallHandle(
+        "DestroyCursor",
+        constants$428.DestroyCursor$FUNC
+    );
+    static final FunctionDescriptor SetSystemCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetSystemCursor$MH = RuntimeHelper.downcallHandle(
+        "SetSystemCursor",
+        constants$428.SetSystemCursor$FUNC
     );
 }
 

@@ -9,54 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$208 {
 
-    static final FunctionDescriptor SetMiterLimit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumResourceLanguagesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_FLOAT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetMiterLimit$MH = RuntimeHelper.downcallHandle(
-        "SetMiterLimit",
-        constants$208.SetMiterLimit$FUNC
-    );
-    static final FunctionDescriptor StrokeAndFillPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle StrokeAndFillPath$MH = RuntimeHelper.downcallHandle(
-        "StrokeAndFillPath",
-        constants$208.StrokeAndFillPath$FUNC
-    );
-    static final FunctionDescriptor StrokePath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle StrokePath$MH = RuntimeHelper.downcallHandle(
-        "StrokePath",
-        constants$208.StrokePath$FUNC
-    );
-    static final FunctionDescriptor WidenPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WidenPath$MH = RuntimeHelper.downcallHandle(
-        "WidenPath",
-        constants$208.WidenPath$FUNC
-    );
-    static final FunctionDescriptor ExtCreatePen$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ExtCreatePen$MH = RuntimeHelper.downcallHandle(
-        "ExtCreatePen",
-        constants$208.ExtCreatePen$FUNC
-    );
-    static final FunctionDescriptor GetMiterLimit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetMiterLimit$MH = RuntimeHelper.downcallHandle(
-        "GetMiterLimit",
-        constants$208.GetMiterLimit$FUNC
+    static final MethodHandle EnumResourceLanguagesW$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceLanguagesW",
+        constants$208.EnumResourceLanguagesW$FUNC
+    );
+    static final FunctionDescriptor BeginUpdateResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle BeginUpdateResourceA$MH = RuntimeHelper.downcallHandle(
+        "BeginUpdateResourceA",
+        constants$208.BeginUpdateResourceA$FUNC
+    );
+    static final FunctionDescriptor BeginUpdateResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle BeginUpdateResourceW$MH = RuntimeHelper.downcallHandle(
+        "BeginUpdateResourceW",
+        constants$208.BeginUpdateResourceW$FUNC
+    );
+    static final FunctionDescriptor UpdateResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle UpdateResourceA$MH = RuntimeHelper.downcallHandle(
+        "UpdateResourceA",
+        constants$208.UpdateResourceA$FUNC
+    );
+    static final FunctionDescriptor UpdateResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle UpdateResourceW$MH = RuntimeHelper.downcallHandle(
+        "UpdateResourceW",
+        constants$208.UpdateResourceW$FUNC
+    );
+    static final FunctionDescriptor EndUpdateResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EndUpdateResourceA$MH = RuntimeHelper.downcallHandle(
+        "EndUpdateResourceA",
+        constants$208.EndUpdateResourceA$FUNC
     );
 }
 

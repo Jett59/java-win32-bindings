@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$751 {
 
-    static final MemorySegment SPLDS_PRINT_MAX_RESOLUTION_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxResolutionSupported");
-    static final MemorySegment SPLDS_PRINT_MEDIA_READY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMediaReady");
-    static final MemorySegment SPLDS_PRINT_MEDIA_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMediaSupported");
-    static final MemorySegment SPLDS_PRINT_MEMORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMemory");
-    static final MemorySegment SPLDS_PRINT_MIN_X_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMinXExtent");
-    static final MemorySegment SPLDS_PRINT_MIN_Y_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMinYExtent");
+    static final MemorySegment MS_DEF_DSS_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS Cryptographic Provider");
+    static final MemorySegment MS_DEF_DSS_DH_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS and Diffie-Hellman Cryptographic Provider");
+    static final MemorySegment MS_DEF_DSS_DH_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_DEF_DSS_DH_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS and Diffie-Hellman Cryptographic Provider");
+    static final MemorySegment MS_ENH_DSS_DH_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced DSS and Diffie-Hellman Cryptographic Provider");
+    static final MemorySegment MS_ENH_DSS_DH_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
 }
 
 

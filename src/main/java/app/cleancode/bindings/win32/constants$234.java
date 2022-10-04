@@ -9,66 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$234 {
 
-    static final FunctionDescriptor CreateDesktopExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ReadDirectoryChangesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateDesktopExW$MH = RuntimeHelper.downcallHandle(
-        "CreateDesktopExW",
-        constants$234.CreateDesktopExW$FUNC
+    static final MethodHandle ReadDirectoryChangesW$MH = RuntimeHelper.downcallHandle(
+        "ReadDirectoryChangesW",
+        constants$234.ReadDirectoryChangesW$FUNC
     );
-    static final FunctionDescriptor OpenDesktopA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ReadDirectoryChangesExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle OpenDesktopA$MH = RuntimeHelper.downcallHandle(
-        "OpenDesktopA",
-        constants$234.OpenDesktopA$FUNC
+    static final MethodHandle ReadDirectoryChangesExW$MH = RuntimeHelper.downcallHandle(
+        "ReadDirectoryChangesExW",
+        constants$234.ReadDirectoryChangesExW$FUNC
     );
-    static final FunctionDescriptor OpenDesktopW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor MapViewOfFileExNuma$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OpenDesktopW$MH = RuntimeHelper.downcallHandle(
-        "OpenDesktopW",
-        constants$234.OpenDesktopW$FUNC
-    );
-    static final FunctionDescriptor OpenInputDesktop$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle OpenInputDesktop$MH = RuntimeHelper.downcallHandle(
-        "OpenInputDesktop",
-        constants$234.OpenInputDesktop$FUNC
-    );
-    static final FunctionDescriptor EnumDesktopsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle MapViewOfFileExNuma$MH = RuntimeHelper.downcallHandle(
+        "MapViewOfFileExNuma",
+        constants$234.MapViewOfFileExNuma$FUNC
+    );
+    static final FunctionDescriptor IsBadReadPtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EnumDesktopsA$MH = RuntimeHelper.downcallHandle(
-        "EnumDesktopsA",
-        constants$234.EnumDesktopsA$FUNC
+    static final MethodHandle IsBadReadPtr$MH = RuntimeHelper.downcallHandle(
+        "IsBadReadPtr",
+        constants$234.IsBadReadPtr$FUNC
     );
-    static final FunctionDescriptor EnumDesktopsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor IsBadWritePtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EnumDesktopsW$MH = RuntimeHelper.downcallHandle(
-        "EnumDesktopsW",
-        constants$234.EnumDesktopsW$FUNC
+    static final MethodHandle IsBadWritePtr$MH = RuntimeHelper.downcallHandle(
+        "IsBadWritePtr",
+        constants$234.IsBadWritePtr$FUNC
+    );
+    static final FunctionDescriptor IsBadHugeReadPtr$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle IsBadHugeReadPtr$MH = RuntimeHelper.downcallHandle(
+        "IsBadHugeReadPtr",
+        constants$234.IsBadHugeReadPtr$FUNC
     );
 }
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$723 {
 
-    static final MemorySegment CERT_CHAIN_WEAK_ALL_CONFIG_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_WEAK_FLAGS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
-    static final MemorySegment CERT_CHAIN_WEAK_HYGIENE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("H");
-    static final MemorySegment CERT_CHAIN_WEAK_AFTER_TIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_WEAK_FILE_HASH_AFTER_TIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
-    static final MemorySegment CERT_CHAIN_WEAK_TIMESTAMP_HASH_AFTER_TIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("T");
+    static final MemorySegment SE_SYSTEM_PROFILE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemProfilePrivilege");
+    static final MemorySegment SE_SYSTEMTIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemtimePrivilege");
+    static final MemorySegment SE_PROF_SINGLE_PROCESS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeProfileSingleProcessPrivilege");
+    static final MemorySegment SE_INC_BASE_PRIORITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseBasePriorityPrivilege");
+    static final MemorySegment SE_CREATE_PAGEFILE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreatePagefilePrivilege");
+    static final MemorySegment SE_CREATE_PERMANENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreatePermanentPrivilege");
 }
 
 

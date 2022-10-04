@@ -11,13 +11,13 @@ public interface PUMS_SCHEDULER_ENTRY_POINT {
 
     void apply(int _x0, long _x1, java.lang.foreign.MemoryAddress _x2);
     static MemorySegment allocate(PUMS_SCHEDULER_ENTRY_POINT fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PUMS_SCHEDULER_ENTRY_POINT.class, fi, constants$81.PUMS_SCHEDULER_ENTRY_POINT$FUNC, session);
+        return RuntimeHelper.upcallStub(PUMS_SCHEDULER_ENTRY_POINT.class, fi, constants$182.PUMS_SCHEDULER_ENTRY_POINT$FUNC, session);
     }
     static PUMS_SCHEDULER_ENTRY_POINT ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int __x0, long __x1, java.lang.foreign.MemoryAddress __x2) -> {
             try {
-                constants$81.PUMS_SCHEDULER_ENTRY_POINT$MH.invokeExact((Addressable)symbol, __x0, __x1, (java.lang.foreign.Addressable)__x2);
+                constants$182.PUMS_SCHEDULER_ENTRY_POINT$MH.invokeExact((Addressable)symbol, __x0, __x1, (java.lang.foreign.Addressable)__x2);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

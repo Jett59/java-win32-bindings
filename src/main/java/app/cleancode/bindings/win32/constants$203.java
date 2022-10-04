@@ -9,63 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$203 {
 
-    static final FunctionDescriptor SetWorldTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateSemaphoreA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWorldTransform$MH = RuntimeHelper.downcallHandle(
-        "SetWorldTransform",
-        constants$203.SetWorldTransform$FUNC
+    static final MethodHandle CreateSemaphoreA$MH = RuntimeHelper.downcallHandle(
+        "CreateSemaphoreA",
+        constants$203.CreateSemaphoreA$FUNC
     );
-    static final FunctionDescriptor ModifyWorldTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenSemaphoreA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenSemaphoreA$MH = RuntimeHelper.downcallHandle(
+        "OpenSemaphoreA",
+        constants$203.OpenSemaphoreA$FUNC
+    );
+    static final FunctionDescriptor CreateWaitableTimerA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateWaitableTimerA$MH = RuntimeHelper.downcallHandle(
+        "CreateWaitableTimerA",
+        constants$203.CreateWaitableTimerA$FUNC
+    );
+    static final FunctionDescriptor OpenWaitableTimerA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenWaitableTimerA$MH = RuntimeHelper.downcallHandle(
+        "OpenWaitableTimerA",
+        constants$203.OpenWaitableTimerA$FUNC
+    );
+    static final FunctionDescriptor CreateSemaphoreExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ModifyWorldTransform$MH = RuntimeHelper.downcallHandle(
-        "ModifyWorldTransform",
-        constants$203.ModifyWorldTransform$FUNC
+    static final MethodHandle CreateSemaphoreExA$MH = RuntimeHelper.downcallHandle(
+        "CreateSemaphoreExA",
+        constants$203.CreateSemaphoreExA$FUNC
     );
-    static final FunctionDescriptor CombineTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CombineTransform$MH = RuntimeHelper.downcallHandle(
-        "CombineTransform",
-        constants$203.CombineTransform$FUNC
-    );
-    static final FunctionDescriptor CreateDIBSection$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateWaitableTimerExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreateDIBSection$MH = RuntimeHelper.downcallHandle(
-        "CreateDIBSection",
-        constants$203.CreateDIBSection$FUNC
-    );
-    static final FunctionDescriptor GetDIBColorTable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDIBColorTable$MH = RuntimeHelper.downcallHandle(
-        "GetDIBColorTable",
-        constants$203.GetDIBColorTable$FUNC
-    );
-    static final FunctionDescriptor SetDIBColorTable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetDIBColorTable$MH = RuntimeHelper.downcallHandle(
-        "SetDIBColorTable",
-        constants$203.SetDIBColorTable$FUNC
+    static final MethodHandle CreateWaitableTimerExA$MH = RuntimeHelper.downcallHandle(
+        "CreateWaitableTimerExA",
+        constants$203.CreateWaitableTimerExA$FUNC
     );
 }
 

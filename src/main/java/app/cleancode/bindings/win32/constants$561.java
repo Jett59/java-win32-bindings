@@ -9,12 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$561 {
 
-    static final MemoryAddress RT_DIALOG$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress RT_STRING$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress RT_FONTDIR$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress RT_FONT$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress RT_ACCELERATOR$ADDR = MemoryAddress.ofLong(9L);
-    static final MemoryAddress RT_RCDATA$ADDR = MemoryAddress.ofLong(10L);
+    static final FunctionDescriptor socket$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle socket$MH = RuntimeHelper.downcallHandle(
+        "socket",
+        constants$561.socket$FUNC
+    );
+    static final FunctionDescriptor gethostbyaddr$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle gethostbyaddr$MH = RuntimeHelper.downcallHandle(
+        "gethostbyaddr",
+        constants$561.gethostbyaddr$FUNC
+    );
+    static final FunctionDescriptor gethostbyname$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle gethostbyname$MH = RuntimeHelper.downcallHandle(
+        "gethostbyname",
+        constants$561.gethostbyname$FUNC
+    );
+    static final FunctionDescriptor gethostname$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle gethostname$MH = RuntimeHelper.downcallHandle(
+        "gethostname",
+        constants$561.gethostname$FUNC
+    );
+    static final FunctionDescriptor getservbyport$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle getservbyport$MH = RuntimeHelper.downcallHandle(
+        "getservbyport",
+        constants$561.getservbyport$FUNC
+    );
+    static final FunctionDescriptor getservbyname$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle getservbyname$MH = RuntimeHelper.downcallHandle(
+        "getservbyname",
+        constants$561.getservbyname$FUNC
+    );
 }
 
 

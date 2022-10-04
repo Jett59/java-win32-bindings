@@ -9,6 +9,1359 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_7 extends WINDOWS_6 {
 
+    public static int DRV_USER() {
+        return (int)16384L;
+    }
+    public static int DRVCNF_CANCEL() {
+        return (int)0L;
+    }
+    public static int DRVCNF_OK() {
+        return (int)1L;
+    }
+    public static int DRVCNF_RESTART() {
+        return (int)2L;
+    }
+    public static int MMIOERR_BASE() {
+        return (int)256L;
+    }
+    public static int MMIO_RWMODE() {
+        return (int)3L;
+    }
+    public static int MMIO_SHAREMODE() {
+        return (int)112L;
+    }
+    public static int MMIO_CREATE() {
+        return (int)4096L;
+    }
+    public static int MMIO_PARSE() {
+        return (int)256L;
+    }
+    public static int MMIO_DELETE() {
+        return (int)512L;
+    }
+    public static int MMIO_EXIST() {
+        return (int)16384L;
+    }
+    public static int MMIO_ALLOCBUF() {
+        return (int)65536L;
+    }
+    public static int MMIO_GETTEMP() {
+        return (int)131072L;
+    }
+    public static int MMIO_DIRTY() {
+        return (int)268435456L;
+    }
+    public static int MMIO_READ() {
+        return (int)0L;
+    }
+    public static int MMIO_WRITE() {
+        return (int)1L;
+    }
+    public static int MMIO_READWRITE() {
+        return (int)2L;
+    }
+    public static int MMIO_COMPAT() {
+        return (int)0L;
+    }
+    public static int MMIO_EXCLUSIVE() {
+        return (int)16L;
+    }
+    public static int MMIO_DENYWRITE() {
+        return (int)32L;
+    }
+    public static int MMIO_DENYREAD() {
+        return (int)48L;
+    }
+    public static int MMIO_DENYNONE() {
+        return (int)64L;
+    }
+    public static int MMIO_FHOPEN() {
+        return (int)16L;
+    }
+    public static int MMIO_EMPTYBUF() {
+        return (int)16L;
+    }
+    public static int MMIO_TOUPPER() {
+        return (int)16L;
+    }
+    public static int MMIO_INSTALLPROC() {
+        return (int)65536L;
+    }
+    public static int MMIO_GLOBALPROC() {
+        return (int)268435456L;
+    }
+    public static int MMIO_REMOVEPROC() {
+        return (int)131072L;
+    }
+    public static int MMIO_UNICODEPROC() {
+        return (int)16777216L;
+    }
+    public static int MMIO_FINDPROC() {
+        return (int)262144L;
+    }
+    public static int MMIO_FINDCHUNK() {
+        return (int)16L;
+    }
+    public static int MMIO_FINDRIFF() {
+        return (int)32L;
+    }
+    public static int MMIO_FINDLIST() {
+        return (int)64L;
+    }
+    public static int MMIO_CREATERIFF() {
+        return (int)32L;
+    }
+    public static int MMIO_CREATELIST() {
+        return (int)64L;
+    }
+    public static int MMIOM_SEEK() {
+        return (int)2L;
+    }
+    public static int MMIOM_OPEN() {
+        return (int)3L;
+    }
+    public static int MMIOM_CLOSE() {
+        return (int)4L;
+    }
+    public static int MMIOM_WRITEFLUSH() {
+        return (int)5L;
+    }
+    public static int MMIOM_RENAME() {
+        return (int)6L;
+    }
+    public static int MMIOM_USER() {
+        return (int)32768L;
+    }
+    public static int SEEK_SET() {
+        return (int)0L;
+    }
+    public static int SEEK_CUR() {
+        return (int)1L;
+    }
+    public static int SEEK_END() {
+        return (int)2L;
+    }
+    public static int MMIO_DEFAULTBUFFER() {
+        return (int)8192L;
+    }
+    public static int SND_SYNC() {
+        return (int)0L;
+    }
+    public static int SND_ASYNC() {
+        return (int)1L;
+    }
+    public static int SND_NODEFAULT() {
+        return (int)2L;
+    }
+    public static int SND_MEMORY() {
+        return (int)4L;
+    }
+    public static int SND_LOOP() {
+        return (int)8L;
+    }
+    public static int SND_NOSTOP() {
+        return (int)16L;
+    }
+    public static int SND_PURGE() {
+        return (int)64L;
+    }
+    public static int SND_APPLICATION() {
+        return (int)128L;
+    }
+    public static int SND_ALIAS_START() {
+        return (int)0L;
+    }
+    public static int WAVE_FORMAT_QUERY() {
+        return (int)1L;
+    }
+    public static int WAVE_ALLOWSYNC() {
+        return (int)2L;
+    }
+    public static int WAVE_MAPPED() {
+        return (int)4L;
+    }
+    public static int WAVE_FORMAT_DIRECT() {
+        return (int)8L;
+    }
+    public static int WAVE_MAPPED_DEFAULT_COMMUNICATION_DEVICE() {
+        return (int)16L;
+    }
+    public static int WHDR_DONE() {
+        return (int)1L;
+    }
+    public static int WHDR_PREPARED() {
+        return (int)2L;
+    }
+    public static int WHDR_BEGINLOOP() {
+        return (int)4L;
+    }
+    public static int WHDR_ENDLOOP() {
+        return (int)8L;
+    }
+    public static int WHDR_INQUEUE() {
+        return (int)16L;
+    }
+    public static int WAVECAPS_PITCH() {
+        return (int)1L;
+    }
+    public static int WAVECAPS_PLAYBACKRATE() {
+        return (int)2L;
+    }
+    public static int WAVECAPS_VOLUME() {
+        return (int)4L;
+    }
+    public static int WAVECAPS_LRVOLUME() {
+        return (int)8L;
+    }
+    public static int WAVECAPS_SYNC() {
+        return (int)16L;
+    }
+    public static int WAVECAPS_SAMPLEACCURATE() {
+        return (int)32L;
+    }
+    public static int WAVE_INVALIDFORMAT() {
+        return (int)0L;
+    }
+    public static int WAVE_FORMAT_1M08() {
+        return (int)1L;
+    }
+    public static int WAVE_FORMAT_1S08() {
+        return (int)2L;
+    }
+    public static int WAVE_FORMAT_1M16() {
+        return (int)4L;
+    }
+    public static int WAVE_FORMAT_1S16() {
+        return (int)8L;
+    }
+    public static int WAVE_FORMAT_2M08() {
+        return (int)16L;
+    }
+    public static int WAVE_FORMAT_2S08() {
+        return (int)32L;
+    }
+    public static int WAVE_FORMAT_2M16() {
+        return (int)64L;
+    }
+    public static int WAVE_FORMAT_2S16() {
+        return (int)128L;
+    }
+    public static int WAVE_FORMAT_4M08() {
+        return (int)256L;
+    }
+    public static int WAVE_FORMAT_4S08() {
+        return (int)512L;
+    }
+    public static int WAVE_FORMAT_4M16() {
+        return (int)1024L;
+    }
+    public static int WAVE_FORMAT_4S16() {
+        return (int)2048L;
+    }
+    public static int WAVE_FORMAT_44M08() {
+        return (int)256L;
+    }
+    public static int WAVE_FORMAT_44S08() {
+        return (int)512L;
+    }
+    public static int WAVE_FORMAT_44M16() {
+        return (int)1024L;
+    }
+    public static int WAVE_FORMAT_44S16() {
+        return (int)2048L;
+    }
+    public static int WAVE_FORMAT_48M08() {
+        return (int)4096L;
+    }
+    public static int WAVE_FORMAT_48S08() {
+        return (int)8192L;
+    }
+    public static int WAVE_FORMAT_48M16() {
+        return (int)16384L;
+    }
+    public static int WAVE_FORMAT_48S16() {
+        return (int)32768L;
+    }
+    public static int WAVE_FORMAT_96M08() {
+        return (int)65536L;
+    }
+    public static int WAVE_FORMAT_96S08() {
+        return (int)131072L;
+    }
+    public static int WAVE_FORMAT_96M16() {
+        return (int)262144L;
+    }
+    public static int WAVE_FORMAT_96S16() {
+        return (int)524288L;
+    }
+    public static int WAVE_FORMAT_PCM() {
+        return (int)1L;
+    }
+    public static int MIDIPATCHSIZE() {
+        return (int)128L;
+    }
+    public static int MIDI_CACHE_ALL() {
+        return (int)1L;
+    }
+    public static int MIDI_CACHE_BESTFIT() {
+        return (int)2L;
+    }
+    public static int MIDI_CACHE_QUERY() {
+        return (int)3L;
+    }
+    public static int MIDI_UNCACHE() {
+        return (int)4L;
+    }
+    public static int MOD_MIDIPORT() {
+        return (int)1L;
+    }
+    public static int MOD_SYNTH() {
+        return (int)2L;
+    }
+    public static int MOD_SQSYNTH() {
+        return (int)3L;
+    }
+    public static int MOD_FMSYNTH() {
+        return (int)4L;
+    }
+    public static int MOD_MAPPER() {
+        return (int)5L;
+    }
+    public static int MOD_WAVETABLE() {
+        return (int)6L;
+    }
+    public static int MOD_SWSYNTH() {
+        return (int)7L;
+    }
+    public static int MIDICAPS_VOLUME() {
+        return (int)1L;
+    }
+    public static int MIDICAPS_LRVOLUME() {
+        return (int)2L;
+    }
+    public static int MIDICAPS_CACHE() {
+        return (int)4L;
+    }
+    public static int MIDICAPS_STREAM() {
+        return (int)8L;
+    }
+    public static int MHDR_DONE() {
+        return (int)1L;
+    }
+    public static int MHDR_PREPARED() {
+        return (int)2L;
+    }
+    public static int MHDR_INQUEUE() {
+        return (int)4L;
+    }
+    public static int MHDR_ISSTRM() {
+        return (int)8L;
+    }
+    public static int AUXCAPS_CDAUDIO() {
+        return (int)1L;
+    }
+    public static int AUXCAPS_AUXIN() {
+        return (int)2L;
+    }
+    public static int AUXCAPS_VOLUME() {
+        return (int)1L;
+    }
+    public static int AUXCAPS_LRVOLUME() {
+        return (int)2L;
+    }
+    public static int MIXER_SHORT_NAME_CHARS() {
+        return (int)16L;
+    }
+    public static int MIXER_LONG_NAME_CHARS() {
+        return (int)64L;
+    }
+    public static int MIXERLINE_TARGETTYPE_UNDEFINED() {
+        return (int)0L;
+    }
+    public static int MIXERLINE_TARGETTYPE_WAVEOUT() {
+        return (int)1L;
+    }
+    public static int MIXERLINE_TARGETTYPE_WAVEIN() {
+        return (int)2L;
+    }
+    public static int MIXERLINE_TARGETTYPE_MIDIOUT() {
+        return (int)3L;
+    }
+    public static int MIXERLINE_TARGETTYPE_MIDIIN() {
+        return (int)4L;
+    }
+    public static int MIXERLINE_TARGETTYPE_AUX() {
+        return (int)5L;
+    }
+    public static int JOY_BUTTON1() {
+        return (int)1L;
+    }
+    public static int JOY_BUTTON2() {
+        return (int)2L;
+    }
+    public static int JOY_BUTTON3() {
+        return (int)4L;
+    }
+    public static int JOY_BUTTON4() {
+        return (int)8L;
+    }
+    public static int JOY_BUTTON1CHG() {
+        return (int)256L;
+    }
+    public static int JOY_BUTTON2CHG() {
+        return (int)512L;
+    }
+    public static int JOY_BUTTON3CHG() {
+        return (int)1024L;
+    }
+    public static int JOY_BUTTON4CHG() {
+        return (int)2048L;
+    }
+    public static int JOY_POVFORWARD() {
+        return (int)0L;
+    }
+    public static int JOY_POVRIGHT() {
+        return (int)9000L;
+    }
+    public static int JOY_POVBACKWARD() {
+        return (int)18000L;
+    }
+    public static int JOY_POVLEFT() {
+        return (int)27000L;
+    }
+    public static int JOYSTICKID1() {
+        return (int)0L;
+    }
+    public static int JOYSTICKID2() {
+        return (int)1L;
+    }
+    public static int JOYCAPS_HASZ() {
+        return (int)1L;
+    }
+    public static int JOYCAPS_HASR() {
+        return (int)2L;
+    }
+    public static int JOYCAPS_HASU() {
+        return (int)4L;
+    }
+    public static int JOYCAPS_HASV() {
+        return (int)8L;
+    }
+    public static int JOYCAPS_HASPOV() {
+        return (int)16L;
+    }
+    public static int JOYCAPS_POV4DIR() {
+        return (int)32L;
+    }
+    public static int JOYCAPS_POVCTS() {
+        return (int)64L;
+    }
+    public static int ABM_NEW() {
+        return (int)0L;
+    }
+    public static int ABM_REMOVE() {
+        return (int)1L;
+    }
+    public static int ABM_QUERYPOS() {
+        return (int)2L;
+    }
+    public static int ABM_SETPOS() {
+        return (int)3L;
+    }
+    public static int ABM_GETSTATE() {
+        return (int)4L;
+    }
+    public static int ABM_GETTASKBARPOS() {
+        return (int)5L;
+    }
+    public static int ABM_ACTIVATE() {
+        return (int)6L;
+    }
+    public static int ABM_GETAUTOHIDEBAR() {
+        return (int)7L;
+    }
+    public static int ABM_SETAUTOHIDEBAR() {
+        return (int)8L;
+    }
+    public static int ABM_WINDOWPOSCHANGED() {
+        return (int)9L;
+    }
+    public static int ABM_SETSTATE() {
+        return (int)10L;
+    }
+    public static int ABM_GETAUTOHIDEBAREX() {
+        return (int)11L;
+    }
+    public static int ABM_SETAUTOHIDEBAREX() {
+        return (int)12L;
+    }
+    public static int ABN_STATECHANGE() {
+        return (int)0L;
+    }
+    public static int ABN_POSCHANGED() {
+        return (int)1L;
+    }
+    public static int ABN_FULLSCREENAPP() {
+        return (int)2L;
+    }
+    public static int ABN_WINDOWARRANGE() {
+        return (int)3L;
+    }
+    public static int ABS_AUTOHIDE() {
+        return (int)1L;
+    }
+    public static int ABS_ALWAYSONTOP() {
+        return (int)2L;
+    }
+    public static int ABE_LEFT() {
+        return (int)0L;
+    }
+    public static int ABE_TOP() {
+        return (int)1L;
+    }
+    public static int ABE_RIGHT() {
+        return (int)2L;
+    }
+    public static int ABE_BOTTOM() {
+        return (int)3L;
+    }
+    public static int FO_MOVE() {
+        return (int)1L;
+    }
+    public static int FO_COPY() {
+        return (int)2L;
+    }
+    public static int FO_DELETE() {
+        return (int)3L;
+    }
+    public static int FO_RENAME() {
+        return (int)4L;
+    }
+    public static int FOF_MULTIDESTFILES() {
+        return (int)1L;
+    }
+    public static int FOF_CONFIRMMOUSE() {
+        return (int)2L;
+    }
+    public static int FOF_SILENT() {
+        return (int)4L;
+    }
+    public static int FOF_RENAMEONCOLLISION() {
+        return (int)8L;
+    }
+    public static int FOF_NOCONFIRMATION() {
+        return (int)16L;
+    }
+    public static int FOF_WANTMAPPINGHANDLE() {
+        return (int)32L;
+    }
+    public static int FOF_ALLOWUNDO() {
+        return (int)64L;
+    }
+    public static int FOF_FILESONLY() {
+        return (int)128L;
+    }
+    public static int FOF_SIMPLEPROGRESS() {
+        return (int)256L;
+    }
+    public static int FOF_NOCONFIRMMKDIR() {
+        return (int)512L;
+    }
+    public static int FOF_NOERRORUI() {
+        return (int)1024L;
+    }
+    public static int FOF_NOCOPYSECURITYATTRIBS() {
+        return (int)2048L;
+    }
+    public static int FOF_NORECURSION() {
+        return (int)4096L;
+    }
+    public static int FOF_NO_CONNECTED_ELEMENTS() {
+        return (int)8192L;
+    }
+    public static int FOF_WANTNUKEWARNING() {
+        return (int)16384L;
+    }
+    public static int FOF_NORECURSEREPARSE() {
+        return (int)32768L;
+    }
+    public static int PO_DELETE() {
+        return (int)19L;
+    }
+    public static int PO_RENAME() {
+        return (int)20L;
+    }
+    public static int PO_PORTCHANGE() {
+        return (int)32L;
+    }
+    public static int PO_REN_PORT() {
+        return (int)52L;
+    }
+    public static int SE_ERR_FNF() {
+        return (int)2L;
+    }
+    public static int SE_ERR_PNF() {
+        return (int)3L;
+    }
+    public static int SE_ERR_ACCESSDENIED() {
+        return (int)5L;
+    }
+    public static int SE_ERR_OOM() {
+        return (int)8L;
+    }
+    public static int SE_ERR_DLLNOTFOUND() {
+        return (int)32L;
+    }
+    public static int SE_ERR_SHARE() {
+        return (int)26L;
+    }
+    public static int SE_ERR_ASSOCINCOMPLETE() {
+        return (int)27L;
+    }
+    public static int SE_ERR_DDETIMEOUT() {
+        return (int)28L;
+    }
+    public static int SE_ERR_DDEFAIL() {
+        return (int)29L;
+    }
+    public static int SE_ERR_DDEBUSY() {
+        return (int)30L;
+    }
+    public static int SE_ERR_NOASSOC() {
+        return (int)31L;
+    }
+    public static int SEE_MASK_DEFAULT() {
+        return (int)0L;
+    }
+    public static int SEE_MASK_CLASSNAME() {
+        return (int)1L;
+    }
+    public static int SEE_MASK_CLASSKEY() {
+        return (int)3L;
+    }
+    public static int SEE_MASK_IDLIST() {
+        return (int)4L;
+    }
+    public static int SEE_MASK_INVOKEIDLIST() {
+        return (int)12L;
+    }
+    public static int SEE_MASK_HOTKEY() {
+        return (int)32L;
+    }
+    public static int SEE_MASK_NOCLOSEPROCESS() {
+        return (int)64L;
+    }
+    public static int SEE_MASK_CONNECTNETDRV() {
+        return (int)128L;
+    }
+    public static int SEE_MASK_NOASYNC() {
+        return (int)256L;
+    }
+    public static int SEE_MASK_DOENVSUBST() {
+        return (int)512L;
+    }
+    public static int SEE_MASK_FLAG_NO_UI() {
+        return (int)1024L;
+    }
+    public static int SEE_MASK_UNICODE() {
+        return (int)16384L;
+    }
+    public static int SEE_MASK_NO_CONSOLE() {
+        return (int)32768L;
+    }
+    public static int SEE_MASK_ASYNCOK() {
+        return (int)1048576L;
+    }
+    public static int SEE_MASK_HMONITOR() {
+        return (int)2097152L;
+    }
+    public static int SEE_MASK_NOZONECHECKS() {
+        return (int)8388608L;
+    }
+    public static int SEE_MASK_NOQUERYCLASSSTORE() {
+        return (int)16777216L;
+    }
+    public static int SEE_MASK_WAITFORINPUTIDLE() {
+        return (int)33554432L;
+    }
+    public static int SEE_MASK_FLAG_LOG_USAGE() {
+        return (int)67108864L;
+    }
+    public static int SEE_MASK_FLAG_HINST_IS_SITE() {
+        return (int)134217728L;
+    }
+    public static int SHERB_NOCONFIRMATION() {
+        return (int)1L;
+    }
+    public static int SHERB_NOPROGRESSUI() {
+        return (int)2L;
+    }
+    public static int SHERB_NOSOUND() {
+        return (int)4L;
+    }
+    public static int NINF_KEY() {
+        return (int)1L;
+    }
+    public static int NIM_ADD() {
+        return (int)0L;
+    }
+    public static int NIM_MODIFY() {
+        return (int)1L;
+    }
+    public static int NIM_DELETE() {
+        return (int)2L;
+    }
+    public static int NIM_SETFOCUS() {
+        return (int)3L;
+    }
+    public static int NIM_SETVERSION() {
+        return (int)4L;
+    }
+    public static int NOTIFYICON_VERSION() {
+        return (int)3L;
+    }
+    public static int NOTIFYICON_VERSION_4() {
+        return (int)4L;
+    }
+    public static int NIF_MESSAGE() {
+        return (int)1L;
+    }
+    public static int NIF_ICON() {
+        return (int)2L;
+    }
+    public static int NIF_TIP() {
+        return (int)4L;
+    }
+    public static int NIF_STATE() {
+        return (int)8L;
+    }
+    public static int NIF_INFO() {
+        return (int)16L;
+    }
+    public static int NIF_GUID() {
+        return (int)32L;
+    }
+    public static int NIF_REALTIME() {
+        return (int)64L;
+    }
+    public static int NIF_SHOWTIP() {
+        return (int)128L;
+    }
+    public static int NIS_HIDDEN() {
+        return (int)1L;
+    }
+    public static int NIS_SHAREDICON() {
+        return (int)2L;
+    }
+    public static int NIIF_NONE() {
+        return (int)0L;
+    }
+    public static int NIIF_INFO() {
+        return (int)1L;
+    }
+    public static int NIIF_WARNING() {
+        return (int)2L;
+    }
+    public static int NIIF_ERROR() {
+        return (int)3L;
+    }
+    public static int NIIF_USER() {
+        return (int)4L;
+    }
+    public static int NIIF_ICON_MASK() {
+        return (int)15L;
+    }
+    public static int NIIF_NOSOUND() {
+        return (int)16L;
+    }
+    public static int NIIF_LARGE_ICON() {
+        return (int)32L;
+    }
+    public static int NIIF_RESPECT_QUIET_TIME() {
+        return (int)128L;
+    }
+    public static int SHGFI_ICON() {
+        return (int)256L;
+    }
+    public static int SHGFI_DISPLAYNAME() {
+        return (int)512L;
+    }
+    public static int SHGFI_TYPENAME() {
+        return (int)1024L;
+    }
+    public static int SHGFI_ATTRIBUTES() {
+        return (int)2048L;
+    }
+    public static int SHGFI_ICONLOCATION() {
+        return (int)4096L;
+    }
+    public static int SHGFI_EXETYPE() {
+        return (int)8192L;
+    }
+    public static int SHGFI_SYSICONINDEX() {
+        return (int)16384L;
+    }
+    public static int SHGFI_LINKOVERLAY() {
+        return (int)32768L;
+    }
+    public static int SHGFI_SELECTED() {
+        return (int)65536L;
+    }
+    public static int SHGFI_ATTR_SPECIFIED() {
+        return (int)131072L;
+    }
+    public static int SHGFI_LARGEICON() {
+        return (int)0L;
+    }
+    public static int SHGFI_SMALLICON() {
+        return (int)1L;
+    }
+    public static int SHGFI_OPENICON() {
+        return (int)2L;
+    }
+    public static int SHGFI_SHELLICONSIZE() {
+        return (int)4L;
+    }
+    public static int SHGFI_PIDL() {
+        return (int)8L;
+    }
+    public static int SHGFI_USEFILEATTRIBUTES() {
+        return (int)16L;
+    }
+    public static int SHGFI_ADDOVERLAYS() {
+        return (int)32L;
+    }
+    public static int SHGFI_OVERLAYINDEX() {
+        return (int)64L;
+    }
+    public static int SHGSI_ICONLOCATION() {
+        return (int)0L;
+    }
+    public static int SHGNLI_PIDL() {
+        return (int)1L;
+    }
+    public static int SHGNLI_PREFIXNAME() {
+        return (int)2L;
+    }
+    public static int SHGNLI_NOUNIQUE() {
+        return (int)4L;
+    }
+    public static int SHGNLI_NOLNK() {
+        return (int)8L;
+    }
+    public static int SHGNLI_NOLOCNAME() {
+        return (int)16L;
+    }
+    public static int SHGNLI_USEURLEXT() {
+        return (int)32L;
+    }
+    public static int PRINTACTION_OPEN() {
+        return (int)0L;
+    }
+    public static int PRINTACTION_PROPERTIES() {
+        return (int)1L;
+    }
+    public static int PRINTACTION_NETINSTALL() {
+        return (int)2L;
+    }
+    public static int PRINTACTION_NETINSTALLLINK() {
+        return (int)3L;
+    }
+    public static int PRINTACTION_TESTPAGE() {
+        return (int)4L;
+    }
+    public static int PRINTACTION_OPENNETPRN() {
+        return (int)5L;
+    }
+    public static int PRINTACTION_DOCUMENTDEFAULTS() {
+        return (int)6L;
+    }
+    public static int PRINTACTION_SERVERPROPERTIES() {
+        return (int)7L;
+    }
+    public static int PRINT_PROP_FORCE_NAME() {
+        return (int)1L;
+    }
+    public static int OFFLINE_STATUS_LOCAL() {
+        return (int)1L;
+    }
+    public static int OFFLINE_STATUS_REMOTE() {
+        return (int)2L;
+    }
+    public static int OFFLINE_STATUS_INCOMPLETE() {
+        return (int)4L;
+    }
+    public static int SHIL_LARGE() {
+        return (int)0L;
+    }
+    public static int SHIL_SMALL() {
+        return (int)1L;
+    }
+    public static int SHIL_EXTRALARGE() {
+        return (int)2L;
+    }
+    public static int SHIL_SYSSMALL() {
+        return (int)3L;
+    }
+    public static int SHIL_JUMBO() {
+        return (int)4L;
+    }
+    public static int PERF_DATA_VERSION() {
+        return (int)1L;
+    }
+    public static int PERF_DATA_REVISION() {
+        return (int)1L;
+    }
+    public static int PERF_SIZE_DWORD() {
+        return (int)0L;
+    }
+    public static int PERF_SIZE_LARGE() {
+        return (int)256L;
+    }
+    public static int PERF_SIZE_ZERO() {
+        return (int)512L;
+    }
+    public static int PERF_SIZE_VARIABLE_LEN() {
+        return (int)768L;
+    }
+    public static int PERF_TYPE_NUMBER() {
+        return (int)0L;
+    }
+    public static int PERF_TYPE_COUNTER() {
+        return (int)1024L;
+    }
+    public static int PERF_TYPE_TEXT() {
+        return (int)2048L;
+    }
+    public static int PERF_TYPE_ZERO() {
+        return (int)3072L;
+    }
+    public static int PERF_NUMBER_HEX() {
+        return (int)0L;
+    }
+    public static int PERF_NUMBER_DECIMAL() {
+        return (int)65536L;
+    }
+    public static int PERF_NUMBER_DEC_1000() {
+        return (int)131072L;
+    }
+    public static int PERF_COUNTER_VALUE() {
+        return (int)0L;
+    }
+    public static int PERF_COUNTER_RATE() {
+        return (int)65536L;
+    }
+    public static int PERF_COUNTER_FRACTION() {
+        return (int)131072L;
+    }
+    public static int PERF_COUNTER_BASE() {
+        return (int)196608L;
+    }
+    public static int PERF_COUNTER_ELAPSED() {
+        return (int)262144L;
+    }
+    public static int PERF_COUNTER_QUEUELEN() {
+        return (int)327680L;
+    }
+    public static int PERF_COUNTER_HISTOGRAM() {
+        return (int)393216L;
+    }
+    public static int PERF_COUNTER_PRECISION() {
+        return (int)458752L;
+    }
+    public static int PERF_TEXT_UNICODE() {
+        return (int)0L;
+    }
+    public static int PERF_TEXT_ASCII() {
+        return (int)65536L;
+    }
+    public static int PERF_TIMER_TICK() {
+        return (int)0L;
+    }
+    public static int PERF_TIMER_100NS() {
+        return (int)1048576L;
+    }
+    public static int PERF_OBJECT_TIMER() {
+        return (int)2097152L;
+    }
+    public static int PERF_DELTA_COUNTER() {
+        return (int)4194304L;
+    }
+    public static int PERF_DELTA_BASE() {
+        return (int)8388608L;
+    }
+    public static int PERF_INVERSE_COUNTER() {
+        return (int)16777216L;
+    }
+    public static int PERF_MULTI_COUNTER() {
+        return (int)33554432L;
+    }
+    public static int PERF_DISPLAY_NO_SUFFIX() {
+        return (int)0L;
+    }
+    public static int PERF_DISPLAY_PER_SEC() {
+        return (int)268435456L;
+    }
+    public static int PERF_DISPLAY_PERCENT() {
+        return (int)536870912L;
+    }
+    public static int PERF_DISPLAY_SECONDS() {
+        return (int)805306368L;
+    }
+    public static int PERF_DISPLAY_NOSHOW() {
+        return (int)1073741824L;
+    }
+    public static int PERF_DETAIL_NOVICE() {
+        return (int)100L;
+    }
+    public static int PERF_DETAIL_ADVANCED() {
+        return (int)200L;
+    }
+    public static int PERF_DETAIL_EXPERT() {
+        return (int)300L;
+    }
+    public static int PERF_DETAIL_WIZARD() {
+        return (int)400L;
+    }
+    public static int WINPERF_LOG_NONE() {
+        return (int)0L;
+    }
+    public static int WINPERF_LOG_USER() {
+        return (int)1L;
+    }
+    public static int WINPERF_LOG_DEBUG() {
+        return (int)2L;
+    }
+    public static int WINPERF_LOG_VERBOSE() {
+        return (int)3L;
+    }
+    public static int FD_SETSIZE() {
+        return (int)64L;
+    }
+    public static int IOCPARM_MASK() {
+        return (int)127L;
+    }
+    public static int IOC_VOID() {
+        return (int)536870912L;
+    }
+    public static int IOC_OUT() {
+        return (int)1073741824L;
+    }
+    public static int IPPROTO_IP() {
+        return (int)0L;
+    }
+    public static int IPPROTO_ICMP() {
+        return (int)1L;
+    }
+    public static int IPPROTO_IGMP() {
+        return (int)2L;
+    }
+    public static int IPPROTO_GGP() {
+        return (int)3L;
+    }
+    public static int IPPROTO_TCP() {
+        return (int)6L;
+    }
+    public static int IPPROTO_PUP() {
+        return (int)12L;
+    }
+    public static int IPPROTO_UDP() {
+        return (int)17L;
+    }
+    public static int IPPROTO_IDP() {
+        return (int)22L;
+    }
+    public static int IPPROTO_ND() {
+        return (int)77L;
+    }
+    public static int IPPROTO_RAW() {
+        return (int)255L;
+    }
+    public static int IPPROTO_MAX() {
+        return (int)256L;
+    }
+    public static int IPPORT_ECHO() {
+        return (int)7L;
+    }
+    public static int IPPORT_DISCARD() {
+        return (int)9L;
+    }
+    public static int IPPORT_SYSTAT() {
+        return (int)11L;
+    }
+    public static int IPPORT_DAYTIME() {
+        return (int)13L;
+    }
+    public static int IPPORT_NETSTAT() {
+        return (int)15L;
+    }
+    public static int IPPORT_FTP() {
+        return (int)21L;
+    }
+    public static int IPPORT_TELNET() {
+        return (int)23L;
+    }
+    public static int IPPORT_SMTP() {
+        return (int)25L;
+    }
+    public static int IPPORT_TIMESERVER() {
+        return (int)37L;
+    }
+    public static int IPPORT_NAMESERVER() {
+        return (int)42L;
+    }
+    public static int IPPORT_WHOIS() {
+        return (int)43L;
+    }
+    public static int IPPORT_MTP() {
+        return (int)57L;
+    }
+    public static int IPPORT_TFTP() {
+        return (int)69L;
+    }
+    public static int IPPORT_RJE() {
+        return (int)77L;
+    }
+    public static int IPPORT_FINGER() {
+        return (int)79L;
+    }
+    public static int IPPORT_TTYLINK() {
+        return (int)87L;
+    }
+    public static int IPPORT_SUPDUP() {
+        return (int)95L;
+    }
+    public static int IPPORT_EXECSERVER() {
+        return (int)512L;
+    }
+    public static int IPPORT_LOGINSERVER() {
+        return (int)513L;
+    }
+    public static int IPPORT_CMDSERVER() {
+        return (int)514L;
+    }
+    public static int IPPORT_EFSSERVER() {
+        return (int)520L;
+    }
+    public static int IPPORT_BIFFUDP() {
+        return (int)512L;
+    }
+    public static int IPPORT_WHOSERVER() {
+        return (int)513L;
+    }
+    public static int IPPORT_ROUTESERVER() {
+        return (int)520L;
+    }
+    public static int IPPORT_RESERVED() {
+        return (int)1024L;
+    }
+    public static int IMPLINK_IP() {
+        return (int)155L;
+    }
+    public static int IMPLINK_LOWEXPER() {
+        return (int)156L;
+    }
+    public static int IMPLINK_HIGHEXPER() {
+        return (int)158L;
+    }
+    public static int IN_CLASSA_NSHIFT() {
+        return (int)24L;
+    }
+    public static int IN_CLASSA_HOST() {
+        return (int)16777215L;
+    }
+    public static int IN_CLASSA_MAX() {
+        return (int)128L;
+    }
+    public static int IN_CLASSB_NSHIFT() {
+        return (int)16L;
+    }
+    public static int IN_CLASSB_HOST() {
+        return (int)65535L;
+    }
+    public static int IN_CLASSB_MAX() {
+        return (int)65536L;
+    }
+    public static int IN_CLASSC_NSHIFT() {
+        return (int)8L;
+    }
+    public static int IN_CLASSC_HOST() {
+        return (int)255L;
+    }
+    public static int INADDR_LOOPBACK() {
+        return (int)2130706433L;
+    }
+    public static int WSADESCRIPTION_LEN() {
+        return (int)256L;
+    }
+    public static int WSASYS_STATUS_LEN() {
+        return (int)128L;
+    }
+    public static int IP_OPTIONS() {
+        return (int)1L;
+    }
+    public static int IP_MULTICAST_IF() {
+        return (int)2L;
+    }
+    public static int IP_MULTICAST_TTL() {
+        return (int)3L;
+    }
+    public static int IP_MULTICAST_LOOP() {
+        return (int)4L;
+    }
+    public static int IP_ADD_MEMBERSHIP() {
+        return (int)5L;
+    }
+    public static int IP_DROP_MEMBERSHIP() {
+        return (int)6L;
+    }
+    public static int IP_TTL() {
+        return (int)7L;
+    }
+    public static int IP_TOS() {
+        return (int)8L;
+    }
+    public static int IP_DONTFRAGMENT() {
+        return (int)9L;
+    }
+    public static int IP_DEFAULT_MULTICAST_TTL() {
+        return (int)1L;
+    }
+    public static int IP_DEFAULT_MULTICAST_LOOP() {
+        return (int)1L;
+    }
+    public static int IP_MAX_MEMBERSHIPS() {
+        return (int)20L;
+    }
+    public static int SOCK_STREAM() {
+        return (int)1L;
+    }
+    public static int SOCK_DGRAM() {
+        return (int)2L;
+    }
+    public static int SOCK_RAW() {
+        return (int)3L;
+    }
+    public static int SOCK_RDM() {
+        return (int)4L;
+    }
+    public static int SOCK_SEQPACKET() {
+        return (int)5L;
+    }
+    public static int SO_DEBUG() {
+        return (int)1L;
+    }
+    public static int SO_ACCEPTCONN() {
+        return (int)2L;
+    }
+    public static int SO_REUSEADDR() {
+        return (int)4L;
+    }
+    public static int SO_KEEPALIVE() {
+        return (int)8L;
+    }
+    public static int SO_DONTROUTE() {
+        return (int)16L;
+    }
+    public static int SO_BROADCAST() {
+        return (int)32L;
+    }
+    public static int SO_USELOOPBACK() {
+        return (int)64L;
+    }
+    public static int SO_LINGER() {
+        return (int)128L;
+    }
+    public static int SO_OOBINLINE() {
+        return (int)256L;
+    }
+    public static int SO_SNDBUF() {
+        return (int)4097L;
+    }
+    public static int SO_RCVBUF() {
+        return (int)4098L;
+    }
+    public static int SO_SNDLOWAT() {
+        return (int)4099L;
+    }
+    public static int SO_RCVLOWAT() {
+        return (int)4100L;
+    }
+    public static int SO_SNDTIMEO() {
+        return (int)4101L;
+    }
+    public static int SO_RCVTIMEO() {
+        return (int)4102L;
+    }
+    public static int SO_ERROR() {
+        return (int)4103L;
+    }
+    public static int SO_TYPE() {
+        return (int)4104L;
+    }
+    public static int SO_CONNDATA() {
+        return (int)28672L;
+    }
+    public static int SO_CONNOPT() {
+        return (int)28673L;
+    }
+    public static int SO_DISCDATA() {
+        return (int)28674L;
+    }
+    public static int SO_DISCOPT() {
+        return (int)28675L;
+    }
+    public static int SO_CONNDATALEN() {
+        return (int)28676L;
+    }
+    public static int SO_CONNOPTLEN() {
+        return (int)28677L;
+    }
+    public static int SO_DISCDATALEN() {
+        return (int)28678L;
+    }
+    public static int SO_DISCOPTLEN() {
+        return (int)28679L;
+    }
+    public static int SO_OPENTYPE() {
+        return (int)28680L;
+    }
+    public static int SO_SYNCHRONOUS_ALERT() {
+        return (int)16L;
+    }
+    public static int SO_SYNCHRONOUS_NONALERT() {
+        return (int)32L;
+    }
+    public static int SO_MAXDG() {
+        return (int)28681L;
+    }
+    public static int SO_MAXPATHDG() {
+        return (int)28682L;
+    }
+    public static int SO_UPDATE_ACCEPT_CONTEXT() {
+        return (int)28683L;
+    }
+    public static int SO_CONNECT_TIME() {
+        return (int)28684L;
+    }
+    public static int TCP_NODELAY() {
+        return (int)1L;
+    }
+    public static int TCP_BSDURGENT() {
+        return (int)28672L;
+    }
+    public static int AF_UNSPEC() {
+        return (int)0L;
+    }
+    public static int AF_UNIX() {
+        return (int)1L;
+    }
+    public static int AF_INET() {
+        return (int)2L;
+    }
+    public static int AF_IMPLINK() {
+        return (int)3L;
+    }
     public static int AF_PUP() {
         return (int)4L;
     }
@@ -1655,1359 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int CMSG_DATA() {
         return (int)1L;
-    }
-    public static int CMSG_SIGNED() {
-        return (int)2L;
-    }
-    public static int CMSG_ENVELOPED() {
-        return (int)3L;
-    }
-    public static int CMSG_SIGNED_AND_ENVELOPED() {
-        return (int)4L;
-    }
-    public static int CMSG_HASHED() {
-        return (int)5L;
-    }
-    public static int CMSG_ENCRYPTED() {
-        return (int)6L;
-    }
-    public static int CERT_ID_ISSUER_SERIAL_NUMBER() {
-        return (int)1L;
-    }
-    public static int CERT_ID_KEY_IDENTIFIER() {
-        return (int)2L;
-    }
-    public static int CERT_ID_SHA1_HASH() {
-        return (int)3L;
-    }
-    public static int CMSG_KEY_AGREE_EPHEMERAL_KEY_CHOICE() {
-        return (int)1L;
-    }
-    public static int CMSG_KEY_AGREE_STATIC_KEY_CHOICE() {
-        return (int)2L;
-    }
-    public static int CMSG_MAIL_LIST_HANDLE_KEY_CHOICE() {
-        return (int)1L;
-    }
-    public static int CMSG_KEY_TRANS_RECIPIENT() {
-        return (int)1L;
-    }
-    public static int CMSG_KEY_AGREE_RECIPIENT() {
-        return (int)2L;
-    }
-    public static int CMSG_MAIL_LIST_RECIPIENT() {
-        return (int)3L;
-    }
-    public static int CMSG_RC4_NO_SALT_FLAG() {
-        return (int)1073741824L;
-    }
-    public static int CMSG_BARE_CONTENT_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_LENGTH_ONLY_FLAG() {
-        return (int)2L;
-    }
-    public static int CMSG_DETACHED_FLAG() {
-        return (int)4L;
-    }
-    public static int CMSG_AUTHENTICATED_ATTRIBUTES_FLAG() {
-        return (int)8L;
-    }
-    public static int CMSG_CONTENTS_OCTETS_FLAG() {
-        return (int)16L;
-    }
-    public static int CMSG_MAX_LENGTH_FLAG() {
-        return (int)32L;
-    }
-    public static int CMSG_CMS_ENCAPSULATED_CONTENT_FLAG() {
-        return (int)64L;
-    }
-    public static int CMSG_SIGNED_DATA_NO_SIGN_FLAG() {
-        return (int)128L;
-    }
-    public static int CMSG_CRYPT_RELEASE_CONTEXT_FLAG() {
-        return (int)32768L;
-    }
-    public static int CMSG_TYPE_PARAM() {
-        return (int)1L;
-    }
-    public static int CMSG_CONTENT_PARAM() {
-        return (int)2L;
-    }
-    public static int CMSG_BARE_CONTENT_PARAM() {
-        return (int)3L;
-    }
-    public static int CMSG_INNER_CONTENT_TYPE_PARAM() {
-        return (int)4L;
-    }
-    public static int CMSG_SIGNER_COUNT_PARAM() {
-        return (int)5L;
-    }
-    public static int CMSG_SIGNER_INFO_PARAM() {
-        return (int)6L;
-    }
-    public static int CMSG_SIGNER_CERT_INFO_PARAM() {
-        return (int)7L;
-    }
-    public static int CMSG_SIGNER_HASH_ALGORITHM_PARAM() {
-        return (int)8L;
-    }
-    public static int CMSG_SIGNER_AUTH_ATTR_PARAM() {
-        return (int)9L;
-    }
-    public static int CMSG_SIGNER_UNAUTH_ATTR_PARAM() {
-        return (int)10L;
-    }
-    public static int CMSG_CERT_COUNT_PARAM() {
-        return (int)11L;
-    }
-    public static int CMSG_CERT_PARAM() {
-        return (int)12L;
-    }
-    public static int CMSG_CRL_COUNT_PARAM() {
-        return (int)13L;
-    }
-    public static int CMSG_CRL_PARAM() {
-        return (int)14L;
-    }
-    public static int CMSG_ENVELOPE_ALGORITHM_PARAM() {
-        return (int)15L;
-    }
-    public static int CMSG_RECIPIENT_COUNT_PARAM() {
-        return (int)17L;
-    }
-    public static int CMSG_RECIPIENT_INDEX_PARAM() {
-        return (int)18L;
-    }
-    public static int CMSG_RECIPIENT_INFO_PARAM() {
-        return (int)19L;
-    }
-    public static int CMSG_HASH_ALGORITHM_PARAM() {
-        return (int)20L;
-    }
-    public static int CMSG_HASH_DATA_PARAM() {
-        return (int)21L;
-    }
-    public static int CMSG_COMPUTED_HASH_PARAM() {
-        return (int)22L;
-    }
-    public static int CMSG_ENCRYPT_PARAM() {
-        return (int)26L;
-    }
-    public static int CMSG_ENCRYPTED_DIGEST() {
-        return (int)27L;
-    }
-    public static int CMSG_ENCODED_SIGNER() {
-        return (int)28L;
-    }
-    public static int CMSG_ENCODED_MESSAGE() {
-        return (int)29L;
-    }
-    public static int CMSG_VERSION_PARAM() {
-        return (int)30L;
-    }
-    public static int CMSG_ATTR_CERT_COUNT_PARAM() {
-        return (int)31L;
-    }
-    public static int CMSG_ATTR_CERT_PARAM() {
-        return (int)32L;
-    }
-    public static int CMSG_CMS_RECIPIENT_COUNT_PARAM() {
-        return (int)33L;
-    }
-    public static int CMSG_CMS_RECIPIENT_INDEX_PARAM() {
-        return (int)34L;
-    }
-    public static int CMSG_CMS_RECIPIENT_ENCRYPTED_KEY_INDEX_PARAM() {
-        return (int)35L;
-    }
-    public static int CMSG_CMS_RECIPIENT_INFO_PARAM() {
-        return (int)36L;
-    }
-    public static int CMSG_UNPROTECTED_ATTR_PARAM() {
-        return (int)37L;
-    }
-    public static int CMSG_SIGNER_CERT_ID_PARAM() {
-        return (int)38L;
-    }
-    public static int CMSG_CMS_SIGNER_INFO_PARAM() {
-        return (int)39L;
-    }
-    public static int CMSG_SIGNED_DATA_V1() {
-        return (int)1L;
-    }
-    public static int CMSG_SIGNED_DATA_V3() {
-        return (int)3L;
-    }
-    public static int CMSG_SIGNER_INFO_V1() {
-        return (int)1L;
-    }
-    public static int CMSG_SIGNER_INFO_V3() {
-        return (int)3L;
-    }
-    public static int CMSG_HASHED_DATA_V0() {
-        return (int)0L;
-    }
-    public static int CMSG_HASHED_DATA_V2() {
-        return (int)2L;
-    }
-    public static int CMSG_ENVELOPED_DATA_V0() {
-        return (int)0L;
-    }
-    public static int CMSG_ENVELOPED_DATA_V2() {
-        return (int)2L;
-    }
-    public static int CMSG_KEY_AGREE_ORIGINATOR_CERT() {
-        return (int)1L;
-    }
-    public static int CMSG_KEY_AGREE_ORIGINATOR_PUBLIC_KEY() {
-        return (int)2L;
-    }
-    public static int CMSG_ENVELOPED_RECIPIENT_V0() {
-        return (int)0L;
-    }
-    public static int CMSG_ENVELOPED_RECIPIENT_V2() {
-        return (int)2L;
-    }
-    public static int CMSG_ENVELOPED_RECIPIENT_V3() {
-        return (int)3L;
-    }
-    public static int CMSG_ENVELOPED_RECIPIENT_V4() {
-        return (int)4L;
-    }
-    public static int CMSG_CTRL_VERIFY_SIGNATURE() {
-        return (int)1L;
-    }
-    public static int CMSG_CTRL_DECRYPT() {
-        return (int)2L;
-    }
-    public static int CMSG_CTRL_VERIFY_HASH() {
-        return (int)5L;
-    }
-    public static int CMSG_CTRL_ADD_SIGNER() {
-        return (int)6L;
-    }
-    public static int CMSG_CTRL_DEL_SIGNER() {
-        return (int)7L;
-    }
-    public static int CMSG_CTRL_ADD_SIGNER_UNAUTH_ATTR() {
-        return (int)8L;
-    }
-    public static int CMSG_CTRL_DEL_SIGNER_UNAUTH_ATTR() {
-        return (int)9L;
-    }
-    public static int CMSG_CTRL_ADD_CERT() {
-        return (int)10L;
-    }
-    public static int CMSG_CTRL_DEL_CERT() {
-        return (int)11L;
-    }
-    public static int CMSG_CTRL_ADD_CRL() {
-        return (int)12L;
-    }
-    public static int CMSG_CTRL_DEL_CRL() {
-        return (int)13L;
-    }
-    public static int CMSG_CTRL_ADD_ATTR_CERT() {
-        return (int)14L;
-    }
-    public static int CMSG_CTRL_DEL_ATTR_CERT() {
-        return (int)15L;
-    }
-    public static int CMSG_CTRL_KEY_TRANS_DECRYPT() {
-        return (int)16L;
-    }
-    public static int CMSG_CTRL_KEY_AGREE_DECRYPT() {
-        return (int)17L;
-    }
-    public static int CMSG_CTRL_MAIL_LIST_DECRYPT() {
-        return (int)18L;
-    }
-    public static int CMSG_CTRL_VERIFY_SIGNATURE_EX() {
-        return (int)19L;
-    }
-    public static int CMSG_CTRL_ADD_CMS_SIGNER_INFO() {
-        return (int)20L;
-    }
-    public static int CMSG_CTRL_ENABLE_STRONG_SIGNATURE() {
-        return (int)21L;
-    }
-    public static int CMSG_VERIFY_SIGNER_PUBKEY() {
-        return (int)1L;
-    }
-    public static int CMSG_VERIFY_SIGNER_CERT() {
-        return (int)2L;
-    }
-    public static int CMSG_VERIFY_SIGNER_CHAIN() {
-        return (int)3L;
-    }
-    public static int CMSG_VERIFY_SIGNER_NULL() {
-        return (int)4L;
-    }
-    public static int CMSG_VERIFY_COUNTER_SIGN_ENABLE_STRONG_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_CONTENT_ENCRYPT_PAD_ENCODED_LEN_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_CONTENT_ENCRYPT_FREE_PARA_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_CONTENT_ENCRYPT_FREE_OBJID_FLAG() {
-        return (int)2L;
-    }
-    public static int CMSG_CONTENT_ENCRYPT_RELEASE_CONTEXT_FLAG() {
-        return (int)32768L;
-    }
-    public static int CMSG_KEY_TRANS_ENCRYPT_FREE_PARA_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_KEY_TRANS_ENCRYPT_FREE_OBJID_FLAG() {
-        return (int)2L;
-    }
-    public static int CMSG_KEY_AGREE_ENCRYPT_FREE_PARA_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_KEY_AGREE_ENCRYPT_FREE_MATERIAL_FLAG() {
-        return (int)2L;
-    }
-    public static int CMSG_KEY_AGREE_ENCRYPT_FREE_PUBKEY_ALG_FLAG() {
-        return (int)4L;
-    }
-    public static int CMSG_KEY_AGREE_ENCRYPT_FREE_PUBKEY_PARA_FLAG() {
-        return (int)8L;
-    }
-    public static int CMSG_KEY_AGREE_ENCRYPT_FREE_PUBKEY_BITS_FLAG() {
-        return (int)16L;
-    }
-    public static int CMSG_KEY_AGREE_ENCRYPT_FREE_OBJID_FLAG() {
-        return (int)32L;
-    }
-    public static int CMSG_MAIL_LIST_ENCRYPT_FREE_PARA_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_MAIL_LIST_ENCRYPT_FREE_OBJID_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_KEY_PROV_HANDLE_PROP_ID() {
-        return (int)1L;
-    }
-    public static int CERT_KEY_PROV_INFO_PROP_ID() {
-        return (int)2L;
-    }
-    public static int CERT_SHA1_HASH_PROP_ID() {
-        return (int)3L;
-    }
-    public static int CERT_MD5_HASH_PROP_ID() {
-        return (int)4L;
-    }
-    public static int CERT_KEY_CONTEXT_PROP_ID() {
-        return (int)5L;
-    }
-    public static int CERT_KEY_SPEC_PROP_ID() {
-        return (int)6L;
-    }
-    public static int CERT_IE30_RESERVED_PROP_ID() {
-        return (int)7L;
-    }
-    public static int CERT_PUBKEY_HASH_RESERVED_PROP_ID() {
-        return (int)8L;
-    }
-    public static int CERT_ENHKEY_USAGE_PROP_ID() {
-        return (int)9L;
-    }
-    public static int CERT_NEXT_UPDATE_LOCATION_PROP_ID() {
-        return (int)10L;
-    }
-    public static int CERT_FRIENDLY_NAME_PROP_ID() {
-        return (int)11L;
-    }
-    public static int CERT_PVK_FILE_PROP_ID() {
-        return (int)12L;
-    }
-    public static int CERT_DESCRIPTION_PROP_ID() {
-        return (int)13L;
-    }
-    public static int CERT_ACCESS_STATE_PROP_ID() {
-        return (int)14L;
-    }
-    public static int CERT_SIGNATURE_HASH_PROP_ID() {
-        return (int)15L;
-    }
-    public static int CERT_SMART_CARD_DATA_PROP_ID() {
-        return (int)16L;
-    }
-    public static int CERT_EFS_PROP_ID() {
-        return (int)17L;
-    }
-    public static int CERT_FORTEZZA_DATA_PROP_ID() {
-        return (int)18L;
-    }
-    public static int CERT_ARCHIVED_PROP_ID() {
-        return (int)19L;
-    }
-    public static int CERT_KEY_IDENTIFIER_PROP_ID() {
-        return (int)20L;
-    }
-    public static int CERT_AUTO_ENROLL_PROP_ID() {
-        return (int)21L;
-    }
-    public static int CERT_PUBKEY_ALG_PARA_PROP_ID() {
-        return (int)22L;
-    }
-    public static int CERT_CROSS_CERT_DIST_POINTS_PROP_ID() {
-        return (int)23L;
-    }
-    public static int CERT_ISSUER_PUBLIC_KEY_MD5_HASH_PROP_ID() {
-        return (int)24L;
-    }
-    public static int CERT_SUBJECT_PUBLIC_KEY_MD5_HASH_PROP_ID() {
-        return (int)25L;
-    }
-    public static int CERT_ENROLLMENT_PROP_ID() {
-        return (int)26L;
-    }
-    public static int CERT_DATE_STAMP_PROP_ID() {
-        return (int)27L;
-    }
-    public static int CERT_ISSUER_SERIAL_NUMBER_MD5_HASH_PROP_ID() {
-        return (int)28L;
-    }
-    public static int CERT_SUBJECT_NAME_MD5_HASH_PROP_ID() {
-        return (int)29L;
-    }
-    public static int CERT_EXTENDED_ERROR_INFO_PROP_ID() {
-        return (int)30L;
-    }
-    public static int CERT_RENEWAL_PROP_ID() {
-        return (int)64L;
-    }
-    public static int CERT_ARCHIVED_KEY_HASH_PROP_ID() {
-        return (int)65L;
-    }
-    public static int CERT_AUTO_ENROLL_RETRY_PROP_ID() {
-        return (int)66L;
-    }
-    public static int CERT_AIA_URL_RETRIEVED_PROP_ID() {
-        return (int)67L;
-    }
-    public static int CERT_AUTHORITY_INFO_ACCESS_PROP_ID() {
-        return (int)68L;
-    }
-    public static int CERT_BACKED_UP_PROP_ID() {
-        return (int)69L;
-    }
-    public static int CERT_OCSP_RESPONSE_PROP_ID() {
-        return (int)70L;
-    }
-    public static int CERT_REQUEST_ORIGINATOR_PROP_ID() {
-        return (int)71L;
-    }
-    public static int CERT_SOURCE_LOCATION_PROP_ID() {
-        return (int)72L;
-    }
-    public static int CERT_SOURCE_URL_PROP_ID() {
-        return (int)73L;
-    }
-    public static int CERT_NEW_KEY_PROP_ID() {
-        return (int)74L;
-    }
-    public static int CERT_OCSP_CACHE_PREFIX_PROP_ID() {
-        return (int)75L;
-    }
-    public static int CERT_SMART_CARD_ROOT_INFO_PROP_ID() {
-        return (int)76L;
-    }
-    public static int CERT_NO_AUTO_EXPIRE_CHECK_PROP_ID() {
-        return (int)77L;
-    }
-    public static int CERT_NCRYPT_KEY_HANDLE_PROP_ID() {
-        return (int)78L;
-    }
-    public static int CERT_HCRYPTPROV_OR_NCRYPT_KEY_HANDLE_PROP_ID() {
-        return (int)79L;
-    }
-    public static int CERT_SUBJECT_INFO_ACCESS_PROP_ID() {
-        return (int)80L;
-    }
-    public static int CERT_CA_OCSP_AUTHORITY_INFO_ACCESS_PROP_ID() {
-        return (int)81L;
-    }
-    public static int CERT_CA_DISABLE_CRL_PROP_ID() {
-        return (int)82L;
-    }
-    public static int CERT_ROOT_PROGRAM_CERT_POLICIES_PROP_ID() {
-        return (int)83L;
-    }
-    public static int CERT_ROOT_PROGRAM_NAME_CONSTRAINTS_PROP_ID() {
-        return (int)84L;
-    }
-    public static int CERT_SUBJECT_OCSP_AUTHORITY_INFO_ACCESS_PROP_ID() {
-        return (int)85L;
-    }
-    public static int CERT_SUBJECT_DISABLE_CRL_PROP_ID() {
-        return (int)86L;
-    }
-    public static int CERT_CEP_PROP_ID() {
-        return (int)87L;
-    }
-    public static int CERT_SIGN_HASH_CNG_ALG_PROP_ID() {
-        return (int)89L;
-    }
-    public static int CERT_SCARD_PIN_ID_PROP_ID() {
-        return (int)90L;
-    }
-    public static int CERT_SCARD_PIN_INFO_PROP_ID() {
-        return (int)91L;
-    }
-    public static int CERT_SUBJECT_PUB_KEY_BIT_LENGTH_PROP_ID() {
-        return (int)92L;
-    }
-    public static int CERT_PUB_KEY_CNG_ALG_BIT_LENGTH_PROP_ID() {
-        return (int)93L;
-    }
-    public static int CERT_ISSUER_PUB_KEY_BIT_LENGTH_PROP_ID() {
-        return (int)94L;
-    }
-    public static int CERT_ISSUER_CHAIN_SIGN_HASH_CNG_ALG_PROP_ID() {
-        return (int)95L;
-    }
-    public static int CERT_ISSUER_CHAIN_PUB_KEY_CNG_ALG_BIT_LENGTH_PROP_ID() {
-        return (int)96L;
-    }
-    public static int CERT_NO_EXPIRE_NOTIFICATION_PROP_ID() {
-        return (int)97L;
-    }
-    public static int CERT_AUTH_ROOT_SHA256_HASH_PROP_ID() {
-        return (int)98L;
-    }
-    public static int CERT_NCRYPT_KEY_HANDLE_TRANSFER_PROP_ID() {
-        return (int)99L;
-    }
-    public static int CERT_HCRYPTPROV_TRANSFER_PROP_ID() {
-        return (int)100L;
-    }
-    public static int CERT_SMART_CARD_READER_PROP_ID() {
-        return (int)101L;
-    }
-    public static int CERT_SEND_AS_TRUSTED_ISSUER_PROP_ID() {
-        return (int)102L;
-    }
-    public static int CERT_KEY_REPAIR_ATTEMPTED_PROP_ID() {
-        return (int)103L;
-    }
-    public static int CERT_DISALLOWED_FILETIME_PROP_ID() {
-        return (int)104L;
-    }
-    public static int CERT_ROOT_PROGRAM_CHAIN_POLICIES_PROP_ID() {
-        return (int)105L;
-    }
-    public static int CERT_SMART_CARD_READER_NON_REMOVABLE_PROP_ID() {
-        return (int)106L;
-    }
-    public static int CERT_SHA256_HASH_PROP_ID() {
-        return (int)107L;
-    }
-    public static int CERT_SCEP_SERVER_CERTS_PROP_ID() {
-        return (int)108L;
-    }
-    public static int CERT_SCEP_RA_SIGNATURE_CERT_PROP_ID() {
-        return (int)109L;
-    }
-    public static int CERT_SCEP_RA_ENCRYPTION_CERT_PROP_ID() {
-        return (int)110L;
-    }
-    public static int CERT_SCEP_CA_CERT_PROP_ID() {
-        return (int)111L;
-    }
-    public static int CERT_SCEP_SIGNER_CERT_PROP_ID() {
-        return (int)112L;
-    }
-    public static int CERT_SCEP_NONCE_PROP_ID() {
-        return (int)113L;
-    }
-    public static int CERT_SCEP_ENCRYPT_HASH_CNG_ALG_PROP_ID() {
-        return (int)114L;
-    }
-    public static int CERT_SCEP_FLAGS_PROP_ID() {
-        return (int)115L;
-    }
-    public static int CERT_SCEP_GUID_PROP_ID() {
-        return (int)116L;
-    }
-    public static int CERT_SERIALIZABLE_KEY_CONTEXT_PROP_ID() {
-        return (int)117L;
-    }
-    public static int CERT_ISOLATED_KEY_PROP_ID() {
-        return (int)118L;
-    }
-    public static int CERT_SERIAL_CHAIN_PROP_ID() {
-        return (int)119L;
-    }
-    public static int CERT_KEY_CLASSIFICATION_PROP_ID() {
-        return (int)120L;
-    }
-    public static int CERT_OCSP_MUST_STAPLE_PROP_ID() {
-        return (int)121L;
-    }
-    public static int CERT_DISALLOWED_ENHKEY_USAGE_PROP_ID() {
-        return (int)122L;
-    }
-    public static int CERT_NONCOMPLIANT_ROOT_URL_PROP_ID() {
-        return (int)123L;
-    }
-    public static int CERT_PIN_SHA256_HASH_PROP_ID() {
-        return (int)124L;
-    }
-    public static int CERT_CLR_DELETE_KEY_PROP_ID() {
-        return (int)125L;
-    }
-    public static int CERT_NOT_BEFORE_FILETIME_PROP_ID() {
-        return (int)126L;
-    }
-    public static int CERT_NOT_BEFORE_ENHKEY_USAGE_PROP_ID() {
-        return (int)127L;
-    }
-    public static int CERT_FIRST_RESERVED_PROP_ID() {
-        return (int)128L;
-    }
-    public static int CERT_LAST_RESERVED_PROP_ID() {
-        return (int)32767L;
-    }
-    public static int CERT_FIRST_USER_PROP_ID() {
-        return (int)32768L;
-    }
-    public static int CERT_LAST_USER_PROP_ID() {
-        return (int)65535L;
-    }
-    public static int CERT_ACCESS_STATE_WRITE_PERSIST_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_ACCESS_STATE_SYSTEM_STORE_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_ACCESS_STATE_LM_SYSTEM_STORE_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_ACCESS_STATE_GP_SYSTEM_STORE_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_ACCESS_STATE_SHARED_USER_FLAG() {
-        return (int)16L;
-    }
-    public static int CERT_SET_KEY_PROV_HANDLE_PROP_ID() {
-        return (int)1L;
-    }
-    public static int CERT_SET_KEY_CONTEXT_PROP_ID() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_SIGNATURE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_TIME_VALIDITY_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_REVOCATION_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_STORE_NO_CRL_FLAG() {
-        return (int)65536L;
-    }
-    public static int CERT_STORE_NO_ISSUER_FLAG() {
-        return (int)131072L;
-    }
-    public static int CERT_STORE_BASE_CRL_FLAG() {
-        return (int)256L;
-    }
-    public static int CERT_STORE_DELTA_CRL_FLAG() {
-        return (int)512L;
-    }
-    public static int CERT_STORE_NO_CRYPT_RELEASE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_SET_LOCALIZED_NAME_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_DEFER_CLOSE_UNTIL_LAST_FREE_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_STORE_DELETE_FLAG() {
-        return (int)16L;
-    }
-    public static int CERT_STORE_UNSAFE_PHYSICAL_FLAG() {
-        return (int)32L;
-    }
-    public static int CERT_STORE_SHARE_STORE_FLAG() {
-        return (int)64L;
-    }
-    public static int CERT_STORE_SHARE_CONTEXT_FLAG() {
-        return (int)128L;
-    }
-    public static int CERT_STORE_MANIFOLD_FLAG() {
-        return (int)256L;
-    }
-    public static int CERT_STORE_ENUM_ARCHIVED_FLAG() {
-        return (int)512L;
-    }
-    public static int CERT_STORE_UPDATE_KEYID_FLAG() {
-        return (int)1024L;
-    }
-    public static int CERT_STORE_BACKUP_RESTORE_FLAG() {
-        return (int)2048L;
-    }
-    public static int CERT_STORE_READONLY_FLAG() {
-        return (int)32768L;
-    }
-    public static int CERT_STORE_OPEN_EXISTING_FLAG() {
-        return (int)16384L;
-    }
-    public static int CERT_STORE_CREATE_NEW_FLAG() {
-        return (int)8192L;
-    }
-    public static int CERT_STORE_MAXIMUM_ALLOWED_FLAG() {
-        return (int)4096L;
-    }
-    public static int CERT_SYSTEM_STORE_UNPROTECTED_FLAG() {
-        return (int)1073741824L;
-    }
-    public static int CERT_SYSTEM_STORE_DEFER_READ_FLAG() {
-        return (int)536870912L;
-    }
-    public static int CERT_SYSTEM_STORE_LOCATION_MASK() {
-        return (int)16711680L;
-    }
-    public static int CERT_SYSTEM_STORE_LOCATION_SHIFT() {
-        return (int)16L;
-    }
-    public static int CERT_SYSTEM_STORE_CURRENT_USER_ID() {
-        return (int)1L;
-    }
-    public static int CERT_SYSTEM_STORE_LOCAL_MACHINE_ID() {
-        return (int)2L;
-    }
-    public static int CERT_SYSTEM_STORE_CURRENT_SERVICE_ID() {
-        return (int)4L;
-    }
-    public static int CERT_SYSTEM_STORE_SERVICES_ID() {
-        return (int)5L;
-    }
-    public static int CERT_SYSTEM_STORE_USERS_ID() {
-        return (int)6L;
-    }
-    public static int CERT_SYSTEM_STORE_CURRENT_USER_GROUP_POLICY_ID() {
-        return (int)7L;
-    }
-    public static int CERT_SYSTEM_STORE_LOCAL_MACHINE_GROUP_POLICY_ID() {
-        return (int)8L;
-    }
-    public static int CERT_SYSTEM_STORE_LOCAL_MACHINE_ENTERPRISE_ID() {
-        return (int)9L;
-    }
-    public static int CERT_SYSTEM_STORE_LOCAL_MACHINE_WCOS_ID() {
-        return (int)10L;
-    }
-    public static int CERT_PROT_ROOT_DISABLE_CURRENT_USER_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_PROT_ROOT_INHIBIT_ADD_AT_INIT_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_PROT_ROOT_INHIBIT_PURGE_LM_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_PROT_ROOT_DISABLE_LM_AUTH_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_PROT_ROOT_ONLY_LM_GPT_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_PROT_ROOT_DISABLE_NT_AUTH_REQUIRED_FLAG() {
-        return (int)16L;
-    }
-    public static int CERT_PROT_ROOT_DISABLE_NOT_DEFINED_NAME_CONSTRAINT_FLAG() {
-        return (int)32L;
-    }
-    public static int CERT_PROT_ROOT_DISABLE_PEER_TRUST() {
-        return (int)65536L;
-    }
-    public static int CERT_TRUST_PUB_ALLOW_TRUST_MASK() {
-        return (int)3L;
-    }
-    public static int CERT_TRUST_PUB_ALLOW_END_USER_TRUST() {
-        return (int)0L;
-    }
-    public static int CERT_TRUST_PUB_ALLOW_MACHINE_ADMIN_TRUST() {
-        return (int)1L;
-    }
-    public static int CERT_TRUST_PUB_ALLOW_ENTERPRISE_ADMIN_TRUST() {
-        return (int)2L;
-    }
-    public static int CERT_TRUST_PUB_CHECK_PUBLISHER_REV_FLAG() {
-        return (int)256L;
-    }
-    public static int CERT_TRUST_PUB_CHECK_TIMESTAMP_REV_FLAG() {
-        return (int)512L;
-    }
-    public static int CERT_AUTH_ROOT_AUTO_UPDATE_DISABLE_UNTRUSTED_ROOT_LOGGING_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_AUTH_ROOT_AUTO_UPDATE_DISABLE_PARTIAL_CHAIN_LOGGING_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_AUTO_UPDATE_DISABLE_RANDOM_QUERY_STRING_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_REGISTRY_STORE_REMOTE_FLAG() {
-        return (int)65536L;
-    }
-    public static int CERT_REGISTRY_STORE_SERIALIZED_FLAG() {
-        return (int)131072L;
-    }
-    public static int CERT_REGISTRY_STORE_LM_GPT_FLAG() {
-        return (int)16777216L;
-    }
-    public static int CERT_REGISTRY_STORE_ROAMING_FLAG() {
-        return (int)262144L;
-    }
-    public static int CERT_REGISTRY_STORE_MY_IE_DIRTY_FLAG() {
-        return (int)524288L;
-    }
-    public static int CERT_REGISTRY_STORE_EXTERNAL_FLAG() {
-        return (int)1048576L;
-    }
-    public static int CERT_FILE_STORE_COMMIT_ENABLE_FLAG() {
-        return (int)65536L;
-    }
-    public static int CERT_LDAP_STORE_SIGN_FLAG() {
-        return (int)65536L;
-    }
-    public static int CERT_LDAP_STORE_AREC_EXCLUSIVE_FLAG() {
-        return (int)131072L;
-    }
-    public static int CERT_LDAP_STORE_OPENED_FLAG() {
-        return (int)262144L;
-    }
-    public static int CERT_LDAP_STORE_UNBIND_FLAG() {
-        return (int)524288L;
-    }
-    public static int CERT_STORE_PROV_EXTERNAL_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_PROV_DELETED_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_PROV_NO_PERSIST_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_STORE_PROV_SYSTEM_STORE_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_STORE_PROV_LM_SYSTEM_STORE_FLAG() {
-        return (int)16L;
-    }
-    public static int CERT_STORE_PROV_GP_SYSTEM_STORE_FLAG() {
-        return (int)32L;
-    }
-    public static int CERT_STORE_PROV_SHARED_USER_FLAG() {
-        return (int)64L;
-    }
-    public static int CERT_STORE_PROV_CLOSE_FUNC() {
-        return (int)0L;
-    }
-    public static int CERT_STORE_PROV_READ_CERT_FUNC() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_PROV_WRITE_CERT_FUNC() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_PROV_DELETE_CERT_FUNC() {
-        return (int)3L;
-    }
-    public static int CERT_STORE_PROV_SET_CERT_PROPERTY_FUNC() {
-        return (int)4L;
-    }
-    public static int CERT_STORE_PROV_READ_CRL_FUNC() {
-        return (int)5L;
-    }
-    public static int CERT_STORE_PROV_WRITE_CRL_FUNC() {
-        return (int)6L;
-    }
-    public static int CERT_STORE_PROV_DELETE_CRL_FUNC() {
-        return (int)7L;
-    }
-    public static int CERT_STORE_PROV_SET_CRL_PROPERTY_FUNC() {
-        return (int)8L;
-    }
-    public static int CERT_STORE_PROV_READ_CTL_FUNC() {
-        return (int)9L;
-    }
-    public static int CERT_STORE_PROV_WRITE_CTL_FUNC() {
-        return (int)10L;
-    }
-    public static int CERT_STORE_PROV_DELETE_CTL_FUNC() {
-        return (int)11L;
-    }
-    public static int CERT_STORE_PROV_SET_CTL_PROPERTY_FUNC() {
-        return (int)12L;
-    }
-    public static int CERT_STORE_PROV_CONTROL_FUNC() {
-        return (int)13L;
-    }
-    public static int CERT_STORE_PROV_FIND_CERT_FUNC() {
-        return (int)14L;
-    }
-    public static int CERT_STORE_PROV_FREE_FIND_CERT_FUNC() {
-        return (int)15L;
-    }
-    public static int CERT_STORE_PROV_GET_CERT_PROPERTY_FUNC() {
-        return (int)16L;
-    }
-    public static int CERT_STORE_PROV_FIND_CRL_FUNC() {
-        return (int)17L;
-    }
-    public static int CERT_STORE_PROV_FREE_FIND_CRL_FUNC() {
-        return (int)18L;
-    }
-    public static int CERT_STORE_PROV_GET_CRL_PROPERTY_FUNC() {
-        return (int)19L;
-    }
-    public static int CERT_STORE_PROV_FIND_CTL_FUNC() {
-        return (int)20L;
-    }
-    public static int CERT_STORE_PROV_FREE_FIND_CTL_FUNC() {
-        return (int)21L;
-    }
-    public static int CERT_STORE_PROV_GET_CTL_PROPERTY_FUNC() {
-        return (int)22L;
-    }
-    public static int CERT_STORE_PROV_WRITE_ADD_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_SAVE_AS_STORE() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_SAVE_AS_PKCS7() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_SAVE_AS_PKCS12() {
-        return (int)3L;
-    }
-    public static int CERT_STORE_SAVE_TO_FILE() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_SAVE_TO_MEMORY() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_SAVE_TO_FILENAME_A() {
-        return (int)3L;
-    }
-    public static int CERT_STORE_SAVE_TO_FILENAME_W() {
-        return (int)4L;
-    }
-    public static int CERT_CLOSE_STORE_FORCE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_CLOSE_STORE_CHECK_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_COMPARE_MASK() {
-        return (int)65535L;
-    }
-    public static int CERT_COMPARE_SHIFT() {
-        return (int)16L;
-    }
-    public static int CERT_COMPARE_ANY() {
-        return (int)0L;
-    }
-    public static int CERT_COMPARE_SHA1_HASH() {
-        return (int)1L;
-    }
-    public static int CERT_COMPARE_NAME() {
-        return (int)2L;
-    }
-    public static int CERT_COMPARE_ATTR() {
-        return (int)3L;
-    }
-    public static int CERT_COMPARE_MD5_HASH() {
-        return (int)4L;
-    }
-    public static int CERT_COMPARE_PROPERTY() {
-        return (int)5L;
-    }
-    public static int CERT_COMPARE_PUBLIC_KEY() {
-        return (int)6L;
-    }
-    public static int CERT_COMPARE_NAME_STR_A() {
-        return (int)7L;
-    }
-    public static int CERT_COMPARE_NAME_STR_W() {
-        return (int)8L;
-    }
-    public static int CERT_COMPARE_KEY_SPEC() {
-        return (int)9L;
-    }
-    public static int CERT_COMPARE_ENHKEY_USAGE() {
-        return (int)10L;
-    }
-    public static int CERT_COMPARE_SUBJECT_CERT() {
-        return (int)11L;
-    }
-    public static int CERT_COMPARE_ISSUER_OF() {
-        return (int)12L;
-    }
-    public static int CERT_COMPARE_EXISTING() {
-        return (int)13L;
-    }
-    public static int CERT_COMPARE_SIGNATURE_HASH() {
-        return (int)14L;
-    }
-    public static int CERT_COMPARE_KEY_IDENTIFIER() {
-        return (int)15L;
-    }
-    public static int CERT_COMPARE_CERT_ID() {
-        return (int)16L;
-    }
-    public static int CERT_COMPARE_CROSS_CERT_DIST_POINTS() {
-        return (int)17L;
-    }
-    public static int CERT_COMPARE_PUBKEY_MD5_HASH() {
-        return (int)18L;
-    }
-    public static int CERT_COMPARE_SUBJECT_INFO_ACCESS() {
-        return (int)19L;
-    }
-    public static int CERT_COMPARE_HASH_STR() {
-        return (int)20L;
-    }
-    public static int CERT_COMPARE_HAS_PRIVATE_KEY() {
-        return (int)21L;
-    }
-    public static int CERT_FIND_OPTIONAL_ENHKEY_USAGE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_FIND_EXT_ONLY_ENHKEY_USAGE_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_FIND_PROP_ONLY_ENHKEY_USAGE_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_FIND_NO_ENHKEY_USAGE_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_FIND_OR_ENHKEY_USAGE_FLAG() {
-        return (int)16L;
-    }
-    public static int CERT_FIND_VALID_ENHKEY_USAGE_FLAG() {
-        return (int)32L;
-    }
-    public static int CERT_SET_PROPERTY_INHIBIT_PERSIST_FLAG() {
-        return (int)1073741824L;
-    }
-    public static int CTL_ENTRY_FROM_PROP_CHAIN_FLAG() {
-        return (int)1L;
-    }
-    public static int CRL_FIND_ANY() {
-        return (int)0L;
-    }
-    public static int CRL_FIND_ISSUED_BY() {
-        return (int)1L;
-    }
-    public static int CRL_FIND_EXISTING() {
-        return (int)2L;
-    }
-    public static int CRL_FIND_ISSUED_FOR() {
-        return (int)3L;
-    }
-    public static int CRL_FIND_ISSUED_BY_AKI_FLAG() {
-        return (int)1L;
-    }
-    public static int CRL_FIND_ISSUED_BY_SIGNATURE_FLAG() {
-        return (int)2L;
-    }
-    public static int CRL_FIND_ISSUED_BY_DELTA_FLAG() {
-        return (int)4L;
-    }
-    public static int CRL_FIND_ISSUED_BY_BASE_FLAG() {
-        return (int)8L;
-    }
-    public static int CRL_FIND_ISSUED_FOR_SET_STRONG_PROPERTIES_FLAG() {
-        return (int)16L;
-    }
-    public static int CERT_STORE_ADD_NEW() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_ADD_USE_EXISTING() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_ADD_REPLACE_EXISTING() {
-        return (int)3L;
-    }
-    public static int CERT_STORE_ADD_ALWAYS() {
-        return (int)4L;
-    }
-    public static int CERT_STORE_ADD_REPLACE_EXISTING_INHERIT_PROPERTIES() {
-        return (int)5L;
-    }
-    public static int CERT_STORE_ADD_NEWER() {
-        return (int)6L;
-    }
-    public static int CERT_STORE_ADD_NEWER_INHERIT_PROPERTIES() {
-        return (int)7L;
-    }
-    public static int CERT_STORE_CERTIFICATE_CONTEXT() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_CRL_CONTEXT() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_CTL_CONTEXT() {
-        return (int)3L;
-    }
-    public static int CTL_ANY_SUBJECT_TYPE() {
-        return (int)1L;
-    }
-    public static int CTL_CERT_SUBJECT_TYPE() {
-        return (int)2L;
-    }
-    public static int CTL_FIND_ANY() {
-        return (int)0L;
-    }
-    public static int CTL_FIND_SHA1_HASH() {
-        return (int)1L;
-    }
-    public static int CTL_FIND_MD5_HASH() {
-        return (int)2L;
-    }
-    public static int CTL_FIND_USAGE() {
-        return (int)3L;
-    }
-    public static int CTL_FIND_SUBJECT() {
-        return (int)4L;
-    }
-    public static int CTL_FIND_EXISTING() {
-        return (int)5L;
-    }
-    public static int CTL_FIND_SAME_USAGE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_CTRL_RESYNC() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_CTRL_NOTIFY_CHANGE() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_CTRL_COMMIT() {
-        return (int)3L;
-    }
-    public static int CERT_STORE_CTRL_AUTO_RESYNC() {
-        return (int)4L;
-    }
-    public static int CERT_STORE_CTRL_CANCEL_NOTIFY() {
-        return (int)5L;
-    }
-    public static int CERT_STORE_CTRL_INHIBIT_DUPLICATE_HANDLE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_CTRL_COMMIT_FORCE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_STORE_CTRL_COMMIT_CLEAR_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_STORE_LOCALIZED_NAME_PROP_ID() {
-        return (int)4096L;
-    }
-    public static int CERT_CREATE_CONTEXT_NOCOPY_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_CREATE_CONTEXT_SORTED_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_CREATE_CONTEXT_NO_HCRYPTMSG_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_CREATE_CONTEXT_NO_ENTRY_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_PHYSICAL_STORE_ADD_ENABLE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_PHYSICAL_STORE_OPEN_DISABLE_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_PHYSICAL_STORE_REMOTE_OPEN_DISABLE_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_PHYSICAL_STORE_INSERT_COMPUTER_NAME_ENABLE_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_PHYSICAL_STORE_PREDEFINED_ENUM_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_TRUSTED_SIGNER_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_SIGNER_ONLY_FLAG() {
-        return (int)2L;
-    }
-    public static int CMSG_USE_SIGNER_INDEX_FLAG() {
-        return (int)4L;
-    }
-    public static int CMSG_CMS_ENCAPSULATED_CTL_FLAG() {
-        return (int)32768L;
-    }
-    public static int CMSG_ENCODE_SORTED_CTL_FLAG() {
-        return (int)1L;
-    }
-    public static int CMSG_ENCODE_HASHED_SUBJECT_IDENTIFIER_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_VERIFY_INHIBIT_CTL_UPDATE_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_VERIFY_TRUSTED_SIGNERS_FLAG() {
-        return (int)2L;
-    }
-    public static int CERT_VERIFY_NO_TIME_CHECK_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_VERIFY_ALLOW_MORE_USAGE_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_VERIFY_UPDATED_CTL_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_CONTEXT_REVOCATION_TYPE() {
-        return (int)1L;
-    }
-    public static int CERT_VERIFY_REV_CHAIN_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_VERIFY_CACHE_ONLY_BASED_REVOCATION() {
-        return (int)2L;
-    }
-    public static int CERT_VERIFY_REV_ACCUMULATIVE_TIMEOUT_FLAG() {
-        return (int)4L;
-    }
-    public static int CERT_VERIFY_REV_SERVER_OCSP_FLAG() {
-        return (int)8L;
-    }
-    public static int CERT_VERIFY_REV_NO_OCSP_FAILOVER_TO_CRL_FLAG() {
-        return (int)16L;
-    }
-    public static int CERT_VERIFY_REV_SERVER_OCSP_WIRE_ONLY_FLAG() {
-        return (int)32L;
-    }
-    public static int CERT_UNICODE_IS_RDN_ATTRS_FLAG() {
-        return (int)1L;
-    }
-    public static int CERT_CASE_INSENSITIVE_IS_RDN_ATTRS_FLAG() {
-        return (int)2L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_SUBJECT_BLOB() {
-        return (int)1L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_SUBJECT_CERT() {
-        return (int)2L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_SUBJECT_CRL() {
-        return (int)3L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_SUBJECT_OCSP_BASIC_SIGNED_RESPONSE() {
-        return (int)4L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_ISSUER_PUBKEY() {
-        return (int)1L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_ISSUER_CERT() {
-        return (int)2L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_ISSUER_CHAIN() {
-        return (int)3L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_ISSUER_NULL() {
-        return (int)4L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_DISABLE_MD2_MD4_FLAG() {
-        return (int)1L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_SET_STRONG_PROPERTIES_FLAG() {
-        return (int)2L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_RETURN_STRONG_PROPERTIES_FLAG() {
-        return (int)4L;
-    }
-    public static int CRYPT_VERIFY_CERT_SIGN_CHECK_WEAK_HASH_FLAG() {
-        return (int)8L;
-    }
-    public static int CRYPT_DEFAULT_CONTEXT_AUTO_RELEASE_FLAG() {
-        return (int)1L;
-    }
-    public static int CRYPT_DEFAULT_CONTEXT_PROCESS_FLAG() {
-        return (int)2L;
-    }
-    public static int CRYPT_DEFAULT_CONTEXT_CERT_SIGN_OID() {
-        return (int)1L;
-    }
-    public static int CRYPT_DEFAULT_CONTEXT_MULTI_CERT_SIGN_OID() {
-        return (int)2L;
-    }
-    public static int CRYPT_ACQUIRE_CACHE_FLAG() {
-        return (int)1L;
-    }
-    public static int CRYPT_ACQUIRE_USE_PROV_INFO_FLAG() {
-        return (int)2L;
-    }
-    public static int CRYPT_ACQUIRE_COMPARE_KEY_FLAG() {
-        return (int)4L;
-    }
-    public static int CRYPT_ACQUIRE_NO_HEALING() {
-        return (int)8L;
-    }
-    public static int CRYPT_ACQUIRE_SILENT_FLAG() {
-        return (int)64L;
-    }
-    public static int CRYPT_ACQUIRE_WINDOW_HANDLE_FLAG() {
-        return (int)128L;
-    }
-    public static int CRYPT_ACQUIRE_NCRYPT_KEY_FLAGS_MASK() {
-        return (int)458752L;
-    }
-    public static int CRYPT_ACQUIRE_ALLOW_NCRYPT_KEY_FLAG() {
-        return (int)65536L;
-    }
-    public static int CRYPT_ACQUIRE_PREFER_NCRYPT_KEY_FLAG() {
-        return (int)131072L;
-    }
-    public static int CRYPT_ACQUIRE_ONLY_NCRYPT_KEY_FLAG() {
-        return (int)262144L;
-    }
-    public static int CRYPT_FIND_USER_KEYSET_FLAG() {
-        return (int)1L;
-    }
-    public static int CRYPT_FIND_MACHINE_KEYSET_FLAG() {
-        return (int)2L;
-    }
-    public static int CRYPT_FIND_SILENT_KEYSET_FLAG() {
-        return (int)64L;
-    }
-    public static int CERT_SIMPLE_NAME_STR() {
-        return (int)1L;
-    }
-    public static int CERT_OID_NAME_STR() {
-        return (int)2L;
-    }
-    public static int CERT_X500_NAME_STR() {
-        return (int)3L;
-    }
-    public static int CERT_XML_NAME_STR() {
-        return (int)4L;
-    }
-    public static int CERT_NAME_STR_SEMICOLON_FLAG() {
-        return (int)1073741824L;
-    }
-    public static int CERT_NAME_STR_NO_PLUS_FLAG() {
-        return (int)536870912L;
     }
 }
 

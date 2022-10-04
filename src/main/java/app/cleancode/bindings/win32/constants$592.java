@@ -9,12 +9,37 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$592 {
 
-    static final MemorySegment szOID_RSA_MD4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.4");
-    static final MemorySegment szOID_RSA_MD5$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.5");
-    static final MemorySegment szOID_RSA_RC2CBC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3.2");
-    static final MemorySegment szOID_RSA_RC4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3.4");
-    static final MemorySegment szOID_RSA_DES_EDE3_CBC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3.7");
-    static final MemorySegment szOID_RSA_RC5_CBCPad$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3.9");
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_FIND_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_FIND_CRL$MH = RuntimeHelper.downcallHandle(
+        constants$592.PFN_CERT_STORE_PROV_FIND_CRL$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_FREE_FIND_CRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_FREE_FIND_CRL$MH = RuntimeHelper.downcallHandle(
+        constants$592.PFN_CERT_STORE_PROV_FREE_FIND_CRL$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_STORE_PROV_GET_CRL_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CERT_STORE_PROV_GET_CRL_PROPERTY$MH = RuntimeHelper.downcallHandle(
+        constants$592.PFN_CERT_STORE_PROV_GET_CRL_PROPERTY$FUNC
+    );
 }
 
 

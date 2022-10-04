@@ -9,12 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$598 {
 
-    static final MemorySegment szOID_ECC_CURVE_SECP160K1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.9");
-    static final MemorySegment szOID_ECC_CURVE_SECP160R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.8");
-    static final MemorySegment szOID_ECC_CURVE_SECP160R2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.30");
-    static final MemorySegment szOID_ECC_CURVE_SECP192K1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.31");
-    static final MemorySegment szOID_ECC_CURVE_SECP192R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.1");
-    static final MemorySegment szOID_ECC_CURVE_SECP224K1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.32");
+    static final FunctionDescriptor CertEnumCRLContextProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertEnumCRLContextProperties$MH = RuntimeHelper.downcallHandle(
+        "CertEnumCRLContextProperties",
+        constants$598.CertEnumCRLContextProperties$FUNC
+    );
+    static final FunctionDescriptor CertFindCertificateInCRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindCertificateInCRL$MH = RuntimeHelper.downcallHandle(
+        "CertFindCertificateInCRL",
+        constants$598.CertFindCertificateInCRL$FUNC
+    );
+    static final FunctionDescriptor CertIsValidCRLForCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertIsValidCRLForCertificate$MH = RuntimeHelper.downcallHandle(
+        "CertIsValidCRLForCertificate",
+        constants$598.CertIsValidCRLForCertificate$FUNC
+    );
+    static final FunctionDescriptor CertAddEncodedCertificateToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddEncodedCertificateToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddEncodedCertificateToStore",
+        constants$598.CertAddEncodedCertificateToStore$FUNC
+    );
+    static final FunctionDescriptor CertAddCertificateContextToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddCertificateContextToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddCertificateContextToStore",
+        constants$598.CertAddCertificateContextToStore$FUNC
+    );
+    static final FunctionDescriptor CertAddSerializedElementToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddSerializedElementToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddSerializedElementToStore",
+        constants$598.CertAddSerializedElementToStore$FUNC
+    );
 }
 
 

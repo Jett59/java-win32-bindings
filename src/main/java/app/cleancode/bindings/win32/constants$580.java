@@ -9,12 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$580 {
 
-    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft DH SChannel Cryptographic Provider");
-    static final MemorySegment MS_SCARD_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Smart Card Crypto Provider");
-    static final MemorySegment MS_SCARD_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_SCARD_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Smart Card Crypto Provider");
-    static final MemorySegment MS_ENH_RSA_AES_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider");
-    static final MemorySegment MS_ENH_RSA_AES_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final FunctionDescriptor CryptMsgControl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgControl$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgControl",
+        constants$580.CryptMsgControl$FUNC
+    );
+    static final FunctionDescriptor CryptMsgVerifyCountersignatureEncoded$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgVerifyCountersignatureEncoded$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgVerifyCountersignatureEncoded",
+        constants$580.CryptMsgVerifyCountersignatureEncoded$FUNC
+    );
+    static final FunctionDescriptor CryptMsgVerifyCountersignatureEncodedEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgVerifyCountersignatureEncodedEx$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgVerifyCountersignatureEncodedEx",
+        constants$580.CryptMsgVerifyCountersignatureEncodedEx$FUNC
+    );
+    static final FunctionDescriptor CryptMsgCountersign$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgCountersign$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgCountersign",
+        constants$580.CryptMsgCountersign$FUNC
+    );
+    static final FunctionDescriptor CryptMsgCountersignEncoded$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptMsgCountersignEncoded$MH = RuntimeHelper.downcallHandle(
+        "CryptMsgCountersignEncoded",
+        constants$580.CryptMsgCountersignEncoded$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_ALLOC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
 }
 
 

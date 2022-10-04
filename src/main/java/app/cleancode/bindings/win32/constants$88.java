@@ -9,55 +9,43 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$88 {
 
-    static final FunctionDescriptor WinExec$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor SetFileApisToANSI$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle SetFileApisToANSI$MH = RuntimeHelper.downcallHandle(
+        "SetFileApisToANSI",
+        constants$88.SetFileApisToANSI$FUNC
     );
-    static final MethodHandle WinExec$MH = RuntimeHelper.downcallHandle(
-        "WinExec",
-        constants$88.WinExec$FUNC
+    static final FunctionDescriptor IsDebuggerPresent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle IsDebuggerPresent$MH = RuntimeHelper.downcallHandle(
+        "IsDebuggerPresent",
+        constants$88.IsDebuggerPresent$FUNC
     );
-    static final FunctionDescriptor ClearCommBreak$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DebugBreak$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle DebugBreak$MH = RuntimeHelper.downcallHandle(
+        "DebugBreak",
+        constants$88.DebugBreak$FUNC
+    );
+    static final FunctionDescriptor OutputDebugStringA$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ClearCommBreak$MH = RuntimeHelper.downcallHandle(
-        "ClearCommBreak",
-        constants$88.ClearCommBreak$FUNC
+    static final MethodHandle OutputDebugStringA$MH = RuntimeHelper.downcallHandle(
+        "OutputDebugStringA",
+        constants$88.OutputDebugStringA$FUNC
     );
-    static final FunctionDescriptor ClearCommError$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor OutputDebugStringW$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ClearCommError$MH = RuntimeHelper.downcallHandle(
-        "ClearCommError",
-        constants$88.ClearCommError$FUNC
+    static final MethodHandle OutputDebugStringW$MH = RuntimeHelper.downcallHandle(
+        "OutputDebugStringW",
+        constants$88.OutputDebugStringW$FUNC
     );
-    static final FunctionDescriptor SetupComm$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ContinueDebugEvent$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetupComm$MH = RuntimeHelper.downcallHandle(
-        "SetupComm",
-        constants$88.SetupComm$FUNC
-    );
-    static final FunctionDescriptor EscapeCommFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EscapeCommFunction$MH = RuntimeHelper.downcallHandle(
-        "EscapeCommFunction",
-        constants$88.EscapeCommFunction$FUNC
-    );
-    static final FunctionDescriptor GetCommConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCommConfig$MH = RuntimeHelper.downcallHandle(
-        "GetCommConfig",
-        constants$88.GetCommConfig$FUNC
+    static final MethodHandle ContinueDebugEvent$MH = RuntimeHelper.downcallHandle(
+        "ContinueDebugEvent",
+        constants$88.ContinueDebugEvent$FUNC
     );
 }
 

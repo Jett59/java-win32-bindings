@@ -9,58 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$111 {
 
-    static final FunctionDescriptor WriteProfileStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor InitializeSListHead$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle InitializeSListHead$MH = RuntimeHelper.downcallHandle(
+        "InitializeSListHead",
+        constants$111.InitializeSListHead$FUNC
+    );
+    static final FunctionDescriptor InterlockedPopEntrySList$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle InterlockedPopEntrySList$MH = RuntimeHelper.downcallHandle(
+        "InterlockedPopEntrySList",
+        constants$111.InterlockedPopEntrySList$FUNC
+    );
+    static final FunctionDescriptor InterlockedPushEntrySList$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WriteProfileStringW$MH = RuntimeHelper.downcallHandle(
-        "WriteProfileStringW",
-        constants$111.WriteProfileStringW$FUNC
+    static final MethodHandle InterlockedPushEntrySList$MH = RuntimeHelper.downcallHandle(
+        "InterlockedPushEntrySList",
+        constants$111.InterlockedPushEntrySList$FUNC
     );
-    static final FunctionDescriptor GetProfileSectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InterlockedPushListSListEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetProfileSectionA$MH = RuntimeHelper.downcallHandle(
-        "GetProfileSectionA",
-        constants$111.GetProfileSectionA$FUNC
+    static final MethodHandle InterlockedPushListSListEx$MH = RuntimeHelper.downcallHandle(
+        "InterlockedPushListSListEx",
+        constants$111.InterlockedPushListSListEx$FUNC
     );
-    static final FunctionDescriptor GetProfileSectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetProfileSectionW$MH = RuntimeHelper.downcallHandle(
-        "GetProfileSectionW",
-        constants$111.GetProfileSectionW$FUNC
-    );
-    static final FunctionDescriptor WriteProfileSectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor InterlockedFlushSList$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WriteProfileSectionA$MH = RuntimeHelper.downcallHandle(
-        "WriteProfileSectionA",
-        constants$111.WriteProfileSectionA$FUNC
+    static final MethodHandle InterlockedFlushSList$MH = RuntimeHelper.downcallHandle(
+        "InterlockedFlushSList",
+        constants$111.InterlockedFlushSList$FUNC
     );
-    static final FunctionDescriptor WriteProfileSectionW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor QueryDepthSList$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WriteProfileSectionW$MH = RuntimeHelper.downcallHandle(
-        "WriteProfileSectionW",
-        constants$111.WriteProfileSectionW$FUNC
-    );
-    static final FunctionDescriptor GetPrivateProfileIntA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrivateProfileIntA$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileIntA",
-        constants$111.GetPrivateProfileIntA$FUNC
+    static final MethodHandle QueryDepthSList$MH = RuntimeHelper.downcallHandle(
+        "QueryDepthSList",
+        constants$111.QueryDepthSList$FUNC
     );
 }
 

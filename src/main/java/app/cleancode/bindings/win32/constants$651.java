@@ -9,12 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$651 {
 
-    static final MemorySegment szOID_APPLICATION_CERT_POLICIES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.10");
-    static final MemorySegment szOID_APPLICATION_POLICY_MAPPINGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.11");
-    static final MemorySegment szOID_APPLICATION_POLICY_CONSTRAINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.12");
-    static final MemorySegment szOID_ARCHIVED_KEY_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.13");
-    static final MemorySegment szOID_CRL_SELF_CDP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.14");
-    static final MemorySegment szOID_REQUIRE_CERT_CHAIN_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.15");
+    static final FunctionDescriptor SCardSetCardTypeProviderNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardSetCardTypeProviderNameA$MH = RuntimeHelper.downcallHandle(
+        "SCardSetCardTypeProviderNameA",
+        constants$651.SCardSetCardTypeProviderNameA$FUNC
+    );
+    static final FunctionDescriptor SCardSetCardTypeProviderNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardSetCardTypeProviderNameW$MH = RuntimeHelper.downcallHandle(
+        "SCardSetCardTypeProviderNameW",
+        constants$651.SCardSetCardTypeProviderNameW$FUNC
+    );
+    static final FunctionDescriptor SCardForgetCardTypeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardForgetCardTypeA$MH = RuntimeHelper.downcallHandle(
+        "SCardForgetCardTypeA",
+        constants$651.SCardForgetCardTypeA$FUNC
+    );
+    static final FunctionDescriptor SCardForgetCardTypeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardForgetCardTypeW$MH = RuntimeHelper.downcallHandle(
+        "SCardForgetCardTypeW",
+        constants$651.SCardForgetCardTypeW$FUNC
+    );
+    static final FunctionDescriptor SCardFreeMemory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardFreeMemory$MH = RuntimeHelper.downcallHandle(
+        "SCardFreeMemory",
+        constants$651.SCardFreeMemory$FUNC
+    );
+    static final FunctionDescriptor SCardAccessStartedEvent$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle SCardAccessStartedEvent$MH = RuntimeHelper.downcallHandle(
+        "SCardAccessStartedEvent",
+        constants$651.SCardAccessStartedEvent$FUNC
+    );
 }
 
 

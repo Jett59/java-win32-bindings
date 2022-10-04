@@ -9,52 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$165 {
 
-    static final FunctionDescriptor CreateICW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetTokenInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateICW$MH = RuntimeHelper.downcallHandle(
-        "CreateICW",
-        constants$165.CreateICW$FUNC
-    );
-    static final FunctionDescriptor CreateMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateMetaFileA$MH = RuntimeHelper.downcallHandle(
-        "CreateMetaFileA",
-        constants$165.CreateMetaFileA$FUNC
-    );
-    static final FunctionDescriptor CreateMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateMetaFileW$MH = RuntimeHelper.downcallHandle(
-        "CreateMetaFileW",
-        constants$165.CreateMetaFileW$FUNC
-    );
-    static final FunctionDescriptor CreatePalette$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreatePalette$MH = RuntimeHelper.downcallHandle(
-        "CreatePalette",
-        constants$165.CreatePalette$FUNC
-    );
-    static final FunctionDescriptor CreatePen$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTokenInformation$MH = RuntimeHelper.downcallHandle(
+        "GetTokenInformation",
+        constants$165.GetTokenInformation$FUNC
+    );
+    static final FunctionDescriptor GetWindowsAccountDomainSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetWindowsAccountDomainSid$MH = RuntimeHelper.downcallHandle(
+        "GetWindowsAccountDomainSid",
+        constants$165.GetWindowsAccountDomainSid$FUNC
+    );
+    static final FunctionDescriptor ImpersonateAnonymousToken$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ImpersonateAnonymousToken$MH = RuntimeHelper.downcallHandle(
+        "ImpersonateAnonymousToken",
+        constants$165.ImpersonateAnonymousToken$FUNC
+    );
+    static final FunctionDescriptor ImpersonateLoggedOnUser$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ImpersonateLoggedOnUser$MH = RuntimeHelper.downcallHandle(
+        "ImpersonateLoggedOnUser",
+        constants$165.ImpersonateLoggedOnUser$FUNC
+    );
+    static final FunctionDescriptor ImpersonateSelf$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ImpersonateSelf$MH = RuntimeHelper.downcallHandle(
+        "ImpersonateSelf",
+        constants$165.ImpersonateSelf$FUNC
+    );
+    static final FunctionDescriptor InitializeAcl$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CreatePen$MH = RuntimeHelper.downcallHandle(
-        "CreatePen",
-        constants$165.CreatePen$FUNC
-    );
-    static final FunctionDescriptor CreatePenIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreatePenIndirect$MH = RuntimeHelper.downcallHandle(
-        "CreatePenIndirect",
-        constants$165.CreatePenIndirect$FUNC
+    static final MethodHandle InitializeAcl$MH = RuntimeHelper.downcallHandle(
+        "InitializeAcl",
+        constants$165.InitializeAcl$FUNC
     );
 }
 

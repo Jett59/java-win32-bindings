@@ -9,74 +9,76 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$160 {
 
-    static final FunctionDescriptor AddFontResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreatePrivateObjectSecurityEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddFontResourceW$MH = RuntimeHelper.downcallHandle(
-        "AddFontResourceW",
-        constants$160.AddFontResourceW$FUNC
+    static final MethodHandle CreatePrivateObjectSecurityEx$MH = RuntimeHelper.downcallHandle(
+        "CreatePrivateObjectSecurityEx",
+        constants$160.CreatePrivateObjectSecurityEx$FUNC
     );
-    static final FunctionDescriptor AnimatePalette$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreatePrivateObjectSecurityWithMultipleInheritance$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AnimatePalette$MH = RuntimeHelper.downcallHandle(
-        "AnimatePalette",
-        constants$160.AnimatePalette$FUNC
+    static final MethodHandle CreatePrivateObjectSecurityWithMultipleInheritance$MH = RuntimeHelper.downcallHandle(
+        "CreatePrivateObjectSecurityWithMultipleInheritance",
+        constants$160.CreatePrivateObjectSecurityWithMultipleInheritance$FUNC
     );
-    static final FunctionDescriptor Arc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateRestrictedToken$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle Arc$MH = RuntimeHelper.downcallHandle(
-        "Arc",
-        constants$160.Arc$FUNC
-    );
-    static final FunctionDescriptor BitBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle BitBlt$MH = RuntimeHelper.downcallHandle(
-        "BitBlt",
-        constants$160.BitBlt$FUNC
-    );
-    static final FunctionDescriptor CancelDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CancelDC$MH = RuntimeHelper.downcallHandle(
-        "CancelDC",
-        constants$160.CancelDC$FUNC
+    static final MethodHandle CreateRestrictedToken$MH = RuntimeHelper.downcallHandle(
+        "CreateRestrictedToken",
+        constants$160.CreateRestrictedToken$FUNC
     );
-    static final FunctionDescriptor Chord$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateWellKnownSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateWellKnownSid$MH = RuntimeHelper.downcallHandle(
+        "CreateWellKnownSid",
+        constants$160.CreateWellKnownSid$FUNC
+    );
+    static final FunctionDescriptor EqualDomainSid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EqualDomainSid$MH = RuntimeHelper.downcallHandle(
+        "EqualDomainSid",
+        constants$160.EqualDomainSid$FUNC
+    );
+    static final FunctionDescriptor DeleteAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle Chord$MH = RuntimeHelper.downcallHandle(
-        "Chord",
-        constants$160.Chord$FUNC
+    static final MethodHandle DeleteAce$MH = RuntimeHelper.downcallHandle(
+        "DeleteAce",
+        constants$160.DeleteAce$FUNC
     );
 }
 

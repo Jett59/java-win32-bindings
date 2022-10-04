@@ -9,12 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$689 {
 
-    static final MemorySegment CMSG_OID_CNG_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGExportKeyTrans");
-    static final MemorySegment CMSG_OID_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyAgree");
-    static final MemorySegment CMSG_OID_CAPI1_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyAgree");
-    static final MemorySegment CMSG_OID_CNG_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGExportKeyAgree");
-    static final MemorySegment CMSG_OID_EXPORT_MAIL_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportMailList");
-    static final MemorySegment CMSG_OID_CAPI1_EXPORT_MAIL_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportMailList");
+    static final FunctionDescriptor CoIncrementMTAUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoIncrementMTAUsage$MH = RuntimeHelper.downcallHandle(
+        "CoIncrementMTAUsage",
+        constants$689.CoIncrementMTAUsage$FUNC
+    );
+    static final FunctionDescriptor CoDecrementMTAUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoDecrementMTAUsage$MH = RuntimeHelper.downcallHandle(
+        "CoDecrementMTAUsage",
+        constants$689.CoDecrementMTAUsage$FUNC
+    );
+    static final FunctionDescriptor CoAllowUnmarshalerCLSID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoAllowUnmarshalerCLSID$MH = RuntimeHelper.downcallHandle(
+        "CoAllowUnmarshalerCLSID",
+        constants$689.CoAllowUnmarshalerCLSID$FUNC
+    );
+    static final FunctionDescriptor CoGetObjectContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetObjectContext$MH = RuntimeHelper.downcallHandle(
+        "CoGetObjectContext",
+        constants$689.CoGetObjectContext$FUNC
+    );
+    static final FunctionDescriptor CoGetClassObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoGetClassObject$MH = RuntimeHelper.downcallHandle(
+        "CoGetClassObject",
+        constants$689.CoGetClassObject$FUNC
+    );
+    static final FunctionDescriptor CoRegisterClassObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoRegisterClassObject$MH = RuntimeHelper.downcallHandle(
+        "CoRegisterClassObject",
+        constants$689.CoRegisterClassObject$FUNC
+    );
 }
 
 

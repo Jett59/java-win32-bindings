@@ -9,73 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$386 {
 
-    static final FunctionDescriptor RegEnumKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor ReleaseCapture$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle ReleaseCapture$MH = RuntimeHelper.downcallHandle(
+        "ReleaseCapture",
+        constants$386.ReleaseCapture$FUNC
+    );
+    static final FunctionDescriptor MsgWaitForMultipleObjects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegEnumKeyExW$MH = RuntimeHelper.downcallHandle(
-        "RegEnumKeyExW",
-        constants$386.RegEnumKeyExW$FUNC
+    static final MethodHandle MsgWaitForMultipleObjects$MH = RuntimeHelper.downcallHandle(
+        "MsgWaitForMultipleObjects",
+        constants$386.MsgWaitForMultipleObjects$FUNC
     );
-    static final FunctionDescriptor RegEnumValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor MsgWaitForMultipleObjectsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle MsgWaitForMultipleObjectsEx$MH = RuntimeHelper.downcallHandle(
+        "MsgWaitForMultipleObjectsEx",
+        constants$386.MsgWaitForMultipleObjectsEx$FUNC
+    );
+    static final FunctionDescriptor SetTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegEnumValueA$MH = RuntimeHelper.downcallHandle(
-        "RegEnumValueA",
-        constants$386.RegEnumValueA$FUNC
+    static final MethodHandle SetTimer$MH = RuntimeHelper.downcallHandle(
+        "SetTimer",
+        constants$386.SetTimer$FUNC
     );
-    static final FunctionDescriptor RegEnumValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetCoalescableTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegEnumValueW$MH = RuntimeHelper.downcallHandle(
-        "RegEnumValueW",
-        constants$386.RegEnumValueW$FUNC
+    static final MethodHandle SetCoalescableTimer$MH = RuntimeHelper.downcallHandle(
+        "SetCoalescableTimer",
+        constants$386.SetCoalescableTimer$FUNC
     );
-    static final FunctionDescriptor RegFlushKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegFlushKey$MH = RuntimeHelper.downcallHandle(
-        "RegFlushKey",
-        constants$386.RegFlushKey$FUNC
-    );
-    static final FunctionDescriptor RegGetKeySecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor KillTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle RegGetKeySecurity$MH = RuntimeHelper.downcallHandle(
-        "RegGetKeySecurity",
-        constants$386.RegGetKeySecurity$FUNC
-    );
-    static final FunctionDescriptor RegLoadKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegLoadKeyA$MH = RuntimeHelper.downcallHandle(
-        "RegLoadKeyA",
-        constants$386.RegLoadKeyA$FUNC
+    static final MethodHandle KillTimer$MH = RuntimeHelper.downcallHandle(
+        "KillTimer",
+        constants$386.KillTimer$FUNC
     );
 }
 

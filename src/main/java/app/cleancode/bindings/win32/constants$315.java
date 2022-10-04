@@ -9,57 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$315 {
 
-    static final FunctionDescriptor EqualRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor Polygon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EqualRect$MH = RuntimeHelper.downcallHandle(
-        "EqualRect",
-        constants$315.EqualRect$FUNC
-    );
-    static final FunctionDescriptor PtInRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT")
-    );
-    static final MethodHandle PtInRect$MH = RuntimeHelper.downcallHandle(
-        "PtInRect",
-        constants$315.PtInRect$FUNC
-    );
-    static final FunctionDescriptor GetWindowWord$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetWindowWord$MH = RuntimeHelper.downcallHandle(
-        "GetWindowWord",
-        constants$315.GetWindowWord$FUNC
+    static final MethodHandle Polygon$MH = RuntimeHelper.downcallHandle(
+        "Polygon",
+        constants$315.Polygon$FUNC
     );
-    static final FunctionDescriptor SetWindowWord$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor Polyline$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle Polyline$MH = RuntimeHelper.downcallHandle(
+        "Polyline",
+        constants$315.Polyline$FUNC
+    );
+    static final FunctionDescriptor PolyBezier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PolyBezier$MH = RuntimeHelper.downcallHandle(
+        "PolyBezier",
+        constants$315.PolyBezier$FUNC
+    );
+    static final FunctionDescriptor PolyBezierTo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PolyBezierTo$MH = RuntimeHelper.downcallHandle(
+        "PolyBezierTo",
+        constants$315.PolyBezierTo$FUNC
+    );
+    static final FunctionDescriptor PolylineTo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PolylineTo$MH = RuntimeHelper.downcallHandle(
+        "PolylineTo",
+        constants$315.PolylineTo$FUNC
+    );
+    static final FunctionDescriptor SetViewportExtEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetWindowWord$MH = RuntimeHelper.downcallHandle(
-        "SetWindowWord",
-        constants$315.SetWindowWord$FUNC
-    );
-    static final FunctionDescriptor GetWindowLongA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetWindowLongA$MH = RuntimeHelper.downcallHandle(
-        "GetWindowLongA",
-        constants$315.GetWindowLongA$FUNC
-    );
-    static final FunctionDescriptor GetWindowLongW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetWindowLongW$MH = RuntimeHelper.downcallHandle(
-        "GetWindowLongW",
-        constants$315.GetWindowLongW$FUNC
+    static final MethodHandle SetViewportExtEx$MH = RuntimeHelper.downcallHandle(
+        "SetViewportExtEx",
+        constants$315.SetViewportExtEx$FUNC
     );
 }
 

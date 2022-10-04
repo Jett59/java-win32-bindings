@@ -9,53 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$318 {
 
-    static final FunctionDescriptor GetClassLongPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetClassLongPtrA$MH = RuntimeHelper.downcallHandle(
-        "GetClassLongPtrA",
-        constants$318.GetClassLongPtrA$FUNC
-    );
-    static final FunctionDescriptor GetClassLongPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetClassLongPtrW$MH = RuntimeHelper.downcallHandle(
-        "GetClassLongPtrW",
-        constants$318.GetClassLongPtrW$FUNC
-    );
-    static final FunctionDescriptor SetClassLongPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor GetKerningPairsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SetClassLongPtrA$MH = RuntimeHelper.downcallHandle(
-        "SetClassLongPtrA",
-        constants$318.SetClassLongPtrA$FUNC
-    );
-    static final FunctionDescriptor SetClassLongPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SetClassLongPtrW$MH = RuntimeHelper.downcallHandle(
-        "SetClassLongPtrW",
-        constants$318.SetClassLongPtrW$FUNC
-    );
-    static final FunctionDescriptor GetProcessDefaultLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetProcessDefaultLayout$MH = RuntimeHelper.downcallHandle(
-        "GetProcessDefaultLayout",
-        constants$318.GetProcessDefaultLayout$FUNC
+    static final MethodHandle GetKerningPairsW$MH = RuntimeHelper.downcallHandle(
+        "GetKerningPairsW",
+        constants$318.GetKerningPairsW$FUNC
     );
-    static final FunctionDescriptor SetProcessDefaultLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDCOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDCOrgEx$MH = RuntimeHelper.downcallHandle(
+        "GetDCOrgEx",
+        constants$318.GetDCOrgEx$FUNC
+    );
+    static final FunctionDescriptor FixBrushOrgEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FixBrushOrgEx$MH = RuntimeHelper.downcallHandle(
+        "FixBrushOrgEx",
+        constants$318.FixBrushOrgEx$FUNC
+    );
+    static final FunctionDescriptor UnrealizeObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UnrealizeObject$MH = RuntimeHelper.downcallHandle(
+        "UnrealizeObject",
+        constants$318.UnrealizeObject$FUNC
+    );
+    static final FunctionDescriptor GdiFlush$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GdiFlush$MH = RuntimeHelper.downcallHandle(
+        "GdiFlush",
+        constants$318.GdiFlush$FUNC
+    );
+    static final FunctionDescriptor GdiSetBatchLimit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetProcessDefaultLayout$MH = RuntimeHelper.downcallHandle(
-        "SetProcessDefaultLayout",
-        constants$318.SetProcessDefaultLayout$FUNC
+    static final MethodHandle GdiSetBatchLimit$MH = RuntimeHelper.downcallHandle(
+        "GdiSetBatchLimit",
+        constants$318.GdiSetBatchLimit$FUNC
     );
 }
 

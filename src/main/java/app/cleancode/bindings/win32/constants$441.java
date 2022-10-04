@@ -9,43 +9,51 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$441 {
 
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FIND_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMonitorInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_FIND_CTL$MH = RuntimeHelper.downcallHandle(
-        constants$441.PFN_CERT_STORE_PROV_FIND_CTL$FUNC
+    static final MethodHandle GetMonitorInfoW$MH = RuntimeHelper.downcallHandle(
+        "GetMonitorInfoW",
+        constants$441.GetMonitorInfoW$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_FREE_FIND_CTL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MONITORENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle MONITORENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$441.MONITORENUMPROC$FUNC
+    );
+    static final FunctionDescriptor EnumDisplayMonitors$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumDisplayMonitors$MH = RuntimeHelper.downcallHandle(
+        "EnumDisplayMonitors",
+        constants$441.EnumDisplayMonitors$FUNC
+    );
+    static final FunctionDescriptor NotifyWinEvent$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_STORE_PROV_FREE_FIND_CTL$MH = RuntimeHelper.downcallHandle(
-        constants$441.PFN_CERT_STORE_PROV_FREE_FIND_CTL$FUNC
+    static final MethodHandle NotifyWinEvent$MH = RuntimeHelper.downcallHandle(
+        "NotifyWinEvent",
+        constants$441.NotifyWinEvent$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_STORE_PROV_GET_CTL_PROPERTY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WINEVENTPROC$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PFN_CERT_STORE_PROV_GET_CTL_PROPERTY$MH = RuntimeHelper.downcallHandle(
-        constants$441.PFN_CERT_STORE_PROV_GET_CTL_PROPERTY$FUNC
-    );
-    static final FunctionDescriptor CertDuplicateStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertDuplicateStore$MH = RuntimeHelper.downcallHandle(
-        "CertDuplicateStore",
-        constants$441.CertDuplicateStore$FUNC
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
 }
 

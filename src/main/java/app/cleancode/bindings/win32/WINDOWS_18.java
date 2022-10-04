@@ -9,3005 +9,4601 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_18 extends WINDOWS_17 {
 
-    public static int ERROR_THREAD_MODE_NOT_BACKGROUND() {
-        return (int)401L;
-    }
-    public static int ERROR_PROCESS_MODE_ALREADY_BACKGROUND() {
-        return (int)402L;
-    }
-    public static int ERROR_PROCESS_MODE_NOT_BACKGROUND() {
-        return (int)403L;
-    }
-    public static int ERROR_CLOUD_FILE_PROVIDER_TERMINATED() {
-        return (int)404L;
-    }
-    public static int ERROR_NOT_A_CLOUD_SYNC_ROOT() {
-        return (int)405L;
-    }
-    public static int ERROR_FILE_PROTECTED_UNDER_DPL() {
-        return (int)406L;
-    }
-    public static int ERROR_VOLUME_NOT_CLUSTER_ALIGNED() {
-        return (int)407L;
-    }
-    public static int ERROR_NO_PHYSICALLY_ALIGNED_FREE_SPACE_FOUND() {
-        return (int)408L;
-    }
-    public static int ERROR_APPX_FILE_NOT_ENCRYPTED() {
-        return (int)409L;
-    }
-    public static int ERROR_RWRAW_ENCRYPTED_FILE_NOT_ENCRYPTED() {
-        return (int)410L;
-    }
-    public static int ERROR_RWRAW_ENCRYPTED_INVALID_EDATAINFO_FILEOFFSET() {
-        return (int)411L;
-    }
-    public static int ERROR_RWRAW_ENCRYPTED_INVALID_EDATAINFO_FILERANGE() {
-        return (int)412L;
-    }
-    public static int ERROR_RWRAW_ENCRYPTED_INVALID_EDATAINFO_PARAMETER() {
-        return (int)413L;
-    }
-    public static int ERROR_LINUX_SUBSYSTEM_NOT_PRESENT() {
-        return (int)414L;
-    }
-    public static int ERROR_FT_READ_FAILURE() {
-        return (int)415L;
-    }
-    public static int ERROR_STORAGE_RESERVE_ID_INVALID() {
-        return (int)416L;
-    }
-    public static int ERROR_STORAGE_RESERVE_DOES_NOT_EXIST() {
-        return (int)417L;
-    }
-    public static int ERROR_STORAGE_RESERVE_ALREADY_EXISTS() {
-        return (int)418L;
-    }
-    public static int ERROR_STORAGE_RESERVE_NOT_EMPTY() {
-        return (int)419L;
-    }
-    public static int ERROR_NOT_A_DAX_VOLUME() {
-        return (int)420L;
-    }
-    public static int ERROR_NOT_DAX_MAPPABLE() {
-        return (int)421L;
-    }
-    public static int ERROR_TIME_SENSITIVE_THREAD() {
-        return (int)422L;
-    }
-    public static int ERROR_DPL_NOT_SUPPORTED_FOR_USER() {
-        return (int)423L;
-    }
-    public static int ERROR_CASE_DIFFERING_NAMES_IN_DIR() {
-        return (int)424L;
-    }
-    public static int ERROR_FILE_NOT_SUPPORTED() {
-        return (int)425L;
-    }
-    public static int ERROR_CLOUD_FILE_REQUEST_TIMEOUT() {
-        return (int)426L;
-    }
-    public static int ERROR_NO_TASK_QUEUE() {
-        return (int)427L;
-    }
-    public static int ERROR_SRC_SRV_DLL_LOAD_FAILED() {
-        return (int)428L;
-    }
-    public static int ERROR_NOT_SUPPORTED_WITH_BTT() {
-        return (int)429L;
-    }
-    public static int ERROR_ENCRYPTION_DISABLED() {
-        return (int)430L;
-    }
-    public static int ERROR_ENCRYPTING_METADATA_DISALLOWED() {
-        return (int)431L;
-    }
-    public static int ERROR_CANT_CLEAR_ENCRYPTION_FLAG() {
-        return (int)432L;
-    }
-    public static int ERROR_NO_SUCH_DEVICE() {
-        return (int)433L;
-    }
-    public static int ERROR_CLOUD_FILE_DEHYDRATION_DISALLOWED() {
-        return (int)434L;
-    }
-    public static int ERROR_FILE_SNAP_IN_PROGRESS() {
-        return (int)435L;
-    }
-    public static int ERROR_FILE_SNAP_USER_SECTION_NOT_SUPPORTED() {
-        return (int)436L;
-    }
-    public static int ERROR_FILE_SNAP_MODIFY_NOT_SUPPORTED() {
-        return (int)437L;
-    }
-    public static int ERROR_FILE_SNAP_IO_NOT_COORDINATED() {
-        return (int)438L;
-    }
-    public static int ERROR_FILE_SNAP_UNEXPECTED_ERROR() {
-        return (int)439L;
-    }
-    public static int ERROR_FILE_SNAP_INVALID_PARAMETER() {
-        return (int)440L;
-    }
-    public static int ERROR_UNSATISFIED_DEPENDENCIES() {
-        return (int)441L;
-    }
-    public static int ERROR_CASE_SENSITIVE_PATH() {
-        return (int)442L;
-    }
-    public static int ERROR_UNEXPECTED_NTCACHEMANAGER_ERROR() {
-        return (int)443L;
-    }
-    public static int ERROR_LINUX_SUBSYSTEM_UPDATE_REQUIRED() {
-        return (int)444L;
-    }
-    public static int ERROR_DLP_POLICY_WARNS_AGAINST_OPERATION() {
-        return (int)445L;
-    }
-    public static int ERROR_DLP_POLICY_DENIES_OPERATION() {
-        return (int)446L;
-    }
-    public static int ERROR_DLP_POLICY_SILENTLY_FAIL() {
-        return (int)449L;
-    }
-    public static int ERROR_CAPAUTHZ_NOT_DEVUNLOCKED() {
-        return (int)450L;
-    }
-    public static int ERROR_CAPAUTHZ_CHANGE_TYPE() {
-        return (int)451L;
-    }
-    public static int ERROR_CAPAUTHZ_NOT_PROVISIONED() {
-        return (int)452L;
-    }
-    public static int ERROR_CAPAUTHZ_NOT_AUTHORIZED() {
-        return (int)453L;
-    }
-    public static int ERROR_CAPAUTHZ_NO_POLICY() {
-        return (int)454L;
-    }
-    public static int ERROR_CAPAUTHZ_DB_CORRUPTED() {
-        return (int)455L;
-    }
-    public static int ERROR_CAPAUTHZ_SCCD_INVALID_CATALOG() {
-        return (int)456L;
-    }
-    public static int ERROR_CAPAUTHZ_SCCD_NO_AUTH_ENTITY() {
-        return (int)457L;
-    }
-    public static int ERROR_CAPAUTHZ_SCCD_PARSE_ERROR() {
-        return (int)458L;
-    }
-    public static int ERROR_CAPAUTHZ_SCCD_DEV_MODE_REQUIRED() {
-        return (int)459L;
-    }
-    public static int ERROR_CAPAUTHZ_SCCD_NO_CAPABILITY_MATCH() {
-        return (int)460L;
-    }
-    public static int ERROR_CIMFS_IMAGE_CORRUPT() {
-        return (int)470L;
-    }
-    public static int ERROR_PNP_QUERY_REMOVE_DEVICE_TIMEOUT() {
-        return (int)480L;
-    }
-    public static int ERROR_PNP_QUERY_REMOVE_RELATED_DEVICE_TIMEOUT() {
-        return (int)481L;
-    }
-    public static int ERROR_PNP_QUERY_REMOVE_UNRELATED_DEVICE_TIMEOUT() {
-        return (int)482L;
-    }
-    public static int ERROR_DEVICE_HARDWARE_ERROR() {
-        return (int)483L;
-    }
-    public static int ERROR_INVALID_ADDRESS() {
-        return (int)487L;
-    }
-    public static int ERROR_HAS_SYSTEM_CRITICAL_FILES() {
-        return (int)488L;
-    }
-    public static int ERROR_VRF_CFG_AND_IO_ENABLED() {
-        return (int)1183L;
-    }
-    public static int ERROR_PARTITION_TERMINATING() {
-        return (int)1184L;
-    }
-    public static int ERROR_USER_PROFILE_LOAD() {
-        return (int)500L;
-    }
-    public static int ERROR_ARITHMETIC_OVERFLOW() {
-        return (int)534L;
-    }
-    public static int ERROR_PIPE_CONNECTED() {
-        return (int)535L;
-    }
-    public static int ERROR_PIPE_LISTENING() {
-        return (int)536L;
-    }
-    public static int ERROR_VERIFIER_STOP() {
-        return (int)537L;
-    }
-    public static int ERROR_ABIOS_ERROR() {
-        return (int)538L;
-    }
-    public static int ERROR_WX86_WARNING() {
-        return (int)539L;
-    }
-    public static int ERROR_WX86_ERROR() {
-        return (int)540L;
-    }
-    public static int ERROR_TIMER_NOT_CANCELED() {
-        return (int)541L;
-    }
-    public static int ERROR_UNWIND() {
-        return (int)542L;
-    }
-    public static int ERROR_BAD_STACK() {
-        return (int)543L;
-    }
-    public static int ERROR_INVALID_UNWIND_TARGET() {
-        return (int)544L;
-    }
-    public static int ERROR_INVALID_PORT_ATTRIBUTES() {
-        return (int)545L;
-    }
-    public static int ERROR_PORT_MESSAGE_TOO_LONG() {
-        return (int)546L;
-    }
-    public static int ERROR_INVALID_QUOTA_LOWER() {
-        return (int)547L;
-    }
-    public static int ERROR_DEVICE_ALREADY_ATTACHED() {
-        return (int)548L;
-    }
-    public static int ERROR_INSTRUCTION_MISALIGNMENT() {
-        return (int)549L;
-    }
-    public static int ERROR_PROFILING_NOT_STARTED() {
-        return (int)550L;
-    }
-    public static int ERROR_PROFILING_NOT_STOPPED() {
-        return (int)551L;
-    }
-    public static int ERROR_COULD_NOT_INTERPRET() {
-        return (int)552L;
-    }
-    public static int ERROR_PROFILING_AT_LIMIT() {
-        return (int)553L;
-    }
-    public static int ERROR_CANT_WAIT() {
-        return (int)554L;
-    }
-    public static int ERROR_CANT_TERMINATE_SELF() {
-        return (int)555L;
-    }
-    public static int ERROR_UNEXPECTED_MM_CREATE_ERR() {
-        return (int)556L;
-    }
-    public static int ERROR_UNEXPECTED_MM_MAP_ERROR() {
-        return (int)557L;
-    }
-    public static int ERROR_UNEXPECTED_MM_EXTEND_ERR() {
-        return (int)558L;
-    }
-    public static int ERROR_BAD_FUNCTION_TABLE() {
-        return (int)559L;
-    }
-    public static int ERROR_NO_GUID_TRANSLATION() {
-        return (int)560L;
-    }
-    public static int ERROR_INVALID_LDT_SIZE() {
-        return (int)561L;
-    }
-    public static int ERROR_INVALID_LDT_OFFSET() {
-        return (int)563L;
-    }
-    public static int ERROR_INVALID_LDT_DESCRIPTOR() {
-        return (int)564L;
-    }
-    public static int ERROR_TOO_MANY_THREADS() {
-        return (int)565L;
-    }
-    public static int ERROR_THREAD_NOT_IN_PROCESS() {
-        return (int)566L;
-    }
-    public static int ERROR_PAGEFILE_QUOTA_EXCEEDED() {
-        return (int)567L;
-    }
-    public static int ERROR_LOGON_SERVER_CONFLICT() {
-        return (int)568L;
-    }
-    public static int ERROR_SYNCHRONIZATION_REQUIRED() {
-        return (int)569L;
-    }
-    public static int ERROR_NET_OPEN_FAILED() {
-        return (int)570L;
-    }
-    public static int ERROR_IO_PRIVILEGE_FAILED() {
-        return (int)571L;
-    }
-    public static int ERROR_CONTROL_C_EXIT() {
-        return (int)572L;
-    }
-    public static int ERROR_MISSING_SYSTEMFILE() {
-        return (int)573L;
-    }
-    public static int ERROR_UNHANDLED_EXCEPTION() {
-        return (int)574L;
-    }
-    public static int ERROR_APP_INIT_FAILURE() {
-        return (int)575L;
-    }
-    public static int ERROR_PAGEFILE_CREATE_FAILED() {
-        return (int)576L;
-    }
-    public static int ERROR_INVALID_IMAGE_HASH() {
-        return (int)577L;
-    }
-    public static int ERROR_NO_PAGEFILE() {
-        return (int)578L;
-    }
-    public static int ERROR_ILLEGAL_FLOAT_CONTEXT() {
-        return (int)579L;
-    }
-    public static int ERROR_NO_EVENT_PAIR() {
-        return (int)580L;
-    }
-    public static int ERROR_DOMAIN_CTRLR_CONFIG_ERROR() {
-        return (int)581L;
-    }
-    public static int ERROR_ILLEGAL_CHARACTER() {
-        return (int)582L;
-    }
-    public static int ERROR_UNDEFINED_CHARACTER() {
-        return (int)583L;
-    }
-    public static int ERROR_FLOPPY_VOLUME() {
-        return (int)584L;
-    }
-    public static int ERROR_BIOS_FAILED_TO_CONNECT_INTERRUPT() {
-        return (int)585L;
-    }
-    public static int ERROR_BACKUP_CONTROLLER() {
-        return (int)586L;
-    }
-    public static int ERROR_MUTANT_LIMIT_EXCEEDED() {
-        return (int)587L;
-    }
-    public static int ERROR_FS_DRIVER_REQUIRED() {
-        return (int)588L;
-    }
-    public static int ERROR_CANNOT_LOAD_REGISTRY_FILE() {
-        return (int)589L;
-    }
-    public static int ERROR_DEBUG_ATTACH_FAILED() {
-        return (int)590L;
-    }
-    public static int ERROR_SYSTEM_PROCESS_TERMINATED() {
-        return (int)591L;
-    }
-    public static int ERROR_DATA_NOT_ACCEPTED() {
-        return (int)592L;
-    }
-    public static int ERROR_VDM_HARD_ERROR() {
-        return (int)593L;
-    }
-    public static int ERROR_DRIVER_CANCEL_TIMEOUT() {
-        return (int)594L;
-    }
-    public static int ERROR_REPLY_MESSAGE_MISMATCH() {
-        return (int)595L;
-    }
-    public static int ERROR_LOST_WRITEBEHIND_DATA() {
-        return (int)596L;
-    }
-    public static int ERROR_CLIENT_SERVER_PARAMETERS_INVALID() {
-        return (int)597L;
-    }
-    public static int ERROR_NOT_TINY_STREAM() {
-        return (int)598L;
-    }
-    public static int ERROR_STACK_OVERFLOW_READ() {
-        return (int)599L;
-    }
-    public static int ERROR_CONVERT_TO_LARGE() {
-        return (int)600L;
-    }
-    public static int ERROR_FOUND_OUT_OF_SCOPE() {
-        return (int)601L;
-    }
-    public static int ERROR_ALLOCATE_BUCKET() {
-        return (int)602L;
-    }
-    public static int ERROR_MARSHALL_OVERFLOW() {
-        return (int)603L;
-    }
-    public static int ERROR_INVALID_VARIANT() {
-        return (int)604L;
-    }
-    public static int ERROR_BAD_COMPRESSION_BUFFER() {
-        return (int)605L;
-    }
-    public static int ERROR_AUDIT_FAILED() {
-        return (int)606L;
-    }
-    public static int ERROR_TIMER_RESOLUTION_NOT_SET() {
-        return (int)607L;
-    }
-    public static int ERROR_INSUFFICIENT_LOGON_INFO() {
-        return (int)608L;
-    }
-    public static int ERROR_BAD_DLL_ENTRYPOINT() {
-        return (int)609L;
-    }
-    public static int ERROR_BAD_SERVICE_ENTRYPOINT() {
-        return (int)610L;
-    }
-    public static int ERROR_IP_ADDRESS_CONFLICT1() {
-        return (int)611L;
-    }
-    public static int ERROR_IP_ADDRESS_CONFLICT2() {
-        return (int)612L;
-    }
-    public static int ERROR_REGISTRY_QUOTA_LIMIT() {
-        return (int)613L;
-    }
-    public static int ERROR_NO_CALLBACK_ACTIVE() {
-        return (int)614L;
-    }
-    public static int ERROR_PWD_TOO_SHORT() {
-        return (int)615L;
-    }
-    public static int ERROR_PWD_TOO_RECENT() {
-        return (int)616L;
-    }
-    public static int ERROR_PWD_HISTORY_CONFLICT() {
-        return (int)617L;
-    }
-    public static int ERROR_UNSUPPORTED_COMPRESSION() {
-        return (int)618L;
-    }
-    public static int ERROR_INVALID_HW_PROFILE() {
-        return (int)619L;
-    }
-    public static int ERROR_INVALID_PLUGPLAY_DEVICE_PATH() {
-        return (int)620L;
-    }
-    public static int ERROR_QUOTA_LIST_INCONSISTENT() {
-        return (int)621L;
-    }
-    public static int ERROR_EVALUATION_EXPIRATION() {
-        return (int)622L;
-    }
-    public static int ERROR_ILLEGAL_DLL_RELOCATION() {
-        return (int)623L;
-    }
-    public static int ERROR_DLL_INIT_FAILED_LOGOFF() {
-        return (int)624L;
-    }
-    public static int ERROR_VALIDATE_CONTINUE() {
-        return (int)625L;
-    }
-    public static int ERROR_NO_MORE_MATCHES() {
-        return (int)626L;
-    }
-    public static int ERROR_RANGE_LIST_CONFLICT() {
-        return (int)627L;
-    }
-    public static int ERROR_SERVER_SID_MISMATCH() {
-        return (int)628L;
-    }
-    public static int ERROR_CANT_ENABLE_DENY_ONLY() {
-        return (int)629L;
-    }
-    public static int ERROR_FLOAT_MULTIPLE_FAULTS() {
-        return (int)630L;
-    }
-    public static int ERROR_FLOAT_MULTIPLE_TRAPS() {
-        return (int)631L;
-    }
-    public static int ERROR_NOINTERFACE() {
-        return (int)632L;
-    }
-    public static int ERROR_DRIVER_FAILED_SLEEP() {
-        return (int)633L;
-    }
-    public static int ERROR_CORRUPT_SYSTEM_FILE() {
-        return (int)634L;
-    }
-    public static int ERROR_COMMITMENT_MINIMUM() {
-        return (int)635L;
-    }
-    public static int ERROR_PNP_RESTART_ENUMERATION() {
-        return (int)636L;
-    }
-    public static int ERROR_SYSTEM_IMAGE_BAD_SIGNATURE() {
-        return (int)637L;
-    }
-    public static int ERROR_PNP_REBOOT_REQUIRED() {
-        return (int)638L;
-    }
-    public static int ERROR_INSUFFICIENT_POWER() {
-        return (int)639L;
-    }
-    public static int ERROR_MULTIPLE_FAULT_VIOLATION() {
-        return (int)640L;
-    }
-    public static int ERROR_SYSTEM_SHUTDOWN() {
-        return (int)641L;
-    }
-    public static int ERROR_PORT_NOT_SET() {
-        return (int)642L;
-    }
-    public static int ERROR_DS_VERSION_CHECK_FAILURE() {
-        return (int)643L;
-    }
-    public static int ERROR_RANGE_NOT_FOUND() {
-        return (int)644L;
-    }
-    public static int ERROR_NOT_SAFE_MODE_DRIVER() {
-        return (int)646L;
-    }
-    public static int ERROR_FAILED_DRIVER_ENTRY() {
-        return (int)647L;
-    }
-    public static int ERROR_DEVICE_ENUMERATION_ERROR() {
-        return (int)648L;
-    }
-    public static int ERROR_MOUNT_POINT_NOT_RESOLVED() {
-        return (int)649L;
-    }
-    public static int ERROR_INVALID_DEVICE_OBJECT_PARAMETER() {
-        return (int)650L;
-    }
-    public static int ERROR_MCA_OCCURED() {
-        return (int)651L;
-    }
-    public static int ERROR_DRIVER_DATABASE_ERROR() {
-        return (int)652L;
-    }
-    public static int ERROR_SYSTEM_HIVE_TOO_LARGE() {
-        return (int)653L;
-    }
-    public static int ERROR_DRIVER_FAILED_PRIOR_UNLOAD() {
-        return (int)654L;
-    }
-    public static int ERROR_VOLSNAP_PREPARE_HIBERNATE() {
-        return (int)655L;
-    }
-    public static int ERROR_HIBERNATION_FAILURE() {
-        return (int)656L;
-    }
-    public static int ERROR_PWD_TOO_LONG() {
-        return (int)657L;
-    }
-    public static int ERROR_FILE_SYSTEM_LIMITATION() {
-        return (int)665L;
-    }
-    public static int ERROR_ASSERTION_FAILURE() {
-        return (int)668L;
-    }
-    public static int ERROR_ACPI_ERROR() {
-        return (int)669L;
-    }
-    public static int ERROR_WOW_ASSERTION() {
-        return (int)670L;
-    }
-    public static int ERROR_PNP_BAD_MPS_TABLE() {
-        return (int)671L;
-    }
-    public static int ERROR_PNP_TRANSLATION_FAILED() {
-        return (int)672L;
-    }
-    public static int ERROR_PNP_IRQ_TRANSLATION_FAILED() {
-        return (int)673L;
-    }
-    public static int ERROR_PNP_INVALID_ID() {
-        return (int)674L;
-    }
-    public static int ERROR_WAKE_SYSTEM_DEBUGGER() {
-        return (int)675L;
-    }
-    public static int ERROR_HANDLES_CLOSED() {
-        return (int)676L;
-    }
-    public static int ERROR_EXTRANEOUS_INFORMATION() {
-        return (int)677L;
-    }
-    public static int ERROR_RXACT_COMMIT_NECESSARY() {
-        return (int)678L;
-    }
-    public static int ERROR_MEDIA_CHECK() {
-        return (int)679L;
-    }
-    public static int ERROR_GUID_SUBSTITUTION_MADE() {
-        return (int)680L;
-    }
-    public static int ERROR_STOPPED_ON_SYMLINK() {
-        return (int)681L;
-    }
-    public static int ERROR_LONGJUMP() {
-        return (int)682L;
-    }
-    public static int ERROR_PLUGPLAY_QUERY_VETOED() {
-        return (int)683L;
-    }
-    public static int ERROR_UNWIND_CONSOLIDATE() {
-        return (int)684L;
-    }
-    public static int ERROR_REGISTRY_HIVE_RECOVERED() {
-        return (int)685L;
-    }
-    public static int ERROR_DLL_MIGHT_BE_INSECURE() {
-        return (int)686L;
-    }
-    public static int ERROR_DLL_MIGHT_BE_INCOMPATIBLE() {
-        return (int)687L;
-    }
-    public static int ERROR_DBG_EXCEPTION_NOT_HANDLED() {
-        return (int)688L;
-    }
-    public static int ERROR_DBG_REPLY_LATER() {
-        return (int)689L;
-    }
-    public static int ERROR_DBG_UNABLE_TO_PROVIDE_HANDLE() {
-        return (int)690L;
-    }
-    public static int ERROR_DBG_TERMINATE_THREAD() {
-        return (int)691L;
-    }
-    public static int ERROR_DBG_TERMINATE_PROCESS() {
-        return (int)692L;
-    }
-    public static int ERROR_DBG_CONTROL_C() {
-        return (int)693L;
-    }
-    public static int ERROR_DBG_PRINTEXCEPTION_C() {
-        return (int)694L;
-    }
-    public static int ERROR_DBG_RIPEXCEPTION() {
-        return (int)695L;
-    }
-    public static int ERROR_DBG_CONTROL_BREAK() {
-        return (int)696L;
-    }
-    public static int ERROR_DBG_COMMAND_EXCEPTION() {
-        return (int)697L;
-    }
-    public static int ERROR_OBJECT_NAME_EXISTS() {
-        return (int)698L;
-    }
-    public static int ERROR_THREAD_WAS_SUSPENDED() {
-        return (int)699L;
-    }
-    public static int ERROR_IMAGE_NOT_AT_BASE() {
-        return (int)700L;
-    }
-    public static int ERROR_RXACT_STATE_CREATED() {
-        return (int)701L;
-    }
-    public static int ERROR_SEGMENT_NOTIFICATION() {
-        return (int)702L;
-    }
-    public static int ERROR_BAD_CURRENT_DIRECTORY() {
-        return (int)703L;
-    }
-    public static int ERROR_FT_READ_RECOVERY_FROM_BACKUP() {
-        return (int)704L;
-    }
-    public static int ERROR_FT_WRITE_RECOVERY() {
-        return (int)705L;
-    }
-    public static int ERROR_IMAGE_MACHINE_TYPE_MISMATCH() {
-        return (int)706L;
-    }
-    public static int ERROR_RECEIVE_PARTIAL() {
-        return (int)707L;
-    }
-    public static int ERROR_RECEIVE_EXPEDITED() {
-        return (int)708L;
-    }
-    public static int ERROR_RECEIVE_PARTIAL_EXPEDITED() {
-        return (int)709L;
-    }
-    public static int ERROR_EVENT_DONE() {
-        return (int)710L;
-    }
-    public static int ERROR_EVENT_PENDING() {
-        return (int)711L;
-    }
-    public static int ERROR_CHECKING_FILE_SYSTEM() {
-        return (int)712L;
-    }
-    public static int ERROR_FATAL_APP_EXIT() {
-        return (int)713L;
-    }
-    public static int ERROR_PREDEFINED_HANDLE() {
-        return (int)714L;
-    }
-    public static int ERROR_WAS_UNLOCKED() {
-        return (int)715L;
-    }
-    public static int ERROR_SERVICE_NOTIFICATION() {
-        return (int)716L;
-    }
-    public static int ERROR_WAS_LOCKED() {
-        return (int)717L;
-    }
-    public static int ERROR_LOG_HARD_ERROR() {
-        return (int)718L;
-    }
-    public static int ERROR_ALREADY_WIN32() {
-        return (int)719L;
-    }
-    public static int ERROR_IMAGE_MACHINE_TYPE_MISMATCH_EXE() {
-        return (int)720L;
-    }
-    public static int ERROR_NO_YIELD_PERFORMED() {
-        return (int)721L;
-    }
-    public static int ERROR_TIMER_RESUME_IGNORED() {
-        return (int)722L;
-    }
-    public static int ERROR_ARBITRATION_UNHANDLED() {
-        return (int)723L;
-    }
-    public static int ERROR_CARDBUS_NOT_SUPPORTED() {
-        return (int)724L;
-    }
-    public static int ERROR_MP_PROCESSOR_MISMATCH() {
-        return (int)725L;
-    }
-    public static int ERROR_HIBERNATED() {
-        return (int)726L;
-    }
-    public static int ERROR_RESUME_HIBERNATION() {
-        return (int)727L;
-    }
-    public static int ERROR_FIRMWARE_UPDATED() {
-        return (int)728L;
-    }
-    public static int ERROR_DRIVERS_LEAKING_LOCKED_PAGES() {
-        return (int)729L;
-    }
-    public static int ERROR_WAKE_SYSTEM() {
-        return (int)730L;
-    }
-    public static int ERROR_WAIT_1() {
-        return (int)731L;
-    }
-    public static int ERROR_WAIT_2() {
-        return (int)732L;
-    }
-    public static int ERROR_WAIT_3() {
-        return (int)733L;
-    }
-    public static int ERROR_WAIT_63() {
-        return (int)734L;
-    }
-    public static int ERROR_ABANDONED_WAIT_0() {
-        return (int)735L;
-    }
-    public static int ERROR_ABANDONED_WAIT_63() {
-        return (int)736L;
-    }
-    public static int ERROR_USER_APC() {
-        return (int)737L;
-    }
-    public static int ERROR_KERNEL_APC() {
-        return (int)738L;
-    }
-    public static int ERROR_ALERTED() {
-        return (int)739L;
-    }
-    public static int ERROR_ELEVATION_REQUIRED() {
-        return (int)740L;
-    }
-    public static int ERROR_REPARSE() {
-        return (int)741L;
-    }
-    public static int ERROR_OPLOCK_BREAK_IN_PROGRESS() {
-        return (int)742L;
-    }
-    public static int ERROR_VOLUME_MOUNTED() {
-        return (int)743L;
-    }
-    public static int ERROR_RXACT_COMMITTED() {
-        return (int)744L;
-    }
-    public static int ERROR_NOTIFY_CLEANUP() {
-        return (int)745L;
-    }
-    public static int ERROR_PRIMARY_TRANSPORT_CONNECT_FAILED() {
-        return (int)746L;
-    }
-    public static int ERROR_PAGE_FAULT_TRANSITION() {
-        return (int)747L;
-    }
-    public static int ERROR_PAGE_FAULT_DEMAND_ZERO() {
-        return (int)748L;
-    }
-    public static int ERROR_PAGE_FAULT_COPY_ON_WRITE() {
-        return (int)749L;
-    }
-    public static int ERROR_PAGE_FAULT_GUARD_PAGE() {
-        return (int)750L;
-    }
-    public static int ERROR_PAGE_FAULT_PAGING_FILE() {
-        return (int)751L;
-    }
-    public static int ERROR_CACHE_PAGE_LOCKED() {
-        return (int)752L;
-    }
-    public static int ERROR_CRASH_DUMP() {
-        return (int)753L;
-    }
-    public static int ERROR_BUFFER_ALL_ZEROS() {
-        return (int)754L;
-    }
-    public static int ERROR_REPARSE_OBJECT() {
-        return (int)755L;
-    }
-    public static int ERROR_RESOURCE_REQUIREMENTS_CHANGED() {
-        return (int)756L;
-    }
-    public static int ERROR_TRANSLATION_COMPLETE() {
-        return (int)757L;
-    }
-    public static int ERROR_NOTHING_TO_TERMINATE() {
-        return (int)758L;
-    }
-    public static int ERROR_PROCESS_NOT_IN_JOB() {
-        return (int)759L;
-    }
-    public static int ERROR_PROCESS_IN_JOB() {
-        return (int)760L;
-    }
-    public static int ERROR_VOLSNAP_HIBERNATE_READY() {
-        return (int)761L;
-    }
-    public static int ERROR_FSFILTER_OP_COMPLETED_SUCCESSFULLY() {
-        return (int)762L;
-    }
-    public static int ERROR_INTERRUPT_VECTOR_ALREADY_CONNECTED() {
-        return (int)763L;
-    }
-    public static int ERROR_INTERRUPT_STILL_CONNECTED() {
-        return (int)764L;
-    }
-    public static int ERROR_WAIT_FOR_OPLOCK() {
-        return (int)765L;
-    }
-    public static int ERROR_DBG_EXCEPTION_HANDLED() {
-        return (int)766L;
-    }
-    public static int ERROR_DBG_CONTINUE() {
-        return (int)767L;
-    }
-    public static int ERROR_CALLBACK_POP_STACK() {
-        return (int)768L;
-    }
-    public static int ERROR_COMPRESSION_DISABLED() {
-        return (int)769L;
-    }
-    public static int ERROR_CANTFETCHBACKWARDS() {
-        return (int)770L;
-    }
-    public static int ERROR_CANTSCROLLBACKWARDS() {
-        return (int)771L;
-    }
-    public static int ERROR_ROWSNOTRELEASED() {
-        return (int)772L;
-    }
-    public static int ERROR_BAD_ACCESSOR_FLAGS() {
-        return (int)773L;
-    }
-    public static int ERROR_ERRORS_ENCOUNTERED() {
-        return (int)774L;
-    }
-    public static int ERROR_NOT_CAPABLE() {
-        return (int)775L;
-    }
-    public static int ERROR_REQUEST_OUT_OF_SEQUENCE() {
-        return (int)776L;
-    }
-    public static int ERROR_VERSION_PARSE_ERROR() {
-        return (int)777L;
-    }
-    public static int ERROR_BADSTARTPOSITION() {
-        return (int)778L;
-    }
-    public static int ERROR_MEMORY_HARDWARE() {
-        return (int)779L;
-    }
-    public static int ERROR_DISK_REPAIR_DISABLED() {
-        return (int)780L;
-    }
-    public static int ERROR_INSUFFICIENT_RESOURCE_FOR_SPECIFIED_SHARED_SECTION_SIZE() {
-        return (int)781L;
-    }
-    public static int ERROR_SYSTEM_POWERSTATE_TRANSITION() {
-        return (int)782L;
-    }
-    public static int ERROR_SYSTEM_POWERSTATE_COMPLEX_TRANSITION() {
-        return (int)783L;
-    }
-    public static int ERROR_MCA_EXCEPTION() {
-        return (int)784L;
-    }
-    public static int ERROR_ACCESS_AUDIT_BY_POLICY() {
-        return (int)785L;
-    }
-    public static int ERROR_ACCESS_DISABLED_NO_SAFER_UI_BY_POLICY() {
-        return (int)786L;
-    }
-    public static int ERROR_ABANDON_HIBERFILE() {
-        return (int)787L;
-    }
-    public static int ERROR_LOST_WRITEBEHIND_DATA_NETWORK_DISCONNECTED() {
-        return (int)788L;
-    }
-    public static int ERROR_LOST_WRITEBEHIND_DATA_NETWORK_SERVER_ERROR() {
-        return (int)789L;
-    }
-    public static int ERROR_LOST_WRITEBEHIND_DATA_LOCAL_DISK_ERROR() {
-        return (int)790L;
-    }
-    public static int ERROR_BAD_MCFG_TABLE() {
-        return (int)791L;
-    }
-    public static int ERROR_DISK_REPAIR_REDIRECTED() {
-        return (int)792L;
-    }
-    public static int ERROR_DISK_REPAIR_UNSUCCESSFUL() {
-        return (int)793L;
-    }
-    public static int ERROR_CORRUPT_LOG_OVERFULL() {
-        return (int)794L;
-    }
-    public static int ERROR_CORRUPT_LOG_CORRUPTED() {
-        return (int)795L;
-    }
-    public static int ERROR_CORRUPT_LOG_UNAVAILABLE() {
-        return (int)796L;
-    }
-    public static int ERROR_CORRUPT_LOG_DELETED_FULL() {
-        return (int)797L;
-    }
-    public static int ERROR_CORRUPT_LOG_CLEARED() {
-        return (int)798L;
-    }
-    public static int ERROR_ORPHAN_NAME_EXHAUSTED() {
-        return (int)799L;
-    }
-    public static int ERROR_OPLOCK_SWITCHED_TO_NEW_HANDLE() {
-        return (int)800L;
-    }
-    public static int ERROR_CANNOT_GRANT_REQUESTED_OPLOCK() {
-        return (int)801L;
-    }
-    public static int ERROR_CANNOT_BREAK_OPLOCK() {
-        return (int)802L;
-    }
-    public static int ERROR_OPLOCK_HANDLE_CLOSED() {
-        return (int)803L;
-    }
-    public static int ERROR_NO_ACE_CONDITION() {
-        return (int)804L;
-    }
-    public static int ERROR_INVALID_ACE_CONDITION() {
-        return (int)805L;
-    }
-    public static int ERROR_FILE_HANDLE_REVOKED() {
-        return (int)806L;
-    }
-    public static int ERROR_IMAGE_AT_DIFFERENT_BASE() {
-        return (int)807L;
-    }
-    public static int ERROR_ENCRYPTED_IO_NOT_POSSIBLE() {
-        return (int)808L;
-    }
-    public static int ERROR_FILE_METADATA_OPTIMIZATION_IN_PROGRESS() {
-        return (int)809L;
-    }
-    public static int ERROR_QUOTA_ACTIVITY() {
-        return (int)810L;
-    }
-    public static int ERROR_HANDLE_REVOKED() {
-        return (int)811L;
-    }
-    public static int ERROR_CALLBACK_INVOKE_INLINE() {
-        return (int)812L;
-    }
-    public static int ERROR_CPU_SET_INVALID() {
-        return (int)813L;
-    }
-    public static int ERROR_ENCLAVE_NOT_TERMINATED() {
-        return (int)814L;
-    }
-    public static int ERROR_ENCLAVE_VIOLATION() {
-        return (int)815L;
-    }
-    public static int ERROR_EA_ACCESS_DENIED() {
-        return (int)994L;
-    }
-    public static int ERROR_OPERATION_ABORTED() {
-        return (int)995L;
-    }
-    public static int ERROR_IO_INCOMPLETE() {
-        return (int)996L;
-    }
-    public static int ERROR_IO_PENDING() {
-        return (int)997L;
-    }
-    public static int ERROR_NOACCESS() {
-        return (int)998L;
-    }
-    public static int ERROR_SWAPERROR() {
+    public static MethodHandle AddMonitorW$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.AddMonitorW$MH,"AddMonitorW");
+    }
+    public static int AddMonitorW ( Addressable pName,  int Level,  Addressable pMonitors) {
+        var mh$ = AddMonitorW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pMonitors);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteMonitorA$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.DeleteMonitorA$MH,"DeleteMonitorA");
+    }
+    public static int DeleteMonitorA ( Addressable pName,  Addressable pEnvironment,  Addressable pMonitorName) {
+        var mh$ = DeleteMonitorA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pMonitorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteMonitorW$MH() {
+        return RuntimeHelper.requireNonNull(constants$678.DeleteMonitorW$MH,"DeleteMonitorW");
+    }
+    public static int DeleteMonitorW ( Addressable pName,  Addressable pEnvironment,  Addressable pMonitorName) {
+        var mh$ = DeleteMonitorW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pMonitorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPortsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$678.EnumPortsA$MH,"EnumPortsA");
+    }
+    public static int EnumPortsA ( Addressable pName,  int Level,  Addressable pPort,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPortsA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pPort, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumPortsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$678.EnumPortsW$MH,"EnumPortsW");
+    }
+    public static int EnumPortsW ( Addressable pName,  int Level,  Addressable pPort,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumPortsW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pPort, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPortA$MH() {
+        return RuntimeHelper.requireNonNull(constants$678.AddPortA$MH,"AddPortA");
+    }
+    public static int AddPortA ( Addressable pName,  Addressable hWnd,  Addressable pMonitorName) {
+        var mh$ = AddPortA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, hWnd, pMonitorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPortW$MH() {
+        return RuntimeHelper.requireNonNull(constants$678.AddPortW$MH,"AddPortW");
+    }
+    public static int AddPortW ( Addressable pName,  Addressable hWnd,  Addressable pMonitorName) {
+        var mh$ = AddPortW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, hWnd, pMonitorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ConfigurePortA$MH() {
+        return RuntimeHelper.requireNonNull(constants$678.ConfigurePortA$MH,"ConfigurePortA");
+    }
+    public static int ConfigurePortA ( Addressable pName,  Addressable hWnd,  Addressable pPortName) {
+        var mh$ = ConfigurePortA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, hWnd, pPortName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ConfigurePortW$MH() {
+        return RuntimeHelper.requireNonNull(constants$679.ConfigurePortW$MH,"ConfigurePortW");
+    }
+    public static int ConfigurePortW ( Addressable pName,  Addressable hWnd,  Addressable pPortName) {
+        var mh$ = ConfigurePortW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, hWnd, pPortName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePortA$MH() {
+        return RuntimeHelper.requireNonNull(constants$679.DeletePortA$MH,"DeletePortA");
+    }
+    public static int DeletePortA ( Addressable pName,  Addressable hWnd,  Addressable pPortName) {
+        var mh$ = DeletePortA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, hWnd, pPortName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePortW$MH() {
+        return RuntimeHelper.requireNonNull(constants$679.DeletePortW$MH,"DeletePortW");
+    }
+    public static int DeletePortW ( Addressable pName,  Addressable hWnd,  Addressable pPortName) {
+        var mh$ = DeletePortW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, hWnd, pPortName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle XcvDataW$MH() {
+        return RuntimeHelper.requireNonNull(constants$679.XcvDataW$MH,"XcvDataW");
+    }
+    public static int XcvDataW ( Addressable hXcv,  Addressable pszDataName,  Addressable pInputData,  int cbInputData,  Addressable pOutputData,  int cbOutputData,  Addressable pcbOutputNeeded,  Addressable pdwStatus) {
+        var mh$ = XcvDataW$MH();
+        try {
+            return (int)mh$.invokeExact(hXcv, pszDataName, pInputData, cbInputData, pOutputData, cbOutputData, pcbOutputNeeded, pdwStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDefaultPrinterA$MH() {
+        return RuntimeHelper.requireNonNull(constants$679.GetDefaultPrinterA$MH,"GetDefaultPrinterA");
+    }
+    public static int GetDefaultPrinterA ( Addressable pszBuffer,  Addressable pcchBuffer) {
+        var mh$ = GetDefaultPrinterA$MH();
+        try {
+            return (int)mh$.invokeExact(pszBuffer, pcchBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDefaultPrinterW$MH() {
+        return RuntimeHelper.requireNonNull(constants$679.GetDefaultPrinterW$MH,"GetDefaultPrinterW");
+    }
+    public static int GetDefaultPrinterW ( Addressable pszBuffer,  Addressable pcchBuffer) {
+        var mh$ = GetDefaultPrinterW$MH();
+        try {
+            return (int)mh$.invokeExact(pszBuffer, pcchBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetDefaultPrinterA$MH() {
+        return RuntimeHelper.requireNonNull(constants$680.SetDefaultPrinterA$MH,"SetDefaultPrinterA");
+    }
+    public static int SetDefaultPrinterA ( Addressable pszPrinter) {
+        var mh$ = SetDefaultPrinterA$MH();
+        try {
+            return (int)mh$.invokeExact(pszPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetDefaultPrinterW$MH() {
+        return RuntimeHelper.requireNonNull(constants$680.SetDefaultPrinterW$MH,"SetDefaultPrinterW");
+    }
+    public static int SetDefaultPrinterW ( Addressable pszPrinter) {
+        var mh$ = SetDefaultPrinterW$MH();
+        try {
+            return (int)mh$.invokeExact(pszPrinter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPortA$MH() {
+        return RuntimeHelper.requireNonNull(constants$680.SetPortA$MH,"SetPortA");
+    }
+    public static int SetPortA ( Addressable pName,  Addressable pPortName,  int dwLevel,  Addressable pPortInfo) {
+        var mh$ = SetPortA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pPortName, dwLevel, pPortInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetPortW$MH() {
+        return RuntimeHelper.requireNonNull(constants$680.SetPortW$MH,"SetPortW");
+    }
+    public static int SetPortW ( Addressable pName,  Addressable pPortName,  int dwLevel,  Addressable pPortInfo) {
+        var mh$ = SetPortW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pPortName, dwLevel, pPortInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterConnectionA$MH() {
+        return RuntimeHelper.requireNonNull(constants$680.AddPrinterConnectionA$MH,"AddPrinterConnectionA");
+    }
+    public static int AddPrinterConnectionA ( Addressable pName) {
+        var mh$ = AddPrinterConnectionA$MH();
+        try {
+            return (int)mh$.invokeExact(pName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterConnectionW$MH() {
+        return RuntimeHelper.requireNonNull(constants$680.AddPrinterConnectionW$MH,"AddPrinterConnectionW");
+    }
+    public static int AddPrinterConnectionW ( Addressable pName) {
+        var mh$ = AddPrinterConnectionW$MH();
+        try {
+            return (int)mh$.invokeExact(pName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterConnectionA$MH() {
+        return RuntimeHelper.requireNonNull(constants$681.DeletePrinterConnectionA$MH,"DeletePrinterConnectionA");
+    }
+    public static int DeletePrinterConnectionA ( Addressable pName) {
+        var mh$ = DeletePrinterConnectionA$MH();
+        try {
+            return (int)mh$.invokeExact(pName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterConnectionW$MH() {
+        return RuntimeHelper.requireNonNull(constants$681.DeletePrinterConnectionW$MH,"DeletePrinterConnectionW");
+    }
+    public static int DeletePrinterConnectionW ( Addressable pName) {
+        var mh$ = DeletePrinterConnectionW$MH();
+        try {
+            return (int)mh$.invokeExact(pName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ConnectToPrinterDlg$MH() {
+        return RuntimeHelper.requireNonNull(constants$681.ConnectToPrinterDlg$MH,"ConnectToPrinterDlg");
+    }
+    public static MemoryAddress ConnectToPrinterDlg ( Addressable hwnd,  int Flags) {
+        var mh$ = ConnectToPrinterDlg$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hwnd, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PPROVIDOR_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPROVIDOR_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROVIDOR_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPROVIDOR_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROVIDOR_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPROVIDOR_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROVIDOR_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPROVIDOR_INFO_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROVIDOR_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPROVIDOR_INFO_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROVIDOR_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPROVIDOR_INFO_2 = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle AddPrintProvidorA$MH() {
+        return RuntimeHelper.requireNonNull(constants$681.AddPrintProvidorA$MH,"AddPrintProvidorA");
+    }
+    public static int AddPrintProvidorA ( Addressable pName,  int Level,  Addressable pProvidorInfo) {
+        var mh$ = AddPrintProvidorA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pProvidorInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrintProvidorW$MH() {
+        return RuntimeHelper.requireNonNull(constants$681.AddPrintProvidorW$MH,"AddPrintProvidorW");
+    }
+    public static int AddPrintProvidorW ( Addressable pName,  int Level,  Addressable pProvidorInfo) {
+        var mh$ = AddPrintProvidorW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pProvidorInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrintProvidorA$MH() {
+        return RuntimeHelper.requireNonNull(constants$681.DeletePrintProvidorA$MH,"DeletePrintProvidorA");
+    }
+    public static int DeletePrintProvidorA ( Addressable pName,  Addressable pEnvironment,  Addressable pPrintProvidorName) {
+        var mh$ = DeletePrintProvidorA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pPrintProvidorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrintProvidorW$MH() {
+        return RuntimeHelper.requireNonNull(constants$682.DeletePrintProvidorW$MH,"DeletePrintProvidorW");
+    }
+    public static int DeletePrintProvidorW ( Addressable pName,  Addressable pEnvironment,  Addressable pPrintProvidorName) {
+        var mh$ = DeletePrintProvidorW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, pEnvironment, pPrintProvidorName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsValidDevmodeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$682.IsValidDevmodeA$MH,"IsValidDevmodeA");
+    }
+    public static int IsValidDevmodeA ( Addressable pDevmode,  long DevmodeSize) {
+        var mh$ = IsValidDevmodeA$MH();
+        try {
+            return (int)mh$.invokeExact(pDevmode, DevmodeSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IsValidDevmodeW$MH() {
+        return RuntimeHelper.requireNonNull(constants$682.IsValidDevmodeW$MH,"IsValidDevmodeW");
+    }
+    public static int IsValidDevmodeW ( Addressable pDevmode,  long DevmodeSize) {
+        var mh$ = IsValidDevmodeW$MH();
+        try {
+            return (int)mh$.invokeExact(pDevmode, DevmodeSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int PRINTER_OPTION_NO_CACHE() {
+        return (int)1L;
+    }
+    public static int PRINTER_OPTION_CACHE() {
+        return (int)2L;
+    }
+    public static int PRINTER_OPTION_CLIENT_CHANGE() {
+        return (int)4L;
+    }
+    public static int PRINTER_OPTION_NO_CLIENT_DATA() {
+        return (int)8L;
+    }
+    public static OfAddress PPRINTER_OPTIONSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_OPTIONSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_OPTIONSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_OPTIONSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_OPTIONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPRINTER_OPTIONS = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle OpenPrinter2A$MH() {
+        return RuntimeHelper.requireNonNull(constants$682.OpenPrinter2A$MH,"OpenPrinter2A");
+    }
+    public static int OpenPrinter2A ( Addressable pPrinterName,  Addressable phPrinter,  Addressable pDefault,  Addressable pOptions) {
+        var mh$ = OpenPrinter2A$MH();
+        try {
+            return (int)mh$.invokeExact(pPrinterName, phPrinter, pDefault, pOptions);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenPrinter2W$MH() {
+        return RuntimeHelper.requireNonNull(constants$682.OpenPrinter2W$MH,"OpenPrinter2W");
+    }
+    public static int OpenPrinter2W ( Addressable pPrinterName,  Addressable phPrinter,  Addressable pDefault,  Addressable pOptions) {
+        var mh$ = OpenPrinter2W$MH();
+        try {
+            return (int)mh$.invokeExact(pPrinterName, phPrinter, pDefault, pOptions);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PPRINTER_CONNECTION_INFO_1A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_CONNECTION_INFO_1W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRINTER_CONNECTION_INFO_1 = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle AddPrinterConnection2A$MH() {
+        return RuntimeHelper.requireNonNull(constants$682.AddPrinterConnection2A$MH,"AddPrinterConnection2A");
+    }
+    public static int AddPrinterConnection2A ( Addressable hWnd,  Addressable pszName,  int dwLevel,  Addressable pConnectionInfo) {
+        var mh$ = AddPrinterConnection2A$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, pszName, dwLevel, pConnectionInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddPrinterConnection2W$MH() {
+        return RuntimeHelper.requireNonNull(constants$683.AddPrinterConnection2W$MH,"AddPrinterConnection2W");
+    }
+    public static int AddPrinterConnection2W ( Addressable hWnd,  Addressable pszName,  int dwLevel,  Addressable pConnectionInfo) {
+        var mh$ = AddPrinterConnection2W$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, pszName, dwLevel, pConnectionInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InstallPrinterDriverFromPackageA$MH() {
+        return RuntimeHelper.requireNonNull(constants$683.InstallPrinterDriverFromPackageA$MH,"InstallPrinterDriverFromPackageA");
+    }
+    public static int InstallPrinterDriverFromPackageA ( Addressable pszServer,  Addressable pszInfPath,  Addressable pszDriverName,  Addressable pszEnvironment,  int dwFlags) {
+        var mh$ = InstallPrinterDriverFromPackageA$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszInfPath, pszDriverName, pszEnvironment, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle InstallPrinterDriverFromPackageW$MH() {
+        return RuntimeHelper.requireNonNull(constants$683.InstallPrinterDriverFromPackageW$MH,"InstallPrinterDriverFromPackageW");
+    }
+    public static int InstallPrinterDriverFromPackageW ( Addressable pszServer,  Addressable pszInfPath,  Addressable pszDriverName,  Addressable pszEnvironment,  int dwFlags) {
+        var mh$ = InstallPrinterDriverFromPackageW$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszInfPath, pszDriverName, pszEnvironment, dwFlags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UploadPrinterDriverPackageA$MH() {
+        return RuntimeHelper.requireNonNull(constants$683.UploadPrinterDriverPackageA$MH,"UploadPrinterDriverPackageA");
+    }
+    public static int UploadPrinterDriverPackageA ( Addressable pszServer,  Addressable pszInfPath,  Addressable pszEnvironment,  int dwFlags,  Addressable hwnd,  Addressable pszDestInfPath,  Addressable pcchDestInfPath) {
+        var mh$ = UploadPrinterDriverPackageA$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszInfPath, pszEnvironment, dwFlags, hwnd, pszDestInfPath, pcchDestInfPath);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UploadPrinterDriverPackageW$MH() {
+        return RuntimeHelper.requireNonNull(constants$683.UploadPrinterDriverPackageW$MH,"UploadPrinterDriverPackageW");
+    }
+    public static int UploadPrinterDriverPackageW ( Addressable pszServer,  Addressable pszInfPath,  Addressable pszEnvironment,  int dwFlags,  Addressable hwnd,  Addressable pszDestInfPath,  Addressable pcchDestInfPath) {
+        var mh$ = UploadPrinterDriverPackageW$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszInfPath, pszEnvironment, dwFlags, hwnd, pszDestInfPath, pcchDestInfPath);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PCORE_PRINTER_DRIVERA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCORE_PRINTER_DRIVERW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCORE_PRINTER_DRIVER = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle GetCorePrinterDriversA$MH() {
+        return RuntimeHelper.requireNonNull(constants$683.GetCorePrinterDriversA$MH,"GetCorePrinterDriversA");
+    }
+    public static int GetCorePrinterDriversA ( Addressable pszServer,  Addressable pszEnvironment,  Addressable pszzCoreDriverDependencies,  int cCorePrinterDrivers,  Addressable pCorePrinterDrivers) {
+        var mh$ = GetCorePrinterDriversA$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszEnvironment, pszzCoreDriverDependencies, cCorePrinterDrivers, pCorePrinterDrivers);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetCorePrinterDriversW$MH() {
+        return RuntimeHelper.requireNonNull(constants$684.GetCorePrinterDriversW$MH,"GetCorePrinterDriversW");
+    }
+    public static int GetCorePrinterDriversW ( Addressable pszServer,  Addressable pszEnvironment,  Addressable pszzCoreDriverDependencies,  int cCorePrinterDrivers,  Addressable pCorePrinterDrivers) {
+        var mh$ = GetCorePrinterDriversW$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszEnvironment, pszzCoreDriverDependencies, cCorePrinterDrivers, pCorePrinterDrivers);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CorePrinterDriverInstalledA$MH() {
+        return RuntimeHelper.requireNonNull(constants$684.CorePrinterDriverInstalledA$MH,"CorePrinterDriverInstalledA");
+    }
+    public static int CorePrinterDriverInstalledA ( Addressable pszServer,  Addressable pszEnvironment,  MemorySegment CoreDriverGUID,  MemorySegment ftDriverDate,  long dwlDriverVersion,  Addressable pbDriverInstalled) {
+        var mh$ = CorePrinterDriverInstalledA$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszEnvironment, CoreDriverGUID, ftDriverDate, dwlDriverVersion, pbDriverInstalled);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CorePrinterDriverInstalledW$MH() {
+        return RuntimeHelper.requireNonNull(constants$684.CorePrinterDriverInstalledW$MH,"CorePrinterDriverInstalledW");
+    }
+    public static int CorePrinterDriverInstalledW ( Addressable pszServer,  Addressable pszEnvironment,  MemorySegment CoreDriverGUID,  MemorySegment ftDriverDate,  long dwlDriverVersion,  Addressable pbDriverInstalled) {
+        var mh$ = CorePrinterDriverInstalledW$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszEnvironment, CoreDriverGUID, ftDriverDate, dwlDriverVersion, pbDriverInstalled);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDriverPackagePathA$MH() {
+        return RuntimeHelper.requireNonNull(constants$684.GetPrinterDriverPackagePathA$MH,"GetPrinterDriverPackagePathA");
+    }
+    public static int GetPrinterDriverPackagePathA ( Addressable pszServer,  Addressable pszEnvironment,  Addressable pszLanguage,  Addressable pszPackageID,  Addressable pszDriverPackageCab,  int cchDriverPackageCab,  Addressable pcchRequiredSize) {
+        var mh$ = GetPrinterDriverPackagePathA$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszEnvironment, pszLanguage, pszPackageID, pszDriverPackageCab, cchDriverPackageCab, pcchRequiredSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDriverPackagePathW$MH() {
+        return RuntimeHelper.requireNonNull(constants$684.GetPrinterDriverPackagePathW$MH,"GetPrinterDriverPackagePathW");
+    }
+    public static int GetPrinterDriverPackagePathW ( Addressable pszServer,  Addressable pszEnvironment,  Addressable pszLanguage,  Addressable pszPackageID,  Addressable pszDriverPackageCab,  int cchDriverPackageCab,  Addressable pcchRequiredSize) {
+        var mh$ = GetPrinterDriverPackagePathW$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszEnvironment, pszLanguage, pszPackageID, pszDriverPackageCab, cchDriverPackageCab, pcchRequiredSize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDriverPackageA$MH() {
+        return RuntimeHelper.requireNonNull(constants$684.DeletePrinterDriverPackageA$MH,"DeletePrinterDriverPackageA");
+    }
+    public static int DeletePrinterDriverPackageA ( Addressable pszServer,  Addressable pszInfPath,  Addressable pszEnvironment) {
+        var mh$ = DeletePrinterDriverPackageA$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszInfPath, pszEnvironment);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeletePrinterDriverPackageW$MH() {
+        return RuntimeHelper.requireNonNull(constants$685.DeletePrinterDriverPackageW$MH,"DeletePrinterDriverPackageW");
+    }
+    public static int DeletePrinterDriverPackageW ( Addressable pszServer,  Addressable pszInfPath,  Addressable pszEnvironment) {
+        var mh$ = DeletePrinterDriverPackageW$MH();
+        try {
+            return (int)mh$.invokeExact(pszServer, pszInfPath, pszEnvironment);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int kPropertyTypeString() {
+        return (int)1L;
+    }
+    public static int kPropertyTypeInt32() {
+        return (int)2L;
+    }
+    public static int kPropertyTypeInt64() {
+        return (int)3L;
+    }
+    public static int kPropertyTypeByte() {
+        return (int)4L;
+    }
+    public static int kPropertyTypeTime() {
+        return (int)5L;
+    }
+    public static int kPropertyTypeDevMode() {
+        return (int)6L;
+    }
+    public static int kPropertyTypeSD() {
+        return (int)7L;
+    }
+    public static int kPropertyTypeNotificationReply() {
+        return (int)8L;
+    }
+    public static int kPropertyTypeNotificationOptions() {
+        return (int)9L;
+    }
+    public static int kPropertyTypeBuffer() {
+        return (int)10L;
+    }
+    public static int kAddingDocumentSequence() {
+        return (int)0L;
+    }
+    public static int kDocumentSequenceAdded() {
+        return (int)1L;
+    }
+    public static int kAddingFixedDocument() {
+        return (int)2L;
+    }
+    public static int kFixedDocumentAdded() {
+        return (int)3L;
+    }
+    public static int kAddingFixedPage() {
+        return (int)4L;
+    }
+    public static int kFixedPageAdded() {
+        return (int)5L;
+    }
+    public static int kResourceAdded() {
+        return (int)6L;
+    }
+    public static int kFontAdded() {
+        return (int)7L;
+    }
+    public static int kImageAdded() {
+        return (int)8L;
+    }
+    public static int kXpsDocumentCommitted() {
+        return (int)9L;
+    }
+    public static int kJobProduction() {
+        return (int)1L;
+    }
+    public static int kJobConsumption() {
+        return (int)2L;
+    }
+    public static MethodHandle ReportJobProcessingProgress$MH() {
+        return RuntimeHelper.requireNonNull(constants$685.ReportJobProcessingProgress$MH,"ReportJobProcessingProgress");
+    }
+    public static int ReportJobProcessingProgress ( Addressable printerHandle,  int jobId,  int jobOperation,  int jobProgress) {
+        var mh$ = ReportJobProcessingProgress$MH();
+        try {
+            return (int)mh$.invokeExact(printerHandle, jobId, jobOperation, jobProgress);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDriver2A$MH() {
+        return RuntimeHelper.requireNonNull(constants$685.GetPrinterDriver2A$MH,"GetPrinterDriver2A");
+    }
+    public static int GetPrinterDriver2A ( Addressable hWnd,  Addressable hPrinter,  Addressable pEnvironment,  int Level,  Addressable pDriverInfo,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDriver2A$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, hPrinter, pEnvironment, Level, pDriverInfo, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrinterDriver2W$MH() {
+        return RuntimeHelper.requireNonNull(constants$685.GetPrinterDriver2W$MH,"GetPrinterDriver2W");
+    }
+    public static int GetPrinterDriver2W ( Addressable hWnd,  Addressable hPrinter,  Addressable pEnvironment,  int Level,  Addressable pDriverInfo,  int cbBuf,  Addressable pcbNeeded) {
+        var mh$ = GetPrinterDriver2W$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, hPrinter, pEnvironment, Level, pDriverInfo, cbBuf, pcbNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int PRINT_EXECUTION_CONTEXT_APPLICATION() {
+        return (int)0L;
+    }
+    public static int PRINT_EXECUTION_CONTEXT_SPOOLER_SERVICE() {
+        return (int)1L;
+    }
+    public static int PRINT_EXECUTION_CONTEXT_SPOOLER_ISOLATION_HOST() {
+        return (int)2L;
+    }
+    public static int PRINT_EXECUTION_CONTEXT_FILTER_PIPELINE() {
+        return (int)3L;
+    }
+    public static int PRINT_EXECUTION_CONTEXT_WOW64() {
+        return (int)4L;
+    }
+    public static MethodHandle GetPrintExecutionData$MH() {
+        return RuntimeHelper.requireNonNull(constants$685.GetPrintExecutionData$MH,"GetPrintExecutionData");
+    }
+    public static int GetPrintExecutionData ( Addressable pData) {
+        var mh$ = GetPrintExecutionData$MH();
+        try {
+            return (int)mh$.invokeExact(pData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetJobNamedPropertyValue$MH() {
+        return RuntimeHelper.requireNonNull(constants$685.GetJobNamedPropertyValue$MH,"GetJobNamedPropertyValue");
+    }
+    public static int GetJobNamedPropertyValue ( Addressable hPrinter,  int JobId,  Addressable pszName,  Addressable pValue) {
+        var mh$ = GetJobNamedPropertyValue$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId, pszName, pValue);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FreePrintPropertyValue$MH() {
+        return RuntimeHelper.requireNonNull(constants$686.FreePrintPropertyValue$MH,"FreePrintPropertyValue");
+    }
+    public static void FreePrintPropertyValue ( Addressable pValue) {
+        var mh$ = FreePrintPropertyValue$MH();
+        try {
+            mh$.invokeExact(pValue);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FreePrintNamedPropertyArray$MH() {
+        return RuntimeHelper.requireNonNull(constants$686.FreePrintNamedPropertyArray$MH,"FreePrintNamedPropertyArray");
+    }
+    public static void FreePrintNamedPropertyArray ( int cProperties,  Addressable ppProperties) {
+        var mh$ = FreePrintNamedPropertyArray$MH();
+        try {
+            mh$.invokeExact(cProperties, ppProperties);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetJobNamedProperty$MH() {
+        return RuntimeHelper.requireNonNull(constants$686.SetJobNamedProperty$MH,"SetJobNamedProperty");
+    }
+    public static int SetJobNamedProperty ( Addressable hPrinter,  int JobId,  Addressable pProperty) {
+        var mh$ = SetJobNamedProperty$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId, pProperty);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteJobNamedProperty$MH() {
+        return RuntimeHelper.requireNonNull(constants$686.DeleteJobNamedProperty$MH,"DeleteJobNamedProperty");
+    }
+    public static int DeleteJobNamedProperty ( Addressable hPrinter,  int JobId,  Addressable pszName) {
+        var mh$ = DeleteJobNamedProperty$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId, pszName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumJobNamedProperties$MH() {
+        return RuntimeHelper.requireNonNull(constants$686.EnumJobNamedProperties$MH,"EnumJobNamedProperties");
+    }
+    public static int EnumJobNamedProperties ( Addressable hPrinter,  int JobId,  Addressable pcProperties,  Addressable ppProperties) {
+        var mh$ = EnumJobNamedProperties$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, JobId, pcProperties, ppProperties);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetPrintOutputInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$686.GetPrintOutputInfo$MH,"GetPrintOutputInfo");
+    }
+    public static int GetPrintOutputInfo ( Addressable hWnd,  Addressable pszPrinter,  Addressable phFile,  Addressable ppszOutputFile) {
+        var mh$ = GetPrintOutputInfo$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, pszPrinter, phFile, ppszOutputFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int REGCLS_SINGLEUSE() {
+        return (int)0L;
+    }
+    public static int REGCLS_MULTIPLEUSE() {
+        return (int)1L;
+    }
+    public static int REGCLS_MULTI_SEPARATE() {
+        return (int)2L;
+    }
+    public static int REGCLS_SUSPENDED() {
+        return (int)4L;
+    }
+    public static int REGCLS_SURROGATE() {
+        return (int)8L;
+    }
+    public static int REGCLS_AGILE() {
+        return (int)16L;
+    }
+    public static int COINITBASE_MULTITHREADED() {
+        return (int)0L;
+    }
+    public static MethodHandle CoGetMalloc$MH() {
+        return RuntimeHelper.requireNonNull(constants$687.CoGetMalloc$MH,"CoGetMalloc");
+    }
+    public static int CoGetMalloc ( int dwMemContext,  Addressable ppMalloc) {
+        var mh$ = CoGetMalloc$MH();
+        try {
+            return (int)mh$.invokeExact(dwMemContext, ppMalloc);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateStreamOnHGlobal$MH() {
+        return RuntimeHelper.requireNonNull(constants$687.CreateStreamOnHGlobal$MH,"CreateStreamOnHGlobal");
+    }
+    public static int CreateStreamOnHGlobal ( Addressable hGlobal,  int fDeleteOnRelease,  Addressable ppstm) {
+        var mh$ = CreateStreamOnHGlobal$MH();
+        try {
+            return (int)mh$.invokeExact(hGlobal, fDeleteOnRelease, ppstm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetHGlobalFromStream$MH() {
+        return RuntimeHelper.requireNonNull(constants$687.GetHGlobalFromStream$MH,"GetHGlobalFromStream");
+    }
+    public static int GetHGlobalFromStream ( Addressable pstm,  Addressable phglobal) {
+        var mh$ = GetHGlobalFromStream$MH();
+        try {
+            return (int)mh$.invokeExact(pstm, phglobal);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoUninitialize$MH() {
+        return RuntimeHelper.requireNonNull(constants$687.CoUninitialize$MH,"CoUninitialize");
+    }
+    public static void CoUninitialize () {
+        var mh$ = CoUninitialize$MH();
+        try {
+            mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetCurrentProcess$MH() {
+        return RuntimeHelper.requireNonNull(constants$687.CoGetCurrentProcess$MH,"CoGetCurrentProcess");
+    }
+    public static int CoGetCurrentProcess () {
+        var mh$ = CoGetCurrentProcess$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoInitializeEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$687.CoInitializeEx$MH,"CoInitializeEx");
+    }
+    public static int CoInitializeEx ( Addressable pvReserved,  int dwCoInit) {
+        var mh$ = CoInitializeEx$MH();
+        try {
+            return (int)mh$.invokeExact(pvReserved, dwCoInit);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetCallerTID$MH() {
+        return RuntimeHelper.requireNonNull(constants$688.CoGetCallerTID$MH,"CoGetCallerTID");
+    }
+    public static int CoGetCallerTID ( Addressable lpdwTID) {
+        var mh$ = CoGetCallerTID$MH();
+        try {
+            return (int)mh$.invokeExact(lpdwTID);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetCurrentLogicalThreadId$MH() {
+        return RuntimeHelper.requireNonNull(constants$688.CoGetCurrentLogicalThreadId$MH,"CoGetCurrentLogicalThreadId");
+    }
+    public static int CoGetCurrentLogicalThreadId ( Addressable pguid) {
+        var mh$ = CoGetCurrentLogicalThreadId$MH();
+        try {
+            return (int)mh$.invokeExact(pguid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetContextToken$MH() {
+        return RuntimeHelper.requireNonNull(constants$688.CoGetContextToken$MH,"CoGetContextToken");
+    }
+    public static int CoGetContextToken ( Addressable pToken) {
+        var mh$ = CoGetContextToken$MH();
+        try {
+            return (int)mh$.invokeExact(pToken);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetDefaultContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$688.CoGetDefaultContext$MH,"CoGetDefaultContext");
+    }
+    public static int CoGetDefaultContext ( int aptType,  Addressable riid,  Addressable ppv) {
+        var mh$ = CoGetDefaultContext$MH();
+        try {
+            return (int)mh$.invokeExact(aptType, riid, ppv);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetApartmentType$MH() {
+        return RuntimeHelper.requireNonNull(constants$688.CoGetApartmentType$MH,"CoGetApartmentType");
+    }
+    public static int CoGetApartmentType ( Addressable pAptType,  Addressable pAptQualifier) {
+        var mh$ = CoGetApartmentType$MH();
+        try {
+            return (int)mh$.invokeExact(pAptType, pAptQualifier);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PServerInformation = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle CoDecodeProxy$MH() {
+        return RuntimeHelper.requireNonNull(constants$688.CoDecodeProxy$MH,"CoDecodeProxy");
+    }
+    public static int CoDecodeProxy ( int dwClientPid,  long ui64ProxyAddress,  Addressable pServerInformation) {
+        var mh$ = CoDecodeProxy$MH();
+        try {
+            return (int)mh$.invokeExact(dwClientPid, ui64ProxyAddress, pServerInformation);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress CO_MTA_USAGE_COOKIE = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle CoIncrementMTAUsage$MH() {
+        return RuntimeHelper.requireNonNull(constants$689.CoIncrementMTAUsage$MH,"CoIncrementMTAUsage");
+    }
+    public static int CoIncrementMTAUsage ( Addressable pCookie) {
+        var mh$ = CoIncrementMTAUsage$MH();
+        try {
+            return (int)mh$.invokeExact(pCookie);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoDecrementMTAUsage$MH() {
+        return RuntimeHelper.requireNonNull(constants$689.CoDecrementMTAUsage$MH,"CoDecrementMTAUsage");
+    }
+    public static int CoDecrementMTAUsage ( Addressable Cookie) {
+        var mh$ = CoDecrementMTAUsage$MH();
+        try {
+            return (int)mh$.invokeExact(Cookie);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoAllowUnmarshalerCLSID$MH() {
+        return RuntimeHelper.requireNonNull(constants$689.CoAllowUnmarshalerCLSID$MH,"CoAllowUnmarshalerCLSID");
+    }
+    public static int CoAllowUnmarshalerCLSID ( Addressable clsid) {
+        var mh$ = CoAllowUnmarshalerCLSID$MH();
+        try {
+            return (int)mh$.invokeExact(clsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetObjectContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$689.CoGetObjectContext$MH,"CoGetObjectContext");
+    }
+    public static int CoGetObjectContext ( Addressable riid,  Addressable ppv) {
+        var mh$ = CoGetObjectContext$MH();
+        try {
+            return (int)mh$.invokeExact(riid, ppv);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetClassObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$689.CoGetClassObject$MH,"CoGetClassObject");
+    }
+    public static int CoGetClassObject ( Addressable rclsid,  int dwClsContext,  Addressable pvReserved,  Addressable riid,  Addressable ppv) {
+        var mh$ = CoGetClassObject$MH();
+        try {
+            return (int)mh$.invokeExact(rclsid, dwClsContext, pvReserved, riid, ppv);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoRegisterClassObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$689.CoRegisterClassObject$MH,"CoRegisterClassObject");
+    }
+    public static int CoRegisterClassObject ( Addressable rclsid,  Addressable pUnk,  int dwClsContext,  int flags,  Addressable lpdwRegister) {
+        var mh$ = CoRegisterClassObject$MH();
+        try {
+            return (int)mh$.invokeExact(rclsid, pUnk, dwClsContext, flags, lpdwRegister);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoRevokeClassObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$690.CoRevokeClassObject$MH,"CoRevokeClassObject");
+    }
+    public static int CoRevokeClassObject ( int dwRegister) {
+        var mh$ = CoRevokeClassObject$MH();
+        try {
+            return (int)mh$.invokeExact(dwRegister);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoResumeClassObjects$MH() {
+        return RuntimeHelper.requireNonNull(constants$690.CoResumeClassObjects$MH,"CoResumeClassObjects");
+    }
+    public static int CoResumeClassObjects () {
+        var mh$ = CoResumeClassObjects$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoSuspendClassObjects$MH() {
+        return RuntimeHelper.requireNonNull(constants$690.CoSuspendClassObjects$MH,"CoSuspendClassObjects");
+    }
+    public static int CoSuspendClassObjects () {
+        var mh$ = CoSuspendClassObjects$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoAddRefServerProcess$MH() {
+        return RuntimeHelper.requireNonNull(constants$690.CoAddRefServerProcess$MH,"CoAddRefServerProcess");
+    }
+    public static int CoAddRefServerProcess () {
+        var mh$ = CoAddRefServerProcess$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoReleaseServerProcess$MH() {
+        return RuntimeHelper.requireNonNull(constants$690.CoReleaseServerProcess$MH,"CoReleaseServerProcess");
+    }
+    public static int CoReleaseServerProcess () {
+        var mh$ = CoReleaseServerProcess$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetPSClsid$MH() {
+        return RuntimeHelper.requireNonNull(constants$690.CoGetPSClsid$MH,"CoGetPSClsid");
+    }
+    public static int CoGetPSClsid ( Addressable riid,  Addressable pClsid) {
+        var mh$ = CoGetPSClsid$MH();
+        try {
+            return (int)mh$.invokeExact(riid, pClsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoRegisterPSClsid$MH() {
+        return RuntimeHelper.requireNonNull(constants$691.CoRegisterPSClsid$MH,"CoRegisterPSClsid");
+    }
+    public static int CoRegisterPSClsid ( Addressable riid,  Addressable rclsid) {
+        var mh$ = CoRegisterPSClsid$MH();
+        try {
+            return (int)mh$.invokeExact(riid, rclsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoRegisterSurrogate$MH() {
+        return RuntimeHelper.requireNonNull(constants$691.CoRegisterSurrogate$MH,"CoRegisterSurrogate");
+    }
+    public static int CoRegisterSurrogate ( Addressable pSurrogate) {
+        var mh$ = CoRegisterSurrogate$MH();
+        try {
+            return (int)mh$.invokeExact(pSurrogate);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetMarshalSizeMax$MH() {
+        return RuntimeHelper.requireNonNull(constants$691.CoGetMarshalSizeMax$MH,"CoGetMarshalSizeMax");
+    }
+    public static int CoGetMarshalSizeMax ( Addressable pulSize,  Addressable riid,  Addressable pUnk,  int dwDestContext,  Addressable pvDestContext,  int mshlflags) {
+        var mh$ = CoGetMarshalSizeMax$MH();
+        try {
+            return (int)mh$.invokeExact(pulSize, riid, pUnk, dwDestContext, pvDestContext, mshlflags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoMarshalInterface$MH() {
+        return RuntimeHelper.requireNonNull(constants$691.CoMarshalInterface$MH,"CoMarshalInterface");
+    }
+    public static int CoMarshalInterface ( Addressable pStm,  Addressable riid,  Addressable pUnk,  int dwDestContext,  Addressable pvDestContext,  int mshlflags) {
+        var mh$ = CoMarshalInterface$MH();
+        try {
+            return (int)mh$.invokeExact(pStm, riid, pUnk, dwDestContext, pvDestContext, mshlflags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoUnmarshalInterface$MH() {
+        return RuntimeHelper.requireNonNull(constants$691.CoUnmarshalInterface$MH,"CoUnmarshalInterface");
+    }
+    public static int CoUnmarshalInterface ( Addressable pStm,  Addressable riid,  Addressable ppv) {
+        var mh$ = CoUnmarshalInterface$MH();
+        try {
+            return (int)mh$.invokeExact(pStm, riid, ppv);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoMarshalHresult$MH() {
+        return RuntimeHelper.requireNonNull(constants$691.CoMarshalHresult$MH,"CoMarshalHresult");
+    }
+    public static int CoMarshalHresult ( Addressable pstm,  int hresult) {
+        var mh$ = CoMarshalHresult$MH();
+        try {
+            return (int)mh$.invokeExact(pstm, hresult);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoUnmarshalHresult$MH() {
+        return RuntimeHelper.requireNonNull(constants$692.CoUnmarshalHresult$MH,"CoUnmarshalHresult");
+    }
+    public static int CoUnmarshalHresult ( Addressable pstm,  Addressable phresult) {
+        var mh$ = CoUnmarshalHresult$MH();
+        try {
+            return (int)mh$.invokeExact(pstm, phresult);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoReleaseMarshalData$MH() {
+        return RuntimeHelper.requireNonNull(constants$692.CoReleaseMarshalData$MH,"CoReleaseMarshalData");
+    }
+    public static int CoReleaseMarshalData ( Addressable pStm) {
+        var mh$ = CoReleaseMarshalData$MH();
+        try {
+            return (int)mh$.invokeExact(pStm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoDisconnectObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$692.CoDisconnectObject$MH,"CoDisconnectObject");
+    }
+    public static int CoDisconnectObject ( Addressable pUnk,  int dwReserved) {
+        var mh$ = CoDisconnectObject$MH();
+        try {
+            return (int)mh$.invokeExact(pUnk, dwReserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoLockObjectExternal$MH() {
+        return RuntimeHelper.requireNonNull(constants$692.CoLockObjectExternal$MH,"CoLockObjectExternal");
+    }
+    public static int CoLockObjectExternal ( Addressable pUnk,  int fLock,  int fLastUnlockReleases) {
+        var mh$ = CoLockObjectExternal$MH();
+        try {
+            return (int)mh$.invokeExact(pUnk, fLock, fLastUnlockReleases);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetStandardMarshal$MH() {
+        return RuntimeHelper.requireNonNull(constants$692.CoGetStandardMarshal$MH,"CoGetStandardMarshal");
+    }
+    public static int CoGetStandardMarshal ( Addressable riid,  Addressable pUnk,  int dwDestContext,  Addressable pvDestContext,  int mshlflags,  Addressable ppMarshal) {
+        var mh$ = CoGetStandardMarshal$MH();
+        try {
+            return (int)mh$.invokeExact(riid, pUnk, dwDestContext, pvDestContext, mshlflags, ppMarshal);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetStdMarshalEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$692.CoGetStdMarshalEx$MH,"CoGetStdMarshalEx");
+    }
+    public static int CoGetStdMarshalEx ( Addressable pUnkOuter,  int smexflags,  Addressable ppUnkInner) {
+        var mh$ = CoGetStdMarshalEx$MH();
+        try {
+            return (int)mh$.invokeExact(pUnkOuter, smexflags, ppUnkInner);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int SMEXF_SERVER() {
+        return (int)1L;
+    }
+    public static int SMEXF_HANDLER() {
+        return (int)2L;
+    }
+    public static MethodHandle CoIsHandlerConnected$MH() {
+        return RuntimeHelper.requireNonNull(constants$693.CoIsHandlerConnected$MH,"CoIsHandlerConnected");
+    }
+    public static int CoIsHandlerConnected ( Addressable pUnk) {
+        var mh$ = CoIsHandlerConnected$MH();
+        try {
+            return (int)mh$.invokeExact(pUnk);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoMarshalInterThreadInterfaceInStream$MH() {
+        return RuntimeHelper.requireNonNull(constants$693.CoMarshalInterThreadInterfaceInStream$MH,"CoMarshalInterThreadInterfaceInStream");
+    }
+    public static int CoMarshalInterThreadInterfaceInStream ( Addressable riid,  Addressable pUnk,  Addressable ppStm) {
+        var mh$ = CoMarshalInterThreadInterfaceInStream$MH();
+        try {
+            return (int)mh$.invokeExact(riid, pUnk, ppStm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetInterfaceAndReleaseStream$MH() {
+        return RuntimeHelper.requireNonNull(constants$693.CoGetInterfaceAndReleaseStream$MH,"CoGetInterfaceAndReleaseStream");
+    }
+    public static int CoGetInterfaceAndReleaseStream ( Addressable pStm,  Addressable iid,  Addressable ppv) {
+        var mh$ = CoGetInterfaceAndReleaseStream$MH();
+        try {
+            return (int)mh$.invokeExact(pStm, iid, ppv);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoCreateFreeThreadedMarshaler$MH() {
+        return RuntimeHelper.requireNonNull(constants$693.CoCreateFreeThreadedMarshaler$MH,"CoCreateFreeThreadedMarshaler");
+    }
+    public static int CoCreateFreeThreadedMarshaler ( Addressable punkOuter,  Addressable ppunkMarshal) {
+        var mh$ = CoCreateFreeThreadedMarshaler$MH();
+        try {
+            return (int)mh$.invokeExact(punkOuter, ppunkMarshal);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoFreeUnusedLibraries$MH() {
+        return RuntimeHelper.requireNonNull(constants$693.CoFreeUnusedLibraries$MH,"CoFreeUnusedLibraries");
+    }
+    public static void CoFreeUnusedLibraries () {
+        var mh$ = CoFreeUnusedLibraries$MH();
+        try {
+            mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoFreeUnusedLibrariesEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$693.CoFreeUnusedLibrariesEx$MH,"CoFreeUnusedLibrariesEx");
+    }
+    public static void CoFreeUnusedLibrariesEx ( int dwUnloadDelay,  int dwReserved) {
+        var mh$ = CoFreeUnusedLibrariesEx$MH();
+        try {
+            mh$.invokeExact(dwUnloadDelay, dwReserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoDisconnectContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$694.CoDisconnectContext$MH,"CoDisconnectContext");
+    }
+    public static int CoDisconnectContext ( int dwTimeout) {
+        var mh$ = CoDisconnectContext$MH();
+        try {
+            return (int)mh$.invokeExact(dwTimeout);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoInitializeSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$694.CoInitializeSecurity$MH,"CoInitializeSecurity");
+    }
+    public static int CoInitializeSecurity ( Addressable pSecDesc,  int cAuthSvc,  Addressable asAuthSvc,  Addressable pReserved1,  int dwAuthnLevel,  int dwImpLevel,  Addressable pAuthList,  int dwCapabilities,  Addressable pReserved3) {
+        var mh$ = CoInitializeSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(pSecDesc, cAuthSvc, asAuthSvc, pReserved1, dwAuthnLevel, dwImpLevel, pAuthList, dwCapabilities, pReserved3);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetCallContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$694.CoGetCallContext$MH,"CoGetCallContext");
+    }
+    public static int CoGetCallContext ( Addressable riid,  Addressable ppInterface) {
+        var mh$ = CoGetCallContext$MH();
+        try {
+            return (int)mh$.invokeExact(riid, ppInterface);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoQueryProxyBlanket$MH() {
+        return RuntimeHelper.requireNonNull(constants$694.CoQueryProxyBlanket$MH,"CoQueryProxyBlanket");
+    }
+    public static int CoQueryProxyBlanket ( Addressable pProxy,  Addressable pwAuthnSvc,  Addressable pAuthzSvc,  Addressable pServerPrincName,  Addressable pAuthnLevel,  Addressable pImpLevel,  Addressable pAuthInfo,  Addressable pCapabilites) {
+        var mh$ = CoQueryProxyBlanket$MH();
+        try {
+            return (int)mh$.invokeExact(pProxy, pwAuthnSvc, pAuthzSvc, pServerPrincName, pAuthnLevel, pImpLevel, pAuthInfo, pCapabilites);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoSetProxyBlanket$MH() {
+        return RuntimeHelper.requireNonNull(constants$694.CoSetProxyBlanket$MH,"CoSetProxyBlanket");
+    }
+    public static int CoSetProxyBlanket ( Addressable pProxy,  int dwAuthnSvc,  int dwAuthzSvc,  Addressable pServerPrincName,  int dwAuthnLevel,  int dwImpLevel,  Addressable pAuthInfo,  int dwCapabilities) {
+        var mh$ = CoSetProxyBlanket$MH();
+        try {
+            return (int)mh$.invokeExact(pProxy, dwAuthnSvc, dwAuthzSvc, pServerPrincName, dwAuthnLevel, dwImpLevel, pAuthInfo, dwCapabilities);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoCopyProxy$MH() {
+        return RuntimeHelper.requireNonNull(constants$694.CoCopyProxy$MH,"CoCopyProxy");
+    }
+    public static int CoCopyProxy ( Addressable pProxy,  Addressable ppCopy) {
+        var mh$ = CoCopyProxy$MH();
+        try {
+            return (int)mh$.invokeExact(pProxy, ppCopy);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoQueryClientBlanket$MH() {
+        return RuntimeHelper.requireNonNull(constants$695.CoQueryClientBlanket$MH,"CoQueryClientBlanket");
+    }
+    public static int CoQueryClientBlanket ( Addressable pAuthnSvc,  Addressable pAuthzSvc,  Addressable pServerPrincName,  Addressable pAuthnLevel,  Addressable pImpLevel,  Addressable pPrivs,  Addressable pCapabilities) {
+        var mh$ = CoQueryClientBlanket$MH();
+        try {
+            return (int)mh$.invokeExact(pAuthnSvc, pAuthzSvc, pServerPrincName, pAuthnLevel, pImpLevel, pPrivs, pCapabilities);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoImpersonateClient$MH() {
+        return RuntimeHelper.requireNonNull(constants$695.CoImpersonateClient$MH,"CoImpersonateClient");
+    }
+    public static int CoImpersonateClient () {
+        var mh$ = CoImpersonateClient$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoRevertToSelf$MH() {
+        return RuntimeHelper.requireNonNull(constants$695.CoRevertToSelf$MH,"CoRevertToSelf");
+    }
+    public static int CoRevertToSelf () {
+        var mh$ = CoRevertToSelf$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoQueryAuthenticationServices$MH() {
+        return RuntimeHelper.requireNonNull(constants$695.CoQueryAuthenticationServices$MH,"CoQueryAuthenticationServices");
+    }
+    public static int CoQueryAuthenticationServices ( Addressable pcAuthSvc,  Addressable asAuthSvc) {
+        var mh$ = CoQueryAuthenticationServices$MH();
+        try {
+            return (int)mh$.invokeExact(pcAuthSvc, asAuthSvc);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoSwitchCallContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$695.CoSwitchCallContext$MH,"CoSwitchCallContext");
+    }
+    public static int CoSwitchCallContext ( Addressable pNewObject,  Addressable ppOldObject) {
+        var mh$ = CoSwitchCallContext$MH();
+        try {
+            return (int)mh$.invokeExact(pNewObject, ppOldObject);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoCreateInstance$MH() {
+        return RuntimeHelper.requireNonNull(constants$695.CoCreateInstance$MH,"CoCreateInstance");
+    }
+    public static int CoCreateInstance ( Addressable rclsid,  Addressable pUnkOuter,  int dwClsContext,  Addressable riid,  Addressable ppv) {
+        var mh$ = CoCreateInstance$MH();
+        try {
+            return (int)mh$.invokeExact(rclsid, pUnkOuter, dwClsContext, riid, ppv);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoCreateInstanceEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$696.CoCreateInstanceEx$MH,"CoCreateInstanceEx");
+    }
+    public static int CoCreateInstanceEx ( Addressable Clsid,  Addressable punkOuter,  int dwClsCtx,  Addressable pServerInfo,  int dwCount,  Addressable pResults) {
+        var mh$ = CoCreateInstanceEx$MH();
+        try {
+            return (int)mh$.invokeExact(Clsid, punkOuter, dwClsCtx, pServerInfo, dwCount, pResults);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoCreateInstanceFromApp$MH() {
+        return RuntimeHelper.requireNonNull(constants$696.CoCreateInstanceFromApp$MH,"CoCreateInstanceFromApp");
+    }
+    public static int CoCreateInstanceFromApp ( Addressable Clsid,  Addressable punkOuter,  int dwClsCtx,  Addressable reserved,  int dwCount,  Addressable pResults) {
+        var mh$ = CoCreateInstanceFromApp$MH();
+        try {
+            return (int)mh$.invokeExact(Clsid, punkOuter, dwClsCtx, reserved, dwCount, pResults);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoRegisterActivationFilter$MH() {
+        return RuntimeHelper.requireNonNull(constants$696.CoRegisterActivationFilter$MH,"CoRegisterActivationFilter");
+    }
+    public static int CoRegisterActivationFilter ( Addressable pActivationFilter) {
+        var mh$ = CoRegisterActivationFilter$MH();
+        try {
+            return (int)mh$.invokeExact(pActivationFilter);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetCancelObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$696.CoGetCancelObject$MH,"CoGetCancelObject");
+    }
+    public static int CoGetCancelObject ( int dwThreadId,  Addressable iid,  Addressable ppUnk) {
+        var mh$ = CoGetCancelObject$MH();
+        try {
+            return (int)mh$.invokeExact(dwThreadId, iid, ppUnk);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoSetCancelObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$696.CoSetCancelObject$MH,"CoSetCancelObject");
+    }
+    public static int CoSetCancelObject ( Addressable pUnk) {
+        var mh$ = CoSetCancelObject$MH();
+        try {
+            return (int)mh$.invokeExact(pUnk);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoCancelCall$MH() {
+        return RuntimeHelper.requireNonNull(constants$696.CoCancelCall$MH,"CoCancelCall");
+    }
+    public static int CoCancelCall ( int dwThreadId,  int ulTimeout) {
+        var mh$ = CoCancelCall$MH();
+        try {
+            return (int)mh$.invokeExact(dwThreadId, ulTimeout);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoTestCancel$MH() {
+        return RuntimeHelper.requireNonNull(constants$697.CoTestCancel$MH,"CoTestCancel");
+    }
+    public static int CoTestCancel () {
+        var mh$ = CoTestCancel$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoEnableCallCancellation$MH() {
+        return RuntimeHelper.requireNonNull(constants$697.CoEnableCallCancellation$MH,"CoEnableCallCancellation");
+    }
+    public static int CoEnableCallCancellation ( Addressable pReserved) {
+        var mh$ = CoEnableCallCancellation$MH();
+        try {
+            return (int)mh$.invokeExact(pReserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoDisableCallCancellation$MH() {
+        return RuntimeHelper.requireNonNull(constants$697.CoDisableCallCancellation$MH,"CoDisableCallCancellation");
+    }
+    public static int CoDisableCallCancellation ( Addressable pReserved) {
+        var mh$ = CoDisableCallCancellation$MH();
+        try {
+            return (int)mh$.invokeExact(pReserved);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StringFromCLSID$MH() {
+        return RuntimeHelper.requireNonNull(constants$697.StringFromCLSID$MH,"StringFromCLSID");
+    }
+    public static int StringFromCLSID ( Addressable rclsid,  Addressable lplpsz) {
+        var mh$ = StringFromCLSID$MH();
+        try {
+            return (int)mh$.invokeExact(rclsid, lplpsz);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CLSIDFromString$MH() {
+        return RuntimeHelper.requireNonNull(constants$697.CLSIDFromString$MH,"CLSIDFromString");
+    }
+    public static int CLSIDFromString ( Addressable lpsz,  Addressable pclsid) {
+        var mh$ = CLSIDFromString$MH();
+        try {
+            return (int)mh$.invokeExact(lpsz, pclsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StringFromIID$MH() {
+        return RuntimeHelper.requireNonNull(constants$697.StringFromIID$MH,"StringFromIID");
+    }
+    public static int StringFromIID ( Addressable rclsid,  Addressable lplpsz) {
+        var mh$ = StringFromIID$MH();
+        try {
+            return (int)mh$.invokeExact(rclsid, lplpsz);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle IIDFromString$MH() {
+        return RuntimeHelper.requireNonNull(constants$698.IIDFromString$MH,"IIDFromString");
+    }
+    public static int IIDFromString ( Addressable lpsz,  Addressable lpiid) {
+        var mh$ = IIDFromString$MH();
+        try {
+            return (int)mh$.invokeExact(lpsz, lpiid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ProgIDFromCLSID$MH() {
+        return RuntimeHelper.requireNonNull(constants$698.ProgIDFromCLSID$MH,"ProgIDFromCLSID");
+    }
+    public static int ProgIDFromCLSID ( Addressable clsid,  Addressable lplpszProgID) {
+        var mh$ = ProgIDFromCLSID$MH();
+        try {
+            return (int)mh$.invokeExact(clsid, lplpszProgID);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CLSIDFromProgID$MH() {
+        return RuntimeHelper.requireNonNull(constants$698.CLSIDFromProgID$MH,"CLSIDFromProgID");
+    }
+    public static int CLSIDFromProgID ( Addressable lpszProgID,  Addressable lpclsid) {
+        var mh$ = CLSIDFromProgID$MH();
+        try {
+            return (int)mh$.invokeExact(lpszProgID, lpclsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StringFromGUID2$MH() {
+        return RuntimeHelper.requireNonNull(constants$698.StringFromGUID2$MH,"StringFromGUID2");
+    }
+    public static int StringFromGUID2 ( Addressable rguid,  Addressable lpsz,  int cchMax) {
+        var mh$ = StringFromGUID2$MH();
+        try {
+            return (int)mh$.invokeExact(rguid, lpsz, cchMax);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoCreateGuid$MH() {
+        return RuntimeHelper.requireNonNull(constants$698.CoCreateGuid$MH,"CoCreateGuid");
+    }
+    public static int CoCreateGuid ( Addressable pguid) {
+        var mh$ = CoCreateGuid$MH();
+        try {
+            return (int)mh$.invokeExact(pguid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PropVariantCopy$MH() {
+        return RuntimeHelper.requireNonNull(constants$698.PropVariantCopy$MH,"PropVariantCopy");
+    }
+    public static int PropVariantCopy ( Addressable pvarDest,  Addressable pvarSrc) {
+        var mh$ = PropVariantCopy$MH();
+        try {
+            return (int)mh$.invokeExact(pvarDest, pvarSrc);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PropVariantClear$MH() {
+        return RuntimeHelper.requireNonNull(constants$699.PropVariantClear$MH,"PropVariantClear");
+    }
+    public static int PropVariantClear ( Addressable pvar) {
+        var mh$ = PropVariantClear$MH();
+        try {
+            return (int)mh$.invokeExact(pvar);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FreePropVariantArray$MH() {
+        return RuntimeHelper.requireNonNull(constants$699.FreePropVariantArray$MH,"FreePropVariantArray");
+    }
+    public static int FreePropVariantArray ( int cVariants,  Addressable rgvars) {
+        var mh$ = FreePropVariantArray$MH();
+        try {
+            return (int)mh$.invokeExact(cVariants, rgvars);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoWaitForMultipleHandles$MH() {
+        return RuntimeHelper.requireNonNull(constants$699.CoWaitForMultipleHandles$MH,"CoWaitForMultipleHandles");
+    }
+    public static int CoWaitForMultipleHandles ( int dwFlags,  int dwTimeout,  int cHandles,  Addressable pHandles,  Addressable lpdwindex) {
+        var mh$ = CoWaitForMultipleHandles$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, dwTimeout, cHandles, pHandles, lpdwindex);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int COWAIT_DEFAULT() {
+        return (int)0L;
+    }
+    public static int COWAIT_WAITALL() {
+        return (int)1L;
+    }
+    public static int COWAIT_ALERTABLE() {
+        return (int)2L;
+    }
+    public static int COWAIT_INPUTAVAILABLE() {
+        return (int)4L;
+    }
+    public static int COWAIT_DISPATCH_CALLS() {
+        return (int)8L;
+    }
+    public static int COWAIT_DISPATCH_WINDOW_MESSAGES() {
+        return (int)16L;
+    }
+    public static int CWMO_DEFAULT() {
+        return (int)0L;
+    }
+    public static int CWMO_DISPATCH_CALLS() {
+        return (int)1L;
+    }
+    public static int CWMO_DISPATCH_WINDOW_MESSAGES() {
+        return (int)2L;
+    }
+    public static MethodHandle CoWaitForMultipleObjects$MH() {
+        return RuntimeHelper.requireNonNull(constants$699.CoWaitForMultipleObjects$MH,"CoWaitForMultipleObjects");
+    }
+    public static int CoWaitForMultipleObjects ( int dwFlags,  int dwTimeout,  int cHandles,  Addressable pHandles,  Addressable lpdwindex) {
+        var mh$ = CoWaitForMultipleObjects$MH();
+        try {
+            return (int)mh$.invokeExact(dwFlags, dwTimeout, cHandles, pHandles, lpdwindex);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoGetTreatAsClass$MH() {
+        return RuntimeHelper.requireNonNull(constants$699.CoGetTreatAsClass$MH,"CoGetTreatAsClass");
+    }
+    public static int CoGetTreatAsClass ( Addressable clsidOld,  Addressable pClsidNew) {
+        var mh$ = CoGetTreatAsClass$MH();
+        try {
+            return (int)mh$.invokeExact(clsidOld, pClsidNew);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoInvalidateRemoteMachineBindings$MH() {
+        return RuntimeHelper.requireNonNull(constants$699.CoInvalidateRemoteMachineBindings$MH,"CoInvalidateRemoteMachineBindings");
+    }
+    public static int CoInvalidateRemoteMachineBindings ( Addressable pszMachineName) {
+        var mh$ = CoInvalidateRemoteMachineBindings$MH();
+        try {
+            return (int)mh$.invokeExact(pszMachineName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int AGILEREFERENCE_DEFAULT() {
+        return (int)0L;
+    }
+    public static int AGILEREFERENCE_DELAYEDMARSHAL() {
+        return (int)1L;
+    }
+    public static MethodHandle RoGetAgileReference$MH() {
+        return RuntimeHelper.requireNonNull(constants$700.RoGetAgileReference$MH,"RoGetAgileReference");
+    }
+    public static int RoGetAgileReference ( int options,  Addressable riid,  Addressable pUnk,  Addressable ppAgileReference) {
+        var mh$ = RoGetAgileReference$MH();
+        try {
+            return (int)mh$.invokeExact(options, riid, pUnk, ppAgileReference);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DllGetClassObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$700.DllGetClassObject$MH,"DllGetClassObject");
+    }
+    public static int DllGetClassObject ( Addressable rclsid,  Addressable riid,  Addressable ppv) {
+        var mh$ = DllGetClassObject$MH();
+        try {
+            return (int)mh$.invokeExact(rclsid, riid, ppv);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DllCanUnloadNow$MH() {
+        return RuntimeHelper.requireNonNull(constants$701.DllCanUnloadNow$MH,"DllCanUnloadNow");
+    }
+    public static int DllCanUnloadNow () {
+        var mh$ = DllCanUnloadNow$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoTaskMemAlloc$MH() {
+        return RuntimeHelper.requireNonNull(constants$701.CoTaskMemAlloc$MH,"CoTaskMemAlloc");
+    }
+    public static MemoryAddress CoTaskMemAlloc ( long cb) {
+        var mh$ = CoTaskMemAlloc$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(cb);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoTaskMemRealloc$MH() {
+        return RuntimeHelper.requireNonNull(constants$701.CoTaskMemRealloc$MH,"CoTaskMemRealloc");
+    }
+    public static MemoryAddress CoTaskMemRealloc ( Addressable pv,  long cb) {
+        var mh$ = CoTaskMemRealloc$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(pv, cb);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoTaskMemFree$MH() {
+        return RuntimeHelper.requireNonNull(constants$701.CoTaskMemFree$MH,"CoTaskMemFree");
+    }
+    public static void CoTaskMemFree ( Addressable pv) {
+        var mh$ = CoTaskMemFree$MH();
+        try {
+            mh$.invokeExact(pv);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoFileTimeNow$MH() {
+        return RuntimeHelper.requireNonNull(constants$701.CoFileTimeNow$MH,"CoFileTimeNow");
+    }
+    public static int CoFileTimeNow ( Addressable lpFileTime) {
+        var mh$ = CoFileTimeNow$MH();
+        try {
+            return (int)mh$.invokeExact(lpFileTime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CLSIDFromProgIDEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$701.CLSIDFromProgIDEx$MH,"CLSIDFromProgIDEx");
+    }
+    public static int CLSIDFromProgIDEx ( Addressable lpszProgID,  Addressable lpclsid) {
+        var mh$ = CLSIDFromProgIDEx$MH();
+        try {
+            return (int)mh$.invokeExact(lpszProgID, lpclsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress CO_DEVICE_CATALOG_COOKIE = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle CoRegisterDeviceCatalog$MH() {
+        return RuntimeHelper.requireNonNull(constants$702.CoRegisterDeviceCatalog$MH,"CoRegisterDeviceCatalog");
+    }
+    public static int CoRegisterDeviceCatalog ( Addressable deviceInstanceId,  Addressable cookie) {
+        var mh$ = CoRegisterDeviceCatalog$MH();
+        try {
+            return (int)mh$.invokeExact(deviceInstanceId, cookie);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CoRevokeDeviceCatalog$MH() {
+        return RuntimeHelper.requireNonNull(constants$702.CoRevokeDeviceCatalog$MH,"CoRevokeDeviceCatalog");
+    }
+    public static int CoRevokeDeviceCatalog ( Addressable cookie) {
+        var mh$ = CoRevokeDeviceCatalog$MH();
+        try {
+            return (int)mh$.invokeExact(cookie);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgCreateDocfile$MH() {
+        return RuntimeHelper.requireNonNull(constants$702.StgCreateDocfile$MH,"StgCreateDocfile");
+    }
+    public static int StgCreateDocfile ( Addressable pwcsName,  int grfMode,  int reserved,  Addressable ppstgOpen) {
+        var mh$ = StgCreateDocfile$MH();
+        try {
+            return (int)mh$.invokeExact(pwcsName, grfMode, reserved, ppstgOpen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgCreateDocfileOnILockBytes$MH() {
+        return RuntimeHelper.requireNonNull(constants$702.StgCreateDocfileOnILockBytes$MH,"StgCreateDocfileOnILockBytes");
+    }
+    public static int StgCreateDocfileOnILockBytes ( Addressable plkbyt,  int grfMode,  int reserved,  Addressable ppstgOpen) {
+        var mh$ = StgCreateDocfileOnILockBytes$MH();
+        try {
+            return (int)mh$.invokeExact(plkbyt, grfMode, reserved, ppstgOpen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgOpenStorage$MH() {
+        return RuntimeHelper.requireNonNull(constants$702.StgOpenStorage$MH,"StgOpenStorage");
+    }
+    public static int StgOpenStorage ( Addressable pwcsName,  Addressable pstgPriority,  int grfMode,  Addressable snbExclude,  int reserved,  Addressable ppstgOpen) {
+        var mh$ = StgOpenStorage$MH();
+        try {
+            return (int)mh$.invokeExact(pwcsName, pstgPriority, grfMode, snbExclude, reserved, ppstgOpen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgOpenStorageOnILockBytes$MH() {
+        return RuntimeHelper.requireNonNull(constants$702.StgOpenStorageOnILockBytes$MH,"StgOpenStorageOnILockBytes");
+    }
+    public static int StgOpenStorageOnILockBytes ( Addressable plkbyt,  Addressable pstgPriority,  int grfMode,  Addressable snbExclude,  int reserved,  Addressable ppstgOpen) {
+        var mh$ = StgOpenStorageOnILockBytes$MH();
+        try {
+            return (int)mh$.invokeExact(plkbyt, pstgPriority, grfMode, snbExclude, reserved, ppstgOpen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgIsStorageFile$MH() {
+        return RuntimeHelper.requireNonNull(constants$703.StgIsStorageFile$MH,"StgIsStorageFile");
+    }
+    public static int StgIsStorageFile ( Addressable pwcsName) {
+        var mh$ = StgIsStorageFile$MH();
+        try {
+            return (int)mh$.invokeExact(pwcsName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgIsStorageILockBytes$MH() {
+        return RuntimeHelper.requireNonNull(constants$703.StgIsStorageILockBytes$MH,"StgIsStorageILockBytes");
+    }
+    public static int StgIsStorageILockBytes ( Addressable plkbyt) {
+        var mh$ = StgIsStorageILockBytes$MH();
+        try {
+            return (int)mh$.invokeExact(plkbyt);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgSetTimes$MH() {
+        return RuntimeHelper.requireNonNull(constants$703.StgSetTimes$MH,"StgSetTimes");
+    }
+    public static int StgSetTimes ( Addressable lpszName,  Addressable pctime,  Addressable patime,  Addressable pmtime) {
+        var mh$ = StgSetTimes$MH();
+        try {
+            return (int)mh$.invokeExact(lpszName, pctime, patime, pmtime);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgCreateStorageEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$703.StgCreateStorageEx$MH,"StgCreateStorageEx");
+    }
+    public static int StgCreateStorageEx ( Addressable pwcsName,  int grfMode,  int stgfmt,  int grfAttrs,  Addressable pStgOptions,  Addressable pSecurityDescriptor,  Addressable riid,  Addressable ppObjectOpen) {
+        var mh$ = StgCreateStorageEx$MH();
+        try {
+            return (int)mh$.invokeExact(pwcsName, grfMode, stgfmt, grfAttrs, pStgOptions, pSecurityDescriptor, riid, ppObjectOpen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgOpenStorageEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$703.StgOpenStorageEx$MH,"StgOpenStorageEx");
+    }
+    public static int StgOpenStorageEx ( Addressable pwcsName,  int grfMode,  int stgfmt,  int grfAttrs,  Addressable pStgOptions,  Addressable pSecurityDescriptor,  Addressable riid,  Addressable ppObjectOpen) {
+        var mh$ = StgOpenStorageEx$MH();
+        try {
+            return (int)mh$.invokeExact(pwcsName, grfMode, stgfmt, grfAttrs, pStgOptions, pSecurityDescriptor, riid, ppObjectOpen);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgCreatePropStg$MH() {
+        return RuntimeHelper.requireNonNull(constants$703.StgCreatePropStg$MH,"StgCreatePropStg");
+    }
+    public static int StgCreatePropStg ( Addressable pUnk,  Addressable fmtid,  Addressable pclsid,  int grfFlags,  int dwReserved,  Addressable ppPropStg) {
+        var mh$ = StgCreatePropStg$MH();
+        try {
+            return (int)mh$.invokeExact(pUnk, fmtid, pclsid, grfFlags, dwReserved, ppPropStg);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgOpenPropStg$MH() {
+        return RuntimeHelper.requireNonNull(constants$704.StgOpenPropStg$MH,"StgOpenPropStg");
+    }
+    public static int StgOpenPropStg ( Addressable pUnk,  Addressable fmtid,  int grfFlags,  int dwReserved,  Addressable ppPropStg) {
+        var mh$ = StgOpenPropStg$MH();
+        try {
+            return (int)mh$.invokeExact(pUnk, fmtid, grfFlags, dwReserved, ppPropStg);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StgCreatePropSetStg$MH() {
+        return RuntimeHelper.requireNonNull(constants$704.StgCreatePropSetStg$MH,"StgCreatePropSetStg");
+    }
+    public static int StgCreatePropSetStg ( Addressable pStorage,  int dwReserved,  Addressable ppPropSetStg) {
+        var mh$ = StgCreatePropSetStg$MH();
+        try {
+            return (int)mh$.invokeExact(pStorage, dwReserved, ppPropSetStg);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle FmtIdToPropStgName$MH() {
+        return RuntimeHelper.requireNonNull(constants$704.FmtIdToPropStgName$MH,"FmtIdToPropStgName");
+    }
+    public static int FmtIdToPropStgName ( Addressable pfmtid,  Addressable oszName) {
+        var mh$ = FmtIdToPropStgName$MH();
+        try {
+            return (int)mh$.invokeExact(pfmtid, oszName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle PropStgNameToFmtId$MH() {
+        return RuntimeHelper.requireNonNull(constants$704.PropStgNameToFmtId$MH,"PropStgNameToFmtId");
+    }
+    public static int PropStgNameToFmtId ( Addressable oszName,  Addressable pfmtid) {
+        var mh$ = PropStgNameToFmtId$MH();
+        try {
+            return (int)mh$.invokeExact(oszName, pfmtid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadClassStg$MH() {
+        return RuntimeHelper.requireNonNull(constants$704.ReadClassStg$MH,"ReadClassStg");
+    }
+    public static int ReadClassStg ( Addressable pStg,  Addressable pclsid) {
+        var mh$ = ReadClassStg$MH();
+        try {
+            return (int)mh$.invokeExact(pStg, pclsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteClassStg$MH() {
+        return RuntimeHelper.requireNonNull(constants$704.WriteClassStg$MH,"WriteClassStg");
+    }
+    public static int WriteClassStg ( Addressable pStg,  Addressable rclsid) {
+        var mh$ = WriteClassStg$MH();
+        try {
+            return (int)mh$.invokeExact(pStg, rclsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadClassStm$MH() {
+        return RuntimeHelper.requireNonNull(constants$705.ReadClassStm$MH,"ReadClassStm");
+    }
+    public static int ReadClassStm ( Addressable pStm,  Addressable pclsid) {
+        var mh$ = ReadClassStm$MH();
+        try {
+            return (int)mh$.invokeExact(pStm, pclsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteClassStm$MH() {
+        return RuntimeHelper.requireNonNull(constants$705.WriteClassStm$MH,"WriteClassStm");
+    }
+    public static int WriteClassStm ( Addressable pStm,  Addressable rclsid) {
+        var mh$ = WriteClassStm$MH();
+        try {
+            return (int)mh$.invokeExact(pStm, rclsid);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetHGlobalFromILockBytes$MH() {
+        return RuntimeHelper.requireNonNull(constants$705.GetHGlobalFromILockBytes$MH,"GetHGlobalFromILockBytes");
+    }
+    public static int GetHGlobalFromILockBytes ( Addressable plkbyt,  Addressable phglobal) {
+        var mh$ = GetHGlobalFromILockBytes$MH();
+        try {
+            return (int)mh$.invokeExact(plkbyt, phglobal);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateILockBytesOnHGlobal$MH() {
+        return RuntimeHelper.requireNonNull(constants$705.CreateILockBytesOnHGlobal$MH,"CreateILockBytesOnHGlobal");
+    }
+    public static int CreateILockBytesOnHGlobal ( Addressable hGlobal,  int fDeleteOnRelease,  Addressable pplkbyt) {
+        var mh$ = CreateILockBytesOnHGlobal$MH();
+        try {
+            return (int)mh$.invokeExact(hGlobal, fDeleteOnRelease, pplkbyt);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetConvertStg$MH() {
+        return RuntimeHelper.requireNonNull(constants$705.GetConvertStg$MH,"GetConvertStg");
+    }
+    public static int GetConvertStg ( Addressable pStg) {
+        var mh$ = GetConvertStg$MH();
+        try {
+            return (int)mh$.invokeExact(pStg);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MemorySegment NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$705.NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID$SEGMENT,"NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID");
+    }
+    public static MemorySegment NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$706.NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID$SEGMENT,"NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID");
+    }
+    public static MemorySegment DOMAIN_JOIN_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$706.DOMAIN_JOIN_GUID$SEGMENT,"DOMAIN_JOIN_GUID");
+    }
+    public static MemorySegment DOMAIN_LEAVE_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$706.DOMAIN_LEAVE_GUID$SEGMENT,"DOMAIN_LEAVE_GUID");
+    }
+    public static MemorySegment FIREWALL_PORT_OPEN_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$706.FIREWALL_PORT_OPEN_GUID$SEGMENT,"FIREWALL_PORT_OPEN_GUID");
+    }
+    public static MemorySegment FIREWALL_PORT_CLOSE_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$706.FIREWALL_PORT_CLOSE_GUID$SEGMENT,"FIREWALL_PORT_CLOSE_GUID");
+    }
+    public static MemorySegment MACHINE_POLICY_PRESENT_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$706.MACHINE_POLICY_PRESENT_GUID$SEGMENT,"MACHINE_POLICY_PRESENT_GUID");
+    }
+    public static MemorySegment USER_POLICY_PRESENT_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$707.USER_POLICY_PRESENT_GUID$SEGMENT,"USER_POLICY_PRESENT_GUID");
+    }
+    public static MemorySegment RPC_INTERFACE_EVENT_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$707.RPC_INTERFACE_EVENT_GUID$SEGMENT,"RPC_INTERFACE_EVENT_GUID");
+    }
+    public static MemorySegment NAMED_PIPE_EVENT_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$707.NAMED_PIPE_EVENT_GUID$SEGMENT,"NAMED_PIPE_EVENT_GUID");
+    }
+    public static MemorySegment CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID$SEGMENT() {
+        return RuntimeHelper.requireNonNull(constants$707.CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID$SEGMENT,"CUSTOM_SYSTEM_STATE_CHANGE_EVENT_GUID");
+    }
+    public static OfAddress LPSERVICE_CUSTOM_SYSTEM_STATE_CHANGE_DATA_ITEM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_DESCRIPTIONA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_DESCRIPTIONW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_DESCRIPTION = Constants$root.C_POINTER$LAYOUT;
+    public static int SC_ACTION_NONE() {
+        return (int)0L;
+    }
+    public static int SC_ACTION_RESTART() {
+        return (int)1L;
+    }
+    public static int SC_ACTION_REBOOT() {
+        return (int)2L;
+    }
+    public static int SC_ACTION_RUN_COMMAND() {
+        return (int)3L;
+    }
+    public static int SC_ACTION_OWN_RESTART() {
+        return (int)4L;
+    }
+    public static OfAddress LPSC_ACTION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_FAILURE_ACTIONSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_FAILURE_ACTIONSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_FAILURE_ACTIONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_DELAYED_AUTO_START_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_FAILURE_ACTIONS_FLAG = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_SID_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_REQUIRED_PRIVILEGES_INFOA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_REQUIRED_PRIVILEGES_INFOW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_REQUIRED_PRIVILEGES_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_PRESHUTDOWN_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_TRIGGER_SPECIFIC_DATA_ITEM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_TRIGGER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_TRIGGER_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_PREFERRED_NODE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_TIMECHANGE_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_LAUNCH_PROTECTED_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress SC_HANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSC_HANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress SERVICE_STATUS_HANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static int SC_STATUS_PROCESS_INFO() {
+        return (int)0L;
+    }
+    public static int SC_ENUM_PROCESS_INFO() {
+        return (int)0L;
+    }
+    public static OfAddress LPSERVICE_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_STATUS_PROCESS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPENUM_SERVICE_STATUSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPENUM_SERVICE_STATUSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPENUM_SERVICE_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPENUM_SERVICE_STATUS_PROCESSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPENUM_SERVICE_STATUS_PROCESSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPENUM_SERVICE_STATUS_PROCESS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress SC_LOCK = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPQUERY_SERVICE_LOCK_STATUSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPQUERY_SERVICE_LOCK_STATUSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPQUERY_SERVICE_LOCK_STATUS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPQUERY_SERVICE_CONFIGA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPQUERY_SERVICE_CONFIGW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPQUERY_SERVICE_CONFIG = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_TABLE_ENTRYA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_TABLE_ENTRYW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSERVICE_TABLE_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_NOTIFY_1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_NOTIFY_2A = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_NOTIFY_2W = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_NOTIFY_2 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_NOTIFYA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_NOTIFYW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_NOTIFY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_CONTROL_STATUS_REASON_PARAMSA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_CONTROL_STATUS_REASON_PARAMSW = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_CONTROL_STATUS_REASON_PARAMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSERVICE_START_REASON = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle ChangeServiceConfigA$MH() {
+        return RuntimeHelper.requireNonNull(constants$710.ChangeServiceConfigA$MH,"ChangeServiceConfigA");
+    }
+    public static int ChangeServiceConfigA ( Addressable hService,  int dwServiceType,  int dwStartType,  int dwErrorControl,  Addressable lpBinaryPathName,  Addressable lpLoadOrderGroup,  Addressable lpdwTagId,  Addressable lpDependencies,  Addressable lpServiceStartName,  Addressable lpPassword,  Addressable lpDisplayName) {
+        var mh$ = ChangeServiceConfigA$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwServiceType, dwStartType, dwErrorControl, lpBinaryPathName, lpLoadOrderGroup, lpdwTagId, lpDependencies, lpServiceStartName, lpPassword, lpDisplayName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ChangeServiceConfigW$MH() {
+        return RuntimeHelper.requireNonNull(constants$710.ChangeServiceConfigW$MH,"ChangeServiceConfigW");
+    }
+    public static int ChangeServiceConfigW ( Addressable hService,  int dwServiceType,  int dwStartType,  int dwErrorControl,  Addressable lpBinaryPathName,  Addressable lpLoadOrderGroup,  Addressable lpdwTagId,  Addressable lpDependencies,  Addressable lpServiceStartName,  Addressable lpPassword,  Addressable lpDisplayName) {
+        var mh$ = ChangeServiceConfigW$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwServiceType, dwStartType, dwErrorControl, lpBinaryPathName, lpLoadOrderGroup, lpdwTagId, lpDependencies, lpServiceStartName, lpPassword, lpDisplayName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ChangeServiceConfig2A$MH() {
+        return RuntimeHelper.requireNonNull(constants$711.ChangeServiceConfig2A$MH,"ChangeServiceConfig2A");
+    }
+    public static int ChangeServiceConfig2A ( Addressable hService,  int dwInfoLevel,  Addressable lpInfo) {
+        var mh$ = ChangeServiceConfig2A$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwInfoLevel, lpInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ChangeServiceConfig2W$MH() {
+        return RuntimeHelper.requireNonNull(constants$711.ChangeServiceConfig2W$MH,"ChangeServiceConfig2W");
+    }
+    public static int ChangeServiceConfig2W ( Addressable hService,  int dwInfoLevel,  Addressable lpInfo) {
+        var mh$ = ChangeServiceConfig2W$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwInfoLevel, lpInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CloseServiceHandle$MH() {
+        return RuntimeHelper.requireNonNull(constants$711.CloseServiceHandle$MH,"CloseServiceHandle");
+    }
+    public static int CloseServiceHandle ( Addressable hSCObject) {
+        var mh$ = CloseServiceHandle$MH();
+        try {
+            return (int)mh$.invokeExact(hSCObject);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ControlService$MH() {
+        return RuntimeHelper.requireNonNull(constants$711.ControlService$MH,"ControlService");
+    }
+    public static int ControlService ( Addressable hService,  int dwControl,  Addressable lpServiceStatus) {
+        var mh$ = ControlService$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwControl, lpServiceStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateServiceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$711.CreateServiceA$MH,"CreateServiceA");
+    }
+    public static MemoryAddress CreateServiceA ( Addressable hSCManager,  Addressable lpServiceName,  Addressable lpDisplayName,  int dwDesiredAccess,  int dwServiceType,  int dwStartType,  int dwErrorControl,  Addressable lpBinaryPathName,  Addressable lpLoadOrderGroup,  Addressable lpdwTagId,  Addressable lpDependencies,  Addressable lpServiceStartName,  Addressable lpPassword) {
+        var mh$ = CreateServiceA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hSCManager, lpServiceName, lpDisplayName, dwDesiredAccess, dwServiceType, dwStartType, dwErrorControl, lpBinaryPathName, lpLoadOrderGroup, lpdwTagId, lpDependencies, lpServiceStartName, lpPassword);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CreateServiceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$711.CreateServiceW$MH,"CreateServiceW");
+    }
+    public static MemoryAddress CreateServiceW ( Addressable hSCManager,  Addressable lpServiceName,  Addressable lpDisplayName,  int dwDesiredAccess,  int dwServiceType,  int dwStartType,  int dwErrorControl,  Addressable lpBinaryPathName,  Addressable lpLoadOrderGroup,  Addressable lpdwTagId,  Addressable lpDependencies,  Addressable lpServiceStartName,  Addressable lpPassword) {
+        var mh$ = CreateServiceW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hSCManager, lpServiceName, lpDisplayName, dwDesiredAccess, dwServiceType, dwStartType, dwErrorControl, lpBinaryPathName, lpLoadOrderGroup, lpdwTagId, lpDependencies, lpServiceStartName, lpPassword);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle DeleteService$MH() {
+        return RuntimeHelper.requireNonNull(constants$712.DeleteService$MH,"DeleteService");
+    }
+    public static int DeleteService ( Addressable hService) {
+        var mh$ = DeleteService$MH();
+        try {
+            return (int)mh$.invokeExact(hService);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumDependentServicesA$MH() {
+        return RuntimeHelper.requireNonNull(constants$712.EnumDependentServicesA$MH,"EnumDependentServicesA");
+    }
+    public static int EnumDependentServicesA ( Addressable hService,  int dwServiceState,  Addressable lpServices,  int cbBufSize,  Addressable pcbBytesNeeded,  Addressable lpServicesReturned) {
+        var mh$ = EnumDependentServicesA$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwServiceState, lpServices, cbBufSize, pcbBytesNeeded, lpServicesReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumDependentServicesW$MH() {
+        return RuntimeHelper.requireNonNull(constants$712.EnumDependentServicesW$MH,"EnumDependentServicesW");
+    }
+    public static int EnumDependentServicesW ( Addressable hService,  int dwServiceState,  Addressable lpServices,  int cbBufSize,  Addressable pcbBytesNeeded,  Addressable lpServicesReturned) {
+        var mh$ = EnumDependentServicesW$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwServiceState, lpServices, cbBufSize, pcbBytesNeeded, lpServicesReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumServicesStatusA$MH() {
+        return RuntimeHelper.requireNonNull(constants$712.EnumServicesStatusA$MH,"EnumServicesStatusA");
+    }
+    public static int EnumServicesStatusA ( Addressable hSCManager,  int dwServiceType,  int dwServiceState,  Addressable lpServices,  int cbBufSize,  Addressable pcbBytesNeeded,  Addressable lpServicesReturned,  Addressable lpResumeHandle) {
+        var mh$ = EnumServicesStatusA$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, dwServiceType, dwServiceState, lpServices, cbBufSize, pcbBytesNeeded, lpServicesReturned, lpResumeHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumServicesStatusW$MH() {
+        return RuntimeHelper.requireNonNull(constants$712.EnumServicesStatusW$MH,"EnumServicesStatusW");
+    }
+    public static int EnumServicesStatusW ( Addressable hSCManager,  int dwServiceType,  int dwServiceState,  Addressable lpServices,  int cbBufSize,  Addressable pcbBytesNeeded,  Addressable lpServicesReturned,  Addressable lpResumeHandle) {
+        var mh$ = EnumServicesStatusW$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, dwServiceType, dwServiceState, lpServices, cbBufSize, pcbBytesNeeded, lpServicesReturned, lpResumeHandle);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumServicesStatusExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$712.EnumServicesStatusExA$MH,"EnumServicesStatusExA");
+    }
+    public static int EnumServicesStatusExA ( Addressable hSCManager,  int InfoLevel,  int dwServiceType,  int dwServiceState,  Addressable lpServices,  int cbBufSize,  Addressable pcbBytesNeeded,  Addressable lpServicesReturned,  Addressable lpResumeHandle,  Addressable pszGroupName) {
+        var mh$ = EnumServicesStatusExA$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, InfoLevel, dwServiceType, dwServiceState, lpServices, cbBufSize, pcbBytesNeeded, lpServicesReturned, lpResumeHandle, pszGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumServicesStatusExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$713.EnumServicesStatusExW$MH,"EnumServicesStatusExW");
+    }
+    public static int EnumServicesStatusExW ( Addressable hSCManager,  int InfoLevel,  int dwServiceType,  int dwServiceState,  Addressable lpServices,  int cbBufSize,  Addressable pcbBytesNeeded,  Addressable lpServicesReturned,  Addressable lpResumeHandle,  Addressable pszGroupName) {
+        var mh$ = EnumServicesStatusExW$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, InfoLevel, dwServiceType, dwServiceState, lpServices, cbBufSize, pcbBytesNeeded, lpServicesReturned, lpResumeHandle, pszGroupName);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetServiceKeyNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$713.GetServiceKeyNameA$MH,"GetServiceKeyNameA");
+    }
+    public static int GetServiceKeyNameA ( Addressable hSCManager,  Addressable lpDisplayName,  Addressable lpServiceName,  Addressable lpcchBuffer) {
+        var mh$ = GetServiceKeyNameA$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, lpDisplayName, lpServiceName, lpcchBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetServiceKeyNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$713.GetServiceKeyNameW$MH,"GetServiceKeyNameW");
+    }
+    public static int GetServiceKeyNameW ( Addressable hSCManager,  Addressable lpDisplayName,  Addressable lpServiceName,  Addressable lpcchBuffer) {
+        var mh$ = GetServiceKeyNameW$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, lpDisplayName, lpServiceName, lpcchBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetServiceDisplayNameA$MH() {
+        return RuntimeHelper.requireNonNull(constants$713.GetServiceDisplayNameA$MH,"GetServiceDisplayNameA");
+    }
+    public static int GetServiceDisplayNameA ( Addressable hSCManager,  Addressable lpServiceName,  Addressable lpDisplayName,  Addressable lpcchBuffer) {
+        var mh$ = GetServiceDisplayNameA$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, lpServiceName, lpDisplayName, lpcchBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetServiceDisplayNameW$MH() {
+        return RuntimeHelper.requireNonNull(constants$713.GetServiceDisplayNameW$MH,"GetServiceDisplayNameW");
+    }
+    public static int GetServiceDisplayNameW ( Addressable hSCManager,  Addressable lpServiceName,  Addressable lpDisplayName,  Addressable lpcchBuffer) {
+        var mh$ = GetServiceDisplayNameW$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, lpServiceName, lpDisplayName, lpcchBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle LockServiceDatabase$MH() {
+        return RuntimeHelper.requireNonNull(constants$713.LockServiceDatabase$MH,"LockServiceDatabase");
+    }
+    public static MemoryAddress LockServiceDatabase ( Addressable hSCManager) {
+        var mh$ = LockServiceDatabase$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hSCManager);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle NotifyBootConfigStatus$MH() {
+        return RuntimeHelper.requireNonNull(constants$714.NotifyBootConfigStatus$MH,"NotifyBootConfigStatus");
+    }
+    public static int NotifyBootConfigStatus ( int BootAcceptable) {
+        var mh$ = NotifyBootConfigStatus$MH();
+        try {
+            return (int)mh$.invokeExact(BootAcceptable);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenSCManagerA$MH() {
+        return RuntimeHelper.requireNonNull(constants$714.OpenSCManagerA$MH,"OpenSCManagerA");
+    }
+    public static MemoryAddress OpenSCManagerA ( Addressable lpMachineName,  Addressable lpDatabaseName,  int dwDesiredAccess) {
+        var mh$ = OpenSCManagerA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpMachineName, lpDatabaseName, dwDesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenSCManagerW$MH() {
+        return RuntimeHelper.requireNonNull(constants$714.OpenSCManagerW$MH,"OpenSCManagerW");
+    }
+    public static MemoryAddress OpenSCManagerW ( Addressable lpMachineName,  Addressable lpDatabaseName,  int dwDesiredAccess) {
+        var mh$ = OpenSCManagerW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpMachineName, lpDatabaseName, dwDesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenServiceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$714.OpenServiceA$MH,"OpenServiceA");
+    }
+    public static MemoryAddress OpenServiceA ( Addressable hSCManager,  Addressable lpServiceName,  int dwDesiredAccess) {
+        var mh$ = OpenServiceA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hSCManager, lpServiceName, dwDesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle OpenServiceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$714.OpenServiceW$MH,"OpenServiceW");
+    }
+    public static MemoryAddress OpenServiceW ( Addressable hSCManager,  Addressable lpServiceName,  int dwDesiredAccess) {
+        var mh$ = OpenServiceW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(hSCManager, lpServiceName, dwDesiredAccess);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceConfigA$MH() {
+        return RuntimeHelper.requireNonNull(constants$714.QueryServiceConfigA$MH,"QueryServiceConfigA");
+    }
+    public static int QueryServiceConfigA ( Addressable hService,  Addressable lpServiceConfig,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = QueryServiceConfigA$MH();
+        try {
+            return (int)mh$.invokeExact(hService, lpServiceConfig, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceConfigW$MH() {
+        return RuntimeHelper.requireNonNull(constants$715.QueryServiceConfigW$MH,"QueryServiceConfigW");
+    }
+    public static int QueryServiceConfigW ( Addressable hService,  Addressable lpServiceConfig,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = QueryServiceConfigW$MH();
+        try {
+            return (int)mh$.invokeExact(hService, lpServiceConfig, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceConfig2A$MH() {
+        return RuntimeHelper.requireNonNull(constants$715.QueryServiceConfig2A$MH,"QueryServiceConfig2A");
+    }
+    public static int QueryServiceConfig2A ( Addressable hService,  int dwInfoLevel,  Addressable lpBuffer,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = QueryServiceConfig2A$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwInfoLevel, lpBuffer, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceConfig2W$MH() {
+        return RuntimeHelper.requireNonNull(constants$715.QueryServiceConfig2W$MH,"QueryServiceConfig2W");
+    }
+    public static int QueryServiceConfig2W ( Addressable hService,  int dwInfoLevel,  Addressable lpBuffer,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = QueryServiceConfig2W$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwInfoLevel, lpBuffer, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceLockStatusA$MH() {
+        return RuntimeHelper.requireNonNull(constants$715.QueryServiceLockStatusA$MH,"QueryServiceLockStatusA");
+    }
+    public static int QueryServiceLockStatusA ( Addressable hSCManager,  Addressable lpLockStatus,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = QueryServiceLockStatusA$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, lpLockStatus, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceLockStatusW$MH() {
+        return RuntimeHelper.requireNonNull(constants$715.QueryServiceLockStatusW$MH,"QueryServiceLockStatusW");
+    }
+    public static int QueryServiceLockStatusW ( Addressable hSCManager,  Addressable lpLockStatus,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = QueryServiceLockStatusW$MH();
+        try {
+            return (int)mh$.invokeExact(hSCManager, lpLockStatus, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$715.QueryServiceObjectSecurity$MH,"QueryServiceObjectSecurity");
+    }
+    public static int QueryServiceObjectSecurity ( Addressable hService,  int dwSecurityInformation,  Addressable lpSecurityDescriptor,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = QueryServiceObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwSecurityInformation, lpSecurityDescriptor, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceStatus$MH() {
+        return RuntimeHelper.requireNonNull(constants$716.QueryServiceStatus$MH,"QueryServiceStatus");
+    }
+    public static int QueryServiceStatus ( Addressable hService,  Addressable lpServiceStatus) {
+        var mh$ = QueryServiceStatus$MH();
+        try {
+            return (int)mh$.invokeExact(hService, lpServiceStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceStatusEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$716.QueryServiceStatusEx$MH,"QueryServiceStatusEx");
+    }
+    public static int QueryServiceStatusEx ( Addressable hService,  int InfoLevel,  Addressable lpBuffer,  int cbBufSize,  Addressable pcbBytesNeeded) {
+        var mh$ = QueryServiceStatusEx$MH();
+        try {
+            return (int)mh$.invokeExact(hService, InfoLevel, lpBuffer, cbBufSize, pcbBytesNeeded);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterServiceCtrlHandlerA$MH() {
+        return RuntimeHelper.requireNonNull(constants$716.RegisterServiceCtrlHandlerA$MH,"RegisterServiceCtrlHandlerA");
+    }
+    public static MemoryAddress RegisterServiceCtrlHandlerA ( Addressable lpServiceName,  Addressable lpHandlerProc) {
+        var mh$ = RegisterServiceCtrlHandlerA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpServiceName, lpHandlerProc);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterServiceCtrlHandlerW$MH() {
+        return RuntimeHelper.requireNonNull(constants$716.RegisterServiceCtrlHandlerW$MH,"RegisterServiceCtrlHandlerW");
+    }
+    public static MemoryAddress RegisterServiceCtrlHandlerW ( Addressable lpServiceName,  Addressable lpHandlerProc) {
+        var mh$ = RegisterServiceCtrlHandlerW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpServiceName, lpHandlerProc);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterServiceCtrlHandlerExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$716.RegisterServiceCtrlHandlerExA$MH,"RegisterServiceCtrlHandlerExA");
+    }
+    public static MemoryAddress RegisterServiceCtrlHandlerExA ( Addressable lpServiceName,  Addressable lpHandlerProc,  Addressable lpContext) {
+        var mh$ = RegisterServiceCtrlHandlerExA$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpServiceName, lpHandlerProc, lpContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegisterServiceCtrlHandlerExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$716.RegisterServiceCtrlHandlerExW$MH,"RegisterServiceCtrlHandlerExW");
+    }
+    public static MemoryAddress RegisterServiceCtrlHandlerExW ( Addressable lpServiceName,  Addressable lpHandlerProc,  Addressable lpContext) {
+        var mh$ = RegisterServiceCtrlHandlerExW$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(lpServiceName, lpHandlerProc, lpContext);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetServiceObjectSecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$717.SetServiceObjectSecurity$MH,"SetServiceObjectSecurity");
+    }
+    public static int SetServiceObjectSecurity ( Addressable hService,  int dwSecurityInformation,  Addressable lpSecurityDescriptor) {
+        var mh$ = SetServiceObjectSecurity$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwSecurityInformation, lpSecurityDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle SetServiceStatus$MH() {
+        return RuntimeHelper.requireNonNull(constants$717.SetServiceStatus$MH,"SetServiceStatus");
+    }
+    public static int SetServiceStatus ( Addressable hServiceStatus,  Addressable lpServiceStatus) {
+        var mh$ = SetServiceStatus$MH();
+        try {
+            return (int)mh$.invokeExact(hServiceStatus, lpServiceStatus);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StartServiceCtrlDispatcherA$MH() {
+        return RuntimeHelper.requireNonNull(constants$717.StartServiceCtrlDispatcherA$MH,"StartServiceCtrlDispatcherA");
+    }
+    public static int StartServiceCtrlDispatcherA ( Addressable lpServiceStartTable) {
+        var mh$ = StartServiceCtrlDispatcherA$MH();
+        try {
+            return (int)mh$.invokeExact(lpServiceStartTable);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StartServiceCtrlDispatcherW$MH() {
+        return RuntimeHelper.requireNonNull(constants$717.StartServiceCtrlDispatcherW$MH,"StartServiceCtrlDispatcherW");
+    }
+    public static int StartServiceCtrlDispatcherW ( Addressable lpServiceStartTable) {
+        var mh$ = StartServiceCtrlDispatcherW$MH();
+        try {
+            return (int)mh$.invokeExact(lpServiceStartTable);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StartServiceA$MH() {
+        return RuntimeHelper.requireNonNull(constants$717.StartServiceA$MH,"StartServiceA");
+    }
+    public static int StartServiceA ( Addressable hService,  int dwNumServiceArgs,  Addressable lpServiceArgVectors) {
+        var mh$ = StartServiceA$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwNumServiceArgs, lpServiceArgVectors);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle StartServiceW$MH() {
+        return RuntimeHelper.requireNonNull(constants$717.StartServiceW$MH,"StartServiceW");
+    }
+    public static int StartServiceW ( Addressable hService,  int dwNumServiceArgs,  Addressable lpServiceArgVectors) {
+        var mh$ = StartServiceW$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwNumServiceArgs, lpServiceArgVectors);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UnlockServiceDatabase$MH() {
+        return RuntimeHelper.requireNonNull(constants$718.UnlockServiceDatabase$MH,"UnlockServiceDatabase");
+    }
+    public static int UnlockServiceDatabase ( Addressable ScLock) {
+        var mh$ = UnlockServiceDatabase$MH();
+        try {
+            return (int)mh$.invokeExact(ScLock);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle NotifyServiceStatusChangeA$MH() {
+        return RuntimeHelper.requireNonNull(constants$718.NotifyServiceStatusChangeA$MH,"NotifyServiceStatusChangeA");
+    }
+    public static int NotifyServiceStatusChangeA ( Addressable hService,  int dwNotifyMask,  Addressable pNotifyBuffer) {
+        var mh$ = NotifyServiceStatusChangeA$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwNotifyMask, pNotifyBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle NotifyServiceStatusChangeW$MH() {
+        return RuntimeHelper.requireNonNull(constants$718.NotifyServiceStatusChangeW$MH,"NotifyServiceStatusChangeW");
+    }
+    public static int NotifyServiceStatusChangeW ( Addressable hService,  int dwNotifyMask,  Addressable pNotifyBuffer) {
+        var mh$ = NotifyServiceStatusChangeW$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwNotifyMask, pNotifyBuffer);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ControlServiceExA$MH() {
+        return RuntimeHelper.requireNonNull(constants$718.ControlServiceExA$MH,"ControlServiceExA");
+    }
+    public static int ControlServiceExA ( Addressable hService,  int dwControl,  int dwInfoLevel,  Addressable pControlParams) {
+        var mh$ = ControlServiceExA$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwControl, dwInfoLevel, pControlParams);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ControlServiceExW$MH() {
+        return RuntimeHelper.requireNonNull(constants$718.ControlServiceExW$MH,"ControlServiceExW");
+    }
+    public static int ControlServiceExW ( Addressable hService,  int dwControl,  int dwInfoLevel,  Addressable pControlParams) {
+        var mh$ = ControlServiceExW$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwControl, dwInfoLevel, pControlParams);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle QueryServiceDynamicInformation$MH() {
+        return RuntimeHelper.requireNonNull(constants$718.QueryServiceDynamicInformation$MH,"QueryServiceDynamicInformation");
+    }
+    public static int QueryServiceDynamicInformation ( Addressable hServiceStatus,  int dwInfoLevel,  Addressable ppDynamicInfo) {
+        var mh$ = QueryServiceDynamicInformation$MH();
+        try {
+            return (int)mh$.invokeExact(hServiceStatus, dwInfoLevel, ppDynamicInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int SC_EVENT_DATABASE_CHANGE() {
+        return (int)0L;
+    }
+    public static int SC_EVENT_PROPERTY_CHANGE() {
+        return (int)1L;
+    }
+    public static int SC_EVENT_STATUS_CHANGE() {
+        return (int)2L;
+    }
+    public static OfAddress PSC_EVENT_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSC_NOTIFICATION_REGISTRATION = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle SubscribeServiceChangeNotifications$MH() {
+        return RuntimeHelper.requireNonNull(constants$719.SubscribeServiceChangeNotifications$MH,"SubscribeServiceChangeNotifications");
+    }
+    public static int SubscribeServiceChangeNotifications ( Addressable hService,  int eEventType,  Addressable pCallback,  Addressable pCallbackContext,  Addressable pSubscription) {
+        var mh$ = SubscribeServiceChangeNotifications$MH();
+        try {
+            return (int)mh$.invokeExact(hService, eEventType, pCallback, pCallbackContext, pSubscription);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UnsubscribeServiceChangeNotifications$MH() {
+        return RuntimeHelper.requireNonNull(constants$719.UnsubscribeServiceChangeNotifications$MH,"UnsubscribeServiceChangeNotifications");
+    }
+    public static void UnsubscribeServiceChangeNotifications ( Addressable pSubscription) {
+        var mh$ = UnsubscribeServiceChangeNotifications$MH();
+        try {
+            mh$.invokeExact(pSubscription);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WaitServiceState$MH() {
+        return RuntimeHelper.requireNonNull(constants$720.WaitServiceState$MH,"WaitServiceState");
+    }
+    public static int WaitServiceState ( Addressable hService,  int dwNotify,  int dwTimeout,  Addressable hCancelEvent) {
+        var mh$ = WaitServiceState$MH();
+        try {
+            return (int)mh$.invokeExact(hService, dwNotify, dwTimeout, hCancelEvent);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int ServiceRegistryStateParameters() {
+        return (int)0L;
+    }
+    public static int ServiceRegistryStatePersistent() {
+        return (int)1L;
+    }
+    public static int MaxServiceRegistryStateType() {
+        return (int)2L;
+    }
+    public static MethodHandle GetServiceRegistryStateKey$MH() {
+        return RuntimeHelper.requireNonNull(constants$720.GetServiceRegistryStateKey$MH,"GetServiceRegistryStateKey");
+    }
+    public static int GetServiceRegistryStateKey ( Addressable ServiceStatusHandle,  int StateType,  int AccessMask,  Addressable ServiceStateKey) {
+        var mh$ = GetServiceRegistryStateKey$MH();
+        try {
+            return (int)mh$.invokeExact(ServiceStatusHandle, StateType, AccessMask, ServiceStateKey);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int ServiceDirectoryPersistentState() {
+        return (int)0L;
+    }
+    public static int ServiceDirectoryTypeMax() {
+        return (int)1L;
+    }
+    public static MethodHandle GetServiceDirectory$MH() {
+        return RuntimeHelper.requireNonNull(constants$720.GetServiceDirectory$MH,"GetServiceDirectory");
+    }
+    public static int GetServiceDirectory ( Addressable hServiceStatus,  int eDirectoryType,  Addressable lpPathBuffer,  int cchPathBufferLength,  Addressable lpcchRequiredBufferLength) {
+        var mh$ = GetServiceDirectory$MH();
+        try {
+            return (int)mh$.invokeExact(hServiceStatus, eDirectoryType, lpPathBuffer, cchPathBufferLength, lpcchRequiredBufferLength);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int WINAPI_PARTITION_SERVER() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_WINTRUST() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_WEBSERVICES() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_EVENTLOGSERVICE() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_VHD() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_PERFCOUNTER() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_SECURESTARTUP() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_REMOTEFS() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_BOOTABLESKU() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_CMDTOOLS() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_DISM() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_CORESETUP() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_APPRUNTIME() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_ESENT() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_WINMGMT() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_WNV() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_CLUSTER() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_VSS() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_TRAFFIC() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_ISCSI() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_STORAGE() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_MPSSVC() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_APPXDEPLOYMENT() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PKG_WER() {
+        return (int)0L;
+    }
+    public static int WINAPI_FAMILY_APP() {
+        return (int)2L;
+    }
+    public static int WINAPI_FAMILY() {
+        return (int)100L;
+    }
+    public static int WINAPI_PARTITION_DESKTOP() {
+        return (int)1L;
+    }
+    public static int WINAPI_PARTITION_APP() {
+        return (int)1L;
+    }
+    public static int WINAPI_PARTITION_PC_APP() {
+        return (int)1L;
+    }
+    public static int WINAPI_PARTITION_PHONE_APP() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_GAMES() {
+        return (int)1L;
+    }
+    public static int WINAPI_PARTITION_SYSTEM() {
+        return (int)0L;
+    }
+    public static int WINAPI_PARTITION_PHONE() {
+        return (int)0L;
+    }
+    public static long MAX_NATURAL_ALIGNMENT() {
+        return 8L;
+    }
+    public static int UCSCHAR_INVALID_CHARACTER() {
+        return (int)4294967295L;
+    }
+    public static int MIN_UCSCHAR() {
+        return (int)0L;
+    }
+    public static int MAX_UCSCHAR() {
+        return (int)1114111L;
+    }
+    public static int MAXIMUM_PROCESSORS() {
+        return (int)64L;
+    }
+    public static int ERROR_SEVERITY_WARNING() {
+        return (int)2147483648L;
+    }
+    public static int ERROR_SEVERITY_ERROR() {
+        return (int)3221225472L;
+    }
+    public static long MAXLONGLONG() {
+        return 9223372036854775807L;
+    }
+    public static byte ANSI_NULL() {
+        return (byte)0L;
+    }
+    public static short UNICODE_NULL() {
+        return (short)0L;
+    }
+    public static short UNICODE_STRING_MAX_BYTES() {
+        return (short)65534L;
+    }
+    public static int UNICODE_STRING_MAX_CHARS() {
+        return (int)32767L;
+    }
+    public static int MINLONG() {
+        return (int)2147483648L;
+    }
+    public static int MAXDWORD() {
+        return (int)4294967295L;
+    }
+    public static int VER_SERVER_NT() {
+        return (int)2147483648L;
+    }
+    public static int PRODUCT_UNLICENSED() {
+        return (int)2882382797L;
+    }
+    public static int LANG_SYSTEM_DEFAULT() {
+        return (int)2048L;
+    }
+    public static int LANG_USER_DEFAULT() {
+        return (int)1024L;
+    }
+    public static int LOCALE_SYSTEM_DEFAULT() {
+        return (int)2048L;
+    }
+    public static int LOCALE_USER_DEFAULT() {
+        return (int)1024L;
+    }
+    public static int LOCALE_CUSTOM_DEFAULT() {
+        return (int)3072L;
+    }
+    public static int LOCALE_CUSTOM_UNSPECIFIED() {
+        return (int)4096L;
+    }
+    public static int LOCALE_CUSTOM_UI_DEFAULT() {
+        return (int)5120L;
+    }
+    public static int LOCALE_NEUTRAL() {
+        return (int)0L;
+    }
+    public static int LOCALE_INVARIANT() {
+        return (int)127L;
+    }
+    public static int LOCALE_UNASSIGNED_LCID() {
+        return (int)4096L;
+    }
+    public static int STATUS_WAIT_0() {
+        return (int)0L;
+    }
+    public static int STATUS_ABANDONED_WAIT_0() {
+        return (int)128L;
+    }
+    public static int STATUS_USER_APC() {
+        return (int)192L;
+    }
+    public static int STATUS_TIMEOUT() {
+        return (int)258L;
+    }
+    public static int STATUS_PENDING() {
+        return (int)259L;
+    }
+    public static int DBG_EXCEPTION_HANDLED() {
+        return (int)65537L;
+    }
+    public static int DBG_CONTINUE() {
+        return (int)65538L;
+    }
+    public static int STATUS_SEGMENT_NOTIFICATION() {
+        return (int)1073741829L;
+    }
+    public static int STATUS_FATAL_APP_EXIT() {
+        return (int)1073741845L;
+    }
+    public static int DBG_REPLY_LATER() {
+        return (int)1073807361L;
+    }
+    public static int DBG_TERMINATE_THREAD() {
+        return (int)1073807363L;
+    }
+    public static int DBG_TERMINATE_PROCESS() {
+        return (int)1073807364L;
+    }
+    public static int DBG_CONTROL_C() {
+        return (int)1073807365L;
+    }
+    public static int DBG_PRINTEXCEPTION_C() {
+        return (int)1073807366L;
+    }
+    public static int DBG_RIPEXCEPTION() {
+        return (int)1073807367L;
+    }
+    public static int DBG_CONTROL_BREAK() {
+        return (int)1073807368L;
+    }
+    public static int DBG_COMMAND_EXCEPTION() {
+        return (int)1073807369L;
+    }
+    public static int DBG_PRINTEXCEPTION_WIDE_C() {
+        return (int)1073807370L;
+    }
+    public static int STATUS_GUARD_PAGE_VIOLATION() {
+        return (int)2147483649L;
+    }
+    public static int STATUS_DATATYPE_MISALIGNMENT() {
+        return (int)2147483650L;
+    }
+    public static int STATUS_BREAKPOINT() {
+        return (int)2147483651L;
+    }
+    public static int STATUS_SINGLE_STEP() {
+        return (int)2147483652L;
+    }
+    public static int STATUS_LONGJUMP() {
+        return (int)2147483686L;
+    }
+    public static int STATUS_UNWIND_CONSOLIDATE() {
+        return (int)2147483689L;
+    }
+    public static int DBG_EXCEPTION_NOT_HANDLED() {
+        return (int)2147549185L;
+    }
+    public static int STATUS_ACCESS_VIOLATION() {
+        return (int)3221225477L;
+    }
+    public static int STATUS_IN_PAGE_ERROR() {
+        return (int)3221225478L;
+    }
+    public static int STATUS_INVALID_HANDLE() {
+        return (int)3221225480L;
+    }
+    public static int STATUS_INVALID_PARAMETER() {
+        return (int)3221225485L;
+    }
+    public static int STATUS_NO_MEMORY() {
+        return (int)3221225495L;
+    }
+    public static int STATUS_ILLEGAL_INSTRUCTION() {
+        return (int)3221225501L;
+    }
+    public static int STATUS_NONCONTINUABLE_EXCEPTION() {
+        return (int)3221225509L;
+    }
+    public static int STATUS_INVALID_DISPOSITION() {
+        return (int)3221225510L;
+    }
+    public static int STATUS_ARRAY_BOUNDS_EXCEEDED() {
+        return (int)3221225612L;
+    }
+    public static int STATUS_FLOAT_DENORMAL_OPERAND() {
+        return (int)3221225613L;
+    }
+    public static int STATUS_FLOAT_DIVIDE_BY_ZERO() {
+        return (int)3221225614L;
+    }
+    public static int STATUS_FLOAT_INEXACT_RESULT() {
+        return (int)3221225615L;
+    }
+    public static int STATUS_FLOAT_INVALID_OPERATION() {
+        return (int)3221225616L;
+    }
+    public static int STATUS_FLOAT_OVERFLOW() {
+        return (int)3221225617L;
+    }
+    public static int STATUS_FLOAT_STACK_CHECK() {
+        return (int)3221225618L;
+    }
+    public static int STATUS_FLOAT_UNDERFLOW() {
+        return (int)3221225619L;
+    }
+    public static int STATUS_INTEGER_DIVIDE_BY_ZERO() {
+        return (int)3221225620L;
+    }
+    public static int STATUS_INTEGER_OVERFLOW() {
+        return (int)3221225621L;
+    }
+    public static int STATUS_PRIVILEGED_INSTRUCTION() {
+        return (int)3221225622L;
+    }
+    public static int STATUS_STACK_OVERFLOW() {
+        return (int)3221225725L;
+    }
+    public static int STATUS_DLL_NOT_FOUND() {
+        return (int)3221225781L;
+    }
+    public static int STATUS_ORDINAL_NOT_FOUND() {
+        return (int)3221225784L;
+    }
+    public static int STATUS_ENTRYPOINT_NOT_FOUND() {
+        return (int)3221225785L;
+    }
+    public static int STATUS_CONTROL_C_EXIT() {
+        return (int)3221225786L;
+    }
+    public static int STATUS_DLL_INIT_FAILED() {
+        return (int)3221225794L;
+    }
+    public static int STATUS_CONTROL_STACK_VIOLATION() {
+        return (int)3221225906L;
+    }
+    public static int STATUS_FLOAT_MULTIPLE_FAULTS() {
+        return (int)3221226164L;
+    }
+    public static int STATUS_FLOAT_MULTIPLE_TRAPS() {
+        return (int)3221226165L;
+    }
+    public static int STATUS_REG_NAT_CONSUMPTION() {
+        return (int)3221226185L;
+    }
+    public static int STATUS_HEAP_CORRUPTION() {
+        return (int)3221226356L;
+    }
+    public static int STATUS_STACK_BUFFER_OVERRUN() {
+        return (int)3221226505L;
+    }
+    public static int STATUS_INVALID_CRUNTIME_PARAMETER() {
+        return (int)3221226519L;
+    }
+    public static int STATUS_ASSERTION_FAILURE() {
+        return (int)3221226528L;
+    }
+    public static int STATUS_ENCLAVE_VIOLATION() {
+        return (int)3221226658L;
+    }
+    public static int STATUS_INTERRUPTED() {
+        return (int)3221226773L;
+    }
+    public static int STATUS_THREAD_NOT_RUNNING() {
+        return (int)3221226774L;
+    }
+    public static int STATUS_ALREADY_REGISTERED() {
+        return (int)3221227288L;
+    }
+    public static int STATUS_SXS_EARLY_DEACTIVATION() {
+        return (int)3222601743L;
+    }
+    public static int STATUS_SXS_INVALID_DEACTIVATION() {
+        return (int)3222601744L;
+    }
+    public static int MAXIMUM_SUSPEND_COUNT() {
+        return (int)127L;
+    }
+    public static int PF_TEMPORAL_LEVEL_1() {
+        return (int)1L;
+    }
+    public static int PF_TEMPORAL_LEVEL_2() {
+        return (int)2L;
+    }
+    public static int PF_TEMPORAL_LEVEL_3() {
+        return (int)3L;
+    }
+    public static int PF_NON_TEMPORAL_LEVEL_ALL() {
+        return (int)0L;
+    }
+    public static int CONTEXT_AMD64() {
+        return (int)1048576L;
+    }
+    public static int CONTEXT_CONTROL() {
+        return (int)1048577L;
+    }
+    public static int CONTEXT_INTEGER() {
+        return (int)1048578L;
+    }
+    public static int CONTEXT_SEGMENTS() {
+        return (int)1048580L;
+    }
+    public static int CONTEXT_FLOATING_POINT() {
+        return (int)1048584L;
+    }
+    public static int CONTEXT_DEBUG_REGISTERS() {
+        return (int)1048592L;
+    }
+    public static int CONTEXT_FULL() {
+        return (int)1048587L;
+    }
+    public static int CONTEXT_ALL() {
+        return (int)1048607L;
+    }
+    public static int CONTEXT_XSTATE() {
+        return (int)1048640L;
+    }
+    public static int CONTEXT_EXCEPTION_ACTIVE() {
+        return (int)134217728L;
+    }
+    public static int CONTEXT_SERVICE_ACTIVE() {
+        return (int)268435456L;
+    }
+    public static int CONTEXT_EXCEPTION_REQUEST() {
+        return (int)1073741824L;
+    }
+    public static int CONTEXT_EXCEPTION_REPORTING() {
+        return (int)2147483648L;
+    }
+    public static int UNW_FLAG_NO_EPILOGUE() {
+        return (int)2147483648L;
+    }
+    public static MemorySegment OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME() {
+        return constants$720.OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME$SEGMENT;
+    }
+    public static int WOW64_CONTEXT_CONTROL() {
+        return (int)65537L;
+    }
+    public static int WOW64_CONTEXT_INTEGER() {
+        return (int)65538L;
+    }
+    public static int WOW64_CONTEXT_SEGMENTS() {
+        return (int)65540L;
+    }
+    public static int WOW64_CONTEXT_FLOATING_POINT() {
+        return (int)65544L;
+    }
+    public static int WOW64_CONTEXT_DEBUG_REGISTERS() {
+        return (int)65552L;
+    }
+    public static int WOW64_CONTEXT_EXTENDED_REGISTERS() {
+        return (int)65568L;
+    }
+    public static int WOW64_CONTEXT_FULL() {
+        return (int)65543L;
+    }
+    public static int WOW64_CONTEXT_ALL() {
+        return (int)65599L;
+    }
+    public static int WOW64_CONTEXT_XSTATE() {
+        return (int)65600L;
+    }
+    public static int WOW64_CONTEXT_EXCEPTION_REPORTING() {
+        return (int)2147483648L;
+    }
+    public static int EXCEPTION_UNWIND() {
+        return (int)102L;
+    }
+    public static int DELETE() {
+        return (int)65536L;
+    }
+    public static int READ_CONTROL() {
+        return (int)131072L;
+    }
+    public static int WRITE_DAC() {
+        return (int)262144L;
+    }
+    public static int WRITE_OWNER() {
+        return (int)524288L;
+    }
+    public static int SYNCHRONIZE() {
+        return (int)1048576L;
+    }
+    public static int STANDARD_RIGHTS_REQUIRED() {
+        return (int)983040L;
+    }
+    public static int STANDARD_RIGHTS_READ() {
+        return (int)131072L;
+    }
+    public static int STANDARD_RIGHTS_WRITE() {
+        return (int)131072L;
+    }
+    public static int STANDARD_RIGHTS_EXECUTE() {
+        return (int)131072L;
+    }
+    public static int STANDARD_RIGHTS_ALL() {
+        return (int)2031616L;
+    }
+    public static int SPECIFIC_RIGHTS_ALL() {
+        return (int)65535L;
+    }
+    public static int ACCESS_SYSTEM_SECURITY() {
+        return (int)16777216L;
+    }
+    public static int MAXIMUM_ALLOWED() {
+        return (int)33554432L;
+    }
+    public static int GENERIC_READ() {
+        return (int)2147483648L;
+    }
+    public static int GENERIC_WRITE() {
+        return (int)1073741824L;
+    }
+    public static int GENERIC_EXECUTE() {
+        return (int)536870912L;
+    }
+    public static int GENERIC_ALL() {
+        return (int)268435456L;
+    }
+    public static int SID_REVISION() {
+        return (int)1L;
+    }
+    public static int SID_MAX_SUB_AUTHORITIES() {
+        return (int)15L;
+    }
+    public static int SID_RECOMMENDED_SUB_AUTHORITIES() {
+        return (int)1L;
+    }
+    public static long SECURITY_MAX_SID_SIZE() {
+        return 68L;
+    }
+    public static int SECURITY_MAX_SID_STRING_CHARACTERS() {
+        return (int)187L;
+    }
+    public static int SECURITY_NULL_RID() {
+        return (int)0L;
+    }
+    public static int SECURITY_WORLD_RID() {
+        return (int)0L;
+    }
+    public static int SECURITY_LOCAL_RID() {
+        return (int)0L;
+    }
+    public static int SECURITY_LOCAL_LOGON_RID() {
+        return (int)1L;
+    }
+    public static int SECURITY_CREATOR_OWNER_RID() {
+        return (int)0L;
+    }
+    public static int SECURITY_CREATOR_GROUP_RID() {
+        return (int)1L;
+    }
+    public static int SECURITY_CREATOR_OWNER_SERVER_RID() {
+        return (int)2L;
+    }
+    public static int SECURITY_CREATOR_GROUP_SERVER_RID() {
+        return (int)3L;
+    }
+    public static int SECURITY_CREATOR_OWNER_RIGHTS_RID() {
+        return (int)4L;
+    }
+    public static int SECURITY_DIALUP_RID() {
+        return (int)1L;
+    }
+    public static int SECURITY_NETWORK_RID() {
+        return (int)2L;
+    }
+    public static int SECURITY_BATCH_RID() {
+        return (int)3L;
+    }
+    public static int SECURITY_INTERACTIVE_RID() {
+        return (int)4L;
+    }
+    public static int SECURITY_LOGON_IDS_RID() {
+        return (int)5L;
+    }
+    public static int SECURITY_LOGON_IDS_RID_COUNT() {
+        return (int)3L;
+    }
+    public static int SECURITY_SERVICE_RID() {
+        return (int)6L;
+    }
+    public static int SECURITY_ANONYMOUS_LOGON_RID() {
+        return (int)7L;
+    }
+    public static int SECURITY_PROXY_RID() {
+        return (int)8L;
+    }
+    public static int SECURITY_ENTERPRISE_CONTROLLERS_RID() {
+        return (int)9L;
+    }
+    public static int SECURITY_SERVER_LOGON_RID() {
+        return (int)9L;
+    }
+    public static int SECURITY_PRINCIPAL_SELF_RID() {
+        return (int)10L;
+    }
+    public static int SECURITY_AUTHENTICATED_USER_RID() {
+        return (int)11L;
+    }
+    public static int SECURITY_RESTRICTED_CODE_RID() {
+        return (int)12L;
+    }
+    public static int SECURITY_TERMINAL_SERVER_RID() {
+        return (int)13L;
+    }
+    public static int SECURITY_REMOTE_LOGON_RID() {
+        return (int)14L;
+    }
+    public static int SECURITY_THIS_ORGANIZATION_RID() {
+        return (int)15L;
+    }
+    public static int SECURITY_IUSER_RID() {
+        return (int)17L;
+    }
+    public static int SECURITY_LOCAL_SYSTEM_RID() {
+        return (int)18L;
+    }
+    public static int SECURITY_LOCAL_SERVICE_RID() {
+        return (int)19L;
+    }
+    public static int SECURITY_NETWORK_SERVICE_RID() {
+        return (int)20L;
+    }
+    public static int SECURITY_NT_NON_UNIQUE() {
+        return (int)21L;
+    }
+    public static int SECURITY_NT_NON_UNIQUE_SUB_AUTH_COUNT() {
+        return (int)3L;
+    }
+    public static int SECURITY_ENTERPRISE_READONLY_CONTROLLERS_RID() {
+        return (int)22L;
+    }
+    public static int SECURITY_BUILTIN_DOMAIN_RID() {
+        return (int)32L;
+    }
+    public static int SECURITY_WRITE_RESTRICTED_CODE_RID() {
+        return (int)33L;
+    }
+    public static int SECURITY_PACKAGE_BASE_RID() {
+        return (int)64L;
+    }
+    public static int SECURITY_PACKAGE_RID_COUNT() {
+        return (int)2L;
+    }
+    public static int SECURITY_PACKAGE_NTLM_RID() {
+        return (int)10L;
+    }
+    public static int SECURITY_PACKAGE_SCHANNEL_RID() {
+        return (int)14L;
+    }
+    public static int SECURITY_PACKAGE_DIGEST_RID() {
+        return (int)21L;
+    }
+    public static int SECURITY_CRED_TYPE_BASE_RID() {
+        return (int)65L;
+    }
+    public static int SECURITY_CRED_TYPE_RID_COUNT() {
+        return (int)2L;
+    }
+    public static int SECURITY_CRED_TYPE_THIS_ORG_CERT_RID() {
+        return (int)1L;
+    }
+    public static int SECURITY_MIN_BASE_RID() {
+        return (int)80L;
+    }
+    public static int SECURITY_SERVICE_ID_BASE_RID() {
+        return (int)80L;
+    }
+    public static int SECURITY_SERVICE_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_RESERVED_ID_BASE_RID() {
+        return (int)81L;
+    }
+    public static int SECURITY_APPPOOL_ID_BASE_RID() {
+        return (int)82L;
+    }
+    public static int SECURITY_APPPOOL_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_VIRTUALSERVER_ID_BASE_RID() {
+        return (int)83L;
+    }
+    public static int SECURITY_VIRTUALSERVER_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_USERMODEDRIVERHOST_ID_BASE_RID() {
+        return (int)84L;
+    }
+    public static int SECURITY_USERMODEDRIVERHOST_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_CLOUD_INFRASTRUCTURE_SERVICES_ID_BASE_RID() {
+        return (int)85L;
+    }
+    public static int SECURITY_CLOUD_INFRASTRUCTURE_SERVICES_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_WMIHOST_ID_BASE_RID() {
+        return (int)86L;
+    }
+    public static int SECURITY_WMIHOST_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_TASK_ID_BASE_RID() {
+        return (int)87L;
+    }
+    public static int SECURITY_NFS_ID_BASE_RID() {
+        return (int)88L;
+    }
+    public static int SECURITY_COM_ID_BASE_RID() {
+        return (int)89L;
+    }
+    public static int SECURITY_WINDOW_MANAGER_BASE_RID() {
+        return (int)90L;
+    }
+    public static int SECURITY_RDV_GFX_BASE_RID() {
+        return (int)91L;
+    }
+    public static int SECURITY_DASHOST_ID_BASE_RID() {
+        return (int)92L;
+    }
+    public static int SECURITY_DASHOST_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_USERMANAGER_ID_BASE_RID() {
+        return (int)93L;
+    }
+    public static int SECURITY_USERMANAGER_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_WINRM_ID_BASE_RID() {
+        return (int)94L;
+    }
+    public static int SECURITY_WINRM_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_CCG_ID_BASE_RID() {
+        return (int)95L;
+    }
+    public static int SECURITY_UMFD_BASE_RID() {
+        return (int)96L;
+    }
+    public static int SECURITY_VIRTUALACCOUNT_ID_RID_COUNT() {
+        return (int)6L;
+    }
+    public static int SECURITY_MAX_BASE_RID() {
+        return (int)111L;
+    }
+    public static int SECURITY_MAX_ALWAYS_FILTERED() {
         return (int)999L;
     }
-    public static int ERROR_STACK_OVERFLOW() {
-        return (int)1001L;
+    public static int SECURITY_MIN_NEVER_FILTERED() {
+        return (int)1000L;
     }
-    public static int ERROR_INVALID_MESSAGE() {
-        return (int)1002L;
+    public static int SECURITY_OTHER_ORGANIZATION_RID() {
+        return (int)1000L;
     }
-    public static int ERROR_CAN_NOT_COMPLETE() {
-        return (int)1003L;
+    public static int SECURITY_WINDOWSMOBILE_ID_BASE_RID() {
+        return (int)112L;
     }
-    public static int ERROR_INVALID_FLAGS() {
-        return (int)1004L;
+    public static int SECURITY_INSTALLER_GROUP_CAPABILITY_BASE() {
+        return (int)32L;
     }
-    public static int ERROR_UNRECOGNIZED_VOLUME() {
-        return (int)1005L;
+    public static int SECURITY_INSTALLER_GROUP_CAPABILITY_RID_COUNT() {
+        return (int)9L;
     }
-    public static int ERROR_FILE_INVALID() {
-        return (int)1006L;
+    public static int SECURITY_INSTALLER_CAPABILITY_RID_COUNT() {
+        return (int)10L;
     }
-    public static int ERROR_FULLSCREEN_MODE() {
-        return (int)1007L;
+    public static int SECURITY_LOCAL_ACCOUNT_RID() {
+        return (int)113L;
     }
-    public static int ERROR_NO_TOKEN() {
-        return (int)1008L;
+    public static int SECURITY_LOCAL_ACCOUNT_AND_ADMIN_RID() {
+        return (int)114L;
     }
-    public static int ERROR_BADDB() {
-        return (int)1009L;
+    public static int DOMAIN_GROUP_RID_AUTHORIZATION_DATA_IS_COMPOUNDED() {
+        return (int)496L;
     }
-    public static int ERROR_BADKEY() {
-        return (int)1010L;
+    public static int DOMAIN_GROUP_RID_AUTHORIZATION_DATA_CONTAINS_CLAIMS() {
+        return (int)497L;
     }
-    public static int ERROR_CANTOPEN() {
-        return (int)1011L;
+    public static int DOMAIN_GROUP_RID_ENTERPRISE_READONLY_DOMAIN_CONTROLLERS() {
+        return (int)498L;
     }
-    public static int ERROR_CANTREAD() {
-        return (int)1012L;
+    public static int FOREST_USER_RID_MAX() {
+        return (int)499L;
     }
-    public static int ERROR_CANTWRITE() {
-        return (int)1013L;
+    public static int DOMAIN_USER_RID_ADMIN() {
+        return (int)500L;
     }
-    public static int ERROR_REGISTRY_RECOVERED() {
-        return (int)1014L;
+    public static int DOMAIN_USER_RID_GUEST() {
+        return (int)501L;
     }
-    public static int ERROR_REGISTRY_CORRUPT() {
-        return (int)1015L;
+    public static int DOMAIN_USER_RID_KRBTGT() {
+        return (int)502L;
     }
-    public static int ERROR_REGISTRY_IO_FAILED() {
-        return (int)1016L;
+    public static int DOMAIN_USER_RID_DEFAULT_ACCOUNT() {
+        return (int)503L;
     }
-    public static int ERROR_NOT_REGISTRY_FILE() {
-        return (int)1017L;
+    public static int DOMAIN_USER_RID_WDAG_ACCOUNT() {
+        return (int)504L;
     }
-    public static int ERROR_KEY_DELETED() {
-        return (int)1018L;
+    public static int DOMAIN_USER_RID_MAX() {
+        return (int)999L;
     }
-    public static int ERROR_NO_LOG_SPACE() {
-        return (int)1019L;
+    public static int DOMAIN_GROUP_RID_ADMINS() {
+        return (int)512L;
     }
-    public static int ERROR_KEY_HAS_CHILDREN() {
-        return (int)1020L;
+    public static int DOMAIN_GROUP_RID_USERS() {
+        return (int)513L;
     }
-    public static int ERROR_CHILD_MUST_BE_VOLATILE() {
-        return (int)1021L;
+    public static int DOMAIN_GROUP_RID_GUESTS() {
+        return (int)514L;
     }
-    public static int ERROR_NOTIFY_ENUM_DIR() {
-        return (int)1022L;
+    public static int DOMAIN_GROUP_RID_COMPUTERS() {
+        return (int)515L;
     }
-    public static int ERROR_DEPENDENT_SERVICES_RUNNING() {
-        return (int)1051L;
+    public static int DOMAIN_GROUP_RID_CONTROLLERS() {
+        return (int)516L;
     }
-    public static int ERROR_INVALID_SERVICE_CONTROL() {
-        return (int)1052L;
+    public static int DOMAIN_GROUP_RID_CERT_ADMINS() {
+        return (int)517L;
     }
-    public static int ERROR_SERVICE_REQUEST_TIMEOUT() {
-        return (int)1053L;
+    public static int DOMAIN_GROUP_RID_SCHEMA_ADMINS() {
+        return (int)518L;
     }
-    public static int ERROR_SERVICE_NO_THREAD() {
-        return (int)1054L;
+    public static int DOMAIN_GROUP_RID_ENTERPRISE_ADMINS() {
+        return (int)519L;
     }
-    public static int ERROR_SERVICE_DATABASE_LOCKED() {
-        return (int)1055L;
+    public static int DOMAIN_GROUP_RID_POLICY_ADMINS() {
+        return (int)520L;
     }
-    public static int ERROR_SERVICE_ALREADY_RUNNING() {
-        return (int)1056L;
+    public static int DOMAIN_GROUP_RID_READONLY_CONTROLLERS() {
+        return (int)521L;
     }
-    public static int ERROR_INVALID_SERVICE_ACCOUNT() {
-        return (int)1057L;
+    public static int DOMAIN_GROUP_RID_CLONEABLE_CONTROLLERS() {
+        return (int)522L;
     }
-    public static int ERROR_SERVICE_DISABLED() {
-        return (int)1058L;
+    public static int DOMAIN_GROUP_RID_CDC_RESERVED() {
+        return (int)524L;
     }
-    public static int ERROR_CIRCULAR_DEPENDENCY() {
-        return (int)1059L;
+    public static int DOMAIN_GROUP_RID_PROTECTED_USERS() {
+        return (int)525L;
     }
-    public static int ERROR_SERVICE_DOES_NOT_EXIST() {
-        return (int)1060L;
+    public static int DOMAIN_GROUP_RID_KEY_ADMINS() {
+        return (int)526L;
     }
-    public static int ERROR_SERVICE_CANNOT_ACCEPT_CTRL() {
-        return (int)1061L;
+    public static int DOMAIN_GROUP_RID_ENTERPRISE_KEY_ADMINS() {
+        return (int)527L;
     }
-    public static int ERROR_SERVICE_NOT_ACTIVE() {
-        return (int)1062L;
+    public static int DOMAIN_ALIAS_RID_ADMINS() {
+        return (int)544L;
     }
-    public static int ERROR_FAILED_SERVICE_CONTROLLER_CONNECT() {
-        return (int)1063L;
+    public static int DOMAIN_ALIAS_RID_USERS() {
+        return (int)545L;
     }
-    public static int ERROR_EXCEPTION_IN_SERVICE() {
-        return (int)1064L;
+    public static int DOMAIN_ALIAS_RID_GUESTS() {
+        return (int)546L;
     }
-    public static int ERROR_DATABASE_DOES_NOT_EXIST() {
-        return (int)1065L;
+    public static int DOMAIN_ALIAS_RID_POWER_USERS() {
+        return (int)547L;
     }
-    public static int ERROR_SERVICE_SPECIFIC_ERROR() {
-        return (int)1066L;
+    public static int DOMAIN_ALIAS_RID_ACCOUNT_OPS() {
+        return (int)548L;
     }
-    public static int ERROR_PROCESS_ABORTED() {
-        return (int)1067L;
+    public static int DOMAIN_ALIAS_RID_SYSTEM_OPS() {
+        return (int)549L;
     }
-    public static int ERROR_SERVICE_DEPENDENCY_FAIL() {
-        return (int)1068L;
+    public static int DOMAIN_ALIAS_RID_PRINT_OPS() {
+        return (int)550L;
     }
-    public static int ERROR_SERVICE_LOGON_FAILED() {
-        return (int)1069L;
+    public static int DOMAIN_ALIAS_RID_BACKUP_OPS() {
+        return (int)551L;
     }
-    public static int ERROR_SERVICE_START_HANG() {
-        return (int)1070L;
+    public static int DOMAIN_ALIAS_RID_REPLICATOR() {
+        return (int)552L;
     }
-    public static int ERROR_INVALID_SERVICE_LOCK() {
-        return (int)1071L;
+    public static int DOMAIN_ALIAS_RID_RAS_SERVERS() {
+        return (int)553L;
     }
-    public static int ERROR_SERVICE_MARKED_FOR_DELETE() {
-        return (int)1072L;
+    public static int DOMAIN_ALIAS_RID_PREW2KCOMPACCESS() {
+        return (int)554L;
     }
-    public static int ERROR_SERVICE_EXISTS() {
-        return (int)1073L;
+    public static int DOMAIN_ALIAS_RID_REMOTE_DESKTOP_USERS() {
+        return (int)555L;
     }
-    public static int ERROR_ALREADY_RUNNING_LKG() {
-        return (int)1074L;
+    public static int DOMAIN_ALIAS_RID_NETWORK_CONFIGURATION_OPS() {
+        return (int)556L;
     }
-    public static int ERROR_SERVICE_DEPENDENCY_DELETED() {
-        return (int)1075L;
+    public static int DOMAIN_ALIAS_RID_INCOMING_FOREST_TRUST_BUILDERS() {
+        return (int)557L;
     }
-    public static int ERROR_BOOT_ALREADY_ACCEPTED() {
-        return (int)1076L;
+    public static int DOMAIN_ALIAS_RID_MONITORING_USERS() {
+        return (int)558L;
     }
-    public static int ERROR_SERVICE_NEVER_STARTED() {
-        return (int)1077L;
+    public static int DOMAIN_ALIAS_RID_LOGGING_USERS() {
+        return (int)559L;
     }
-    public static int ERROR_DUPLICATE_SERVICE_NAME() {
-        return (int)1078L;
+    public static int DOMAIN_ALIAS_RID_AUTHORIZATIONACCESS() {
+        return (int)560L;
     }
-    public static int ERROR_DIFFERENT_SERVICE_ACCOUNT() {
-        return (int)1079L;
+    public static int DOMAIN_ALIAS_RID_TS_LICENSE_SERVERS() {
+        return (int)561L;
     }
-    public static int ERROR_CANNOT_DETECT_DRIVER_FAILURE() {
-        return (int)1080L;
+    public static int DOMAIN_ALIAS_RID_DCOM_USERS() {
+        return (int)562L;
     }
-    public static int ERROR_CANNOT_DETECT_PROCESS_ABORT() {
-        return (int)1081L;
+    public static int DOMAIN_ALIAS_RID_IUSERS() {
+        return (int)568L;
     }
-    public static int ERROR_NO_RECOVERY_PROGRAM() {
-        return (int)1082L;
+    public static int DOMAIN_ALIAS_RID_CRYPTO_OPERATORS() {
+        return (int)569L;
     }
-    public static int ERROR_SERVICE_NOT_IN_EXE() {
-        return (int)1083L;
+    public static int DOMAIN_ALIAS_RID_CACHEABLE_PRINCIPALS_GROUP() {
+        return (int)571L;
     }
-    public static int ERROR_NOT_SAFEBOOT_SERVICE() {
-        return (int)1084L;
+    public static int DOMAIN_ALIAS_RID_NON_CACHEABLE_PRINCIPALS_GROUP() {
+        return (int)572L;
     }
-    public static int ERROR_END_OF_MEDIA() {
-        return (int)1100L;
+    public static int DOMAIN_ALIAS_RID_EVENT_LOG_READERS_GROUP() {
+        return (int)573L;
     }
-    public static int ERROR_FILEMARK_DETECTED() {
-        return (int)1101L;
+    public static int DOMAIN_ALIAS_RID_CERTSVC_DCOM_ACCESS_GROUP() {
+        return (int)574L;
     }
-    public static int ERROR_BEGINNING_OF_MEDIA() {
-        return (int)1102L;
+    public static int DOMAIN_ALIAS_RID_RDS_REMOTE_ACCESS_SERVERS() {
+        return (int)575L;
     }
-    public static int ERROR_SETMARK_DETECTED() {
-        return (int)1103L;
+    public static int DOMAIN_ALIAS_RID_RDS_ENDPOINT_SERVERS() {
+        return (int)576L;
     }
-    public static int ERROR_NO_DATA_DETECTED() {
-        return (int)1104L;
+    public static int DOMAIN_ALIAS_RID_RDS_MANAGEMENT_SERVERS() {
+        return (int)577L;
     }
-    public static int ERROR_PARTITION_FAILURE() {
-        return (int)1105L;
+    public static int DOMAIN_ALIAS_RID_HYPER_V_ADMINS() {
+        return (int)578L;
     }
-    public static int ERROR_INVALID_BLOCK_LENGTH() {
-        return (int)1106L;
+    public static int DOMAIN_ALIAS_RID_ACCESS_CONTROL_ASSISTANCE_OPS() {
+        return (int)579L;
     }
-    public static int ERROR_DEVICE_NOT_PARTITIONED() {
-        return (int)1107L;
+    public static int DOMAIN_ALIAS_RID_REMOTE_MANAGEMENT_USERS() {
+        return (int)580L;
     }
-    public static int ERROR_UNABLE_TO_LOCK_MEDIA() {
-        return (int)1108L;
+    public static int DOMAIN_ALIAS_RID_DEFAULT_ACCOUNT() {
+        return (int)581L;
     }
-    public static int ERROR_UNABLE_TO_UNLOAD_MEDIA() {
-        return (int)1109L;
+    public static int DOMAIN_ALIAS_RID_STORAGE_REPLICA_ADMINS() {
+        return (int)582L;
     }
-    public static int ERROR_MEDIA_CHANGED() {
-        return (int)1110L;
+    public static int DOMAIN_ALIAS_RID_DEVICE_OWNERS() {
+        return (int)583L;
     }
-    public static int ERROR_BUS_RESET() {
-        return (int)1111L;
+    public static int SECURITY_APP_PACKAGE_BASE_RID() {
+        return (int)2L;
     }
-    public static int ERROR_NO_MEDIA_IN_DRIVE() {
-        return (int)1112L;
+    public static int SECURITY_BUILTIN_APP_PACKAGE_RID_COUNT() {
+        return (int)2L;
     }
-    public static int ERROR_NO_UNICODE_TRANSLATION() {
-        return (int)1113L;
+    public static int SECURITY_APP_PACKAGE_RID_COUNT() {
+        return (int)8L;
     }
-    public static int ERROR_DLL_INIT_FAILED() {
-        return (int)1114L;
+    public static int SECURITY_CAPABILITY_BASE_RID() {
+        return (int)3L;
     }
-    public static int ERROR_SHUTDOWN_IN_PROGRESS() {
-        return (int)1115L;
+    public static int SECURITY_CAPABILITY_APP_RID() {
+        return (int)1024L;
     }
-    public static int ERROR_NO_SHUTDOWN_IN_PROGRESS() {
-        return (int)1116L;
+    public static int SECURITY_BUILTIN_CAPABILITY_RID_COUNT() {
+        return (int)2L;
     }
-    public static int ERROR_IO_DEVICE() {
-        return (int)1117L;
+    public static int SECURITY_CAPABILITY_RID_COUNT() {
+        return (int)5L;
     }
-    public static int ERROR_SERIAL_NO_DEVICE() {
-        return (int)1118L;
+    public static int SECURITY_PARENT_PACKAGE_RID_COUNT() {
+        return (int)8L;
     }
-    public static int ERROR_IRQ_BUSY() {
-        return (int)1119L;
+    public static int SECURITY_CHILD_PACKAGE_RID_COUNT() {
+        return (int)12L;
     }
-    public static int ERROR_MORE_WRITES() {
-        return (int)1120L;
+    public static int SECURITY_BUILTIN_PACKAGE_ANY_PACKAGE() {
+        return (int)1L;
     }
-    public static int ERROR_COUNTER_TIMEOUT() {
-        return (int)1121L;
+    public static int SECURITY_BUILTIN_PACKAGE_ANY_RESTRICTED_PACKAGE() {
+        return (int)2L;
     }
-    public static int ERROR_FLOPPY_ID_MARK_NOT_FOUND() {
-        return (int)1122L;
+    public static int SECURITY_CAPABILITY_INTERNET_CLIENT() {
+        return (int)1L;
     }
-    public static int ERROR_FLOPPY_WRONG_CYLINDER() {
-        return (int)1123L;
+    public static int SECURITY_CAPABILITY_INTERNET_CLIENT_SERVER() {
+        return (int)2L;
     }
-    public static int ERROR_FLOPPY_UNKNOWN_ERROR() {
-        return (int)1124L;
+    public static int SECURITY_CAPABILITY_PRIVATE_NETWORK_CLIENT_SERVER() {
+        return (int)3L;
     }
-    public static int ERROR_FLOPPY_BAD_REGISTERS() {
-        return (int)1125L;
+    public static int SECURITY_CAPABILITY_PICTURES_LIBRARY() {
+        return (int)4L;
     }
-    public static int ERROR_DISK_RECALIBRATE_FAILED() {
-        return (int)1126L;
+    public static int SECURITY_CAPABILITY_VIDEOS_LIBRARY() {
+        return (int)5L;
     }
-    public static int ERROR_DISK_OPERATION_FAILED() {
-        return (int)1127L;
+    public static int SECURITY_CAPABILITY_MUSIC_LIBRARY() {
+        return (int)6L;
     }
-    public static int ERROR_DISK_RESET_FAILED() {
-        return (int)1128L;
+    public static int SECURITY_CAPABILITY_DOCUMENTS_LIBRARY() {
+        return (int)7L;
     }
-    public static int ERROR_EOM_OVERFLOW() {
-        return (int)1129L;
+    public static int SECURITY_CAPABILITY_ENTERPRISE_AUTHENTICATION() {
+        return (int)8L;
     }
-    public static int ERROR_NOT_ENOUGH_SERVER_MEMORY() {
-        return (int)1130L;
+    public static int SECURITY_CAPABILITY_SHARED_USER_CERTIFICATES() {
+        return (int)9L;
     }
-    public static int ERROR_POSSIBLE_DEADLOCK() {
-        return (int)1131L;
+    public static int SECURITY_CAPABILITY_REMOVABLE_STORAGE() {
+        return (int)10L;
     }
-    public static int ERROR_MAPPED_ALIGNMENT() {
-        return (int)1132L;
+    public static int SECURITY_CAPABILITY_APPOINTMENTS() {
+        return (int)11L;
     }
-    public static int ERROR_SET_POWER_STATE_VETOED() {
-        return (int)1140L;
+    public static int SECURITY_CAPABILITY_CONTACTS() {
+        return (int)12L;
     }
-    public static int ERROR_SET_POWER_STATE_FAILED() {
-        return (int)1141L;
+    public static int SECURITY_CAPABILITY_INTERNET_EXPLORER() {
+        return (int)4096L;
     }
-    public static int ERROR_TOO_MANY_LINKS() {
-        return (int)1142L;
+    public static int SECURITY_MANDATORY_UNTRUSTED_RID() {
+        return (int)0L;
     }
-    public static int ERROR_OLD_WIN_VERSION() {
-        return (int)1150L;
+    public static int SECURITY_MANDATORY_LOW_RID() {
+        return (int)4096L;
     }
-    public static int ERROR_APP_WRONG_OS() {
-        return (int)1151L;
+    public static int SECURITY_MANDATORY_MEDIUM_RID() {
+        return (int)8192L;
     }
-    public static int ERROR_SINGLE_INSTANCE_APP() {
-        return (int)1152L;
+    public static int SECURITY_MANDATORY_MEDIUM_PLUS_RID() {
+        return (int)8448L;
     }
-    public static int ERROR_RMODE_APP() {
-        return (int)1153L;
+    public static int SECURITY_MANDATORY_HIGH_RID() {
+        return (int)12288L;
     }
-    public static int ERROR_INVALID_DLL() {
-        return (int)1154L;
+    public static int SECURITY_MANDATORY_SYSTEM_RID() {
+        return (int)16384L;
     }
-    public static int ERROR_NO_ASSOCIATION() {
-        return (int)1155L;
+    public static int SECURITY_MANDATORY_PROTECTED_PROCESS_RID() {
+        return (int)20480L;
     }
-    public static int ERROR_DDE_FAIL() {
-        return (int)1156L;
+    public static int SECURITY_MANDATORY_MAXIMUM_USER_RID() {
+        return (int)16384L;
     }
-    public static int ERROR_DLL_NOT_FOUND() {
-        return (int)1157L;
+    public static int SECURITY_AUTHENTICATION_AUTHORITY_RID_COUNT() {
+        return (int)1L;
     }
-    public static int ERROR_NO_MORE_USER_HANDLES() {
-        return (int)1158L;
+    public static int SECURITY_AUTHENTICATION_AUTHORITY_ASSERTED_RID() {
+        return (int)1L;
     }
-    public static int ERROR_MESSAGE_SYNC_ONLY() {
-        return (int)1159L;
+    public static int SECURITY_AUTHENTICATION_SERVICE_ASSERTED_RID() {
+        return (int)2L;
     }
-    public static int ERROR_SOURCE_ELEMENT_EMPTY() {
-        return (int)1160L;
+    public static int SECURITY_AUTHENTICATION_FRESH_KEY_AUTH_RID() {
+        return (int)3L;
     }
-    public static int ERROR_DESTINATION_ELEMENT_FULL() {
-        return (int)1161L;
+    public static int SECURITY_AUTHENTICATION_KEY_TRUST_RID() {
+        return (int)4L;
     }
-    public static int ERROR_ILLEGAL_ELEMENT_ADDRESS() {
-        return (int)1162L;
+    public static int SECURITY_AUTHENTICATION_KEY_PROPERTY_MFA_RID() {
+        return (int)5L;
     }
-    public static int ERROR_MAGAZINE_NOT_PRESENT() {
-        return (int)1163L;
+    public static int SECURITY_AUTHENTICATION_KEY_PROPERTY_ATTESTATION_RID() {
+        return (int)6L;
     }
-    public static int ERROR_DEVICE_REINITIALIZATION_NEEDED() {
-        return (int)1164L;
+    public static int SECURITY_PROCESS_TRUST_AUTHORITY_RID_COUNT() {
+        return (int)2L;
     }
-    public static int ERROR_DEVICE_REQUIRES_CLEANING() {
-        return (int)1165L;
+    public static int SECURITY_PROCESS_PROTECTION_TYPE_FULL_RID() {
+        return (int)1024L;
     }
-    public static int ERROR_DEVICE_DOOR_OPEN() {
-        return (int)1166L;
+    public static int SECURITY_PROCESS_PROTECTION_TYPE_LITE_RID() {
+        return (int)512L;
     }
-    public static int ERROR_DEVICE_NOT_CONNECTED() {
-        return (int)1167L;
+    public static int SECURITY_PROCESS_PROTECTION_TYPE_NONE_RID() {
+        return (int)0L;
     }
-    public static int ERROR_NOT_FOUND() {
-        return (int)1168L;
+    public static int SECURITY_PROCESS_PROTECTION_LEVEL_WINTCB_RID() {
+        return (int)8192L;
     }
-    public static int ERROR_NO_MATCH() {
-        return (int)1169L;
+    public static int SECURITY_PROCESS_PROTECTION_LEVEL_WINDOWS_RID() {
+        return (int)4096L;
     }
-    public static int ERROR_SET_NOT_FOUND() {
-        return (int)1170L;
+    public static int SECURITY_PROCESS_PROTECTION_LEVEL_APP_RID() {
+        return (int)2048L;
     }
-    public static int ERROR_POINT_NOT_FOUND() {
-        return (int)1171L;
+    public static int SECURITY_PROCESS_PROTECTION_LEVEL_ANTIMALWARE_RID() {
+        return (int)1536L;
     }
-    public static int ERROR_NO_TRACKING_SERVICE() {
-        return (int)1172L;
+    public static int SECURITY_PROCESS_PROTECTION_LEVEL_AUTHENTICODE_RID() {
+        return (int)1024L;
     }
-    public static int ERROR_NO_VOLUME_ID() {
-        return (int)1173L;
+    public static int SECURITY_PROCESS_PROTECTION_LEVEL_NONE_RID() {
+        return (int)0L;
     }
-    public static int ERROR_UNABLE_TO_REMOVE_REPLACED() {
-        return (int)1175L;
+    public static long SECURITY_TRUSTED_INSTALLER_RID2() {
+        return 3418522649L;
     }
-    public static int ERROR_UNABLE_TO_MOVE_REPLACEMENT() {
-        return (int)1176L;
+    public static long SECURITY_TRUSTED_INSTALLER_RID5() {
+        return 2271478464L;
     }
-    public static int ERROR_UNABLE_TO_MOVE_REPLACEMENT_2() {
-        return (int)1177L;
+    public static int SE_GROUP_MANDATORY() {
+        return (int)1L;
     }
-    public static int ERROR_JOURNAL_DELETE_IN_PROGRESS() {
-        return (int)1178L;
+    public static int SE_GROUP_ENABLED_BY_DEFAULT() {
+        return (int)2L;
     }
-    public static int ERROR_JOURNAL_NOT_ACTIVE() {
-        return (int)1179L;
+    public static int SE_GROUP_ENABLED() {
+        return (int)4L;
     }
-    public static int ERROR_POTENTIAL_FILE_FOUND() {
-        return (int)1180L;
+    public static int SE_GROUP_OWNER() {
+        return (int)8L;
     }
-    public static int ERROR_JOURNAL_ENTRY_DELETED() {
-        return (int)1181L;
+    public static int SE_GROUP_USE_FOR_DENY_ONLY() {
+        return (int)16L;
     }
-    public static int ERROR_SHUTDOWN_IS_SCHEDULED() {
-        return (int)1190L;
+    public static int SE_GROUP_INTEGRITY() {
+        return (int)32L;
     }
-    public static int ERROR_SHUTDOWN_USERS_LOGGED_ON() {
-        return (int)1191L;
+    public static int SE_GROUP_INTEGRITY_ENABLED() {
+        return (int)64L;
     }
-    public static int ERROR_BAD_DEVICE() {
-        return (int)1200L;
+    public static int SE_GROUP_LOGON_ID() {
+        return (int)3221225472L;
     }
-    public static int ERROR_CONNECTION_UNAVAIL() {
-        return (int)1201L;
+    public static int SE_GROUP_RESOURCE() {
+        return (int)536870912L;
     }
-    public static int ERROR_DEVICE_ALREADY_REMEMBERED() {
-        return (int)1202L;
+    public static int SE_GROUP_VALID_ATTRIBUTES() {
+        return (int)3758096511L;
     }
-    public static int ERROR_NO_NET_OR_BAD_PATH() {
-        return (int)1203L;
+    public static int ACL_REVISION() {
+        return (int)2L;
     }
-    public static int ERROR_BAD_PROVIDER() {
-        return (int)1204L;
+    public static int ACL_REVISION_DS() {
+        return (int)4L;
     }
-    public static int ERROR_CANNOT_OPEN_PROFILE() {
-        return (int)1205L;
+    public static int ACL_REVISION1() {
+        return (int)1L;
     }
-    public static int ERROR_BAD_PROFILE() {
-        return (int)1206L;
+    public static int MIN_ACL_REVISION() {
+        return (int)2L;
     }
-    public static int ERROR_NOT_CONTAINER() {
-        return (int)1207L;
+    public static int ACL_REVISION2() {
+        return (int)2L;
     }
-    public static int ERROR_EXTENDED_ERROR() {
-        return (int)1208L;
+    public static int ACL_REVISION3() {
+        return (int)3L;
     }
-    public static int ERROR_INVALID_GROUPNAME() {
-        return (int)1209L;
+    public static int ACL_REVISION4() {
+        return (int)4L;
     }
-    public static int ERROR_INVALID_COMPUTERNAME() {
-        return (int)1210L;
+    public static int MAX_ACL_REVISION() {
+        return (int)4L;
     }
-    public static int ERROR_INVALID_EVENTNAME() {
-        return (int)1211L;
+    public static int ACCESS_MIN_MS_ACE_TYPE() {
+        return (int)0L;
     }
-    public static int ERROR_INVALID_DOMAINNAME() {
-        return (int)1212L;
+    public static int ACCESS_ALLOWED_ACE_TYPE() {
+        return (int)0L;
     }
-    public static int ERROR_INVALID_SERVICENAME() {
-        return (int)1213L;
+    public static int ACCESS_DENIED_ACE_TYPE() {
+        return (int)1L;
     }
-    public static int ERROR_INVALID_NETNAME() {
-        return (int)1214L;
+    public static int SYSTEM_AUDIT_ACE_TYPE() {
+        return (int)2L;
     }
-    public static int ERROR_INVALID_SHARENAME() {
-        return (int)1215L;
+    public static int SYSTEM_ALARM_ACE_TYPE() {
+        return (int)3L;
     }
-    public static int ERROR_INVALID_PASSWORDNAME() {
-        return (int)1216L;
+    public static int ACCESS_MAX_MS_V2_ACE_TYPE() {
+        return (int)3L;
     }
-    public static int ERROR_INVALID_MESSAGENAME() {
-        return (int)1217L;
+    public static int ACCESS_ALLOWED_COMPOUND_ACE_TYPE() {
+        return (int)4L;
     }
-    public static int ERROR_INVALID_MESSAGEDEST() {
-        return (int)1218L;
+    public static int ACCESS_MAX_MS_V3_ACE_TYPE() {
+        return (int)4L;
     }
-    public static int ERROR_SESSION_CREDENTIAL_CONFLICT() {
-        return (int)1219L;
+    public static int ACCESS_MIN_MS_OBJECT_ACE_TYPE() {
+        return (int)5L;
     }
-    public static int ERROR_REMOTE_SESSION_LIMIT_EXCEEDED() {
-        return (int)1220L;
+    public static int ACCESS_ALLOWED_OBJECT_ACE_TYPE() {
+        return (int)5L;
     }
-    public static int ERROR_DUP_DOMAINNAME() {
-        return (int)1221L;
+    public static int ACCESS_DENIED_OBJECT_ACE_TYPE() {
+        return (int)6L;
     }
-    public static int ERROR_NO_NETWORK() {
-        return (int)1222L;
+    public static int SYSTEM_AUDIT_OBJECT_ACE_TYPE() {
+        return (int)7L;
     }
-    public static int ERROR_CANCELLED() {
-        return (int)1223L;
+    public static int SYSTEM_ALARM_OBJECT_ACE_TYPE() {
+        return (int)8L;
     }
-    public static int ERROR_USER_MAPPED_FILE() {
-        return (int)1224L;
+    public static int ACCESS_MAX_MS_OBJECT_ACE_TYPE() {
+        return (int)8L;
     }
-    public static int ERROR_CONNECTION_REFUSED() {
-        return (int)1225L;
+    public static int ACCESS_MAX_MS_V4_ACE_TYPE() {
+        return (int)8L;
     }
-    public static int ERROR_GRACEFUL_DISCONNECT() {
-        return (int)1226L;
+    public static int ACCESS_MAX_MS_ACE_TYPE() {
+        return (int)8L;
     }
-    public static int ERROR_ADDRESS_ALREADY_ASSOCIATED() {
-        return (int)1227L;
+    public static int ACCESS_ALLOWED_CALLBACK_ACE_TYPE() {
+        return (int)9L;
     }
-    public static int ERROR_ADDRESS_NOT_ASSOCIATED() {
-        return (int)1228L;
+    public static int ACCESS_DENIED_CALLBACK_ACE_TYPE() {
+        return (int)10L;
     }
-    public static int ERROR_CONNECTION_INVALID() {
-        return (int)1229L;
+    public static int ACCESS_ALLOWED_CALLBACK_OBJECT_ACE_TYPE() {
+        return (int)11L;
     }
-    public static int ERROR_CONNECTION_ACTIVE() {
-        return (int)1230L;
+    public static int ACCESS_DENIED_CALLBACK_OBJECT_ACE_TYPE() {
+        return (int)12L;
     }
-    public static int ERROR_NETWORK_UNREACHABLE() {
-        return (int)1231L;
+    public static int SYSTEM_AUDIT_CALLBACK_ACE_TYPE() {
+        return (int)13L;
     }
-    public static int ERROR_HOST_UNREACHABLE() {
-        return (int)1232L;
+    public static int SYSTEM_ALARM_CALLBACK_ACE_TYPE() {
+        return (int)14L;
     }
-    public static int ERROR_PROTOCOL_UNREACHABLE() {
-        return (int)1233L;
+    public static int SYSTEM_AUDIT_CALLBACK_OBJECT_ACE_TYPE() {
+        return (int)15L;
     }
-    public static int ERROR_PORT_UNREACHABLE() {
-        return (int)1234L;
+    public static int SYSTEM_ALARM_CALLBACK_OBJECT_ACE_TYPE() {
+        return (int)16L;
     }
-    public static int ERROR_REQUEST_ABORTED() {
-        return (int)1235L;
+    public static int SYSTEM_MANDATORY_LABEL_ACE_TYPE() {
+        return (int)17L;
     }
-    public static int ERROR_CONNECTION_ABORTED() {
-        return (int)1236L;
+    public static int SYSTEM_RESOURCE_ATTRIBUTE_ACE_TYPE() {
+        return (int)18L;
     }
-    public static int ERROR_RETRY() {
-        return (int)1237L;
+    public static int SYSTEM_SCOPED_POLICY_ID_ACE_TYPE() {
+        return (int)19L;
     }
-    public static int ERROR_CONNECTION_COUNT_LIMIT() {
-        return (int)1238L;
+    public static int SYSTEM_PROCESS_TRUST_LABEL_ACE_TYPE() {
+        return (int)20L;
     }
-    public static int ERROR_LOGIN_TIME_RESTRICTION() {
-        return (int)1239L;
+    public static int SYSTEM_ACCESS_FILTER_ACE_TYPE() {
+        return (int)21L;
     }
-    public static int ERROR_LOGIN_WKSTA_RESTRICTION() {
-        return (int)1240L;
+    public static int ACCESS_MAX_MS_V5_ACE_TYPE() {
+        return (int)21L;
     }
-    public static int ERROR_INCORRECT_ADDRESS() {
-        return (int)1241L;
+    public static int OBJECT_INHERIT_ACE() {
+        return (int)1L;
     }
-    public static int ERROR_ALREADY_REGISTERED() {
-        return (int)1242L;
+    public static int CONTAINER_INHERIT_ACE() {
+        return (int)2L;
     }
-    public static int ERROR_SERVICE_NOT_FOUND() {
-        return (int)1243L;
+    public static int NO_PROPAGATE_INHERIT_ACE() {
+        return (int)4L;
     }
-    public static int ERROR_NOT_AUTHENTICATED() {
-        return (int)1244L;
+    public static int INHERIT_ONLY_ACE() {
+        return (int)8L;
     }
-    public static int ERROR_NOT_LOGGED_ON() {
-        return (int)1245L;
+    public static int INHERITED_ACE() {
+        return (int)16L;
     }
-    public static int ERROR_CONTINUE() {
-        return (int)1246L;
+    public static int VALID_INHERIT_FLAGS() {
+        return (int)31L;
     }
-    public static int ERROR_ALREADY_INITIALIZED() {
-        return (int)1247L;
+    public static int CRITICAL_ACE_FLAG() {
+        return (int)32L;
     }
-    public static int ERROR_NO_MORE_DEVICES() {
-        return (int)1248L;
+    public static int SUCCESSFUL_ACCESS_ACE_FLAG() {
+        return (int)64L;
     }
-    public static int ERROR_NO_SUCH_SITE() {
-        return (int)1249L;
+    public static int FAILED_ACCESS_ACE_FLAG() {
+        return (int)128L;
     }
-    public static int ERROR_DOMAIN_CONTROLLER_EXISTS() {
-        return (int)1250L;
+    public static int TRUST_PROTECTED_FILTER_ACE_FLAG() {
+        return (int)64L;
     }
-    public static int ERROR_ONLY_IF_CONNECTED() {
-        return (int)1251L;
+    public static int SYSTEM_MANDATORY_LABEL_VALID_MASK() {
+        return (int)7L;
     }
-    public static int ERROR_OVERRIDE_NOCHANGES() {
-        return (int)1252L;
+    public static int SYSTEM_PROCESS_TRUST_NOCONSTRAINT_MASK() {
+        return (int)4294967295L;
     }
-    public static int ERROR_BAD_USER_PROFILE() {
-        return (int)1253L;
+    public static int SYSTEM_ACCESS_FILTER_NOCONSTRAINT_MASK() {
+        return (int)4294967295L;
     }
-    public static int ERROR_NOT_SUPPORTED_ON_SBS() {
-        return (int)1254L;
+    public static int SECURITY_DESCRIPTOR_REVISION() {
+        return (int)1L;
     }
-    public static int ERROR_SERVER_SHUTDOWN_IN_PROGRESS() {
-        return (int)1255L;
+    public static int SECURITY_DESCRIPTOR_REVISION1() {
+        return (int)1L;
     }
-    public static int ERROR_HOST_DOWN() {
-        return (int)1256L;
+    public static long SECURITY_DESCRIPTOR_MIN_LENGTH() {
+        return 40L;
     }
-    public static int ERROR_NON_ACCOUNT_SID() {
-        return (int)1257L;
+    public static int SE_OWNER_DEFAULTED() {
+        return (int)1L;
     }
-    public static int ERROR_NON_DOMAIN_SID() {
-        return (int)1258L;
+    public static int SE_GROUP_DEFAULTED() {
+        return (int)2L;
     }
-    public static int ERROR_APPHELP_BLOCK() {
-        return (int)1259L;
+    public static int SE_DACL_PRESENT() {
+        return (int)4L;
     }
-    public static int ERROR_ACCESS_DISABLED_BY_POLICY() {
-        return (int)1260L;
+    public static int SE_DACL_DEFAULTED() {
+        return (int)8L;
     }
-    public static int ERROR_REG_NAT_CONSUMPTION() {
-        return (int)1261L;
+    public static int SE_SACL_PRESENT() {
+        return (int)16L;
     }
-    public static int ERROR_CSCSHARE_OFFLINE() {
-        return (int)1262L;
+    public static int SE_SACL_DEFAULTED() {
+        return (int)32L;
     }
-    public static int ERROR_PKINIT_FAILURE() {
-        return (int)1263L;
+    public static int SE_DACL_AUTO_INHERIT_REQ() {
+        return (int)256L;
     }
-    public static int ERROR_SMARTCARD_SUBSYSTEM_FAILURE() {
-        return (int)1264L;
+    public static int SE_SACL_AUTO_INHERIT_REQ() {
+        return (int)512L;
     }
-    public static int ERROR_DOWNGRADE_DETECTED() {
-        return (int)1265L;
+    public static int SE_DACL_AUTO_INHERITED() {
+        return (int)1024L;
     }
-    public static int ERROR_MACHINE_LOCKED() {
-        return (int)1271L;
+    public static int SE_SACL_AUTO_INHERITED() {
+        return (int)2048L;
     }
-    public static int ERROR_SMB_GUEST_LOGON_BLOCKED() {
-        return (int)1272L;
+    public static int SE_DACL_PROTECTED() {
+        return (int)4096L;
     }
-    public static int ERROR_CALLBACK_SUPPLIED_INVALID_DATA() {
-        return (int)1273L;
+    public static int SE_SACL_PROTECTED() {
+        return (int)8192L;
     }
-    public static int ERROR_SYNC_FOREGROUND_REFRESH_REQUIRED() {
-        return (int)1274L;
+    public static int SE_RM_CONTROL_VALID() {
+        return (int)16384L;
     }
-    public static int ERROR_DRIVER_BLOCKED() {
-        return (int)1275L;
+    public static int SE_SELF_RELATIVE() {
+        return (int)32768L;
     }
-    public static int ERROR_INVALID_IMPORT_OF_NON_DLL() {
-        return (int)1276L;
+    public static MemorySegment ACCESS_DS_SOURCE_A() {
+        return constants$720.ACCESS_DS_SOURCE_A$SEGMENT;
     }
-    public static int ERROR_ACCESS_DISABLED_WEBBLADE() {
-        return (int)1277L;
+    public static MemorySegment ACCESS_DS_SOURCE_W() {
+        return constants$720.ACCESS_DS_SOURCE_W$SEGMENT;
     }
-    public static int ERROR_ACCESS_DISABLED_WEBBLADE_TAMPER() {
-        return (int)1278L;
+    public static MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_A() {
+        return constants$721.ACCESS_DS_OBJECT_TYPE_NAME_A$SEGMENT;
     }
-    public static int ERROR_RECOVERY_FAILURE() {
-        return (int)1279L;
+    public static MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_W() {
+        return constants$721.ACCESS_DS_OBJECT_TYPE_NAME_W$SEGMENT;
     }
-    public static int ERROR_ALREADY_FIBER() {
-        return (int)1280L;
+    public static int SE_PRIVILEGE_ENABLED_BY_DEFAULT() {
+        return (int)1L;
     }
-    public static int ERROR_ALREADY_THREAD() {
-        return (int)1281L;
+    public static int SE_PRIVILEGE_ENABLED() {
+        return (int)2L;
     }
-    public static int ERROR_STACK_BUFFER_OVERRUN() {
-        return (int)1282L;
+    public static int SE_PRIVILEGE_REMOVED() {
+        return (int)4L;
     }
-    public static int ERROR_PARAMETER_QUOTA_EXCEEDED() {
-        return (int)1283L;
+    public static int SE_PRIVILEGE_USED_FOR_ACCESS() {
+        return (int)2147483648L;
     }
-    public static int ERROR_DEBUGGER_INACTIVE() {
-        return (int)1284L;
+    public static int SE_PRIVILEGE_VALID_ATTRIBUTES() {
+        return (int)2147483655L;
     }
-    public static int ERROR_DELAY_LOAD_FAILED() {
-        return (int)1285L;
+    public static int PRIVILEGE_SET_ALL_NECESSARY() {
+        return (int)1L;
     }
-    public static int ERROR_VDM_DISALLOWED() {
-        return (int)1286L;
+    public static int ACCESS_REASON_STAGING_MASK() {
+        return (int)2147483648L;
     }
-    public static int ERROR_UNIDENTIFIED_ERROR() {
-        return (int)1287L;
+    public static MemorySegment SE_CREATE_TOKEN_NAME() {
+        return constants$721.SE_CREATE_TOKEN_NAME$SEGMENT;
     }
-    public static int ERROR_INVALID_CRUNTIME_PARAMETER() {
-        return (int)1288L;
+    public static MemorySegment SE_ASSIGNPRIMARYTOKEN_NAME() {
+        return constants$721.SE_ASSIGNPRIMARYTOKEN_NAME$SEGMENT;
     }
-    public static int ERROR_BEYOND_VDL() {
-        return (int)1289L;
+    public static MemorySegment SE_LOCK_MEMORY_NAME() {
+        return constants$721.SE_LOCK_MEMORY_NAME$SEGMENT;
     }
-    public static int ERROR_INCOMPATIBLE_SERVICE_SID_TYPE() {
-        return (int)1290L;
+    public static MemorySegment SE_INCREASE_QUOTA_NAME() {
+        return constants$721.SE_INCREASE_QUOTA_NAME$SEGMENT;
     }
-    public static int ERROR_DRIVER_PROCESS_TERMINATED() {
-        return (int)1291L;
+    public static MemorySegment SE_UNSOLICITED_INPUT_NAME() {
+        return constants$722.SE_UNSOLICITED_INPUT_NAME$SEGMENT;
     }
-    public static int ERROR_IMPLEMENTATION_LIMIT() {
-        return (int)1292L;
+    public static MemorySegment SE_MACHINE_ACCOUNT_NAME() {
+        return constants$722.SE_MACHINE_ACCOUNT_NAME$SEGMENT;
     }
-    public static int ERROR_PROCESS_IS_PROTECTED() {
-        return (int)1293L;
+    public static MemorySegment SE_TCB_NAME() {
+        return constants$722.SE_TCB_NAME$SEGMENT;
     }
-    public static int ERROR_SERVICE_NOTIFY_CLIENT_LAGGING() {
-        return (int)1294L;
+    public static MemorySegment SE_SECURITY_NAME() {
+        return constants$722.SE_SECURITY_NAME$SEGMENT;
     }
-    public static int ERROR_DISK_QUOTA_EXCEEDED() {
-        return (int)1295L;
+    public static MemorySegment SE_TAKE_OWNERSHIP_NAME() {
+        return constants$722.SE_TAKE_OWNERSHIP_NAME$SEGMENT;
     }
-    public static int ERROR_CONTENT_BLOCKED() {
-        return (int)1296L;
+    public static MemorySegment SE_LOAD_DRIVER_NAME() {
+        return constants$722.SE_LOAD_DRIVER_NAME$SEGMENT;
     }
-    public static int ERROR_INCOMPATIBLE_SERVICE_PRIVILEGE() {
-        return (int)1297L;
+    public static MemorySegment SE_SYSTEM_PROFILE_NAME() {
+        return constants$723.SE_SYSTEM_PROFILE_NAME$SEGMENT;
     }
-    public static int ERROR_APP_HANG() {
-        return (int)1298L;
+    public static MemorySegment SE_SYSTEMTIME_NAME() {
+        return constants$723.SE_SYSTEMTIME_NAME$SEGMENT;
     }
-    public static int ERROR_INVALID_LABEL() {
-        return (int)1299L;
+    public static MemorySegment SE_PROF_SINGLE_PROCESS_NAME() {
+        return constants$723.SE_PROF_SINGLE_PROCESS_NAME$SEGMENT;
     }
-    public static int ERROR_NOT_ALL_ASSIGNED() {
-        return (int)1300L;
+    public static MemorySegment SE_INC_BASE_PRIORITY_NAME() {
+        return constants$723.SE_INC_BASE_PRIORITY_NAME$SEGMENT;
     }
-    public static int ERROR_SOME_NOT_MAPPED() {
-        return (int)1301L;
+    public static MemorySegment SE_CREATE_PAGEFILE_NAME() {
+        return constants$723.SE_CREATE_PAGEFILE_NAME$SEGMENT;
     }
-    public static int ERROR_NO_QUOTAS_FOR_ACCOUNT() {
-        return (int)1302L;
+    public static MemorySegment SE_CREATE_PERMANENT_NAME() {
+        return constants$723.SE_CREATE_PERMANENT_NAME$SEGMENT;
     }
-    public static int ERROR_LOCAL_USER_SESSION_KEY() {
-        return (int)1303L;
+    public static MemorySegment SE_BACKUP_NAME() {
+        return constants$724.SE_BACKUP_NAME$SEGMENT;
     }
-    public static int ERROR_NULL_LM_PASSWORD() {
-        return (int)1304L;
+    public static MemorySegment SE_RESTORE_NAME() {
+        return constants$724.SE_RESTORE_NAME$SEGMENT;
     }
-    public static int ERROR_UNKNOWN_REVISION() {
-        return (int)1305L;
+    public static MemorySegment SE_SHUTDOWN_NAME() {
+        return constants$724.SE_SHUTDOWN_NAME$SEGMENT;
     }
-    public static int ERROR_REVISION_MISMATCH() {
-        return (int)1306L;
+    public static MemorySegment SE_DEBUG_NAME() {
+        return constants$724.SE_DEBUG_NAME$SEGMENT;
     }
-    public static int ERROR_INVALID_OWNER() {
-        return (int)1307L;
+    public static MemorySegment SE_AUDIT_NAME() {
+        return constants$724.SE_AUDIT_NAME$SEGMENT;
     }
-    public static int ERROR_INVALID_PRIMARY_GROUP() {
-        return (int)1308L;
+    public static MemorySegment SE_SYSTEM_ENVIRONMENT_NAME() {
+        return constants$724.SE_SYSTEM_ENVIRONMENT_NAME$SEGMENT;
     }
-    public static int ERROR_NO_IMPERSONATION_TOKEN() {
-        return (int)1309L;
+    public static MemorySegment SE_CHANGE_NOTIFY_NAME() {
+        return constants$725.SE_CHANGE_NOTIFY_NAME$SEGMENT;
     }
-    public static int ERROR_CANT_DISABLE_MANDATORY() {
-        return (int)1310L;
+    public static MemorySegment SE_REMOTE_SHUTDOWN_NAME() {
+        return constants$725.SE_REMOTE_SHUTDOWN_NAME$SEGMENT;
     }
-    public static int ERROR_NO_LOGON_SERVERS() {
-        return (int)1311L;
+    public static MemorySegment SE_UNDOCK_NAME() {
+        return constants$725.SE_UNDOCK_NAME$SEGMENT;
     }
-    public static int ERROR_NO_SUCH_LOGON_SESSION() {
-        return (int)1312L;
+    public static MemorySegment SE_SYNC_AGENT_NAME() {
+        return constants$725.SE_SYNC_AGENT_NAME$SEGMENT;
     }
-    public static int ERROR_NO_SUCH_PRIVILEGE() {
-        return (int)1313L;
+    public static MemorySegment SE_ENABLE_DELEGATION_NAME() {
+        return constants$725.SE_ENABLE_DELEGATION_NAME$SEGMENT;
     }
-    public static int ERROR_PRIVILEGE_NOT_HELD() {
-        return (int)1314L;
+    public static MemorySegment SE_MANAGE_VOLUME_NAME() {
+        return constants$725.SE_MANAGE_VOLUME_NAME$SEGMENT;
     }
-    public static int ERROR_INVALID_ACCOUNT_NAME() {
-        return (int)1315L;
+    public static MemorySegment SE_IMPERSONATE_NAME() {
+        return constants$726.SE_IMPERSONATE_NAME$SEGMENT;
     }
-    public static int ERROR_USER_EXISTS() {
-        return (int)1316L;
+    public static MemorySegment SE_CREATE_GLOBAL_NAME() {
+        return constants$726.SE_CREATE_GLOBAL_NAME$SEGMENT;
     }
-    public static int ERROR_NO_SUCH_USER() {
-        return (int)1317L;
+    public static MemorySegment SE_TRUSTED_CREDMAN_ACCESS_NAME() {
+        return constants$726.SE_TRUSTED_CREDMAN_ACCESS_NAME$SEGMENT;
     }
-    public static int ERROR_GROUP_EXISTS() {
-        return (int)1318L;
+    public static MemorySegment SE_RELABEL_NAME() {
+        return constants$726.SE_RELABEL_NAME$SEGMENT;
     }
-    public static int ERROR_NO_SUCH_GROUP() {
-        return (int)1319L;
+    public static MemorySegment SE_INC_WORKING_SET_NAME() {
+        return constants$726.SE_INC_WORKING_SET_NAME$SEGMENT;
     }
-    public static int ERROR_MEMBER_IN_GROUP() {
-        return (int)1320L;
+    public static MemorySegment SE_TIME_ZONE_NAME() {
+        return constants$726.SE_TIME_ZONE_NAME$SEGMENT;
     }
-    public static int ERROR_MEMBER_NOT_IN_GROUP() {
-        return (int)1321L;
+    public static MemorySegment SE_CREATE_SYMBOLIC_LINK_NAME() {
+        return constants$727.SE_CREATE_SYMBOLIC_LINK_NAME$SEGMENT;
     }
-    public static int ERROR_LAST_ADMIN() {
-        return (int)1322L;
+    public static MemorySegment SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME() {
+        return constants$727.SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME$SEGMENT;
     }
-    public static int ERROR_WRONG_PASSWORD() {
-        return (int)1323L;
+    public static MemorySegment SE_ACTIVATE_AS_USER_CAPABILITY() {
+        return constants$727.SE_ACTIVATE_AS_USER_CAPABILITY$SEGMENT;
     }
-    public static int ERROR_ILL_FORMED_PASSWORD() {
-        return (int)1324L;
+    public static MemorySegment SE_CONSTRAINED_IMPERSONATION_CAPABILITY() {
+        return constants$727.SE_CONSTRAINED_IMPERSONATION_CAPABILITY$SEGMENT;
     }
-    public static int ERROR_PASSWORD_RESTRICTION() {
-        return (int)1325L;
+    public static MemorySegment SE_SESSION_IMPERSONATION_CAPABILITY() {
+        return constants$727.SE_SESSION_IMPERSONATION_CAPABILITY$SEGMENT;
     }
-    public static int ERROR_LOGON_FAILURE() {
-        return (int)1326L;
+    public static MemorySegment SE_MUMA_CAPABILITY() {
+        return constants$727.SE_MUMA_CAPABILITY$SEGMENT;
     }
-    public static int ERROR_ACCOUNT_RESTRICTION() {
-        return (int)1327L;
+    public static MemorySegment SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY() {
+        return constants$728.SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY$SEGMENT;
     }
-    public static int ERROR_INVALID_LOGON_HOURS() {
-        return (int)1328L;
+    public static int SECURITY_MAX_IMPERSONATION_LEVEL() {
+        return (int)3L;
     }
-    public static int ERROR_INVALID_WORKSTATION() {
-        return (int)1329L;
+    public static int SECURITY_MIN_IMPERSONATION_LEVEL() {
+        return (int)0L;
     }
-    public static int ERROR_PASSWORD_EXPIRED() {
-        return (int)1330L;
+    public static int DEFAULT_IMPERSONATION_LEVEL() {
+        return (int)2L;
     }
-    public static int ERROR_ACCOUNT_DISABLED() {
-        return (int)1331L;
+    public static int TOKEN_ASSIGN_PRIMARY() {
+        return (int)1L;
     }
-    public static int ERROR_NONE_MAPPED() {
-        return (int)1332L;
+    public static int TOKEN_DUPLICATE() {
+        return (int)2L;
     }
-    public static int ERROR_TOO_MANY_LUIDS_REQUESTED() {
-        return (int)1333L;
+    public static int TOKEN_IMPERSONATE() {
+        return (int)4L;
     }
-    public static int ERROR_LUIDS_EXHAUSTED() {
-        return (int)1334L;
+    public static int TOKEN_QUERY() {
+        return (int)8L;
     }
-    public static int ERROR_INVALID_SUB_AUTHORITY() {
-        return (int)1335L;
+    public static int TOKEN_QUERY_SOURCE() {
+        return (int)16L;
     }
-    public static int ERROR_INVALID_ACL() {
-        return (int)1336L;
+    public static int TOKEN_ADJUST_PRIVILEGES() {
+        return (int)32L;
     }
-    public static int ERROR_INVALID_SID() {
-        return (int)1337L;
+    public static int TOKEN_ADJUST_GROUPS() {
+        return (int)64L;
     }
-    public static int ERROR_INVALID_SECURITY_DESCR() {
-        return (int)1338L;
+    public static int TOKEN_ADJUST_DEFAULT() {
+        return (int)128L;
     }
-    public static int ERROR_BAD_INHERITANCE_ACL() {
-        return (int)1340L;
+    public static int TOKEN_ADJUST_SESSIONID() {
+        return (int)256L;
     }
-    public static int ERROR_SERVER_DISABLED() {
-        return (int)1341L;
+    public static int TOKEN_ALL_ACCESS_P() {
+        return (int)983295L;
     }
-    public static int ERROR_SERVER_NOT_DISABLED() {
-        return (int)1342L;
+    public static int TOKEN_ALL_ACCESS() {
+        return (int)983551L;
     }
-    public static int ERROR_INVALID_ID_AUTHORITY() {
-        return (int)1343L;
+    public static int TOKEN_READ() {
+        return (int)131080L;
     }
-    public static int ERROR_ALLOTTED_SPACE_EXCEEDED() {
-        return (int)1344L;
+    public static int TOKEN_WRITE() {
+        return (int)131296L;
     }
-    public static int ERROR_INVALID_GROUP_ATTRIBUTES() {
-        return (int)1345L;
+    public static int TOKEN_EXECUTE() {
+        return (int)131072L;
     }
-    public static int ERROR_BAD_IMPERSONATION_LEVEL() {
-        return (int)1346L;
+    public static int TOKEN_TRUST_CONSTRAINT_MASK() {
+        return (int)131096L;
     }
-    public static int ERROR_CANT_OPEN_ANONYMOUS() {
-        return (int)1347L;
+    public static int TOKEN_ACCESS_PSEUDO_HANDLE_WIN8() {
+        return (int)24L;
     }
-    public static int ERROR_BAD_VALIDATION_CLASS() {
-        return (int)1348L;
+    public static int TOKEN_ACCESS_PSEUDO_HANDLE() {
+        return (int)24L;
     }
-    public static int ERROR_BAD_TOKEN_TYPE() {
-        return (int)1349L;
+    public static long TOKEN_USER_MAX_SIZE() {
+        return 84L;
     }
-    public static int ERROR_NO_SECURITY_ON_OBJECT() {
-        return (int)1350L;
+    public static long TOKEN_OWNER_MAX_SIZE() {
+        return 76L;
     }
-    public static int ERROR_CANT_ACCESS_DOMAIN_INFO() {
-        return (int)1351L;
+    public static int TOKEN_MANDATORY_POLICY_VALID_MASK() {
+        return (int)3L;
     }
-    public static int ERROR_INVALID_SERVER_STATE() {
-        return (int)1352L;
+    public static long TOKEN_INTEGRITY_LEVEL_MAX_SIZE() {
+        return 84L;
     }
-    public static int ERROR_INVALID_DOMAIN_STATE() {
-        return (int)1353L;
+    public static int POLICY_AUDIT_SUBCATEGORY_COUNT() {
+        return (int)59L;
     }
-    public static int ERROR_INVALID_DOMAIN_ROLE() {
-        return (int)1354L;
+    public static long TOKEN_APPCONTAINER_SID_MAX_SIZE() {
+        return 76L;
     }
-    public static int ERROR_NO_SUCH_DOMAIN() {
-        return (int)1355L;
+    public static int CLAIM_SECURITY_ATTRIBUTE_VALID_FLAGS() {
+        return (int)63L;
     }
-    public static int ERROR_DOMAIN_EXISTS() {
-        return (int)1356L;
+    public static int CLAIM_SECURITY_ATTRIBUTE_CUSTOM_FLAGS() {
+        return (int)4294901760L;
     }
-    public static int ERROR_DOMAIN_LIMIT_EXCEEDED() {
-        return (int)1357L;
+    public static int CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION() {
+        return (int)1L;
     }
-    public static int ERROR_INTERNAL_DB_CORRUPTION() {
-        return (int)1358L;
+    public static int SECURITY_DYNAMIC_TRACKING() {
+        return (int)1L;
     }
-    public static int ERROR_INTERNAL_ERROR() {
-        return (int)1359L;
+    public static int SECURITY_STATIC_TRACKING() {
+        return (int)0L;
     }
-    public static int ERROR_GENERIC_NOT_MAPPED() {
-        return (int)1360L;
+    public static int OWNER_SECURITY_INFORMATION() {
+        return (int)1L;
     }
-    public static int ERROR_BAD_DESCRIPTOR_FORMAT() {
-        return (int)1361L;
+    public static int GROUP_SECURITY_INFORMATION() {
+        return (int)2L;
     }
-    public static int ERROR_NOT_LOGON_PROCESS() {
-        return (int)1362L;
+    public static int DACL_SECURITY_INFORMATION() {
+        return (int)4L;
     }
-    public static int ERROR_LOGON_SESSION_EXISTS() {
-        return (int)1363L;
+    public static int SACL_SECURITY_INFORMATION() {
+        return (int)8L;
     }
-    public static int ERROR_NO_SUCH_PACKAGE() {
-        return (int)1364L;
+    public static int LABEL_SECURITY_INFORMATION() {
+        return (int)16L;
     }
-    public static int ERROR_BAD_LOGON_SESSION_STATE() {
-        return (int)1365L;
+    public static int ATTRIBUTE_SECURITY_INFORMATION() {
+        return (int)32L;
     }
-    public static int ERROR_LOGON_SESSION_COLLISION() {
-        return (int)1366L;
+    public static int SCOPE_SECURITY_INFORMATION() {
+        return (int)64L;
     }
-    public static int ERROR_INVALID_LOGON_TYPE() {
-        return (int)1367L;
+    public static int PROCESS_TRUST_LABEL_SECURITY_INFORMATION() {
+        return (int)128L;
     }
-    public static int ERROR_CANNOT_IMPERSONATE() {
-        return (int)1368L;
+    public static int ACCESS_FILTER_SECURITY_INFORMATION() {
+        return (int)256L;
     }
-    public static int ERROR_RXACT_INVALID_STATE() {
-        return (int)1369L;
+    public static int BACKUP_SECURITY_INFORMATION() {
+        return (int)65536L;
     }
-    public static int ERROR_RXACT_COMMIT_FAILURE() {
-        return (int)1370L;
+    public static int PROTECTED_DACL_SECURITY_INFORMATION() {
+        return (int)2147483648L;
     }
-    public static int ERROR_SPECIAL_ACCOUNT() {
-        return (int)1371L;
+    public static int PROTECTED_SACL_SECURITY_INFORMATION() {
+        return (int)1073741824L;
     }
-    public static int ERROR_SPECIAL_GROUP() {
-        return (int)1372L;
+    public static int UNPROTECTED_DACL_SECURITY_INFORMATION() {
+        return (int)536870912L;
     }
-    public static int ERROR_SPECIAL_USER() {
-        return (int)1373L;
+    public static int UNPROTECTED_SACL_SECURITY_INFORMATION() {
+        return (int)268435456L;
     }
-    public static int ERROR_MEMBERS_PRIMARY_GROUP() {
-        return (int)1374L;
+    public static int SE_SIGNING_LEVEL_DEVELOPER() {
+        return (int)3L;
     }
-    public static int ERROR_TOKEN_ALREADY_IN_USE() {
-        return (int)1375L;
+    public static int SE_SIGNING_LEVEL_ANTIMALWARE() {
+        return (int)7L;
     }
-    public static int ERROR_NO_SUCH_ALIAS() {
-        return (int)1376L;
+    public static int PROCESS_TERMINATE() {
+        return (int)1L;
     }
-    public static int ERROR_MEMBER_NOT_IN_ALIAS() {
-        return (int)1377L;
+    public static int PROCESS_CREATE_THREAD() {
+        return (int)2L;
     }
-    public static int ERROR_MEMBER_IN_ALIAS() {
-        return (int)1378L;
+    public static int PROCESS_SET_SESSIONID() {
+        return (int)4L;
     }
-    public static int ERROR_ALIAS_EXISTS() {
-        return (int)1379L;
+    public static int PROCESS_VM_OPERATION() {
+        return (int)8L;
     }
-    public static int ERROR_LOGON_NOT_GRANTED() {
-        return (int)1380L;
+    public static int PROCESS_VM_READ() {
+        return (int)16L;
     }
-    public static int ERROR_TOO_MANY_SECRETS() {
-        return (int)1381L;
+    public static int PROCESS_VM_WRITE() {
+        return (int)32L;
     }
-    public static int ERROR_SECRET_TOO_LONG() {
-        return (int)1382L;
+    public static int PROCESS_DUP_HANDLE() {
+        return (int)64L;
     }
-    public static int ERROR_INTERNAL_DB_ERROR() {
-        return (int)1383L;
+    public static int PROCESS_CREATE_PROCESS() {
+        return (int)128L;
     }
-    public static int ERROR_TOO_MANY_CONTEXT_IDS() {
-        return (int)1384L;
+    public static int PROCESS_SET_QUOTA() {
+        return (int)256L;
     }
-    public static int ERROR_LOGON_TYPE_NOT_GRANTED() {
-        return (int)1385L;
+    public static int PROCESS_SET_INFORMATION() {
+        return (int)512L;
     }
-    public static int ERROR_NT_CROSS_ENCRYPTION_REQUIRED() {
-        return (int)1386L;
+    public static int PROCESS_QUERY_INFORMATION() {
+        return (int)1024L;
     }
-    public static int ERROR_NO_SUCH_MEMBER() {
-        return (int)1387L;
+    public static int PROCESS_SUSPEND_RESUME() {
+        return (int)2048L;
     }
-    public static int ERROR_INVALID_MEMBER() {
-        return (int)1388L;
+    public static int PROCESS_QUERY_LIMITED_INFORMATION() {
+        return (int)4096L;
     }
-    public static int ERROR_TOO_MANY_SIDS() {
-        return (int)1389L;
+    public static int PROCESS_SET_LIMITED_INFORMATION() {
+        return (int)8192L;
     }
-    public static int ERROR_LM_CROSS_ENCRYPTION_REQUIRED() {
-        return (int)1390L;
+    public static int PROCESS_ALL_ACCESS() {
+        return (int)2097151L;
     }
-    public static int ERROR_NO_INHERITANCE() {
-        return (int)1391L;
+    public static int THREAD_TERMINATE() {
+        return (int)1L;
     }
-    public static int ERROR_FILE_CORRUPT() {
-        return (int)1392L;
+    public static int THREAD_SUSPEND_RESUME() {
+        return (int)2L;
     }
-    public static int ERROR_DISK_CORRUPT() {
-        return (int)1393L;
+    public static int THREAD_GET_CONTEXT() {
+        return (int)8L;
     }
-    public static int ERROR_NO_USER_SESSION_KEY() {
-        return (int)1394L;
+    public static int THREAD_SET_CONTEXT() {
+        return (int)16L;
     }
-    public static int ERROR_LICENSE_QUOTA_EXCEEDED() {
-        return (int)1395L;
+    public static int THREAD_QUERY_INFORMATION() {
+        return (int)64L;
     }
-    public static int ERROR_WRONG_TARGET_NAME() {
-        return (int)1396L;
+    public static int THREAD_SET_INFORMATION() {
+        return (int)32L;
     }
-    public static int ERROR_MUTUAL_AUTH_FAILED() {
-        return (int)1397L;
+    public static int THREAD_SET_THREAD_TOKEN() {
+        return (int)128L;
     }
-    public static int ERROR_TIME_SKEW() {
-        return (int)1398L;
+    public static int THREAD_IMPERSONATE() {
+        return (int)256L;
     }
-    public static int ERROR_CURRENT_DOMAIN_NOT_ALLOWED() {
-        return (int)1399L;
+    public static int THREAD_DIRECT_IMPERSONATION() {
+        return (int)512L;
     }
-    public static int ERROR_INVALID_WINDOW_HANDLE() {
-        return (int)1400L;
+    public static int THREAD_SET_LIMITED_INFORMATION() {
+        return (int)1024L;
     }
-    public static int ERROR_INVALID_MENU_HANDLE() {
-        return (int)1401L;
+    public static int THREAD_QUERY_LIMITED_INFORMATION() {
+        return (int)2048L;
     }
-    public static int ERROR_INVALID_CURSOR_HANDLE() {
-        return (int)1402L;
+    public static int THREAD_RESUME() {
+        return (int)4096L;
     }
-    public static int ERROR_INVALID_ACCEL_HANDLE() {
-        return (int)1403L;
+    public static int THREAD_ALL_ACCESS() {
+        return (int)2097151L;
     }
-    public static int ERROR_INVALID_HOOK_HANDLE() {
-        return (int)1404L;
+    public static int JOB_OBJECT_ASSIGN_PROCESS() {
+        return (int)1L;
     }
-    public static int ERROR_INVALID_DWP_HANDLE() {
-        return (int)1405L;
+    public static int JOB_OBJECT_SET_ATTRIBUTES() {
+        return (int)2L;
     }
-    public static int ERROR_TLW_WITH_WSCHILD() {
-        return (int)1406L;
+    public static int JOB_OBJECT_QUERY() {
+        return (int)4L;
     }
-    public static int ERROR_CANNOT_FIND_WND_CLASS() {
-        return (int)1407L;
+    public static int JOB_OBJECT_TERMINATE() {
+        return (int)8L;
     }
-    public static int ERROR_WINDOW_OF_OTHER_THREAD() {
-        return (int)1408L;
+    public static int JOB_OBJECT_SET_SECURITY_ATTRIBUTES() {
+        return (int)16L;
     }
-    public static int ERROR_HOTKEY_ALREADY_REGISTERED() {
-        return (int)1409L;
+    public static int JOB_OBJECT_IMPERSONATE() {
+        return (int)32L;
     }
-    public static int ERROR_CLASS_ALREADY_EXISTS() {
-        return (int)1410L;
+    public static int JOB_OBJECT_ALL_ACCESS() {
+        return (int)2031679L;
     }
-    public static int ERROR_CLASS_DOES_NOT_EXIST() {
-        return (int)1411L;
+    public static int THREAD_BASE_PRIORITY_MIN() {
+        return (int)-2L;
     }
-    public static int ERROR_CLASS_HAS_WINDOWS() {
-        return (int)1412L;
+    public static int THREAD_BASE_PRIORITY_IDLE() {
+        return (int)-15L;
     }
-    public static int ERROR_INVALID_INDEX() {
-        return (int)1413L;
+    public static int DYNAMIC_EH_CONTINUATION_TARGET_ADD() {
+        return (int)1L;
     }
-    public static int ERROR_INVALID_ICON_HANDLE() {
-        return (int)1414L;
+    public static int DYNAMIC_EH_CONTINUATION_TARGET_PROCESSED() {
+        return (int)2L;
     }
-    public static int ERROR_PRIVATE_DIALOG_INDEX() {
-        return (int)1415L;
+    public static int DYNAMIC_ENFORCED_ADDRESS_RANGE_ADD() {
+        return (int)1L;
     }
-    public static int ERROR_LISTBOX_ID_NOT_FOUND() {
-        return (int)1416L;
+    public static int DYNAMIC_ENFORCED_ADDRESS_RANGE_PROCESSED() {
+        return (int)2L;
     }
-    public static int ERROR_NO_WILDCARD_CHARACTERS() {
-        return (int)1417L;
+    public static int JOB_OBJECT_VALID_COMPLETION_FILTER() {
+        return (int)16382L;
     }
-    public static int ERROR_CLIPBOARD_NOT_OPEN() {
-        return (int)1418L;
+    public static int JOB_OBJECT_LIMIT_JOB_MEMORY_HIGH() {
+        return (int)512L;
     }
-    public static int ERROR_HOTKEY_NOT_REGISTERED() {
-        return (int)1419L;
+    public static int JOB_OBJECT_LIMIT_CPU_RATE_CONTROL() {
+        return (int)262144L;
     }
-    public static int ERROR_WINDOW_NOT_DIALOG() {
-        return (int)1420L;
+    public static int JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS() {
+        return (int)2064900L;
     }
-    public static int ERROR_CONTROL_ID_NOT_FOUND() {
-        return (int)1421L;
+    public static int EVENT_ALL_ACCESS() {
+        return (int)2031619L;
     }
-    public static int ERROR_INVALID_COMBOBOX_MESSAGE() {
-        return (int)1422L;
+    public static int MUTANT_ALL_ACCESS() {
+        return (int)2031617L;
     }
-    public static int ERROR_WINDOW_NOT_COMBOBOX() {
-        return (int)1423L;
+    public static int SEMAPHORE_ALL_ACCESS() {
+        return (int)2031619L;
     }
-    public static int ERROR_INVALID_EDIT_HEIGHT() {
-        return (int)1424L;
+    public static int TIMER_ALL_ACCESS() {
+        return (int)2031619L;
     }
-    public static int ERROR_DC_NOT_FOUND() {
-        return (int)1425L;
+    public static int XSTATE_LEGACY_FLOATING_POINT() {
+        return (int)0L;
     }
-    public static int ERROR_INVALID_HOOK_FILTER() {
-        return (int)1426L;
+    public static int XSTATE_LEGACY_SSE() {
+        return (int)1L;
     }
-    public static int ERROR_INVALID_FILTER_PROC() {
-        return (int)1427L;
+    public static int XSTATE_GSSE() {
+        return (int)2L;
     }
-    public static int ERROR_HOOK_NEEDS_HMOD() {
-        return (int)1428L;
+    public static int XSTATE_AVX() {
+        return (int)2L;
     }
-    public static int ERROR_GLOBAL_ONLY_HOOK() {
-        return (int)1429L;
+    public static int XSTATE_MPX_BNDREGS() {
+        return (int)3L;
     }
-    public static int ERROR_JOURNAL_HOOK_SET() {
-        return (int)1430L;
+    public static int XSTATE_MPX_BNDCSR() {
+        return (int)4L;
     }
-    public static int ERROR_HOOK_NOT_INSTALLED() {
-        return (int)1431L;
+    public static int XSTATE_AVX512_KMASK() {
+        return (int)5L;
     }
-    public static int ERROR_INVALID_LB_MESSAGE() {
-        return (int)1432L;
+    public static int XSTATE_AVX512_ZMM_H() {
+        return (int)6L;
     }
-    public static int ERROR_SETCOUNT_ON_BAD_LB() {
-        return (int)1433L;
+    public static int XSTATE_AVX512_ZMM() {
+        return (int)7L;
     }
-    public static int ERROR_LB_WITHOUT_TABSTOPS() {
-        return (int)1434L;
+    public static int XSTATE_IPT() {
+        return (int)8L;
     }
-    public static int ERROR_DESTROY_OBJECT_OF_OTHER_THREAD() {
-        return (int)1435L;
+    public static int XSTATE_CET_U() {
+        return (int)11L;
     }
-    public static int ERROR_CHILD_WINDOW_MENU() {
-        return (int)1436L;
+    public static int XSTATE_LWP() {
+        return (int)62L;
     }
-    public static int ERROR_NO_SYSTEM_MENU() {
-        return (int)1437L;
+    public static int MAXIMUM_XSTATE_FEATURES() {
+        return (int)64L;
     }
-    public static int ERROR_INVALID_MSGBOX_STYLE() {
-        return (int)1438L;
+    public static long XSTATE_MASK_LEGACY_FLOATING_POINT() {
+        return 1L;
     }
-    public static int ERROR_INVALID_SPI_VALUE() {
-        return (int)1439L;
+    public static long XSTATE_MASK_LEGACY_SSE() {
+        return 2L;
     }
-    public static int ERROR_SCREEN_ALREADY_LOCKED() {
-        return (int)1440L;
+    public static long XSTATE_MASK_LEGACY() {
+        return 3L;
     }
-    public static int ERROR_HWNDS_HAVE_DIFF_PARENT() {
-        return (int)1441L;
+    public static long XSTATE_MASK_GSSE() {
+        return 4L;
     }
-    public static int ERROR_NOT_CHILD_WINDOW() {
-        return (int)1442L;
+    public static long XSTATE_MASK_AVX() {
+        return 4L;
     }
-    public static int ERROR_INVALID_GW_COMMAND() {
-        return (int)1443L;
+    public static long XSTATE_MASK_MPX() {
+        return 24L;
     }
-    public static int ERROR_INVALID_THREAD_ID() {
-        return (int)1444L;
+    public static long XSTATE_MASK_AVX512() {
+        return 224L;
     }
-    public static int ERROR_NON_MDICHILD_WINDOW() {
-        return (int)1445L;
+    public static long XSTATE_MASK_IPT() {
+        return 256L;
     }
-    public static int ERROR_POPUP_ALREADY_ACTIVE() {
-        return (int)1446L;
+    public static long XSTATE_MASK_CET_U() {
+        return 2048L;
     }
-    public static int ERROR_NO_SCROLLBARS() {
-        return (int)1447L;
+    public static long XSTATE_MASK_LWP() {
+        return 4611686018427387904L;
     }
-    public static int ERROR_INVALID_SCROLLBAR_RANGE() {
-        return (int)1448L;
+    public static long XSTATE_MASK_ALLOWED() {
+        return 4611686018427390463L;
     }
-    public static int ERROR_INVALID_SHOWWIN_COMMAND() {
-        return (int)1449L;
+    public static long XSTATE_MASK_PERSISTENT() {
+        return 4611686018427387920L;
     }
-    public static int ERROR_NO_SYSTEM_RESOURCES() {
-        return (int)1450L;
+    public static long XSTATE_MASK_USER_VISIBLE_SUPERVISOR() {
+        return 2048L;
     }
-    public static int ERROR_NONPAGED_SYSTEM_RESOURCES() {
-        return (int)1451L;
+    public static int XSTATE_COMPACTION_ENABLE() {
+        return (int)63L;
     }
-    public static int ERROR_PAGED_SYSTEM_RESOURCES() {
-        return (int)1452L;
-    }
-    public static int ERROR_WORKING_SET_QUOTA() {
-        return (int)1453L;
-    }
-    public static int ERROR_PAGEFILE_QUOTA() {
-        return (int)1454L;
-    }
-    public static int ERROR_COMMITMENT_LIMIT() {
-        return (int)1455L;
-    }
-    public static int ERROR_MENU_ITEM_NOT_FOUND() {
-        return (int)1456L;
-    }
-    public static int ERROR_INVALID_KEYBOARD_HANDLE() {
-        return (int)1457L;
-    }
-    public static int ERROR_HOOK_TYPE_NOT_ALLOWED() {
-        return (int)1458L;
-    }
-    public static int ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION() {
-        return (int)1459L;
-    }
-    public static int ERROR_TIMEOUT() {
-        return (int)1460L;
-    }
-    public static int ERROR_INVALID_MONITOR_HANDLE() {
-        return (int)1461L;
-    }
-    public static int ERROR_INCORRECT_SIZE() {
-        return (int)1462L;
-    }
-    public static int ERROR_SYMLINK_CLASS_DISABLED() {
-        return (int)1463L;
-    }
-    public static int ERROR_SYMLINK_NOT_SUPPORTED() {
-        return (int)1464L;
-    }
-    public static int ERROR_XML_PARSE_ERROR() {
-        return (int)1465L;
-    }
-    public static int ERROR_XMLDSIG_ERROR() {
-        return (int)1466L;
-    }
-    public static int ERROR_RESTART_APPLICATION() {
-        return (int)1467L;
-    }
-    public static int ERROR_WRONG_COMPARTMENT() {
-        return (int)1468L;
-    }
-    public static int ERROR_AUTHIP_FAILURE() {
-        return (int)1469L;
-    }
-    public static int ERROR_NO_NVRAM_RESOURCES() {
-        return (int)1470L;
-    }
-    public static int ERROR_NOT_GUI_PROCESS() {
-        return (int)1471L;
-    }
-    public static int ERROR_EVENTLOG_FILE_CORRUPT() {
-        return (int)1500L;
-    }
-    public static int ERROR_EVENTLOG_CANT_START() {
-        return (int)1501L;
-    }
-    public static int ERROR_LOG_FILE_FULL() {
-        return (int)1502L;
-    }
-    public static int ERROR_EVENTLOG_FILE_CHANGED() {
-        return (int)1503L;
-    }
-    public static int ERROR_CONTAINER_ASSIGNED() {
-        return (int)1504L;
-    }
-    public static int ERROR_JOB_NO_CONTAINER() {
-        return (int)1505L;
-    }
-    public static int ERROR_INVALID_TASK_NAME() {
-        return (int)1550L;
-    }
-    public static int ERROR_INVALID_TASK_INDEX() {
-        return (int)1551L;
-    }
-    public static int ERROR_THREAD_ALREADY_IN_TASK() {
-        return (int)1552L;
-    }
-    public static int ERROR_INSTALL_SERVICE_FAILURE() {
-        return (int)1601L;
-    }
-    public static int ERROR_INSTALL_USEREXIT() {
-        return (int)1602L;
-    }
-    public static int ERROR_INSTALL_FAILURE() {
-        return (int)1603L;
-    }
-    public static int ERROR_INSTALL_SUSPEND() {
-        return (int)1604L;
-    }
-    public static int ERROR_UNKNOWN_PRODUCT() {
-        return (int)1605L;
-    }
-    public static int ERROR_UNKNOWN_FEATURE() {
-        return (int)1606L;
-    }
-    public static int ERROR_UNKNOWN_COMPONENT() {
-        return (int)1607L;
-    }
-    public static int ERROR_UNKNOWN_PROPERTY() {
-        return (int)1608L;
-    }
-    public static int ERROR_INVALID_HANDLE_STATE() {
-        return (int)1609L;
-    }
-    public static int ERROR_BAD_CONFIGURATION() {
-        return (int)1610L;
-    }
-    public static int ERROR_INDEX_ABSENT() {
-        return (int)1611L;
-    }
-    public static int ERROR_INSTALL_SOURCE_ABSENT() {
-        return (int)1612L;
-    }
-    public static int ERROR_INSTALL_PACKAGE_VERSION() {
-        return (int)1613L;
-    }
-    public static int ERROR_PRODUCT_UNINSTALLED() {
-        return (int)1614L;
-    }
-    public static int ERROR_BAD_QUERY_SYNTAX() {
-        return (int)1615L;
-    }
-    public static int ERROR_INVALID_FIELD() {
-        return (int)1616L;
-    }
-    public static int ERROR_DEVICE_REMOVED() {
-        return (int)1617L;
-    }
-    public static int ERROR_INSTALL_ALREADY_RUNNING() {
-        return (int)1618L;
-    }
-    public static int ERROR_INSTALL_PACKAGE_OPEN_FAILED() {
-        return (int)1619L;
-    }
-    public static int ERROR_INSTALL_PACKAGE_INVALID() {
-        return (int)1620L;
-    }
-    public static int ERROR_INSTALL_UI_FAILURE() {
-        return (int)1621L;
-    }
-    public static int ERROR_INSTALL_LOG_FAILURE() {
-        return (int)1622L;
-    }
-    public static int ERROR_INSTALL_LANGUAGE_UNSUPPORTED() {
-        return (int)1623L;
-    }
-    public static int ERROR_INSTALL_TRANSFORM_FAILURE() {
-        return (int)1624L;
-    }
-    public static int ERROR_INSTALL_PACKAGE_REJECTED() {
-        return (int)1625L;
-    }
-    public static int ERROR_FUNCTION_NOT_CALLED() {
-        return (int)1626L;
-    }
-    public static int ERROR_FUNCTION_FAILED() {
-        return (int)1627L;
-    }
-    public static int ERROR_INVALID_TABLE() {
-        return (int)1628L;
-    }
-    public static int ERROR_DATATYPE_MISMATCH() {
-        return (int)1629L;
-    }
-    public static int ERROR_UNSUPPORTED_TYPE() {
-        return (int)1630L;
-    }
-    public static int ERROR_CREATE_FAILED() {
-        return (int)1631L;
-    }
-    public static int ERROR_INSTALL_TEMP_UNWRITABLE() {
-        return (int)1632L;
-    }
-    public static int ERROR_INSTALL_PLATFORM_UNSUPPORTED() {
-        return (int)1633L;
-    }
-    public static int ERROR_INSTALL_NOTUSED() {
-        return (int)1634L;
-    }
-    public static int ERROR_PATCH_PACKAGE_OPEN_FAILED() {
-        return (int)1635L;
-    }
-    public static int ERROR_PATCH_PACKAGE_INVALID() {
-        return (int)1636L;
-    }
-    public static int ERROR_PATCH_PACKAGE_UNSUPPORTED() {
-        return (int)1637L;
-    }
-    public static int ERROR_PRODUCT_VERSION() {
-        return (int)1638L;
-    }
-    public static int ERROR_INVALID_COMMAND_LINE() {
-        return (int)1639L;
-    }
-    public static int ERROR_INSTALL_REMOTE_DISALLOWED() {
-        return (int)1640L;
-    }
-    public static int ERROR_SUCCESS_REBOOT_INITIATED() {
-        return (int)1641L;
-    }
-    public static int ERROR_PATCH_TARGET_NOT_FOUND() {
-        return (int)1642L;
-    }
-    public static int ERROR_PATCH_PACKAGE_REJECTED() {
-        return (int)1643L;
-    }
-    public static int ERROR_INSTALL_TRANSFORM_REJECTED() {
-        return (int)1644L;
-    }
-    public static int ERROR_INSTALL_REMOTE_PROHIBITED() {
-        return (int)1645L;
-    }
-    public static int ERROR_PATCH_REMOVAL_UNSUPPORTED() {
-        return (int)1646L;
-    }
-    public static int ERROR_UNKNOWN_PATCH() {
-        return (int)1647L;
-    }
-    public static int ERROR_PATCH_NO_SEQUENCE() {
-        return (int)1648L;
-    }
-    public static int ERROR_PATCH_REMOVAL_DISALLOWED() {
-        return (int)1649L;
-    }
-    public static int ERROR_INVALID_PATCH_XML() {
-        return (int)1650L;
-    }
-    public static int ERROR_PATCH_MANAGED_ADVERTISED_PRODUCT() {
-        return (int)1651L;
-    }
-    public static int ERROR_INSTALL_SERVICE_SAFEBOOT() {
-        return (int)1652L;
-    }
-    public static int ERROR_FAIL_FAST_EXCEPTION() {
-        return (int)1653L;
-    }
-    public static int ERROR_INSTALL_REJECTED() {
-        return (int)1654L;
-    }
-    public static int ERROR_DYNAMIC_CODE_BLOCKED() {
-        return (int)1655L;
-    }
-    public static int ERROR_NOT_SAME_OBJECT() {
-        return (int)1656L;
-    }
-    public static int ERROR_STRICT_CFG_VIOLATION() {
-        return (int)1657L;
-    }
-    public static int ERROR_SET_CONTEXT_DENIED() {
-        return (int)1660L;
-    }
-    public static int ERROR_CROSS_PARTITION_VIOLATION() {
-        return (int)1661L;
-    }
-    public static int ERROR_RETURN_ADDRESS_HIJACK_ATTEMPT() {
-        return (int)1662L;
-    }
-    public static int RPC_S_INVALID_STRING_BINDING() {
-        return (int)1700L;
-    }
-    public static int RPC_S_WRONG_KIND_OF_BINDING() {
-        return (int)1701L;
-    }
-    public static int RPC_S_INVALID_BINDING() {
-        return (int)1702L;
-    }
-    public static int RPC_S_PROTSEQ_NOT_SUPPORTED() {
-        return (int)1703L;
-    }
-    public static int RPC_S_INVALID_RPC_PROTSEQ() {
-        return (int)1704L;
-    }
-    public static int RPC_S_INVALID_STRING_UUID() {
-        return (int)1705L;
-    }
-    public static int RPC_S_INVALID_ENDPOINT_FORMAT() {
-        return (int)1706L;
-    }
-    public static int RPC_S_INVALID_NET_ADDR() {
-        return (int)1707L;
-    }
-    public static int RPC_S_NO_ENDPOINT_FOUND() {
-        return (int)1708L;
-    }
-    public static int RPC_S_INVALID_TIMEOUT() {
-        return (int)1709L;
-    }
-    public static int RPC_S_OBJECT_NOT_FOUND() {
-        return (int)1710L;
-    }
-    public static int RPC_S_ALREADY_REGISTERED() {
-        return (int)1711L;
-    }
-    public static int RPC_S_TYPE_ALREADY_REGISTERED() {
-        return (int)1712L;
-    }
-    public static int RPC_S_ALREADY_LISTENING() {
-        return (int)1713L;
-    }
-    public static int RPC_S_NO_PROTSEQS_REGISTERED() {
-        return (int)1714L;
-    }
-    public static int RPC_S_NOT_LISTENING() {
-        return (int)1715L;
-    }
-    public static int RPC_S_UNKNOWN_MGR_TYPE() {
-        return (int)1716L;
-    }
-    public static int RPC_S_UNKNOWN_IF() {
-        return (int)1717L;
-    }
-    public static int RPC_S_NO_BINDINGS() {
-        return (int)1718L;
-    }
-    public static int RPC_S_NO_PROTSEQS() {
-        return (int)1719L;
-    }
-    public static int RPC_S_CANT_CREATE_ENDPOINT() {
-        return (int)1720L;
-    }
-    public static int RPC_S_OUT_OF_RESOURCES() {
-        return (int)1721L;
-    }
-    public static int RPC_S_SERVER_UNAVAILABLE() {
-        return (int)1722L;
-    }
-    public static int RPC_S_SERVER_TOO_BUSY() {
-        return (int)1723L;
-    }
-    public static int RPC_S_INVALID_NETWORK_OPTIONS() {
-        return (int)1724L;
-    }
-    public static int RPC_S_NO_CALL_ACTIVE() {
-        return (int)1725L;
-    }
-    public static int RPC_S_CALL_FAILED() {
-        return (int)1726L;
-    }
-    public static int RPC_S_CALL_FAILED_DNE() {
-        return (int)1727L;
-    }
-    public static int RPC_S_PROTOCOL_ERROR() {
-        return (int)1728L;
-    }
-    public static int RPC_S_PROXY_ACCESS_DENIED() {
-        return (int)1729L;
-    }
-    public static int RPC_S_UNSUPPORTED_TRANS_SYN() {
-        return (int)1730L;
-    }
-    public static int RPC_S_UNSUPPORTED_TYPE() {
-        return (int)1732L;
-    }
-    public static int RPC_S_INVALID_TAG() {
-        return (int)1733L;
-    }
-    public static int RPC_S_INVALID_BOUND() {
-        return (int)1734L;
-    }
-    public static int RPC_S_NO_ENTRY_NAME() {
-        return (int)1735L;
-    }
-    public static int RPC_S_INVALID_NAME_SYNTAX() {
-        return (int)1736L;
-    }
-    public static int RPC_S_UNSUPPORTED_NAME_SYNTAX() {
-        return (int)1737L;
-    }
-    public static int RPC_S_UUID_NO_ADDRESS() {
-        return (int)1739L;
-    }
-    public static int RPC_S_DUPLICATE_ENDPOINT() {
-        return (int)1740L;
-    }
-    public static int RPC_S_UNKNOWN_AUTHN_TYPE() {
-        return (int)1741L;
-    }
-    public static int RPC_S_MAX_CALLS_TOO_SMALL() {
-        return (int)1742L;
-    }
-    public static int RPC_S_STRING_TOO_LONG() {
-        return (int)1743L;
-    }
-    public static int RPC_S_PROTSEQ_NOT_FOUND() {
-        return (int)1744L;
-    }
-    public static int RPC_S_PROCNUM_OUT_OF_RANGE() {
-        return (int)1745L;
-    }
-    public static int RPC_S_BINDING_HAS_NO_AUTH() {
-        return (int)1746L;
-    }
-    public static int RPC_S_UNKNOWN_AUTHN_SERVICE() {
-        return (int)1747L;
-    }
-    public static int RPC_S_UNKNOWN_AUTHN_LEVEL() {
-        return (int)1748L;
-    }
-    public static int RPC_S_INVALID_AUTH_IDENTITY() {
-        return (int)1749L;
-    }
-    public static int RPC_S_UNKNOWN_AUTHZ_SERVICE() {
-        return (int)1750L;
-    }
-    public static int EPT_S_INVALID_ENTRY() {
-        return (int)1751L;
-    }
-    public static int EPT_S_CANT_PERFORM_OP() {
-        return (int)1752L;
-    }
-    public static int EPT_S_NOT_REGISTERED() {
-        return (int)1753L;
-    }
-    public static int RPC_S_NOTHING_TO_EXPORT() {
-        return (int)1754L;
-    }
-    public static int RPC_S_INCOMPLETE_NAME() {
-        return (int)1755L;
-    }
-    public static int RPC_S_INVALID_VERS_OPTION() {
-        return (int)1756L;
-    }
-    public static int RPC_S_NO_MORE_MEMBERS() {
-        return (int)1757L;
-    }
-    public static int RPC_S_NOT_ALL_OBJS_UNEXPORTED() {
-        return (int)1758L;
-    }
-    public static int RPC_S_INTERFACE_NOT_FOUND() {
-        return (int)1759L;
-    }
-    public static int RPC_S_ENTRY_ALREADY_EXISTS() {
-        return (int)1760L;
-    }
-    public static int RPC_S_ENTRY_NOT_FOUND() {
-        return (int)1761L;
-    }
-    public static int RPC_S_NAME_SERVICE_UNAVAILABLE() {
-        return (int)1762L;
-    }
-    public static int RPC_S_INVALID_NAF_ID() {
-        return (int)1763L;
-    }
-    public static int RPC_S_CANNOT_SUPPORT() {
-        return (int)1764L;
-    }
-    public static int RPC_S_NO_CONTEXT_AVAILABLE() {
-        return (int)1765L;
-    }
-    public static int RPC_S_INTERNAL_ERROR() {
-        return (int)1766L;
-    }
-    public static int RPC_S_ZERO_DIVIDE() {
-        return (int)1767L;
-    }
-    public static int RPC_S_ADDRESS_ERROR() {
-        return (int)1768L;
-    }
-    public static int RPC_S_FP_DIV_ZERO() {
-        return (int)1769L;
-    }
-    public static int RPC_S_FP_UNDERFLOW() {
-        return (int)1770L;
-    }
-    public static int RPC_S_FP_OVERFLOW() {
-        return (int)1771L;
-    }
-    public static int RPC_X_NO_MORE_ENTRIES() {
-        return (int)1772L;
-    }
-    public static int RPC_X_SS_CHAR_TRANS_OPEN_FAIL() {
-        return (int)1773L;
-    }
-    public static int RPC_X_SS_CHAR_TRANS_SHORT_FILE() {
-        return (int)1774L;
-    }
-    public static int RPC_X_SS_IN_NULL_CONTEXT() {
-        return (int)1775L;
-    }
-    public static int RPC_X_SS_CONTEXT_DAMAGED() {
-        return (int)1777L;
-    }
-    public static int RPC_X_SS_HANDLES_MISMATCH() {
-        return (int)1778L;
-    }
-    public static int RPC_X_SS_CANNOT_GET_CALL_HANDLE() {
-        return (int)1779L;
-    }
-    public static int RPC_X_NULL_REF_POINTER() {
-        return (int)1780L;
-    }
-    public static int RPC_X_ENUM_VALUE_OUT_OF_RANGE() {
-        return (int)1781L;
-    }
-    public static int RPC_X_BYTE_COUNT_TOO_SMALL() {
-        return (int)1782L;
-    }
-    public static int RPC_X_BAD_STUB_DATA() {
-        return (int)1783L;
-    }
-    public static int ERROR_INVALID_USER_BUFFER() {
-        return (int)1784L;
-    }
-    public static int ERROR_UNRECOGNIZED_MEDIA() {
-        return (int)1785L;
-    }
-    public static int ERROR_NO_TRUST_LSA_SECRET() {
-        return (int)1786L;
-    }
-    public static int ERROR_NO_TRUST_SAM_ACCOUNT() {
-        return (int)1787L;
-    }
-    public static int ERROR_TRUSTED_DOMAIN_FAILURE() {
-        return (int)1788L;
-    }
-    public static int ERROR_TRUSTED_RELATIONSHIP_FAILURE() {
-        return (int)1789L;
-    }
-    public static int ERROR_TRUST_FAILURE() {
-        return (int)1790L;
-    }
-    public static int RPC_S_CALL_IN_PROGRESS() {
-        return (int)1791L;
-    }
-    public static int ERROR_NETLOGON_NOT_STARTED() {
-        return (int)1792L;
-    }
-    public static int ERROR_ACCOUNT_EXPIRED() {
-        return (int)1793L;
-    }
-    public static int ERROR_REDIRECTOR_HAS_OPEN_HANDLES() {
-        return (int)1794L;
-    }
-    public static int ERROR_PRINTER_DRIVER_ALREADY_INSTALLED() {
-        return (int)1795L;
-    }
-    public static int ERROR_UNKNOWN_PORT() {
-        return (int)1796L;
-    }
-    public static int ERROR_UNKNOWN_PRINTER_DRIVER() {
-        return (int)1797L;
-    }
-    public static int ERROR_UNKNOWN_PRINTPROCESSOR() {
-        return (int)1798L;
-    }
-    public static int ERROR_INVALID_SEPARATOR_FILE() {
-        return (int)1799L;
-    }
-    public static int ERROR_INVALID_PRIORITY() {
-        return (int)1800L;
-    }
-    public static int ERROR_INVALID_PRINTER_NAME() {
-        return (int)1801L;
-    }
-    public static int ERROR_PRINTER_ALREADY_EXISTS() {
-        return (int)1802L;
-    }
-    public static int ERROR_INVALID_PRINTER_COMMAND() {
-        return (int)1803L;
-    }
-    public static int ERROR_INVALID_DATATYPE() {
-        return (int)1804L;
-    }
-    public static int ERROR_INVALID_ENVIRONMENT() {
-        return (int)1805L;
-    }
-    public static int RPC_S_NO_MORE_BINDINGS() {
-        return (int)1806L;
-    }
-    public static int ERROR_NOLOGON_INTERDOMAIN_TRUST_ACCOUNT() {
-        return (int)1807L;
-    }
-    public static int ERROR_NOLOGON_WORKSTATION_TRUST_ACCOUNT() {
-        return (int)1808L;
-    }
-    public static int ERROR_NOLOGON_SERVER_TRUST_ACCOUNT() {
-        return (int)1809L;
-    }
-    public static int ERROR_DOMAIN_TRUST_INCONSISTENT() {
-        return (int)1810L;
-    }
-    public static int ERROR_SERVER_HAS_OPEN_HANDLES() {
-        return (int)1811L;
-    }
-    public static int ERROR_RESOURCE_DATA_NOT_FOUND() {
-        return (int)1812L;
-    }
-    public static int ERROR_RESOURCE_TYPE_NOT_FOUND() {
-        return (int)1813L;
-    }
-    public static int ERROR_RESOURCE_NAME_NOT_FOUND() {
-        return (int)1814L;
-    }
-    public static int ERROR_RESOURCE_LANG_NOT_FOUND() {
-        return (int)1815L;
-    }
-    public static int ERROR_NOT_ENOUGH_QUOTA() {
-        return (int)1816L;
-    }
-    public static int RPC_S_NO_INTERFACES() {
-        return (int)1817L;
-    }
-    public static int RPC_S_CALL_CANCELLED() {
-        return (int)1818L;
-    }
-    public static int RPC_S_BINDING_INCOMPLETE() {
-        return (int)1819L;
-    }
-    public static int RPC_S_COMM_FAILURE() {
-        return (int)1820L;
-    }
-    public static int RPC_S_UNSUPPORTED_AUTHN_LEVEL() {
-        return (int)1821L;
-    }
-    public static int RPC_S_NO_PRINC_NAME() {
-        return (int)1822L;
-    }
-    public static int RPC_S_NOT_RPC_ERROR() {
-        return (int)1823L;
-    }
-    public static int RPC_S_UUID_LOCAL_ONLY() {
-        return (int)1824L;
-    }
-    public static int RPC_S_SEC_PKG_ERROR() {
-        return (int)1825L;
-    }
-    public static int RPC_S_NOT_CANCELLED() {
-        return (int)1826L;
-    }
-    public static int RPC_X_INVALID_ES_ACTION() {
-        return (int)1827L;
-    }
-    public static int RPC_X_WRONG_ES_VERSION() {
-        return (int)1828L;
-    }
-    public static int RPC_X_WRONG_STUB_VERSION() {
-        return (int)1829L;
-    }
-    public static int RPC_X_INVALID_PIPE_OBJECT() {
-        return (int)1830L;
-    }
-    public static int RPC_X_WRONG_PIPE_ORDER() {
-        return (int)1831L;
-    }
-    public static int RPC_X_WRONG_PIPE_VERSION() {
-        return (int)1832L;
-    }
-    public static int RPC_S_COOKIE_AUTH_FAILED() {
-        return (int)1833L;
-    }
-    public static int RPC_S_DO_NOT_DISTURB() {
-        return (int)1834L;
-    }
-    public static int RPC_S_SYSTEM_HANDLE_COUNT_EXCEEDED() {
-        return (int)1835L;
-    }
-    public static int RPC_S_SYSTEM_HANDLE_TYPE_MISMATCH() {
-        return (int)1836L;
-    }
-    public static int RPC_S_GROUP_MEMBER_NOT_FOUND() {
-        return (int)1898L;
-    }
-    public static int EPT_S_CANT_CREATE() {
-        return (int)1899L;
-    }
-    public static int RPC_S_INVALID_OBJECT() {
-        return (int)1900L;
-    }
-    public static int ERROR_INVALID_TIME() {
-        return (int)1901L;
-    }
-    public static int ERROR_INVALID_FORM_NAME() {
-        return (int)1902L;
-    }
-    public static int ERROR_INVALID_FORM_SIZE() {
-        return (int)1903L;
-    }
-    public static int ERROR_ALREADY_WAITING() {
-        return (int)1904L;
-    }
-    public static int ERROR_PRINTER_DELETED() {
-        return (int)1905L;
-    }
-    public static int ERROR_INVALID_PRINTER_STATE() {
-        return (int)1906L;
-    }
-    public static int ERROR_PASSWORD_MUST_CHANGE() {
-        return (int)1907L;
-    }
-    public static int ERROR_DOMAIN_CONTROLLER_NOT_FOUND() {
-        return (int)1908L;
-    }
-    public static int ERROR_ACCOUNT_LOCKED_OUT() {
-        return (int)1909L;
-    }
-    public static int OR_INVALID_OXID() {
-        return (int)1910L;
-    }
-    public static int OR_INVALID_OID() {
-        return (int)1911L;
-    }
-    public static int OR_INVALID_SET() {
-        return (int)1912L;
-    }
-    public static int RPC_S_SEND_INCOMPLETE() {
-        return (int)1913L;
-    }
-    public static int RPC_S_INVALID_ASYNC_HANDLE() {
-        return (int)1914L;
-    }
-    public static int RPC_S_INVALID_ASYNC_CALL() {
-        return (int)1915L;
-    }
-    public static int RPC_X_PIPE_CLOSED() {
-        return (int)1916L;
-    }
-    public static int RPC_X_PIPE_DISCIPLINE_ERROR() {
-        return (int)1917L;
-    }
-    public static int RPC_X_PIPE_EMPTY() {
-        return (int)1918L;
-    }
-    public static int ERROR_NO_SITENAME() {
-        return (int)1919L;
-    }
-    public static int ERROR_CANT_ACCESS_FILE() {
-        return (int)1920L;
-    }
-    public static int ERROR_CANT_RESOLVE_FILENAME() {
-        return (int)1921L;
-    }
-    public static int RPC_S_ENTRY_TYPE_MISMATCH() {
-        return (int)1922L;
-    }
-    public static int RPC_S_NOT_ALL_OBJS_EXPORTED() {
-        return (int)1923L;
-    }
-    public static int RPC_S_INTERFACE_NOT_EXPORTED() {
-        return (int)1924L;
-    }
-    public static int RPC_S_PROFILE_NOT_ADDED() {
-        return (int)1925L;
-    }
-    public static int RPC_S_PRF_ELT_NOT_ADDED() {
-        return (int)1926L;
-    }
-    public static int RPC_S_PRF_ELT_NOT_REMOVED() {
-        return (int)1927L;
-    }
-    public static int RPC_S_GRP_ELT_NOT_ADDED() {
-        return (int)1928L;
-    }
-    public static int RPC_S_GRP_ELT_NOT_REMOVED() {
-        return (int)1929L;
-    }
-    public static int ERROR_KM_DRIVER_BLOCKED() {
-        return (int)1930L;
-    }
-    public static int ERROR_CONTEXT_EXPIRED() {
-        return (int)1931L;
-    }
-    public static int ERROR_PER_USER_TRUST_QUOTA_EXCEEDED() {
-        return (int)1932L;
-    }
-    public static int ERROR_ALL_USER_TRUST_QUOTA_EXCEEDED() {
-        return (int)1933L;
-    }
-    public static int ERROR_USER_DELETE_TRUST_QUOTA_EXCEEDED() {
-        return (int)1934L;
-    }
-    public static int ERROR_AUTHENTICATION_FIREWALL_FAILED() {
-        return (int)1935L;
-    }
-    public static int ERROR_REMOTE_PRINT_CONNECTIONS_BLOCKED() {
-        return (int)1936L;
-    }
-    public static int ERROR_NTLM_BLOCKED() {
-        return (int)1937L;
-    }
-    public static int ERROR_PASSWORD_CHANGE_REQUIRED() {
-        return (int)1938L;
-    }
-    public static int ERROR_LOST_MODE_LOGON_RESTRICTION() {
-        return (int)1939L;
-    }
-    public static int ERROR_INVALID_PIXEL_FORMAT() {
-        return (int)2000L;
-    }
-    public static int ERROR_BAD_DRIVER() {
-        return (int)2001L;
-    }
-    public static int ERROR_INVALID_WINDOW_STYLE() {
-        return (int)2002L;
-    }
-    public static int ERROR_METAFILE_NOT_SUPPORTED() {
-        return (int)2003L;
-    }
-    public static int ERROR_TRANSFORM_NOT_SUPPORTED() {
-        return (int)2004L;
-    }
-    public static int ERROR_CLIPPING_NOT_SUPPORTED() {
-        return (int)2005L;
-    }
-    public static int ERROR_INVALID_CMM() {
-        return (int)2010L;
-    }
-    public static int ERROR_INVALID_PROFILE() {
-        return (int)2011L;
-    }
-    public static int ERROR_TAG_NOT_FOUND() {
-        return (int)2012L;
-    }
-    public static int ERROR_TAG_NOT_PRESENT() {
-        return (int)2013L;
-    }
-    public static int ERROR_DUPLICATE_TAG() {
-        return (int)2014L;
-    }
-    public static int ERROR_PROFILE_NOT_ASSOCIATED_WITH_DEVICE() {
-        return (int)2015L;
-    }
-    public static int ERROR_PROFILE_NOT_FOUND() {
-        return (int)2016L;
-    }
-    public static int ERROR_INVALID_COLORSPACE() {
-        return (int)2017L;
-    }
-    public static int ERROR_ICM_NOT_ENABLED() {
-        return (int)2018L;
-    }
-    public static int ERROR_DELETING_ICM_XFORM() {
-        return (int)2019L;
-    }
-    public static int ERROR_INVALID_TRANSFORM() {
-        return (int)2020L;
-    }
-    public static int ERROR_COLORSPACE_MISMATCH() {
-        return (int)2021L;
-    }
-    public static int ERROR_INVALID_COLORINDEX() {
-        return (int)2022L;
+    public static long XSTATE_COMPACTION_ENABLE_MASK() {
+        return -9223372036854775808L;
     }
 }
 

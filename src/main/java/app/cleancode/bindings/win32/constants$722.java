@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$722 {
 
-    static final MemorySegment CERT_CHAIN_MIN_RSA_PUB_KEY_BIT_LENGTH_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_WEAK_RSA_PUB_KEY_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("W");
-    static final MemorySegment CERT_CHAIN_WEAK_SIGNATURE_LOG_DIR_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("W");
-    static final MemorySegment CERT_CHAIN_DEFAULT_CONFIG_SUBDIR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_CHAIN_WEAK_PREFIX_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("W");
-    static final MemorySegment CERT_CHAIN_WEAK_THIRD_PARTY_CONFIG_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("T");
+    static final MemorySegment SE_UNSOLICITED_INPUT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeUnsolicitedInputPrivilege");
+    static final MemorySegment SE_MACHINE_ACCOUNT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeMachineAccountPrivilege");
+    static final MemorySegment SE_TCB_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTcbPrivilege");
+    static final MemorySegment SE_SECURITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSecurityPrivilege");
+    static final MemorySegment SE_TAKE_OWNERSHIP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTakeOwnershipPrivilege");
+    static final MemorySegment SE_LOAD_DRIVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeLoadDriverPrivilege");
 }
 
 

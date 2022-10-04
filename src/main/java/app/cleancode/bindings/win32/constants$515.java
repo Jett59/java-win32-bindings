@@ -9,57 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$515 {
 
-    static final FunctionDescriptor WritePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor mciGetDriverData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WritePrinter$MH = RuntimeHelper.downcallHandle(
-        "WritePrinter",
-        constants$515.WritePrinter$FUNC
+    static final MethodHandle mciGetDriverData$MH = RuntimeHelper.downcallHandle(
+        "mciGetDriverData",
+        constants$515.mciGetDriverData$FUNC
     );
-    static final FunctionDescriptor FlushPrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mciLoadCommandResource$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle FlushPrinter$MH = RuntimeHelper.downcallHandle(
-        "FlushPrinter",
-        constants$515.FlushPrinter$FUNC
+    static final MethodHandle mciLoadCommandResource$MH = RuntimeHelper.downcallHandle(
+        "mciLoadCommandResource",
+        constants$515.mciLoadCommandResource$FUNC
     );
-    static final FunctionDescriptor EndPagePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor mciSetDriverData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle EndPagePrinter$MH = RuntimeHelper.downcallHandle(
-        "EndPagePrinter",
-        constants$515.EndPagePrinter$FUNC
+    static final MethodHandle mciSetDriverData$MH = RuntimeHelper.downcallHandle(
+        "mciSetDriverData",
+        constants$515.mciSetDriverData$FUNC
     );
-    static final FunctionDescriptor AbortPrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor mciDriverYield$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle AbortPrinter$MH = RuntimeHelper.downcallHandle(
-        "AbortPrinter",
-        constants$515.AbortPrinter$FUNC
+    static final MethodHandle mciDriverYield$MH = RuntimeHelper.downcallHandle(
+        "mciDriverYield",
+        constants$515.mciDriverYield$FUNC
     );
-    static final FunctionDescriptor ReadPrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor mciDriverNotify$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReadPrinter$MH = RuntimeHelper.downcallHandle(
-        "ReadPrinter",
-        constants$515.ReadPrinter$FUNC
+    static final MethodHandle mciDriverNotify$MH = RuntimeHelper.downcallHandle(
+        "mciDriverNotify",
+        constants$515.mciDriverNotify$FUNC
     );
-    static final FunctionDescriptor EndDocPrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor mciFreeCommandResource$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle EndDocPrinter$MH = RuntimeHelper.downcallHandle(
-        "EndDocPrinter",
-        constants$515.EndDocPrinter$FUNC
+    static final MethodHandle mciFreeCommandResource$MH = RuntimeHelper.downcallHandle(
+        "mciFreeCommandResource",
+        constants$515.mciFreeCommandResource$FUNC
     );
 }
 

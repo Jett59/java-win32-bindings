@@ -9,36 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$225 {
 
-    static final FunctionDescriptor SENDASYNCPROC$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor ReplaceFileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SENDASYNCPROC$MH = RuntimeHelper.downcallHandle(
-        constants$225.SENDASYNCPROC$FUNC
+    static final MethodHandle ReplaceFileW$MH = RuntimeHelper.downcallHandle(
+        "ReplaceFileW",
+        constants$225.ReplaceFileW$FUNC
     );
-    static final FunctionDescriptor PROPENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateHardLinkA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PROPENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$225.PROPENUMPROCA$FUNC
+    static final MethodHandle CreateHardLinkA$MH = RuntimeHelper.downcallHandle(
+        "CreateHardLinkA",
+        constants$225.CreateHardLinkA$FUNC
     );
-    static final FunctionDescriptor PROPENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateHardLinkW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PROPENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$225.PROPENUMPROCW$FUNC
+    static final MethodHandle CreateHardLinkW$MH = RuntimeHelper.downcallHandle(
+        "CreateHardLinkW",
+        constants$225.CreateHardLinkW$FUNC
     );
-    static final FunctionDescriptor PROPENUMPROCEXA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateHardLinkTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateHardLinkTransactedA$MH = RuntimeHelper.downcallHandle(
+        "CreateHardLinkTransactedA",
+        constants$225.CreateHardLinkTransactedA$FUNC
+    );
+    static final FunctionDescriptor CreateHardLinkTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateHardLinkTransactedW$MH = RuntimeHelper.downcallHandle(
+        "CreateHardLinkTransactedW",
+        constants$225.CreateHardLinkTransactedW$FUNC
+    );
+    static final FunctionDescriptor FindFirstStreamTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindFirstStreamTransactedW$MH = RuntimeHelper.downcallHandle(
+        "FindFirstStreamTransactedW",
+        constants$225.FindFirstStreamTransactedW$FUNC
     );
 }
 

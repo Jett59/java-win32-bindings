@@ -11,13 +11,13 @@ public interface PFN_CMSG_FREE {
 
     void apply(java.lang.foreign.MemoryAddress pv);
     static MemorySegment allocate(PFN_CMSG_FREE fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CMSG_FREE.class, fi, constants$429.PFN_CMSG_FREE$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CMSG_FREE.class, fi, constants$581.PFN_CMSG_FREE$FUNC, session);
     }
     static PFN_CMSG_FREE ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pv) -> {
             try {
-                constants$429.PFN_CMSG_FREE$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pv);
+                constants$581.PFN_CMSG_FREE$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pv);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

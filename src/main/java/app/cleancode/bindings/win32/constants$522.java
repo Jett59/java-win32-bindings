@@ -9,58 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$522 {
 
-    static final FunctionDescriptor ClosePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ClosePrinter$MH = RuntimeHelper.downcallHandle(
-        "ClosePrinter",
-        constants$522.ClosePrinter$FUNC
-    );
-    static final FunctionDescriptor AddFormA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddFormA$MH = RuntimeHelper.downcallHandle(
-        "AddFormA",
-        constants$522.AddFormA$FUNC
-    );
-    static final FunctionDescriptor AddFormW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddFormW$MH = RuntimeHelper.downcallHandle(
-        "AddFormW",
-        constants$522.AddFormW$FUNC
-    );
-    static final FunctionDescriptor DeleteFormA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteFormA$MH = RuntimeHelper.downcallHandle(
-        "DeleteFormA",
-        constants$522.DeleteFormA$FUNC
-    );
-    static final FunctionDescriptor DeleteFormW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeleteFormW$MH = RuntimeHelper.downcallHandle(
-        "DeleteFormW",
-        constants$522.DeleteFormW$FUNC
-    );
-    static final FunctionDescriptor GetFormA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mmioAscend$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetFormA$MH = RuntimeHelper.downcallHandle(
-        "GetFormA",
-        constants$522.GetFormA$FUNC
+    static final MethodHandle mmioAscend$MH = RuntimeHelper.downcallHandle(
+        "mmioAscend",
+        constants$522.mmioAscend$FUNC
+    );
+    static final FunctionDescriptor mmioCreateChunk$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mmioCreateChunk$MH = RuntimeHelper.downcallHandle(
+        "mmioCreateChunk",
+        constants$522.mmioCreateChunk$FUNC
+    );
+    static final FunctionDescriptor sndPlaySoundA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle sndPlaySoundA$MH = RuntimeHelper.downcallHandle(
+        "sndPlaySoundA",
+        constants$522.sndPlaySoundA$FUNC
+    );
+    static final FunctionDescriptor sndPlaySoundW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle sndPlaySoundW$MH = RuntimeHelper.downcallHandle(
+        "sndPlaySoundW",
+        constants$522.sndPlaySoundW$FUNC
+    );
+    static final FunctionDescriptor PlaySoundA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PlaySoundA$MH = RuntimeHelper.downcallHandle(
+        "PlaySoundA",
+        constants$522.PlaySoundA$FUNC
+    );
+    static final FunctionDescriptor PlaySoundW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PlaySoundW$MH = RuntimeHelper.downcallHandle(
+        "PlaySoundW",
+        constants$522.PlaySoundW$FUNC
     );
 }
 

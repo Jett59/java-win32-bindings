@@ -9,50 +9,68 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$168 {
 
-    static final FunctionDescriptor LPFNDEVMODE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ObjectOpenAuditAlarmW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ObjectOpenAuditAlarmW$MH = RuntimeHelper.downcallHandle(
+        "ObjectOpenAuditAlarmW",
+        constants$168.ObjectOpenAuditAlarmW$FUNC
+    );
+    static final FunctionDescriptor ObjectPrivilegeAuditAlarmW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ObjectPrivilegeAuditAlarmW$MH = RuntimeHelper.downcallHandle(
+        "ObjectPrivilegeAuditAlarmW",
+        constants$168.ObjectPrivilegeAuditAlarmW$FUNC
+    );
+    static final FunctionDescriptor PrivilegeCheck$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PrivilegeCheck$MH = RuntimeHelper.downcallHandle(
+        "PrivilegeCheck",
+        constants$168.PrivilegeCheck$FUNC
+    );
+    static final FunctionDescriptor PrivilegedServiceAuditAlarmW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LPFNDEVMODE$MH = RuntimeHelper.downcallHandle(
-        constants$168.LPFNDEVMODE$FUNC
+    static final MethodHandle PrivilegedServiceAuditAlarmW$MH = RuntimeHelper.downcallHandle(
+        "PrivilegedServiceAuditAlarmW",
+        constants$168.PrivilegedServiceAuditAlarmW$FUNC
     );
-    static final FunctionDescriptor LPFNDEVCAPS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor QuerySecurityAccessMask$FUNC = FunctionDescriptor.ofVoid(
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LPFNDEVCAPS$MH = RuntimeHelper.downcallHandle(
-        constants$168.LPFNDEVCAPS$FUNC
+    static final MethodHandle QuerySecurityAccessMask$MH = RuntimeHelper.downcallHandle(
+        "QuerySecurityAccessMask",
+        constants$168.QuerySecurityAccessMask$FUNC
     );
-    static final FunctionDescriptor DeviceCapabilitiesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeviceCapabilitiesA$MH = RuntimeHelper.downcallHandle(
-        "DeviceCapabilitiesA",
-        constants$168.DeviceCapabilitiesA$FUNC
-    );
-    static final FunctionDescriptor DeviceCapabilitiesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeviceCapabilitiesW$MH = RuntimeHelper.downcallHandle(
-        "DeviceCapabilitiesW",
-        constants$168.DeviceCapabilitiesW$FUNC
+    static final FunctionDescriptor RevertToSelf$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle RevertToSelf$MH = RuntimeHelper.downcallHandle(
+        "RevertToSelf",
+        constants$168.RevertToSelf$FUNC
     );
 }
 

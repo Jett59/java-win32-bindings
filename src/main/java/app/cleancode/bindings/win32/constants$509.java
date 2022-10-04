@@ -9,68 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$509 {
 
-    static final FunctionDescriptor EnumJobsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor WNetOpenEnumA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumJobsA$MH = RuntimeHelper.downcallHandle(
-        "EnumJobsA",
-        constants$509.EnumJobsA$FUNC
+    static final MethodHandle WNetOpenEnumA$MH = RuntimeHelper.downcallHandle(
+        "WNetOpenEnumA",
+        constants$509.WNetOpenEnumA$FUNC
     );
-    static final FunctionDescriptor EnumJobsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor WNetOpenEnumW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumJobsW$MH = RuntimeHelper.downcallHandle(
-        "EnumJobsW",
-        constants$509.EnumJobsW$FUNC
+    static final MethodHandle WNetOpenEnumW$MH = RuntimeHelper.downcallHandle(
+        "WNetOpenEnumW",
+        constants$509.WNetOpenEnumW$FUNC
     );
-    static final FunctionDescriptor AddPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor WNetEnumResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddPrinterA$MH = RuntimeHelper.downcallHandle(
-        "AddPrinterA",
-        constants$509.AddPrinterA$FUNC
+    static final MethodHandle WNetEnumResourceA$MH = RuntimeHelper.downcallHandle(
+        "WNetEnumResourceA",
+        constants$509.WNetEnumResourceA$FUNC
     );
-    static final FunctionDescriptor AddPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor WNetEnumResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddPrinterW$MH = RuntimeHelper.downcallHandle(
-        "AddPrinterW",
-        constants$509.AddPrinterW$FUNC
+    static final MethodHandle WNetEnumResourceW$MH = RuntimeHelper.downcallHandle(
+        "WNetEnumResourceW",
+        constants$509.WNetEnumResourceW$FUNC
     );
-    static final FunctionDescriptor DeletePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetCloseEnum$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeletePrinter$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinter",
-        constants$509.DeletePrinter$FUNC
+    static final MethodHandle WNetCloseEnum$MH = RuntimeHelper.downcallHandle(
+        "WNetCloseEnum",
+        constants$509.WNetCloseEnum$FUNC
     );
-    static final FunctionDescriptor SetPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetGetResourceParentA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetPrinterA$MH = RuntimeHelper.downcallHandle(
-        "SetPrinterA",
-        constants$509.SetPrinterA$FUNC
+    static final MethodHandle WNetGetResourceParentA$MH = RuntimeHelper.downcallHandle(
+        "WNetGetResourceParentA",
+        constants$509.WNetGetResourceParentA$FUNC
     );
 }
 

@@ -9,68 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$169 {
 
-    static final FunctionDescriptor DrawEscape$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetAclInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetAclInformation$MH = RuntimeHelper.downcallHandle(
+        "SetAclInformation",
+        constants$169.SetAclInformation$FUNC
+    );
+    static final FunctionDescriptor SetFileSecurityW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DrawEscape$MH = RuntimeHelper.downcallHandle(
-        "DrawEscape",
-        constants$169.DrawEscape$FUNC
+    static final MethodHandle SetFileSecurityW$MH = RuntimeHelper.downcallHandle(
+        "SetFileSecurityW",
+        constants$169.SetFileSecurityW$FUNC
     );
-    static final FunctionDescriptor Ellipse$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetKernelObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetKernelObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "SetKernelObjectSecurity",
+        constants$169.SetKernelObjectSecurity$FUNC
+    );
+    static final FunctionDescriptor SetPrivateObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetPrivateObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "SetPrivateObjectSecurity",
+        constants$169.SetPrivateObjectSecurity$FUNC
+    );
+    static final FunctionDescriptor SetPrivateObjectSecurityEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle Ellipse$MH = RuntimeHelper.downcallHandle(
-        "Ellipse",
-        constants$169.Ellipse$FUNC
+    static final MethodHandle SetPrivateObjectSecurityEx$MH = RuntimeHelper.downcallHandle(
+        "SetPrivateObjectSecurityEx",
+        constants$169.SetPrivateObjectSecurityEx$FUNC
     );
-    static final FunctionDescriptor EnumFontFamiliesExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor SetSecurityAccessMask$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumFontFamiliesExA$MH = RuntimeHelper.downcallHandle(
-        "EnumFontFamiliesExA",
-        constants$169.EnumFontFamiliesExA$FUNC
-    );
-    static final FunctionDescriptor EnumFontFamiliesExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnumFontFamiliesExW$MH = RuntimeHelper.downcallHandle(
-        "EnumFontFamiliesExW",
-        constants$169.EnumFontFamiliesExW$FUNC
-    );
-    static final FunctionDescriptor EnumFontFamiliesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumFontFamiliesA$MH = RuntimeHelper.downcallHandle(
-        "EnumFontFamiliesA",
-        constants$169.EnumFontFamiliesA$FUNC
-    );
-    static final FunctionDescriptor EnumFontFamiliesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumFontFamiliesW$MH = RuntimeHelper.downcallHandle(
-        "EnumFontFamiliesW",
-        constants$169.EnumFontFamiliesW$FUNC
+    static final MethodHandle SetSecurityAccessMask$MH = RuntimeHelper.downcallHandle(
+        "SetSecurityAccessMask",
+        constants$169.SetSecurityAccessMask$FUNC
     );
 }
 

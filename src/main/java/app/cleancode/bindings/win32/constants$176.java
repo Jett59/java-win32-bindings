@@ -9,71 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$176 {
 
-    static final FunctionDescriptor GetCurrentPositionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GlobalFlags$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetCurrentPositionEx$MH = RuntimeHelper.downcallHandle(
-        "GetCurrentPositionEx",
-        constants$176.GetCurrentPositionEx$FUNC
+    static final MethodHandle GlobalFlags$MH = RuntimeHelper.downcallHandle(
+        "GlobalFlags",
+        constants$176.GlobalFlags$FUNC
     );
-    static final FunctionDescriptor GetDeviceCaps$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetDeviceCaps$MH = RuntimeHelper.downcallHandle(
-        "GetDeviceCaps",
-        constants$176.GetDeviceCaps$FUNC
-    );
-    static final FunctionDescriptor GetDIBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetDIBits$MH = RuntimeHelper.downcallHandle(
-        "GetDIBits",
-        constants$176.GetDIBits$FUNC
-    );
-    static final FunctionDescriptor GetFontData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetFontData$MH = RuntimeHelper.downcallHandle(
-        "GetFontData",
-        constants$176.GetFontData$FUNC
-    );
-    static final FunctionDescriptor GetGlyphOutlineA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GlobalHandle$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetGlyphOutlineA$MH = RuntimeHelper.downcallHandle(
-        "GetGlyphOutlineA",
-        constants$176.GetGlyphOutlineA$FUNC
+    static final MethodHandle GlobalHandle$MH = RuntimeHelper.downcallHandle(
+        "GlobalHandle",
+        constants$176.GlobalHandle$FUNC
     );
-    static final FunctionDescriptor GetGlyphOutlineW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GlobalFree$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetGlyphOutlineW$MH = RuntimeHelper.downcallHandle(
-        "GetGlyphOutlineW",
-        constants$176.GetGlyphOutlineW$FUNC
+    static final MethodHandle GlobalFree$MH = RuntimeHelper.downcallHandle(
+        "GlobalFree",
+        constants$176.GlobalFree$FUNC
+    );
+    static final FunctionDescriptor GlobalCompact$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GlobalCompact$MH = RuntimeHelper.downcallHandle(
+        "GlobalCompact",
+        constants$176.GlobalCompact$FUNC
+    );
+    static final FunctionDescriptor GlobalFix$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalFix$MH = RuntimeHelper.downcallHandle(
+        "GlobalFix",
+        constants$176.GlobalFix$FUNC
+    );
+    static final FunctionDescriptor GlobalUnfix$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalUnfix$MH = RuntimeHelper.downcallHandle(
+        "GlobalUnfix",
+        constants$176.GlobalUnfix$FUNC
     );
 }
 

@@ -11,13 +11,13 @@ public interface PFN_CERT_CREATE_CONTEXT_SORT_FUNC {
 
     int apply(int cbTotalEncoded, int cbRemainEncoded, int cEntry, java.lang.foreign.MemoryAddress pvSort);
     static MemorySegment allocate(PFN_CERT_CREATE_CONTEXT_SORT_FUNC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CERT_CREATE_CONTEXT_SORT_FUNC.class, fi, constants$451.PFN_CERT_CREATE_CONTEXT_SORT_FUNC$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CERT_CREATE_CONTEXT_SORT_FUNC.class, fi, constants$603.PFN_CERT_CREATE_CONTEXT_SORT_FUNC$FUNC, session);
     }
     static PFN_CERT_CREATE_CONTEXT_SORT_FUNC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (int _cbTotalEncoded, int _cbRemainEncoded, int _cEntry, java.lang.foreign.MemoryAddress _pvSort) -> {
             try {
-                return (int)constants$451.PFN_CERT_CREATE_CONTEXT_SORT_FUNC$MH.invokeExact((Addressable)symbol, _cbTotalEncoded, _cbRemainEncoded, _cEntry, (java.lang.foreign.Addressable)_pvSort);
+                return (int)constants$603.PFN_CERT_CREATE_CONTEXT_SORT_FUNC$MH.invokeExact((Addressable)symbol, _cbTotalEncoded, _cbRemainEncoded, _cEntry, (java.lang.foreign.Addressable)_pvSort);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,54 +9,88 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$241 {
 
-    static final FunctionDescriptor PeekMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LogonUserExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PeekMessageW$MH = RuntimeHelper.downcallHandle(
-        "PeekMessageW",
-        constants$241.PeekMessageW$FUNC
-    );
-    static final FunctionDescriptor RegisterHotKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegisterHotKey$MH = RuntimeHelper.downcallHandle(
-        "RegisterHotKey",
-        constants$241.RegisterHotKey$FUNC
-    );
-    static final FunctionDescriptor UnregisterHotKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle UnregisterHotKey$MH = RuntimeHelper.downcallHandle(
-        "UnregisterHotKey",
-        constants$241.UnregisterHotKey$FUNC
+    static final MethodHandle LogonUserExA$MH = RuntimeHelper.downcallHandle(
+        "LogonUserExA",
+        constants$241.LogonUserExA$FUNC
     );
-    static final FunctionDescriptor ExitWindowsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LogonUserExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LogonUserExW$MH = RuntimeHelper.downcallHandle(
+        "LogonUserExW",
+        constants$241.LogonUserExW$FUNC
+    );
+    static final FunctionDescriptor CreateProcessWithLogonW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateProcessWithLogonW$MH = RuntimeHelper.downcallHandle(
+        "CreateProcessWithLogonW",
+        constants$241.CreateProcessWithLogonW$FUNC
+    );
+    static final FunctionDescriptor CreateProcessWithTokenW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateProcessWithTokenW$MH = RuntimeHelper.downcallHandle(
+        "CreateProcessWithTokenW",
+        constants$241.CreateProcessWithTokenW$FUNC
+    );
+    static final FunctionDescriptor IsTokenUntrusted$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsTokenUntrusted$MH = RuntimeHelper.downcallHandle(
+        "IsTokenUntrusted",
+        constants$241.IsTokenUntrusted$FUNC
+    );
+    static final FunctionDescriptor RegisterWaitForSingleObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ExitWindowsEx$MH = RuntimeHelper.downcallHandle(
-        "ExitWindowsEx",
-        constants$241.ExitWindowsEx$FUNC
-    );
-    static final FunctionDescriptor SwapMouseButton$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SwapMouseButton$MH = RuntimeHelper.downcallHandle(
-        "SwapMouseButton",
-        constants$241.SwapMouseButton$FUNC
-    );
-    static final FunctionDescriptor GetMessagePos$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetMessagePos$MH = RuntimeHelper.downcallHandle(
-        "GetMessagePos",
-        constants$241.GetMessagePos$FUNC
+    static final MethodHandle RegisterWaitForSingleObject$MH = RuntimeHelper.downcallHandle(
+        "RegisterWaitForSingleObject",
+        constants$241.RegisterWaitForSingleObject$FUNC
     );
 }
 

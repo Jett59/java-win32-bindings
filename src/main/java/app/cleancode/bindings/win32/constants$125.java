@@ -9,64 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$125 {
 
-    static final FunctionDescriptor GetNamedPipeHandleStateA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetNamedPipeHandleStateA$MH = RuntimeHelper.downcallHandle(
-        "GetNamedPipeHandleStateA",
-        constants$125.GetNamedPipeHandleStateA$FUNC
-    );
-    static final FunctionDescriptor CallNamedPipeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetProcessInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CallNamedPipeA$MH = RuntimeHelper.downcallHandle(
-        "CallNamedPipeA",
-        constants$125.CallNamedPipeA$FUNC
+    static final MethodHandle SetProcessInformation$MH = RuntimeHelper.downcallHandle(
+        "SetProcessInformation",
+        constants$125.SetProcessInformation$FUNC
     );
-    static final FunctionDescriptor WaitNamedPipeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetProcessInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WaitNamedPipeA$MH = RuntimeHelper.downcallHandle(
-        "WaitNamedPipeA",
-        constants$125.WaitNamedPipeA$FUNC
+    static final MethodHandle GetProcessInformation$MH = RuntimeHelper.downcallHandle(
+        "GetProcessInformation",
+        constants$125.GetProcessInformation$FUNC
     );
-    static final FunctionDescriptor GetNamedPipeClientComputerNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSystemCpuSetInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetNamedPipeClientComputerNameA$MH = RuntimeHelper.downcallHandle(
-        "GetNamedPipeClientComputerNameA",
-        constants$125.GetNamedPipeClientComputerNameA$FUNC
+    static final MethodHandle GetSystemCpuSetInformation$MH = RuntimeHelper.downcallHandle(
+        "GetSystemCpuSetInformation",
+        constants$125.GetSystemCpuSetInformation$FUNC
     );
-    static final FunctionDescriptor GetNamedPipeClientProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetProcessDefaultCpuSets$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetNamedPipeClientProcessId$MH = RuntimeHelper.downcallHandle(
-        "GetNamedPipeClientProcessId",
-        constants$125.GetNamedPipeClientProcessId$FUNC
+    static final MethodHandle GetProcessDefaultCpuSets$MH = RuntimeHelper.downcallHandle(
+        "GetProcessDefaultCpuSets",
+        constants$125.GetProcessDefaultCpuSets$FUNC
     );
-    static final FunctionDescriptor GetNamedPipeClientSessionId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetProcessDefaultCpuSets$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetProcessDefaultCpuSets$MH = RuntimeHelper.downcallHandle(
+        "SetProcessDefaultCpuSets",
+        constants$125.SetProcessDefaultCpuSets$FUNC
+    );
+    static final FunctionDescriptor GetThreadSelectedCpuSets$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetNamedPipeClientSessionId$MH = RuntimeHelper.downcallHandle(
-        "GetNamedPipeClientSessionId",
-        constants$125.GetNamedPipeClientSessionId$FUNC
+    static final MethodHandle GetThreadSelectedCpuSets$MH = RuntimeHelper.downcallHandle(
+        "GetThreadSelectedCpuSets",
+        constants$125.GetThreadSelectedCpuSets$FUNC
     );
 }
 

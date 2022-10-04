@@ -9,6 +9,1680 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_10 extends WINDOWS_9 {
 
+    public static MethodHandle _mm_prefetch$MH() {
+        return RuntimeHelper.requireNonNull(constants$4._mm_prefetch$MH,"_mm_prefetch");
+    }
+    public static void _mm_prefetch ( Addressable a,  int sel) {
+        var mh$ = _mm_prefetch$MH();
+        try {
+            mh$.invokeExact(a, sel);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _m_prefetchw$MH() {
+        return RuntimeHelper.requireNonNull(constants$5._m_prefetchw$MH,"_m_prefetchw");
+    }
+    public static void _m_prefetchw ( Addressable Source) {
+        var mh$ = _m_prefetchw$MH();
+        try {
+            mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _mm_getcsr$MH() {
+        return RuntimeHelper.requireNonNull(constants$5._mm_getcsr$MH,"_mm_getcsr");
+    }
+    public static int _mm_getcsr () {
+        var mh$ = _mm_getcsr$MH();
+        try {
+            return (int)mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _mm_setcsr$MH() {
+        return RuntimeHelper.requireNonNull(constants$5._mm_setcsr$MH,"_mm_setcsr");
+    }
+    public static void _mm_setcsr ( int MxCsr) {
+        var mh$ = _mm_setcsr$MH();
+        try {
+            mh$.invokeExact(MxCsr);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _mul128$MH() {
+        return RuntimeHelper.requireNonNull(constants$5._mul128$MH,"_mul128");
+    }
+    public static long _mul128 ( long Multiplier,  long Multiplicand,  Addressable HighProduct) {
+        var mh$ = _mul128$MH();
+        try {
+            return (long)mh$.invokeExact(Multiplier, Multiplicand, HighProduct);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _umul128$MH() {
+        return RuntimeHelper.requireNonNull(constants$5._umul128$MH,"_umul128");
+    }
+    public static long _umul128 ( long Multiplier,  long Multiplicand,  Addressable HighProduct) {
+        var mh$ = _umul128$MH();
+        try {
+            return (long)mh$.invokeExact(Multiplier, Multiplicand, HighProduct);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle MultiplyExtract128$MH() {
+        return RuntimeHelper.requireNonNull(constants$5.MultiplyExtract128$MH,"MultiplyExtract128");
+    }
+    public static long MultiplyExtract128 ( long Multiplier,  long Multiplicand,  byte Shift) {
+        var mh$ = MultiplyExtract128$MH();
+        try {
+            return (long)mh$.invokeExact(Multiplier, Multiplicand, Shift);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle UnsignedMultiplyExtract128$MH() {
+        return RuntimeHelper.requireNonNull(constants$6.UnsignedMultiplyExtract128$MH,"UnsignedMultiplyExtract128");
+    }
+    public static long UnsignedMultiplyExtract128 ( long Multiplier,  long Multiplicand,  byte Shift) {
+        var mh$ = UnsignedMultiplyExtract128$MH();
+        try {
+            return (long)mh$.invokeExact(Multiplier, Multiplicand, Shift);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PXMM_SAVE_AREA32 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCONTEXT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PRUNTIME_FUNCTION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCOPE_TABLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUNWIND_HISTORY_TABLE_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUNWIND_HISTORY_TABLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PDISPATCHER_CONTEXT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PKNONVOLATILE_CONTEXT_POINTERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCOPE_TABLE_ARM = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSCOPE_TABLE_ARM64 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PKNONVOLATILE_CONTEXT_POINTERS_ARM64 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PLDT_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle ReadAcquire8$MH() {
+        return RuntimeHelper.requireNonNull(constants$8.ReadAcquire8$MH,"ReadAcquire8");
+    }
+    public static byte ReadAcquire8 ( Addressable Source) {
+        var mh$ = ReadAcquire8$MH();
+        try {
+            return (byte)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadNoFence8$MH() {
+        return RuntimeHelper.requireNonNull(constants$8.ReadNoFence8$MH,"ReadNoFence8");
+    }
+    public static byte ReadNoFence8 ( Addressable Source) {
+        var mh$ = ReadNoFence8$MH();
+        try {
+            return (byte)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteRelease8$MH() {
+        return RuntimeHelper.requireNonNull(constants$8.WriteRelease8$MH,"WriteRelease8");
+    }
+    public static void WriteRelease8 ( Addressable Destination,  byte Value) {
+        var mh$ = WriteRelease8$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteNoFence8$MH() {
+        return RuntimeHelper.requireNonNull(constants$8.WriteNoFence8$MH,"WriteNoFence8");
+    }
+    public static void WriteNoFence8 ( Addressable Destination,  byte Value) {
+        var mh$ = WriteNoFence8$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadAcquire16$MH() {
+        return RuntimeHelper.requireNonNull(constants$8.ReadAcquire16$MH,"ReadAcquire16");
+    }
+    public static short ReadAcquire16 ( Addressable Source) {
+        var mh$ = ReadAcquire16$MH();
+        try {
+            return (short)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadNoFence16$MH() {
+        return RuntimeHelper.requireNonNull(constants$9.ReadNoFence16$MH,"ReadNoFence16");
+    }
+    public static short ReadNoFence16 ( Addressable Source) {
+        var mh$ = ReadNoFence16$MH();
+        try {
+            return (short)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteRelease16$MH() {
+        return RuntimeHelper.requireNonNull(constants$9.WriteRelease16$MH,"WriteRelease16");
+    }
+    public static void WriteRelease16 ( Addressable Destination,  short Value) {
+        var mh$ = WriteRelease16$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteNoFence16$MH() {
+        return RuntimeHelper.requireNonNull(constants$9.WriteNoFence16$MH,"WriteNoFence16");
+    }
+    public static void WriteNoFence16 ( Addressable Destination,  short Value) {
+        var mh$ = WriteNoFence16$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadAcquire$MH() {
+        return RuntimeHelper.requireNonNull(constants$9.ReadAcquire$MH,"ReadAcquire");
+    }
+    public static int ReadAcquire ( Addressable Source) {
+        var mh$ = ReadAcquire$MH();
+        try {
+            return (int)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$9.ReadNoFence$MH,"ReadNoFence");
+    }
+    public static int ReadNoFence ( Addressable Source) {
+        var mh$ = ReadNoFence$MH();
+        try {
+            return (int)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteRelease$MH() {
+        return RuntimeHelper.requireNonNull(constants$9.WriteRelease$MH,"WriteRelease");
+    }
+    public static void WriteRelease ( Addressable Destination,  int Value) {
+        var mh$ = WriteRelease$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$10.WriteNoFence$MH,"WriteNoFence");
+    }
+    public static void WriteNoFence ( Addressable Destination,  int Value) {
+        var mh$ = WriteNoFence$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadAcquire64$MH() {
+        return RuntimeHelper.requireNonNull(constants$10.ReadAcquire64$MH,"ReadAcquire64");
+    }
+    public static long ReadAcquire64 ( Addressable Source) {
+        var mh$ = ReadAcquire64$MH();
+        try {
+            return (long)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadNoFence64$MH() {
+        return RuntimeHelper.requireNonNull(constants$10.ReadNoFence64$MH,"ReadNoFence64");
+    }
+    public static long ReadNoFence64 ( Addressable Source) {
+        var mh$ = ReadNoFence64$MH();
+        try {
+            return (long)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteRelease64$MH() {
+        return RuntimeHelper.requireNonNull(constants$10.WriteRelease64$MH,"WriteRelease64");
+    }
+    public static void WriteRelease64 ( Addressable Destination,  long Value) {
+        var mh$ = WriteRelease64$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteNoFence64$MH() {
+        return RuntimeHelper.requireNonNull(constants$10.WriteNoFence64$MH,"WriteNoFence64");
+    }
+    public static void WriteNoFence64 ( Addressable Destination,  long Value) {
+        var mh$ = WriteNoFence64$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadRaw8$MH() {
+        return RuntimeHelper.requireNonNull(constants$10.ReadRaw8$MH,"ReadRaw8");
+    }
+    public static byte ReadRaw8 ( Addressable Source) {
+        var mh$ = ReadRaw8$MH();
+        try {
+            return (byte)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteRaw8$MH() {
+        return RuntimeHelper.requireNonNull(constants$11.WriteRaw8$MH,"WriteRaw8");
+    }
+    public static void WriteRaw8 ( Addressable Destination,  byte Value) {
+        var mh$ = WriteRaw8$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadRaw16$MH() {
+        return RuntimeHelper.requireNonNull(constants$11.ReadRaw16$MH,"ReadRaw16");
+    }
+    public static short ReadRaw16 ( Addressable Source) {
+        var mh$ = ReadRaw16$MH();
+        try {
+            return (short)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteRaw16$MH() {
+        return RuntimeHelper.requireNonNull(constants$11.WriteRaw16$MH,"WriteRaw16");
+    }
+    public static void WriteRaw16 ( Addressable Destination,  short Value) {
+        var mh$ = WriteRaw16$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$11.ReadRaw$MH,"ReadRaw");
+    }
+    public static int ReadRaw ( Addressable Source) {
+        var mh$ = ReadRaw$MH();
+        try {
+            return (int)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$11.WriteRaw$MH,"WriteRaw");
+    }
+    public static void WriteRaw ( Addressable Destination,  int Value) {
+        var mh$ = WriteRaw$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadRaw64$MH() {
+        return RuntimeHelper.requireNonNull(constants$11.ReadRaw64$MH,"ReadRaw64");
+    }
+    public static long ReadRaw64 ( Addressable Source) {
+        var mh$ = ReadRaw64$MH();
+        try {
+            return (long)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteRaw64$MH() {
+        return RuntimeHelper.requireNonNull(constants$12.WriteRaw64$MH,"WriteRaw64");
+    }
+    public static void WriteRaw64 ( Addressable Destination,  long Value) {
+        var mh$ = WriteRaw64$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadUCharAcquire$MH() {
+        return RuntimeHelper.requireNonNull(constants$12.ReadUCharAcquire$MH,"ReadUCharAcquire");
+    }
+    public static byte ReadUCharAcquire ( Addressable Source) {
+        var mh$ = ReadUCharAcquire$MH();
+        try {
+            return (byte)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadUCharNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$12.ReadUCharNoFence$MH,"ReadUCharNoFence");
+    }
+    public static byte ReadUCharNoFence ( Addressable Source) {
+        var mh$ = ReadUCharNoFence$MH();
+        try {
+            return (byte)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadBooleanAcquire$MH() {
+        return RuntimeHelper.requireNonNull(constants$12.ReadBooleanAcquire$MH,"ReadBooleanAcquire");
+    }
+    public static byte ReadBooleanAcquire ( Addressable Source) {
+        var mh$ = ReadBooleanAcquire$MH();
+        try {
+            return (byte)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadBooleanNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$12.ReadBooleanNoFence$MH,"ReadBooleanNoFence");
+    }
+    public static byte ReadBooleanNoFence ( Addressable Source) {
+        var mh$ = ReadBooleanNoFence$MH();
+        try {
+            return (byte)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadUCharRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$12.ReadUCharRaw$MH,"ReadUCharRaw");
+    }
+    public static byte ReadUCharRaw ( Addressable Source) {
+        var mh$ = ReadUCharRaw$MH();
+        try {
+            return (byte)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteUCharRelease$MH() {
+        return RuntimeHelper.requireNonNull(constants$13.WriteUCharRelease$MH,"WriteUCharRelease");
+    }
+    public static void WriteUCharRelease ( Addressable Destination,  byte Value) {
+        var mh$ = WriteUCharRelease$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteUCharNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$13.WriteUCharNoFence$MH,"WriteUCharNoFence");
+    }
+    public static void WriteUCharNoFence ( Addressable Destination,  byte Value) {
+        var mh$ = WriteUCharNoFence$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteBooleanRelease$MH() {
+        return RuntimeHelper.requireNonNull(constants$13.WriteBooleanRelease$MH,"WriteBooleanRelease");
+    }
+    public static void WriteBooleanRelease ( Addressable Destination,  byte Value) {
+        var mh$ = WriteBooleanRelease$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteBooleanNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$13.WriteBooleanNoFence$MH,"WriteBooleanNoFence");
+    }
+    public static void WriteBooleanNoFence ( Addressable Destination,  byte Value) {
+        var mh$ = WriteBooleanNoFence$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteUCharRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$13.WriteUCharRaw$MH,"WriteUCharRaw");
+    }
+    public static void WriteUCharRaw ( Addressable Destination,  byte Value) {
+        var mh$ = WriteUCharRaw$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadUShortAcquire$MH() {
+        return RuntimeHelper.requireNonNull(constants$13.ReadUShortAcquire$MH,"ReadUShortAcquire");
+    }
+    public static short ReadUShortAcquire ( Addressable Source) {
+        var mh$ = ReadUShortAcquire$MH();
+        try {
+            return (short)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadUShortNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$14.ReadUShortNoFence$MH,"ReadUShortNoFence");
+    }
+    public static short ReadUShortNoFence ( Addressable Source) {
+        var mh$ = ReadUShortNoFence$MH();
+        try {
+            return (short)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadUShortRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$14.ReadUShortRaw$MH,"ReadUShortRaw");
+    }
+    public static short ReadUShortRaw ( Addressable Source) {
+        var mh$ = ReadUShortRaw$MH();
+        try {
+            return (short)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteUShortRelease$MH() {
+        return RuntimeHelper.requireNonNull(constants$14.WriteUShortRelease$MH,"WriteUShortRelease");
+    }
+    public static void WriteUShortRelease ( Addressable Destination,  short Value) {
+        var mh$ = WriteUShortRelease$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteUShortNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$14.WriteUShortNoFence$MH,"WriteUShortNoFence");
+    }
+    public static void WriteUShortNoFence ( Addressable Destination,  short Value) {
+        var mh$ = WriteUShortNoFence$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteUShortRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$14.WriteUShortRaw$MH,"WriteUShortRaw");
+    }
+    public static void WriteUShortRaw ( Addressable Destination,  short Value) {
+        var mh$ = WriteUShortRaw$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadULongAcquire$MH() {
+        return RuntimeHelper.requireNonNull(constants$14.ReadULongAcquire$MH,"ReadULongAcquire");
+    }
+    public static int ReadULongAcquire ( Addressable Source) {
+        var mh$ = ReadULongAcquire$MH();
+        try {
+            return (int)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadULongNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$15.ReadULongNoFence$MH,"ReadULongNoFence");
+    }
+    public static int ReadULongNoFence ( Addressable Source) {
+        var mh$ = ReadULongNoFence$MH();
+        try {
+            return (int)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadULongRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$15.ReadULongRaw$MH,"ReadULongRaw");
+    }
+    public static int ReadULongRaw ( Addressable Source) {
+        var mh$ = ReadULongRaw$MH();
+        try {
+            return (int)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteULongRelease$MH() {
+        return RuntimeHelper.requireNonNull(constants$15.WriteULongRelease$MH,"WriteULongRelease");
+    }
+    public static void WriteULongRelease ( Addressable Destination,  int Value) {
+        var mh$ = WriteULongRelease$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteULongNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$15.WriteULongNoFence$MH,"WriteULongNoFence");
+    }
+    public static void WriteULongNoFence ( Addressable Destination,  int Value) {
+        var mh$ = WriteULongNoFence$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteULongRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$15.WriteULongRaw$MH,"WriteULongRaw");
+    }
+    public static void WriteULongRaw ( Addressable Destination,  int Value) {
+        var mh$ = WriteULongRaw$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadULong64Acquire$MH() {
+        return RuntimeHelper.requireNonNull(constants$15.ReadULong64Acquire$MH,"ReadULong64Acquire");
+    }
+    public static long ReadULong64Acquire ( Addressable Source) {
+        var mh$ = ReadULong64Acquire$MH();
+        try {
+            return (long)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadULong64NoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$16.ReadULong64NoFence$MH,"ReadULong64NoFence");
+    }
+    public static long ReadULong64NoFence ( Addressable Source) {
+        var mh$ = ReadULong64NoFence$MH();
+        try {
+            return (long)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadULong64Raw$MH() {
+        return RuntimeHelper.requireNonNull(constants$16.ReadULong64Raw$MH,"ReadULong64Raw");
+    }
+    public static long ReadULong64Raw ( Addressable Source) {
+        var mh$ = ReadULong64Raw$MH();
+        try {
+            return (long)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteULong64Release$MH() {
+        return RuntimeHelper.requireNonNull(constants$16.WriteULong64Release$MH,"WriteULong64Release");
+    }
+    public static void WriteULong64Release ( Addressable Destination,  long Value) {
+        var mh$ = WriteULong64Release$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteULong64NoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$16.WriteULong64NoFence$MH,"WriteULong64NoFence");
+    }
+    public static void WriteULong64NoFence ( Addressable Destination,  long Value) {
+        var mh$ = WriteULong64NoFence$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WriteULong64Raw$MH() {
+        return RuntimeHelper.requireNonNull(constants$16.WriteULong64Raw$MH,"WriteULong64Raw");
+    }
+    public static void WriteULong64Raw ( Addressable Destination,  long Value) {
+        var mh$ = WriteULong64Raw$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadPointerAcquire$MH() {
+        return RuntimeHelper.requireNonNull(constants$16.ReadPointerAcquire$MH,"ReadPointerAcquire");
+    }
+    public static MemoryAddress ReadPointerAcquire ( Addressable Source) {
+        var mh$ = ReadPointerAcquire$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadPointerNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$17.ReadPointerNoFence$MH,"ReadPointerNoFence");
+    }
+    public static MemoryAddress ReadPointerNoFence ( Addressable Source) {
+        var mh$ = ReadPointerNoFence$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle ReadPointerRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$17.ReadPointerRaw$MH,"ReadPointerRaw");
+    }
+    public static MemoryAddress ReadPointerRaw ( Addressable Source) {
+        var mh$ = ReadPointerRaw$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Source);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePointerRelease$MH() {
+        return RuntimeHelper.requireNonNull(constants$17.WritePointerRelease$MH,"WritePointerRelease");
+    }
+    public static void WritePointerRelease ( Addressable Destination,  Addressable Value) {
+        var mh$ = WritePointerRelease$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePointerNoFence$MH() {
+        return RuntimeHelper.requireNonNull(constants$17.WritePointerNoFence$MH,"WritePointerNoFence");
+    }
+    public static void WritePointerNoFence ( Addressable Destination,  Addressable Value) {
+        var mh$ = WritePointerNoFence$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle WritePointerRaw$MH() {
+        return RuntimeHelper.requireNonNull(constants$17.WritePointerRaw$MH,"WritePointerRaw");
+    }
+    public static void WritePointerRaw ( Addressable Destination,  Addressable Value) {
+        var mh$ = WritePointerRaw$MH();
+        try {
+            mh$.invokeExact(Destination, Value);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PWOW64_FLOATING_SAVE_AREA = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWOW64_CONTEXT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWOW64_LDT_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PWOW64_DESCRIPTOR_TABLE_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PEXCEPTION_RECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PEXCEPTION_RECORD32 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PEXCEPTION_RECORD64 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PEXCEPTION_POINTERS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_TOKEN = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSECURITY_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSID = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCLAIMS_BLOB = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_MASK = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PGENERIC_MAPPING = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PLUID_AND_ATTRIBUTES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PLUID_AND_ATTRIBUTES_ARRAY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSID_IDENTIFIER_AUTHORITY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PISID = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSE_SID = Constants$root.C_POINTER$LAYOUT;
+    public static int SidTypeUser() {
+        return (int)1L;
+    }
+    public static int SidTypeGroup() {
+        return (int)2L;
+    }
+    public static int SidTypeDomain() {
+        return (int)3L;
+    }
+    public static int SidTypeAlias() {
+        return (int)4L;
+    }
+    public static int SidTypeWellKnownGroup() {
+        return (int)5L;
+    }
+    public static int SidTypeDeletedAccount() {
+        return (int)6L;
+    }
+    public static int SidTypeInvalid() {
+        return (int)7L;
+    }
+    public static int SidTypeUnknown() {
+        return (int)8L;
+    }
+    public static int SidTypeComputer() {
+        return (int)9L;
+    }
+    public static int SidTypeLabel() {
+        return (int)10L;
+    }
+    public static int SidTypeLogonSession() {
+        return (int)11L;
+    }
+    public static OfAddress PSID_NAME_USE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSID_AND_ATTRIBUTES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSID_AND_ATTRIBUTES_ARRAY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSID_HASH_ENTRY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSID_AND_ATTRIBUTES_HASH = Constants$root.C_POINTER$LAYOUT;
+    public static int WinNullSid() {
+        return (int)0L;
+    }
+    public static int WinWorldSid() {
+        return (int)1L;
+    }
+    public static int WinLocalSid() {
+        return (int)2L;
+    }
+    public static int WinCreatorOwnerSid() {
+        return (int)3L;
+    }
+    public static int WinCreatorGroupSid() {
+        return (int)4L;
+    }
+    public static int WinCreatorOwnerServerSid() {
+        return (int)5L;
+    }
+    public static int WinCreatorGroupServerSid() {
+        return (int)6L;
+    }
+    public static int WinNtAuthoritySid() {
+        return (int)7L;
+    }
+    public static int WinDialupSid() {
+        return (int)8L;
+    }
+    public static int WinNetworkSid() {
+        return (int)9L;
+    }
+    public static int WinBatchSid() {
+        return (int)10L;
+    }
+    public static int WinInteractiveSid() {
+        return (int)11L;
+    }
+    public static int WinServiceSid() {
+        return (int)12L;
+    }
+    public static int WinAnonymousSid() {
+        return (int)13L;
+    }
+    public static int WinProxySid() {
+        return (int)14L;
+    }
+    public static int WinEnterpriseControllersSid() {
+        return (int)15L;
+    }
+    public static int WinSelfSid() {
+        return (int)16L;
+    }
+    public static int WinAuthenticatedUserSid() {
+        return (int)17L;
+    }
+    public static int WinRestrictedCodeSid() {
+        return (int)18L;
+    }
+    public static int WinTerminalServerSid() {
+        return (int)19L;
+    }
+    public static int WinRemoteLogonIdSid() {
+        return (int)20L;
+    }
+    public static int WinLogonIdsSid() {
+        return (int)21L;
+    }
+    public static int WinLocalSystemSid() {
+        return (int)22L;
+    }
+    public static int WinLocalServiceSid() {
+        return (int)23L;
+    }
+    public static int WinNetworkServiceSid() {
+        return (int)24L;
+    }
+    public static int WinBuiltinDomainSid() {
+        return (int)25L;
+    }
+    public static int WinBuiltinAdministratorsSid() {
+        return (int)26L;
+    }
+    public static int WinBuiltinUsersSid() {
+        return (int)27L;
+    }
+    public static int WinBuiltinGuestsSid() {
+        return (int)28L;
+    }
+    public static int WinBuiltinPowerUsersSid() {
+        return (int)29L;
+    }
+    public static int WinBuiltinAccountOperatorsSid() {
+        return (int)30L;
+    }
+    public static int WinBuiltinSystemOperatorsSid() {
+        return (int)31L;
+    }
+    public static int WinBuiltinPrintOperatorsSid() {
+        return (int)32L;
+    }
+    public static int WinBuiltinBackupOperatorsSid() {
+        return (int)33L;
+    }
+    public static int WinBuiltinReplicatorSid() {
+        return (int)34L;
+    }
+    public static int WinBuiltinPreWindows2000CompatibleAccessSid() {
+        return (int)35L;
+    }
+    public static int WinBuiltinRemoteDesktopUsersSid() {
+        return (int)36L;
+    }
+    public static int WinBuiltinNetworkConfigurationOperatorsSid() {
+        return (int)37L;
+    }
+    public static int WinAccountAdministratorSid() {
+        return (int)38L;
+    }
+    public static int WinAccountGuestSid() {
+        return (int)39L;
+    }
+    public static int WinAccountKrbtgtSid() {
+        return (int)40L;
+    }
+    public static int WinAccountDomainAdminsSid() {
+        return (int)41L;
+    }
+    public static int WinAccountDomainUsersSid() {
+        return (int)42L;
+    }
+    public static int WinAccountDomainGuestsSid() {
+        return (int)43L;
+    }
+    public static int WinAccountComputersSid() {
+        return (int)44L;
+    }
+    public static int WinAccountControllersSid() {
+        return (int)45L;
+    }
+    public static int WinAccountCertAdminsSid() {
+        return (int)46L;
+    }
+    public static int WinAccountSchemaAdminsSid() {
+        return (int)47L;
+    }
+    public static int WinAccountEnterpriseAdminsSid() {
+        return (int)48L;
+    }
+    public static int WinAccountPolicyAdminsSid() {
+        return (int)49L;
+    }
+    public static int WinAccountRasAndIasServersSid() {
+        return (int)50L;
+    }
+    public static int WinNTLMAuthenticationSid() {
+        return (int)51L;
+    }
+    public static int WinDigestAuthenticationSid() {
+        return (int)52L;
+    }
+    public static int WinSChannelAuthenticationSid() {
+        return (int)53L;
+    }
+    public static int WinThisOrganizationSid() {
+        return (int)54L;
+    }
+    public static int WinOtherOrganizationSid() {
+        return (int)55L;
+    }
+    public static int WinBuiltinIncomingForestTrustBuildersSid() {
+        return (int)56L;
+    }
+    public static int WinBuiltinPerfMonitoringUsersSid() {
+        return (int)57L;
+    }
+    public static int WinBuiltinPerfLoggingUsersSid() {
+        return (int)58L;
+    }
+    public static int WinBuiltinAuthorizationAccessSid() {
+        return (int)59L;
+    }
+    public static int WinBuiltinTerminalServerLicenseServersSid() {
+        return (int)60L;
+    }
+    public static int WinBuiltinDCOMUsersSid() {
+        return (int)61L;
+    }
+    public static int WinBuiltinIUsersSid() {
+        return (int)62L;
+    }
+    public static int WinIUserSid() {
+        return (int)63L;
+    }
+    public static int WinBuiltinCryptoOperatorsSid() {
+        return (int)64L;
+    }
+    public static int WinUntrustedLabelSid() {
+        return (int)65L;
+    }
+    public static int WinLowLabelSid() {
+        return (int)66L;
+    }
+    public static int WinMediumLabelSid() {
+        return (int)67L;
+    }
+    public static int WinHighLabelSid() {
+        return (int)68L;
+    }
+    public static int WinSystemLabelSid() {
+        return (int)69L;
+    }
+    public static int WinWriteRestrictedCodeSid() {
+        return (int)70L;
+    }
+    public static int WinCreatorOwnerRightsSid() {
+        return (int)71L;
+    }
+    public static int WinCacheablePrincipalsGroupSid() {
+        return (int)72L;
+    }
+    public static int WinNonCacheablePrincipalsGroupSid() {
+        return (int)73L;
+    }
+    public static int WinEnterpriseReadonlyControllersSid() {
+        return (int)74L;
+    }
+    public static int WinAccountReadonlyControllersSid() {
+        return (int)75L;
+    }
+    public static int WinBuiltinEventLogReadersGroup() {
+        return (int)76L;
+    }
+    public static int WinNewEnterpriseReadonlyControllersSid() {
+        return (int)77L;
+    }
+    public static int WinBuiltinCertSvcDComAccessGroup() {
+        return (int)78L;
+    }
+    public static int WinMediumPlusLabelSid() {
+        return (int)79L;
+    }
+    public static int WinLocalLogonSid() {
+        return (int)80L;
+    }
+    public static int WinConsoleLogonSid() {
+        return (int)81L;
+    }
+    public static int WinThisOrganizationCertificateSid() {
+        return (int)82L;
+    }
+    public static int WinApplicationPackageAuthoritySid() {
+        return (int)83L;
+    }
+    public static int WinBuiltinAnyPackageSid() {
+        return (int)84L;
+    }
+    public static int WinCapabilityInternetClientSid() {
+        return (int)85L;
+    }
+    public static int WinCapabilityInternetClientServerSid() {
+        return (int)86L;
+    }
+    public static int WinCapabilityPrivateNetworkClientServerSid() {
+        return (int)87L;
+    }
+    public static int WinCapabilityPicturesLibrarySid() {
+        return (int)88L;
+    }
+    public static int WinCapabilityVideosLibrarySid() {
+        return (int)89L;
+    }
+    public static int WinCapabilityMusicLibrarySid() {
+        return (int)90L;
+    }
+    public static int WinCapabilityDocumentsLibrarySid() {
+        return (int)91L;
+    }
+    public static int WinCapabilitySharedUserCertificatesSid() {
+        return (int)92L;
+    }
+    public static int WinCapabilityEnterpriseAuthenticationSid() {
+        return (int)93L;
+    }
+    public static int WinCapabilityRemovableStorageSid() {
+        return (int)94L;
+    }
+    public static int WinBuiltinRDSRemoteAccessServersSid() {
+        return (int)95L;
+    }
+    public static int WinBuiltinRDSEndpointServersSid() {
+        return (int)96L;
+    }
+    public static int WinBuiltinRDSManagementServersSid() {
+        return (int)97L;
+    }
+    public static int WinUserModeDriversSid() {
+        return (int)98L;
+    }
+    public static int WinBuiltinHyperVAdminsSid() {
+        return (int)99L;
+    }
+    public static int WinAccountCloneableControllersSid() {
+        return (int)100L;
+    }
+    public static int WinBuiltinAccessControlAssistanceOperatorsSid() {
+        return (int)101L;
+    }
+    public static int WinBuiltinRemoteManagementUsersSid() {
+        return (int)102L;
+    }
+    public static int WinAuthenticationAuthorityAssertedSid() {
+        return (int)103L;
+    }
+    public static int WinAuthenticationServiceAssertedSid() {
+        return (int)104L;
+    }
+    public static int WinLocalAccountSid() {
+        return (int)105L;
+    }
+    public static int WinLocalAccountAndAdministratorSid() {
+        return (int)106L;
+    }
+    public static int WinAccountProtectedUsersSid() {
+        return (int)107L;
+    }
+    public static int WinCapabilityAppointmentsSid() {
+        return (int)108L;
+    }
+    public static int WinCapabilityContactsSid() {
+        return (int)109L;
+    }
+    public static int WinAccountDefaultSystemManagedSid() {
+        return (int)110L;
+    }
+    public static int WinBuiltinDefaultSystemManagedGroupSid() {
+        return (int)111L;
+    }
+    public static int WinBuiltinStorageReplicaAdminsSid() {
+        return (int)112L;
+    }
+    public static int WinAccountKeyAdminsSid() {
+        return (int)113L;
+    }
+    public static int WinAccountEnterpriseKeyAdminsSid() {
+        return (int)114L;
+    }
+    public static int WinAuthenticationKeyTrustSid() {
+        return (int)115L;
+    }
+    public static int WinAuthenticationKeyPropertyMFASid() {
+        return (int)116L;
+    }
+    public static int WinAuthenticationKeyPropertyAttestationSid() {
+        return (int)117L;
+    }
+    public static int WinAuthenticationFreshKeyAuthSid() {
+        return (int)118L;
+    }
+    public static int WinBuiltinDeviceOwnersSid() {
+        return (int)119L;
+    }
+    public static OfAddress PACL = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACE_HEADER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_ALLOWED_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_DENIED_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_AUDIT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_ALARM_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_RESOURCE_ATTRIBUTE_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_SCOPED_POLICY_ID_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_MANDATORY_LABEL_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_PROCESS_TRUST_LABEL_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_ACCESS_FILTER_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_ALLOWED_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_DENIED_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_AUDIT_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_ALARM_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_ALLOWED_CALLBACK_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_DENIED_CALLBACK_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_AUDIT_CALLBACK_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_ALARM_CALLBACK_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_ALLOWED_CALLBACK_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACCESS_DENIED_CALLBACK_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_AUDIT_CALLBACK_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSYSTEM_ALARM_CALLBACK_OBJECT_ACE = Constants$root.C_POINTER$LAYOUT;
+    public static int AclRevisionInformation() {
+        return (int)1L;
+    }
+    public static int AclSizeInformation() {
+        return (int)2L;
+    }
+    public static OfAddress PACL_REVISION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PACL_SIZE_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSECURITY_DESCRIPTOR_CONTROL = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PISECURITY_DESCRIPTOR_RELATIVE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PISECURITY_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSECURITY_OBJECT_AI_PARAMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress POBJECT_TYPE_LIST = Constants$root.C_POINTER$LAYOUT;
+    public static int AuditEventObjectAccess() {
+        return (int)0L;
+    }
+    public static int AuditEventDirectoryServiceAccess() {
+        return (int)1L;
+    }
+    public static OfAddress PAUDIT_EVENT_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPRIVILEGE_SET = Constants$root.C_POINTER$LAYOUT;
+    public static int AccessReasonNone() {
+        return (int)0L;
+    }
+    public static int AccessReasonAllowedAce() {
+        return (int)65536L;
+    }
+    public static int AccessReasonDeniedAce() {
+        return (int)131072L;
+    }
+    public static int AccessReasonAllowedParentAce() {
+        return (int)196608L;
+    }
+    public static int AccessReasonDeniedParentAce() {
+        return (int)262144L;
+    }
+    public static int AccessReasonNotGrantedByCape() {
+        return (int)327680L;
+    }
+    public static int AccessReasonNotGrantedByParentCape() {
+        return (int)393216L;
+    }
+    public static int AccessReasonNotGrantedToAppContainer() {
+        return (int)458752L;
+    }
+    public static int AccessReasonMissingPrivilege() {
+        return (int)1048576L;
+    }
+    public static int AccessReasonFromPrivilege() {
+        return (int)2097152L;
+    }
+    public static int AccessReasonIntegrityLevel() {
+        return (int)3145728L;
+    }
+    public static int AccessReasonOwnership() {
+        return (int)4194304L;
+    }
+    public static int AccessReasonNullDacl() {
+        return (int)5242880L;
+    }
+    public static int AccessReasonEmptyDacl() {
+        return (int)6291456L;
+    }
+    public static int AccessReasonNoSD() {
+        return (int)7340032L;
+    }
+    public static int AccessReasonNoGrant() {
+        return (int)8388608L;
+    }
+    public static int AccessReasonTrustLabel() {
+        return (int)9437184L;
+    }
+    public static int AccessReasonFilterAce() {
+        return (int)10485760L;
+    }
+    public static OfAddress PACCESS_REASONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSE_SECURITY_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSE_ACCESS_REQUEST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSE_ACCESS_REPLY = Constants$root.C_POINTER$LAYOUT;
+    public static int SecurityAnonymous() {
+        return (int)0L;
+    }
+    public static int SecurityIdentification() {
+        return (int)1L;
+    }
+    public static int SecurityImpersonation() {
+        return (int)2L;
+    }
+    public static int SecurityDelegation() {
+        return (int)3L;
+    }
+    public static OfAddress PSECURITY_IMPERSONATION_LEVEL = Constants$root.C_POINTER$LAYOUT;
+    public static int TokenPrimary() {
+        return (int)1L;
+    }
+    public static int TokenImpersonation() {
+        return (int)2L;
+    }
+    public static OfAddress PTOKEN_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static int TokenElevationTypeDefault() {
+        return (int)1L;
+    }
+    public static int TokenElevationTypeFull() {
+        return (int)2L;
+    }
+    public static int TokenElevationTypeLimited() {
+        return (int)3L;
+    }
+    public static OfAddress PTOKEN_ELEVATION_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static int TokenUser() {
+        return (int)1L;
+    }
+    public static int TokenGroups() {
+        return (int)2L;
+    }
+    public static int TokenPrivileges() {
+        return (int)3L;
+    }
+    public static int TokenOwner() {
+        return (int)4L;
+    }
+    public static int TokenPrimaryGroup() {
+        return (int)5L;
+    }
+    public static int TokenDefaultDacl() {
+        return (int)6L;
+    }
+    public static int TokenSource() {
+        return (int)7L;
+    }
+    public static int TokenType() {
+        return (int)8L;
+    }
+    public static int TokenImpersonationLevel() {
+        return (int)9L;
+    }
+    public static int TokenStatistics() {
+        return (int)10L;
+    }
+    public static int TokenRestrictedSids() {
+        return (int)11L;
+    }
+    public static int TokenSessionId() {
+        return (int)12L;
+    }
+    public static int TokenGroupsAndPrivileges() {
+        return (int)13L;
+    }
+    public static int TokenSessionReference() {
+        return (int)14L;
+    }
+    public static int TokenSandBoxInert() {
+        return (int)15L;
+    }
+    public static int TokenAuditPolicy() {
+        return (int)16L;
+    }
+    public static int TokenOrigin() {
+        return (int)17L;
+    }
+    public static int TokenElevationType() {
+        return (int)18L;
+    }
+    public static int TokenLinkedToken() {
+        return (int)19L;
+    }
+    public static int TokenElevation() {
+        return (int)20L;
+    }
+    public static int TokenHasRestrictions() {
+        return (int)21L;
+    }
+    public static int TokenAccessInformation() {
+        return (int)22L;
+    }
+    public static int TokenVirtualizationAllowed() {
+        return (int)23L;
+    }
+    public static int TokenVirtualizationEnabled() {
+        return (int)24L;
+    }
+    public static int TokenIntegrityLevel() {
+        return (int)25L;
+    }
+    public static int TokenUIAccess() {
+        return (int)26L;
+    }
+    public static int TokenMandatoryPolicy() {
+        return (int)27L;
+    }
+    public static int TokenLogonSid() {
+        return (int)28L;
+    }
+    public static int TokenIsAppContainer() {
+        return (int)29L;
+    }
+    public static int TokenCapabilities() {
+        return (int)30L;
+    }
+    public static int TokenAppContainerSid() {
+        return (int)31L;
+    }
+    public static int TokenAppContainerNumber() {
+        return (int)32L;
+    }
+    public static int TokenUserClaimAttributes() {
+        return (int)33L;
+    }
+    public static int TokenDeviceClaimAttributes() {
+        return (int)34L;
+    }
+    public static int TokenRestrictedUserClaimAttributes() {
+        return (int)35L;
+    }
+    public static int TokenRestrictedDeviceClaimAttributes() {
+        return (int)36L;
+    }
+    public static int TokenDeviceGroups() {
+        return (int)37L;
+    }
+    public static int TokenRestrictedDeviceGroups() {
+        return (int)38L;
+    }
+    public static int TokenSecurityAttributes() {
+        return (int)39L;
+    }
+    public static int TokenIsRestricted() {
+        return (int)40L;
+    }
+    public static int TokenProcessTrustLevel() {
+        return (int)41L;
+    }
+    public static int TokenPrivateNameSpace() {
+        return (int)42L;
+    }
+    public static int TokenSingletonAttributes() {
+        return (int)43L;
+    }
+    public static int TokenBnoIsolation() {
+        return (int)44L;
+    }
+    public static int TokenChildProcessFlags() {
+        return (int)45L;
+    }
+    public static int TokenIsLessPrivilegedAppContainer() {
+        return (int)46L;
+    }
+    public static int TokenIsSandboxed() {
+        return (int)47L;
+    }
+    public static int TokenOriginatingProcessTrustLevel() {
+        return (int)48L;
+    }
+    public static int MaxTokenInfoClass() {
+        return (int)49L;
+    }
+    public static OfAddress PTOKEN_INFORMATION_CLASS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_USER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_GROUPS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_PRIVILEGES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_OWNER = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_PRIMARY_GROUP = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_DEFAULT_DACL = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_USER_CLAIMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_DEVICE_CLAIMS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_GROUPS_AND_PRIVILEGES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_LINKED_TOKEN = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_ELEVATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_MANDATORY_LABEL = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_MANDATORY_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSECURITY_ATTRIBUTES_OPAQUE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_ACCESS_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_AUDIT_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_SOURCE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_STATISTICS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_CONTROL = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_ORIGIN = Constants$root.C_POINTER$LAYOUT;
+    public static int MandatoryLevelUntrusted() {
+        return (int)0L;
+    }
+    public static int MandatoryLevelLow() {
+        return (int)1L;
+    }
+    public static int MandatoryLevelMedium() {
+        return (int)2L;
+    }
+    public static int MandatoryLevelHigh() {
+        return (int)3L;
+    }
+    public static int MandatoryLevelSystem() {
+        return (int)4L;
+    }
+    public static int MandatoryLevelSecureProcess() {
+        return (int)5L;
+    }
+    public static int MandatoryLevelCount() {
+        return (int)6L;
+    }
+    public static OfAddress PMANDATORY_LEVEL = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_APPCONTAINER_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_SID_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PTOKEN_BNO_ISOLATION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCLAIM_SECURITY_ATTRIBUTE_FQBN_VALUE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCLAIM_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCLAIM_SECURITY_ATTRIBUTE_V1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCLAIM_SECURITY_ATTRIBUTE_RELATIVE_V1 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCLAIM_SECURITY_ATTRIBUTES_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSECURITY_CONTEXT_TRACKING_MODE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSECURITY_QUALITY_OF_SERVICE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSE_IMPERSONATION_STATE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSECURITY_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PSE_SIGNING_LEVEL = Constants$root.C_POINTER$LAYOUT;
+    public static int SeImageSignatureNone() {
+        return (int)0L;
+    }
+    public static int SeImageSignatureEmbedded() {
+        return (int)1L;
+    }
+    public static int SeImageSignatureCache() {
+        return (int)2L;
+    }
+    public static int SeImageSignatureCatalogCached() {
+        return (int)3L;
+    }
+    public static int SeImageSignatureCatalogNotCached() {
+        return (int)4L;
+    }
+    public static int SeImageSignatureCatalogHint() {
+        return (int)5L;
+    }
+    public static int SeImageSignaturePackageCatalog() {
+        return (int)6L;
+    }
+    public static OfAddress PSE_IMAGE_SIGNATURE_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static int SeLearningModeInvalidType() {
+        return (int)0L;
+    }
+    public static int SeLearningModeSettings() {
+        return (int)1L;
+    }
+    public static int SeLearningModeMax() {
+        return (int)2L;
+    }
+    public static OfAddress PSECURITY_CAPABILITIES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPSECURITY_CAPABILITIES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOB_SET_ARRAY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PEXCEPTION_REGISTRATION_RECORD = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNT_TIB = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNT_TIB32 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PNT_TIB64 = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PUMS_CREATE_THREAD_ATTRIBUTES = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_DYNAMIC_EH_CONTINUATION_TARGET = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_DYNAMIC_EH_CONTINUATION_TARGETS_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_DYNAMIC_ENFORCED_ADDRESS_RANGES_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PQUOTA_LIMITS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PRATE_QUOTA_LIMIT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PQUOTA_LIMITS_EX = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PIO_COUNTERS = Constants$root.C_POINTER$LAYOUT;
+    public static int PMCCounter() {
+        return (int)0L;
+    }
+    public static int MaxHardwareCounterType() {
+        return (int)1L;
+    }
+    public static OfAddress PHARDWARE_COUNTER_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static int ProcessDEPPolicy() {
+        return (int)0L;
+    }
+    public static int ProcessASLRPolicy() {
+        return (int)1L;
+    }
+    public static int ProcessDynamicCodePolicy() {
+        return (int)2L;
+    }
+    public static int ProcessStrictHandleCheckPolicy() {
+        return (int)3L;
+    }
+    public static int ProcessSystemCallDisablePolicy() {
+        return (int)4L;
+    }
+    public static int ProcessMitigationOptionsMask() {
+        return (int)5L;
+    }
+    public static int ProcessExtensionPointDisablePolicy() {
+        return (int)6L;
+    }
+    public static int ProcessControlFlowGuardPolicy() {
+        return (int)7L;
+    }
+    public static int ProcessSignaturePolicy() {
+        return (int)8L;
+    }
+    public static int ProcessFontDisablePolicy() {
+        return (int)9L;
+    }
+    public static int ProcessImageLoadPolicy() {
+        return (int)10L;
+    }
+    public static int ProcessSystemCallFilterPolicy() {
+        return (int)11L;
+    }
+    public static int ProcessPayloadRestrictionPolicy() {
+        return (int)12L;
+    }
+    public static int ProcessChildProcessPolicy() {
+        return (int)13L;
+    }
+    public static int ProcessSideChannelIsolationPolicy() {
+        return (int)14L;
+    }
+    public static int ProcessUserShadowStackPolicy() {
+        return (int)15L;
+    }
+    public static int MaxProcessMitigationPolicy() {
+        return (int)16L;
+    }
+    public static OfAddress PPROCESS_MITIGATION_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_ASLR_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_DEP_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_STRICT_HANDLE_CHECK_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_SYSTEM_CALL_DISABLE_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_EXTENSION_POINT_DISABLE_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_DYNAMIC_CODE_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_CONTROL_FLOW_GUARD_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_BINARY_SIGNATURE_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_FONT_DISABLE_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_IMAGE_LOAD_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_SYSTEM_CALL_FILTER_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_CHILD_PROCESS_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_SIDE_CHANNEL_ISOLATION_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MITIGATION_USER_SHADOW_STACK_POLICY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_BASIC_ACCOUNTING_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_BASIC_LIMIT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_EXTENDED_LIMIT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_BASIC_PROCESS_ID_LIST = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_BASIC_UI_RESTRICTIONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_SECURITY_LIMIT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_END_OF_JOB_TIME_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_ASSOCIATE_COMPLETION_PORT = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_BASIC_AND_IO_ACCOUNTING_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_JOBSET_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static int ToleranceLow() {
+        return (int)1L;
+    }
+    public static int ToleranceMedium() {
+        return (int)2L;
+    }
+    public static int ToleranceHigh() {
+        return (int)3L;
+    }
+    public static OfAddress PJOBOBJECT_RATE_CONTROL_TOLERANCE = Constants$root.C_POINTER$LAYOUT;
+    public static int ToleranceIntervalShort() {
+        return (int)1L;
+    }
+    public static int ToleranceIntervalMedium() {
+        return (int)2L;
+    }
+    public static int ToleranceIntervalLong() {
+        return (int)3L;
+    }
+    public static OfAddress PJOBOBJECT_RATE_CONTROL_TOLERANCE_INTERVAL = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_NOTIFICATION_LIMIT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_LIMIT_VIOLATION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PJOBOBJECT_CPU_RATE_CONTROL_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static int JOB_OBJECT_NET_RATE_CONTROL_ENABLE() {
+        return (int)1L;
+    }
+    public static int JOB_OBJECT_NET_RATE_CONTROL_MAX_BANDWIDTH() {
+        return (int)2L;
+    }
+    public static int JOB_OBJECT_NET_RATE_CONTROL_DSCP_TAG() {
+        return (int)4L;
+    }
+    public static int JOB_OBJECT_NET_RATE_CONTROL_VALID_FLAGS() {
+        return (int)7L;
+    }
+    public static int JOB_OBJECT_IO_RATE_CONTROL_ENABLE() {
+        return (int)1L;
+    }
+    public static int JOB_OBJECT_IO_RATE_CONTROL_STANDALONE_VOLUME() {
+        return (int)2L;
+    }
+    public static int JOB_OBJECT_IO_RATE_CONTROL_FORCE_UNIT_ACCESS_ALL() {
+        return (int)4L;
+    }
+    public static int JOB_OBJECT_IO_RATE_CONTROL_FORCE_UNIT_ACCESS_ON_SOFT_CAP() {
+        return (int)8L;
+    }
+    public static int JOB_OBJECT_IO_RATE_CONTROL_VALID_FLAGS() {
+        return (int)15L;
+    }
+    public static int JOBOBJECT_IO_ATTRIBUTION_CONTROL_ENABLE() {
+        return (int)1L;
+    }
     public static int JOBOBJECT_IO_ATTRIBUTION_CONTROL_DISABLE() {
         return (int)2L;
     }
@@ -1414,1454 +3088,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int MonitorRequestReasonSystemIdle() {
         return (int)21L;
-    }
-    public static int MonitorRequestReasonNearProximity() {
-        return (int)22L;
-    }
-    public static int MonitorRequestReasonThermalStandby() {
-        return (int)23L;
-    }
-    public static int MonitorRequestReasonResumePdc() {
-        return (int)24L;
-    }
-    public static int MonitorRequestReasonResumeS4() {
-        return (int)25L;
-    }
-    public static int MonitorRequestReasonTerminal() {
-        return (int)26L;
-    }
-    public static int MonitorRequestReasonPdcSignal() {
-        return (int)27L;
-    }
-    public static int MonitorRequestReasonAcDcDisplayBurstSuppressed() {
-        return (int)28L;
-    }
-    public static int MonitorRequestReasonSystemStateEntered() {
-        return (int)29L;
-    }
-    public static int MonitorRequestReasonWinrt() {
-        return (int)30L;
-    }
-    public static int MonitorRequestReasonUserInputKeyboard() {
-        return (int)31L;
-    }
-    public static int MonitorRequestReasonUserInputMouse() {
-        return (int)32L;
-    }
-    public static int MonitorRequestReasonUserInputTouch() {
-        return (int)33L;
-    }
-    public static int MonitorRequestReasonUserInputPen() {
-        return (int)34L;
-    }
-    public static int MonitorRequestReasonUserInputAccelerometer() {
-        return (int)35L;
-    }
-    public static int MonitorRequestReasonUserInputHid() {
-        return (int)36L;
-    }
-    public static int MonitorRequestReasonUserInputPoUserPresent() {
-        return (int)37L;
-    }
-    public static int MonitorRequestReasonUserInputSessionSwitch() {
-        return (int)38L;
-    }
-    public static int MonitorRequestReasonUserInputInitialization() {
-        return (int)39L;
-    }
-    public static int MonitorRequestReasonPdcSignalWindowsMobilePwrNotif() {
-        return (int)40L;
-    }
-    public static int MonitorRequestReasonPdcSignalWindowsMobileShell() {
-        return (int)41L;
-    }
-    public static int MonitorRequestReasonPdcSignalHeyCortana() {
-        return (int)42L;
-    }
-    public static int MonitorRequestReasonPdcSignalHolographicShell() {
-        return (int)43L;
-    }
-    public static int MonitorRequestReasonPdcSignalFingerprint() {
-        return (int)44L;
-    }
-    public static int MonitorRequestReasonDirectedDrips() {
-        return (int)45L;
-    }
-    public static int MonitorRequestReasonDim() {
-        return (int)46L;
-    }
-    public static int MonitorRequestReasonBuiltinPanel() {
-        return (int)47L;
-    }
-    public static int MonitorRequestReasonDisplayRequiredUnDim() {
-        return (int)48L;
-    }
-    public static int MonitorRequestReasonBatteryCountChangeSuppressed() {
-        return (int)49L;
-    }
-    public static int MonitorRequestReasonResumeModernStandby() {
-        return (int)50L;
-    }
-    public static int MonitorRequestReasonMax() {
-        return (int)51L;
-    }
-    public static int MonitorRequestTypeOff() {
-        return (int)0L;
-    }
-    public static int MonitorRequestTypeOnAndPresent() {
-        return (int)1L;
-    }
-    public static int MonitorRequestTypeToggleOn() {
-        return (int)2L;
-    }
-    public static OfAddress PPOWER_MONITOR_INVOCATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRESUME_PERFORMANCE = Constants$root.C_POINTER$LAYOUT;
-    public static int PoAc() {
-        return (int)0L;
-    }
-    public static int PoDc() {
-        return (int)1L;
-    }
-    public static int PoHot() {
-        return (int)2L;
-    }
-    public static int PoConditionMaximum() {
-        return (int)3L;
-    }
-    public static OfAddress PSET_POWER_SETTING_VALUE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PNOTIFY_USER_POWER_SETTING = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PAPPLICATIONLAUNCH_SETTING_VALUE = Constants$root.C_POINTER$LAYOUT;
-    public static int PlatformRoleUnspecified() {
-        return (int)0L;
-    }
-    public static int PlatformRoleDesktop() {
-        return (int)1L;
-    }
-    public static int PlatformRoleMobile() {
-        return (int)2L;
-    }
-    public static int PlatformRoleWorkstation() {
-        return (int)3L;
-    }
-    public static int PlatformRoleEnterpriseServer() {
-        return (int)4L;
-    }
-    public static int PlatformRoleSOHOServer() {
-        return (int)5L;
-    }
-    public static int PlatformRoleAppliancePC() {
-        return (int)6L;
-    }
-    public static int PlatformRolePerformanceServer() {
-        return (int)7L;
-    }
-    public static int PlatformRoleSlate() {
-        return (int)8L;
-    }
-    public static int PlatformRoleMaximum() {
-        return (int)9L;
-    }
-    public static OfAddress PPOWER_PLATFORM_ROLE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPOWER_PLATFORM_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PBATTERY_REPORTING_SCALE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_WMI_LEGACY_PERFSTATE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_WMI_IDLE_STATE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_WMI_IDLE_STATES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_WMI_IDLE_STATES_EX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_WMI_PERF_STATE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_WMI_PERF_STATES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_WMI_PERF_STATES_EX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_IDLE_STATE_ACCOUNTING = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_IDLE_ACCOUNTING = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_IDLE_STATE_BUCKET_EX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_IDLE_STATE_ACCOUNTING_EX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_IDLE_ACCOUNTING_EX = Constants$root.C_POINTER$LAYOUT;
-    public static MemorySegment PPM_PERFSTATE_CHANGE_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$52.PPM_PERFSTATE_CHANGE_GUID$SEGMENT,"PPM_PERFSTATE_CHANGE_GUID");
-    }
-    public static MemorySegment PPM_PERFSTATE_DOMAIN_CHANGE_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$52.PPM_PERFSTATE_DOMAIN_CHANGE_GUID$SEGMENT,"PPM_PERFSTATE_DOMAIN_CHANGE_GUID");
-    }
-    public static MemorySegment PPM_IDLESTATE_CHANGE_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$52.PPM_IDLESTATE_CHANGE_GUID$SEGMENT,"PPM_IDLESTATE_CHANGE_GUID");
-    }
-    public static MemorySegment PPM_PERFSTATES_DATA_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$52.PPM_PERFSTATES_DATA_GUID$SEGMENT,"PPM_PERFSTATES_DATA_GUID");
-    }
-    public static MemorySegment PPM_IDLESTATES_DATA_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$52.PPM_IDLESTATES_DATA_GUID$SEGMENT,"PPM_IDLESTATES_DATA_GUID");
-    }
-    public static MemorySegment PPM_IDLE_ACCOUNTING_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$53.PPM_IDLE_ACCOUNTING_GUID$SEGMENT,"PPM_IDLE_ACCOUNTING_GUID");
-    }
-    public static MemorySegment PPM_IDLE_ACCOUNTING_EX_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$53.PPM_IDLE_ACCOUNTING_EX_GUID$SEGMENT,"PPM_IDLE_ACCOUNTING_EX_GUID");
-    }
-    public static MemorySegment PPM_THERMALCONSTRAINT_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$53.PPM_THERMALCONSTRAINT_GUID$SEGMENT,"PPM_THERMALCONSTRAINT_GUID");
-    }
-    public static MemorySegment PPM_PERFMON_PERFSTATE_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$53.PPM_PERFMON_PERFSTATE_GUID$SEGMENT,"PPM_PERFMON_PERFSTATE_GUID");
-    }
-    public static MemorySegment PPM_THERMAL_POLICY_CHANGE_GUID$SEGMENT() {
-        return RuntimeHelper.requireNonNull(constants$53.PPM_THERMAL_POLICY_CHANGE_GUID$SEGMENT,"PPM_THERMAL_POLICY_CHANGE_GUID");
-    }
-    public static OfAddress PPPM_PERFSTATE_EVENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_PERFSTATE_DOMAIN_EVENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_IDLESTATE_EVENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_THERMALCHANGE_EVENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPPM_THERMAL_POLICY_EVENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPOWER_ACTION_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_POWER_LEVEL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_POWER_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESSOR_IDLESTATE_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESSOR_IDLESTATE_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESSOR_POWER_POLICY_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESSOR_POWER_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESSOR_PERFSTATE_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PADMINISTRATOR_POWER_POLICY = Constants$root.C_POINTER$LAYOUT;
-    public static int HiberFileBucket1GB() {
-        return (int)0L;
-    }
-    public static int HiberFileBucket2GB() {
-        return (int)1L;
-    }
-    public static int HiberFileBucket4GB() {
-        return (int)2L;
-    }
-    public static int HiberFileBucket8GB() {
-        return (int)3L;
-    }
-    public static int HiberFileBucket16GB() {
-        return (int)4L;
-    }
-    public static int HiberFileBucket32GB() {
-        return (int)5L;
-    }
-    public static int HiberFileBucketUnlimited() {
-        return (int)6L;
-    }
-    public static int HiberFileBucketMax() {
-        return (int)7L;
-    }
-    public static OfAddress PHIBERFILE_BUCKET_SIZE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PHIBERFILE_BUCKET = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_POWER_CAPABILITIES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSYSTEM_BATTERY_STATE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DOS_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_OS2_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_VXD_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_FILE_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DATA_DIRECTORY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_OPTIONAL_HEADER32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ROM_OPTIONAL_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_OPTIONAL_HEADER64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_OPTIONAL_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_NT_HEADERS64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_NT_HEADERS32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ROM_HEADERS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_NT_HEADERS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_SECTION_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_SYMBOL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_SYMBOL_EX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_AUX_SYMBOL_TOKEN_DEF = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_AUX_SYMBOL = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_AUX_SYMBOL_EX = Constants$root.C_POINTER$LAYOUT;
-    public static int IMAGE_AUX_SYMBOL_TYPE_TOKEN_DEF() {
-        return (int)1L;
-    }
-    public static OfAddress PIMAGE_RELOCATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_LINENUMBER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_BASE_RELOCATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ARCHIVE_MEMBER_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_EXPORT_DIRECTORY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_IMPORT_BY_NAME = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_THUNK_DATA64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_THUNK_DATA32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_TLS_DIRECTORY64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_TLS_DIRECTORY32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_THUNK_DATA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_TLS_DIRECTORY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_IMPORT_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_BOUND_IMPORT_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_BOUND_FORWARDER_REF = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DELAYLOAD_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCIMAGE_DELAYLOAD_DESCRIPTOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_RESOURCE_DIRECTORY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_RESOURCE_DIRECTORY_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_RESOURCE_DIRECTORY_STRING = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_RESOURCE_DIR_STRING_U = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_RESOURCE_DATA_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_LOAD_CONFIG_CODE_INTEGRITY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DYNAMIC_RELOCATION_TABLE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DYNAMIC_RELOCATION32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DYNAMIC_RELOCATION64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DYNAMIC_RELOCATION32_V2 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DYNAMIC_RELOCATION64_V2 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DYNAMIC_RELOCATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DYNAMIC_RELOCATION_V2 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_PROLOGUE_DYNAMIC_RELOCATION_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_EPILOGUE_DYNAMIC_RELOCATION_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_IMPORT_CONTROL_TRANSFER_DYNAMIC_RELOCATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_INDIR_CONTROL_TRANSFER_DYNAMIC_RELOCATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_SWITCHTABLE_BRANCH_DYNAMIC_RELOCATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_LOAD_CONFIG_DIRECTORY32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_LOAD_CONFIG_DIRECTORY64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_LOAD_CONFIG_DIRECTORY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_HOT_PATCH_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_HOT_PATCH_BASE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_HOT_PATCH_HASHES = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_CE_RUNTIME_FUNCTION_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ARM_RUNTIME_FUNCTION_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static int PdataRefToFullXdata() {
-        return (int)0L;
-    }
-    public static int PdataPackedUnwindFunction() {
-        return (int)1L;
-    }
-    public static int PdataPackedUnwindFragment() {
-        return (int)2L;
-    }
-    public static int PdataCrUnchained() {
-        return (int)0L;
-    }
-    public static int PdataCrUnchainedSavedLr() {
-        return (int)1L;
-    }
-    public static int PdataCrChainedWithPac() {
-        return (int)2L;
-    }
-    public static int PdataCrChained() {
-        return (int)3L;
-    }
-    public static OfAddress PIMAGE_ARM64_RUNTIME_FUNCTION_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ALPHA64_RUNTIME_FUNCTION_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ALPHA_RUNTIME_FUNCTION_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_IA64_RUNTIME_FUNCTION_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_RUNTIME_FUNCTION_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ENCLAVE_CONFIG32 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ENCLAVE_CONFIG64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ENCLAVE_CONFIG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ENCLAVE_IMPORT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DEBUG_DIRECTORY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_COFF_SYMBOLS_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PFPO_DATA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_DEBUG_MISC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_FUNCTION_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_FUNCTION_ENTRY64 = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_SEPARATE_DEBUG_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PNON_PAGED_DEBUG_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ARCHITECTURE_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PIMAGE_ARCHITECTURE_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static int IMPORT_OBJECT_CODE() {
-        return (int)0L;
-    }
-    public static int IMPORT_OBJECT_DATA() {
-        return (int)1L;
-    }
-    public static int IMPORT_OBJECT_CONST() {
-        return (int)2L;
-    }
-    public static int IMPORT_OBJECT_ORDINAL() {
-        return (int)0L;
-    }
-    public static int IMPORT_OBJECT_NAME() {
-        return (int)1L;
-    }
-    public static int IMPORT_OBJECT_NAME_NO_PREFIX() {
-        return (int)2L;
-    }
-    public static int IMPORT_OBJECT_NAME_UNDECORATE() {
-        return (int)3L;
-    }
-    public static int IMPORT_OBJECT_NAME_EXPORTAS() {
-        return (int)4L;
-    }
-    public static int COMIMAGE_FLAGS_ILONLY() {
-        return (int)1L;
-    }
-    public static int COMIMAGE_FLAGS_32BITREQUIRED() {
-        return (int)2L;
-    }
-    public static int COMIMAGE_FLAGS_IL_LIBRARY() {
-        return (int)4L;
-    }
-    public static int COMIMAGE_FLAGS_STRONGNAMESIGNED() {
-        return (int)8L;
-    }
-    public static int COMIMAGE_FLAGS_NATIVE_ENTRYPOINT() {
-        return (int)16L;
-    }
-    public static int COMIMAGE_FLAGS_TRACKDEBUGDATA() {
-        return (int)65536L;
-    }
-    public static int COMIMAGE_FLAGS_32BITPREFERRED() {
-        return (int)131072L;
-    }
-    public static int COR_VERSION_MAJOR_V2() {
-        return (int)2L;
-    }
-    public static int COR_VERSION_MAJOR() {
-        return (int)2L;
-    }
-    public static int COR_VERSION_MINOR() {
-        return (int)5L;
-    }
-    public static int COR_DELETED_NAME_LENGTH() {
-        return (int)8L;
-    }
-    public static int COR_VTABLEGAP_NAME_LENGTH() {
-        return (int)8L;
-    }
-    public static int NATIVE_TYPE_MAX_CB() {
-        return (int)1L;
-    }
-    public static int COR_ILMETHOD_SECT_SMALL_MAX_DATASIZE() {
-        return (int)255L;
-    }
-    public static int IMAGE_COR_MIH_METHODRVA() {
-        return (int)1L;
-    }
-    public static int IMAGE_COR_MIH_EHRVA() {
-        return (int)2L;
-    }
-    public static int IMAGE_COR_MIH_BASICBLOCK() {
-        return (int)8L;
-    }
-    public static int COR_VTABLE_32BIT() {
-        return (int)1L;
-    }
-    public static int COR_VTABLE_64BIT() {
-        return (int)2L;
-    }
-    public static int COR_VTABLE_FROM_UNMANAGED() {
-        return (int)4L;
-    }
-    public static int COR_VTABLE_FROM_UNMANAGED_RETAIN_APPDOMAIN() {
-        return (int)8L;
-    }
-    public static int COR_VTABLE_CALL_MOST_DERIVED() {
-        return (int)16L;
-    }
-    public static int IMAGE_COR_EATJ_THUNK_SIZE() {
-        return (int)32L;
-    }
-    public static int MAX_CLASS_NAME() {
-        return (int)1024L;
-    }
-    public static int MAX_PACKAGE_NAME() {
-        return (int)1024L;
-    }
-    public static OfAddress PIMAGE_COR20_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RtlCaptureStackBackTrace$MH() {
-        return RuntimeHelper.requireNonNull(constants$54.RtlCaptureStackBackTrace$MH,"RtlCaptureStackBackTrace");
-    }
-    public static short RtlCaptureStackBackTrace ( int FramesToSkip,  int FramesToCapture,  Addressable BackTrace,  Addressable BackTraceHash) {
-        var mh$ = RtlCaptureStackBackTrace$MH();
-        try {
-            return (short)mh$.invokeExact(FramesToSkip, FramesToCapture, BackTrace, BackTraceHash);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlCaptureContext$MH() {
-        return RuntimeHelper.requireNonNull(constants$54.RtlCaptureContext$MH,"RtlCaptureContext");
-    }
-    public static void RtlCaptureContext ( Addressable ContextRecord) {
-        var mh$ = RtlCaptureContext$MH();
-        try {
-            mh$.invokeExact(ContextRecord);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlCaptureContext2$MH() {
-        return RuntimeHelper.requireNonNull(constants$54.RtlCaptureContext2$MH,"RtlCaptureContext2");
-    }
-    public static void RtlCaptureContext2 ( Addressable ContextRecord) {
-        var mh$ = RtlCaptureContext2$MH();
-        try {
-            mh$.invokeExact(ContextRecord);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlUnwind$MH() {
-        return RuntimeHelper.requireNonNull(constants$54.RtlUnwind$MH,"RtlUnwind");
-    }
-    public static void RtlUnwind ( Addressable TargetFrame,  Addressable TargetIp,  Addressable ExceptionRecord,  Addressable ReturnValue) {
-        var mh$ = RtlUnwind$MH();
-        try {
-            mh$.invokeExact(TargetFrame, TargetIp, ExceptionRecord, ReturnValue);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlAddFunctionTable$MH() {
-        return RuntimeHelper.requireNonNull(constants$54.RtlAddFunctionTable$MH,"RtlAddFunctionTable");
-    }
-    public static byte RtlAddFunctionTable ( Addressable FunctionTable,  int EntryCount,  long BaseAddress) {
-        var mh$ = RtlAddFunctionTable$MH();
-        try {
-            return (byte)mh$.invokeExact(FunctionTable, EntryCount, BaseAddress);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlDeleteFunctionTable$MH() {
-        return RuntimeHelper.requireNonNull(constants$55.RtlDeleteFunctionTable$MH,"RtlDeleteFunctionTable");
-    }
-    public static byte RtlDeleteFunctionTable ( Addressable FunctionTable) {
-        var mh$ = RtlDeleteFunctionTable$MH();
-        try {
-            return (byte)mh$.invokeExact(FunctionTable);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlInstallFunctionTableCallback$MH() {
-        return RuntimeHelper.requireNonNull(constants$55.RtlInstallFunctionTableCallback$MH,"RtlInstallFunctionTableCallback");
-    }
-    public static byte RtlInstallFunctionTableCallback ( long TableIdentifier,  long BaseAddress,  int Length,  Addressable Callback,  Addressable Context,  Addressable OutOfProcessCallbackDll) {
-        var mh$ = RtlInstallFunctionTableCallback$MH();
-        try {
-            return (byte)mh$.invokeExact(TableIdentifier, BaseAddress, Length, Callback, Context, OutOfProcessCallbackDll);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlAddGrowableFunctionTable$MH() {
-        return RuntimeHelper.requireNonNull(constants$55.RtlAddGrowableFunctionTable$MH,"RtlAddGrowableFunctionTable");
-    }
-    public static int RtlAddGrowableFunctionTable ( Addressable DynamicTable,  Addressable FunctionTable,  int EntryCount,  int MaximumEntryCount,  long RangeBase,  long RangeEnd) {
-        var mh$ = RtlAddGrowableFunctionTable$MH();
-        try {
-            return (int)mh$.invokeExact(DynamicTable, FunctionTable, EntryCount, MaximumEntryCount, RangeBase, RangeEnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlGrowFunctionTable$MH() {
-        return RuntimeHelper.requireNonNull(constants$55.RtlGrowFunctionTable$MH,"RtlGrowFunctionTable");
-    }
-    public static void RtlGrowFunctionTable ( Addressable DynamicTable,  int NewEntryCount) {
-        var mh$ = RtlGrowFunctionTable$MH();
-        try {
-            mh$.invokeExact(DynamicTable, NewEntryCount);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlDeleteGrowableFunctionTable$MH() {
-        return RuntimeHelper.requireNonNull(constants$55.RtlDeleteGrowableFunctionTable$MH,"RtlDeleteGrowableFunctionTable");
-    }
-    public static void RtlDeleteGrowableFunctionTable ( Addressable DynamicTable) {
-        var mh$ = RtlDeleteGrowableFunctionTable$MH();
-        try {
-            mh$.invokeExact(DynamicTable);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlLookupFunctionEntry$MH() {
-        return RuntimeHelper.requireNonNull(constants$55.RtlLookupFunctionEntry$MH,"RtlLookupFunctionEntry");
-    }
-    public static MemoryAddress RtlLookupFunctionEntry ( long ControlPc,  Addressable ImageBase,  Addressable HistoryTable) {
-        var mh$ = RtlLookupFunctionEntry$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(ControlPc, ImageBase, HistoryTable);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlRestoreContext$MH() {
-        return RuntimeHelper.requireNonNull(constants$56.RtlRestoreContext$MH,"RtlRestoreContext");
-    }
-    public static void RtlRestoreContext ( Addressable ContextRecord,  Addressable ExceptionRecord) {
-        var mh$ = RtlRestoreContext$MH();
-        try {
-            mh$.invokeExact(ContextRecord, ExceptionRecord);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlUnwindEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$56.RtlUnwindEx$MH,"RtlUnwindEx");
-    }
-    public static void RtlUnwindEx ( Addressable TargetFrame,  Addressable TargetIp,  Addressable ExceptionRecord,  Addressable ReturnValue,  Addressable ContextRecord,  Addressable HistoryTable) {
-        var mh$ = RtlUnwindEx$MH();
-        try {
-            mh$.invokeExact(TargetFrame, TargetIp, ExceptionRecord, ReturnValue, ContextRecord, HistoryTable);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlVirtualUnwind$MH() {
-        return RuntimeHelper.requireNonNull(constants$56.RtlVirtualUnwind$MH,"RtlVirtualUnwind");
-    }
-    public static MemoryAddress RtlVirtualUnwind ( int HandlerType,  long ImageBase,  long ControlPc,  Addressable FunctionEntry,  Addressable ContextRecord,  Addressable HandlerData,  Addressable EstablisherFrame,  Addressable ContextPointers) {
-        var mh$ = RtlVirtualUnwind$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(HandlerType, ImageBase, ControlPc, FunctionEntry, ContextRecord, HandlerData, EstablisherFrame, ContextPointers);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlRaiseException$MH() {
-        return RuntimeHelper.requireNonNull(constants$56.RtlRaiseException$MH,"RtlRaiseException");
-    }
-    public static void RtlRaiseException ( Addressable ExceptionRecord) {
-        var mh$ = RtlRaiseException$MH();
-        try {
-            mh$.invokeExact(ExceptionRecord);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlPcToFileHeader$MH() {
-        return RuntimeHelper.requireNonNull(constants$56.RtlPcToFileHeader$MH,"RtlPcToFileHeader");
-    }
-    public static MemoryAddress RtlPcToFileHeader ( Addressable PcValue,  Addressable BaseOfImage) {
-        var mh$ = RtlPcToFileHeader$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(PcValue, BaseOfImage);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlCompareMemory$MH() {
-        return RuntimeHelper.requireNonNull(constants$56.RtlCompareMemory$MH,"RtlCompareMemory");
-    }
-    public static long RtlCompareMemory ( Addressable Source1,  Addressable Source2,  long Length) {
-        var mh$ = RtlCompareMemory$MH();
-        try {
-            return (long)mh$.invokeExact(Source1, Source2, Length);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PSLIST_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSLIST_HEADER = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RtlInitializeSListHead$MH() {
-        return RuntimeHelper.requireNonNull(constants$57.RtlInitializeSListHead$MH,"RtlInitializeSListHead");
-    }
-    public static void RtlInitializeSListHead ( Addressable ListHead) {
-        var mh$ = RtlInitializeSListHead$MH();
-        try {
-            mh$.invokeExact(ListHead);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlFirstEntrySList$MH() {
-        return RuntimeHelper.requireNonNull(constants$57.RtlFirstEntrySList$MH,"RtlFirstEntrySList");
-    }
-    public static MemoryAddress RtlFirstEntrySList ( Addressable ListHead) {
-        var mh$ = RtlFirstEntrySList$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(ListHead);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlInterlockedPopEntrySList$MH() {
-        return RuntimeHelper.requireNonNull(constants$57.RtlInterlockedPopEntrySList$MH,"RtlInterlockedPopEntrySList");
-    }
-    public static MemoryAddress RtlInterlockedPopEntrySList ( Addressable ListHead) {
-        var mh$ = RtlInterlockedPopEntrySList$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(ListHead);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlInterlockedPushEntrySList$MH() {
-        return RuntimeHelper.requireNonNull(constants$57.RtlInterlockedPushEntrySList$MH,"RtlInterlockedPushEntrySList");
-    }
-    public static MemoryAddress RtlInterlockedPushEntrySList ( Addressable ListHead,  Addressable ListEntry) {
-        var mh$ = RtlInterlockedPushEntrySList$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(ListHead, ListEntry);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlInterlockedPushListSListEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$57.RtlInterlockedPushListSListEx$MH,"RtlInterlockedPushListSListEx");
-    }
-    public static MemoryAddress RtlInterlockedPushListSListEx ( Addressable ListHead,  Addressable List,  Addressable ListEnd,  int Count) {
-        var mh$ = RtlInterlockedPushListSListEx$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(ListHead, List, ListEnd, Count);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlInterlockedFlushSList$MH() {
-        return RuntimeHelper.requireNonNull(constants$57.RtlInterlockedFlushSList$MH,"RtlInterlockedFlushSList");
-    }
-    public static MemoryAddress RtlInterlockedFlushSList ( Addressable ListHead) {
-        var mh$ = RtlInterlockedFlushSList$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(ListHead);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlQueryDepthSList$MH() {
-        return RuntimeHelper.requireNonNull(constants$58.RtlQueryDepthSList$MH,"RtlQueryDepthSList");
-    }
-    public static short RtlQueryDepthSList ( Addressable ListHead) {
-        var mh$ = RtlQueryDepthSList$MH();
-        try {
-            return (short)mh$.invokeExact(ListHead);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlGetReturnAddressHijackTarget$MH() {
-        return RuntimeHelper.requireNonNull(constants$58.RtlGetReturnAddressHijackTarget$MH,"RtlGetReturnAddressHijackTarget");
-    }
-    public static long RtlGetReturnAddressHijackTarget () {
-        var mh$ = RtlGetReturnAddressHijackTarget$MH();
-        try {
-            return (long)mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PRTL_RUN_ONCE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRTL_BARRIER = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle HEAP_MAKE_TAG_FLAGS$MH() {
-        return RuntimeHelper.requireNonNull(constants$58.HEAP_MAKE_TAG_FLAGS$MH,"HEAP_MAKE_TAG_FLAGS");
-    }
-    public static int HEAP_MAKE_TAG_FLAGS ( int TagBase,  int Tag) {
-        var mh$ = HEAP_MAKE_TAG_FLAGS$MH();
-        try {
-            return (int)mh$.invokeExact(TagBase, Tag);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlSecureZeroMemory$MH() {
-        return RuntimeHelper.requireNonNull(constants$58.RtlSecureZeroMemory$MH,"RtlSecureZeroMemory");
-    }
-    public static MemoryAddress RtlSecureZeroMemory ( Addressable ptr,  long cnt) {
-        var mh$ = RtlSecureZeroMemory$MH();
-        try {
-            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(ptr, cnt);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PMESSAGE_RESOURCE_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMESSAGE_RESOURCE_BLOCK = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMESSAGE_RESOURCE_DATA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress POSVERSIONINFOA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPOSVERSIONINFOA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress POSVERSIONINFOW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPOSVERSIONINFOW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRTL_OSVERSIONINFOW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress POSVERSIONINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPOSVERSIONINFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress POSVERSIONINFOEXA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPOSVERSIONINFOEXA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress POSVERSIONINFOEXW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPOSVERSIONINFOEXW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRTL_OSVERSIONINFOEXW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress POSVERSIONINFOEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPOSVERSIONINFOEX = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle VerSetConditionMask$MH() {
-        return RuntimeHelper.requireNonNull(constants$58.VerSetConditionMask$MH,"VerSetConditionMask");
-    }
-    public static long VerSetConditionMask ( long ConditionMask,  int TypeMask,  byte Condition) {
-        var mh$ = VerSetConditionMask$MH();
-        try {
-            return (long)mh$.invokeExact(ConditionMask, TypeMask, Condition);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlGetProductInfo$MH() {
-        return RuntimeHelper.requireNonNull(constants$58.RtlGetProductInfo$MH,"RtlGetProductInfo");
-    }
-    public static byte RtlGetProductInfo ( int OSMajorVersion,  int OSMinorVersion,  int SpMajorVersion,  int SpMinorVersion,  Addressable ReturnedProductType) {
-        var mh$ = RtlGetProductInfo$MH();
-        try {
-            return (byte)mh$.invokeExact(OSMajorVersion, OSMinorVersion, SpMajorVersion, SpMinorVersion, ReturnedProductType);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static int UmsThreadInvalidInfoClass() {
-        return (int)0L;
-    }
-    public static int UmsThreadUserContext() {
-        return (int)1L;
-    }
-    public static int UmsThreadPriority() {
-        return (int)2L;
-    }
-    public static int UmsThreadAffinity() {
-        return (int)3L;
-    }
-    public static int UmsThreadTeb() {
-        return (int)4L;
-    }
-    public static int UmsThreadIsSuspended() {
-        return (int)5L;
-    }
-    public static int UmsThreadIsTerminated() {
-        return (int)6L;
-    }
-    public static int UmsThreadMaxInfoClass() {
-        return (int)7L;
-    }
-    public static OfAddress PRTL_UMS_THREAD_INFO_CLASS = Constants$root.C_POINTER$LAYOUT;
-    public static int UmsSchedulerStartup() {
-        return (int)0L;
-    }
-    public static int UmsSchedulerThreadBlocked() {
-        return (int)1L;
-    }
-    public static int UmsSchedulerThreadYield() {
-        return (int)2L;
-    }
-    public static OfAddress PRTL_UMS_SCHEDULER_REASON = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RtlCrc32$MH() {
-        return RuntimeHelper.requireNonNull(constants$59.RtlCrc32$MH,"RtlCrc32");
-    }
-    public static int RtlCrc32 ( Addressable Buffer,  long Size,  int InitialCrc) {
-        var mh$ = RtlCrc32$MH();
-        try {
-            return (int)mh$.invokeExact(Buffer, Size, InitialCrc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlCrc64$MH() {
-        return RuntimeHelper.requireNonNull(constants$59.RtlCrc64$MH,"RtlCrc64");
-    }
-    public static long RtlCrc64 ( Addressable Buffer,  long Size,  long InitialCrc) {
-        var mh$ = RtlCrc64$MH();
-        try {
-            return (long)mh$.invokeExact(Buffer, Size, InitialCrc);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static int OS_DEPLOYMENT_STANDARD() {
-        return (int)1L;
-    }
-    public static int OS_DEPLOYMENT_COMPACT() {
-        return (int)2L;
-    }
-    public static MethodHandle RtlOsDeploymentState$MH() {
-        return RuntimeHelper.requireNonNull(constants$60.RtlOsDeploymentState$MH,"RtlOsDeploymentState");
-    }
-    public static int RtlOsDeploymentState ( int Flags) {
-        var mh$ = RtlOsDeploymentState$MH();
-        try {
-            return (int)mh$.invokeExact(Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PNV_MEMORY_RANGE = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RtlGetNonVolatileToken$MH() {
-        return RuntimeHelper.requireNonNull(constants$60.RtlGetNonVolatileToken$MH,"RtlGetNonVolatileToken");
-    }
-    public static int RtlGetNonVolatileToken ( Addressable NvBuffer,  long Size,  Addressable NvToken) {
-        var mh$ = RtlGetNonVolatileToken$MH();
-        try {
-            return (int)mh$.invokeExact(NvBuffer, Size, NvToken);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlFreeNonVolatileToken$MH() {
-        return RuntimeHelper.requireNonNull(constants$60.RtlFreeNonVolatileToken$MH,"RtlFreeNonVolatileToken");
-    }
-    public static int RtlFreeNonVolatileToken ( Addressable NvToken) {
-        var mh$ = RtlFreeNonVolatileToken$MH();
-        try {
-            return (int)mh$.invokeExact(NvToken);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlFlushNonVolatileMemory$MH() {
-        return RuntimeHelper.requireNonNull(constants$60.RtlFlushNonVolatileMemory$MH,"RtlFlushNonVolatileMemory");
-    }
-    public static int RtlFlushNonVolatileMemory ( Addressable NvToken,  Addressable NvBuffer,  long Size,  int Flags) {
-        var mh$ = RtlFlushNonVolatileMemory$MH();
-        try {
-            return (int)mh$.invokeExact(NvToken, NvBuffer, Size, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlDrainNonVolatileFlush$MH() {
-        return RuntimeHelper.requireNonNull(constants$60.RtlDrainNonVolatileFlush$MH,"RtlDrainNonVolatileFlush");
-    }
-    public static int RtlDrainNonVolatileFlush ( Addressable NvToken) {
-        var mh$ = RtlDrainNonVolatileFlush$MH();
-        try {
-            return (int)mh$.invokeExact(NvToken);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlWriteNonVolatileMemory$MH() {
-        return RuntimeHelper.requireNonNull(constants$60.RtlWriteNonVolatileMemory$MH,"RtlWriteNonVolatileMemory");
-    }
-    public static int RtlWriteNonVolatileMemory ( Addressable NvToken,  Addressable NvDestination,  Addressable Source,  long Size,  int Flags) {
-        var mh$ = RtlWriteNonVolatileMemory$MH();
-        try {
-            return (int)mh$.invokeExact(NvToken, NvDestination, Source, Size, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlFillNonVolatileMemory$MH() {
-        return RuntimeHelper.requireNonNull(constants$61.RtlFillNonVolatileMemory$MH,"RtlFillNonVolatileMemory");
-    }
-    public static int RtlFillNonVolatileMemory ( Addressable NvToken,  Addressable NvDestination,  long Size,  byte Value,  int Flags) {
-        var mh$ = RtlFillNonVolatileMemory$MH();
-        try {
-            return (int)mh$.invokeExact(NvToken, NvDestination, Size, Value, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlFlushNonVolatileMemoryRanges$MH() {
-        return RuntimeHelper.requireNonNull(constants$61.RtlFlushNonVolatileMemoryRanges$MH,"RtlFlushNonVolatileMemoryRanges");
-    }
-    public static int RtlFlushNonVolatileMemoryRanges ( Addressable NvToken,  Addressable NvRanges,  long NumRanges,  int Flags) {
-        var mh$ = RtlFlushNonVolatileMemoryRanges$MH();
-        try {
-            return (int)mh$.invokeExact(NvToken, NvRanges, NumRanges, Flags);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PCORRELATION_VECTOR = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RtlInitializeCorrelationVector$MH() {
-        return RuntimeHelper.requireNonNull(constants$61.RtlInitializeCorrelationVector$MH,"RtlInitializeCorrelationVector");
-    }
-    public static int RtlInitializeCorrelationVector ( Addressable CorrelationVector,  int Version,  Addressable Guid) {
-        var mh$ = RtlInitializeCorrelationVector$MH();
-        try {
-            return (int)mh$.invokeExact(CorrelationVector, Version, Guid);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlIncrementCorrelationVector$MH() {
-        return RuntimeHelper.requireNonNull(constants$61.RtlIncrementCorrelationVector$MH,"RtlIncrementCorrelationVector");
-    }
-    public static int RtlIncrementCorrelationVector ( Addressable CorrelationVector) {
-        var mh$ = RtlIncrementCorrelationVector$MH();
-        try {
-            return (int)mh$.invokeExact(CorrelationVector);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlExtendCorrelationVector$MH() {
-        return RuntimeHelper.requireNonNull(constants$61.RtlExtendCorrelationVector$MH,"RtlExtendCorrelationVector");
-    }
-    public static int RtlExtendCorrelationVector ( Addressable CorrelationVector) {
-        var mh$ = RtlExtendCorrelationVector$MH();
-        try {
-            return (int)mh$.invokeExact(CorrelationVector);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlValidateCorrelationVector$MH() {
-        return RuntimeHelper.requireNonNull(constants$61.RtlValidateCorrelationVector$MH,"RtlValidateCorrelationVector");
-    }
-    public static int RtlValidateCorrelationVector ( Addressable Vector) {
-        var mh$ = RtlValidateCorrelationVector$MH();
-        try {
-            return (int)mh$.invokeExact(Vector);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PCUSTOM_SYSTEM_EVENT_TRIGGER_CONFIG = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle CUSTOM_SYSTEM_EVENT_TRIGGER_INIT$MH() {
-        return RuntimeHelper.requireNonNull(constants$62.CUSTOM_SYSTEM_EVENT_TRIGGER_INIT$MH,"CUSTOM_SYSTEM_EVENT_TRIGGER_INIT");
-    }
-    public static void CUSTOM_SYSTEM_EVENT_TRIGGER_INIT ( Addressable Config,  Addressable TriggerId) {
-        var mh$ = CUSTOM_SYSTEM_EVENT_TRIGGER_INIT$MH();
-        try {
-            mh$.invokeExact(Config, TriggerId);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlRaiseCustomSystemEventTrigger$MH() {
-        return RuntimeHelper.requireNonNull(constants$62.RtlRaiseCustomSystemEventTrigger$MH,"RtlRaiseCustomSystemEventTrigger");
-    }
-    public static int RtlRaiseCustomSystemEventTrigger ( Addressable TriggerConfig) {
-        var mh$ = RtlRaiseCustomSystemEventTrigger$MH();
-        try {
-            return (int)mh$.invokeExact(TriggerConfig);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static int ImagePolicyEntryTypeNone() {
-        return (int)0L;
-    }
-    public static int ImagePolicyEntryTypeBool() {
-        return (int)1L;
-    }
-    public static int ImagePolicyEntryTypeInt8() {
-        return (int)2L;
-    }
-    public static int ImagePolicyEntryTypeUInt8() {
-        return (int)3L;
-    }
-    public static int ImagePolicyEntryTypeInt16() {
-        return (int)4L;
-    }
-    public static int ImagePolicyEntryTypeUInt16() {
-        return (int)5L;
-    }
-    public static int ImagePolicyEntryTypeInt32() {
-        return (int)6L;
-    }
-    public static int ImagePolicyEntryTypeUInt32() {
-        return (int)7L;
-    }
-    public static int ImagePolicyEntryTypeInt64() {
-        return (int)8L;
-    }
-    public static int ImagePolicyEntryTypeUInt64() {
-        return (int)9L;
-    }
-    public static int ImagePolicyEntryTypeAnsiString() {
-        return (int)10L;
-    }
-    public static int ImagePolicyEntryTypeUnicodeString() {
-        return (int)11L;
-    }
-    public static int ImagePolicyEntryTypeOverride() {
-        return (int)12L;
-    }
-    public static int ImagePolicyEntryTypeMaximum() {
-        return (int)13L;
-    }
-    public static int ImagePolicyIdNone() {
-        return (int)0L;
-    }
-    public static int ImagePolicyIdEtw() {
-        return (int)1L;
-    }
-    public static int ImagePolicyIdDebug() {
-        return (int)2L;
-    }
-    public static int ImagePolicyIdCrashDump() {
-        return (int)3L;
-    }
-    public static int ImagePolicyIdCrashDumpKey() {
-        return (int)4L;
-    }
-    public static int ImagePolicyIdCrashDumpKeyGuid() {
-        return (int)5L;
-    }
-    public static int ImagePolicyIdParentSd() {
-        return (int)6L;
-    }
-    public static int ImagePolicyIdParentSdRev() {
-        return (int)7L;
-    }
-    public static int ImagePolicyIdSvn() {
-        return (int)8L;
-    }
-    public static int ImagePolicyIdDeviceId() {
-        return (int)9L;
-    }
-    public static int ImagePolicyIdCapability() {
-        return (int)10L;
-    }
-    public static int ImagePolicyIdScenarioId() {
-        return (int)11L;
-    }
-    public static int ImagePolicyIdMaximum() {
-        return (int)12L;
-    }
-    public static OfAddress PCIMAGE_POLICY_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCIMAGE_POLICY_METADATA = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RtlIsZeroMemory$MH() {
-        return RuntimeHelper.requireNonNull(constants$62.RtlIsZeroMemory$MH,"RtlIsZeroMemory");
-    }
-    public static byte RtlIsZeroMemory ( Addressable Buffer,  long Length) {
-        var mh$ = RtlIsZeroMemory$MH();
-        try {
-            return (byte)mh$.invokeExact(Buffer, Length);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlNormalizeSecurityDescriptor$MH() {
-        return RuntimeHelper.requireNonNull(constants$62.RtlNormalizeSecurityDescriptor$MH,"RtlNormalizeSecurityDescriptor");
-    }
-    public static byte RtlNormalizeSecurityDescriptor ( Addressable SecurityDescriptor,  int SecurityDescriptorLength,  Addressable NewSecurityDescriptor,  Addressable NewSecurityDescriptorLength,  byte CheckOnly) {
-        var mh$ = RtlNormalizeSecurityDescriptor$MH();
-        try {
-            return (byte)mh$.invokeExact(SecurityDescriptor, SecurityDescriptorLength, NewSecurityDescriptor, NewSecurityDescriptorLength, CheckOnly);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PRTL_CRITICAL_SECTION_DEBUG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRTL_RESOURCE_DEBUG = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRTL_CRITICAL_SECTION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRTL_SRWLOCK = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRTL_CONDITION_VARIABLE = Constants$root.C_POINTER$LAYOUT;
-    public static int HeapCompatibilityInformation() {
-        return (int)0L;
-    }
-    public static int HeapEnableTerminationOnCorruption() {
-        return (int)1L;
-    }
-    public static int HeapOptimizeResources() {
-        return (int)3L;
-    }
-    public static OfAddress PHEAP_OPTIMIZE_RESOURCES_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int ActivationContextBasicInformation() {
-        return (int)1L;
-    }
-    public static int ActivationContextDetailedInformation() {
-        return (int)2L;
-    }
-    public static int AssemblyDetailedInformationInActivationContext() {
-        return (int)3L;
-    }
-    public static int FileInformationInAssemblyOfAssemblyInActivationContext() {
-        return (int)4L;
-    }
-    public static int RunlevelInformationInActivationContext() {
-        return (int)5L;
-    }
-    public static int CompatibilityInformationInActivationContext() {
-        return (int)6L;
-    }
-    public static int ActivationContextManifestResourceName() {
-        return (int)7L;
-    }
-    public static int MaxActivationContextInfoClass() {
-        return (int)8L;
-    }
-    public static int AssemblyDetailedInformationInActivationContxt() {
-        return (int)3L;
-    }
-    public static int FileInformationInAssemblyOfAssemblyInActivationContxt() {
-        return (int)4L;
-    }
-    public static OfAddress PACTIVATION_CONTEXT_QUERY_INDEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCACTIVATION_CONTEXT_QUERY_INDEX = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PASSEMBLY_FILE_DETAILED_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCASSEMBLY_FILE_DETAILED_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCACTIVATION_CONTEXT_ASSEMBLY_DETAILED_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int ACTCTX_RUN_LEVEL_UNSPECIFIED() {
-        return (int)0L;
-    }
-    public static int ACTCTX_RUN_LEVEL_AS_INVOKER() {
-        return (int)1L;
-    }
-    public static int ACTCTX_RUN_LEVEL_HIGHEST_AVAILABLE() {
-        return (int)2L;
-    }
-    public static int ACTCTX_RUN_LEVEL_REQUIRE_ADMIN() {
-        return (int)3L;
-    }
-    public static int ACTCTX_RUN_LEVEL_NUMBERS() {
-        return (int)4L;
-    }
-    public static OfAddress PACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCACTIVATION_CONTEXT_RUN_LEVEL_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int ACTCTX_COMPATIBILITY_ELEMENT_TYPE_UNKNOWN() {
-        return (int)0L;
-    }
-    public static int ACTCTX_COMPATIBILITY_ELEMENT_TYPE_OS() {
-        return (int)1L;
-    }
-    public static int ACTCTX_COMPATIBILITY_ELEMENT_TYPE_MITIGATION() {
-        return (int)2L;
-    }
-    public static int ACTCTX_COMPATIBILITY_ELEMENT_TYPE_MAXVERSIONTESTED() {
-        return (int)3L;
-    }
-    public static OfAddress PCOMPATIBILITY_CONTEXT_ELEMENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCCOMPATIBILITY_CONTEXT_ELEMENT = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCACTIVATION_CONTEXT_COMPATIBILITY_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PSUPPORTED_OS_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PMAXVERSIONTESTED_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PACTIVATION_CONTEXT_DETAILED_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCACTIVATION_CONTEXT_DETAILED_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PHARDWARE_COUNTER_DATA = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPERFORMANCE_DATA = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle RtlGetDeviceFamilyInfoEnum$MH() {
-        return RuntimeHelper.requireNonNull(constants$65.RtlGetDeviceFamilyInfoEnum$MH,"RtlGetDeviceFamilyInfoEnum");
-    }
-    public static void RtlGetDeviceFamilyInfoEnum ( Addressable pullUAPInfo,  Addressable pulDeviceFamily,  Addressable pulDeviceForm) {
-        var mh$ = RtlGetDeviceFamilyInfoEnum$MH();
-        try {
-            mh$.invokeExact(pullUAPInfo, pulDeviceFamily, pulDeviceForm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlConvertDeviceFamilyInfoToString$MH() {
-        return RuntimeHelper.requireNonNull(constants$65.RtlConvertDeviceFamilyInfoToString$MH,"RtlConvertDeviceFamilyInfoToString");
-    }
-    public static int RtlConvertDeviceFamilyInfoToString ( Addressable pulDeviceFamilyBufferSize,  Addressable pulDeviceFormBufferSize,  Addressable DeviceFamily,  Addressable DeviceForm) {
-        var mh$ = RtlConvertDeviceFamilyInfoToString$MH();
-        try {
-            return (int)mh$.invokeExact(pulDeviceFamilyBufferSize, pulDeviceFormBufferSize, DeviceFamily, DeviceForm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RtlSwitchedVVI$MH() {
-        return RuntimeHelper.requireNonNull(constants$65.RtlSwitchedVVI$MH,"RtlSwitchedVVI");
-    }
-    public static int RtlSwitchedVVI ( Addressable VersionInfo,  int TypeMask,  long ConditionMask) {
-        var mh$ = RtlSwitchedVVI$MH();
-        try {
-            return (int)mh$.invokeExact(VersionInfo, TypeMask, ConditionMask);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PEVENTLOGRECORD = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PEVENTSFORLOGFILE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPACKEDEVENTINFO = Constants$root.C_POINTER$LAYOUT;
-    public static int DriverType() {
-        return (int)1L;
-    }
-    public static int FileSystemType() {
-        return (int)2L;
-    }
-    public static int Win32ServiceOwnProcess() {
-        return (int)16L;
-    }
-    public static int Win32ServiceShareProcess() {
-        return (int)32L;
-    }
-    public static int AdapterType() {
-        return (int)4L;
-    }
-    public static int RecognizerType() {
-        return (int)8L;
-    }
-    public static int BootLoad() {
-        return (int)0L;
-    }
-    public static int SystemLoad() {
-        return (int)1L;
-    }
-    public static int AutoLoad() {
-        return (int)2L;
-    }
-    public static int DemandLoad() {
-        return (int)3L;
-    }
-    public static int DisableLoad() {
-        return (int)4L;
-    }
-    public static int IgnoreError() {
-        return (int)0L;
-    }
-    public static int NormalError() {
-        return (int)1L;
-    }
-    public static int SevereError() {
-        return (int)2L;
-    }
-    public static int CriticalError() {
-        return (int)3L;
-    }
-    public static OfAddress PTAPE_ERASE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_PREPARE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_WRITE_MARKS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_GET_POSITION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_SET_POSITION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_GET_DRIVE_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_SET_DRIVE_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_GET_MEDIA_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_SET_MEDIA_PARAMETERS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_CREATE_PARTITION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTAPE_WMI_OPERATIONS = Constants$root.C_POINTER$LAYOUT;
-    public static int TapeDriveProblemNone() {
-        return (int)0L;
-    }
-    public static int TapeDriveReadWriteWarning() {
-        return (int)1L;
-    }
-    public static int TapeDriveReadWriteError() {
-        return (int)2L;
-    }
-    public static int TapeDriveReadWarning() {
-        return (int)3L;
-    }
-    public static int TapeDriveWriteWarning() {
-        return (int)4L;
-    }
-    public static int TapeDriveReadError() {
-        return (int)5L;
-    }
-    public static int TapeDriveWriteError() {
-        return (int)6L;
-    }
-    public static int TapeDriveHardwareError() {
-        return (int)7L;
-    }
-    public static int TapeDriveUnsupportedMedia() {
-        return (int)8L;
-    }
-    public static int TapeDriveScsiConnectionError() {
-        return (int)9L;
-    }
-    public static int TapeDriveTimetoClean() {
-        return (int)10L;
-    }
-    public static int TapeDriveCleanDriveNow() {
-        return (int)11L;
-    }
-    public static int TapeDriveMediaLifeExpired() {
-        return (int)12L;
-    }
-    public static int TapeDriveSnappedTape() {
-        return (int)13L;
-    }
-    public static int TransactionOutcomeUndetermined() {
-        return (int)1L;
-    }
-    public static int TransactionOutcomeCommitted() {
-        return (int)2L;
-    }
-    public static int TransactionOutcomeAborted() {
-        return (int)3L;
-    }
-    public static int TransactionStateNormal() {
-        return (int)1L;
-    }
-    public static int TransactionStateIndoubt() {
-        return (int)2L;
-    }
-    public static int TransactionStateCommittedNotify() {
-        return (int)3L;
-    }
-    public static OfAddress PTRANSACTION_BASIC_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTIONMANAGER_BASIC_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTIONMANAGER_LOG_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTIONMANAGER_LOGPATH_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTIONMANAGER_RECOVERY_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTIONMANAGER_OLDEST_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTION_PROPERTIES_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTION_BIND_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTION_ENLISTMENT_PAIR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTION_ENLISTMENTS_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTION_SUPERIOR_ENLISTMENT_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRESOURCEMANAGER_BASIC_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PRESOURCEMANAGER_COMPLETION_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int TransactionBasicInformation() {
-        return (int)0L;
-    }
-    public static int TransactionPropertiesInformation() {
-        return (int)1L;
-    }
-    public static int TransactionEnlistmentInformation() {
-        return (int)2L;
-    }
-    public static int TransactionSuperiorEnlistmentInformation() {
-        return (int)3L;
-    }
-    public static int TransactionBindInformation() {
-        return (int)4L;
-    }
-    public static int TransactionDTCPrivateInformation() {
-        return (int)5L;
-    }
-    public static int TransactionManagerBasicInformation() {
-        return (int)0L;
-    }
-    public static int TransactionManagerLogInformation() {
-        return (int)1L;
-    }
-    public static int TransactionManagerLogPathInformation() {
-        return (int)2L;
-    }
-    public static int TransactionManagerRecoveryInformation() {
-        return (int)4L;
-    }
-    public static int TransactionManagerOnlineProbeInformation() {
-        return (int)3L;
-    }
-    public static int TransactionManagerOldestTransactionInformation() {
-        return (int)5L;
-    }
-    public static int ResourceManagerBasicInformation() {
-        return (int)0L;
-    }
-    public static int ResourceManagerCompletionInformation() {
-        return (int)1L;
-    }
-    public static OfAddress PENLISTMENT_BASIC_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PENLISTMENT_CRM_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int EnlistmentBasicInformation() {
-        return (int)0L;
-    }
-    public static int EnlistmentRecoveryInformation() {
-        return (int)1L;
-    }
-    public static int EnlistmentCrmInformation() {
-        return (int)2L;
-    }
-    public static OfAddress PTRANSACTION_LIST_ENTRY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTRANSACTION_LIST_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int KTMOBJECT_TRANSACTION() {
-        return (int)0L;
-    }
-    public static int KTMOBJECT_TRANSACTION_MANAGER() {
-        return (int)1L;
-    }
-    public static int KTMOBJECT_RESOURCE_MANAGER() {
-        return (int)2L;
-    }
-    public static int KTMOBJECT_ENLISTMENT() {
-        return (int)3L;
-    }
-    public static int KTMOBJECT_INVALID() {
-        return (int)4L;
-    }
-    public static OfAddress PKTMOBJECT_TYPE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PKTMOBJECT_CURSOR = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTP_VERSION = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTP_CALLBACK_INSTANCE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PTP_POOL = Constants$root.C_POINTER$LAYOUT;
-    public static int TP_CALLBACK_PRIORITY_HIGH() {
-        return (int)0L;
-    }
-    public static int TP_CALLBACK_PRIORITY_NORMAL() {
-        return (int)1L;
-    }
-    public static int TP_CALLBACK_PRIORITY_LOW() {
-        return (int)2L;
-    }
-    public static int TP_CALLBACK_PRIORITY_INVALID() {
-        return (int)3L;
-    }
-    public static int TP_CALLBACK_PRIORITY_COUNT() {
-        return (int)3L;
     }
 }
 

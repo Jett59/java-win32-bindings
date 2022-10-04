@@ -9,30 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$351 {
 
-    static final FunctionDescriptor LOCALE_ENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle LOCALE_ENUMPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$351.LOCALE_ENUMPROCW$FUNC
-    );
-    static final FunctionDescriptor LANGUAGEGROUP_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WaitForInputIdle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle WaitForInputIdle$MH = RuntimeHelper.downcallHandle(
+        "WaitForInputIdle",
+        constants$351.WaitForInputIdle$FUNC
+    );
+    static final FunctionDescriptor DefWindowProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle LANGUAGEGROUP_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$351.LANGUAGEGROUP_ENUMPROCA$FUNC
+    static final MethodHandle DefWindowProcA$MH = RuntimeHelper.downcallHandle(
+        "DefWindowProcA",
+        constants$351.DefWindowProcA$FUNC
     );
-    static final FunctionDescriptor LANGGROUPLOCALE_ENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DefWindowProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle LANGGROUPLOCALE_ENUMPROCA$MH = RuntimeHelper.downcallHandle(
-        constants$351.LANGGROUPLOCALE_ENUMPROCA$FUNC
+    static final MethodHandle DefWindowProcW$MH = RuntimeHelper.downcallHandle(
+        "DefWindowProcW",
+        constants$351.DefWindowProcW$FUNC
+    );
+    static final FunctionDescriptor PostQuitMessage$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PostQuitMessage$MH = RuntimeHelper.downcallHandle(
+        "PostQuitMessage",
+        constants$351.PostQuitMessage$FUNC
+    );
+    static final FunctionDescriptor CallWindowProcA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CallWindowProcA$MH = RuntimeHelper.downcallHandle(
+        "CallWindowProcA",
+        constants$351.CallWindowProcA$FUNC
+    );
+    static final FunctionDescriptor CallWindowProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CallWindowProcW$MH = RuntimeHelper.downcallHandle(
+        "CallWindowProcW",
+        constants$351.CallWindowProcW$FUNC
     );
 }
 

@@ -9,12 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$613 {
 
-    static final MemorySegment szOID_INFOSEC_SuiteAConfidentiality$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.14");
-    static final MemorySegment szOID_INFOSEC_SuiteAIntegrity$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.15");
-    static final MemorySegment szOID_INFOSEC_SuiteATokenProtection$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.16");
-    static final MemorySegment szOID_INFOSEC_SuiteAKeyManagement$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.17");
-    static final MemorySegment szOID_INFOSEC_SuiteAKMandSig$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.18");
-    static final MemorySegment szOID_INFOSEC_mosaicUpdatedSig$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.19");
+    static final FunctionDescriptor CertGetIntendedKeyUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertGetIntendedKeyUsage$MH = RuntimeHelper.downcallHandle(
+        "CertGetIntendedKeyUsage",
+        constants$613.CertGetIntendedKeyUsage$FUNC
+    );
+    static final FunctionDescriptor CryptInstallDefaultContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptInstallDefaultContext$MH = RuntimeHelper.downcallHandle(
+        "CryptInstallDefaultContext",
+        constants$613.CryptInstallDefaultContext$FUNC
+    );
+    static final FunctionDescriptor CryptUninstallDefaultContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptUninstallDefaultContext$MH = RuntimeHelper.downcallHandle(
+        "CryptUninstallDefaultContext",
+        constants$613.CryptUninstallDefaultContext$FUNC
+    );
+    static final FunctionDescriptor CryptExportPublicKeyInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptExportPublicKeyInfo$MH = RuntimeHelper.downcallHandle(
+        "CryptExportPublicKeyInfo",
+        constants$613.CryptExportPublicKeyInfo$FUNC
+    );
+    static final FunctionDescriptor CryptExportPublicKeyInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptExportPublicKeyInfoEx$MH = RuntimeHelper.downcallHandle(
+        "CryptExportPublicKeyInfoEx",
+        constants$613.CryptExportPublicKeyInfoEx$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_EX2_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

@@ -9,60 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$401 {
 
-    static final FunctionDescriptor WNetCloseEnum$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LockSetForegroundWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LockSetForegroundWindow$MH = RuntimeHelper.downcallHandle(
+        "LockSetForegroundWindow",
+        constants$401.LockSetForegroundWindow$FUNC
+    );
+    static final FunctionDescriptor WindowFromDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetCloseEnum$MH = RuntimeHelper.downcallHandle(
-        "WNetCloseEnum",
-        constants$401.WNetCloseEnum$FUNC
+    static final MethodHandle WindowFromDC$MH = RuntimeHelper.downcallHandle(
+        "WindowFromDC",
+        constants$401.WindowFromDC$FUNC
     );
-    static final FunctionDescriptor WNetGetResourceParentA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetGetResourceParentA$MH = RuntimeHelper.downcallHandle(
-        "WNetGetResourceParentA",
-        constants$401.WNetGetResourceParentA$FUNC
+    static final MethodHandle GetDC$MH = RuntimeHelper.downcallHandle(
+        "GetDC",
+        constants$401.GetDC$FUNC
     );
-    static final FunctionDescriptor WNetGetResourceParentW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDCEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetDCEx$MH = RuntimeHelper.downcallHandle(
+        "GetDCEx",
+        constants$401.GetDCEx$FUNC
+    );
+    static final FunctionDescriptor GetWindowDC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetGetResourceParentW$MH = RuntimeHelper.downcallHandle(
-        "WNetGetResourceParentW",
-        constants$401.WNetGetResourceParentW$FUNC
+    static final MethodHandle GetWindowDC$MH = RuntimeHelper.downcallHandle(
+        "GetWindowDC",
+        constants$401.GetWindowDC$FUNC
     );
-    static final FunctionDescriptor WNetGetResourceInformationA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetGetResourceInformationA$MH = RuntimeHelper.downcallHandle(
-        "WNetGetResourceInformationA",
-        constants$401.WNetGetResourceInformationA$FUNC
-    );
-    static final FunctionDescriptor WNetGetResourceInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetGetResourceInformationW$MH = RuntimeHelper.downcallHandle(
-        "WNetGetResourceInformationW",
-        constants$401.WNetGetResourceInformationW$FUNC
-    );
-    static final FunctionDescriptor WNetGetUniversalNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReleaseDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetGetUniversalNameA$MH = RuntimeHelper.downcallHandle(
-        "WNetGetUniversalNameA",
-        constants$401.WNetGetUniversalNameA$FUNC
+    static final MethodHandle ReleaseDC$MH = RuntimeHelper.downcallHandle(
+        "ReleaseDC",
+        constants$401.ReleaseDC$FUNC
     );
 }
 

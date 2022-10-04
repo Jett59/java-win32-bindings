@@ -9,63 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$532 {
 
-    static final FunctionDescriptor GetPrinterDriver2A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor midiStreamRestart$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPrinterDriver2A$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDriver2A",
-        constants$532.GetPrinterDriver2A$FUNC
+    static final MethodHandle midiStreamRestart$MH = RuntimeHelper.downcallHandle(
+        "midiStreamRestart",
+        constants$532.midiStreamRestart$FUNC
     );
-    static final FunctionDescriptor GetPrinterDriver2W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor midiStreamStop$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPrinterDriver2W$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDriver2W",
-        constants$532.GetPrinterDriver2W$FUNC
+    static final MethodHandle midiStreamStop$MH = RuntimeHelper.downcallHandle(
+        "midiStreamStop",
+        constants$532.midiStreamStop$FUNC
     );
-    static final FunctionDescriptor GetPrintExecutionData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrintExecutionData$MH = RuntimeHelper.downcallHandle(
-        "GetPrintExecutionData",
-        constants$532.GetPrintExecutionData$FUNC
-    );
-    static final FunctionDescriptor GetJobNamedPropertyValue$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor midiConnect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetJobNamedPropertyValue$MH = RuntimeHelper.downcallHandle(
-        "GetJobNamedPropertyValue",
-        constants$532.GetJobNamedPropertyValue$FUNC
+    static final MethodHandle midiConnect$MH = RuntimeHelper.downcallHandle(
+        "midiConnect",
+        constants$532.midiConnect$FUNC
     );
-    static final FunctionDescriptor FreePrintPropertyValue$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor midiDisconnect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FreePrintPropertyValue$MH = RuntimeHelper.downcallHandle(
-        "FreePrintPropertyValue",
-        constants$532.FreePrintPropertyValue$FUNC
+    static final MethodHandle midiDisconnect$MH = RuntimeHelper.downcallHandle(
+        "midiDisconnect",
+        constants$532.midiDisconnect$FUNC
     );
-    static final FunctionDescriptor FreePrintNamedPropertyArray$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor midiOutGetDevCapsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle FreePrintNamedPropertyArray$MH = RuntimeHelper.downcallHandle(
-        "FreePrintNamedPropertyArray",
-        constants$532.FreePrintNamedPropertyArray$FUNC
+    static final MethodHandle midiOutGetDevCapsA$MH = RuntimeHelper.downcallHandle(
+        "midiOutGetDevCapsA",
+        constants$532.midiOutGetDevCapsA$FUNC
+    );
+    static final FunctionDescriptor midiOutGetDevCapsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutGetDevCapsW$MH = RuntimeHelper.downcallHandle(
+        "midiOutGetDevCapsW",
+        constants$532.midiOutGetDevCapsW$FUNC
     );
 }
 

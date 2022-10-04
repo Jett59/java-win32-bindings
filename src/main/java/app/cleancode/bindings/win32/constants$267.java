@@ -9,50 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$267 {
 
-    static final FunctionDescriptor CharUpperW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CharUpperW$MH = RuntimeHelper.downcallHandle(
-        "CharUpperW",
-        constants$267.CharUpperW$FUNC
-    );
-    static final FunctionDescriptor CharUpperBuffA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDIBitmap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CharUpperBuffA$MH = RuntimeHelper.downcallHandle(
-        "CharUpperBuffA",
-        constants$267.CharUpperBuffA$FUNC
+    static final MethodHandle CreateDIBitmap$MH = RuntimeHelper.downcallHandle(
+        "CreateDIBitmap",
+        constants$267.CreateDIBitmap$FUNC
     );
-    static final FunctionDescriptor CharUpperBuffW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDIBPatternBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CharUpperBuffW$MH = RuntimeHelper.downcallHandle(
-        "CharUpperBuffW",
-        constants$267.CharUpperBuffW$FUNC
+    static final MethodHandle CreateDIBPatternBrush$MH = RuntimeHelper.downcallHandle(
+        "CreateDIBPatternBrush",
+        constants$267.CreateDIBPatternBrush$FUNC
     );
-    static final FunctionDescriptor CharLowerA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CharLowerA$MH = RuntimeHelper.downcallHandle(
-        "CharLowerA",
-        constants$267.CharLowerA$FUNC
-    );
-    static final FunctionDescriptor CharLowerW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CharLowerW$MH = RuntimeHelper.downcallHandle(
-        "CharLowerW",
-        constants$267.CharLowerW$FUNC
-    );
-    static final FunctionDescriptor CharLowerBuffA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDIBPatternBrushPt$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CharLowerBuffA$MH = RuntimeHelper.downcallHandle(
-        "CharLowerBuffA",
-        constants$267.CharLowerBuffA$FUNC
+    static final MethodHandle CreateDIBPatternBrushPt$MH = RuntimeHelper.downcallHandle(
+        "CreateDIBPatternBrushPt",
+        constants$267.CreateDIBPatternBrushPt$FUNC
+    );
+    static final FunctionDescriptor CreateEllipticRgn$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateEllipticRgn$MH = RuntimeHelper.downcallHandle(
+        "CreateEllipticRgn",
+        constants$267.CreateEllipticRgn$FUNC
+    );
+    static final FunctionDescriptor CreateEllipticRgnIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateEllipticRgnIndirect$MH = RuntimeHelper.downcallHandle(
+        "CreateEllipticRgnIndirect",
+        constants$267.CreateEllipticRgnIndirect$FUNC
+    );
+    static final FunctionDescriptor CreateFontIndirectA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateFontIndirectA$MH = RuntimeHelper.downcallHandle(
+        "CreateFontIndirectA",
+        constants$267.CreateFontIndirectA$FUNC
     );
 }
 

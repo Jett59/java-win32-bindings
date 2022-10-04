@@ -9,45 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$492 {
 
-    static final FunctionDescriptor PIO_IRP_EXT_PROCESS_TRACKED_OFFSET_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor RegCreateKeyTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle PIO_IRP_EXT_PROCESS_TRACKED_OFFSET_CALLBACK$MH = RuntimeHelper.downcallHandle(
-        constants$492.PIO_IRP_EXT_PROCESS_TRACKED_OFFSET_CALLBACK$FUNC
-    );
-    static final  GroupLayout GUID_DEVINTERFACE_SMARTCARD_READER$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment GUID_DEVINTERFACE_SMARTCARD_READER$SEGMENT = RuntimeHelper.lookupGlobalVariable("GUID_DEVINTERFACE_SMARTCARD_READER", constants$492.GUID_DEVINTERFACE_SMARTCARD_READER$LAYOUT);
-    static final  GroupLayout g_rgSCardT0Pci$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("dwProtocol"),
-        Constants$root.C_LONG$LAYOUT.withName("cbPciLength")
-    ).withName("_SCARD_IO_REQUEST");
-    static final MemorySegment g_rgSCardT0Pci$SEGMENT = RuntimeHelper.lookupGlobalVariable("g_rgSCardT0Pci", constants$492.g_rgSCardT0Pci$LAYOUT);
-    static final  GroupLayout g_rgSCardT1Pci$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("dwProtocol"),
-        Constants$root.C_LONG$LAYOUT.withName("cbPciLength")
-    ).withName("_SCARD_IO_REQUEST");
-    static final MemorySegment g_rgSCardT1Pci$SEGMENT = RuntimeHelper.lookupGlobalVariable("g_rgSCardT1Pci", constants$492.g_rgSCardT1Pci$LAYOUT);
-    static final  GroupLayout g_rgSCardRawPci$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("dwProtocol"),
-        Constants$root.C_LONG$LAYOUT.withName("cbPciLength")
-    ).withName("_SCARD_IO_REQUEST");
-    static final MemorySegment g_rgSCardRawPci$SEGMENT = RuntimeHelper.lookupGlobalVariable("g_rgSCardRawPci", constants$492.g_rgSCardRawPci$LAYOUT);
-    static final FunctionDescriptor SCardEstablishContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardEstablishContext$MH = RuntimeHelper.downcallHandle(
-        "SCardEstablishContext",
-        constants$492.SCardEstablishContext$FUNC
+    static final MethodHandle RegCreateKeyTransactedA$MH = RuntimeHelper.downcallHandle(
+        "RegCreateKeyTransactedA",
+        constants$492.RegCreateKeyTransactedA$FUNC
+    );
+    static final FunctionDescriptor RegCreateKeyTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegCreateKeyTransactedW$MH = RuntimeHelper.downcallHandle(
+        "RegCreateKeyTransactedW",
+        constants$492.RegCreateKeyTransactedW$FUNC
+    );
+    static final FunctionDescriptor RegDeleteKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegDeleteKeyA$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteKeyA",
+        constants$492.RegDeleteKeyA$FUNC
+    );
+    static final FunctionDescriptor RegDeleteKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegDeleteKeyW$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteKeyW",
+        constants$492.RegDeleteKeyW$FUNC
+    );
+    static final FunctionDescriptor RegDeleteKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegDeleteKeyExA$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteKeyExA",
+        constants$492.RegDeleteKeyExA$FUNC
+    );
+    static final FunctionDescriptor RegDeleteKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RegDeleteKeyExW$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteKeyExW",
+        constants$492.RegDeleteKeyExW$FUNC
     );
 }
 

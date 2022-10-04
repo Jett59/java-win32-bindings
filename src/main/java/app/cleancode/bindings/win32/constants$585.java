@@ -9,12 +9,43 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$585 {
 
-    static final MemorySegment szOID_PKCS_10$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.10");
-    static final MemorySegment szOID_PKCS_12$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12");
-    static final MemorySegment szOID_RSA_RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
-    static final MemorySegment szOID_RSA_MD2RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.2");
-    static final MemorySegment szOID_RSA_MD4RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.3");
-    static final MemorySegment szOID_RSA_MD5RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.4");
+    static final FunctionDescriptor PFN_CMSG_CNG_IMPORT_KEY_TRANS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_CNG_IMPORT_KEY_TRANS$MH = RuntimeHelper.downcallHandle(
+        constants$585.PFN_CMSG_CNG_IMPORT_KEY_TRANS$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_CNG_IMPORT_KEY_AGREE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_CNG_IMPORT_KEY_AGREE$MH = RuntimeHelper.downcallHandle(
+        constants$585.PFN_CMSG_CNG_IMPORT_KEY_AGREE$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_CNG_IMPORT_CONTENT_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_CNG_IMPORT_CONTENT_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
+        constants$585.PFN_CMSG_CNG_IMPORT_CONTENT_ENCRYPT_KEY$FUNC
+    );
+    static final FunctionDescriptor CertOpenStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertOpenStore$MH = RuntimeHelper.downcallHandle(
+        "CertOpenStore",
+        constants$585.CertOpenStore$FUNC
+    );
 }
 
 

@@ -9,66 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$171 {
 
-    static final FunctionDescriptor ExcludeClipRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetTokenInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ExcludeClipRect$MH = RuntimeHelper.downcallHandle(
-        "ExcludeClipRect",
-        constants$171.ExcludeClipRect$FUNC
+    static final MethodHandle SetTokenInformation$MH = RuntimeHelper.downcallHandle(
+        "SetTokenInformation",
+        constants$171.SetTokenInformation$FUNC
     );
-    static final FunctionDescriptor ExtCreateRegion$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetCachedSigningLevel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ExtCreateRegion$MH = RuntimeHelper.downcallHandle(
-        "ExtCreateRegion",
-        constants$171.ExtCreateRegion$FUNC
+    static final MethodHandle SetCachedSigningLevel$MH = RuntimeHelper.downcallHandle(
+        "SetCachedSigningLevel",
+        constants$171.SetCachedSigningLevel$FUNC
     );
-    static final FunctionDescriptor ExtFloodFill$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCachedSigningLevel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ExtFloodFill$MH = RuntimeHelper.downcallHandle(
-        "ExtFloodFill",
-        constants$171.ExtFloodFill$FUNC
-    );
-    static final FunctionDescriptor FillRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FillRgn$MH = RuntimeHelper.downcallHandle(
-        "FillRgn",
-        constants$171.FillRgn$FUNC
+    static final MethodHandle GetCachedSigningLevel$MH = RuntimeHelper.downcallHandle(
+        "GetCachedSigningLevel",
+        constants$171.GetCachedSigningLevel$FUNC
     );
-    static final FunctionDescriptor FloodFill$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CveEventWrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FloodFill$MH = RuntimeHelper.downcallHandle(
-        "FloodFill",
-        constants$171.FloodFill$FUNC
+    static final MethodHandle CveEventWrite$MH = RuntimeHelper.downcallHandle(
+        "CveEventWrite",
+        constants$171.CveEventWrite$FUNC
     );
-    static final FunctionDescriptor FrameRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DeriveCapabilitySidsFromName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle FrameRgn$MH = RuntimeHelper.downcallHandle(
-        "FrameRgn",
-        constants$171.FrameRgn$FUNC
+    static final MethodHandle DeriveCapabilitySidsFromName$MH = RuntimeHelper.downcallHandle(
+        "DeriveCapabilitySidsFromName",
+        constants$171.DeriveCapabilitySidsFromName$FUNC
+    );
+    static final FunctionDescriptor CreatePrivateNamespaceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreatePrivateNamespaceW$MH = RuntimeHelper.downcallHandle(
+        "CreatePrivateNamespaceW",
+        constants$171.CreatePrivateNamespaceW$FUNC
     );
 }
 

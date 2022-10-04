@@ -9,12 +9,66 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$653 {
 
-    static final MemorySegment szOID_NTDS_REPLICATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.25.1");
-    static final MemorySegment szOID_SUBJECT_DIR_ATTRS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.9");
-    static final MemorySegment szOID_PKIX_KP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3");
-    static final MemorySegment szOID_PKIX_KP_SERVER_AUTH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.1");
-    static final MemorySegment szOID_PKIX_KP_CLIENT_AUTH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.2");
-    static final MemorySegment szOID_PKIX_KP_CODE_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.3");
+    static final FunctionDescriptor SCardGetStatusChangeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SCardGetStatusChangeW$MH = RuntimeHelper.downcallHandle(
+        "SCardGetStatusChangeW",
+        constants$653.SCardGetStatusChangeW$FUNC
+    );
+    static final FunctionDescriptor SCardCancel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SCardCancel$MH = RuntimeHelper.downcallHandle(
+        "SCardCancel",
+        constants$653.SCardCancel$FUNC
+    );
+    static final FunctionDescriptor SCardConnectA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardConnectA$MH = RuntimeHelper.downcallHandle(
+        "SCardConnectA",
+        constants$653.SCardConnectA$FUNC
+    );
+    static final FunctionDescriptor SCardConnectW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardConnectW$MH = RuntimeHelper.downcallHandle(
+        "SCardConnectW",
+        constants$653.SCardConnectW$FUNC
+    );
+    static final FunctionDescriptor SCardReconnect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardReconnect$MH = RuntimeHelper.downcallHandle(
+        "SCardReconnect",
+        constants$653.SCardReconnect$FUNC
+    );
+    static final FunctionDescriptor SCardDisconnect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SCardDisconnect$MH = RuntimeHelper.downcallHandle(
+        "SCardDisconnect",
+        constants$653.SCardDisconnect$FUNC
+    );
 }
 
 

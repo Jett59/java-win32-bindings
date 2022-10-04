@@ -11,13 +11,13 @@ public interface PCRYPT_RESOLVE_HCRYPTPROV_FUNC {
 
     int apply(java.lang.foreign.MemoryAddress pPrivateKeyInfo, java.lang.foreign.MemoryAddress phCryptProv, java.lang.foreign.MemoryAddress pVoidResolveFunc);
     static MemorySegment allocate(PCRYPT_RESOLVE_HCRYPTPROV_FUNC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PCRYPT_RESOLVE_HCRYPTPROV_FUNC.class, fi, constants$420.PCRYPT_RESOLVE_HCRYPTPROV_FUNC$FUNC, session);
+        return RuntimeHelper.upcallStub(PCRYPT_RESOLVE_HCRYPTPROV_FUNC.class, fi, constants$573.PCRYPT_RESOLVE_HCRYPTPROV_FUNC$FUNC, session);
     }
     static PCRYPT_RESOLVE_HCRYPTPROV_FUNC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pPrivateKeyInfo, java.lang.foreign.MemoryAddress _phCryptProv, java.lang.foreign.MemoryAddress _pVoidResolveFunc) -> {
             try {
-                return (int)constants$421.PCRYPT_RESOLVE_HCRYPTPROV_FUNC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pPrivateKeyInfo, (java.lang.foreign.Addressable)_phCryptProv, (java.lang.foreign.Addressable)_pVoidResolveFunc);
+                return (int)constants$573.PCRYPT_RESOLVE_HCRYPTPROV_FUNC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pPrivateKeyInfo, (java.lang.foreign.Addressable)_phCryptProv, (java.lang.foreign.Addressable)_pVoidResolveFunc);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

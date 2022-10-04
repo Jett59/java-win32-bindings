@@ -9,12 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$628 {
 
-    static final MemoryAddress X509_ANY_STRING$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress X509_UNICODE_ANY_STRING$ADDR = MemoryAddress.ofLong(24L);
-    static final MemoryAddress X509_OCTET_STRING$ADDR = MemoryAddress.ofLong(25L);
-    static final MemoryAddress X509_BITS$ADDR = MemoryAddress.ofLong(26L);
-    static final MemoryAddress X509_INTEGER$ADDR = MemoryAddress.ofLong(27L);
-    static final MemoryAddress X509_MULTI_BYTE_INTEGER$ADDR = MemoryAddress.ofLong(28L);
+    static final FunctionDescriptor CertResyncCertificateChainEngine$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertResyncCertificateChainEngine$MH = RuntimeHelper.downcallHandle(
+        "CertResyncCertificateChainEngine",
+        constants$628.CertResyncCertificateChainEngine$FUNC
+    );
+    static final FunctionDescriptor CertGetCertificateChain$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetCertificateChain$MH = RuntimeHelper.downcallHandle(
+        "CertGetCertificateChain",
+        constants$628.CertGetCertificateChain$FUNC
+    );
+    static final FunctionDescriptor CertFreeCertificateChain$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFreeCertificateChain$MH = RuntimeHelper.downcallHandle(
+        "CertFreeCertificateChain",
+        constants$628.CertFreeCertificateChain$FUNC
+    );
+    static final FunctionDescriptor CertDuplicateCertificateChain$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertDuplicateCertificateChain$MH = RuntimeHelper.downcallHandle(
+        "CertDuplicateCertificateChain",
+        constants$628.CertDuplicateCertificateChain$FUNC
+    );
+    static final FunctionDescriptor CertFindChainInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFindChainInStore$MH = RuntimeHelper.downcallHandle(
+        "CertFindChainInStore",
+        constants$628.CertFindChainInStore$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

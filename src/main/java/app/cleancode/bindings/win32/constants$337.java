@@ -9,50 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$337 {
 
-    static final FunctionDescriptor GetMonitorInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetKeyboardLayout$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetMonitorInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetMonitorInfoA",
-        constants$337.GetMonitorInfoA$FUNC
+    static final MethodHandle GetKeyboardLayout$MH = RuntimeHelper.downcallHandle(
+        "GetKeyboardLayout",
+        constants$337.GetKeyboardLayout$FUNC
     );
-    static final FunctionDescriptor GetMonitorInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetMonitorInfoW$MH = RuntimeHelper.downcallHandle(
-        "GetMonitorInfoW",
-        constants$337.GetMonitorInfoW$FUNC
-    );
-    static final FunctionDescriptor MONITORENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle MONITORENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$337.MONITORENUMPROC$FUNC
-    );
-    static final FunctionDescriptor EnumDisplayMonitors$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle EnumDisplayMonitors$MH = RuntimeHelper.downcallHandle(
-        "EnumDisplayMonitors",
-        constants$337.EnumDisplayMonitors$FUNC
-    );
-    static final FunctionDescriptor NotifyWinEvent$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor GetMouseMovePointsEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle NotifyWinEvent$MH = RuntimeHelper.downcallHandle(
-        "NotifyWinEvent",
-        constants$337.NotifyWinEvent$FUNC
+    static final MethodHandle GetMouseMovePointsEx$MH = RuntimeHelper.downcallHandle(
+        "GetMouseMovePointsEx",
+        constants$337.GetMouseMovePointsEx$FUNC
+    );
+    static final FunctionDescriptor CreateDesktopA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateDesktopA$MH = RuntimeHelper.downcallHandle(
+        "CreateDesktopA",
+        constants$337.CreateDesktopA$FUNC
+    );
+    static final FunctionDescriptor CreateDesktopW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateDesktopW$MH = RuntimeHelper.downcallHandle(
+        "CreateDesktopW",
+        constants$337.CreateDesktopW$FUNC
+    );
+    static final FunctionDescriptor CreateDesktopExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateDesktopExA$MH = RuntimeHelper.downcallHandle(
+        "CreateDesktopExA",
+        constants$337.CreateDesktopExA$FUNC
+    );
+    static final FunctionDescriptor CreateDesktopExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateDesktopExW$MH = RuntimeHelper.downcallHandle(
+        "CreateDesktopExW",
+        constants$337.CreateDesktopExW$FUNC
     );
 }
 

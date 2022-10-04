@@ -9,55 +9,52 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$312 {
 
-    static final FunctionDescriptor ClipCursor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor StrokeAndFillPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ClipCursor$MH = RuntimeHelper.downcallHandle(
-        "ClipCursor",
-        constants$312.ClipCursor$FUNC
+    static final MethodHandle StrokeAndFillPath$MH = RuntimeHelper.downcallHandle(
+        "StrokeAndFillPath",
+        constants$312.StrokeAndFillPath$FUNC
     );
-    static final FunctionDescriptor ChildWindowFromPointEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("x"),
-            Constants$root.C_LONG$LAYOUT.withName("y")
-        ).withName("tagPOINT"),
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor StrokePath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ChildWindowFromPointEx$MH = RuntimeHelper.downcallHandle(
-        "ChildWindowFromPointEx",
-        constants$312.ChildWindowFromPointEx$FUNC
+    static final MethodHandle StrokePath$MH = RuntimeHelper.downcallHandle(
+        "StrokePath",
+        constants$312.StrokePath$FUNC
     );
-    static final FunctionDescriptor GetSysColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor WidenPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetSysColor$MH = RuntimeHelper.downcallHandle(
-        "GetSysColor",
-        constants$312.GetSysColor$FUNC
+    static final MethodHandle WidenPath$MH = RuntimeHelper.downcallHandle(
+        "WidenPath",
+        constants$312.WidenPath$FUNC
     );
-    static final FunctionDescriptor GetSysColorBrush$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetSysColorBrush$MH = RuntimeHelper.downcallHandle(
-        "GetSysColorBrush",
-        constants$312.GetSysColorBrush$FUNC
-    );
-    static final FunctionDescriptor SetSysColors$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExtCreatePen$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetSysColors$MH = RuntimeHelper.downcallHandle(
-        "SetSysColors",
-        constants$312.SetSysColors$FUNC
+    static final MethodHandle ExtCreatePen$MH = RuntimeHelper.downcallHandle(
+        "ExtCreatePen",
+        constants$312.ExtCreatePen$FUNC
     );
-    static final FunctionDescriptor DrawFocusRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetMiterLimit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DrawFocusRect$MH = RuntimeHelper.downcallHandle(
-        "DrawFocusRect",
-        constants$312.DrawFocusRect$FUNC
+    static final MethodHandle GetMiterLimit$MH = RuntimeHelper.downcallHandle(
+        "GetMiterLimit",
+        constants$312.GetMiterLimit$FUNC
+    );
+    static final FunctionDescriptor GetArcDirection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetArcDirection$MH = RuntimeHelper.downcallHandle(
+        "GetArcDirection",
+        constants$312.GetArcDirection$FUNC
     );
 }
 

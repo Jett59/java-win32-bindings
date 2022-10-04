@@ -11,13 +11,13 @@ public interface LPOCNCONNPROCA {
 
     long apply(long _x0, java.lang.foreign.MemoryAddress _x1, java.lang.foreign.MemoryAddress _x2, java.lang.foreign.MemoryAddress _x3);
     static MemorySegment allocate(LPOCNCONNPROCA fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(LPOCNCONNPROCA.class, fi, constants$502.LPOCNCONNPROCA$FUNC, session);
+        return RuntimeHelper.upcallStub(LPOCNCONNPROCA.class, fi, constants$655.LPOCNCONNPROCA$FUNC, session);
     }
     static LPOCNCONNPROCA ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (long __x0, java.lang.foreign.MemoryAddress __x1, java.lang.foreign.MemoryAddress __x2, java.lang.foreign.MemoryAddress __x3) -> {
             try {
-                return (long)constants$502.LPOCNCONNPROCA$MH.invokeExact((Addressable)symbol, __x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, (java.lang.foreign.Addressable)__x3);
+                return (long)constants$656.LPOCNCONNPROCA$MH.invokeExact((Addressable)symbol, __x0, (java.lang.foreign.Addressable)__x1, (java.lang.foreign.Addressable)__x2, (java.lang.foreign.Addressable)__x3);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

@@ -9,12 +9,38 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$581 {
 
-    static final MemorySegment MS_ENH_RSA_AES_PROV_XP_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider (Prototype)");
-    static final MemorySegment MS_ENH_RSA_AES_PROV_XP_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_ENH_RSA_AES_PROV_XP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider (Prototype)");
-    static final MemorySegment MS_ENH_RSA_AES_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider");
-    static final MemorySegment EXPO_OFFLOAD_REG_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ExpoOffload");
-    static final MemorySegment EXPO_OFFLOAD_FUNC_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OffloadModExpo");
+    static final FunctionDescriptor PFN_CMSG_ALLOC$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_ALLOC$MH = RuntimeHelper.downcallHandle(
+        constants$581.PFN_CMSG_ALLOC$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_FREE$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_FREE$MH = RuntimeHelper.downcallHandle(
+        constants$581.PFN_CMSG_FREE$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_GEN_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CMSG_GEN_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
+        constants$581.PFN_CMSG_GEN_ENCRYPT_KEY$FUNC
+    );
+    static final FunctionDescriptor PFN_CMSG_EXPORT_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
 }
 
 

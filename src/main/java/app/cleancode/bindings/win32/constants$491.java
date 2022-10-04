@@ -9,50 +9,73 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$491 {
 
-    static final FunctionDescriptor DeviceDsmInitializeOutput$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor RegConnectRegistryExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeviceDsmInitializeOutput$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmInitializeOutput",
-        constants$491.DeviceDsmInitializeOutput$FUNC
+    static final MethodHandle RegConnectRegistryExA$MH = RuntimeHelper.downcallHandle(
+        "RegConnectRegistryExA",
+        constants$491.RegConnectRegistryExA$FUNC
     );
-    static final FunctionDescriptor DeviceDsmValidateOutput$FUNC = FunctionDescriptor.of(Constants$root.C_CHAR$LAYOUT,
+    static final FunctionDescriptor RegConnectRegistryExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeviceDsmValidateOutput$MH = RuntimeHelper.downcallHandle(
-        "DeviceDsmValidateOutput",
-        constants$491.DeviceDsmValidateOutput$FUNC
+    static final MethodHandle RegConnectRegistryExW$MH = RuntimeHelper.downcallHandle(
+        "RegConnectRegistryExW",
+        constants$491.RegConnectRegistryExW$FUNC
     );
-    static final  GroupLayout FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE$SEGMENT = RuntimeHelper.lookupGlobalVariable("FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE", constants$491.FILE_TYPE_NOTIFICATION_GUID_PAGE_FILE$LAYOUT);
-    static final  GroupLayout FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE$SEGMENT = RuntimeHelper.lookupGlobalVariable("FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE", constants$491.FILE_TYPE_NOTIFICATION_GUID_HIBERNATION_FILE$LAYOUT);
-    static final  GroupLayout FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE$SEGMENT = RuntimeHelper.lookupGlobalVariable("FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE", constants$491.FILE_TYPE_NOTIFICATION_GUID_CRASHDUMP_FILE$LAYOUT);
-    static final FunctionDescriptor PIO_IRP_EXT_PROCESS_TRACKED_OFFSET_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+    static final FunctionDescriptor RegCreateKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegCreateKeyA$MH = RuntimeHelper.downcallHandle(
+        "RegCreateKeyA",
+        constants$491.RegCreateKeyA$FUNC
+    );
+    static final FunctionDescriptor RegCreateKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegCreateKeyW$MH = RuntimeHelper.downcallHandle(
+        "RegCreateKeyW",
+        constants$491.RegCreateKeyW$FUNC
+    );
+    static final FunctionDescriptor RegCreateKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegCreateKeyExA$MH = RuntimeHelper.downcallHandle(
+        "RegCreateKeyExA",
+        constants$491.RegCreateKeyExA$FUNC
+    );
+    static final FunctionDescriptor RegCreateKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegCreateKeyExW$MH = RuntimeHelper.downcallHandle(
+        "RegCreateKeyExW",
+        constants$491.RegCreateKeyExW$FUNC
     );
 }
 

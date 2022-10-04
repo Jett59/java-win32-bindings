@@ -9,72 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$140 {
 
-    static final FunctionDescriptor CreateProcessWithLogonW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MapUserPhysicalPages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CreateProcessWithLogonW$MH = RuntimeHelper.downcallHandle(
-        "CreateProcessWithLogonW",
-        constants$140.CreateProcessWithLogonW$FUNC
+    static final MethodHandle MapUserPhysicalPages$MH = RuntimeHelper.downcallHandle(
+        "MapUserPhysicalPages",
+        constants$140.MapUserPhysicalPages$FUNC
     );
-    static final FunctionDescriptor CreateProcessWithTokenW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor AllocateUserPhysicalPagesNuma$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateProcessWithTokenW$MH = RuntimeHelper.downcallHandle(
-        "CreateProcessWithTokenW",
-        constants$140.CreateProcessWithTokenW$FUNC
-    );
-    static final FunctionDescriptor IsTokenUntrusted$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle IsTokenUntrusted$MH = RuntimeHelper.downcallHandle(
-        "IsTokenUntrusted",
-        constants$140.IsTokenUntrusted$FUNC
-    );
-    static final FunctionDescriptor RegisterWaitForSingleObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegisterWaitForSingleObject$MH = RuntimeHelper.downcallHandle(
-        "RegisterWaitForSingleObject",
-        constants$140.RegisterWaitForSingleObject$FUNC
-    );
-    static final FunctionDescriptor UnregisterWait$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle UnregisterWait$MH = RuntimeHelper.downcallHandle(
-        "UnregisterWait",
-        constants$140.UnregisterWait$FUNC
-    );
-    static final FunctionDescriptor BindIoCompletionCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle BindIoCompletionCallback$MH = RuntimeHelper.downcallHandle(
-        "BindIoCompletionCallback",
-        constants$140.BindIoCompletionCallback$FUNC
+    static final MethodHandle AllocateUserPhysicalPagesNuma$MH = RuntimeHelper.downcallHandle(
+        "AllocateUserPhysicalPagesNuma",
+        constants$140.AllocateUserPhysicalPagesNuma$FUNC
+    );
+    static final FunctionDescriptor VirtualAllocExNuma$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle VirtualAllocExNuma$MH = RuntimeHelper.downcallHandle(
+        "VirtualAllocExNuma",
+        constants$140.VirtualAllocExNuma$FUNC
+    );
+    static final FunctionDescriptor GetMemoryErrorHandlingCapabilities$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetMemoryErrorHandlingCapabilities$MH = RuntimeHelper.downcallHandle(
+        "GetMemoryErrorHandlingCapabilities",
+        constants$140.GetMemoryErrorHandlingCapabilities$FUNC
+    );
+    static final FunctionDescriptor BAD_MEMORY_CALLBACK_ROUTINE$FUNC = FunctionDescriptor.ofVoid();
+    static final MethodHandle BAD_MEMORY_CALLBACK_ROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$140.BAD_MEMORY_CALLBACK_ROUTINE$FUNC
     );
 }
 

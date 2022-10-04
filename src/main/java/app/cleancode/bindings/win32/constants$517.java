@@ -9,78 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$517 {
 
-    static final FunctionDescriptor AdvancedDocumentPropertiesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDriverModuleHandle$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AdvancedDocumentPropertiesA$MH = RuntimeHelper.downcallHandle(
-        "AdvancedDocumentPropertiesA",
-        constants$517.AdvancedDocumentPropertiesA$FUNC
+    static final MethodHandle GetDriverModuleHandle$MH = RuntimeHelper.downcallHandle(
+        "GetDriverModuleHandle",
+        constants$517.GetDriverModuleHandle$FUNC
     );
-    static final FunctionDescriptor AdvancedDocumentPropertiesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DefDriverProc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle AdvancedDocumentPropertiesW$MH = RuntimeHelper.downcallHandle(
-        "AdvancedDocumentPropertiesW",
-        constants$517.AdvancedDocumentPropertiesW$FUNC
+    static final MethodHandle DefDriverProc$MH = RuntimeHelper.downcallHandle(
+        "DefDriverProc",
+        constants$517.DefDriverProc$FUNC
     );
-    static final FunctionDescriptor ExtDeviceMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DriverCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle ExtDeviceMode$MH = RuntimeHelper.downcallHandle(
-        "ExtDeviceMode",
-        constants$517.ExtDeviceMode$FUNC
+    static final MethodHandle DriverCallback$MH = RuntimeHelper.downcallHandle(
+        "DriverCallback",
+        constants$517.DriverCallback$FUNC
     );
-    static final FunctionDescriptor GetPrinterDataA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor sndOpenSound$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPrinterDataA$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDataA",
-        constants$517.GetPrinterDataA$FUNC
+    static final MethodHandle sndOpenSound$MH = RuntimeHelper.downcallHandle(
+        "sndOpenSound",
+        constants$517.sndOpenSound$FUNC
     );
-    static final FunctionDescriptor GetPrinterDataW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor DRIVERMSGPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrinterDataW$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDataW",
-        constants$517.GetPrinterDataW$FUNC
-    );
-    static final FunctionDescriptor GetPrinterDataExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetPrinterDataExA$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDataExA",
-        constants$517.GetPrinterDataExA$FUNC
+    static final MethodHandle DRIVERMSGPROC$MH = RuntimeHelper.downcallHandle(
+        constants$517.DRIVERMSGPROC$FUNC
     );
 }
 

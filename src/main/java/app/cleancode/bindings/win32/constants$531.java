@@ -9,79 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$531 {
 
-    static final FunctionDescriptor CorePrinterDriverInstalledW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor midiStreamOpen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("Data1"),
-            Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-            Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-            MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-        ).withName("_GUID"),
-        MemoryLayout.structLayout(
-            Constants$root.C_LONG$LAYOUT.withName("dwLowDateTime"),
-            Constants$root.C_LONG$LAYOUT.withName("dwHighDateTime")
-        ).withName("_FILETIME"),
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CorePrinterDriverInstalledW$MH = RuntimeHelper.downcallHandle(
-        "CorePrinterDriverInstalledW",
-        constants$531.CorePrinterDriverInstalledW$FUNC
-    );
-    static final FunctionDescriptor GetPrinterDriverPackagePathA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrinterDriverPackagePathA$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDriverPackagePathA",
-        constants$531.GetPrinterDriverPackagePathA$FUNC
-    );
-    static final FunctionDescriptor GetPrinterDriverPackagePathW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrinterDriverPackagePathW$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDriverPackagePathW",
-        constants$531.GetPrinterDriverPackagePathW$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterDriverPackageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterDriverPackageA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDriverPackageA",
-        constants$531.DeletePrinterDriverPackageA$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterDriverPackageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterDriverPackageW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDriverPackageW",
-        constants$531.DeletePrinterDriverPackageW$FUNC
-    );
-    static final FunctionDescriptor ReportJobProcessingProgress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReportJobProcessingProgress$MH = RuntimeHelper.downcallHandle(
-        "ReportJobProcessingProgress",
-        constants$531.ReportJobProcessingProgress$FUNC
+    static final MethodHandle midiStreamOpen$MH = RuntimeHelper.downcallHandle(
+        "midiStreamOpen",
+        constants$531.midiStreamOpen$FUNC
+    );
+    static final FunctionDescriptor midiStreamClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle midiStreamClose$MH = RuntimeHelper.downcallHandle(
+        "midiStreamClose",
+        constants$531.midiStreamClose$FUNC
+    );
+    static final FunctionDescriptor midiStreamProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiStreamProperty$MH = RuntimeHelper.downcallHandle(
+        "midiStreamProperty",
+        constants$531.midiStreamProperty$FUNC
+    );
+    static final FunctionDescriptor midiStreamPosition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiStreamPosition$MH = RuntimeHelper.downcallHandle(
+        "midiStreamPosition",
+        constants$531.midiStreamPosition$FUNC
+    );
+    static final FunctionDescriptor midiStreamOut$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiStreamOut$MH = RuntimeHelper.downcallHandle(
+        "midiStreamOut",
+        constants$531.midiStreamOut$FUNC
+    );
+    static final FunctionDescriptor midiStreamPause$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle midiStreamPause$MH = RuntimeHelper.downcallHandle(
+        "midiStreamPause",
+        constants$531.midiStreamPause$FUNC
     );
 }
 

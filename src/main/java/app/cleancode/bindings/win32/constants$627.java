@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$627 {
 
-    static final MemoryAddress RSA_CSP_PUBLICKEYBLOB$ADDR = MemoryAddress.ofLong(19L);
-    static final MemoryAddress X509_UNICODE_NAME$ADDR = MemoryAddress.ofLong(20L);
-    static final MemoryAddress X509_KEYGEN_REQUEST_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(21L);
-    static final MemoryAddress PKCS_ATTRIBUTE$ADDR = MemoryAddress.ofLong(22L);
-    static final MemoryAddress PKCS_CONTENT_INFO_SEQUENCE_OF_ANY$ADDR = MemoryAddress.ofLong(23L);
-    static final MemoryAddress X509_UNICODE_NAME_VALUE$ADDR = MemoryAddress.ofLong(24L);
+    static final FunctionDescriptor PFN_CRYPT_ENUM_KEYID_PROP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_ENUM_KEYID_PROP$MH = RuntimeHelper.downcallHandle(
+        constants$627.PFN_CRYPT_ENUM_KEYID_PROP$FUNC
+    );
+    static final FunctionDescriptor CryptEnumKeyIdentifierProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptEnumKeyIdentifierProperties$MH = RuntimeHelper.downcallHandle(
+        "CryptEnumKeyIdentifierProperties",
+        constants$627.CryptEnumKeyIdentifierProperties$FUNC
+    );
+    static final FunctionDescriptor CryptCreateKeyIdentifierFromCSP$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptCreateKeyIdentifierFromCSP$MH = RuntimeHelper.downcallHandle(
+        "CryptCreateKeyIdentifierFromCSP",
+        constants$627.CryptCreateKeyIdentifierFromCSP$FUNC
+    );
+    static final FunctionDescriptor CertCreateCertificateChainEngine$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertCreateCertificateChainEngine$MH = RuntimeHelper.downcallHandle(
+        "CertCreateCertificateChainEngine",
+        constants$627.CertCreateCertificateChainEngine$FUNC
+    );
+    static final FunctionDescriptor CertFreeCertificateChainEngine$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertFreeCertificateChainEngine$MH = RuntimeHelper.downcallHandle(
+        "CertFreeCertificateChainEngine",
+        constants$627.CertFreeCertificateChainEngine$FUNC
+    );
 }
 
 

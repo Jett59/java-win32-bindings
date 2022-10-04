@@ -9,58 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$305 {
 
-    static final FunctionDescriptor AdjustWindowRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWinMetaFileBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle AdjustWindowRect$MH = RuntimeHelper.downcallHandle(
-        "AdjustWindowRect",
-        constants$305.AdjustWindowRect$FUNC
-    );
-    static final FunctionDescriptor AdjustWindowRectEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle AdjustWindowRectEx$MH = RuntimeHelper.downcallHandle(
-        "AdjustWindowRectEx",
-        constants$305.AdjustWindowRectEx$FUNC
-    );
-    static final FunctionDescriptor AdjustWindowRectExForDpi$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle AdjustWindowRectExForDpi$MH = RuntimeHelper.downcallHandle(
-        "AdjustWindowRectExForDpi",
-        constants$305.AdjustWindowRectExForDpi$FUNC
-    );
-    static final FunctionDescriptor SetWindowContextHelpId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetWindowContextHelpId$MH = RuntimeHelper.downcallHandle(
-        "SetWindowContextHelpId",
-        constants$305.SetWindowContextHelpId$FUNC
-    );
-    static final FunctionDescriptor GetWindowContextHelpId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetWindowContextHelpId$MH = RuntimeHelper.downcallHandle(
-        "GetWindowContextHelpId",
-        constants$305.GetWindowContextHelpId$FUNC
+    static final MethodHandle GetWinMetaFileBits$MH = RuntimeHelper.downcallHandle(
+        "GetWinMetaFileBits",
+        constants$305.GetWinMetaFileBits$FUNC
     );
-    static final FunctionDescriptor SetMenuContextHelpId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PlayEnhMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PlayEnhMetaFile$MH = RuntimeHelper.downcallHandle(
+        "PlayEnhMetaFile",
+        constants$305.PlayEnhMetaFile$FUNC
+    );
+    static final FunctionDescriptor PlayEnhMetaFileRecord$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetMenuContextHelpId$MH = RuntimeHelper.downcallHandle(
-        "SetMenuContextHelpId",
-        constants$305.SetMenuContextHelpId$FUNC
+    static final MethodHandle PlayEnhMetaFileRecord$MH = RuntimeHelper.downcallHandle(
+        "PlayEnhMetaFileRecord",
+        constants$305.PlayEnhMetaFileRecord$FUNC
+    );
+    static final FunctionDescriptor SetEnhMetaFileBits$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetEnhMetaFileBits$MH = RuntimeHelper.downcallHandle(
+        "SetEnhMetaFileBits",
+        constants$305.SetEnhMetaFileBits$FUNC
+    );
+    static final FunctionDescriptor SetWinMetaFileBits$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetWinMetaFileBits$MH = RuntimeHelper.downcallHandle(
+        "SetWinMetaFileBits",
+        constants$305.SetWinMetaFileBits$FUNC
+    );
+    static final FunctionDescriptor GdiComment$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GdiComment$MH = RuntimeHelper.downcallHandle(
+        "GdiComment",
+        constants$305.GdiComment$FUNC
     );
 }
 

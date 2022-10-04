@@ -9,69 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$194 {
 
-    static final FunctionDescriptor SetPaletteEntries$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTapeParameters$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetPaletteEntries$MH = RuntimeHelper.downcallHandle(
-        "SetPaletteEntries",
-        constants$194.SetPaletteEntries$FUNC
+    static final MethodHandle GetTapeParameters$MH = RuntimeHelper.downcallHandle(
+        "GetTapeParameters",
+        constants$194.GetTapeParameters$FUNC
     );
-    static final FunctionDescriptor SetPixel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetPixel$MH = RuntimeHelper.downcallHandle(
-        "SetPixel",
-        constants$194.SetPixel$FUNC
-    );
-    static final FunctionDescriptor SetPixelV$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetPixelV$MH = RuntimeHelper.downcallHandle(
-        "SetPixelV",
-        constants$194.SetPixelV$FUNC
-    );
-    static final FunctionDescriptor SetPixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetTapeParameters$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetPixelFormat$MH = RuntimeHelper.downcallHandle(
-        "SetPixelFormat",
-        constants$194.SetPixelFormat$FUNC
+    static final MethodHandle SetTapeParameters$MH = RuntimeHelper.downcallHandle(
+        "SetTapeParameters",
+        constants$194.SetTapeParameters$FUNC
     );
-    static final FunctionDescriptor SetPolyFillMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetPolyFillMode$MH = RuntimeHelper.downcallHandle(
-        "SetPolyFillMode",
-        constants$194.SetPolyFillMode$FUNC
-    );
-    static final FunctionDescriptor StretchBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MulDiv$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle StretchBlt$MH = RuntimeHelper.downcallHandle(
-        "StretchBlt",
-        constants$194.StretchBlt$FUNC
+    static final MethodHandle MulDiv$MH = RuntimeHelper.downcallHandle(
+        "MulDiv",
+        constants$194.MulDiv$FUNC
+    );
+    static final FunctionDescriptor GetSystemDEPPolicy$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetSystemDEPPolicy$MH = RuntimeHelper.downcallHandle(
+        "GetSystemDEPPolicy",
+        constants$194.GetSystemDEPPolicy$FUNC
+    );
+    static final FunctionDescriptor GetSystemRegistryQuota$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetSystemRegistryQuota$MH = RuntimeHelper.downcallHandle(
+        "GetSystemRegistryQuota",
+        constants$194.GetSystemRegistryQuota$FUNC
+    );
+    static final FunctionDescriptor FileTimeToDosDateTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FileTimeToDosDateTime$MH = RuntimeHelper.downcallHandle(
+        "FileTimeToDosDateTime",
+        constants$194.FileTimeToDosDateTime$FUNC
     );
 }
 

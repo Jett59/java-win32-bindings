@@ -9,61 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$514 {
 
-    static final FunctionDescriptor EnumPrintProcessorDatatypesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EnumPrintProcessorDatatypesW$MH = RuntimeHelper.downcallHandle(
-        "EnumPrintProcessorDatatypesW",
-        constants$514.EnumPrintProcessorDatatypesW$FUNC
-    );
-    static final FunctionDescriptor DeletePrintProcessorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrintProcessorA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrintProcessorA",
-        constants$514.DeletePrintProcessorA$FUNC
-    );
-    static final FunctionDescriptor DeletePrintProcessorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrintProcessorW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrintProcessorW",
-        constants$514.DeletePrintProcessorW$FUNC
-    );
-    static final FunctionDescriptor StartDocPrinterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor mciGetDeviceIDFromElementIDW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle StartDocPrinterA$MH = RuntimeHelper.downcallHandle(
-        "StartDocPrinterA",
-        constants$514.StartDocPrinterA$FUNC
+    static final MethodHandle mciGetDeviceIDFromElementIDW$MH = RuntimeHelper.downcallHandle(
+        "mciGetDeviceIDFromElementIDW",
+        constants$514.mciGetDeviceIDFromElementIDW$FUNC
     );
-    static final FunctionDescriptor StartDocPrinterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor mciGetErrorStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mciGetErrorStringA$MH = RuntimeHelper.downcallHandle(
+        "mciGetErrorStringA",
+        constants$514.mciGetErrorStringA$FUNC
+    );
+    static final FunctionDescriptor mciGetErrorStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mciGetErrorStringW$MH = RuntimeHelper.downcallHandle(
+        "mciGetErrorStringW",
+        constants$514.mciGetErrorStringW$FUNC
+    );
+    static final FunctionDescriptor mciSetYieldProc$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mciSetYieldProc$MH = RuntimeHelper.downcallHandle(
+        "mciSetYieldProc",
+        constants$514.mciSetYieldProc$FUNC
+    );
+    static final FunctionDescriptor mciGetCreatorTask$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle mciGetCreatorTask$MH = RuntimeHelper.downcallHandle(
+        "mciGetCreatorTask",
+        constants$514.mciGetCreatorTask$FUNC
+    );
+    static final FunctionDescriptor mciGetYieldProc$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle StartDocPrinterW$MH = RuntimeHelper.downcallHandle(
-        "StartDocPrinterW",
-        constants$514.StartDocPrinterW$FUNC
-    );
-    static final FunctionDescriptor StartPagePrinter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle StartPagePrinter$MH = RuntimeHelper.downcallHandle(
-        "StartPagePrinter",
-        constants$514.StartPagePrinter$FUNC
+    static final MethodHandle mciGetYieldProc$MH = RuntimeHelper.downcallHandle(
+        "mciGetYieldProc",
+        constants$514.mciGetYieldProc$FUNC
     );
 }
 

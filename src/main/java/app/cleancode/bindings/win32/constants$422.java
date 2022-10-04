@@ -9,76 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$422 {
 
-    static final FunctionDescriptor CryptEncodeObjectEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptEncodeObjectEx$MH = RuntimeHelper.downcallHandle(
-        "CryptEncodeObjectEx",
-        constants$422.CryptEncodeObjectEx$FUNC
-    );
-    static final FunctionDescriptor CryptEncodeObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptEncodeObject$MH = RuntimeHelper.downcallHandle(
-        "CryptEncodeObject",
-        constants$422.CryptEncodeObject$FUNC
-    );
-    static final FunctionDescriptor CryptDecodeObjectEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptDecodeObjectEx$MH = RuntimeHelper.downcallHandle(
-        "CryptDecodeObjectEx",
-        constants$422.CryptDecodeObjectEx$FUNC
-    );
-    static final FunctionDescriptor CryptDecodeObject$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptDecodeObject$MH = RuntimeHelper.downcallHandle(
-        "CryptDecodeObject",
-        constants$422.CryptDecodeObject$FUNC
-    );
-    static final FunctionDescriptor CryptInstallOIDFunctionAddress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetClassLongPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptInstallOIDFunctionAddress$MH = RuntimeHelper.downcallHandle(
-        "CryptInstallOIDFunctionAddress",
-        constants$422.CryptInstallOIDFunctionAddress$FUNC
+    static final MethodHandle GetClassLongPtrW$MH = RuntimeHelper.downcallHandle(
+        "GetClassLongPtrW",
+        constants$422.GetClassLongPtrW$FUNC
     );
-    static final FunctionDescriptor CryptInitOIDFunctionSet$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetClassLongPtrA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetClassLongPtrA$MH = RuntimeHelper.downcallHandle(
+        "SetClassLongPtrA",
+        constants$422.SetClassLongPtrA$FUNC
+    );
+    static final FunctionDescriptor SetClassLongPtrW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SetClassLongPtrW$MH = RuntimeHelper.downcallHandle(
+        "SetClassLongPtrW",
+        constants$422.SetClassLongPtrW$FUNC
+    );
+    static final FunctionDescriptor GetProcessDefaultLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetProcessDefaultLayout$MH = RuntimeHelper.downcallHandle(
+        "GetProcessDefaultLayout",
+        constants$422.GetProcessDefaultLayout$FUNC
+    );
+    static final FunctionDescriptor SetProcessDefaultLayout$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptInitOIDFunctionSet$MH = RuntimeHelper.downcallHandle(
-        "CryptInitOIDFunctionSet",
-        constants$422.CryptInitOIDFunctionSet$FUNC
+    static final MethodHandle SetProcessDefaultLayout$MH = RuntimeHelper.downcallHandle(
+        "SetProcessDefaultLayout",
+        constants$422.SetProcessDefaultLayout$FUNC
+    );
+    static final FunctionDescriptor GetDesktopWindow$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetDesktopWindow$MH = RuntimeHelper.downcallHandle(
+        "GetDesktopWindow",
+        constants$422.GetDesktopWindow$FUNC
     );
 }
 

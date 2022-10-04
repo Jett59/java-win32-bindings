@@ -11,13 +11,13 @@ public interface DRAWSTATEPROC {
 
     int apply(java.lang.foreign.MemoryAddress hdc, long lData, long wData, int cx, int cy);
     static MemorySegment allocate(DRAWSTATEPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(DRAWSTATEPROC.class, fi, constants$227.DRAWSTATEPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(DRAWSTATEPROC.class, fi, constants$331.DRAWSTATEPROC$FUNC, session);
     }
     static DRAWSTATEPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _hdc, long _lData, long _wData, int _cx, int _cy) -> {
             try {
-                return (int)constants$227.DRAWSTATEPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hdc, _lData, _wData, _cx, _cy);
+                return (int)constants$331.DRAWSTATEPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_hdc, _lData, _wData, _cx, _cy);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

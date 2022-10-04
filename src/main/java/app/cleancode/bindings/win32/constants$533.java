@@ -9,58 +9,58 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$533 {
 
-    static final FunctionDescriptor SetJobNamedProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor midiOutGetVolume$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetJobNamedProperty$MH = RuntimeHelper.downcallHandle(
-        "SetJobNamedProperty",
-        constants$533.SetJobNamedProperty$FUNC
+    static final MethodHandle midiOutGetVolume$MH = RuntimeHelper.downcallHandle(
+        "midiOutGetVolume",
+        constants$533.midiOutGetVolume$FUNC
     );
-    static final FunctionDescriptor DeleteJobNamedProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor midiOutSetVolume$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeleteJobNamedProperty$MH = RuntimeHelper.downcallHandle(
-        "DeleteJobNamedProperty",
-        constants$533.DeleteJobNamedProperty$FUNC
+    static final MethodHandle midiOutSetVolume$MH = RuntimeHelper.downcallHandle(
+        "midiOutSetVolume",
+        constants$533.midiOutSetVolume$FUNC
     );
-    static final FunctionDescriptor EnumJobNamedProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor midiOutGetErrorTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutGetErrorTextA$MH = RuntimeHelper.downcallHandle(
+        "midiOutGetErrorTextA",
+        constants$533.midiOutGetErrorTextA$FUNC
+    );
+    static final FunctionDescriptor midiOutGetErrorTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutGetErrorTextW$MH = RuntimeHelper.downcallHandle(
+        "midiOutGetErrorTextW",
+        constants$533.midiOutGetErrorTextW$FUNC
+    );
+    static final FunctionDescriptor midiOutOpen$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle midiOutOpen$MH = RuntimeHelper.downcallHandle(
+        "midiOutOpen",
+        constants$533.midiOutOpen$FUNC
+    );
+    static final FunctionDescriptor midiOutClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumJobNamedProperties$MH = RuntimeHelper.downcallHandle(
-        "EnumJobNamedProperties",
-        constants$533.EnumJobNamedProperties$FUNC
+    static final MethodHandle midiOutClose$MH = RuntimeHelper.downcallHandle(
+        "midiOutClose",
+        constants$533.midiOutClose$FUNC
     );
-    static final FunctionDescriptor GetPrintOutputInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrintOutputInfo$MH = RuntimeHelper.downcallHandle(
-        "GetPrintOutputInfo",
-        constants$533.GetPrintOutputInfo$FUNC
-    );
-    static final  GroupLayout NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID", constants$533.NETWORK_MANAGER_FIRST_IP_ADDRESS_ARRIVAL_GUID$LAYOUT);
-    static final  GroupLayout NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID$LAYOUT = MemoryLayout.structLayout(
-        Constants$root.C_LONG$LAYOUT.withName("Data1"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data2"),
-        Constants$root.C_SHORT$LAYOUT.withName("Data3"),
-        MemoryLayout.sequenceLayout(8, Constants$root.C_CHAR$LAYOUT).withName("Data4")
-    ).withName("_GUID");
-    static final MemorySegment NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID$SEGMENT = RuntimeHelper.lookupGlobalVariable("NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID", constants$533.NETWORK_MANAGER_LAST_IP_ADDRESS_REMOVAL_GUID$LAYOUT);
 }
 
 

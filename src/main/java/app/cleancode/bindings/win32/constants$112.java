@@ -9,69 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$112 {
 
-    static final FunctionDescriptor GetPrivateProfileIntW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor QueueUserAPC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetPrivateProfileIntW$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileIntW",
-        constants$112.GetPrivateProfileIntW$FUNC
+    static final MethodHandle QueueUserAPC$MH = RuntimeHelper.downcallHandle(
+        "QueueUserAPC",
+        constants$112.QueueUserAPC$FUNC
     );
-    static final FunctionDescriptor GetPrivateProfileStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetProcessTimes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrivateProfileStringA$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileStringA",
-        constants$112.GetPrivateProfileStringA$FUNC
-    );
-    static final FunctionDescriptor GetPrivateProfileStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPrivateProfileStringW$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileStringW",
-        constants$112.GetPrivateProfileStringW$FUNC
-    );
-    static final FunctionDescriptor WritePrivateProfileStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WritePrivateProfileStringA$MH = RuntimeHelper.downcallHandle(
-        "WritePrivateProfileStringA",
-        constants$112.WritePrivateProfileStringA$FUNC
+    static final MethodHandle GetProcessTimes$MH = RuntimeHelper.downcallHandle(
+        "GetProcessTimes",
+        constants$112.GetProcessTimes$FUNC
     );
-    static final FunctionDescriptor WritePrivateProfileStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GetCurrentProcess$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetCurrentProcess$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentProcess",
+        constants$112.GetCurrentProcess$FUNC
     );
-    static final MethodHandle WritePrivateProfileStringW$MH = RuntimeHelper.downcallHandle(
-        "WritePrivateProfileStringW",
-        constants$112.WritePrivateProfileStringW$FUNC
+    static final FunctionDescriptor GetCurrentProcessId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetCurrentProcessId$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentProcessId",
+        constants$112.GetCurrentProcessId$FUNC
     );
-    static final FunctionDescriptor GetPrivateProfileSectionA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor ExitProcess$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetPrivateProfileSectionA$MH = RuntimeHelper.downcallHandle(
-        "GetPrivateProfileSectionA",
-        constants$112.GetPrivateProfileSectionA$FUNC
+    static final MethodHandle ExitProcess$MH = RuntimeHelper.downcallHandle(
+        "ExitProcess",
+        constants$112.ExitProcess$FUNC
+    );
+    static final FunctionDescriptor TerminateProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle TerminateProcess$MH = RuntimeHelper.downcallHandle(
+        "TerminateProcess",
+        constants$112.TerminateProcess$FUNC
     );
 }
 

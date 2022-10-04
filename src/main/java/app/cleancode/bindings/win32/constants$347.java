@@ -9,60 +9,75 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$347 {
 
-    static final FunctionDescriptor RegisterPointerDeviceNotifications$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SendMessageTimeoutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegisterPointerDeviceNotifications$MH = RuntimeHelper.downcallHandle(
-        "RegisterPointerDeviceNotifications",
-        constants$347.RegisterPointerDeviceNotifications$FUNC
-    );
-    static final FunctionDescriptor GetPointerDeviceRects$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerDeviceRects$MH = RuntimeHelper.downcallHandle(
-        "GetPointerDeviceRects",
-        constants$347.GetPointerDeviceRects$FUNC
-    );
-    static final FunctionDescriptor GetPointerDeviceCursors$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerDeviceCursors$MH = RuntimeHelper.downcallHandle(
-        "GetPointerDeviceCursors",
-        constants$347.GetPointerDeviceCursors$FUNC
-    );
-    static final FunctionDescriptor GetRawPointerDeviceData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetRawPointerDeviceData$MH = RuntimeHelper.downcallHandle(
-        "GetRawPointerDeviceData",
-        constants$347.GetRawPointerDeviceData$FUNC
-    );
-    static final FunctionDescriptor ChangeWindowMessageFilter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ChangeWindowMessageFilter$MH = RuntimeHelper.downcallHandle(
-        "ChangeWindowMessageFilter",
-        constants$347.ChangeWindowMessageFilter$FUNC
-    );
-    static final FunctionDescriptor ChangeWindowMessageFilterEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ChangeWindowMessageFilterEx$MH = RuntimeHelper.downcallHandle(
-        "ChangeWindowMessageFilterEx",
-        constants$347.ChangeWindowMessageFilterEx$FUNC
+    static final MethodHandle SendMessageTimeoutA$MH = RuntimeHelper.downcallHandle(
+        "SendMessageTimeoutA",
+        constants$347.SendMessageTimeoutA$FUNC
+    );
+    static final FunctionDescriptor SendMessageTimeoutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SendMessageTimeoutW$MH = RuntimeHelper.downcallHandle(
+        "SendMessageTimeoutW",
+        constants$347.SendMessageTimeoutW$FUNC
+    );
+    static final FunctionDescriptor SendNotifyMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SendNotifyMessageA$MH = RuntimeHelper.downcallHandle(
+        "SendNotifyMessageA",
+        constants$347.SendNotifyMessageA$FUNC
+    );
+    static final FunctionDescriptor SendNotifyMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SendNotifyMessageW$MH = RuntimeHelper.downcallHandle(
+        "SendNotifyMessageW",
+        constants$347.SendNotifyMessageW$FUNC
+    );
+    static final FunctionDescriptor SendMessageCallbackA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SendMessageCallbackA$MH = RuntimeHelper.downcallHandle(
+        "SendMessageCallbackA",
+        constants$347.SendMessageCallbackA$FUNC
+    );
+    static final FunctionDescriptor SendMessageCallbackW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle SendMessageCallbackW$MH = RuntimeHelper.downcallHandle(
+        "SendMessageCallbackW",
+        constants$347.SendMessageCallbackW$FUNC
     );
 }
 

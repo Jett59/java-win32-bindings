@@ -9,56 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$546 {
 
-    static final FunctionDescriptor NotifyServiceStatusChangeA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExtractAssociatedIconA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle NotifyServiceStatusChangeA$MH = RuntimeHelper.downcallHandle(
-        "NotifyServiceStatusChangeA",
-        constants$546.NotifyServiceStatusChangeA$FUNC
-    );
-    static final FunctionDescriptor NotifyServiceStatusChangeW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle NotifyServiceStatusChangeW$MH = RuntimeHelper.downcallHandle(
-        "NotifyServiceStatusChangeW",
-        constants$546.NotifyServiceStatusChangeW$FUNC
+    static final MethodHandle ExtractAssociatedIconA$MH = RuntimeHelper.downcallHandle(
+        "ExtractAssociatedIconA",
+        constants$546.ExtractAssociatedIconA$FUNC
     );
-    static final FunctionDescriptor ControlServiceExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExtractAssociatedIconW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ControlServiceExA$MH = RuntimeHelper.downcallHandle(
-        "ControlServiceExA",
-        constants$546.ControlServiceExA$FUNC
-    );
-    static final FunctionDescriptor ControlServiceExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ControlServiceExW$MH = RuntimeHelper.downcallHandle(
-        "ControlServiceExW",
-        constants$546.ControlServiceExW$FUNC
+    static final MethodHandle ExtractAssociatedIconW$MH = RuntimeHelper.downcallHandle(
+        "ExtractAssociatedIconW",
+        constants$546.ExtractAssociatedIconW$FUNC
     );
-    static final FunctionDescriptor QueryServiceDynamicInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExtractAssociatedIconExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle QueryServiceDynamicInformation$MH = RuntimeHelper.downcallHandle(
-        "QueryServiceDynamicInformation",
-        constants$546.QueryServiceDynamicInformation$FUNC
+    static final MethodHandle ExtractAssociatedIconExA$MH = RuntimeHelper.downcallHandle(
+        "ExtractAssociatedIconExA",
+        constants$546.ExtractAssociatedIconExA$FUNC
     );
-    static final FunctionDescriptor SC_NOTIFICATION_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExtractAssociatedIconExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ExtractAssociatedIconExW$MH = RuntimeHelper.downcallHandle(
+        "ExtractAssociatedIconExW",
+        constants$546.ExtractAssociatedIconExW$FUNC
+    );
+    static final FunctionDescriptor ExtractIconA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ExtractIconA$MH = RuntimeHelper.downcallHandle(
+        "ExtractIconA",
+        constants$546.ExtractIconA$FUNC
+    );
+    static final FunctionDescriptor ExtractIconW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ExtractIconW$MH = RuntimeHelper.downcallHandle(
+        "ExtractIconW",
+        constants$546.ExtractIconW$FUNC
     );
 }
 

@@ -9,63 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$272 {
 
-    static final FunctionDescriptor GetKeyNameTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LPFNDEVMODE$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetKeyNameTextW$MH = RuntimeHelper.downcallHandle(
-        "GetKeyNameTextW",
-        constants$272.GetKeyNameTextW$FUNC
-    );
-    static final FunctionDescriptor GetKeyboardType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GetKeyboardType$MH = RuntimeHelper.downcallHandle(
-        "GetKeyboardType",
-        constants$272.GetKeyboardType$FUNC
-    );
-    static final FunctionDescriptor ToAscii$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ToAscii$MH = RuntimeHelper.downcallHandle(
-        "ToAscii",
-        constants$272.ToAscii$FUNC
+    static final MethodHandle LPFNDEVMODE$MH = RuntimeHelper.downcallHandle(
+        constants$272.LPFNDEVMODE$FUNC
     );
-    static final FunctionDescriptor ToAsciiEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LPFNDEVCAPS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle LPFNDEVCAPS$MH = RuntimeHelper.downcallHandle(
+        constants$272.LPFNDEVCAPS$FUNC
+    );
+    static final FunctionDescriptor DeviceCapabilitiesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeviceCapabilitiesA$MH = RuntimeHelper.downcallHandle(
+        "DeviceCapabilitiesA",
+        constants$272.DeviceCapabilitiesA$FUNC
+    );
+    static final FunctionDescriptor DeviceCapabilitiesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeviceCapabilitiesW$MH = RuntimeHelper.downcallHandle(
+        "DeviceCapabilitiesW",
+        constants$272.DeviceCapabilitiesW$FUNC
+    );
+    static final FunctionDescriptor DrawEscape$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ToAsciiEx$MH = RuntimeHelper.downcallHandle(
-        "ToAsciiEx",
-        constants$272.ToAsciiEx$FUNC
-    );
-    static final FunctionDescriptor ToUnicode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ToUnicode$MH = RuntimeHelper.downcallHandle(
-        "ToUnicode",
-        constants$272.ToUnicode$FUNC
-    );
-    static final FunctionDescriptor OemKeyScan$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT
-    );
-    static final MethodHandle OemKeyScan$MH = RuntimeHelper.downcallHandle(
-        "OemKeyScan",
-        constants$272.OemKeyScan$FUNC
+    static final MethodHandle DrawEscape$MH = RuntimeHelper.downcallHandle(
+        "DrawEscape",
+        constants$272.DrawEscape$FUNC
     );
 }
 

@@ -9,52 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$476 {
 
-    static final FunctionDescriptor CertGetCertificateChain$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnumSystemLanguageGroupsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumSystemLanguageGroupsA$MH = RuntimeHelper.downcallHandle(
+        "EnumSystemLanguageGroupsA",
+        constants$476.EnumSystemLanguageGroupsA$FUNC
+    );
+    static final FunctionDescriptor EnumSystemLanguageGroupsW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CertGetCertificateChain$MH = RuntimeHelper.downcallHandle(
-        "CertGetCertificateChain",
-        constants$476.CertGetCertificateChain$FUNC
+    static final MethodHandle EnumSystemLanguageGroupsW$MH = RuntimeHelper.downcallHandle(
+        "EnumSystemLanguageGroupsW",
+        constants$476.EnumSystemLanguageGroupsW$FUNC
     );
-    static final FunctionDescriptor CertFreeCertificateChain$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFreeCertificateChain$MH = RuntimeHelper.downcallHandle(
-        "CertFreeCertificateChain",
-        constants$476.CertFreeCertificateChain$FUNC
-    );
-    static final FunctionDescriptor CertDuplicateCertificateChain$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertDuplicateCertificateChain$MH = RuntimeHelper.downcallHandle(
-        "CertDuplicateCertificateChain",
-        constants$476.CertDuplicateCertificateChain$FUNC
-    );
-    static final FunctionDescriptor CertFindChainInStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor EnumLanguageGroupLocalesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumLanguageGroupLocalesA$MH = RuntimeHelper.downcallHandle(
+        "EnumLanguageGroupLocalesA",
+        constants$476.EnumLanguageGroupLocalesA$FUNC
+    );
+    static final FunctionDescriptor EnumLanguageGroupLocalesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumLanguageGroupLocalesW$MH = RuntimeHelper.downcallHandle(
+        "EnumLanguageGroupLocalesW",
+        constants$476.EnumLanguageGroupLocalesW$FUNC
+    );
+    static final FunctionDescriptor EnumUILanguagesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CertFindChainInStore$MH = RuntimeHelper.downcallHandle(
-        "CertFindChainInStore",
-        constants$476.CertFindChainInStore$FUNC
+    static final MethodHandle EnumUILanguagesA$MH = RuntimeHelper.downcallHandle(
+        "EnumUILanguagesA",
+        constants$476.EnumUILanguagesA$FUNC
     );
-    static final FunctionDescriptor PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumUILanguagesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$MH = RuntimeHelper.downcallHandle(
-        constants$476.PFN_CERT_CHAIN_FIND_BY_ISSUER_CALLBACK$FUNC
+    static final MethodHandle EnumUILanguagesW$MH = RuntimeHelper.downcallHandle(
+        "EnumUILanguagesW",
+        constants$476.EnumUILanguagesW$FUNC
     );
 }
 

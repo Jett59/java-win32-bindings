@@ -9,35 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$430 {
 
-    static final FunctionDescriptor PFN_CMSG_IMPORT_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LookupIconIdFromDirectory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_IMPORT_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
-        constants$430.PFN_CMSG_IMPORT_ENCRYPT_KEY$FUNC
+    static final MethodHandle LookupIconIdFromDirectory$MH = RuntimeHelper.downcallHandle(
+        "LookupIconIdFromDirectory",
+        constants$430.LookupIconIdFromDirectory$FUNC
     );
-    static final FunctionDescriptor PFN_CMSG_GEN_CONTENT_ENCRYPT_KEY$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor LookupIconIdFromDirectoryEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_GEN_CONTENT_ENCRYPT_KEY$MH = RuntimeHelper.downcallHandle(
-        constants$430.PFN_CMSG_GEN_CONTENT_ENCRYPT_KEY$FUNC
+    static final MethodHandle LookupIconIdFromDirectoryEx$MH = RuntimeHelper.downcallHandle(
+        "LookupIconIdFromDirectoryEx",
+        constants$430.LookupIconIdFromDirectoryEx$FUNC
     );
-    static final FunctionDescriptor PFN_CMSG_EXPORT_KEY_TRANS$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateIconFromResource$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateIconFromResource$MH = RuntimeHelper.downcallHandle(
+        "CreateIconFromResource",
+        constants$430.CreateIconFromResource$FUNC
+    );
+    static final FunctionDescriptor CreateIconFromResourceEx$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CreateIconFromResourceEx$MH = RuntimeHelper.downcallHandle(
+        "CreateIconFromResourceEx",
+        constants$430.CreateIconFromResourceEx$FUNC
+    );
+    static final FunctionDescriptor LoadImageA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CMSG_EXPORT_KEY_TRANS$MH = RuntimeHelper.downcallHandle(
-        constants$430.PFN_CMSG_EXPORT_KEY_TRANS$FUNC
+    static final MethodHandle LoadImageA$MH = RuntimeHelper.downcallHandle(
+        "LoadImageA",
+        constants$430.LoadImageA$FUNC
+    );
+    static final FunctionDescriptor LoadImageW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LoadImageW$MH = RuntimeHelper.downcallHandle(
+        "LoadImageW",
+        constants$430.LoadImageW$FUNC
     );
 }
 

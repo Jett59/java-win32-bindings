@@ -9,12 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$630 {
 
-    static final MemoryAddress PKCS_CONTENT_INFO$ADDR = MemoryAddress.ofLong(33L);
-    static final MemoryAddress X509_SEQUENCE_OF_ANY$ADDR = MemoryAddress.ofLong(34L);
-    static final MemoryAddress X509_CRL_DIST_POINTS$ADDR = MemoryAddress.ofLong(35L);
-    static final MemoryAddress X509_ENHANCED_KEY_USAGE$ADDR = MemoryAddress.ofLong(36L);
-    static final MemoryAddress PKCS_CTL$ADDR = MemoryAddress.ofLong(37L);
-    static final MemoryAddress X509_MULTI_BYTE_UINT$ADDR = MemoryAddress.ofLong(38L);
+    static final FunctionDescriptor PFXImportCertStore$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFXImportCertStore$MH = RuntimeHelper.downcallHandle(
+        "PFXImportCertStore",
+        constants$630.PFXImportCertStore$FUNC
+    );
+    static final FunctionDescriptor PFXIsPFXBlob$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFXIsPFXBlob$MH = RuntimeHelper.downcallHandle(
+        "PFXIsPFXBlob",
+        constants$630.PFXIsPFXBlob$FUNC
+    );
+    static final FunctionDescriptor PFXVerifyPassword$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFXVerifyPassword$MH = RuntimeHelper.downcallHandle(
+        "PFXVerifyPassword",
+        constants$630.PFXVerifyPassword$FUNC
+    );
+    static final FunctionDescriptor PFXExportCertStoreEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFXExportCertStoreEx$MH = RuntimeHelper.downcallHandle(
+        "PFXExportCertStoreEx",
+        constants$630.PFXExportCertStoreEx$FUNC
+    );
+    static final FunctionDescriptor PFXExportCertStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PFXExportCertStore$MH = RuntimeHelper.downcallHandle(
+        "PFXExportCertStore",
+        constants$630.PFXExportCertStore$FUNC
+    );
+    static final FunctionDescriptor PFN_CERT_SERVER_OCSP_RESPONSE_UPDATE_CALLBACK$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
 }
 
 

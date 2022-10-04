@@ -9,12 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$602 {
 
-    static final MemorySegment szOID_ECDSA_SHA384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.4.3.3");
-    static final MemorySegment szOID_ECDSA_SHA512$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.4.3.4");
-    static final MemorySegment szOID_NIST_AES128_CBC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.1.2");
-    static final MemorySegment szOID_NIST_AES192_CBC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.1.22");
-    static final MemorySegment szOID_NIST_AES256_CBC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.1.42");
-    static final MemorySegment szOID_NIST_AES128_WRAP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.1.5");
+    static final FunctionDescriptor CertDeleteCTLFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertDeleteCTLFromStore$MH = RuntimeHelper.downcallHandle(
+        "CertDeleteCTLFromStore",
+        constants$602.CertDeleteCTLFromStore$FUNC
+    );
+    static final FunctionDescriptor CertAddCertificateLinkToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddCertificateLinkToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddCertificateLinkToStore",
+        constants$602.CertAddCertificateLinkToStore$FUNC
+    );
+    static final FunctionDescriptor CertAddCRLLinkToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddCRLLinkToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddCRLLinkToStore",
+        constants$602.CertAddCRLLinkToStore$FUNC
+    );
+    static final FunctionDescriptor CertAddCTLLinkToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertAddCTLLinkToStore$MH = RuntimeHelper.downcallHandle(
+        "CertAddCTLLinkToStore",
+        constants$602.CertAddCTLLinkToStore$FUNC
+    );
+    static final FunctionDescriptor CertAddStoreToCollection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CertAddStoreToCollection$MH = RuntimeHelper.downcallHandle(
+        "CertAddStoreToCollection",
+        constants$602.CertAddStoreToCollection$FUNC
+    );
+    static final FunctionDescriptor CertRemoveStoreFromCollection$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertRemoveStoreFromCollection$MH = RuntimeHelper.downcallHandle(
+        "CertRemoveStoreFromCollection",
+        constants$602.CertRemoveStoreFromCollection$FUNC
+    );
 }
 
 

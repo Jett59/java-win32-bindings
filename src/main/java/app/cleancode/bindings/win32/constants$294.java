@@ -9,81 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$294 {
 
-    static final FunctionDescriptor DrawTextA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DrawTextA$MH = RuntimeHelper.downcallHandle(
-        "DrawTextA",
-        constants$294.DrawTextA$FUNC
-    );
-    static final FunctionDescriptor DrawTextW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DrawTextW$MH = RuntimeHelper.downcallHandle(
-        "DrawTextW",
-        constants$294.DrawTextW$FUNC
-    );
-    static final FunctionDescriptor DrawTextExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveFontResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DrawTextExA$MH = RuntimeHelper.downcallHandle(
-        "DrawTextExA",
-        constants$294.DrawTextExA$FUNC
+    static final MethodHandle RemoveFontResourceW$MH = RuntimeHelper.downcallHandle(
+        "RemoveFontResourceW",
+        constants$294.RemoveFontResourceW$FUNC
     );
-    static final FunctionDescriptor DrawTextExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RoundRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle RoundRect$MH = RuntimeHelper.downcallHandle(
+        "RoundRect",
+        constants$294.RoundRect$FUNC
+    );
+    static final FunctionDescriptor ResizePalette$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle ResizePalette$MH = RuntimeHelper.downcallHandle(
+        "ResizePalette",
+        constants$294.ResizePalette$FUNC
+    );
+    static final FunctionDescriptor SaveDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DrawTextExW$MH = RuntimeHelper.downcallHandle(
-        "DrawTextExW",
-        constants$294.DrawTextExW$FUNC
+    static final MethodHandle SaveDC$MH = RuntimeHelper.downcallHandle(
+        "SaveDC",
+        constants$294.SaveDC$FUNC
     );
-    static final FunctionDescriptor GrayStringA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SelectClipRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SelectClipRgn$MH = RuntimeHelper.downcallHandle(
+        "SelectClipRgn",
+        constants$294.SelectClipRgn$FUNC
+    );
+    static final FunctionDescriptor ExtSelectClipRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GrayStringA$MH = RuntimeHelper.downcallHandle(
-        "GrayStringA",
-        constants$294.GrayStringA$FUNC
-    );
-    static final FunctionDescriptor GrayStringW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle GrayStringW$MH = RuntimeHelper.downcallHandle(
-        "GrayStringW",
-        constants$294.GrayStringW$FUNC
+    static final MethodHandle ExtSelectClipRgn$MH = RuntimeHelper.downcallHandle(
+        "ExtSelectClipRgn",
+        constants$294.ExtSelectClipRgn$FUNC
     );
 }
 

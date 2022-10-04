@@ -11,13 +11,13 @@ public interface WNDPROC {
 
     long apply(java.lang.foreign.MemoryAddress _x0, int _x1, long _x2, long _x3);
     static MemorySegment allocate(WNDPROC fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(WNDPROC.class, fi, constants$222.WNDPROC$FUNC, session);
+        return RuntimeHelper.upcallStub(WNDPROC.class, fi, constants$326.WNDPROC$FUNC, session);
     }
     static WNDPROC ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0, int __x1, long __x2, long __x3) -> {
             try {
-                return (long)constants$223.WNDPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, __x2, __x3);
+                return (long)constants$326.WNDPROC$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0, __x1, __x2, __x3);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

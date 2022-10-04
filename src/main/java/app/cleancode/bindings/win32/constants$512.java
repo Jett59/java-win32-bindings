@@ -9,67 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$512 {
 
-    static final FunctionDescriptor GetPrinterDriverDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WNetGetLastErrorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle GetPrinterDriverDirectoryW$MH = RuntimeHelper.downcallHandle(
-        "GetPrinterDriverDirectoryW",
-        constants$512.GetPrinterDriverDirectoryW$FUNC
+    static final MethodHandle WNetGetLastErrorW$MH = RuntimeHelper.downcallHandle(
+        "WNetGetLastErrorW",
+        constants$512.WNetGetLastErrorW$FUNC
     );
-    static final FunctionDescriptor DeletePrinterDriverA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle DeletePrinterDriverA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDriverA",
-        constants$512.DeletePrinterDriverA$FUNC
-    );
-    static final FunctionDescriptor DeletePrinterDriverW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor MultinetGetConnectionPerformanceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DeletePrinterDriverW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDriverW",
-        constants$512.DeletePrinterDriverW$FUNC
+    static final MethodHandle MultinetGetConnectionPerformanceA$MH = RuntimeHelper.downcallHandle(
+        "MultinetGetConnectionPerformanceA",
+        constants$512.MultinetGetConnectionPerformanceA$FUNC
     );
-    static final FunctionDescriptor DeletePrinterDriverExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor MultinetGetConnectionPerformanceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MultinetGetConnectionPerformanceW$MH = RuntimeHelper.downcallHandle(
+        "MultinetGetConnectionPerformanceW",
+        constants$512.MultinetGetConnectionPerformanceW$FUNC
+    );
+    static final FunctionDescriptor YIELDPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle DeletePrinterDriverExA$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDriverExA",
-        constants$512.DeletePrinterDriverExA$FUNC
+    static final MethodHandle YIELDPROC$MH = RuntimeHelper.downcallHandle(
+        constants$512.YIELDPROC$FUNC
     );
-    static final FunctionDescriptor DeletePrinterDriverExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor mciSendCommandA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle DeletePrinterDriverExW$MH = RuntimeHelper.downcallHandle(
-        "DeletePrinterDriverExW",
-        constants$512.DeletePrinterDriverExW$FUNC
-    );
-    static final FunctionDescriptor AddPrintProcessorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AddPrintProcessorA$MH = RuntimeHelper.downcallHandle(
-        "AddPrintProcessorA",
-        constants$512.AddPrintProcessorA$FUNC
+    static final MethodHandle mciSendCommandA$MH = RuntimeHelper.downcallHandle(
+        "mciSendCommandA",
+        constants$512.mciSendCommandA$FUNC
     );
 }
 

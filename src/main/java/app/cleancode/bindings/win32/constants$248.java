@@ -9,47 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$248 {
 
-    static final FunctionDescriptor CallWindowProcW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor LocalSystemTimeToLocalFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle CallWindowProcW$MH = RuntimeHelper.downcallHandle(
-        "CallWindowProcW",
-        constants$248.CallWindowProcW$FUNC
-    );
-    static final FunctionDescriptor InSendMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle InSendMessage$MH = RuntimeHelper.downcallHandle(
-        "InSendMessage",
-        constants$248.InSendMessage$FUNC
-    );
-    static final FunctionDescriptor InSendMessageEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle InSendMessageEx$MH = RuntimeHelper.downcallHandle(
-        "InSendMessageEx",
-        constants$248.InSendMessageEx$FUNC
+    static final MethodHandle LocalSystemTimeToLocalFileTime$MH = RuntimeHelper.downcallHandle(
+        "LocalSystemTimeToLocalFileTime",
+        constants$248.LocalSystemTimeToLocalFileTime$FUNC
     );
-    static final FunctionDescriptor GetDoubleClickTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetDoubleClickTime$MH = RuntimeHelper.downcallHandle(
-        "GetDoubleClickTime",
-        constants$248.GetDoubleClickTime$FUNC
-    );
-    static final FunctionDescriptor SetDoubleClickTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetSystemPowerState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetDoubleClickTime$MH = RuntimeHelper.downcallHandle(
-        "SetDoubleClickTime",
-        constants$248.SetDoubleClickTime$FUNC
+    static final MethodHandle SetSystemPowerState$MH = RuntimeHelper.downcallHandle(
+        "SetSystemPowerState",
+        constants$248.SetSystemPowerState$FUNC
     );
-    static final FunctionDescriptor RegisterClassA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor GetSystemPowerStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegisterClassA$MH = RuntimeHelper.downcallHandle(
-        "RegisterClassA",
-        constants$248.RegisterClassA$FUNC
+    static final MethodHandle GetSystemPowerStatus$MH = RuntimeHelper.downcallHandle(
+        "GetSystemPowerStatus",
+        constants$248.GetSystemPowerStatus$FUNC
+    );
+    static final FunctionDescriptor MapUserPhysicalPagesScatter$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MapUserPhysicalPagesScatter$MH = RuntimeHelper.downcallHandle(
+        "MapUserPhysicalPagesScatter",
+        constants$248.MapUserPhysicalPagesScatter$FUNC
+    );
+    static final FunctionDescriptor CreateJobObjectA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreateJobObjectA$MH = RuntimeHelper.downcallHandle(
+        "CreateJobObjectA",
+        constants$248.CreateJobObjectA$FUNC
+    );
+    static final FunctionDescriptor OpenJobObjectA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenJobObjectA$MH = RuntimeHelper.downcallHandle(
+        "OpenJobObjectA",
+        constants$248.OpenJobObjectA$FUNC
     );
 }
 

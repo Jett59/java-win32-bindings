@@ -9,62 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$209 {
 
-    static final FunctionDescriptor GetArcDirection$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetArcDirection$MH = RuntimeHelper.downcallHandle(
-        "GetArcDirection",
-        constants$209.GetArcDirection$FUNC
-    );
-    static final FunctionDescriptor GetObjectA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetObjectA$MH = RuntimeHelper.downcallHandle(
-        "GetObjectA",
-        constants$209.GetObjectA$FUNC
-    );
-    static final FunctionDescriptor GetObjectW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetObjectW$MH = RuntimeHelper.downcallHandle(
-        "GetObjectW",
-        constants$209.GetObjectW$FUNC
-    );
-    static final FunctionDescriptor MoveToEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle MoveToEx$MH = RuntimeHelper.downcallHandle(
-        "MoveToEx",
-        constants$209.MoveToEx$FUNC
-    );
-    static final FunctionDescriptor TextOutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EndUpdateResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle TextOutA$MH = RuntimeHelper.downcallHandle(
-        "TextOutA",
-        constants$209.TextOutA$FUNC
+    static final MethodHandle EndUpdateResourceW$MH = RuntimeHelper.downcallHandle(
+        "EndUpdateResourceW",
+        constants$209.EndUpdateResourceW$FUNC
     );
-    static final FunctionDescriptor TextOutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GlobalAddAtomA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalAddAtomA$MH = RuntimeHelper.downcallHandle(
+        "GlobalAddAtomA",
+        constants$209.GlobalAddAtomA$FUNC
+    );
+    static final FunctionDescriptor GlobalAddAtomW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalAddAtomW$MH = RuntimeHelper.downcallHandle(
+        "GlobalAddAtomW",
+        constants$209.GlobalAddAtomW$FUNC
+    );
+    static final FunctionDescriptor GlobalAddAtomExA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle TextOutW$MH = RuntimeHelper.downcallHandle(
-        "TextOutW",
-        constants$209.TextOutW$FUNC
+    static final MethodHandle GlobalAddAtomExA$MH = RuntimeHelper.downcallHandle(
+        "GlobalAddAtomExA",
+        constants$209.GlobalAddAtomExA$FUNC
+    );
+    static final FunctionDescriptor GlobalAddAtomExW$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GlobalAddAtomExW$MH = RuntimeHelper.downcallHandle(
+        "GlobalAddAtomExW",
+        constants$209.GlobalAddAtomExW$FUNC
+    );
+    static final FunctionDescriptor GlobalFindAtomA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GlobalFindAtomA$MH = RuntimeHelper.downcallHandle(
+        "GlobalFindAtomA",
+        constants$209.GlobalFindAtomA$FUNC
     );
 }
 

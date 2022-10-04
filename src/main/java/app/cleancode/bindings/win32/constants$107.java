@@ -9,60 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$107 {
 
-    static final FunctionDescriptor BeginUpdateResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle BeginUpdateResourceW$MH = RuntimeHelper.downcallHandle(
-        "BeginUpdateResourceW",
-        constants$107.BeginUpdateResourceW$FUNC
-    );
-    static final FunctionDescriptor UpdateResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle UpdateResourceA$MH = RuntimeHelper.downcallHandle(
-        "UpdateResourceA",
-        constants$107.UpdateResourceA$FUNC
-    );
-    static final FunctionDescriptor UpdateResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle UpdateResourceW$MH = RuntimeHelper.downcallHandle(
-        "UpdateResourceW",
-        constants$107.UpdateResourceW$FUNC
-    );
-    static final FunctionDescriptor EndUpdateResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EndUpdateResourceA$MH = RuntimeHelper.downcallHandle(
-        "EndUpdateResourceA",
-        constants$107.EndUpdateResourceA$FUNC
-    );
-    static final FunctionDescriptor EndUpdateResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EndUpdateResourceW$MH = RuntimeHelper.downcallHandle(
-        "EndUpdateResourceW",
-        constants$107.EndUpdateResourceW$FUNC
-    );
-    static final FunctionDescriptor GlobalAddAtomA$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT,
+    static final FunctionDescriptor OpenSemaphoreW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GlobalAddAtomA$MH = RuntimeHelper.downcallHandle(
-        "GlobalAddAtomA",
-        constants$107.GlobalAddAtomA$FUNC
+    static final MethodHandle OpenSemaphoreW$MH = RuntimeHelper.downcallHandle(
+        "OpenSemaphoreW",
+        constants$107.OpenSemaphoreW$FUNC
+    );
+    static final FunctionDescriptor PTIMERAPCROUTINE$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PTIMERAPCROUTINE$MH = RuntimeHelper.downcallHandle(
+        constants$107.PTIMERAPCROUTINE$FUNC
+    );
+    static final FunctionDescriptor OpenWaitableTimerW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenWaitableTimerW$MH = RuntimeHelper.downcallHandle(
+        "OpenWaitableTimerW",
+        constants$107.OpenWaitableTimerW$FUNC
+    );
+    static final FunctionDescriptor SetWaitableTimerEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetWaitableTimerEx$MH = RuntimeHelper.downcallHandle(
+        "SetWaitableTimerEx",
+        constants$107.SetWaitableTimerEx$FUNC
+    );
+    static final FunctionDescriptor SetWaitableTimer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetWaitableTimer$MH = RuntimeHelper.downcallHandle(
+        "SetWaitableTimer",
+        constants$107.SetWaitableTimer$FUNC
     );
 }
 

@@ -9,12 +9,70 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$676 {
 
-    static final MemorySegment szOID_NETSCAPE_CERT_SEQUENCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.2.5");
-    static final MemorySegment szOID_CT_PKI_DATA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.12.2");
-    static final MemorySegment szOID_CT_PKI_RESPONSE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.12.3");
-    static final MemorySegment szOID_PKIX_NO_SIGNATURE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.6.2");
-    static final MemorySegment szOID_CMC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7");
-    static final MemorySegment szOID_CMC_STATUS_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.1");
+    static final FunctionDescriptor DeleteFormW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DeleteFormW$MH = RuntimeHelper.downcallHandle(
+        "DeleteFormW",
+        constants$676.DeleteFormW$FUNC
+    );
+    static final FunctionDescriptor GetFormA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFormA$MH = RuntimeHelper.downcallHandle(
+        "GetFormA",
+        constants$676.GetFormA$FUNC
+    );
+    static final FunctionDescriptor GetFormW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetFormW$MH = RuntimeHelper.downcallHandle(
+        "GetFormW",
+        constants$676.GetFormW$FUNC
+    );
+    static final FunctionDescriptor SetFormA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetFormA$MH = RuntimeHelper.downcallHandle(
+        "SetFormA",
+        constants$676.SetFormA$FUNC
+    );
+    static final FunctionDescriptor SetFormW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetFormW$MH = RuntimeHelper.downcallHandle(
+        "SetFormW",
+        constants$676.SetFormW$FUNC
+    );
+    static final FunctionDescriptor EnumFormsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EnumFormsA$MH = RuntimeHelper.downcallHandle(
+        "EnumFormsA",
+        constants$676.EnumFormsA$FUNC
+    );
 }
 
 

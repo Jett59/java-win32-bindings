@@ -9,61 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$246 {
 
-    static final FunctionDescriptor PostMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FileTimeToSystemTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PostMessageA$MH = RuntimeHelper.downcallHandle(
-        "PostMessageA",
-        constants$246.PostMessageA$FUNC
+    static final MethodHandle FileTimeToSystemTime$MH = RuntimeHelper.downcallHandle(
+        "FileTimeToSystemTime",
+        constants$246.FileTimeToSystemTime$FUNC
     );
-    static final FunctionDescriptor PostMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SystemTimeToFileTime$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PostMessageW$MH = RuntimeHelper.downcallHandle(
-        "PostMessageW",
-        constants$246.PostMessageW$FUNC
+    static final MethodHandle SystemTimeToFileTime$MH = RuntimeHelper.downcallHandle(
+        "SystemTimeToFileTime",
+        constants$246.SystemTimeToFileTime$FUNC
     );
-    static final FunctionDescriptor PostThreadMessageA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor GetTimeZoneInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PostThreadMessageA$MH = RuntimeHelper.downcallHandle(
-        "PostThreadMessageA",
-        constants$246.PostThreadMessageA$FUNC
+    static final MethodHandle GetTimeZoneInformation$MH = RuntimeHelper.downcallHandle(
+        "GetTimeZoneInformation",
+        constants$246.GetTimeZoneInformation$FUNC
     );
-    static final FunctionDescriptor PostThreadMessageW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor SetTimeZoneInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PostThreadMessageW$MH = RuntimeHelper.downcallHandle(
-        "PostThreadMessageW",
-        constants$246.PostThreadMessageW$FUNC
+    static final MethodHandle SetTimeZoneInformation$MH = RuntimeHelper.downcallHandle(
+        "SetTimeZoneInformation",
+        constants$246.SetTimeZoneInformation$FUNC
     );
-    static final FunctionDescriptor AttachThreadInput$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor SetDynamicTimeZoneInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AttachThreadInput$MH = RuntimeHelper.downcallHandle(
-        "AttachThreadInput",
-        constants$246.AttachThreadInput$FUNC
+    static final MethodHandle SetDynamicTimeZoneInformation$MH = RuntimeHelper.downcallHandle(
+        "SetDynamicTimeZoneInformation",
+        constants$246.SetDynamicTimeZoneInformation$FUNC
     );
-    static final FunctionDescriptor ReplyMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+    static final FunctionDescriptor GetDynamicTimeZoneInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ReplyMessage$MH = RuntimeHelper.downcallHandle(
-        "ReplyMessage",
-        constants$246.ReplyMessage$FUNC
+    static final MethodHandle GetDynamicTimeZoneInformation$MH = RuntimeHelper.downcallHandle(
+        "GetDynamicTimeZoneInformation",
+        constants$246.GetDynamicTimeZoneInformation$FUNC
     );
 }
 

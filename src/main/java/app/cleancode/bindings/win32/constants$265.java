@@ -9,52 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$265 {
 
-    static final FunctionDescriptor AddClipboardFormatListener$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CloseMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddClipboardFormatListener$MH = RuntimeHelper.downcallHandle(
-        "AddClipboardFormatListener",
-        constants$265.AddClipboardFormatListener$FUNC
+    static final MethodHandle CloseMetaFile$MH = RuntimeHelper.downcallHandle(
+        "CloseMetaFile",
+        constants$265.CloseMetaFile$FUNC
     );
-    static final FunctionDescriptor RemoveClipboardFormatListener$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RemoveClipboardFormatListener$MH = RuntimeHelper.downcallHandle(
-        "RemoveClipboardFormatListener",
-        constants$265.RemoveClipboardFormatListener$FUNC
-    );
-    static final FunctionDescriptor GetUpdatedClipboardFormats$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CombineRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle CombineRgn$MH = RuntimeHelper.downcallHandle(
+        "CombineRgn",
+        constants$265.CombineRgn$FUNC
+    );
+    static final FunctionDescriptor CopyMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CopyMetaFileA$MH = RuntimeHelper.downcallHandle(
+        "CopyMetaFileA",
+        constants$265.CopyMetaFileA$FUNC
+    );
+    static final FunctionDescriptor CopyMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CopyMetaFileW$MH = RuntimeHelper.downcallHandle(
+        "CopyMetaFileW",
+        constants$265.CopyMetaFileW$FUNC
+    );
+    static final FunctionDescriptor CreateBitmap$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetUpdatedClipboardFormats$MH = RuntimeHelper.downcallHandle(
-        "GetUpdatedClipboardFormats",
-        constants$265.GetUpdatedClipboardFormats$FUNC
+    static final MethodHandle CreateBitmap$MH = RuntimeHelper.downcallHandle(
+        "CreateBitmap",
+        constants$265.CreateBitmap$FUNC
     );
-    static final FunctionDescriptor CharToOemA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CreateBitmapIndirect$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CharToOemA$MH = RuntimeHelper.downcallHandle(
-        "CharToOemA",
-        constants$265.CharToOemA$FUNC
-    );
-    static final FunctionDescriptor CharToOemW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CharToOemW$MH = RuntimeHelper.downcallHandle(
-        "CharToOemW",
-        constants$265.CharToOemW$FUNC
-    );
-    static final FunctionDescriptor OemToCharA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle OemToCharA$MH = RuntimeHelper.downcallHandle(
-        "OemToCharA",
-        constants$265.OemToCharA$FUNC
+    static final MethodHandle CreateBitmapIndirect$MH = RuntimeHelper.downcallHandle(
+        "CreateBitmapIndirect",
+        constants$265.CreateBitmapIndirect$FUNC
     );
 }
 

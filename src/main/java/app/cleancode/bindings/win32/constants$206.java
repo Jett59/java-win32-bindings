@@ -9,55 +9,61 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$206 {
 
-    static final FunctionDescriptor AbortPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle AbortPath$MH = RuntimeHelper.downcallHandle(
-        "AbortPath",
-        constants$206.AbortPath$FUNC
-    );
-    static final FunctionDescriptor ArcTo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFirmwareEnvironmentVariableA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetFirmwareEnvironmentVariableA$MH = RuntimeHelper.downcallHandle(
+        "SetFirmwareEnvironmentVariableA",
+        constants$206.SetFirmwareEnvironmentVariableA$FUNC
+    );
+    static final FunctionDescriptor SetFirmwareEnvironmentVariableW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetFirmwareEnvironmentVariableW$MH = RuntimeHelper.downcallHandle(
+        "SetFirmwareEnvironmentVariableW",
+        constants$206.SetFirmwareEnvironmentVariableW$FUNC
+    );
+    static final FunctionDescriptor SetFirmwareEnvironmentVariableExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ArcTo$MH = RuntimeHelper.downcallHandle(
-        "ArcTo",
-        constants$206.ArcTo$FUNC
+    static final MethodHandle SetFirmwareEnvironmentVariableExA$MH = RuntimeHelper.downcallHandle(
+        "SetFirmwareEnvironmentVariableExA",
+        constants$206.SetFirmwareEnvironmentVariableExA$FUNC
     );
-    static final FunctionDescriptor BeginPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetFirmwareEnvironmentVariableExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetFirmwareEnvironmentVariableExW$MH = RuntimeHelper.downcallHandle(
+        "SetFirmwareEnvironmentVariableExW",
+        constants$206.SetFirmwareEnvironmentVariableExW$FUNC
+    );
+    static final FunctionDescriptor GetFirmwareType$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle BeginPath$MH = RuntimeHelper.downcallHandle(
-        "BeginPath",
-        constants$206.BeginPath$FUNC
+    static final MethodHandle GetFirmwareType$MH = RuntimeHelper.downcallHandle(
+        "GetFirmwareType",
+        constants$206.GetFirmwareType$FUNC
     );
-    static final FunctionDescriptor CloseFigure$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsNativeVhdBoot$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CloseFigure$MH = RuntimeHelper.downcallHandle(
-        "CloseFigure",
-        constants$206.CloseFigure$FUNC
-    );
-    static final FunctionDescriptor EndPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EndPath$MH = RuntimeHelper.downcallHandle(
-        "EndPath",
-        constants$206.EndPath$FUNC
-    );
-    static final FunctionDescriptor FillPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle FillPath$MH = RuntimeHelper.downcallHandle(
-        "FillPath",
-        constants$206.FillPath$FUNC
+    static final MethodHandle IsNativeVhdBoot$MH = RuntimeHelper.downcallHandle(
+        "IsNativeVhdBoot",
+        constants$206.IsNativeVhdBoot$FUNC
     );
 }
 

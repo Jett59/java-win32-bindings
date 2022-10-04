@@ -9,12 +9,74 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$658 {
 
-    static final MemorySegment szOID_KP_DOCUMENT_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.12");
-    static final MemorySegment szOID_KP_LIFETIME_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.13");
-    static final MemorySegment szOID_KP_MOBILE_DEVICE_SOFTWARE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.14");
-    static final MemorySegment szOID_KP_SMART_DISPLAY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.15");
-    static final MemorySegment szOID_KP_CSP_SIGNATURE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.16");
-    static final MemorySegment szOID_KP_FLIGHT_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.27");
+    static final FunctionDescriptor SCardReadCacheA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardReadCacheA$MH = RuntimeHelper.downcallHandle(
+        "SCardReadCacheA",
+        constants$658.SCardReadCacheA$FUNC
+    );
+    static final FunctionDescriptor SCardReadCacheW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardReadCacheW$MH = RuntimeHelper.downcallHandle(
+        "SCardReadCacheW",
+        constants$658.SCardReadCacheW$FUNC
+    );
+    static final FunctionDescriptor SCardWriteCacheA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SCardWriteCacheA$MH = RuntimeHelper.downcallHandle(
+        "SCardWriteCacheA",
+        constants$658.SCardWriteCacheA$FUNC
+    );
+    static final FunctionDescriptor SCardWriteCacheW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SCardWriteCacheW$MH = RuntimeHelper.downcallHandle(
+        "SCardWriteCacheW",
+        constants$658.SCardWriteCacheW$FUNC
+    );
+    static final FunctionDescriptor SCardGetReaderIconA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetReaderIconA$MH = RuntimeHelper.downcallHandle(
+        "SCardGetReaderIconA",
+        constants$658.SCardGetReaderIconA$FUNC
+    );
+    static final FunctionDescriptor SCardGetReaderIconW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SCardGetReaderIconW$MH = RuntimeHelper.downcallHandle(
+        "SCardGetReaderIconW",
+        constants$658.SCardGetReaderIconW$FUNC
+    );
 }
 
 

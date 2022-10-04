@@ -9,40 +9,32 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$262 {
 
-    static final FunctionDescriptor CloseClipboard$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle CloseClipboard$MH = RuntimeHelper.downcallHandle(
-        "CloseClipboard",
-        constants$262.CloseClipboard$FUNC
-    );
-    static final FunctionDescriptor GetClipboardSequenceNumber$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetClipboardSequenceNumber$MH = RuntimeHelper.downcallHandle(
-        "GetClipboardSequenceNumber",
-        constants$262.GetClipboardSequenceNumber$FUNC
-    );
-    static final FunctionDescriptor GetClipboardOwner$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetClipboardOwner$MH = RuntimeHelper.downcallHandle(
-        "GetClipboardOwner",
-        constants$262.GetClipboardOwner$FUNC
-    );
-    static final FunctionDescriptor SetClipboardViewer$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetClipboardViewer$MH = RuntimeHelper.downcallHandle(
-        "SetClipboardViewer",
-        constants$262.SetClipboardViewer$FUNC
-    );
-    static final FunctionDescriptor GetClipboardViewer$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
-    static final MethodHandle GetClipboardViewer$MH = RuntimeHelper.downcallHandle(
-        "GetClipboardViewer",
-        constants$262.GetClipboardViewer$FUNC
-    );
-    static final FunctionDescriptor ChangeClipboardChain$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FONTENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle ChangeClipboardChain$MH = RuntimeHelper.downcallHandle(
-        "ChangeClipboardChain",
-        constants$262.ChangeClipboardChain$FUNC
+    static final MethodHandle FONTENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$262.FONTENUMPROCA$FUNC
+    );
+    static final FunctionDescriptor FONTENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle FONTENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$262.FONTENUMPROCW$FUNC
+    );
+    static final FunctionDescriptor FONTENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle FONTENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$262.FONTENUMPROC$FUNC
     );
 }
 

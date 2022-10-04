@@ -9,57 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$188 {
 
-    static final FunctionDescriptor PlayMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetHandleCount$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetHandleCount$MH = RuntimeHelper.downcallHandle(
+        "SetHandleCount",
+        constants$188.SetHandleCount$FUNC
+    );
+    static final FunctionDescriptor RequestDeviceWakeup$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RequestDeviceWakeup$MH = RuntimeHelper.downcallHandle(
+        "RequestDeviceWakeup",
+        constants$188.RequestDeviceWakeup$FUNC
+    );
+    static final FunctionDescriptor CancelDeviceWakeupRequest$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CancelDeviceWakeupRequest$MH = RuntimeHelper.downcallHandle(
+        "CancelDeviceWakeupRequest",
+        constants$188.CancelDeviceWakeupRequest$FUNC
+    );
+    static final FunctionDescriptor GetDevicePowerState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PlayMetaFile$MH = RuntimeHelper.downcallHandle(
-        "PlayMetaFile",
-        constants$188.PlayMetaFile$FUNC
+    static final MethodHandle GetDevicePowerState$MH = RuntimeHelper.downcallHandle(
+        "GetDevicePowerState",
+        constants$188.GetDevicePowerState$FUNC
     );
-    static final FunctionDescriptor PaintRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetMessageWaitingIndicator$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetMessageWaitingIndicator$MH = RuntimeHelper.downcallHandle(
+        "SetMessageWaitingIndicator",
+        constants$188.SetMessageWaitingIndicator$FUNC
+    );
+    static final FunctionDescriptor SetFileShortNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle PaintRgn$MH = RuntimeHelper.downcallHandle(
-        "PaintRgn",
-        constants$188.PaintRgn$FUNC
-    );
-    static final FunctionDescriptor PolyPolygon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PolyPolygon$MH = RuntimeHelper.downcallHandle(
-        "PolyPolygon",
-        constants$188.PolyPolygon$FUNC
-    );
-    static final FunctionDescriptor PtInRegion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PtInRegion$MH = RuntimeHelper.downcallHandle(
-        "PtInRegion",
-        constants$188.PtInRegion$FUNC
-    );
-    static final FunctionDescriptor PtVisible$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PtVisible$MH = RuntimeHelper.downcallHandle(
-        "PtVisible",
-        constants$188.PtVisible$FUNC
-    );
-    static final FunctionDescriptor RectInRegion$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RectInRegion$MH = RuntimeHelper.downcallHandle(
-        "RectInRegion",
-        constants$188.RectInRegion$FUNC
+    static final MethodHandle SetFileShortNameA$MH = RuntimeHelper.downcallHandle(
+        "SetFileShortNameA",
+        constants$188.SetFileShortNameA$FUNC
     );
 }
 

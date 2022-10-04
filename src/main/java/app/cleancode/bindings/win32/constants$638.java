@@ -9,12 +9,60 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$638 {
 
-    static final MemoryAddress ECC_CMS_SHARED_INFO$ADDR = MemoryAddress.ofLong(77L);
-    static final MemoryAddress TIMESTAMP_REQUEST$ADDR = MemoryAddress.ofLong(78L);
-    static final MemoryAddress TIMESTAMP_RESPONSE$ADDR = MemoryAddress.ofLong(79L);
-    static final MemoryAddress TIMESTAMP_INFO$ADDR = MemoryAddress.ofLong(80L);
-    static final MemoryAddress X509_CERT_BUNDLE$ADDR = MemoryAddress.ofLong(81L);
-    static final MemoryAddress X509_ECC_PRIVATE_KEY$ADDR = MemoryAddress.ofLong(82L);
+    static final FunctionDescriptor FreeEncryptionCertificateHashList$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FreeEncryptionCertificateHashList$MH = RuntimeHelper.downcallHandle(
+        "FreeEncryptionCertificateHashList",
+        constants$638.FreeEncryptionCertificateHashList$FUNC
+    );
+    static final FunctionDescriptor EncryptionDisable$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EncryptionDisable$MH = RuntimeHelper.downcallHandle(
+        "EncryptionDisable",
+        constants$638.EncryptionDisable$FUNC
+    );
+    static final FunctionDescriptor DuplicateEncryptionInfoFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle DuplicateEncryptionInfoFile$MH = RuntimeHelper.downcallHandle(
+        "DuplicateEncryptionInfoFile",
+        constants$638.DuplicateEncryptionInfoFile$FUNC
+    );
+    static final FunctionDescriptor GetEncryptedFileMetadata$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetEncryptedFileMetadata$MH = RuntimeHelper.downcallHandle(
+        "GetEncryptedFileMetadata",
+        constants$638.GetEncryptedFileMetadata$FUNC
+    );
+    static final FunctionDescriptor SetEncryptedFileMetadata$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetEncryptedFileMetadata$MH = RuntimeHelper.downcallHandle(
+        "SetEncryptedFileMetadata",
+        constants$638.SetEncryptedFileMetadata$FUNC
+    );
+    static final FunctionDescriptor FreeEncryptedFileMetadata$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FreeEncryptedFileMetadata$MH = RuntimeHelper.downcallHandle(
+        "FreeEncryptedFileMetadata",
+        constants$638.FreeEncryptedFileMetadata$FUNC
+    );
 }
 
 

@@ -9,67 +9,78 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$399 {
 
-    static final FunctionDescriptor WNetUseConnection4A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DrawStateW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetUseConnection4A$MH = RuntimeHelper.downcallHandle(
-        "WNetUseConnection4A",
-        constants$399.WNetUseConnection4A$FUNC
+    static final MethodHandle DrawStateW$MH = RuntimeHelper.downcallHandle(
+        "DrawStateW",
+        constants$399.DrawStateW$FUNC
     );
-    static final FunctionDescriptor WNetUseConnection4W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor TabbedTextOutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle WNetUseConnection4W$MH = RuntimeHelper.downcallHandle(
-        "WNetUseConnection4W",
-        constants$399.WNetUseConnection4W$FUNC
-    );
-    static final FunctionDescriptor WNetConnectionDialog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetConnectionDialog$MH = RuntimeHelper.downcallHandle(
-        "WNetConnectionDialog",
-        constants$399.WNetConnectionDialog$FUNC
+    static final MethodHandle TabbedTextOutA$MH = RuntimeHelper.downcallHandle(
+        "TabbedTextOutA",
+        constants$399.TabbedTextOutA$FUNC
     );
-    static final FunctionDescriptor WNetDisconnectDialog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor TabbedTextOutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetDisconnectDialog$MH = RuntimeHelper.downcallHandle(
-        "WNetDisconnectDialog",
-        constants$399.WNetDisconnectDialog$FUNC
+    static final MethodHandle TabbedTextOutW$MH = RuntimeHelper.downcallHandle(
+        "TabbedTextOutW",
+        constants$399.TabbedTextOutW$FUNC
     );
-    static final FunctionDescriptor WNetConnectionDialog1A$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTabbedTextExtentA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetConnectionDialog1A$MH = RuntimeHelper.downcallHandle(
-        "WNetConnectionDialog1A",
-        constants$399.WNetConnectionDialog1A$FUNC
+    static final MethodHandle GetTabbedTextExtentA$MH = RuntimeHelper.downcallHandle(
+        "GetTabbedTextExtentA",
+        constants$399.GetTabbedTextExtentA$FUNC
     );
-    static final FunctionDescriptor WNetConnectionDialog1W$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTabbedTextExtentW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetConnectionDialog1W$MH = RuntimeHelper.downcallHandle(
-        "WNetConnectionDialog1W",
-        constants$399.WNetConnectionDialog1W$FUNC
+    static final MethodHandle GetTabbedTextExtentW$MH = RuntimeHelper.downcallHandle(
+        "GetTabbedTextExtentW",
+        constants$399.GetTabbedTextExtentW$FUNC
+    );
+    static final FunctionDescriptor UpdateWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle UpdateWindow$MH = RuntimeHelper.downcallHandle(
+        "UpdateWindow",
+        constants$399.UpdateWindow$FUNC
     );
 }
 

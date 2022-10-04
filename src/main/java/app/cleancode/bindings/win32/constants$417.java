@@ -9,68 +9,57 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$417 {
 
-    static final FunctionDescriptor CryptDestroyHash$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle CryptDestroyHash$MH = RuntimeHelper.downcallHandle(
-        "CryptDestroyHash",
-        constants$417.CryptDestroyHash$FUNC
-    );
-    static final FunctionDescriptor CryptSignHashA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor FrameRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptSignHashA$MH = RuntimeHelper.downcallHandle(
-        "CryptSignHashA",
-        constants$417.CryptSignHashA$FUNC
+    static final MethodHandle FrameRect$MH = RuntimeHelper.downcallHandle(
+        "FrameRect",
+        constants$417.FrameRect$FUNC
     );
-    static final FunctionDescriptor CryptSignHashW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor InvertRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CryptSignHashW$MH = RuntimeHelper.downcallHandle(
-        "CryptSignHashW",
-        constants$417.CryptSignHashW$FUNC
+    static final MethodHandle InvertRect$MH = RuntimeHelper.downcallHandle(
+        "InvertRect",
+        constants$417.InvertRect$FUNC
     );
-    static final FunctionDescriptor CryptVerifySignatureA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptVerifySignatureA$MH = RuntimeHelper.downcallHandle(
-        "CryptVerifySignatureA",
-        constants$417.CryptVerifySignatureA$FUNC
+    static final MethodHandle SetRect$MH = RuntimeHelper.downcallHandle(
+        "SetRect",
+        constants$417.SetRect$FUNC
     );
-    static final FunctionDescriptor CryptVerifySignatureW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor SetRectEmpty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetRectEmpty$MH = RuntimeHelper.downcallHandle(
+        "SetRectEmpty",
+        constants$417.SetRectEmpty$FUNC
+    );
+    static final FunctionDescriptor CopyRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CopyRect$MH = RuntimeHelper.downcallHandle(
+        "CopyRect",
+        constants$417.CopyRect$FUNC
+    );
+    static final FunctionDescriptor InflateRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptVerifySignatureW$MH = RuntimeHelper.downcallHandle(
-        "CryptVerifySignatureW",
-        constants$417.CryptVerifySignatureW$FUNC
-    );
-    static final FunctionDescriptor CryptSetProviderA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CryptSetProviderA$MH = RuntimeHelper.downcallHandle(
-        "CryptSetProviderA",
-        constants$417.CryptSetProviderA$FUNC
+    static final MethodHandle InflateRect$MH = RuntimeHelper.downcallHandle(
+        "InflateRect",
+        constants$417.InflateRect$FUNC
     );
 }
 

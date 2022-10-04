@@ -9,36 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$159 {
 
-    static final FunctionDescriptor FONTENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CheckTokenCapability$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle FONTENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$159.FONTENUMPROC$FUNC
-    );
-    static final FunctionDescriptor GOBJENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle GOBJENUMPROC$MH = RuntimeHelper.downcallHandle(
-        constants$159.GOBJENUMPROC$FUNC
-    );
-    static final FunctionDescriptor LINEDDAPROC$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle LINEDDAPROC$MH = RuntimeHelper.downcallHandle(
-        constants$159.LINEDDAPROC$FUNC
-    );
-    static final FunctionDescriptor AddFontResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle AddFontResourceA$MH = RuntimeHelper.downcallHandle(
-        "AddFontResourceA",
-        constants$159.AddFontResourceA$FUNC
+    static final MethodHandle CheckTokenCapability$MH = RuntimeHelper.downcallHandle(
+        "CheckTokenCapability",
+        constants$159.CheckTokenCapability$FUNC
+    );
+    static final FunctionDescriptor GetAppContainerAce$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetAppContainerAce$MH = RuntimeHelper.downcallHandle(
+        "GetAppContainerAce",
+        constants$159.GetAppContainerAce$FUNC
+    );
+    static final FunctionDescriptor CheckTokenMembershipEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CheckTokenMembershipEx$MH = RuntimeHelper.downcallHandle(
+        "CheckTokenMembershipEx",
+        constants$159.CheckTokenMembershipEx$FUNC
+    );
+    static final FunctionDescriptor ConvertToAutoInheritPrivateObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_CHAR$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ConvertToAutoInheritPrivateObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "ConvertToAutoInheritPrivateObjectSecurity",
+        constants$159.ConvertToAutoInheritPrivateObjectSecurity$FUNC
+    );
+    static final FunctionDescriptor CopySid$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CopySid$MH = RuntimeHelper.downcallHandle(
+        "CopySid",
+        constants$159.CopySid$FUNC
+    );
+    static final FunctionDescriptor CreatePrivateObjectSecurity$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CreatePrivateObjectSecurity$MH = RuntimeHelper.downcallHandle(
+        "CreatePrivateObjectSecurity",
+        constants$159.CreatePrivateObjectSecurity$FUNC
     );
 }
 

@@ -9,55 +9,73 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$153 {
 
-    static final FunctionDescriptor UnregisterApplicationRestart$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle UnregisterApplicationRestart$MH = RuntimeHelper.downcallHandle(
-        "UnregisterApplicationRestart",
-        constants$153.UnregisterApplicationRestart$FUNC
-    );
-    static final FunctionDescriptor GetApplicationRecoveryCallback$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumResourceLanguagesExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetApplicationRecoveryCallback$MH = RuntimeHelper.downcallHandle(
-        "GetApplicationRecoveryCallback",
-        constants$153.GetApplicationRecoveryCallback$FUNC
-    );
-    static final FunctionDescriptor GetApplicationRestartSettings$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetApplicationRestartSettings$MH = RuntimeHelper.downcallHandle(
-        "GetApplicationRestartSettings",
-        constants$153.GetApplicationRestartSettings$FUNC
-    );
-    static final FunctionDescriptor ApplicationRecoveryInProgress$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ApplicationRecoveryInProgress$MH = RuntimeHelper.downcallHandle(
-        "ApplicationRecoveryInProgress",
-        constants$153.ApplicationRecoveryInProgress$FUNC
-    );
-    static final FunctionDescriptor ApplicationRecoveryFinished$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle ApplicationRecoveryFinished$MH = RuntimeHelper.downcallHandle(
-        "ApplicationRecoveryFinished",
-        constants$153.ApplicationRecoveryFinished$FUNC
-    );
-    static final FunctionDescriptor GetFileInformationByHandleEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_SHORT$LAYOUT
     );
-    static final MethodHandle GetFileInformationByHandleEx$MH = RuntimeHelper.downcallHandle(
-        "GetFileInformationByHandleEx",
-        constants$153.GetFileInformationByHandleEx$FUNC
+    static final MethodHandle EnumResourceLanguagesExW$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceLanguagesExW",
+        constants$153.EnumResourceLanguagesExW$FUNC
+    );
+    static final FunctionDescriptor EnumResourceNamesExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle EnumResourceNamesExA$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceNamesExA",
+        constants$153.EnumResourceNamesExA$FUNC
+    );
+    static final FunctionDescriptor EnumResourceNamesExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle EnumResourceNamesExW$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceNamesExW",
+        constants$153.EnumResourceNamesExW$FUNC
+    );
+    static final FunctionDescriptor EnumResourceTypesExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle EnumResourceTypesExA$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceTypesExA",
+        constants$153.EnumResourceTypesExA$FUNC
+    );
+    static final FunctionDescriptor EnumResourceTypesExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_SHORT$LAYOUT
+    );
+    static final MethodHandle EnumResourceTypesExW$MH = RuntimeHelper.downcallHandle(
+        "EnumResourceTypesExW",
+        constants$153.EnumResourceTypesExW$FUNC
+    );
+    static final FunctionDescriptor FindResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle FindResourceW$MH = RuntimeHelper.downcallHandle(
+        "FindResourceW",
+        constants$153.FindResourceW$FUNC
     );
 }
 

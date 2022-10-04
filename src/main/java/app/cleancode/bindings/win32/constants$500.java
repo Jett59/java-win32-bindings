@@ -9,63 +9,63 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$500 {
 
-    static final FunctionDescriptor SCardConnectA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegSetValueExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SCardConnectA$MH = RuntimeHelper.downcallHandle(
-        "SCardConnectA",
-        constants$500.SCardConnectA$FUNC
-    );
-    static final FunctionDescriptor SCardConnectW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SCardConnectW$MH = RuntimeHelper.downcallHandle(
-        "SCardConnectW",
-        constants$500.SCardConnectW$FUNC
-    );
-    static final FunctionDescriptor SCardReconnect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SCardReconnect$MH = RuntimeHelper.downcallHandle(
-        "SCardReconnect",
-        constants$500.SCardReconnect$FUNC
-    );
-    static final FunctionDescriptor SCardDisconnect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardDisconnect$MH = RuntimeHelper.downcallHandle(
-        "SCardDisconnect",
-        constants$500.SCardDisconnect$FUNC
+    static final MethodHandle RegSetValueExA$MH = RuntimeHelper.downcallHandle(
+        "RegSetValueExA",
+        constants$500.RegSetValueExA$FUNC
     );
-    static final FunctionDescriptor SCardBeginTransaction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
-    );
-    static final MethodHandle SCardBeginTransaction$MH = RuntimeHelper.downcallHandle(
-        "SCardBeginTransaction",
-        constants$500.SCardBeginTransaction$FUNC
-    );
-    static final FunctionDescriptor SCardEndTransaction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegSetValueExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardEndTransaction$MH = RuntimeHelper.downcallHandle(
-        "SCardEndTransaction",
-        constants$500.SCardEndTransaction$FUNC
+    static final MethodHandle RegSetValueExW$MH = RuntimeHelper.downcallHandle(
+        "RegSetValueExW",
+        constants$500.RegSetValueExW$FUNC
+    );
+    static final FunctionDescriptor RegUnLoadKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegUnLoadKeyA$MH = RuntimeHelper.downcallHandle(
+        "RegUnLoadKeyA",
+        constants$500.RegUnLoadKeyA$FUNC
+    );
+    static final FunctionDescriptor RegUnLoadKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegUnLoadKeyW$MH = RuntimeHelper.downcallHandle(
+        "RegUnLoadKeyW",
+        constants$500.RegUnLoadKeyW$FUNC
+    );
+    static final FunctionDescriptor RegDeleteKeyValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegDeleteKeyValueA$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteKeyValueA",
+        constants$500.RegDeleteKeyValueA$FUNC
+    );
+    static final FunctionDescriptor RegDeleteKeyValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegDeleteKeyValueW$MH = RuntimeHelper.downcallHandle(
+        "RegDeleteKeyValueW",
+        constants$500.RegDeleteKeyValueW$FUNC
     );
 }
 

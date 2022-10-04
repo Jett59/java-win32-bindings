@@ -9,62 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$201 {
 
-    static final FunctionDescriptor GetEnhMetaFilePixelFormat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetEnhMetaFilePixelFormat$MH = RuntimeHelper.downcallHandle(
-        "GetEnhMetaFilePixelFormat",
-        constants$201.GetEnhMetaFilePixelFormat$FUNC
-    );
-    static final FunctionDescriptor GetWinMetaFileBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetWinMetaFileBits$MH = RuntimeHelper.downcallHandle(
-        "GetWinMetaFileBits",
-        constants$201.GetWinMetaFileBits$FUNC
-    );
-    static final FunctionDescriptor PlayEnhMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle PlayEnhMetaFile$MH = RuntimeHelper.downcallHandle(
-        "PlayEnhMetaFile",
-        constants$201.PlayEnhMetaFile$FUNC
-    );
-    static final FunctionDescriptor PlayEnhMetaFileRecord$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor _lcreat$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PlayEnhMetaFileRecord$MH = RuntimeHelper.downcallHandle(
-        "PlayEnhMetaFileRecord",
-        constants$201.PlayEnhMetaFileRecord$FUNC
+    static final MethodHandle _lcreat$MH = RuntimeHelper.downcallHandle(
+        "_lcreat",
+        constants$201._lcreat$FUNC
     );
-    static final FunctionDescriptor SetEnhMetaFileBits$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetEnhMetaFileBits$MH = RuntimeHelper.downcallHandle(
-        "SetEnhMetaFileBits",
-        constants$201.SetEnhMetaFileBits$FUNC
-    );
-    static final FunctionDescriptor SetWinMetaFileBits$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor _lread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetWinMetaFileBits$MH = RuntimeHelper.downcallHandle(
-        "SetWinMetaFileBits",
-        constants$201.SetWinMetaFileBits$FUNC
+    static final MethodHandle _lread$MH = RuntimeHelper.downcallHandle(
+        "_lread",
+        constants$201._lread$FUNC
+    );
+    static final FunctionDescriptor _lwrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle _lwrite$MH = RuntimeHelper.downcallHandle(
+        "_lwrite",
+        constants$201._lwrite$FUNC
+    );
+    static final FunctionDescriptor _hread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle _hread$MH = RuntimeHelper.downcallHandle(
+        "_hread",
+        constants$201._hread$FUNC
+    );
+    static final FunctionDescriptor _hwrite$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle _hwrite$MH = RuntimeHelper.downcallHandle(
+        "_hwrite",
+        constants$201._hwrite$FUNC
+    );
+    static final FunctionDescriptor _lclose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle _lclose$MH = RuntimeHelper.downcallHandle(
+        "_lclose",
+        constants$201._lclose$FUNC
     );
 }
 

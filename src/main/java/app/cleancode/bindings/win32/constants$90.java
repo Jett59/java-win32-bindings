@@ -9,53 +9,49 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$90 {
 
-    static final FunctionDescriptor SetCommBreak$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetCommBreak$MH = RuntimeHelper.downcallHandle(
-        "SetCommBreak",
-        constants$90.SetCommBreak$FUNC
-    );
-    static final FunctionDescriptor SetCommConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DuplicateHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetCommConfig$MH = RuntimeHelper.downcallHandle(
-        "SetCommConfig",
-        constants$90.SetCommConfig$FUNC
+    static final MethodHandle DuplicateHandle$MH = RuntimeHelper.downcallHandle(
+        "DuplicateHandle",
+        constants$90.DuplicateHandle$FUNC
     );
-    static final FunctionDescriptor SetCommMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CompareObjectHandles$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CompareObjectHandles$MH = RuntimeHelper.downcallHandle(
+        "CompareObjectHandles",
+        constants$90.CompareObjectHandles$FUNC
+    );
+    static final FunctionDescriptor GetHandleInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetHandleInformation$MH = RuntimeHelper.downcallHandle(
+        "GetHandleInformation",
+        constants$90.GetHandleInformation$FUNC
+    );
+    static final FunctionDescriptor SetHandleInformation$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SetCommMask$MH = RuntimeHelper.downcallHandle(
-        "SetCommMask",
-        constants$90.SetCommMask$FUNC
+    static final MethodHandle SetHandleInformation$MH = RuntimeHelper.downcallHandle(
+        "SetHandleInformation",
+        constants$90.SetHandleInformation$FUNC
     );
-    static final FunctionDescriptor SetCommState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor PTOP_LEVEL_EXCEPTION_FILTER$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetCommState$MH = RuntimeHelper.downcallHandle(
-        "SetCommState",
-        constants$90.SetCommState$FUNC
-    );
-    static final FunctionDescriptor SetCommTimeouts$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetCommTimeouts$MH = RuntimeHelper.downcallHandle(
-        "SetCommTimeouts",
-        constants$90.SetCommTimeouts$FUNC
-    );
-    static final FunctionDescriptor TransmitCommChar$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
-    );
-    static final MethodHandle TransmitCommChar$MH = RuntimeHelper.downcallHandle(
-        "TransmitCommChar",
-        constants$90.TransmitCommChar$FUNC
+    static final MethodHandle PTOP_LEVEL_EXCEPTION_FILTER$MH = RuntimeHelper.downcallHandle(
+        constants$90.PTOP_LEVEL_EXCEPTION_FILTER$FUNC
     );
 }
 

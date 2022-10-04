@@ -9,70 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$129 {
 
-    static final FunctionDescriptor RegisterEventSourceW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetSystemDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegisterEventSourceW$MH = RuntimeHelper.downcallHandle(
-        "RegisterEventSourceW",
-        constants$129.RegisterEventSourceW$FUNC
+    static final MethodHandle GetSystemDirectoryA$MH = RuntimeHelper.downcallHandle(
+        "GetSystemDirectoryA",
+        constants$129.GetSystemDirectoryA$FUNC
     );
-    static final FunctionDescriptor OpenBackupEventLogA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetSystemDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle OpenBackupEventLogA$MH = RuntimeHelper.downcallHandle(
-        "OpenBackupEventLogA",
-        constants$129.OpenBackupEventLogA$FUNC
+    static final MethodHandle GetSystemDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "GetSystemDirectoryW",
+        constants$129.GetSystemDirectoryW$FUNC
     );
-    static final FunctionDescriptor OpenBackupEventLogW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetWindowsDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle OpenBackupEventLogW$MH = RuntimeHelper.downcallHandle(
-        "OpenBackupEventLogW",
-        constants$129.OpenBackupEventLogW$FUNC
+    static final MethodHandle GetWindowsDirectoryA$MH = RuntimeHelper.downcallHandle(
+        "GetWindowsDirectoryA",
+        constants$129.GetWindowsDirectoryA$FUNC
     );
-    static final FunctionDescriptor ReadEventLogA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowsDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReadEventLogA$MH = RuntimeHelper.downcallHandle(
-        "ReadEventLogA",
-        constants$129.ReadEventLogA$FUNC
+    static final MethodHandle GetWindowsDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "GetWindowsDirectoryW",
+        constants$129.GetWindowsDirectoryW$FUNC
     );
-    static final FunctionDescriptor ReadEventLogW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSystemWindowsDirectoryA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReadEventLogW$MH = RuntimeHelper.downcallHandle(
-        "ReadEventLogW",
-        constants$129.ReadEventLogW$FUNC
+    static final MethodHandle GetSystemWindowsDirectoryA$MH = RuntimeHelper.downcallHandle(
+        "GetSystemWindowsDirectoryA",
+        constants$129.GetSystemWindowsDirectoryA$FUNC
     );
-    static final FunctionDescriptor ReportEventA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetSystemWindowsDirectoryW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_SHORT$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ReportEventA$MH = RuntimeHelper.downcallHandle(
-        "ReportEventA",
-        constants$129.ReportEventA$FUNC
+    static final MethodHandle GetSystemWindowsDirectoryW$MH = RuntimeHelper.downcallHandle(
+        "GetSystemWindowsDirectoryW",
+        constants$129.GetSystemWindowsDirectoryW$FUNC
     );
 }
 

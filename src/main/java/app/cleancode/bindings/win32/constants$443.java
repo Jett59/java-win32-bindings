@@ -9,57 +9,41 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$443 {
 
-    static final FunctionDescriptor CertVerifySubjectCertificateContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetProcessDPIAware$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle SetProcessDPIAware$MH = RuntimeHelper.downcallHandle(
+        "SetProcessDPIAware",
+        constants$443.SetProcessDPIAware$FUNC
+    );
+    static final FunctionDescriptor IsProcessDPIAware$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle IsProcessDPIAware$MH = RuntimeHelper.downcallHandle(
+        "IsProcessDPIAware",
+        constants$443.IsProcessDPIAware$FUNC
+    );
+    static final FunctionDescriptor SetThreadDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertVerifySubjectCertificateContext$MH = RuntimeHelper.downcallHandle(
-        "CertVerifySubjectCertificateContext",
-        constants$443.CertVerifySubjectCertificateContext$FUNC
+    static final MethodHandle SetThreadDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
+        "SetThreadDpiAwarenessContext",
+        constants$443.SetThreadDpiAwarenessContext$FUNC
     );
-    static final FunctionDescriptor CertDuplicateCertificateContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetThreadDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetThreadDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
+        "GetThreadDpiAwarenessContext",
+        constants$443.GetThreadDpiAwarenessContext$FUNC
+    );
+    static final FunctionDescriptor GetWindowDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertDuplicateCertificateContext$MH = RuntimeHelper.downcallHandle(
-        "CertDuplicateCertificateContext",
-        constants$443.CertDuplicateCertificateContext$FUNC
+    static final MethodHandle GetWindowDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
+        "GetWindowDpiAwarenessContext",
+        constants$443.GetWindowDpiAwarenessContext$FUNC
     );
-    static final FunctionDescriptor CertCreateCertificateContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CertCreateCertificateContext$MH = RuntimeHelper.downcallHandle(
-        "CertCreateCertificateContext",
-        constants$443.CertCreateCertificateContext$FUNC
-    );
-    static final FunctionDescriptor CertFreeCertificateContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetAwarenessFromDpiAwarenessContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertFreeCertificateContext$MH = RuntimeHelper.downcallHandle(
-        "CertFreeCertificateContext",
-        constants$443.CertFreeCertificateContext$FUNC
-    );
-    static final FunctionDescriptor CertSetCertificateContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertSetCertificateContextProperty$MH = RuntimeHelper.downcallHandle(
-        "CertSetCertificateContextProperty",
-        constants$443.CertSetCertificateContextProperty$FUNC
-    );
-    static final FunctionDescriptor CertGetCertificateContextProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertGetCertificateContextProperty$MH = RuntimeHelper.downcallHandle(
-        "CertGetCertificateContextProperty",
-        constants$443.CertGetCertificateContextProperty$FUNC
+    static final MethodHandle GetAwarenessFromDpiAwarenessContext$MH = RuntimeHelper.downcallHandle(
+        "GetAwarenessFromDpiAwarenessContext",
+        constants$443.GetAwarenessFromDpiAwarenessContext$FUNC
     );
 }
 

@@ -9,69 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$446 {
 
-    static final FunctionDescriptor CertFindCertificateInCRL$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowDpiHostingBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetWindowDpiHostingBehavior$MH = RuntimeHelper.downcallHandle(
+        "GetWindowDpiHostingBehavior",
+        constants$446.GetWindowDpiHostingBehavior$FUNC
+    );
+    static final FunctionDescriptor GetWindowModuleFileNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetWindowModuleFileNameA$MH = RuntimeHelper.downcallHandle(
+        "GetWindowModuleFileNameA",
+        constants$446.GetWindowModuleFileNameA$FUNC
+    );
+    static final FunctionDescriptor GetWindowModuleFileNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetWindowModuleFileNameW$MH = RuntimeHelper.downcallHandle(
+        "GetWindowModuleFileNameW",
+        constants$446.GetWindowModuleFileNameW$FUNC
+    );
+    static final FunctionDescriptor GetCursorInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCursorInfo$MH = RuntimeHelper.downcallHandle(
+        "GetCursorInfo",
+        constants$446.GetCursorInfo$FUNC
+    );
+    static final FunctionDescriptor GetWindowInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertFindCertificateInCRL$MH = RuntimeHelper.downcallHandle(
-        "CertFindCertificateInCRL",
-        constants$446.CertFindCertificateInCRL$FUNC
+    static final MethodHandle GetWindowInfo$MH = RuntimeHelper.downcallHandle(
+        "GetWindowInfo",
+        constants$446.GetWindowInfo$FUNC
     );
-    static final FunctionDescriptor CertIsValidCRLForCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertIsValidCRLForCertificate$MH = RuntimeHelper.downcallHandle(
-        "CertIsValidCRLForCertificate",
-        constants$446.CertIsValidCRLForCertificate$FUNC
-    );
-    static final FunctionDescriptor CertAddEncodedCertificateToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddEncodedCertificateToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddEncodedCertificateToStore",
-        constants$446.CertAddEncodedCertificateToStore$FUNC
-    );
-    static final FunctionDescriptor CertAddCertificateContextToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddCertificateContextToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddCertificateContextToStore",
-        constants$446.CertAddCertificateContextToStore$FUNC
-    );
-    static final FunctionDescriptor CertAddSerializedElementToStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetTitleBarInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertAddSerializedElementToStore$MH = RuntimeHelper.downcallHandle(
-        "CertAddSerializedElementToStore",
-        constants$446.CertAddSerializedElementToStore$FUNC
-    );
-    static final FunctionDescriptor CertDeleteCertificateFromStore$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertDeleteCertificateFromStore$MH = RuntimeHelper.downcallHandle(
-        "CertDeleteCertificateFromStore",
-        constants$446.CertDeleteCertificateFromStore$FUNC
+    static final MethodHandle GetTitleBarInfo$MH = RuntimeHelper.downcallHandle(
+        "GetTitleBarInfo",
+        constants$446.GetTitleBarInfo$FUNC
     );
 }
 

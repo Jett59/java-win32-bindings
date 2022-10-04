@@ -9,6 +9,165 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_6 extends WINDOWS_5 {
 
+    public static int WINEVENT_SKIPOWNPROCESS() {
+        return (int)2L;
+    }
+    public static int WINEVENT_INCONTEXT() {
+        return (int)4L;
+    }
+    public static int CHILDID_SELF() {
+        return (int)0L;
+    }
+    public static int INDEXID_OBJECT() {
+        return (int)0L;
+    }
+    public static int INDEXID_CONTAINER() {
+        return (int)0L;
+    }
+    public static int EVENT_MIN() {
+        return (int)1L;
+    }
+    public static int EVENT_MAX() {
+        return (int)2147483647L;
+    }
+    public static int EVENT_SYSTEM_SOUND() {
+        return (int)1L;
+    }
+    public static int EVENT_SYSTEM_ALERT() {
+        return (int)2L;
+    }
+    public static int EVENT_SYSTEM_FOREGROUND() {
+        return (int)3L;
+    }
+    public static int EVENT_SYSTEM_MENUSTART() {
+        return (int)4L;
+    }
+    public static int EVENT_SYSTEM_MENUEND() {
+        return (int)5L;
+    }
+    public static int EVENT_SYSTEM_MENUPOPUPSTART() {
+        return (int)6L;
+    }
+    public static int EVENT_SYSTEM_MENUPOPUPEND() {
+        return (int)7L;
+    }
+    public static int EVENT_SYSTEM_CAPTURESTART() {
+        return (int)8L;
+    }
+    public static int EVENT_SYSTEM_CAPTUREEND() {
+        return (int)9L;
+    }
+    public static int EVENT_SYSTEM_MOVESIZESTART() {
+        return (int)10L;
+    }
+    public static int EVENT_SYSTEM_MOVESIZEEND() {
+        return (int)11L;
+    }
+    public static int EVENT_SYSTEM_CONTEXTHELPSTART() {
+        return (int)12L;
+    }
+    public static int EVENT_SYSTEM_CONTEXTHELPEND() {
+        return (int)13L;
+    }
+    public static int EVENT_SYSTEM_DRAGDROPSTART() {
+        return (int)14L;
+    }
+    public static int EVENT_SYSTEM_DRAGDROPEND() {
+        return (int)15L;
+    }
+    public static int EVENT_SYSTEM_DIALOGSTART() {
+        return (int)16L;
+    }
+    public static int EVENT_SYSTEM_DIALOGEND() {
+        return (int)17L;
+    }
+    public static int EVENT_SYSTEM_SCROLLINGSTART() {
+        return (int)18L;
+    }
+    public static int EVENT_SYSTEM_SCROLLINGEND() {
+        return (int)19L;
+    }
+    public static int EVENT_SYSTEM_SWITCHSTART() {
+        return (int)20L;
+    }
+    public static int EVENT_SYSTEM_SWITCHEND() {
+        return (int)21L;
+    }
+    public static int EVENT_SYSTEM_MINIMIZESTART() {
+        return (int)22L;
+    }
+    public static int EVENT_SYSTEM_MINIMIZEEND() {
+        return (int)23L;
+    }
+    public static int EVENT_SYSTEM_DESKTOPSWITCH() {
+        return (int)32L;
+    }
+    public static int EVENT_SYSTEM_SWITCHER_APPGRABBED() {
+        return (int)36L;
+    }
+    public static int EVENT_SYSTEM_SWITCHER_APPOVERTARGET() {
+        return (int)37L;
+    }
+    public static int EVENT_SYSTEM_SWITCHER_APPDROPPED() {
+        return (int)38L;
+    }
+    public static int EVENT_SYSTEM_SWITCHER_CANCELLED() {
+        return (int)39L;
+    }
+    public static int EVENT_SYSTEM_IME_KEY_NOTIFICATION() {
+        return (int)41L;
+    }
+    public static int EVENT_SYSTEM_END() {
+        return (int)255L;
+    }
+    public static int EVENT_OEM_DEFINED_START() {
+        return (int)257L;
+    }
+    public static int EVENT_OEM_DEFINED_END() {
+        return (int)511L;
+    }
+    public static int EVENT_UIA_EVENTID_START() {
+        return (int)19968L;
+    }
+    public static int EVENT_UIA_EVENTID_END() {
+        return (int)20223L;
+    }
+    public static int EVENT_UIA_PROPID_START() {
+        return (int)29952L;
+    }
+    public static int EVENT_UIA_PROPID_END() {
+        return (int)30207L;
+    }
+    public static int EVENT_CONSOLE_CARET() {
+        return (int)16385L;
+    }
+    public static int EVENT_CONSOLE_UPDATE_REGION() {
+        return (int)16386L;
+    }
+    public static int EVENT_CONSOLE_UPDATE_SIMPLE() {
+        return (int)16387L;
+    }
+    public static int EVENT_CONSOLE_UPDATE_SCROLL() {
+        return (int)16388L;
+    }
+    public static int EVENT_CONSOLE_LAYOUT() {
+        return (int)16389L;
+    }
+    public static int EVENT_CONSOLE_START_APPLICATION() {
+        return (int)16390L;
+    }
+    public static int EVENT_CONSOLE_END_APPLICATION() {
+        return (int)16391L;
+    }
+    public static int CONSOLE_APPLICATION_16BIT() {
+        return (int)0L;
+    }
+    public static int CONSOLE_CARET_SELECTION() {
+        return (int)1L;
+    }
+    public static int CONSOLE_CARET_VISIBLE() {
+        return (int)2L;
+    }
     public static int EVENT_CONSOLE_END() {
         return (int)16639L;
     }
@@ -2259,6 +2418,66 @@ import static java.lang.foreign.ValueLayout.*;
     public static int FOCUS_EVENT() {
         return (int)16L;
     }
+    public static int ENABLE_PROCESSED_INPUT() {
+        return (int)1L;
+    }
+    public static int ENABLE_LINE_INPUT() {
+        return (int)2L;
+    }
+    public static int ENABLE_ECHO_INPUT() {
+        return (int)4L;
+    }
+    public static int ENABLE_WINDOW_INPUT() {
+        return (int)8L;
+    }
+    public static int ENABLE_MOUSE_INPUT() {
+        return (int)16L;
+    }
+    public static int ENABLE_INSERT_MODE() {
+        return (int)32L;
+    }
+    public static int ENABLE_QUICK_EDIT_MODE() {
+        return (int)64L;
+    }
+    public static int ENABLE_EXTENDED_FLAGS() {
+        return (int)128L;
+    }
+    public static int ENABLE_AUTO_POSITION() {
+        return (int)256L;
+    }
+    public static int ENABLE_VIRTUAL_TERMINAL_INPUT() {
+        return (int)512L;
+    }
+    public static int ENABLE_PROCESSED_OUTPUT() {
+        return (int)1L;
+    }
+    public static int ENABLE_WRAP_AT_EOL_OUTPUT() {
+        return (int)2L;
+    }
+    public static int ENABLE_VIRTUAL_TERMINAL_PROCESSING() {
+        return (int)4L;
+    }
+    public static int DISABLE_NEWLINE_AUTO_RETURN() {
+        return (int)8L;
+    }
+    public static int ENABLE_LVB_GRID_WORLDWIDE() {
+        return (int)16L;
+    }
+    public static int CTRL_C_EVENT() {
+        return (int)0L;
+    }
+    public static int CTRL_BREAK_EVENT() {
+        return (int)1L;
+    }
+    public static int CTRL_CLOSE_EVENT() {
+        return (int)2L;
+    }
+    public static int CTRL_LOGOFF_EVENT() {
+        return (int)5L;
+    }
+    public static int CTRL_SHUTDOWN_EVENT() {
+        return (int)6L;
+    }
     public static int CONSOLE_TEXTMODE_BUFFER() {
         return (int)1L;
     }
@@ -2553,461 +2772,242 @@ import static java.lang.foreign.ValueLayout.*;
     public static int WNCON_DYNAMIC() {
         return (int)8L;
     }
-    public static int PERF_DATA_VERSION() {
-        return (int)1L;
+    public static int MCI_OPEN() {
+        return (int)2051L;
     }
-    public static int PERF_DATA_REVISION() {
-        return (int)1L;
+    public static int MCI_CLOSE() {
+        return (int)2052L;
     }
-    public static int PERF_SIZE_DWORD() {
-        return (int)0L;
+    public static int MCI_ESCAPE() {
+        return (int)2053L;
     }
-    public static int PERF_SIZE_LARGE() {
-        return (int)256L;
+    public static int MCI_PLAY() {
+        return (int)2054L;
     }
-    public static int PERF_SIZE_ZERO() {
-        return (int)512L;
+    public static int MCI_SEEK() {
+        return (int)2055L;
     }
-    public static int PERF_SIZE_VARIABLE_LEN() {
-        return (int)768L;
+    public static int MCI_STOP() {
+        return (int)2056L;
     }
-    public static int PERF_TYPE_NUMBER() {
-        return (int)0L;
+    public static int MCI_PAUSE() {
+        return (int)2057L;
     }
-    public static int PERF_TYPE_COUNTER() {
-        return (int)1024L;
+    public static int MCI_INFO() {
+        return (int)2058L;
     }
-    public static int PERF_TYPE_TEXT() {
-        return (int)2048L;
+    public static int MCI_GETDEVCAPS() {
+        return (int)2059L;
     }
-    public static int PERF_TYPE_ZERO() {
-        return (int)3072L;
+    public static int MCI_SPIN() {
+        return (int)2060L;
     }
-    public static int PERF_NUMBER_HEX() {
-        return (int)0L;
+    public static int MCI_SET() {
+        return (int)2061L;
     }
-    public static int PERF_NUMBER_DECIMAL() {
-        return (int)65536L;
+    public static int MCI_STEP() {
+        return (int)2062L;
     }
-    public static int PERF_NUMBER_DEC_1000() {
-        return (int)131072L;
+    public static int MCI_RECORD() {
+        return (int)2063L;
     }
-    public static int PERF_COUNTER_VALUE() {
-        return (int)0L;
+    public static int MCI_SYSINFO() {
+        return (int)2064L;
     }
-    public static int PERF_COUNTER_RATE() {
-        return (int)65536L;
+    public static int MCI_BREAK() {
+        return (int)2065L;
     }
-    public static int PERF_COUNTER_FRACTION() {
-        return (int)131072L;
+    public static int MCI_SAVE() {
+        return (int)2067L;
     }
-    public static int PERF_COUNTER_BASE() {
-        return (int)196608L;
+    public static int MCI_STATUS() {
+        return (int)2068L;
     }
-    public static int PERF_COUNTER_ELAPSED() {
-        return (int)262144L;
+    public static int MCI_CUE() {
+        return (int)2096L;
     }
-    public static int PERF_COUNTER_QUEUELEN() {
-        return (int)327680L;
+    public static int MCI_REALIZE() {
+        return (int)2112L;
     }
-    public static int PERF_COUNTER_HISTOGRAM() {
-        return (int)393216L;
+    public static int MCI_WINDOW() {
+        return (int)2113L;
     }
-    public static int PERF_COUNTER_PRECISION() {
-        return (int)458752L;
+    public static int MCI_PUT() {
+        return (int)2114L;
     }
-    public static int PERF_TEXT_UNICODE() {
-        return (int)0L;
+    public static int MCI_WHERE() {
+        return (int)2115L;
     }
-    public static int PERF_TEXT_ASCII() {
-        return (int)65536L;
+    public static int MCI_FREEZE() {
+        return (int)2116L;
     }
-    public static int PERF_TIMER_TICK() {
-        return (int)0L;
+    public static int MCI_UNFREEZE() {
+        return (int)2117L;
     }
-    public static int PERF_TIMER_100NS() {
-        return (int)1048576L;
+    public static int MCI_LOAD() {
+        return (int)2128L;
     }
-    public static int PERF_OBJECT_TIMER() {
-        return (int)2097152L;
+    public static int MCI_CUT() {
+        return (int)2129L;
     }
-    public static int PERF_DELTA_COUNTER() {
-        return (int)4194304L;
+    public static int MCI_COPY() {
+        return (int)2130L;
     }
-    public static int PERF_DELTA_BASE() {
-        return (int)8388608L;
+    public static int MCI_PASTE() {
+        return (int)2131L;
     }
-    public static int PERF_INVERSE_COUNTER() {
-        return (int)16777216L;
+    public static int MCI_UPDATE() {
+        return (int)2132L;
     }
-    public static int PERF_MULTI_COUNTER() {
-        return (int)33554432L;
+    public static int MCI_RESUME() {
+        return (int)2133L;
     }
-    public static int PERF_DISPLAY_NO_SUFFIX() {
-        return (int)0L;
+    public static int MCI_DELETE() {
+        return (int)2134L;
     }
-    public static int PERF_DISPLAY_PER_SEC() {
-        return (int)268435456L;
+    public static int MCI_LAST() {
+        return (int)4095L;
     }
-    public static int PERF_DISPLAY_PERCENT() {
-        return (int)536870912L;
-    }
-    public static int PERF_DISPLAY_SECONDS() {
-        return (int)805306368L;
-    }
-    public static int PERF_DISPLAY_NOSHOW() {
-        return (int)1073741824L;
-    }
-    public static int PERF_DETAIL_NOVICE() {
-        return (int)100L;
-    }
-    public static int PERF_DETAIL_ADVANCED() {
-        return (int)200L;
-    }
-    public static int PERF_DETAIL_EXPERT() {
-        return (int)300L;
-    }
-    public static int PERF_DETAIL_WIZARD() {
-        return (int)400L;
-    }
-    public static int WINPERF_LOG_NONE() {
-        return (int)0L;
-    }
-    public static int WINPERF_LOG_USER() {
-        return (int)1L;
-    }
-    public static int WINPERF_LOG_DEBUG() {
-        return (int)2L;
-    }
-    public static int WINPERF_LOG_VERBOSE() {
-        return (int)3L;
-    }
-    public static int FD_SETSIZE() {
-        return (int)64L;
-    }
-    public static int IOCPARM_MASK() {
-        return (int)127L;
-    }
-    public static int IOC_VOID() {
-        return (int)536870912L;
-    }
-    public static int IOC_OUT() {
-        return (int)1073741824L;
-    }
-    public static int IPPROTO_IP() {
-        return (int)0L;
-    }
-    public static int IPPROTO_ICMP() {
-        return (int)1L;
-    }
-    public static int IPPROTO_IGMP() {
-        return (int)2L;
-    }
-    public static int IPPROTO_GGP() {
-        return (int)3L;
-    }
-    public static int IPPROTO_TCP() {
-        return (int)6L;
-    }
-    public static int IPPROTO_PUP() {
-        return (int)12L;
-    }
-    public static int IPPROTO_UDP() {
-        return (int)17L;
-    }
-    public static int IPPROTO_IDP() {
-        return (int)22L;
-    }
-    public static int IPPROTO_ND() {
-        return (int)77L;
-    }
-    public static int IPPROTO_RAW() {
-        return (int)255L;
-    }
-    public static int IPPROTO_MAX() {
-        return (int)256L;
-    }
-    public static int IPPORT_ECHO() {
-        return (int)7L;
-    }
-    public static int IPPORT_DISCARD() {
-        return (int)9L;
-    }
-    public static int IPPORT_SYSTAT() {
-        return (int)11L;
-    }
-    public static int IPPORT_DAYTIME() {
-        return (int)13L;
-    }
-    public static int IPPORT_NETSTAT() {
-        return (int)15L;
-    }
-    public static int IPPORT_FTP() {
-        return (int)21L;
-    }
-    public static int IPPORT_TELNET() {
-        return (int)23L;
-    }
-    public static int IPPORT_SMTP() {
-        return (int)25L;
-    }
-    public static int IPPORT_TIMESERVER() {
-        return (int)37L;
-    }
-    public static int IPPORT_NAMESERVER() {
-        return (int)42L;
-    }
-    public static int IPPORT_WHOIS() {
-        return (int)43L;
-    }
-    public static int IPPORT_MTP() {
-        return (int)57L;
-    }
-    public static int IPPORT_TFTP() {
-        return (int)69L;
-    }
-    public static int IPPORT_RJE() {
-        return (int)77L;
-    }
-    public static int IPPORT_FINGER() {
-        return (int)79L;
-    }
-    public static int IPPORT_TTYLINK() {
-        return (int)87L;
-    }
-    public static int IPPORT_SUPDUP() {
-        return (int)95L;
-    }
-    public static int IPPORT_EXECSERVER() {
-        return (int)512L;
-    }
-    public static int IPPORT_LOGINSERVER() {
+    public static int MCI_DEVTYPE_VCR() {
         return (int)513L;
     }
-    public static int IPPORT_CMDSERVER() {
+    public static int MCI_DEVTYPE_VIDEODISC() {
         return (int)514L;
     }
-    public static int IPPORT_EFSSERVER() {
+    public static int MCI_DEVTYPE_OVERLAY() {
+        return (int)515L;
+    }
+    public static int MCI_DEVTYPE_CD_AUDIO() {
+        return (int)516L;
+    }
+    public static int MCI_DEVTYPE_DAT() {
+        return (int)517L;
+    }
+    public static int MCI_DEVTYPE_SCANNER() {
+        return (int)518L;
+    }
+    public static int MCI_DEVTYPE_ANIMATION() {
+        return (int)519L;
+    }
+    public static int MCI_DEVTYPE_DIGITAL_VIDEO() {
         return (int)520L;
     }
-    public static int IPPORT_BIFFUDP() {
-        return (int)512L;
+    public static int MCI_DEVTYPE_OTHER() {
+        return (int)521L;
     }
-    public static int IPPORT_WHOSERVER() {
-        return (int)513L;
+    public static int MCI_DEVTYPE_WAVEFORM_AUDIO() {
+        return (int)522L;
     }
-    public static int IPPORT_ROUTESERVER() {
-        return (int)520L;
+    public static int MCI_DEVTYPE_SEQUENCER() {
+        return (int)523L;
     }
-    public static int IPPORT_RESERVED() {
-        return (int)1024L;
+    public static int MCI_DEVTYPE_FIRST_USER() {
+        return (int)4096L;
     }
-    public static int IMPLINK_IP() {
-        return (int)155L;
-    }
-    public static int IMPLINK_LOWEXPER() {
-        return (int)156L;
-    }
-    public static int IMPLINK_HIGHEXPER() {
-        return (int)158L;
-    }
-    public static int IN_CLASSA_NSHIFT() {
-        return (int)24L;
-    }
-    public static int IN_CLASSA_HOST() {
-        return (int)16777215L;
-    }
-    public static int IN_CLASSA_MAX() {
-        return (int)128L;
-    }
-    public static int IN_CLASSB_NSHIFT() {
-        return (int)16L;
-    }
-    public static int IN_CLASSB_HOST() {
-        return (int)65535L;
-    }
-    public static int IN_CLASSB_MAX() {
-        return (int)65536L;
-    }
-    public static int IN_CLASSC_NSHIFT() {
-        return (int)8L;
-    }
-    public static int IN_CLASSC_HOST() {
-        return (int)255L;
-    }
-    public static int INADDR_LOOPBACK() {
-        return (int)2130706433L;
-    }
-    public static int WSADESCRIPTION_LEN() {
-        return (int)256L;
-    }
-    public static int WSASYS_STATUS_LEN() {
-        return (int)128L;
-    }
-    public static int IP_OPTIONS() {
-        return (int)1L;
-    }
-    public static int IP_MULTICAST_IF() {
-        return (int)2L;
-    }
-    public static int IP_MULTICAST_TTL() {
-        return (int)3L;
-    }
-    public static int IP_MULTICAST_LOOP() {
-        return (int)4L;
-    }
-    public static int IP_ADD_MEMBERSHIP() {
-        return (int)5L;
-    }
-    public static int IP_DROP_MEMBERSHIP() {
-        return (int)6L;
-    }
-    public static int IP_TTL() {
-        return (int)7L;
-    }
-    public static int IP_TOS() {
-        return (int)8L;
-    }
-    public static int IP_DONTFRAGMENT() {
-        return (int)9L;
-    }
-    public static int IP_DEFAULT_MULTICAST_TTL() {
-        return (int)1L;
-    }
-    public static int IP_DEFAULT_MULTICAST_LOOP() {
-        return (int)1L;
-    }
-    public static int IP_MAX_MEMBERSHIPS() {
-        return (int)20L;
-    }
-    public static int SOCK_STREAM() {
-        return (int)1L;
-    }
-    public static int SOCK_DGRAM() {
-        return (int)2L;
-    }
-    public static int SOCK_RAW() {
-        return (int)3L;
-    }
-    public static int SOCK_RDM() {
-        return (int)4L;
-    }
-    public static int SOCK_SEQPACKET() {
-        return (int)5L;
-    }
-    public static int SO_DEBUG() {
-        return (int)1L;
-    }
-    public static int SO_ACCEPTCONN() {
-        return (int)2L;
-    }
-    public static int SO_REUSEADDR() {
-        return (int)4L;
-    }
-    public static int SO_KEEPALIVE() {
-        return (int)8L;
-    }
-    public static int SO_DONTROUTE() {
-        return (int)16L;
-    }
-    public static int SO_BROADCAST() {
-        return (int)32L;
-    }
-    public static int SO_USELOOPBACK() {
-        return (int)64L;
-    }
-    public static int SO_LINGER() {
-        return (int)128L;
-    }
-    public static int SO_OOBINLINE() {
-        return (int)256L;
-    }
-    public static int SO_SNDBUF() {
-        return (int)4097L;
-    }
-    public static int SO_RCVBUF() {
-        return (int)4098L;
-    }
-    public static int SO_SNDLOWAT() {
-        return (int)4099L;
-    }
-    public static int SO_RCVLOWAT() {
-        return (int)4100L;
-    }
-    public static int SO_SNDTIMEO() {
-        return (int)4101L;
-    }
-    public static int SO_RCVTIMEO() {
-        return (int)4102L;
-    }
-    public static int SO_ERROR() {
-        return (int)4103L;
-    }
-    public static int SO_TYPE() {
-        return (int)4104L;
-    }
-    public static int SO_CONNDATA() {
-        return (int)28672L;
-    }
-    public static int SO_CONNOPT() {
-        return (int)28673L;
-    }
-    public static int SO_DISCDATA() {
-        return (int)28674L;
-    }
-    public static int SO_DISCOPT() {
-        return (int)28675L;
-    }
-    public static int SO_CONNDATALEN() {
-        return (int)28676L;
-    }
-    public static int SO_CONNOPTLEN() {
-        return (int)28677L;
-    }
-    public static int SO_DISCDATALEN() {
-        return (int)28678L;
-    }
-    public static int SO_DISCOPTLEN() {
-        return (int)28679L;
-    }
-    public static int SO_OPENTYPE() {
-        return (int)28680L;
-    }
-    public static int SO_SYNCHRONOUS_ALERT() {
-        return (int)16L;
-    }
-    public static int SO_SYNCHRONOUS_NONALERT() {
-        return (int)32L;
-    }
-    public static int SO_MAXDG() {
-        return (int)28681L;
-    }
-    public static int SO_MAXPATHDG() {
-        return (int)28682L;
-    }
-    public static int SO_UPDATE_ACCEPT_CONTEXT() {
-        return (int)28683L;
-    }
-    public static int SO_CONNECT_TIME() {
-        return (int)28684L;
-    }
-    public static int TCP_NODELAY() {
-        return (int)1L;
-    }
-    public static int TCP_BSDURGENT() {
-        return (int)28672L;
-    }
-    public static int AF_UNSPEC() {
+    public static int MCI_FORMAT_MILLISECONDS() {
         return (int)0L;
     }
-    public static int AF_UNIX() {
+    public static int MCI_FORMAT_HMS() {
         return (int)1L;
     }
-    public static int AF_INET() {
+    public static int MCI_FORMAT_MSF() {
         return (int)2L;
     }
-    public static int AF_IMPLINK() {
+    public static int MCI_FORMAT_FRAMES() {
         return (int)3L;
+    }
+    public static int MCI_FORMAT_SMPTE_24() {
+        return (int)4L;
+    }
+    public static int MCI_FORMAT_SMPTE_25() {
+        return (int)5L;
+    }
+    public static int MCI_FORMAT_SMPTE_30() {
+        return (int)6L;
+    }
+    public static int MCI_FORMAT_SMPTE_30DROP() {
+        return (int)7L;
+    }
+    public static int MCI_FORMAT_BYTES() {
+        return (int)8L;
+    }
+    public static int MCI_FORMAT_SAMPLES() {
+        return (int)9L;
+    }
+    public static int MCI_FORMAT_TMSF() {
+        return (int)10L;
+    }
+    public static int MCI_NOTIFY_SUCCESSFUL() {
+        return (int)1L;
+    }
+    public static int MCI_NOTIFY_SUPERSEDED() {
+        return (int)2L;
+    }
+    public static int MCI_NOTIFY_ABORTED() {
+        return (int)4L;
+    }
+    public static int MCI_NOTIFY_FAILURE() {
+        return (int)8L;
+    }
+    public static int MCI_VD_FORMAT_TRACK() {
+        return (int)16385L;
+    }
+    public static int MCI_SEQ_FORMAT_SONGPTR() {
+        return (int)16385L;
+    }
+    public static int MCI_SEQ_FILE() {
+        return (int)16386L;
+    }
+    public static int MCI_SEQ_MIDI() {
+        return (int)16387L;
+    }
+    public static int MCI_SEQ_SMPTE() {
+        return (int)16388L;
+    }
+    public static int MCI_SEQ_NONE() {
+        return (int)65533L;
+    }
+    public static int MCI_SEQ_MAPPER() {
+        return (int)65535L;
+    }
+    public static int DRV_LOAD() {
+        return (int)1L;
+    }
+    public static int DRV_ENABLE() {
+        return (int)2L;
+    }
+    public static int DRV_OPEN() {
+        return (int)3L;
+    }
+    public static int DRV_CLOSE() {
+        return (int)4L;
+    }
+    public static int DRV_DISABLE() {
+        return (int)5L;
+    }
+    public static int DRV_FREE() {
+        return (int)6L;
+    }
+    public static int DRV_CONFIGURE() {
+        return (int)7L;
+    }
+    public static int DRV_QUERYCONFIGURE() {
+        return (int)8L;
+    }
+    public static int DRV_INSTALL() {
+        return (int)9L;
+    }
+    public static int DRV_REMOVE() {
+        return (int)10L;
+    }
+    public static int DRV_EXITSESSION() {
+        return (int)11L;
+    }
+    public static int DRV_POWER() {
+        return (int)15L;
+    }
+    public static int DRV_RESERVED() {
+        return (int)2048L;
     }
 }
 

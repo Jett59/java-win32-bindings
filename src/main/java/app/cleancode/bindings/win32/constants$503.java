@@ -9,37 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$503 {
 
-    static final FunctionDescriptor LPOCNCONNPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor InitiateSystemShutdownA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle InitiateSystemShutdownA$MH = RuntimeHelper.downcallHandle(
+        "InitiateSystemShutdownA",
+        constants$503.InitiateSystemShutdownA$FUNC
+    );
+    static final FunctionDescriptor InitiateSystemShutdownW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle InitiateSystemShutdownW$MH = RuntimeHelper.downcallHandle(
+        "InitiateSystemShutdownW",
+        constants$503.InitiateSystemShutdownW$FUNC
+    );
+    static final FunctionDescriptor AbortSystemShutdownA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LPOCNCONNPROCW$MH = RuntimeHelper.downcallHandle(
-        constants$503.LPOCNCONNPROCW$FUNC
+    static final MethodHandle AbortSystemShutdownA$MH = RuntimeHelper.downcallHandle(
+        "AbortSystemShutdownA",
+        constants$503.AbortSystemShutdownA$FUNC
     );
-    static final FunctionDescriptor LPOCNCHKPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor AbortSystemShutdownW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle LPOCNCHKPROC$MH = RuntimeHelper.downcallHandle(
-        constants$503.LPOCNCHKPROC$FUNC
+    static final MethodHandle AbortSystemShutdownW$MH = RuntimeHelper.downcallHandle(
+        "AbortSystemShutdownW",
+        constants$503.AbortSystemShutdownW$FUNC
     );
-    static final FunctionDescriptor LPOCNDSCPROC$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor InitiateSystemShutdownExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle LPOCNDSCPROC$MH = RuntimeHelper.downcallHandle(
-        constants$503.LPOCNDSCPROC$FUNC
+    static final MethodHandle InitiateSystemShutdownExA$MH = RuntimeHelper.downcallHandle(
+        "InitiateSystemShutdownExA",
+        constants$503.InitiateSystemShutdownExA$FUNC
     );
-    static final FunctionDescriptor SCardUIDlgSelectCardA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor InitiateSystemShutdownExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle SCardUIDlgSelectCardA$MH = RuntimeHelper.downcallHandle(
-        "SCardUIDlgSelectCardA",
-        constants$503.SCardUIDlgSelectCardA$FUNC
+    static final MethodHandle InitiateSystemShutdownExW$MH = RuntimeHelper.downcallHandle(
+        "InitiateSystemShutdownExW",
+        constants$503.InitiateSystemShutdownExW$FUNC
     );
 }
 

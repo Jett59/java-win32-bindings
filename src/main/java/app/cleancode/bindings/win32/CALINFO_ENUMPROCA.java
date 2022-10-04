@@ -11,13 +11,13 @@ public interface CALINFO_ENUMPROCA {
 
     int apply(java.lang.foreign.MemoryAddress _x0);
     static MemorySegment allocate(CALINFO_ENUMPROCA fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(CALINFO_ENUMPROCA.class, fi, constants$353.CALINFO_ENUMPROCA$FUNC, session);
+        return RuntimeHelper.upcallStub(CALINFO_ENUMPROCA.class, fi, constants$458.CALINFO_ENUMPROCA$FUNC, session);
     }
     static CALINFO_ENUMPROCA ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress __x0) -> {
             try {
-                return (int)constants$353.CALINFO_ENUMPROCA$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0);
+                return (int)constants$458.CALINFO_ENUMPROCA$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)__x0);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

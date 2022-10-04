@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$755 {
 
-    static final MemorySegment SPLDS_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("url");
-    static final MemorySegment SPLDS_FLAGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("flags");
-    static final MemorySegment SPLDS_VERSION_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("versionNumber");
-    static final MemorySegment SPLDS_PRINTER_NAME_ALIASES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerNameAliases");
-    static final MemorySegment SPLDS_PRINTER_LOCATIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerLocations");
-    static final MemorySegment SPLDS_PRINTER_MODEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerModel");
+    static final MemorySegment szPRIV_KEY_CACHE_MAX_ITEMS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivKeyCacheMaxItems");
+    static final MemorySegment szPRIV_KEY_CACHE_PURGE_INTERVAL_SECONDS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivKeyCachePurgeIntervalSeconds");
+    static final MemorySegment szOID_RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549");
+    static final MemorySegment szOID_PKCS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1");
+    static final MemorySegment szOID_RSA_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2");
+    static final MemorySegment szOID_RSA_ENCRYPT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3");
 }
 
 

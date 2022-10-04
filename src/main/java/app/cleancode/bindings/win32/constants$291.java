@@ -9,59 +9,74 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$291 {
 
-    static final FunctionDescriptor TrackPopupMenuEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor PlgBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PlgBlt$MH = RuntimeHelper.downcallHandle(
+        "PlgBlt",
+        constants$291.PlgBlt$FUNC
+    );
+    static final FunctionDescriptor OffsetClipRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle OffsetClipRgn$MH = RuntimeHelper.downcallHandle(
+        "OffsetClipRgn",
+        constants$291.OffsetClipRgn$FUNC
+    );
+    static final FunctionDescriptor OffsetRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle OffsetRgn$MH = RuntimeHelper.downcallHandle(
+        "OffsetRgn",
+        constants$291.OffsetRgn$FUNC
+    );
+    static final FunctionDescriptor PatBlt$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle PatBlt$MH = RuntimeHelper.downcallHandle(
+        "PatBlt",
+        constants$291.PatBlt$FUNC
+    );
+    static final FunctionDescriptor Pie$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle Pie$MH = RuntimeHelper.downcallHandle(
+        "Pie",
+        constants$291.Pie$FUNC
+    );
+    static final FunctionDescriptor PlayMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle TrackPopupMenuEx$MH = RuntimeHelper.downcallHandle(
-        "TrackPopupMenuEx",
-        constants$291.TrackPopupMenuEx$FUNC
-    );
-    static final FunctionDescriptor CalculatePopupWindowPosition$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CalculatePopupWindowPosition$MH = RuntimeHelper.downcallHandle(
-        "CalculatePopupWindowPosition",
-        constants$291.CalculatePopupWindowPosition$FUNC
-    );
-    static final FunctionDescriptor GetMenuInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetMenuInfo$MH = RuntimeHelper.downcallHandle(
-        "GetMenuInfo",
-        constants$291.GetMenuInfo$FUNC
-    );
-    static final FunctionDescriptor SetMenuInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetMenuInfo$MH = RuntimeHelper.downcallHandle(
-        "SetMenuInfo",
-        constants$291.SetMenuInfo$FUNC
-    );
-    static final FunctionDescriptor EndMenu$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle EndMenu$MH = RuntimeHelper.downcallHandle(
-        "EndMenu",
-        constants$291.EndMenu$FUNC
-    );
-    static final FunctionDescriptor InsertMenuItemA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle InsertMenuItemA$MH = RuntimeHelper.downcallHandle(
-        "InsertMenuItemA",
-        constants$291.InsertMenuItemA$FUNC
+    static final MethodHandle PlayMetaFile$MH = RuntimeHelper.downcallHandle(
+        "PlayMetaFile",
+        constants$291.PlayMetaFile$FUNC
     );
 }
 

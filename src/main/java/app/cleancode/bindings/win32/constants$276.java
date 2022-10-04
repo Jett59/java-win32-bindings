@@ -9,60 +9,50 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$276 {
 
-    static final FunctionDescriptor GetPointerFrameInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetAspectRatioFilterEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPointerFrameInfo$MH = RuntimeHelper.downcallHandle(
-        "GetPointerFrameInfo",
-        constants$276.GetPointerFrameInfo$FUNC
+    static final MethodHandle GetAspectRatioFilterEx$MH = RuntimeHelper.downcallHandle(
+        "GetAspectRatioFilterEx",
+        constants$276.GetAspectRatioFilterEx$FUNC
     );
-    static final FunctionDescriptor GetPointerFrameInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetBkColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPointerFrameInfoHistory$MH = RuntimeHelper.downcallHandle(
-        "GetPointerFrameInfoHistory",
-        constants$276.GetPointerFrameInfoHistory$FUNC
+    static final MethodHandle GetBkColor$MH = RuntimeHelper.downcallHandle(
+        "GetBkColor",
+        constants$276.GetBkColor$FUNC
     );
-    static final FunctionDescriptor GetPointerTouchInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetDCBrushColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDCBrushColor$MH = RuntimeHelper.downcallHandle(
+        "GetDCBrushColor",
+        constants$276.GetDCBrushColor$FUNC
+    );
+    static final FunctionDescriptor GetDCPenColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetDCPenColor$MH = RuntimeHelper.downcallHandle(
+        "GetDCPenColor",
+        constants$276.GetDCPenColor$FUNC
+    );
+    static final FunctionDescriptor GetBkMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetBkMode$MH = RuntimeHelper.downcallHandle(
+        "GetBkMode",
+        constants$276.GetBkMode$FUNC
+    );
+    static final FunctionDescriptor GetBitmapBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPointerTouchInfo$MH = RuntimeHelper.downcallHandle(
-        "GetPointerTouchInfo",
-        constants$276.GetPointerTouchInfo$FUNC
-    );
-    static final FunctionDescriptor GetPointerTouchInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerTouchInfoHistory$MH = RuntimeHelper.downcallHandle(
-        "GetPointerTouchInfoHistory",
-        constants$276.GetPointerTouchInfoHistory$FUNC
-    );
-    static final FunctionDescriptor GetPointerFrameTouchInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerFrameTouchInfo$MH = RuntimeHelper.downcallHandle(
-        "GetPointerFrameTouchInfo",
-        constants$276.GetPointerFrameTouchInfo$FUNC
-    );
-    static final FunctionDescriptor GetPointerFrameTouchInfoHistory$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPointerFrameTouchInfoHistory$MH = RuntimeHelper.downcallHandle(
-        "GetPointerFrameTouchInfoHistory",
-        constants$276.GetPointerFrameTouchInfoHistory$FUNC
+    static final MethodHandle GetBitmapBits$MH = RuntimeHelper.downcallHandle(
+        "GetBitmapBits",
+        constants$276.GetBitmapBits$FUNC
     );
 }
 

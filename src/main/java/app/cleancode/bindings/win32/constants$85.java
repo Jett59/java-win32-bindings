@@ -9,52 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$85 {
 
-    static final FunctionDescriptor PowerSetRequest$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor WriteFileEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WriteFileEx$MH = RuntimeHelper.downcallHandle(
+        "WriteFileEx",
+        constants$85.WriteFileEx$FUNC
+    );
+    static final FunctionDescriptor WriteFileGather$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle WriteFileGather$MH = RuntimeHelper.downcallHandle(
+        "WriteFileGather",
+        constants$85.WriteFileGather$FUNC
+    );
+    static final FunctionDescriptor GetTempPathW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetTempPathW$MH = RuntimeHelper.downcallHandle(
+        "GetTempPathW",
+        constants$85.GetTempPathW$FUNC
+    );
+    static final FunctionDescriptor GetVolumeNameForVolumeMountPointW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PowerSetRequest$MH = RuntimeHelper.downcallHandle(
-        "PowerSetRequest",
-        constants$85.PowerSetRequest$FUNC
+    static final MethodHandle GetVolumeNameForVolumeMountPointW$MH = RuntimeHelper.downcallHandle(
+        "GetVolumeNameForVolumeMountPointW",
+        constants$85.GetVolumeNameForVolumeMountPointW$FUNC
     );
-    static final FunctionDescriptor PowerClearRequest$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetVolumePathNamesForVolumeNameW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle PowerClearRequest$MH = RuntimeHelper.downcallHandle(
-        "PowerClearRequest",
-        constants$85.PowerClearRequest$FUNC
-    );
-    static final FunctionDescriptor SetFileCompletionNotificationModes$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_CHAR$LAYOUT
-    );
-    static final MethodHandle SetFileCompletionNotificationModes$MH = RuntimeHelper.downcallHandle(
-        "SetFileCompletionNotificationModes",
-        constants$85.SetFileCompletionNotificationModes$FUNC
-    );
-    static final FunctionDescriptor Wow64GetThreadSelectorEntry$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle Wow64GetThreadSelectorEntry$MH = RuntimeHelper.downcallHandle(
-        "Wow64GetThreadSelectorEntry",
-        constants$85.Wow64GetThreadSelectorEntry$FUNC
+    static final MethodHandle GetVolumePathNamesForVolumeNameW$MH = RuntimeHelper.downcallHandle(
+        "GetVolumePathNamesForVolumeNameW",
+        constants$85.GetVolumePathNamesForVolumeNameW$FUNC
     );
-    static final FunctionDescriptor DebugSetProcessKillOnExit$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DebugSetProcessKillOnExit$MH = RuntimeHelper.downcallHandle(
-        "DebugSetProcessKillOnExit",
-        constants$85.DebugSetProcessKillOnExit$FUNC
-    );
-    static final FunctionDescriptor DebugBreakProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateFile2$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle DebugBreakProcess$MH = RuntimeHelper.downcallHandle(
-        "DebugBreakProcess",
-        constants$85.DebugBreakProcess$FUNC
+    static final MethodHandle CreateFile2$MH = RuntimeHelper.downcallHandle(
+        "CreateFile2",
+        constants$85.CreateFile2$FUNC
     );
 }
 

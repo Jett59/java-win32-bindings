@@ -9,12 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$695 {
 
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_W$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress CERT_STORE_PROV_COLLECTION$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_REGISTRY_A$ADDR = MemoryAddress.ofLong(12L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_REGISTRY_W$ADDR = MemoryAddress.ofLong(13L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_REGISTRY$ADDR = MemoryAddress.ofLong(13L);
+    static final FunctionDescriptor CoQueryClientBlanket$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoQueryClientBlanket$MH = RuntimeHelper.downcallHandle(
+        "CoQueryClientBlanket",
+        constants$695.CoQueryClientBlanket$FUNC
+    );
+    static final FunctionDescriptor CoImpersonateClient$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle CoImpersonateClient$MH = RuntimeHelper.downcallHandle(
+        "CoImpersonateClient",
+        constants$695.CoImpersonateClient$FUNC
+    );
+    static final FunctionDescriptor CoRevertToSelf$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle CoRevertToSelf$MH = RuntimeHelper.downcallHandle(
+        "CoRevertToSelf",
+        constants$695.CoRevertToSelf$FUNC
+    );
+    static final FunctionDescriptor CoQueryAuthenticationServices$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoQueryAuthenticationServices$MH = RuntimeHelper.downcallHandle(
+        "CoQueryAuthenticationServices",
+        constants$695.CoQueryAuthenticationServices$FUNC
+    );
+    static final FunctionDescriptor CoSwitchCallContext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoSwitchCallContext$MH = RuntimeHelper.downcallHandle(
+        "CoSwitchCallContext",
+        constants$695.CoSwitchCallContext$FUNC
+    );
+    static final FunctionDescriptor CoCreateInstance$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CoCreateInstance$MH = RuntimeHelper.downcallHandle(
+        "CoCreateInstance",
+        constants$695.CoCreateInstance$FUNC
+    );
 }
 
 

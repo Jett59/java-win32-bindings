@@ -9,54 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$403 {
 
-    static final FunctionDescriptor WNetGetNetworkInformationW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowRgnBox$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle WNetGetNetworkInformationW$MH = RuntimeHelper.downcallHandle(
-        "WNetGetNetworkInformationW",
-        constants$403.WNetGetNetworkInformationW$FUNC
+    static final MethodHandle GetWindowRgnBox$MH = RuntimeHelper.downcallHandle(
+        "GetWindowRgnBox",
+        constants$403.GetWindowRgnBox$FUNC
     );
-    static final FunctionDescriptor WNetGetLastErrorA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ExcludeUpdateRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ExcludeUpdateRgn$MH = RuntimeHelper.downcallHandle(
+        "ExcludeUpdateRgn",
+        constants$403.ExcludeUpdateRgn$FUNC
+    );
+    static final FunctionDescriptor InvalidateRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetGetLastErrorA$MH = RuntimeHelper.downcallHandle(
-        "WNetGetLastErrorA",
-        constants$403.WNetGetLastErrorA$FUNC
+    static final MethodHandle InvalidateRect$MH = RuntimeHelper.downcallHandle(
+        "InvalidateRect",
+        constants$403.InvalidateRect$FUNC
     );
-    static final FunctionDescriptor WNetGetLastErrorW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ValidateRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle ValidateRect$MH = RuntimeHelper.downcallHandle(
+        "ValidateRect",
+        constants$403.ValidateRect$FUNC
+    );
+    static final FunctionDescriptor InvalidateRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle WNetGetLastErrorW$MH = RuntimeHelper.downcallHandle(
-        "WNetGetLastErrorW",
-        constants$403.WNetGetLastErrorW$FUNC
+    static final MethodHandle InvalidateRgn$MH = RuntimeHelper.downcallHandle(
+        "InvalidateRgn",
+        constants$403.InvalidateRgn$FUNC
     );
-    static final FunctionDescriptor MultinetGetConnectionPerformanceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ValidateRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle MultinetGetConnectionPerformanceA$MH = RuntimeHelper.downcallHandle(
-        "MultinetGetConnectionPerformanceA",
-        constants$403.MultinetGetConnectionPerformanceA$FUNC
-    );
-    static final FunctionDescriptor MultinetGetConnectionPerformanceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle MultinetGetConnectionPerformanceW$MH = RuntimeHelper.downcallHandle(
-        "MultinetGetConnectionPerformanceW",
-        constants$403.MultinetGetConnectionPerformanceW$FUNC
-    );
-    static final FunctionDescriptor PM_OPEN_PROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final MethodHandle ValidateRgn$MH = RuntimeHelper.downcallHandle(
+        "ValidateRgn",
+        constants$403.ValidateRgn$FUNC
     );
 }
 

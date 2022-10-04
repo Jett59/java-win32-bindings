@@ -9,87 +9,53 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$295 {
 
-    static final FunctionDescriptor DrawStateA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DrawStateA$MH = RuntimeHelper.downcallHandle(
-        "DrawStateA",
-        constants$295.DrawStateA$FUNC
-    );
-    static final FunctionDescriptor DrawStateW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle DrawStateW$MH = RuntimeHelper.downcallHandle(
-        "DrawStateW",
-        constants$295.DrawStateW$FUNC
-    );
-    static final FunctionDescriptor TabbedTextOutA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle TabbedTextOutA$MH = RuntimeHelper.downcallHandle(
-        "TabbedTextOutA",
-        constants$295.TabbedTextOutA$FUNC
-    );
-    static final FunctionDescriptor TabbedTextOutW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle TabbedTextOutW$MH = RuntimeHelper.downcallHandle(
-        "TabbedTextOutW",
-        constants$295.TabbedTextOutW$FUNC
-    );
-    static final FunctionDescriptor GetTabbedTextExtentA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetMetaRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTabbedTextExtentA$MH = RuntimeHelper.downcallHandle(
-        "GetTabbedTextExtentA",
-        constants$295.GetTabbedTextExtentA$FUNC
+    static final MethodHandle SetMetaRgn$MH = RuntimeHelper.downcallHandle(
+        "SetMetaRgn",
+        constants$295.SetMetaRgn$FUNC
     );
-    static final FunctionDescriptor GetTabbedTextExtentW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SelectObject$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetTabbedTextExtentW$MH = RuntimeHelper.downcallHandle(
-        "GetTabbedTextExtentW",
-        constants$295.GetTabbedTextExtentW$FUNC
+    static final MethodHandle SelectObject$MH = RuntimeHelper.downcallHandle(
+        "SelectObject",
+        constants$295.SelectObject$FUNC
+    );
+    static final FunctionDescriptor SelectPalette$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SelectPalette$MH = RuntimeHelper.downcallHandle(
+        "SelectPalette",
+        constants$295.SelectPalette$FUNC
+    );
+    static final FunctionDescriptor SetBkColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetBkColor$MH = RuntimeHelper.downcallHandle(
+        "SetBkColor",
+        constants$295.SetBkColor$FUNC
+    );
+    static final FunctionDescriptor SetDCBrushColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDCBrushColor$MH = RuntimeHelper.downcallHandle(
+        "SetDCBrushColor",
+        constants$295.SetDCBrushColor$FUNC
+    );
+    static final FunctionDescriptor SetDCPenColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDCPenColor$MH = RuntimeHelper.downcallHandle(
+        "SetDCPenColor",
+        constants$295.SetDCPenColor$FUNC
     );
 }
 

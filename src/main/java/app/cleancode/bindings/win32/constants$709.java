@@ -9,12 +9,27 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$709 {
 
-    static final MemorySegment CERT_PHYSICAL_STORE_ENTERPRISE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_PHYSICAL_STORE_AUTH_ROOT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_PHYSICAL_STORE_SMART_CARD_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CRYPT_OID_OPEN_SYSTEM_STORE_PROV_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllOpenSystemStoreProv");
-    static final MemorySegment CRYPT_OID_REGISTER_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllRegisterSystemStore");
-    static final MemorySegment CRYPT_OID_UNREGISTER_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllUnregisterSystemStore");
+    static final FunctionDescriptor HANDLER_FUNCTION$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle HANDLER_FUNCTION$MH = RuntimeHelper.downcallHandle(
+        constants$709.HANDLER_FUNCTION$FUNC
+    );
+    static final FunctionDescriptor HANDLER_FUNCTION_EX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle HANDLER_FUNCTION_EX$MH = RuntimeHelper.downcallHandle(
+        constants$709.HANDLER_FUNCTION_EX$FUNC
+    );
+    static final FunctionDescriptor LPHANDLER_FUNCTION$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LPHANDLER_FUNCTION$MH = RuntimeHelper.downcallHandle(
+        constants$709.LPHANDLER_FUNCTION$FUNC
+    );
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$739 {
 
-    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_PREDEFINED_BASE_TYPE$ADDR = MemoryAddress.ofLong(1000L);
-    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_PICTURE_TYPE$ADDR = MemoryAddress.ofLong(1000L);
-    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_SIGNATURE_TYPE$ADDR = MemoryAddress.ofLong(1001L);
-    static final MemorySegment SSL_OBJECT_LOCATOR_PFX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializePfx");
-    static final MemorySegment SSL_OBJECT_LOCATOR_ISSUER_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializeIssuerList");
-    static final MemorySegment SSL_OBJECT_LOCATOR_CERT_VALIDATION_CONFIG_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializeCertValidationConfig");
+    static final MemoryAddress HBMMENU_MBAR_RESTORE$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress HBMMENU_MBAR_MINIMIZE$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress HBMMENU_MBAR_CLOSE$ADDR = MemoryAddress.ofLong(5L);
+    static final MemoryAddress HBMMENU_MBAR_CLOSE_D$ADDR = MemoryAddress.ofLong(6L);
+    static final MemoryAddress HBMMENU_MBAR_MINIMIZE_D$ADDR = MemoryAddress.ofLong(7L);
+    static final MemoryAddress HBMMENU_POPUP_CLOSE$ADDR = MemoryAddress.ofLong(8L);
 }
 
 

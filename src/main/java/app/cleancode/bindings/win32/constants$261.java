@@ -9,51 +9,39 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$261 {
 
-    static final FunctionDescriptor GetDialogControlDpiChangeBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetDialogControlDpiChangeBehavior$MH = RuntimeHelper.downcallHandle(
-        "GetDialogControlDpiChangeBehavior",
-        constants$261.GetDialogControlDpiChangeBehavior$FUNC
-    );
-    static final FunctionDescriptor SetDialogDpiChangeBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor ReadThreadProfilingData$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetDialogDpiChangeBehavior$MH = RuntimeHelper.downcallHandle(
-        "SetDialogDpiChangeBehavior",
-        constants$261.SetDialogDpiChangeBehavior$FUNC
-    );
-    static final FunctionDescriptor GetDialogDpiChangeBehavior$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDialogDpiChangeBehavior$MH = RuntimeHelper.downcallHandle(
-        "GetDialogDpiChangeBehavior",
-        constants$261.GetDialogDpiChangeBehavior$FUNC
+    static final MethodHandle ReadThreadProfilingData$MH = RuntimeHelper.downcallHandle(
+        "ReadThreadProfilingData",
+        constants$261.ReadThreadProfilingData$FUNC
     );
-    static final FunctionDescriptor CallMsgFilterA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CallMsgFilterA$MH = RuntimeHelper.downcallHandle(
-        "CallMsgFilterA",
-        constants$261.CallMsgFilterA$FUNC
-    );
-    static final FunctionDescriptor CallMsgFilterW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle CallMsgFilterW$MH = RuntimeHelper.downcallHandle(
-        "CallMsgFilterW",
-        constants$261.CallMsgFilterW$FUNC
-    );
-    static final FunctionDescriptor OpenClipboard$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RaiseCustomSystemEventTrigger$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle OpenClipboard$MH = RuntimeHelper.downcallHandle(
-        "OpenClipboard",
-        constants$261.OpenClipboard$FUNC
+    static final MethodHandle RaiseCustomSystemEventTrigger$MH = RuntimeHelper.downcallHandle(
+        "RaiseCustomSystemEventTrigger",
+        constants$261.RaiseCustomSystemEventTrigger$FUNC
+    );
+    static final FunctionDescriptor OLDFONTENUMPROCA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle OLDFONTENUMPROCA$MH = RuntimeHelper.downcallHandle(
+        constants$261.OLDFONTENUMPROCA$FUNC
+    );
+    static final FunctionDescriptor OLDFONTENUMPROCW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle OLDFONTENUMPROCW$MH = RuntimeHelper.downcallHandle(
+        constants$261.OLDFONTENUMPROCW$FUNC
     );
 }
 

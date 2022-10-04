@@ -9,55 +9,48 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$302 {
 
-    static final FunctionDescriptor SetPropA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EnumMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle EnumMetaFile$MH = RuntimeHelper.downcallHandle(
+        "EnumMetaFile",
+        constants$302.EnumMetaFile$FUNC
+    );
+    static final FunctionDescriptor ENHMFENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle ENHMFENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$302.ENHMFENUMPROC$FUNC
+    );
+    static final FunctionDescriptor CloseEnhMetaFile$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CloseEnhMetaFile$MH = RuntimeHelper.downcallHandle(
+        "CloseEnhMetaFile",
+        constants$302.CloseEnhMetaFile$FUNC
+    );
+    static final FunctionDescriptor CopyEnhMetaFileA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetPropA$MH = RuntimeHelper.downcallHandle(
-        "SetPropA",
-        constants$302.SetPropA$FUNC
+    static final MethodHandle CopyEnhMetaFileA$MH = RuntimeHelper.downcallHandle(
+        "CopyEnhMetaFileA",
+        constants$302.CopyEnhMetaFileA$FUNC
     );
-    static final FunctionDescriptor SetPropW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetPropW$MH = RuntimeHelper.downcallHandle(
-        "SetPropW",
-        constants$302.SetPropW$FUNC
-    );
-    static final FunctionDescriptor GetPropA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor CopyEnhMetaFileW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetPropA$MH = RuntimeHelper.downcallHandle(
-        "GetPropA",
-        constants$302.GetPropA$FUNC
-    );
-    static final FunctionDescriptor GetPropW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetPropW$MH = RuntimeHelper.downcallHandle(
-        "GetPropW",
-        constants$302.GetPropW$FUNC
-    );
-    static final FunctionDescriptor RemovePropA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RemovePropA$MH = RuntimeHelper.downcallHandle(
-        "RemovePropA",
-        constants$302.RemovePropA$FUNC
-    );
-    static final FunctionDescriptor RemovePropW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RemovePropW$MH = RuntimeHelper.downcallHandle(
-        "RemovePropW",
-        constants$302.RemovePropW$FUNC
+    static final MethodHandle CopyEnhMetaFileW$MH = RuntimeHelper.downcallHandle(
+        "CopyEnhMetaFileW",
+        constants$302.CopyEnhMetaFileW$FUNC
     );
 }
 

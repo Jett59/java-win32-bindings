@@ -9,55 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$299 {
 
-    static final FunctionDescriptor GetWindowRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor StretchDIBits$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetWindowRgn$MH = RuntimeHelper.downcallHandle(
-        "GetWindowRgn",
-        constants$299.GetWindowRgn$FUNC
-    );
-    static final FunctionDescriptor GetWindowRgnBox$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetWindowRgnBox$MH = RuntimeHelper.downcallHandle(
-        "GetWindowRgnBox",
-        constants$299.GetWindowRgnBox$FUNC
-    );
-    static final FunctionDescriptor ExcludeUpdateRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ExcludeUpdateRgn$MH = RuntimeHelper.downcallHandle(
-        "ExcludeUpdateRgn",
-        constants$299.ExcludeUpdateRgn$FUNC
+    static final MethodHandle StretchDIBits$MH = RuntimeHelper.downcallHandle(
+        "StretchDIBits",
+        constants$299.StretchDIBits$FUNC
     );
-    static final FunctionDescriptor InvalidateRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetROP2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle InvalidateRect$MH = RuntimeHelper.downcallHandle(
-        "InvalidateRect",
-        constants$299.InvalidateRect$FUNC
+    static final MethodHandle SetROP2$MH = RuntimeHelper.downcallHandle(
+        "SetROP2",
+        constants$299.SetROP2$FUNC
     );
-    static final FunctionDescriptor ValidateRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle ValidateRect$MH = RuntimeHelper.downcallHandle(
-        "ValidateRect",
-        constants$299.ValidateRect$FUNC
-    );
-    static final FunctionDescriptor InvalidateRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetStretchBltMode$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle InvalidateRgn$MH = RuntimeHelper.downcallHandle(
-        "InvalidateRgn",
-        constants$299.InvalidateRgn$FUNC
+    static final MethodHandle SetStretchBltMode$MH = RuntimeHelper.downcallHandle(
+        "SetStretchBltMode",
+        constants$299.SetStretchBltMode$FUNC
+    );
+    static final FunctionDescriptor SetSystemPaletteUse$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetSystemPaletteUse$MH = RuntimeHelper.downcallHandle(
+        "SetSystemPaletteUse",
+        constants$299.SetSystemPaletteUse$FUNC
+    );
+    static final FunctionDescriptor SetTextCharacterExtra$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetTextCharacterExtra$MH = RuntimeHelper.downcallHandle(
+        "SetTextCharacterExtra",
+        constants$299.SetTextCharacterExtra$FUNC
+    );
+    static final FunctionDescriptor SetTextColor$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetTextColor$MH = RuntimeHelper.downcallHandle(
+        "SetTextColor",
+        constants$299.SetTextColor$FUNC
     );
 }
 

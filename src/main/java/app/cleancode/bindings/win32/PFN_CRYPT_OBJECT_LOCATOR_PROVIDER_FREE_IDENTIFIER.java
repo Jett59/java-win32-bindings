@@ -11,13 +11,13 @@ public interface PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER {
 
     void apply(java.lang.foreign.MemoryAddress pPluginContext, java.lang.foreign.MemoryAddress pIdentifier);
     static MemorySegment allocate(PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER fi, MemorySession session) {
-        return RuntimeHelper.upcallStub(PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER.class, fi, constants$482.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$FUNC, session);
+        return RuntimeHelper.upcallStub(PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER.class, fi, constants$634.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$FUNC, session);
     }
     static PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER ofAddress(MemoryAddress addr, MemorySession session) {
         MemorySegment symbol = MemorySegment.ofAddress(addr, 0, session);
         return (java.lang.foreign.MemoryAddress _pPluginContext, java.lang.foreign.MemoryAddress _pIdentifier) -> {
             try {
-                constants$482.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pPluginContext, (java.lang.foreign.Addressable)_pIdentifier);
+                constants$634.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$MH.invokeExact((Addressable)symbol, (java.lang.foreign.Addressable)_pPluginContext, (java.lang.foreign.Addressable)_pIdentifier);
             } catch (Throwable ex$) {
                 throw new AssertionError("should not reach here", ex$);
             }

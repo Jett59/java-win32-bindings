@@ -9,63 +9,47 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$385 {
 
-    static final FunctionDescriptor RegQueryReflectionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegQueryReflectionKey$MH = RuntimeHelper.downcallHandle(
-        "RegQueryReflectionKey",
-        constants$385.RegQueryReflectionKey$FUNC
-    );
-    static final FunctionDescriptor RegDeleteValueA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegDeleteValueA$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteValueA",
-        constants$385.RegDeleteValueA$FUNC
-    );
-    static final FunctionDescriptor RegDeleteValueW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegDeleteValueW$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteValueW",
-        constants$385.RegDeleteValueW$FUNC
-    );
-    static final FunctionDescriptor RegEnumKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor MapVirtualKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MapVirtualKeyExA$MH = RuntimeHelper.downcallHandle(
+        "MapVirtualKeyExA",
+        constants$385.MapVirtualKeyExA$FUNC
+    );
+    static final FunctionDescriptor MapVirtualKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle MapVirtualKeyExW$MH = RuntimeHelper.downcallHandle(
+        "MapVirtualKeyExW",
+        constants$385.MapVirtualKeyExW$FUNC
+    );
+    static final FunctionDescriptor GetInputState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetInputState$MH = RuntimeHelper.downcallHandle(
+        "GetInputState",
+        constants$385.GetInputState$FUNC
+    );
+    static final FunctionDescriptor GetQueueStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegEnumKeyA$MH = RuntimeHelper.downcallHandle(
-        "RegEnumKeyA",
-        constants$385.RegEnumKeyA$FUNC
+    static final MethodHandle GetQueueStatus$MH = RuntimeHelper.downcallHandle(
+        "GetQueueStatus",
+        constants$385.GetQueueStatus$FUNC
     );
-    static final FunctionDescriptor RegEnumKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetCapture$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetCapture$MH = RuntimeHelper.downcallHandle(
+        "GetCapture",
+        constants$385.GetCapture$FUNC
     );
-    static final MethodHandle RegEnumKeyW$MH = RuntimeHelper.downcallHandle(
-        "RegEnumKeyW",
-        constants$385.RegEnumKeyW$FUNC
-    );
-    static final FunctionDescriptor RegEnumKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetCapture$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle RegEnumKeyExA$MH = RuntimeHelper.downcallHandle(
-        "RegEnumKeyExA",
-        constants$385.RegEnumKeyExA$FUNC
+    static final MethodHandle SetCapture$MH = RuntimeHelper.downcallHandle(
+        "SetCapture",
+        constants$385.SetCapture$FUNC
     );
 }
 

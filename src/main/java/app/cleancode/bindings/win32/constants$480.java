@@ -9,76 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$480 {
 
-    static final FunctionDescriptor CertRetrieveLogoOrBiometricInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor FindNLSStringEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle FindNLSStringEx$MH = RuntimeHelper.downcallHandle(
+        "FindNLSStringEx",
+        constants$480.FindNLSStringEx$FUNC
+    );
+    static final FunctionDescriptor LCMapStringEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle LCMapStringEx$MH = RuntimeHelper.downcallHandle(
+        "LCMapStringEx",
+        constants$480.LCMapStringEx$FUNC
+    );
+    static final FunctionDescriptor IsValidLocaleName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle CertRetrieveLogoOrBiometricInfo$MH = RuntimeHelper.downcallHandle(
-        "CertRetrieveLogoOrBiometricInfo",
-        constants$480.CertRetrieveLogoOrBiometricInfo$FUNC
+    static final MethodHandle IsValidLocaleName$MH = RuntimeHelper.downcallHandle(
+        "IsValidLocaleName",
+        constants$480.IsValidLocaleName$FUNC
     );
-    static final FunctionDescriptor CertSelectCertificateChains$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CALINFO_ENUMPROCEXEX$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CALINFO_ENUMPROCEXEX$MH = RuntimeHelper.downcallHandle(
+        constants$480.CALINFO_ENUMPROCEXEX$FUNC
+    );
+    static final FunctionDescriptor EnumCalendarInfoExEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CertSelectCertificateChains$MH = RuntimeHelper.downcallHandle(
-        "CertSelectCertificateChains",
-        constants$480.CertSelectCertificateChains$FUNC
-    );
-    static final FunctionDescriptor CertFreeCertificateChainList$FUNC = FunctionDescriptor.ofVoid(
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertFreeCertificateChainList$MH = RuntimeHelper.downcallHandle(
-        "CertFreeCertificateChainList",
-        constants$480.CertFreeCertificateChainList$FUNC
-    );
-    static final FunctionDescriptor CryptRetrieveTimeStamp$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptRetrieveTimeStamp$MH = RuntimeHelper.downcallHandle(
-        "CryptRetrieveTimeStamp",
-        constants$480.CryptRetrieveTimeStamp$FUNC
-    );
-    static final FunctionDescriptor CryptVerifyTimeStampSignature$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptVerifyTimeStampSignature$MH = RuntimeHelper.downcallHandle(
-        "CryptVerifyTimeStampSignature",
-        constants$480.CryptVerifyTimeStampSignature$FUNC
-    );
-    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FLUSH$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final MethodHandle EnumCalendarInfoExEx$MH = RuntimeHelper.downcallHandle(
+        "EnumCalendarInfoExEx",
+        constants$480.EnumCalendarInfoExEx$FUNC
     );
 }
 

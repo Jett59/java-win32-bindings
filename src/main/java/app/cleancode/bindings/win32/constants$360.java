@@ -9,67 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$360 {
 
-    static final FunctionDescriptor SetLocaleInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor IsZoomed$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetLocaleInfoA$MH = RuntimeHelper.downcallHandle(
-        "SetLocaleInfoA",
-        constants$360.SetLocaleInfoA$FUNC
+    static final MethodHandle IsZoomed$MH = RuntimeHelper.downcallHandle(
+        "IsZoomed",
+        constants$360.IsZoomed$FUNC
     );
-    static final FunctionDescriptor SetLocaleInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetLocaleInfoW$MH = RuntimeHelper.downcallHandle(
-        "SetLocaleInfoW",
-        constants$360.SetLocaleInfoW$FUNC
-    );
-    static final FunctionDescriptor GetCalendarInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDialogParamA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle GetCalendarInfoA$MH = RuntimeHelper.downcallHandle(
-        "GetCalendarInfoA",
-        constants$360.GetCalendarInfoA$FUNC
-    );
-    static final FunctionDescriptor GetCalendarInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle GetCalendarInfoW$MH = RuntimeHelper.downcallHandle(
-        "GetCalendarInfoW",
-        constants$360.GetCalendarInfoW$FUNC
+    static final MethodHandle CreateDialogParamA$MH = RuntimeHelper.downcallHandle(
+        "CreateDialogParamA",
+        constants$360.CreateDialogParamA$FUNC
     );
-    static final FunctionDescriptor SetCalendarInfoA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor CreateDialogParamW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle SetCalendarInfoA$MH = RuntimeHelper.downcallHandle(
-        "SetCalendarInfoA",
-        constants$360.SetCalendarInfoA$FUNC
+    static final MethodHandle CreateDialogParamW$MH = RuntimeHelper.downcallHandle(
+        "CreateDialogParamW",
+        constants$360.CreateDialogParamW$FUNC
     );
-    static final FunctionDescriptor SetCalendarInfoW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor CreateDialogIndirectParamA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle SetCalendarInfoW$MH = RuntimeHelper.downcallHandle(
-        "SetCalendarInfoW",
-        constants$360.SetCalendarInfoW$FUNC
+    static final MethodHandle CreateDialogIndirectParamA$MH = RuntimeHelper.downcallHandle(
+        "CreateDialogIndirectParamA",
+        constants$360.CreateDialogIndirectParamA$FUNC
+    );
+    static final FunctionDescriptor CreateDialogIndirectParamW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle CreateDialogIndirectParamW$MH = RuntimeHelper.downcallHandle(
+        "CreateDialogIndirectParamW",
+        constants$360.CreateDialogIndirectParamW$FUNC
+    );
+    static final FunctionDescriptor DialogBoxParamA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT
+    );
+    static final MethodHandle DialogBoxParamA$MH = RuntimeHelper.downcallHandle(
+        "DialogBoxParamA",
+        constants$360.DialogBoxParamA$FUNC
     );
 }
 

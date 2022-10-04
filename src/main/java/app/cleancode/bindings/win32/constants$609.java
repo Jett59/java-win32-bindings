@@ -9,12 +9,73 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$609 {
 
-    static final MemorySegment szOID_OIWSEC_sha1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.26");
-    static final MemorySegment szOID_OIWSEC_dsaSHA1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.27");
-    static final MemorySegment szOID_OIWSEC_dsaCommSHA1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.28");
-    static final MemorySegment szOID_OIWSEC_sha1RSASign$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.29");
-    static final MemorySegment szOID_OIWDIR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2");
-    static final MemorySegment szOID_OIWDIR_CRPT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.1");
+    static final FunctionDescriptor CertGetPublicKeyLength$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertGetPublicKeyLength$MH = RuntimeHelper.downcallHandle(
+        "CertGetPublicKeyLength",
+        constants$609.CertGetPublicKeyLength$FUNC
+    );
+    static final FunctionDescriptor CryptVerifyCertificateSignature$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptVerifyCertificateSignature$MH = RuntimeHelper.downcallHandle(
+        "CryptVerifyCertificateSignature",
+        constants$609.CryptVerifyCertificateSignature$FUNC
+    );
+    static final FunctionDescriptor CryptVerifyCertificateSignatureEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptVerifyCertificateSignatureEx$MH = RuntimeHelper.downcallHandle(
+        "CryptVerifyCertificateSignatureEx",
+        constants$609.CryptVerifyCertificateSignatureEx$FUNC
+    );
+    static final FunctionDescriptor CertIsStrongHashToSign$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CertIsStrongHashToSign$MH = RuntimeHelper.downcallHandle(
+        "CertIsStrongHashToSign",
+        constants$609.CertIsStrongHashToSign$FUNC
+    );
+    static final FunctionDescriptor CryptHashToBeSigned$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptHashToBeSigned$MH = RuntimeHelper.downcallHandle(
+        "CryptHashToBeSigned",
+        constants$609.CryptHashToBeSigned$FUNC
+    );
+    static final FunctionDescriptor CryptHashCertificate$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle CryptHashCertificate$MH = RuntimeHelper.downcallHandle(
+        "CryptHashCertificate",
+        constants$609.CryptHashCertificate$FUNC
+    );
 }
 
 

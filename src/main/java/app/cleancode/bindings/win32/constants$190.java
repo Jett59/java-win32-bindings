@@ -9,55 +9,54 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$190 {
 
-    static final FunctionDescriptor RemoveFontResourceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RemoveFontResourceA$MH = RuntimeHelper.downcallHandle(
-        "RemoveFontResourceA",
-        constants$190.RemoveFontResourceA$FUNC
-    );
-    static final FunctionDescriptor RemoveFontResourceW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RemoveFontResourceW$MH = RuntimeHelper.downcallHandle(
-        "RemoveFontResourceW",
-        constants$190.RemoveFontResourceW$FUNC
-    );
-    static final FunctionDescriptor RoundRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RoundRect$MH = RuntimeHelper.downcallHandle(
-        "RoundRect",
-        constants$190.RoundRect$FUNC
-    );
-    static final FunctionDescriptor ResizePalette$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor EscapeCommFunction$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ResizePalette$MH = RuntimeHelper.downcallHandle(
-        "ResizePalette",
-        constants$190.ResizePalette$FUNC
+    static final MethodHandle EscapeCommFunction$MH = RuntimeHelper.downcallHandle(
+        "EscapeCommFunction",
+        constants$190.EscapeCommFunction$FUNC
     );
-    static final FunctionDescriptor SaveDC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SaveDC$MH = RuntimeHelper.downcallHandle(
-        "SaveDC",
-        constants$190.SaveDC$FUNC
-    );
-    static final FunctionDescriptor SelectClipRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCommConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SelectClipRgn$MH = RuntimeHelper.downcallHandle(
-        "SelectClipRgn",
-        constants$190.SelectClipRgn$FUNC
+    static final MethodHandle GetCommConfig$MH = RuntimeHelper.downcallHandle(
+        "GetCommConfig",
+        constants$190.GetCommConfig$FUNC
+    );
+    static final FunctionDescriptor GetCommMask$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCommMask$MH = RuntimeHelper.downcallHandle(
+        "GetCommMask",
+        constants$190.GetCommMask$FUNC
+    );
+    static final FunctionDescriptor GetCommProperties$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCommProperties$MH = RuntimeHelper.downcallHandle(
+        "GetCommProperties",
+        constants$190.GetCommProperties$FUNC
+    );
+    static final FunctionDescriptor GetCommModemStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCommModemStatus$MH = RuntimeHelper.downcallHandle(
+        "GetCommModemStatus",
+        constants$190.GetCommModemStatus$FUNC
+    );
+    static final FunctionDescriptor GetCommState$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCommState$MH = RuntimeHelper.downcallHandle(
+        "GetCommState",
+        constants$190.GetCommState$FUNC
     );
 }
 

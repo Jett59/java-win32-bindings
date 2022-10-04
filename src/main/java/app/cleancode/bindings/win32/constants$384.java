@@ -9,63 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$384 {
 
-    static final FunctionDescriptor RegDeleteKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetWindowFeedbackSetting$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetWindowFeedbackSetting$MH = RuntimeHelper.downcallHandle(
+        "GetWindowFeedbackSetting",
+        constants$384.GetWindowFeedbackSetting$FUNC
+    );
+    static final FunctionDescriptor SetWindowFeedbackSetting$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle SetWindowFeedbackSetting$MH = RuntimeHelper.downcallHandle(
+        "SetWindowFeedbackSetting",
+        constants$384.SetWindowFeedbackSetting$FUNC
+    );
+    static final FunctionDescriptor GetPointerInputTransform$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetPointerInputTransform$MH = RuntimeHelper.downcallHandle(
+        "GetPointerInputTransform",
+        constants$384.GetPointerInputTransform$FUNC
+    );
+    static final FunctionDescriptor GetLastInputInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetLastInputInfo$MH = RuntimeHelper.downcallHandle(
+        "GetLastInputInfo",
+        constants$384.GetLastInputInfo$FUNC
+    );
+    static final FunctionDescriptor MapVirtualKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegDeleteKeyExA$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteKeyExA",
-        constants$384.RegDeleteKeyExA$FUNC
+    static final MethodHandle MapVirtualKeyA$MH = RuntimeHelper.downcallHandle(
+        "MapVirtualKeyA",
+        constants$384.MapVirtualKeyA$FUNC
     );
-    static final FunctionDescriptor RegDeleteKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor MapVirtualKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle RegDeleteKeyExW$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteKeyExW",
-        constants$384.RegDeleteKeyExW$FUNC
-    );
-    static final FunctionDescriptor RegDeleteKeyTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegDeleteKeyTransactedA$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteKeyTransactedA",
-        constants$384.RegDeleteKeyTransactedA$FUNC
-    );
-    static final FunctionDescriptor RegDeleteKeyTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegDeleteKeyTransactedW$MH = RuntimeHelper.downcallHandle(
-        "RegDeleteKeyTransactedW",
-        constants$384.RegDeleteKeyTransactedW$FUNC
-    );
-    static final FunctionDescriptor RegDisableReflectionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegDisableReflectionKey$MH = RuntimeHelper.downcallHandle(
-        "RegDisableReflectionKey",
-        constants$384.RegDisableReflectionKey$FUNC
-    );
-    static final FunctionDescriptor RegEnableReflectionKey$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle RegEnableReflectionKey$MH = RuntimeHelper.downcallHandle(
-        "RegEnableReflectionKey",
-        constants$384.RegEnableReflectionKey$FUNC
+    static final MethodHandle MapVirtualKeyW$MH = RuntimeHelper.downcallHandle(
+        "MapVirtualKeyW",
+        constants$384.MapVirtualKeyW$FUNC
     );
 }
 

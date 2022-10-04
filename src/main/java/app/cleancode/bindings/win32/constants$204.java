@@ -9,43 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$204 {
 
-    static final FunctionDescriptor SetColorAdjustment$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateFileMappingA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle SetColorAdjustment$MH = RuntimeHelper.downcallHandle(
-        "SetColorAdjustment",
-        constants$204.SetColorAdjustment$FUNC
-    );
-    static final FunctionDescriptor GetColorAdjustment$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetColorAdjustment$MH = RuntimeHelper.downcallHandle(
-        "GetColorAdjustment",
-        constants$204.GetColorAdjustment$FUNC
+    static final MethodHandle CreateFileMappingA$MH = RuntimeHelper.downcallHandle(
+        "CreateFileMappingA",
+        constants$204.CreateFileMappingA$FUNC
     );
-    static final FunctionDescriptor CreateHalftonePalette$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CreateHalftonePalette$MH = RuntimeHelper.downcallHandle(
-        "CreateHalftonePalette",
-        constants$204.CreateHalftonePalette$FUNC
-    );
-    static final FunctionDescriptor ABORTPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateFileMappingNumaA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle ABORTPROC$MH = RuntimeHelper.downcallHandle(
-        constants$204.ABORTPROC$FUNC
+    static final MethodHandle CreateFileMappingNumaA$MH = RuntimeHelper.downcallHandle(
+        "CreateFileMappingNumaA",
+        constants$204.CreateFileMappingNumaA$FUNC
     );
-    static final FunctionDescriptor StartDocA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor OpenFileMappingA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle OpenFileMappingA$MH = RuntimeHelper.downcallHandle(
+        "OpenFileMappingA",
+        constants$204.OpenFileMappingA$FUNC
+    );
+    static final FunctionDescriptor GetLogicalDriveStringsA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetLogicalDriveStringsA$MH = RuntimeHelper.downcallHandle(
+        "GetLogicalDriveStringsA",
+        constants$204.GetLogicalDriveStringsA$FUNC
+    );
+    static final FunctionDescriptor LoadPackagedLibrary$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle LoadPackagedLibrary$MH = RuntimeHelper.downcallHandle(
+        "LoadPackagedLibrary",
+        constants$204.LoadPackagedLibrary$FUNC
+    );
+    static final FunctionDescriptor QueryFullProcessImageNameA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle StartDocA$MH = RuntimeHelper.downcallHandle(
-        "StartDocA",
-        constants$204.StartDocA$FUNC
+    static final MethodHandle QueryFullProcessImageNameA$MH = RuntimeHelper.downcallHandle(
+        "QueryFullProcessImageNameA",
+        constants$204.QueryFullProcessImageNameA$FUNC
     );
 }
 

@@ -9,12 +9,59 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$716 {
 
-    static final MemoryAddress URL_OID_CRL_FRESHEST_CRL$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress URL_OID_CROSS_CERT_DIST_POINT$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress URL_OID_CERTIFICATE_OCSP$ADDR = MemoryAddress.ofLong(9L);
-    static final MemoryAddress URL_OID_CERTIFICATE_OCSP_AND_CRL_DIST_POINT$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress URL_OID_CERTIFICATE_CRL_DIST_POINT_AND_OCSP$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress URL_OID_CROSS_CERT_SUBJECT_INFO_ACCESS$ADDR = MemoryAddress.ofLong(12L);
+    static final FunctionDescriptor QueryServiceStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceStatus$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceStatus",
+        constants$716.QueryServiceStatus$FUNC
+    );
+    static final FunctionDescriptor QueryServiceStatusEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle QueryServiceStatusEx$MH = RuntimeHelper.downcallHandle(
+        "QueryServiceStatusEx",
+        constants$716.QueryServiceStatusEx$FUNC
+    );
+    static final FunctionDescriptor RegisterServiceCtrlHandlerA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterServiceCtrlHandlerA$MH = RuntimeHelper.downcallHandle(
+        "RegisterServiceCtrlHandlerA",
+        constants$716.RegisterServiceCtrlHandlerA$FUNC
+    );
+    static final FunctionDescriptor RegisterServiceCtrlHandlerW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterServiceCtrlHandlerW$MH = RuntimeHelper.downcallHandle(
+        "RegisterServiceCtrlHandlerW",
+        constants$716.RegisterServiceCtrlHandlerW$FUNC
+    );
+    static final FunctionDescriptor RegisterServiceCtrlHandlerExA$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterServiceCtrlHandlerExA$MH = RuntimeHelper.downcallHandle(
+        "RegisterServiceCtrlHandlerExA",
+        constants$716.RegisterServiceCtrlHandlerExA$FUNC
+    );
+    static final FunctionDescriptor RegisterServiceCtrlHandlerExW$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle RegisterServiceCtrlHandlerExW$MH = RuntimeHelper.downcallHandle(
+        "RegisterServiceCtrlHandlerExW",
+        constants$716.RegisterServiceCtrlHandlerExW$FUNC
+    );
 }
 
 

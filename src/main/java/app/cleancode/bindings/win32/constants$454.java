@@ -9,62 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$454 {
 
-    static final FunctionDescriptor CertGetEnhancedKeyUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor SetDisplayAutoRotationPreferences$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetDisplayAutoRotationPreferences$MH = RuntimeHelper.downcallHandle(
+        "SetDisplayAutoRotationPreferences",
+        constants$454.SetDisplayAutoRotationPreferences$FUNC
+    );
+    static final FunctionDescriptor IsImmersiveProcess$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle IsImmersiveProcess$MH = RuntimeHelper.downcallHandle(
+        "IsImmersiveProcess",
+        constants$454.IsImmersiveProcess$FUNC
+    );
+    static final FunctionDescriptor SetProcessRestrictionExemption$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle SetProcessRestrictionExemption$MH = RuntimeHelper.downcallHandle(
+        "SetProcessRestrictionExemption",
+        constants$454.SetProcessRestrictionExemption$FUNC
+    );
+    static final FunctionDescriptor GetDateFormatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertGetEnhancedKeyUsage$MH = RuntimeHelper.downcallHandle(
-        "CertGetEnhancedKeyUsage",
-        constants$454.CertGetEnhancedKeyUsage$FUNC
-    );
-    static final FunctionDescriptor CertSetEnhancedKeyUsage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertSetEnhancedKeyUsage$MH = RuntimeHelper.downcallHandle(
-        "CertSetEnhancedKeyUsage",
-        constants$454.CertSetEnhancedKeyUsage$FUNC
-    );
-    static final FunctionDescriptor CertAddEnhancedKeyUsageIdentifier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertAddEnhancedKeyUsageIdentifier$MH = RuntimeHelper.downcallHandle(
-        "CertAddEnhancedKeyUsageIdentifier",
-        constants$454.CertAddEnhancedKeyUsageIdentifier$FUNC
-    );
-    static final FunctionDescriptor CertRemoveEnhancedKeyUsageIdentifier$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CertRemoveEnhancedKeyUsageIdentifier$MH = RuntimeHelper.downcallHandle(
-        "CertRemoveEnhancedKeyUsageIdentifier",
-        constants$454.CertRemoveEnhancedKeyUsageIdentifier$FUNC
-    );
-    static final FunctionDescriptor CertGetValidUsages$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CertGetValidUsages$MH = RuntimeHelper.downcallHandle(
-        "CertGetValidUsages",
-        constants$454.CertGetValidUsages$FUNC
+    static final MethodHandle GetDateFormatA$MH = RuntimeHelper.downcallHandle(
+        "GetDateFormatA",
+        constants$454.GetDateFormatA$FUNC
     );
-    static final FunctionDescriptor CryptMsgGetAndVerifySigner$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+    static final FunctionDescriptor GetDateFormatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetDateFormatW$MH = RuntimeHelper.downcallHandle(
+        "GetDateFormatW",
+        constants$454.GetDateFormatW$FUNC
+    );
+    static final FunctionDescriptor GetTimeFormatA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptMsgGetAndVerifySigner$MH = RuntimeHelper.downcallHandle(
-        "CryptMsgGetAndVerifySigner",
-        constants$454.CryptMsgGetAndVerifySigner$FUNC
+    static final MethodHandle GetTimeFormatA$MH = RuntimeHelper.downcallHandle(
+        "GetTimeFormatA",
+        constants$454.GetTimeFormatA$FUNC
     );
 }
 

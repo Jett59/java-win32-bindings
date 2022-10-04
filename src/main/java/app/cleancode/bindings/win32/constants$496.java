@@ -9,57 +9,71 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$496 {
 
-    static final FunctionDescriptor SCardIntroduceReaderA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegOpenKeyA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardIntroduceReaderA$MH = RuntimeHelper.downcallHandle(
-        "SCardIntroduceReaderA",
-        constants$496.SCardIntroduceReaderA$FUNC
+    static final MethodHandle RegOpenKeyA$MH = RuntimeHelper.downcallHandle(
+        "RegOpenKeyA",
+        constants$496.RegOpenKeyA$FUNC
     );
-    static final FunctionDescriptor SCardIntroduceReaderW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegOpenKeyW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardIntroduceReaderW$MH = RuntimeHelper.downcallHandle(
-        "SCardIntroduceReaderW",
-        constants$496.SCardIntroduceReaderW$FUNC
+    static final MethodHandle RegOpenKeyW$MH = RuntimeHelper.downcallHandle(
+        "RegOpenKeyW",
+        constants$496.RegOpenKeyW$FUNC
     );
-    static final FunctionDescriptor SCardForgetReaderA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegOpenKeyExA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardForgetReaderA$MH = RuntimeHelper.downcallHandle(
-        "SCardForgetReaderA",
-        constants$496.SCardForgetReaderA$FUNC
+    static final MethodHandle RegOpenKeyExA$MH = RuntimeHelper.downcallHandle(
+        "RegOpenKeyExA",
+        constants$496.RegOpenKeyExA$FUNC
     );
-    static final FunctionDescriptor SCardForgetReaderW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegOpenKeyExW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardForgetReaderW$MH = RuntimeHelper.downcallHandle(
-        "SCardForgetReaderW",
-        constants$496.SCardForgetReaderW$FUNC
+    static final MethodHandle RegOpenKeyExW$MH = RuntimeHelper.downcallHandle(
+        "RegOpenKeyExW",
+        constants$496.RegOpenKeyExW$FUNC
     );
-    static final FunctionDescriptor SCardAddReaderToGroupA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegOpenKeyTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardAddReaderToGroupA$MH = RuntimeHelper.downcallHandle(
-        "SCardAddReaderToGroupA",
-        constants$496.SCardAddReaderToGroupA$FUNC
+    static final MethodHandle RegOpenKeyTransactedA$MH = RuntimeHelper.downcallHandle(
+        "RegOpenKeyTransactedA",
+        constants$496.RegOpenKeyTransactedA$FUNC
     );
-    static final FunctionDescriptor SCardAddReaderToGroupW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
+    static final FunctionDescriptor RegOpenKeyTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SCardAddReaderToGroupW$MH = RuntimeHelper.downcallHandle(
-        "SCardAddReaderToGroupW",
-        constants$496.SCardAddReaderToGroupW$FUNC
+    static final MethodHandle RegOpenKeyTransactedW$MH = RuntimeHelper.downcallHandle(
+        "RegOpenKeyTransactedW",
+        constants$496.RegOpenKeyTransactedW$FUNC
     );
 }
 

@@ -9,49 +9,55 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$279 {
 
-    static final FunctionDescriptor EnableMouseInPointer$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle EnableMouseInPointer$MH = RuntimeHelper.downcallHandle(
-        "EnableMouseInPointer",
-        constants$279.EnableMouseInPointer$FUNC
-    );
-    static final FunctionDescriptor IsMouseInPointerEnabled$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle IsMouseInPointerEnabled$MH = RuntimeHelper.downcallHandle(
-        "IsMouseInPointerEnabled",
-        constants$279.IsMouseInPointerEnabled$FUNC
-    );
-    static final FunctionDescriptor EnableMouseInPointerForThread$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle EnableMouseInPointerForThread$MH = RuntimeHelper.downcallHandle(
-        "EnableMouseInPointerForThread",
-        constants$279.EnableMouseInPointerForThread$FUNC
-    );
-    static final FunctionDescriptor RegisterTouchHitTestingWindow$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetCharABCWidthsFloatW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle RegisterTouchHitTestingWindow$MH = RuntimeHelper.downcallHandle(
-        "RegisterTouchHitTestingWindow",
-        constants$279.RegisterTouchHitTestingWindow$FUNC
-    );
-    static final FunctionDescriptor EvaluateProximityToRect$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle EvaluateProximityToRect$MH = RuntimeHelper.downcallHandle(
-        "EvaluateProximityToRect",
-        constants$279.EvaluateProximityToRect$FUNC
-    );
-    static final FunctionDescriptor EvaluateProximityToPolygon$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCharABCWidthsFloatW$MH = RuntimeHelper.downcallHandle(
+        "GetCharABCWidthsFloatW",
+        constants$279.GetCharABCWidthsFloatW$FUNC
+    );
+    static final FunctionDescriptor GetClipBox$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EvaluateProximityToPolygon$MH = RuntimeHelper.downcallHandle(
-        "EvaluateProximityToPolygon",
-        constants$279.EvaluateProximityToPolygon$FUNC
+    static final MethodHandle GetClipBox$MH = RuntimeHelper.downcallHandle(
+        "GetClipBox",
+        constants$279.GetClipBox$FUNC
+    );
+    static final FunctionDescriptor GetClipRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetClipRgn$MH = RuntimeHelper.downcallHandle(
+        "GetClipRgn",
+        constants$279.GetClipRgn$FUNC
+    );
+    static final FunctionDescriptor GetMetaRgn$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetMetaRgn$MH = RuntimeHelper.downcallHandle(
+        "GetMetaRgn",
+        constants$279.GetMetaRgn$FUNC
+    );
+    static final FunctionDescriptor GetCurrentObject$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle GetCurrentObject$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentObject",
+        constants$279.GetCurrentObject$FUNC
+    );
+    static final FunctionDescriptor GetCurrentPositionEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle GetCurrentPositionEx$MH = RuntimeHelper.downcallHandle(
+        "GetCurrentPositionEx",
+        constants$279.GetCurrentPositionEx$FUNC
     );
 }
 

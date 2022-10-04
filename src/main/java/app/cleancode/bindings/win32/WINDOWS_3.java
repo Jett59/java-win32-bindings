@@ -9,6 +9,165 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_3 extends WINDOWS_2 {
 
+    public static int PSINJECT_BOUNDINGBOX() {
+        return (int)9L;
+    }
+    public static int PSINJECT_DOCUMENTPROCESSCOLORS() {
+        return (int)10L;
+    }
+    public static int PSINJECT_COMMENTS() {
+        return (int)11L;
+    }
+    public static int PSINJECT_BEGINDEFAULTS() {
+        return (int)12L;
+    }
+    public static int PSINJECT_ENDDEFAULTS() {
+        return (int)13L;
+    }
+    public static int PSINJECT_BEGINPROLOG() {
+        return (int)14L;
+    }
+    public static int PSINJECT_ENDPROLOG() {
+        return (int)15L;
+    }
+    public static int PSINJECT_BEGINSETUP() {
+        return (int)16L;
+    }
+    public static int PSINJECT_ENDSETUP() {
+        return (int)17L;
+    }
+    public static int PSINJECT_TRAILER() {
+        return (int)18L;
+    }
+    public static int PSINJECT_EOF() {
+        return (int)19L;
+    }
+    public static int PSINJECT_ENDSTREAM() {
+        return (int)20L;
+    }
+    public static int PSINJECT_DOCUMENTPROCESSCOLORSATEND() {
+        return (int)21L;
+    }
+    public static int PSINJECT_PAGENUMBER() {
+        return (int)100L;
+    }
+    public static int PSINJECT_BEGINPAGESETUP() {
+        return (int)101L;
+    }
+    public static int PSINJECT_ENDPAGESETUP() {
+        return (int)102L;
+    }
+    public static int PSINJECT_PAGETRAILER() {
+        return (int)103L;
+    }
+    public static int PSINJECT_PLATECOLOR() {
+        return (int)104L;
+    }
+    public static int PSINJECT_SHOWPAGE() {
+        return (int)105L;
+    }
+    public static int PSINJECT_PAGEBBOX() {
+        return (int)106L;
+    }
+    public static int PSINJECT_ENDPAGECOMMENTS() {
+        return (int)107L;
+    }
+    public static int PSINJECT_VMSAVE() {
+        return (int)200L;
+    }
+    public static int PSINJECT_VMRESTORE() {
+        return (int)201L;
+    }
+    public static int FEATURESETTING_NUP() {
+        return (int)0L;
+    }
+    public static int FEATURESETTING_OUTPUT() {
+        return (int)1L;
+    }
+    public static int FEATURESETTING_PSLEVEL() {
+        return (int)2L;
+    }
+    public static int FEATURESETTING_CUSTPAPER() {
+        return (int)3L;
+    }
+    public static int FEATURESETTING_MIRROR() {
+        return (int)4L;
+    }
+    public static int FEATURESETTING_NEGATIVE() {
+        return (int)5L;
+    }
+    public static int FEATURESETTING_PROTOCOL() {
+        return (int)6L;
+    }
+    public static int FEATURESETTING_PRIVATE_BEGIN() {
+        return (int)4096L;
+    }
+    public static int FEATURESETTING_PRIVATE_END() {
+        return (int)8191L;
+    }
+    public static int PSPROTOCOL_ASCII() {
+        return (int)0L;
+    }
+    public static int PSPROTOCOL_BCP() {
+        return (int)1L;
+    }
+    public static int PSPROTOCOL_TBCP() {
+        return (int)2L;
+    }
+    public static int PSPROTOCOL_BINARY() {
+        return (int)3L;
+    }
+    public static int QDI_SETDIBITS() {
+        return (int)1L;
+    }
+    public static int QDI_GETDIBITS() {
+        return (int)2L;
+    }
+    public static int QDI_DIBTOSCREEN() {
+        return (int)4L;
+    }
+    public static int QDI_STRETCHDIB() {
+        return (int)8L;
+    }
+    public static int SP_NOTREPORTED() {
+        return (int)16384L;
+    }
+    public static int PR_JOBSTATUS() {
+        return (int)0L;
+    }
+    public static int OBJ_PEN() {
+        return (int)1L;
+    }
+    public static int OBJ_BRUSH() {
+        return (int)2L;
+    }
+    public static int OBJ_DC() {
+        return (int)3L;
+    }
+    public static int OBJ_METADC() {
+        return (int)4L;
+    }
+    public static int OBJ_PAL() {
+        return (int)5L;
+    }
+    public static int OBJ_FONT() {
+        return (int)6L;
+    }
+    public static int OBJ_BITMAP() {
+        return (int)7L;
+    }
+    public static int OBJ_REGION() {
+        return (int)8L;
+    }
+    public static int OBJ_METAFILE() {
+        return (int)9L;
+    }
+    public static int OBJ_MEMDC() {
+        return (int)10L;
+    }
+    public static int OBJ_EXTPEN() {
+        return (int)11L;
+    }
     public static int OBJ_ENHMETADC() {
         return (int)12L;
     }
@@ -2849,165 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int WGL_SWAP_UNDERLAY10() {
         return (int)33554432L;
-    }
-    public static int WGL_SWAP_UNDERLAY11() {
-        return (int)67108864L;
-    }
-    public static int WGL_SWAP_UNDERLAY12() {
-        return (int)134217728L;
-    }
-    public static int WGL_SWAP_UNDERLAY13() {
-        return (int)268435456L;
-    }
-    public static int WGL_SWAP_UNDERLAY14() {
-        return (int)536870912L;
-    }
-    public static int WGL_SWAP_UNDERLAY15() {
-        return (int)1073741824L;
-    }
-    public static int WGL_SWAPMULTIPLE_MAX() {
-        return (int)16L;
-    }
-    public static int DIFFERENCE() {
-        return (int)11L;
-    }
-    public static int SB_HORZ() {
-        return (int)0L;
-    }
-    public static int SB_VERT() {
-        return (int)1L;
-    }
-    public static int SB_CTL() {
-        return (int)2L;
-    }
-    public static int SB_BOTH() {
-        return (int)3L;
-    }
-    public static int SB_LINEUP() {
-        return (int)0L;
-    }
-    public static int SB_LINELEFT() {
-        return (int)0L;
-    }
-    public static int SB_LINEDOWN() {
-        return (int)1L;
-    }
-    public static int SB_LINERIGHT() {
-        return (int)1L;
-    }
-    public static int SB_PAGEUP() {
-        return (int)2L;
-    }
-    public static int SB_PAGELEFT() {
-        return (int)2L;
-    }
-    public static int SB_PAGEDOWN() {
-        return (int)3L;
-    }
-    public static int SB_PAGERIGHT() {
-        return (int)3L;
-    }
-    public static int SB_THUMBPOSITION() {
-        return (int)4L;
-    }
-    public static int SB_THUMBTRACK() {
-        return (int)5L;
-    }
-    public static int SB_TOP() {
-        return (int)6L;
-    }
-    public static int SB_LEFT() {
-        return (int)6L;
-    }
-    public static int SB_BOTTOM() {
-        return (int)7L;
-    }
-    public static int SB_RIGHT() {
-        return (int)7L;
-    }
-    public static int SB_ENDSCROLL() {
-        return (int)8L;
-    }
-    public static int SW_HIDE() {
-        return (int)0L;
-    }
-    public static int SW_SHOWNORMAL() {
-        return (int)1L;
-    }
-    public static int SW_NORMAL() {
-        return (int)1L;
-    }
-    public static int SW_SHOWMINIMIZED() {
-        return (int)2L;
-    }
-    public static int SW_SHOWMAXIMIZED() {
-        return (int)3L;
-    }
-    public static int SW_MAXIMIZE() {
-        return (int)3L;
-    }
-    public static int SW_SHOWNOACTIVATE() {
-        return (int)4L;
-    }
-    public static int SW_SHOW() {
-        return (int)5L;
-    }
-    public static int SW_MINIMIZE() {
-        return (int)6L;
-    }
-    public static int SW_SHOWMINNOACTIVE() {
-        return (int)7L;
-    }
-    public static int SW_SHOWNA() {
-        return (int)8L;
-    }
-    public static int SW_RESTORE() {
-        return (int)9L;
-    }
-    public static int SW_SHOWDEFAULT() {
-        return (int)10L;
-    }
-    public static int SW_FORCEMINIMIZE() {
-        return (int)11L;
-    }
-    public static int SW_MAX() {
-        return (int)11L;
-    }
-    public static int HIDE_WINDOW() {
-        return (int)0L;
-    }
-    public static int SHOW_OPENWINDOW() {
-        return (int)1L;
-    }
-    public static int SHOW_ICONWINDOW() {
-        return (int)2L;
-    }
-    public static int SHOW_FULLSCREEN() {
-        return (int)3L;
-    }
-    public static int SHOW_OPENNOACTIVATE() {
-        return (int)4L;
-    }
-    public static int SW_PARENTCLOSING() {
-        return (int)1L;
-    }
-    public static int SW_OTHERZOOM() {
-        return (int)2L;
-    }
-    public static int SW_PARENTOPENING() {
-        return (int)3L;
-    }
-    public static int SW_OTHERUNZOOM() {
-        return (int)4L;
-    }
-    public static int AW_HOR_POSITIVE() {
-        return (int)1L;
-    }
-    public static int AW_HOR_NEGATIVE() {
-        return (int)2L;
-    }
-    public static int AW_VER_POSITIVE() {
-        return (int)4L;
     }
 }
 

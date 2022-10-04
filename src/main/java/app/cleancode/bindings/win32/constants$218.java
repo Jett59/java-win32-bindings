@@ -9,56 +9,62 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$218 {
 
-    static final FunctionDescriptor SetICMProfileW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CreateDirectoryTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetICMProfileW$MH = RuntimeHelper.downcallHandle(
-        "SetICMProfileW",
-        constants$218.SetICMProfileW$FUNC
+    static final MethodHandle CreateDirectoryTransactedW$MH = RuntimeHelper.downcallHandle(
+        "CreateDirectoryTransactedW",
+        constants$218.CreateDirectoryTransactedW$FUNC
     );
-    static final FunctionDescriptor GetDeviceGammaRamp$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveDirectoryTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle GetDeviceGammaRamp$MH = RuntimeHelper.downcallHandle(
-        "GetDeviceGammaRamp",
-        constants$218.GetDeviceGammaRamp$FUNC
+    static final MethodHandle RemoveDirectoryTransactedA$MH = RuntimeHelper.downcallHandle(
+        "RemoveDirectoryTransactedA",
+        constants$218.RemoveDirectoryTransactedA$FUNC
     );
-    static final FunctionDescriptor SetDeviceGammaRamp$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor RemoveDirectoryTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetDeviceGammaRamp$MH = RuntimeHelper.downcallHandle(
-        "SetDeviceGammaRamp",
-        constants$218.SetDeviceGammaRamp$FUNC
+    static final MethodHandle RemoveDirectoryTransactedW$MH = RuntimeHelper.downcallHandle(
+        "RemoveDirectoryTransactedW",
+        constants$218.RemoveDirectoryTransactedW$FUNC
     );
-    static final FunctionDescriptor ColorMatchToTarget$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFullPathNameTransactedA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle ColorMatchToTarget$MH = RuntimeHelper.downcallHandle(
-        "ColorMatchToTarget",
-        constants$218.ColorMatchToTarget$FUNC
+    static final MethodHandle GetFullPathNameTransactedA$MH = RuntimeHelper.downcallHandle(
+        "GetFullPathNameTransactedA",
+        constants$218.GetFullPathNameTransactedA$FUNC
     );
-    static final FunctionDescriptor EnumICMProfilesA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GetFullPathNameTransactedW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumICMProfilesA$MH = RuntimeHelper.downcallHandle(
-        "EnumICMProfilesA",
-        constants$218.EnumICMProfilesA$FUNC
+    static final MethodHandle GetFullPathNameTransactedW$MH = RuntimeHelper.downcallHandle(
+        "GetFullPathNameTransactedW",
+        constants$218.GetFullPathNameTransactedW$FUNC
     );
-    static final FunctionDescriptor EnumICMProfilesW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor DefineDosDeviceA$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle EnumICMProfilesW$MH = RuntimeHelper.downcallHandle(
-        "EnumICMProfilesW",
-        constants$218.EnumICMProfilesW$FUNC
+    static final MethodHandle DefineDosDeviceA$MH = RuntimeHelper.downcallHandle(
+        "DefineDosDeviceA",
+        constants$218.DefineDosDeviceA$FUNC
     );
 }
 

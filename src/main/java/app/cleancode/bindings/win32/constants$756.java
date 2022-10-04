@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$756 {
 
-    static final MemorySegment MS_PRINT_JOB_OUTPUT_FILE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment SERVICES_ACTIVE_DATABASEW$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment SERVICES_FAILED_DATABASEW$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment SERVICES_ACTIVE_DATABASEA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ServicesActive");
-    static final MemorySegment SERVICES_FAILED_DATABASEA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ServicesFailed");
-    static final MemorySegment SERVICES_ACTIVE_DATABASE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ServicesActive");
+    static final MemorySegment szOID_PKCS_1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1");
+    static final MemorySegment szOID_PKCS_2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.2");
+    static final MemorySegment szOID_PKCS_3$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.3");
+    static final MemorySegment szOID_PKCS_4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.4");
+    static final MemorySegment szOID_PKCS_5$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.5");
+    static final MemorySegment szOID_PKCS_6$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.6");
 }
 
 

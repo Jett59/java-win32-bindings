@@ -9,12 +9,27 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$634 {
 
-    static final MemoryAddress X509_CERT_PAIR$ADDR = MemoryAddress.ofLong(53L);
-    static final MemoryAddress X509_ISSUING_DIST_POINT$ADDR = MemoryAddress.ofLong(54L);
-    static final MemoryAddress X509_NAME_CONSTRAINTS$ADDR = MemoryAddress.ofLong(55L);
-    static final MemoryAddress X509_POLICY_MAPPINGS$ADDR = MemoryAddress.ofLong(56L);
-    static final MemoryAddress X509_POLICY_CONSTRAINTS$ADDR = MemoryAddress.ofLong(57L);
-    static final MemoryAddress X509_CROSS_CERT_DIST_POINTS$ADDR = MemoryAddress.ofLong(58L);
+    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$MH = RuntimeHelper.downcallHandle(
+        constants$634.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_PASSWORD$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE$MH = RuntimeHelper.downcallHandle(
+        constants$634.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE$FUNC
+    );
+    static final FunctionDescriptor PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$FUNC = FunctionDescriptor.ofVoid(
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$MH = RuntimeHelper.downcallHandle(
+        constants$634.PFN_CRYPT_OBJECT_LOCATOR_PROVIDER_FREE_IDENTIFIER$FUNC
+    );
 }
 
 

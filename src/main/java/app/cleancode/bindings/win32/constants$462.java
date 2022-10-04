@@ -9,64 +9,25 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$462 {
 
-    static final FunctionDescriptor CryptExportPublicKeyInfoFromBCryptKeyHandle$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor CALINFO_ENUMPROCEXW$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle CryptExportPublicKeyInfoFromBCryptKeyHandle$MH = RuntimeHelper.downcallHandle(
-        "CryptExportPublicKeyInfoFromBCryptKeyHandle",
-        constants$462.CryptExportPublicKeyInfoFromBCryptKeyHandle$FUNC
+    static final MethodHandle CALINFO_ENUMPROCEXW$MH = RuntimeHelper.downcallHandle(
+        constants$462.CALINFO_ENUMPROCEXW$FUNC
     );
-    static final FunctionDescriptor PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_FROM_BCRYPT_HANDLE_FUNC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+    static final FunctionDescriptor GEO_ENUMPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
     );
-    static final MethodHandle PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_FROM_BCRYPT_HANDLE_FUNC$MH = RuntimeHelper.downcallHandle(
-        constants$462.PFN_CRYPT_EXPORT_PUBLIC_KEY_INFO_FROM_BCRYPT_HANDLE_FUNC$FUNC
+    static final MethodHandle GEO_ENUMPROC$MH = RuntimeHelper.downcallHandle(
+        constants$462.GEO_ENUMPROC$FUNC
     );
-    static final FunctionDescriptor CryptImportPublicKeyInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor GEO_ENUMNAMEPROC$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
         Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
+        Constants$root.C_LONG_LONG$LAYOUT
     );
-    static final MethodHandle CryptImportPublicKeyInfo$MH = RuntimeHelper.downcallHandle(
-        "CryptImportPublicKeyInfo",
-        constants$462.CryptImportPublicKeyInfo$FUNC
-    );
-    static final FunctionDescriptor CryptImportPublicKeyInfoEx$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptImportPublicKeyInfoEx$MH = RuntimeHelper.downcallHandle(
-        "CryptImportPublicKeyInfoEx",
-        constants$462.CryptImportPublicKeyInfoEx$FUNC
-    );
-    static final FunctionDescriptor CryptImportPublicKeyInfoEx2$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT,
-        Constants$root.C_POINTER$LAYOUT
-    );
-    static final MethodHandle CryptImportPublicKeyInfoEx2$MH = RuntimeHelper.downcallHandle(
-        "CryptImportPublicKeyInfoEx2",
-        constants$462.CryptImportPublicKeyInfoEx2$FUNC
+    static final MethodHandle GEO_ENUMNAMEPROC$MH = RuntimeHelper.downcallHandle(
+        constants$462.GEO_ENUMNAMEPROC$FUNC
     );
 }
 

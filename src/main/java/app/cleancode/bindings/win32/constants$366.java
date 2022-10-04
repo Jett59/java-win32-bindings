@@ -9,43 +9,43 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$366 {
 
-    static final FunctionDescriptor SetUserGeoID$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetClipboardSequenceNumber$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
+    static final MethodHandle GetClipboardSequenceNumber$MH = RuntimeHelper.downcallHandle(
+        "GetClipboardSequenceNumber",
+        constants$366.GetClipboardSequenceNumber$FUNC
     );
-    static final MethodHandle SetUserGeoID$MH = RuntimeHelper.downcallHandle(
-        "SetUserGeoID",
-        constants$366.SetUserGeoID$FUNC
+    static final FunctionDescriptor GetClipboardOwner$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetClipboardOwner$MH = RuntimeHelper.downcallHandle(
+        "GetClipboardOwner",
+        constants$366.GetClipboardOwner$FUNC
     );
-    static final FunctionDescriptor SetUserGeoName$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+    static final FunctionDescriptor SetClipboardViewer$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
         Constants$root.C_POINTER$LAYOUT
     );
-    static final MethodHandle SetUserGeoName$MH = RuntimeHelper.downcallHandle(
-        "SetUserGeoName",
-        constants$366.SetUserGeoName$FUNC
+    static final MethodHandle SetClipboardViewer$MH = RuntimeHelper.downcallHandle(
+        "SetClipboardViewer",
+        constants$366.SetClipboardViewer$FUNC
     );
-    static final FunctionDescriptor ConvertDefaultLocale$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
+    static final FunctionDescriptor GetClipboardViewer$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT);
+    static final MethodHandle GetClipboardViewer$MH = RuntimeHelper.downcallHandle(
+        "GetClipboardViewer",
+        constants$366.GetClipboardViewer$FUNC
     );
-    static final MethodHandle ConvertDefaultLocale$MH = RuntimeHelper.downcallHandle(
-        "ConvertDefaultLocale",
-        constants$366.ConvertDefaultLocale$FUNC
+    static final FunctionDescriptor ChangeClipboardChain$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor GetSystemDefaultUILanguage$FUNC = FunctionDescriptor.of(Constants$root.C_SHORT$LAYOUT);
-    static final MethodHandle GetSystemDefaultUILanguage$MH = RuntimeHelper.downcallHandle(
-        "GetSystemDefaultUILanguage",
-        constants$366.GetSystemDefaultUILanguage$FUNC
+    static final MethodHandle ChangeClipboardChain$MH = RuntimeHelper.downcallHandle(
+        "ChangeClipboardChain",
+        constants$366.ChangeClipboardChain$FUNC
     );
-    static final FunctionDescriptor GetThreadLocale$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT);
-    static final MethodHandle GetThreadLocale$MH = RuntimeHelper.downcallHandle(
-        "GetThreadLocale",
-        constants$366.GetThreadLocale$FUNC
+    static final FunctionDescriptor SetClipboardData$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
     );
-    static final FunctionDescriptor SetThreadLocale$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
-        Constants$root.C_LONG$LAYOUT
-    );
-    static final MethodHandle SetThreadLocale$MH = RuntimeHelper.downcallHandle(
-        "SetThreadLocale",
-        constants$366.SetThreadLocale$FUNC
+    static final MethodHandle SetClipboardData$MH = RuntimeHelper.downcallHandle(
+        "SetClipboardData",
+        constants$366.SetClipboardData$FUNC
     );
 }
 

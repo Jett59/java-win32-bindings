@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$749 {
 
-    static final MemorySegment SPLDS_PRINT_BIN_NAMES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printBinNames");
-    static final MemorySegment SPLDS_PRINT_COLLATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printCollate");
-    static final MemorySegment SPLDS_PRINT_COLOR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printColor");
-    static final MemorySegment SPLDS_PRINT_DUPLEX_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printDuplexSupported");
-    static final MemorySegment SPLDS_PRINT_END_TIME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printEndTime");
-    static final MemorySegment SPLDS_PRINTER_CLASS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printQueue");
+    static final MemorySegment MS_ENHANCED_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced Cryptographic Provider v1.0");
+    static final MemorySegment MS_STRONG_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Strong Cryptographic Provider");
+    static final MemorySegment MS_STRONG_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_STRONG_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Strong Cryptographic Provider");
+    static final MemorySegment MS_DEF_RSA_SIG_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA Signature Cryptographic Provider");
+    static final MemorySegment MS_DEF_RSA_SIG_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
 }
 
 
