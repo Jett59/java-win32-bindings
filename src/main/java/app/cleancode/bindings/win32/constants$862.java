@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$862 {
 
-    static final MemorySegment CMSG_OID_CNG_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGExportKeyAgree");
-    static final MemorySegment CMSG_OID_EXPORT_MAIL_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportMailList");
-    static final MemorySegment CMSG_OID_CAPI1_EXPORT_MAIL_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportMailList");
-    static final MemorySegment CMSG_OID_IMPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportKeyTrans");
-    static final MemorySegment CMSG_OID_CAPI1_IMPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportKeyTrans");
-    static final MemorySegment CMSG_OID_IMPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportKeyAgree");
+    static final MemorySegment CRYPT_OID_REG_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPT_DEFAULT_OID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DEFAULT");
+    static final MemorySegment CRYPT_OID_INFO_HASH_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPT_OID_INFO_ECC_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPT_OID_INFO_MGF1_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPT_OID_INFO_NO_SIGN_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
 }
 
 

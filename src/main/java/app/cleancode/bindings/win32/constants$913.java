@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$913 {
 
-    static final MemorySegment TC_PUBLIC_DATA_TYPE_ATAGP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ATAGPLogPages");
-    static final MemorySegment TC_PUBLIC_DATA_TYPE_ATASMART$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ATASMARTPages");
-    static final MemorySegment SCARD_ALL_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$AllReaders");
-    static final MemorySegment SCARD_DEFAULT_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$DefaultReaders");
-    static final MemorySegment SCARD_LOCAL_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$LocalReaders");
-    static final MemorySegment SCARD_SYSTEM_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$SystemReaders");
+    static final MemoryAddress CERT_CHAIN_POLICY_NT_AUTH$ADDR = MemoryAddress.ofLong(6L);
+    static final MemoryAddress CERT_CHAIN_POLICY_MICROSOFT_ROOT$ADDR = MemoryAddress.ofLong(7L);
+    static final MemoryAddress CERT_CHAIN_POLICY_EV$ADDR = MemoryAddress.ofLong(8L);
+    static final MemoryAddress CERT_CHAIN_POLICY_SSL_F12$ADDR = MemoryAddress.ofLong(9L);
+    static final MemoryAddress CERT_CHAIN_POLICY_SSL_HPKP_HEADER$ADDR = MemoryAddress.ofLong(10L);
+    static final MemoryAddress CERT_CHAIN_POLICY_THIRD_PARTY_ROOT$ADDR = MemoryAddress.ofLong(11L);
 }
 
 

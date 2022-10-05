@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$883 {
 
-    static final MemorySegment CRYPT_OID_ENUM_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllEnumPhysicalStore");
-    static final MemorySegment CRYPT_OID_SYSTEM_STORE_LOCATION_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CRYPT_OID_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExtractEncodedSignatureParameters");
-    static final MemorySegment CRYPT_OID_SIGN_AND_ENCODE_HASH_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllSignAndEncodeHash");
-    static final MemorySegment CRYPT_OID_VERIFY_ENCODED_SIGNATURE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllVerifyEncodedSignature");
-    static final MemorySegment CRYPT_OID_EXPORT_PUBLIC_KEY_INFO_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExportPublicKeyInfoEx");
+    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_ENCODED_CTL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
+    static final MemorySegment CERT_AUTH_ROOT_CTL_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
+    static final MemorySegment CERT_AUTH_ROOT_CTL_FILENAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("authroot.stl");
+    static final MemorySegment CERT_AUTH_ROOT_CAB_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
+    static final MemorySegment CERT_AUTH_ROOT_SEQ_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
+    static final MemorySegment CERT_AUTH_ROOT_CERT_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
 }
 
 

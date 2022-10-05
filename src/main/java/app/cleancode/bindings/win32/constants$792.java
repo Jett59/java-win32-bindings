@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$792 {
 
-    static final MemorySegment szOID_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.31");
-    static final MemorySegment szOID_OWNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.32");
-    static final MemorySegment szOID_ROLE_OCCUPANT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.33");
-    static final MemorySegment szOID_SEE_ALSO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.34");
-    static final MemorySegment szOID_USER_PASSWORD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.35");
-    static final MemorySegment szOID_USER_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.36");
+    static final MemorySegment szOID_INFOSEC_SuiteATokenProtection$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.16");
+    static final MemorySegment szOID_INFOSEC_SuiteAKeyManagement$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.17");
+    static final MemorySegment szOID_INFOSEC_SuiteAKMandSig$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.18");
+    static final MemorySegment szOID_INFOSEC_mosaicUpdatedSig$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.19");
+    static final MemorySegment szOID_INFOSEC_mosaicKMandUpdSig$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.20");
+    static final MemorySegment szOID_INFOSEC_mosaicUpdatedInteg$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.21");
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$929 {
 
-    static final MemorySegment SERVICES_FAILED_DATABASEW$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment SERVICES_ACTIVE_DATABASEA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ServicesActive");
-    static final MemorySegment SERVICES_FAILED_DATABASEA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ServicesFailed");
-    static final MemorySegment SERVICES_ACTIVE_DATABASE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ServicesActive");
-    static final MemorySegment SERVICES_FAILED_DATABASE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ServicesFailed");
-    static final MemorySegment SERVICE_TRIGGER_STARTED_ARGUMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("T");
+    static final MemorySegment SPLDS_PRINT_KEEP_PRINTED_JOBS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printKeepPrintedJobs");
+    static final MemorySegment SPLDS_PRINT_LANGUAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printLanguage");
+    static final MemorySegment SPLDS_PRINT_MAC_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMACAddress");
+    static final MemorySegment SPLDS_PRINT_MAX_X_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxXExtent");
+    static final MemorySegment SPLDS_PRINT_MAX_Y_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxYExtent");
+    static final MemorySegment SPLDS_PRINT_MAX_RESOLUTION_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxResolutionSupported");
 }
 
 

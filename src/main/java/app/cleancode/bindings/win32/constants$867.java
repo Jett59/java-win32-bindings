@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$867 {
 
-    static final MemoryAddress CERT_STORE_PROV_FILENAME_W$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress CERT_STORE_PROV_FILENAME$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_A$ADDR = MemoryAddress.ofLong(9L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_W$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress CERT_STORE_PROV_COLLECTION$ADDR = MemoryAddress.ofLong(11L);
+    static final MemorySegment CMSG_OID_CAPI1_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenContentEncryptKey");
+    static final MemorySegment CMSG_OID_CNG_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGGenContentEncryptKey");
+    static final MemorySegment CMSG_OID_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyTrans");
+    static final MemorySegment CMSG_OID_CAPI1_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyTrans");
+    static final MemorySegment CMSG_OID_CNG_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGExportKeyTrans");
+    static final MemorySegment CMSG_OID_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyAgree");
 }
 
 

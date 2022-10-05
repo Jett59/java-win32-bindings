@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$916 {
 
-    static final MemorySegment SPLREG_RETRY_POPUP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RetryPopup");
-    static final MemorySegment SPLREG_NET_POPUP_TO_COMPUTER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("NetPopupToComputer");
-    static final MemorySegment SPLREG_EVENT_LOG$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("EventLog");
-    static final MemorySegment SPLREG_MAJOR_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("MajorVersion");
-    static final MemorySegment SPLREG_MINOR_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("MinorVersion");
-    static final MemorySegment SPLREG_ARCHITECTURE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Architecture");
+    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.7");
+    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.9");
+    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.10");
+    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA512$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.11");
+    static final MemorySegment PKCS12_PBES2_ALG_AES256_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
+    static final MemorySegment PKCS12_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$770 {
 
-    static final MemorySegment szOID_ECC_CURVE_NISTP256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.7");
-    static final MemorySegment szOID_ECC_CURVE_NISTP384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.34");
-    static final MemorySegment szOID_ECC_CURVE_NISTP521$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.35");
-    static final MemorySegment szOID_ECC_CURVE_SECP160K1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.9");
-    static final MemorySegment szOID_ECC_CURVE_SECP160R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.8");
-    static final MemorySegment szOID_ECC_CURVE_SECP160R2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.30");
+    static final MemorySegment szOID_RSA_SMIMEalgESDH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.16.3.5");
+    static final MemorySegment szOID_RSA_SMIMEalgCMS3DESwrap$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.16.3.6");
+    static final MemorySegment szOID_RSA_SMIMEalgCMSRC2wrap$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.16.3.7");
+    static final MemorySegment szOID_RSA_MD2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.2");
+    static final MemorySegment szOID_RSA_MD4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.4");
+    static final MemorySegment szOID_RSA_MD5$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.5");
 }
 
 

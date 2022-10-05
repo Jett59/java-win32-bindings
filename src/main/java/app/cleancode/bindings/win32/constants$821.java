@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$821 {
 
-    static final MemorySegment szOID_PRODUCT_UPDATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.31.1");
-    static final MemorySegment szOID_ANY_APPLICATION_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.12.1");
-    static final MemorySegment szOID_AUTO_ENROLL_CTL_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.1");
-    static final MemorySegment szOID_ENROLL_CERTTYPE_EXTENSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2");
-    static final MemorySegment szOID_CERT_MANIFOLD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.3");
-    static final MemorySegment szOID_CERTSRV_CA_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.1");
+    static final MemorySegment szOID_SUBJECT_ALT_NAME2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.17");
+    static final MemorySegment szOID_ISSUER_ALT_NAME2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.18");
+    static final MemorySegment szOID_CRL_REASON_CODE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.21");
+    static final MemorySegment szOID_REASON_CODE_HOLD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.23");
+    static final MemorySegment szOID_CRL_DIST_POINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.31");
+    static final MemorySegment szOID_ENHANCED_KEY_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.37");
 }
 
 

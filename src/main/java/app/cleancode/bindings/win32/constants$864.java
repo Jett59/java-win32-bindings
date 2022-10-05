@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$864 {
 
-    static final MemorySegment szOID_CERT_PROP_ID_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.");
-    static final MemorySegment szOID_CERT_KEY_IDENTIFIER_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.20");
-    static final MemorySegment szOID_CERT_ISSUER_SERIAL_NUMBER_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.28");
-    static final MemorySegment szOID_CERT_SUBJECT_NAME_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.29");
-    static final MemorySegment szOID_CERT_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.4");
-    static final MemorySegment szOID_CERT_SIGNATURE_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.15");
+    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.1");
+    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_CURRENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.1");
+    static final MemorySegment szOID_CERT_STRONG_KEY_OS_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.");
+    static final MemorySegment szOID_CERT_STRONG_KEY_OS_1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.1");
+    static final MemorySegment szOID_CERT_STRONG_KEY_OS_CURRENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.1");
+    static final MemorySegment szOID_PKCS_7_DATA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.1");
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$907 {
 
-    static final MemoryAddress CERT_CHAIN_POLICY_MICROSOFT_ROOT$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress CERT_CHAIN_POLICY_EV$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress CERT_CHAIN_POLICY_SSL_F12$ADDR = MemoryAddress.ofLong(9L);
-    static final MemoryAddress CERT_CHAIN_POLICY_SSL_HPKP_HEADER$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress CERT_CHAIN_POLICY_THIRD_PARTY_ROOT$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress CERT_CHAIN_POLICY_SSL_KEY_PIN$ADDR = MemoryAddress.ofLong(12L);
+    static final MemorySegment CRYPTNET_PRE_FETCH_TRIGGER_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPTNET_PRE_FETCH_SCAN_AFTER_TRIGGER_DELAY_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPTNET_PRE_FETCH_RETRIEVAL_TIMEOUT_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_PROCESS_NAME_LIST_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
+    static final MemorySegment CRYPTNET_CRL_PRE_FETCH_URL_LIST_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$923 {
 
-    static final MemorySegment SPLDS_PRINT_LANGUAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printLanguage");
-    static final MemorySegment SPLDS_PRINT_MAC_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMACAddress");
-    static final MemorySegment SPLDS_PRINT_MAX_X_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxXExtent");
-    static final MemorySegment SPLDS_PRINT_MAX_Y_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxYExtent");
-    static final MemorySegment SPLDS_PRINT_MAX_RESOLUTION_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMaxResolutionSupported");
-    static final MemorySegment SPLDS_PRINT_MEDIA_READY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMediaReady");
+    static final MemorySegment SPLREG_ARCHITECTURE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Architecture");
+    static final MemorySegment SPLREG_OS_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OSVersion");
+    static final MemorySegment SPLREG_OS_VERSIONEX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OSVersionEx");
+    static final MemorySegment SPLREG_DS_PRESENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsPresent");
+    static final MemorySegment SPLREG_DS_PRESENT_FOR_USER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsPresentForUser");
+    static final MemorySegment SPLREG_REMOTE_FAX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RemoteFax");
 }
 
 

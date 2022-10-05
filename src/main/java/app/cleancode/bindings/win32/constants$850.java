@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$850 {
 
-    static final MemorySegment szOID_CMC_TRANSACTION_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.5");
-    static final MemorySegment szOID_CMC_SENDER_NONCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.6");
-    static final MemorySegment szOID_CMC_RECIPIENT_NONCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.7");
-    static final MemorySegment szOID_CMC_ADD_EXTENSIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.8");
-    static final MemorySegment szOID_CMC_ENCRYPTED_POP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.9");
-    static final MemorySegment szOID_CMC_DECRYPTED_POP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.10");
+    static final MemorySegment szOID_PKIX_ACC_DESCR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48");
+    static final MemorySegment szOID_PKIX_OCSP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1");
+    static final MemorySegment szOID_PKIX_CA_ISSUERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.2");
+    static final MemorySegment szOID_PKIX_TIME_STAMPING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.3");
+    static final MemorySegment szOID_PKIX_CA_REPOSITORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.5");
+    static final MemorySegment szOID_QC_EU_COMPLIANCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.4.0.1862.1.1");
 }
 
 

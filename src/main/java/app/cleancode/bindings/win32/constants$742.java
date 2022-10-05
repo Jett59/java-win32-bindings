@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$742 {
 
-    static final MemoryAddress IDC_SIZEWE$ADDR = MemoryAddress.ofLong(32644L);
-    static final MemoryAddress IDC_SIZENS$ADDR = MemoryAddress.ofLong(32645L);
-    static final MemoryAddress IDC_SIZEALL$ADDR = MemoryAddress.ofLong(32646L);
-    static final MemoryAddress IDC_NO$ADDR = MemoryAddress.ofLong(32648L);
-    static final MemoryAddress IDC_HAND$ADDR = MemoryAddress.ofLong(32649L);
-    static final MemoryAddress IDC_APPSTARTING$ADDR = MemoryAddress.ofLong(32650L);
+    static final MemoryAddress RT_HTML$ADDR = MemoryAddress.ofLong(23L);
+    static final MemoryAddress RT_MANIFEST$ADDR = MemoryAddress.ofLong(24L);
+    static final MemoryAddress CREATEPROCESS_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress ISOLATIONAWARE_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress ISOLATIONPOLICY_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(4L);
 }
 
 

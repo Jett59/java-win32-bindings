@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$866 {
 
-    static final MemoryAddress CERT_STORE_PROV_MEMORY$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CERT_STORE_PROV_FILE$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress CERT_STORE_PROV_REG$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress CERT_STORE_PROV_PKCS7$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress CERT_STORE_PROV_SERIALIZED$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress CERT_STORE_PROV_FILENAME_A$ADDR = MemoryAddress.ofLong(7L);
+    static final MemorySegment szOID_PKCS_9_MESSAGE_DIGEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.4");
+    static final MemorySegment CMSG_OID_GEN_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenEncryptKey");
+    static final MemorySegment CMSG_OID_EXPORT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportEncryptKey");
+    static final MemorySegment CMSG_OID_IMPORT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportEncryptKey");
+    static final MemoryAddress CMSG_DEFAULT_INSTALLABLE_FUNC_OID$ADDR = MemoryAddress.ofLong(1L);
+    static final MemorySegment CMSG_OID_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenContentEncryptKey");
 }
 
 

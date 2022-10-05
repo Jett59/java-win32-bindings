@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$765 {
 
-    static final MemorySegment szOID_RSA_RC4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3.4");
-    static final MemorySegment szOID_RSA_DES_EDE3_CBC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3.7");
-    static final MemorySegment szOID_RSA_RC5_CBCPad$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3.9");
-    static final MemorySegment szOID_ANSI_X942$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10046");
-    static final MemorySegment szOID_ANSI_X942_DH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10046.2.1");
-    static final MemorySegment szOID_X957$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10040");
+    static final MemorySegment szOID_RSAES_OAEP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.7");
+    static final MemorySegment szOID_RSA_MGF1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.8");
+    static final MemorySegment szOID_RSA_PSPECIFIED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.9");
+    static final MemorySegment szOID_RSA_SSA_PSS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.10");
+    static final MemorySegment szOID_RSA_SHA256RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.11");
+    static final MemorySegment szOID_RSA_SHA384RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.12");
 }
 
 

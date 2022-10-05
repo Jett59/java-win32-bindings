@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$806 {
 
-    static final MemoryAddress X942_DH_PARAMETERS$ADDR = MemoryAddress.ofLong(50L);
-    static final MemoryAddress X509_BITS_WITHOUT_TRAILING_ZEROES$ADDR = MemoryAddress.ofLong(51L);
-    static final MemoryAddress X942_OTHER_INFO$ADDR = MemoryAddress.ofLong(52L);
-    static final MemoryAddress X509_CERT_PAIR$ADDR = MemoryAddress.ofLong(53L);
-    static final MemoryAddress X509_ISSUING_DIST_POINT$ADDR = MemoryAddress.ofLong(54L);
-    static final MemoryAddress X509_NAME_CONSTRAINTS$ADDR = MemoryAddress.ofLong(55L);
+    static final MemoryAddress X509_KEYGEN_REQUEST_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(21L);
+    static final MemoryAddress PKCS_ATTRIBUTE$ADDR = MemoryAddress.ofLong(22L);
+    static final MemoryAddress PKCS_CONTENT_INFO_SEQUENCE_OF_ANY$ADDR = MemoryAddress.ofLong(23L);
+    static final MemoryAddress X509_UNICODE_NAME_VALUE$ADDR = MemoryAddress.ofLong(24L);
+    static final MemoryAddress X509_ANY_STRING$ADDR = MemoryAddress.ofLong(6L);
+    static final MemoryAddress X509_UNICODE_ANY_STRING$ADDR = MemoryAddress.ofLong(24L);
 }
 
 

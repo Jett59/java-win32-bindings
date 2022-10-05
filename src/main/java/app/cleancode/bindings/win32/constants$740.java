@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$740 {
 
-    static final MemoryAddress HBMMENU_POPUP_RESTORE$ADDR = MemoryAddress.ofLong(9L);
-    static final MemoryAddress HBMMENU_POPUP_MAXIMIZE$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress HBMMENU_POPUP_MINIMIZE$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress IDC_ARROW$ADDR = MemoryAddress.ofLong(32512L);
-    static final MemoryAddress IDC_IBEAM$ADDR = MemoryAddress.ofLong(32513L);
-    static final MemoryAddress IDC_WAIT$ADDR = MemoryAddress.ofLong(32514L);
+    static final MemoryAddress RT_FONT$ADDR = MemoryAddress.ofLong(8L);
+    static final MemoryAddress RT_ACCELERATOR$ADDR = MemoryAddress.ofLong(9L);
+    static final MemoryAddress RT_RCDATA$ADDR = MemoryAddress.ofLong(10L);
+    static final MemoryAddress RT_MESSAGETABLE$ADDR = MemoryAddress.ofLong(11L);
+    static final MemoryAddress RT_GROUP_CURSOR$ADDR = MemoryAddress.ofLong(12L);
+    static final MemoryAddress RT_GROUP_ICON$ADDR = MemoryAddress.ofLong(14L);
 }
 
 

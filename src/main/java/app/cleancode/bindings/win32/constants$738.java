@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$738 {
 
-    static final MemoryAddress HWND_TOP$ADDR = MemoryAddress.ofLong(0L);
-    static final MemoryAddress HWND_BOTTOM$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress HWND_TOPMOST$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemoryAddress HWND_NOTOPMOST$ADDR = MemoryAddress.ofLong(-2L);
-    static final MemoryAddress HBMMENU_CALLBACK$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemoryAddress HBMMENU_SYSTEM$ADDR = MemoryAddress.ofLong(1L);
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryW");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
+    static final MemoryAddress RT_CURSOR$ADDR = MemoryAddress.ofLong(1L);
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$924 {
 
-    static final MemorySegment SPLDS_PRINT_MEDIA_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMediaSupported");
-    static final MemorySegment SPLDS_PRINT_MEMORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMemory");
-    static final MemorySegment SPLDS_PRINT_MIN_X_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMinXExtent");
-    static final MemorySegment SPLDS_PRINT_MIN_Y_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMinYExtent");
-    static final MemorySegment SPLDS_PRINT_NETWORK_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printNetworkAddress");
-    static final MemorySegment SPLDS_PRINT_NOTIFY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printNotify");
+    static final MemorySegment SPLREG_RESTART_JOB_ON_POOL_ERROR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RestartJobOnPoolError");
+    static final MemorySegment SPLREG_RESTART_JOB_ON_POOL_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RestartJobOnPoolEnabled");
+    static final MemorySegment SPLREG_DNS_MACHINE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DNSMachineName");
+    static final MemorySegment SPLREG_ALLOW_USER_MANAGEFORMS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("AllowUserManageForms");
+    static final MemorySegment SPLREG_WEBSHAREMGMT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("WebShareMgmt");
+    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_GROUPS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationGroups");
 }
 
 

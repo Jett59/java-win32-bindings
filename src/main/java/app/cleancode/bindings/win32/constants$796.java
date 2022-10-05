@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$796 {
 
-    static final MemorySegment CERT_RSA_PUBLIC_KEY_OBJID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
-    static final MemorySegment CERT_DEFAULT_OID_PUBLIC_KEY_SIGN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
-    static final MemorySegment CERT_DEFAULT_OID_PUBLIC_KEY_XCHG$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
-    static final MemoryAddress X509_CERT$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress X509_CERT_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress X509_CERT_CRL_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(3L);
+    static final MemorySegment szOID_POST_OFFICE_BOX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.18");
+    static final MemorySegment szOID_PHYSICAL_DELIVERY_OFFICE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.19");
+    static final MemorySegment szOID_TELEPHONE_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.20");
+    static final MemorySegment szOID_TELEX_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.21");
+    static final MemorySegment szOID_TELETEXT_TERMINAL_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.22");
+    static final MemorySegment szOID_FACSIMILE_TELEPHONE_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.23");
 }
 
 

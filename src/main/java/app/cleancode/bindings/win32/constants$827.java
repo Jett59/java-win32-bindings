@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$827 {
 
-    static final MemorySegment szOID_PKIX_KP_IPSEC_USER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.7");
-    static final MemorySegment szOID_PKIX_KP_TIMESTAMP_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.8");
-    static final MemorySegment szOID_PKIX_KP_OCSP_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.9");
-    static final MemorySegment szOID_PKIX_OCSP_NOCHECK$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1.5");
-    static final MemorySegment szOID_PKIX_OCSP_NONCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1.2");
-    static final MemorySegment szOID_IPSEC_KP_IKE_INTERMEDIATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.8.2.2");
+    static final MemorySegment szOID_INTERNATIONALIZED_EMAIL_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2.4");
+    static final MemorySegment szOID_PRODUCT_UPDATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.31.1");
+    static final MemorySegment szOID_ANY_APPLICATION_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.12.1");
+    static final MemorySegment szOID_AUTO_ENROLL_CTL_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.1");
+    static final MemorySegment szOID_ENROLL_CERTTYPE_EXTENSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2");
+    static final MemorySegment szOID_CERT_MANIFOLD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.3");
 }
 
 

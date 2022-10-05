@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$789 {
 
-    static final MemorySegment szOID_DESCRIPTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.13");
-    static final MemorySegment szOID_SEARCH_GUIDE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.14");
-    static final MemorySegment szOID_BUSINESS_CATEGORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.15");
-    static final MemorySegment szOID_POSTAL_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.16");
-    static final MemorySegment szOID_POSTAL_CODE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.17");
-    static final MemorySegment szOID_POST_OFFICE_BOX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.18");
+    static final MemorySegment szOID_OIWDIR_md2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.2.1");
+    static final MemorySegment szOID_OIWDIR_md2RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.3.1");
+    static final MemorySegment szOID_INFOSEC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1");
+    static final MemorySegment szOID_INFOSEC_sdnsSignature$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.1");
+    static final MemorySegment szOID_INFOSEC_mosaicSignature$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.2");
+    static final MemorySegment szOID_INFOSEC_sdnsConfidentiality$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.2.1.1.3");
 }
 
 

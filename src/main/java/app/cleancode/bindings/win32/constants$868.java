@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$868 {
 
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_REGISTRY_A$ADDR = MemoryAddress.ofLong(12L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_REGISTRY_W$ADDR = MemoryAddress.ofLong(13L);
-    static final MemoryAddress CERT_STORE_PROV_SYSTEM_REGISTRY$ADDR = MemoryAddress.ofLong(13L);
-    static final MemoryAddress CERT_STORE_PROV_PHYSICAL_W$ADDR = MemoryAddress.ofLong(14L);
-    static final MemoryAddress CERT_STORE_PROV_PHYSICAL$ADDR = MemoryAddress.ofLong(14L);
-    static final MemoryAddress CERT_STORE_PROV_SMART_CARD_W$ADDR = MemoryAddress.ofLong(15L);
+    static final MemorySegment CMSG_OID_CAPI1_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyAgree");
+    static final MemorySegment CMSG_OID_CNG_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGExportKeyAgree");
+    static final MemorySegment CMSG_OID_EXPORT_MAIL_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportMailList");
+    static final MemorySegment CMSG_OID_CAPI1_EXPORT_MAIL_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportMailList");
+    static final MemorySegment CMSG_OID_IMPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportKeyTrans");
+    static final MemorySegment CMSG_OID_CAPI1_IMPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportKeyTrans");
 }
 
 

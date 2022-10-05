@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$853 {
 
-    static final MemorySegment szOID_BACKGROUND_OTHER_LOGOTYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.20.2");
-    static final MemorySegment szOID_PKIX_OCSP_BASIC_SIGNED_RESPONSE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1.1");
-    static final MemorySegment CRYPT_OID_ENCODE_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllEncodeObject");
-    static final MemorySegment CRYPT_OID_DECODE_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllDecodeObject");
-    static final MemorySegment CRYPT_OID_ENCODE_OBJECT_EX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllEncodeObjectEx");
-    static final MemorySegment CRYPT_OID_DECODE_OBJECT_EX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllDecodeObjectEx");
+    static final MemorySegment szOID_NETSCAPE_CERT_EXTENSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1");
+    static final MemorySegment szOID_NETSCAPE_CERT_TYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.1");
+    static final MemorySegment szOID_NETSCAPE_BASE_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.2");
+    static final MemorySegment szOID_NETSCAPE_REVOCATION_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.3");
+    static final MemorySegment szOID_NETSCAPE_CA_REVOCATION_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.4");
+    static final MemorySegment szOID_NETSCAPE_CERT_RENEWAL_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.7");
 }
 
 

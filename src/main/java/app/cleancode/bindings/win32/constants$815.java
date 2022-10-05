@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$815 {
 
-    static final MemorySegment szOID_ISSUER_ALT_NAME2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.18");
-    static final MemorySegment szOID_CRL_REASON_CODE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.21");
-    static final MemorySegment szOID_REASON_CODE_HOLD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.23");
-    static final MemorySegment szOID_CRL_DIST_POINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.31");
-    static final MemorySegment szOID_ENHANCED_KEY_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.37");
-    static final MemorySegment szOID_ANY_ENHANCED_KEY_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.37.0");
+    static final MemoryAddress OCSP_RESPONSE$ADDR = MemoryAddress.ofLong(67L);
+    static final MemoryAddress OCSP_BASIC_SIGNED_RESPONSE$ADDR = MemoryAddress.ofLong(68L);
+    static final MemoryAddress OCSP_BASIC_RESPONSE$ADDR = MemoryAddress.ofLong(69L);
+    static final MemoryAddress X509_LOGOTYPE_EXT$ADDR = MemoryAddress.ofLong(70L);
+    static final MemoryAddress X509_BIOMETRIC_EXT$ADDR = MemoryAddress.ofLong(71L);
+    static final MemoryAddress CNG_RSA_PUBLIC_KEY_BLOB$ADDR = MemoryAddress.ofLong(72L);
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$925 {
 
-    static final MemorySegment SPLDS_PRINT_NUMBER_UP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printNumberUp");
-    static final MemorySegment SPLDS_PRINT_ORIENTATIONS_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printOrientationsSupported");
-    static final MemorySegment SPLDS_PRINT_OWNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printOwner");
-    static final MemorySegment SPLDS_PRINT_PAGES_PER_MINUTE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printPagesPerMinute");
-    static final MemorySegment SPLDS_PRINT_RATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printRate");
-    static final MemorySegment SPLDS_PRINT_RATE_UNIT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printRateUnit");
+    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_TIME_BEFORE_RECYCLE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationTimeBeforeRecycle");
+    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_MAX_OBJECTS_BEFORE_RECYCLE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationMaxobjsBeforeRecycle");
+    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_IDLE_TIMEOUT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationIdleTimeout");
+    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_EXECUTION_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationExecutionPolicy");
+    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_OVERRIDE_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationOverrideCompat");
+    static final MemorySegment SPLREG_PRINT_QUEUE_V4_DRIVER_DIRECTORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintQueueV4DriverDirectory");
 }
 
 

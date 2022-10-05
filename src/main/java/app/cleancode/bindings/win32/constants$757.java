@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$757 {
 
-    static final MemorySegment szOID_PKCS_7$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7");
-    static final MemorySegment szOID_PKCS_8$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.8");
-    static final MemorySegment szOID_PKCS_9$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9");
-    static final MemorySegment szOID_PKCS_10$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.10");
-    static final MemorySegment szOID_PKCS_12$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12");
-    static final MemorySegment szOID_RSA_RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
+    static final MemorySegment MS_DEF_DSS_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_DEF_DSS_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS Cryptographic Provider");
+    static final MemorySegment MS_DEF_DSS_DH_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS and Diffie-Hellman Cryptographic Provider");
+    static final MemorySegment MS_DEF_DSS_DH_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_DEF_DSS_DH_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS and Diffie-Hellman Cryptographic Provider");
+    static final MemorySegment MS_ENH_DSS_DH_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced DSS and Diffie-Hellman Cryptographic Provider");
 }
 
 

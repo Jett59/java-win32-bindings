@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$751 {
 
-    static final MemorySegment MS_DEF_DSS_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS Cryptographic Provider");
-    static final MemorySegment MS_DEF_DSS_DH_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS and Diffie-Hellman Cryptographic Provider");
-    static final MemorySegment MS_DEF_DSS_DH_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_DEF_DSS_DH_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS and Diffie-Hellman Cryptographic Provider");
-    static final MemorySegment MS_ENH_DSS_DH_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced DSS and Diffie-Hellman Cryptographic Provider");
-    static final MemorySegment MS_ENH_DSS_DH_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemoryAddress IDI_ERROR$ADDR = MemoryAddress.ofLong(32513L);
+    static final MemoryAddress IDI_INFORMATION$ADDR = MemoryAddress.ofLong(32516L);
+    static final MemoryAddress WC_DIALOG$ADDR = MemoryAddress.ofLong(32770L);
+    static final MemoryAddress GR_GLOBAL$ADDR = MemoryAddress.ofLong(-2L);
+    static final MemoryAddress GEO_NAME_USER_DEFAULT$ADDR = MemoryAddress.ofLong(0L);
+    static final MemoryAddress LOCALE_NAME_USER_DEFAULT$ADDR = MemoryAddress.ofLong(0L);
 }
 
 

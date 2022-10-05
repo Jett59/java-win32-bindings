@@ -2493,6 +2493,24 @@ import static java.lang.foreign.ValueLayout.*;
     public static int SERVICE_TRIGGER_ACTION_SERVICE_STOP() {
         return (int)2L;
     }
+    public static int EVT_VARIANT_TYPE_MASK() {
+        return (int)127L;
+    }
+    public static int EVT_VARIANT_TYPE_ARRAY() {
+        return (int)128L;
+    }
+    public static int EVT_READ_ACCESS() {
+        return (int)1L;
+    }
+    public static int EVT_WRITE_ACCESS() {
+        return (int)2L;
+    }
+    public static int EVT_CLEAR_ACCESS() {
+        return (int)4L;
+    }
+    public static int EVT_ALL_ACCESS() {
+        return (int)7L;
+    }
     public static OfAddress PULONG = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress PUSHORT = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress PUCHAR = Constants$root.C_POINTER$LAYOUT;
@@ -2849,72 +2867,6 @@ import static java.lang.foreign.ValueLayout.*;
         var mh$ = _interlockedbittestandset64$MH();
         try {
             return (byte)mh$.invokeExact(Base, Offset);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _interlockedbittestandreset64$MH() {
-        return RuntimeHelper.requireNonNull(constants$3._interlockedbittestandreset64$MH,"_interlockedbittestandreset64");
-    }
-    public static byte _interlockedbittestandreset64 ( Addressable Base,  long Offset) {
-        var mh$ = _interlockedbittestandreset64$MH();
-        try {
-            return (byte)mh$.invokeExact(Base, Offset);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _mm_clflush$MH() {
-        return RuntimeHelper.requireNonNull(constants$4._mm_clflush$MH,"_mm_clflush");
-    }
-    public static void _mm_clflush ( Addressable Address) {
-        var mh$ = _mm_clflush$MH();
-        try {
-            mh$.invokeExact(Address);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _mm_lfence$MH() {
-        return RuntimeHelper.requireNonNull(constants$4._mm_lfence$MH,"_mm_lfence");
-    }
-    public static void _mm_lfence () {
-        var mh$ = _mm_lfence$MH();
-        try {
-            mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _mm_mfence$MH() {
-        return RuntimeHelper.requireNonNull(constants$4._mm_mfence$MH,"_mm_mfence");
-    }
-    public static void _mm_mfence () {
-        var mh$ = _mm_mfence$MH();
-        try {
-            mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _mm_sfence$MH() {
-        return RuntimeHelper.requireNonNull(constants$4._mm_sfence$MH,"_mm_sfence");
-    }
-    public static void _mm_sfence () {
-        var mh$ = _mm_sfence$MH();
-        try {
-            mh$.invokeExact();
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle _mm_pause$MH() {
-        return RuntimeHelper.requireNonNull(constants$4._mm_pause$MH,"_mm_pause");
-    }
-    public static void _mm_pause () {
-        var mh$ = _mm_pause$MH();
-        try {
-            mh$.invokeExact();
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$741 {
 
-    static final MemoryAddress IDC_CROSS$ADDR = MemoryAddress.ofLong(32515L);
-    static final MemoryAddress IDC_UPARROW$ADDR = MemoryAddress.ofLong(32516L);
-    static final MemoryAddress IDC_SIZE$ADDR = MemoryAddress.ofLong(32640L);
-    static final MemoryAddress IDC_ICON$ADDR = MemoryAddress.ofLong(32641L);
-    static final MemoryAddress IDC_SIZENWSE$ADDR = MemoryAddress.ofLong(32642L);
-    static final MemoryAddress IDC_SIZENESW$ADDR = MemoryAddress.ofLong(32643L);
+    static final MemoryAddress RT_VERSION$ADDR = MemoryAddress.ofLong(16L);
+    static final MemoryAddress RT_DLGINCLUDE$ADDR = MemoryAddress.ofLong(17L);
+    static final MemoryAddress RT_PLUGPLAY$ADDR = MemoryAddress.ofLong(19L);
+    static final MemoryAddress RT_VXD$ADDR = MemoryAddress.ofLong(20L);
+    static final MemoryAddress RT_ANICURSOR$ADDR = MemoryAddress.ofLong(21L);
+    static final MemoryAddress RT_ANIICON$ADDR = MemoryAddress.ofLong(22L);
 }
 
 

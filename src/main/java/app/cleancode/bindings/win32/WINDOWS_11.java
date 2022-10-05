@@ -9,6 +9,24 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_11 extends WINDOWS_10 {
 
+    public static int MonitorRequestReasonBatteryCountChange() {
+        return (int)16L;
+    }
+    public static int MonitorRequestReasonGracePeriod() {
+        return (int)17L;
+    }
+    public static int MonitorRequestReasonPnP() {
+        return (int)18L;
+    }
+    public static int MonitorRequestReasonDP() {
+        return (int)19L;
+    }
+    public static int MonitorRequestReasonSxTransition() {
+        return (int)20L;
+    }
+    public static int MonitorRequestReasonSystemIdle() {
+        return (int)21L;
+    }
     public static int MonitorRequestReasonNearProximity() {
         return (int)22L;
     }
@@ -5295,16 +5313,6 @@ import static java.lang.foreign.ValueLayout.*;
     public static int ProcessInformationClassMax() {
         return (int)9L;
     }
-    public static OfAddress PAPP_MEMORY_INFORMATION = Constants$root.C_POINTER$LAYOUT;
-    public static int PMETypeFailFastOnCommitFailure() {
-        return (int)0L;
-    }
-    public static int PMETypeMax() {
-        return (int)1L;
-    }
-    public static OfAddress PPROCESS_MEMORY_EXHAUSTION_TYPE = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_MEMORY_EXHAUSTION_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPROCESS_POWER_THROTTLING_STATE = Constants$root.C_POINTER$LAYOUT;
 }
 
 

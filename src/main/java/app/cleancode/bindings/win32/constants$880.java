@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$880 {
 
-    static final MemorySegment CERT_PIN_RULES_AUTO_UPDATE_LIST_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CERT_IE_DIRTY_FLAGS_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CRYPT_OID_OPEN_STORE_PROV_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllOpenStoreProv");
-    static final MemoryAddress CTL_FIND_NO_SIGNER_PTR$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemorySegment CERT_PHYSICAL_STORE_DEFAULT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_PHYSICAL_STORE_GROUP_POLICY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
+    static final MemorySegment CERT_TRUST_PUB_SAFER_GROUP_POLICY_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CERT_LOCAL_MACHINE_SYSTEM_STORE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CERT_TRUST_PUB_SAFER_LOCAL_MACHINE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CERT_TRUST_PUB_AUTHENTICODE_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
+    static final MemorySegment CERT_OCM_SUBCOMPONENTS_LOCAL_MACHINE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CERT_OCM_SUBCOMPONENTS_ROOT_AUTO_UPDATE_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("R");
 }
 
 

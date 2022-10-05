@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$754 {
 
-    static final MemorySegment MS_ENH_RSA_AES_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider");
-    static final MemorySegment EXPO_OFFLOAD_REG_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ExpoOffload");
-    static final MemorySegment EXPO_OFFLOAD_FUNC_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OffloadModExpo");
-    static final MemorySegment szKEY_CRYPTOAPI_PRIVATE_KEY_OPTIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Software\\Policies\\Microsoft\\Cryptography");
-    static final MemorySegment szKEY_CACHE_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CachePrivateKeys");
-    static final MemorySegment szKEY_CACHE_SECONDS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivateKeyLifetimeSeconds");
+    static final MemoryAddress WIN31_CLASS$ADDR = MemoryAddress.ofLong(0L);
+    static final MemorySegment WC_NETADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("m");
+    static final MemorySegment MS_DEF_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Cryptographic Provider v1.0");
+    static final MemorySegment MS_DEF_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_DEF_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Cryptographic Provider v1.0");
+    static final MemorySegment MS_ENHANCED_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced Cryptographic Provider v1.0");
 }
 
 

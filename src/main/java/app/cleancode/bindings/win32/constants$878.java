@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$878 {
 
-    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_LAST_SYNC_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_ENCODED_CTL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_DISALLOWED_CERT_CTL_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("d");
-    static final MemorySegment CERT_DISALLOWED_CERT_CTL_FILENAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("disallowedcert.stl");
-    static final MemorySegment CERT_DISALLOWED_CERT_CAB_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("d");
-    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_LIST_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment sz_CERT_STORE_PROV_SMART_CARD_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SmartCard");
+    static final MemorySegment sz_CERT_STORE_PROV_SMART_CARD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SmartCard");
+    static final MemorySegment sz_CERT_STORE_PROV_LDAP_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Ldap");
+    static final MemorySegment sz_CERT_STORE_PROV_LDAP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Ldap");
+    static final MemorySegment CERT_GROUP_POLICY_SYSTEM_STORE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CERT_EFSBLOB_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$800 {
 
-    static final MemoryAddress PKCS_ATTRIBUTE$ADDR = MemoryAddress.ofLong(22L);
-    static final MemoryAddress PKCS_CONTENT_INFO_SEQUENCE_OF_ANY$ADDR = MemoryAddress.ofLong(23L);
-    static final MemoryAddress X509_UNICODE_NAME_VALUE$ADDR = MemoryAddress.ofLong(24L);
-    static final MemoryAddress X509_ANY_STRING$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress X509_UNICODE_ANY_STRING$ADDR = MemoryAddress.ofLong(24L);
-    static final MemoryAddress X509_OCTET_STRING$ADDR = MemoryAddress.ofLong(25L);
+    static final MemorySegment szOID_INITIALS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.43");
+    static final MemorySegment szOID_DN_QUALIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.46");
+    static final MemorySegment szOID_DOMAIN_COMPONENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.9.2342.19200300.100.1.25");
+    static final MemorySegment szOID_PKCS_12_FRIENDLY_NAME_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.20");
+    static final MemorySegment szOID_PKCS_12_LOCAL_KEY_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.21");
+    static final MemorySegment szOID_PKCS_12_KEY_PROVIDER_NAME_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.17.1");
 }
 
 

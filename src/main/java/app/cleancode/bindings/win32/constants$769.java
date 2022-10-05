@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$769 {
 
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP512R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.13");
-    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP512T1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.14");
-    static final MemorySegment szOID_ECC_CURVE_EC192WAPI$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.156.11235.1.1.2.1");
-    static final MemorySegment szOID_CN_ECDSA_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.156.11235.1.1.1");
-    static final MemorySegment szOID_ECC_CURVE_NISTP192$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.1");
-    static final MemorySegment szOID_ECC_CURVE_NISTP224$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.33");
+    static final MemorySegment szOID_RSA_certExtensions$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.14");
+    static final MemorySegment szOID_RSA_SMIMECapabilities$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.15");
+    static final MemorySegment szOID_RSA_preferSignedData$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.15.1");
+    static final MemorySegment szOID_TIMESTAMP_TOKEN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.16.1.4");
+    static final MemorySegment szOID_RFC3161_counterSign$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.3.3.1");
+    static final MemorySegment szOID_RSA_SMIMEalg$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.16.3");
 }
 
 

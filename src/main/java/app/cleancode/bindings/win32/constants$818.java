@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$818 {
 
-    static final MemorySegment szOID_ENROLLMENT_AGENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2.1");
-    static final MemorySegment szOID_PKIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7");
-    static final MemorySegment szOID_PKIX_PE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1");
-    static final MemorySegment szOID_AUTHORITY_INFO_ACCESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.1");
-    static final MemorySegment szOID_SUBJECT_INFO_ACCESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.11");
-    static final MemorySegment szOID_BIOMETRIC_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.2");
+    static final MemoryAddress X509_ECC_PARAMETERS$ADDR = MemoryAddress.ofLong(85L);
+    static final MemoryAddress PKCS7_SIGNER_INFO$ADDR = MemoryAddress.ofLong(500L);
+    static final MemoryAddress CMS_SIGNER_INFO$ADDR = MemoryAddress.ofLong(501L);
+    static final MemorySegment szOID_AUTHORITY_KEY_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.1");
+    static final MemorySegment szOID_KEY_ATTRIBUTES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.2");
+    static final MemorySegment szOID_CERT_POLICIES_95$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.3");
 }
 
 

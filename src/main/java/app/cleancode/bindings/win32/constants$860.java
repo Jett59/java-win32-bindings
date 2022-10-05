@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$860 {
 
-    static final MemorySegment CMSG_OID_GEN_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenEncryptKey");
-    static final MemorySegment CMSG_OID_EXPORT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportEncryptKey");
-    static final MemorySegment CMSG_OID_IMPORT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportEncryptKey");
-    static final MemoryAddress CMSG_DEFAULT_INSTALLABLE_FUNC_OID$ADDR = MemoryAddress.ofLong(1L);
-    static final MemorySegment CMSG_OID_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenContentEncryptKey");
-    static final MemorySegment CMSG_OID_CAPI1_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllGenContentEncryptKey");
+    static final MemorySegment CRYPT_OID_DECODE_OBJECT_EX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllDecodeObjectEx");
+    static final MemorySegment CRYPT_OID_CREATE_COM_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllCreateCOMObject");
+    static final MemorySegment CRYPT_OID_VERIFY_REVOCATION_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllVerifyRevocation");
+    static final MemorySegment CRYPT_OID_VERIFY_CTL_USAGE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllVerifyCTLUsage");
+    static final MemorySegment CRYPT_OID_FORMAT_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllFormatObject");
+    static final MemorySegment CRYPT_OID_FIND_OID_INFO_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllFindOIDInfo");
 }
 
 

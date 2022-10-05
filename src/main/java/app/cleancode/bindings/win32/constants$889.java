@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$889 {
 
-    static final MemoryAddress URL_OID_CERTIFICATE_OCSP_AND_CRL_DIST_POINT$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress URL_OID_CERTIFICATE_CRL_DIST_POINT_AND_OCSP$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress URL_OID_CROSS_CERT_SUBJECT_INFO_ACCESS$ADDR = MemoryAddress.ofLong(12L);
-    static final MemoryAddress URL_OID_CERTIFICATE_ONLY_OCSP$ADDR = MemoryAddress.ofLong(13L);
-    static final MemorySegment TIME_VALID_OID_GET_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("TimeValidDllGetObject");
-    static final MemoryAddress TIME_VALID_OID_GET_CTL$ADDR = MemoryAddress.ofLong(1L);
+    static final MemorySegment CRYPT_OID_UNREGISTER_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllUnregisterPhysicalStore");
+    static final MemorySegment CRYPT_OID_ENUM_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllEnumPhysicalStore");
+    static final MemorySegment CRYPT_OID_SYSTEM_STORE_LOCATION_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CRYPT_OID_EXTRACT_ENCODED_SIGNATURE_PARAMETERS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExtractEncodedSignatureParameters");
+    static final MemorySegment CRYPT_OID_SIGN_AND_ENCODE_HASH_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllSignAndEncodeHash");
+    static final MemorySegment CRYPT_OID_VERIFY_ENCODED_SIGNATURE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllVerifyEncodedSignature");
 }
 
 

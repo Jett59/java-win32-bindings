@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$755 {
 
-    static final MemorySegment szPRIV_KEY_CACHE_MAX_ITEMS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivKeyCacheMaxItems");
-    static final MemorySegment szPRIV_KEY_CACHE_PURGE_INTERVAL_SECONDS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrivKeyCachePurgeIntervalSeconds");
-    static final MemorySegment szOID_RSA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549");
-    static final MemorySegment szOID_PKCS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1");
-    static final MemorySegment szOID_RSA_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2");
-    static final MemorySegment szOID_RSA_ENCRYPT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.3");
+    static final MemorySegment MS_ENHANCED_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_ENHANCED_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced Cryptographic Provider v1.0");
+    static final MemorySegment MS_STRONG_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Strong Cryptographic Provider");
+    static final MemorySegment MS_STRONG_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment MS_STRONG_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Strong Cryptographic Provider");
+    static final MemorySegment MS_DEF_RSA_SIG_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA Signature Cryptographic Provider");
 }
 
 

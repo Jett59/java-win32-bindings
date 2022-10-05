@@ -9,12 +9,67 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$725 {
 
-    static final MemorySegment SE_CHANGE_NOTIFY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeChangeNotifyPrivilege");
-    static final MemorySegment SE_REMOTE_SHUTDOWN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRemoteShutdownPrivilege");
-    static final MemorySegment SE_UNDOCK_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeUndockPrivilege");
-    static final MemorySegment SE_SYNC_AGENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSyncAgentPrivilege");
-    static final MemorySegment SE_ENABLE_DELEGATION_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeEnableDelegationPrivilege");
-    static final MemorySegment SE_MANAGE_VOLUME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeManageVolumePrivilege");
+    static final FunctionDescriptor EvtGetPublisherMetadataProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetPublisherMetadataProperty$MH = RuntimeHelper.downcallHandle(
+        "EvtGetPublisherMetadataProperty",
+        constants$725.EvtGetPublisherMetadataProperty$FUNC
+    );
+    static final FunctionDescriptor EvtOpenEventMetadataEnum$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtOpenEventMetadataEnum$MH = RuntimeHelper.downcallHandle(
+        "EvtOpenEventMetadataEnum",
+        constants$725.EvtOpenEventMetadataEnum$FUNC
+    );
+    static final FunctionDescriptor EvtNextEventMetadata$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtNextEventMetadata$MH = RuntimeHelper.downcallHandle(
+        "EvtNextEventMetadata",
+        constants$725.EvtNextEventMetadata$FUNC
+    );
+    static final FunctionDescriptor EvtGetEventMetadataProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetEventMetadataProperty$MH = RuntimeHelper.downcallHandle(
+        "EvtGetEventMetadataProperty",
+        constants$725.EvtGetEventMetadataProperty$FUNC
+    );
+    static final FunctionDescriptor EvtGetObjectArraySize$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetObjectArraySize$MH = RuntimeHelper.downcallHandle(
+        "EvtGetObjectArraySize",
+        constants$725.EvtGetObjectArraySize$FUNC
+    );
+    static final FunctionDescriptor EvtGetObjectArrayProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetObjectArrayProperty$MH = RuntimeHelper.downcallHandle(
+        "EvtGetObjectArrayProperty",
+        constants$725.EvtGetObjectArrayProperty$FUNC
+    );
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$872 {
 
-    static final MemorySegment sz_CERT_STORE_PROV_SMART_CARD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SmartCard");
-    static final MemorySegment sz_CERT_STORE_PROV_LDAP_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Ldap");
-    static final MemorySegment sz_CERT_STORE_PROV_LDAP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Ldap");
-    static final MemorySegment CERT_GROUP_POLICY_SYSTEM_STORE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_EFSBLOB_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_EFSBLOB_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
+    static final MemoryAddress CERT_STORE_PROV_MSG$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress CERT_STORE_PROV_MEMORY$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress CERT_STORE_PROV_FILE$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress CERT_STORE_PROV_REG$ADDR = MemoryAddress.ofLong(4L);
+    static final MemoryAddress CERT_STORE_PROV_PKCS7$ADDR = MemoryAddress.ofLong(5L);
+    static final MemoryAddress CERT_STORE_PROV_SERIALIZED$ADDR = MemoryAddress.ofLong(6L);
 }
 
 

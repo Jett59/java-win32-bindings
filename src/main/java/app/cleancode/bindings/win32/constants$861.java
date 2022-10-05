@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$861 {
 
-    static final MemorySegment CMSG_OID_CNG_GEN_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGGenContentEncryptKey");
-    static final MemorySegment CMSG_OID_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyTrans");
-    static final MemorySegment CMSG_OID_CAPI1_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyTrans");
-    static final MemorySegment CMSG_OID_CNG_EXPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGExportKeyTrans");
-    static final MemorySegment CMSG_OID_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyAgree");
-    static final MemorySegment CMSG_OID_CAPI1_EXPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllExportKeyAgree");
+    static final MemorySegment CRYPT_OID_FIND_LOCALIZED_NAME_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllFindLocalizedName");
+    static final MemorySegment CRYPT_OID_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Software\\Microsoft\\Cryptography\\OID");
+    static final MemorySegment CRYPT_OID_REG_ENCODING_TYPE_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("EncodingType ");
+    static final MemorySegment CRYPT_OID_REG_DLL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment CRYPT_OID_REG_FUNC_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
+    static final MemorySegment CRYPT_OID_REG_FUNC_NAME_VALUE_NAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("FuncName");
 }
 
 

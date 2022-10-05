@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$841 {
 
-    static final MemorySegment szOID_KP_TPM_AIK_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.8.3");
-    static final MemorySegment szOID_ENROLL_EKVERIFYKEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.30");
-    static final MemorySegment szOID_ENROLL_EKVERIFYCERT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.31");
-    static final MemorySegment szOID_ENROLL_EKVERIFYCREDS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.32");
-    static final MemorySegment szOID_ENROLL_SCEP_ERROR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.33");
-    static final MemorySegment szOID_ENROLL_SCEP_SERVER_STATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.34");
+    static final MemorySegment szOID_PIN_RULES_DOMAIN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.34");
+    static final MemorySegment szOID_PIN_RULES_LOG_END_DATE_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.35");
+    static final MemorySegment szOID_IUM_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.37");
+    static final MemorySegment szOID_EV_WHQL_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.39");
+    static final MemorySegment szOID_BIOMETRIC_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.41");
+    static final MemorySegment szOID_ENCLAVE_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.42");
 }
 
 

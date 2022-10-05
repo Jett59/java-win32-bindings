@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$843 {
 
-    static final MemorySegment szOID_ENROLL_EK_CA_KEYID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.43");
-    static final MemorySegment szOID_ATTR_SUPPORTED_ALGORITHMS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.52");
-    static final MemorySegment szOID_ATTR_TPM_SPECIFICATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.16");
-    static final MemorySegment szOID_ATTR_PLATFORM_SPECIFICATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.17");
-    static final MemorySegment szOID_ATTR_TPM_SECURITY_ASSERTIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.18");
-    static final MemorySegment szOID_PKIX_ACC_DESCR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48");
+    static final MemorySegment szOID_MICROSOFT_PUBLISHER_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.76.8.1");
+    static final MemorySegment szOID_YESNO_TRUST_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.4.1");
+    static final MemorySegment szOID_SITE_PIN_RULES_INDEX_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.4.2");
+    static final MemorySegment szOID_SITE_PIN_RULES_FLAGS_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.4.3");
+    static final MemorySegment szOID_PKIX_POLICY_QUALIFIER_CPS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.2.1");
+    static final MemorySegment szOID_PKIX_POLICY_QUALIFIER_USERNOTICE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.2.2");
 }
 
 

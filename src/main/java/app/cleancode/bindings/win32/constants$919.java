@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$919 {
 
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_MAX_OBJECTS_BEFORE_RECYCLE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationMaxobjsBeforeRecycle");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_IDLE_TIMEOUT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationIdleTimeout");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_EXECUTION_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationExecutionPolicy");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_OVERRIDE_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationOverrideCompat");
-    static final MemorySegment SPLREG_PRINT_QUEUE_V4_DRIVER_DIRECTORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintQueueV4DriverDirectory");
-    static final MemorySegment SPLDS_SPOOLER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsSpooler");
+    static final MemorySegment STORAGE_DEVICE_TELEMETRY_REGKEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
+    static final MemorySegment TC_PUBLIC_DATA_TYPE_ATAGP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ATAGPLogPages");
+    static final MemorySegment TC_PUBLIC_DATA_TYPE_ATASMART$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ATASMARTPages");
+    static final MemorySegment SCARD_ALL_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$AllReaders");
+    static final MemorySegment SCARD_DEFAULT_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$DefaultReaders");
+    static final MemorySegment SCARD_LOCAL_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$LocalReaders");
 }
 
 

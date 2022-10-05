@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$859 {
 
-    static final MemorySegment szOID_PKCS_7_ENVELOPED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.3");
-    static final MemorySegment szOID_PKCS_7_SIGNEDANDENVELOPED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.4");
-    static final MemorySegment szOID_PKCS_7_DIGESTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.5");
-    static final MemorySegment szOID_PKCS_7_ENCRYPTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.6");
-    static final MemorySegment szOID_PKCS_9_CONTENT_TYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.3");
-    static final MemorySegment szOID_PKCS_9_MESSAGE_DIGEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.4");
+    static final MemorySegment szOID_LOYALTY_OTHER_LOGOTYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.20.1");
+    static final MemorySegment szOID_BACKGROUND_OTHER_LOGOTYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.20.2");
+    static final MemorySegment szOID_PKIX_OCSP_BASIC_SIGNED_RESPONSE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1.1");
+    static final MemorySegment CRYPT_OID_ENCODE_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllEncodeObject");
+    static final MemorySegment CRYPT_OID_DECODE_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllDecodeObject");
+    static final MemorySegment CRYPT_OID_ENCODE_OBJECT_EX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllEncodeObjectEx");
 }
 
 

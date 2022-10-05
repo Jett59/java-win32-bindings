@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$885 {
 
-    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS_A$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS_W$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS$ADDR = MemoryAddress.ofLong(1L);
-    static final MemorySegment SCHEME_OID_RETRIEVE_ENCODED_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchemeDllRetrieveEncodedObject");
-    static final MemorySegment SCHEME_OID_RETRIEVE_ENCODED_OBJECTW_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchemeDllRetrieveEncodedObjectW");
-    static final MemorySegment CONTEXT_OID_CREATE_OBJECT_CONTEXT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ContextDllCreateObjectContext");
+    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_LIST_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment CERT_PIN_RULES_AUTO_UPDATE_SYNC_DELTA_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
+    static final MemorySegment CERT_PIN_RULES_AUTO_UPDATE_LAST_SYNC_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
+    static final MemorySegment CERT_PIN_RULES_AUTO_UPDATE_ENCODED_CTL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
+    static final MemorySegment CERT_PIN_RULES_CTL_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("p");
+    static final MemorySegment CERT_PIN_RULES_CTL_FILENAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("pinrules.stl");
 }
 
 

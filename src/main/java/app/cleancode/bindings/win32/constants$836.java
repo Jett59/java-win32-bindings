@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$836 {
 
-    static final MemorySegment szOID_HPKP_DOMAIN_NAME_CTL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.60");
-    static final MemorySegment szOID_HPKP_HEADER_VALUE_CTL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.61");
-    static final MemorySegment szOID_KP_KERNEL_MODE_HAL_EXTENSION_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.61.5.1");
-    static final MemorySegment szOID_WINDOWS_STORE_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.76.3.1");
-    static final MemorySegment szOID_DYNAMIC_CODE_GEN_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.76.5.1");
-    static final MemorySegment szOID_MICROSOFT_PUBLISHER_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.76.8.1");
+    static final MemorySegment szOID_EMBEDDED_NT_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.8");
+    static final MemorySegment szOID_ROOT_LIST_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.9");
+    static final MemorySegment szOID_KP_QUALIFIED_SUBORDINATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.10");
+    static final MemorySegment szOID_KP_KEY_RECOVERY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.11");
+    static final MemorySegment szOID_KP_DOCUMENT_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.12");
+    static final MemorySegment szOID_KP_LIFETIME_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.13");
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$816 {
 
-    static final MemorySegment szOID_CRL_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.20");
-    static final MemorySegment szOID_DELTA_CRL_INDICATOR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.27");
-    static final MemorySegment szOID_ISSUING_DIST_POINT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.28");
-    static final MemorySegment szOID_FRESHEST_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.46");
-    static final MemorySegment szOID_NAME_CONSTRAINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.30");
-    static final MemorySegment szOID_POLICY_MAPPINGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.33");
+    static final MemoryAddress X509_OBJECT_IDENTIFIER$ADDR = MemoryAddress.ofLong(73L);
+    static final MemoryAddress X509_ALGORITHM_IDENTIFIER$ADDR = MemoryAddress.ofLong(74L);
+    static final MemoryAddress PKCS_RSA_SSA_PSS_PARAMETERS$ADDR = MemoryAddress.ofLong(75L);
+    static final MemoryAddress PKCS_RSAES_OAEP_PARAMETERS$ADDR = MemoryAddress.ofLong(76L);
+    static final MemoryAddress ECC_CMS_SHARED_INFO$ADDR = MemoryAddress.ofLong(77L);
+    static final MemoryAddress TIMESTAMP_REQUEST$ADDR = MemoryAddress.ofLong(78L);
 }
 
 

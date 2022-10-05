@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$927 {
 
-    static final MemorySegment SPLDS_PRIORITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("priority");
-    static final MemorySegment SPLDS_SERVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("serverName");
-    static final MemorySegment SPLDS_SHORT_SERVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("shortServerName");
-    static final MemorySegment SPLDS_UNC_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("uNCName");
-    static final MemorySegment SPLDS_URL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("url");
-    static final MemorySegment SPLDS_FLAGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("flags");
+    static final MemorySegment SPLDS_DRIVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("driverName");
+    static final MemorySegment SPLDS_DRIVER_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("driverVersion");
+    static final MemorySegment SPLDS_LOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("location");
+    static final MemorySegment SPLDS_PORT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("portName");
+    static final MemorySegment SPLDS_PRINT_ATTRIBUTES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printAttributes");
+    static final MemorySegment SPLDS_PRINT_BIN_NAMES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printBinNames");
 }
 
 

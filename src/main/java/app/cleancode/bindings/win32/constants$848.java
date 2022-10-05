@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$848 {
 
-    static final MemorySegment szOID_NETSCAPE_SSL_SERVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.12");
-    static final MemorySegment szOID_NETSCAPE_COMMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1.13");
-    static final MemorySegment szOID_NETSCAPE_DATA_TYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.2");
-    static final MemorySegment szOID_NETSCAPE_CERT_SEQUENCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.2.5");
-    static final MemorySegment szOID_CT_PKI_DATA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.12.2");
-    static final MemorySegment szOID_CT_PKI_RESPONSE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.12.3");
+    static final MemorySegment szOID_ENROLL_SCEP_SERVER_STATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.34");
+    static final MemorySegment szOID_ENROLL_SCEP_CHALLENGE_ANSWER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.35");
+    static final MemorySegment szOID_ENROLL_SCEP_CLIENT_REQUEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.37");
+    static final MemorySegment szOID_ENROLL_SCEP_SERVER_MESSAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.38");
+    static final MemorySegment szOID_ENROLL_SCEP_SERVER_SECRET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.40");
+    static final MemorySegment szOID_ENROLL_KEY_AFFINITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.41");
 }
 
 

@@ -9,6 +9,669 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_19 extends WINDOWS_18 {
 
+    public static int ACCESS_MAX_MS_ACE_TYPE() {
+        return (int)8L;
+    }
+    public static int ACCESS_ALLOWED_CALLBACK_ACE_TYPE() {
+        return (int)9L;
+    }
+    public static int ACCESS_DENIED_CALLBACK_ACE_TYPE() {
+        return (int)10L;
+    }
+    public static int ACCESS_ALLOWED_CALLBACK_OBJECT_ACE_TYPE() {
+        return (int)11L;
+    }
+    public static int ACCESS_DENIED_CALLBACK_OBJECT_ACE_TYPE() {
+        return (int)12L;
+    }
+    public static int SYSTEM_AUDIT_CALLBACK_ACE_TYPE() {
+        return (int)13L;
+    }
+    public static int SYSTEM_ALARM_CALLBACK_ACE_TYPE() {
+        return (int)14L;
+    }
+    public static int SYSTEM_AUDIT_CALLBACK_OBJECT_ACE_TYPE() {
+        return (int)15L;
+    }
+    public static int SYSTEM_ALARM_CALLBACK_OBJECT_ACE_TYPE() {
+        return (int)16L;
+    }
+    public static int SYSTEM_MANDATORY_LABEL_ACE_TYPE() {
+        return (int)17L;
+    }
+    public static int SYSTEM_RESOURCE_ATTRIBUTE_ACE_TYPE() {
+        return (int)18L;
+    }
+    public static int SYSTEM_SCOPED_POLICY_ID_ACE_TYPE() {
+        return (int)19L;
+    }
+    public static int SYSTEM_PROCESS_TRUST_LABEL_ACE_TYPE() {
+        return (int)20L;
+    }
+    public static int SYSTEM_ACCESS_FILTER_ACE_TYPE() {
+        return (int)21L;
+    }
+    public static int ACCESS_MAX_MS_V5_ACE_TYPE() {
+        return (int)21L;
+    }
+    public static int OBJECT_INHERIT_ACE() {
+        return (int)1L;
+    }
+    public static int CONTAINER_INHERIT_ACE() {
+        return (int)2L;
+    }
+    public static int NO_PROPAGATE_INHERIT_ACE() {
+        return (int)4L;
+    }
+    public static int INHERIT_ONLY_ACE() {
+        return (int)8L;
+    }
+    public static int INHERITED_ACE() {
+        return (int)16L;
+    }
+    public static int VALID_INHERIT_FLAGS() {
+        return (int)31L;
+    }
+    public static int CRITICAL_ACE_FLAG() {
+        return (int)32L;
+    }
+    public static int SUCCESSFUL_ACCESS_ACE_FLAG() {
+        return (int)64L;
+    }
+    public static int FAILED_ACCESS_ACE_FLAG() {
+        return (int)128L;
+    }
+    public static int TRUST_PROTECTED_FILTER_ACE_FLAG() {
+        return (int)64L;
+    }
+    public static int SYSTEM_MANDATORY_LABEL_VALID_MASK() {
+        return (int)7L;
+    }
+    public static int SYSTEM_PROCESS_TRUST_NOCONSTRAINT_MASK() {
+        return (int)4294967295L;
+    }
+    public static int SYSTEM_ACCESS_FILTER_NOCONSTRAINT_MASK() {
+        return (int)4294967295L;
+    }
+    public static int SECURITY_DESCRIPTOR_REVISION() {
+        return (int)1L;
+    }
+    public static int SECURITY_DESCRIPTOR_REVISION1() {
+        return (int)1L;
+    }
+    public static long SECURITY_DESCRIPTOR_MIN_LENGTH() {
+        return 40L;
+    }
+    public static int SE_OWNER_DEFAULTED() {
+        return (int)1L;
+    }
+    public static int SE_GROUP_DEFAULTED() {
+        return (int)2L;
+    }
+    public static int SE_DACL_PRESENT() {
+        return (int)4L;
+    }
+    public static int SE_DACL_DEFAULTED() {
+        return (int)8L;
+    }
+    public static int SE_SACL_PRESENT() {
+        return (int)16L;
+    }
+    public static int SE_SACL_DEFAULTED() {
+        return (int)32L;
+    }
+    public static int SE_DACL_AUTO_INHERIT_REQ() {
+        return (int)256L;
+    }
+    public static int SE_SACL_AUTO_INHERIT_REQ() {
+        return (int)512L;
+    }
+    public static int SE_DACL_AUTO_INHERITED() {
+        return (int)1024L;
+    }
+    public static int SE_SACL_AUTO_INHERITED() {
+        return (int)2048L;
+    }
+    public static int SE_DACL_PROTECTED() {
+        return (int)4096L;
+    }
+    public static int SE_SACL_PROTECTED() {
+        return (int)8192L;
+    }
+    public static int SE_RM_CONTROL_VALID() {
+        return (int)16384L;
+    }
+    public static int SE_SELF_RELATIVE() {
+        return (int)32768L;
+    }
+    public static MemorySegment ACCESS_DS_SOURCE_A() {
+        return constants$726.ACCESS_DS_SOURCE_A$SEGMENT;
+    }
+    public static MemorySegment ACCESS_DS_SOURCE_W() {
+        return constants$727.ACCESS_DS_SOURCE_W$SEGMENT;
+    }
+    public static MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_A() {
+        return constants$727.ACCESS_DS_OBJECT_TYPE_NAME_A$SEGMENT;
+    }
+    public static MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_W() {
+        return constants$727.ACCESS_DS_OBJECT_TYPE_NAME_W$SEGMENT;
+    }
+    public static int SE_PRIVILEGE_ENABLED_BY_DEFAULT() {
+        return (int)1L;
+    }
+    public static int SE_PRIVILEGE_ENABLED() {
+        return (int)2L;
+    }
+    public static int SE_PRIVILEGE_REMOVED() {
+        return (int)4L;
+    }
+    public static int SE_PRIVILEGE_USED_FOR_ACCESS() {
+        return (int)2147483648L;
+    }
+    public static int SE_PRIVILEGE_VALID_ATTRIBUTES() {
+        return (int)2147483655L;
+    }
+    public static int PRIVILEGE_SET_ALL_NECESSARY() {
+        return (int)1L;
+    }
+    public static int ACCESS_REASON_STAGING_MASK() {
+        return (int)2147483648L;
+    }
+    public static MemorySegment SE_CREATE_TOKEN_NAME() {
+        return constants$727.SE_CREATE_TOKEN_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_ASSIGNPRIMARYTOKEN_NAME() {
+        return constants$727.SE_ASSIGNPRIMARYTOKEN_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_LOCK_MEMORY_NAME() {
+        return constants$727.SE_LOCK_MEMORY_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_INCREASE_QUOTA_NAME() {
+        return constants$728.SE_INCREASE_QUOTA_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_UNSOLICITED_INPUT_NAME() {
+        return constants$728.SE_UNSOLICITED_INPUT_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_MACHINE_ACCOUNT_NAME() {
+        return constants$728.SE_MACHINE_ACCOUNT_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_TCB_NAME() {
+        return constants$728.SE_TCB_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_SECURITY_NAME() {
+        return constants$728.SE_SECURITY_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_TAKE_OWNERSHIP_NAME() {
+        return constants$728.SE_TAKE_OWNERSHIP_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_LOAD_DRIVER_NAME() {
+        return constants$729.SE_LOAD_DRIVER_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_SYSTEM_PROFILE_NAME() {
+        return constants$729.SE_SYSTEM_PROFILE_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_SYSTEMTIME_NAME() {
+        return constants$729.SE_SYSTEMTIME_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_PROF_SINGLE_PROCESS_NAME() {
+        return constants$729.SE_PROF_SINGLE_PROCESS_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_INC_BASE_PRIORITY_NAME() {
+        return constants$729.SE_INC_BASE_PRIORITY_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_CREATE_PAGEFILE_NAME() {
+        return constants$729.SE_CREATE_PAGEFILE_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_CREATE_PERMANENT_NAME() {
+        return constants$730.SE_CREATE_PERMANENT_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_BACKUP_NAME() {
+        return constants$730.SE_BACKUP_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_RESTORE_NAME() {
+        return constants$730.SE_RESTORE_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_SHUTDOWN_NAME() {
+        return constants$730.SE_SHUTDOWN_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_DEBUG_NAME() {
+        return constants$730.SE_DEBUG_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_AUDIT_NAME() {
+        return constants$730.SE_AUDIT_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_SYSTEM_ENVIRONMENT_NAME() {
+        return constants$731.SE_SYSTEM_ENVIRONMENT_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_CHANGE_NOTIFY_NAME() {
+        return constants$731.SE_CHANGE_NOTIFY_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_REMOTE_SHUTDOWN_NAME() {
+        return constants$731.SE_REMOTE_SHUTDOWN_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_UNDOCK_NAME() {
+        return constants$731.SE_UNDOCK_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_SYNC_AGENT_NAME() {
+        return constants$731.SE_SYNC_AGENT_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_ENABLE_DELEGATION_NAME() {
+        return constants$731.SE_ENABLE_DELEGATION_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_MANAGE_VOLUME_NAME() {
+        return constants$732.SE_MANAGE_VOLUME_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_IMPERSONATE_NAME() {
+        return constants$732.SE_IMPERSONATE_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_CREATE_GLOBAL_NAME() {
+        return constants$732.SE_CREATE_GLOBAL_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_TRUSTED_CREDMAN_ACCESS_NAME() {
+        return constants$732.SE_TRUSTED_CREDMAN_ACCESS_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_RELABEL_NAME() {
+        return constants$732.SE_RELABEL_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_INC_WORKING_SET_NAME() {
+        return constants$732.SE_INC_WORKING_SET_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_TIME_ZONE_NAME() {
+        return constants$733.SE_TIME_ZONE_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_CREATE_SYMBOLIC_LINK_NAME() {
+        return constants$733.SE_CREATE_SYMBOLIC_LINK_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME() {
+        return constants$733.SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME$SEGMENT;
+    }
+    public static MemorySegment SE_ACTIVATE_AS_USER_CAPABILITY() {
+        return constants$733.SE_ACTIVATE_AS_USER_CAPABILITY$SEGMENT;
+    }
+    public static MemorySegment SE_CONSTRAINED_IMPERSONATION_CAPABILITY() {
+        return constants$733.SE_CONSTRAINED_IMPERSONATION_CAPABILITY$SEGMENT;
+    }
+    public static MemorySegment SE_SESSION_IMPERSONATION_CAPABILITY() {
+        return constants$733.SE_SESSION_IMPERSONATION_CAPABILITY$SEGMENT;
+    }
+    public static MemorySegment SE_MUMA_CAPABILITY() {
+        return constants$734.SE_MUMA_CAPABILITY$SEGMENT;
+    }
+    public static MemorySegment SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY() {
+        return constants$734.SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY$SEGMENT;
+    }
+    public static int SECURITY_MAX_IMPERSONATION_LEVEL() {
+        return (int)3L;
+    }
+    public static int SECURITY_MIN_IMPERSONATION_LEVEL() {
+        return (int)0L;
+    }
+    public static int DEFAULT_IMPERSONATION_LEVEL() {
+        return (int)2L;
+    }
+    public static int TOKEN_ASSIGN_PRIMARY() {
+        return (int)1L;
+    }
+    public static int TOKEN_DUPLICATE() {
+        return (int)2L;
+    }
+    public static int TOKEN_IMPERSONATE() {
+        return (int)4L;
+    }
+    public static int TOKEN_QUERY() {
+        return (int)8L;
+    }
+    public static int TOKEN_QUERY_SOURCE() {
+        return (int)16L;
+    }
+    public static int TOKEN_ADJUST_PRIVILEGES() {
+        return (int)32L;
+    }
+    public static int TOKEN_ADJUST_GROUPS() {
+        return (int)64L;
+    }
+    public static int TOKEN_ADJUST_DEFAULT() {
+        return (int)128L;
+    }
+    public static int TOKEN_ADJUST_SESSIONID() {
+        return (int)256L;
+    }
+    public static int TOKEN_ALL_ACCESS_P() {
+        return (int)983295L;
+    }
+    public static int TOKEN_ALL_ACCESS() {
+        return (int)983551L;
+    }
+    public static int TOKEN_READ() {
+        return (int)131080L;
+    }
+    public static int TOKEN_WRITE() {
+        return (int)131296L;
+    }
+    public static int TOKEN_EXECUTE() {
+        return (int)131072L;
+    }
+    public static int TOKEN_TRUST_CONSTRAINT_MASK() {
+        return (int)131096L;
+    }
+    public static int TOKEN_ACCESS_PSEUDO_HANDLE_WIN8() {
+        return (int)24L;
+    }
+    public static int TOKEN_ACCESS_PSEUDO_HANDLE() {
+        return (int)24L;
+    }
+    public static long TOKEN_USER_MAX_SIZE() {
+        return 84L;
+    }
+    public static long TOKEN_OWNER_MAX_SIZE() {
+        return 76L;
+    }
+    public static int TOKEN_MANDATORY_POLICY_VALID_MASK() {
+        return (int)3L;
+    }
+    public static long TOKEN_INTEGRITY_LEVEL_MAX_SIZE() {
+        return 84L;
+    }
+    public static int POLICY_AUDIT_SUBCATEGORY_COUNT() {
+        return (int)59L;
+    }
+    public static long TOKEN_APPCONTAINER_SID_MAX_SIZE() {
+        return 76L;
+    }
+    public static int CLAIM_SECURITY_ATTRIBUTE_VALID_FLAGS() {
+        return (int)63L;
+    }
+    public static int CLAIM_SECURITY_ATTRIBUTE_CUSTOM_FLAGS() {
+        return (int)4294901760L;
+    }
+    public static int CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION() {
+        return (int)1L;
+    }
+    public static int SECURITY_DYNAMIC_TRACKING() {
+        return (int)1L;
+    }
+    public static int SECURITY_STATIC_TRACKING() {
+        return (int)0L;
+    }
+    public static int OWNER_SECURITY_INFORMATION() {
+        return (int)1L;
+    }
+    public static int GROUP_SECURITY_INFORMATION() {
+        return (int)2L;
+    }
+    public static int DACL_SECURITY_INFORMATION() {
+        return (int)4L;
+    }
+    public static int SACL_SECURITY_INFORMATION() {
+        return (int)8L;
+    }
+    public static int LABEL_SECURITY_INFORMATION() {
+        return (int)16L;
+    }
+    public static int ATTRIBUTE_SECURITY_INFORMATION() {
+        return (int)32L;
+    }
+    public static int SCOPE_SECURITY_INFORMATION() {
+        return (int)64L;
+    }
+    public static int PROCESS_TRUST_LABEL_SECURITY_INFORMATION() {
+        return (int)128L;
+    }
+    public static int ACCESS_FILTER_SECURITY_INFORMATION() {
+        return (int)256L;
+    }
+    public static int BACKUP_SECURITY_INFORMATION() {
+        return (int)65536L;
+    }
+    public static int PROTECTED_DACL_SECURITY_INFORMATION() {
+        return (int)2147483648L;
+    }
+    public static int PROTECTED_SACL_SECURITY_INFORMATION() {
+        return (int)1073741824L;
+    }
+    public static int UNPROTECTED_DACL_SECURITY_INFORMATION() {
+        return (int)536870912L;
+    }
+    public static int UNPROTECTED_SACL_SECURITY_INFORMATION() {
+        return (int)268435456L;
+    }
+    public static int SE_SIGNING_LEVEL_DEVELOPER() {
+        return (int)3L;
+    }
+    public static int SE_SIGNING_LEVEL_ANTIMALWARE() {
+        return (int)7L;
+    }
+    public static int PROCESS_TERMINATE() {
+        return (int)1L;
+    }
+    public static int PROCESS_CREATE_THREAD() {
+        return (int)2L;
+    }
+    public static int PROCESS_SET_SESSIONID() {
+        return (int)4L;
+    }
+    public static int PROCESS_VM_OPERATION() {
+        return (int)8L;
+    }
+    public static int PROCESS_VM_READ() {
+        return (int)16L;
+    }
+    public static int PROCESS_VM_WRITE() {
+        return (int)32L;
+    }
+    public static int PROCESS_DUP_HANDLE() {
+        return (int)64L;
+    }
+    public static int PROCESS_CREATE_PROCESS() {
+        return (int)128L;
+    }
+    public static int PROCESS_SET_QUOTA() {
+        return (int)256L;
+    }
+    public static int PROCESS_SET_INFORMATION() {
+        return (int)512L;
+    }
+    public static int PROCESS_QUERY_INFORMATION() {
+        return (int)1024L;
+    }
+    public static int PROCESS_SUSPEND_RESUME() {
+        return (int)2048L;
+    }
+    public static int PROCESS_QUERY_LIMITED_INFORMATION() {
+        return (int)4096L;
+    }
+    public static int PROCESS_SET_LIMITED_INFORMATION() {
+        return (int)8192L;
+    }
+    public static int PROCESS_ALL_ACCESS() {
+        return (int)2097151L;
+    }
+    public static int THREAD_TERMINATE() {
+        return (int)1L;
+    }
+    public static int THREAD_SUSPEND_RESUME() {
+        return (int)2L;
+    }
+    public static int THREAD_GET_CONTEXT() {
+        return (int)8L;
+    }
+    public static int THREAD_SET_CONTEXT() {
+        return (int)16L;
+    }
+    public static int THREAD_QUERY_INFORMATION() {
+        return (int)64L;
+    }
+    public static int THREAD_SET_INFORMATION() {
+        return (int)32L;
+    }
+    public static int THREAD_SET_THREAD_TOKEN() {
+        return (int)128L;
+    }
+    public static int THREAD_IMPERSONATE() {
+        return (int)256L;
+    }
+    public static int THREAD_DIRECT_IMPERSONATION() {
+        return (int)512L;
+    }
+    public static int THREAD_SET_LIMITED_INFORMATION() {
+        return (int)1024L;
+    }
+    public static int THREAD_QUERY_LIMITED_INFORMATION() {
+        return (int)2048L;
+    }
+    public static int THREAD_RESUME() {
+        return (int)4096L;
+    }
+    public static int THREAD_ALL_ACCESS() {
+        return (int)2097151L;
+    }
+    public static int JOB_OBJECT_ASSIGN_PROCESS() {
+        return (int)1L;
+    }
+    public static int JOB_OBJECT_SET_ATTRIBUTES() {
+        return (int)2L;
+    }
+    public static int JOB_OBJECT_QUERY() {
+        return (int)4L;
+    }
+    public static int JOB_OBJECT_TERMINATE() {
+        return (int)8L;
+    }
+    public static int JOB_OBJECT_SET_SECURITY_ATTRIBUTES() {
+        return (int)16L;
+    }
+    public static int JOB_OBJECT_IMPERSONATE() {
+        return (int)32L;
+    }
+    public static int JOB_OBJECT_ALL_ACCESS() {
+        return (int)2031679L;
+    }
+    public static int THREAD_BASE_PRIORITY_MIN() {
+        return (int)-2L;
+    }
+    public static int THREAD_BASE_PRIORITY_IDLE() {
+        return (int)-15L;
+    }
+    public static int DYNAMIC_EH_CONTINUATION_TARGET_ADD() {
+        return (int)1L;
+    }
+    public static int DYNAMIC_EH_CONTINUATION_TARGET_PROCESSED() {
+        return (int)2L;
+    }
+    public static int DYNAMIC_ENFORCED_ADDRESS_RANGE_ADD() {
+        return (int)1L;
+    }
+    public static int DYNAMIC_ENFORCED_ADDRESS_RANGE_PROCESSED() {
+        return (int)2L;
+    }
+    public static int JOB_OBJECT_VALID_COMPLETION_FILTER() {
+        return (int)16382L;
+    }
+    public static int JOB_OBJECT_LIMIT_JOB_MEMORY_HIGH() {
+        return (int)512L;
+    }
+    public static int JOB_OBJECT_LIMIT_CPU_RATE_CONTROL() {
+        return (int)262144L;
+    }
+    public static int JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS() {
+        return (int)2064900L;
+    }
+    public static int EVENT_ALL_ACCESS() {
+        return (int)2031619L;
+    }
+    public static int MUTANT_ALL_ACCESS() {
+        return (int)2031617L;
+    }
+    public static int SEMAPHORE_ALL_ACCESS() {
+        return (int)2031619L;
+    }
+    public static int TIMER_ALL_ACCESS() {
+        return (int)2031619L;
+    }
+    public static int XSTATE_LEGACY_FLOATING_POINT() {
+        return (int)0L;
+    }
+    public static int XSTATE_LEGACY_SSE() {
+        return (int)1L;
+    }
+    public static int XSTATE_GSSE() {
+        return (int)2L;
+    }
+    public static int XSTATE_AVX() {
+        return (int)2L;
+    }
+    public static int XSTATE_MPX_BNDREGS() {
+        return (int)3L;
+    }
+    public static int XSTATE_MPX_BNDCSR() {
+        return (int)4L;
+    }
+    public static int XSTATE_AVX512_KMASK() {
+        return (int)5L;
+    }
+    public static int XSTATE_AVX512_ZMM_H() {
+        return (int)6L;
+    }
+    public static int XSTATE_AVX512_ZMM() {
+        return (int)7L;
+    }
+    public static int XSTATE_IPT() {
+        return (int)8L;
+    }
+    public static int XSTATE_CET_U() {
+        return (int)11L;
+    }
+    public static int XSTATE_LWP() {
+        return (int)62L;
+    }
+    public static int MAXIMUM_XSTATE_FEATURES() {
+        return (int)64L;
+    }
+    public static long XSTATE_MASK_LEGACY_FLOATING_POINT() {
+        return 1L;
+    }
+    public static long XSTATE_MASK_LEGACY_SSE() {
+        return 2L;
+    }
+    public static long XSTATE_MASK_LEGACY() {
+        return 3L;
+    }
+    public static long XSTATE_MASK_GSSE() {
+        return 4L;
+    }
+    public static long XSTATE_MASK_AVX() {
+        return 4L;
+    }
+    public static long XSTATE_MASK_MPX() {
+        return 24L;
+    }
+    public static long XSTATE_MASK_AVX512() {
+        return 224L;
+    }
+    public static long XSTATE_MASK_IPT() {
+        return 256L;
+    }
+    public static long XSTATE_MASK_CET_U() {
+        return 2048L;
+    }
+    public static long XSTATE_MASK_LWP() {
+        return 4611686018427387904L;
+    }
+    public static long XSTATE_MASK_ALLOWED() {
+        return 4611686018427390463L;
+    }
+    public static long XSTATE_MASK_PERSISTENT() {
+        return 4611686018427387920L;
+    }
+    public static long XSTATE_MASK_USER_VISIBLE_SUPERVISOR() {
+        return 2048L;
+    }
+    public static int XSTATE_COMPACTION_ENABLE() {
+        return (int)63L;
+    }
+    public static long XSTATE_COMPACTION_ENABLE_MASK() {
+        return -9223372036854775808L;
+    }
     public static int XSTATE_ALIGN_BIT() {
         return (int)1L;
     }
@@ -289,7 +952,7 @@ import static java.lang.foreign.ValueLayout.*;
         return 1000000000L;
     }
     public static MemorySegment SMB_CCF_APP_INSTANCE_EA_NAME() {
-        return constants$728.SMB_CCF_APP_INSTANCE_EA_NAME$SEGMENT;
+        return constants$734.SMB_CCF_APP_INSTANCE_EA_NAME$SEGMENT;
     }
     public static int PERFSTATE_POLICY_CHANGE_DECREASE_MAX() {
         return (int)2L;
@@ -388,22 +1051,22 @@ import static java.lang.foreign.ValueLayout.*;
         return (byte)255L;
     }
     public static MemorySegment IMAGE_ARCHIVE_START() {
-        return constants$728.IMAGE_ARCHIVE_START$SEGMENT;
+        return constants$734.IMAGE_ARCHIVE_START$SEGMENT;
     }
     public static MemorySegment IMAGE_ARCHIVE_END() {
-        return constants$728.IMAGE_ARCHIVE_END$SEGMENT;
+        return constants$734.IMAGE_ARCHIVE_END$SEGMENT;
     }
     public static MemorySegment IMAGE_ARCHIVE_PAD() {
-        return constants$728.IMAGE_ARCHIVE_PAD$SEGMENT;
+        return constants$734.IMAGE_ARCHIVE_PAD$SEGMENT;
     }
     public static MemorySegment IMAGE_ARCHIVE_LINKER_MEMBER() {
-        return constants$728.IMAGE_ARCHIVE_LINKER_MEMBER$SEGMENT;
+        return constants$735.IMAGE_ARCHIVE_LINKER_MEMBER$SEGMENT;
     }
     public static MemorySegment IMAGE_ARCHIVE_LONGNAMES_MEMBER() {
-        return constants$729.IMAGE_ARCHIVE_LONGNAMES_MEMBER$SEGMENT;
+        return constants$735.IMAGE_ARCHIVE_LONGNAMES_MEMBER$SEGMENT;
     }
     public static MemorySegment IMAGE_ARCHIVE_HYBRIDMAP_MEMBER() {
-        return constants$729.IMAGE_ARCHIVE_HYBRIDMAP_MEMBER$SEGMENT;
+        return constants$735.IMAGE_ARCHIVE_HYBRIDMAP_MEMBER$SEGMENT;
     }
     public static long IMAGE_ORDINAL_FLAG64() {
         return -9223372036854775808L;
@@ -550,7 +1213,7 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)128L;
     }
     public static MemorySegment IMAGE_POLICY_SECTION_NAME() {
-        return constants$729.IMAGE_POLICY_SECTION_NAME$SEGMENT;
+        return constants$735.IMAGE_POLICY_SECTION_NAME$SEGMENT;
     }
     public static int RTL_CRITICAL_SECTION_ALL_FLAG_BITS() {
         return (int)4278190080L;
@@ -571,16 +1234,16 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)4L;
     }
     public static MemorySegment UNIFIEDBUILDREVISION_KEY() {
-        return constants$729.UNIFIEDBUILDREVISION_KEY$SEGMENT;
+        return constants$735.UNIFIEDBUILDREVISION_KEY$SEGMENT;
     }
     public static MemorySegment UNIFIEDBUILDREVISION_VALUE() {
-        return constants$729.UNIFIEDBUILDREVISION_VALUE$SEGMENT;
+        return constants$735.UNIFIEDBUILDREVISION_VALUE$SEGMENT;
     }
     public static MemorySegment DEVICEFAMILYDEVICEFORM_KEY() {
-        return constants$729.DEVICEFAMILYDEVICEFORM_KEY$SEGMENT;
+        return constants$736.DEVICEFAMILYDEVICEFORM_KEY$SEGMENT;
     }
     public static MemorySegment DEVICEFAMILYDEVICEFORM_VALUE() {
-        return constants$730.DEVICEFAMILYDEVICEFORM_VALUE$SEGMENT;
+        return constants$736.DEVICEFAMILYDEVICEFORM_VALUE$SEGMENT;
     }
     public static int KEY_QUERY_VALUE() {
         return (int)1L;
@@ -1162,19 +1825,19 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)1L;
     }
     public static MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE() {
-        return constants$730.DPI_AWARENESS_CONTEXT_UNAWARE$ADDR;
+        return constants$736.DPI_AWARENESS_CONTEXT_UNAWARE$ADDR;
     }
     public static MemoryAddress DPI_AWARENESS_CONTEXT_SYSTEM_AWARE() {
-        return constants$730.DPI_AWARENESS_CONTEXT_SYSTEM_AWARE$ADDR;
+        return constants$736.DPI_AWARENESS_CONTEXT_SYSTEM_AWARE$ADDR;
     }
     public static MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE() {
-        return constants$730.DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE$ADDR;
+        return constants$736.DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE$ADDR;
     }
     public static MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2() {
-        return constants$730.DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2$ADDR;
+        return constants$736.DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2$ADDR;
     }
     public static MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED() {
-        return constants$730.DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED$ADDR;
+        return constants$737.DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED$ADDR;
     }
     public static int STILL_ACTIVE() {
         return (int)259L;
@@ -1273,7 +1936,7 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)4294967295L;
     }
     public static MemoryAddress INVALID_HANDLE_VALUE() {
-        return constants$731.INVALID_HANDLE_VALUE$ADDR;
+        return constants$737.INVALID_HANDLE_VALUE$ADDR;
     }
     public static int FLS_OUT_OF_INDEXES() {
         return (int)4294967295L;
@@ -2233,31 +2896,31 @@ import static java.lang.foreign.ValueLayout.*;
         return 206158430208L;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_A() {
-        return constants$731.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_A$SEGMENT;
+        return constants$737.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_A$SEGMENT;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_W() {
-        return constants$731.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_W$SEGMENT;
+        return constants$737.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_W$SEGMENT;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_T() {
-        return constants$731.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_T$SEGMENT;
+        return constants$737.GET_SYSTEM_WOW64_DIRECTORY_NAME_A_T$SEGMENT;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_A() {
-        return constants$731.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_A$SEGMENT;
+        return constants$737.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_A$SEGMENT;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_W() {
-        return constants$731.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_W$SEGMENT;
+        return constants$738.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_W$SEGMENT;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T() {
-        return constants$732.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T$SEGMENT;
+        return constants$738.GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T$SEGMENT;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A() {
-        return constants$732.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A$SEGMENT;
+        return constants$738.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A$SEGMENT;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W() {
-        return constants$732.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W$SEGMENT;
+        return constants$738.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W$SEGMENT;
     }
     public static MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T() {
-        return constants$732.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T$SEGMENT;
+        return constants$738.GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T$SEGMENT;
     }
     public static int BASE_SEARCH_PATH_INVALID_FLAGS() {
         return (int)-98306L;
@@ -2345,669 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int ERROR_NO_MORE_FILES() {
         return (int)18L;
-    }
-    public static int ERROR_WRITE_PROTECT() {
-        return (int)19L;
-    }
-    public static int ERROR_BAD_UNIT() {
-        return (int)20L;
-    }
-    public static int ERROR_NOT_READY() {
-        return (int)21L;
-    }
-    public static int ERROR_BAD_COMMAND() {
-        return (int)22L;
-    }
-    public static int ERROR_CRC() {
-        return (int)23L;
-    }
-    public static int ERROR_BAD_LENGTH() {
-        return (int)24L;
-    }
-    public static int ERROR_SEEK() {
-        return (int)25L;
-    }
-    public static int ERROR_NOT_DOS_DISK() {
-        return (int)26L;
-    }
-    public static int ERROR_SECTOR_NOT_FOUND() {
-        return (int)27L;
-    }
-    public static int ERROR_OUT_OF_PAPER() {
-        return (int)28L;
-    }
-    public static int ERROR_WRITE_FAULT() {
-        return (int)29L;
-    }
-    public static int ERROR_READ_FAULT() {
-        return (int)30L;
-    }
-    public static int ERROR_GEN_FAILURE() {
-        return (int)31L;
-    }
-    public static int ERROR_SHARING_VIOLATION() {
-        return (int)32L;
-    }
-    public static int ERROR_LOCK_VIOLATION() {
-        return (int)33L;
-    }
-    public static int ERROR_WRONG_DISK() {
-        return (int)34L;
-    }
-    public static int ERROR_SHARING_BUFFER_EXCEEDED() {
-        return (int)36L;
-    }
-    public static int ERROR_HANDLE_EOF() {
-        return (int)38L;
-    }
-    public static int ERROR_HANDLE_DISK_FULL() {
-        return (int)39L;
-    }
-    public static int ERROR_NOT_SUPPORTED() {
-        return (int)50L;
-    }
-    public static int ERROR_REM_NOT_LIST() {
-        return (int)51L;
-    }
-    public static int ERROR_DUP_NAME() {
-        return (int)52L;
-    }
-    public static int ERROR_BAD_NETPATH() {
-        return (int)53L;
-    }
-    public static int ERROR_NETWORK_BUSY() {
-        return (int)54L;
-    }
-    public static int ERROR_DEV_NOT_EXIST() {
-        return (int)55L;
-    }
-    public static int ERROR_TOO_MANY_CMDS() {
-        return (int)56L;
-    }
-    public static int ERROR_ADAP_HDW_ERR() {
-        return (int)57L;
-    }
-    public static int ERROR_BAD_NET_RESP() {
-        return (int)58L;
-    }
-    public static int ERROR_UNEXP_NET_ERR() {
-        return (int)59L;
-    }
-    public static int ERROR_BAD_REM_ADAP() {
-        return (int)60L;
-    }
-    public static int ERROR_PRINTQ_FULL() {
-        return (int)61L;
-    }
-    public static int ERROR_NO_SPOOL_SPACE() {
-        return (int)62L;
-    }
-    public static int ERROR_PRINT_CANCELLED() {
-        return (int)63L;
-    }
-    public static int ERROR_NETNAME_DELETED() {
-        return (int)64L;
-    }
-    public static int ERROR_NETWORK_ACCESS_DENIED() {
-        return (int)65L;
-    }
-    public static int ERROR_BAD_DEV_TYPE() {
-        return (int)66L;
-    }
-    public static int ERROR_BAD_NET_NAME() {
-        return (int)67L;
-    }
-    public static int ERROR_TOO_MANY_NAMES() {
-        return (int)68L;
-    }
-    public static int ERROR_TOO_MANY_SESS() {
-        return (int)69L;
-    }
-    public static int ERROR_SHARING_PAUSED() {
-        return (int)70L;
-    }
-    public static int ERROR_REQ_NOT_ACCEP() {
-        return (int)71L;
-    }
-    public static int ERROR_REDIR_PAUSED() {
-        return (int)72L;
-    }
-    public static int ERROR_FILE_EXISTS() {
-        return (int)80L;
-    }
-    public static int ERROR_CANNOT_MAKE() {
-        return (int)82L;
-    }
-    public static int ERROR_FAIL_I24() {
-        return (int)83L;
-    }
-    public static int ERROR_OUT_OF_STRUCTURES() {
-        return (int)84L;
-    }
-    public static int ERROR_ALREADY_ASSIGNED() {
-        return (int)85L;
-    }
-    public static int ERROR_INVALID_PASSWORD() {
-        return (int)86L;
-    }
-    public static int ERROR_INVALID_PARAMETER() {
-        return (int)87L;
-    }
-    public static int ERROR_NET_WRITE_FAULT() {
-        return (int)88L;
-    }
-    public static int ERROR_NO_PROC_SLOTS() {
-        return (int)89L;
-    }
-    public static int ERROR_TOO_MANY_SEMAPHORES() {
-        return (int)100L;
-    }
-    public static int ERROR_EXCL_SEM_ALREADY_OWNED() {
-        return (int)101L;
-    }
-    public static int ERROR_SEM_IS_SET() {
-        return (int)102L;
-    }
-    public static int ERROR_TOO_MANY_SEM_REQUESTS() {
-        return (int)103L;
-    }
-    public static int ERROR_INVALID_AT_INTERRUPT_TIME() {
-        return (int)104L;
-    }
-    public static int ERROR_SEM_OWNER_DIED() {
-        return (int)105L;
-    }
-    public static int ERROR_SEM_USER_LIMIT() {
-        return (int)106L;
-    }
-    public static int ERROR_DISK_CHANGE() {
-        return (int)107L;
-    }
-    public static int ERROR_DRIVE_LOCKED() {
-        return (int)108L;
-    }
-    public static int ERROR_BROKEN_PIPE() {
-        return (int)109L;
-    }
-    public static int ERROR_OPEN_FAILED() {
-        return (int)110L;
-    }
-    public static int ERROR_BUFFER_OVERFLOW() {
-        return (int)111L;
-    }
-    public static int ERROR_DISK_FULL() {
-        return (int)112L;
-    }
-    public static int ERROR_NO_MORE_SEARCH_HANDLES() {
-        return (int)113L;
-    }
-    public static int ERROR_INVALID_TARGET_HANDLE() {
-        return (int)114L;
-    }
-    public static int ERROR_INVALID_CATEGORY() {
-        return (int)117L;
-    }
-    public static int ERROR_INVALID_VERIFY_SWITCH() {
-        return (int)118L;
-    }
-    public static int ERROR_BAD_DRIVER_LEVEL() {
-        return (int)119L;
-    }
-    public static int ERROR_CALL_NOT_IMPLEMENTED() {
-        return (int)120L;
-    }
-    public static int ERROR_SEM_TIMEOUT() {
-        return (int)121L;
-    }
-    public static int ERROR_INSUFFICIENT_BUFFER() {
-        return (int)122L;
-    }
-    public static int ERROR_INVALID_NAME() {
-        return (int)123L;
-    }
-    public static int ERROR_INVALID_LEVEL() {
-        return (int)124L;
-    }
-    public static int ERROR_NO_VOLUME_LABEL() {
-        return (int)125L;
-    }
-    public static int ERROR_MOD_NOT_FOUND() {
-        return (int)126L;
-    }
-    public static int ERROR_PROC_NOT_FOUND() {
-        return (int)127L;
-    }
-    public static int ERROR_WAIT_NO_CHILDREN() {
-        return (int)128L;
-    }
-    public static int ERROR_CHILD_NOT_COMPLETE() {
-        return (int)129L;
-    }
-    public static int ERROR_DIRECT_ACCESS_HANDLE() {
-        return (int)130L;
-    }
-    public static int ERROR_NEGATIVE_SEEK() {
-        return (int)131L;
-    }
-    public static int ERROR_SEEK_ON_DEVICE() {
-        return (int)132L;
-    }
-    public static int ERROR_IS_JOIN_TARGET() {
-        return (int)133L;
-    }
-    public static int ERROR_IS_JOINED() {
-        return (int)134L;
-    }
-    public static int ERROR_IS_SUBSTED() {
-        return (int)135L;
-    }
-    public static int ERROR_NOT_JOINED() {
-        return (int)136L;
-    }
-    public static int ERROR_NOT_SUBSTED() {
-        return (int)137L;
-    }
-    public static int ERROR_JOIN_TO_JOIN() {
-        return (int)138L;
-    }
-    public static int ERROR_SUBST_TO_SUBST() {
-        return (int)139L;
-    }
-    public static int ERROR_JOIN_TO_SUBST() {
-        return (int)140L;
-    }
-    public static int ERROR_SUBST_TO_JOIN() {
-        return (int)141L;
-    }
-    public static int ERROR_BUSY_DRIVE() {
-        return (int)142L;
-    }
-    public static int ERROR_SAME_DRIVE() {
-        return (int)143L;
-    }
-    public static int ERROR_DIR_NOT_ROOT() {
-        return (int)144L;
-    }
-    public static int ERROR_DIR_NOT_EMPTY() {
-        return (int)145L;
-    }
-    public static int ERROR_IS_SUBST_PATH() {
-        return (int)146L;
-    }
-    public static int ERROR_IS_JOIN_PATH() {
-        return (int)147L;
-    }
-    public static int ERROR_PATH_BUSY() {
-        return (int)148L;
-    }
-    public static int ERROR_IS_SUBST_TARGET() {
-        return (int)149L;
-    }
-    public static int ERROR_SYSTEM_TRACE() {
-        return (int)150L;
-    }
-    public static int ERROR_INVALID_EVENT_COUNT() {
-        return (int)151L;
-    }
-    public static int ERROR_TOO_MANY_MUXWAITERS() {
-        return (int)152L;
-    }
-    public static int ERROR_INVALID_LIST_FORMAT() {
-        return (int)153L;
-    }
-    public static int ERROR_LABEL_TOO_LONG() {
-        return (int)154L;
-    }
-    public static int ERROR_TOO_MANY_TCBS() {
-        return (int)155L;
-    }
-    public static int ERROR_SIGNAL_REFUSED() {
-        return (int)156L;
-    }
-    public static int ERROR_DISCARDED() {
-        return (int)157L;
-    }
-    public static int ERROR_NOT_LOCKED() {
-        return (int)158L;
-    }
-    public static int ERROR_BAD_THREADID_ADDR() {
-        return (int)159L;
-    }
-    public static int ERROR_BAD_ARGUMENTS() {
-        return (int)160L;
-    }
-    public static int ERROR_BAD_PATHNAME() {
-        return (int)161L;
-    }
-    public static int ERROR_SIGNAL_PENDING() {
-        return (int)162L;
-    }
-    public static int ERROR_MAX_THRDS_REACHED() {
-        return (int)164L;
-    }
-    public static int ERROR_LOCK_FAILED() {
-        return (int)167L;
-    }
-    public static int ERROR_BUSY() {
-        return (int)170L;
-    }
-    public static int ERROR_DEVICE_SUPPORT_IN_PROGRESS() {
-        return (int)171L;
-    }
-    public static int ERROR_CANCEL_VIOLATION() {
-        return (int)173L;
-    }
-    public static int ERROR_ATOMIC_LOCKS_NOT_SUPPORTED() {
-        return (int)174L;
-    }
-    public static int ERROR_INVALID_SEGMENT_NUMBER() {
-        return (int)180L;
-    }
-    public static int ERROR_INVALID_ORDINAL() {
-        return (int)182L;
-    }
-    public static int ERROR_ALREADY_EXISTS() {
-        return (int)183L;
-    }
-    public static int ERROR_INVALID_FLAG_NUMBER() {
-        return (int)186L;
-    }
-    public static int ERROR_SEM_NOT_FOUND() {
-        return (int)187L;
-    }
-    public static int ERROR_INVALID_STARTING_CODESEG() {
-        return (int)188L;
-    }
-    public static int ERROR_INVALID_STACKSEG() {
-        return (int)189L;
-    }
-    public static int ERROR_INVALID_MODULETYPE() {
-        return (int)190L;
-    }
-    public static int ERROR_INVALID_EXE_SIGNATURE() {
-        return (int)191L;
-    }
-    public static int ERROR_EXE_MARKED_INVALID() {
-        return (int)192L;
-    }
-    public static int ERROR_BAD_EXE_FORMAT() {
-        return (int)193L;
-    }
-    public static int ERROR_ITERATED_DATA_EXCEEDS_64k() {
-        return (int)194L;
-    }
-    public static int ERROR_INVALID_MINALLOCSIZE() {
-        return (int)195L;
-    }
-    public static int ERROR_DYNLINK_FROM_INVALID_RING() {
-        return (int)196L;
-    }
-    public static int ERROR_IOPL_NOT_ENABLED() {
-        return (int)197L;
-    }
-    public static int ERROR_INVALID_SEGDPL() {
-        return (int)198L;
-    }
-    public static int ERROR_AUTODATASEG_EXCEEDS_64k() {
-        return (int)199L;
-    }
-    public static int ERROR_RING2SEG_MUST_BE_MOVABLE() {
-        return (int)200L;
-    }
-    public static int ERROR_RELOC_CHAIN_XEEDS_SEGLIM() {
-        return (int)201L;
-    }
-    public static int ERROR_INFLOOP_IN_RELOC_CHAIN() {
-        return (int)202L;
-    }
-    public static int ERROR_ENVVAR_NOT_FOUND() {
-        return (int)203L;
-    }
-    public static int ERROR_NO_SIGNAL_SENT() {
-        return (int)205L;
-    }
-    public static int ERROR_FILENAME_EXCED_RANGE() {
-        return (int)206L;
-    }
-    public static int ERROR_RING2_STACK_IN_USE() {
-        return (int)207L;
-    }
-    public static int ERROR_META_EXPANSION_TOO_LONG() {
-        return (int)208L;
-    }
-    public static int ERROR_INVALID_SIGNAL_NUMBER() {
-        return (int)209L;
-    }
-    public static int ERROR_THREAD_1_INACTIVE() {
-        return (int)210L;
-    }
-    public static int ERROR_LOCKED() {
-        return (int)212L;
-    }
-    public static int ERROR_TOO_MANY_MODULES() {
-        return (int)214L;
-    }
-    public static int ERROR_NESTING_NOT_ALLOWED() {
-        return (int)215L;
-    }
-    public static int ERROR_EXE_MACHINE_TYPE_MISMATCH() {
-        return (int)216L;
-    }
-    public static int ERROR_EXE_CANNOT_MODIFY_SIGNED_BINARY() {
-        return (int)217L;
-    }
-    public static int ERROR_EXE_CANNOT_MODIFY_STRONG_SIGNED_BINARY() {
-        return (int)218L;
-    }
-    public static int ERROR_FILE_CHECKED_OUT() {
-        return (int)220L;
-    }
-    public static int ERROR_CHECKOUT_REQUIRED() {
-        return (int)221L;
-    }
-    public static int ERROR_BAD_FILE_TYPE() {
-        return (int)222L;
-    }
-    public static int ERROR_FILE_TOO_LARGE() {
-        return (int)223L;
-    }
-    public static int ERROR_FORMS_AUTH_REQUIRED() {
-        return (int)224L;
-    }
-    public static int ERROR_VIRUS_INFECTED() {
-        return (int)225L;
-    }
-    public static int ERROR_VIRUS_DELETED() {
-        return (int)226L;
-    }
-    public static int ERROR_PIPE_LOCAL() {
-        return (int)229L;
-    }
-    public static int ERROR_BAD_PIPE() {
-        return (int)230L;
-    }
-    public static int ERROR_PIPE_BUSY() {
-        return (int)231L;
-    }
-    public static int ERROR_NO_DATA() {
-        return (int)232L;
-    }
-    public static int ERROR_PIPE_NOT_CONNECTED() {
-        return (int)233L;
-    }
-    public static int ERROR_MORE_DATA() {
-        return (int)234L;
-    }
-    public static int ERROR_NO_WORK_DONE() {
-        return (int)235L;
-    }
-    public static int ERROR_VC_DISCONNECTED() {
-        return (int)240L;
-    }
-    public static int ERROR_INVALID_EA_NAME() {
-        return (int)254L;
-    }
-    public static int ERROR_EA_LIST_INCONSISTENT() {
-        return (int)255L;
-    }
-    public static int WAIT_TIMEOUT() {
-        return (int)258L;
-    }
-    public static int ERROR_NO_MORE_ITEMS() {
-        return (int)259L;
-    }
-    public static int ERROR_CANNOT_COPY() {
-        return (int)266L;
-    }
-    public static int ERROR_DIRECTORY() {
-        return (int)267L;
-    }
-    public static int ERROR_EAS_DIDNT_FIT() {
-        return (int)275L;
-    }
-    public static int ERROR_EA_FILE_CORRUPT() {
-        return (int)276L;
-    }
-    public static int ERROR_EA_TABLE_FULL() {
-        return (int)277L;
-    }
-    public static int ERROR_INVALID_EA_HANDLE() {
-        return (int)278L;
-    }
-    public static int ERROR_EAS_NOT_SUPPORTED() {
-        return (int)282L;
-    }
-    public static int ERROR_NOT_OWNER() {
-        return (int)288L;
-    }
-    public static int ERROR_TOO_MANY_POSTS() {
-        return (int)298L;
-    }
-    public static int ERROR_PARTIAL_COPY() {
-        return (int)299L;
-    }
-    public static int ERROR_OPLOCK_NOT_GRANTED() {
-        return (int)300L;
-    }
-    public static int ERROR_INVALID_OPLOCK_PROTOCOL() {
-        return (int)301L;
-    }
-    public static int ERROR_DISK_TOO_FRAGMENTED() {
-        return (int)302L;
-    }
-    public static int ERROR_DELETE_PENDING() {
-        return (int)303L;
-    }
-    public static int ERROR_INCOMPATIBLE_WITH_GLOBAL_SHORT_NAME_REGISTRY_SETTING() {
-        return (int)304L;
-    }
-    public static int ERROR_SHORT_NAMES_NOT_ENABLED_ON_VOLUME() {
-        return (int)305L;
-    }
-    public static int ERROR_SECURITY_STREAM_IS_INCONSISTENT() {
-        return (int)306L;
-    }
-    public static int ERROR_INVALID_LOCK_RANGE() {
-        return (int)307L;
-    }
-    public static int ERROR_IMAGE_SUBSYSTEM_NOT_PRESENT() {
-        return (int)308L;
-    }
-    public static int ERROR_NOTIFICATION_GUID_ALREADY_DEFINED() {
-        return (int)309L;
-    }
-    public static int ERROR_INVALID_EXCEPTION_HANDLER() {
-        return (int)310L;
-    }
-    public static int ERROR_DUPLICATE_PRIVILEGES() {
-        return (int)311L;
-    }
-    public static int ERROR_NO_RANGES_PROCESSED() {
-        return (int)312L;
-    }
-    public static int ERROR_NOT_ALLOWED_ON_SYSTEM_FILE() {
-        return (int)313L;
-    }
-    public static int ERROR_DISK_RESOURCES_EXHAUSTED() {
-        return (int)314L;
-    }
-    public static int ERROR_INVALID_TOKEN() {
-        return (int)315L;
-    }
-    public static int ERROR_DEVICE_FEATURE_NOT_SUPPORTED() {
-        return (int)316L;
-    }
-    public static int ERROR_MR_MID_NOT_FOUND() {
-        return (int)317L;
-    }
-    public static int ERROR_SCOPE_NOT_FOUND() {
-        return (int)318L;
-    }
-    public static int ERROR_UNDEFINED_SCOPE() {
-        return (int)319L;
-    }
-    public static int ERROR_INVALID_CAP() {
-        return (int)320L;
-    }
-    public static int ERROR_DEVICE_UNREACHABLE() {
-        return (int)321L;
-    }
-    public static int ERROR_DEVICE_NO_RESOURCES() {
-        return (int)322L;
-    }
-    public static int ERROR_DATA_CHECKSUM_ERROR() {
-        return (int)323L;
-    }
-    public static int ERROR_INTERMIXED_KERNEL_EA_OPERATION() {
-        return (int)324L;
-    }
-    public static int ERROR_FILE_LEVEL_TRIM_NOT_SUPPORTED() {
-        return (int)326L;
-    }
-    public static int ERROR_OFFSET_ALIGNMENT_VIOLATION() {
-        return (int)327L;
-    }
-    public static int ERROR_INVALID_FIELD_IN_PARAMETER_LIST() {
-        return (int)328L;
-    }
-    public static int ERROR_OPERATION_IN_PROGRESS() {
-        return (int)329L;
-    }
-    public static int ERROR_BAD_DEVICE_PATH() {
-        return (int)330L;
-    }
-    public static int ERROR_TOO_MANY_DESCRIPTORS() {
-        return (int)331L;
-    }
-    public static int ERROR_SCRUB_DATA_DISABLED() {
-        return (int)332L;
-    }
-    public static int ERROR_NOT_REDUNDANT_STORAGE() {
-        return (int)333L;
-    }
-    public static int ERROR_RESIDENT_FILE_NOT_SUPPORTED() {
-        return (int)334L;
-    }
-    public static int ERROR_COMPRESSED_FILE_NOT_SUPPORTED() {
-        return (int)335L;
-    }
-    public static int ERROR_DIRECTORY_NOT_SUPPORTED() {
-        return (int)336L;
-    }
-    public static int ERROR_NOT_READ_FROM_COPY() {
-        return (int)337L;
-    }
-    public static int ERROR_FT_WRITE_FAILURE() {
-        return (int)338L;
-    }
-    public static int ERROR_FT_DI_SCAN_REQUIRED() {
-        return (int)339L;
-    }
-    public static int ERROR_INVALID_KERNEL_INFO_VERSION() {
-        return (int)340L;
-    }
-    public static int ERROR_INVALID_PEP_INFO_VERSION() {
-        return (int)341L;
     }
 }
 

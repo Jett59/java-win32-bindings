@@ -9,6 +9,16 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_12 extends WINDOWS_11 {
 
+    public static OfAddress PAPP_MEMORY_INFORMATION = Constants$root.C_POINTER$LAYOUT;
+    public static int PMETypeFailFastOnCommitFailure() {
+        return (int)0L;
+    }
+    public static int PMETypeMax() {
+        return (int)1L;
+    }
+    public static OfAddress PPROCESS_MEMORY_EXHAUSTION_TYPE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_MEMORY_EXHAUSTION_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPROCESS_POWER_THROTTLING_STATE = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress PPROCESS_LEAP_SECOND_INFO = Constants$root.C_POINTER$LAYOUT;
     public static MethodHandle SetProcessInformation$MH() {
         return RuntimeHelper.requireNonNull(constants$125.SetProcessInformation$MH,"SetProcessInformation");
@@ -8877,12 +8887,6 @@ import static java.lang.foreign.ValueLayout.*;
     public static OfAddress PNEWTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress NPNEWTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress LPNEWTEXTMETRICW = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPELARRAY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress NPPELARRAY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress LPPELARRAY = Constants$root.C_POINTER$LAYOUT;
 }
 
 

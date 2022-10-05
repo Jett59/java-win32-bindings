@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$807 {
 
-    static final MemoryAddress X509_POLICY_MAPPINGS$ADDR = MemoryAddress.ofLong(56L);
-    static final MemoryAddress X509_POLICY_CONSTRAINTS$ADDR = MemoryAddress.ofLong(57L);
-    static final MemoryAddress X509_CROSS_CERT_DIST_POINTS$ADDR = MemoryAddress.ofLong(58L);
-    static final MemoryAddress CMC_DATA$ADDR = MemoryAddress.ofLong(59L);
-    static final MemoryAddress CMC_RESPONSE$ADDR = MemoryAddress.ofLong(60L);
-    static final MemoryAddress CMC_STATUS$ADDR = MemoryAddress.ofLong(61L);
+    static final MemoryAddress X509_OCTET_STRING$ADDR = MemoryAddress.ofLong(25L);
+    static final MemoryAddress X509_BITS$ADDR = MemoryAddress.ofLong(26L);
+    static final MemoryAddress X509_INTEGER$ADDR = MemoryAddress.ofLong(27L);
+    static final MemoryAddress X509_MULTI_BYTE_INTEGER$ADDR = MemoryAddress.ofLong(28L);
+    static final MemoryAddress X509_ENUMERATED$ADDR = MemoryAddress.ofLong(29L);
+    static final MemoryAddress X509_CHOICE_OF_TIME$ADDR = MemoryAddress.ofLong(30L);
 }
 
 

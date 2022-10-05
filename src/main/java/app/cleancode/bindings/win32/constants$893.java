@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$893 {
 
-    static final MemorySegment CERT_CHAIN_MAX_AIA_URL_RETRIEVAL_BYTE_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_MAX_AIA_URL_RETRIEVAL_CERT_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_OCSP_VALIDITY_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("O");
-    static final MemorySegment CERT_CHAIN_DISABLE_SERIAL_CHAIN_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_CHAIN_SERIAL_CHAIN_LOG_FILE_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_DISABLE_SYNC_WITH_SSL_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemoryAddress CONTEXT_OID_OCSP_RESP$ADDR = MemoryAddress.ofLong(6L);
+    static final MemoryAddress CRYPT_PARAM_ASYNC_RETRIEVAL_COMPLETION$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress CRYPT_PARAM_CANCEL_ASYNC_RETRIEVAL$ADDR = MemoryAddress.ofLong(2L);
+    static final MemorySegment URL_OID_GET_OBJECT_URL_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("UrlDllGetObjectUrl");
+    static final MemoryAddress URL_OID_CERTIFICATE_ISSUER$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress URL_OID_CERTIFICATE_CRL_DIST_POINT$ADDR = MemoryAddress.ofLong(2L);
 }
 
 

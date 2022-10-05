@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$833 {
 
-    static final MemorySegment szOID_WINDOWS_KITS_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.20");
-    static final MemorySegment szOID_WINDOWS_RT_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.21");
-    static final MemorySegment szOID_PROTECTED_PROCESS_LIGHT_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.22");
-    static final MemorySegment szOID_WINDOWS_TCB_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.23");
-    static final MemorySegment szOID_PROTECTED_PROCESS_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.24");
-    static final MemorySegment szOID_WINDOWS_THIRD_PARTY_COMPONENT_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.25");
+    static final MemorySegment szOID_PKIX_KP_IPSEC_TUNNEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.6");
+    static final MemorySegment szOID_PKIX_KP_IPSEC_USER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.7");
+    static final MemorySegment szOID_PKIX_KP_TIMESTAMP_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.8");
+    static final MemorySegment szOID_PKIX_KP_OCSP_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.9");
+    static final MemorySegment szOID_PKIX_OCSP_NOCHECK$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1.5");
+    static final MemorySegment szOID_PKIX_OCSP_NONCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1.2");
 }
 
 

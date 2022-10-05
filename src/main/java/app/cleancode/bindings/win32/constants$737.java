@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$737 {
 
-    static final MemoryAddress MINIMUM_RESERVED_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(16L);
-    static final MemoryAddress SETWALLPAPER_DEFAULT$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemoryAddress HWND_BROADCAST$ADDR = MemoryAddress.ofLong(65535L);
-    static final MemoryAddress HWND_MESSAGE$ADDR = MemoryAddress.ofLong(-3L);
-    static final MemoryAddress HWND_DESKTOP$ADDR = MemoryAddress.ofLong(0L);
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED$ADDR = MemoryAddress.ofLong(-5L);
+    static final MemoryAddress INVALID_HANDLE_VALUE$ADDR = MemoryAddress.ofLong(-1L);
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
+    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryW");
 }
 
 

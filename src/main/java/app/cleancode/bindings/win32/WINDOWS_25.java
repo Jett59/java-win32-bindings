@@ -9,6 +9,669 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_25 extends WINDOWS_24 {
 
+    public static int TPM_E_PCP_INTERNAL_ERROR() {
+        return (int)-2144795641L;
+    }
+    public static int TPM_E_PCP_AUTHENTICATION_FAILED() {
+        return (int)-2144795640L;
+    }
+    public static int TPM_E_PCP_AUTHENTICATION_IGNORED() {
+        return (int)-2144795639L;
+    }
+    public static int TPM_E_PCP_POLICY_NOT_FOUND() {
+        return (int)-2144795638L;
+    }
+    public static int TPM_E_PCP_PROFILE_NOT_FOUND() {
+        return (int)-2144795637L;
+    }
+    public static int TPM_E_PCP_VALIDATION_FAILED() {
+        return (int)-2144795636L;
+    }
+    public static int TPM_E_PCP_WRONG_PARENT() {
+        return (int)-2144795634L;
+    }
+    public static int TPM_E_KEY_NOT_LOADED() {
+        return (int)-2144795633L;
+    }
+    public static int TPM_E_NO_KEY_CERTIFICATION() {
+        return (int)-2144795632L;
+    }
+    public static int TPM_E_KEY_NOT_FINALIZED() {
+        return (int)-2144795631L;
+    }
+    public static int TPM_E_ATTESTATION_CHALLENGE_NOT_SET() {
+        return (int)-2144795630L;
+    }
+    public static int TPM_E_NOT_PCR_BOUND() {
+        return (int)-2144795629L;
+    }
+    public static int TPM_E_KEY_ALREADY_FINALIZED() {
+        return (int)-2144795628L;
+    }
+    public static int TPM_E_KEY_USAGE_POLICY_NOT_SUPPORTED() {
+        return (int)-2144795627L;
+    }
+    public static int TPM_E_KEY_USAGE_POLICY_INVALID() {
+        return (int)-2144795626L;
+    }
+    public static int TPM_E_SOFT_KEY_ERROR() {
+        return (int)-2144795625L;
+    }
+    public static int TPM_E_KEY_NOT_AUTHENTICATED() {
+        return (int)-2144795624L;
+    }
+    public static int TPM_E_PCP_KEY_NOT_AIK() {
+        return (int)-2144795623L;
+    }
+    public static int TPM_E_KEY_NOT_SIGNING_KEY() {
+        return (int)-2144795622L;
+    }
+    public static int TPM_E_LOCKED_OUT() {
+        return (int)-2144795621L;
+    }
+    public static int TPM_E_CLAIM_TYPE_NOT_SUPPORTED() {
+        return (int)-2144795620L;
+    }
+    public static int TPM_E_VERSION_NOT_SUPPORTED() {
+        return (int)-2144795619L;
+    }
+    public static int TPM_E_BUFFER_LENGTH_MISMATCH() {
+        return (int)-2144795618L;
+    }
+    public static int TPM_E_PCP_IFX_RSA_KEY_CREATION_BLOCKED() {
+        return (int)-2144795617L;
+    }
+    public static int TPM_E_PCP_TICKET_MISSING() {
+        return (int)-2144795616L;
+    }
+    public static int TPM_E_PCP_RAW_POLICY_NOT_SUPPORTED() {
+        return (int)-2144795615L;
+    }
+    public static int TPM_E_PCP_KEY_HANDLE_INVALIDATED() {
+        return (int)-2144795614L;
+    }
+    public static int TPM_E_PCP_UNSUPPORTED_PSS_SALT() {
+        return (int)1076429859L;
+    }
+    public static int TPM_E_PCP_PLATFORM_CLAIM_MAY_BE_OUTDATED() {
+        return (int)1076429860L;
+    }
+    public static int TPM_E_PCP_PLATFORM_CLAIM_OUTDATED() {
+        return (int)1076429861L;
+    }
+    public static int TPM_E_PCP_PLATFORM_CLAIM_REBOOT() {
+        return (int)1076429862L;
+    }
+    public static int TPM_E_ZERO_EXHAUST_ENABLED() {
+        return (int)-2144795392L;
+    }
+    public static int TPM_E_PROVISIONING_INCOMPLETE() {
+        return (int)-2144795136L;
+    }
+    public static int TPM_E_INVALID_OWNER_AUTH() {
+        return (int)-2144795135L;
+    }
+    public static int TPM_E_TOO_MUCH_DATA() {
+        return (int)-2144795134L;
+    }
+    public static int PLA_E_DCS_NOT_FOUND() {
+        return (int)-2144337918L;
+    }
+    public static int PLA_E_DCS_IN_USE() {
+        return (int)-2144337750L;
+    }
+    public static int PLA_E_TOO_MANY_FOLDERS() {
+        return (int)-2144337851L;
+    }
+    public static int PLA_E_NO_MIN_DISK() {
+        return (int)-2144337808L;
+    }
+    public static int PLA_E_DCS_ALREADY_EXISTS() {
+        return (int)-2144337737L;
+    }
+    public static int PLA_S_PROPERTY_IGNORED() {
+        return (int)3145984L;
+    }
+    public static int PLA_E_PROPERTY_CONFLICT() {
+        return (int)-2144337663L;
+    }
+    public static int PLA_E_DCS_SINGLETON_REQUIRED() {
+        return (int)-2144337662L;
+    }
+    public static int PLA_E_CREDENTIALS_REQUIRED() {
+        return (int)-2144337661L;
+    }
+    public static int PLA_E_DCS_NOT_RUNNING() {
+        return (int)-2144337660L;
+    }
+    public static int PLA_E_CONFLICT_INCL_EXCL_API() {
+        return (int)-2144337659L;
+    }
+    public static int PLA_E_NETWORK_EXE_NOT_VALID() {
+        return (int)-2144337658L;
+    }
+    public static int PLA_E_EXE_ALREADY_CONFIGURED() {
+        return (int)-2144337657L;
+    }
+    public static int PLA_E_EXE_PATH_NOT_VALID() {
+        return (int)-2144337656L;
+    }
+    public static int PLA_E_DC_ALREADY_EXISTS() {
+        return (int)-2144337655L;
+    }
+    public static int PLA_E_DCS_START_WAIT_TIMEOUT() {
+        return (int)-2144337654L;
+    }
+    public static int PLA_E_DC_START_WAIT_TIMEOUT() {
+        return (int)-2144337653L;
+    }
+    public static int PLA_E_REPORT_WAIT_TIMEOUT() {
+        return (int)-2144337652L;
+    }
+    public static int PLA_E_NO_DUPLICATES() {
+        return (int)-2144337651L;
+    }
+    public static int PLA_E_EXE_FULL_PATH_REQUIRED() {
+        return (int)-2144337650L;
+    }
+    public static int PLA_E_INVALID_SESSION_NAME() {
+        return (int)-2144337649L;
+    }
+    public static int PLA_E_PLA_CHANNEL_NOT_ENABLED() {
+        return (int)-2144337648L;
+    }
+    public static int PLA_E_TASKSCHED_CHANNEL_NOT_ENABLED() {
+        return (int)-2144337647L;
+    }
+    public static int PLA_E_RULES_MANAGER_FAILED() {
+        return (int)-2144337646L;
+    }
+    public static int PLA_E_CABAPI_FAILURE() {
+        return (int)-2144337645L;
+    }
+    public static int FVE_E_LOCKED_VOLUME() {
+        return (int)-2144272384L;
+    }
+    public static int FVE_E_NOT_ENCRYPTED() {
+        return (int)-2144272383L;
+    }
+    public static int FVE_E_NO_TPM_BIOS() {
+        return (int)-2144272382L;
+    }
+    public static int FVE_E_NO_MBR_METRIC() {
+        return (int)-2144272381L;
+    }
+    public static int FVE_E_NO_BOOTSECTOR_METRIC() {
+        return (int)-2144272380L;
+    }
+    public static int FVE_E_NO_BOOTMGR_METRIC() {
+        return (int)-2144272379L;
+    }
+    public static int FVE_E_WRONG_BOOTMGR() {
+        return (int)-2144272378L;
+    }
+    public static int FVE_E_SECURE_KEY_REQUIRED() {
+        return (int)-2144272377L;
+    }
+    public static int FVE_E_NOT_ACTIVATED() {
+        return (int)-2144272376L;
+    }
+    public static int FVE_E_ACTION_NOT_ALLOWED() {
+        return (int)-2144272375L;
+    }
+    public static int FVE_E_AD_SCHEMA_NOT_INSTALLED() {
+        return (int)-2144272374L;
+    }
+    public static int FVE_E_AD_INVALID_DATATYPE() {
+        return (int)-2144272373L;
+    }
+    public static int FVE_E_AD_INVALID_DATASIZE() {
+        return (int)-2144272372L;
+    }
+    public static int FVE_E_AD_NO_VALUES() {
+        return (int)-2144272371L;
+    }
+    public static int FVE_E_AD_ATTR_NOT_SET() {
+        return (int)-2144272370L;
+    }
+    public static int FVE_E_AD_GUID_NOT_FOUND() {
+        return (int)-2144272369L;
+    }
+    public static int FVE_E_BAD_INFORMATION() {
+        return (int)-2144272368L;
+    }
+    public static int FVE_E_TOO_SMALL() {
+        return (int)-2144272367L;
+    }
+    public static int FVE_E_SYSTEM_VOLUME() {
+        return (int)-2144272366L;
+    }
+    public static int FVE_E_FAILED_WRONG_FS() {
+        return (int)-2144272365L;
+    }
+    public static int FVE_E_BAD_PARTITION_SIZE() {
+        return (int)-2144272364L;
+    }
+    public static int FVE_E_NOT_SUPPORTED() {
+        return (int)-2144272363L;
+    }
+    public static int FVE_E_BAD_DATA() {
+        return (int)-2144272362L;
+    }
+    public static int FVE_E_VOLUME_NOT_BOUND() {
+        return (int)-2144272361L;
+    }
+    public static int FVE_E_TPM_NOT_OWNED() {
+        return (int)-2144272360L;
+    }
+    public static int FVE_E_NOT_DATA_VOLUME() {
+        return (int)-2144272359L;
+    }
+    public static int FVE_E_AD_INSUFFICIENT_BUFFER() {
+        return (int)-2144272358L;
+    }
+    public static int FVE_E_CONV_READ() {
+        return (int)-2144272357L;
+    }
+    public static int FVE_E_CONV_WRITE() {
+        return (int)-2144272356L;
+    }
+    public static int FVE_E_KEY_REQUIRED() {
+        return (int)-2144272355L;
+    }
+    public static int FVE_E_CLUSTERING_NOT_SUPPORTED() {
+        return (int)-2144272354L;
+    }
+    public static int FVE_E_VOLUME_BOUND_ALREADY() {
+        return (int)-2144272353L;
+    }
+    public static int FVE_E_OS_NOT_PROTECTED() {
+        return (int)-2144272352L;
+    }
+    public static int FVE_E_PROTECTION_DISABLED() {
+        return (int)-2144272351L;
+    }
+    public static int FVE_E_RECOVERY_KEY_REQUIRED() {
+        return (int)-2144272350L;
+    }
+    public static int FVE_E_FOREIGN_VOLUME() {
+        return (int)-2144272349L;
+    }
+    public static int FVE_E_OVERLAPPED_UPDATE() {
+        return (int)-2144272348L;
+    }
+    public static int FVE_E_TPM_SRK_AUTH_NOT_ZERO() {
+        return (int)-2144272347L;
+    }
+    public static int FVE_E_FAILED_SECTOR_SIZE() {
+        return (int)-2144272346L;
+    }
+    public static int FVE_E_FAILED_AUTHENTICATION() {
+        return (int)-2144272345L;
+    }
+    public static int FVE_E_NOT_OS_VOLUME() {
+        return (int)-2144272344L;
+    }
+    public static int FVE_E_AUTOUNLOCK_ENABLED() {
+        return (int)-2144272343L;
+    }
+    public static int FVE_E_WRONG_BOOTSECTOR() {
+        return (int)-2144272342L;
+    }
+    public static int FVE_E_WRONG_SYSTEM_FS() {
+        return (int)-2144272341L;
+    }
+    public static int FVE_E_POLICY_PASSWORD_REQUIRED() {
+        return (int)-2144272340L;
+    }
+    public static int FVE_E_CANNOT_SET_FVEK_ENCRYPTED() {
+        return (int)-2144272339L;
+    }
+    public static int FVE_E_CANNOT_ENCRYPT_NO_KEY() {
+        return (int)-2144272338L;
+    }
+    public static int FVE_E_BOOTABLE_CDDVD() {
+        return (int)-2144272336L;
+    }
+    public static int FVE_E_PROTECTOR_EXISTS() {
+        return (int)-2144272335L;
+    }
+    public static int FVE_E_RELATIVE_PATH() {
+        return (int)-2144272334L;
+    }
+    public static int FVE_E_PROTECTOR_NOT_FOUND() {
+        return (int)-2144272333L;
+    }
+    public static int FVE_E_INVALID_KEY_FORMAT() {
+        return (int)-2144272332L;
+    }
+    public static int FVE_E_INVALID_PASSWORD_FORMAT() {
+        return (int)-2144272331L;
+    }
+    public static int FVE_E_FIPS_RNG_CHECK_FAILED() {
+        return (int)-2144272330L;
+    }
+    public static int FVE_E_FIPS_PREVENTS_RECOVERY_PASSWORD() {
+        return (int)-2144272329L;
+    }
+    public static int FVE_E_FIPS_PREVENTS_EXTERNAL_KEY_EXPORT() {
+        return (int)-2144272328L;
+    }
+    public static int FVE_E_NOT_DECRYPTED() {
+        return (int)-2144272327L;
+    }
+    public static int FVE_E_INVALID_PROTECTOR_TYPE() {
+        return (int)-2144272326L;
+    }
+    public static int FVE_E_NO_PROTECTORS_TO_TEST() {
+        return (int)-2144272325L;
+    }
+    public static int FVE_E_KEYFILE_NOT_FOUND() {
+        return (int)-2144272324L;
+    }
+    public static int FVE_E_KEYFILE_INVALID() {
+        return (int)-2144272323L;
+    }
+    public static int FVE_E_KEYFILE_NO_VMK() {
+        return (int)-2144272322L;
+    }
+    public static int FVE_E_TPM_DISABLED() {
+        return (int)-2144272321L;
+    }
+    public static int FVE_E_NOT_ALLOWED_IN_SAFE_MODE() {
+        return (int)-2144272320L;
+    }
+    public static int FVE_E_TPM_INVALID_PCR() {
+        return (int)-2144272319L;
+    }
+    public static int FVE_E_TPM_NO_VMK() {
+        return (int)-2144272318L;
+    }
+    public static int FVE_E_PIN_INVALID() {
+        return (int)-2144272317L;
+    }
+    public static int FVE_E_AUTH_INVALID_APPLICATION() {
+        return (int)-2144272316L;
+    }
+    public static int FVE_E_AUTH_INVALID_CONFIG() {
+        return (int)-2144272315L;
+    }
+    public static int FVE_E_FIPS_DISABLE_PROTECTION_NOT_ALLOWED() {
+        return (int)-2144272314L;
+    }
+    public static int FVE_E_FS_NOT_EXTENDED() {
+        return (int)-2144272313L;
+    }
+    public static int FVE_E_FIRMWARE_TYPE_NOT_SUPPORTED() {
+        return (int)-2144272312L;
+    }
+    public static int FVE_E_NO_LICENSE() {
+        return (int)-2144272311L;
+    }
+    public static int FVE_E_NOT_ON_STACK() {
+        return (int)-2144272310L;
+    }
+    public static int FVE_E_FS_MOUNTED() {
+        return (int)-2144272309L;
+    }
+    public static int FVE_E_TOKEN_NOT_IMPERSONATED() {
+        return (int)-2144272308L;
+    }
+    public static int FVE_E_DRY_RUN_FAILED() {
+        return (int)-2144272307L;
+    }
+    public static int FVE_E_REBOOT_REQUIRED() {
+        return (int)-2144272306L;
+    }
+    public static int FVE_E_DEBUGGER_ENABLED() {
+        return (int)-2144272305L;
+    }
+    public static int FVE_E_RAW_ACCESS() {
+        return (int)-2144272304L;
+    }
+    public static int FVE_E_RAW_BLOCKED() {
+        return (int)-2144272303L;
+    }
+    public static int FVE_E_BCD_APPLICATIONS_PATH_INCORRECT() {
+        return (int)-2144272302L;
+    }
+    public static int FVE_E_NOT_ALLOWED_IN_VERSION() {
+        return (int)-2144272301L;
+    }
+    public static int FVE_E_NO_AUTOUNLOCK_MASTER_KEY() {
+        return (int)-2144272300L;
+    }
+    public static int FVE_E_MOR_FAILED() {
+        return (int)-2144272299L;
+    }
+    public static int FVE_E_HIDDEN_VOLUME() {
+        return (int)-2144272298L;
+    }
+    public static int FVE_E_TRANSIENT_STATE() {
+        return (int)-2144272297L;
+    }
+    public static int FVE_E_PUBKEY_NOT_ALLOWED() {
+        return (int)-2144272296L;
+    }
+    public static int FVE_E_VOLUME_HANDLE_OPEN() {
+        return (int)-2144272295L;
+    }
+    public static int FVE_E_NO_FEATURE_LICENSE() {
+        return (int)-2144272294L;
+    }
+    public static int FVE_E_INVALID_STARTUP_OPTIONS() {
+        return (int)-2144272293L;
+    }
+    public static int FVE_E_POLICY_RECOVERY_PASSWORD_NOT_ALLOWED() {
+        return (int)-2144272292L;
+    }
+    public static int FVE_E_POLICY_RECOVERY_PASSWORD_REQUIRED() {
+        return (int)-2144272291L;
+    }
+    public static int FVE_E_POLICY_RECOVERY_KEY_NOT_ALLOWED() {
+        return (int)-2144272290L;
+    }
+    public static int FVE_E_POLICY_RECOVERY_KEY_REQUIRED() {
+        return (int)-2144272289L;
+    }
+    public static int FVE_E_POLICY_STARTUP_PIN_NOT_ALLOWED() {
+        return (int)-2144272288L;
+    }
+    public static int FVE_E_POLICY_STARTUP_PIN_REQUIRED() {
+        return (int)-2144272287L;
+    }
+    public static int FVE_E_POLICY_STARTUP_KEY_NOT_ALLOWED() {
+        return (int)-2144272286L;
+    }
+    public static int FVE_E_POLICY_STARTUP_KEY_REQUIRED() {
+        return (int)-2144272285L;
+    }
+    public static int FVE_E_POLICY_STARTUP_PIN_KEY_NOT_ALLOWED() {
+        return (int)-2144272284L;
+    }
+    public static int FVE_E_POLICY_STARTUP_PIN_KEY_REQUIRED() {
+        return (int)-2144272283L;
+    }
+    public static int FVE_E_POLICY_STARTUP_TPM_NOT_ALLOWED() {
+        return (int)-2144272282L;
+    }
+    public static int FVE_E_POLICY_STARTUP_TPM_REQUIRED() {
+        return (int)-2144272281L;
+    }
+    public static int FVE_E_POLICY_INVALID_PIN_LENGTH() {
+        return (int)-2144272280L;
+    }
+    public static int FVE_E_KEY_PROTECTOR_NOT_SUPPORTED() {
+        return (int)-2144272279L;
+    }
+    public static int FVE_E_POLICY_PASSPHRASE_NOT_ALLOWED() {
+        return (int)-2144272278L;
+    }
+    public static int FVE_E_POLICY_PASSPHRASE_REQUIRED() {
+        return (int)-2144272277L;
+    }
+    public static int FVE_E_FIPS_PREVENTS_PASSPHRASE() {
+        return (int)-2144272276L;
+    }
+    public static int FVE_E_OS_VOLUME_PASSPHRASE_NOT_ALLOWED() {
+        return (int)-2144272275L;
+    }
+    public static int FVE_E_INVALID_BITLOCKER_OID() {
+        return (int)-2144272274L;
+    }
+    public static int FVE_E_VOLUME_TOO_SMALL() {
+        return (int)-2144272273L;
+    }
+    public static int FVE_E_DV_NOT_SUPPORTED_ON_FS() {
+        return (int)-2144272272L;
+    }
+    public static int FVE_E_DV_NOT_ALLOWED_BY_GP() {
+        return (int)-2144272271L;
+    }
+    public static int FVE_E_POLICY_USER_CERTIFICATE_NOT_ALLOWED() {
+        return (int)-2144272270L;
+    }
+    public static int FVE_E_POLICY_USER_CERTIFICATE_REQUIRED() {
+        return (int)-2144272269L;
+    }
+    public static int FVE_E_POLICY_USER_CERT_MUST_BE_HW() {
+        return (int)-2144272268L;
+    }
+    public static int FVE_E_POLICY_USER_CONFIGURE_FDV_AUTOUNLOCK_NOT_ALLOWED() {
+        return (int)-2144272267L;
+    }
+    public static int FVE_E_POLICY_USER_CONFIGURE_RDV_AUTOUNLOCK_NOT_ALLOWED() {
+        return (int)-2144272266L;
+    }
+    public static int FVE_E_POLICY_USER_CONFIGURE_RDV_NOT_ALLOWED() {
+        return (int)-2144272265L;
+    }
+    public static int FVE_E_POLICY_USER_ENABLE_RDV_NOT_ALLOWED() {
+        return (int)-2144272264L;
+    }
+    public static int FVE_E_POLICY_USER_DISABLE_RDV_NOT_ALLOWED() {
+        return (int)-2144272263L;
+    }
+    public static int FVE_E_POLICY_INVALID_PASSPHRASE_LENGTH() {
+        return (int)-2144272256L;
+    }
+    public static int FVE_E_POLICY_PASSPHRASE_TOO_SIMPLE() {
+        return (int)-2144272255L;
+    }
+    public static int FVE_E_RECOVERY_PARTITION() {
+        return (int)-2144272254L;
+    }
+    public static int FVE_E_POLICY_CONFLICT_FDV_RK_OFF_AUK_ON() {
+        return (int)-2144272253L;
+    }
+    public static int FVE_E_POLICY_CONFLICT_RDV_RK_OFF_AUK_ON() {
+        return (int)-2144272252L;
+    }
+    public static int FVE_E_NON_BITLOCKER_OID() {
+        return (int)-2144272251L;
+    }
+    public static int FVE_E_POLICY_PROHIBITS_SELFSIGNED() {
+        return (int)-2144272250L;
+    }
+    public static int FVE_E_POLICY_CONFLICT_RO_AND_STARTUP_KEY_REQUIRED() {
+        return (int)-2144272249L;
+    }
+    public static int FVE_E_CONV_RECOVERY_FAILED() {
+        return (int)-2144272248L;
+    }
+    public static int FVE_E_VIRTUALIZED_SPACE_TOO_BIG() {
+        return (int)-2144272247L;
+    }
+    public static int FVE_E_POLICY_CONFLICT_OSV_RP_OFF_ADB_ON() {
+        return (int)-2144272240L;
+    }
+    public static int FVE_E_POLICY_CONFLICT_FDV_RP_OFF_ADB_ON() {
+        return (int)-2144272239L;
+    }
+    public static int FVE_E_POLICY_CONFLICT_RDV_RP_OFF_ADB_ON() {
+        return (int)-2144272238L;
+    }
+    public static int FVE_E_NON_BITLOCKER_KU() {
+        return (int)-2144272237L;
+    }
+    public static int FVE_E_PRIVATEKEY_AUTH_FAILED() {
+        return (int)-2144272236L;
+    }
+    public static int FVE_E_REMOVAL_OF_DRA_FAILED() {
+        return (int)-2144272235L;
+    }
+    public static int FVE_E_OPERATION_NOT_SUPPORTED_ON_VISTA_VOLUME() {
+        return (int)-2144272234L;
+    }
+    public static int FVE_E_CANT_LOCK_AUTOUNLOCK_ENABLED_VOLUME() {
+        return (int)-2144272233L;
+    }
+    public static int FVE_E_FIPS_HASH_KDF_NOT_ALLOWED() {
+        return (int)-2144272232L;
+    }
+    public static int FVE_E_ENH_PIN_INVALID() {
+        return (int)-2144272231L;
+    }
+    public static int FVE_E_INVALID_PIN_CHARS() {
+        return (int)-2144272230L;
+    }
+    public static int FVE_E_INVALID_DATUM_TYPE() {
+        return (int)-2144272229L;
+    }
+    public static int FVE_E_EFI_ONLY() {
+        return (int)-2144272228L;
+    }
+    public static int FVE_E_MULTIPLE_NKP_CERTS() {
+        return (int)-2144272227L;
+    }
+    public static int FVE_E_REMOVAL_OF_NKP_FAILED() {
+        return (int)-2144272226L;
+    }
+    public static int FVE_E_INVALID_NKP_CERT() {
+        return (int)-2144272225L;
+    }
+    public static int FVE_E_NO_EXISTING_PIN() {
+        return (int)-2144272224L;
+    }
+    public static int FVE_E_PROTECTOR_CHANGE_PIN_MISMATCH() {
+        return (int)-2144272223L;
+    }
+    public static int FVE_E_PIN_PROTECTOR_CHANGE_BY_STD_USER_DISALLOWED() {
+        return (int)-2144272222L;
+    }
+    public static int FVE_E_PROTECTOR_CHANGE_MAX_PIN_CHANGE_ATTEMPTS_REACHED() {
+        return (int)-2144272221L;
+    }
+    public static int FVE_E_POLICY_PASSPHRASE_REQUIRES_ASCII() {
+        return (int)-2144272220L;
+    }
+    public static int FVE_E_FULL_ENCRYPTION_NOT_ALLOWED_ON_TP_STORAGE() {
+        return (int)-2144272219L;
+    }
+    public static int FVE_E_WIPE_NOT_ALLOWED_ON_TP_STORAGE() {
+        return (int)-2144272218L;
+    }
+    public static int FVE_E_KEY_LENGTH_NOT_SUPPORTED_BY_EDRIVE() {
+        return (int)-2144272217L;
+    }
+    public static int FVE_E_NO_EXISTING_PASSPHRASE() {
+        return (int)-2144272216L;
+    }
+    public static int FVE_E_PROTECTOR_CHANGE_PASSPHRASE_MISMATCH() {
+        return (int)-2144272215L;
+    }
+    public static int FVE_E_PASSPHRASE_TOO_LONG() {
+        return (int)-2144272214L;
+    }
+    public static int FVE_E_NO_PASSPHRASE_WITH_TPM() {
+        return (int)-2144272213L;
+    }
+    public static int FVE_E_NO_TPM_WITH_PASSPHRASE() {
+        return (int)-2144272212L;
+    }
+    public static int FVE_E_NOT_ALLOWED_ON_CSV_STACK() {
+        return (int)-2144272211L;
+    }
     public static int FVE_E_NOT_ALLOWED_ON_CLUSTER() {
         return (int)-2144272210L;
     }
@@ -2345,669 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int E_HDAUDIO_NO_LOGICAL_DEVICES_CREATED() {
         return (int)-2140798972L;
-    }
-    public static int E_HDAUDIO_NULL_LINKED_LIST_ENTRY() {
-        return (int)-2140798971L;
-    }
-    public static int STATEREPOSITORY_E_CONCURRENCY_LOCKING_FAILURE() {
-        return (int)-2140733439L;
-    }
-    public static int STATEREPOSITORY_E_STATEMENT_INPROGRESS() {
-        return (int)-2140733438L;
-    }
-    public static int STATEREPOSITORY_E_CONFIGURATION_INVALID() {
-        return (int)-2140733437L;
-    }
-    public static int STATEREPOSITORY_E_UNKNOWN_SCHEMA_VERSION() {
-        return (int)-2140733436L;
-    }
-    public static int STATEREPOSITORY_ERROR_DICTIONARY_CORRUPTED() {
-        return (int)-2140733435L;
-    }
-    public static int STATEREPOSITORY_E_BLOCKED() {
-        return (int)-2140733434L;
-    }
-    public static int STATEREPOSITORY_E_BUSY_RETRY() {
-        return (int)-2140733433L;
-    }
-    public static int STATEREPOSITORY_E_BUSY_RECOVERY_RETRY() {
-        return (int)-2140733432L;
-    }
-    public static int STATEREPOSITORY_E_LOCKED_RETRY() {
-        return (int)-2140733431L;
-    }
-    public static int STATEREPOSITORY_E_LOCKED_SHAREDCACHE_RETRY() {
-        return (int)-2140733430L;
-    }
-    public static int STATEREPOSITORY_E_TRANSACTION_REQUIRED() {
-        return (int)-2140733429L;
-    }
-    public static int STATEREPOSITORY_E_BUSY_TIMEOUT_EXCEEDED() {
-        return (int)-2140733428L;
-    }
-    public static int STATEREPOSITORY_E_BUSY_RECOVERY_TIMEOUT_EXCEEDED() {
-        return (int)-2140733427L;
-    }
-    public static int STATEREPOSITORY_E_LOCKED_TIMEOUT_EXCEEDED() {
-        return (int)-2140733426L;
-    }
-    public static int STATEREPOSITORY_E_LOCKED_SHAREDCACHE_TIMEOUT_EXCEEDED() {
-        return (int)-2140733425L;
-    }
-    public static int STATEREPOSITORY_E_SERVICE_STOP_IN_PROGRESS() {
-        return (int)-2140733424L;
-    }
-    public static int STATEREPOSTORY_E_NESTED_TRANSACTION_NOT_SUPPORTED() {
-        return (int)-2140733423L;
-    }
-    public static int STATEREPOSITORY_ERROR_CACHE_CORRUPTED() {
-        return (int)-2140733422L;
-    }
-    public static int STATEREPOSITORY_TRANSACTION_CALLER_ID_CHANGED() {
-        return (int)6750227L;
-    }
-    public static int STATEREPOSITORY_TRANSACTION_IN_PROGRESS() {
-        return (int)6750228L;
-    }
-    public static int ERROR_SPACES_POOL_WAS_DELETED() {
-        return (int)15138817L;
-    }
-    public static int ERROR_SPACES_FAULT_DOMAIN_TYPE_INVALID() {
-        return (int)-2132344831L;
-    }
-    public static int ERROR_SPACES_INTERNAL_ERROR() {
-        return (int)-2132344830L;
-    }
-    public static int ERROR_SPACES_RESILIENCY_TYPE_INVALID() {
-        return (int)-2132344829L;
-    }
-    public static int ERROR_SPACES_DRIVE_SECTOR_SIZE_INVALID() {
-        return (int)-2132344828L;
-    }
-    public static int ERROR_SPACES_DRIVE_REDUNDANCY_INVALID() {
-        return (int)-2132344826L;
-    }
-    public static int ERROR_SPACES_NUMBER_OF_DATA_COPIES_INVALID() {
-        return (int)-2132344825L;
-    }
-    public static int ERROR_SPACES_PARITY_LAYOUT_INVALID() {
-        return (int)-2132344824L;
-    }
-    public static int ERROR_SPACES_INTERLEAVE_LENGTH_INVALID() {
-        return (int)-2132344823L;
-    }
-    public static int ERROR_SPACES_NUMBER_OF_COLUMNS_INVALID() {
-        return (int)-2132344822L;
-    }
-    public static int ERROR_SPACES_NOT_ENOUGH_DRIVES() {
-        return (int)-2132344821L;
-    }
-    public static int ERROR_SPACES_EXTENDED_ERROR() {
-        return (int)-2132344820L;
-    }
-    public static int ERROR_SPACES_PROVISIONING_TYPE_INVALID() {
-        return (int)-2132344819L;
-    }
-    public static int ERROR_SPACES_ALLOCATION_SIZE_INVALID() {
-        return (int)-2132344818L;
-    }
-    public static int ERROR_SPACES_ENCLOSURE_AWARE_INVALID() {
-        return (int)-2132344817L;
-    }
-    public static int ERROR_SPACES_WRITE_CACHE_SIZE_INVALID() {
-        return (int)-2132344816L;
-    }
-    public static int ERROR_SPACES_NUMBER_OF_GROUPS_INVALID() {
-        return (int)-2132344815L;
-    }
-    public static int ERROR_SPACES_DRIVE_OPERATIONAL_STATE_INVALID() {
-        return (int)-2132344814L;
-    }
-    public static int ERROR_SPACES_ENTRY_INCOMPLETE() {
-        return (int)-2132344813L;
-    }
-    public static int ERROR_SPACES_ENTRY_INVALID() {
-        return (int)-2132344812L;
-    }
-    public static int ERROR_VOLSNAP_BOOTFILE_NOT_VALID() {
-        return (int)-2138963967L;
-    }
-    public static int ERROR_VOLSNAP_ACTIVATION_TIMEOUT() {
-        return (int)-2138963966L;
-    }
-    public static int ERROR_TIERING_NOT_SUPPORTED_ON_VOLUME() {
-        return (int)-2138898431L;
-    }
-    public static int ERROR_TIERING_VOLUME_DISMOUNT_IN_PROGRESS() {
-        return (int)-2138898430L;
-    }
-    public static int ERROR_TIERING_STORAGE_TIER_NOT_FOUND() {
-        return (int)-2138898429L;
-    }
-    public static int ERROR_TIERING_INVALID_FILE_ID() {
-        return (int)-2138898428L;
-    }
-    public static int ERROR_TIERING_WRONG_CLUSTER_NODE() {
-        return (int)-2138898427L;
-    }
-    public static int ERROR_TIERING_ALREADY_PROCESSING() {
-        return (int)-2138898426L;
-    }
-    public static int ERROR_TIERING_CANNOT_PIN_OBJECT() {
-        return (int)-2138898425L;
-    }
-    public static int ERROR_TIERING_FILE_IS_NOT_PINNED() {
-        return (int)-2138898424L;
-    }
-    public static int ERROR_NOT_A_TIERED_VOLUME() {
-        return (int)-2138898423L;
-    }
-    public static int ERROR_ATTRIBUTE_NOT_PRESENT() {
-        return (int)-2138898422L;
-    }
-    public static int ERROR_SECCORE_INVALID_COMMAND() {
-        return (int)-1058537472L;
-    }
-    public static int ERROR_NO_APPLICABLE_APP_LICENSES_FOUND() {
-        return (int)-1058406399L;
-    }
-    public static int ERROR_CLIP_LICENSE_NOT_FOUND() {
-        return (int)-1058406398L;
-    }
-    public static int ERROR_CLIP_DEVICE_LICENSE_MISSING() {
-        return (int)-1058406397L;
-    }
-    public static int ERROR_CLIP_LICENSE_INVALID_SIGNATURE() {
-        return (int)-1058406396L;
-    }
-    public static int ERROR_CLIP_KEYHOLDER_LICENSE_MISSING_OR_INVALID() {
-        return (int)-1058406395L;
-    }
-    public static int ERROR_CLIP_LICENSE_EXPIRED() {
-        return (int)-1058406394L;
-    }
-    public static int ERROR_CLIP_LICENSE_SIGNED_BY_UNKNOWN_SOURCE() {
-        return (int)-1058406393L;
-    }
-    public static int ERROR_CLIP_LICENSE_NOT_SIGNED() {
-        return (int)-1058406392L;
-    }
-    public static int ERROR_CLIP_LICENSE_HARDWARE_ID_OUT_OF_TOLERANCE() {
-        return (int)-1058406391L;
-    }
-    public static int ERROR_CLIP_LICENSE_DEVICE_ID_MISMATCH() {
-        return (int)-1058406390L;
-    }
-    public static int DXGI_STATUS_OCCLUDED() {
-        return (int)142213121L;
-    }
-    public static int DXGI_STATUS_CLIPPED() {
-        return (int)142213122L;
-    }
-    public static int DXGI_STATUS_NO_REDIRECTION() {
-        return (int)142213124L;
-    }
-    public static int DXGI_STATUS_NO_DESKTOP_ACCESS() {
-        return (int)142213125L;
-    }
-    public static int DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE() {
-        return (int)142213126L;
-    }
-    public static int DXGI_STATUS_MODE_CHANGED() {
-        return (int)142213127L;
-    }
-    public static int DXGI_STATUS_MODE_CHANGE_IN_PROGRESS() {
-        return (int)142213128L;
-    }
-    public static int DXGI_ERROR_INVALID_CALL() {
-        return (int)-2005270527L;
-    }
-    public static int DXGI_ERROR_NOT_FOUND() {
-        return (int)-2005270526L;
-    }
-    public static int DXGI_ERROR_MORE_DATA() {
-        return (int)-2005270525L;
-    }
-    public static int DXGI_ERROR_UNSUPPORTED() {
-        return (int)-2005270524L;
-    }
-    public static int DXGI_ERROR_DEVICE_REMOVED() {
-        return (int)-2005270523L;
-    }
-    public static int DXGI_ERROR_DEVICE_HUNG() {
-        return (int)-2005270522L;
-    }
-    public static int DXGI_ERROR_DEVICE_RESET() {
-        return (int)-2005270521L;
-    }
-    public static int DXGI_ERROR_WAS_STILL_DRAWING() {
-        return (int)-2005270518L;
-    }
-    public static int DXGI_ERROR_FRAME_STATISTICS_DISJOINT() {
-        return (int)-2005270517L;
-    }
-    public static int DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE() {
-        return (int)-2005270516L;
-    }
-    public static int DXGI_ERROR_DRIVER_INTERNAL_ERROR() {
-        return (int)-2005270496L;
-    }
-    public static int DXGI_ERROR_NONEXCLUSIVE() {
-        return (int)-2005270495L;
-    }
-    public static int DXGI_ERROR_NOT_CURRENTLY_AVAILABLE() {
-        return (int)-2005270494L;
-    }
-    public static int DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED() {
-        return (int)-2005270493L;
-    }
-    public static int DXGI_ERROR_REMOTE_OUTOFMEMORY() {
-        return (int)-2005270492L;
-    }
-    public static int DXGI_ERROR_ACCESS_LOST() {
-        return (int)-2005270490L;
-    }
-    public static int DXGI_ERROR_WAIT_TIMEOUT() {
-        return (int)-2005270489L;
-    }
-    public static int DXGI_ERROR_SESSION_DISCONNECTED() {
-        return (int)-2005270488L;
-    }
-    public static int DXGI_ERROR_RESTRICT_TO_OUTPUT_STALE() {
-        return (int)-2005270487L;
-    }
-    public static int DXGI_ERROR_CANNOT_PROTECT_CONTENT() {
-        return (int)-2005270486L;
-    }
-    public static int DXGI_ERROR_ACCESS_DENIED() {
-        return (int)-2005270485L;
-    }
-    public static int DXGI_ERROR_NAME_ALREADY_EXISTS() {
-        return (int)-2005270484L;
-    }
-    public static int DXGI_ERROR_SDK_COMPONENT_MISSING() {
-        return (int)-2005270483L;
-    }
-    public static int DXGI_ERROR_NOT_CURRENT() {
-        return (int)-2005270482L;
-    }
-    public static int DXGI_ERROR_HW_PROTECTION_OUTOFMEMORY() {
-        return (int)-2005270480L;
-    }
-    public static int DXGI_ERROR_DYNAMIC_CODE_POLICY_VIOLATION() {
-        return (int)-2005270479L;
-    }
-    public static int DXGI_ERROR_NON_COMPOSITED_UI() {
-        return (int)-2005270478L;
-    }
-    public static int DXCORE_ERROR_EVENT_NOT_UNREGISTERED() {
-        return (int)-2004877311L;
-    }
-    public static int DXGI_STATUS_UNOCCLUDED() {
-        return (int)142213129L;
-    }
-    public static int DXGI_STATUS_DDA_WAS_STILL_DRAWING() {
-        return (int)142213130L;
-    }
-    public static int DXGI_ERROR_MODE_CHANGE_IN_PROGRESS() {
-        return (int)-2005270491L;
-    }
-    public static int DXGI_STATUS_PRESENT_REQUIRED() {
-        return (int)142213167L;
-    }
-    public static int DXGI_ERROR_CACHE_CORRUPT() {
-        return (int)-2005270477L;
-    }
-    public static int DXGI_ERROR_CACHE_FULL() {
-        return (int)-2005270476L;
-    }
-    public static int DXGI_ERROR_CACHE_HASH_COLLISION() {
-        return (int)-2005270475L;
-    }
-    public static int DXGI_ERROR_ALREADY_EXISTS() {
-        return (int)-2005270474L;
-    }
-    public static int DXGI_DDI_ERR_WASSTILLDRAWING() {
-        return (int)-2005204991L;
-    }
-    public static int DXGI_DDI_ERR_UNSUPPORTED() {
-        return (int)-2005204990L;
-    }
-    public static int DXGI_DDI_ERR_NONEXCLUSIVE() {
-        return (int)-2005204989L;
-    }
-    public static int D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS() {
-        return (int)-2005336063L;
-    }
-    public static int D3D10_ERROR_FILE_NOT_FOUND() {
-        return (int)-2005336062L;
-    }
-    public static int D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS() {
-        return (int)-2005139455L;
-    }
-    public static int D3D11_ERROR_FILE_NOT_FOUND() {
-        return (int)-2005139454L;
-    }
-    public static int D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS() {
-        return (int)-2005139453L;
-    }
-    public static int D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD() {
-        return (int)-2005139452L;
-    }
-    public static int D3D12_ERROR_ADAPTER_NOT_FOUND() {
-        return (int)-2005008383L;
-    }
-    public static int D3D12_ERROR_DRIVER_VERSION_MISMATCH() {
-        return (int)-2005008382L;
-    }
-    public static int D2DERR_WRONG_STATE() {
-        return (int)-2003238911L;
-    }
-    public static int D2DERR_NOT_INITIALIZED() {
-        return (int)-2003238910L;
-    }
-    public static int D2DERR_UNSUPPORTED_OPERATION() {
-        return (int)-2003238909L;
-    }
-    public static int D2DERR_SCANNER_FAILED() {
-        return (int)-2003238908L;
-    }
-    public static int D2DERR_SCREEN_ACCESS_DENIED() {
-        return (int)-2003238907L;
-    }
-    public static int D2DERR_DISPLAY_STATE_INVALID() {
-        return (int)-2003238906L;
-    }
-    public static int D2DERR_ZERO_VECTOR() {
-        return (int)-2003238905L;
-    }
-    public static int D2DERR_INTERNAL_ERROR() {
-        return (int)-2003238904L;
-    }
-    public static int D2DERR_DISPLAY_FORMAT_NOT_SUPPORTED() {
-        return (int)-2003238903L;
-    }
-    public static int D2DERR_INVALID_CALL() {
-        return (int)-2003238902L;
-    }
-    public static int D2DERR_NO_HARDWARE_DEVICE() {
-        return (int)-2003238901L;
-    }
-    public static int D2DERR_RECREATE_TARGET() {
-        return (int)-2003238900L;
-    }
-    public static int D2DERR_TOO_MANY_SHADER_ELEMENTS() {
-        return (int)-2003238899L;
-    }
-    public static int D2DERR_SHADER_COMPILE_FAILED() {
-        return (int)-2003238898L;
-    }
-    public static int D2DERR_MAX_TEXTURE_SIZE_EXCEEDED() {
-        return (int)-2003238897L;
-    }
-    public static int D2DERR_UNSUPPORTED_VERSION() {
-        return (int)-2003238896L;
-    }
-    public static int D2DERR_BAD_NUMBER() {
-        return (int)-2003238895L;
-    }
-    public static int D2DERR_WRONG_FACTORY() {
-        return (int)-2003238894L;
-    }
-    public static int D2DERR_LAYER_ALREADY_IN_USE() {
-        return (int)-2003238893L;
-    }
-    public static int D2DERR_POP_CALL_DID_NOT_MATCH_PUSH() {
-        return (int)-2003238892L;
-    }
-    public static int D2DERR_WRONG_RESOURCE_DOMAIN() {
-        return (int)-2003238891L;
-    }
-    public static int D2DERR_PUSH_POP_UNBALANCED() {
-        return (int)-2003238890L;
-    }
-    public static int D2DERR_RENDER_TARGET_HAS_LAYER_OR_CLIPRECT() {
-        return (int)-2003238889L;
-    }
-    public static int D2DERR_INCOMPATIBLE_BRUSH_TYPES() {
-        return (int)-2003238888L;
-    }
-    public static int D2DERR_WIN32_ERROR() {
-        return (int)-2003238887L;
-    }
-    public static int D2DERR_TARGET_NOT_GDI_COMPATIBLE() {
-        return (int)-2003238886L;
-    }
-    public static int D2DERR_TEXT_EFFECT_IS_WRONG_TYPE() {
-        return (int)-2003238885L;
-    }
-    public static int D2DERR_TEXT_RENDERER_NOT_RELEASED() {
-        return (int)-2003238884L;
-    }
-    public static int D2DERR_EXCEEDS_MAX_BITMAP_SIZE() {
-        return (int)-2003238883L;
-    }
-    public static int D2DERR_INVALID_GRAPH_CONFIGURATION() {
-        return (int)-2003238882L;
-    }
-    public static int D2DERR_INVALID_INTERNAL_GRAPH_CONFIGURATION() {
-        return (int)-2003238881L;
-    }
-    public static int D2DERR_CYCLIC_GRAPH() {
-        return (int)-2003238880L;
-    }
-    public static int D2DERR_BITMAP_CANNOT_DRAW() {
-        return (int)-2003238879L;
-    }
-    public static int D2DERR_OUTSTANDING_BITMAP_REFERENCES() {
-        return (int)-2003238878L;
-    }
-    public static int D2DERR_ORIGINAL_TARGET_NOT_BOUND() {
-        return (int)-2003238877L;
-    }
-    public static int D2DERR_INVALID_TARGET() {
-        return (int)-2003238876L;
-    }
-    public static int D2DERR_BITMAP_BOUND_AS_TARGET() {
-        return (int)-2003238875L;
-    }
-    public static int D2DERR_INSUFFICIENT_DEVICE_CAPABILITIES() {
-        return (int)-2003238874L;
-    }
-    public static int D2DERR_INTERMEDIATE_TOO_LARGE() {
-        return (int)-2003238873L;
-    }
-    public static int D2DERR_EFFECT_IS_NOT_REGISTERED() {
-        return (int)-2003238872L;
-    }
-    public static int D2DERR_INVALID_PROPERTY() {
-        return (int)-2003238871L;
-    }
-    public static int D2DERR_NO_SUBPROPERTIES() {
-        return (int)-2003238870L;
-    }
-    public static int D2DERR_PRINT_JOB_CLOSED() {
-        return (int)-2003238869L;
-    }
-    public static int D2DERR_PRINT_FORMAT_NOT_SUPPORTED() {
-        return (int)-2003238868L;
-    }
-    public static int D2DERR_TOO_MANY_TRANSFORM_INPUTS() {
-        return (int)-2003238867L;
-    }
-    public static int D2DERR_INVALID_GLYPH_IMAGE() {
-        return (int)-2003238866L;
-    }
-    public static int DWRITE_E_FILEFORMAT() {
-        return (int)-2003283968L;
-    }
-    public static int DWRITE_E_UNEXPECTED() {
-        return (int)-2003283967L;
-    }
-    public static int DWRITE_E_NOFONT() {
-        return (int)-2003283966L;
-    }
-    public static int DWRITE_E_FILENOTFOUND() {
-        return (int)-2003283965L;
-    }
-    public static int DWRITE_E_FILEACCESS() {
-        return (int)-2003283964L;
-    }
-    public static int DWRITE_E_FONTCOLLECTIONOBSOLETE() {
-        return (int)-2003283963L;
-    }
-    public static int DWRITE_E_ALREADYREGISTERED() {
-        return (int)-2003283962L;
-    }
-    public static int DWRITE_E_CACHEFORMAT() {
-        return (int)-2003283961L;
-    }
-    public static int DWRITE_E_CACHEVERSION() {
-        return (int)-2003283960L;
-    }
-    public static int DWRITE_E_UNSUPPORTEDOPERATION() {
-        return (int)-2003283959L;
-    }
-    public static int DWRITE_E_TEXTRENDERERINCOMPATIBLE() {
-        return (int)-2003283958L;
-    }
-    public static int DWRITE_E_FLOWDIRECTIONCONFLICTS() {
-        return (int)-2003283957L;
-    }
-    public static int DWRITE_E_NOCOLOR() {
-        return (int)-2003283956L;
-    }
-    public static int DWRITE_E_REMOTEFONT() {
-        return (int)-2003283955L;
-    }
-    public static int DWRITE_E_DOWNLOADCANCELLED() {
-        return (int)-2003283954L;
-    }
-    public static int DWRITE_E_DOWNLOADFAILED() {
-        return (int)-2003283953L;
-    }
-    public static int DWRITE_E_TOOMANYDOWNLOADS() {
-        return (int)-2003283952L;
-    }
-    public static int WINCODEC_ERR_WRONGSTATE() {
-        return (int)-2003292412L;
-    }
-    public static int WINCODEC_ERR_VALUEOUTOFRANGE() {
-        return (int)-2003292411L;
-    }
-    public static int WINCODEC_ERR_UNKNOWNIMAGEFORMAT() {
-        return (int)-2003292409L;
-    }
-    public static int WINCODEC_ERR_UNSUPPORTEDVERSION() {
-        return (int)-2003292405L;
-    }
-    public static int WINCODEC_ERR_NOTINITIALIZED() {
-        return (int)-2003292404L;
-    }
-    public static int WINCODEC_ERR_ALREADYLOCKED() {
-        return (int)-2003292403L;
-    }
-    public static int WINCODEC_ERR_PROPERTYNOTFOUND() {
-        return (int)-2003292352L;
-    }
-    public static int WINCODEC_ERR_PROPERTYNOTSUPPORTED() {
-        return (int)-2003292351L;
-    }
-    public static int WINCODEC_ERR_PROPERTYSIZE() {
-        return (int)-2003292350L;
-    }
-    public static int WINCODEC_ERR_CODECPRESENT() {
-        return (int)-2003292349L;
-    }
-    public static int WINCODEC_ERR_CODECNOTHUMBNAIL() {
-        return (int)-2003292348L;
-    }
-    public static int WINCODEC_ERR_PALETTEUNAVAILABLE() {
-        return (int)-2003292347L;
-    }
-    public static int WINCODEC_ERR_CODECTOOMANYSCANLINES() {
-        return (int)-2003292346L;
-    }
-    public static int WINCODEC_ERR_INTERNALERROR() {
-        return (int)-2003292344L;
-    }
-    public static int WINCODEC_ERR_SOURCERECTDOESNOTMATCHDIMENSIONS() {
-        return (int)-2003292343L;
-    }
-    public static int WINCODEC_ERR_COMPONENTNOTFOUND() {
-        return (int)-2003292336L;
-    }
-    public static int WINCODEC_ERR_IMAGESIZEOUTOFRANGE() {
-        return (int)-2003292335L;
-    }
-    public static int WINCODEC_ERR_TOOMUCHMETADATA() {
-        return (int)-2003292334L;
-    }
-    public static int WINCODEC_ERR_BADIMAGE() {
-        return (int)-2003292320L;
-    }
-    public static int WINCODEC_ERR_BADHEADER() {
-        return (int)-2003292319L;
-    }
-    public static int WINCODEC_ERR_FRAMEMISSING() {
-        return (int)-2003292318L;
-    }
-    public static int WINCODEC_ERR_BADMETADATAHEADER() {
-        return (int)-2003292317L;
-    }
-    public static int WINCODEC_ERR_BADSTREAMDATA() {
-        return (int)-2003292304L;
-    }
-    public static int WINCODEC_ERR_STREAMWRITE() {
-        return (int)-2003292303L;
-    }
-    public static int WINCODEC_ERR_STREAMREAD() {
-        return (int)-2003292302L;
-    }
-    public static int WINCODEC_ERR_STREAMNOTAVAILABLE() {
-        return (int)-2003292301L;
-    }
-    public static int WINCODEC_ERR_UNSUPPORTEDPIXELFORMAT() {
-        return (int)-2003292288L;
-    }
-    public static int WINCODEC_ERR_UNSUPPORTEDOPERATION() {
-        return (int)-2003292287L;
-    }
-    public static int WINCODEC_ERR_INVALIDREGISTRATION() {
-        return (int)-2003292278L;
-    }
-    public static int WINCODEC_ERR_COMPONENTINITIALIZEFAILURE() {
-        return (int)-2003292277L;
-    }
-    public static int WINCODEC_ERR_INSUFFICIENTBUFFER() {
-        return (int)-2003292276L;
-    }
-    public static int WINCODEC_ERR_DUPLICATEMETADATAPRESENT() {
-        return (int)-2003292275L;
-    }
-    public static int WINCODEC_ERR_PROPERTYUNEXPECTEDTYPE() {
-        return (int)-2003292274L;
-    }
-    public static int WINCODEC_ERR_UNEXPECTEDSIZE() {
-        return (int)-2003292273L;
-    }
-    public static int WINCODEC_ERR_INVALIDQUERYREQUEST() {
-        return (int)-2003292272L;
-    }
-    public static int WINCODEC_ERR_UNEXPECTEDMETADATATYPE() {
-        return (int)-2003292271L;
-    }
-    public static int WINCODEC_ERR_REQUESTONLYVALIDATMETADATAROOT() {
-        return (int)-2003292270L;
-    }
-    public static int WINCODEC_ERR_INVALIDQUERYCHARACTER() {
-        return (int)-2003292269L;
-    }
-    public static int WINCODEC_ERR_WIN32ERROR() {
-        return (int)-2003292268L;
-    }
-    public static int WINCODEC_ERR_INVALIDPROGRESSIVELEVEL() {
-        return (int)-2003292267L;
     }
 }
 

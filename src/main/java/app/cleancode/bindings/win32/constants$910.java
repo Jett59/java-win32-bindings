@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$910 {
 
-    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.9");
-    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.10");
-    static final MemorySegment PKCS12_PBKDF2_ID_HMAC_SHA512$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.2.11");
-    static final MemorySegment PKCS12_PBES2_ALG_AES256_SHA256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment PKCS12_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment PKCS12_ENCRYPT_CERTIFICATES_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
+    static final MemorySegment CERT_RETR_BEHAVIOR_INET_STATUS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
+    static final MemorySegment CERT_RETR_BEHAVIOR_FILE_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
+    static final MemorySegment CERT_RETR_BEHAVIOR_LDAP_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment CRYPTNET_CACHED_OCSP_SWITCH_TO_CRL_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CERT_CHAIN_DISABLE_AIA_URL_RETRIEVAL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment CERT_CHAIN_OPTIONS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("O");
 }
 
 

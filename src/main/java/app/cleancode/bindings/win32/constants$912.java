@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$912 {
 
-    static final MemorySegment SSL_OBJECT_LOCATOR_PFX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializePfx");
-    static final MemorySegment SSL_OBJECT_LOCATOR_ISSUER_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializeIssuerList");
-    static final MemorySegment SSL_OBJECT_LOCATOR_CERT_VALIDATION_CONFIG_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializeCertValidationConfig");
-    static final MemorySegment szFORCE_KEY_PROTECTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ForceKeyProtection");
-    static final MemorySegment STORAGE_CRASH_TELEMETRY_REGKEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
-    static final MemorySegment STORAGE_DEVICE_TELEMETRY_REGKEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
+    static final MemorySegment CRYPT_OID_VERIFY_CERTIFICATE_CHAIN_POLICY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllVerifyCertificateChainPolicy");
+    static final MemoryAddress CERT_CHAIN_POLICY_BASE$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress CERT_CHAIN_POLICY_AUTHENTICODE$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress CERT_CHAIN_POLICY_AUTHENTICODE_TS$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress CERT_CHAIN_POLICY_SSL$ADDR = MemoryAddress.ofLong(4L);
+    static final MemoryAddress CERT_CHAIN_POLICY_BASIC_CONSTRAINTS$ADDR = MemoryAddress.ofLong(5L);
 }
 
 

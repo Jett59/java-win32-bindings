@@ -9,6 +9,32 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_16 extends WINDOWS_15 {
 
+    public static OfAddress PCRYPT_DECODE_PARA = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle CryptDecodeObjectEx$MH() {
+        return RuntimeHelper.requireNonNull(constants$574.CryptDecodeObjectEx$MH,"CryptDecodeObjectEx");
+    }
+    public static int CryptDecodeObjectEx ( int dwCertEncodingType,  Addressable lpszStructType,  Addressable pbEncoded,  int cbEncoded,  int dwFlags,  Addressable pDecodePara,  Addressable pvStructInfo,  Addressable pcbStructInfo) {
+        var mh$ = CryptDecodeObjectEx$MH();
+        try {
+            return (int)mh$.invokeExact(dwCertEncodingType, lpszStructType, pbEncoded, cbEncoded, dwFlags, pDecodePara, pvStructInfo, pcbStructInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle CryptDecodeObject$MH() {
+        return RuntimeHelper.requireNonNull(constants$574.CryptDecodeObject$MH,"CryptDecodeObject");
+    }
+    public static int CryptDecodeObject ( int dwCertEncodingType,  Addressable lpszStructType,  Addressable pbEncoded,  int cbEncoded,  int dwFlags,  Addressable pvStructInfo,  Addressable pcbStructInfo) {
+        var mh$ = CryptDecodeObject$MH();
+        try {
+            return (int)mh$.invokeExact(dwCertEncodingType, lpszStructType, pbEncoded, cbEncoded, dwFlags, pvStructInfo, pcbStructInfo);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress PCERT_EXTENSIONS = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCERT_AUTHORITY_KEY_ID_INFO = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PCERT_PRIVATE_KEY_VALIDITY = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress PCERT_KEY_ATTRIBUTES_INFO = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress PCERT_POLICY_ID = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress PCERT_KEY_USAGE_RESTRICTION_INFO = Constants$root.C_POINTER$LAYOUT;
@@ -4216,20 +4242,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int WriteThroughUnknown() {
         return (int)0L;
-    }
-    public static int WriteThroughNotSupported() {
-        return (int)1L;
-    }
-    public static int WriteThroughSupported() {
-        return (int)2L;
-    }
-    public static OfAddress PSTORAGE_WRITE_CACHE_PROPERTY = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PPERSISTENT_RESERVE_COMMAND = Constants$root.C_POINTER$LAYOUT;
-    public static int TCCollectionBugCheck() {
-        return (int)1L;
-    }
-    public static int TCCollectionApplicationRequested() {
-        return (int)2L;
     }
 }
 

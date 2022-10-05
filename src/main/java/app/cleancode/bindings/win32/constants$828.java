@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$828 {
 
-    static final MemorySegment szOID_PKINIT_KP_KDC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.2.3.5");
-    static final MemorySegment szOID_KP_CTL_USAGE_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.1");
-    static final MemorySegment szOID_KP_TIME_STAMP_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.2");
-    static final MemorySegment szOID_SERVER_GATED_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.3");
-    static final MemorySegment szOID_SGC_NETSCAPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.4.1");
-    static final MemorySegment szOID_KP_EFS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.4");
+    static final MemorySegment szOID_CERTSRV_CA_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.1");
+    static final MemorySegment szOID_CERTSRV_PREVIOUS_CERT_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.2");
+    static final MemorySegment szOID_CRL_VIRTUAL_BASE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.3");
+    static final MemorySegment szOID_CRL_NEXT_PUBLISH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.4");
+    static final MemorySegment szOID_KP_CA_EXCHANGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.5");
+    static final MemorySegment szOID_KP_PRIVACY_CA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.36");
 }
 
 

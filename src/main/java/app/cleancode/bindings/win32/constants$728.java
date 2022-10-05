@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$728 {
 
-    static final MemorySegment SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("d");
-    static final MemorySegment SMB_CCF_APP_INSTANCE_EA_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ClusteredApplicationInstance");
-    static final MemorySegment IMAGE_ARCHIVE_START$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("!<arch>\n");
-    static final MemorySegment IMAGE_ARCHIVE_END$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("`\n");
-    static final MemorySegment IMAGE_ARCHIVE_PAD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\n");
-    static final MemorySegment IMAGE_ARCHIVE_LINKER_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("/               ");
+    static final MemorySegment SE_INCREASE_QUOTA_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseQuotaPrivilege");
+    static final MemorySegment SE_UNSOLICITED_INPUT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeUnsolicitedInputPrivilege");
+    static final MemorySegment SE_MACHINE_ACCOUNT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeMachineAccountPrivilege");
+    static final MemorySegment SE_TCB_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTcbPrivilege");
+    static final MemorySegment SE_SECURITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSecurityPrivilege");
+    static final MemorySegment SE_TAKE_OWNERSHIP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTakeOwnershipPrivilege");
 }
 
 

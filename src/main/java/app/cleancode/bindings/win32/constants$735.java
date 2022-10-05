@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$735 {
 
-    static final MemoryAddress RT_DLGINCLUDE$ADDR = MemoryAddress.ofLong(17L);
-    static final MemoryAddress RT_PLUGPLAY$ADDR = MemoryAddress.ofLong(19L);
-    static final MemoryAddress RT_VXD$ADDR = MemoryAddress.ofLong(20L);
-    static final MemoryAddress RT_ANICURSOR$ADDR = MemoryAddress.ofLong(21L);
-    static final MemoryAddress RT_ANIICON$ADDR = MemoryAddress.ofLong(22L);
-    static final MemoryAddress RT_HTML$ADDR = MemoryAddress.ofLong(23L);
+    static final MemorySegment IMAGE_ARCHIVE_LINKER_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("/               ");
+    static final MemorySegment IMAGE_ARCHIVE_LONGNAMES_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("//              ");
+    static final MemorySegment IMAGE_ARCHIVE_HYBRIDMAP_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("/<HYBRIDMAP>/   ");
+    static final MemorySegment IMAGE_POLICY_SECTION_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".tPolicy");
+    static final MemorySegment UNIFIEDBUILDREVISION_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
+    static final MemorySegment UNIFIEDBUILDREVISION_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("U");
 }
 
 

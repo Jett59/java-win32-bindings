@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$837 {
 
-    static final MemorySegment szOID_YESNO_TRUST_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.4.1");
-    static final MemorySegment szOID_SITE_PIN_RULES_INDEX_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.4.2");
-    static final MemorySegment szOID_SITE_PIN_RULES_FLAGS_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.4.3");
-    static final MemorySegment szOID_PKIX_POLICY_QUALIFIER_CPS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.2.1");
-    static final MemorySegment szOID_PKIX_POLICY_QUALIFIER_USERNOTICE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.2.2");
-    static final MemorySegment szOID_ROOT_PROGRAM_FLAGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.1.1");
+    static final MemorySegment szOID_KP_MOBILE_DEVICE_SOFTWARE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.14");
+    static final MemorySegment szOID_KP_SMART_DISPLAY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.15");
+    static final MemorySegment szOID_KP_CSP_SIGNATURE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.16");
+    static final MemorySegment szOID_KP_FLIGHT_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.27");
+    static final MemorySegment szOID_PLATFORM_MANIFEST_BINARY_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.28");
+    static final MemorySegment szOID_DRM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.5.1");
 }
 
 

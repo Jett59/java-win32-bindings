@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$802 {
 
-    static final MemoryAddress X509_AUTHORITY_INFO_ACCESS$ADDR = MemoryAddress.ofLong(32L);
-    static final MemoryAddress X509_SUBJECT_INFO_ACCESS$ADDR = MemoryAddress.ofLong(32L);
-    static final MemoryAddress X509_CRL_REASON_CODE$ADDR = MemoryAddress.ofLong(29L);
-    static final MemoryAddress PKCS_CONTENT_INFO$ADDR = MemoryAddress.ofLong(33L);
-    static final MemoryAddress X509_SEQUENCE_OF_ANY$ADDR = MemoryAddress.ofLong(34L);
-    static final MemoryAddress X509_CRL_DIST_POINTS$ADDR = MemoryAddress.ofLong(35L);
+    static final MemorySegment szOID_EV_RDN_COUNTRY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.2.1.3");
+    static final MemorySegment CERT_RSA_PUBLIC_KEY_OBJID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
+    static final MemorySegment CERT_DEFAULT_OID_PUBLIC_KEY_SIGN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
+    static final MemorySegment CERT_DEFAULT_OID_PUBLIC_KEY_XCHG$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.1.1");
+    static final MemoryAddress X509_CERT$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress X509_CERT_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(2L);
 }
 
 

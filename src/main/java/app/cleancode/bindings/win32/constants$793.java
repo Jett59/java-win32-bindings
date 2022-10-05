@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$793 {
 
-    static final MemorySegment szOID_CA_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.37");
-    static final MemorySegment szOID_AUTHORITY_REVOCATION_LIST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.38");
-    static final MemorySegment szOID_CERTIFICATE_REVOCATION_LIST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.39");
-    static final MemorySegment szOID_CROSS_CERTIFICATE_PAIR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.40");
-    static final MemorySegment szOID_GIVEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.42");
-    static final MemorySegment szOID_INITIALS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.43");
+    static final MemorySegment szOID_NIST_sha256$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.2.1");
+    static final MemorySegment szOID_NIST_sha384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.2.2");
+    static final MemorySegment szOID_NIST_sha512$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.2.3");
+    static final MemorySegment szOID_COMMON_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.3");
+    static final MemorySegment szOID_SUR_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.4");
+    static final MemorySegment szOID_DEVICE_SERIAL_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.5");
 }
 
 

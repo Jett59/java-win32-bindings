@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$911 {
 
-    static final MemoryAddress CERT_RETRIEVE_ISSUER_LOGO$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress CERT_RETRIEVE_SUBJECT_LOGO$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CERT_RETRIEVE_COMMUNITY_LOGO$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_PREDEFINED_BASE_TYPE$ADDR = MemoryAddress.ofLong(1000L);
-    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_PICTURE_TYPE$ADDR = MemoryAddress.ofLong(1000L);
-    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_SIGNATURE_TYPE$ADDR = MemoryAddress.ofLong(1001L);
+    static final MemorySegment CERT_CHAIN_CROSS_CERT_DOWNLOAD_INTERVAL_HOURS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CERT_CHAIN_CRL_VALIDITY_EXT_PERIOD_HOURS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemoryAddress HCCE_CURRENT_USER$ADDR = MemoryAddress.ofLong(0L);
+    static final MemoryAddress HCCE_LOCAL_MACHINE$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress HCCE_SERIAL_LOCAL_MACHINE$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress REVOCATION_OID_CRL_REVOCATION$ADDR = MemoryAddress.ofLong(1L);
 }
 
 

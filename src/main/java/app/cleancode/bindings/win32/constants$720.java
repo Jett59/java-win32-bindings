@@ -40,9 +40,30 @@ class constants$720 {
         "GetServiceDirectory",
         constants$720.GetServiceDirectory$FUNC
     );
-    static final MemorySegment OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OutOfProcessFunctionTableCallback");
-    static final MemorySegment ACCESS_DS_SOURCE_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DS");
-    static final MemorySegment ACCESS_DS_SOURCE_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final FunctionDescriptor EvtOpenSession$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtOpenSession$MH = RuntimeHelper.downcallHandle(
+        "EvtOpenSession",
+        constants$720.EvtOpenSession$FUNC
+    );
+    static final FunctionDescriptor EvtClose$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtClose$MH = RuntimeHelper.downcallHandle(
+        "EvtClose",
+        constants$720.EvtClose$FUNC
+    );
+    static final FunctionDescriptor EvtCancel$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtCancel$MH = RuntimeHelper.downcallHandle(
+        "EvtCancel",
+        constants$720.EvtCancel$FUNC
+    );
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$730 {
 
-    static final MemorySegment DEVICEFAMILYDEVICEFORM_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemoryAddress DPI_AWARENESS_CONTEXT_SYSTEM_AWARE$ADDR = MemoryAddress.ofLong(-2L);
-    static final MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE$ADDR = MemoryAddress.ofLong(-3L);
-    static final MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2$ADDR = MemoryAddress.ofLong(-4L);
-    static final MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED$ADDR = MemoryAddress.ofLong(-5L);
+    static final MemorySegment SE_CREATE_PERMANENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreatePermanentPrivilege");
+    static final MemorySegment SE_BACKUP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeBackupPrivilege");
+    static final MemorySegment SE_RESTORE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRestorePrivilege");
+    static final MemorySegment SE_SHUTDOWN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeShutdownPrivilege");
+    static final MemorySegment SE_DEBUG_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeDebugPrivilege");
+    static final MemorySegment SE_AUDIT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeAuditPrivilege");
 }
 
 

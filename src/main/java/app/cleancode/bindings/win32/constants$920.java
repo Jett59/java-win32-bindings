@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$920 {
 
-    static final MemorySegment SPLDS_DRIVER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsDriver");
-    static final MemorySegment SPLDS_USER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsUser");
-    static final MemorySegment SPLDS_ASSET_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("assetNumber");
-    static final MemorySegment SPLDS_BYTES_PER_MINUTE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("bytesPerMinute");
-    static final MemorySegment SPLDS_DESCRIPTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("description");
-    static final MemorySegment SPLDS_DRIVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("driverName");
+    static final MemorySegment SCARD_SYSTEM_READERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SCard$SystemReaders");
+    static final MemorySegment BIDI_ACTION_ENUM_SCHEMA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
+    static final MemorySegment BIDI_ACTION_GET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
+    static final MemorySegment BIDI_ACTION_SET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment BIDI_ACTION_GET_ALL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
+    static final MemorySegment BIDI_ACTION_GET_WITH_ARGUMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
 }
 
 

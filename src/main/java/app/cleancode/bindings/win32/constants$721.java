@@ -9,12 +9,56 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$721 {
 
-    static final MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Directory Service Object");
-    static final MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment SE_CREATE_TOKEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateTokenPrivilege");
-    static final MemorySegment SE_ASSIGNPRIMARYTOKEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeAssignPrimaryTokenPrivilege");
-    static final MemorySegment SE_LOCK_MEMORY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeLockMemoryPrivilege");
-    static final MemorySegment SE_INCREASE_QUOTA_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseQuotaPrivilege");
+    static final FunctionDescriptor EvtGetExtendedStatus$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetExtendedStatus$MH = RuntimeHelper.downcallHandle(
+        "EvtGetExtendedStatus",
+        constants$721.EvtGetExtendedStatus$FUNC
+    );
+    static final FunctionDescriptor EvtQuery$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtQuery$MH = RuntimeHelper.downcallHandle(
+        "EvtQuery",
+        constants$721.EvtQuery$FUNC
+    );
+    static final FunctionDescriptor EvtNext$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtNext$MH = RuntimeHelper.downcallHandle(
+        "EvtNext",
+        constants$721.EvtNext$FUNC
+    );
+    static final FunctionDescriptor EvtSeek$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtSeek$MH = RuntimeHelper.downcallHandle(
+        "EvtSeek",
+        constants$721.EvtSeek$FUNC
+    );
+    static final FunctionDescriptor EVT_SUBSCRIBE_CALLBACK$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EVT_SUBSCRIBE_CALLBACK$MH = RuntimeHelper.downcallHandle(
+        constants$721.EVT_SUBSCRIBE_CALLBACK$FUNC
+    );
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$760 {
 
-    static final MemorySegment szOID_RSA_DH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.3.1");
-    static final MemorySegment szOID_RSA_data$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.1");
-    static final MemorySegment szOID_RSA_signedData$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.2");
-    static final MemorySegment szOID_RSA_envelopedData$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.3");
-    static final MemorySegment szOID_RSA_signEnvData$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.4");
-    static final MemorySegment szOID_RSA_digestedData$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.5");
+    static final MemorySegment MS_ENH_RSA_AES_PROV_XP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider (Prototype)");
+    static final MemorySegment MS_ENH_RSA_AES_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced RSA and AES Cryptographic Provider");
+    static final MemorySegment EXPO_OFFLOAD_REG_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ExpoOffload");
+    static final MemorySegment EXPO_OFFLOAD_FUNC_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OffloadModExpo");
+    static final MemorySegment szKEY_CRYPTOAPI_PRIVATE_KEY_OPTIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Software\\Policies\\Microsoft\\Cryptography");
+    static final MemorySegment szKEY_CACHE_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CachePrivateKeys");
 }
 
 

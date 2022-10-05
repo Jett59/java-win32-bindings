@@ -9,12 +9,64 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$723 {
 
-    static final MemorySegment SE_SYSTEM_PROFILE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemProfilePrivilege");
-    static final MemorySegment SE_SYSTEMTIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemtimePrivilege");
-    static final MemorySegment SE_PROF_SINGLE_PROCESS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeProfileSingleProcessPrivilege");
-    static final MemorySegment SE_INC_BASE_PRIORITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseBasePriorityPrivilege");
-    static final MemorySegment SE_CREATE_PAGEFILE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreatePagefilePrivilege");
-    static final MemorySegment SE_CREATE_PERMANENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreatePermanentPrivilege");
+    static final FunctionDescriptor EvtClearLog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtClearLog$MH = RuntimeHelper.downcallHandle(
+        "EvtClearLog",
+        constants$723.EvtClearLog$FUNC
+    );
+    static final FunctionDescriptor EvtExportLog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtExportLog$MH = RuntimeHelper.downcallHandle(
+        "EvtExportLog",
+        constants$723.EvtExportLog$FUNC
+    );
+    static final FunctionDescriptor EvtArchiveExportedLog$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtArchiveExportedLog$MH = RuntimeHelper.downcallHandle(
+        "EvtArchiveExportedLog",
+        constants$723.EvtArchiveExportedLog$FUNC
+    );
+    static final FunctionDescriptor EvtOpenChannelEnum$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtOpenChannelEnum$MH = RuntimeHelper.downcallHandle(
+        "EvtOpenChannelEnum",
+        constants$723.EvtOpenChannelEnum$FUNC
+    );
+    static final FunctionDescriptor EvtNextChannelPath$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtNextChannelPath$MH = RuntimeHelper.downcallHandle(
+        "EvtNextChannelPath",
+        constants$723.EvtNextChannelPath$FUNC
+    );
+    static final FunctionDescriptor EvtOpenChannelConfig$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtOpenChannelConfig$MH = RuntimeHelper.downcallHandle(
+        "EvtOpenChannelConfig",
+        constants$723.EvtOpenChannelConfig$FUNC
+    );
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$895 {
 
-    static final MemorySegment CERT_CHAIN_DEFAULT_CONFIG_SUBDIR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_CHAIN_WEAK_PREFIX_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("W");
-    static final MemorySegment CERT_CHAIN_WEAK_THIRD_PARTY_CONFIG_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("T");
-    static final MemorySegment CERT_CHAIN_WEAK_ALL_CONFIG_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_WEAK_FLAGS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
-    static final MemorySegment CERT_CHAIN_WEAK_HYGIENE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("H");
+    static final MemoryAddress URL_OID_CERTIFICATE_OCSP$ADDR = MemoryAddress.ofLong(9L);
+    static final MemoryAddress URL_OID_CERTIFICATE_OCSP_AND_CRL_DIST_POINT$ADDR = MemoryAddress.ofLong(10L);
+    static final MemoryAddress URL_OID_CERTIFICATE_CRL_DIST_POINT_AND_OCSP$ADDR = MemoryAddress.ofLong(11L);
+    static final MemoryAddress URL_OID_CROSS_CERT_SUBJECT_INFO_ACCESS$ADDR = MemoryAddress.ofLong(12L);
+    static final MemoryAddress URL_OID_CERTIFICATE_ONLY_OCSP$ADDR = MemoryAddress.ofLong(13L);
+    static final MemorySegment TIME_VALID_OID_GET_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("TimeValidDllGetObject");
 }
 
 

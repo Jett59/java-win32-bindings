@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$852 {
 
-    static final MemorySegment szOID_CMC_QUERY_PENDING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.21");
-    static final MemorySegment szOID_CMC_ID_POP_LINK_RANDOM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.22");
-    static final MemorySegment szOID_CMC_ID_POP_LINK_WITNESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.23");
-    static final MemorySegment szOID_CMC_ID_CONFIRM_CERT_ACCEPTANCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.24");
-    static final MemorySegment szOID_CMC_ADD_ATTRIBUTES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.10.1");
-    static final MemorySegment szOID_LOYALTY_OTHER_LOGOTYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.20.1");
+    static final MemorySegment szOIDVerisign_PkiStatus$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.3");
+    static final MemorySegment szOIDVerisign_FailInfo$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.4");
+    static final MemorySegment szOIDVerisign_SenderNonce$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.5");
+    static final MemorySegment szOIDVerisign_RecipientNonce$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.6");
+    static final MemorySegment szOIDVerisign_TransactionID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.7");
+    static final MemorySegment szOID_NETSCAPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730");
 }
 
 

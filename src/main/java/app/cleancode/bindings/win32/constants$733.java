@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$733 {
 
-    static final MemoryAddress RT_ICON$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress RT_MENU$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress RT_DIALOG$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress RT_STRING$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress RT_FONTDIR$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress RT_FONT$ADDR = MemoryAddress.ofLong(8L);
+    static final MemorySegment SE_TIME_ZONE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTimeZonePrivilege");
+    static final MemorySegment SE_CREATE_SYMBOLIC_LINK_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateSymbolicLinkPrivilege");
+    static final MemorySegment SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeDelegateSessionUserImpersonatePrivilege");
+    static final MemorySegment SE_ACTIVATE_AS_USER_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
+    static final MemorySegment SE_CONSTRAINED_IMPERSONATION_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("c");
+    static final MemorySegment SE_SESSION_IMPERSONATION_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("s");
 }
 
 

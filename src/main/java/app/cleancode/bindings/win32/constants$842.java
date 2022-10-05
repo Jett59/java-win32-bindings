@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$842 {
 
-    static final MemorySegment szOID_ENROLL_SCEP_CHALLENGE_ANSWER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.35");
-    static final MemorySegment szOID_ENROLL_SCEP_CLIENT_REQUEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.37");
-    static final MemorySegment szOID_ENROLL_SCEP_SERVER_MESSAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.38");
-    static final MemorySegment szOID_ENROLL_SCEP_SERVER_SECRET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.40");
-    static final MemorySegment szOID_ENROLL_KEY_AFFINITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.41");
-    static final MemorySegment szOID_ENROLL_SCEP_SIGNER_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.42");
+    static final MemorySegment szOID_SYNC_ROOT_CTL_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.50");
+    static final MemorySegment szOID_HPKP_DOMAIN_NAME_CTL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.60");
+    static final MemorySegment szOID_HPKP_HEADER_VALUE_CTL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.61");
+    static final MemorySegment szOID_KP_KERNEL_MODE_HAL_EXTENSION_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.61.5.1");
+    static final MemorySegment szOID_WINDOWS_STORE_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.76.3.1");
+    static final MemorySegment szOID_DYNAMIC_CODE_GEN_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.76.5.1");
 }
 
 

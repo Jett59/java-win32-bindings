@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$896 {
 
-    static final MemorySegment CERT_CHAIN_WEAK_AFTER_TIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_WEAK_FILE_HASH_AFTER_TIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
-    static final MemorySegment CERT_CHAIN_WEAK_TIMESTAMP_HASH_AFTER_TIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("T");
-    static final MemorySegment CERT_CHAIN_WEAK_MIN_BIT_LENGTH_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_WEAK_SHA256_ALLOW_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_AUTO_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
+    static final MemoryAddress TIME_VALID_OID_GET_CTL$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress TIME_VALID_OID_GET_CRL$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress TIME_VALID_OID_GET_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress TIME_VALID_OID_GET_FRESHEST_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(4L);
+    static final MemoryAddress TIME_VALID_OID_GET_FRESHEST_CRL_FROM_CRL$ADDR = MemoryAddress.ofLong(5L);
+    static final MemorySegment TIME_VALID_OID_FLUSH_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("TimeValidDllFlushObject");
 }
 
 

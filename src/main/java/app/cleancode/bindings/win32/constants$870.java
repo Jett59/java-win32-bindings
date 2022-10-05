@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$870 {
 
-    static final MemorySegment sz_CERT_STORE_PROV_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("File");
-    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("System");
-    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("System");
-    static final MemorySegment sz_CERT_STORE_PROV_PKCS7$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PKCS7");
-    static final MemorySegment sz_CERT_STORE_PROV_PKCS12$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PKCS12");
-    static final MemorySegment sz_CERT_STORE_PROV_SERIALIZED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Serialized");
+    static final MemorySegment CMSG_OID_CNG_IMPORT_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGImportContentEncryptKey");
+    static final MemorySegment szOID_CERT_PROP_ID_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.");
+    static final MemorySegment szOID_CERT_KEY_IDENTIFIER_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.20");
+    static final MemorySegment szOID_CERT_ISSUER_SERIAL_NUMBER_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.28");
+    static final MemorySegment szOID_CERT_SUBJECT_NAME_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.29");
+    static final MemorySegment szOID_CERT_MD5_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.4");
 }
 
 

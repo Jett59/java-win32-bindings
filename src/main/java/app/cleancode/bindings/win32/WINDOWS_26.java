@@ -9,6 +9,669 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_26 extends WINDOWS_25 {
 
+    public static int E_HDAUDIO_NULL_LINKED_LIST_ENTRY() {
+        return (int)-2140798971L;
+    }
+    public static int STATEREPOSITORY_E_CONCURRENCY_LOCKING_FAILURE() {
+        return (int)-2140733439L;
+    }
+    public static int STATEREPOSITORY_E_STATEMENT_INPROGRESS() {
+        return (int)-2140733438L;
+    }
+    public static int STATEREPOSITORY_E_CONFIGURATION_INVALID() {
+        return (int)-2140733437L;
+    }
+    public static int STATEREPOSITORY_E_UNKNOWN_SCHEMA_VERSION() {
+        return (int)-2140733436L;
+    }
+    public static int STATEREPOSITORY_ERROR_DICTIONARY_CORRUPTED() {
+        return (int)-2140733435L;
+    }
+    public static int STATEREPOSITORY_E_BLOCKED() {
+        return (int)-2140733434L;
+    }
+    public static int STATEREPOSITORY_E_BUSY_RETRY() {
+        return (int)-2140733433L;
+    }
+    public static int STATEREPOSITORY_E_BUSY_RECOVERY_RETRY() {
+        return (int)-2140733432L;
+    }
+    public static int STATEREPOSITORY_E_LOCKED_RETRY() {
+        return (int)-2140733431L;
+    }
+    public static int STATEREPOSITORY_E_LOCKED_SHAREDCACHE_RETRY() {
+        return (int)-2140733430L;
+    }
+    public static int STATEREPOSITORY_E_TRANSACTION_REQUIRED() {
+        return (int)-2140733429L;
+    }
+    public static int STATEREPOSITORY_E_BUSY_TIMEOUT_EXCEEDED() {
+        return (int)-2140733428L;
+    }
+    public static int STATEREPOSITORY_E_BUSY_RECOVERY_TIMEOUT_EXCEEDED() {
+        return (int)-2140733427L;
+    }
+    public static int STATEREPOSITORY_E_LOCKED_TIMEOUT_EXCEEDED() {
+        return (int)-2140733426L;
+    }
+    public static int STATEREPOSITORY_E_LOCKED_SHAREDCACHE_TIMEOUT_EXCEEDED() {
+        return (int)-2140733425L;
+    }
+    public static int STATEREPOSITORY_E_SERVICE_STOP_IN_PROGRESS() {
+        return (int)-2140733424L;
+    }
+    public static int STATEREPOSTORY_E_NESTED_TRANSACTION_NOT_SUPPORTED() {
+        return (int)-2140733423L;
+    }
+    public static int STATEREPOSITORY_ERROR_CACHE_CORRUPTED() {
+        return (int)-2140733422L;
+    }
+    public static int STATEREPOSITORY_TRANSACTION_CALLER_ID_CHANGED() {
+        return (int)6750227L;
+    }
+    public static int STATEREPOSITORY_TRANSACTION_IN_PROGRESS() {
+        return (int)6750228L;
+    }
+    public static int ERROR_SPACES_POOL_WAS_DELETED() {
+        return (int)15138817L;
+    }
+    public static int ERROR_SPACES_FAULT_DOMAIN_TYPE_INVALID() {
+        return (int)-2132344831L;
+    }
+    public static int ERROR_SPACES_INTERNAL_ERROR() {
+        return (int)-2132344830L;
+    }
+    public static int ERROR_SPACES_RESILIENCY_TYPE_INVALID() {
+        return (int)-2132344829L;
+    }
+    public static int ERROR_SPACES_DRIVE_SECTOR_SIZE_INVALID() {
+        return (int)-2132344828L;
+    }
+    public static int ERROR_SPACES_DRIVE_REDUNDANCY_INVALID() {
+        return (int)-2132344826L;
+    }
+    public static int ERROR_SPACES_NUMBER_OF_DATA_COPIES_INVALID() {
+        return (int)-2132344825L;
+    }
+    public static int ERROR_SPACES_PARITY_LAYOUT_INVALID() {
+        return (int)-2132344824L;
+    }
+    public static int ERROR_SPACES_INTERLEAVE_LENGTH_INVALID() {
+        return (int)-2132344823L;
+    }
+    public static int ERROR_SPACES_NUMBER_OF_COLUMNS_INVALID() {
+        return (int)-2132344822L;
+    }
+    public static int ERROR_SPACES_NOT_ENOUGH_DRIVES() {
+        return (int)-2132344821L;
+    }
+    public static int ERROR_SPACES_EXTENDED_ERROR() {
+        return (int)-2132344820L;
+    }
+    public static int ERROR_SPACES_PROVISIONING_TYPE_INVALID() {
+        return (int)-2132344819L;
+    }
+    public static int ERROR_SPACES_ALLOCATION_SIZE_INVALID() {
+        return (int)-2132344818L;
+    }
+    public static int ERROR_SPACES_ENCLOSURE_AWARE_INVALID() {
+        return (int)-2132344817L;
+    }
+    public static int ERROR_SPACES_WRITE_CACHE_SIZE_INVALID() {
+        return (int)-2132344816L;
+    }
+    public static int ERROR_SPACES_NUMBER_OF_GROUPS_INVALID() {
+        return (int)-2132344815L;
+    }
+    public static int ERROR_SPACES_DRIVE_OPERATIONAL_STATE_INVALID() {
+        return (int)-2132344814L;
+    }
+    public static int ERROR_SPACES_ENTRY_INCOMPLETE() {
+        return (int)-2132344813L;
+    }
+    public static int ERROR_SPACES_ENTRY_INVALID() {
+        return (int)-2132344812L;
+    }
+    public static int ERROR_VOLSNAP_BOOTFILE_NOT_VALID() {
+        return (int)-2138963967L;
+    }
+    public static int ERROR_VOLSNAP_ACTIVATION_TIMEOUT() {
+        return (int)-2138963966L;
+    }
+    public static int ERROR_TIERING_NOT_SUPPORTED_ON_VOLUME() {
+        return (int)-2138898431L;
+    }
+    public static int ERROR_TIERING_VOLUME_DISMOUNT_IN_PROGRESS() {
+        return (int)-2138898430L;
+    }
+    public static int ERROR_TIERING_STORAGE_TIER_NOT_FOUND() {
+        return (int)-2138898429L;
+    }
+    public static int ERROR_TIERING_INVALID_FILE_ID() {
+        return (int)-2138898428L;
+    }
+    public static int ERROR_TIERING_WRONG_CLUSTER_NODE() {
+        return (int)-2138898427L;
+    }
+    public static int ERROR_TIERING_ALREADY_PROCESSING() {
+        return (int)-2138898426L;
+    }
+    public static int ERROR_TIERING_CANNOT_PIN_OBJECT() {
+        return (int)-2138898425L;
+    }
+    public static int ERROR_TIERING_FILE_IS_NOT_PINNED() {
+        return (int)-2138898424L;
+    }
+    public static int ERROR_NOT_A_TIERED_VOLUME() {
+        return (int)-2138898423L;
+    }
+    public static int ERROR_ATTRIBUTE_NOT_PRESENT() {
+        return (int)-2138898422L;
+    }
+    public static int ERROR_SECCORE_INVALID_COMMAND() {
+        return (int)-1058537472L;
+    }
+    public static int ERROR_NO_APPLICABLE_APP_LICENSES_FOUND() {
+        return (int)-1058406399L;
+    }
+    public static int ERROR_CLIP_LICENSE_NOT_FOUND() {
+        return (int)-1058406398L;
+    }
+    public static int ERROR_CLIP_DEVICE_LICENSE_MISSING() {
+        return (int)-1058406397L;
+    }
+    public static int ERROR_CLIP_LICENSE_INVALID_SIGNATURE() {
+        return (int)-1058406396L;
+    }
+    public static int ERROR_CLIP_KEYHOLDER_LICENSE_MISSING_OR_INVALID() {
+        return (int)-1058406395L;
+    }
+    public static int ERROR_CLIP_LICENSE_EXPIRED() {
+        return (int)-1058406394L;
+    }
+    public static int ERROR_CLIP_LICENSE_SIGNED_BY_UNKNOWN_SOURCE() {
+        return (int)-1058406393L;
+    }
+    public static int ERROR_CLIP_LICENSE_NOT_SIGNED() {
+        return (int)-1058406392L;
+    }
+    public static int ERROR_CLIP_LICENSE_HARDWARE_ID_OUT_OF_TOLERANCE() {
+        return (int)-1058406391L;
+    }
+    public static int ERROR_CLIP_LICENSE_DEVICE_ID_MISMATCH() {
+        return (int)-1058406390L;
+    }
+    public static int DXGI_STATUS_OCCLUDED() {
+        return (int)142213121L;
+    }
+    public static int DXGI_STATUS_CLIPPED() {
+        return (int)142213122L;
+    }
+    public static int DXGI_STATUS_NO_REDIRECTION() {
+        return (int)142213124L;
+    }
+    public static int DXGI_STATUS_NO_DESKTOP_ACCESS() {
+        return (int)142213125L;
+    }
+    public static int DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE() {
+        return (int)142213126L;
+    }
+    public static int DXGI_STATUS_MODE_CHANGED() {
+        return (int)142213127L;
+    }
+    public static int DXGI_STATUS_MODE_CHANGE_IN_PROGRESS() {
+        return (int)142213128L;
+    }
+    public static int DXGI_ERROR_INVALID_CALL() {
+        return (int)-2005270527L;
+    }
+    public static int DXGI_ERROR_NOT_FOUND() {
+        return (int)-2005270526L;
+    }
+    public static int DXGI_ERROR_MORE_DATA() {
+        return (int)-2005270525L;
+    }
+    public static int DXGI_ERROR_UNSUPPORTED() {
+        return (int)-2005270524L;
+    }
+    public static int DXGI_ERROR_DEVICE_REMOVED() {
+        return (int)-2005270523L;
+    }
+    public static int DXGI_ERROR_DEVICE_HUNG() {
+        return (int)-2005270522L;
+    }
+    public static int DXGI_ERROR_DEVICE_RESET() {
+        return (int)-2005270521L;
+    }
+    public static int DXGI_ERROR_WAS_STILL_DRAWING() {
+        return (int)-2005270518L;
+    }
+    public static int DXGI_ERROR_FRAME_STATISTICS_DISJOINT() {
+        return (int)-2005270517L;
+    }
+    public static int DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE() {
+        return (int)-2005270516L;
+    }
+    public static int DXGI_ERROR_DRIVER_INTERNAL_ERROR() {
+        return (int)-2005270496L;
+    }
+    public static int DXGI_ERROR_NONEXCLUSIVE() {
+        return (int)-2005270495L;
+    }
+    public static int DXGI_ERROR_NOT_CURRENTLY_AVAILABLE() {
+        return (int)-2005270494L;
+    }
+    public static int DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED() {
+        return (int)-2005270493L;
+    }
+    public static int DXGI_ERROR_REMOTE_OUTOFMEMORY() {
+        return (int)-2005270492L;
+    }
+    public static int DXGI_ERROR_ACCESS_LOST() {
+        return (int)-2005270490L;
+    }
+    public static int DXGI_ERROR_WAIT_TIMEOUT() {
+        return (int)-2005270489L;
+    }
+    public static int DXGI_ERROR_SESSION_DISCONNECTED() {
+        return (int)-2005270488L;
+    }
+    public static int DXGI_ERROR_RESTRICT_TO_OUTPUT_STALE() {
+        return (int)-2005270487L;
+    }
+    public static int DXGI_ERROR_CANNOT_PROTECT_CONTENT() {
+        return (int)-2005270486L;
+    }
+    public static int DXGI_ERROR_ACCESS_DENIED() {
+        return (int)-2005270485L;
+    }
+    public static int DXGI_ERROR_NAME_ALREADY_EXISTS() {
+        return (int)-2005270484L;
+    }
+    public static int DXGI_ERROR_SDK_COMPONENT_MISSING() {
+        return (int)-2005270483L;
+    }
+    public static int DXGI_ERROR_NOT_CURRENT() {
+        return (int)-2005270482L;
+    }
+    public static int DXGI_ERROR_HW_PROTECTION_OUTOFMEMORY() {
+        return (int)-2005270480L;
+    }
+    public static int DXGI_ERROR_DYNAMIC_CODE_POLICY_VIOLATION() {
+        return (int)-2005270479L;
+    }
+    public static int DXGI_ERROR_NON_COMPOSITED_UI() {
+        return (int)-2005270478L;
+    }
+    public static int DXCORE_ERROR_EVENT_NOT_UNREGISTERED() {
+        return (int)-2004877311L;
+    }
+    public static int DXGI_STATUS_UNOCCLUDED() {
+        return (int)142213129L;
+    }
+    public static int DXGI_STATUS_DDA_WAS_STILL_DRAWING() {
+        return (int)142213130L;
+    }
+    public static int DXGI_ERROR_MODE_CHANGE_IN_PROGRESS() {
+        return (int)-2005270491L;
+    }
+    public static int DXGI_STATUS_PRESENT_REQUIRED() {
+        return (int)142213167L;
+    }
+    public static int DXGI_ERROR_CACHE_CORRUPT() {
+        return (int)-2005270477L;
+    }
+    public static int DXGI_ERROR_CACHE_FULL() {
+        return (int)-2005270476L;
+    }
+    public static int DXGI_ERROR_CACHE_HASH_COLLISION() {
+        return (int)-2005270475L;
+    }
+    public static int DXGI_ERROR_ALREADY_EXISTS() {
+        return (int)-2005270474L;
+    }
+    public static int DXGI_DDI_ERR_WASSTILLDRAWING() {
+        return (int)-2005204991L;
+    }
+    public static int DXGI_DDI_ERR_UNSUPPORTED() {
+        return (int)-2005204990L;
+    }
+    public static int DXGI_DDI_ERR_NONEXCLUSIVE() {
+        return (int)-2005204989L;
+    }
+    public static int D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS() {
+        return (int)-2005336063L;
+    }
+    public static int D3D10_ERROR_FILE_NOT_FOUND() {
+        return (int)-2005336062L;
+    }
+    public static int D3D11_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS() {
+        return (int)-2005139455L;
+    }
+    public static int D3D11_ERROR_FILE_NOT_FOUND() {
+        return (int)-2005139454L;
+    }
+    public static int D3D11_ERROR_TOO_MANY_UNIQUE_VIEW_OBJECTS() {
+        return (int)-2005139453L;
+    }
+    public static int D3D11_ERROR_DEFERRED_CONTEXT_MAP_WITHOUT_INITIAL_DISCARD() {
+        return (int)-2005139452L;
+    }
+    public static int D3D12_ERROR_ADAPTER_NOT_FOUND() {
+        return (int)-2005008383L;
+    }
+    public static int D3D12_ERROR_DRIVER_VERSION_MISMATCH() {
+        return (int)-2005008382L;
+    }
+    public static int D2DERR_WRONG_STATE() {
+        return (int)-2003238911L;
+    }
+    public static int D2DERR_NOT_INITIALIZED() {
+        return (int)-2003238910L;
+    }
+    public static int D2DERR_UNSUPPORTED_OPERATION() {
+        return (int)-2003238909L;
+    }
+    public static int D2DERR_SCANNER_FAILED() {
+        return (int)-2003238908L;
+    }
+    public static int D2DERR_SCREEN_ACCESS_DENIED() {
+        return (int)-2003238907L;
+    }
+    public static int D2DERR_DISPLAY_STATE_INVALID() {
+        return (int)-2003238906L;
+    }
+    public static int D2DERR_ZERO_VECTOR() {
+        return (int)-2003238905L;
+    }
+    public static int D2DERR_INTERNAL_ERROR() {
+        return (int)-2003238904L;
+    }
+    public static int D2DERR_DISPLAY_FORMAT_NOT_SUPPORTED() {
+        return (int)-2003238903L;
+    }
+    public static int D2DERR_INVALID_CALL() {
+        return (int)-2003238902L;
+    }
+    public static int D2DERR_NO_HARDWARE_DEVICE() {
+        return (int)-2003238901L;
+    }
+    public static int D2DERR_RECREATE_TARGET() {
+        return (int)-2003238900L;
+    }
+    public static int D2DERR_TOO_MANY_SHADER_ELEMENTS() {
+        return (int)-2003238899L;
+    }
+    public static int D2DERR_SHADER_COMPILE_FAILED() {
+        return (int)-2003238898L;
+    }
+    public static int D2DERR_MAX_TEXTURE_SIZE_EXCEEDED() {
+        return (int)-2003238897L;
+    }
+    public static int D2DERR_UNSUPPORTED_VERSION() {
+        return (int)-2003238896L;
+    }
+    public static int D2DERR_BAD_NUMBER() {
+        return (int)-2003238895L;
+    }
+    public static int D2DERR_WRONG_FACTORY() {
+        return (int)-2003238894L;
+    }
+    public static int D2DERR_LAYER_ALREADY_IN_USE() {
+        return (int)-2003238893L;
+    }
+    public static int D2DERR_POP_CALL_DID_NOT_MATCH_PUSH() {
+        return (int)-2003238892L;
+    }
+    public static int D2DERR_WRONG_RESOURCE_DOMAIN() {
+        return (int)-2003238891L;
+    }
+    public static int D2DERR_PUSH_POP_UNBALANCED() {
+        return (int)-2003238890L;
+    }
+    public static int D2DERR_RENDER_TARGET_HAS_LAYER_OR_CLIPRECT() {
+        return (int)-2003238889L;
+    }
+    public static int D2DERR_INCOMPATIBLE_BRUSH_TYPES() {
+        return (int)-2003238888L;
+    }
+    public static int D2DERR_WIN32_ERROR() {
+        return (int)-2003238887L;
+    }
+    public static int D2DERR_TARGET_NOT_GDI_COMPATIBLE() {
+        return (int)-2003238886L;
+    }
+    public static int D2DERR_TEXT_EFFECT_IS_WRONG_TYPE() {
+        return (int)-2003238885L;
+    }
+    public static int D2DERR_TEXT_RENDERER_NOT_RELEASED() {
+        return (int)-2003238884L;
+    }
+    public static int D2DERR_EXCEEDS_MAX_BITMAP_SIZE() {
+        return (int)-2003238883L;
+    }
+    public static int D2DERR_INVALID_GRAPH_CONFIGURATION() {
+        return (int)-2003238882L;
+    }
+    public static int D2DERR_INVALID_INTERNAL_GRAPH_CONFIGURATION() {
+        return (int)-2003238881L;
+    }
+    public static int D2DERR_CYCLIC_GRAPH() {
+        return (int)-2003238880L;
+    }
+    public static int D2DERR_BITMAP_CANNOT_DRAW() {
+        return (int)-2003238879L;
+    }
+    public static int D2DERR_OUTSTANDING_BITMAP_REFERENCES() {
+        return (int)-2003238878L;
+    }
+    public static int D2DERR_ORIGINAL_TARGET_NOT_BOUND() {
+        return (int)-2003238877L;
+    }
+    public static int D2DERR_INVALID_TARGET() {
+        return (int)-2003238876L;
+    }
+    public static int D2DERR_BITMAP_BOUND_AS_TARGET() {
+        return (int)-2003238875L;
+    }
+    public static int D2DERR_INSUFFICIENT_DEVICE_CAPABILITIES() {
+        return (int)-2003238874L;
+    }
+    public static int D2DERR_INTERMEDIATE_TOO_LARGE() {
+        return (int)-2003238873L;
+    }
+    public static int D2DERR_EFFECT_IS_NOT_REGISTERED() {
+        return (int)-2003238872L;
+    }
+    public static int D2DERR_INVALID_PROPERTY() {
+        return (int)-2003238871L;
+    }
+    public static int D2DERR_NO_SUBPROPERTIES() {
+        return (int)-2003238870L;
+    }
+    public static int D2DERR_PRINT_JOB_CLOSED() {
+        return (int)-2003238869L;
+    }
+    public static int D2DERR_PRINT_FORMAT_NOT_SUPPORTED() {
+        return (int)-2003238868L;
+    }
+    public static int D2DERR_TOO_MANY_TRANSFORM_INPUTS() {
+        return (int)-2003238867L;
+    }
+    public static int D2DERR_INVALID_GLYPH_IMAGE() {
+        return (int)-2003238866L;
+    }
+    public static int DWRITE_E_FILEFORMAT() {
+        return (int)-2003283968L;
+    }
+    public static int DWRITE_E_UNEXPECTED() {
+        return (int)-2003283967L;
+    }
+    public static int DWRITE_E_NOFONT() {
+        return (int)-2003283966L;
+    }
+    public static int DWRITE_E_FILENOTFOUND() {
+        return (int)-2003283965L;
+    }
+    public static int DWRITE_E_FILEACCESS() {
+        return (int)-2003283964L;
+    }
+    public static int DWRITE_E_FONTCOLLECTIONOBSOLETE() {
+        return (int)-2003283963L;
+    }
+    public static int DWRITE_E_ALREADYREGISTERED() {
+        return (int)-2003283962L;
+    }
+    public static int DWRITE_E_CACHEFORMAT() {
+        return (int)-2003283961L;
+    }
+    public static int DWRITE_E_CACHEVERSION() {
+        return (int)-2003283960L;
+    }
+    public static int DWRITE_E_UNSUPPORTEDOPERATION() {
+        return (int)-2003283959L;
+    }
+    public static int DWRITE_E_TEXTRENDERERINCOMPATIBLE() {
+        return (int)-2003283958L;
+    }
+    public static int DWRITE_E_FLOWDIRECTIONCONFLICTS() {
+        return (int)-2003283957L;
+    }
+    public static int DWRITE_E_NOCOLOR() {
+        return (int)-2003283956L;
+    }
+    public static int DWRITE_E_REMOTEFONT() {
+        return (int)-2003283955L;
+    }
+    public static int DWRITE_E_DOWNLOADCANCELLED() {
+        return (int)-2003283954L;
+    }
+    public static int DWRITE_E_DOWNLOADFAILED() {
+        return (int)-2003283953L;
+    }
+    public static int DWRITE_E_TOOMANYDOWNLOADS() {
+        return (int)-2003283952L;
+    }
+    public static int WINCODEC_ERR_WRONGSTATE() {
+        return (int)-2003292412L;
+    }
+    public static int WINCODEC_ERR_VALUEOUTOFRANGE() {
+        return (int)-2003292411L;
+    }
+    public static int WINCODEC_ERR_UNKNOWNIMAGEFORMAT() {
+        return (int)-2003292409L;
+    }
+    public static int WINCODEC_ERR_UNSUPPORTEDVERSION() {
+        return (int)-2003292405L;
+    }
+    public static int WINCODEC_ERR_NOTINITIALIZED() {
+        return (int)-2003292404L;
+    }
+    public static int WINCODEC_ERR_ALREADYLOCKED() {
+        return (int)-2003292403L;
+    }
+    public static int WINCODEC_ERR_PROPERTYNOTFOUND() {
+        return (int)-2003292352L;
+    }
+    public static int WINCODEC_ERR_PROPERTYNOTSUPPORTED() {
+        return (int)-2003292351L;
+    }
+    public static int WINCODEC_ERR_PROPERTYSIZE() {
+        return (int)-2003292350L;
+    }
+    public static int WINCODEC_ERR_CODECPRESENT() {
+        return (int)-2003292349L;
+    }
+    public static int WINCODEC_ERR_CODECNOTHUMBNAIL() {
+        return (int)-2003292348L;
+    }
+    public static int WINCODEC_ERR_PALETTEUNAVAILABLE() {
+        return (int)-2003292347L;
+    }
+    public static int WINCODEC_ERR_CODECTOOMANYSCANLINES() {
+        return (int)-2003292346L;
+    }
+    public static int WINCODEC_ERR_INTERNALERROR() {
+        return (int)-2003292344L;
+    }
+    public static int WINCODEC_ERR_SOURCERECTDOESNOTMATCHDIMENSIONS() {
+        return (int)-2003292343L;
+    }
+    public static int WINCODEC_ERR_COMPONENTNOTFOUND() {
+        return (int)-2003292336L;
+    }
+    public static int WINCODEC_ERR_IMAGESIZEOUTOFRANGE() {
+        return (int)-2003292335L;
+    }
+    public static int WINCODEC_ERR_TOOMUCHMETADATA() {
+        return (int)-2003292334L;
+    }
+    public static int WINCODEC_ERR_BADIMAGE() {
+        return (int)-2003292320L;
+    }
+    public static int WINCODEC_ERR_BADHEADER() {
+        return (int)-2003292319L;
+    }
+    public static int WINCODEC_ERR_FRAMEMISSING() {
+        return (int)-2003292318L;
+    }
+    public static int WINCODEC_ERR_BADMETADATAHEADER() {
+        return (int)-2003292317L;
+    }
+    public static int WINCODEC_ERR_BADSTREAMDATA() {
+        return (int)-2003292304L;
+    }
+    public static int WINCODEC_ERR_STREAMWRITE() {
+        return (int)-2003292303L;
+    }
+    public static int WINCODEC_ERR_STREAMREAD() {
+        return (int)-2003292302L;
+    }
+    public static int WINCODEC_ERR_STREAMNOTAVAILABLE() {
+        return (int)-2003292301L;
+    }
+    public static int WINCODEC_ERR_UNSUPPORTEDPIXELFORMAT() {
+        return (int)-2003292288L;
+    }
+    public static int WINCODEC_ERR_UNSUPPORTEDOPERATION() {
+        return (int)-2003292287L;
+    }
+    public static int WINCODEC_ERR_INVALIDREGISTRATION() {
+        return (int)-2003292278L;
+    }
+    public static int WINCODEC_ERR_COMPONENTINITIALIZEFAILURE() {
+        return (int)-2003292277L;
+    }
+    public static int WINCODEC_ERR_INSUFFICIENTBUFFER() {
+        return (int)-2003292276L;
+    }
+    public static int WINCODEC_ERR_DUPLICATEMETADATAPRESENT() {
+        return (int)-2003292275L;
+    }
+    public static int WINCODEC_ERR_PROPERTYUNEXPECTEDTYPE() {
+        return (int)-2003292274L;
+    }
+    public static int WINCODEC_ERR_UNEXPECTEDSIZE() {
+        return (int)-2003292273L;
+    }
+    public static int WINCODEC_ERR_INVALIDQUERYREQUEST() {
+        return (int)-2003292272L;
+    }
+    public static int WINCODEC_ERR_UNEXPECTEDMETADATATYPE() {
+        return (int)-2003292271L;
+    }
+    public static int WINCODEC_ERR_REQUESTONLYVALIDATMETADATAROOT() {
+        return (int)-2003292270L;
+    }
+    public static int WINCODEC_ERR_INVALIDQUERYCHARACTER() {
+        return (int)-2003292269L;
+    }
+    public static int WINCODEC_ERR_WIN32ERROR() {
+        return (int)-2003292268L;
+    }
+    public static int WINCODEC_ERR_INVALIDPROGRESSIVELEVEL() {
+        return (int)-2003292267L;
+    }
     public static int WINCODEC_ERR_INVALIDJPEGSCANINDEX() {
         return (int)-2003292266L;
     }
@@ -2185,91 +2848,91 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)2147483649L;
     }
     public static MemoryAddress RT_CURSOR() {
-        return constants$732.RT_CURSOR$ADDR;
+        return constants$738.RT_CURSOR$ADDR;
     }
     public static MemoryAddress RT_BITMAP() {
-        return constants$732.RT_BITMAP$ADDR;
+        return constants$739.RT_BITMAP$ADDR;
     }
     public static MemoryAddress RT_ICON() {
-        return constants$733.RT_ICON$ADDR;
+        return constants$739.RT_ICON$ADDR;
     }
     public static MemoryAddress RT_MENU() {
-        return constants$733.RT_MENU$ADDR;
+        return constants$739.RT_MENU$ADDR;
     }
     public static MemoryAddress RT_DIALOG() {
-        return constants$733.RT_DIALOG$ADDR;
+        return constants$739.RT_DIALOG$ADDR;
     }
     public static MemoryAddress RT_STRING() {
-        return constants$733.RT_STRING$ADDR;
+        return constants$739.RT_STRING$ADDR;
     }
     public static MemoryAddress RT_FONTDIR() {
-        return constants$733.RT_FONTDIR$ADDR;
+        return constants$739.RT_FONTDIR$ADDR;
     }
     public static MemoryAddress RT_FONT() {
-        return constants$733.RT_FONT$ADDR;
+        return constants$740.RT_FONT$ADDR;
     }
     public static MemoryAddress RT_ACCELERATOR() {
-        return constants$734.RT_ACCELERATOR$ADDR;
+        return constants$740.RT_ACCELERATOR$ADDR;
     }
     public static MemoryAddress RT_RCDATA() {
-        return constants$734.RT_RCDATA$ADDR;
+        return constants$740.RT_RCDATA$ADDR;
     }
     public static MemoryAddress RT_MESSAGETABLE() {
-        return constants$734.RT_MESSAGETABLE$ADDR;
+        return constants$740.RT_MESSAGETABLE$ADDR;
     }
     public static MemoryAddress RT_GROUP_CURSOR() {
-        return constants$734.RT_GROUP_CURSOR$ADDR;
+        return constants$740.RT_GROUP_CURSOR$ADDR;
     }
     public static MemoryAddress RT_GROUP_ICON() {
-        return constants$734.RT_GROUP_ICON$ADDR;
+        return constants$740.RT_GROUP_ICON$ADDR;
     }
     public static MemoryAddress RT_VERSION() {
-        return constants$734.RT_VERSION$ADDR;
+        return constants$741.RT_VERSION$ADDR;
     }
     public static MemoryAddress RT_DLGINCLUDE() {
-        return constants$735.RT_DLGINCLUDE$ADDR;
+        return constants$741.RT_DLGINCLUDE$ADDR;
     }
     public static MemoryAddress RT_PLUGPLAY() {
-        return constants$735.RT_PLUGPLAY$ADDR;
+        return constants$741.RT_PLUGPLAY$ADDR;
     }
     public static MemoryAddress RT_VXD() {
-        return constants$735.RT_VXD$ADDR;
+        return constants$741.RT_VXD$ADDR;
     }
     public static MemoryAddress RT_ANICURSOR() {
-        return constants$735.RT_ANICURSOR$ADDR;
+        return constants$741.RT_ANICURSOR$ADDR;
     }
     public static MemoryAddress RT_ANIICON() {
-        return constants$735.RT_ANIICON$ADDR;
+        return constants$741.RT_ANIICON$ADDR;
     }
     public static MemoryAddress RT_HTML() {
-        return constants$735.RT_HTML$ADDR;
+        return constants$742.RT_HTML$ADDR;
     }
     public static MemoryAddress RT_MANIFEST() {
-        return constants$736.RT_MANIFEST$ADDR;
+        return constants$742.RT_MANIFEST$ADDR;
     }
     public static MemoryAddress CREATEPROCESS_MANIFEST_RESOURCE_ID() {
-        return constants$736.CREATEPROCESS_MANIFEST_RESOURCE_ID$ADDR;
+        return constants$742.CREATEPROCESS_MANIFEST_RESOURCE_ID$ADDR;
     }
     public static MemoryAddress ISOLATIONAWARE_MANIFEST_RESOURCE_ID() {
-        return constants$736.ISOLATIONAWARE_MANIFEST_RESOURCE_ID$ADDR;
+        return constants$742.ISOLATIONAWARE_MANIFEST_RESOURCE_ID$ADDR;
     }
     public static MemoryAddress ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID() {
-        return constants$736.ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID$ADDR;
+        return constants$742.ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID$ADDR;
     }
     public static MemoryAddress ISOLATIONPOLICY_MANIFEST_RESOURCE_ID() {
-        return constants$736.ISOLATIONPOLICY_MANIFEST_RESOURCE_ID$ADDR;
+        return constants$742.ISOLATIONPOLICY_MANIFEST_RESOURCE_ID$ADDR;
     }
     public static MemoryAddress ISOLATIONPOLICY_BROWSER_MANIFEST_RESOURCE_ID() {
-        return constants$736.ISOLATIONPOLICY_BROWSER_MANIFEST_RESOURCE_ID$ADDR;
+        return constants$743.ISOLATIONPOLICY_BROWSER_MANIFEST_RESOURCE_ID$ADDR;
     }
     public static MemoryAddress MINIMUM_RESERVED_MANIFEST_RESOURCE_ID() {
-        return constants$737.MINIMUM_RESERVED_MANIFEST_RESOURCE_ID$ADDR;
+        return constants$743.MINIMUM_RESERVED_MANIFEST_RESOURCE_ID$ADDR;
     }
     public static MemoryAddress MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID() {
-        return constants$737.MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID$ADDR;
+        return constants$743.MAXIMUM_RESERVED_MANIFEST_RESOURCE_ID$ADDR;
     }
     public static MemoryAddress SETWALLPAPER_DEFAULT() {
-        return constants$737.SETWALLPAPER_DEFAULT$ADDR;
+        return constants$743.SETWALLPAPER_DEFAULT$ADDR;
     }
     public static int WH_MIN() {
         return (int)-1L;
@@ -2344,669 +3007,6 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)8L;
     }
     public static int WINSTA_WRITEATTRIBUTES() {
-        return (int)16L;
-    }
-    public static int WINSTA_ACCESSGLOBALATOMS() {
-        return (int)32L;
-    }
-    public static int WINSTA_EXITWINDOWS() {
-        return (int)64L;
-    }
-    public static int WINSTA_ENUMERATE() {
-        return (int)256L;
-    }
-    public static int WINSTA_READSCREEN() {
-        return (int)512L;
-    }
-    public static int WINSTA_ALL_ACCESS() {
-        return (int)895L;
-    }
-    public static int WSF_VISIBLE() {
-        return (int)1L;
-    }
-    public static int GWL_STYLE() {
-        return (int)-16L;
-    }
-    public static int GWL_EXSTYLE() {
-        return (int)-20L;
-    }
-    public static int GWL_ID() {
-        return (int)-12L;
-    }
-    public static int GWLP_WNDPROC() {
-        return (int)-4L;
-    }
-    public static int GWLP_HINSTANCE() {
-        return (int)-6L;
-    }
-    public static int GWLP_HWNDPARENT() {
-        return (int)-8L;
-    }
-    public static int GWLP_USERDATA() {
-        return (int)-21L;
-    }
-    public static int GWLP_ID() {
-        return (int)-12L;
-    }
-    public static int GCL_CBWNDEXTRA() {
-        return (int)-18L;
-    }
-    public static int GCL_CBCLSEXTRA() {
-        return (int)-20L;
-    }
-    public static int GCL_STYLE() {
-        return (int)-26L;
-    }
-    public static int GCW_ATOM() {
-        return (int)-32L;
-    }
-    public static int GCLP_MENUNAME() {
-        return (int)-8L;
-    }
-    public static int GCLP_HBRBACKGROUND() {
-        return (int)-10L;
-    }
-    public static int GCLP_HCURSOR() {
-        return (int)-12L;
-    }
-    public static int GCLP_HICON() {
-        return (int)-14L;
-    }
-    public static int GCLP_HMODULE() {
-        return (int)-16L;
-    }
-    public static int GCLP_WNDPROC() {
-        return (int)-24L;
-    }
-    public static int GCLP_HICONSM() {
-        return (int)-34L;
-    }
-    public static int WM_SETTINGCHANGE() {
-        return (int)26L;
-    }
-    public static int PWR_FAIL() {
-        return (int)-1L;
-    }
-    public static int WHEEL_PAGESCROLL() {
-        return (int)4294967295L;
-    }
-    public static int HTERROR() {
-        return (int)-2L;
-    }
-    public static int HTTRANSPARENT() {
-        return (int)-1L;
-    }
-    public static int HTSIZE() {
-        return (int)4L;
-    }
-    public static int HTREDUCE() {
-        return (int)8L;
-    }
-    public static int HTZOOM() {
-        return (int)9L;
-    }
-    public static int HTSIZEFIRST() {
-        return (int)10L;
-    }
-    public static int HTSIZELAST() {
-        return (int)17L;
-    }
-    public static int SIZENORMAL() {
-        return (int)0L;
-    }
-    public static int SIZEICONIC() {
-        return (int)1L;
-    }
-    public static int SIZEFULLSCREEN() {
-        return (int)2L;
-    }
-    public static int SIZEZOOMSHOW() {
-        return (int)3L;
-    }
-    public static int SIZEZOOMHIDE() {
-        return (int)4L;
-    }
-    public static int WVR_REDRAW() {
-        return (int)768L;
-    }
-    public static int TME_CANCEL() {
-        return (int)2147483648L;
-    }
-    public static int HOVER_DEFAULT() {
-        return (int)4294967295L;
-    }
-    public static int WS_OVERLAPPED() {
-        return (int)0L;
-    }
-    public static int WS_POPUP() {
-        return (int)2147483648L;
-    }
-    public static int WS_CHILD() {
-        return (int)1073741824L;
-    }
-    public static int WS_MINIMIZE() {
-        return (int)536870912L;
-    }
-    public static int WS_VISIBLE() {
-        return (int)268435456L;
-    }
-    public static int WS_DISABLED() {
-        return (int)134217728L;
-    }
-    public static int WS_CLIPSIBLINGS() {
-        return (int)67108864L;
-    }
-    public static int WS_CLIPCHILDREN() {
-        return (int)33554432L;
-    }
-    public static int WS_MAXIMIZE() {
-        return (int)16777216L;
-    }
-    public static int WS_CAPTION() {
-        return (int)12582912L;
-    }
-    public static int WS_BORDER() {
-        return (int)8388608L;
-    }
-    public static int WS_DLGFRAME() {
-        return (int)4194304L;
-    }
-    public static int WS_VSCROLL() {
-        return (int)2097152L;
-    }
-    public static int WS_HSCROLL() {
-        return (int)1048576L;
-    }
-    public static int WS_SYSMENU() {
-        return (int)524288L;
-    }
-    public static int WS_THICKFRAME() {
-        return (int)262144L;
-    }
-    public static int WS_GROUP() {
-        return (int)131072L;
-    }
-    public static int WS_TABSTOP() {
-        return (int)65536L;
-    }
-    public static int WS_MINIMIZEBOX() {
-        return (int)131072L;
-    }
-    public static int WS_MAXIMIZEBOX() {
-        return (int)65536L;
-    }
-    public static int WS_TILED() {
-        return (int)0L;
-    }
-    public static int WS_ICONIC() {
-        return (int)536870912L;
-    }
-    public static int WS_SIZEBOX() {
-        return (int)262144L;
-    }
-    public static int WS_TILEDWINDOW() {
-        return (int)13565952L;
-    }
-    public static int WS_OVERLAPPEDWINDOW() {
-        return (int)13565952L;
-    }
-    public static int WS_POPUPWINDOW() {
-        return (int)2156396544L;
-    }
-    public static int WS_CHILDWINDOW() {
-        return (int)1073741824L;
-    }
-    public static int WS_EX_DLGMODALFRAME() {
-        return (int)1L;
-    }
-    public static int WS_EX_NOPARENTNOTIFY() {
-        return (int)4L;
-    }
-    public static int WS_EX_TOPMOST() {
-        return (int)8L;
-    }
-    public static int WS_EX_ACCEPTFILES() {
-        return (int)16L;
-    }
-    public static int WS_EX_TRANSPARENT() {
-        return (int)32L;
-    }
-    public static int WS_EX_MDICHILD() {
-        return (int)64L;
-    }
-    public static int WS_EX_TOOLWINDOW() {
-        return (int)128L;
-    }
-    public static int WS_EX_WINDOWEDGE() {
-        return (int)256L;
-    }
-    public static int WS_EX_CLIENTEDGE() {
-        return (int)512L;
-    }
-    public static int WS_EX_CONTEXTHELP() {
-        return (int)1024L;
-    }
-    public static int WS_EX_RIGHT() {
-        return (int)4096L;
-    }
-    public static int WS_EX_LEFT() {
-        return (int)0L;
-    }
-    public static int WS_EX_RTLREADING() {
-        return (int)8192L;
-    }
-    public static int WS_EX_LTRREADING() {
-        return (int)0L;
-    }
-    public static int WS_EX_LEFTSCROLLBAR() {
-        return (int)16384L;
-    }
-    public static int WS_EX_RIGHTSCROLLBAR() {
-        return (int)0L;
-    }
-    public static int WS_EX_CONTROLPARENT() {
-        return (int)65536L;
-    }
-    public static int WS_EX_STATICEDGE() {
-        return (int)131072L;
-    }
-    public static int WS_EX_APPWINDOW() {
-        return (int)262144L;
-    }
-    public static int WS_EX_OVERLAPPEDWINDOW() {
-        return (int)768L;
-    }
-    public static int WS_EX_PALETTEWINDOW() {
-        return (int)392L;
-    }
-    public static int WS_EX_NOINHERITLAYOUT() {
-        return (int)1048576L;
-    }
-    public static int WS_EX_NOREDIRECTIONBITMAP() {
-        return (int)2097152L;
-    }
-    public static int WS_EX_LAYOUTRTL() {
-        return (int)4194304L;
-    }
-    public static int WS_EX_COMPOSITED() {
-        return (int)33554432L;
-    }
-    public static int WS_EX_NOACTIVATE() {
-        return (int)134217728L;
-    }
-    public static int PRF_CHECKVISIBLE() {
-        return (int)1L;
-    }
-    public static int PRF_NONCLIENT() {
-        return (int)2L;
-    }
-    public static int PRF_CLIENT() {
-        return (int)4L;
-    }
-    public static int PRF_ERASEBKGND() {
-        return (int)8L;
-    }
-    public static int PRF_CHILDREN() {
-        return (int)16L;
-    }
-    public static int PRF_OWNED() {
-        return (int)32L;
-    }
-    public static int BDR_OUTER() {
-        return (int)3L;
-    }
-    public static int BDR_INNER() {
-        return (int)12L;
-    }
-    public static int BDR_RAISED() {
-        return (int)5L;
-    }
-    public static int BDR_SUNKEN() {
-        return (int)10L;
-    }
-    public static int EDGE_RAISED() {
-        return (int)5L;
-    }
-    public static int EDGE_SUNKEN() {
-        return (int)10L;
-    }
-    public static int EDGE_ETCHED() {
-        return (int)6L;
-    }
-    public static int EDGE_BUMP() {
-        return (int)9L;
-    }
-    public static int BF_TOPLEFT() {
-        return (int)3L;
-    }
-    public static int BF_TOPRIGHT() {
-        return (int)6L;
-    }
-    public static int BF_BOTTOMLEFT() {
-        return (int)9L;
-    }
-    public static int BF_BOTTOMRIGHT() {
-        return (int)12L;
-    }
-    public static int BF_RECT() {
-        return (int)15L;
-    }
-    public static int BF_DIAGONAL_ENDTOPRIGHT() {
-        return (int)22L;
-    }
-    public static int BF_DIAGONAL_ENDTOPLEFT() {
-        return (int)19L;
-    }
-    public static int BF_DIAGONAL_ENDBOTTOMLEFT() {
-        return (int)25L;
-    }
-    public static int BF_DIAGONAL_ENDBOTTOMRIGHT() {
-        return (int)28L;
-    }
-    public static int FVIRTKEY() {
-        return (int)1L;
-    }
-    public static int PM_QS_INPUT() {
-        return (int)470220800L;
-    }
-    public static int PM_QS_POSTMESSAGE() {
-        return (int)9961472L;
-    }
-    public static int PM_QS_PAINT() {
-        return (int)2097152L;
-    }
-    public static int PM_QS_SENDMESSAGE() {
-        return (int)4194304L;
-    }
-    public static int IDHOT_SNAPWINDOW() {
-        return (int)-1L;
-    }
-    public static int IDHOT_SNAPDESKTOP() {
-        return (int)-2L;
-    }
-    public static int ENDSESSION_LOGOFF() {
-        return (int)2147483648L;
-    }
-    public static MemoryAddress HWND_BROADCAST() {
-        return constants$737.HWND_BROADCAST$ADDR;
-    }
-    public static MemoryAddress HWND_MESSAGE() {
-        return constants$737.HWND_MESSAGE$ADDR;
-    }
-    public static int CW_USEDEFAULT() {
-        return (int)-2147483648L;
-    }
-    public static MemoryAddress HWND_DESKTOP() {
-        return constants$737.HWND_DESKTOP$ADDR;
-    }
-    public static int FLASHW_ALL() {
-        return (int)3L;
-    }
-    public static int SWP_DRAWFRAME() {
-        return (int)32L;
-    }
-    public static int SWP_NOREPOSITION() {
-        return (int)512L;
-    }
-    public static MemoryAddress HWND_TOP() {
-        return constants$738.HWND_TOP$ADDR;
-    }
-    public static MemoryAddress HWND_BOTTOM() {
-        return constants$738.HWND_BOTTOM$ADDR;
-    }
-    public static MemoryAddress HWND_TOPMOST() {
-        return constants$738.HWND_TOPMOST$ADDR;
-    }
-    public static MemoryAddress HWND_NOTOPMOST() {
-        return constants$738.HWND_NOTOPMOST$ADDR;
-    }
-    public static int TWF_FINETOUCH() {
-        return (int)1L;
-    }
-    public static int TWF_WANTPALM() {
-        return (int)2L;
-    }
-    public static int POINTER_MOD_SHIFT() {
-        return (int)4L;
-    }
-    public static int POINTER_MOD_CTRL() {
-        return (int)8L;
-    }
-    public static int PA_ACTIVATE() {
-        return (int)1L;
-    }
-    public static int PA_NOACTIVATE() {
-        return (int)3L;
-    }
-    public static int MAPVK_VK_TO_VSC() {
-        return (int)0L;
-    }
-    public static int MAPVK_VSC_TO_VK() {
-        return (int)1L;
-    }
-    public static int MAPVK_VK_TO_CHAR() {
-        return (int)2L;
-    }
-    public static int MAPVK_VSC_TO_VK_EX() {
-        return (int)3L;
-    }
-    public static int MAPVK_VK_TO_VSC_EX() {
-        return (int)4L;
-    }
-    public static int QS_MOUSE() {
-        return (int)6L;
-    }
-    public static int QS_INPUT() {
-        return (int)7175L;
-    }
-    public static int QS_ALLEVENTS() {
-        return (int)7359L;
-    }
-    public static int QS_ALLINPUT() {
-        return (int)7423L;
-    }
-    public static int TIMERV_DEFAULT_COALESCING() {
-        return (int)0L;
-    }
-    public static int TIMERV_NO_COALESCING() {
-        return (int)4294967295L;
-    }
-    public static int TIMERV_COALESCING_MIN() {
-        return (int)1L;
-    }
-    public static int TIMERV_COALESCING_MAX() {
-        return (int)2147483637L;
-    }
-    public static int SM_CXFIXEDFRAME() {
-        return (int)7L;
-    }
-    public static int SM_CYFIXEDFRAME() {
-        return (int)8L;
-    }
-    public static int SM_CXSIZEFRAME() {
-        return (int)32L;
-    }
-    public static int SM_CYSIZEFRAME() {
-        return (int)33L;
-    }
-    public static int MNS_NOCHECK() {
-        return (int)2147483648L;
-    }
-    public static int MIM_APPLYTOSUBMENUS() {
-        return (int)2147483648L;
-    }
-    public static MemoryAddress HBMMENU_CALLBACK() {
-        return constants$738.HBMMENU_CALLBACK$ADDR;
-    }
-    public static MemoryAddress HBMMENU_SYSTEM() {
-        return constants$738.HBMMENU_SYSTEM$ADDR;
-    }
-    public static MemoryAddress HBMMENU_MBAR_RESTORE() {
-        return constants$739.HBMMENU_MBAR_RESTORE$ADDR;
-    }
-    public static MemoryAddress HBMMENU_MBAR_MINIMIZE() {
-        return constants$739.HBMMENU_MBAR_MINIMIZE$ADDR;
-    }
-    public static MemoryAddress HBMMENU_MBAR_CLOSE() {
-        return constants$739.HBMMENU_MBAR_CLOSE$ADDR;
-    }
-    public static MemoryAddress HBMMENU_MBAR_CLOSE_D() {
-        return constants$739.HBMMENU_MBAR_CLOSE_D$ADDR;
-    }
-    public static MemoryAddress HBMMENU_MBAR_MINIMIZE_D() {
-        return constants$739.HBMMENU_MBAR_MINIMIZE_D$ADDR;
-    }
-    public static MemoryAddress HBMMENU_POPUP_CLOSE() {
-        return constants$739.HBMMENU_POPUP_CLOSE$ADDR;
-    }
-    public static MemoryAddress HBMMENU_POPUP_RESTORE() {
-        return constants$740.HBMMENU_POPUP_RESTORE$ADDR;
-    }
-    public static MemoryAddress HBMMENU_POPUP_MAXIMIZE() {
-        return constants$740.HBMMENU_POPUP_MAXIMIZE$ADDR;
-    }
-    public static MemoryAddress HBMMENU_POPUP_MINIMIZE() {
-        return constants$740.HBMMENU_POPUP_MINIMIZE$ADDR;
-    }
-    public static int GMDI_USEDISABLED() {
-        return (int)1L;
-    }
-    public static int GMDI_GOINTOPOPUPS() {
-        return (int)2L;
-    }
-    public static int TPM_LEFTBUTTON() {
-        return (int)0L;
-    }
-    public static int TPM_RIGHTBUTTON() {
-        return (int)2L;
-    }
-    public static int TPM_LEFTALIGN() {
-        return (int)0L;
-    }
-    public static int TPM_CENTERALIGN() {
-        return (int)4L;
-    }
-    public static int TPM_RIGHTALIGN() {
-        return (int)8L;
-    }
-    public static int TPM_TOPALIGN() {
-        return (int)0L;
-    }
-    public static int TPM_VCENTERALIGN() {
-        return (int)16L;
-    }
-    public static int TPM_BOTTOMALIGN() {
-        return (int)32L;
-    }
-    public static int TPM_HORIZONTAL() {
-        return (int)0L;
-    }
-    public static int TPM_VERTICAL() {
-        return (int)64L;
-    }
-    public static int TPM_NONOTIFY() {
-        return (int)128L;
-    }
-    public static int TPM_RETURNCMD() {
-        return (int)256L;
-    }
-    public static int TPM_RECURSE() {
-        return (int)1L;
-    }
-    public static int TPM_HORPOSANIMATION() {
-        return (int)1024L;
-    }
-    public static int TPM_HORNEGANIMATION() {
-        return (int)2048L;
-    }
-    public static int TPM_VERPOSANIMATION() {
-        return (int)4096L;
-    }
-    public static int TPM_VERNEGANIMATION() {
-        return (int)8192L;
-    }
-    public static int TPM_NOANIMATION() {
-        return (int)16384L;
-    }
-    public static int TPM_LAYOUTRTL() {
-        return (int)32768L;
-    }
-    public static int TPM_WORKAREA() {
-        return (int)65536L;
-    }
-    public static int DO_DROPFILE() {
-        return (int)1162627398L;
-    }
-    public static int DO_PRINTFILE() {
-        return (int)1414419024L;
-    }
-    public static int ASFW_ANY() {
-        return (int)4294967295L;
-    }
-    public static int DCX_WINDOW() {
-        return (int)1L;
-    }
-    public static int DCX_CACHE() {
-        return (int)2L;
-    }
-    public static int DCX_NORESETATTRS() {
-        return (int)4L;
-    }
-    public static int DCX_CLIPCHILDREN() {
-        return (int)8L;
-    }
-    public static int DCX_CLIPSIBLINGS() {
-        return (int)16L;
-    }
-    public static int DCX_PARENTCLIP() {
-        return (int)32L;
-    }
-    public static int DCX_EXCLUDERGN() {
-        return (int)64L;
-    }
-    public static int DCX_INTERSECTRGN() {
-        return (int)128L;
-    }
-    public static int DCX_EXCLUDEUPDATE() {
-        return (int)256L;
-    }
-    public static int DCX_INTERSECTUPDATE() {
-        return (int)512L;
-    }
-    public static int DCX_LOCKWINDOWUPDATE() {
-        return (int)1024L;
-    }
-    public static int DCX_VALIDATE() {
-        return (int)2097152L;
-    }
-    public static int ESB_DISABLE_LTUP() {
-        return (int)1L;
-    }
-    public static int ESB_DISABLE_RTDN() {
-        return (int)2L;
-    }
-    public static int MB_OK() {
-        return (int)0L;
-    }
-    public static int MB_OKCANCEL() {
-        return (int)1L;
-    }
-    public static int MB_ABORTRETRYIGNORE() {
-        return (int)2L;
-    }
-    public static int MB_YESNOCANCEL() {
-        return (int)3L;
-    }
-    public static int MB_YESNO() {
-        return (int)4L;
-    }
-    public static int MB_RETRYCANCEL() {
-        return (int)5L;
-    }
-    public static int MB_CANCELTRYCONTINUE() {
-        return (int)6L;
-    }
-    public static int MB_ICONHAND() {
         return (int)16L;
     }
 }

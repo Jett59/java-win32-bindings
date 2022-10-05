@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$921 {
 
-    static final MemorySegment SPLDS_DRIVER_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("driverVersion");
-    static final MemorySegment SPLDS_LOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("location");
-    static final MemorySegment SPLDS_PORT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("portName");
-    static final MemorySegment SPLDS_PRINT_ATTRIBUTES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printAttributes");
-    static final MemorySegment SPLDS_PRINT_BIN_NAMES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printBinNames");
-    static final MemorySegment SPLDS_PRINT_COLLATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printCollate");
+    static final MemorySegment SPLREG_DEFAULT_SPOOL_DIRECTORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DefaultSpoolDirectory");
+    static final MemorySegment SPLREG_PORT_THREAD_PRIORITY_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PortThreadPriorityDefault");
+    static final MemorySegment SPLREG_PORT_THREAD_PRIORITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PortThreadPriority");
+    static final MemorySegment SPLREG_SCHEDULER_THREAD_PRIORITY_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchedulerThreadPriorityDefault");
+    static final MemorySegment SPLREG_SCHEDULER_THREAD_PRIORITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchedulerThreadPriority");
+    static final MemorySegment SPLREG_BEEP_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("BeepEnabled");
 }
 
 

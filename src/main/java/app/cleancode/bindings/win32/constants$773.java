@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$773 {
 
-    static final MemorySegment szOID_ECC_CURVE_X962P192V2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.2");
-    static final MemorySegment szOID_ECC_CURVE_X962P192V3$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.3");
-    static final MemorySegment szOID_ECC_CURVE_X962P239V1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.4");
-    static final MemorySegment szOID_ECC_CURVE_X962P239V2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.5");
-    static final MemorySegment szOID_ECC_CURVE_X962P239V3$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.6");
-    static final MemorySegment szOID_ECC_CURVE_X962P256V1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.10045.3.1.7");
+    static final MemorySegment szOID_ECC_CURVE_P521$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.132.0.35");
+    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP160R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.1");
+    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP160T1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.2");
+    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP192R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.3");
+    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP192T1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.4");
+    static final MemorySegment szOID_ECC_CURVE_BRAINPOOLP224R1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.36.3.3.2.8.1.1.5");
 }
 
 

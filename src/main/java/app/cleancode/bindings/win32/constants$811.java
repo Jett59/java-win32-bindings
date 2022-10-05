@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$811 {
 
-    static final MemoryAddress TIMESTAMP_INFO$ADDR = MemoryAddress.ofLong(80L);
-    static final MemoryAddress X509_CERT_BUNDLE$ADDR = MemoryAddress.ofLong(81L);
-    static final MemoryAddress X509_ECC_PRIVATE_KEY$ADDR = MemoryAddress.ofLong(82L);
-    static final MemoryAddress CNG_RSA_PRIVATE_KEY_BLOB$ADDR = MemoryAddress.ofLong(83L);
-    static final MemoryAddress X509_SUBJECT_DIR_ATTRS$ADDR = MemoryAddress.ofLong(84L);
-    static final MemoryAddress X509_ECC_PARAMETERS$ADDR = MemoryAddress.ofLong(85L);
+    static final MemoryAddress PKCS_ENCRYPTED_PRIVATE_KEY_INFO$ADDR = MemoryAddress.ofLong(45L);
+    static final MemoryAddress X509_PKIX_POLICY_QUALIFIER_USERNOTICE$ADDR = MemoryAddress.ofLong(46L);
+    static final MemoryAddress X509_DH_PUBLICKEY$ADDR = MemoryAddress.ofLong(38L);
+    static final MemoryAddress X509_DH_PARAMETERS$ADDR = MemoryAddress.ofLong(47L);
+    static final MemoryAddress PKCS_ATTRIBUTES$ADDR = MemoryAddress.ofLong(48L);
+    static final MemoryAddress PKCS_SORTED_CTL$ADDR = MemoryAddress.ofLong(49L);
 }
 
 

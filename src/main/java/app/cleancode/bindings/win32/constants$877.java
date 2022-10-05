@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$877 {
 
-    static final MemorySegment CERT_AUTH_ROOT_CTL_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
-    static final MemorySegment CERT_AUTH_ROOT_CTL_FILENAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("authroot.stl");
-    static final MemorySegment CERT_AUTH_ROOT_CAB_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
-    static final MemorySegment CERT_AUTH_ROOT_SEQ_FILENAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
-    static final MemorySegment CERT_AUTH_ROOT_CERT_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
-    static final MemorySegment CERT_DISALLOWED_CERT_AUTO_UPDATE_SYNC_DELTA_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment sz_CERT_STORE_PROV_SERIALIZED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Serialized");
+    static final MemorySegment sz_CERT_STORE_PROV_COLLECTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Collection");
+    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM_REGISTRY_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SystemRegistry");
+    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM_REGISTRY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SystemRegistry");
+    static final MemorySegment sz_CERT_STORE_PROV_PHYSICAL_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Physical");
+    static final MemorySegment sz_CERT_STORE_PROV_PHYSICAL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Physical");
 }
 
 

@@ -9,6 +9,669 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_20 extends WINDOWS_19 {
 
+    public static int ERROR_WRITE_PROTECT() {
+        return (int)19L;
+    }
+    public static int ERROR_BAD_UNIT() {
+        return (int)20L;
+    }
+    public static int ERROR_NOT_READY() {
+        return (int)21L;
+    }
+    public static int ERROR_BAD_COMMAND() {
+        return (int)22L;
+    }
+    public static int ERROR_CRC() {
+        return (int)23L;
+    }
+    public static int ERROR_BAD_LENGTH() {
+        return (int)24L;
+    }
+    public static int ERROR_SEEK() {
+        return (int)25L;
+    }
+    public static int ERROR_NOT_DOS_DISK() {
+        return (int)26L;
+    }
+    public static int ERROR_SECTOR_NOT_FOUND() {
+        return (int)27L;
+    }
+    public static int ERROR_OUT_OF_PAPER() {
+        return (int)28L;
+    }
+    public static int ERROR_WRITE_FAULT() {
+        return (int)29L;
+    }
+    public static int ERROR_READ_FAULT() {
+        return (int)30L;
+    }
+    public static int ERROR_GEN_FAILURE() {
+        return (int)31L;
+    }
+    public static int ERROR_SHARING_VIOLATION() {
+        return (int)32L;
+    }
+    public static int ERROR_LOCK_VIOLATION() {
+        return (int)33L;
+    }
+    public static int ERROR_WRONG_DISK() {
+        return (int)34L;
+    }
+    public static int ERROR_SHARING_BUFFER_EXCEEDED() {
+        return (int)36L;
+    }
+    public static int ERROR_HANDLE_EOF() {
+        return (int)38L;
+    }
+    public static int ERROR_HANDLE_DISK_FULL() {
+        return (int)39L;
+    }
+    public static int ERROR_NOT_SUPPORTED() {
+        return (int)50L;
+    }
+    public static int ERROR_REM_NOT_LIST() {
+        return (int)51L;
+    }
+    public static int ERROR_DUP_NAME() {
+        return (int)52L;
+    }
+    public static int ERROR_BAD_NETPATH() {
+        return (int)53L;
+    }
+    public static int ERROR_NETWORK_BUSY() {
+        return (int)54L;
+    }
+    public static int ERROR_DEV_NOT_EXIST() {
+        return (int)55L;
+    }
+    public static int ERROR_TOO_MANY_CMDS() {
+        return (int)56L;
+    }
+    public static int ERROR_ADAP_HDW_ERR() {
+        return (int)57L;
+    }
+    public static int ERROR_BAD_NET_RESP() {
+        return (int)58L;
+    }
+    public static int ERROR_UNEXP_NET_ERR() {
+        return (int)59L;
+    }
+    public static int ERROR_BAD_REM_ADAP() {
+        return (int)60L;
+    }
+    public static int ERROR_PRINTQ_FULL() {
+        return (int)61L;
+    }
+    public static int ERROR_NO_SPOOL_SPACE() {
+        return (int)62L;
+    }
+    public static int ERROR_PRINT_CANCELLED() {
+        return (int)63L;
+    }
+    public static int ERROR_NETNAME_DELETED() {
+        return (int)64L;
+    }
+    public static int ERROR_NETWORK_ACCESS_DENIED() {
+        return (int)65L;
+    }
+    public static int ERROR_BAD_DEV_TYPE() {
+        return (int)66L;
+    }
+    public static int ERROR_BAD_NET_NAME() {
+        return (int)67L;
+    }
+    public static int ERROR_TOO_MANY_NAMES() {
+        return (int)68L;
+    }
+    public static int ERROR_TOO_MANY_SESS() {
+        return (int)69L;
+    }
+    public static int ERROR_SHARING_PAUSED() {
+        return (int)70L;
+    }
+    public static int ERROR_REQ_NOT_ACCEP() {
+        return (int)71L;
+    }
+    public static int ERROR_REDIR_PAUSED() {
+        return (int)72L;
+    }
+    public static int ERROR_FILE_EXISTS() {
+        return (int)80L;
+    }
+    public static int ERROR_CANNOT_MAKE() {
+        return (int)82L;
+    }
+    public static int ERROR_FAIL_I24() {
+        return (int)83L;
+    }
+    public static int ERROR_OUT_OF_STRUCTURES() {
+        return (int)84L;
+    }
+    public static int ERROR_ALREADY_ASSIGNED() {
+        return (int)85L;
+    }
+    public static int ERROR_INVALID_PASSWORD() {
+        return (int)86L;
+    }
+    public static int ERROR_INVALID_PARAMETER() {
+        return (int)87L;
+    }
+    public static int ERROR_NET_WRITE_FAULT() {
+        return (int)88L;
+    }
+    public static int ERROR_NO_PROC_SLOTS() {
+        return (int)89L;
+    }
+    public static int ERROR_TOO_MANY_SEMAPHORES() {
+        return (int)100L;
+    }
+    public static int ERROR_EXCL_SEM_ALREADY_OWNED() {
+        return (int)101L;
+    }
+    public static int ERROR_SEM_IS_SET() {
+        return (int)102L;
+    }
+    public static int ERROR_TOO_MANY_SEM_REQUESTS() {
+        return (int)103L;
+    }
+    public static int ERROR_INVALID_AT_INTERRUPT_TIME() {
+        return (int)104L;
+    }
+    public static int ERROR_SEM_OWNER_DIED() {
+        return (int)105L;
+    }
+    public static int ERROR_SEM_USER_LIMIT() {
+        return (int)106L;
+    }
+    public static int ERROR_DISK_CHANGE() {
+        return (int)107L;
+    }
+    public static int ERROR_DRIVE_LOCKED() {
+        return (int)108L;
+    }
+    public static int ERROR_BROKEN_PIPE() {
+        return (int)109L;
+    }
+    public static int ERROR_OPEN_FAILED() {
+        return (int)110L;
+    }
+    public static int ERROR_BUFFER_OVERFLOW() {
+        return (int)111L;
+    }
+    public static int ERROR_DISK_FULL() {
+        return (int)112L;
+    }
+    public static int ERROR_NO_MORE_SEARCH_HANDLES() {
+        return (int)113L;
+    }
+    public static int ERROR_INVALID_TARGET_HANDLE() {
+        return (int)114L;
+    }
+    public static int ERROR_INVALID_CATEGORY() {
+        return (int)117L;
+    }
+    public static int ERROR_INVALID_VERIFY_SWITCH() {
+        return (int)118L;
+    }
+    public static int ERROR_BAD_DRIVER_LEVEL() {
+        return (int)119L;
+    }
+    public static int ERROR_CALL_NOT_IMPLEMENTED() {
+        return (int)120L;
+    }
+    public static int ERROR_SEM_TIMEOUT() {
+        return (int)121L;
+    }
+    public static int ERROR_INSUFFICIENT_BUFFER() {
+        return (int)122L;
+    }
+    public static int ERROR_INVALID_NAME() {
+        return (int)123L;
+    }
+    public static int ERROR_INVALID_LEVEL() {
+        return (int)124L;
+    }
+    public static int ERROR_NO_VOLUME_LABEL() {
+        return (int)125L;
+    }
+    public static int ERROR_MOD_NOT_FOUND() {
+        return (int)126L;
+    }
+    public static int ERROR_PROC_NOT_FOUND() {
+        return (int)127L;
+    }
+    public static int ERROR_WAIT_NO_CHILDREN() {
+        return (int)128L;
+    }
+    public static int ERROR_CHILD_NOT_COMPLETE() {
+        return (int)129L;
+    }
+    public static int ERROR_DIRECT_ACCESS_HANDLE() {
+        return (int)130L;
+    }
+    public static int ERROR_NEGATIVE_SEEK() {
+        return (int)131L;
+    }
+    public static int ERROR_SEEK_ON_DEVICE() {
+        return (int)132L;
+    }
+    public static int ERROR_IS_JOIN_TARGET() {
+        return (int)133L;
+    }
+    public static int ERROR_IS_JOINED() {
+        return (int)134L;
+    }
+    public static int ERROR_IS_SUBSTED() {
+        return (int)135L;
+    }
+    public static int ERROR_NOT_JOINED() {
+        return (int)136L;
+    }
+    public static int ERROR_NOT_SUBSTED() {
+        return (int)137L;
+    }
+    public static int ERROR_JOIN_TO_JOIN() {
+        return (int)138L;
+    }
+    public static int ERROR_SUBST_TO_SUBST() {
+        return (int)139L;
+    }
+    public static int ERROR_JOIN_TO_SUBST() {
+        return (int)140L;
+    }
+    public static int ERROR_SUBST_TO_JOIN() {
+        return (int)141L;
+    }
+    public static int ERROR_BUSY_DRIVE() {
+        return (int)142L;
+    }
+    public static int ERROR_SAME_DRIVE() {
+        return (int)143L;
+    }
+    public static int ERROR_DIR_NOT_ROOT() {
+        return (int)144L;
+    }
+    public static int ERROR_DIR_NOT_EMPTY() {
+        return (int)145L;
+    }
+    public static int ERROR_IS_SUBST_PATH() {
+        return (int)146L;
+    }
+    public static int ERROR_IS_JOIN_PATH() {
+        return (int)147L;
+    }
+    public static int ERROR_PATH_BUSY() {
+        return (int)148L;
+    }
+    public static int ERROR_IS_SUBST_TARGET() {
+        return (int)149L;
+    }
+    public static int ERROR_SYSTEM_TRACE() {
+        return (int)150L;
+    }
+    public static int ERROR_INVALID_EVENT_COUNT() {
+        return (int)151L;
+    }
+    public static int ERROR_TOO_MANY_MUXWAITERS() {
+        return (int)152L;
+    }
+    public static int ERROR_INVALID_LIST_FORMAT() {
+        return (int)153L;
+    }
+    public static int ERROR_LABEL_TOO_LONG() {
+        return (int)154L;
+    }
+    public static int ERROR_TOO_MANY_TCBS() {
+        return (int)155L;
+    }
+    public static int ERROR_SIGNAL_REFUSED() {
+        return (int)156L;
+    }
+    public static int ERROR_DISCARDED() {
+        return (int)157L;
+    }
+    public static int ERROR_NOT_LOCKED() {
+        return (int)158L;
+    }
+    public static int ERROR_BAD_THREADID_ADDR() {
+        return (int)159L;
+    }
+    public static int ERROR_BAD_ARGUMENTS() {
+        return (int)160L;
+    }
+    public static int ERROR_BAD_PATHNAME() {
+        return (int)161L;
+    }
+    public static int ERROR_SIGNAL_PENDING() {
+        return (int)162L;
+    }
+    public static int ERROR_MAX_THRDS_REACHED() {
+        return (int)164L;
+    }
+    public static int ERROR_LOCK_FAILED() {
+        return (int)167L;
+    }
+    public static int ERROR_BUSY() {
+        return (int)170L;
+    }
+    public static int ERROR_DEVICE_SUPPORT_IN_PROGRESS() {
+        return (int)171L;
+    }
+    public static int ERROR_CANCEL_VIOLATION() {
+        return (int)173L;
+    }
+    public static int ERROR_ATOMIC_LOCKS_NOT_SUPPORTED() {
+        return (int)174L;
+    }
+    public static int ERROR_INVALID_SEGMENT_NUMBER() {
+        return (int)180L;
+    }
+    public static int ERROR_INVALID_ORDINAL() {
+        return (int)182L;
+    }
+    public static int ERROR_ALREADY_EXISTS() {
+        return (int)183L;
+    }
+    public static int ERROR_INVALID_FLAG_NUMBER() {
+        return (int)186L;
+    }
+    public static int ERROR_SEM_NOT_FOUND() {
+        return (int)187L;
+    }
+    public static int ERROR_INVALID_STARTING_CODESEG() {
+        return (int)188L;
+    }
+    public static int ERROR_INVALID_STACKSEG() {
+        return (int)189L;
+    }
+    public static int ERROR_INVALID_MODULETYPE() {
+        return (int)190L;
+    }
+    public static int ERROR_INVALID_EXE_SIGNATURE() {
+        return (int)191L;
+    }
+    public static int ERROR_EXE_MARKED_INVALID() {
+        return (int)192L;
+    }
+    public static int ERROR_BAD_EXE_FORMAT() {
+        return (int)193L;
+    }
+    public static int ERROR_ITERATED_DATA_EXCEEDS_64k() {
+        return (int)194L;
+    }
+    public static int ERROR_INVALID_MINALLOCSIZE() {
+        return (int)195L;
+    }
+    public static int ERROR_DYNLINK_FROM_INVALID_RING() {
+        return (int)196L;
+    }
+    public static int ERROR_IOPL_NOT_ENABLED() {
+        return (int)197L;
+    }
+    public static int ERROR_INVALID_SEGDPL() {
+        return (int)198L;
+    }
+    public static int ERROR_AUTODATASEG_EXCEEDS_64k() {
+        return (int)199L;
+    }
+    public static int ERROR_RING2SEG_MUST_BE_MOVABLE() {
+        return (int)200L;
+    }
+    public static int ERROR_RELOC_CHAIN_XEEDS_SEGLIM() {
+        return (int)201L;
+    }
+    public static int ERROR_INFLOOP_IN_RELOC_CHAIN() {
+        return (int)202L;
+    }
+    public static int ERROR_ENVVAR_NOT_FOUND() {
+        return (int)203L;
+    }
+    public static int ERROR_NO_SIGNAL_SENT() {
+        return (int)205L;
+    }
+    public static int ERROR_FILENAME_EXCED_RANGE() {
+        return (int)206L;
+    }
+    public static int ERROR_RING2_STACK_IN_USE() {
+        return (int)207L;
+    }
+    public static int ERROR_META_EXPANSION_TOO_LONG() {
+        return (int)208L;
+    }
+    public static int ERROR_INVALID_SIGNAL_NUMBER() {
+        return (int)209L;
+    }
+    public static int ERROR_THREAD_1_INACTIVE() {
+        return (int)210L;
+    }
+    public static int ERROR_LOCKED() {
+        return (int)212L;
+    }
+    public static int ERROR_TOO_MANY_MODULES() {
+        return (int)214L;
+    }
+    public static int ERROR_NESTING_NOT_ALLOWED() {
+        return (int)215L;
+    }
+    public static int ERROR_EXE_MACHINE_TYPE_MISMATCH() {
+        return (int)216L;
+    }
+    public static int ERROR_EXE_CANNOT_MODIFY_SIGNED_BINARY() {
+        return (int)217L;
+    }
+    public static int ERROR_EXE_CANNOT_MODIFY_STRONG_SIGNED_BINARY() {
+        return (int)218L;
+    }
+    public static int ERROR_FILE_CHECKED_OUT() {
+        return (int)220L;
+    }
+    public static int ERROR_CHECKOUT_REQUIRED() {
+        return (int)221L;
+    }
+    public static int ERROR_BAD_FILE_TYPE() {
+        return (int)222L;
+    }
+    public static int ERROR_FILE_TOO_LARGE() {
+        return (int)223L;
+    }
+    public static int ERROR_FORMS_AUTH_REQUIRED() {
+        return (int)224L;
+    }
+    public static int ERROR_VIRUS_INFECTED() {
+        return (int)225L;
+    }
+    public static int ERROR_VIRUS_DELETED() {
+        return (int)226L;
+    }
+    public static int ERROR_PIPE_LOCAL() {
+        return (int)229L;
+    }
+    public static int ERROR_BAD_PIPE() {
+        return (int)230L;
+    }
+    public static int ERROR_PIPE_BUSY() {
+        return (int)231L;
+    }
+    public static int ERROR_NO_DATA() {
+        return (int)232L;
+    }
+    public static int ERROR_PIPE_NOT_CONNECTED() {
+        return (int)233L;
+    }
+    public static int ERROR_MORE_DATA() {
+        return (int)234L;
+    }
+    public static int ERROR_NO_WORK_DONE() {
+        return (int)235L;
+    }
+    public static int ERROR_VC_DISCONNECTED() {
+        return (int)240L;
+    }
+    public static int ERROR_INVALID_EA_NAME() {
+        return (int)254L;
+    }
+    public static int ERROR_EA_LIST_INCONSISTENT() {
+        return (int)255L;
+    }
+    public static int WAIT_TIMEOUT() {
+        return (int)258L;
+    }
+    public static int ERROR_NO_MORE_ITEMS() {
+        return (int)259L;
+    }
+    public static int ERROR_CANNOT_COPY() {
+        return (int)266L;
+    }
+    public static int ERROR_DIRECTORY() {
+        return (int)267L;
+    }
+    public static int ERROR_EAS_DIDNT_FIT() {
+        return (int)275L;
+    }
+    public static int ERROR_EA_FILE_CORRUPT() {
+        return (int)276L;
+    }
+    public static int ERROR_EA_TABLE_FULL() {
+        return (int)277L;
+    }
+    public static int ERROR_INVALID_EA_HANDLE() {
+        return (int)278L;
+    }
+    public static int ERROR_EAS_NOT_SUPPORTED() {
+        return (int)282L;
+    }
+    public static int ERROR_NOT_OWNER() {
+        return (int)288L;
+    }
+    public static int ERROR_TOO_MANY_POSTS() {
+        return (int)298L;
+    }
+    public static int ERROR_PARTIAL_COPY() {
+        return (int)299L;
+    }
+    public static int ERROR_OPLOCK_NOT_GRANTED() {
+        return (int)300L;
+    }
+    public static int ERROR_INVALID_OPLOCK_PROTOCOL() {
+        return (int)301L;
+    }
+    public static int ERROR_DISK_TOO_FRAGMENTED() {
+        return (int)302L;
+    }
+    public static int ERROR_DELETE_PENDING() {
+        return (int)303L;
+    }
+    public static int ERROR_INCOMPATIBLE_WITH_GLOBAL_SHORT_NAME_REGISTRY_SETTING() {
+        return (int)304L;
+    }
+    public static int ERROR_SHORT_NAMES_NOT_ENABLED_ON_VOLUME() {
+        return (int)305L;
+    }
+    public static int ERROR_SECURITY_STREAM_IS_INCONSISTENT() {
+        return (int)306L;
+    }
+    public static int ERROR_INVALID_LOCK_RANGE() {
+        return (int)307L;
+    }
+    public static int ERROR_IMAGE_SUBSYSTEM_NOT_PRESENT() {
+        return (int)308L;
+    }
+    public static int ERROR_NOTIFICATION_GUID_ALREADY_DEFINED() {
+        return (int)309L;
+    }
+    public static int ERROR_INVALID_EXCEPTION_HANDLER() {
+        return (int)310L;
+    }
+    public static int ERROR_DUPLICATE_PRIVILEGES() {
+        return (int)311L;
+    }
+    public static int ERROR_NO_RANGES_PROCESSED() {
+        return (int)312L;
+    }
+    public static int ERROR_NOT_ALLOWED_ON_SYSTEM_FILE() {
+        return (int)313L;
+    }
+    public static int ERROR_DISK_RESOURCES_EXHAUSTED() {
+        return (int)314L;
+    }
+    public static int ERROR_INVALID_TOKEN() {
+        return (int)315L;
+    }
+    public static int ERROR_DEVICE_FEATURE_NOT_SUPPORTED() {
+        return (int)316L;
+    }
+    public static int ERROR_MR_MID_NOT_FOUND() {
+        return (int)317L;
+    }
+    public static int ERROR_SCOPE_NOT_FOUND() {
+        return (int)318L;
+    }
+    public static int ERROR_UNDEFINED_SCOPE() {
+        return (int)319L;
+    }
+    public static int ERROR_INVALID_CAP() {
+        return (int)320L;
+    }
+    public static int ERROR_DEVICE_UNREACHABLE() {
+        return (int)321L;
+    }
+    public static int ERROR_DEVICE_NO_RESOURCES() {
+        return (int)322L;
+    }
+    public static int ERROR_DATA_CHECKSUM_ERROR() {
+        return (int)323L;
+    }
+    public static int ERROR_INTERMIXED_KERNEL_EA_OPERATION() {
+        return (int)324L;
+    }
+    public static int ERROR_FILE_LEVEL_TRIM_NOT_SUPPORTED() {
+        return (int)326L;
+    }
+    public static int ERROR_OFFSET_ALIGNMENT_VIOLATION() {
+        return (int)327L;
+    }
+    public static int ERROR_INVALID_FIELD_IN_PARAMETER_LIST() {
+        return (int)328L;
+    }
+    public static int ERROR_OPERATION_IN_PROGRESS() {
+        return (int)329L;
+    }
+    public static int ERROR_BAD_DEVICE_PATH() {
+        return (int)330L;
+    }
+    public static int ERROR_TOO_MANY_DESCRIPTORS() {
+        return (int)331L;
+    }
+    public static int ERROR_SCRUB_DATA_DISABLED() {
+        return (int)332L;
+    }
+    public static int ERROR_NOT_REDUNDANT_STORAGE() {
+        return (int)333L;
+    }
+    public static int ERROR_RESIDENT_FILE_NOT_SUPPORTED() {
+        return (int)334L;
+    }
+    public static int ERROR_COMPRESSED_FILE_NOT_SUPPORTED() {
+        return (int)335L;
+    }
+    public static int ERROR_DIRECTORY_NOT_SUPPORTED() {
+        return (int)336L;
+    }
+    public static int ERROR_NOT_READ_FROM_COPY() {
+        return (int)337L;
+    }
+    public static int ERROR_FT_WRITE_FAILURE() {
+        return (int)338L;
+    }
+    public static int ERROR_FT_DI_SCAN_REQUIRED() {
+        return (int)339L;
+    }
+    public static int ERROR_INVALID_KERNEL_INFO_VERSION() {
+        return (int)340L;
+    }
+    public static int ERROR_INVALID_PEP_INFO_VERSION() {
+        return (int)341L;
+    }
     public static int ERROR_OBJECT_NOT_EXTERNALLY_BACKED() {
         return (int)342L;
     }
@@ -2345,669 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int ERROR_COMMITMENT_LIMIT() {
         return (int)1455L;
-    }
-    public static int ERROR_MENU_ITEM_NOT_FOUND() {
-        return (int)1456L;
-    }
-    public static int ERROR_INVALID_KEYBOARD_HANDLE() {
-        return (int)1457L;
-    }
-    public static int ERROR_HOOK_TYPE_NOT_ALLOWED() {
-        return (int)1458L;
-    }
-    public static int ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION() {
-        return (int)1459L;
-    }
-    public static int ERROR_TIMEOUT() {
-        return (int)1460L;
-    }
-    public static int ERROR_INVALID_MONITOR_HANDLE() {
-        return (int)1461L;
-    }
-    public static int ERROR_INCORRECT_SIZE() {
-        return (int)1462L;
-    }
-    public static int ERROR_SYMLINK_CLASS_DISABLED() {
-        return (int)1463L;
-    }
-    public static int ERROR_SYMLINK_NOT_SUPPORTED() {
-        return (int)1464L;
-    }
-    public static int ERROR_XML_PARSE_ERROR() {
-        return (int)1465L;
-    }
-    public static int ERROR_XMLDSIG_ERROR() {
-        return (int)1466L;
-    }
-    public static int ERROR_RESTART_APPLICATION() {
-        return (int)1467L;
-    }
-    public static int ERROR_WRONG_COMPARTMENT() {
-        return (int)1468L;
-    }
-    public static int ERROR_AUTHIP_FAILURE() {
-        return (int)1469L;
-    }
-    public static int ERROR_NO_NVRAM_RESOURCES() {
-        return (int)1470L;
-    }
-    public static int ERROR_NOT_GUI_PROCESS() {
-        return (int)1471L;
-    }
-    public static int ERROR_EVENTLOG_FILE_CORRUPT() {
-        return (int)1500L;
-    }
-    public static int ERROR_EVENTLOG_CANT_START() {
-        return (int)1501L;
-    }
-    public static int ERROR_LOG_FILE_FULL() {
-        return (int)1502L;
-    }
-    public static int ERROR_EVENTLOG_FILE_CHANGED() {
-        return (int)1503L;
-    }
-    public static int ERROR_CONTAINER_ASSIGNED() {
-        return (int)1504L;
-    }
-    public static int ERROR_JOB_NO_CONTAINER() {
-        return (int)1505L;
-    }
-    public static int ERROR_INVALID_TASK_NAME() {
-        return (int)1550L;
-    }
-    public static int ERROR_INVALID_TASK_INDEX() {
-        return (int)1551L;
-    }
-    public static int ERROR_THREAD_ALREADY_IN_TASK() {
-        return (int)1552L;
-    }
-    public static int ERROR_INSTALL_SERVICE_FAILURE() {
-        return (int)1601L;
-    }
-    public static int ERROR_INSTALL_USEREXIT() {
-        return (int)1602L;
-    }
-    public static int ERROR_INSTALL_FAILURE() {
-        return (int)1603L;
-    }
-    public static int ERROR_INSTALL_SUSPEND() {
-        return (int)1604L;
-    }
-    public static int ERROR_UNKNOWN_PRODUCT() {
-        return (int)1605L;
-    }
-    public static int ERROR_UNKNOWN_FEATURE() {
-        return (int)1606L;
-    }
-    public static int ERROR_UNKNOWN_COMPONENT() {
-        return (int)1607L;
-    }
-    public static int ERROR_UNKNOWN_PROPERTY() {
-        return (int)1608L;
-    }
-    public static int ERROR_INVALID_HANDLE_STATE() {
-        return (int)1609L;
-    }
-    public static int ERROR_BAD_CONFIGURATION() {
-        return (int)1610L;
-    }
-    public static int ERROR_INDEX_ABSENT() {
-        return (int)1611L;
-    }
-    public static int ERROR_INSTALL_SOURCE_ABSENT() {
-        return (int)1612L;
-    }
-    public static int ERROR_INSTALL_PACKAGE_VERSION() {
-        return (int)1613L;
-    }
-    public static int ERROR_PRODUCT_UNINSTALLED() {
-        return (int)1614L;
-    }
-    public static int ERROR_BAD_QUERY_SYNTAX() {
-        return (int)1615L;
-    }
-    public static int ERROR_INVALID_FIELD() {
-        return (int)1616L;
-    }
-    public static int ERROR_DEVICE_REMOVED() {
-        return (int)1617L;
-    }
-    public static int ERROR_INSTALL_ALREADY_RUNNING() {
-        return (int)1618L;
-    }
-    public static int ERROR_INSTALL_PACKAGE_OPEN_FAILED() {
-        return (int)1619L;
-    }
-    public static int ERROR_INSTALL_PACKAGE_INVALID() {
-        return (int)1620L;
-    }
-    public static int ERROR_INSTALL_UI_FAILURE() {
-        return (int)1621L;
-    }
-    public static int ERROR_INSTALL_LOG_FAILURE() {
-        return (int)1622L;
-    }
-    public static int ERROR_INSTALL_LANGUAGE_UNSUPPORTED() {
-        return (int)1623L;
-    }
-    public static int ERROR_INSTALL_TRANSFORM_FAILURE() {
-        return (int)1624L;
-    }
-    public static int ERROR_INSTALL_PACKAGE_REJECTED() {
-        return (int)1625L;
-    }
-    public static int ERROR_FUNCTION_NOT_CALLED() {
-        return (int)1626L;
-    }
-    public static int ERROR_FUNCTION_FAILED() {
-        return (int)1627L;
-    }
-    public static int ERROR_INVALID_TABLE() {
-        return (int)1628L;
-    }
-    public static int ERROR_DATATYPE_MISMATCH() {
-        return (int)1629L;
-    }
-    public static int ERROR_UNSUPPORTED_TYPE() {
-        return (int)1630L;
-    }
-    public static int ERROR_CREATE_FAILED() {
-        return (int)1631L;
-    }
-    public static int ERROR_INSTALL_TEMP_UNWRITABLE() {
-        return (int)1632L;
-    }
-    public static int ERROR_INSTALL_PLATFORM_UNSUPPORTED() {
-        return (int)1633L;
-    }
-    public static int ERROR_INSTALL_NOTUSED() {
-        return (int)1634L;
-    }
-    public static int ERROR_PATCH_PACKAGE_OPEN_FAILED() {
-        return (int)1635L;
-    }
-    public static int ERROR_PATCH_PACKAGE_INVALID() {
-        return (int)1636L;
-    }
-    public static int ERROR_PATCH_PACKAGE_UNSUPPORTED() {
-        return (int)1637L;
-    }
-    public static int ERROR_PRODUCT_VERSION() {
-        return (int)1638L;
-    }
-    public static int ERROR_INVALID_COMMAND_LINE() {
-        return (int)1639L;
-    }
-    public static int ERROR_INSTALL_REMOTE_DISALLOWED() {
-        return (int)1640L;
-    }
-    public static int ERROR_SUCCESS_REBOOT_INITIATED() {
-        return (int)1641L;
-    }
-    public static int ERROR_PATCH_TARGET_NOT_FOUND() {
-        return (int)1642L;
-    }
-    public static int ERROR_PATCH_PACKAGE_REJECTED() {
-        return (int)1643L;
-    }
-    public static int ERROR_INSTALL_TRANSFORM_REJECTED() {
-        return (int)1644L;
-    }
-    public static int ERROR_INSTALL_REMOTE_PROHIBITED() {
-        return (int)1645L;
-    }
-    public static int ERROR_PATCH_REMOVAL_UNSUPPORTED() {
-        return (int)1646L;
-    }
-    public static int ERROR_UNKNOWN_PATCH() {
-        return (int)1647L;
-    }
-    public static int ERROR_PATCH_NO_SEQUENCE() {
-        return (int)1648L;
-    }
-    public static int ERROR_PATCH_REMOVAL_DISALLOWED() {
-        return (int)1649L;
-    }
-    public static int ERROR_INVALID_PATCH_XML() {
-        return (int)1650L;
-    }
-    public static int ERROR_PATCH_MANAGED_ADVERTISED_PRODUCT() {
-        return (int)1651L;
-    }
-    public static int ERROR_INSTALL_SERVICE_SAFEBOOT() {
-        return (int)1652L;
-    }
-    public static int ERROR_FAIL_FAST_EXCEPTION() {
-        return (int)1653L;
-    }
-    public static int ERROR_INSTALL_REJECTED() {
-        return (int)1654L;
-    }
-    public static int ERROR_DYNAMIC_CODE_BLOCKED() {
-        return (int)1655L;
-    }
-    public static int ERROR_NOT_SAME_OBJECT() {
-        return (int)1656L;
-    }
-    public static int ERROR_STRICT_CFG_VIOLATION() {
-        return (int)1657L;
-    }
-    public static int ERROR_SET_CONTEXT_DENIED() {
-        return (int)1660L;
-    }
-    public static int ERROR_CROSS_PARTITION_VIOLATION() {
-        return (int)1661L;
-    }
-    public static int ERROR_RETURN_ADDRESS_HIJACK_ATTEMPT() {
-        return (int)1662L;
-    }
-    public static int RPC_S_INVALID_STRING_BINDING() {
-        return (int)1700L;
-    }
-    public static int RPC_S_WRONG_KIND_OF_BINDING() {
-        return (int)1701L;
-    }
-    public static int RPC_S_INVALID_BINDING() {
-        return (int)1702L;
-    }
-    public static int RPC_S_PROTSEQ_NOT_SUPPORTED() {
-        return (int)1703L;
-    }
-    public static int RPC_S_INVALID_RPC_PROTSEQ() {
-        return (int)1704L;
-    }
-    public static int RPC_S_INVALID_STRING_UUID() {
-        return (int)1705L;
-    }
-    public static int RPC_S_INVALID_ENDPOINT_FORMAT() {
-        return (int)1706L;
-    }
-    public static int RPC_S_INVALID_NET_ADDR() {
-        return (int)1707L;
-    }
-    public static int RPC_S_NO_ENDPOINT_FOUND() {
-        return (int)1708L;
-    }
-    public static int RPC_S_INVALID_TIMEOUT() {
-        return (int)1709L;
-    }
-    public static int RPC_S_OBJECT_NOT_FOUND() {
-        return (int)1710L;
-    }
-    public static int RPC_S_ALREADY_REGISTERED() {
-        return (int)1711L;
-    }
-    public static int RPC_S_TYPE_ALREADY_REGISTERED() {
-        return (int)1712L;
-    }
-    public static int RPC_S_ALREADY_LISTENING() {
-        return (int)1713L;
-    }
-    public static int RPC_S_NO_PROTSEQS_REGISTERED() {
-        return (int)1714L;
-    }
-    public static int RPC_S_NOT_LISTENING() {
-        return (int)1715L;
-    }
-    public static int RPC_S_UNKNOWN_MGR_TYPE() {
-        return (int)1716L;
-    }
-    public static int RPC_S_UNKNOWN_IF() {
-        return (int)1717L;
-    }
-    public static int RPC_S_NO_BINDINGS() {
-        return (int)1718L;
-    }
-    public static int RPC_S_NO_PROTSEQS() {
-        return (int)1719L;
-    }
-    public static int RPC_S_CANT_CREATE_ENDPOINT() {
-        return (int)1720L;
-    }
-    public static int RPC_S_OUT_OF_RESOURCES() {
-        return (int)1721L;
-    }
-    public static int RPC_S_SERVER_UNAVAILABLE() {
-        return (int)1722L;
-    }
-    public static int RPC_S_SERVER_TOO_BUSY() {
-        return (int)1723L;
-    }
-    public static int RPC_S_INVALID_NETWORK_OPTIONS() {
-        return (int)1724L;
-    }
-    public static int RPC_S_NO_CALL_ACTIVE() {
-        return (int)1725L;
-    }
-    public static int RPC_S_CALL_FAILED() {
-        return (int)1726L;
-    }
-    public static int RPC_S_CALL_FAILED_DNE() {
-        return (int)1727L;
-    }
-    public static int RPC_S_PROTOCOL_ERROR() {
-        return (int)1728L;
-    }
-    public static int RPC_S_PROXY_ACCESS_DENIED() {
-        return (int)1729L;
-    }
-    public static int RPC_S_UNSUPPORTED_TRANS_SYN() {
-        return (int)1730L;
-    }
-    public static int RPC_S_UNSUPPORTED_TYPE() {
-        return (int)1732L;
-    }
-    public static int RPC_S_INVALID_TAG() {
-        return (int)1733L;
-    }
-    public static int RPC_S_INVALID_BOUND() {
-        return (int)1734L;
-    }
-    public static int RPC_S_NO_ENTRY_NAME() {
-        return (int)1735L;
-    }
-    public static int RPC_S_INVALID_NAME_SYNTAX() {
-        return (int)1736L;
-    }
-    public static int RPC_S_UNSUPPORTED_NAME_SYNTAX() {
-        return (int)1737L;
-    }
-    public static int RPC_S_UUID_NO_ADDRESS() {
-        return (int)1739L;
-    }
-    public static int RPC_S_DUPLICATE_ENDPOINT() {
-        return (int)1740L;
-    }
-    public static int RPC_S_UNKNOWN_AUTHN_TYPE() {
-        return (int)1741L;
-    }
-    public static int RPC_S_MAX_CALLS_TOO_SMALL() {
-        return (int)1742L;
-    }
-    public static int RPC_S_STRING_TOO_LONG() {
-        return (int)1743L;
-    }
-    public static int RPC_S_PROTSEQ_NOT_FOUND() {
-        return (int)1744L;
-    }
-    public static int RPC_S_PROCNUM_OUT_OF_RANGE() {
-        return (int)1745L;
-    }
-    public static int RPC_S_BINDING_HAS_NO_AUTH() {
-        return (int)1746L;
-    }
-    public static int RPC_S_UNKNOWN_AUTHN_SERVICE() {
-        return (int)1747L;
-    }
-    public static int RPC_S_UNKNOWN_AUTHN_LEVEL() {
-        return (int)1748L;
-    }
-    public static int RPC_S_INVALID_AUTH_IDENTITY() {
-        return (int)1749L;
-    }
-    public static int RPC_S_UNKNOWN_AUTHZ_SERVICE() {
-        return (int)1750L;
-    }
-    public static int EPT_S_INVALID_ENTRY() {
-        return (int)1751L;
-    }
-    public static int EPT_S_CANT_PERFORM_OP() {
-        return (int)1752L;
-    }
-    public static int EPT_S_NOT_REGISTERED() {
-        return (int)1753L;
-    }
-    public static int RPC_S_NOTHING_TO_EXPORT() {
-        return (int)1754L;
-    }
-    public static int RPC_S_INCOMPLETE_NAME() {
-        return (int)1755L;
-    }
-    public static int RPC_S_INVALID_VERS_OPTION() {
-        return (int)1756L;
-    }
-    public static int RPC_S_NO_MORE_MEMBERS() {
-        return (int)1757L;
-    }
-    public static int RPC_S_NOT_ALL_OBJS_UNEXPORTED() {
-        return (int)1758L;
-    }
-    public static int RPC_S_INTERFACE_NOT_FOUND() {
-        return (int)1759L;
-    }
-    public static int RPC_S_ENTRY_ALREADY_EXISTS() {
-        return (int)1760L;
-    }
-    public static int RPC_S_ENTRY_NOT_FOUND() {
-        return (int)1761L;
-    }
-    public static int RPC_S_NAME_SERVICE_UNAVAILABLE() {
-        return (int)1762L;
-    }
-    public static int RPC_S_INVALID_NAF_ID() {
-        return (int)1763L;
-    }
-    public static int RPC_S_CANNOT_SUPPORT() {
-        return (int)1764L;
-    }
-    public static int RPC_S_NO_CONTEXT_AVAILABLE() {
-        return (int)1765L;
-    }
-    public static int RPC_S_INTERNAL_ERROR() {
-        return (int)1766L;
-    }
-    public static int RPC_S_ZERO_DIVIDE() {
-        return (int)1767L;
-    }
-    public static int RPC_S_ADDRESS_ERROR() {
-        return (int)1768L;
-    }
-    public static int RPC_S_FP_DIV_ZERO() {
-        return (int)1769L;
-    }
-    public static int RPC_S_FP_UNDERFLOW() {
-        return (int)1770L;
-    }
-    public static int RPC_S_FP_OVERFLOW() {
-        return (int)1771L;
-    }
-    public static int RPC_X_NO_MORE_ENTRIES() {
-        return (int)1772L;
-    }
-    public static int RPC_X_SS_CHAR_TRANS_OPEN_FAIL() {
-        return (int)1773L;
-    }
-    public static int RPC_X_SS_CHAR_TRANS_SHORT_FILE() {
-        return (int)1774L;
-    }
-    public static int RPC_X_SS_IN_NULL_CONTEXT() {
-        return (int)1775L;
-    }
-    public static int RPC_X_SS_CONTEXT_DAMAGED() {
-        return (int)1777L;
-    }
-    public static int RPC_X_SS_HANDLES_MISMATCH() {
-        return (int)1778L;
-    }
-    public static int RPC_X_SS_CANNOT_GET_CALL_HANDLE() {
-        return (int)1779L;
-    }
-    public static int RPC_X_NULL_REF_POINTER() {
-        return (int)1780L;
-    }
-    public static int RPC_X_ENUM_VALUE_OUT_OF_RANGE() {
-        return (int)1781L;
-    }
-    public static int RPC_X_BYTE_COUNT_TOO_SMALL() {
-        return (int)1782L;
-    }
-    public static int RPC_X_BAD_STUB_DATA() {
-        return (int)1783L;
-    }
-    public static int ERROR_INVALID_USER_BUFFER() {
-        return (int)1784L;
-    }
-    public static int ERROR_UNRECOGNIZED_MEDIA() {
-        return (int)1785L;
-    }
-    public static int ERROR_NO_TRUST_LSA_SECRET() {
-        return (int)1786L;
-    }
-    public static int ERROR_NO_TRUST_SAM_ACCOUNT() {
-        return (int)1787L;
-    }
-    public static int ERROR_TRUSTED_DOMAIN_FAILURE() {
-        return (int)1788L;
-    }
-    public static int ERROR_TRUSTED_RELATIONSHIP_FAILURE() {
-        return (int)1789L;
-    }
-    public static int ERROR_TRUST_FAILURE() {
-        return (int)1790L;
-    }
-    public static int RPC_S_CALL_IN_PROGRESS() {
-        return (int)1791L;
-    }
-    public static int ERROR_NETLOGON_NOT_STARTED() {
-        return (int)1792L;
-    }
-    public static int ERROR_ACCOUNT_EXPIRED() {
-        return (int)1793L;
-    }
-    public static int ERROR_REDIRECTOR_HAS_OPEN_HANDLES() {
-        return (int)1794L;
-    }
-    public static int ERROR_PRINTER_DRIVER_ALREADY_INSTALLED() {
-        return (int)1795L;
-    }
-    public static int ERROR_UNKNOWN_PORT() {
-        return (int)1796L;
-    }
-    public static int ERROR_UNKNOWN_PRINTER_DRIVER() {
-        return (int)1797L;
-    }
-    public static int ERROR_UNKNOWN_PRINTPROCESSOR() {
-        return (int)1798L;
-    }
-    public static int ERROR_INVALID_SEPARATOR_FILE() {
-        return (int)1799L;
-    }
-    public static int ERROR_INVALID_PRIORITY() {
-        return (int)1800L;
-    }
-    public static int ERROR_INVALID_PRINTER_NAME() {
-        return (int)1801L;
-    }
-    public static int ERROR_PRINTER_ALREADY_EXISTS() {
-        return (int)1802L;
-    }
-    public static int ERROR_INVALID_PRINTER_COMMAND() {
-        return (int)1803L;
-    }
-    public static int ERROR_INVALID_DATATYPE() {
-        return (int)1804L;
-    }
-    public static int ERROR_INVALID_ENVIRONMENT() {
-        return (int)1805L;
-    }
-    public static int RPC_S_NO_MORE_BINDINGS() {
-        return (int)1806L;
-    }
-    public static int ERROR_NOLOGON_INTERDOMAIN_TRUST_ACCOUNT() {
-        return (int)1807L;
-    }
-    public static int ERROR_NOLOGON_WORKSTATION_TRUST_ACCOUNT() {
-        return (int)1808L;
-    }
-    public static int ERROR_NOLOGON_SERVER_TRUST_ACCOUNT() {
-        return (int)1809L;
-    }
-    public static int ERROR_DOMAIN_TRUST_INCONSISTENT() {
-        return (int)1810L;
-    }
-    public static int ERROR_SERVER_HAS_OPEN_HANDLES() {
-        return (int)1811L;
-    }
-    public static int ERROR_RESOURCE_DATA_NOT_FOUND() {
-        return (int)1812L;
-    }
-    public static int ERROR_RESOURCE_TYPE_NOT_FOUND() {
-        return (int)1813L;
-    }
-    public static int ERROR_RESOURCE_NAME_NOT_FOUND() {
-        return (int)1814L;
-    }
-    public static int ERROR_RESOURCE_LANG_NOT_FOUND() {
-        return (int)1815L;
-    }
-    public static int ERROR_NOT_ENOUGH_QUOTA() {
-        return (int)1816L;
-    }
-    public static int RPC_S_NO_INTERFACES() {
-        return (int)1817L;
-    }
-    public static int RPC_S_CALL_CANCELLED() {
-        return (int)1818L;
-    }
-    public static int RPC_S_BINDING_INCOMPLETE() {
-        return (int)1819L;
-    }
-    public static int RPC_S_COMM_FAILURE() {
-        return (int)1820L;
-    }
-    public static int RPC_S_UNSUPPORTED_AUTHN_LEVEL() {
-        return (int)1821L;
-    }
-    public static int RPC_S_NO_PRINC_NAME() {
-        return (int)1822L;
-    }
-    public static int RPC_S_NOT_RPC_ERROR() {
-        return (int)1823L;
-    }
-    public static int RPC_S_UUID_LOCAL_ONLY() {
-        return (int)1824L;
-    }
-    public static int RPC_S_SEC_PKG_ERROR() {
-        return (int)1825L;
-    }
-    public static int RPC_S_NOT_CANCELLED() {
-        return (int)1826L;
-    }
-    public static int RPC_X_INVALID_ES_ACTION() {
-        return (int)1827L;
-    }
-    public static int RPC_X_WRONG_ES_VERSION() {
-        return (int)1828L;
-    }
-    public static int RPC_X_WRONG_STUB_VERSION() {
-        return (int)1829L;
-    }
-    public static int RPC_X_INVALID_PIPE_OBJECT() {
-        return (int)1830L;
-    }
-    public static int RPC_X_WRONG_PIPE_ORDER() {
-        return (int)1831L;
-    }
-    public static int RPC_X_WRONG_PIPE_VERSION() {
-        return (int)1832L;
-    }
-    public static int RPC_S_COOKIE_AUTH_FAILED() {
-        return (int)1833L;
-    }
-    public static int RPC_S_DO_NOT_DISTURB() {
-        return (int)1834L;
-    }
-    public static int RPC_S_SYSTEM_HANDLE_COUNT_EXCEEDED() {
-        return (int)1835L;
-    }
-    public static int RPC_S_SYSTEM_HANDLE_TYPE_MISMATCH() {
-        return (int)1836L;
-    }
-    public static int RPC_S_GROUP_MEMBER_NOT_FOUND() {
-        return (int)1898L;
-    }
-    public static int EPT_S_CANT_CREATE() {
-        return (int)1899L;
     }
 }
 

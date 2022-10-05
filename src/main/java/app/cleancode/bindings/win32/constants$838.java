@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$838 {
 
-    static final MemorySegment szOID_CERT_POLICIES_95_QUALIFIER1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.7.1.1");
-    static final MemorySegment szOID_RDN_TPM_MANUFACTURER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.1");
-    static final MemorySegment szOID_RDN_TPM_MODEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.2");
-    static final MemorySegment szOID_RDN_TPM_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.3");
-    static final MemorySegment szOID_RDN_TCG_PLATFORM_MANUFACTURER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.4");
-    static final MemorySegment szOID_RDN_TCG_PLATFORM_MODEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.5");
+    static final MemorySegment szOID_DRM_INDIVIDUALIZATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.5.2");
+    static final MemorySegment szOID_LICENSES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.6.1");
+    static final MemorySegment szOID_LICENSE_SERVER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.6.2");
+    static final MemorySegment szOID_KP_SMARTCARD_LOGON$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2.2");
+    static final MemorySegment szOID_KP_KERNEL_MODE_CODE_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.61.1.1");
+    static final MemorySegment szOID_KP_KERNEL_MODE_TRUSTED_BOOT_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.61.4.1");
 }
 
 

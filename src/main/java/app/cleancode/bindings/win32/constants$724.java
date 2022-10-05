@@ -9,12 +9,65 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$724 {
 
-    static final MemorySegment SE_BACKUP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeBackupPrivilege");
-    static final MemorySegment SE_RESTORE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRestorePrivilege");
-    static final MemorySegment SE_SHUTDOWN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeShutdownPrivilege");
-    static final MemorySegment SE_DEBUG_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeDebugPrivilege");
-    static final MemorySegment SE_AUDIT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeAuditPrivilege");
-    static final MemorySegment SE_SYSTEM_ENVIRONMENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemEnvironmentPrivilege");
+    static final FunctionDescriptor EvtSaveChannelConfig$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtSaveChannelConfig$MH = RuntimeHelper.downcallHandle(
+        "EvtSaveChannelConfig",
+        constants$724.EvtSaveChannelConfig$FUNC
+    );
+    static final FunctionDescriptor EvtSetChannelConfigProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtSetChannelConfigProperty$MH = RuntimeHelper.downcallHandle(
+        "EvtSetChannelConfigProperty",
+        constants$724.EvtSetChannelConfigProperty$FUNC
+    );
+    static final FunctionDescriptor EvtGetChannelConfigProperty$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetChannelConfigProperty$MH = RuntimeHelper.downcallHandle(
+        "EvtGetChannelConfigProperty",
+        constants$724.EvtGetChannelConfigProperty$FUNC
+    );
+    static final FunctionDescriptor EvtOpenPublisherEnum$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtOpenPublisherEnum$MH = RuntimeHelper.downcallHandle(
+        "EvtOpenPublisherEnum",
+        constants$724.EvtOpenPublisherEnum$FUNC
+    );
+    static final FunctionDescriptor EvtNextPublisherId$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtNextPublisherId$MH = RuntimeHelper.downcallHandle(
+        "EvtNextPublisherId",
+        constants$724.EvtNextPublisherId$FUNC
+    );
+    static final FunctionDescriptor EvtOpenPublisherMetadata$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtOpenPublisherMetadata$MH = RuntimeHelper.downcallHandle(
+        "EvtOpenPublisherMetadata",
+        constants$724.EvtOpenPublisherMetadata$FUNC
+    );
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$863 {
 
-    static final MemorySegment CMSG_OID_CAPI1_IMPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportKeyAgree");
-    static final MemorySegment CMSG_OID_IMPORT_MAIL_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportMailList");
-    static final MemorySegment CMSG_OID_CAPI1_IMPORT_MAIL_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllImportMailList");
-    static final MemorySegment CMSG_OID_CNG_IMPORT_KEY_TRANS_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGImportKeyTrans");
-    static final MemorySegment CMSG_OID_CNG_IMPORT_KEY_AGREE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGImportKeyAgree");
-    static final MemorySegment CMSG_OID_CNG_IMPORT_CONTENT_ENCRYPT_KEY_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptMsgDllCNGImportContentEncryptKey");
+    static final MemorySegment CRYPT_OID_INFO_OAEP_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPT_OID_INFO_ECC_WRAP_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPT_OID_INFO_NO_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPT_LOCALIZED_NAME_OID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("LocalizedNames");
+    static final MemorySegment CERT_STRONG_SIGN_ECDSA_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
+    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.");
 }
 
 

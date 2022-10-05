@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$745 {
 
-    static final MemoryAddress IDI_INFORMATION$ADDR = MemoryAddress.ofLong(32516L);
-    static final MemoryAddress WC_DIALOG$ADDR = MemoryAddress.ofLong(32770L);
-    static final MemoryAddress GR_GLOBAL$ADDR = MemoryAddress.ofLong(-2L);
-    static final MemoryAddress GEO_NAME_USER_DEFAULT$ADDR = MemoryAddress.ofLong(0L);
-    static final MemoryAddress LOCALE_NAME_USER_DEFAULT$ADDR = MemoryAddress.ofLong(0L);
-    static final MemorySegment LOCALE_NAME_INVARIANT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("");
+    static final MemoryAddress HBMMENU_SYSTEM$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress HBMMENU_MBAR_RESTORE$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress HBMMENU_MBAR_MINIMIZE$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress HBMMENU_MBAR_CLOSE$ADDR = MemoryAddress.ofLong(5L);
+    static final MemoryAddress HBMMENU_MBAR_CLOSE_D$ADDR = MemoryAddress.ofLong(6L);
+    static final MemoryAddress HBMMENU_MBAR_MINIMIZE_D$ADDR = MemoryAddress.ofLong(7L);
 }
 
 

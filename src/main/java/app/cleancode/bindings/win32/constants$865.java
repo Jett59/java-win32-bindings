@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$865 {
 
-    static final MemorySegment szOID_DISALLOWED_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.15");
-    static final MemorySegment szOID_CERT_DISALLOWED_FILETIME_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.104");
-    static final MemorySegment szOID_ROOT_PROGRAM_AUTO_UPDATE_CA_REVOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.1");
-    static final MemorySegment szOID_ROOT_PROGRAM_AUTO_UPDATE_END_REVOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.2");
-    static final MemorySegment szOID_ROOT_PROGRAM_NO_OCSP_FAILOVER_TO_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.3");
-    static final MemoryAddress CERT_STORE_PROV_MSG$ADDR = MemoryAddress.ofLong(1L);
+    static final MemorySegment szOID_PKCS_7_SIGNED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.2");
+    static final MemorySegment szOID_PKCS_7_ENVELOPED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.3");
+    static final MemorySegment szOID_PKCS_7_SIGNEDANDENVELOPED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.4");
+    static final MemorySegment szOID_PKCS_7_DIGESTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.5");
+    static final MemorySegment szOID_PKCS_7_ENCRYPTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.6");
+    static final MemorySegment szOID_PKCS_9_CONTENT_TYPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.3");
 }
 
 

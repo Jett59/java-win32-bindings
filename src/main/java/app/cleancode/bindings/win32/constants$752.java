@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$752 {
 
-    static final MemorySegment MS_ENH_DSS_DH_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced DSS and Diffie-Hellman Cryptographic Provider");
-    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft DH SChannel Cryptographic Provider");
-    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_DEF_DH_SCHANNEL_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft DH SChannel Cryptographic Provider");
-    static final MemorySegment MS_SCARD_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Smart Card Crypto Provider");
-    static final MemorySegment MS_SCARD_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment LOCALE_NAME_INVARIANT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("");
+    static final MemorySegment LOCALE_NAME_SYSTEM_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("!");
+    static final MemoryAddress HKEY_CLASSES_ROOT$ADDR = MemoryAddress.ofLong(-2147483648L);
+    static final MemoryAddress HKEY_CURRENT_USER$ADDR = MemoryAddress.ofLong(-2147483647L);
+    static final MemoryAddress HKEY_LOCAL_MACHINE$ADDR = MemoryAddress.ofLong(-2147483646L);
+    static final MemoryAddress HKEY_USERS$ADDR = MemoryAddress.ofLong(-2147483645L);
 }
 
 

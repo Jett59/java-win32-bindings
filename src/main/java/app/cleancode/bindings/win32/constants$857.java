@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$857 {
 
-    static final MemorySegment CRYPT_OID_INFO_ECC_WRAP_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_OID_INFO_NO_PARAMETERS_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
-    static final MemorySegment CRYPT_LOCALIZED_NAME_OID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("LocalizedNames");
-    static final MemorySegment CERT_STRONG_SIGN_ECDSA_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
-    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.");
-    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.1");
+    static final MemorySegment szOID_CMC_DECRYPTED_POP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.10");
+    static final MemorySegment szOID_CMC_LRA_POP_WITNESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.11");
+    static final MemorySegment szOID_CMC_GET_CERT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.15");
+    static final MemorySegment szOID_CMC_GET_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.16");
+    static final MemorySegment szOID_CMC_REVOKE_REQUEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.17");
+    static final MemorySegment szOID_CMC_REG_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.18");
 }
 
 

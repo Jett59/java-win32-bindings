@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$914 {
 
-    static final MemorySegment BIDI_ACTION_ENUM_SCHEMA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
-    static final MemorySegment BIDI_ACTION_GET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment BIDI_ACTION_SET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment BIDI_ACTION_GET_ALL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment BIDI_ACTION_GET_WITH_ARGUMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment SPLREG_DEFAULT_SPOOL_DIRECTORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DefaultSpoolDirectory");
+    static final MemoryAddress CERT_CHAIN_POLICY_SSL_KEY_PIN$ADDR = MemoryAddress.ofLong(12L);
+    static final MemorySegment szOID_PKCS_12_PbeIds$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1");
+    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And128BitRC4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.1");
+    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And40BitRC4$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.2");
+    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And3KeyTripleDES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.3");
+    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And2KeyTripleDES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.4");
 }
 
 

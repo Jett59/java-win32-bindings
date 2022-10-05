@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$787 {
 
-    static final MemorySegment szOID_NIST_sha384$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.2.2");
-    static final MemorySegment szOID_NIST_sha512$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.101.3.4.2.3");
-    static final MemorySegment szOID_COMMON_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.3");
-    static final MemorySegment szOID_SUR_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.4");
-    static final MemorySegment szOID_DEVICE_SERIAL_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.5");
-    static final MemorySegment szOID_COUNTRY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.6");
+    static final MemorySegment szOID_OIWSEC_rsaXchg$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.22");
+    static final MemorySegment szOID_OIWSEC_keyHashSeal$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.23");
+    static final MemorySegment szOID_OIWSEC_md2RSASign$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.24");
+    static final MemorySegment szOID_OIWSEC_md5RSASign$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.25");
+    static final MemorySegment szOID_OIWSEC_sha1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.26");
+    static final MemorySegment szOID_OIWSEC_dsaSHA1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.27");
 }
 
 

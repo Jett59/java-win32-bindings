@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$926 {
 
-    static final MemorySegment SPLDS_PRINT_SEPARATOR_FILE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printSeparatorFile");
-    static final MemorySegment SPLDS_PRINT_SHARE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printShareName");
-    static final MemorySegment SPLDS_PRINT_SPOOLING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printSpooling");
-    static final MemorySegment SPLDS_PRINT_STAPLING_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printStaplingSupported");
-    static final MemorySegment SPLDS_PRINT_START_TIME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printStartTime");
-    static final MemorySegment SPLDS_PRINT_STATUS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printStatus");
+    static final MemorySegment SPLDS_SPOOLER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsSpooler");
+    static final MemorySegment SPLDS_DRIVER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsDriver");
+    static final MemorySegment SPLDS_USER_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsUser");
+    static final MemorySegment SPLDS_ASSET_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("assetNumber");
+    static final MemorySegment SPLDS_BYTES_PER_MINUTE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("bytesPerMinute");
+    static final MemorySegment SPLDS_DESCRIPTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("description");
 }
 
 

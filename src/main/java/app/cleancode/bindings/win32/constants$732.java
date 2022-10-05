@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$732 {
 
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryW");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_T_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
-    static final MemoryAddress RT_CURSOR$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress RT_BITMAP$ADDR = MemoryAddress.ofLong(2L);
+    static final MemorySegment SE_MANAGE_VOLUME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeManageVolumePrivilege");
+    static final MemorySegment SE_IMPERSONATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeImpersonatePrivilege");
+    static final MemorySegment SE_CREATE_GLOBAL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateGlobalPrivilege");
+    static final MemorySegment SE_TRUSTED_CREDMAN_ACCESS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTrustedCredManAccessPrivilege");
+    static final MemorySegment SE_RELABEL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRelabelPrivilege");
+    static final MemorySegment SE_INC_WORKING_SET_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseWorkingSetPrivilege");
 }
 
 

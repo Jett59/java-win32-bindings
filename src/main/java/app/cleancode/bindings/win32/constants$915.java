@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$915 {
 
-    static final MemorySegment SPLREG_PORT_THREAD_PRIORITY_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PortThreadPriorityDefault");
-    static final MemorySegment SPLREG_PORT_THREAD_PRIORITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PortThreadPriority");
-    static final MemorySegment SPLREG_SCHEDULER_THREAD_PRIORITY_DEFAULT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchedulerThreadPriorityDefault");
-    static final MemorySegment SPLREG_SCHEDULER_THREAD_PRIORITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchedulerThreadPriority");
-    static final MemorySegment SPLREG_BEEP_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("BeepEnabled");
-    static final MemorySegment SPLREG_NET_POPUP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("NetPopup");
+    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And128BitRC2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.5");
+    static final MemorySegment szOID_PKCS_12_pbeWithSHA1And40BitRC2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.12.1.6");
+    static final MemorySegment szOID_PKCS_5_PBKDF2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.5.12");
+    static final MemorySegment szOID_PKCS_5_PBES2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.5.13");
+    static final MemorySegment PKCS12_ONLY_CERTIFICATES_PROVIDER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
+    static final MemorySegment PKCS12_ONLY_CERTIFICATES_CONTAINER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
 }
 
 

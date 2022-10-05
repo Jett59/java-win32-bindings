@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$845 {
 
-    static final MemorySegment szOID_VERISIGN_PRIVATE_6_9$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.9");
-    static final MemorySegment szOID_VERISIGN_ONSITE_JURISDICTION_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.11");
-    static final MemorySegment szOID_VERISIGN_BITSTRING_6_13$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.13");
-    static final MemorySegment szOID_VERISIGN_ISS_STRONG_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.8.1");
-    static final MemorySegment szOIDVerisign_MessageType$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.2");
-    static final MemorySegment szOIDVerisign_PkiStatus$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.3");
+    static final MemorySegment szOID_RDN_TCG_PLATFORM_MODEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.5");
+    static final MemorySegment szOID_RDN_TCG_PLATFORM_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.6");
+    static final MemorySegment szOID_CT_CERT_SCTLIST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.11129.2.4.2");
+    static final MemorySegment szOID_ENROLL_EK_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.23");
+    static final MemorySegment szOID_ENROLL_AIK_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.39");
+    static final MemorySegment szOID_ENROLL_ATTESTATION_STATEMENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.24");
 }
 
 

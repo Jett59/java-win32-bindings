@@ -9,6 +9,669 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_27 extends WINDOWS_26 {
 
+    public static int WINSTA_ACCESSGLOBALATOMS() {
+        return (int)32L;
+    }
+    public static int WINSTA_EXITWINDOWS() {
+        return (int)64L;
+    }
+    public static int WINSTA_ENUMERATE() {
+        return (int)256L;
+    }
+    public static int WINSTA_READSCREEN() {
+        return (int)512L;
+    }
+    public static int WINSTA_ALL_ACCESS() {
+        return (int)895L;
+    }
+    public static int WSF_VISIBLE() {
+        return (int)1L;
+    }
+    public static int GWL_STYLE() {
+        return (int)-16L;
+    }
+    public static int GWL_EXSTYLE() {
+        return (int)-20L;
+    }
+    public static int GWL_ID() {
+        return (int)-12L;
+    }
+    public static int GWLP_WNDPROC() {
+        return (int)-4L;
+    }
+    public static int GWLP_HINSTANCE() {
+        return (int)-6L;
+    }
+    public static int GWLP_HWNDPARENT() {
+        return (int)-8L;
+    }
+    public static int GWLP_USERDATA() {
+        return (int)-21L;
+    }
+    public static int GWLP_ID() {
+        return (int)-12L;
+    }
+    public static int GCL_CBWNDEXTRA() {
+        return (int)-18L;
+    }
+    public static int GCL_CBCLSEXTRA() {
+        return (int)-20L;
+    }
+    public static int GCL_STYLE() {
+        return (int)-26L;
+    }
+    public static int GCW_ATOM() {
+        return (int)-32L;
+    }
+    public static int GCLP_MENUNAME() {
+        return (int)-8L;
+    }
+    public static int GCLP_HBRBACKGROUND() {
+        return (int)-10L;
+    }
+    public static int GCLP_HCURSOR() {
+        return (int)-12L;
+    }
+    public static int GCLP_HICON() {
+        return (int)-14L;
+    }
+    public static int GCLP_HMODULE() {
+        return (int)-16L;
+    }
+    public static int GCLP_WNDPROC() {
+        return (int)-24L;
+    }
+    public static int GCLP_HICONSM() {
+        return (int)-34L;
+    }
+    public static int WM_SETTINGCHANGE() {
+        return (int)26L;
+    }
+    public static int PWR_FAIL() {
+        return (int)-1L;
+    }
+    public static int WHEEL_PAGESCROLL() {
+        return (int)4294967295L;
+    }
+    public static int HTERROR() {
+        return (int)-2L;
+    }
+    public static int HTTRANSPARENT() {
+        return (int)-1L;
+    }
+    public static int HTSIZE() {
+        return (int)4L;
+    }
+    public static int HTREDUCE() {
+        return (int)8L;
+    }
+    public static int HTZOOM() {
+        return (int)9L;
+    }
+    public static int HTSIZEFIRST() {
+        return (int)10L;
+    }
+    public static int HTSIZELAST() {
+        return (int)17L;
+    }
+    public static int SIZENORMAL() {
+        return (int)0L;
+    }
+    public static int SIZEICONIC() {
+        return (int)1L;
+    }
+    public static int SIZEFULLSCREEN() {
+        return (int)2L;
+    }
+    public static int SIZEZOOMSHOW() {
+        return (int)3L;
+    }
+    public static int SIZEZOOMHIDE() {
+        return (int)4L;
+    }
+    public static int WVR_REDRAW() {
+        return (int)768L;
+    }
+    public static int TME_CANCEL() {
+        return (int)2147483648L;
+    }
+    public static int HOVER_DEFAULT() {
+        return (int)4294967295L;
+    }
+    public static int WS_OVERLAPPED() {
+        return (int)0L;
+    }
+    public static int WS_POPUP() {
+        return (int)2147483648L;
+    }
+    public static int WS_CHILD() {
+        return (int)1073741824L;
+    }
+    public static int WS_MINIMIZE() {
+        return (int)536870912L;
+    }
+    public static int WS_VISIBLE() {
+        return (int)268435456L;
+    }
+    public static int WS_DISABLED() {
+        return (int)134217728L;
+    }
+    public static int WS_CLIPSIBLINGS() {
+        return (int)67108864L;
+    }
+    public static int WS_CLIPCHILDREN() {
+        return (int)33554432L;
+    }
+    public static int WS_MAXIMIZE() {
+        return (int)16777216L;
+    }
+    public static int WS_CAPTION() {
+        return (int)12582912L;
+    }
+    public static int WS_BORDER() {
+        return (int)8388608L;
+    }
+    public static int WS_DLGFRAME() {
+        return (int)4194304L;
+    }
+    public static int WS_VSCROLL() {
+        return (int)2097152L;
+    }
+    public static int WS_HSCROLL() {
+        return (int)1048576L;
+    }
+    public static int WS_SYSMENU() {
+        return (int)524288L;
+    }
+    public static int WS_THICKFRAME() {
+        return (int)262144L;
+    }
+    public static int WS_GROUP() {
+        return (int)131072L;
+    }
+    public static int WS_TABSTOP() {
+        return (int)65536L;
+    }
+    public static int WS_MINIMIZEBOX() {
+        return (int)131072L;
+    }
+    public static int WS_MAXIMIZEBOX() {
+        return (int)65536L;
+    }
+    public static int WS_TILED() {
+        return (int)0L;
+    }
+    public static int WS_ICONIC() {
+        return (int)536870912L;
+    }
+    public static int WS_SIZEBOX() {
+        return (int)262144L;
+    }
+    public static int WS_TILEDWINDOW() {
+        return (int)13565952L;
+    }
+    public static int WS_OVERLAPPEDWINDOW() {
+        return (int)13565952L;
+    }
+    public static int WS_POPUPWINDOW() {
+        return (int)2156396544L;
+    }
+    public static int WS_CHILDWINDOW() {
+        return (int)1073741824L;
+    }
+    public static int WS_EX_DLGMODALFRAME() {
+        return (int)1L;
+    }
+    public static int WS_EX_NOPARENTNOTIFY() {
+        return (int)4L;
+    }
+    public static int WS_EX_TOPMOST() {
+        return (int)8L;
+    }
+    public static int WS_EX_ACCEPTFILES() {
+        return (int)16L;
+    }
+    public static int WS_EX_TRANSPARENT() {
+        return (int)32L;
+    }
+    public static int WS_EX_MDICHILD() {
+        return (int)64L;
+    }
+    public static int WS_EX_TOOLWINDOW() {
+        return (int)128L;
+    }
+    public static int WS_EX_WINDOWEDGE() {
+        return (int)256L;
+    }
+    public static int WS_EX_CLIENTEDGE() {
+        return (int)512L;
+    }
+    public static int WS_EX_CONTEXTHELP() {
+        return (int)1024L;
+    }
+    public static int WS_EX_RIGHT() {
+        return (int)4096L;
+    }
+    public static int WS_EX_LEFT() {
+        return (int)0L;
+    }
+    public static int WS_EX_RTLREADING() {
+        return (int)8192L;
+    }
+    public static int WS_EX_LTRREADING() {
+        return (int)0L;
+    }
+    public static int WS_EX_LEFTSCROLLBAR() {
+        return (int)16384L;
+    }
+    public static int WS_EX_RIGHTSCROLLBAR() {
+        return (int)0L;
+    }
+    public static int WS_EX_CONTROLPARENT() {
+        return (int)65536L;
+    }
+    public static int WS_EX_STATICEDGE() {
+        return (int)131072L;
+    }
+    public static int WS_EX_APPWINDOW() {
+        return (int)262144L;
+    }
+    public static int WS_EX_OVERLAPPEDWINDOW() {
+        return (int)768L;
+    }
+    public static int WS_EX_PALETTEWINDOW() {
+        return (int)392L;
+    }
+    public static int WS_EX_NOINHERITLAYOUT() {
+        return (int)1048576L;
+    }
+    public static int WS_EX_NOREDIRECTIONBITMAP() {
+        return (int)2097152L;
+    }
+    public static int WS_EX_LAYOUTRTL() {
+        return (int)4194304L;
+    }
+    public static int WS_EX_COMPOSITED() {
+        return (int)33554432L;
+    }
+    public static int WS_EX_NOACTIVATE() {
+        return (int)134217728L;
+    }
+    public static int PRF_CHECKVISIBLE() {
+        return (int)1L;
+    }
+    public static int PRF_NONCLIENT() {
+        return (int)2L;
+    }
+    public static int PRF_CLIENT() {
+        return (int)4L;
+    }
+    public static int PRF_ERASEBKGND() {
+        return (int)8L;
+    }
+    public static int PRF_CHILDREN() {
+        return (int)16L;
+    }
+    public static int PRF_OWNED() {
+        return (int)32L;
+    }
+    public static int BDR_OUTER() {
+        return (int)3L;
+    }
+    public static int BDR_INNER() {
+        return (int)12L;
+    }
+    public static int BDR_RAISED() {
+        return (int)5L;
+    }
+    public static int BDR_SUNKEN() {
+        return (int)10L;
+    }
+    public static int EDGE_RAISED() {
+        return (int)5L;
+    }
+    public static int EDGE_SUNKEN() {
+        return (int)10L;
+    }
+    public static int EDGE_ETCHED() {
+        return (int)6L;
+    }
+    public static int EDGE_BUMP() {
+        return (int)9L;
+    }
+    public static int BF_TOPLEFT() {
+        return (int)3L;
+    }
+    public static int BF_TOPRIGHT() {
+        return (int)6L;
+    }
+    public static int BF_BOTTOMLEFT() {
+        return (int)9L;
+    }
+    public static int BF_BOTTOMRIGHT() {
+        return (int)12L;
+    }
+    public static int BF_RECT() {
+        return (int)15L;
+    }
+    public static int BF_DIAGONAL_ENDTOPRIGHT() {
+        return (int)22L;
+    }
+    public static int BF_DIAGONAL_ENDTOPLEFT() {
+        return (int)19L;
+    }
+    public static int BF_DIAGONAL_ENDBOTTOMLEFT() {
+        return (int)25L;
+    }
+    public static int BF_DIAGONAL_ENDBOTTOMRIGHT() {
+        return (int)28L;
+    }
+    public static int FVIRTKEY() {
+        return (int)1L;
+    }
+    public static int PM_QS_INPUT() {
+        return (int)470220800L;
+    }
+    public static int PM_QS_POSTMESSAGE() {
+        return (int)9961472L;
+    }
+    public static int PM_QS_PAINT() {
+        return (int)2097152L;
+    }
+    public static int PM_QS_SENDMESSAGE() {
+        return (int)4194304L;
+    }
+    public static int IDHOT_SNAPWINDOW() {
+        return (int)-1L;
+    }
+    public static int IDHOT_SNAPDESKTOP() {
+        return (int)-2L;
+    }
+    public static int ENDSESSION_LOGOFF() {
+        return (int)2147483648L;
+    }
+    public static MemoryAddress HWND_BROADCAST() {
+        return constants$743.HWND_BROADCAST$ADDR;
+    }
+    public static MemoryAddress HWND_MESSAGE() {
+        return constants$743.HWND_MESSAGE$ADDR;
+    }
+    public static int CW_USEDEFAULT() {
+        return (int)-2147483648L;
+    }
+    public static MemoryAddress HWND_DESKTOP() {
+        return constants$744.HWND_DESKTOP$ADDR;
+    }
+    public static int FLASHW_ALL() {
+        return (int)3L;
+    }
+    public static int SWP_DRAWFRAME() {
+        return (int)32L;
+    }
+    public static int SWP_NOREPOSITION() {
+        return (int)512L;
+    }
+    public static MemoryAddress HWND_TOP() {
+        return constants$744.HWND_TOP$ADDR;
+    }
+    public static MemoryAddress HWND_BOTTOM() {
+        return constants$744.HWND_BOTTOM$ADDR;
+    }
+    public static MemoryAddress HWND_TOPMOST() {
+        return constants$744.HWND_TOPMOST$ADDR;
+    }
+    public static MemoryAddress HWND_NOTOPMOST() {
+        return constants$744.HWND_NOTOPMOST$ADDR;
+    }
+    public static int TWF_FINETOUCH() {
+        return (int)1L;
+    }
+    public static int TWF_WANTPALM() {
+        return (int)2L;
+    }
+    public static int POINTER_MOD_SHIFT() {
+        return (int)4L;
+    }
+    public static int POINTER_MOD_CTRL() {
+        return (int)8L;
+    }
+    public static int PA_ACTIVATE() {
+        return (int)1L;
+    }
+    public static int PA_NOACTIVATE() {
+        return (int)3L;
+    }
+    public static int MAPVK_VK_TO_VSC() {
+        return (int)0L;
+    }
+    public static int MAPVK_VSC_TO_VK() {
+        return (int)1L;
+    }
+    public static int MAPVK_VK_TO_CHAR() {
+        return (int)2L;
+    }
+    public static int MAPVK_VSC_TO_VK_EX() {
+        return (int)3L;
+    }
+    public static int MAPVK_VK_TO_VSC_EX() {
+        return (int)4L;
+    }
+    public static int QS_MOUSE() {
+        return (int)6L;
+    }
+    public static int QS_INPUT() {
+        return (int)7175L;
+    }
+    public static int QS_ALLEVENTS() {
+        return (int)7359L;
+    }
+    public static int QS_ALLINPUT() {
+        return (int)7423L;
+    }
+    public static int TIMERV_DEFAULT_COALESCING() {
+        return (int)0L;
+    }
+    public static int TIMERV_NO_COALESCING() {
+        return (int)4294967295L;
+    }
+    public static int TIMERV_COALESCING_MIN() {
+        return (int)1L;
+    }
+    public static int TIMERV_COALESCING_MAX() {
+        return (int)2147483637L;
+    }
+    public static int SM_CXFIXEDFRAME() {
+        return (int)7L;
+    }
+    public static int SM_CYFIXEDFRAME() {
+        return (int)8L;
+    }
+    public static int SM_CXSIZEFRAME() {
+        return (int)32L;
+    }
+    public static int SM_CYSIZEFRAME() {
+        return (int)33L;
+    }
+    public static int MNS_NOCHECK() {
+        return (int)2147483648L;
+    }
+    public static int MIM_APPLYTOSUBMENUS() {
+        return (int)2147483648L;
+    }
+    public static MemoryAddress HBMMENU_CALLBACK() {
+        return constants$744.HBMMENU_CALLBACK$ADDR;
+    }
+    public static MemoryAddress HBMMENU_SYSTEM() {
+        return constants$745.HBMMENU_SYSTEM$ADDR;
+    }
+    public static MemoryAddress HBMMENU_MBAR_RESTORE() {
+        return constants$745.HBMMENU_MBAR_RESTORE$ADDR;
+    }
+    public static MemoryAddress HBMMENU_MBAR_MINIMIZE() {
+        return constants$745.HBMMENU_MBAR_MINIMIZE$ADDR;
+    }
+    public static MemoryAddress HBMMENU_MBAR_CLOSE() {
+        return constants$745.HBMMENU_MBAR_CLOSE$ADDR;
+    }
+    public static MemoryAddress HBMMENU_MBAR_CLOSE_D() {
+        return constants$745.HBMMENU_MBAR_CLOSE_D$ADDR;
+    }
+    public static MemoryAddress HBMMENU_MBAR_MINIMIZE_D() {
+        return constants$745.HBMMENU_MBAR_MINIMIZE_D$ADDR;
+    }
+    public static MemoryAddress HBMMENU_POPUP_CLOSE() {
+        return constants$746.HBMMENU_POPUP_CLOSE$ADDR;
+    }
+    public static MemoryAddress HBMMENU_POPUP_RESTORE() {
+        return constants$746.HBMMENU_POPUP_RESTORE$ADDR;
+    }
+    public static MemoryAddress HBMMENU_POPUP_MAXIMIZE() {
+        return constants$746.HBMMENU_POPUP_MAXIMIZE$ADDR;
+    }
+    public static MemoryAddress HBMMENU_POPUP_MINIMIZE() {
+        return constants$746.HBMMENU_POPUP_MINIMIZE$ADDR;
+    }
+    public static int GMDI_USEDISABLED() {
+        return (int)1L;
+    }
+    public static int GMDI_GOINTOPOPUPS() {
+        return (int)2L;
+    }
+    public static int TPM_LEFTBUTTON() {
+        return (int)0L;
+    }
+    public static int TPM_RIGHTBUTTON() {
+        return (int)2L;
+    }
+    public static int TPM_LEFTALIGN() {
+        return (int)0L;
+    }
+    public static int TPM_CENTERALIGN() {
+        return (int)4L;
+    }
+    public static int TPM_RIGHTALIGN() {
+        return (int)8L;
+    }
+    public static int TPM_TOPALIGN() {
+        return (int)0L;
+    }
+    public static int TPM_VCENTERALIGN() {
+        return (int)16L;
+    }
+    public static int TPM_BOTTOMALIGN() {
+        return (int)32L;
+    }
+    public static int TPM_HORIZONTAL() {
+        return (int)0L;
+    }
+    public static int TPM_VERTICAL() {
+        return (int)64L;
+    }
+    public static int TPM_NONOTIFY() {
+        return (int)128L;
+    }
+    public static int TPM_RETURNCMD() {
+        return (int)256L;
+    }
+    public static int TPM_RECURSE() {
+        return (int)1L;
+    }
+    public static int TPM_HORPOSANIMATION() {
+        return (int)1024L;
+    }
+    public static int TPM_HORNEGANIMATION() {
+        return (int)2048L;
+    }
+    public static int TPM_VERPOSANIMATION() {
+        return (int)4096L;
+    }
+    public static int TPM_VERNEGANIMATION() {
+        return (int)8192L;
+    }
+    public static int TPM_NOANIMATION() {
+        return (int)16384L;
+    }
+    public static int TPM_LAYOUTRTL() {
+        return (int)32768L;
+    }
+    public static int TPM_WORKAREA() {
+        return (int)65536L;
+    }
+    public static int DO_DROPFILE() {
+        return (int)1162627398L;
+    }
+    public static int DO_PRINTFILE() {
+        return (int)1414419024L;
+    }
+    public static int ASFW_ANY() {
+        return (int)4294967295L;
+    }
+    public static int DCX_WINDOW() {
+        return (int)1L;
+    }
+    public static int DCX_CACHE() {
+        return (int)2L;
+    }
+    public static int DCX_NORESETATTRS() {
+        return (int)4L;
+    }
+    public static int DCX_CLIPCHILDREN() {
+        return (int)8L;
+    }
+    public static int DCX_CLIPSIBLINGS() {
+        return (int)16L;
+    }
+    public static int DCX_PARENTCLIP() {
+        return (int)32L;
+    }
+    public static int DCX_EXCLUDERGN() {
+        return (int)64L;
+    }
+    public static int DCX_INTERSECTRGN() {
+        return (int)128L;
+    }
+    public static int DCX_EXCLUDEUPDATE() {
+        return (int)256L;
+    }
+    public static int DCX_INTERSECTUPDATE() {
+        return (int)512L;
+    }
+    public static int DCX_LOCKWINDOWUPDATE() {
+        return (int)1024L;
+    }
+    public static int DCX_VALIDATE() {
+        return (int)2097152L;
+    }
+    public static int ESB_DISABLE_LTUP() {
+        return (int)1L;
+    }
+    public static int ESB_DISABLE_RTDN() {
+        return (int)2L;
+    }
+    public static int MB_OK() {
+        return (int)0L;
+    }
+    public static int MB_OKCANCEL() {
+        return (int)1L;
+    }
+    public static int MB_ABORTRETRYIGNORE() {
+        return (int)2L;
+    }
+    public static int MB_YESNOCANCEL() {
+        return (int)3L;
+    }
+    public static int MB_YESNO() {
+        return (int)4L;
+    }
+    public static int MB_RETRYCANCEL() {
+        return (int)5L;
+    }
+    public static int MB_CANCELTRYCONTINUE() {
+        return (int)6L;
+    }
+    public static int MB_ICONHAND() {
+        return (int)16L;
+    }
     public static int MB_ICONQUESTION() {
         return (int)32L;
     }
@@ -256,88 +919,88 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)61488L;
     }
     public static MemoryAddress IDC_ARROW() {
-        return constants$740.IDC_ARROW$ADDR;
+        return constants$746.IDC_ARROW$ADDR;
     }
     public static MemoryAddress IDC_IBEAM() {
-        return constants$740.IDC_IBEAM$ADDR;
+        return constants$746.IDC_IBEAM$ADDR;
     }
     public static MemoryAddress IDC_WAIT() {
-        return constants$740.IDC_WAIT$ADDR;
+        return constants$747.IDC_WAIT$ADDR;
     }
     public static MemoryAddress IDC_CROSS() {
-        return constants$741.IDC_CROSS$ADDR;
+        return constants$747.IDC_CROSS$ADDR;
     }
     public static MemoryAddress IDC_UPARROW() {
-        return constants$741.IDC_UPARROW$ADDR;
+        return constants$747.IDC_UPARROW$ADDR;
     }
     public static MemoryAddress IDC_SIZE() {
-        return constants$741.IDC_SIZE$ADDR;
+        return constants$747.IDC_SIZE$ADDR;
     }
     public static MemoryAddress IDC_ICON() {
-        return constants$741.IDC_ICON$ADDR;
+        return constants$747.IDC_ICON$ADDR;
     }
     public static MemoryAddress IDC_SIZENWSE() {
-        return constants$741.IDC_SIZENWSE$ADDR;
+        return constants$747.IDC_SIZENWSE$ADDR;
     }
     public static MemoryAddress IDC_SIZENESW() {
-        return constants$741.IDC_SIZENESW$ADDR;
+        return constants$748.IDC_SIZENESW$ADDR;
     }
     public static MemoryAddress IDC_SIZEWE() {
-        return constants$742.IDC_SIZEWE$ADDR;
+        return constants$748.IDC_SIZEWE$ADDR;
     }
     public static MemoryAddress IDC_SIZENS() {
-        return constants$742.IDC_SIZENS$ADDR;
+        return constants$748.IDC_SIZENS$ADDR;
     }
     public static MemoryAddress IDC_SIZEALL() {
-        return constants$742.IDC_SIZEALL$ADDR;
+        return constants$748.IDC_SIZEALL$ADDR;
     }
     public static MemoryAddress IDC_NO() {
-        return constants$742.IDC_NO$ADDR;
+        return constants$748.IDC_NO$ADDR;
     }
     public static MemoryAddress IDC_HAND() {
-        return constants$742.IDC_HAND$ADDR;
+        return constants$748.IDC_HAND$ADDR;
     }
     public static MemoryAddress IDC_APPSTARTING() {
-        return constants$742.IDC_APPSTARTING$ADDR;
+        return constants$749.IDC_APPSTARTING$ADDR;
     }
     public static MemoryAddress IDC_HELP() {
-        return constants$743.IDC_HELP$ADDR;
+        return constants$749.IDC_HELP$ADDR;
     }
     public static MemoryAddress IDC_PIN() {
-        return constants$743.IDC_PIN$ADDR;
+        return constants$749.IDC_PIN$ADDR;
     }
     public static MemoryAddress IDC_PERSON() {
-        return constants$743.IDC_PERSON$ADDR;
+        return constants$749.IDC_PERSON$ADDR;
     }
     public static MemoryAddress IDI_APPLICATION() {
-        return constants$743.IDI_APPLICATION$ADDR;
+        return constants$749.IDI_APPLICATION$ADDR;
     }
     public static MemoryAddress IDI_HAND() {
-        return constants$743.IDI_HAND$ADDR;
+        return constants$749.IDI_HAND$ADDR;
     }
     public static MemoryAddress IDI_QUESTION() {
-        return constants$743.IDI_QUESTION$ADDR;
+        return constants$750.IDI_QUESTION$ADDR;
     }
     public static MemoryAddress IDI_EXCLAMATION() {
-        return constants$744.IDI_EXCLAMATION$ADDR;
+        return constants$750.IDI_EXCLAMATION$ADDR;
     }
     public static MemoryAddress IDI_ASTERISK() {
-        return constants$744.IDI_ASTERISK$ADDR;
+        return constants$750.IDI_ASTERISK$ADDR;
     }
     public static MemoryAddress IDI_WINLOGO() {
-        return constants$744.IDI_WINLOGO$ADDR;
+        return constants$750.IDI_WINLOGO$ADDR;
     }
     public static MemoryAddress IDI_SHIELD() {
-        return constants$744.IDI_SHIELD$ADDR;
+        return constants$750.IDI_SHIELD$ADDR;
     }
     public static MemoryAddress IDI_WARNING() {
-        return constants$744.IDI_WARNING$ADDR;
+        return constants$750.IDI_WARNING$ADDR;
     }
     public static MemoryAddress IDI_ERROR() {
-        return constants$744.IDI_ERROR$ADDR;
+        return constants$751.IDI_ERROR$ADDR;
     }
     public static MemoryAddress IDI_INFORMATION() {
-        return constants$745.IDI_INFORMATION$ADDR;
+        return constants$751.IDI_INFORMATION$ADDR;
     }
     public static int ES_LEFT() {
         return (int)0L;
@@ -574,7 +1237,7 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)49152L;
     }
     public static MemoryAddress WC_DIALOG() {
-        return constants$745.WC_DIALOG$ADDR;
+        return constants$751.WC_DIALOG$ADDR;
     }
     public static long DWLP_DLGPROC() {
         return 8L;
@@ -823,7 +1486,7 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)515L;
     }
     public static MemoryAddress GR_GLOBAL() {
-        return constants$745.GR_GLOBAL$ADDR;
+        return constants$751.GR_GLOBAL$ADDR;
     }
     public static int SPI_SCREENSAVERRUNNING() {
         return (int)97L;
@@ -1069,16 +1732,16 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)-1L;
     }
     public static MemoryAddress GEO_NAME_USER_DEFAULT() {
-        return constants$745.GEO_NAME_USER_DEFAULT$ADDR;
+        return constants$751.GEO_NAME_USER_DEFAULT$ADDR;
     }
     public static MemoryAddress LOCALE_NAME_USER_DEFAULT() {
-        return constants$745.LOCALE_NAME_USER_DEFAULT$ADDR;
+        return constants$751.LOCALE_NAME_USER_DEFAULT$ADDR;
     }
     public static MemorySegment LOCALE_NAME_INVARIANT() {
-        return constants$745.LOCALE_NAME_INVARIANT$SEGMENT;
+        return constants$752.LOCALE_NAME_INVARIANT$SEGMENT;
     }
     public static MemorySegment LOCALE_NAME_SYSTEM_DEFAULT() {
-        return constants$746.LOCALE_NAME_SYSTEM_DEFAULT$SEGMENT;
+        return constants$752.LOCALE_NAME_SYSTEM_DEFAULT$SEGMENT;
     }
     public static int ATTACH_PARENT_PROCESS() {
         return (int)4294967295L;
@@ -1093,37 +1756,37 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)72L;
     }
     public static MemoryAddress HKEY_CLASSES_ROOT() {
-        return constants$746.HKEY_CLASSES_ROOT$ADDR;
+        return constants$752.HKEY_CLASSES_ROOT$ADDR;
     }
     public static MemoryAddress HKEY_CURRENT_USER() {
-        return constants$746.HKEY_CURRENT_USER$ADDR;
+        return constants$752.HKEY_CURRENT_USER$ADDR;
     }
     public static MemoryAddress HKEY_LOCAL_MACHINE() {
-        return constants$746.HKEY_LOCAL_MACHINE$ADDR;
+        return constants$752.HKEY_LOCAL_MACHINE$ADDR;
     }
     public static MemoryAddress HKEY_USERS() {
-        return constants$746.HKEY_USERS$ADDR;
+        return constants$752.HKEY_USERS$ADDR;
     }
     public static MemoryAddress HKEY_PERFORMANCE_DATA() {
-        return constants$746.HKEY_PERFORMANCE_DATA$ADDR;
+        return constants$753.HKEY_PERFORMANCE_DATA$ADDR;
     }
     public static MemoryAddress HKEY_PERFORMANCE_TEXT() {
-        return constants$747.HKEY_PERFORMANCE_TEXT$ADDR;
+        return constants$753.HKEY_PERFORMANCE_TEXT$ADDR;
     }
     public static MemoryAddress HKEY_PERFORMANCE_NLSTEXT() {
-        return constants$747.HKEY_PERFORMANCE_NLSTEXT$ADDR;
+        return constants$753.HKEY_PERFORMANCE_NLSTEXT$ADDR;
     }
     public static MemoryAddress HKEY_CURRENT_CONFIG() {
-        return constants$747.HKEY_CURRENT_CONFIG$ADDR;
+        return constants$753.HKEY_CURRENT_CONFIG$ADDR;
     }
     public static MemoryAddress HKEY_DYN_DATA() {
-        return constants$747.HKEY_DYN_DATA$ADDR;
+        return constants$753.HKEY_DYN_DATA$ADDR;
     }
     public static MemoryAddress HKEY_CURRENT_USER_LOCAL_SETTINGS() {
-        return constants$747.HKEY_CURRENT_USER_LOCAL_SETTINGS$ADDR;
+        return constants$753.HKEY_CURRENT_USER_LOCAL_SETTINGS$ADDR;
     }
     public static MemoryAddress WIN31_CLASS() {
-        return constants$747.WIN31_CLASS$ADDR;
+        return constants$754.WIN31_CLASS$ADDR;
     }
     public static int REASON_SWINSTALL() {
         return (int)196610L;
@@ -2345,669 +3008,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int MOM_CLOSE() {
         return (int)968L;
-    }
-    public static int MOM_DONE() {
-        return (int)969L;
-    }
-    public static int MIM_MOREDATA() {
-        return (int)972L;
-    }
-    public static int MOM_POSITIONCB() {
-        return (int)970L;
-    }
-    public static int MIDIMAPPER() {
-        return (int)4294967295L;
-    }
-    public static int MIDI_MAPPER() {
-        return (int)4294967295L;
-    }
-    public static int MIDI_IO_STATUS() {
-        return (int)32L;
-    }
-    public static int MEVT_F_SHORT() {
-        return (int)0L;
-    }
-    public static int MEVT_F_LONG() {
-        return (int)2147483648L;
-    }
-    public static int MEVT_F_CALLBACK() {
-        return (int)1073741824L;
-    }
-    public static byte MEVT_SHORTMSG() {
-        return (byte)0L;
-    }
-    public static byte MEVT_TEMPO() {
-        return (byte)1L;
-    }
-    public static byte MEVT_NOP() {
-        return (byte)2L;
-    }
-    public static byte MEVT_LONGMSG() {
-        return (byte)128L;
-    }
-    public static byte MEVT_COMMENT() {
-        return (byte)130L;
-    }
-    public static byte MEVT_VERSION() {
-        return (byte)132L;
-    }
-    public static int MIDISTRM_ERROR() {
-        return (int)-2L;
-    }
-    public static int MIDIPROP_SET() {
-        return (int)2147483648L;
-    }
-    public static int MIDIPROP_GET() {
-        return (int)1073741824L;
-    }
-    public static int MIDIPROP_TIMEDIV() {
-        return (int)1L;
-    }
-    public static int MIDIPROP_TEMPO() {
-        return (int)2L;
-    }
-    public static int AUX_MAPPER() {
-        return (int)4294967295L;
-    }
-    public static int MIXERR_INVALLINE() {
-        return (int)1024L;
-    }
-    public static int MIXERR_INVALCONTROL() {
-        return (int)1025L;
-    }
-    public static int MIXERR_INVALVALUE() {
-        return (int)1026L;
-    }
-    public static int MIXERR_LASTERROR() {
-        return (int)1026L;
-    }
-    public static int MIXER_OBJECTF_HANDLE() {
-        return (int)2147483648L;
-    }
-    public static int MIXER_OBJECTF_MIXER() {
-        return (int)0L;
-    }
-    public static int MIXER_OBJECTF_HMIXER() {
-        return (int)2147483648L;
-    }
-    public static int MIXER_OBJECTF_WAVEOUT() {
-        return (int)268435456L;
-    }
-    public static int MIXER_OBJECTF_HWAVEOUT() {
-        return (int)2415919104L;
-    }
-    public static int MIXER_OBJECTF_WAVEIN() {
-        return (int)536870912L;
-    }
-    public static int MIXER_OBJECTF_HWAVEIN() {
-        return (int)2684354560L;
-    }
-    public static int MIXER_OBJECTF_MIDIOUT() {
-        return (int)805306368L;
-    }
-    public static int MIXER_OBJECTF_HMIDIOUT() {
-        return (int)2952790016L;
-    }
-    public static int MIXER_OBJECTF_MIDIIN() {
-        return (int)1073741824L;
-    }
-    public static int MIXER_OBJECTF_HMIDIIN() {
-        return (int)3221225472L;
-    }
-    public static int MIXER_OBJECTF_AUX() {
-        return (int)1342177280L;
-    }
-    public static int MIXERLINE_LINEF_ACTIVE() {
-        return (int)1L;
-    }
-    public static int MIXERLINE_LINEF_DISCONNECTED() {
-        return (int)32768L;
-    }
-    public static int MIXERLINE_LINEF_SOURCE() {
-        return (int)2147483648L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_FIRST() {
-        return (int)0L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_UNDEFINED() {
-        return (int)0L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_DIGITAL() {
-        return (int)1L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_LINE() {
-        return (int)2L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_MONITOR() {
-        return (int)3L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_SPEAKERS() {
-        return (int)4L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_HEADPHONES() {
-        return (int)5L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_TELEPHONE() {
-        return (int)6L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_WAVEIN() {
-        return (int)7L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_VOICEIN() {
-        return (int)8L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_DST_LAST() {
-        return (int)8L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_FIRST() {
-        return (int)4096L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_UNDEFINED() {
-        return (int)4096L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_DIGITAL() {
-        return (int)4097L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_LINE() {
-        return (int)4098L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_MICROPHONE() {
-        return (int)4099L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_SYNTHESIZER() {
-        return (int)4100L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_COMPACTDISC() {
-        return (int)4101L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_TELEPHONE() {
-        return (int)4102L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_PCSPEAKER() {
-        return (int)4103L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_WAVEOUT() {
-        return (int)4104L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_AUXILIARY() {
-        return (int)4105L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_ANALOG() {
-        return (int)4106L;
-    }
-    public static int MIXERLINE_COMPONENTTYPE_SRC_LAST() {
-        return (int)4106L;
-    }
-    public static int MIXER_GETLINEINFOF_DESTINATION() {
-        return (int)0L;
-    }
-    public static int MIXER_GETLINEINFOF_SOURCE() {
-        return (int)1L;
-    }
-    public static int MIXER_GETLINEINFOF_LINEID() {
-        return (int)2L;
-    }
-    public static int MIXER_GETLINEINFOF_COMPONENTTYPE() {
-        return (int)3L;
-    }
-    public static int MIXER_GETLINEINFOF_TARGETTYPE() {
-        return (int)4L;
-    }
-    public static int MIXER_GETLINEINFOF_QUERYMASK() {
-        return (int)15L;
-    }
-    public static int MIXERCONTROL_CONTROLF_UNIFORM() {
-        return (int)1L;
-    }
-    public static int MIXERCONTROL_CONTROLF_MULTIPLE() {
-        return (int)2L;
-    }
-    public static int MIXERCONTROL_CONTROLF_DISABLED() {
-        return (int)2147483648L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_MASK() {
-        return (int)4026531840L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_CUSTOM() {
-        return (int)0L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_METER() {
-        return (int)268435456L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_SWITCH() {
-        return (int)536870912L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_NUMBER() {
-        return (int)805306368L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_SLIDER() {
-        return (int)1073741824L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_FADER() {
-        return (int)1342177280L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_TIME() {
-        return (int)1610612736L;
-    }
-    public static int MIXERCONTROL_CT_CLASS_LIST() {
-        return (int)1879048192L;
-    }
-    public static int MIXERCONTROL_CT_SUBCLASS_MASK() {
-        return (int)251658240L;
-    }
-    public static int MIXERCONTROL_CT_SC_SWITCH_BOOLEAN() {
-        return (int)0L;
-    }
-    public static int MIXERCONTROL_CT_SC_SWITCH_BUTTON() {
-        return (int)16777216L;
-    }
-    public static int MIXERCONTROL_CT_SC_METER_POLLED() {
-        return (int)0L;
-    }
-    public static int MIXERCONTROL_CT_SC_TIME_MICROSECS() {
-        return (int)0L;
-    }
-    public static int MIXERCONTROL_CT_SC_TIME_MILLISECS() {
-        return (int)16777216L;
-    }
-    public static int MIXERCONTROL_CT_SC_LIST_SINGLE() {
-        return (int)0L;
-    }
-    public static int MIXERCONTROL_CT_SC_LIST_MULTIPLE() {
-        return (int)16777216L;
-    }
-    public static int MIXERCONTROL_CT_UNITS_MASK() {
-        return (int)16711680L;
-    }
-    public static int MIXERCONTROL_CT_UNITS_CUSTOM() {
-        return (int)0L;
-    }
-    public static int MIXERCONTROL_CT_UNITS_BOOLEAN() {
-        return (int)65536L;
-    }
-    public static int MIXERCONTROL_CT_UNITS_SIGNED() {
-        return (int)131072L;
-    }
-    public static int MIXERCONTROL_CT_UNITS_UNSIGNED() {
-        return (int)196608L;
-    }
-    public static int MIXERCONTROL_CT_UNITS_DECIBELS() {
-        return (int)262144L;
-    }
-    public static int MIXERCONTROL_CT_UNITS_PERCENT() {
-        return (int)327680L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_CUSTOM() {
-        return (int)0L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_BOOLEANMETER() {
-        return (int)268500992L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_SIGNEDMETER() {
-        return (int)268566528L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_PEAKMETER() {
-        return (int)268566529L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_UNSIGNEDMETER() {
-        return (int)268632064L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_BOOLEAN() {
-        return (int)536936448L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_ONOFF() {
-        return (int)536936449L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_MUTE() {
-        return (int)536936450L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_MONO() {
-        return (int)536936451L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_LOUDNESS() {
-        return (int)536936452L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_STEREOENH() {
-        return (int)536936453L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_BASS_BOOST() {
-        return (int)536945271L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_BUTTON() {
-        return (int)553713664L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_DECIBELS() {
-        return (int)805568512L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_SIGNED() {
-        return (int)805437440L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_UNSIGNED() {
-        return (int)805502976L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_PERCENT() {
-        return (int)805634048L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_SLIDER() {
-        return (int)1073872896L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_PAN() {
-        return (int)1073872897L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_QSOUNDPAN() {
-        return (int)1073872898L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_FADER() {
-        return (int)1342373888L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_VOLUME() {
-        return (int)1342373889L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_BASS() {
-        return (int)1342373890L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_TREBLE() {
-        return (int)1342373891L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_EQUALIZER() {
-        return (int)1342373892L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_SINGLESELECT() {
-        return (int)1879113728L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_MUX() {
-        return (int)1879113729L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_MULTIPLESELECT() {
-        return (int)1895890944L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_MIXER() {
-        return (int)1895890945L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_MICROTIME() {
-        return (int)1610809344L;
-    }
-    public static int MIXERCONTROL_CONTROLTYPE_MILLITIME() {
-        return (int)1627586560L;
-    }
-    public static int MIXER_GETLINECONTROLSF_ALL() {
-        return (int)0L;
-    }
-    public static int MIXER_GETLINECONTROLSF_ONEBYID() {
-        return (int)1L;
-    }
-    public static int MIXER_GETLINECONTROLSF_ONEBYTYPE() {
-        return (int)2L;
-    }
-    public static int MIXER_GETLINECONTROLSF_QUERYMASK() {
-        return (int)15L;
-    }
-    public static int MIXER_GETCONTROLDETAILSF_VALUE() {
-        return (int)0L;
-    }
-    public static int MIXER_GETCONTROLDETAILSF_LISTTEXT() {
-        return (int)1L;
-    }
-    public static int MIXER_GETCONTROLDETAILSF_QUERYMASK() {
-        return (int)15L;
-    }
-    public static int MIXER_SETCONTROLDETAILSF_VALUE() {
-        return (int)0L;
-    }
-    public static int MIXER_SETCONTROLDETAILSF_CUSTOM() {
-        return (int)1L;
-    }
-    public static int MIXER_SETCONTROLDETAILSF_QUERYMASK() {
-        return (int)15L;
-    }
-    public static int TIMERR_NOERROR() {
-        return (int)0L;
-    }
-    public static int TIMERR_NOCANDO() {
-        return (int)97L;
-    }
-    public static int TIMERR_STRUCT() {
-        return (int)129L;
-    }
-    public static int JOYERR_NOERROR() {
-        return (int)0L;
-    }
-    public static int JOYERR_PARMS() {
-        return (int)165L;
-    }
-    public static int JOYERR_NOCANDO() {
-        return (int)166L;
-    }
-    public static int JOYERR_UNPLUGGED() {
-        return (int)167L;
-    }
-    public static int JOY_BUTTON5() {
-        return (int)16L;
-    }
-    public static int JOY_BUTTON6() {
-        return (int)32L;
-    }
-    public static int JOY_BUTTON7() {
-        return (int)64L;
-    }
-    public static int JOY_BUTTON8() {
-        return (int)128L;
-    }
-    public static int JOY_BUTTON9() {
-        return (int)256L;
-    }
-    public static int JOY_BUTTON10() {
-        return (int)512L;
-    }
-    public static int JOY_BUTTON11() {
-        return (int)1024L;
-    }
-    public static int JOY_BUTTON12() {
-        return (int)2048L;
-    }
-    public static int JOY_BUTTON13() {
-        return (int)4096L;
-    }
-    public static int JOY_BUTTON14() {
-        return (int)8192L;
-    }
-    public static int JOY_BUTTON15() {
-        return (int)16384L;
-    }
-    public static int JOY_BUTTON16() {
-        return (int)32768L;
-    }
-    public static int JOY_BUTTON17() {
-        return (int)65536L;
-    }
-    public static int JOY_BUTTON18() {
-        return (int)131072L;
-    }
-    public static int JOY_BUTTON19() {
-        return (int)262144L;
-    }
-    public static int JOY_BUTTON20() {
-        return (int)524288L;
-    }
-    public static int JOY_BUTTON21() {
-        return (int)1048576L;
-    }
-    public static int JOY_BUTTON22() {
-        return (int)2097152L;
-    }
-    public static int JOY_BUTTON23() {
-        return (int)4194304L;
-    }
-    public static int JOY_BUTTON24() {
-        return (int)8388608L;
-    }
-    public static int JOY_BUTTON25() {
-        return (int)16777216L;
-    }
-    public static int JOY_BUTTON26() {
-        return (int)33554432L;
-    }
-    public static int JOY_BUTTON27() {
-        return (int)67108864L;
-    }
-    public static int JOY_BUTTON28() {
-        return (int)134217728L;
-    }
-    public static int JOY_BUTTON29() {
-        return (int)268435456L;
-    }
-    public static int JOY_BUTTON30() {
-        return (int)536870912L;
-    }
-    public static int JOY_BUTTON31() {
-        return (int)1073741824L;
-    }
-    public static int JOY_BUTTON32() {
-        return (int)2147483648L;
-    }
-    public static short JOY_POVCENTERED() {
-        return (short)65535L;
-    }
-    public static int JOY_RETURNX() {
-        return (int)1L;
-    }
-    public static int JOY_RETURNY() {
-        return (int)2L;
-    }
-    public static int JOY_RETURNZ() {
-        return (int)4L;
-    }
-    public static int JOY_RETURNR() {
-        return (int)8L;
-    }
-    public static int JOY_RETURNU() {
-        return (int)16L;
-    }
-    public static int JOY_RETURNV() {
-        return (int)32L;
-    }
-    public static int JOY_RETURNPOV() {
-        return (int)64L;
-    }
-    public static int JOY_RETURNBUTTONS() {
-        return (int)128L;
-    }
-    public static int JOY_RETURNRAWDATA() {
-        return (int)256L;
-    }
-    public static int JOY_RETURNPOVCTS() {
-        return (int)512L;
-    }
-    public static int JOY_RETURNCENTERED() {
-        return (int)1024L;
-    }
-    public static int JOY_USEDEADZONE() {
-        return (int)2048L;
-    }
-    public static int JOY_RETURNALL() {
-        return (int)255L;
-    }
-    public static int JOY_CAL_READALWAYS() {
-        return (int)65536L;
-    }
-    public static int JOY_CAL_READXYONLY() {
-        return (int)131072L;
-    }
-    public static int JOY_CAL_READ3() {
-        return (int)262144L;
-    }
-    public static int JOY_CAL_READ4() {
-        return (int)524288L;
-    }
-    public static int JOY_CAL_READXONLY() {
-        return (int)1048576L;
-    }
-    public static int JOY_CAL_READYONLY() {
-        return (int)2097152L;
-    }
-    public static int JOY_CAL_READ5() {
-        return (int)4194304L;
-    }
-    public static int JOY_CAL_READ6() {
-        return (int)8388608L;
-    }
-    public static int JOY_CAL_READZONLY() {
-        return (int)16777216L;
-    }
-    public static int JOY_CAL_READRONLY() {
-        return (int)33554432L;
-    }
-    public static int JOY_CAL_READUONLY() {
-        return (int)67108864L;
-    }
-    public static int JOY_CAL_READVONLY() {
-        return (int)134217728L;
-    }
-    public static int FOF_NO_UI() {
-        return (int)1556L;
-    }
-    public static int SEE_MASK_FLAG_DDEWAIT() {
-        return (int)256L;
-    }
-    public static int NOTIFYICONDATAA_V1_SIZE() {
-        return (int)104L;
-    }
-    public static int NOTIFYICONDATAW_V1_SIZE() {
-        return (int)168L;
-    }
-    public static int NOTIFYICONDATA_V1_SIZE() {
-        return (int)104L;
-    }
-    public static int NOTIFYICONDATAA_V2_SIZE() {
-        return (int)504L;
-    }
-    public static int NOTIFYICONDATAW_V2_SIZE() {
-        return (int)952L;
-    }
-    public static int NOTIFYICONDATA_V2_SIZE() {
-        return (int)504L;
-    }
-    public static int NOTIFYICONDATAA_V3_SIZE() {
-        return (int)520L;
-    }
-    public static int NOTIFYICONDATAW_V3_SIZE() {
-        return (int)968L;
-    }
-    public static int NOTIFYICONDATA_V3_SIZE() {
-        return (int)520L;
-    }
-    public static int NIN_SELECT() {
-        return (int)1024L;
-    }
-    public static int NIN_KEYSELECT() {
-        return (int)1025L;
-    }
-    public static int NIN_BALLOONSHOW() {
-        return (int)1026L;
-    }
-    public static int NIN_BALLOONHIDE() {
-        return (int)1027L;
-    }
-    public static int NIN_BALLOONTIMEOUT() {
-        return (int)1028L;
-    }
-    public static int NIN_BALLOONUSERCLICK() {
-        return (int)1029L;
-    }
-    public static int NIN_POPUPOPEN() {
-        return (int)1030L;
-    }
-    public static int NIN_POPUPCLOSE() {
-        return (int)1031L;
-    }
-    public static int SHGSI_ICON() {
-        return (int)256L;
-    }
-    public static int SHGSI_SYSICONINDEX() {
-        return (int)16384L;
-    }
-    public static int SHGSI_LINKOVERLAY() {
-        return (int)32768L;
     }
 }
 

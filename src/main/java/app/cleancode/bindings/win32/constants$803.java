@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$803 {
 
-    static final MemoryAddress X509_ENHANCED_KEY_USAGE$ADDR = MemoryAddress.ofLong(36L);
-    static final MemoryAddress PKCS_CTL$ADDR = MemoryAddress.ofLong(37L);
-    static final MemoryAddress X509_MULTI_BYTE_UINT$ADDR = MemoryAddress.ofLong(38L);
-    static final MemoryAddress X509_DSS_PUBLICKEY$ADDR = MemoryAddress.ofLong(38L);
-    static final MemoryAddress X509_DSS_PARAMETERS$ADDR = MemoryAddress.ofLong(39L);
-    static final MemoryAddress X509_DSS_SIGNATURE$ADDR = MemoryAddress.ofLong(40L);
+    static final MemoryAddress X509_CERT_CRL_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress X509_CERT_REQUEST_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(4L);
+    static final MemoryAddress X509_EXTENSIONS$ADDR = MemoryAddress.ofLong(5L);
+    static final MemoryAddress X509_NAME_VALUE$ADDR = MemoryAddress.ofLong(6L);
+    static final MemoryAddress X509_NAME$ADDR = MemoryAddress.ofLong(7L);
+    static final MemoryAddress X509_PUBLIC_KEY_INFO$ADDR = MemoryAddress.ofLong(8L);
 }
 
 

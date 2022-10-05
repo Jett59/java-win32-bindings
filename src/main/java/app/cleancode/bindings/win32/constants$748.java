@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$748 {
 
-    static final MemorySegment WC_NETADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("m");
-    static final MemorySegment MS_DEF_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Cryptographic Provider v1.0");
-    static final MemorySegment MS_DEF_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_DEF_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base Cryptographic Provider v1.0");
-    static final MemorySegment MS_ENHANCED_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced Cryptographic Provider v1.0");
-    static final MemorySegment MS_ENHANCED_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemoryAddress IDC_SIZENESW$ADDR = MemoryAddress.ofLong(32643L);
+    static final MemoryAddress IDC_SIZEWE$ADDR = MemoryAddress.ofLong(32644L);
+    static final MemoryAddress IDC_SIZENS$ADDR = MemoryAddress.ofLong(32645L);
+    static final MemoryAddress IDC_SIZEALL$ADDR = MemoryAddress.ofLong(32646L);
+    static final MemoryAddress IDC_NO$ADDR = MemoryAddress.ofLong(32648L);
+    static final MemoryAddress IDC_HAND$ADDR = MemoryAddress.ofLong(32649L);
 }
 
 

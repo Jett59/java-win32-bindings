@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$744 {
 
-    static final MemoryAddress IDI_EXCLAMATION$ADDR = MemoryAddress.ofLong(32515L);
-    static final MemoryAddress IDI_ASTERISK$ADDR = MemoryAddress.ofLong(32516L);
-    static final MemoryAddress IDI_WINLOGO$ADDR = MemoryAddress.ofLong(32517L);
-    static final MemoryAddress IDI_SHIELD$ADDR = MemoryAddress.ofLong(32518L);
-    static final MemoryAddress IDI_WARNING$ADDR = MemoryAddress.ofLong(32515L);
-    static final MemoryAddress IDI_ERROR$ADDR = MemoryAddress.ofLong(32513L);
+    static final MemoryAddress HWND_DESKTOP$ADDR = MemoryAddress.ofLong(0L);
+    static final MemoryAddress HWND_TOP$ADDR = MemoryAddress.ofLong(0L);
+    static final MemoryAddress HWND_BOTTOM$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress HWND_TOPMOST$ADDR = MemoryAddress.ofLong(-1L);
+    static final MemoryAddress HWND_NOTOPMOST$ADDR = MemoryAddress.ofLong(-2L);
+    static final MemoryAddress HBMMENU_CALLBACK$ADDR = MemoryAddress.ofLong(-1L);
 }
 
 

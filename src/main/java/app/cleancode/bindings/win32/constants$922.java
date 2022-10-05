@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$922 {
 
-    static final MemorySegment SPLDS_PRINT_COLOR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printColor");
-    static final MemorySegment SPLDS_PRINT_DUPLEX_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printDuplexSupported");
-    static final MemorySegment SPLDS_PRINT_END_TIME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printEndTime");
-    static final MemorySegment SPLDS_PRINTER_CLASS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printQueue");
-    static final MemorySegment SPLDS_PRINTER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerName");
-    static final MemorySegment SPLDS_PRINT_KEEP_PRINTED_JOBS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printKeepPrintedJobs");
+    static final MemorySegment SPLREG_NET_POPUP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("NetPopup");
+    static final MemorySegment SPLREG_RETRY_POPUP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RetryPopup");
+    static final MemorySegment SPLREG_NET_POPUP_TO_COMPUTER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("NetPopupToComputer");
+    static final MemorySegment SPLREG_EVENT_LOG$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("EventLog");
+    static final MemorySegment SPLREG_MAJOR_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("MajorVersion");
+    static final MemorySegment SPLREG_MINOR_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("MinorVersion");
 }
 
 

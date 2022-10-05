@@ -9,6 +9,72 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_18 extends WINDOWS_17 {
 
+    public static MethodHandle SetFormW$MH() {
+        return RuntimeHelper.requireNonNull(constants$676.SetFormW$MH,"SetFormW");
+    }
+    public static int SetFormW ( Addressable hPrinter,  Addressable pFormName,  int Level,  Addressable pForm) {
+        var mh$ = SetFormW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, pFormName, Level, pForm);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumFormsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$676.EnumFormsA$MH,"EnumFormsA");
+    }
+    public static int EnumFormsA ( Addressable hPrinter,  int Level,  Addressable pForm,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumFormsA$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pForm, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumFormsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.EnumFormsW$MH,"EnumFormsW");
+    }
+    public static int EnumFormsW ( Addressable hPrinter,  int Level,  Addressable pForm,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumFormsW$MH();
+        try {
+            return (int)mh$.invokeExact(hPrinter, Level, pForm, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumMonitorsA$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.EnumMonitorsA$MH,"EnumMonitorsA");
+    }
+    public static int EnumMonitorsA ( Addressable pName,  int Level,  Addressable pMonitor,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumMonitorsA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pMonitor, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EnumMonitorsW$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.EnumMonitorsW$MH,"EnumMonitorsW");
+    }
+    public static int EnumMonitorsW ( Addressable pName,  int Level,  Addressable pMonitor,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
+        var mh$ = EnumMonitorsW$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pMonitor, cbBuf, pcbNeeded, pcReturned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle AddMonitorA$MH() {
+        return RuntimeHelper.requireNonNull(constants$677.AddMonitorA$MH,"AddMonitorA");
+    }
+    public static int AddMonitorA ( Addressable pName,  int Level,  Addressable pMonitors) {
+        var mh$ = AddMonitorA$MH();
+        try {
+            return (int)mh$.invokeExact(pName, Level, pMonitors);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
     public static MethodHandle AddMonitorW$MH() {
         return RuntimeHelper.requireNonNull(constants$677.AddMonitorW$MH,"AddMonitorW");
     }
@@ -2742,6 +2808,923 @@ import static java.lang.foreign.ValueLayout.*;
             throw new AssertionError("should not reach here", ex$);
         }
     }
+    public static OfAddress EVT_HANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PEVT_HANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static int EvtVarTypeNull() {
+        return (int)0L;
+    }
+    public static int EvtVarTypeString() {
+        return (int)1L;
+    }
+    public static int EvtVarTypeAnsiString() {
+        return (int)2L;
+    }
+    public static int EvtVarTypeSByte() {
+        return (int)3L;
+    }
+    public static int EvtVarTypeByte() {
+        return (int)4L;
+    }
+    public static int EvtVarTypeInt16() {
+        return (int)5L;
+    }
+    public static int EvtVarTypeUInt16() {
+        return (int)6L;
+    }
+    public static int EvtVarTypeInt32() {
+        return (int)7L;
+    }
+    public static int EvtVarTypeUInt32() {
+        return (int)8L;
+    }
+    public static int EvtVarTypeInt64() {
+        return (int)9L;
+    }
+    public static int EvtVarTypeUInt64() {
+        return (int)10L;
+    }
+    public static int EvtVarTypeSingle() {
+        return (int)11L;
+    }
+    public static int EvtVarTypeDouble() {
+        return (int)12L;
+    }
+    public static int EvtVarTypeBoolean() {
+        return (int)13L;
+    }
+    public static int EvtVarTypeBinary() {
+        return (int)14L;
+    }
+    public static int EvtVarTypeGuid() {
+        return (int)15L;
+    }
+    public static int EvtVarTypeSizeT() {
+        return (int)16L;
+    }
+    public static int EvtVarTypeFileTime() {
+        return (int)17L;
+    }
+    public static int EvtVarTypeSysTime() {
+        return (int)18L;
+    }
+    public static int EvtVarTypeSid() {
+        return (int)19L;
+    }
+    public static int EvtVarTypeHexInt32() {
+        return (int)20L;
+    }
+    public static int EvtVarTypeHexInt64() {
+        return (int)21L;
+    }
+    public static int EvtVarTypeEvtHandle() {
+        return (int)32L;
+    }
+    public static int EvtVarTypeEvtXml() {
+        return (int)35L;
+    }
+    public static OfAddress PEVT_VARIANT = Constants$root.C_POINTER$LAYOUT;
+    public static int EvtRpcLogin() {
+        return (int)1L;
+    }
+    public static int EvtRpcLoginAuthDefault() {
+        return (int)0L;
+    }
+    public static int EvtRpcLoginAuthNegotiate() {
+        return (int)1L;
+    }
+    public static int EvtRpcLoginAuthKerberos() {
+        return (int)2L;
+    }
+    public static int EvtRpcLoginAuthNTLM() {
+        return (int)3L;
+    }
+    public static MethodHandle EvtOpenSession$MH() {
+        return RuntimeHelper.requireNonNull(constants$720.EvtOpenSession$MH,"EvtOpenSession");
+    }
+    public static MemoryAddress EvtOpenSession ( int LoginClass,  Addressable Login,  int Timeout,  int Flags) {
+        var mh$ = EvtOpenSession$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(LoginClass, Login, Timeout, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtClose$MH() {
+        return RuntimeHelper.requireNonNull(constants$720.EvtClose$MH,"EvtClose");
+    }
+    public static int EvtClose ( Addressable Object) {
+        var mh$ = EvtClose$MH();
+        try {
+            return (int)mh$.invokeExact(Object);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtCancel$MH() {
+        return RuntimeHelper.requireNonNull(constants$720.EvtCancel$MH,"EvtCancel");
+    }
+    public static int EvtCancel ( Addressable Object) {
+        var mh$ = EvtCancel$MH();
+        try {
+            return (int)mh$.invokeExact(Object);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtGetExtendedStatus$MH() {
+        return RuntimeHelper.requireNonNull(constants$721.EvtGetExtendedStatus$MH,"EvtGetExtendedStatus");
+    }
+    public static int EvtGetExtendedStatus ( int BufferSize,  Addressable Buffer,  Addressable BufferUsed) {
+        var mh$ = EvtGetExtendedStatus$MH();
+        try {
+            return (int)mh$.invokeExact(BufferSize, Buffer, BufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtQueryChannelPath() {
+        return (int)1L;
+    }
+    public static int EvtQueryFilePath() {
+        return (int)2L;
+    }
+    public static int EvtQueryForwardDirection() {
+        return (int)256L;
+    }
+    public static int EvtQueryReverseDirection() {
+        return (int)512L;
+    }
+    public static int EvtQueryTolerateQueryErrors() {
+        return (int)4096L;
+    }
+    public static int EvtSeekRelativeToFirst() {
+        return (int)1L;
+    }
+    public static int EvtSeekRelativeToLast() {
+        return (int)2L;
+    }
+    public static int EvtSeekRelativeToCurrent() {
+        return (int)3L;
+    }
+    public static int EvtSeekRelativeToBookmark() {
+        return (int)4L;
+    }
+    public static int EvtSeekOriginMask() {
+        return (int)7L;
+    }
+    public static int EvtSeekStrict() {
+        return (int)65536L;
+    }
+    public static MethodHandle EvtQuery$MH() {
+        return RuntimeHelper.requireNonNull(constants$721.EvtQuery$MH,"EvtQuery");
+    }
+    public static MemoryAddress EvtQuery ( Addressable Session,  Addressable Path,  Addressable Query,  int Flags) {
+        var mh$ = EvtQuery$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Session, Path, Query, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtNext$MH() {
+        return RuntimeHelper.requireNonNull(constants$721.EvtNext$MH,"EvtNext");
+    }
+    public static int EvtNext ( Addressable ResultSet,  int EventsSize,  Addressable Events,  int Timeout,  int Flags,  Addressable Returned) {
+        var mh$ = EvtNext$MH();
+        try {
+            return (int)mh$.invokeExact(ResultSet, EventsSize, Events, Timeout, Flags, Returned);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtSeek$MH() {
+        return RuntimeHelper.requireNonNull(constants$721.EvtSeek$MH,"EvtSeek");
+    }
+    public static int EvtSeek ( Addressable ResultSet,  long Position,  Addressable Bookmark,  int Timeout,  int Flags) {
+        var mh$ = EvtSeek$MH();
+        try {
+            return (int)mh$.invokeExact(ResultSet, Position, Bookmark, Timeout, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtSubscribeToFutureEvents() {
+        return (int)1L;
+    }
+    public static int EvtSubscribeStartAtOldestRecord() {
+        return (int)2L;
+    }
+    public static int EvtSubscribeStartAfterBookmark() {
+        return (int)3L;
+    }
+    public static int EvtSubscribeOriginMask() {
+        return (int)3L;
+    }
+    public static int EvtSubscribeTolerateQueryErrors() {
+        return (int)4096L;
+    }
+    public static int EvtSubscribeStrict() {
+        return (int)65536L;
+    }
+    public static int EvtSubscribeActionError() {
+        return (int)0L;
+    }
+    public static int EvtSubscribeActionDeliver() {
+        return (int)1L;
+    }
+    public static MethodHandle EvtSubscribe$MH() {
+        return RuntimeHelper.requireNonNull(constants$722.EvtSubscribe$MH,"EvtSubscribe");
+    }
+    public static MemoryAddress EvtSubscribe ( Addressable Session,  Addressable SignalEvent,  Addressable ChannelPath,  Addressable Query,  Addressable Bookmark,  Addressable Context,  Addressable Callback,  int Flags) {
+        var mh$ = EvtSubscribe$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Session, SignalEvent, ChannelPath, Query, Bookmark, Context, Callback, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtSystemProviderName() {
+        return (int)0L;
+    }
+    public static int EvtSystemProviderGuid() {
+        return (int)1L;
+    }
+    public static int EvtSystemEventID() {
+        return (int)2L;
+    }
+    public static int EvtSystemQualifiers() {
+        return (int)3L;
+    }
+    public static int EvtSystemLevel() {
+        return (int)4L;
+    }
+    public static int EvtSystemTask() {
+        return (int)5L;
+    }
+    public static int EvtSystemOpcode() {
+        return (int)6L;
+    }
+    public static int EvtSystemKeywords() {
+        return (int)7L;
+    }
+    public static int EvtSystemTimeCreated() {
+        return (int)8L;
+    }
+    public static int EvtSystemEventRecordId() {
+        return (int)9L;
+    }
+    public static int EvtSystemActivityID() {
+        return (int)10L;
+    }
+    public static int EvtSystemRelatedActivityID() {
+        return (int)11L;
+    }
+    public static int EvtSystemProcessID() {
+        return (int)12L;
+    }
+    public static int EvtSystemThreadID() {
+        return (int)13L;
+    }
+    public static int EvtSystemChannel() {
+        return (int)14L;
+    }
+    public static int EvtSystemComputer() {
+        return (int)15L;
+    }
+    public static int EvtSystemUserID() {
+        return (int)16L;
+    }
+    public static int EvtSystemVersion() {
+        return (int)17L;
+    }
+    public static int EvtSystemPropertyIdEND() {
+        return (int)18L;
+    }
+    public static int EvtRenderContextValues() {
+        return (int)0L;
+    }
+    public static int EvtRenderContextSystem() {
+        return (int)1L;
+    }
+    public static int EvtRenderContextUser() {
+        return (int)2L;
+    }
+    public static int EvtRenderEventValues() {
+        return (int)0L;
+    }
+    public static int EvtRenderEventXml() {
+        return (int)1L;
+    }
+    public static int EvtRenderBookmark() {
+        return (int)2L;
+    }
+    public static MethodHandle EvtCreateRenderContext$MH() {
+        return RuntimeHelper.requireNonNull(constants$722.EvtCreateRenderContext$MH,"EvtCreateRenderContext");
+    }
+    public static MemoryAddress EvtCreateRenderContext ( int ValuePathsCount,  Addressable ValuePaths,  int Flags) {
+        var mh$ = EvtCreateRenderContext$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(ValuePathsCount, ValuePaths, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtRender$MH() {
+        return RuntimeHelper.requireNonNull(constants$722.EvtRender$MH,"EvtRender");
+    }
+    public static int EvtRender ( Addressable Context,  Addressable Fragment,  int Flags,  int BufferSize,  Addressable Buffer,  Addressable BufferUsed,  Addressable PropertyCount) {
+        var mh$ = EvtRender$MH();
+        try {
+            return (int)mh$.invokeExact(Context, Fragment, Flags, BufferSize, Buffer, BufferUsed, PropertyCount);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtFormatMessageEvent() {
+        return (int)1L;
+    }
+    public static int EvtFormatMessageLevel() {
+        return (int)2L;
+    }
+    public static int EvtFormatMessageTask() {
+        return (int)3L;
+    }
+    public static int EvtFormatMessageOpcode() {
+        return (int)4L;
+    }
+    public static int EvtFormatMessageKeyword() {
+        return (int)5L;
+    }
+    public static int EvtFormatMessageChannel() {
+        return (int)6L;
+    }
+    public static int EvtFormatMessageProvider() {
+        return (int)7L;
+    }
+    public static int EvtFormatMessageId() {
+        return (int)8L;
+    }
+    public static int EvtFormatMessageXml() {
+        return (int)9L;
+    }
+    public static MethodHandle EvtFormatMessage$MH() {
+        return RuntimeHelper.requireNonNull(constants$722.EvtFormatMessage$MH,"EvtFormatMessage");
+    }
+    public static int EvtFormatMessage ( Addressable PublisherMetadata,  Addressable Event,  int MessageId,  int ValueCount,  Addressable Values,  int Flags,  int BufferSize,  Addressable Buffer,  Addressable BufferUsed) {
+        var mh$ = EvtFormatMessage$MH();
+        try {
+            return (int)mh$.invokeExact(PublisherMetadata, Event, MessageId, ValueCount, Values, Flags, BufferSize, Buffer, BufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtOpenChannelPath() {
+        return (int)1L;
+    }
+    public static int EvtOpenFilePath() {
+        return (int)2L;
+    }
+    public static int EvtLogCreationTime() {
+        return (int)0L;
+    }
+    public static int EvtLogLastAccessTime() {
+        return (int)1L;
+    }
+    public static int EvtLogLastWriteTime() {
+        return (int)2L;
+    }
+    public static int EvtLogFileSize() {
+        return (int)3L;
+    }
+    public static int EvtLogAttributes() {
+        return (int)4L;
+    }
+    public static int EvtLogNumberOfLogRecords() {
+        return (int)5L;
+    }
+    public static int EvtLogOldestRecordNumber() {
+        return (int)6L;
+    }
+    public static int EvtLogFull() {
+        return (int)7L;
+    }
+    public static MethodHandle EvtOpenLog$MH() {
+        return RuntimeHelper.requireNonNull(constants$722.EvtOpenLog$MH,"EvtOpenLog");
+    }
+    public static MemoryAddress EvtOpenLog ( Addressable Session,  Addressable Path,  int Flags) {
+        var mh$ = EvtOpenLog$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Session, Path, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtGetLogInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$722.EvtGetLogInfo$MH,"EvtGetLogInfo");
+    }
+    public static int EvtGetLogInfo ( Addressable Log,  int PropertyId,  int PropertyValueBufferSize,  Addressable PropertyValueBuffer,  Addressable PropertyValueBufferUsed) {
+        var mh$ = EvtGetLogInfo$MH();
+        try {
+            return (int)mh$.invokeExact(Log, PropertyId, PropertyValueBufferSize, PropertyValueBuffer, PropertyValueBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtClearLog$MH() {
+        return RuntimeHelper.requireNonNull(constants$723.EvtClearLog$MH,"EvtClearLog");
+    }
+    public static int EvtClearLog ( Addressable Session,  Addressable ChannelPath,  Addressable TargetFilePath,  int Flags) {
+        var mh$ = EvtClearLog$MH();
+        try {
+            return (int)mh$.invokeExact(Session, ChannelPath, TargetFilePath, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtExportLogChannelPath() {
+        return (int)1L;
+    }
+    public static int EvtExportLogFilePath() {
+        return (int)2L;
+    }
+    public static int EvtExportLogTolerateQueryErrors() {
+        return (int)4096L;
+    }
+    public static int EvtExportLogOverwrite() {
+        return (int)8192L;
+    }
+    public static MethodHandle EvtExportLog$MH() {
+        return RuntimeHelper.requireNonNull(constants$723.EvtExportLog$MH,"EvtExportLog");
+    }
+    public static int EvtExportLog ( Addressable Session,  Addressable Path,  Addressable Query,  Addressable TargetFilePath,  int Flags) {
+        var mh$ = EvtExportLog$MH();
+        try {
+            return (int)mh$.invokeExact(Session, Path, Query, TargetFilePath, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtArchiveExportedLog$MH() {
+        return RuntimeHelper.requireNonNull(constants$723.EvtArchiveExportedLog$MH,"EvtArchiveExportedLog");
+    }
+    public static int EvtArchiveExportedLog ( Addressable Session,  Addressable LogFilePath,  int Locale,  int Flags) {
+        var mh$ = EvtArchiveExportedLog$MH();
+        try {
+            return (int)mh$.invokeExact(Session, LogFilePath, Locale, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtChannelConfigEnabled() {
+        return (int)0L;
+    }
+    public static int EvtChannelConfigIsolation() {
+        return (int)1L;
+    }
+    public static int EvtChannelConfigType() {
+        return (int)2L;
+    }
+    public static int EvtChannelConfigOwningPublisher() {
+        return (int)3L;
+    }
+    public static int EvtChannelConfigClassicEventlog() {
+        return (int)4L;
+    }
+    public static int EvtChannelConfigAccess() {
+        return (int)5L;
+    }
+    public static int EvtChannelLoggingConfigRetention() {
+        return (int)6L;
+    }
+    public static int EvtChannelLoggingConfigAutoBackup() {
+        return (int)7L;
+    }
+    public static int EvtChannelLoggingConfigMaxSize() {
+        return (int)8L;
+    }
+    public static int EvtChannelLoggingConfigLogFilePath() {
+        return (int)9L;
+    }
+    public static int EvtChannelPublishingConfigLevel() {
+        return (int)10L;
+    }
+    public static int EvtChannelPublishingConfigKeywords() {
+        return (int)11L;
+    }
+    public static int EvtChannelPublishingConfigControlGuid() {
+        return (int)12L;
+    }
+    public static int EvtChannelPublishingConfigBufferSize() {
+        return (int)13L;
+    }
+    public static int EvtChannelPublishingConfigMinBuffers() {
+        return (int)14L;
+    }
+    public static int EvtChannelPublishingConfigMaxBuffers() {
+        return (int)15L;
+    }
+    public static int EvtChannelPublishingConfigLatency() {
+        return (int)16L;
+    }
+    public static int EvtChannelPublishingConfigClockType() {
+        return (int)17L;
+    }
+    public static int EvtChannelPublishingConfigSidType() {
+        return (int)18L;
+    }
+    public static int EvtChannelPublisherList() {
+        return (int)19L;
+    }
+    public static int EvtChannelPublishingConfigFileMax() {
+        return (int)20L;
+    }
+    public static int EvtChannelConfigPropertyIdEND() {
+        return (int)21L;
+    }
+    public static int EvtChannelTypeAdmin() {
+        return (int)0L;
+    }
+    public static int EvtChannelTypeOperational() {
+        return (int)1L;
+    }
+    public static int EvtChannelTypeAnalytic() {
+        return (int)2L;
+    }
+    public static int EvtChannelTypeDebug() {
+        return (int)3L;
+    }
+    public static int EvtChannelIsolationTypeApplication() {
+        return (int)0L;
+    }
+    public static int EvtChannelIsolationTypeSystem() {
+        return (int)1L;
+    }
+    public static int EvtChannelIsolationTypeCustom() {
+        return (int)2L;
+    }
+    public static int EvtChannelClockTypeSystemTime() {
+        return (int)0L;
+    }
+    public static int EvtChannelClockTypeQPC() {
+        return (int)1L;
+    }
+    public static int EvtChannelSidTypeNone() {
+        return (int)0L;
+    }
+    public static int EvtChannelSidTypePublishing() {
+        return (int)1L;
+    }
+    public static MethodHandle EvtOpenChannelEnum$MH() {
+        return RuntimeHelper.requireNonNull(constants$723.EvtOpenChannelEnum$MH,"EvtOpenChannelEnum");
+    }
+    public static MemoryAddress EvtOpenChannelEnum ( Addressable Session,  int Flags) {
+        var mh$ = EvtOpenChannelEnum$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Session, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtNextChannelPath$MH() {
+        return RuntimeHelper.requireNonNull(constants$723.EvtNextChannelPath$MH,"EvtNextChannelPath");
+    }
+    public static int EvtNextChannelPath ( Addressable ChannelEnum,  int ChannelPathBufferSize,  Addressable ChannelPathBuffer,  Addressable ChannelPathBufferUsed) {
+        var mh$ = EvtNextChannelPath$MH();
+        try {
+            return (int)mh$.invokeExact(ChannelEnum, ChannelPathBufferSize, ChannelPathBuffer, ChannelPathBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtOpenChannelConfig$MH() {
+        return RuntimeHelper.requireNonNull(constants$723.EvtOpenChannelConfig$MH,"EvtOpenChannelConfig");
+    }
+    public static MemoryAddress EvtOpenChannelConfig ( Addressable Session,  Addressable ChannelPath,  int Flags) {
+        var mh$ = EvtOpenChannelConfig$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Session, ChannelPath, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtSaveChannelConfig$MH() {
+        return RuntimeHelper.requireNonNull(constants$724.EvtSaveChannelConfig$MH,"EvtSaveChannelConfig");
+    }
+    public static int EvtSaveChannelConfig ( Addressable ChannelConfig,  int Flags) {
+        var mh$ = EvtSaveChannelConfig$MH();
+        try {
+            return (int)mh$.invokeExact(ChannelConfig, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtSetChannelConfigProperty$MH() {
+        return RuntimeHelper.requireNonNull(constants$724.EvtSetChannelConfigProperty$MH,"EvtSetChannelConfigProperty");
+    }
+    public static int EvtSetChannelConfigProperty ( Addressable ChannelConfig,  int PropertyId,  int Flags,  Addressable PropertyValue) {
+        var mh$ = EvtSetChannelConfigProperty$MH();
+        try {
+            return (int)mh$.invokeExact(ChannelConfig, PropertyId, Flags, PropertyValue);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtGetChannelConfigProperty$MH() {
+        return RuntimeHelper.requireNonNull(constants$724.EvtGetChannelConfigProperty$MH,"EvtGetChannelConfigProperty");
+    }
+    public static int EvtGetChannelConfigProperty ( Addressable ChannelConfig,  int PropertyId,  int Flags,  int PropertyValueBufferSize,  Addressable PropertyValueBuffer,  Addressable PropertyValueBufferUsed) {
+        var mh$ = EvtGetChannelConfigProperty$MH();
+        try {
+            return (int)mh$.invokeExact(ChannelConfig, PropertyId, Flags, PropertyValueBufferSize, PropertyValueBuffer, PropertyValueBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtChannelReferenceImported() {
+        return (int)1L;
+    }
+    public static int EvtPublisherMetadataPublisherGuid() {
+        return (int)0L;
+    }
+    public static int EvtPublisherMetadataResourceFilePath() {
+        return (int)1L;
+    }
+    public static int EvtPublisherMetadataParameterFilePath() {
+        return (int)2L;
+    }
+    public static int EvtPublisherMetadataMessageFilePath() {
+        return (int)3L;
+    }
+    public static int EvtPublisherMetadataHelpLink() {
+        return (int)4L;
+    }
+    public static int EvtPublisherMetadataPublisherMessageID() {
+        return (int)5L;
+    }
+    public static int EvtPublisherMetadataChannelReferences() {
+        return (int)6L;
+    }
+    public static int EvtPublisherMetadataChannelReferencePath() {
+        return (int)7L;
+    }
+    public static int EvtPublisherMetadataChannelReferenceIndex() {
+        return (int)8L;
+    }
+    public static int EvtPublisherMetadataChannelReferenceID() {
+        return (int)9L;
+    }
+    public static int EvtPublisherMetadataChannelReferenceFlags() {
+        return (int)10L;
+    }
+    public static int EvtPublisherMetadataChannelReferenceMessageID() {
+        return (int)11L;
+    }
+    public static int EvtPublisherMetadataLevels() {
+        return (int)12L;
+    }
+    public static int EvtPublisherMetadataLevelName() {
+        return (int)13L;
+    }
+    public static int EvtPublisherMetadataLevelValue() {
+        return (int)14L;
+    }
+    public static int EvtPublisherMetadataLevelMessageID() {
+        return (int)15L;
+    }
+    public static int EvtPublisherMetadataTasks() {
+        return (int)16L;
+    }
+    public static int EvtPublisherMetadataTaskName() {
+        return (int)17L;
+    }
+    public static int EvtPublisherMetadataTaskEventGuid() {
+        return (int)18L;
+    }
+    public static int EvtPublisherMetadataTaskValue() {
+        return (int)19L;
+    }
+    public static int EvtPublisherMetadataTaskMessageID() {
+        return (int)20L;
+    }
+    public static int EvtPublisherMetadataOpcodes() {
+        return (int)21L;
+    }
+    public static int EvtPublisherMetadataOpcodeName() {
+        return (int)22L;
+    }
+    public static int EvtPublisherMetadataOpcodeValue() {
+        return (int)23L;
+    }
+    public static int EvtPublisherMetadataOpcodeMessageID() {
+        return (int)24L;
+    }
+    public static int EvtPublisherMetadataKeywords() {
+        return (int)25L;
+    }
+    public static int EvtPublisherMetadataKeywordName() {
+        return (int)26L;
+    }
+    public static int EvtPublisherMetadataKeywordValue() {
+        return (int)27L;
+    }
+    public static int EvtPublisherMetadataKeywordMessageID() {
+        return (int)28L;
+    }
+    public static int EvtPublisherMetadataPropertyIdEND() {
+        return (int)29L;
+    }
+    public static MethodHandle EvtOpenPublisherEnum$MH() {
+        return RuntimeHelper.requireNonNull(constants$724.EvtOpenPublisherEnum$MH,"EvtOpenPublisherEnum");
+    }
+    public static MemoryAddress EvtOpenPublisherEnum ( Addressable Session,  int Flags) {
+        var mh$ = EvtOpenPublisherEnum$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Session, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtNextPublisherId$MH() {
+        return RuntimeHelper.requireNonNull(constants$724.EvtNextPublisherId$MH,"EvtNextPublisherId");
+    }
+    public static int EvtNextPublisherId ( Addressable PublisherEnum,  int PublisherIdBufferSize,  Addressable PublisherIdBuffer,  Addressable PublisherIdBufferUsed) {
+        var mh$ = EvtNextPublisherId$MH();
+        try {
+            return (int)mh$.invokeExact(PublisherEnum, PublisherIdBufferSize, PublisherIdBuffer, PublisherIdBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtOpenPublisherMetadata$MH() {
+        return RuntimeHelper.requireNonNull(constants$724.EvtOpenPublisherMetadata$MH,"EvtOpenPublisherMetadata");
+    }
+    public static MemoryAddress EvtOpenPublisherMetadata ( Addressable Session,  Addressable PublisherId,  Addressable LogFilePath,  int Locale,  int Flags) {
+        var mh$ = EvtOpenPublisherMetadata$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(Session, PublisherId, LogFilePath, Locale, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtGetPublisherMetadataProperty$MH() {
+        return RuntimeHelper.requireNonNull(constants$725.EvtGetPublisherMetadataProperty$MH,"EvtGetPublisherMetadataProperty");
+    }
+    public static int EvtGetPublisherMetadataProperty ( Addressable PublisherMetadata,  int PropertyId,  int Flags,  int PublisherMetadataPropertyBufferSize,  Addressable PublisherMetadataPropertyBuffer,  Addressable PublisherMetadataPropertyBufferUsed) {
+        var mh$ = EvtGetPublisherMetadataProperty$MH();
+        try {
+            return (int)mh$.invokeExact(PublisherMetadata, PropertyId, Flags, PublisherMetadataPropertyBufferSize, PublisherMetadataPropertyBuffer, PublisherMetadataPropertyBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EventMetadataEventID() {
+        return (int)0L;
+    }
+    public static int EventMetadataEventVersion() {
+        return (int)1L;
+    }
+    public static int EventMetadataEventChannel() {
+        return (int)2L;
+    }
+    public static int EventMetadataEventLevel() {
+        return (int)3L;
+    }
+    public static int EventMetadataEventOpcode() {
+        return (int)4L;
+    }
+    public static int EventMetadataEventTask() {
+        return (int)5L;
+    }
+    public static int EventMetadataEventKeyword() {
+        return (int)6L;
+    }
+    public static int EventMetadataEventMessageID() {
+        return (int)7L;
+    }
+    public static int EventMetadataEventTemplate() {
+        return (int)8L;
+    }
+    public static int EvtEventMetadataPropertyIdEND() {
+        return (int)9L;
+    }
+    public static MethodHandle EvtOpenEventMetadataEnum$MH() {
+        return RuntimeHelper.requireNonNull(constants$725.EvtOpenEventMetadataEnum$MH,"EvtOpenEventMetadataEnum");
+    }
+    public static MemoryAddress EvtOpenEventMetadataEnum ( Addressable PublisherMetadata,  int Flags) {
+        var mh$ = EvtOpenEventMetadataEnum$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(PublisherMetadata, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtNextEventMetadata$MH() {
+        return RuntimeHelper.requireNonNull(constants$725.EvtNextEventMetadata$MH,"EvtNextEventMetadata");
+    }
+    public static MemoryAddress EvtNextEventMetadata ( Addressable EventMetadataEnum,  int Flags) {
+        var mh$ = EvtNextEventMetadata$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(EventMetadataEnum, Flags);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtGetEventMetadataProperty$MH() {
+        return RuntimeHelper.requireNonNull(constants$725.EvtGetEventMetadataProperty$MH,"EvtGetEventMetadataProperty");
+    }
+    public static int EvtGetEventMetadataProperty ( Addressable EventMetadata,  int PropertyId,  int Flags,  int EventMetadataPropertyBufferSize,  Addressable EventMetadataPropertyBuffer,  Addressable EventMetadataPropertyBufferUsed) {
+        var mh$ = EvtGetEventMetadataProperty$MH();
+        try {
+            return (int)mh$.invokeExact(EventMetadata, PropertyId, Flags, EventMetadataPropertyBufferSize, EventMetadataPropertyBuffer, EventMetadataPropertyBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static OfAddress EVT_OBJECT_ARRAY_PROPERTY_HANDLE = Constants$root.C_POINTER$LAYOUT;
+    public static MethodHandle EvtGetObjectArraySize$MH() {
+        return RuntimeHelper.requireNonNull(constants$725.EvtGetObjectArraySize$MH,"EvtGetObjectArraySize");
+    }
+    public static int EvtGetObjectArraySize ( Addressable ObjectArray,  Addressable ObjectArraySize) {
+        var mh$ = EvtGetObjectArraySize$MH();
+        try {
+            return (int)mh$.invokeExact(ObjectArray, ObjectArraySize);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtGetObjectArrayProperty$MH() {
+        return RuntimeHelper.requireNonNull(constants$725.EvtGetObjectArrayProperty$MH,"EvtGetObjectArrayProperty");
+    }
+    public static int EvtGetObjectArrayProperty ( Addressable ObjectArray,  int PropertyId,  int ArrayIndex,  int Flags,  int PropertyValueBufferSize,  Addressable PropertyValueBuffer,  Addressable PropertyValueBufferUsed) {
+        var mh$ = EvtGetObjectArrayProperty$MH();
+        try {
+            return (int)mh$.invokeExact(ObjectArray, PropertyId, ArrayIndex, Flags, PropertyValueBufferSize, PropertyValueBuffer, PropertyValueBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int EvtQueryNames() {
+        return (int)0L;
+    }
+    public static int EvtQueryStatuses() {
+        return (int)1L;
+    }
+    public static int EvtQueryPropertyIdEND() {
+        return (int)2L;
+    }
+    public static int EvtEventQueryIDs() {
+        return (int)0L;
+    }
+    public static int EvtEventPath() {
+        return (int)1L;
+    }
+    public static int EvtEventPropertyIdEND() {
+        return (int)2L;
+    }
+    public static MethodHandle EvtGetQueryInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$726.EvtGetQueryInfo$MH,"EvtGetQueryInfo");
+    }
+    public static int EvtGetQueryInfo ( Addressable QueryOrSubscription,  int PropertyId,  int PropertyValueBufferSize,  Addressable PropertyValueBuffer,  Addressable PropertyValueBufferUsed) {
+        var mh$ = EvtGetQueryInfo$MH();
+        try {
+            return (int)mh$.invokeExact(QueryOrSubscription, PropertyId, PropertyValueBufferSize, PropertyValueBuffer, PropertyValueBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtCreateBookmark$MH() {
+        return RuntimeHelper.requireNonNull(constants$726.EvtCreateBookmark$MH,"EvtCreateBookmark");
+    }
+    public static MemoryAddress EvtCreateBookmark ( Addressable BookmarkXml) {
+        var mh$ = EvtCreateBookmark$MH();
+        try {
+            return (java.lang.foreign.MemoryAddress)mh$.invokeExact(BookmarkXml);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtUpdateBookmark$MH() {
+        return RuntimeHelper.requireNonNull(constants$726.EvtUpdateBookmark$MH,"EvtUpdateBookmark");
+    }
+    public static int EvtUpdateBookmark ( Addressable Bookmark,  Addressable Event) {
+        var mh$ = EvtUpdateBookmark$MH();
+        try {
+            return (int)mh$.invokeExact(Bookmark, Event);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle EvtGetEventInfo$MH() {
+        return RuntimeHelper.requireNonNull(constants$726.EvtGetEventInfo$MH,"EvtGetEventInfo");
+    }
+    public static int EvtGetEventInfo ( Addressable Event,  int PropertyId,  int PropertyValueBufferSize,  Addressable PropertyValueBuffer,  Addressable PropertyValueBufferUsed) {
+        var mh$ = EvtGetEventInfo$MH();
+        try {
+            return (int)mh$.invokeExact(Event, PropertyId, PropertyValueBufferSize, PropertyValueBuffer, PropertyValueBufferUsed);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
     public static int WINAPI_PARTITION_SERVER() {
         return (int)0L;
     }
@@ -3169,7 +4152,7 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)2147483648L;
     }
     public static MemorySegment OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME() {
-        return constants$720.OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME$SEGMENT;
+        return constants$726.OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME$SEGMENT;
     }
     public static int WOW64_CONTEXT_CONTROL() {
         return (int)65537L;
@@ -3941,669 +4924,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int ACCESS_MAX_MS_V4_ACE_TYPE() {
         return (int)8L;
-    }
-    public static int ACCESS_MAX_MS_ACE_TYPE() {
-        return (int)8L;
-    }
-    public static int ACCESS_ALLOWED_CALLBACK_ACE_TYPE() {
-        return (int)9L;
-    }
-    public static int ACCESS_DENIED_CALLBACK_ACE_TYPE() {
-        return (int)10L;
-    }
-    public static int ACCESS_ALLOWED_CALLBACK_OBJECT_ACE_TYPE() {
-        return (int)11L;
-    }
-    public static int ACCESS_DENIED_CALLBACK_OBJECT_ACE_TYPE() {
-        return (int)12L;
-    }
-    public static int SYSTEM_AUDIT_CALLBACK_ACE_TYPE() {
-        return (int)13L;
-    }
-    public static int SYSTEM_ALARM_CALLBACK_ACE_TYPE() {
-        return (int)14L;
-    }
-    public static int SYSTEM_AUDIT_CALLBACK_OBJECT_ACE_TYPE() {
-        return (int)15L;
-    }
-    public static int SYSTEM_ALARM_CALLBACK_OBJECT_ACE_TYPE() {
-        return (int)16L;
-    }
-    public static int SYSTEM_MANDATORY_LABEL_ACE_TYPE() {
-        return (int)17L;
-    }
-    public static int SYSTEM_RESOURCE_ATTRIBUTE_ACE_TYPE() {
-        return (int)18L;
-    }
-    public static int SYSTEM_SCOPED_POLICY_ID_ACE_TYPE() {
-        return (int)19L;
-    }
-    public static int SYSTEM_PROCESS_TRUST_LABEL_ACE_TYPE() {
-        return (int)20L;
-    }
-    public static int SYSTEM_ACCESS_FILTER_ACE_TYPE() {
-        return (int)21L;
-    }
-    public static int ACCESS_MAX_MS_V5_ACE_TYPE() {
-        return (int)21L;
-    }
-    public static int OBJECT_INHERIT_ACE() {
-        return (int)1L;
-    }
-    public static int CONTAINER_INHERIT_ACE() {
-        return (int)2L;
-    }
-    public static int NO_PROPAGATE_INHERIT_ACE() {
-        return (int)4L;
-    }
-    public static int INHERIT_ONLY_ACE() {
-        return (int)8L;
-    }
-    public static int INHERITED_ACE() {
-        return (int)16L;
-    }
-    public static int VALID_INHERIT_FLAGS() {
-        return (int)31L;
-    }
-    public static int CRITICAL_ACE_FLAG() {
-        return (int)32L;
-    }
-    public static int SUCCESSFUL_ACCESS_ACE_FLAG() {
-        return (int)64L;
-    }
-    public static int FAILED_ACCESS_ACE_FLAG() {
-        return (int)128L;
-    }
-    public static int TRUST_PROTECTED_FILTER_ACE_FLAG() {
-        return (int)64L;
-    }
-    public static int SYSTEM_MANDATORY_LABEL_VALID_MASK() {
-        return (int)7L;
-    }
-    public static int SYSTEM_PROCESS_TRUST_NOCONSTRAINT_MASK() {
-        return (int)4294967295L;
-    }
-    public static int SYSTEM_ACCESS_FILTER_NOCONSTRAINT_MASK() {
-        return (int)4294967295L;
-    }
-    public static int SECURITY_DESCRIPTOR_REVISION() {
-        return (int)1L;
-    }
-    public static int SECURITY_DESCRIPTOR_REVISION1() {
-        return (int)1L;
-    }
-    public static long SECURITY_DESCRIPTOR_MIN_LENGTH() {
-        return 40L;
-    }
-    public static int SE_OWNER_DEFAULTED() {
-        return (int)1L;
-    }
-    public static int SE_GROUP_DEFAULTED() {
-        return (int)2L;
-    }
-    public static int SE_DACL_PRESENT() {
-        return (int)4L;
-    }
-    public static int SE_DACL_DEFAULTED() {
-        return (int)8L;
-    }
-    public static int SE_SACL_PRESENT() {
-        return (int)16L;
-    }
-    public static int SE_SACL_DEFAULTED() {
-        return (int)32L;
-    }
-    public static int SE_DACL_AUTO_INHERIT_REQ() {
-        return (int)256L;
-    }
-    public static int SE_SACL_AUTO_INHERIT_REQ() {
-        return (int)512L;
-    }
-    public static int SE_DACL_AUTO_INHERITED() {
-        return (int)1024L;
-    }
-    public static int SE_SACL_AUTO_INHERITED() {
-        return (int)2048L;
-    }
-    public static int SE_DACL_PROTECTED() {
-        return (int)4096L;
-    }
-    public static int SE_SACL_PROTECTED() {
-        return (int)8192L;
-    }
-    public static int SE_RM_CONTROL_VALID() {
-        return (int)16384L;
-    }
-    public static int SE_SELF_RELATIVE() {
-        return (int)32768L;
-    }
-    public static MemorySegment ACCESS_DS_SOURCE_A() {
-        return constants$720.ACCESS_DS_SOURCE_A$SEGMENT;
-    }
-    public static MemorySegment ACCESS_DS_SOURCE_W() {
-        return constants$720.ACCESS_DS_SOURCE_W$SEGMENT;
-    }
-    public static MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_A() {
-        return constants$721.ACCESS_DS_OBJECT_TYPE_NAME_A$SEGMENT;
-    }
-    public static MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_W() {
-        return constants$721.ACCESS_DS_OBJECT_TYPE_NAME_W$SEGMENT;
-    }
-    public static int SE_PRIVILEGE_ENABLED_BY_DEFAULT() {
-        return (int)1L;
-    }
-    public static int SE_PRIVILEGE_ENABLED() {
-        return (int)2L;
-    }
-    public static int SE_PRIVILEGE_REMOVED() {
-        return (int)4L;
-    }
-    public static int SE_PRIVILEGE_USED_FOR_ACCESS() {
-        return (int)2147483648L;
-    }
-    public static int SE_PRIVILEGE_VALID_ATTRIBUTES() {
-        return (int)2147483655L;
-    }
-    public static int PRIVILEGE_SET_ALL_NECESSARY() {
-        return (int)1L;
-    }
-    public static int ACCESS_REASON_STAGING_MASK() {
-        return (int)2147483648L;
-    }
-    public static MemorySegment SE_CREATE_TOKEN_NAME() {
-        return constants$721.SE_CREATE_TOKEN_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_ASSIGNPRIMARYTOKEN_NAME() {
-        return constants$721.SE_ASSIGNPRIMARYTOKEN_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_LOCK_MEMORY_NAME() {
-        return constants$721.SE_LOCK_MEMORY_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_INCREASE_QUOTA_NAME() {
-        return constants$721.SE_INCREASE_QUOTA_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_UNSOLICITED_INPUT_NAME() {
-        return constants$722.SE_UNSOLICITED_INPUT_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_MACHINE_ACCOUNT_NAME() {
-        return constants$722.SE_MACHINE_ACCOUNT_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_TCB_NAME() {
-        return constants$722.SE_TCB_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_SECURITY_NAME() {
-        return constants$722.SE_SECURITY_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_TAKE_OWNERSHIP_NAME() {
-        return constants$722.SE_TAKE_OWNERSHIP_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_LOAD_DRIVER_NAME() {
-        return constants$722.SE_LOAD_DRIVER_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_SYSTEM_PROFILE_NAME() {
-        return constants$723.SE_SYSTEM_PROFILE_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_SYSTEMTIME_NAME() {
-        return constants$723.SE_SYSTEMTIME_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_PROF_SINGLE_PROCESS_NAME() {
-        return constants$723.SE_PROF_SINGLE_PROCESS_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_INC_BASE_PRIORITY_NAME() {
-        return constants$723.SE_INC_BASE_PRIORITY_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_CREATE_PAGEFILE_NAME() {
-        return constants$723.SE_CREATE_PAGEFILE_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_CREATE_PERMANENT_NAME() {
-        return constants$723.SE_CREATE_PERMANENT_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_BACKUP_NAME() {
-        return constants$724.SE_BACKUP_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_RESTORE_NAME() {
-        return constants$724.SE_RESTORE_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_SHUTDOWN_NAME() {
-        return constants$724.SE_SHUTDOWN_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_DEBUG_NAME() {
-        return constants$724.SE_DEBUG_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_AUDIT_NAME() {
-        return constants$724.SE_AUDIT_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_SYSTEM_ENVIRONMENT_NAME() {
-        return constants$724.SE_SYSTEM_ENVIRONMENT_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_CHANGE_NOTIFY_NAME() {
-        return constants$725.SE_CHANGE_NOTIFY_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_REMOTE_SHUTDOWN_NAME() {
-        return constants$725.SE_REMOTE_SHUTDOWN_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_UNDOCK_NAME() {
-        return constants$725.SE_UNDOCK_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_SYNC_AGENT_NAME() {
-        return constants$725.SE_SYNC_AGENT_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_ENABLE_DELEGATION_NAME() {
-        return constants$725.SE_ENABLE_DELEGATION_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_MANAGE_VOLUME_NAME() {
-        return constants$725.SE_MANAGE_VOLUME_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_IMPERSONATE_NAME() {
-        return constants$726.SE_IMPERSONATE_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_CREATE_GLOBAL_NAME() {
-        return constants$726.SE_CREATE_GLOBAL_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_TRUSTED_CREDMAN_ACCESS_NAME() {
-        return constants$726.SE_TRUSTED_CREDMAN_ACCESS_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_RELABEL_NAME() {
-        return constants$726.SE_RELABEL_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_INC_WORKING_SET_NAME() {
-        return constants$726.SE_INC_WORKING_SET_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_TIME_ZONE_NAME() {
-        return constants$726.SE_TIME_ZONE_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_CREATE_SYMBOLIC_LINK_NAME() {
-        return constants$727.SE_CREATE_SYMBOLIC_LINK_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME() {
-        return constants$727.SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME$SEGMENT;
-    }
-    public static MemorySegment SE_ACTIVATE_AS_USER_CAPABILITY() {
-        return constants$727.SE_ACTIVATE_AS_USER_CAPABILITY$SEGMENT;
-    }
-    public static MemorySegment SE_CONSTRAINED_IMPERSONATION_CAPABILITY() {
-        return constants$727.SE_CONSTRAINED_IMPERSONATION_CAPABILITY$SEGMENT;
-    }
-    public static MemorySegment SE_SESSION_IMPERSONATION_CAPABILITY() {
-        return constants$727.SE_SESSION_IMPERSONATION_CAPABILITY$SEGMENT;
-    }
-    public static MemorySegment SE_MUMA_CAPABILITY() {
-        return constants$727.SE_MUMA_CAPABILITY$SEGMENT;
-    }
-    public static MemorySegment SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY() {
-        return constants$728.SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY$SEGMENT;
-    }
-    public static int SECURITY_MAX_IMPERSONATION_LEVEL() {
-        return (int)3L;
-    }
-    public static int SECURITY_MIN_IMPERSONATION_LEVEL() {
-        return (int)0L;
-    }
-    public static int DEFAULT_IMPERSONATION_LEVEL() {
-        return (int)2L;
-    }
-    public static int TOKEN_ASSIGN_PRIMARY() {
-        return (int)1L;
-    }
-    public static int TOKEN_DUPLICATE() {
-        return (int)2L;
-    }
-    public static int TOKEN_IMPERSONATE() {
-        return (int)4L;
-    }
-    public static int TOKEN_QUERY() {
-        return (int)8L;
-    }
-    public static int TOKEN_QUERY_SOURCE() {
-        return (int)16L;
-    }
-    public static int TOKEN_ADJUST_PRIVILEGES() {
-        return (int)32L;
-    }
-    public static int TOKEN_ADJUST_GROUPS() {
-        return (int)64L;
-    }
-    public static int TOKEN_ADJUST_DEFAULT() {
-        return (int)128L;
-    }
-    public static int TOKEN_ADJUST_SESSIONID() {
-        return (int)256L;
-    }
-    public static int TOKEN_ALL_ACCESS_P() {
-        return (int)983295L;
-    }
-    public static int TOKEN_ALL_ACCESS() {
-        return (int)983551L;
-    }
-    public static int TOKEN_READ() {
-        return (int)131080L;
-    }
-    public static int TOKEN_WRITE() {
-        return (int)131296L;
-    }
-    public static int TOKEN_EXECUTE() {
-        return (int)131072L;
-    }
-    public static int TOKEN_TRUST_CONSTRAINT_MASK() {
-        return (int)131096L;
-    }
-    public static int TOKEN_ACCESS_PSEUDO_HANDLE_WIN8() {
-        return (int)24L;
-    }
-    public static int TOKEN_ACCESS_PSEUDO_HANDLE() {
-        return (int)24L;
-    }
-    public static long TOKEN_USER_MAX_SIZE() {
-        return 84L;
-    }
-    public static long TOKEN_OWNER_MAX_SIZE() {
-        return 76L;
-    }
-    public static int TOKEN_MANDATORY_POLICY_VALID_MASK() {
-        return (int)3L;
-    }
-    public static long TOKEN_INTEGRITY_LEVEL_MAX_SIZE() {
-        return 84L;
-    }
-    public static int POLICY_AUDIT_SUBCATEGORY_COUNT() {
-        return (int)59L;
-    }
-    public static long TOKEN_APPCONTAINER_SID_MAX_SIZE() {
-        return 76L;
-    }
-    public static int CLAIM_SECURITY_ATTRIBUTE_VALID_FLAGS() {
-        return (int)63L;
-    }
-    public static int CLAIM_SECURITY_ATTRIBUTE_CUSTOM_FLAGS() {
-        return (int)4294901760L;
-    }
-    public static int CLAIM_SECURITY_ATTRIBUTES_INFORMATION_VERSION() {
-        return (int)1L;
-    }
-    public static int SECURITY_DYNAMIC_TRACKING() {
-        return (int)1L;
-    }
-    public static int SECURITY_STATIC_TRACKING() {
-        return (int)0L;
-    }
-    public static int OWNER_SECURITY_INFORMATION() {
-        return (int)1L;
-    }
-    public static int GROUP_SECURITY_INFORMATION() {
-        return (int)2L;
-    }
-    public static int DACL_SECURITY_INFORMATION() {
-        return (int)4L;
-    }
-    public static int SACL_SECURITY_INFORMATION() {
-        return (int)8L;
-    }
-    public static int LABEL_SECURITY_INFORMATION() {
-        return (int)16L;
-    }
-    public static int ATTRIBUTE_SECURITY_INFORMATION() {
-        return (int)32L;
-    }
-    public static int SCOPE_SECURITY_INFORMATION() {
-        return (int)64L;
-    }
-    public static int PROCESS_TRUST_LABEL_SECURITY_INFORMATION() {
-        return (int)128L;
-    }
-    public static int ACCESS_FILTER_SECURITY_INFORMATION() {
-        return (int)256L;
-    }
-    public static int BACKUP_SECURITY_INFORMATION() {
-        return (int)65536L;
-    }
-    public static int PROTECTED_DACL_SECURITY_INFORMATION() {
-        return (int)2147483648L;
-    }
-    public static int PROTECTED_SACL_SECURITY_INFORMATION() {
-        return (int)1073741824L;
-    }
-    public static int UNPROTECTED_DACL_SECURITY_INFORMATION() {
-        return (int)536870912L;
-    }
-    public static int UNPROTECTED_SACL_SECURITY_INFORMATION() {
-        return (int)268435456L;
-    }
-    public static int SE_SIGNING_LEVEL_DEVELOPER() {
-        return (int)3L;
-    }
-    public static int SE_SIGNING_LEVEL_ANTIMALWARE() {
-        return (int)7L;
-    }
-    public static int PROCESS_TERMINATE() {
-        return (int)1L;
-    }
-    public static int PROCESS_CREATE_THREAD() {
-        return (int)2L;
-    }
-    public static int PROCESS_SET_SESSIONID() {
-        return (int)4L;
-    }
-    public static int PROCESS_VM_OPERATION() {
-        return (int)8L;
-    }
-    public static int PROCESS_VM_READ() {
-        return (int)16L;
-    }
-    public static int PROCESS_VM_WRITE() {
-        return (int)32L;
-    }
-    public static int PROCESS_DUP_HANDLE() {
-        return (int)64L;
-    }
-    public static int PROCESS_CREATE_PROCESS() {
-        return (int)128L;
-    }
-    public static int PROCESS_SET_QUOTA() {
-        return (int)256L;
-    }
-    public static int PROCESS_SET_INFORMATION() {
-        return (int)512L;
-    }
-    public static int PROCESS_QUERY_INFORMATION() {
-        return (int)1024L;
-    }
-    public static int PROCESS_SUSPEND_RESUME() {
-        return (int)2048L;
-    }
-    public static int PROCESS_QUERY_LIMITED_INFORMATION() {
-        return (int)4096L;
-    }
-    public static int PROCESS_SET_LIMITED_INFORMATION() {
-        return (int)8192L;
-    }
-    public static int PROCESS_ALL_ACCESS() {
-        return (int)2097151L;
-    }
-    public static int THREAD_TERMINATE() {
-        return (int)1L;
-    }
-    public static int THREAD_SUSPEND_RESUME() {
-        return (int)2L;
-    }
-    public static int THREAD_GET_CONTEXT() {
-        return (int)8L;
-    }
-    public static int THREAD_SET_CONTEXT() {
-        return (int)16L;
-    }
-    public static int THREAD_QUERY_INFORMATION() {
-        return (int)64L;
-    }
-    public static int THREAD_SET_INFORMATION() {
-        return (int)32L;
-    }
-    public static int THREAD_SET_THREAD_TOKEN() {
-        return (int)128L;
-    }
-    public static int THREAD_IMPERSONATE() {
-        return (int)256L;
-    }
-    public static int THREAD_DIRECT_IMPERSONATION() {
-        return (int)512L;
-    }
-    public static int THREAD_SET_LIMITED_INFORMATION() {
-        return (int)1024L;
-    }
-    public static int THREAD_QUERY_LIMITED_INFORMATION() {
-        return (int)2048L;
-    }
-    public static int THREAD_RESUME() {
-        return (int)4096L;
-    }
-    public static int THREAD_ALL_ACCESS() {
-        return (int)2097151L;
-    }
-    public static int JOB_OBJECT_ASSIGN_PROCESS() {
-        return (int)1L;
-    }
-    public static int JOB_OBJECT_SET_ATTRIBUTES() {
-        return (int)2L;
-    }
-    public static int JOB_OBJECT_QUERY() {
-        return (int)4L;
-    }
-    public static int JOB_OBJECT_TERMINATE() {
-        return (int)8L;
-    }
-    public static int JOB_OBJECT_SET_SECURITY_ATTRIBUTES() {
-        return (int)16L;
-    }
-    public static int JOB_OBJECT_IMPERSONATE() {
-        return (int)32L;
-    }
-    public static int JOB_OBJECT_ALL_ACCESS() {
-        return (int)2031679L;
-    }
-    public static int THREAD_BASE_PRIORITY_MIN() {
-        return (int)-2L;
-    }
-    public static int THREAD_BASE_PRIORITY_IDLE() {
-        return (int)-15L;
-    }
-    public static int DYNAMIC_EH_CONTINUATION_TARGET_ADD() {
-        return (int)1L;
-    }
-    public static int DYNAMIC_EH_CONTINUATION_TARGET_PROCESSED() {
-        return (int)2L;
-    }
-    public static int DYNAMIC_ENFORCED_ADDRESS_RANGE_ADD() {
-        return (int)1L;
-    }
-    public static int DYNAMIC_ENFORCED_ADDRESS_RANGE_PROCESSED() {
-        return (int)2L;
-    }
-    public static int JOB_OBJECT_VALID_COMPLETION_FILTER() {
-        return (int)16382L;
-    }
-    public static int JOB_OBJECT_LIMIT_JOB_MEMORY_HIGH() {
-        return (int)512L;
-    }
-    public static int JOB_OBJECT_LIMIT_CPU_RATE_CONTROL() {
-        return (int)262144L;
-    }
-    public static int JOB_OBJECT_NOTIFICATION_LIMIT_VALID_FLAGS() {
-        return (int)2064900L;
-    }
-    public static int EVENT_ALL_ACCESS() {
-        return (int)2031619L;
-    }
-    public static int MUTANT_ALL_ACCESS() {
-        return (int)2031617L;
-    }
-    public static int SEMAPHORE_ALL_ACCESS() {
-        return (int)2031619L;
-    }
-    public static int TIMER_ALL_ACCESS() {
-        return (int)2031619L;
-    }
-    public static int XSTATE_LEGACY_FLOATING_POINT() {
-        return (int)0L;
-    }
-    public static int XSTATE_LEGACY_SSE() {
-        return (int)1L;
-    }
-    public static int XSTATE_GSSE() {
-        return (int)2L;
-    }
-    public static int XSTATE_AVX() {
-        return (int)2L;
-    }
-    public static int XSTATE_MPX_BNDREGS() {
-        return (int)3L;
-    }
-    public static int XSTATE_MPX_BNDCSR() {
-        return (int)4L;
-    }
-    public static int XSTATE_AVX512_KMASK() {
-        return (int)5L;
-    }
-    public static int XSTATE_AVX512_ZMM_H() {
-        return (int)6L;
-    }
-    public static int XSTATE_AVX512_ZMM() {
-        return (int)7L;
-    }
-    public static int XSTATE_IPT() {
-        return (int)8L;
-    }
-    public static int XSTATE_CET_U() {
-        return (int)11L;
-    }
-    public static int XSTATE_LWP() {
-        return (int)62L;
-    }
-    public static int MAXIMUM_XSTATE_FEATURES() {
-        return (int)64L;
-    }
-    public static long XSTATE_MASK_LEGACY_FLOATING_POINT() {
-        return 1L;
-    }
-    public static long XSTATE_MASK_LEGACY_SSE() {
-        return 2L;
-    }
-    public static long XSTATE_MASK_LEGACY() {
-        return 3L;
-    }
-    public static long XSTATE_MASK_GSSE() {
-        return 4L;
-    }
-    public static long XSTATE_MASK_AVX() {
-        return 4L;
-    }
-    public static long XSTATE_MASK_MPX() {
-        return 24L;
-    }
-    public static long XSTATE_MASK_AVX512() {
-        return 224L;
-    }
-    public static long XSTATE_MASK_IPT() {
-        return 256L;
-    }
-    public static long XSTATE_MASK_CET_U() {
-        return 2048L;
-    }
-    public static long XSTATE_MASK_LWP() {
-        return 4611686018427387904L;
-    }
-    public static long XSTATE_MASK_ALLOWED() {
-        return 4611686018427390463L;
-    }
-    public static long XSTATE_MASK_PERSISTENT() {
-        return 4611686018427387920L;
-    }
-    public static long XSTATE_MASK_USER_VISIBLE_SUPERVISOR() {
-        return 2048L;
-    }
-    public static int XSTATE_COMPACTION_ENABLE() {
-        return (int)63L;
-    }
-    public static long XSTATE_COMPACTION_ENABLE_MASK() {
-        return -9223372036854775808L;
     }
 }
 

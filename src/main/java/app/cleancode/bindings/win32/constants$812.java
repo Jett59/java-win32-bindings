@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$812 {
 
-    static final MemoryAddress PKCS7_SIGNER_INFO$ADDR = MemoryAddress.ofLong(500L);
-    static final MemoryAddress CMS_SIGNER_INFO$ADDR = MemoryAddress.ofLong(501L);
-    static final MemorySegment szOID_AUTHORITY_KEY_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.1");
-    static final MemorySegment szOID_KEY_ATTRIBUTES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.2");
-    static final MemorySegment szOID_CERT_POLICIES_95$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.3");
-    static final MemorySegment szOID_KEY_USAGE_RESTRICTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.4");
+    static final MemoryAddress X509_ECC_SIGNATURE$ADDR = MemoryAddress.ofLong(47L);
+    static final MemoryAddress X942_DH_PARAMETERS$ADDR = MemoryAddress.ofLong(50L);
+    static final MemoryAddress X509_BITS_WITHOUT_TRAILING_ZEROES$ADDR = MemoryAddress.ofLong(51L);
+    static final MemoryAddress X942_OTHER_INFO$ADDR = MemoryAddress.ofLong(52L);
+    static final MemoryAddress X509_CERT_PAIR$ADDR = MemoryAddress.ofLong(53L);
+    static final MemoryAddress X509_ISSUING_DIST_POINT$ADDR = MemoryAddress.ofLong(54L);
 }
 
 

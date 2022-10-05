@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$858 {
 
-    static final MemorySegment szOID_CERT_STRONG_SIGN_OS_CURRENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.1.1");
-    static final MemorySegment szOID_CERT_STRONG_KEY_OS_PREFIX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.");
-    static final MemorySegment szOID_CERT_STRONG_KEY_OS_1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.1");
-    static final MemorySegment szOID_CERT_STRONG_KEY_OS_CURRENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.72.2.1");
-    static final MemorySegment szOID_PKCS_7_DATA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.1");
-    static final MemorySegment szOID_PKCS_7_SIGNED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.7.2");
+    static final MemorySegment szOID_CMC_RESPONSE_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.19");
+    static final MemorySegment szOID_CMC_QUERY_PENDING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.21");
+    static final MemorySegment szOID_CMC_ID_POP_LINK_RANDOM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.22");
+    static final MemorySegment szOID_CMC_ID_POP_LINK_WITNESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.23");
+    static final MemorySegment szOID_CMC_ID_CONFIRM_CERT_ACCEPTANCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.24");
+    static final MemorySegment szOID_CMC_ADD_ATTRIBUTES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.10.1");
 }
 
 

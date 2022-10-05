@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$906 {
 
-    static final MemoryAddress CERT_CHAIN_POLICY_BASE$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress CERT_CHAIN_POLICY_AUTHENTICODE$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress CERT_CHAIN_POLICY_AUTHENTICODE_TS$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress CERT_CHAIN_POLICY_SSL$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress CERT_CHAIN_POLICY_BASIC_CONSTRAINTS$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress CERT_CHAIN_POLICY_NT_AUTH$ADDR = MemoryAddress.ofLong(6L);
+    static final MemorySegment CRYPTNET_PRE_FETCH_BEFORE_NEXT_UPDATE_PRE_FETCH_DIVISOR_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPTNET_PRE_FETCH_MIN_BEFORE_NEXT_UPDATE_PRE_FETCH_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPTNET_PRE_FETCH_VALIDITY_PERIOD_AFTER_NEXT_UPDATE_PRE_FETCH_DIVISOR_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPTNET_PRE_FETCH_MAX_AFTER_NEXT_UPDATE_PRE_FETCH_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPTNET_PRE_FETCH_MIN_AFTER_NEXT_UPDATE_PRE_FETCH_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
+    static final MemorySegment CRYPTNET_PRE_FETCH_AFTER_CURRENT_TIME_PRE_FETCH_PERIOD_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("C");
 }
 
 

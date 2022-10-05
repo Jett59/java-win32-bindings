@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$747 {
 
-    static final MemoryAddress HKEY_PERFORMANCE_TEXT$ADDR = MemoryAddress.ofLong(-2147483568L);
-    static final MemoryAddress HKEY_PERFORMANCE_NLSTEXT$ADDR = MemoryAddress.ofLong(-2147483552L);
-    static final MemoryAddress HKEY_CURRENT_CONFIG$ADDR = MemoryAddress.ofLong(-2147483643L);
-    static final MemoryAddress HKEY_DYN_DATA$ADDR = MemoryAddress.ofLong(-2147483642L);
-    static final MemoryAddress HKEY_CURRENT_USER_LOCAL_SETTINGS$ADDR = MemoryAddress.ofLong(-2147483641L);
-    static final MemoryAddress WIN31_CLASS$ADDR = MemoryAddress.ofLong(0L);
+    static final MemoryAddress IDC_WAIT$ADDR = MemoryAddress.ofLong(32514L);
+    static final MemoryAddress IDC_CROSS$ADDR = MemoryAddress.ofLong(32515L);
+    static final MemoryAddress IDC_UPARROW$ADDR = MemoryAddress.ofLong(32516L);
+    static final MemoryAddress IDC_SIZE$ADDR = MemoryAddress.ofLong(32640L);
+    static final MemoryAddress IDC_ICON$ADDR = MemoryAddress.ofLong(32641L);
+    static final MemoryAddress IDC_SIZENWSE$ADDR = MemoryAddress.ofLong(32642L);
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$749 {
 
-    static final MemorySegment MS_ENHANCED_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Enhanced Cryptographic Provider v1.0");
-    static final MemorySegment MS_STRONG_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Strong Cryptographic Provider");
-    static final MemorySegment MS_STRONG_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_STRONG_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Strong Cryptographic Provider");
-    static final MemorySegment MS_DEF_RSA_SIG_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA Signature Cryptographic Provider");
-    static final MemorySegment MS_DEF_RSA_SIG_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemoryAddress IDC_APPSTARTING$ADDR = MemoryAddress.ofLong(32650L);
+    static final MemoryAddress IDC_HELP$ADDR = MemoryAddress.ofLong(32651L);
+    static final MemoryAddress IDC_PIN$ADDR = MemoryAddress.ofLong(32671L);
+    static final MemoryAddress IDC_PERSON$ADDR = MemoryAddress.ofLong(32672L);
+    static final MemoryAddress IDI_APPLICATION$ADDR = MemoryAddress.ofLong(32512L);
+    static final MemoryAddress IDI_HAND$ADDR = MemoryAddress.ofLong(32513L);
 }
 
 

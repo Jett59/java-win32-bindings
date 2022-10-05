@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$917 {
 
-    static final MemorySegment SPLREG_OS_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OSVersion");
-    static final MemorySegment SPLREG_OS_VERSIONEX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OSVersionEx");
-    static final MemorySegment SPLREG_DS_PRESENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsPresent");
-    static final MemorySegment SPLREG_DS_PRESENT_FOR_USER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DsPresentForUser");
-    static final MemorySegment SPLREG_REMOTE_FAX$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RemoteFax");
-    static final MemorySegment SPLREG_RESTART_JOB_ON_POOL_ERROR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RestartJobOnPoolError");
+    static final MemorySegment PKCS12_ENCRYPT_CERTIFICATES_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
+    static final MemoryAddress CERT_RETRIEVE_ISSUER_LOGO$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress CERT_RETRIEVE_SUBJECT_LOGO$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress CERT_RETRIEVE_COMMUNITY_LOGO$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_PREDEFINED_BASE_TYPE$ADDR = MemoryAddress.ofLong(1000L);
+    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_PICTURE_TYPE$ADDR = MemoryAddress.ofLong(1000L);
 }
 
 

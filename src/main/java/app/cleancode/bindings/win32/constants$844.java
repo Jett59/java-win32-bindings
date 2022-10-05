@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$844 {
 
-    static final MemorySegment szOID_PKIX_OCSP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.1");
-    static final MemorySegment szOID_PKIX_CA_ISSUERS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.2");
-    static final MemorySegment szOID_PKIX_TIME_STAMPING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.3");
-    static final MemorySegment szOID_PKIX_CA_REPOSITORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.48.5");
-    static final MemorySegment szOID_QC_EU_COMPLIANCE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.4.0.1862.1.1");
-    static final MemorySegment szOID_QC_SSCD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.4.0.1862.1.4");
+    static final MemorySegment szOID_ROOT_PROGRAM_FLAGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.1.1");
+    static final MemorySegment szOID_CERT_POLICIES_95_QUALIFIER1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.7.1.1");
+    static final MemorySegment szOID_RDN_TPM_MANUFACTURER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.1");
+    static final MemorySegment szOID_RDN_TPM_MODEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.2");
+    static final MemorySegment szOID_RDN_TPM_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.3");
+    static final MemorySegment szOID_RDN_TCG_PLATFORM_MANUFACTURER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.2.4");
 }
 
 

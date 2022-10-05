@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$918 {
 
-    static final MemorySegment SPLREG_RESTART_JOB_ON_POOL_ENABLED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("RestartJobOnPoolEnabled");
-    static final MemorySegment SPLREG_DNS_MACHINE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DNSMachineName");
-    static final MemorySegment SPLREG_ALLOW_USER_MANAGEFORMS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("AllowUserManageForms");
-    static final MemorySegment SPLREG_WEBSHAREMGMT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("WebShareMgmt");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_GROUPS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationGroups");
-    static final MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_TIME_BEFORE_RECYCLE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PrintDriverIsolationTimeBeforeRecycle");
+    static final MemoryAddress CERT_RETRIEVE_BIOMETRIC_SIGNATURE_TYPE$ADDR = MemoryAddress.ofLong(1001L);
+    static final MemorySegment SSL_OBJECT_LOCATOR_PFX_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializePfx");
+    static final MemorySegment SSL_OBJECT_LOCATOR_ISSUER_LIST_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializeIssuerList");
+    static final MemorySegment SSL_OBJECT_LOCATOR_CERT_VALIDATION_CONFIG_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SslObjectLocatorInitializeCertValidationConfig");
+    static final MemorySegment szFORCE_KEY_PROTECTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ForceKeyProtection");
+    static final MemorySegment STORAGE_CRASH_TELEMETRY_REGKEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
 }
 
 

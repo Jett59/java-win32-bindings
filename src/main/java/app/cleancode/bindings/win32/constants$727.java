@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$727 {
 
-    static final MemorySegment SE_CREATE_SYMBOLIC_LINK_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateSymbolicLinkPrivilege");
-    static final MemorySegment SE_DELEGATE_SESSION_USER_IMPERSONATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeDelegateSessionUserImpersonatePrivilege");
-    static final MemorySegment SE_ACTIVATE_AS_USER_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("a");
-    static final MemorySegment SE_CONSTRAINED_IMPERSONATION_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("c");
-    static final MemorySegment SE_SESSION_IMPERSONATION_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("s");
-    static final MemorySegment SE_MUMA_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("m");
+    static final MemorySegment ACCESS_DS_SOURCE_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Directory Service Object");
+    static final MemorySegment ACCESS_DS_OBJECT_TYPE_NAME_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemorySegment SE_CREATE_TOKEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateTokenPrivilege");
+    static final MemorySegment SE_ASSIGNPRIMARYTOKEN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeAssignPrimaryTokenPrivilege");
+    static final MemorySegment SE_LOCK_MEMORY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeLockMemoryPrivilege");
 }
 
 

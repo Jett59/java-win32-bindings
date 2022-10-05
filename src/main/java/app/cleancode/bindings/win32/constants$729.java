@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$729 {
 
-    static final MemorySegment IMAGE_ARCHIVE_LONGNAMES_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("//              ");
-    static final MemorySegment IMAGE_ARCHIVE_HYBRIDMAP_MEMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("/<HYBRIDMAP>/   ");
-    static final MemorySegment IMAGE_POLICY_SECTION_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".tPolicy");
-    static final MemorySegment UNIFIEDBUILDREVISION_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
-    static final MemorySegment UNIFIEDBUILDREVISION_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("U");
-    static final MemorySegment DEVICEFAMILYDEVICEFORM_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
+    static final MemorySegment SE_LOAD_DRIVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeLoadDriverPrivilege");
+    static final MemorySegment SE_SYSTEM_PROFILE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemProfilePrivilege");
+    static final MemorySegment SE_SYSTEMTIME_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemtimePrivilege");
+    static final MemorySegment SE_PROF_SINGLE_PROCESS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeProfileSingleProcessPrivilege");
+    static final MemorySegment SE_INC_BASE_PRIORITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseBasePriorityPrivilege");
+    static final MemorySegment SE_CREATE_PAGEFILE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreatePagefilePrivilege");
 }
 
 

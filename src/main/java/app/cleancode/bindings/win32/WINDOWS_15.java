@@ -9,6 +9,72 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_15 extends WINDOWS_14 {
 
+    public static MethodHandle RegEnumValueW$MH() {
+        return RuntimeHelper.requireNonNull(constants$495.RegEnumValueW$MH,"RegEnumValueW");
+    }
+    public static int RegEnumValueW ( Addressable hKey,  int dwIndex,  Addressable lpValueName,  Addressable lpcchValueName,  Addressable lpReserved,  Addressable lpType,  Addressable lpData,  Addressable lpcbData) {
+        var mh$ = RegEnumValueW$MH();
+        try {
+            return (int)mh$.invokeExact(hKey, dwIndex, lpValueName, lpcchValueName, lpReserved, lpType, lpData, lpcbData);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegFlushKey$MH() {
+        return RuntimeHelper.requireNonNull(constants$495.RegFlushKey$MH,"RegFlushKey");
+    }
+    public static int RegFlushKey ( Addressable hKey) {
+        var mh$ = RegFlushKey$MH();
+        try {
+            return (int)mh$.invokeExact(hKey);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegGetKeySecurity$MH() {
+        return RuntimeHelper.requireNonNull(constants$495.RegGetKeySecurity$MH,"RegGetKeySecurity");
+    }
+    public static int RegGetKeySecurity ( Addressable hKey,  int SecurityInformation,  Addressable pSecurityDescriptor,  Addressable lpcbSecurityDescriptor) {
+        var mh$ = RegGetKeySecurity$MH();
+        try {
+            return (int)mh$.invokeExact(hKey, SecurityInformation, pSecurityDescriptor, lpcbSecurityDescriptor);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegLoadKeyA$MH() {
+        return RuntimeHelper.requireNonNull(constants$495.RegLoadKeyA$MH,"RegLoadKeyA");
+    }
+    public static int RegLoadKeyA ( Addressable hKey,  Addressable lpSubKey,  Addressable lpFile) {
+        var mh$ = RegLoadKeyA$MH();
+        try {
+            return (int)mh$.invokeExact(hKey, lpSubKey, lpFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegLoadKeyW$MH() {
+        return RuntimeHelper.requireNonNull(constants$495.RegLoadKeyW$MH,"RegLoadKeyW");
+    }
+    public static int RegLoadKeyW ( Addressable hKey,  Addressable lpSubKey,  Addressable lpFile) {
+        var mh$ = RegLoadKeyW$MH();
+        try {
+            return (int)mh$.invokeExact(hKey, lpSubKey, lpFile);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle RegNotifyChangeKeyValue$MH() {
+        return RuntimeHelper.requireNonNull(constants$495.RegNotifyChangeKeyValue$MH,"RegNotifyChangeKeyValue");
+    }
+    public static int RegNotifyChangeKeyValue ( Addressable hKey,  int bWatchSubtree,  int dwNotifyFilter,  Addressable hEvent,  int fAsynchronous) {
+        var mh$ = RegNotifyChangeKeyValue$MH();
+        try {
+            return (int)mh$.invokeExact(hKey, bWatchSubtree, dwNotifyFilter, hEvent, fAsynchronous);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
     public static MethodHandle RegOpenKeyA$MH() {
         return RuntimeHelper.requireNonNull(constants$496.RegOpenKeyA$MH,"RegOpenKeyA");
     }
@@ -5539,32 +5605,6 @@ import static java.lang.foreign.ValueLayout.*;
             throw new AssertionError("should not reach here", ex$);
         }
     }
-    public static OfAddress PCRYPT_DECODE_PARA = Constants$root.C_POINTER$LAYOUT;
-    public static MethodHandle CryptDecodeObjectEx$MH() {
-        return RuntimeHelper.requireNonNull(constants$574.CryptDecodeObjectEx$MH,"CryptDecodeObjectEx");
-    }
-    public static int CryptDecodeObjectEx ( int dwCertEncodingType,  Addressable lpszStructType,  Addressable pbEncoded,  int cbEncoded,  int dwFlags,  Addressable pDecodePara,  Addressable pvStructInfo,  Addressable pcbStructInfo) {
-        var mh$ = CryptDecodeObjectEx$MH();
-        try {
-            return (int)mh$.invokeExact(dwCertEncodingType, lpszStructType, pbEncoded, cbEncoded, dwFlags, pDecodePara, pvStructInfo, pcbStructInfo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle CryptDecodeObject$MH() {
-        return RuntimeHelper.requireNonNull(constants$574.CryptDecodeObject$MH,"CryptDecodeObject");
-    }
-    public static int CryptDecodeObject ( int dwCertEncodingType,  Addressable lpszStructType,  Addressable pbEncoded,  int cbEncoded,  int dwFlags,  Addressable pvStructInfo,  Addressable pcbStructInfo) {
-        var mh$ = CryptDecodeObject$MH();
-        try {
-            return (int)mh$.invokeExact(dwCertEncodingType, lpszStructType, pbEncoded, cbEncoded, dwFlags, pvStructInfo, pcbStructInfo);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static OfAddress PCERT_EXTENSIONS = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCERT_AUTHORITY_KEY_ID_INFO = Constants$root.C_POINTER$LAYOUT;
-    public static OfAddress PCERT_PRIVATE_KEY_VALIDITY = Constants$root.C_POINTER$LAYOUT;
 }
 
 

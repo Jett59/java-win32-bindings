@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$808 {
 
-    static final MemoryAddress CMC_ADD_EXTENSIONS$ADDR = MemoryAddress.ofLong(62L);
-    static final MemoryAddress CMC_ADD_ATTRIBUTES$ADDR = MemoryAddress.ofLong(63L);
-    static final MemoryAddress X509_CERTIFICATE_TEMPLATE$ADDR = MemoryAddress.ofLong(64L);
-    static final MemoryAddress OCSP_SIGNED_REQUEST$ADDR = MemoryAddress.ofLong(65L);
-    static final MemoryAddress OCSP_REQUEST$ADDR = MemoryAddress.ofLong(66L);
-    static final MemoryAddress OCSP_RESPONSE$ADDR = MemoryAddress.ofLong(67L);
+    static final MemoryAddress X509_AUTHORITY_KEY_ID2$ADDR = MemoryAddress.ofLong(31L);
+    static final MemoryAddress X509_AUTHORITY_INFO_ACCESS$ADDR = MemoryAddress.ofLong(32L);
+    static final MemoryAddress X509_SUBJECT_INFO_ACCESS$ADDR = MemoryAddress.ofLong(32L);
+    static final MemoryAddress X509_CRL_REASON_CODE$ADDR = MemoryAddress.ofLong(29L);
+    static final MemoryAddress PKCS_CONTENT_INFO$ADDR = MemoryAddress.ofLong(33L);
+    static final MemoryAddress X509_SEQUENCE_OF_ANY$ADDR = MemoryAddress.ofLong(34L);
 }
 
 

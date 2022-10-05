@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$840 {
 
-    static final MemorySegment szOID_ENROLL_EKPUB_CHALLENGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.26");
-    static final MemorySegment szOID_ENROLL_CAXCHGCERT_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.27");
-    static final MemorySegment szOID_ENROLL_ATTESTATION_CHALLENGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.28");
-    static final MemorySegment szOID_ENROLL_ENCRYPTION_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.29");
-    static final MemorySegment szOID_KP_TPM_EK_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.8.1");
-    static final MemorySegment szOID_KP_TPM_PLATFORM_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.8.2");
+    static final MemorySegment szOID_WINDOWS_THIRD_PARTY_COMPONENT_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.25");
+    static final MemorySegment szOID_WINDOWS_SOFTWARE_EXTENSION_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.26");
+    static final MemorySegment szOID_DISALLOWED_LIST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.30");
+    static final MemorySegment szOID_PIN_RULES_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.31");
+    static final MemorySegment szOID_PIN_RULES_CTL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.32");
+    static final MemorySegment szOID_PIN_RULES_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.33");
 }
 
 

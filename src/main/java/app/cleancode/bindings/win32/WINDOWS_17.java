@@ -9,6 +9,20 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_17 extends WINDOWS_16 {
 
+    public static int WriteThroughNotSupported() {
+        return (int)1L;
+    }
+    public static int WriteThroughSupported() {
+        return (int)2L;
+    }
+    public static OfAddress PSTORAGE_WRITE_CACHE_PROPERTY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPERSISTENT_RESERVE_COMMAND = Constants$root.C_POINTER$LAYOUT;
+    public static int TCCollectionBugCheck() {
+        return (int)1L;
+    }
+    public static int TCCollectionApplicationRequested() {
+        return (int)2L;
+    }
     public static int TCCollectionDeviceRequested() {
         return (int)3L;
     }
@@ -3195,72 +3209,6 @@ import static java.lang.foreign.ValueLayout.*;
         var mh$ = SetFormA$MH();
         try {
             return (int)mh$.invokeExact(hPrinter, pFormName, Level, pForm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle SetFormW$MH() {
-        return RuntimeHelper.requireNonNull(constants$676.SetFormW$MH,"SetFormW");
-    }
-    public static int SetFormW ( Addressable hPrinter,  Addressable pFormName,  int Level,  Addressable pForm) {
-        var mh$ = SetFormW$MH();
-        try {
-            return (int)mh$.invokeExact(hPrinter, pFormName, Level, pForm);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumFormsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$676.EnumFormsA$MH,"EnumFormsA");
-    }
-    public static int EnumFormsA ( Addressable hPrinter,  int Level,  Addressable pForm,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
-        var mh$ = EnumFormsA$MH();
-        try {
-            return (int)mh$.invokeExact(hPrinter, Level, pForm, cbBuf, pcbNeeded, pcReturned);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumFormsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$677.EnumFormsW$MH,"EnumFormsW");
-    }
-    public static int EnumFormsW ( Addressable hPrinter,  int Level,  Addressable pForm,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
-        var mh$ = EnumFormsW$MH();
-        try {
-            return (int)mh$.invokeExact(hPrinter, Level, pForm, cbBuf, pcbNeeded, pcReturned);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumMonitorsA$MH() {
-        return RuntimeHelper.requireNonNull(constants$677.EnumMonitorsA$MH,"EnumMonitorsA");
-    }
-    public static int EnumMonitorsA ( Addressable pName,  int Level,  Addressable pMonitor,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
-        var mh$ = EnumMonitorsA$MH();
-        try {
-            return (int)mh$.invokeExact(pName, Level, pMonitor, cbBuf, pcbNeeded, pcReturned);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle EnumMonitorsW$MH() {
-        return RuntimeHelper.requireNonNull(constants$677.EnumMonitorsW$MH,"EnumMonitorsW");
-    }
-    public static int EnumMonitorsW ( Addressable pName,  int Level,  Addressable pMonitor,  int cbBuf,  Addressable pcbNeeded,  Addressable pcReturned) {
-        var mh$ = EnumMonitorsW$MH();
-        try {
-            return (int)mh$.invokeExact(pName, Level, pMonitor, cbBuf, pcbNeeded, pcReturned);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle AddMonitorA$MH() {
-        return RuntimeHelper.requireNonNull(constants$677.AddMonitorA$MH,"AddMonitorA");
-    }
-    public static int AddMonitorA ( Addressable pName,  int Level,  Addressable pMonitors) {
-        var mh$ = AddMonitorA$MH();
-        try {
-            return (int)mh$.invokeExact(pName, Level, pMonitors);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }

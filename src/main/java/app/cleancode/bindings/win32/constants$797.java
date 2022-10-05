@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$797 {
 
-    static final MemoryAddress X509_CERT_REQUEST_TO_BE_SIGNED$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress X509_EXTENSIONS$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress X509_NAME_VALUE$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress X509_NAME$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress X509_PUBLIC_KEY_INFO$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress X509_AUTHORITY_KEY_ID$ADDR = MemoryAddress.ofLong(9L);
+    static final MemorySegment szOID_X21_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.24");
+    static final MemorySegment szOID_INTERNATIONAL_ISDN_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.25");
+    static final MemorySegment szOID_REGISTERED_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.26");
+    static final MemorySegment szOID_DESTINATION_INDICATOR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.27");
+    static final MemorySegment szOID_PREFERRED_DELIVERY_METHOD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.28");
+    static final MemorySegment szOID_PRESENTATION_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.29");
 }
 
 

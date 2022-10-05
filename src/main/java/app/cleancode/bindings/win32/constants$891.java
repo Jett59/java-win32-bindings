@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$891 {
 
-    static final MemoryAddress TIME_VALID_OID_FLUSH_CRL$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress TIME_VALID_OID_FLUSH_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress TIME_VALID_OID_FLUSH_FRESHEST_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress TIME_VALID_OID_FLUSH_FRESHEST_CRL_FROM_CRL$ADDR = MemoryAddress.ofLong(5L);
-    static final MemorySegment CERT_CHAIN_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_MAX_URL_RETRIEVAL_BYTE_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemorySegment CRYPT_OID_EXPORT_PRIVATE_KEY_INFO_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CryptDllExportPrivateKeyInfoEx");
+    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS_A$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS_W$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress CREDENTIAL_OID_PASSWORD_CREDENTIALS$ADDR = MemoryAddress.ofLong(1L);
+    static final MemorySegment SCHEME_OID_RETRIEVE_ENCODED_OBJECT_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchemeDllRetrieveEncodedObject");
+    static final MemorySegment SCHEME_OID_RETRIEVE_ENCODED_OBJECTW_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SchemeDllRetrieveEncodedObjectW");
 }
 
 

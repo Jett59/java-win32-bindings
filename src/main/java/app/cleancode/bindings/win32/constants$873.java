@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$873 {
 
-    static final MemorySegment CERT_PROT_ROOT_FLAGS_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_PROT_ROOT_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
-    static final MemorySegment CERT_PROT_ROOT_PEER_USAGES_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("P");
-    static final MemorySegment CERT_PROT_ROOT_PEER_USAGES_VALUE_NAME_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("PeerUsages");
-    static final MemorySegment CERT_PROT_ROOT_PEER_USAGES_DEFAULT_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.2");
-    static final MemorySegment CERT_TRUST_PUB_SAFER_GROUP_POLICY_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemoryAddress CERT_STORE_PROV_FILENAME_A$ADDR = MemoryAddress.ofLong(7L);
+    static final MemoryAddress CERT_STORE_PROV_FILENAME_W$ADDR = MemoryAddress.ofLong(8L);
+    static final MemoryAddress CERT_STORE_PROV_FILENAME$ADDR = MemoryAddress.ofLong(8L);
+    static final MemoryAddress CERT_STORE_PROV_SYSTEM_A$ADDR = MemoryAddress.ofLong(9L);
+    static final MemoryAddress CERT_STORE_PROV_SYSTEM_W$ADDR = MemoryAddress.ofLong(10L);
+    static final MemoryAddress CERT_STORE_PROV_SYSTEM$ADDR = MemoryAddress.ofLong(10L);
 }
 
 

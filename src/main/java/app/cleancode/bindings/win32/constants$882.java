@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$882 {
 
-    static final MemorySegment CRYPT_OID_OPEN_SYSTEM_STORE_PROV_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllOpenSystemStoreProv");
-    static final MemorySegment CRYPT_OID_REGISTER_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllRegisterSystemStore");
-    static final MemorySegment CRYPT_OID_UNREGISTER_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllUnregisterSystemStore");
-    static final MemorySegment CRYPT_OID_ENUM_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllEnumSystemStore");
-    static final MemorySegment CRYPT_OID_REGISTER_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllRegisterPhysicalStore");
-    static final MemorySegment CRYPT_OID_UNREGISTER_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllUnregisterPhysicalStore");
+    static final MemorySegment CERT_AUTO_UPDATE_SYNC_FROM_DIR_URL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_LOCAL_MACHINE_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_ROOT_DIR_URL_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("R");
+    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_SYNC_DELTA_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("F");
+    static final MemorySegment CERT_AUTH_ROOT_AUTO_UPDATE_LAST_SYNC_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("L");
 }
 
 

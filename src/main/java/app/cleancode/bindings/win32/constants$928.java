@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$928 {
 
-    static final MemorySegment SPLDS_VERSION_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("versionNumber");
-    static final MemorySegment SPLDS_PRINTER_NAME_ALIASES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerNameAliases");
-    static final MemorySegment SPLDS_PRINTER_LOCATIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerLocations");
-    static final MemorySegment SPLDS_PRINTER_MODEL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerModel");
-    static final MemorySegment MS_PRINT_JOB_OUTPUT_FILE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment SERVICES_ACTIVE_DATABASEW$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment SPLDS_PRINT_COLLATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printCollate");
+    static final MemorySegment SPLDS_PRINT_COLOR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printColor");
+    static final MemorySegment SPLDS_PRINT_DUPLEX_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printDuplexSupported");
+    static final MemorySegment SPLDS_PRINT_END_TIME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printEndTime");
+    static final MemorySegment SPLDS_PRINTER_CLASS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printQueue");
+    static final MemorySegment SPLDS_PRINTER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printerName");
 }
 
 

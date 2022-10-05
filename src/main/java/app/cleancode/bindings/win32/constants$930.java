@@ -9,7 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$930 {
 
-    static final MemorySegment SC_AGGREGATE_STORAGE_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemorySegment SPLDS_PRINT_MEDIA_READY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMediaReady");
+    static final MemorySegment SPLDS_PRINT_MEDIA_SUPPORTED$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMediaSupported");
+    static final MemorySegment SPLDS_PRINT_MEMORY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMemory");
+    static final MemorySegment SPLDS_PRINT_MIN_X_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMinXExtent");
+    static final MemorySegment SPLDS_PRINT_MIN_Y_EXTENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printMinYExtent");
+    static final MemorySegment SPLDS_PRINT_NETWORK_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("printNetworkAddress");
 }
 
 

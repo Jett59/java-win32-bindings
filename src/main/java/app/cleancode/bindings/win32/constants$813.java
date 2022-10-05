@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$813 {
 
-    static final MemorySegment szOID_SUBJECT_ALT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.7");
-    static final MemorySegment szOID_ISSUER_ALT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.8");
-    static final MemorySegment szOID_BASIC_CONSTRAINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.10");
-    static final MemorySegment szOID_KEY_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.15");
-    static final MemorySegment szOID_PRIVATEKEY_USAGE_PERIOD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.16");
-    static final MemorySegment szOID_BASIC_CONSTRAINTS2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.19");
+    static final MemoryAddress X509_NAME_CONSTRAINTS$ADDR = MemoryAddress.ofLong(55L);
+    static final MemoryAddress X509_POLICY_MAPPINGS$ADDR = MemoryAddress.ofLong(56L);
+    static final MemoryAddress X509_POLICY_CONSTRAINTS$ADDR = MemoryAddress.ofLong(57L);
+    static final MemoryAddress X509_CROSS_CERT_DIST_POINTS$ADDR = MemoryAddress.ofLong(58L);
+    static final MemoryAddress CMC_DATA$ADDR = MemoryAddress.ofLong(59L);
+    static final MemoryAddress CMC_RESPONSE$ADDR = MemoryAddress.ofLong(60L);
 }
 
 

@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$897 {
 
-    static final MemorySegment CERT_CHAIN_AUTO_FLUSH_FIRST_DELTA_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_AUTO_FLUSH_NEXT_DELTA_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_AUTO_LOG_FILE_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("A");
-    static final MemorySegment CERT_CHAIN_DISABLE_AUTO_FLUSH_PROCESS_NAME_LIST_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
-    static final MemorySegment CERT_SRV_OCSP_RESP_MIN_VALIDITY_SECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_SRV_OCSP_RESP_URL_RETRIEVAL_TIMEOUT_MILLISECONDS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
+    static final MemoryAddress TIME_VALID_OID_FLUSH_CTL$ADDR = MemoryAddress.ofLong(1L);
+    static final MemoryAddress TIME_VALID_OID_FLUSH_CRL$ADDR = MemoryAddress.ofLong(2L);
+    static final MemoryAddress TIME_VALID_OID_FLUSH_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress TIME_VALID_OID_FLUSH_FRESHEST_CRL_FROM_CERT$ADDR = MemoryAddress.ofLong(4L);
+    static final MemoryAddress TIME_VALID_OID_FLUSH_FRESHEST_CRL_FROM_CRL$ADDR = MemoryAddress.ofLong(5L);
+    static final MemorySegment CERT_CHAIN_CONFIG_REGPATH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
 }
 
 

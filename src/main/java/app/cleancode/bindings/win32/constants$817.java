@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$817 {
 
-    static final MemorySegment szOID_LEGACY_POLICY_MAPPINGS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.5");
-    static final MemorySegment szOID_POLICY_CONSTRAINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.36");
-    static final MemorySegment szOID_RENEWAL_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.13.1");
-    static final MemorySegment szOID_ENROLLMENT_NAME_VALUE_PAIR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.13.2.1");
-    static final MemorySegment szOID_ENROLLMENT_CSP_PROVIDER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.13.2.2");
-    static final MemorySegment szOID_OS_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.13.2.3");
+    static final MemoryAddress TIMESTAMP_RESPONSE$ADDR = MemoryAddress.ofLong(79L);
+    static final MemoryAddress TIMESTAMP_INFO$ADDR = MemoryAddress.ofLong(80L);
+    static final MemoryAddress X509_CERT_BUNDLE$ADDR = MemoryAddress.ofLong(81L);
+    static final MemoryAddress X509_ECC_PRIVATE_KEY$ADDR = MemoryAddress.ofLong(82L);
+    static final MemoryAddress CNG_RSA_PRIVATE_KEY_BLOB$ADDR = MemoryAddress.ofLong(83L);
+    static final MemoryAddress X509_SUBJECT_DIR_ATTRS$ADDR = MemoryAddress.ofLong(84L);
 }
 
 

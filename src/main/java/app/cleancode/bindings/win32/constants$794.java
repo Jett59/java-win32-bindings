@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$794 {
 
-    static final MemorySegment szOID_DN_QUALIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.46");
-    static final MemorySegment szOID_DOMAIN_COMPONENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.9.2342.19200300.100.1.25");
-    static final MemorySegment szOID_PKCS_12_FRIENDLY_NAME_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.20");
-    static final MemorySegment szOID_PKCS_12_LOCAL_KEY_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.2.840.113549.1.9.21");
-    static final MemorySegment szOID_PKCS_12_KEY_PROVIDER_NAME_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.17.1");
-    static final MemorySegment szOID_LOCAL_MACHINE_KEYSET$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.17.2");
+    static final MemorySegment szOID_COUNTRY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.6");
+    static final MemorySegment szOID_LOCALITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.7");
+    static final MemorySegment szOID_STATE_OR_PROVINCE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.8");
+    static final MemorySegment szOID_STREET_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.9");
+    static final MemorySegment szOID_ORGANIZATION_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.10");
+    static final MemorySegment szOID_ORGANIZATIONAL_UNIT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.11");
 }
 
 

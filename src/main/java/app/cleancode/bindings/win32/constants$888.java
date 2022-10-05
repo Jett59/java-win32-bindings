@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$888 {
 
-    static final MemoryAddress URL_OID_CTL_NEXT_UPDATE$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress URL_OID_CRL_ISSUER$ADDR = MemoryAddress.ofLong(5L);
-    static final MemoryAddress URL_OID_CERTIFICATE_FRESHEST_CRL$ADDR = MemoryAddress.ofLong(6L);
-    static final MemoryAddress URL_OID_CRL_FRESHEST_CRL$ADDR = MemoryAddress.ofLong(7L);
-    static final MemoryAddress URL_OID_CROSS_CERT_DIST_POINT$ADDR = MemoryAddress.ofLong(8L);
-    static final MemoryAddress URL_OID_CERTIFICATE_OCSP$ADDR = MemoryAddress.ofLong(9L);
+    static final MemorySegment CERT_PHYSICAL_STORE_SMART_CARD_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String(".");
+    static final MemorySegment CRYPT_OID_OPEN_SYSTEM_STORE_PROV_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllOpenSystemStoreProv");
+    static final MemorySegment CRYPT_OID_REGISTER_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllRegisterSystemStore");
+    static final MemorySegment CRYPT_OID_UNREGISTER_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllUnregisterSystemStore");
+    static final MemorySegment CRYPT_OID_ENUM_SYSTEM_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllEnumSystemStore");
+    static final MemorySegment CRYPT_OID_REGISTER_PHYSICAL_STORE_FUNC$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("CertDllRegisterPhysicalStore");
 }
 
 

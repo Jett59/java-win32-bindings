@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$830 {
 
-    static final MemorySegment szOID_ROOT_LIST_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.9");
-    static final MemorySegment szOID_KP_QUALIFIED_SUBORDINATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.10");
-    static final MemorySegment szOID_KP_KEY_RECOVERY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.11");
-    static final MemorySegment szOID_KP_DOCUMENT_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.12");
-    static final MemorySegment szOID_KP_LIFETIME_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.13");
-    static final MemorySegment szOID_KP_MOBILE_DEVICE_SOFTWARE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.14");
+    static final MemorySegment szOID_APPLICATION_POLICY_CONSTRAINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.12");
+    static final MemorySegment szOID_ARCHIVED_KEY_ATTR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.13");
+    static final MemorySegment szOID_CRL_SELF_CDP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.14");
+    static final MemorySegment szOID_REQUIRE_CERT_CHAIN_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.15");
+    static final MemorySegment szOID_ARCHIVED_KEY_CERT_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.16");
+    static final MemorySegment szOID_ISSUED_CERT_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.17");
 }
 
 

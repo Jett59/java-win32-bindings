@@ -9,6 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_13 extends WINDOWS_12 {
 
+    public static OfAddress PNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPNEWTEXTMETRIC = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress PPELARRAY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress NPPELARRAY = Constants$root.C_POINTER$LAYOUT;
+    public static OfAddress LPPELARRAY = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress PLOGBRUSH = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress NPLOGBRUSH = Constants$root.C_POINTER$LAYOUT;
     public static OfAddress LPLOGBRUSH = Constants$root.C_POINTER$LAYOUT;
@@ -6541,40 +6547,6 @@ import static java.lang.foreign.ValueLayout.*;
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }
-    }
-    public static int DCDC_DEFAULT() {
-        return (int)0L;
-    }
-    public static int DCDC_DISABLE_FONT_UPDATE() {
-        return (int)1L;
-    }
-    public static int DCDC_DISABLE_RELAYOUT() {
-        return (int)2L;
-    }
-    public static MethodHandle SetDialogControlDpiChangeBehavior$MH() {
-        return RuntimeHelper.requireNonNull(constants$364.SetDialogControlDpiChangeBehavior$MH,"SetDialogControlDpiChangeBehavior");
-    }
-    public static int SetDialogControlDpiChangeBehavior ( Addressable hWnd,  int mask,  int values) {
-        var mh$ = SetDialogControlDpiChangeBehavior$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd, mask, values);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle GetDialogControlDpiChangeBehavior$MH() {
-        return RuntimeHelper.requireNonNull(constants$364.GetDialogControlDpiChangeBehavior$MH,"GetDialogControlDpiChangeBehavior");
-    }
-    public static int GetDialogControlDpiChangeBehavior ( Addressable hWnd) {
-        var mh$ = GetDialogControlDpiChangeBehavior$MH();
-        try {
-            return (int)mh$.invokeExact(hWnd);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static int DDC_DEFAULT() {
-        return (int)0L;
     }
 }
 

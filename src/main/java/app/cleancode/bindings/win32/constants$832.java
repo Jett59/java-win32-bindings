@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$832 {
 
-    static final MemorySegment szOID_LICENSES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.6.1");
-    static final MemorySegment szOID_LICENSE_SERVER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.6.2");
-    static final MemorySegment szOID_KP_SMARTCARD_LOGON$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.20.2.2");
-    static final MemorySegment szOID_KP_KERNEL_MODE_CODE_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.61.1.1");
-    static final MemorySegment szOID_KP_KERNEL_MODE_TRUSTED_BOOT_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.61.4.1");
-    static final MemorySegment szOID_REVOKED_LIST_SIGNER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.3.19");
+    static final MemorySegment szOID_PKIX_KP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3");
+    static final MemorySegment szOID_PKIX_KP_SERVER_AUTH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.1");
+    static final MemorySegment szOID_PKIX_KP_CLIENT_AUTH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.2");
+    static final MemorySegment szOID_PKIX_KP_CODE_SIGNING$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.3");
+    static final MemorySegment szOID_PKIX_KP_EMAIL_PROTECTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.4");
+    static final MemorySegment szOID_PKIX_KP_IPSEC_END_SYSTEM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3.5");
 }
 
 

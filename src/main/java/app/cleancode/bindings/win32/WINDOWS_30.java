@@ -9,6 +9,669 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_30 extends WINDOWS_29 {
 
+    public static int FSCTL_HCS_ASYNC_TUNNEL_REQUEST() {
+        return (int)590704L;
+    }
+    public static int FSCTL_QUERY_EXTENT_READ_CACHE_INFO() {
+        return (int)590711L;
+    }
+    public static int FSCTL_QUERY_REFS_VOLUME_COUNTER_INFO() {
+        return (int)590715L;
+    }
+    public static int FSCTL_CLEAN_VOLUME_METADATA() {
+        return (int)590716L;
+    }
+    public static int FSCTL_SET_INTEGRITY_INFORMATION_EX() {
+        return (int)590720L;
+    }
+    public static int FSCTL_SUSPEND_OVERLAY() {
+        return (int)590724L;
+    }
+    public static int FSCTL_VIRTUAL_STORAGE_QUERY_PROPERTY() {
+        return (int)590728L;
+    }
+    public static int FSCTL_FILESYSTEM_GET_STATISTICS_EX() {
+        return (int)590732L;
+    }
+    public static int FSCTL_QUERY_VOLUME_CONTAINER_STATE() {
+        return (int)590736L;
+    }
+    public static int FSCTL_SET_LAYER_ROOT() {
+        return (int)590740L;
+    }
+    public static int FSCTL_QUERY_DIRECT_ACCESS_EXTENTS() {
+        return (int)590747L;
+    }
+    public static int FSCTL_NOTIFY_STORAGE_SPACE_ALLOCATION() {
+        return (int)590748L;
+    }
+    public static int FSCTL_SSDI_STORAGE_REQUEST() {
+        return (int)590752L;
+    }
+    public static int FSCTL_QUERY_DIRECT_IMAGE_ORIGINAL_BASE() {
+        return (int)590756L;
+    }
+    public static int FSCTL_READ_UNPRIVILEGED_USN_JOURNAL() {
+        return (int)590763L;
+    }
+    public static int FSCTL_GHOST_FILE_EXTENTS() {
+        return (int)623532L;
+    }
+    public static int FSCTL_QUERY_GHOSTED_FILE_EXTENTS() {
+        return (int)590768L;
+    }
+    public static int FSCTL_UNMAP_SPACE() {
+        return (int)590772L;
+    }
+    public static int FSCTL_HCS_SYNC_NO_WRITE_TUNNEL_REQUEST() {
+        return (int)590776L;
+    }
+    public static int FSCTL_STREAMS_QUERY_PARAMETERS() {
+        return (int)590788L;
+    }
+    public static int FSCTL_STREAMS_ASSOCIATE_ID() {
+        return (int)590792L;
+    }
+    public static int FSCTL_STREAMS_QUERY_ID() {
+        return (int)590796L;
+    }
+    public static int FSCTL_GET_RETRIEVAL_POINTERS_AND_REFCOUNT() {
+        return (int)590803L;
+    }
+    public static int FSCTL_QUERY_VOLUME_NUMA_INFO() {
+        return (int)590804L;
+    }
+    public static int FSCTL_REFS_DEALLOCATE_RANGES() {
+        return (int)590808L;
+    }
+    public static int FSCTL_QUERY_REFS_SMR_VOLUME_INFO() {
+        return (int)590812L;
+    }
+    public static int FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS() {
+        return (int)590816L;
+    }
+    public static int FSCTL_SET_REFS_FILE_STRICTLY_SEQUENTIAL() {
+        return (int)590820L;
+    }
+    public static int FSCTL_DUPLICATE_EXTENTS_TO_FILE_EX() {
+        return (int)623592L;
+    }
+    public static int FSCTL_QUERY_BAD_RANGES() {
+        return (int)590828L;
+    }
+    public static int FSCTL_SET_DAX_ALLOC_ALIGNMENT_HINT() {
+        return (int)590832L;
+    }
+    public static int FSCTL_DELETE_CORRUPTED_REFS_CONTAINER() {
+        return (int)590836L;
+    }
+    public static int FSCTL_SCRUB_UNDISCOVERABLE_ID() {
+        return (int)590840L;
+    }
+    public static int FSCTL_NOTIFY_DATA_CHANGE() {
+        return (int)590844L;
+    }
+    public static int FSCTL_START_VIRTUALIZATION_INSTANCE_EX() {
+        return (int)590848L;
+    }
+    public static int FSCTL_ENCRYPTION_KEY_CONTROL() {
+        return (int)590852L;
+    }
+    public static int FSCTL_VIRTUAL_STORAGE_SET_BEHAVIOR() {
+        return (int)590856L;
+    }
+    public static int FSCTL_SET_REPARSE_POINT_EX() {
+        return (int)590860L;
+    }
+    public static int FSCTL_REARRANGE_FILE() {
+        return (int)640032L;
+    }
+    public static int FSCTL_VIRTUAL_STORAGE_PASSTHROUGH() {
+        return (int)590884L;
+    }
+    public static int FSCTL_GET_RETRIEVAL_POINTER_COUNT() {
+        return (int)590891L;
+    }
+    public static int FSCTL_ENABLE_PER_IO_FLAGS() {
+        return (int)590892L;
+    }
+    public static int USN_PAGE_SIZE() {
+        return (int)4096L;
+    }
+    public static int USN_REASON_DATA_OVERWRITE() {
+        return (int)1L;
+    }
+    public static int USN_REASON_DATA_EXTEND() {
+        return (int)2L;
+    }
+    public static int USN_REASON_DATA_TRUNCATION() {
+        return (int)4L;
+    }
+    public static int USN_REASON_NAMED_DATA_OVERWRITE() {
+        return (int)16L;
+    }
+    public static int USN_REASON_NAMED_DATA_EXTEND() {
+        return (int)32L;
+    }
+    public static int USN_REASON_NAMED_DATA_TRUNCATION() {
+        return (int)64L;
+    }
+    public static int USN_REASON_FILE_CREATE() {
+        return (int)256L;
+    }
+    public static int USN_REASON_FILE_DELETE() {
+        return (int)512L;
+    }
+    public static int USN_REASON_EA_CHANGE() {
+        return (int)1024L;
+    }
+    public static int USN_REASON_SECURITY_CHANGE() {
+        return (int)2048L;
+    }
+    public static int USN_REASON_RENAME_OLD_NAME() {
+        return (int)4096L;
+    }
+    public static int USN_REASON_RENAME_NEW_NAME() {
+        return (int)8192L;
+    }
+    public static int USN_REASON_INDEXABLE_CHANGE() {
+        return (int)16384L;
+    }
+    public static int USN_REASON_BASIC_INFO_CHANGE() {
+        return (int)32768L;
+    }
+    public static int USN_REASON_HARD_LINK_CHANGE() {
+        return (int)65536L;
+    }
+    public static int USN_REASON_COMPRESSION_CHANGE() {
+        return (int)131072L;
+    }
+    public static int USN_REASON_ENCRYPTION_CHANGE() {
+        return (int)262144L;
+    }
+    public static int USN_REASON_OBJECT_ID_CHANGE() {
+        return (int)524288L;
+    }
+    public static int USN_REASON_REPARSE_POINT_CHANGE() {
+        return (int)1048576L;
+    }
+    public static int USN_REASON_STREAM_CHANGE() {
+        return (int)2097152L;
+    }
+    public static int USN_REASON_TRANSACTED_CHANGE() {
+        return (int)4194304L;
+    }
+    public static int USN_REASON_INTEGRITY_CHANGE() {
+        return (int)8388608L;
+    }
+    public static int USN_REASON_DESIRED_STORAGE_CLASS_CHANGE() {
+        return (int)16777216L;
+    }
+    public static int USN_REASON_CLOSE() {
+        return (int)2147483648L;
+    }
+    public static int USN_DELETE_FLAG_DELETE() {
+        return (int)1L;
+    }
+    public static int USN_DELETE_FLAG_NOTIFY() {
+        return (int)2L;
+    }
+    public static int USN_DELETE_VALID_FLAGS() {
+        return (int)3L;
+    }
+    public static int USN_SOURCE_DATA_MANAGEMENT() {
+        return (int)1L;
+    }
+    public static int USN_SOURCE_AUXILIARY_DATA() {
+        return (int)2L;
+    }
+    public static int USN_SOURCE_REPLICATION_MANAGEMENT() {
+        return (int)4L;
+    }
+    public static int USN_SOURCE_CLIENT_REPLICATION_MANAGEMENT() {
+        return (int)8L;
+    }
+    public static int USN_SOURCE_VALID_FLAGS() {
+        return (int)15L;
+    }
+    public static int MARK_HANDLE_PROTECT_CLUSTERS() {
+        return (int)1L;
+    }
+    public static int MARK_HANDLE_TXF_SYSTEM_LOG() {
+        return (int)4L;
+    }
+    public static int MARK_HANDLE_NOT_TXF_SYSTEM_LOG() {
+        return (int)8L;
+    }
+    public static int MARK_HANDLE_REALTIME() {
+        return (int)32L;
+    }
+    public static int MARK_HANDLE_NOT_REALTIME() {
+        return (int)64L;
+    }
+    public static int MARK_HANDLE_FILTER_METADATA() {
+        return (int)512L;
+    }
+    public static int MARK_HANDLE_CLOUD_SYNC() {
+        return (int)2048L;
+    }
+    public static int MARK_HANDLE_READ_COPY() {
+        return (int)128L;
+    }
+    public static int MARK_HANDLE_NOT_READ_COPY() {
+        return (int)256L;
+    }
+    public static int MARK_HANDLE_RETURN_PURGE_FAILURE() {
+        return (int)1024L;
+    }
+    public static int MARK_HANDLE_DISABLE_FILE_METADATA_OPTIMIZATION() {
+        return (int)4096L;
+    }
+    public static int MARK_HANDLE_ENABLE_USN_SOURCE_ON_PAGING_IO() {
+        return (int)8192L;
+    }
+    public static int MARK_HANDLE_SKIP_COHERENCY_SYNC_DISALLOW_WRITES() {
+        return (int)16384L;
+    }
+    public static int MARK_HANDLE_ENABLE_CPU_CACHE() {
+        return (int)268435456L;
+    }
+    public static int VOLUME_IS_DIRTY() {
+        return (int)1L;
+    }
+    public static int VOLUME_UPGRADE_SCHEDULED() {
+        return (int)2L;
+    }
+    public static int VOLUME_SESSION_OPEN() {
+        return (int)4L;
+    }
+    public static int FILE_ZERO_DATA_INFORMATION_FLAG_PRESERVE_CACHED_DATA() {
+        return (int)1L;
+    }
+    public static int ENCRYPTION_FORMAT_DEFAULT() {
+        return (int)1L;
+    }
+    public static int SET_REPAIR_ENABLED() {
+        return (int)1L;
+    }
+    public static int SET_REPAIR_WARN_ABOUT_DATA_LOSS() {
+        return (int)8L;
+    }
+    public static int SET_REPAIR_DISABLED_AND_BUGCHECK_ON_CORRUPT() {
+        return (int)16L;
+    }
+    public static int SET_REPAIR_VALID_MASK() {
+        return (int)25L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_FILE_RECORD_NOT_IN_USE() {
+        return (int)1L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_FILE_RECORD_REUSED() {
+        return (int)2L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_FILE_RECORD_NOT_EXIST() {
+        return (int)4L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_FILE_RECORD_NOT_BASE_RECORD() {
+        return (int)8L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_SYSTEM_FILE() {
+        return (int)16L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_NOT_IMPLEMENTED() {
+        return (int)32L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_UNABLE_TO_REPAIR() {
+        return (int)64L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_REPAIR_DISABLED() {
+        return (int)128L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_RECURSIVELY_CORRUPTED() {
+        return (int)256L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_ORPHAN_GENERATED() {
+        return (int)512L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_REPAIRED() {
+        return (int)1024L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_NOTHING_WRONG() {
+        return (int)2048L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_ATTRIBUTE_NOT_FOUND() {
+        return (int)4096L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_POTENTIAL_CROSSLINK() {
+        return (int)8192L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_STALE_INFORMATION() {
+        return (int)16384L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_CLUSTERS_ALREADY_IN_USE() {
+        return (int)32768L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_LCN_NOT_EXIST() {
+        return (int)65536L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_INVALID_RUN_LENGTH() {
+        return (int)131072L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_FILE_RECORD_NOT_ORPHAN() {
+        return (int)262144L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_FILE_RECORD_IS_BASE_RECORD() {
+        return (int)524288L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_INVALID_ARRAY_LENGTH_COUNT() {
+        return (int)1048576L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_SID_VALID() {
+        return (int)2097152L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_SID_MISMATCH() {
+        return (int)4194304L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_INVALID_PARENT() {
+        return (int)8388608L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_PARENT_FILE_RECORD_NOT_IN_USE() {
+        return (int)16777216L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_PARENT_FILE_RECORD_REUSED() {
+        return (int)33554432L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_PARENT_FILE_RECORD_NOT_EXIST() {
+        return (int)67108864L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_PARENT_FILE_RECORD_NOT_BASE_RECORD() {
+        return (int)134217728L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_PARENT_FILE_RECORD_NOT_INDEX() {
+        return (int)268435456L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_VALID_INDEX_ENTRY() {
+        return (int)536870912L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_OUT_OF_GENERIC_NAMES() {
+        return (int)1073741824L;
+    }
+    public static int FILE_INITIATE_REPAIR_HINT1_OUT_OF_RESOURCE() {
+        return (int)2147483648L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_INVALID_LCN() {
+        return 4294967296L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_INVALID_VCN() {
+        return 8589934592L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_NAME_CONFLICT() {
+        return 17179869184L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_ORPHAN() {
+        return 34359738368L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_ATTRIBUTE_TOO_SMALL() {
+        return 68719476736L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_ATTRIBUTE_NON_RESIDENT() {
+        return 137438953472L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_DENY_DEFRAG() {
+        return 274877906944L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_PREVIOUS_PARENT_STILL_VALID() {
+        return 549755813888L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_INDEX_ENTRY_MISMATCH() {
+        return 1099511627776L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_INVALID_ORPHAN_RECOVERY_NAME() {
+        return 2199023255552L;
+    }
+    public static long FILE_INITIATE_REPAIR_HINT1_MULTIPLE_FILE_NAME_ATTRIBUTES() {
+        return 4398046511104L;
+    }
+    public static int TXFS_LOGGING_MODE_SIMPLE() {
+        return (int)1L;
+    }
+    public static int TXFS_LOGGING_MODE_FULL() {
+        return (int)2L;
+    }
+    public static int TXFS_MODIFY_RM_VALID_FLAGS() {
+        return (int)261631L;
+    }
+    public static int TXFS_QUERY_RM_INFORMATION_VALID_FLAGS() {
+        return (int)246192L;
+    }
+    public static int TXFS_ROLLFORWARD_REDO_VALID_FLAGS() {
+        return (int)3L;
+    }
+    public static int TXFS_START_RM_VALID_FLAGS() {
+        return (int)15999L;
+    }
+    public static int TXFS_TRANSACTED_VERSION_NONTRANSACTED() {
+        return (int)4294967294L;
+    }
+    public static int TXFS_TRANSACTED_VERSION_UNCOMMITTED() {
+        return (int)4294967295L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_SHORT_NAME_CREATION_DISABLED() {
+        return (int)1L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_VOLUME_SCRUB_DISABLED() {
+        return (int)2L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_GLOBAL_METADATA_NO_SEEK_PENALTY() {
+        return (int)4L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_LOCAL_METADATA_NO_SEEK_PENALTY() {
+        return (int)8L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_NO_HEAT_GATHERING() {
+        return (int)16L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_CONTAINS_BACKING_WIM() {
+        return (int)32L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_BACKED_BY_WIM() {
+        return (int)64L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_NO_WRITE_AUTO_TIERING() {
+        return (int)128L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_TXF_DISABLED() {
+        return (int)256L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_REALLOCATE_ALL_DATA_WRITES() {
+        return (int)512L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_CHKDSK_RAN_ONCE() {
+        return (int)1024L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_MODIFIED_BY_CHKDSK() {
+        return (int)2048L;
+    }
+    public static int PERSISTENT_VOLUME_STATE_DAX_FORMATTED() {
+        return (int)4096L;
+    }
+    public static int OPLOCK_LEVEL_CACHE_READ() {
+        return (int)1L;
+    }
+    public static int OPLOCK_LEVEL_CACHE_HANDLE() {
+        return (int)2L;
+    }
+    public static int OPLOCK_LEVEL_CACHE_WRITE() {
+        return (int)4L;
+    }
+    public static int REQUEST_OPLOCK_INPUT_FLAG_REQUEST() {
+        return (int)1L;
+    }
+    public static int REQUEST_OPLOCK_INPUT_FLAG_ACK() {
+        return (int)2L;
+    }
+    public static int REQUEST_OPLOCK_INPUT_FLAG_COMPLETE_ACK_ON_CLOSE() {
+        return (int)4L;
+    }
+    public static int REQUEST_OPLOCK_OUTPUT_FLAG_ACK_REQUIRED() {
+        return (int)1L;
+    }
+    public static int REQUEST_OPLOCK_OUTPUT_FLAG_MODES_PROVIDED() {
+        return (int)2L;
+    }
+    public static int SD_GLOBAL_CHANGE_TYPE_QUERY_STATS() {
+        return (int)65536L;
+    }
+    public static int SD_GLOBAL_CHANGE_TYPE_ENUM_SDS() {
+        return (int)131072L;
+    }
+    public static int LOOKUP_STREAM_FROM_CLUSTER_ENTRY_ATTRIBUTE_MASK() {
+        return (int)4278190080L;
+    }
+    public static long CSV_NAMESPACE_INFO_V1() {
+        return 24L;
+    }
+    public static int CSV_INVALID_DEVICE_NUMBER() {
+        return (int)4294967295L;
+    }
+    public static int QUERY_FILE_LAYOUT_RESTART() {
+        return (int)1L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_NAMES() {
+        return (int)2L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAMS() {
+        return (int)4L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_EXTENTS() {
+        return (int)8L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_EXTRA_INFO() {
+        return (int)16L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAMS_WITH_NO_CLUSTERS_ALLOCATED() {
+        return (int)32L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_FULL_PATH_IN_NAMES() {
+        return (int)64L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAM_INFORMATION() {
+        return (int)128L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAM_INFORMATION_FOR_DSC_ATTRIBUTE() {
+        return (int)256L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAM_INFORMATION_FOR_TXF_ATTRIBUTE() {
+        return (int)512L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAM_INFORMATION_FOR_EFS_ATTRIBUTE() {
+        return (int)1024L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_ONLY_FILES_WITH_SPECIFIC_ATTRIBUTES() {
+        return (int)2048L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_FILES_WITH_DSC_ATTRIBUTE() {
+        return (int)4096L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAM_INFORMATION_FOR_DATA_ATTRIBUTE() {
+        return (int)8192L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAM_INFORMATION_FOR_REPARSE_ATTRIBUTE() {
+        return (int)16384L;
+    }
+    public static int QUERY_FILE_LAYOUT_INCLUDE_STREAM_INFORMATION_FOR_EA_ATTRIBUTE() {
+        return (int)32768L;
+    }
+    public static int QUERY_FILE_LAYOUT_SINGLE_INSTANCED() {
+        return (int)1L;
+    }
+    public static int FILE_LAYOUT_NAME_ENTRY_PRIMARY() {
+        return (int)1L;
+    }
+    public static int FILE_LAYOUT_NAME_ENTRY_DOS() {
+        return (int)2L;
+    }
+    public static int STREAM_LAYOUT_ENTRY_IMMOVABLE() {
+        return (int)1L;
+    }
+    public static int STREAM_LAYOUT_ENTRY_PINNED() {
+        return (int)2L;
+    }
+    public static int STREAM_LAYOUT_ENTRY_RESIDENT() {
+        return (int)4L;
+    }
+    public static int STREAM_LAYOUT_ENTRY_NO_CLUSTERS_ALLOCATED() {
+        return (int)8L;
+    }
+    public static int STREAM_LAYOUT_ENTRY_HAS_INFORMATION() {
+        return (int)16L;
+    }
+    public static int STREAM_EXTENT_ENTRY_AS_RETRIEVAL_POINTERS() {
+        return (int)1L;
+    }
+    public static int STREAM_EXTENT_ENTRY_ALL_EXTENTS() {
+        return (int)2L;
+    }
+    public static int CHECKSUM_TYPE_UNCHANGED() {
+        return (int)-1L;
+    }
+    public static int CHECKSUM_TYPE_NONE() {
+        return (int)0L;
+    }
+    public static int CHECKSUM_TYPE_CRC32() {
+        return (int)1L;
+    }
+    public static int CHECKSUM_TYPE_CRC64() {
+        return (int)2L;
+    }
+    public static int CHECKSUM_TYPE_ECC() {
+        return (int)3L;
+    }
+    public static int CHECKSUM_TYPE_FIRST_UNUSED_TYPE() {
+        return (int)4L;
+    }
+    public static int FSCTL_INTEGRITY_FLAG_CHECKSUM_ENFORCEMENT_OFF() {
+        return (int)1L;
+    }
+    public static int OFFLOAD_READ_FLAG_ALL_ZERO_BEYOND_CURRENT_RANGE() {
+        return (int)1L;
+    }
+    public static int FILE_REGION_USAGE_QUERY_ALIGNMENT() {
+        return (int)24L;
+    }
+    public static int VALID_WRITE_USN_REASON_MASK() {
+        return (int)2147483649L;
+    }
+    public static int FILE_STORAGE_TIER_NAME_LENGTH() {
+        return (int)256L;
+    }
+    public static int FILE_STORAGE_TIER_DESCRIPTION_LENGTH() {
+        return (int)512L;
+    }
+    public static int FILE_STORAGE_TIER_FLAG_NO_SEEK_PENALTY() {
+        return (int)131072L;
+    }
+    public static int FILE_STORAGE_TIER_FLAG_WRITE_BACK_CACHE() {
+        return (int)2097152L;
+    }
+    public static int FILE_STORAGE_TIER_FLAG_READ_CACHE() {
+        return (int)4194304L;
+    }
+    public static int FILE_STORAGE_TIER_FLAG_PARITY() {
+        return (int)8388608L;
+    }
+    public static int FILE_STORAGE_TIER_FLAG_SMR() {
+        return (int)16777216L;
+    }
+    public static int QUERY_STORAGE_CLASSES_FLAGS_MEASURE_WRITE() {
+        return (int)2147483648L;
+    }
+    public static long FSCTL_QUERY_STORAGE_CLASSES_OUTPUT_VERSION() {
+        return 1088L;
+    }
+    public static int QUERY_FILE_LAYOUT_REPARSE_DATA_INVALID() {
+        return (int)1L;
+    }
     public static int QUERY_FILE_LAYOUT_REPARSE_TAG_INVALID() {
         return (int)2L;
     }
@@ -337,16 +1000,16 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)4294967295L;
     }
     public static MemorySegment SCARD_ALL_READERS() {
-        return constants$913.SCARD_ALL_READERS$SEGMENT;
+        return constants$919.SCARD_ALL_READERS$SEGMENT;
     }
     public static MemorySegment SCARD_DEFAULT_READERS() {
-        return constants$913.SCARD_DEFAULT_READERS$SEGMENT;
+        return constants$919.SCARD_DEFAULT_READERS$SEGMENT;
     }
     public static MemorySegment SCARD_LOCAL_READERS() {
-        return constants$913.SCARD_LOCAL_READERS$SEGMENT;
+        return constants$919.SCARD_LOCAL_READERS$SEGMENT;
     }
     public static MemorySegment SCARD_SYSTEM_READERS() {
-        return constants$913.SCARD_SYSTEM_READERS$SEGMENT;
+        return constants$920.SCARD_SYSTEM_READERS$SEGMENT;
     }
     public static int SCARD_READER_SEL_AUTH_PACKAGE() {
         return (int)4294966667L;
@@ -391,19 +1054,19 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)1L;
     }
     public static MemorySegment BIDI_ACTION_ENUM_SCHEMA() {
-        return constants$914.BIDI_ACTION_ENUM_SCHEMA$SEGMENT;
+        return constants$920.BIDI_ACTION_ENUM_SCHEMA$SEGMENT;
     }
     public static MemorySegment BIDI_ACTION_GET() {
-        return constants$914.BIDI_ACTION_GET$SEGMENT;
+        return constants$920.BIDI_ACTION_GET$SEGMENT;
     }
     public static MemorySegment BIDI_ACTION_SET() {
-        return constants$914.BIDI_ACTION_SET$SEGMENT;
+        return constants$920.BIDI_ACTION_SET$SEGMENT;
     }
     public static MemorySegment BIDI_ACTION_GET_ALL() {
-        return constants$914.BIDI_ACTION_GET_ALL$SEGMENT;
+        return constants$920.BIDI_ACTION_GET_ALL$SEGMENT;
     }
     public static MemorySegment BIDI_ACTION_GET_WITH_ARGUMENT() {
-        return constants$914.BIDI_ACTION_GET_WITH_ARGUMENT$SEGMENT;
+        return constants$920.BIDI_ACTION_GET_WITH_ARGUMENT$SEGMENT;
     }
     public static int ERROR_BIDI_NOT_SUPPORTED() {
         return (int)50L;
@@ -469,97 +1132,97 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)2147483648L;
     }
     public static MemorySegment SPLREG_DEFAULT_SPOOL_DIRECTORY() {
-        return constants$914.SPLREG_DEFAULT_SPOOL_DIRECTORY$SEGMENT;
+        return constants$921.SPLREG_DEFAULT_SPOOL_DIRECTORY$SEGMENT;
     }
     public static MemorySegment SPLREG_PORT_THREAD_PRIORITY_DEFAULT() {
-        return constants$915.SPLREG_PORT_THREAD_PRIORITY_DEFAULT$SEGMENT;
+        return constants$921.SPLREG_PORT_THREAD_PRIORITY_DEFAULT$SEGMENT;
     }
     public static MemorySegment SPLREG_PORT_THREAD_PRIORITY() {
-        return constants$915.SPLREG_PORT_THREAD_PRIORITY$SEGMENT;
+        return constants$921.SPLREG_PORT_THREAD_PRIORITY$SEGMENT;
     }
     public static MemorySegment SPLREG_SCHEDULER_THREAD_PRIORITY_DEFAULT() {
-        return constants$915.SPLREG_SCHEDULER_THREAD_PRIORITY_DEFAULT$SEGMENT;
+        return constants$921.SPLREG_SCHEDULER_THREAD_PRIORITY_DEFAULT$SEGMENT;
     }
     public static MemorySegment SPLREG_SCHEDULER_THREAD_PRIORITY() {
-        return constants$915.SPLREG_SCHEDULER_THREAD_PRIORITY$SEGMENT;
+        return constants$921.SPLREG_SCHEDULER_THREAD_PRIORITY$SEGMENT;
     }
     public static MemorySegment SPLREG_BEEP_ENABLED() {
-        return constants$915.SPLREG_BEEP_ENABLED$SEGMENT;
+        return constants$921.SPLREG_BEEP_ENABLED$SEGMENT;
     }
     public static MemorySegment SPLREG_NET_POPUP() {
-        return constants$915.SPLREG_NET_POPUP$SEGMENT;
+        return constants$922.SPLREG_NET_POPUP$SEGMENT;
     }
     public static MemorySegment SPLREG_RETRY_POPUP() {
-        return constants$916.SPLREG_RETRY_POPUP$SEGMENT;
+        return constants$922.SPLREG_RETRY_POPUP$SEGMENT;
     }
     public static MemorySegment SPLREG_NET_POPUP_TO_COMPUTER() {
-        return constants$916.SPLREG_NET_POPUP_TO_COMPUTER$SEGMENT;
+        return constants$922.SPLREG_NET_POPUP_TO_COMPUTER$SEGMENT;
     }
     public static MemorySegment SPLREG_EVENT_LOG() {
-        return constants$916.SPLREG_EVENT_LOG$SEGMENT;
+        return constants$922.SPLREG_EVENT_LOG$SEGMENT;
     }
     public static MemorySegment SPLREG_MAJOR_VERSION() {
-        return constants$916.SPLREG_MAJOR_VERSION$SEGMENT;
+        return constants$922.SPLREG_MAJOR_VERSION$SEGMENT;
     }
     public static MemorySegment SPLREG_MINOR_VERSION() {
-        return constants$916.SPLREG_MINOR_VERSION$SEGMENT;
+        return constants$922.SPLREG_MINOR_VERSION$SEGMENT;
     }
     public static MemorySegment SPLREG_ARCHITECTURE() {
-        return constants$916.SPLREG_ARCHITECTURE$SEGMENT;
+        return constants$923.SPLREG_ARCHITECTURE$SEGMENT;
     }
     public static MemorySegment SPLREG_OS_VERSION() {
-        return constants$917.SPLREG_OS_VERSION$SEGMENT;
+        return constants$923.SPLREG_OS_VERSION$SEGMENT;
     }
     public static MemorySegment SPLREG_OS_VERSIONEX() {
-        return constants$917.SPLREG_OS_VERSIONEX$SEGMENT;
+        return constants$923.SPLREG_OS_VERSIONEX$SEGMENT;
     }
     public static MemorySegment SPLREG_DS_PRESENT() {
-        return constants$917.SPLREG_DS_PRESENT$SEGMENT;
+        return constants$923.SPLREG_DS_PRESENT$SEGMENT;
     }
     public static MemorySegment SPLREG_DS_PRESENT_FOR_USER() {
-        return constants$917.SPLREG_DS_PRESENT_FOR_USER$SEGMENT;
+        return constants$923.SPLREG_DS_PRESENT_FOR_USER$SEGMENT;
     }
     public static MemorySegment SPLREG_REMOTE_FAX() {
-        return constants$917.SPLREG_REMOTE_FAX$SEGMENT;
+        return constants$923.SPLREG_REMOTE_FAX$SEGMENT;
     }
     public static MemorySegment SPLREG_RESTART_JOB_ON_POOL_ERROR() {
-        return constants$917.SPLREG_RESTART_JOB_ON_POOL_ERROR$SEGMENT;
+        return constants$924.SPLREG_RESTART_JOB_ON_POOL_ERROR$SEGMENT;
     }
     public static MemorySegment SPLREG_RESTART_JOB_ON_POOL_ENABLED() {
-        return constants$918.SPLREG_RESTART_JOB_ON_POOL_ENABLED$SEGMENT;
+        return constants$924.SPLREG_RESTART_JOB_ON_POOL_ENABLED$SEGMENT;
     }
     public static MemorySegment SPLREG_DNS_MACHINE_NAME() {
-        return constants$918.SPLREG_DNS_MACHINE_NAME$SEGMENT;
+        return constants$924.SPLREG_DNS_MACHINE_NAME$SEGMENT;
     }
     public static MemorySegment SPLREG_ALLOW_USER_MANAGEFORMS() {
-        return constants$918.SPLREG_ALLOW_USER_MANAGEFORMS$SEGMENT;
+        return constants$924.SPLREG_ALLOW_USER_MANAGEFORMS$SEGMENT;
     }
     public static MemorySegment SPLREG_WEBSHAREMGMT() {
-        return constants$918.SPLREG_WEBSHAREMGMT$SEGMENT;
+        return constants$924.SPLREG_WEBSHAREMGMT$SEGMENT;
     }
     public static short SPLREG_PRINT_DRIVER_ISOLATION_GROUPS_SEPARATOR() {
         return (short)92L;
     }
     public static MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_GROUPS() {
-        return constants$918.SPLREG_PRINT_DRIVER_ISOLATION_GROUPS$SEGMENT;
+        return constants$924.SPLREG_PRINT_DRIVER_ISOLATION_GROUPS$SEGMENT;
     }
     public static MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_TIME_BEFORE_RECYCLE() {
-        return constants$918.SPLREG_PRINT_DRIVER_ISOLATION_TIME_BEFORE_RECYCLE$SEGMENT;
+        return constants$925.SPLREG_PRINT_DRIVER_ISOLATION_TIME_BEFORE_RECYCLE$SEGMENT;
     }
     public static MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_MAX_OBJECTS_BEFORE_RECYCLE() {
-        return constants$919.SPLREG_PRINT_DRIVER_ISOLATION_MAX_OBJECTS_BEFORE_RECYCLE$SEGMENT;
+        return constants$925.SPLREG_PRINT_DRIVER_ISOLATION_MAX_OBJECTS_BEFORE_RECYCLE$SEGMENT;
     }
     public static MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_IDLE_TIMEOUT() {
-        return constants$919.SPLREG_PRINT_DRIVER_ISOLATION_IDLE_TIMEOUT$SEGMENT;
+        return constants$925.SPLREG_PRINT_DRIVER_ISOLATION_IDLE_TIMEOUT$SEGMENT;
     }
     public static MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_EXECUTION_POLICY() {
-        return constants$919.SPLREG_PRINT_DRIVER_ISOLATION_EXECUTION_POLICY$SEGMENT;
+        return constants$925.SPLREG_PRINT_DRIVER_ISOLATION_EXECUTION_POLICY$SEGMENT;
     }
     public static MemorySegment SPLREG_PRINT_DRIVER_ISOLATION_OVERRIDE_POLICY() {
-        return constants$919.SPLREG_PRINT_DRIVER_ISOLATION_OVERRIDE_POLICY$SEGMENT;
+        return constants$925.SPLREG_PRINT_DRIVER_ISOLATION_OVERRIDE_POLICY$SEGMENT;
     }
     public static MemorySegment SPLREG_PRINT_QUEUE_V4_DRIVER_DIRECTORY() {
-        return constants$919.SPLREG_PRINT_QUEUE_V4_DRIVER_DIRECTORY$SEGMENT;
+        return constants$925.SPLREG_PRINT_QUEUE_V4_DRIVER_DIRECTORY$SEGMENT;
     }
     public static int SERVER_ALL_ACCESS() {
         return (int)983043L;
@@ -598,166 +1261,166 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)131088L;
     }
     public static MemorySegment SPLDS_SPOOLER_KEY() {
-        return constants$919.SPLDS_SPOOLER_KEY$SEGMENT;
+        return constants$926.SPLDS_SPOOLER_KEY$SEGMENT;
     }
     public static MemorySegment SPLDS_DRIVER_KEY() {
-        return constants$920.SPLDS_DRIVER_KEY$SEGMENT;
+        return constants$926.SPLDS_DRIVER_KEY$SEGMENT;
     }
     public static MemorySegment SPLDS_USER_KEY() {
-        return constants$920.SPLDS_USER_KEY$SEGMENT;
+        return constants$926.SPLDS_USER_KEY$SEGMENT;
     }
     public static MemorySegment SPLDS_ASSET_NUMBER() {
-        return constants$920.SPLDS_ASSET_NUMBER$SEGMENT;
+        return constants$926.SPLDS_ASSET_NUMBER$SEGMENT;
     }
     public static MemorySegment SPLDS_BYTES_PER_MINUTE() {
-        return constants$920.SPLDS_BYTES_PER_MINUTE$SEGMENT;
+        return constants$926.SPLDS_BYTES_PER_MINUTE$SEGMENT;
     }
     public static MemorySegment SPLDS_DESCRIPTION() {
-        return constants$920.SPLDS_DESCRIPTION$SEGMENT;
+        return constants$926.SPLDS_DESCRIPTION$SEGMENT;
     }
     public static MemorySegment SPLDS_DRIVER_NAME() {
-        return constants$920.SPLDS_DRIVER_NAME$SEGMENT;
+        return constants$927.SPLDS_DRIVER_NAME$SEGMENT;
     }
     public static MemorySegment SPLDS_DRIVER_VERSION() {
-        return constants$921.SPLDS_DRIVER_VERSION$SEGMENT;
+        return constants$927.SPLDS_DRIVER_VERSION$SEGMENT;
     }
     public static MemorySegment SPLDS_LOCATION() {
-        return constants$921.SPLDS_LOCATION$SEGMENT;
+        return constants$927.SPLDS_LOCATION$SEGMENT;
     }
     public static MemorySegment SPLDS_PORT_NAME() {
-        return constants$921.SPLDS_PORT_NAME$SEGMENT;
+        return constants$927.SPLDS_PORT_NAME$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_ATTRIBUTES() {
-        return constants$921.SPLDS_PRINT_ATTRIBUTES$SEGMENT;
+        return constants$927.SPLDS_PRINT_ATTRIBUTES$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_BIN_NAMES() {
-        return constants$921.SPLDS_PRINT_BIN_NAMES$SEGMENT;
+        return constants$927.SPLDS_PRINT_BIN_NAMES$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_COLLATE() {
-        return constants$921.SPLDS_PRINT_COLLATE$SEGMENT;
+        return constants$928.SPLDS_PRINT_COLLATE$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_COLOR() {
-        return constants$922.SPLDS_PRINT_COLOR$SEGMENT;
+        return constants$928.SPLDS_PRINT_COLOR$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_DUPLEX_SUPPORTED() {
-        return constants$922.SPLDS_PRINT_DUPLEX_SUPPORTED$SEGMENT;
+        return constants$928.SPLDS_PRINT_DUPLEX_SUPPORTED$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_END_TIME() {
-        return constants$922.SPLDS_PRINT_END_TIME$SEGMENT;
+        return constants$928.SPLDS_PRINT_END_TIME$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINTER_CLASS() {
-        return constants$922.SPLDS_PRINTER_CLASS$SEGMENT;
+        return constants$928.SPLDS_PRINTER_CLASS$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINTER_NAME() {
-        return constants$922.SPLDS_PRINTER_NAME$SEGMENT;
+        return constants$928.SPLDS_PRINTER_NAME$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_KEEP_PRINTED_JOBS() {
-        return constants$922.SPLDS_PRINT_KEEP_PRINTED_JOBS$SEGMENT;
+        return constants$929.SPLDS_PRINT_KEEP_PRINTED_JOBS$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_LANGUAGE() {
-        return constants$923.SPLDS_PRINT_LANGUAGE$SEGMENT;
+        return constants$929.SPLDS_PRINT_LANGUAGE$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MAC_ADDRESS() {
-        return constants$923.SPLDS_PRINT_MAC_ADDRESS$SEGMENT;
+        return constants$929.SPLDS_PRINT_MAC_ADDRESS$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MAX_X_EXTENT() {
-        return constants$923.SPLDS_PRINT_MAX_X_EXTENT$SEGMENT;
+        return constants$929.SPLDS_PRINT_MAX_X_EXTENT$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MAX_Y_EXTENT() {
-        return constants$923.SPLDS_PRINT_MAX_Y_EXTENT$SEGMENT;
+        return constants$929.SPLDS_PRINT_MAX_Y_EXTENT$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MAX_RESOLUTION_SUPPORTED() {
-        return constants$923.SPLDS_PRINT_MAX_RESOLUTION_SUPPORTED$SEGMENT;
+        return constants$929.SPLDS_PRINT_MAX_RESOLUTION_SUPPORTED$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MEDIA_READY() {
-        return constants$923.SPLDS_PRINT_MEDIA_READY$SEGMENT;
+        return constants$930.SPLDS_PRINT_MEDIA_READY$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MEDIA_SUPPORTED() {
-        return constants$924.SPLDS_PRINT_MEDIA_SUPPORTED$SEGMENT;
+        return constants$930.SPLDS_PRINT_MEDIA_SUPPORTED$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MEMORY() {
-        return constants$924.SPLDS_PRINT_MEMORY$SEGMENT;
+        return constants$930.SPLDS_PRINT_MEMORY$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MIN_X_EXTENT() {
-        return constants$924.SPLDS_PRINT_MIN_X_EXTENT$SEGMENT;
+        return constants$930.SPLDS_PRINT_MIN_X_EXTENT$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_MIN_Y_EXTENT() {
-        return constants$924.SPLDS_PRINT_MIN_Y_EXTENT$SEGMENT;
+        return constants$930.SPLDS_PRINT_MIN_Y_EXTENT$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_NETWORK_ADDRESS() {
-        return constants$924.SPLDS_PRINT_NETWORK_ADDRESS$SEGMENT;
+        return constants$930.SPLDS_PRINT_NETWORK_ADDRESS$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_NOTIFY() {
-        return constants$924.SPLDS_PRINT_NOTIFY$SEGMENT;
+        return constants$931.SPLDS_PRINT_NOTIFY$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_NUMBER_UP() {
-        return constants$925.SPLDS_PRINT_NUMBER_UP$SEGMENT;
+        return constants$931.SPLDS_PRINT_NUMBER_UP$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_ORIENTATIONS_SUPPORTED() {
-        return constants$925.SPLDS_PRINT_ORIENTATIONS_SUPPORTED$SEGMENT;
+        return constants$931.SPLDS_PRINT_ORIENTATIONS_SUPPORTED$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_OWNER() {
-        return constants$925.SPLDS_PRINT_OWNER$SEGMENT;
+        return constants$931.SPLDS_PRINT_OWNER$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_PAGES_PER_MINUTE() {
-        return constants$925.SPLDS_PRINT_PAGES_PER_MINUTE$SEGMENT;
+        return constants$931.SPLDS_PRINT_PAGES_PER_MINUTE$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_RATE() {
-        return constants$925.SPLDS_PRINT_RATE$SEGMENT;
+        return constants$931.SPLDS_PRINT_RATE$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_RATE_UNIT() {
-        return constants$925.SPLDS_PRINT_RATE_UNIT$SEGMENT;
+        return constants$932.SPLDS_PRINT_RATE_UNIT$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_SEPARATOR_FILE() {
-        return constants$926.SPLDS_PRINT_SEPARATOR_FILE$SEGMENT;
+        return constants$932.SPLDS_PRINT_SEPARATOR_FILE$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_SHARE_NAME() {
-        return constants$926.SPLDS_PRINT_SHARE_NAME$SEGMENT;
+        return constants$932.SPLDS_PRINT_SHARE_NAME$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_SPOOLING() {
-        return constants$926.SPLDS_PRINT_SPOOLING$SEGMENT;
+        return constants$932.SPLDS_PRINT_SPOOLING$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_STAPLING_SUPPORTED() {
-        return constants$926.SPLDS_PRINT_STAPLING_SUPPORTED$SEGMENT;
+        return constants$932.SPLDS_PRINT_STAPLING_SUPPORTED$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_START_TIME() {
-        return constants$926.SPLDS_PRINT_START_TIME$SEGMENT;
+        return constants$932.SPLDS_PRINT_START_TIME$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINT_STATUS() {
-        return constants$926.SPLDS_PRINT_STATUS$SEGMENT;
+        return constants$933.SPLDS_PRINT_STATUS$SEGMENT;
     }
     public static MemorySegment SPLDS_PRIORITY() {
-        return constants$927.SPLDS_PRIORITY$SEGMENT;
+        return constants$933.SPLDS_PRIORITY$SEGMENT;
     }
     public static MemorySegment SPLDS_SERVER_NAME() {
-        return constants$927.SPLDS_SERVER_NAME$SEGMENT;
+        return constants$933.SPLDS_SERVER_NAME$SEGMENT;
     }
     public static MemorySegment SPLDS_SHORT_SERVER_NAME() {
-        return constants$927.SPLDS_SHORT_SERVER_NAME$SEGMENT;
+        return constants$933.SPLDS_SHORT_SERVER_NAME$SEGMENT;
     }
     public static MemorySegment SPLDS_UNC_NAME() {
-        return constants$927.SPLDS_UNC_NAME$SEGMENT;
+        return constants$933.SPLDS_UNC_NAME$SEGMENT;
     }
     public static MemorySegment SPLDS_URL() {
-        return constants$927.SPLDS_URL$SEGMENT;
+        return constants$933.SPLDS_URL$SEGMENT;
     }
     public static MemorySegment SPLDS_FLAGS() {
-        return constants$927.SPLDS_FLAGS$SEGMENT;
+        return constants$934.SPLDS_FLAGS$SEGMENT;
     }
     public static MemorySegment SPLDS_VERSION_NUMBER() {
-        return constants$928.SPLDS_VERSION_NUMBER$SEGMENT;
+        return constants$934.SPLDS_VERSION_NUMBER$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINTER_NAME_ALIASES() {
-        return constants$928.SPLDS_PRINTER_NAME_ALIASES$SEGMENT;
+        return constants$934.SPLDS_PRINTER_NAME_ALIASES$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINTER_LOCATIONS() {
-        return constants$928.SPLDS_PRINTER_LOCATIONS$SEGMENT;
+        return constants$934.SPLDS_PRINTER_LOCATIONS$SEGMENT;
     }
     public static MemorySegment SPLDS_PRINTER_MODEL() {
-        return constants$928.SPLDS_PRINTER_MODEL$SEGMENT;
+        return constants$934.SPLDS_PRINTER_MODEL$SEGMENT;
     }
     public static MemorySegment MS_PRINT_JOB_OUTPUT_FILE() {
-        return constants$928.MS_PRINT_JOB_OUTPUT_FILE$SEGMENT;
+        return constants$934.MS_PRINT_JOB_OUTPUT_FILE$SEGMENT;
     }
     public static int CLSCTX_INPROC() {
         return (int)3L;
@@ -823,16 +1486,16 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)4194304L;
     }
     public static MemorySegment SERVICES_ACTIVE_DATABASEW() {
-        return constants$928.SERVICES_ACTIVE_DATABASEW$SEGMENT;
+        return constants$935.SERVICES_ACTIVE_DATABASEW$SEGMENT;
     }
     public static MemorySegment SERVICES_FAILED_DATABASEW() {
-        return constants$929.SERVICES_FAILED_DATABASEW$SEGMENT;
+        return constants$935.SERVICES_FAILED_DATABASEW$SEGMENT;
     }
     public static MemorySegment SERVICES_ACTIVE_DATABASEA() {
-        return constants$929.SERVICES_ACTIVE_DATABASEA$SEGMENT;
+        return constants$935.SERVICES_ACTIVE_DATABASEA$SEGMENT;
     }
     public static MemorySegment SERVICES_FAILED_DATABASEA() {
-        return constants$929.SERVICES_FAILED_DATABASEA$SEGMENT;
+        return constants$935.SERVICES_FAILED_DATABASEA$SEGMENT;
     }
     public static short SC_GROUP_IDENTIFIERW() {
         return (short)43L;
@@ -841,10 +1504,10 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)43L;
     }
     public static MemorySegment SERVICES_ACTIVE_DATABASE() {
-        return constants$929.SERVICES_ACTIVE_DATABASE$SEGMENT;
+        return constants$935.SERVICES_ACTIVE_DATABASE$SEGMENT;
     }
     public static MemorySegment SERVICES_FAILED_DATABASE() {
-        return constants$929.SERVICES_FAILED_DATABASE$SEGMENT;
+        return constants$935.SERVICES_FAILED_DATABASE$SEGMENT;
     }
     public static int SC_GROUP_IDENTIFIER() {
         return (int)43L;
@@ -871,10 +1534,10 @@ import static java.lang.foreign.ValueLayout.*;
         return (int)3L;
     }
     public static MemorySegment SERVICE_TRIGGER_STARTED_ARGUMENT() {
-        return constants$929.SERVICE_TRIGGER_STARTED_ARGUMENT$SEGMENT;
+        return constants$936.SERVICE_TRIGGER_STARTED_ARGUMENT$SEGMENT;
     }
     public static MemorySegment SC_AGGREGATE_STORAGE_KEY() {
-        return constants$930.SC_AGGREGATE_STORAGE_KEY$SEGMENT;
+        return constants$936.SC_AGGREGATE_STORAGE_KEY$SEGMENT;
     }
 }
 

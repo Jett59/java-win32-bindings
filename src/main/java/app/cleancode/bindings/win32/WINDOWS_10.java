@@ -9,6 +9,72 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_10 extends WINDOWS_9 {
 
+    public static MethodHandle _interlockedbittestandreset64$MH() {
+        return RuntimeHelper.requireNonNull(constants$3._interlockedbittestandreset64$MH,"_interlockedbittestandreset64");
+    }
+    public static byte _interlockedbittestandreset64 ( Addressable Base,  long Offset) {
+        var mh$ = _interlockedbittestandreset64$MH();
+        try {
+            return (byte)mh$.invokeExact(Base, Offset);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _mm_clflush$MH() {
+        return RuntimeHelper.requireNonNull(constants$4._mm_clflush$MH,"_mm_clflush");
+    }
+    public static void _mm_clflush ( Addressable Address) {
+        var mh$ = _mm_clflush$MH();
+        try {
+            mh$.invokeExact(Address);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _mm_lfence$MH() {
+        return RuntimeHelper.requireNonNull(constants$4._mm_lfence$MH,"_mm_lfence");
+    }
+    public static void _mm_lfence () {
+        var mh$ = _mm_lfence$MH();
+        try {
+            mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _mm_mfence$MH() {
+        return RuntimeHelper.requireNonNull(constants$4._mm_mfence$MH,"_mm_mfence");
+    }
+    public static void _mm_mfence () {
+        var mh$ = _mm_mfence$MH();
+        try {
+            mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _mm_sfence$MH() {
+        return RuntimeHelper.requireNonNull(constants$4._mm_sfence$MH,"_mm_sfence");
+    }
+    public static void _mm_sfence () {
+        var mh$ = _mm_sfence$MH();
+        try {
+            mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle _mm_pause$MH() {
+        return RuntimeHelper.requireNonNull(constants$4._mm_pause$MH,"_mm_pause");
+    }
+    public static void _mm_pause () {
+        var mh$ = _mm_pause$MH();
+        try {
+            mh$.invokeExact();
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
     public static MethodHandle _mm_prefetch$MH() {
         return RuntimeHelper.requireNonNull(constants$4._mm_prefetch$MH,"_mm_prefetch");
     }
@@ -3070,24 +3136,6 @@ import static java.lang.foreign.ValueLayout.*;
     }
     public static int MonitorRequestReasonLid() {
         return (int)15L;
-    }
-    public static int MonitorRequestReasonBatteryCountChange() {
-        return (int)16L;
-    }
-    public static int MonitorRequestReasonGracePeriod() {
-        return (int)17L;
-    }
-    public static int MonitorRequestReasonPnP() {
-        return (int)18L;
-    }
-    public static int MonitorRequestReasonDP() {
-        return (int)19L;
-    }
-    public static int MonitorRequestReasonSxTransition() {
-        return (int)20L;
-    }
-    public static int MonitorRequestReasonSystemIdle() {
-        return (int)21L;
     }
 }
 

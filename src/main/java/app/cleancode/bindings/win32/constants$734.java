@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$734 {
 
-    static final MemoryAddress RT_ACCELERATOR$ADDR = MemoryAddress.ofLong(9L);
-    static final MemoryAddress RT_RCDATA$ADDR = MemoryAddress.ofLong(10L);
-    static final MemoryAddress RT_MESSAGETABLE$ADDR = MemoryAddress.ofLong(11L);
-    static final MemoryAddress RT_GROUP_CURSOR$ADDR = MemoryAddress.ofLong(12L);
-    static final MemoryAddress RT_GROUP_ICON$ADDR = MemoryAddress.ofLong(14L);
-    static final MemoryAddress RT_VERSION$ADDR = MemoryAddress.ofLong(16L);
+    static final MemorySegment SE_MUMA_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("m");
+    static final MemorySegment SE_DEVELOPMENT_MODE_NETWORK_CAPABILITY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("d");
+    static final MemorySegment SMB_CCF_APP_INSTANCE_EA_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("ClusteredApplicationInstance");
+    static final MemorySegment IMAGE_ARCHIVE_START$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("!<arch>\n");
+    static final MemorySegment IMAGE_ARCHIVE_END$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("`\n");
+    static final MemorySegment IMAGE_ARCHIVE_PAD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\n");
 }
 
 

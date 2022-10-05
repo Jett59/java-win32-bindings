@@ -9,12 +9,77 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$722 {
 
-    static final MemorySegment SE_UNSOLICITED_INPUT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeUnsolicitedInputPrivilege");
-    static final MemorySegment SE_MACHINE_ACCOUNT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeMachineAccountPrivilege");
-    static final MemorySegment SE_TCB_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTcbPrivilege");
-    static final MemorySegment SE_SECURITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSecurityPrivilege");
-    static final MemorySegment SE_TAKE_OWNERSHIP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTakeOwnershipPrivilege");
-    static final MemorySegment SE_LOAD_DRIVER_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeLoadDriverPrivilege");
+    static final FunctionDescriptor EvtSubscribe$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtSubscribe$MH = RuntimeHelper.downcallHandle(
+        "EvtSubscribe",
+        constants$722.EvtSubscribe$FUNC
+    );
+    static final FunctionDescriptor EvtCreateRenderContext$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtCreateRenderContext$MH = RuntimeHelper.downcallHandle(
+        "EvtCreateRenderContext",
+        constants$722.EvtCreateRenderContext$FUNC
+    );
+    static final FunctionDescriptor EvtRender$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtRender$MH = RuntimeHelper.downcallHandle(
+        "EvtRender",
+        constants$722.EvtRender$FUNC
+    );
+    static final FunctionDescriptor EvtFormatMessage$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtFormatMessage$MH = RuntimeHelper.downcallHandle(
+        "EvtFormatMessage",
+        constants$722.EvtFormatMessage$FUNC
+    );
+    static final FunctionDescriptor EvtOpenLog$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT
+    );
+    static final MethodHandle EvtOpenLog$MH = RuntimeHelper.downcallHandle(
+        "EvtOpenLog",
+        constants$722.EvtOpenLog$FUNC
+    );
+    static final FunctionDescriptor EvtGetLogInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetLogInfo$MH = RuntimeHelper.downcallHandle(
+        "EvtGetLogInfo",
+        constants$722.EvtGetLogInfo$FUNC
+    );
 }
 
 

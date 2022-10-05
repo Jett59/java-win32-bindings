@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$825 {
 
-    static final MemorySegment szOID_REQUEST_CLIENT_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.20");
-    static final MemorySegment szOID_ENCRYPTED_KEY_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.21");
-    static final MemorySegment szOID_CERTSRV_CROSSCA_VERSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.22");
-    static final MemorySegment szOID_NTDS_REPLICATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.25.1");
-    static final MemorySegment szOID_SUBJECT_DIR_ATTRS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.9");
-    static final MemorySegment szOID_PKIX_KP$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.3");
+    static final MemorySegment szOID_BIOMETRIC_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.2");
+    static final MemorySegment szOID_QC_STATEMENTS_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.3");
+    static final MemorySegment szOID_LOGOTYPE_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.12");
+    static final MemorySegment szOID_TLS_FEATURES_EXT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.1.24");
+    static final MemorySegment szOID_CERT_EXTENSIONS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.2.1.14");
+    static final MemorySegment szOID_NEXT_UPDATE_LOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.2");
 }
 
 

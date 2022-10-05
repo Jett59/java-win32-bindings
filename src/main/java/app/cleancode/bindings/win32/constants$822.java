@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$822 {
 
-    static final MemorySegment szOID_CERTSRV_PREVIOUS_CERT_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.2");
-    static final MemorySegment szOID_CRL_VIRTUAL_BASE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.3");
-    static final MemorySegment szOID_CRL_NEXT_PUBLISH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.4");
-    static final MemorySegment szOID_KP_CA_EXCHANGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.5");
-    static final MemorySegment szOID_KP_PRIVACY_CA$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.36");
-    static final MemorySegment szOID_KP_KEY_RECOVERY_AGENT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.6");
+    static final MemorySegment szOID_ANY_ENHANCED_KEY_USAGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.37.0");
+    static final MemorySegment szOID_CRL_NUMBER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.20");
+    static final MemorySegment szOID_DELTA_CRL_INDICATOR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.27");
+    static final MemorySegment szOID_ISSUING_DIST_POINT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.28");
+    static final MemorySegment szOID_FRESHEST_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.46");
+    static final MemorySegment szOID_NAME_CONSTRAINTS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.30");
 }
 
 

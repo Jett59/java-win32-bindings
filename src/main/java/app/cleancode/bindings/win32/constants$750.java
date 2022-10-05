@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$750 {
 
-    static final MemorySegment MS_DEF_RSA_SIG_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA Signature Cryptographic Provider");
-    static final MemorySegment MS_DEF_RSA_SCHANNEL_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA SChannel Cryptographic Provider");
-    static final MemorySegment MS_DEF_RSA_SCHANNEL_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment MS_DEF_RSA_SCHANNEL_PROV$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft RSA SChannel Cryptographic Provider");
-    static final MemorySegment MS_DEF_DSS_PROV_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Microsoft Base DSS Cryptographic Provider");
-    static final MemorySegment MS_DEF_DSS_PROV_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
+    static final MemoryAddress IDI_QUESTION$ADDR = MemoryAddress.ofLong(32514L);
+    static final MemoryAddress IDI_EXCLAMATION$ADDR = MemoryAddress.ofLong(32515L);
+    static final MemoryAddress IDI_ASTERISK$ADDR = MemoryAddress.ofLong(32516L);
+    static final MemoryAddress IDI_WINLOGO$ADDR = MemoryAddress.ofLong(32517L);
+    static final MemoryAddress IDI_SHIELD$ADDR = MemoryAddress.ofLong(32518L);
+    static final MemoryAddress IDI_WARNING$ADDR = MemoryAddress.ofLong(32515L);
 }
 
 

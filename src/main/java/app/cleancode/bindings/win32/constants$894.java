@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$894 {
 
-    static final MemorySegment CERT_CHAIN_MAX_SSL_TIME_UPDATED_EVENT_COUNT_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_SSL_HANDSHAKE_LOG_FILE_NAME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("S");
-    static final MemorySegment CERT_CHAIN_ENABLE_WEAK_SIGNATURE_FLAGS_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("E");
-    static final MemorySegment CERT_CHAIN_MIN_RSA_PUB_KEY_BIT_LENGTH_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("M");
-    static final MemorySegment CERT_CHAIN_WEAK_RSA_PUB_KEY_TIME_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("W");
-    static final MemorySegment CERT_CHAIN_WEAK_SIGNATURE_LOG_DIR_VALUE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("W");
+    static final MemoryAddress URL_OID_CTL_ISSUER$ADDR = MemoryAddress.ofLong(3L);
+    static final MemoryAddress URL_OID_CTL_NEXT_UPDATE$ADDR = MemoryAddress.ofLong(4L);
+    static final MemoryAddress URL_OID_CRL_ISSUER$ADDR = MemoryAddress.ofLong(5L);
+    static final MemoryAddress URL_OID_CERTIFICATE_FRESHEST_CRL$ADDR = MemoryAddress.ofLong(6L);
+    static final MemoryAddress URL_OID_CRL_FRESHEST_CRL$ADDR = MemoryAddress.ofLong(7L);
+    static final MemoryAddress URL_OID_CROSS_CERT_DIST_POINT$ADDR = MemoryAddress.ofLong(8L);
 }
 
 

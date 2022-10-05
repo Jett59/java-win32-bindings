@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$814 {
 
-    static final MemorySegment szOID_CERT_POLICIES$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.32");
-    static final MemorySegment szOID_ANY_CERT_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.32.0");
-    static final MemorySegment szOID_INHIBIT_ANY_POLICY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.54");
-    static final MemorySegment szOID_AUTHORITY_KEY_IDENTIFIER2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.35");
-    static final MemorySegment szOID_SUBJECT_KEY_IDENTIFIER$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.14");
-    static final MemorySegment szOID_SUBJECT_ALT_NAME2$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.29.17");
+    static final MemoryAddress CMC_STATUS$ADDR = MemoryAddress.ofLong(61L);
+    static final MemoryAddress CMC_ADD_EXTENSIONS$ADDR = MemoryAddress.ofLong(62L);
+    static final MemoryAddress CMC_ADD_ATTRIBUTES$ADDR = MemoryAddress.ofLong(63L);
+    static final MemoryAddress X509_CERTIFICATE_TEMPLATE$ADDR = MemoryAddress.ofLong(64L);
+    static final MemoryAddress OCSP_SIGNED_REQUEST$ADDR = MemoryAddress.ofLong(65L);
+    static final MemoryAddress OCSP_REQUEST$ADDR = MemoryAddress.ofLong(66L);
 }
 
 

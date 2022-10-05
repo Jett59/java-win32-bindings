@@ -9,6 +9,40 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
  class WINDOWS_14 extends WINDOWS_13 {
 
+    public static int DCDC_DEFAULT() {
+        return (int)0L;
+    }
+    public static int DCDC_DISABLE_FONT_UPDATE() {
+        return (int)1L;
+    }
+    public static int DCDC_DISABLE_RELAYOUT() {
+        return (int)2L;
+    }
+    public static MethodHandle SetDialogControlDpiChangeBehavior$MH() {
+        return RuntimeHelper.requireNonNull(constants$364.SetDialogControlDpiChangeBehavior$MH,"SetDialogControlDpiChangeBehavior");
+    }
+    public static int SetDialogControlDpiChangeBehavior ( Addressable hWnd,  int mask,  int values) {
+        var mh$ = SetDialogControlDpiChangeBehavior$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd, mask, values);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static MethodHandle GetDialogControlDpiChangeBehavior$MH() {
+        return RuntimeHelper.requireNonNull(constants$364.GetDialogControlDpiChangeBehavior$MH,"GetDialogControlDpiChangeBehavior");
+    }
+    public static int GetDialogControlDpiChangeBehavior ( Addressable hWnd) {
+        var mh$ = GetDialogControlDpiChangeBehavior$MH();
+        try {
+            return (int)mh$.invokeExact(hWnd);
+        } catch (Throwable ex$) {
+            throw new AssertionError("should not reach here", ex$);
+        }
+    }
+    public static int DDC_DEFAULT() {
+        return (int)0L;
+    }
     public static int DDC_DISABLE_ALL() {
         return (int)1L;
     }
@@ -8355,72 +8389,6 @@ import static java.lang.foreign.ValueLayout.*;
         var mh$ = RegEnumValueA$MH();
         try {
             return (int)mh$.invokeExact(hKey, dwIndex, lpValueName, lpcchValueName, lpReserved, lpType, lpData, lpcbData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegEnumValueW$MH() {
-        return RuntimeHelper.requireNonNull(constants$495.RegEnumValueW$MH,"RegEnumValueW");
-    }
-    public static int RegEnumValueW ( Addressable hKey,  int dwIndex,  Addressable lpValueName,  Addressable lpcchValueName,  Addressable lpReserved,  Addressable lpType,  Addressable lpData,  Addressable lpcbData) {
-        var mh$ = RegEnumValueW$MH();
-        try {
-            return (int)mh$.invokeExact(hKey, dwIndex, lpValueName, lpcchValueName, lpReserved, lpType, lpData, lpcbData);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegFlushKey$MH() {
-        return RuntimeHelper.requireNonNull(constants$495.RegFlushKey$MH,"RegFlushKey");
-    }
-    public static int RegFlushKey ( Addressable hKey) {
-        var mh$ = RegFlushKey$MH();
-        try {
-            return (int)mh$.invokeExact(hKey);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegGetKeySecurity$MH() {
-        return RuntimeHelper.requireNonNull(constants$495.RegGetKeySecurity$MH,"RegGetKeySecurity");
-    }
-    public static int RegGetKeySecurity ( Addressable hKey,  int SecurityInformation,  Addressable pSecurityDescriptor,  Addressable lpcbSecurityDescriptor) {
-        var mh$ = RegGetKeySecurity$MH();
-        try {
-            return (int)mh$.invokeExact(hKey, SecurityInformation, pSecurityDescriptor, lpcbSecurityDescriptor);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegLoadKeyA$MH() {
-        return RuntimeHelper.requireNonNull(constants$495.RegLoadKeyA$MH,"RegLoadKeyA");
-    }
-    public static int RegLoadKeyA ( Addressable hKey,  Addressable lpSubKey,  Addressable lpFile) {
-        var mh$ = RegLoadKeyA$MH();
-        try {
-            return (int)mh$.invokeExact(hKey, lpSubKey, lpFile);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegLoadKeyW$MH() {
-        return RuntimeHelper.requireNonNull(constants$495.RegLoadKeyW$MH,"RegLoadKeyW");
-    }
-    public static int RegLoadKeyW ( Addressable hKey,  Addressable lpSubKey,  Addressable lpFile) {
-        var mh$ = RegLoadKeyW$MH();
-        try {
-            return (int)mh$.invokeExact(hKey, lpSubKey, lpFile);
-        } catch (Throwable ex$) {
-            throw new AssertionError("should not reach here", ex$);
-        }
-    }
-    public static MethodHandle RegNotifyChangeKeyValue$MH() {
-        return RuntimeHelper.requireNonNull(constants$495.RegNotifyChangeKeyValue$MH,"RegNotifyChangeKeyValue");
-    }
-    public static int RegNotifyChangeKeyValue ( Addressable hKey,  int bWatchSubtree,  int dwNotifyFilter,  Addressable hEvent,  int fAsynchronous) {
-        var mh$ = RegNotifyChangeKeyValue$MH();
-        try {
-            return (int)mh$.invokeExact(hKey, bWatchSubtree, dwNotifyFilter, hEvent, fAsynchronous);
         } catch (Throwable ex$) {
             throw new AssertionError("should not reach here", ex$);
         }

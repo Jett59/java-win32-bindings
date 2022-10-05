@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$871 {
 
-    static final MemorySegment sz_CERT_STORE_PROV_COLLECTION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Collection");
-    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM_REGISTRY_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SystemRegistry");
-    static final MemorySegment sz_CERT_STORE_PROV_SYSTEM_REGISTRY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SystemRegistry");
-    static final MemorySegment sz_CERT_STORE_PROV_PHYSICAL_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Physical");
-    static final MemorySegment sz_CERT_STORE_PROV_PHYSICAL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("Physical");
-    static final MemorySegment sz_CERT_STORE_PROV_SMART_CARD_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SmartCard");
+    static final MemorySegment szOID_CERT_SIGNATURE_HASH_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.15");
+    static final MemorySegment szOID_DISALLOWED_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.15");
+    static final MemorySegment szOID_CERT_DISALLOWED_FILETIME_PROP_ID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.10.11.104");
+    static final MemorySegment szOID_ROOT_PROGRAM_AUTO_UPDATE_CA_REVOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.1");
+    static final MemorySegment szOID_ROOT_PROGRAM_AUTO_UPDATE_END_REVOCATION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.2");
+    static final MemorySegment szOID_ROOT_PROGRAM_NO_OCSP_FAILOVER_TO_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.60.3.3");
 }
 
 

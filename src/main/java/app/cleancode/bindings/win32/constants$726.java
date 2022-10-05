@@ -9,12 +9,45 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$726 {
 
-    static final MemorySegment SE_IMPERSONATE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeImpersonatePrivilege");
-    static final MemorySegment SE_CREATE_GLOBAL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeCreateGlobalPrivilege");
-    static final MemorySegment SE_TRUSTED_CREDMAN_ACCESS_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTrustedCredManAccessPrivilege");
-    static final MemorySegment SE_RELABEL_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRelabelPrivilege");
-    static final MemorySegment SE_INC_WORKING_SET_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeIncreaseWorkingSetPrivilege");
-    static final MemorySegment SE_TIME_ZONE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeTimeZonePrivilege");
+    static final FunctionDescriptor EvtGetQueryInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetQueryInfo$MH = RuntimeHelper.downcallHandle(
+        "EvtGetQueryInfo",
+        constants$726.EvtGetQueryInfo$FUNC
+    );
+    static final FunctionDescriptor EvtCreateBookmark$FUNC = FunctionDescriptor.of(Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtCreateBookmark$MH = RuntimeHelper.downcallHandle(
+        "EvtCreateBookmark",
+        constants$726.EvtCreateBookmark$FUNC
+    );
+    static final FunctionDescriptor EvtUpdateBookmark$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtUpdateBookmark$MH = RuntimeHelper.downcallHandle(
+        "EvtUpdateBookmark",
+        constants$726.EvtUpdateBookmark$FUNC
+    );
+    static final FunctionDescriptor EvtGetEventInfo$FUNC = FunctionDescriptor.of(Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_LONG$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT,
+        Constants$root.C_POINTER$LAYOUT
+    );
+    static final MethodHandle EvtGetEventInfo$MH = RuntimeHelper.downcallHandle(
+        "EvtGetEventInfo",
+        constants$726.EvtGetEventInfo$FUNC
+    );
+    static final MemorySegment OUT_OF_PROCESS_FUNCTION_TABLE_CALLBACK_EXPORT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("OutOfProcessFunctionTableCallback");
+    static final MemorySegment ACCESS_DS_SOURCE_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("DS");
 }
 
 

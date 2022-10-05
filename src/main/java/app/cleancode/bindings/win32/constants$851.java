@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$851 {
 
-    static final MemorySegment szOID_CMC_LRA_POP_WITNESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.11");
-    static final MemorySegment szOID_CMC_GET_CERT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.15");
-    static final MemorySegment szOID_CMC_GET_CRL$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.16");
-    static final MemorySegment szOID_CMC_REVOKE_REQUEST$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.17");
-    static final MemorySegment szOID_CMC_REG_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.18");
-    static final MemorySegment szOID_CMC_RESPONSE_INFO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.5.5.7.7.19");
+    static final MemorySegment szOID_QC_SSCD$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("0.4.0.1862.1.4");
+    static final MemorySegment szOID_VERISIGN_PRIVATE_6_9$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.9");
+    static final MemorySegment szOID_VERISIGN_ONSITE_JURISDICTION_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.11");
+    static final MemorySegment szOID_VERISIGN_BITSTRING_6_13$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.6.13");
+    static final MemorySegment szOID_VERISIGN_ISS_STRONG_CRYPTO$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.8.1");
+    static final MemorySegment szOIDVerisign_MessageType$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.2");
 }
 
 

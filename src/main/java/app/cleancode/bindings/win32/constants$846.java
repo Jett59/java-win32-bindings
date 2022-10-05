@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$846 {
 
-    static final MemorySegment szOIDVerisign_FailInfo$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.4");
-    static final MemorySegment szOIDVerisign_SenderNonce$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.5");
-    static final MemorySegment szOIDVerisign_RecipientNonce$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.6");
-    static final MemorySegment szOIDVerisign_TransactionID$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113733.1.9.7");
-    static final MemorySegment szOID_NETSCAPE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730");
-    static final MemorySegment szOID_NETSCAPE_CERT_EXTENSION$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.16.840.1.113730.1");
+    static final MemorySegment szOID_ENROLL_KSP_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.25");
+    static final MemorySegment szOID_ENROLL_EKPUB_CHALLENGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.26");
+    static final MemorySegment szOID_ENROLL_CAXCHGCERT_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.27");
+    static final MemorySegment szOID_ENROLL_ATTESTATION_CHALLENGE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.28");
+    static final MemorySegment szOID_ENROLL_ENCRYPTION_ALGORITHM$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.6.1.4.1.311.21.29");
+    static final MemorySegment szOID_KP_TPM_EK_CERTIFICATE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.23.133.8.1");
 }
 
 

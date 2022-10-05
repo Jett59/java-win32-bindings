@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$731 {
 
-    static final MemoryAddress INVALID_HANDLE_VALUE$ADDR = MemoryAddress.ofLong(-1L);
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_A_T$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryA");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_A$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("GetSystemWow64DirectoryW");
-    static final MemorySegment GET_SYSTEM_WOW64_DIRECTORY_NAME_W_W$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("G");
+    static final MemorySegment SE_SYSTEM_ENVIRONMENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSystemEnvironmentPrivilege");
+    static final MemorySegment SE_CHANGE_NOTIFY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeChangeNotifyPrivilege");
+    static final MemorySegment SE_REMOTE_SHUTDOWN_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeRemoteShutdownPrivilege");
+    static final MemorySegment SE_UNDOCK_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeUndockPrivilege");
+    static final MemorySegment SE_SYNC_AGENT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeSyncAgentPrivilege");
+    static final MemorySegment SE_ENABLE_DELEGATION_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("SeEnableDelegationPrivilege");
 }
 
 

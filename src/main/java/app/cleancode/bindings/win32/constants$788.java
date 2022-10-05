@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$788 {
 
-    static final MemorySegment szOID_LOCALITY_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.7");
-    static final MemorySegment szOID_STATE_OR_PROVINCE_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.8");
-    static final MemorySegment szOID_STREET_ADDRESS$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.9");
-    static final MemorySegment szOID_ORGANIZATION_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.10");
-    static final MemorySegment szOID_ORGANIZATIONAL_UNIT_NAME$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.11");
-    static final MemorySegment szOID_TITLE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("2.5.4.12");
+    static final MemorySegment szOID_OIWSEC_dsaCommSHA1$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.28");
+    static final MemorySegment szOID_OIWSEC_sha1RSASign$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.3.2.29");
+    static final MemorySegment szOID_OIWDIR$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2");
+    static final MemorySegment szOID_OIWDIR_CRPT$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.1");
+    static final MemorySegment szOID_OIWDIR_HASH$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.2");
+    static final MemorySegment szOID_OIWDIR_SIGN$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("1.3.14.7.2.3");
 }
 
 

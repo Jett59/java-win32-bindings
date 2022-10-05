@@ -9,12 +9,12 @@ import java.lang.foreign.*;
 import static java.lang.foreign.ValueLayout.*;
 class constants$736 {
 
-    static final MemoryAddress RT_MANIFEST$ADDR = MemoryAddress.ofLong(24L);
-    static final MemoryAddress CREATEPROCESS_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(1L);
-    static final MemoryAddress ISOLATIONAWARE_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(2L);
-    static final MemoryAddress ISOLATIONAWARE_NOSTATICIMPORT_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(3L);
-    static final MemoryAddress ISOLATIONPOLICY_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(4L);
-    static final MemoryAddress ISOLATIONPOLICY_BROWSER_MANIFEST_RESOURCE_ID$ADDR = MemoryAddress.ofLong(5L);
+    static final MemorySegment DEVICEFAMILYDEVICEFORM_KEY$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("\\");
+    static final MemorySegment DEVICEFAMILYDEVICEFORM_VALUE$SEGMENT = RuntimeHelper.CONSTANT_ALLOCATOR.allocateUtf8String("D");
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_UNAWARE$ADDR = MemoryAddress.ofLong(-1L);
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_SYSTEM_AWARE$ADDR = MemoryAddress.ofLong(-2L);
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE$ADDR = MemoryAddress.ofLong(-3L);
+    static final MemoryAddress DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2$ADDR = MemoryAddress.ofLong(-4L);
 }
 
 
